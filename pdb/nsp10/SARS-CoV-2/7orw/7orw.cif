@@ -3,7 +3,7 @@ data_7ORW
 _entry.id   7ORW 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.350 
+_audit_conform.dict_version    5.355 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -61,17 +61,17 @@ _citation.journal_id_CSD            ?
 _citation.journal_id_ISSN           2633-0679 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            3 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                44 
+_citation.page_last                 55 
 _citation.title                     
-;Identification of fragments binding to SARS-CoV-2 nsp10 reveals ligand-binding sites in conserved interfaces between nsp10 and nsp14/nsp16
+;Identification of fragments binding to SARS-CoV-2 nsp10 reveals ligand-binding sites in conserved interfaces between nsp10 and nsp14/nsp16.
 ;
-_citation.year                      2021 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      10.1039/D1CB00135C 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1039/d1cb00135c 
+_citation.pdbx_database_id_PubMed   35128408 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -80,18 +80,18 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Kozielski, F.' 1  ? 
-primary 'Sele, C.'      2  ? 
-primary 'Talibov, V.O.' 3  ? 
-primary 'Lou, J.'       4  ? 
-primary 'Dong, D.'      5  ? 
-primary 'Wang, Q.'      6  ? 
-primary 'Shi, X.'       7  ? 
-primary 'Nyblom, M.'    8  ? 
-primary 'Rogstam, A.'   9  ? 
-primary 'Krojer, T.'    10 ? 
-primary 'Fisher, Z.'    11 ? 
-primary 'Knecht, W.'    12 ? 
+primary 'Kozielski, F.' 1  ?                   
+primary 'Sele, C.'      2  ?                   
+primary 'Talibov, V.O.' 3  ?                   
+primary 'Lou, J.'       4  ?                   
+primary 'Dong, D.'      5  ?                   
+primary 'Wang, Q.'      6  ?                   
+primary 'Shi, X.'       7  ?                   
+primary 'Nyblom, M.'    8  ?                   
+primary 'Rogstam, A.'   9  ?                   
+primary 'Krojer, T.'    10 ?                   
+primary 'Fisher, Z.'    11 0000-0001-8287-0269 
+primary 'Knecht, W.'    12 0000-0001-9530-7598 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -2490,11 +2490,14 @@ _pdbx_struct_conn_angle.value_esd
 11 SG  ? A CYS 114 ? A CYS 120 ? 1_555 ZN ? C ZN . ? A ZN 202 ? 1_555 SG  ? A CYS 124 ? A CYS 130 ? 1_555 111.4 ? 
 12 SG  ? A CYS 122 ? A CYS 128 ? 1_555 ZN ? C ZN . ? A ZN 202 ? 1_555 SG  ? A CYS 124 ? A CYS 130 ? 1_555 106.8 ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-10-20 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-10-20 
+2 'Structure model' 1 1 2022-02-23 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -2503,6 +2506,33 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_citation.journal_volume'          
+2 2 'Structure model' '_citation.page_first'              
+3 2 'Structure model' '_citation.page_last'               
+4 2 'Structure model' '_citation.pdbx_database_id_DOI'    
+5 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
+6 2 'Structure model' '_citation.title'                   
+7 2 'Structure model' '_citation.year'                    
+8 2 'Structure model' '_citation_author.identifier_ORCID' 
 # 
 loop_
 _software.citation_id 

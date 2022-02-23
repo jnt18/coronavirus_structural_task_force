@@ -3,14 +3,16 @@ data_7JMP
 _entry.id   7JMP 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.331 
+_audit_conform.dict_version    5.355 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7JMP         
-WWPDB D_1000251079 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7JMP         pdb_00007jmp 10.2210/pdb7jmp/pdb 
+WWPDB D_1000251079 ?            ?                   
 # 
 _pdbx_database_related.db_name        PDB 
 _pdbx_database_related.details        . 
@@ -51,21 +53,21 @@ _citation.country                   US
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            Biorxiv 
+_citation.journal_abbrev            'Cell Rep' 
 _citation.journal_id_ASTM           ? 
 _citation.journal_id_CSD            ? 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_ISSN           2211-1247 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            33 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'An alternative binding mode of IGHV3-53 antibodies to the SARS-CoV-2 receptor binding domain.' 
+_citation.page_first                108274 
+_citation.page_last                 108274 
+_citation.title                     'An Alternative Binding Mode of IGHV3-53 Antibodies to the SARS-CoV-2 Receptor Binding Domain.' 
 _citation.year                      2020 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      10.1101/2020.07.26.222232 
-_citation.pdbx_database_id_PubMed   32743580 
+_citation.pdbx_database_id_DOI      10.1016/j.celrep.2020.108274 
+_citation.pdbx_database_id_PubMed   33027617 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -73,19 +75,19 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Wu, N.C.'        1  0000-0002-9078-6697 
-primary 'Yuan, M.'        2  0000-0001-9754-4503 
-primary 'Liu, H.'         3  0000-0002-2412-7853 
-primary 'Lee, C.D.'       4  0000-0002-5470-2484 
-primary 'Zhu, X.'         5  0000-0002-6021-3740 
-primary 'Bangaru, S.'     6  0000-0001-7994-4693 
-primary 'Torres, J.L.'    7  0000-0003-0137-8497 
-primary 'Caniels, T.G.'   8  0000-0001-9580-157X 
-primary 'Brouwer, P.J.M.' 9  0000-0002-2902-7739 
-primary 'van Gils, M.J.'  10 0000-0003-3422-8161 
-primary 'Sanders, R.W.'   11 0000-0002-2324-8573 
-primary 'Ward, A.B.'      12 0000-0001-7153-3769 
-primary 'Wilson, I.A.'    13 0000-0002-6469-2419 
+primary 'Wu, N.C.'        1  ? 
+primary 'Yuan, M.'        2  ? 
+primary 'Liu, H.'         3  ? 
+primary 'Lee, C.D.'       4  ? 
+primary 'Zhu, X.'         5  ? 
+primary 'Bangaru, S.'     6  ? 
+primary 'Torres, J.L.'    7  ? 
+primary 'Caniels, T.G.'   8  ? 
+primary 'Brouwer, P.J.M.' 9  ? 
+primary 'van Gils, M.J.'  10 ? 
+primary 'Sanders, R.W.'   11 ? 
+primary 'Ward, A.B.'      12 ? 
+primary 'Wilson, I.A.'    13 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1464,7 +1466,6 @@ _refine_ls_shell.pdbx_fsc_free
 _struct.entry_id                     7JMP 
 _struct.title                        
 'Crystal structure of SARS-CoV-2 receptor binding domain in complex with neutralizing antibody COVA2-39' 
-_struct.pdbx_descriptor              'Spike protein S1, COVA2-39 heavy chain, COVA2-39 light chain' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -13020,11 +13021,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-08-26 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-08-26 
+2 'Structure model' 1 1 2022-02-23 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -13033,6 +13037,37 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.journal_abbrev'            
+2  2 'Structure model' '_citation.journal_id_ISSN'           
+3  2 'Structure model' '_citation.journal_volume'            
+4  2 'Structure model' '_citation.page_first'                
+5  2 'Structure model' '_citation.page_last'                 
+6  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+7  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+8  2 'Structure model' '_citation.title'                     
+9  2 'Structure model' '_citation_author.identifier_ORCID'   
+10 2 'Structure model' '_database_2.pdbx_DOI'                
+11 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 _pdbx_refine_tls.id               1 
 _pdbx_refine_tls.pdbx_refine_id   'X-RAY DIFFRACTION' 
