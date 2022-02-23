@@ -230,6 +230,7 @@ def update_files(repo_path, taxo, pdb_protein_dict, c_rev_pdb_lst, df):
         # downloads the mtz data
         url = "https://edmaps.rcsb.org/coefficients/{}.mtz".format(pdb_id)
         r = requests.get(url)
+        print("download mtz: " + url)
         with open(id_path + os.sep +"{}.mtz".format(pdb_id, pdb_id), 'wb') as f:
             f.write(r.content)
 
@@ -237,6 +238,7 @@ def update_files(repo_path, taxo, pdb_protein_dict, c_rev_pdb_lst, df):
         # downloads from pdb
         url = "https://files.rcsb.org/download/{}.{}".format(pdb_id, format)
         r = requests.get(url)
+        print("download pdb: " + url)
         with open(id_path + os.sep +"{}.{}".format(pdb_id, format), 'wb') as f:
             f.write(r.content)
 
@@ -273,7 +275,6 @@ def update_files(repo_path, taxo, pdb_protein_dict, c_rev_pdb_lst, df):
     for pdb_id, protein_name in pdb_protein_dict.items():
         # create protein folder
         folder_path = os.path.join(repo_path, protein_name, taxo)
-        print("folder_path - ", folder_path)
         mk_dir(folder_path)
         # create pdb_id folder
         id_path = os.path.join(repo_path, protein_name, taxo, pdb_id)
