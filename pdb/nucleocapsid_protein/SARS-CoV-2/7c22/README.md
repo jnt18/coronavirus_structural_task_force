@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|----------------:|----------------:|
 ||  1.57|  0.00 %|0.9 %|0.70 %|
 
-**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/7c22/validation/auspex/7c22_auspex_comments.txt)  for results
+**Auspex Pathologies**<br> [ice rings](https://auspex.physnet.uni-hamburg.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/7c22/validation/auspex/7c22_auspex_comments.txt)  for results
 
  
 

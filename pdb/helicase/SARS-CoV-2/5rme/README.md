@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|----------------:|----------------:|
 ||  2.48|  1.49 %|2.2 %|0.53 %|
 
-**Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/helicase/SARS-CoV-2/5rme/validation/auspex/5rme_auspex_comments.txt)  for results
+**Auspex Pathologies**<br> [bad or missing beamstop mask](https://auspex.physnet.uni-hamburg.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/helicase/SARS-CoV-2/5rme/validation/auspex/5rme_auspex_comments.txt)  for results
 
  
 

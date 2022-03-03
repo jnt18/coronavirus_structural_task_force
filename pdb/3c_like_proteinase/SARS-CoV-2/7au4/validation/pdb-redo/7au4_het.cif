@@ -1,0 +1,295 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RY5      RY5 '.                                   ' .                  32  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RY5
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RY5           CL1    CL   CL        0.000     14.162   -0.304   23.265
+ RY5           C1     C    CR6       0.000     12.441   -0.376   22.998
+ RY5           C2     C    CR16      0.000     11.919   -1.475   22.348
+ RY5           H2     H    H         0.000     12.569   -2.275   22.014
+ RY5           C3     C    CR16      0.000     10.547   -1.543   22.127
+ RY5           H3     H    H         0.000     10.118   -2.386   21.600
+ RY5           C4     C    CR6       0.000      9.740   -0.521   22.588
+ RY5           C8     C    CT        0.000      8.256   -0.322   22.431
+ RY5           C7     C    CH2       0.000      7.923    0.806   23.432
+ RY5           H71    H    H         0.000      7.628    0.410   24.406
+ RY5           H72    H    H         0.000      7.138    1.464   23.055
+ RY5           C6     C    CH2       0.000      9.227    1.594   23.574
+ RY5           H61    H    H         0.000      9.391    1.946   24.595
+ RY5           H62    H    H         0.000      9.279    2.440   22.886
+ RY5           C5     C    CR6       0.000     10.281    0.591   23.215
+ RY5           C15    C    CR16      0.000     11.648    0.673   23.438
+ RY5           H15    H    H         0.000     12.082    1.529   23.940
+ RY5           N1     N    NRD5      0.000      7.396   -1.499   22.560
+ RY5           C9     C    CR5       0.000      6.693   -1.744   21.444
+ RY5           O1     O    O         0.000      5.847   -2.608   21.293
+ RY5           N2     N    NR5       0.000      7.121   -0.862   20.439
+ RY5           C14    C    CR5       0.000      8.014    0.050   20.940
+ RY5           O3     O    O         0.000      8.586    0.929   20.321
+ RY5           C10    C    CH2       0.000      6.810   -0.994   19.015
+ RY5           H101   H    H         0.000      6.152   -1.851   18.858
+ RY5           H102   H    H         0.000      7.732   -1.136   18.446
+ RY5           C11    C    C         0.000      6.126    0.253   18.556
+ RY5           N3     N    N         0.000      6.441    0.796   17.413
+ RY5           O2     O    O2        0.000      5.630    1.960   17.301
+ RY5           C13    C    C1        0.000      4.859    2.059   18.398
+ RY5           H13    H    H         0.000      4.140    2.835   18.598
+ RY5           C12    C    CSP       0.000      5.144    1.016   19.204
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RY5      CL1    n/a    C1     START
+ RY5      C1     CL1    C2     .
+ RY5      C2     C1     C3     .
+ RY5      H2     C2     .      .
+ RY5      C3     C2     C4     .
+ RY5      H3     C3     .      .
+ RY5      C4     C3     C8     .
+ RY5      C8     C4     N1     .
+ RY5      C7     C8     C6     .
+ RY5      H71    C7     .      .
+ RY5      H72    C7     .      .
+ RY5      C6     C7     C5     .
+ RY5      H61    C6     .      .
+ RY5      H62    C6     .      .
+ RY5      C5     C6     C15    .
+ RY5      C15    C5     H15    .
+ RY5      H15    C15    .      .
+ RY5      N1     C8     C9     .
+ RY5      C9     N1     N2     .
+ RY5      O1     C9     .      .
+ RY5      N2     C9     C10    .
+ RY5      C14    N2     O3     .
+ RY5      O3     C14    .      .
+ RY5      C10    N2     C11    .
+ RY5      H101   C10    .      .
+ RY5      H102   C10    .      .
+ RY5      C11    C10    N3     .
+ RY5      N3     C11    O2     .
+ RY5      O2     N3     C13    .
+ RY5      C13    O2     C12    .
+ RY5      H13    C13    .      .
+ RY5      C12    C13    .      END
+ RY5      C1     C15    .    ADD
+ RY5      C11    C12    .    ADD
+ RY5      C14    C8     .    ADD
+ RY5      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RY5      C1     C15       aromatic    1.390    0.020
+ RY5      C2     C1        aromatic    1.390    0.020
+ RY5      C1     CL1       single      1.795    0.020
+ RY5      C11    C10       single      1.510    0.020
+ RY5      C10    N2        single      1.462    0.020
+ RY5      C11    C12       aromatic    1.255    0.020
+ RY5      N3     C11       aromatic    1.330    0.020
+ RY5      C12    C13       double      1.255    0.020
+ RY5      C13    O2        single      1.454    0.020
+ RY5      C14    C8        single      1.500    0.020
+ RY5      C14    N2        single      1.337    0.020
+ RY5      O3     C14       double      1.350    0.020
+ RY5      C15    C5        aromatic    1.390    0.020
+ RY5      C3     C2        aromatic    1.390    0.020
+ RY5      C4     C3        aromatic    1.390    0.020
+ RY5      C4     C5        aromatic    1.384    0.020
+ RY5      C8     C4        single      1.500    0.020
+ RY5      C5     C6        single      1.511    0.020
+ RY5      C6     C7        single      1.524    0.020
+ RY5      C7     C8        single      1.524    0.020
+ RY5      N1     C8        single      1.464    0.020
+ RY5      C9     N1        aromatic    1.350    0.020
+ RY5      N2     C9        single      1.337    0.020
+ RY5      O1     C9        double      1.350    0.020
+ RY5      O2     N3        single      1.255    0.020
+ RY5      H101   C10       single      1.092    0.020
+ RY5      H102   C10       single      1.092    0.020
+ RY5      H13    C13       single      1.077    0.020
+ RY5      H15    C15       single      1.083    0.020
+ RY5      H2     C2        single      1.083    0.020
+ RY5      H3     C3        single      1.083    0.020
+ RY5      H61    C6        single      1.092    0.020
+ RY5      H62    C6        single      1.092    0.020
+ RY5      H71    C7        single      1.092    0.020
+ RY5      H72    C7        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RY5      CL1    C1     C2      120.000    3.000
+ RY5      CL1    C1     C15     120.000    3.000
+ RY5      C2     C1     C15     120.000    3.000
+ RY5      C1     C2     H2      120.000    3.000
+ RY5      C1     C2     C3      120.000    3.000
+ RY5      H2     C2     C3      120.000    3.000
+ RY5      C2     C3     H3      120.000    3.000
+ RY5      C2     C3     C4      120.000    3.000
+ RY5      H3     C3     C4      120.000    3.000
+ RY5      C3     C4     C8      120.000    3.000
+ RY5      C3     C4     C5      120.000    3.000
+ RY5      C8     C4     C5      120.000    3.000
+ RY5      C4     C8     C7      109.500    3.000
+ RY5      C4     C8     N1      109.500    3.000
+ RY5      C4     C8     C14     109.500    3.000
+ RY5      C7     C8     N1      109.500    3.000
+ RY5      C7     C8     C14     109.470    3.000
+ RY5      N1     C8     C14     109.500    3.000
+ RY5      C8     C7     H71     109.470    3.000
+ RY5      C8     C7     H72     109.470    3.000
+ RY5      C8     C7     C6      111.000    3.000
+ RY5      H71    C7     H72     107.900    3.000
+ RY5      H71    C7     C6      109.470    3.000
+ RY5      H72    C7     C6      109.470    3.000
+ RY5      C7     C6     H61     109.470    3.000
+ RY5      C7     C6     H62     109.470    3.000
+ RY5      C7     C6     C5      109.470    3.000
+ RY5      H61    C6     H62     107.900    3.000
+ RY5      H61    C6     C5      109.470    3.000
+ RY5      H62    C6     C5      109.470    3.000
+ RY5      C6     C5     C15     120.000    3.000
+ RY5      C6     C5     C4      120.000    3.000
+ RY5      C15    C5     C4      120.000    3.000
+ RY5      C5     C15    H15     120.000    3.000
+ RY5      C5     C15    C1      120.000    3.000
+ RY5      H15    C15    C1      120.000    3.000
+ RY5      C8     N1     C9      108.000    3.000
+ RY5      N1     C9     O1      108.000    3.000
+ RY5      N1     C9     N2      108.000    3.000
+ RY5      O1     C9     N2      108.000    3.000
+ RY5      C9     N2     C14     108.000    3.000
+ RY5      C9     N2     C10     126.000    3.000
+ RY5      C14    N2     C10     126.000    3.000
+ RY5      N2     C14    O3      108.000    3.000
+ RY5      N2     C14    C8      108.000    3.000
+ RY5      O3     C14    C8      108.000    3.000
+ RY5      N2     C10    H101    109.500    3.000
+ RY5      N2     C10    H102    109.500    3.000
+ RY5      N2     C10    C11     109.500    3.000
+ RY5      H101   C10    H102    107.900    3.000
+ RY5      H101   C10    C11     109.470    3.000
+ RY5      H102   C10    C11     109.470    3.000
+ RY5      C10    C11    N3      116.500    3.000
+ RY5      C10    C11    C12     120.000    3.000
+ RY5      N3     C11    C12     120.000    3.000
+ RY5      C11    N3     O2      120.000    3.000
+ RY5      N3     O2     C13     120.000    3.000
+ RY5      O2     C13    H13     120.000    3.000
+ RY5      O2     C13    C12     120.000    3.000
+ RY5      H13    C13    C12     120.000    3.000
+ RY5      C13    C12    C11     180.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RY5      CONST_1          CL1    C1     C15    C5                 0.000            0.000   0
+ RY5      CONST_2          CL1    C1     C2     C3                 0.000            0.000   0
+ RY5      CONST_3          C1     C2     C3     C4                 0.000            0.000   0
+ RY5      CONST_4          C2     C3     C4     C8                 0.000            0.000   0
+ RY5      CONST_5          C3     C4     C5     C6                 0.000            0.000   0
+ RY5      var_1            C3     C4     C8     N1                40.462           20.000   3
+ RY5      var_2            C4     C8     C7     C6                26.185           20.000   3
+ RY5      var_3            C8     C7     C6     C5               180.000           20.000   3
+ RY5      var_4            C7     C6     C5     C15                0.000           20.000   2
+ RY5      CONST_6          C6     C5     C15    C1                 0.000            0.000   0
+ RY5      CONST_7          C4     C8     N1     C9                 0.000            0.000   0
+ RY5      CONST_8          C8     N1     C9     N2                 0.000            0.000   0
+ RY5      CONST_9          N1     C9     N2     C10              166.261            0.000   0
+ RY5      CONST_10         C9     N2     C14    O3               178.510            0.000   0
+ RY5      CONST_11         N2     C14    C8     C4                 0.000            0.000   0
+ RY5      var_5            C9     N2     C10    C11              122.823           20.000   3
+ RY5      var_6            N2     C10    C11    N3               180.000           20.000   3
+ RY5      var_7            C10    C11    C12    C13              179.015           20.000   3
+ RY5      var_8            C10    C11    N3     O2               180.000           20.000   2
+ RY5      var_9            C11    N3     O2     C13                0.040           20.000   3
+ RY5      var_10           N3     O2     C13    C12                0.190           20.000   3
+ RY5      var_11           O2     C13    C12    C11               -0.337           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RY5      chir_01          C8     C14    C4     C7        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RY5      plan-1            C1        0.020
+ RY5      plan-1            C15       0.020
+ RY5      plan-1            C2        0.020
+ RY5      plan-1            CL1       0.020
+ RY5      plan-1            C3        0.020
+ RY5      plan-1            C4        0.020
+ RY5      plan-1            C5        0.020
+ RY5      plan-1            H15       0.020
+ RY5      plan-1            H2        0.020
+ RY5      plan-1            H3        0.020
+ RY5      plan-1            C8        0.020
+ RY5      plan-1            C6        0.020
+ RY5      plan-2            C11       0.020
+ RY5      plan-2            C10       0.020
+ RY5      plan-2            C12       0.020
+ RY5      plan-2            N3        0.020
+ RY5      plan-3            C13       0.020
+ RY5      plan-3            C12       0.020
+ RY5      plan-3            O2        0.020
+ RY5      plan-3            H13       0.020
+ RY5      plan-4            C14       0.020
+ RY5      plan-4            C8        0.020
+ RY5      plan-4            N2        0.020
+ RY5      plan-4            O3        0.020
+ RY5      plan-4            C9        0.020
+ RY5      plan-4            N1        0.020
+ RY5      plan-4            O1        0.020
+ RY5      plan-4            C10       0.020
+ RY5      plan-5            N3        0.020
+ RY5      plan-5            C11       0.020
+ RY5      plan-5            O2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

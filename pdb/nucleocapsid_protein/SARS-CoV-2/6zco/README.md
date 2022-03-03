@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|----------------:|----------------:|
 ||  1.03|  0.00 %|0.0 %|0.88 %|
 
-**Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6zco/validation/auspex/6zco_auspex_comments.txt)  for results
+**Auspex Pathologies**<br> [bad or missing beamstop mask](https://auspex.physnet.uni-hamburg.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6zco/validation/auspex/6zco_auspex_comments.txt)  for results
 
  
 

@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|----------------:|----------------:|
 ||  1.72|  0.00 %|2.0 %|0.99 %|
 
-**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7c8w/validation/auspex/7c8w_auspex_comments.txt)  for results
+**Auspex Pathologies**<br> [ice rings](https://auspex.physnet.uni-hamburg.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7c8w/validation/auspex/7c8w_auspex_comments.txt)  for results
 
  
 

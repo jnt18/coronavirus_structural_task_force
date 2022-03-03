@@ -4,7 +4,7 @@ data_7W92
 _entry.id   7W92
 #
 _audit_conform.dict_name       mmcif_pdbx.dic
-_audit_conform.dict_version    5.353
+_audit_conform.dict_version    5.354
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdb
 #
 loop_
@@ -58,16 +58,16 @@ _citation.journal_id_CSD            ?
 _citation.journal_id_ISSN           2041-1723
 _citation.journal_full              ?
 _citation.journal_issue             ?
-_citation.journal_volume            ?
+_citation.journal_volume            13
 _citation.language                  ?
-_citation.page_first                ?
-_citation.page_last                 ?
+_citation.page_first                871
+_citation.page_last                 871
 _citation.title
 'Structural basis for SARS-CoV-2 Delta variant recognition of ACE2 receptor and
 _citation.year                      2022
 _citation.database_id_CSD           ?
-_citation.pdbx_database_id_DOI      ?
-_citation.pdbx_database_id_PubMed   ?
+_citation.pdbx_database_id_DOI      10.1038/s41467-022-28528-w
+_citation.pdbx_database_id_PubMed   35169135
 _citation.pdbx_database_id_patent   ?
 _citation.unpublished_flag          ?
 #
@@ -76,8 +76,16 @@ _citation_author.citation_id
 _citation_author.name
 _citation_author.ordinal
 _citation_author.identifier_ORCID
-primary 'Cong, Y.'  1 0000-0002-7164-8694
-primary 'Liu, C.X.' 2 0000-0002-1954-0731
+primary 'Wang, Y.'  1  0000-0001-9966-682X
+primary 'Liu, C.'   2  ?
+primary 'Zhang, C.' 3  0000-0002-8658-9009
+primary 'Wang, Y.'  4  0000-0002-9523-0030
+primary 'Hong, Q.'  5  ?
+primary 'Xu, S.'    6  0000-0003-0345-2814
+primary 'Li, Z.'    7  ?
+primary 'Yang, Y.'  8  ?
+primary 'Huang, Z.' 9  0000-0002-2161-1359
+primary 'Cong, Y.'  10 0000-0002-7164-8694
 #
 _entity.id                         1
 _entity.type                       polymer
@@ -31466,11 +31474,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000
 _pdbx_struct_oper_list.vector[3]            0.0000000000
 #
-_pdbx_audit_revision_history.ordinal             1
-_pdbx_audit_revision_history.data_content_type   'Structure model'
-_pdbx_audit_revision_history.major_revision      1
-_pdbx_audit_revision_history.minor_revision      0
-_pdbx_audit_revision_history.revision_date       2022-01-12
+loop_
+_pdbx_audit_revision_history.ordinal
+_pdbx_audit_revision_history.data_content_type
+_pdbx_audit_revision_history.major_revision
+_pdbx_audit_revision_history.minor_revision
+_pdbx_audit_revision_history.revision_date
+1 'Structure model' 1 0 2022-01-12
+2 'Structure model' 1 1 2022-03-02
 #
 _pdbx_audit_revision_details.ordinal             1
 _pdbx_audit_revision_details.revision_ordinal    1
@@ -31479,6 +31490,31 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ?
 _pdbx_audit_revision_details.details             ?
+#
+_pdbx_audit_revision_group.ordinal             1
+_pdbx_audit_revision_group.revision_ordinal    2
+_pdbx_audit_revision_group.data_content_type   'Structure model'
+_pdbx_audit_revision_group.group               'Database references'
+#
+loop_
+_pdbx_audit_revision_category.ordinal
+_pdbx_audit_revision_category.revision_ordinal
+_pdbx_audit_revision_category.data_content_type
+_pdbx_audit_revision_category.category
+1 2 'Structure model' citation
+2 2 'Structure model' citation_author
+#
+loop_
+_pdbx_audit_revision_item.ordinal
+_pdbx_audit_revision_item.revision_ordinal
+_pdbx_audit_revision_item.data_content_type
+_pdbx_audit_revision_item.item
+1 2 'Structure model' '_citation.journal_volume'
+2 2 'Structure model' '_citation.page_first'
+3 2 'Structure model' '_citation.page_last'
+4 2 'Structure model' '_citation.pdbx_database_id_DOI'
+5 2 'Structure model' '_citation.pdbx_database_id_PubMed'
+6 2 'Structure model' '_citation.title'
 #
 _em_3d_fitting.entry_id          7W92
 _em_3d_fitting.id                1

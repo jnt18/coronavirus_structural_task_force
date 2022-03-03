@@ -1,0 +1,324 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+U7W      U7W '.                                   ' .                  37  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_U7W
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ U7W           O1     O    O         0.000      9.548    2.341   20.826
+ U7W           C9     C    C         0.000      9.567    1.192   21.246
+ U7W           C10    C    CH2       0.000      8.660    0.117   20.645
+ U7W           H101   H    H         0.000      7.997   -0.284   21.414
+ U7W           H102   H    H         0.000      9.265   -0.692   20.230
+ U7W           N2     N    NR5       0.000      7.877    0.717   19.599
+ U7W           N3     N    NRD5      0.000      8.295    0.644   18.311
+ U7W           N4     N    NRD5      0.000      7.455    1.302   17.567
+ U7W           C16    C    CR56      0.000      6.739    1.473   19.681
+ U7W           C11    C    CR56      0.000      6.467    1.823   18.369
+ U7W           C12    C    CR16      0.000      5.346    2.610   18.051
+ U7W           H12    H    H         0.000      5.127    2.902   17.032
+ U7W           C13    C    CR16      0.000      4.545    2.989   19.096
+ U7W           H13    H    H         0.000      3.672    3.596   18.895
+ U7W           C15    C    CR16      0.000      5.923    1.869   20.749
+ U7W           H15    H    H         0.000      6.148    1.603   21.775
+ U7W           C14    C    CR16      0.000      4.822    2.615   20.414
+ U7W           H14    H    H         0.000      4.143    2.925   21.199
+ U7W           N1     N    N         0.000     10.394    0.851   22.255
+ U7W           C8     C    CH2       0.000     10.610   -0.486   22.802
+ U7W           H81    H    H         0.000      9.779   -1.141   22.531
+ U7W           H82    H    H         0.000     10.693   -0.437   23.890
+ U7W           C7     C    CH2       0.000     11.905   -1.035   22.216
+ U7W           H72    H    H         0.000     11.767   -1.314   21.170
+ U7W           H71    H    H         0.000     12.247   -1.904   22.782
+ U7W           C2     C    CH1       0.000     11.290    1.899   22.748
+ U7W           H2     H    H         0.000     11.205    2.749   22.057
+ U7W           C1     C    CH3       0.000     10.894    2.404   24.135
+ U7W           H130   H    H         0.000      9.914    2.804   24.100
+ U7W           H120   H    H         0.000     10.922    1.601   24.826
+ U7W           H11    H    H         0.000     11.571    3.158   24.444
+ U7W           C3     C    C         0.000     12.672    1.361   22.616
+ U7W           C4     C    CSP       0.000     13.862    2.130   22.771
+ U7W           C6     C    C         0.000     12.923    0.058   22.313
+ U7W           S1     S    S2        0.000     14.616   -0.219   22.126
+ U7W           C5     C    C1        0.000     14.976    1.371   22.640
+ U7W           H5     H    H         0.000     15.973    1.728   22.837
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ U7W      O1     n/a    C9     START
+ U7W      C9     O1     N1     .
+ U7W      C10    C9     N2     .
+ U7W      H101   C10    .      .
+ U7W      H102   C10    .      .
+ U7W      N2     C10    C16    .
+ U7W      N3     N2     N4     .
+ U7W      N4     N3     .      .
+ U7W      C16    N2     C15    .
+ U7W      C11    C16    C12    .
+ U7W      C12    C11    C13    .
+ U7W      H12    C12    .      .
+ U7W      C13    C12    H13    .
+ U7W      H13    C13    .      .
+ U7W      C15    C16    C14    .
+ U7W      H15    C15    .      .
+ U7W      C14    C15    H14    .
+ U7W      H14    C14    .      .
+ U7W      N1     C9     C2     .
+ U7W      C8     N1     C7     .
+ U7W      H81    C8     .      .
+ U7W      H82    C8     .      .
+ U7W      C7     C8     H71    .
+ U7W      H72    C7     .      .
+ U7W      H71    C7     .      .
+ U7W      C2     N1     C3     .
+ U7W      H2     C2     .      .
+ U7W      C1     C2     H11    .
+ U7W      H130   C1     .      .
+ U7W      H120   C1     .      .
+ U7W      H11    C1     .      .
+ U7W      C3     C2     C6     .
+ U7W      C4     C3     .      .
+ U7W      C6     C3     S1     .
+ U7W      S1     C6     C5     .
+ U7W      C5     S1     H5     .
+ U7W      H5     C5     .      END
+ U7W      C4     C5     .    ADD
+ U7W      C14    C13    .    ADD
+ U7W      C6     C7     .    ADD
+ U7W      C11    N4     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ U7W      C4     C5        double      1.255    0.020
+ U7W      C4     C3        aromatic    1.255    0.020
+ U7W      C14    C13       aromatic    1.390    0.020
+ U7W      C14    C15       aromatic    1.390    0.020
+ U7W      C5     S1        single      1.665    0.020
+ U7W      C6     C7        single      1.510    0.020
+ U7W      C6     C3        aromatic    1.330    0.020
+ U7W      S1     C6        single      1.665    0.020
+ U7W      C12    C11       aromatic    1.390    0.020
+ U7W      C11    N4        aromatic    1.350    0.020
+ U7W      C11    C16       aromatic    1.390    0.020
+ U7W      C7     C8        single      1.524    0.020
+ U7W      C8     N1        single      1.455    0.020
+ U7W      C10    C9        single      1.510    0.020
+ U7W      N1     C9        single      1.330    0.020
+ U7W      C9     O1        double      1.220    0.020
+ U7W      N2     C10       single      1.462    0.020
+ U7W      C13    C12       aromatic    1.390    0.020
+ U7W      C2     N1        single      1.455    0.020
+ U7W      N3     N2        single      1.402    0.020
+ U7W      C16    N2        single      1.337    0.020
+ U7W      C3     C2        single      1.500    0.020
+ U7W      N4     N3        deloc       1.404    0.020
+ U7W      C1     C2        single      1.524    0.020
+ U7W      C15    C16       aromatic    1.390    0.020
+ U7W      H14    C14       single      1.083    0.020
+ U7W      H5     C5        single      1.077    0.020
+ U7W      H71    C7        single      1.092    0.020
+ U7W      H72    C7        single      1.092    0.020
+ U7W      H81    C8        single      1.092    0.020
+ U7W      H82    C8        single      1.092    0.020
+ U7W      H101   C10       single      1.092    0.020
+ U7W      H102   C10       single      1.092    0.020
+ U7W      H12    C12       single      1.083    0.020
+ U7W      H13    C13       single      1.083    0.020
+ U7W      H11    C1        single      1.059    0.020
+ U7W      H120   C1        single      1.059    0.020
+ U7W      H130   C1        single      1.059    0.020
+ U7W      H2     C2        single      1.099    0.020
+ U7W      H15    C15       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ U7W      O1     C9     C10     120.500    3.000
+ U7W      O1     C9     N1      123.000    3.000
+ U7W      C10    C9     N1      116.500    3.000
+ U7W      C9     C10    H101    109.470    3.000
+ U7W      C9     C10    H102    109.470    3.000
+ U7W      C9     C10    N2      109.500    3.000
+ U7W      H101   C10    H102    107.900    3.000
+ U7W      H101   C10    N2      109.500    3.000
+ U7W      H102   C10    N2      109.500    3.000
+ U7W      C10    N2     N3      108.000    3.000
+ U7W      C10    N2     C16     126.000    3.000
+ U7W      N3     N2     C16     108.000    3.000
+ U7W      N2     N3     N4      108.000    3.000
+ U7W      N3     N4     C11     108.000    3.000
+ U7W      N2     C16    C11     108.000    3.000
+ U7W      N2     C16    C15     132.000    3.000
+ U7W      C11    C16    C15     120.000    3.000
+ U7W      C16    C11    C12     120.000    3.000
+ U7W      C16    C11    N4      108.000    3.000
+ U7W      C12    C11    N4      132.000    3.000
+ U7W      C11    C12    H12     120.000    3.000
+ U7W      C11    C12    C13     120.000    3.000
+ U7W      H12    C12    C13     120.000    3.000
+ U7W      C12    C13    H13     120.000    3.000
+ U7W      C12    C13    C14     120.000    3.000
+ U7W      H13    C13    C14     120.000    3.000
+ U7W      C16    C15    H15     120.000    3.000
+ U7W      C16    C15    C14     120.000    3.000
+ U7W      H15    C15    C14     120.000    3.000
+ U7W      C15    C14    H14     120.000    3.000
+ U7W      C15    C14    C13     120.000    3.000
+ U7W      H14    C14    C13     120.000    3.000
+ U7W      C9     N1     C8      127.000    3.000
+ U7W      C9     N1     C2      121.000    3.000
+ U7W      C8     N1     C2      112.000    3.000
+ U7W      N1     C8     H81     109.470    3.000
+ U7W      N1     C8     H82     109.470    3.000
+ U7W      N1     C8     C7      105.000    3.000
+ U7W      H81    C8     H82     107.900    3.000
+ U7W      H81    C8     C7      109.470    3.000
+ U7W      H82    C8     C7      109.470    3.000
+ U7W      C8     C7     H72     109.470    3.000
+ U7W      C8     C7     H71     109.470    3.000
+ U7W      C8     C7     C6      109.470    3.000
+ U7W      H72    C7     H71     107.900    3.000
+ U7W      H72    C7     C6      109.470    3.000
+ U7W      H71    C7     C6      109.470    3.000
+ U7W      N1     C2     H2      109.470    3.000
+ U7W      N1     C2     C1      109.500    3.000
+ U7W      N1     C2     C3      111.600    3.000
+ U7W      H2     C2     C1      108.340    3.000
+ U7W      H2     C2     C3      108.810    3.000
+ U7W      C1     C2     C3      109.470    3.000
+ U7W      C2     C1     H130    109.470    3.000
+ U7W      C2     C1     H120    109.470    3.000
+ U7W      C2     C1     H11     109.470    3.000
+ U7W      H130   C1     H120    109.470    3.000
+ U7W      H130   C1     H11     109.470    3.000
+ U7W      H120   C1     H11     109.470    3.000
+ U7W      C2     C3     C4      120.000    3.000
+ U7W      C2     C3     C6      120.000    3.000
+ U7W      C4     C3     C6      120.000    3.000
+ U7W      C3     C4     C5      180.000    3.000
+ U7W      C3     C6     S1      120.000    3.000
+ U7W      C3     C6     C7      120.000    3.000
+ U7W      S1     C6     C7      120.000    3.000
+ U7W      C6     S1     C5       91.418    3.000
+ U7W      S1     C5     H5      120.000    3.000
+ U7W      S1     C5     C4      120.000    3.000
+ U7W      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ U7W      var_1            O1     C9     C10    N2               180.000           20.000   3
+ U7W      var_2            C9     C10    N2     C16              -80.486           20.000   3
+ U7W      CONST_1          C10    N2     N3     N4              -177.414            0.000   0
+ U7W      CONST_2          N2     N3     N4     C11                0.161            0.000   0
+ U7W      CONST_3          C10    N2     C16    C15              180.000            0.000   0
+ U7W      CONST_4          N2     C16    C11    C12              180.000            0.000   0
+ U7W      CONST_5          C16    C11    N4     N3               180.000            0.000   0
+ U7W      CONST_6          C16    C11    C12    C13              180.000            0.000   0
+ U7W      CONST_7          C11    C12    C13    C14                0.000            0.000   0
+ U7W      CONST_8          N2     C16    C15    C14              180.000            0.000   0
+ U7W      CONST_9          C16    C15    C14    C13                0.000            0.000   0
+ U7W      CONST_10         C15    C14    C13    C12                0.000            0.000   0
+ U7W      var_3            O1     C9     N1     C2               180.000           20.000   2
+ U7W      var_4            C9     N1     C8     C7               100.363           20.000   3
+ U7W      var_5            N1     C8     C7     C6               180.000           20.000   3
+ U7W      var_6            C9     N1     C2     C3                 0.000           20.000   3
+ U7W      var_7            N1     C2     C1     H11              180.000           20.000   3
+ U7W      var_8            N1     C2     C3     C6               180.000           20.000   3
+ U7W      var_9            C2     C3     C4     C5               177.935           20.000   3
+ U7W      var_10           C3     C4     C5     S1                 7.625           20.000   3
+ U7W      var_11           C2     C3     C6     S1               176.055           20.000   3
+ U7W      var_12           C3     C6     C7     C8               180.000           20.000   3
+ U7W      var_13           C3     C6     S1     C5                 6.354           20.000   3
+ U7W      var_14           C6     S1     C5     C4                -8.058           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ U7W      chir_01          C2     N1     C3     C1        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ U7W      plan-1            C14       0.020
+ U7W      plan-1            C13       0.020
+ U7W      plan-1            C15       0.020
+ U7W      plan-1            H14       0.020
+ U7W      plan-1            C12       0.020
+ U7W      plan-1            C11       0.020
+ U7W      plan-1            H12       0.020
+ U7W      plan-1            H13       0.020
+ U7W      plan-1            C16       0.020
+ U7W      plan-1            H15       0.020
+ U7W      plan-1            N2        0.020
+ U7W      plan-1            N3        0.020
+ U7W      plan-1            N4        0.020
+ U7W      plan-1            C10       0.020
+ U7W      plan-2            C5        0.020
+ U7W      plan-2            C4        0.020
+ U7W      plan-2            S1        0.020
+ U7W      plan-2            H5        0.020
+ U7W      plan-3            C6        0.020
+ U7W      plan-3            C7        0.020
+ U7W      plan-3            C3        0.020
+ U7W      plan-3            S1        0.020
+ U7W      plan-4            C9        0.020
+ U7W      plan-4            C10       0.020
+ U7W      plan-4            N1        0.020
+ U7W      plan-4            O1        0.020
+ U7W      plan-5            N1        0.020
+ U7W      plan-5            C8        0.020
+ U7W      plan-5            C9        0.020
+ U7W      plan-5            C2        0.020
+ U7W      plan-6            C3        0.020
+ U7W      plan-6            C4        0.020
+ U7W      plan-6            C6        0.020
+ U7W      plan-6            C2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

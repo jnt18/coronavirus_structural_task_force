@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|----------------:|----------------:|
 ||  1.31|  0.00 %|0.9 %|0.94 %|
 
-**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ce0/validation/auspex/7ce0_auspex_comments.txt)  for results
+**Auspex Pathologies**<br> [ice rings](https://auspex.physnet.uni-hamburg.de/pathol/#1), [bad or missing beamstop mask](https://auspex.physnet.uni-hamburg.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ce0/validation/auspex/7ce0_auspex_comments.txt)  for results
 
  
 

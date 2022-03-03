@@ -1,0 +1,352 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+V18      V18 '.                                   ' .                  42  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_V18
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ V18           O2     O    O         0.000      9.540    1.784   20.744
+ V18           C10    C    CR5       0.000      8.914    0.903   21.302
+ V18           C2     C    CT        0.000      9.446    0.028   22.390
+ V18           C9     C    CH2       0.000     10.821   -0.620   22.096
+ V18           H92    H    H         0.000     11.432   -0.195   21.297
+ V18           H91    H    H         0.000     10.882   -1.710   22.059
+ V18           C3     C    CH2       0.000     10.076    0.752   23.609
+ V18           H31    H    H         0.000      9.632    0.589   24.593
+ V18           H32    H    H         0.000     10.346    1.805   23.502
+ V18           C4     C    CH1       0.000     11.338   -0.121   23.462
+ V18           H4     H    H         0.000     11.315   -0.940   24.194
+ V18           C5     C    CH1       0.000     12.732    0.548   23.463
+ V18           H5     H    H         0.000     12.669    1.582   23.095
+ V18           C8     C    CH2       0.000     13.535    0.484   24.765
+ V18           H81    H    H         0.000     13.037    0.132   25.671
+ V18           H82    H    H         0.000     14.195    1.318   25.015
+ V18           C7     C    CH2       0.000     14.361   -0.660   24.156
+ V18           H71    H    H         0.000     14.045   -1.690   24.334
+ V18           H72    H    H         0.000     15.451   -0.603   24.200
+ V18           C6     C    CH2       0.000     13.879   -0.207   22.771
+ V18           H62    H    H         0.000     13.466   -0.954   22.090
+ V18           H61    H    H         0.000     14.493    0.499   22.207
+ V18           N1     N    NRD5      0.000      8.295   -0.837   22.577
+ V18           C1     C    CR5       0.000      7.281   -0.597   21.698
+ V18           O1     O    O         0.000      6.292   -1.275   21.521
+ V18           N2     N    NR5       0.000      7.586    0.582   21.013
+ V18           C11    C    CR6       0.000      6.853    1.132   19.905
+ V18           C19    C    CR66      0.000      5.725    1.979   20.143
+ V18           C18    C    CR16      0.000      5.249    2.310   21.432
+ V18           H18    H    H         0.000      5.755    1.926   22.309
+ V18           C17    C    CR16      0.000      4.153    3.113   21.576
+ V18           H17    H    H         0.000      3.790    3.352   22.568
+ V18           C16    C    CR16      0.000      3.493    3.632   20.448
+ V18           H16    H    H         0.000      2.630    4.273   20.580
+ V18           C15    C    CR16      0.000      3.929    3.336   19.190
+ V18           H15    H    H         0.000      3.412    3.741   18.329
+ V18           C14    C    CR66      0.000      5.053    2.502   19.009
+ V18           C13    C    CR16      0.000      5.565    2.146   17.738
+ V18           H13    H    H         0.000      5.063    2.546   16.866
+ V18           N3     N    NRD6      0.000      6.608    1.364   17.537
+ V18           C12    C    CR16      0.000      7.253    0.866   18.598
+ V18           H12    H    H         0.000      8.117    0.234   18.435
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ V18      O2     n/a    C10    START
+ V18      C10    O2     C2     .
+ V18      C2     C10    N1     .
+ V18      C9     C2     H91    .
+ V18      H92    C9     .      .
+ V18      H91    C9     .      .
+ V18      C3     C2     C4     .
+ V18      H31    C3     .      .
+ V18      H32    C3     .      .
+ V18      C4     C3     C5     .
+ V18      H4     C4     .      .
+ V18      C5     C4     C8     .
+ V18      H5     C5     .      .
+ V18      C8     C5     C7     .
+ V18      H81    C8     .      .
+ V18      H82    C8     .      .
+ V18      C7     C8     C6     .
+ V18      H71    C7     .      .
+ V18      H72    C7     .      .
+ V18      C6     C7     H61    .
+ V18      H62    C6     .      .
+ V18      H61    C6     .      .
+ V18      N1     C2     C1     .
+ V18      C1     N1     N2     .
+ V18      O1     C1     .      .
+ V18      N2     C1     C11    .
+ V18      C11    N2     C19    .
+ V18      C19    C11    C14    .
+ V18      C18    C19    C17    .
+ V18      H18    C18    .      .
+ V18      C17    C18    C16    .
+ V18      H17    C17    .      .
+ V18      C16    C17    C15    .
+ V18      H16    C16    .      .
+ V18      C15    C16    H15    .
+ V18      H15    C15    .      .
+ V18      C14    C19    C13    .
+ V18      C13    C14    N3     .
+ V18      H13    C13    .      .
+ V18      N3     C13    C12    .
+ V18      C12    N3     H12    .
+ V18      H12    C12    .      END
+ V18      C4     C9     .    ADD
+ V18      C14    C15    .    ADD
+ V18      C5     C6     .    ADD
+ V18      C11    C12    .    ADD
+ V18      C10    N2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ V18      C5     C4        single      1.524    0.020
+ V18      C4     C9        single      1.524    0.020
+ V18      C4     C3        single      1.524    0.020
+ V18      C13    C14       aromatic    1.390    0.020
+ V18      C14    C15       aromatic    1.390    0.020
+ V18      C14    C19       aromatic    1.390    0.020
+ V18      C5     C6        single      1.524    0.020
+ V18      C8     C5        single      1.524    0.020
+ V18      C6     C7        single      1.524    0.020
+ V18      C11    C12       aromatic    1.390    0.020
+ V18      C11    N2        single      1.337    0.020
+ V18      C19    C11       aromatic    1.390    0.020
+ V18      C7     C8        single      1.524    0.020
+ V18      C9     C2        single      1.524    0.020
+ V18      C10    N2        single      1.337    0.020
+ V18      C2     C10       single      1.500    0.020
+ V18      C10    O2        double      1.350    0.020
+ V18      C12    N3        aromatic    1.337    0.020
+ V18      N3     C13       deloc       1.337    0.020
+ V18      C1     N1        aromatic    1.350    0.020
+ V18      N1     C2        single      1.464    0.020
+ V18      N2     C1        single      1.337    0.020
+ V18      C3     C2        single      1.524    0.020
+ V18      O1     C1        double      1.350    0.020
+ V18      C15    C16       aromatic    1.390    0.020
+ V18      C16    C17       aromatic    1.390    0.020
+ V18      C17    C18       aromatic    1.390    0.020
+ V18      C18    C19       aromatic    1.390    0.020
+ V18      H4     C4        single      1.099    0.020
+ V18      H5     C5        single      1.099    0.020
+ V18      H61    C6        single      1.092    0.020
+ V18      H62    C6        single      1.092    0.020
+ V18      H71    C7        single      1.092    0.020
+ V18      H72    C7        single      1.092    0.020
+ V18      H81    C8        single      1.092    0.020
+ V18      H82    C8        single      1.092    0.020
+ V18      H91    C9        single      1.092    0.020
+ V18      H92    C9        single      1.092    0.020
+ V18      H12    C12       single      1.083    0.020
+ V18      H13    C13       single      1.083    0.020
+ V18      H31    C3        single      1.092    0.020
+ V18      H32    C3        single      1.092    0.020
+ V18      H15    C15       single      1.083    0.020
+ V18      H16    C16       single      1.083    0.020
+ V18      H17    C17       single      1.083    0.020
+ V18      H18    C18       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ V18      O2     C10    C2      108.000    3.000
+ V18      O2     C10    N2      108.000    3.000
+ V18      C2     C10    N2      108.000    3.000
+ V18      C10    C2     C9      109.470    3.000
+ V18      C10    C2     C3      109.470    3.000
+ V18      C10    C2     N1      109.500    3.000
+ V18      C9     C2     C3      111.000    3.000
+ V18      C9     C2     N1      109.500    3.000
+ V18      C3     C2     N1      109.500    3.000
+ V18      C2     C9     H92     109.470    3.000
+ V18      C2     C9     H91     109.470    3.000
+ V18      C2     C9     C4      111.000    3.000
+ V18      H92    C9     H91     107.900    3.000
+ V18      H92    C9     C4      109.470    3.000
+ V18      H91    C9     C4      109.470    3.000
+ V18      C2     C3     H31     109.470    3.000
+ V18      C2     C3     H32     109.470    3.000
+ V18      C2     C3     C4      111.000    3.000
+ V18      H31    C3     H32     107.900    3.000
+ V18      H31    C3     C4      109.470    3.000
+ V18      H32    C3     C4      109.470    3.000
+ V18      C3     C4     H4      108.340    3.000
+ V18      C3     C4     C5      111.000    3.000
+ V18      C3     C4     C9      109.470    3.000
+ V18      H4     C4     C5      108.340    3.000
+ V18      H4     C4     C9      108.340    3.000
+ V18      C5     C4     C9      111.000    3.000
+ V18      C4     C5     H5      108.340    3.000
+ V18      C4     C5     C8      111.000    3.000
+ V18      C4     C5     C6      111.000    3.000
+ V18      H5     C5     C8      108.340    3.000
+ V18      H5     C5     C6      108.340    3.000
+ V18      C8     C5     C6      109.470    3.000
+ V18      C5     C8     H81     109.470    3.000
+ V18      C5     C8     H82     109.470    3.000
+ V18      C5     C8     C7      111.000    3.000
+ V18      H81    C8     H82     107.900    3.000
+ V18      H81    C8     C7      109.470    3.000
+ V18      H82    C8     C7      109.470    3.000
+ V18      C8     C7     H71     109.470    3.000
+ V18      C8     C7     H72     109.470    3.000
+ V18      C8     C7     C6      111.000    3.000
+ V18      H71    C7     H72     107.900    3.000
+ V18      H71    C7     C6      109.470    3.000
+ V18      H72    C7     C6      109.470    3.000
+ V18      C7     C6     H62     109.470    3.000
+ V18      C7     C6     H61     109.470    3.000
+ V18      C7     C6     C5      111.000    3.000
+ V18      H62    C6     H61     107.900    3.000
+ V18      H62    C6     C5      109.470    3.000
+ V18      H61    C6     C5      109.470    3.000
+ V18      C2     N1     C1      108.000    3.000
+ V18      N1     C1     O1      108.000    3.000
+ V18      N1     C1     N2      108.000    3.000
+ V18      O1     C1     N2      108.000    3.000
+ V18      C1     N2     C11     108.000    3.000
+ V18      C1     N2     C10     108.000    3.000
+ V18      C11    N2     C10     108.000    3.000
+ V18      N2     C11    C19     120.000    3.000
+ V18      N2     C11    C12     132.000    3.000
+ V18      C19    C11    C12     120.000    3.000
+ V18      C11    C19    C18     120.000    3.000
+ V18      C11    C19    C14     120.000    3.000
+ V18      C18    C19    C14     120.000    3.000
+ V18      C19    C18    H18     120.000    3.000
+ V18      C19    C18    C17     120.000    3.000
+ V18      H18    C18    C17     120.000    3.000
+ V18      C18    C17    H17     120.000    3.000
+ V18      C18    C17    C16     120.000    3.000
+ V18      H17    C17    C16     120.000    3.000
+ V18      C17    C16    H16     120.000    3.000
+ V18      C17    C16    C15     120.000    3.000
+ V18      H16    C16    C15     120.000    3.000
+ V18      C16    C15    H15     120.000    3.000
+ V18      C16    C15    C14     120.000    3.000
+ V18      H15    C15    C14     120.000    3.000
+ V18      C19    C14    C13     120.000    3.000
+ V18      C19    C14    C15     120.000    3.000
+ V18      C13    C14    C15     120.000    3.000
+ V18      C14    C13    H13     120.000    3.000
+ V18      C14    C13    N3      120.000    3.000
+ V18      H13    C13    N3      120.000    3.000
+ V18      C13    N3     C12     120.000    3.000
+ V18      N3     C12    H12     120.000    3.000
+ V18      N3     C12    C11     120.000    3.000
+ V18      H12    C12    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ V18      CONST_1          O2     C10    N2     C1               171.070            0.000   0
+ V18      CONST_2          O2     C10    C2     N1              -176.918            0.000   0
+ V18      var_1            C10    C2     C9     C4               129.546           20.000   3
+ V18      var_2            C10    C2     C3     C4              -128.399           20.000   3
+ V18      var_3            C2     C3     C4     C5               180.000           20.000   3
+ V18      var_4            C3     C4     C9     C2               180.000           20.000   3
+ V18      var_5            C3     C4     C5     C8               180.000           20.000   3
+ V18      var_6            C4     C5     C6     C7               180.000           20.000   3
+ V18      var_7            C4     C5     C8     C7               180.000           20.000   3
+ V18      var_8            C5     C8     C7     C6               180.000           20.000   3
+ V18      var_9            C8     C7     C6     C5               180.000           20.000   3
+ V18      CONST_3          C10    C2     N1     C1                 3.795            0.000   0
+ V18      CONST_4          C2     N1     C1     N2                 0.000            0.000   0
+ V18      CONST_5          N1     C1     N2     C11              173.545            0.000   0
+ V18      var_10           C1     N2     C11    C19               85.995           20.000   3
+ V18      CONST_6          N2     C11    C12    N3                 0.000            0.000   0
+ V18      CONST_7          N2     C11    C19    C14              180.000            0.000   0
+ V18      CONST_8          C11    C19    C18    C17              180.000            0.000   0
+ V18      CONST_9          C19    C18    C17    C16                0.000            0.000   0
+ V18      CONST_10         C18    C17    C16    C15                0.000            0.000   0
+ V18      CONST_11         C17    C16    C15    C14                0.000            0.000   0
+ V18      CONST_12         C11    C19    C14    C13               -0.424            0.000   0
+ V18      CONST_13         C19    C14    C15    C16              180.000            0.000   0
+ V18      CONST_14         C19    C14    C13    N3               180.000            0.000   0
+ V18      CONST_15         C14    C13    N3     C12                0.000            0.000   0
+ V18      CONST_16         C13    N3     C12    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ V18      chir_01          C4     C5     C9     C3        positiv
+ V18      chir_02          C5     C4     C6     C8        positiv
+ V18      chir_03          C2     C9     C10    N1        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ V18      plan-1            C14       0.020
+ V18      plan-1            C13       0.020
+ V18      plan-1            C15       0.020
+ V18      plan-1            C19       0.020
+ V18      plan-1            C16       0.020
+ V18      plan-1            C17       0.020
+ V18      plan-1            C18       0.020
+ V18      plan-1            N3        0.020
+ V18      plan-1            H13       0.020
+ V18      plan-1            C12       0.020
+ V18      plan-1            H15       0.020
+ V18      plan-1            H16       0.020
+ V18      plan-1            H17       0.020
+ V18      plan-1            H18       0.020
+ V18      plan-1            C11       0.020
+ V18      plan-1            N2        0.020
+ V18      plan-1            H12       0.020
+ V18      plan-2            C10       0.020
+ V18      plan-2            N2        0.020
+ V18      plan-2            C2        0.020
+ V18      plan-2            O2        0.020
+ V18      plan-2            N1        0.020
+ V18      plan-2            C1        0.020
+ V18      plan-2            C11       0.020
+ V18      plan-2            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,311 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+SQ5      SQ5 '.                                   ' .                  38  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_SQ5
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ SQ5           O2     O    O         0.000     -1.545   -2.033   14.620
+ SQ5           C10    C    CR5       0.000     -2.005   -1.080   15.203
+ SQ5           C2     C    CH1       0.000     -3.040   -0.109   14.659
+ SQ5           H2     H    H         0.000     -4.004   -0.596   14.459
+ SQ5           N1     N    NRD5      0.000     -3.123    0.857   15.749
+ SQ5           C1     C    CR5       0.000     -2.389    0.509   16.810
+ SQ5           O1     O    O         0.000     -2.306    1.115   17.854
+ SQ5           N2     N    NR5       0.000     -1.714   -0.702   16.511
+ SQ5           C11    C    CR6       0.000     -0.842   -1.411   17.407
+ SQ5           C12    C    CR16      0.000      0.538   -1.344   17.238
+ SQ5           H12    H    H         0.000      0.935   -0.751   16.424
+ SQ5           N3     N    NRD6      0.000      1.390   -1.983   18.041
+ SQ5           C13    C    CR16      0.000      0.901   -2.723   19.035
+ SQ5           H13    H    H         0.000      1.583   -3.255   19.687
+ SQ5           C15    C    CR16      0.000     -1.350   -2.177   18.438
+ SQ5           H15    H    H         0.000     -2.417   -2.263   18.600
+ SQ5           C14    C    CR6       0.000     -0.454   -2.824   19.249
+ SQ5           F1     F    F         0.000     -0.912   -3.594   20.275
+ SQ5           C3     C    CH2       0.000     -2.466    0.569   13.422
+ SQ5           H31    H    H         0.000     -1.386    0.660   13.551
+ SQ5           H32    H    H         0.000     -2.907    1.565   13.342
+ SQ5           C4     C    CH1       0.000     -2.764   -0.225   12.153
+ SQ5           H4     H    H         0.000     -2.280   -1.208   12.240
+ SQ5           C9     C    CH2       0.000     -4.270   -0.445   12.000
+ SQ5           H91    H    H         0.000     -4.758    0.528   12.083
+ SQ5           H92    H    H         0.000     -4.598   -1.086   12.821
+ SQ5           C8     C    CH2       0.000     -4.643   -1.091   10.669
+ SQ5           H81    H    H         0.000     -5.731   -1.150   10.598
+ SQ5           H82    H    H         0.000     -4.223   -2.098   10.635
+ SQ5           C7     C    CH2       0.000     -4.103   -0.278    9.512
+ SQ5           H71    H    H         0.000     -4.539    0.723    9.540
+ SQ5           H72    H    H         0.000     -4.373   -0.764    8.572
+ SQ5           C6     C    CH2       0.000     -2.595   -0.178    9.617
+ SQ5           H61    H    H         0.000     -2.223    0.413    8.778
+ SQ5           H62    H    H         0.000     -2.172   -1.183    9.568
+ SQ5           C5     C    CH2       0.000     -2.187    0.485   10.930
+ SQ5           H52    H    H         0.000     -2.541    1.518   10.906
+ SQ5           H51    H    H         0.000     -1.097    0.476   10.983
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ SQ5      O2     n/a    C10    START
+ SQ5      C10    O2     C2     .
+ SQ5      C2     C10    C3     .
+ SQ5      H2     C2     .      .
+ SQ5      N1     C2     C1     .
+ SQ5      C1     N1     N2     .
+ SQ5      O1     C1     .      .
+ SQ5      N2     C1     C11    .
+ SQ5      C11    N2     C15    .
+ SQ5      C12    C11    N3     .
+ SQ5      H12    C12    .      .
+ SQ5      N3     C12    C13    .
+ SQ5      C13    N3     H13    .
+ SQ5      H13    C13    .      .
+ SQ5      C15    C11    C14    .
+ SQ5      H15    C15    .      .
+ SQ5      C14    C15    F1     .
+ SQ5      F1     C14    .      .
+ SQ5      C3     C2     C4     .
+ SQ5      H31    C3     .      .
+ SQ5      H32    C3     .      .
+ SQ5      C4     C3     C9     .
+ SQ5      H4     C4     .      .
+ SQ5      C9     C4     C8     .
+ SQ5      H91    C9     .      .
+ SQ5      H92    C9     .      .
+ SQ5      C8     C9     C7     .
+ SQ5      H81    C8     .      .
+ SQ5      H82    C8     .      .
+ SQ5      C7     C8     C6     .
+ SQ5      H71    C7     .      .
+ SQ5      H72    C7     .      .
+ SQ5      C6     C7     C5     .
+ SQ5      H61    C6     .      .
+ SQ5      H62    C6     .      .
+ SQ5      C5     C6     H51    .
+ SQ5      H52    C5     .      .
+ SQ5      H51    C5     .      END
+ SQ5      C4     C5     .    ADD
+ SQ5      C14    C13    .    ADD
+ SQ5      C10    N2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ SQ5      C4     C5        single      1.524    0.020
+ SQ5      C9     C4        single      1.524    0.020
+ SQ5      C4     C3        single      1.524    0.020
+ SQ5      C14    C13       aromatic    1.390    0.020
+ SQ5      C14    C15       aromatic    1.390    0.020
+ SQ5      F1     C14       single      1.345    0.020
+ SQ5      C5     C6        single      1.524    0.020
+ SQ5      C6     C7        single      1.524    0.020
+ SQ5      C12    C11       aromatic    1.390    0.020
+ SQ5      C11    N2        single      1.337    0.020
+ SQ5      C15    C11       aromatic    1.390    0.020
+ SQ5      C7     C8        single      1.524    0.020
+ SQ5      C8     C9        single      1.524    0.020
+ SQ5      C10    N2        single      1.337    0.020
+ SQ5      C2     C10       single      1.480    0.020
+ SQ5      C10    O2        double      1.350    0.020
+ SQ5      N3     C12       aromatic    1.337    0.020
+ SQ5      C13    N3        deloc       1.337    0.020
+ SQ5      C1     N1        aromatic    1.350    0.020
+ SQ5      N1     C2        single      1.467    0.020
+ SQ5      N2     C1        single      1.337    0.020
+ SQ5      C3     C2        single      1.524    0.020
+ SQ5      O1     C1        double      1.350    0.020
+ SQ5      H4     C4        single      1.099    0.020
+ SQ5      H51    C5        single      1.092    0.020
+ SQ5      H52    C5        single      1.092    0.020
+ SQ5      H61    C6        single      1.092    0.020
+ SQ5      H62    C6        single      1.092    0.020
+ SQ5      H71    C7        single      1.092    0.020
+ SQ5      H72    C7        single      1.092    0.020
+ SQ5      H81    C8        single      1.092    0.020
+ SQ5      H82    C8        single      1.092    0.020
+ SQ5      H91    C9        single      1.092    0.020
+ SQ5      H92    C9        single      1.092    0.020
+ SQ5      H12    C12       single      1.083    0.020
+ SQ5      H13    C13       single      1.083    0.020
+ SQ5      H31    C3        single      1.092    0.020
+ SQ5      H32    C3        single      1.092    0.020
+ SQ5      H15    C15       single      1.083    0.020
+ SQ5      H2     C2        single      1.099    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ SQ5      O2     C10    C2      108.000    3.000
+ SQ5      O2     C10    N2      108.000    3.000
+ SQ5      C2     C10    N2      126.000    3.000
+ SQ5      C10    C2     H2      109.470    3.000
+ SQ5      C10    C2     N1      109.500    3.000
+ SQ5      C10    C2     C3      109.470    3.000
+ SQ5      H2     C2     N1      109.500    3.000
+ SQ5      H2     C2     C3      108.340    3.000
+ SQ5      N1     C2     C3      109.500    3.000
+ SQ5      C2     N1     C1      108.000    3.000
+ SQ5      N1     C1     O1      108.000    3.000
+ SQ5      N1     C1     N2      108.000    3.000
+ SQ5      O1     C1     N2      108.000    3.000
+ SQ5      C1     N2     C11     108.000    3.000
+ SQ5      C1     N2     C10     108.000    3.000
+ SQ5      C11    N2     C10     108.000    3.000
+ SQ5      N2     C11    C12     132.000    3.000
+ SQ5      N2     C11    C15     132.000    3.000
+ SQ5      C12    C11    C15     120.000    3.000
+ SQ5      C11    C12    H12     120.000    3.000
+ SQ5      C11    C12    N3      120.000    3.000
+ SQ5      H12    C12    N3      120.000    3.000
+ SQ5      C12    N3     C13     120.000    3.000
+ SQ5      N3     C13    H13     120.000    3.000
+ SQ5      N3     C13    C14     120.000    3.000
+ SQ5      H13    C13    C14     120.000    3.000
+ SQ5      C11    C15    H15     120.000    3.000
+ SQ5      C11    C15    C14     120.000    3.000
+ SQ5      H15    C15    C14     120.000    3.000
+ SQ5      C15    C14    F1      120.000    3.000
+ SQ5      C15    C14    C13     120.000    3.000
+ SQ5      F1     C14    C13     120.000    3.000
+ SQ5      C2     C3     H31     109.470    3.000
+ SQ5      C2     C3     H32     109.470    3.000
+ SQ5      C2     C3     C4      111.000    3.000
+ SQ5      H31    C3     H32     107.900    3.000
+ SQ5      H31    C3     C4      109.470    3.000
+ SQ5      H32    C3     C4      109.470    3.000
+ SQ5      C3     C4     H4      108.340    3.000
+ SQ5      C3     C4     C9      109.470    3.000
+ SQ5      C3     C4     C5      109.470    3.000
+ SQ5      H4     C4     C9      108.340    3.000
+ SQ5      H4     C4     C5      108.340    3.000
+ SQ5      C9     C4     C5      109.470    3.000
+ SQ5      C4     C9     H91     109.470    3.000
+ SQ5      C4     C9     H92     109.470    3.000
+ SQ5      C4     C9     C8      111.000    3.000
+ SQ5      H91    C9     H92     107.900    3.000
+ SQ5      H91    C9     C8      109.470    3.000
+ SQ5      H92    C9     C8      109.470    3.000
+ SQ5      C9     C8     H81     109.470    3.000
+ SQ5      C9     C8     H82     109.470    3.000
+ SQ5      C9     C8     C7      111.000    3.000
+ SQ5      H81    C8     H82     107.900    3.000
+ SQ5      H81    C8     C7      109.470    3.000
+ SQ5      H82    C8     C7      109.470    3.000
+ SQ5      C8     C7     H71     109.470    3.000
+ SQ5      C8     C7     H72     109.470    3.000
+ SQ5      C8     C7     C6      111.000    3.000
+ SQ5      H71    C7     H72     107.900    3.000
+ SQ5      H71    C7     C6      109.470    3.000
+ SQ5      H72    C7     C6      109.470    3.000
+ SQ5      C7     C6     H61     109.470    3.000
+ SQ5      C7     C6     H62     109.470    3.000
+ SQ5      C7     C6     C5      111.000    3.000
+ SQ5      H61    C6     H62     107.900    3.000
+ SQ5      H61    C6     C5      109.470    3.000
+ SQ5      H62    C6     C5      109.470    3.000
+ SQ5      C6     C5     H52     109.470    3.000
+ SQ5      C6     C5     H51     109.470    3.000
+ SQ5      C6     C5     C4      111.000    3.000
+ SQ5      H52    C5     H51     107.900    3.000
+ SQ5      H52    C5     C4      109.470    3.000
+ SQ5      H51    C5     C4      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ SQ5      CONST_1          O2     C10    N2     C1               176.647            0.000   0
+ SQ5      var_1            O2     C10    C2     C3               -60.860           20.000   3
+ SQ5      CONST_2          C10    C2     N1     C1                -4.737            0.000   0
+ SQ5      CONST_3          C2     N1     C1     N2                 0.000            0.000   0
+ SQ5      CONST_4          N1     C1     N2     C11             -178.962            0.000   0
+ SQ5      var_2            C1     N2     C11    C15               76.996           20.000   3
+ SQ5      CONST_5          N2     C11    C12    N3                 0.000            0.000   0
+ SQ5      CONST_6          C11    C12    N3     C13                0.000            0.000   0
+ SQ5      CONST_7          C12    N3     C13    C14                0.000            0.000   0
+ SQ5      CONST_8          N2     C11    C15    C14                0.000            0.000   0
+ SQ5      CONST_9          C11    C15    C14    F1                 0.000            0.000   0
+ SQ5      CONST_10         C15    C14    C13    N3                 0.000            0.000   0
+ SQ5      var_3            C10    C2     C3     C4               180.000           20.000   3
+ SQ5      var_4            C2     C3     C4     C9               180.000           20.000   3
+ SQ5      var_5            C3     C4     C5     C6               180.000           20.000   3
+ SQ5      var_6            C3     C4     C9     C8               180.000           20.000   3
+ SQ5      var_7            C4     C9     C8     C7               180.000           20.000   3
+ SQ5      var_8            C9     C8     C7     C6               180.000           20.000   3
+ SQ5      var_9            C8     C7     C6     C5               180.000           20.000   3
+ SQ5      var_10           C7     C6     C5     C4               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ SQ5      chir_01          C4     C5     C9     C3        positiv
+ SQ5      chir_02          C2     C10    N1     C3        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ SQ5      plan-1            C14       0.020
+ SQ5      plan-1            C13       0.020
+ SQ5      plan-1            C15       0.020
+ SQ5      plan-1            F1        0.020
+ SQ5      plan-1            C11       0.020
+ SQ5      plan-1            C12       0.020
+ SQ5      plan-1            N3        0.020
+ SQ5      plan-1            N2        0.020
+ SQ5      plan-1            H12       0.020
+ SQ5      plan-1            H13       0.020
+ SQ5      plan-1            H15       0.020
+ SQ5      plan-2            C10       0.020
+ SQ5      plan-2            N2        0.020
+ SQ5      plan-2            C2        0.020
+ SQ5      plan-2            O2        0.020
+ SQ5      plan-2            N1        0.020
+ SQ5      plan-2            C1        0.020
+ SQ5      plan-2            C11       0.020
+ SQ5      plan-2            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
