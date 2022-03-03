@@ -1,0 +1,380 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+YCV      YCV '.                                   ' .                  45  26 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-YCV  CYS      .        .        YCV      .        .
+ bond_CYS-SG_=_YCV-C13
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_YCV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ YCV           O3     O    O         0.000      8.135   -4.410   25.389
+ YCV           C16    C    C         0.000      9.273   -4.172   25.019
+ YCV           N2     N    N         0.000     10.308   -4.165   25.878
+ YCV           C18    C    CH3       0.000     11.688   -4.279   25.419
+ YCV           H183   H    H         0.000     11.815   -5.195   24.901
+ YCV           H182   H    H         0.000     11.913   -3.473   24.769
+ YCV           H181   H    H         0.000     12.342   -4.252   26.252
+ YCV           C17    C    CH3       0.000     10.117   -4.050   27.322
+ YCV           H173   H    H         0.000      9.623   -3.139   27.542
+ YCV           H172   H    H         0.000      9.530   -4.862   27.667
+ YCV           H171   H    H         0.000     11.059   -4.065   27.806
+ YCV           C15    C    CH2       0.000      9.551   -3.863   23.553
+ YCV           H151   H    H         0.000     10.168   -4.664   23.140
+ YCV           H152   H    H         0.000     10.096   -2.918   23.494
+ YCV           O2     O    O2        0.000      8.328   -3.761   22.801
+ YCV           C14    C    CR6       0.000      7.925   -2.536   22.269
+ YCV           C1     C    CR6       0.000      7.797   -1.409   23.097
+ YCV           O      O    O2        0.000      8.174   -1.554   24.407
+ YCV           C      C    CH3       0.000      7.997   -0.427   25.267
+ YCV           H30    H    H         0.000      8.562    0.390   24.899
+ YCV           H20    H    H         0.000      6.972   -0.162   25.296
+ YCV           H1     H    H         0.000      8.326   -0.672   26.243
+ YCV           C12    C    CR6       0.000      7.433   -2.486   20.935
+ YCV           C13    C    C1        0.000      7.640   -3.526   19.976
+ YCV           H13    H    H         0.000      8.622   -3.758   19.600
+ YCV           O1     O    OH1       0.000      6.693   -4.115   19.617
+ YCV           HO1    H    H         0.000      6.830   -4.798   18.987
+ YCV           C11    C    CR16      0.000      6.706   -1.383   20.562
+ YCV           H11    H    H         0.000      6.146   -1.416   19.635
+ YCV           C3     C    CR6       0.000      6.663   -0.232   21.326
+ YCV           C2     C    CR16      0.000      7.225   -0.251   22.606
+ YCV           H2     H    H         0.000      7.213    0.645   23.214
+ YCV           C4     C    CR6       0.000      6.114    0.991   20.707
+ YCV           C5     C    CR16      0.000      5.208    1.750   21.447
+ YCV           H5     H    H         0.000      5.044    1.514   22.491
+ YCV           C6     C    CR16      0.000      4.515    2.798   20.871
+ YCV           H6     H    H         0.000      3.811    3.366   21.467
+ YCV           C7     C    CR16      0.000      4.710    3.131   19.540
+ YCV           H7     H    H         0.000      4.162    3.949   19.088
+ YCV           C10    C    CR56      0.000      6.352    1.322   19.346
+ YCV           C9     C    CR15      0.000      7.147    0.854   18.283
+ YCV           H9     H    H         0.000      7.841    0.026   18.363
+ YCV           C8     C    CR56      0.000      5.625    2.391   18.797
+ YCV           N      N    NRD5      0.000      6.005    2.493   17.493
+ YCV           N1     N    NRD5      0.000      6.945    1.546   17.174
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ YCV      O3     n/a    C16    START
+ YCV      C16    O3     C15    .
+ YCV      N2     C16    C17    .
+ YCV      C18    N2     H181   .
+ YCV      H183   C18    .      .
+ YCV      H182   C18    .      .
+ YCV      H181   C18    .      .
+ YCV      C17    N2     H171   .
+ YCV      H173   C17    .      .
+ YCV      H172   C17    .      .
+ YCV      H171   C17    .      .
+ YCV      C15    C16    O2     .
+ YCV      H151   C15    .      .
+ YCV      H152   C15    .      .
+ YCV      O2     C15    C14    .
+ YCV      C14    O2     C12    .
+ YCV      C1     C14    O      .
+ YCV      O      C1     C      .
+ YCV      C      O      H1     .
+ YCV      H30    C      .      .
+ YCV      H20    C      .      .
+ YCV      H1     C      .      .
+ YCV      C12    C14    C11    .
+ YCV      C13    C12    O1     .
+ YCV      H13    C13    .      .
+ YCV      O1     C13    HO1    .
+ YCV      HO1    O1     .      .
+ YCV      C11    C12    C3     .
+ YCV      H11    C11    .      .
+ YCV      C3     C11    C4     .
+ YCV      C2     C3     H2     .
+ YCV      H2     C2     .      .
+ YCV      C4     C3     C10    .
+ YCV      C5     C4     C6     .
+ YCV      H5     C5     .      .
+ YCV      C6     C5     C7     .
+ YCV      H6     C6     .      .
+ YCV      C7     C6     H7     .
+ YCV      H7     C7     .      .
+ YCV      C10    C4     C8     .
+ YCV      C9     C10    H9     .
+ YCV      H9     C9     .      .
+ YCV      C8     C10    N      .
+ YCV      N      C8     N1     .
+ YCV      N1     N      .      END
+ YCV      N1     C9     .    ADD
+ YCV      C7     C8     .    ADD
+ YCV      C1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ YCV      N1     C9        aromatic    1.350    0.020
+ YCV      N1     N         single      1.404    0.020
+ YCV      C7     C8        aromatic    1.390    0.020
+ YCV      C7     C6        aromatic    1.390    0.020
+ YCV      N      C8        aromatic    1.350    0.020
+ YCV      C8     C10       aromatic    1.390    0.020
+ YCV      N2     C16       single      1.330    0.020
+ YCV      C17    N2        single      1.455    0.020
+ YCV      C18    N2        single      1.455    0.020
+ YCV      C9     C10       aromatic    1.440    0.020
+ YCV      O1     C13       single      1.330    0.020
+ YCV      C1     C2        aromatic    1.390    0.020
+ YCV      O      C1        single      1.370    0.020
+ YCV      C1     C14       aromatic    1.384    0.020
+ YCV      C6     C5        aromatic    1.390    0.020
+ YCV      C5     C4        aromatic    1.390    0.020
+ YCV      C4     C3        single      1.487    0.020
+ YCV      C10    C4        aromatic    1.390    0.020
+ YCV      C2     C3        aromatic    1.390    0.020
+ YCV      C3     C11       aromatic    1.390    0.020
+ YCV      C16    O3        double      1.220    0.020
+ YCV      C      O         single      1.426    0.020
+ YCV      C11    C12       aromatic    1.390    0.020
+ YCV      C13    C12       deloc       1.480    0.020
+ YCV      C12    C14       aromatic    1.384    0.020
+ YCV      C14    O2        single      1.370    0.020
+ YCV      C15    C16       single      1.510    0.020
+ YCV      O2     C15       single      1.426    0.020
+ YCV      H7     C7        single      1.083    0.020
+ YCV      H9     C9        single      1.083    0.020
+ YCV      HO1    O1        single      0.967    0.020
+ YCV      H5     C5        single      1.083    0.020
+ YCV      H6     C6        single      1.083    0.020
+ YCV      H2     C2        single      1.083    0.020
+ YCV      H1     C         single      1.059    0.020
+ YCV      H20    C         single      1.059    0.020
+ YCV      H30    C         single      1.059    0.020
+ YCV      H11    C11       single      1.083    0.020
+ YCV      H13    C13       single      1.077    0.020
+ YCV      H151   C15       single      1.092    0.020
+ YCV      H152   C15       single      1.092    0.020
+ YCV      H171   C17       single      1.059    0.020
+ YCV      H172   C17       single      1.059    0.020
+ YCV      H173   C17       single      1.059    0.020
+ YCV      H181   C18       single      1.059    0.020
+ YCV      H182   C18       single      1.059    0.020
+ YCV      H183   C18       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ YCV      O3     C16    N2      123.000    3.000
+ YCV      O3     C16    C15     120.500    3.000
+ YCV      N2     C16    C15     116.500    3.000
+ YCV      C16    N2     C18     127.000    3.000
+ YCV      C16    N2     C17     127.000    3.000
+ YCV      C18    N2     C17     120.000    3.000
+ YCV      N2     C18    H183    109.470    3.000
+ YCV      N2     C18    H182    109.470    3.000
+ YCV      N2     C18    H181    109.470    3.000
+ YCV      H183   C18    H182    109.470    3.000
+ YCV      H183   C18    H181    109.470    3.000
+ YCV      H182   C18    H181    109.470    3.000
+ YCV      N2     C17    H173    109.470    3.000
+ YCV      N2     C17    H172    109.470    3.000
+ YCV      N2     C17    H171    109.470    3.000
+ YCV      H173   C17    H172    109.470    3.000
+ YCV      H173   C17    H171    109.470    3.000
+ YCV      H172   C17    H171    109.470    3.000
+ YCV      C16    C15    H151    109.470    3.000
+ YCV      C16    C15    H152    109.470    3.000
+ YCV      C16    C15    O2      109.470    3.000
+ YCV      H151   C15    H152    107.900    3.000
+ YCV      H151   C15    O2      109.470    3.000
+ YCV      H152   C15    O2      109.470    3.000
+ YCV      C15    O2     C14     120.000    3.000
+ YCV      O2     C14    C1      120.000    3.000
+ YCV      O2     C14    C12     120.000    3.000
+ YCV      C1     C14    C12     120.000    3.000
+ YCV      C14    C1     O       120.000    3.000
+ YCV      C14    C1     C2      120.000    3.000
+ YCV      O      C1     C2      120.000    3.000
+ YCV      C1     O      C       120.000    3.000
+ YCV      O      C      H30     109.470    3.000
+ YCV      O      C      H20     109.470    3.000
+ YCV      O      C      H1      109.470    3.000
+ YCV      H30    C      H20     109.470    3.000
+ YCV      H30    C      H1      109.470    3.000
+ YCV      H20    C      H1      109.470    3.000
+ YCV      C14    C12    C13     120.000    3.000
+ YCV      C14    C12    C11     120.000    3.000
+ YCV      C13    C12    C11     120.000    3.000
+ YCV      C12    C13    H13     120.000    3.000
+ YCV      C12    C13    O1      120.000    3.000
+ YCV      H13    C13    O1      120.000    3.000
+ YCV      C13    O1     HO1     120.000    3.000
+ YCV      C12    C11    H11     120.000    3.000
+ YCV      C12    C11    C3      120.000    3.000
+ YCV      H11    C11    C3      120.000    3.000
+ YCV      C11    C3     C2      120.000    3.000
+ YCV      C11    C3     C4      120.000    3.000
+ YCV      C2     C3     C4      120.000    3.000
+ YCV      C3     C2     H2      120.000    3.000
+ YCV      C3     C2     C1      120.000    3.000
+ YCV      H2     C2     C1      120.000    3.000
+ YCV      C3     C4     C5      120.000    3.000
+ YCV      C3     C4     C10     120.000    3.000
+ YCV      C5     C4     C10     120.000    3.000
+ YCV      C4     C5     H5      120.000    3.000
+ YCV      C4     C5     C6      120.000    3.000
+ YCV      H5     C5     C6      120.000    3.000
+ YCV      C5     C6     H6      120.000    3.000
+ YCV      C5     C6     C7      120.000    3.000
+ YCV      H6     C6     C7      120.000    3.000
+ YCV      C6     C7     H7      120.000    3.000
+ YCV      C6     C7     C8      120.000    3.000
+ YCV      H7     C7     C8      120.000    3.000
+ YCV      C4     C10    C9      132.000    3.000
+ YCV      C4     C10    C8      120.000    3.000
+ YCV      C9     C10    C8      120.000    3.000
+ YCV      C10    C9     H9      108.000    3.000
+ YCV      C10    C9     N1      108.000    3.000
+ YCV      H9     C9     N1      126.000    3.000
+ YCV      C10    C8     N       108.000    3.000
+ YCV      C10    C8     C7      120.000    3.000
+ YCV      N      C8     C7      132.000    3.000
+ YCV      C8     N      N1      108.000    3.000
+ YCV      N      N1     C9      108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ YCV      var_1            O3     C16    N2     C17              180.000           20.000   2
+ YCV      var_2            C16    N2     C18    H181             180.000           20.000   3
+ YCV      var_3            C16    N2     C17    H171             180.000           20.000   3
+ YCV      var_4            O3     C16    C15    O2               180.000           20.000   3
+ YCV      var_5            C16    C15    O2     C14              112.597           20.000   3
+ YCV      var_6            C15    O2     C14    C12              135.774           20.000   3
+ YCV      CONST_1          O2     C14    C1     O                  0.000            0.000   0
+ YCV      CONST_2          C14    C1     C2     C3                 0.000            0.000   0
+ YCV      var_7            C14    C1     O      C               -177.601           20.000   3
+ YCV      var_8            C1     O      C      H1               180.000           20.000   3
+ YCV      CONST_3          O2     C14    C12    C11                0.000            0.000   0
+ YCV      CONST_4          C14    C12    C13    O1               113.703            0.000   0
+ YCV      var_9            C12    C13    O1     HO1              180.000           20.000   3
+ YCV      CONST_5          C14    C12    C11    C3                 0.000            0.000   0
+ YCV      CONST_6          C12    C11    C3     C4                 0.000            0.000   0
+ YCV      CONST_7          C11    C3     C2     C1                 0.000            0.000   0
+ YCV      var_10           C11    C3     C4     C10                0.000           20.000   2
+ YCV      CONST_8          C3     C4     C5     C6                 0.000            0.000   0
+ YCV      CONST_9          C4     C5     C6     C7                 0.000            0.000   0
+ YCV      CONST_10         C5     C6     C7     C8                 0.000            0.000   0
+ YCV      CONST_11         C6     C7     C8     C10              180.000            0.000   0
+ YCV      CONST_12         C3     C4     C10    C8               180.000            0.000   0
+ YCV      CONST_13         C4     C10    C9     N1               178.560            0.000   0
+ YCV      CONST_14         C4     C10    C8     N                180.000            0.000   0
+ YCV      CONST_15         C10    C8     N      N1               180.000            0.000   0
+ YCV      CONST_16         C8     N      N1     C9                 0.074            0.000   0
+ YCV      CONST_17         N      N1     C9     C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ YCV      plan-1            N1        0.020
+ YCV      plan-1            C9        0.020
+ YCV      plan-1            N         0.020
+ YCV      plan-1            C10       0.020
+ YCV      plan-1            H9        0.020
+ YCV      plan-1            C8        0.020
+ YCV      plan-1            C4        0.020
+ YCV      plan-1            C7        0.020
+ YCV      plan-1            C5        0.020
+ YCV      plan-1            C6        0.020
+ YCV      plan-1            H7        0.020
+ YCV      plan-1            H5        0.020
+ YCV      plan-1            H6        0.020
+ YCV      plan-1            C3        0.020
+ YCV      plan-2            N2        0.020
+ YCV      plan-2            C16       0.020
+ YCV      plan-2            C17       0.020
+ YCV      plan-2            C18       0.020
+ YCV      plan-3            C1        0.020
+ YCV      plan-3            C2        0.020
+ YCV      plan-3            O         0.020
+ YCV      plan-3            C14       0.020
+ YCV      plan-3            C3        0.020
+ YCV      plan-3            C11       0.020
+ YCV      plan-3            C12       0.020
+ YCV      plan-3            C4        0.020
+ YCV      plan-3            H2        0.020
+ YCV      plan-3            H11       0.020
+ YCV      plan-3            C13       0.020
+ YCV      plan-3            O1        0.020
+ YCV      plan-3            H13       0.020
+ YCV      plan-3            O2        0.020
+ YCV      plan-4            C16       0.020
+ YCV      plan-4            N2        0.020
+ YCV      plan-4            O3        0.020
+ YCV      plan-4            C15       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-YCV
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-YCV  1 SG      2 C13       .           1.690    0.020
+# ------------------------------------------------------

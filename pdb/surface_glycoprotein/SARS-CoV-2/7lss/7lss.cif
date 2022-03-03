@@ -3,7 +3,7 @@ data_7LSS
 _entry.id   7LSS 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.339 
+_audit_conform.dict_version    5.350 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,9 +11,9 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7LSS         ? ? 
-WWPDB D_1000254928 ? ? 
-EMDB  EMD-23507    ? ? 
+PDB   7LSS         pdb_00007lss 10.2210/pdb7lss/pdb 
+WWPDB D_1000254928 ?            ?                   
+EMDB  EMD-23507    ?            ?                   
 # 
 _pdbx_database_related.db_name        EMDB 
 _pdbx_database_related.details        'Cryo-EM structure of the SARS-CoV-2 spike glycoprotein bound to Fab 2-7' 
@@ -40,42 +40,48 @@ _audit_author.identifier_ORCID
 'Rapp, M.'    1 ? 
 'Shapiro, L.' 2 ? 
 # 
-_citation.abstract                  ? 
-_citation.abstract_id_CAS           ? 
-_citation.book_id_ISBN              ? 
-_citation.book_publisher            ? 
-_citation.book_publisher_city       ? 
-_citation.book_title                ? 
-_citation.coordinate_linkage        ? 
-_citation.country                   US 
-_citation.database_id_Medline       ? 
-_citation.details                   ? 
-_citation.id                        primary 
-_citation.journal_abbrev            Biorxiv 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            ? 
-_citation.journal_id_ISSN           ? 
-_citation.journal_full              ? 
-_citation.journal_issue             ? 
-_citation.journal_volume            ? 
-_citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     
+loop_
+_citation.abstract 
+_citation.abstract_id_CAS 
+_citation.book_id_ISBN 
+_citation.book_publisher 
+_citation.book_publisher_city 
+_citation.book_title 
+_citation.coordinate_linkage 
+_citation.country 
+_citation.database_id_Medline 
+_citation.details 
+_citation.id 
+_citation.journal_abbrev 
+_citation.journal_id_ASTM 
+_citation.journal_id_CSD 
+_citation.journal_id_ISSN 
+_citation.journal_full 
+_citation.journal_issue 
+_citation.journal_volume 
+_citation.language 
+_citation.page_first 
+_citation.page_last 
+_citation.title 
+_citation.year 
+_citation.database_id_CSD 
+_citation.pdbx_database_id_DOI 
+_citation.pdbx_database_id_PubMed 
+_citation.pdbx_database_id_patent 
+_citation.unpublished_flag 
+? ? ? ? ? ? ? UK ? ? primary Structure STRUE6 2005 0969-2126 ? ? 29 ? 655 663.e4 
+'Structural basis for accommodation of emerging B.1.351 and B.1.1.7 variants by two potent SARS-CoV-2 neutralizing antibodies.' 
+2021 ? 10.1016/j.str.2021.05.014 34111408 ? ? 
+? ? ? ? ? ? ? US ? ? 1       Biorxiv   ?      ?    ?         ? ? ?  ? ?   ?      
 'Structural Basis for Accommodation of Emerging B.1.351 and B.1.1.7 Variants by Two Potent SARS-CoV-2 Neutralizing Antibodies.' 
-_citation.year                      2021 
-_citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      10.1101/2021.02.21.432168 
-_citation.pdbx_database_id_PubMed   33655245 
-_citation.pdbx_database_id_patent   ? 
-_citation.unpublished_flag          ? 
+2021 ? 10.1101/2021.02.21.432168 33655245 ? ? 
 # 
 loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Cerutti, G.'  1  0000-0002-9081-7561 
+primary 'Cerutti, G.'  1  ?                   
 primary 'Rapp, M.'     2  ?                   
 primary 'Guo, Y.'      3  ?                   
 primary 'Bahna, F.'    4  ?                   
@@ -89,6 +95,20 @@ primary 'Ho, D.D.'     11 ?
 primary 'Kwong, P.D.'  12 ?                   
 primary 'Sheng, Z.'    13 ?                   
 primary 'Shapiro, L.'  14 ?                   
+1       'Cerutti, G.'  15 0000-0002-9081-7561 
+1       'Rapp, M.'     16 ?                   
+1       'Guo, Y.'      17 ?                   
+1       'Bahna, F.'    18 ?                   
+1       'Bimela, J.'   19 ?                   
+1       'Reddem, E.R.' 20 ?                   
+1       'Yu, J.'       21 ?                   
+1       'Wang, P.'     22 ?                   
+1       'Liu, L.'      23 ?                   
+1       'Huang, Y.'    24 ?                   
+1       'Ho, D.D.'     25 ?                   
+1       'Kwong, P.D.'  26 ?                   
+1       'Sheng, Z.'    27 ?                   
+1       'Shapiro, L.'  28 ?                   
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -2159,7 +2179,6 @@ _exptl.method_details             ?
 # 
 _struct.entry_id                     7LSS 
 _struct.title                        'Cryo-EM structure of the SARS-CoV-2 spike glycoprotein bound to Fab 2-7' 
-_struct.pdbx_descriptor              'Spike glycoprotein, Fab 2-7 variable heavy chain, Fab 2-7 variable light chain' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -27807,11 +27826,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-03-17 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-03-17 
+2 'Structure model' 1 1 2021-09-29 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -27820,6 +27842,28 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_database_2.pdbx_DOI'                
+2 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 _pdbx_entry_details.entry_id                 7LSS 
 _pdbx_entry_details.nonpolymer_details       ? 

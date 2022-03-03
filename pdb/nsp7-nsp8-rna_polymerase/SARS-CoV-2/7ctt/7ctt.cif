@@ -3,15 +3,17 @@ data_7CTT
 _entry.id   7CTT 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.336 
+_audit_conform.dict_version    5.348 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7CTT         
-WWPDB D_1300018245 
-EMDB  EMD-30469    
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7CTT         pdb_00007ctt 10.2210/pdb7ctt/pdb 
+WWPDB D_1300018245 ?            ?                   
+EMDB  EMD-30469    ?            ?                   
 # 
 _pdbx_database_related.db_name        EMDB 
 _pdbx_database_related.details        
@@ -51,22 +53,21 @@ _citation.country                   ?
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Innovation (N Y)' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2666-6758 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            2 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     
-'Cryo-EM structure of Favipiravir bound to replicating polymerase complex of SARS-CoV-2 in the pre-catalytic state.' 
-_citation.year                      ? 
+_citation.page_first                100080 
+_citation.page_last                 100080 
+_citation.title                     'Structural Basis of SARS-CoV-2 Polymerase Inhibition by Favipiravir.' 
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1016/j.xinn.2021.100080 
+_citation.pdbx_database_id_PubMed   33521757 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -76,7 +77,12 @@ _citation_author.ordinal
 _citation_author.identifier_ORCID 
 primary 'Peng, Q.' 1 ? 
 primary 'Peng, R.' 2 ? 
-primary 'Yi, S.'   3 ? 
+primary 'Yuan, B.' 3 ? 
+primary 'Wang, M.' 4 ? 
+primary 'Zhao, J.' 5 ? 
+primary 'Fu, L.'   6 ? 
+primary 'Qi, J.'   7 ? 
+primary 'Shi, Y.'  8 ? 
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -1748,7 +1754,6 @@ _refine_ls_restr.pdbx_restraint_function
 _struct.entry_id                     7CTT 
 _struct.title                        
 'Cryo-EM structure of Favipiravir bound to replicating polymerase complex of SARS-CoV-2 in the pre-catalytic state.' 
-_struct.pdbx_descriptor              'nsp12, nsp8, nsp7/RNA Complex' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -12651,6 +12656,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-09-02 
 2 'Structure model' 2 0 2020-11-11 
 3 'Structure model' 2 1 2021-03-10 
+4 'Structure model' 2 2 2021-09-15 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -12674,6 +12680,7 @@ _pdbx_audit_revision_group.group
 4 2 'Structure model' 'Derived calculations'   
 5 2 'Structure model' 'Refinement description' 
 6 3 'Structure model' 'Structure summary'      
+7 4 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -12695,6 +12702,9 @@ _pdbx_audit_revision_category.category
 13 2 'Structure model' struct_sheet_range           
 14 3 'Structure model' entity                       
 15 3 'Structure model' entity_name_com              
+16 4 'Structure model' citation                     
+17 4 'Structure model' citation_author              
+18 4 'Structure model' database_2                   
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -12744,6 +12754,18 @@ _pdbx_audit_revision_item.item
 41 2 'Structure model' '_struct_sheet_range.end_label_seq_id'           
 42 3 'Structure model' '_entity.pdbx_description'                       
 43 3 'Structure model' '_entity_name_com.name'                          
+44 4 'Structure model' '_citation.journal_abbrev'                       
+45 4 'Structure model' '_citation.journal_id_CSD'                       
+46 4 'Structure model' '_citation.journal_id_ISSN'                      
+47 4 'Structure model' '_citation.journal_volume'                       
+48 4 'Structure model' '_citation.page_first'                           
+49 4 'Structure model' '_citation.page_last'                            
+50 4 'Structure model' '_citation.pdbx_database_id_DOI'                 
+51 4 'Structure model' '_citation.pdbx_database_id_PubMed'              
+52 4 'Structure model' '_citation.title'                                
+53 4 'Structure model' '_citation.year'                                 
+54 4 'Structure model' '_database_2.pdbx_DOI'                           
+55 4 'Structure model' '_database_2.pdbx_database_accession'            
 # 
 _software.citation_id            ? 
 _software.classification         refinement 

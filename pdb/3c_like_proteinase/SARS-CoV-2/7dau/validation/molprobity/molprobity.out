@@ -1,0 +1,118 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 2565
+     H or D atoms   : 0
+     chains         : 1
+     a.a. residues  : 301
+     nucleotides    : 0
+     water          : 234
+     other (ligands): 2
+   Ligands: AU:2
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A 214  ASN  CG     
+   A 214  ASN  ND2         1.33     1.24     0.09  2.10e-02  1.71e+01   4.1*sigma
+   A 214  ASN  CG     
+   A 214  ASN  OD1         1.23     1.33    -0.10  1.90e-02  2.72e+01   5.2*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.099 (Z=  5.220)
+  Mean delta:    0.009 (Z=  0.454)
+
+                        ----------Bond angles----------                        
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    9.966 (Z=  3.546)
+  Mean delta:    1.039 (Z=  0.598)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 181  PHE  CA     
+   A 181  PHE  C      
+   A 182  TYR  N      
+   A 182  TYR  CA        180.00   157.73    22.27  5.00e+00  1.98e+01   4.5*sigma
+   A 165  MET  CA     
+   A 165  MET  C      
+   A 166  GLU  N      
+   A 166  GLU  CA        180.00   156.84    23.16  5.00e+00  2.14e+01   4.6*sigma
+
+  Min. delta:    0.001
+  Max. delta:   74.541
+  Mean delta:   13.022
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.201
+  Mean delta:    0.065
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.045
+  Mean delta:    0.007
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.009   0.099   2381
+    Angle     :  1.039   9.966   3236
+    Chirality :  0.065   0.201    365
+    Planarity :  0.007   0.045    421
+    Dihedral  : 13.022  74.541    852
+    Min Nonbonded Distance : 2.251
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 3.91
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  2.34 %
+      Favored  : 97.66 %
+    Rotamer Outliers :  0.39 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -1.09 (0.43), residues: 299
+    helix: -1.15 (0.44), residues: 88
+    sheet:  0.29 (0.82), residues: 32
+    loop : -0.63 (0.44), residues: 179
+
+                     ----------Asn/Gln/His flips----------                     
+
+  No backwards Asn/Gln/His sidechains found.
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  97.66 %
+  Rotamer outliers      =   0.39 %
+  C-beta deviations     =     0
+  Clashscore            =   3.91
+  RMS(bonds)            =   0.0088
+  RMS(angles)           =   1.04
+  MolProbity score      =   1.25
+  Refinement program    = REFMAC

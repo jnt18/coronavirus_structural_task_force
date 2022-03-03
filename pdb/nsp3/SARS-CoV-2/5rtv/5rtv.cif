@@ -3,14 +3,16 @@ data_5RTV
 _entry.id   5RTV 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.342 
+_audit_conform.dict_version    5.350 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   5RTV         
-WWPDB D_1001403665 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   5RTV         pdb_00005rtv 10.2210/pdb5rtv/pdb 
+WWPDB D_1001403665 ?            ?                   
 # 
 _pdbx_database_status.entry_id                        5RTV 
 _pdbx_database_status.status_code                     REL 
@@ -662,8 +664,6 @@ _struct.entry_id                  5RTV
 _struct.title                     
 'PanDDA analysis group deposition -- Crystal structure of SARS-CoV-2 NSP3 macrodomain in complex with ZINC000001698894' 
 _struct.pdbx_CASP_flag            ? 
-_struct.pdbx_descriptor           
-'Non-structural protein 3 (E.C.3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.-)' 
 _struct.pdbx_model_details        ? 
 _struct.pdbx_model_type_details   ? 
 # 
@@ -728,46 +728,6 @@ HELX_P HELX_P19 AC1 ASP B 157 ? LEU B 169 ? ASP B 157 LEU B 169 1 ? 13
 _struct_conf_type.id          HELX_P 
 _struct_conf_type.criteria    ? 
 _struct_conf_type.reference   ? 
-# 
-_struct_conn.id                            covale1 
-_struct_conn.conn_type_id                  covale 
-_struct_conn.pdbx_leaving_atom_flag        one 
-_struct_conn.pdbx_PDB_id                   ? 
-_struct_conn.ptnr1_label_asym_id           C 
-_struct_conn.ptnr1_label_comp_id           PF0 
-_struct_conn.ptnr1_label_seq_id            . 
-_struct_conn.ptnr1_label_atom_id           O1 
-_struct_conn.pdbx_ptnr1_label_alt_id       B 
-_struct_conn.pdbx_ptnr1_PDB_ins_code       ? 
-_struct_conn.pdbx_ptnr1_standard_comp_id   ? 
-_struct_conn.ptnr1_symmetry                1_555 
-_struct_conn.ptnr2_label_asym_id           D 
-_struct_conn.ptnr2_label_comp_id           DMS 
-_struct_conn.ptnr2_label_seq_id            . 
-_struct_conn.ptnr2_label_atom_id           C2 
-_struct_conn.pdbx_ptnr2_label_alt_id       ? 
-_struct_conn.pdbx_ptnr2_PDB_ins_code       ? 
-_struct_conn.ptnr1_auth_asym_id            A 
-_struct_conn.ptnr1_auth_comp_id            PF0 
-_struct_conn.ptnr1_auth_seq_id             201 
-_struct_conn.ptnr2_auth_asym_id            A 
-_struct_conn.ptnr2_auth_comp_id            DMS 
-_struct_conn.ptnr2_auth_seq_id             202 
-_struct_conn.ptnr2_symmetry                1_555 
-_struct_conn.pdbx_ptnr3_label_atom_id      ? 
-_struct_conn.pdbx_ptnr3_label_seq_id       ? 
-_struct_conn.pdbx_ptnr3_label_comp_id      ? 
-_struct_conn.pdbx_ptnr3_label_asym_id      ? 
-_struct_conn.pdbx_ptnr3_label_alt_id       ? 
-_struct_conn.pdbx_ptnr3_PDB_ins_code       ? 
-_struct_conn.details                       ? 
-_struct_conn.pdbx_dist_value               1.536 
-_struct_conn.pdbx_value_order              ? 
-_struct_conn.pdbx_role                     ? 
-# 
-_struct_conn_type.id          covale 
-_struct_conn_type.criteria    ? 
-_struct_conn_type.reference   ? 
 # 
 loop_
 _struct_sheet.id 
@@ -10137,6 +10097,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2021-01-27 
 3 'Structure model' 1 2 2021-05-12 
 4 'Structure model' 1 3 2021-06-09 
+5 'Structure model' 1 4 2021-10-13 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -10151,19 +10112,25 @@ _pdbx_audit_revision_group.ordinal
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' 'Structure summary' 
-2 3 'Structure model' 'Structure summary' 
-3 4 'Structure model' 'Structure summary' 
+1 2 'Structure model' 'Structure summary'    
+2 3 'Structure model' 'Structure summary'    
+3 4 'Structure model' 'Structure summary'    
+4 5 'Structure model' Advisory               
+5 5 'Structure model' 'Database references'  
+6 5 'Structure model' 'Derived calculations' 
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' entity             
-2 2 'Structure model' entity_name_com    
-3 3 'Structure model' pdbx_deposit_group 
-4 4 'Structure model' struct             
+1 2 'Structure model' entity                      
+2 2 'Structure model' entity_name_com             
+3 3 'Structure model' pdbx_deposit_group          
+4 4 'Structure model' struct                      
+5 5 'Structure model' database_2                  
+6 5 'Structure model' pdbx_validate_close_contact 
+7 5 'Structure model' struct_conn                 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -10175,6 +10142,8 @@ _pdbx_audit_revision_item.item
 3 3 'Structure model' '_pdbx_deposit_group.group_description' 
 4 3 'Structure model' '_pdbx_deposit_group.group_type'        
 5 4 'Structure model' '_struct.title'                         
+6 5 'Structure model' '_database_2.pdbx_DOI'                  
+7 5 'Structure model' '_database_2.pdbx_database_accession'   
 # 
 loop_
 _software.pdbx_ordinal 
@@ -10223,27 +10192,28 @@ _pdbx_validate_close_contact.PDB_ins_code_2
 _pdbx_validate_close_contact.label_alt_id_2 
 _pdbx_validate_close_contact.dist 
 1  1 O1 A PF0 201 ? B H22 A DMS 202 ? ? 0.89 
-2  1 O  A HOH 325 ? ? O   A HOH 389 ? ? 1.80 
-3  1 O  B HOH 221 ? ? O   B HOH 270 ? ? 1.81 
-4  1 O  B HOH 334 ? ? O   B HOH 409 ? ? 1.83 
-5  1 O  B HOH 207 ? ? O   B HOH 290 ? ? 1.85 
-6  1 O  B HOH 400 ? ? O   B HOH 444 ? ? 1.85 
-7  1 O  A HOH 328 ? ? O   B HOH 214 ? ? 1.89 
-8  1 O2 A PF0 201 ? B O   A HOH 301 ? ? 1.90 
-9  1 O  B HOH 367 ? ? O   B HOH 368 ? ? 1.91 
-10 1 O  A HOH 466 ? ? O   A HOH 484 ? ? 1.93 
-11 1 O  B HOH 301 ? ? O   B HOH 436 ? ? 1.93 
-12 1 O  A HOH 324 ? ? O   A HOH 469 ? ? 1.99 
-13 1 O  B HOH 359 ? ? O   B HOH 380 ? ? 1.99 
-14 1 O  B HOH 250 ? ? O   B HOH 365 ? ? 2.00 
-15 1 O  A HOH 434 ? ? O   A HOH 479 ? ? 2.02 
-16 1 O  B HOH 290 ? ? O   B HOH 296 ? ? 2.03 
-17 1 O  B HOH 245 ? ? O   B HOH 323 ? ? 2.03 
-18 1 O  A HOH 457 ? ? O   A HOH 533 ? ? 2.06 
-19 1 C7 A PF0 201 ? B O   A HOH 301 ? ? 2.09 
-20 1 O  A HOH 476 ? ? O   A HOH 486 ? ? 2.11 
-21 1 O  A HOH 528 ? ? O   B HOH 413 ? ? 2.16 
-22 1 O  A HOH 502 ? ? O   A HOH 512 ? ? 2.16 
+2  1 O1 A PF0 201 ? B C2  A DMS 202 ? ? 1.54 
+3  1 O  A HOH 325 ? ? O   A HOH 389 ? ? 1.80 
+4  1 O  B HOH 221 ? ? O   B HOH 270 ? ? 1.81 
+5  1 O  B HOH 334 ? ? O   B HOH 409 ? ? 1.83 
+6  1 O  B HOH 207 ? ? O   B HOH 290 ? ? 1.85 
+7  1 O  B HOH 400 ? ? O   B HOH 444 ? ? 1.85 
+8  1 O  A HOH 328 ? ? O   B HOH 214 ? ? 1.89 
+9  1 O2 A PF0 201 ? B O   A HOH 301 ? ? 1.90 
+10 1 O  B HOH 367 ? ? O   B HOH 368 ? ? 1.91 
+11 1 O  A HOH 466 ? ? O   A HOH 484 ? ? 1.93 
+12 1 O  B HOH 301 ? ? O   B HOH 436 ? ? 1.93 
+13 1 O  A HOH 324 ? ? O   A HOH 469 ? ? 1.99 
+14 1 O  B HOH 359 ? ? O   B HOH 380 ? ? 1.99 
+15 1 O  B HOH 250 ? ? O   B HOH 365 ? ? 2.00 
+16 1 O  A HOH 434 ? ? O   A HOH 479 ? ? 2.02 
+17 1 O  B HOH 290 ? ? O   B HOH 296 ? ? 2.03 
+18 1 O  B HOH 245 ? ? O   B HOH 323 ? ? 2.03 
+19 1 O  A HOH 457 ? ? O   A HOH 533 ? ? 2.06 
+20 1 C7 A PF0 201 ? B O   A HOH 301 ? ? 2.09 
+21 1 O  A HOH 476 ? ? O   A HOH 486 ? ? 2.11 
+22 1 O  A HOH 528 ? ? O   B HOH 413 ? ? 2.16 
+23 1 O  A HOH 502 ? ? O   A HOH 512 ? ? 2.16 
 # 
 loop_
 _pdbx_validate_symm_contact.id 

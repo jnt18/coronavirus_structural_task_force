@@ -1,0 +1,127 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 25371
+     H or D atoms   : 0
+     chains         : 42
+     a.a. residues  : 3096
+     nucleotides    : 0
+     water          : 0
+     other (ligands): 84
+   Ligands: NAG:84
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.042 (Z=  2.892)
+  Mean delta:    0.003 (Z=  0.176)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   R   2  NAG  C2     
+   R   2  NAG  N2     
+   R   2  NAG  C7        123.12   129.01    -5.89  1.28e+00  2.11e+01   4.6*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    8.068 (Z=  4.592)
+  Mean delta:    0.512 (Z=  0.277)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 558  LEU  CA     
+   A 558  LEU  C      
+   A 559  PRO  N      
+   A 559  PRO  CA        180.00  -159.50   -20.50  5.00e+00  1.68e+01   4.1*sigma
+   A 588  CYS  CA     
+   A 588  CYS  C      
+   A 589  SER  N      
+   A 589  SER  CA        180.00  -158.98   -21.02  5.00e+00  1.77e+01   4.2*sigma
+   c   1  NAG  C2     
+   c   1  NAG  C3     
+   c   1  NAG  C4     
+   c   1  NAG  C5         50.00   -53.73   103.73  2.00e+01  2.97e+01   5.2*sigma
+   C 659  GLU  CA     
+   C 659  GLU  C      
+   C 660  CYS  N      
+   C 660  CYS  CA        180.00  -151.11   -28.89  5.00e+00  3.34e+01   5.8*sigma
+
+  Min. delta:    0.001
+  Max. delta:  103.727
+  Mean delta:   13.629
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.197
+  Mean delta:    0.042
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.072
+  Mean delta:    0.004
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.003   0.042  25922
+    Angle     :  0.512   8.068  35273
+    Chirality :  0.042   0.197   4166
+    Planarity :  0.004   0.072   4456
+    Dihedral  : 13.629 103.727   9367
+    Min Nonbonded Distance : 1.434
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 6.08
+    Ramachandran Plot:
+      Outliers :  0.10 %
+      Allowed  :  3.94 %
+      Favored  : 95.96 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole:  0.05 (0.15), residues: 3048
+    helix:  1.99 (0.21), residues: 663
+    sheet:  0.60 (0.19), residues: 721
+    loop : -1.10 (0.15), residues: 1664
+
+                     ----------Asn/Gln/His flips----------                     
+
+   C 802  GLN
+   B 121  ASN
+   C 121  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.10 %
+                favored =  95.96 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   6.08
+  RMS(bonds)            =   0.0026
+  RMS(angles)           =   0.51
+  MolProbity score      =   1.61
+  Refinement program    = phenix.real_space_refine

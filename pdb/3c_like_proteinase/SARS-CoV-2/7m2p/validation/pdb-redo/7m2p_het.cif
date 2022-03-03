@@ -1,0 +1,269 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+YOP      YOP '.                                   ' .                  23  12 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-YOP  CYS      .        .        YOP      .        .
+ bond_CYS-SG_=_YOP-C
+P6S-VAL  P6S      .        .        VAL      .        .
+ bond_P6S-C19_=_VAL-N
+ALC-YOP  ALC      .        .        YOP      .        .
+ bond_ALC-C_=_YOP-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_YOP
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ YOP           OD2    O    O         0.000     15.204   -5.151   13.890
+ YOP           CD2    C    CR6       0.000     15.195   -5.405   15.097
+ YOP           NE2    N    NRD6      0.000     15.787   -6.513   15.584
+ YOP           CF     C    CR16      0.000     15.753   -6.792   16.891
+ YOP           HF     H    H         0.000     16.237   -7.688   17.258
+ YOP           CE1    C    CR16      0.000     15.105   -5.948   17.785
+ YOP           HE1    H    H         0.000     15.088   -6.198   18.838
+ YOP           CD1    C    CR16      0.000     14.475   -4.783   17.345
+ YOP           HD1    H    H         0.000     13.975   -4.132   18.052
+ YOP           CG     C    CR6       0.000     14.493   -4.467   16.005
+ YOP           CB     C    CH2       0.000     13.859   -3.229   15.411
+ YOP           HB1    H    H         0.000     13.181   -3.543   14.614
+ YOP           HB2    H    H         0.000     14.653   -2.610   14.988
+ YOP           CA     C    CH1       0.000     13.085   -2.425   16.452
+ YOP           HA     H    H         0.000     13.556   -2.533   17.439
+ YOP           N      N    NT2       0.000     11.731   -2.970   16.480
+ YOP           HN2    H    H         0.000     11.659   -3.742   15.799
+ YOP           HN1    H    H         0.000     11.169   -2.453   17.174
+ YOP           C      C    CH2       0.000     13.008   -0.941   16.064
+ YOP           H1     H    H         0.000     12.339   -0.464   16.783
+ YOP           H2     H    H         0.000     12.560   -0.900   15.069
+ YOP           O      O    OH1       0.000     14.267   -0.255   16.052
+ YOP           HO     H    H         0.000     14.129    0.668   15.799
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ YOP      OD2    n/a    CD2    START
+ YOP      CD2    OD2    CG     .
+ YOP      NE2    CD2    CF     .
+ YOP      CF     NE2    CE1    .
+ YOP      HF     CF     .      .
+ YOP      CE1    CF     CD1    .
+ YOP      HE1    CE1    .      .
+ YOP      CD1    CE1    HD1    .
+ YOP      HD1    CD1    .      .
+ YOP      CG     CD2    CB     .
+ YOP      CB     CG     CA     .
+ YOP      HB1    CB     .      .
+ YOP      HB2    CB     .      .
+ YOP      CA     CB     C      .
+ YOP      HA     CA     .      .
+ YOP      N      CA     HN1    .
+ YOP      HN2    N      .      .
+ YOP      HN1    N      .      .
+ YOP      C      CA     O      .
+ YOP      H1     C      .      .
+ YOP      H2     C      .      .
+ YOP      O      C      HO     .
+ YOP      HO     O      .      END
+ YOP      CG     CD1    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ YOP      CA     CB        single      1.524    0.020
+ YOP      C      CA        single      1.524    0.020
+ YOP      N      CA        single      1.475    0.020
+ YOP      CB     CG        single      1.511    0.020
+ YOP      O      C         single      1.432    0.020
+ YOP      CG     CD1       aromatic    1.390    0.020
+ YOP      CG     CD2       single      1.487    0.020
+ YOP      CD1    CE1       aromatic    1.390    0.020
+ YOP      CE1    CF        aromatic    1.390    0.020
+ YOP      CF     NE2       aromatic    1.337    0.020
+ YOP      NE2    CD2       deloc       1.350    0.020
+ YOP      CD2    OD2       double      1.250    0.020
+ YOP      HA     CA        single      1.099    0.020
+ YOP      HB1    CB        single      1.092    0.020
+ YOP      HB2    CB        single      1.092    0.020
+ YOP      H1     C         single      1.092    0.020
+ YOP      H2     C         single      1.092    0.020
+ YOP      HD1    CD1       single      1.083    0.020
+ YOP      HE1    CE1       single      1.083    0.020
+ YOP      HF     CF        single      1.083    0.020
+ YOP      HN1    N         single      1.033    0.020
+ YOP      HN2    N         single      1.033    0.020
+ YOP      HO     O         single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ YOP      OD2    CD2    NE2     120.000    3.000
+ YOP      OD2    CD2    CG      120.000    3.000
+ YOP      NE2    CD2    CG      120.000    3.000
+ YOP      CD2    NE2    CF      120.000    3.000
+ YOP      NE2    CF     HF      120.000    3.000
+ YOP      NE2    CF     CE1     120.000    3.000
+ YOP      HF     CF     CE1     120.000    3.000
+ YOP      CF     CE1    HE1     120.000    3.000
+ YOP      CF     CE1    CD1     120.000    3.000
+ YOP      HE1    CE1    CD1     120.000    3.000
+ YOP      CE1    CD1    HD1     120.000    3.000
+ YOP      CE1    CD1    CG      120.000    3.000
+ YOP      HD1    CD1    CG      120.000    3.000
+ YOP      CD2    CG     CB      120.000    3.000
+ YOP      CD2    CG     CD1     120.000    3.000
+ YOP      CB     CG     CD1     120.000    3.000
+ YOP      CG     CB     HB1     109.470    3.000
+ YOP      CG     CB     HB2     109.470    3.000
+ YOP      CG     CB     CA      109.470    3.000
+ YOP      HB1    CB     HB2     107.900    3.000
+ YOP      HB1    CB     CA      109.470    3.000
+ YOP      HB2    CB     CA      109.470    3.000
+ YOP      CB     CA     HA      108.340    3.000
+ YOP      CB     CA     N       109.500    3.000
+ YOP      CB     CA     C       109.470    3.000
+ YOP      HA     CA     N       109.500    3.000
+ YOP      HA     CA     C       108.340    3.000
+ YOP      N      CA     C       109.500    3.000
+ YOP      CA     N      HN2     109.500    3.000
+ YOP      CA     N      HN1     109.500    3.000
+ YOP      HN2    N      HN1     109.500    3.000
+ YOP      CA     C      H1      109.470    3.000
+ YOP      CA     C      H2      109.470    3.000
+ YOP      CA     C      O       109.470    3.000
+ YOP      H1     C      H2      107.900    3.000
+ YOP      H1     C      O       109.470    3.000
+ YOP      H2     C      O       109.470    3.000
+ YOP      C      O      HO      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ YOP      CONST_1          OD2    CD2    NE2    CF                 0.000            0.000   0
+ YOP      CONST_2          CD2    NE2    CF     CE1                0.000            0.000   0
+ YOP      CONST_3          NE2    CF     CE1    CD1                0.000            0.000   0
+ YOP      CONST_4          CF     CE1    CD1    CG                 0.000            0.000   0
+ YOP      CONST_5          OD2    CD2    CG     CB                 0.000            0.000   0
+ YOP      CONST_6          CD2    CG     CD1    CE1                0.000            0.000   0
+ YOP      var_1            CD2    CG     CB     CA                 0.000           20.000   2
+ YOP      var_2            CG     CB     CA     C                180.000           20.000   3
+ YOP      var_3            CB     CA     N      HN1              180.000           20.000   3
+ YOP      var_4            CB     CA     C      O                180.000           20.000   3
+ YOP      var_5            CA     C      O      HO               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ YOP      chir_01          CA     CB     C      N         negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ YOP      plan-1            CG        0.020
+ YOP      plan-1            CB        0.020
+ YOP      plan-1            CD1       0.020
+ YOP      plan-1            CD2       0.020
+ YOP      plan-1            CE1       0.020
+ YOP      plan-1            CF        0.020
+ YOP      plan-1            NE2       0.020
+ YOP      plan-1            HD1       0.020
+ YOP      plan-1            HE1       0.020
+ YOP      plan-1            HF        0.020
+ YOP      plan-1            OD2       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-YOP
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-YOP  1 SG      2 C         .           1.800    0.020
+#
+data_link_P6S-VAL
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ P6S-VAL  1 C19     2 N         .           1.330    0.020
+#
+data_link_ALC-YOP
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ALC-YOP  1 C       2 N         .           1.330    0.020
+# ------------------------------------------------------

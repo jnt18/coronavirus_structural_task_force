@@ -1,0 +1,316 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+FNO      FNO '.                                   ' .                  41  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_FNO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ FNO           O05    O    OH1       0.000     64.193  -31.616    3.478
+ FNO           HO05   H    H         0.000     63.943  -31.507    4.409
+ FNO           C16    C    CR6       0.000     65.389  -32.341    3.385
+ FNO           C19    C    CR16      0.000     66.068  -32.804    4.513
+ FNO           H19    H    H         0.000     65.668  -32.610    5.500
+ FNO           C18    C    CR16      0.000     67.261  -33.517    4.374
+ FNO           H18    H    H         0.000     67.793  -33.873    5.248
+ FNO           C15    C    CR6       0.000     67.759  -33.765    3.092
+ FNO           O03    O    OH1       0.000     68.956  -34.477    2.930
+ FNO           HO03   H    H         0.000     69.165  -34.565    1.987
+ FNO           C11    C    CR66      0.000     65.907  -32.597    2.091
+ FNO           C09    C    CR66      0.000     67.065  -33.294    1.935
+ FNO           C10    C    CR6       0.000     67.557  -33.536    0.615
+ FNO           O02    O    OH1       0.000     68.754  -34.249    0.407
+ FNO           HO02   H    H         0.000     68.938  -34.321   -0.543
+ FNO           C13    C    CR6       0.000     65.178  -32.104    0.970
+ FNO           O04    O    OH1       0.000     63.982  -31.402    1.223
+ FNO           HO04   H    H         0.000     63.578  -31.118    0.387
+ FNO           C12    C    CR16      0.000     65.659  -32.334   -0.320
+ FNO           H12    H    H         0.000     65.118  -31.960   -1.180
+ FNO           C07    C    CR6       0.000     66.853  -33.056   -0.491
+ FNO           C06    C    CH1       0.000     67.410  -33.339   -1.898
+ FNO           H06    H    H         0.000     67.770  -34.377   -1.932
+ FNO           O01    O    OH1       0.000     68.483  -32.479   -2.204
+ FNO           HO01   H    H         0.000     68.809  -32.681   -3.090
+ FNO           C08    C    CH2       0.000     66.277  -33.182   -2.910
+ FNO           H081   H    H         0.000     66.392  -32.206   -3.386
+ FNO           H082   H    H         0.000     65.335  -33.208   -2.358
+ FNO           C14    C    CH2       0.000     66.273  -34.274   -3.979
+ FNO           H141   H    H         0.000     65.770  -35.156   -3.578
+ FNO           H142   H    H         0.000     67.306  -34.527   -4.227
+ FNO           C17    C    CH1       0.000     65.548  -33.800   -5.236
+ FNO           H17    H    H         0.000     65.729  -32.720   -5.332
+ FNO           C21    C    CH3       0.000     64.031  -34.003   -5.118
+ FNO           H213   H    H         0.000     63.820  -35.032   -4.977
+ FNO           H212   H    H         0.000     63.662  -33.453   -4.291
+ FNO           H211   H    H         0.000     63.557  -33.665   -6.004
+ FNO           C20    C    CH3       0.000     66.113  -34.470   -6.488
+ FNO           H203   H    H         0.000     67.142  -34.233   -6.583
+ FNO           H202   H    H         0.000     65.999  -35.520   -6.409
+ FNO           H201   H    H         0.000     65.592  -34.122   -7.342
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ FNO      O05    n/a    C16    START
+ FNO      HO05   O05    .      .
+ FNO      C16    O05    C11    .
+ FNO      C19    C16    C18    .
+ FNO      H19    C19    .      .
+ FNO      C18    C19    C15    .
+ FNO      H18    C18    .      .
+ FNO      C15    C18    O03    .
+ FNO      O03    C15    HO03   .
+ FNO      HO03   O03    .      .
+ FNO      C11    C16    C13    .
+ FNO      C09    C11    C10    .
+ FNO      C10    C09    O02    .
+ FNO      O02    C10    HO02   .
+ FNO      HO02   O02    .      .
+ FNO      C13    C11    C12    .
+ FNO      O04    C13    HO04   .
+ FNO      HO04   O04    .      .
+ FNO      C12    C13    C07    .
+ FNO      H12    C12    .      .
+ FNO      C07    C12    C06    .
+ FNO      C06    C07    C08    .
+ FNO      H06    C06    .      .
+ FNO      O01    C06    HO01   .
+ FNO      HO01   O01    .      .
+ FNO      C08    C06    C14    .
+ FNO      H081   C08    .      .
+ FNO      H082   C08    .      .
+ FNO      C14    C08    C17    .
+ FNO      H141   C14    .      .
+ FNO      H142   C14    .      .
+ FNO      C17    C14    C20    .
+ FNO      H17    C17    .      .
+ FNO      C21    C17    H211   .
+ FNO      H213   C21    .      .
+ FNO      H212   C21    .      .
+ FNO      H211   C21    .      .
+ FNO      C20    C17    H201   .
+ FNO      H203   C20    .      .
+ FNO      H202   C20    .      .
+ FNO      H201   C20    .      END
+ FNO      C10    C07    .    ADD
+ FNO      C15    C09    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ FNO      C10    C07       aromatic    1.384    0.020
+ FNO      C10    C09       aromatic    1.390    0.020
+ FNO      O02    C10       single      1.362    0.020
+ FNO      C13    C11       aromatic    1.390    0.020
+ FNO      C12    C13       aromatic    1.390    0.020
+ FNO      O04    C13       single      1.362    0.020
+ FNO      C15    C09       aromatic    1.390    0.020
+ FNO      C15    C18       aromatic    1.390    0.020
+ FNO      O03    C15       single      1.362    0.020
+ FNO      C20    C17       single      1.524    0.020
+ FNO      C21    C17       single      1.524    0.020
+ FNO      C17    C14       single      1.524    0.020
+ FNO      C06    C07       single      1.480    0.020
+ FNO      C08    C06       single      1.524    0.020
+ FNO      O01    C06       single      1.432    0.020
+ FNO      C07    C12       aromatic    1.390    0.020
+ FNO      C14    C08       single      1.524    0.020
+ FNO      C09    C11       aromatic    1.390    0.020
+ FNO      C11    C16       aromatic    1.390    0.020
+ FNO      C19    C16       aromatic    1.390    0.020
+ FNO      C16    O05       single      1.362    0.020
+ FNO      C18    C19       aromatic    1.390    0.020
+ FNO      H17    C17       single      1.099    0.020
+ FNO      H201   C20       single      1.059    0.020
+ FNO      H202   C20       single      1.059    0.020
+ FNO      H203   C20       single      1.059    0.020
+ FNO      H211   C21       single      1.059    0.020
+ FNO      H212   C21       single      1.059    0.020
+ FNO      H213   C21       single      1.059    0.020
+ FNO      H06    C06       single      1.099    0.020
+ FNO      H081   C08       single      1.092    0.020
+ FNO      H082   C08       single      1.092    0.020
+ FNO      H12    C12       single      1.083    0.020
+ FNO      H141   C14       single      1.092    0.020
+ FNO      H142   C14       single      1.092    0.020
+ FNO      H18    C18       single      1.083    0.020
+ FNO      H19    C19       single      1.083    0.020
+ FNO      HO01   O01       single      0.967    0.020
+ FNO      HO02   O02       single      0.967    0.020
+ FNO      HO03   O03       single      0.967    0.020
+ FNO      HO04   O04       single      0.967    0.020
+ FNO      HO05   O05       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ FNO      HO05   O05    C16     109.470    3.000
+ FNO      O05    C16    C19     120.000    3.000
+ FNO      O05    C16    C11     120.000    3.000
+ FNO      C19    C16    C11     120.000    3.000
+ FNO      C16    C19    H19     120.000    3.000
+ FNO      C16    C19    C18     120.000    3.000
+ FNO      H19    C19    C18     120.000    3.000
+ FNO      C19    C18    H18     120.000    3.000
+ FNO      C19    C18    C15     120.000    3.000
+ FNO      H18    C18    C15     120.000    3.000
+ FNO      C18    C15    O03     120.000    3.000
+ FNO      C18    C15    C09     120.000    3.000
+ FNO      O03    C15    C09     120.000    3.000
+ FNO      C15    O03    HO03    109.470    3.000
+ FNO      C16    C11    C09     120.000    3.000
+ FNO      C16    C11    C13     120.000    3.000
+ FNO      C09    C11    C13     120.000    3.000
+ FNO      C11    C09    C10     120.000    3.000
+ FNO      C11    C09    C15     120.000    3.000
+ FNO      C10    C09    C15     120.000    3.000
+ FNO      C09    C10    O02     120.000    3.000
+ FNO      C09    C10    C07     120.000    3.000
+ FNO      O02    C10    C07     120.000    3.000
+ FNO      C10    O02    HO02    109.470    3.000
+ FNO      C11    C13    O04     120.000    3.000
+ FNO      C11    C13    C12     120.000    3.000
+ FNO      O04    C13    C12     120.000    3.000
+ FNO      C13    O04    HO04    109.470    3.000
+ FNO      C13    C12    H12     120.000    3.000
+ FNO      C13    C12    C07     120.000    3.000
+ FNO      H12    C12    C07     120.000    3.000
+ FNO      C12    C07    C06     120.000    3.000
+ FNO      C12    C07    C10     120.000    3.000
+ FNO      C06    C07    C10     120.000    3.000
+ FNO      C07    C06    H06     109.470    3.000
+ FNO      C07    C06    O01     109.470    3.000
+ FNO      C07    C06    C08     109.470    3.000
+ FNO      H06    C06    O01     109.470    3.000
+ FNO      H06    C06    C08     108.340    3.000
+ FNO      O01    C06    C08     109.470    3.000
+ FNO      C06    O01    HO01    109.470    3.000
+ FNO      C06    C08    H081    109.470    3.000
+ FNO      C06    C08    H082    109.470    3.000
+ FNO      C06    C08    C14     111.000    3.000
+ FNO      H081   C08    H082    107.900    3.000
+ FNO      H081   C08    C14     109.470    3.000
+ FNO      H082   C08    C14     109.470    3.000
+ FNO      C08    C14    H141    109.470    3.000
+ FNO      C08    C14    H142    109.470    3.000
+ FNO      C08    C14    C17     111.000    3.000
+ FNO      H141   C14    H142    107.900    3.000
+ FNO      H141   C14    C17     109.470    3.000
+ FNO      H142   C14    C17     109.470    3.000
+ FNO      C14    C17    H17     108.340    3.000
+ FNO      C14    C17    C21     111.000    3.000
+ FNO      C14    C17    C20     111.000    3.000
+ FNO      H17    C17    C21     108.340    3.000
+ FNO      H17    C17    C20     108.340    3.000
+ FNO      C21    C17    C20     111.000    3.000
+ FNO      C17    C21    H213    109.470    3.000
+ FNO      C17    C21    H212    109.470    3.000
+ FNO      C17    C21    H211    109.470    3.000
+ FNO      H213   C21    H212    109.470    3.000
+ FNO      H213   C21    H211    109.470    3.000
+ FNO      H212   C21    H211    109.470    3.000
+ FNO      C17    C20    H203    109.470    3.000
+ FNO      C17    C20    H202    109.470    3.000
+ FNO      C17    C20    H201    109.470    3.000
+ FNO      H203   C20    H202    109.470    3.000
+ FNO      H203   C20    H201    109.470    3.000
+ FNO      H202   C20    H201    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ FNO      var_1            HO05   O05    C16    C11              180.000           20.000   3
+ FNO      CONST_1          O05    C16    C19    C18                0.000            0.000   0
+ FNO      CONST_2          C16    C19    C18    C15                0.000            0.000   0
+ FNO      CONST_3          C19    C18    C15    O03                0.000            0.000   0
+ FNO      CONST_4          C18    C15    C09    C11              180.000            0.000   0
+ FNO      var_2            C18    C15    O03    HO03             180.000           20.000   3
+ FNO      CONST_5          O05    C16    C11    C13              180.000            0.000   0
+ FNO      CONST_6          C16    C11    C09    C10              179.885            0.000   0
+ FNO      CONST_7          C11    C09    C10    O02              180.000            0.000   0
+ FNO      CONST_8          C09    C10    C07    C12                0.000            0.000   0
+ FNO      var_3            C09    C10    O02    HO02             180.000           20.000   3
+ FNO      CONST_9          C16    C11    C13    C12              180.000            0.000   0
+ FNO      var_4            C11    C13    O04    HO04             180.000           20.000   3
+ FNO      CONST_10         C11    C13    C12    C07                0.000            0.000   0
+ FNO      CONST_11         C13    C12    C07    C06                0.000            0.000   0
+ FNO      var_5            C12    C07    C06    C08              -19.829           20.000   3
+ FNO      var_6            C07    C06    O01    HO01             180.000           20.000   3
+ FNO      var_7            C07    C06    C08    C14              180.000           20.000   3
+ FNO      var_8            C06    C08    C14    C17              180.000           20.000   3
+ FNO      var_9            C08    C14    C17    C20              180.000           20.000   3
+ FNO      var_10           C14    C17    C21    H211             180.000           20.000   3
+ FNO      var_11           C14    C17    C20    H201             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ FNO      chir_01          C17    C20    C21    C14       negativ
+ FNO      chir_02          C06    C07    C08    O01       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ FNO      plan-1            C10       0.020
+ FNO      plan-1            C07       0.020
+ FNO      plan-1            C09       0.020
+ FNO      plan-1            O02       0.020
+ FNO      plan-1            C13       0.020
+ FNO      plan-1            C12       0.020
+ FNO      plan-1            C11       0.020
+ FNO      plan-1            O04       0.020
+ FNO      plan-1            C15       0.020
+ FNO      plan-1            C18       0.020
+ FNO      plan-1            O03       0.020
+ FNO      plan-1            C16       0.020
+ FNO      plan-1            C19       0.020
+ FNO      plan-1            C06       0.020
+ FNO      plan-1            H12       0.020
+ FNO      plan-1            O05       0.020
+ FNO      plan-1            H18       0.020
+ FNO      plan-1            H19       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

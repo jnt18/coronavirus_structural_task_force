@@ -1,0 +1,266 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+L30      L30 '.                                   ' .                  30  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_L30
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ L30           O18    O    O         0.000     -1.397   68.116   39.270
+ L30           C6     C    C         0.000     -0.999   69.208   38.851
+ L30           C7     C    CR6       0.000     -2.031   70.276   38.562
+ L30           C15    C    CR16      0.000     -1.613   71.560   38.232
+ L30           H15    H    H         0.000     -0.559   71.807   38.237
+ L30           N13    N    NRD6      0.000     -2.526   72.497   37.905
+ L30           C12    C    CR16      0.000     -3.866   72.244   37.905
+ L30           H12    H    H         0.000     -4.569   73.035   37.673
+ L30           C10    C    CR16      0.000     -4.324   70.973   38.202
+ L30           H10    H    H         0.000     -5.386   70.759   38.180
+ L30           C8     C    CR16      0.000     -3.415   69.967   38.530
+ L30           H8     H    H         0.000     -3.761   68.966   38.757
+ L30           N5     N    N         0.000      0.287   69.564   38.518
+ L30           C4     C    CR6       0.000      1.407   68.754   38.623
+ L30           C21    C    CR66      0.000      1.409   67.409   38.025
+ L30           C20    C    CR16      0.000      0.400   66.975   37.172
+ L30           H20    H    H         0.000     -0.439   67.626   36.959
+ L30           C28    C    CR16      0.000      0.457   65.719   36.592
+ L30           H28    H    H         0.000     -0.324   65.393   35.916
+ L30           C26    C    CR16      0.000      1.554   64.858   36.894
+ L30           H26    H    H         0.000      1.605   63.883   36.426
+ L30           C24    C    CR16      0.000      2.568   65.245   37.782
+ L30           H24    H    H         0.000      3.362   64.553   38.034
+ L30           C22    C    CR66      0.000      2.553   66.516   38.337
+ L30           C1     C    CR16      0.000      3.552   66.953   39.181
+ L30           H1     H    H         0.000      4.387   66.300   39.402
+ L30           C2     C    CR16      0.000      3.504   68.219   39.753
+ L30           H2     H    H         0.000      4.301   68.535   40.414
+ L30           C3     C    CR16      0.000      2.440   69.093   39.488
+ L30           H3     H    H         0.000      2.423   70.062   39.972
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ L30      O18    n/a    C6     START
+ L30      C6     O18    N5     .
+ L30      C7     C6     C15    .
+ L30      C15    C7     N13    .
+ L30      H15    C15    .      .
+ L30      N13    C15    C12    .
+ L30      C12    N13    C10    .
+ L30      H12    C12    .      .
+ L30      C10    C12    C8     .
+ L30      H10    C10    .      .
+ L30      C8     C10    H8     .
+ L30      H8     C8     .      .
+ L30      N5     C6     C4     .
+ L30      C4     N5     C21    .
+ L30      C21    C4     C22    .
+ L30      C20    C21    C28    .
+ L30      H20    C20    .      .
+ L30      C28    C20    C26    .
+ L30      H28    C28    .      .
+ L30      C26    C28    C24    .
+ L30      H26    C26    .      .
+ L30      C24    C26    H24    .
+ L30      H24    C24    .      .
+ L30      C22    C21    C1     .
+ L30      C1     C22    C2     .
+ L30      H1     C1     .      .
+ L30      C2     C1     C3     .
+ L30      H2     C2     .      .
+ L30      C3     C2     H3     .
+ L30      H3     C3     .      END
+ L30      C7     C8     .    ADD
+ L30      C4     C3     .    ADD
+ L30      C22    C24    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ L30      C6     O18       deloc       1.220    0.020
+ L30      C7     C6        single      1.500    0.020
+ L30      N5     C6        deloc       1.330    0.020
+ L30      C7     C8        aromatic    1.390    0.020
+ L30      C15    C7        aromatic    1.390    0.020
+ L30      C8     C10       aromatic    1.390    0.020
+ L30      C10    C12       aromatic    1.390    0.020
+ L30      C12    N13       aromatic    1.337    0.020
+ L30      N13    C15       deloc       1.337    0.020
+ L30      C4     N5        deloc       1.355    0.020
+ L30      C4     C3        aromatic    1.390    0.020
+ L30      C21    C4        single      1.490    0.020
+ L30      C3     C2        aromatic    1.390    0.020
+ L30      C2     C1        aromatic    1.390    0.020
+ L30      C1     C22       aromatic    1.390    0.020
+ L30      C22    C24       aromatic    1.390    0.020
+ L30      C22    C21       single      1.490    0.020
+ L30      C24    C26       aromatic    1.390    0.020
+ L30      C26    C28       aromatic    1.390    0.020
+ L30      C28    C20       aromatic    1.390    0.020
+ L30      C20    C21       aromatic    1.390    0.020
+ L30      H8     C8        single      1.083    0.020
+ L30      H10    C10       single      1.083    0.020
+ L30      H12    C12       single      1.083    0.020
+ L30      H15    C15       single      1.083    0.020
+ L30      H3     C3        single      1.083    0.020
+ L30      H2     C2        single      1.083    0.020
+ L30      H1     C1        single      1.083    0.020
+ L30      H24    C24       single      1.083    0.020
+ L30      H26    C26       single      1.083    0.020
+ L30      H28    C28       single      1.083    0.020
+ L30      H20    C20       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ L30      O18    C6     C7      120.500    3.000
+ L30      O18    C6     N5      123.000    3.000
+ L30      C7     C6     N5      120.000    3.000
+ L30      C6     C7     C15     120.000    3.000
+ L30      C6     C7     C8      120.000    3.000
+ L30      C15    C7     C8      120.000    3.000
+ L30      C7     C15    H15     120.000    3.000
+ L30      C7     C15    N13     120.000    3.000
+ L30      H15    C15    N13     120.000    3.000
+ L30      C15    N13    C12     120.000    3.000
+ L30      N13    C12    H12     120.000    3.000
+ L30      N13    C12    C10     120.000    3.000
+ L30      H12    C12    C10     120.000    3.000
+ L30      C12    C10    H10     120.000    3.000
+ L30      C12    C10    C8      120.000    3.000
+ L30      H10    C10    C8      120.000    3.000
+ L30      C10    C8     H8      120.000    3.000
+ L30      C10    C8     C7      120.000    3.000
+ L30      H8     C8     C7      120.000    3.000
+ L30      C6     N5     C4      120.000    3.000
+ L30      N5     C4     C21     120.000    3.000
+ L30      N5     C4     C3      120.000    3.000
+ L30      C21    C4     C3      120.000    3.000
+ L30      C4     C21    C20     120.000    3.000
+ L30      C4     C21    C22     120.000    3.000
+ L30      C20    C21    C22     120.000    3.000
+ L30      C21    C20    H20     120.000    3.000
+ L30      C21    C20    C28     120.000    3.000
+ L30      H20    C20    C28     120.000    3.000
+ L30      C20    C28    H28     120.000    3.000
+ L30      C20    C28    C26     120.000    3.000
+ L30      H28    C28    C26     120.000    3.000
+ L30      C28    C26    H26     120.000    3.000
+ L30      C28    C26    C24     120.000    3.000
+ L30      H26    C26    C24     120.000    3.000
+ L30      C26    C24    H24     120.000    3.000
+ L30      C26    C24    C22     120.000    3.000
+ L30      H24    C24    C22     120.000    3.000
+ L30      C21    C22    C1      120.000    3.000
+ L30      C21    C22    C24     120.000    3.000
+ L30      C1     C22    C24     120.000    3.000
+ L30      C22    C1     H1      120.000    3.000
+ L30      C22    C1     C2      120.000    3.000
+ L30      H1     C1     C2      120.000    3.000
+ L30      C1     C2     H2      120.000    3.000
+ L30      C1     C2     C3      120.000    3.000
+ L30      H2     C2     C3      120.000    3.000
+ L30      C2     C3     H3      120.000    3.000
+ L30      C2     C3     C4      120.000    3.000
+ L30      H3     C3     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ L30      var_1            O18    C6     C7     C15              172.930           20.000   3
+ L30      CONST_1          C6     C7     C8     C10                0.000            0.000   0
+ L30      CONST_2          C6     C7     C15    N13                0.000            0.000   0
+ L30      CONST_3          C7     C15    N13    C12                0.000            0.000   0
+ L30      CONST_4          C15    N13    C12    C10                0.000            0.000   0
+ L30      CONST_5          N13    C12    C10    C8                 0.000            0.000   0
+ L30      CONST_6          C12    C10    C8     C7                 0.000            0.000   0
+ L30      CONST_7          O18    C6     N5     C4               180.000            0.000   0
+ L30      CONST_8          C6     N5     C4     C21               51.843            0.000   0
+ L30      CONST_9          N5     C4     C3     C2                 0.000            0.000   0
+ L30      CONST_10         N5     C4     C21    C22              180.000            0.000   0
+ L30      CONST_11         C4     C21    C20    C28              180.000            0.000   0
+ L30      CONST_12         C21    C20    C28    C26                0.000            0.000   0
+ L30      CONST_13         C20    C28    C26    C24                0.000            0.000   0
+ L30      CONST_14         C28    C26    C24    C22                0.000            0.000   0
+ L30      CONST_15         C4     C21    C22    C1                 1.119            0.000   0
+ L30      CONST_16         C21    C22    C24    C26              180.000            0.000   0
+ L30      CONST_17         C21    C22    C1     C2               180.000            0.000   0
+ L30      CONST_18         C22    C1     C2     C3                 0.000            0.000   0
+ L30      CONST_19         C1     C2     C3     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ L30      plan-1            C6        0.020
+ L30      plan-1            O18       0.020
+ L30      plan-1            C7        0.020
+ L30      plan-1            N5        0.020
+ L30      plan-1            C4        0.020
+ L30      plan-1            C3        0.020
+ L30      plan-1            C21       0.020
+ L30      plan-1            C2        0.020
+ L30      plan-1            C1        0.020
+ L30      plan-1            H3        0.020
+ L30      plan-1            H2        0.020
+ L30      plan-1            C22       0.020
+ L30      plan-1            H1        0.020
+ L30      plan-1            C24       0.020
+ L30      plan-1            C26       0.020
+ L30      plan-1            C28       0.020
+ L30      plan-1            C20       0.020
+ L30      plan-1            H24       0.020
+ L30      plan-1            H26       0.020
+ L30      plan-1            H28       0.020
+ L30      plan-1            H20       0.020
+ L30      plan-2            C7        0.020
+ L30      plan-2            C6        0.020
+ L30      plan-2            C8        0.020
+ L30      plan-2            C15       0.020
+ L30      plan-2            C10       0.020
+ L30      plan-2            C12       0.020
+ L30      plan-2            N13       0.020
+ L30      plan-2            H8        0.020
+ L30      plan-2            H10       0.020
+ L30      plan-2            H12       0.020
+ L30      plan-2            H15       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

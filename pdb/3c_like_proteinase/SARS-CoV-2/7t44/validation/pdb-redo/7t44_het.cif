@@ -1,0 +1,889 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+ESS      ESS '.                                   ' .                  60  29 .
+ET6      ET6 '.                                   ' .                  60  29 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-ESS  CYS      .        .        ESS      .        .
+ bond_CYS-SG_=_ESS-C19
+CYS-ET6  CYS      .        .        ET6      .        .
+ bond_CYS-SG_=_ET6-C19
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_ESS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ ESS           O21    O    O         0.000     10.087   22.203   28.459
+ ESS           C09    C    C         0.000     10.743   21.502   27.697
+ ESS           N10    N    N         0.000     10.230   20.291   27.244
+ ESS           C11    C    CH1       0.000      8.909   19.776   27.669
+ ESS           H11    H    H         0.000      8.498   20.425   28.454
+ ESS           C19    C    CH2       0.000      9.052   18.324   28.217
+ ESS           H191   H    H         0.000      9.586   17.684   27.511
+ ESS           H192   H    H         0.000      8.077   17.885   28.439
+ ESS           O20    O    OH1       0.000      9.799   18.440   29.406
+ ESS           HO20   H    H         0.000      9.919   17.563   29.791
+ ESS           C12    C    CH2       0.000      7.924   19.745   26.447
+ ESS           H121   H    H         0.000      7.003   19.256   26.772
+ ESS           H122   H    H         0.000      8.390   19.152   25.657
+ ESS           C13    C    CH1       0.000      7.597   21.160   25.908
+ ESS           H13    H    H         0.000      8.521   21.694   25.644
+ ESS           C14    C    C         0.000      6.684   21.045   24.697
+ ESS           O18    O    O         0.000      6.844   20.337   23.708
+ ESS           N15    N    N         0.000      5.595   21.892   24.834
+ ESS           C16    C    CH2       0.000      5.629   22.644   26.096
+ ESS           H162   H    H         0.000      4.687   22.561   26.642
+ ESS           H161   H    H         0.000      5.862   23.698   25.932
+ ESS           C17    C    CH2       0.000      6.766   21.983   26.919
+ ESS           H172   H    H         0.000      7.373   22.758   27.391
+ ESS           H171   H    H         0.000      6.334   21.341   27.689
+ ESS           C04    C    CH1       0.000     12.164   21.967   27.195
+ ESS           H04    H    H         0.000     12.420   21.422   26.275
+ ESS           C05    C    CH2       0.000     13.221   21.656   28.286
+ ESS           H051   H    H         0.000     13.223   20.576   28.446
+ ESS           H052   H    H         0.000     12.907   22.158   29.203
+ ESS           C06    C    CH1       0.000     14.643   22.124   27.901
+ ESS           H06    H    H         0.000     14.640   23.223   27.871
+ ESS           C08    C    CH3       0.000     15.706   21.684   28.907
+ ESS           H083   H    H         0.000     15.480   22.088   29.859
+ ESS           H082   H    H         0.000     15.720   20.626   28.967
+ ESS           H081   H    H         0.000     16.656   22.031   28.592
+ ESS           C07    C    CH3       0.000     15.054   21.618   26.519
+ ESS           H073   H    H         0.000     15.040   20.559   26.511
+ ESS           H072   H    H         0.000     14.376   21.984   25.792
+ ESS           H071   H    H         0.000     16.031   21.959   26.293
+ ESS           N03    N    N         0.000     12.161   23.410   26.919
+ ESS           C02    C    C         0.000     11.337   24.004   25.996
+ ESS           O01    O    O         0.000     10.627   23.349   25.225
+ ESS           O22    O    O2        0.000     11.289   25.386   25.919
+ ESS           C23    C    CH1       0.000     10.670   26.015   24.809
+ ESS           H23    H    H         0.000     10.691   25.358   23.928
+ ESS           C24    C    CH2       0.000     11.243   27.441   24.454
+ ESS           H241   H    H         0.000     11.870   27.529   23.564
+ ESS           H242   H    H         0.000     11.678   28.030   25.264
+ ESS           C25    C    CT        0.000      9.822   27.964   24.139
+ ESS           C33    C    CH2       0.000      9.287   26.745   24.923
+ ESS           H332   H    H         0.000      8.514   26.138   24.447
+ ESS           H331   H    H         0.000      9.037   26.891   25.976
+ ESS           C26    C    CH2       0.000      9.314   29.409   24.443
+ ESS           H261   H    H         0.000     10.057   30.151   24.743
+ ESS           H262   H    H         0.000      8.427   29.509   25.071
+ ESS           N27    N    NT1       0.000      8.936   29.629   22.996
+ ESS           HN27   H    H         0.000      8.559   30.423   22.453
+ ESS           C32    C    CH2       0.000      9.333   28.221   22.673
+ ESS           H322   H    H         0.000     10.166   28.081   21.980
+ ESS           H321   H    H         0.000      8.534   27.519   22.426
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ ESS      O21    n/a    C09    START
+ ESS      C09    O21    C04    .
+ ESS      N10    C09    C11    .
+ ESS      C11    N10    C12    .
+ ESS      H11    C11    .      .
+ ESS      C19    C11    O20    .
+ ESS      H191   C19    .      .
+ ESS      H192   C19    .      .
+ ESS      O20    C19    HO20   .
+ ESS      HO20   O20    .      .
+ ESS      C12    C11    C13    .
+ ESS      H121   C12    .      .
+ ESS      H122   C12    .      .
+ ESS      C13    C12    C17    .
+ ESS      H13    C13    .      .
+ ESS      C14    C13    N15    .
+ ESS      O18    C14    .      .
+ ESS      N15    C14    C16    .
+ ESS      C16    N15    H161   .
+ ESS      H162   C16    .      .
+ ESS      H161   C16    .      .
+ ESS      C17    C13    H171   .
+ ESS      H172   C17    .      .
+ ESS      H171   C17    .      .
+ ESS      C04    C09    N03    .
+ ESS      H04    C04    .      .
+ ESS      C05    C04    C06    .
+ ESS      H051   C05    .      .
+ ESS      H052   C05    .      .
+ ESS      C06    C05    C07    .
+ ESS      H06    C06    .      .
+ ESS      C08    C06    H081   .
+ ESS      H083   C08    .      .
+ ESS      H082   C08    .      .
+ ESS      H081   C08    .      .
+ ESS      C07    C06    H071   .
+ ESS      H073   C07    .      .
+ ESS      H072   C07    .      .
+ ESS      H071   C07    .      .
+ ESS      N03    C04    C02    .
+ ESS      C02    N03    O22    .
+ ESS      O01    C02    .      .
+ ESS      O22    C02    C23    .
+ ESS      C23    O22    C24    .
+ ESS      H23    C23    .      .
+ ESS      C24    C23    C25    .
+ ESS      H241   C24    .      .
+ ESS      H242   C24    .      .
+ ESS      C25    C24    C26    .
+ ESS      C33    C25    H331   .
+ ESS      H332   C33    .      .
+ ESS      H331   C33    .      .
+ ESS      C26    C25    N27    .
+ ESS      H261   C26    .      .
+ ESS      H262   C26    .      .
+ ESS      N27    C26    C32    .
+ ESS      HN27   N27    .      .
+ ESS      C32    N27    H321   .
+ ESS      H322   C32    .      .
+ ESS      H321   C32    .      END
+ ESS      C33    C23    .    ADD
+ ESS      C32    C25    .    ADD
+ ESS      C17    C16    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ ESS      C33    C23       single      1.524    0.020
+ ESS      C33    C25       single      1.524    0.020
+ ESS      C32    C25       single      1.524    0.020
+ ESS      C32    N27       single      1.472    0.020
+ ESS      C11    N10       single      1.455    0.020
+ ESS      N10    C09       deloc       1.330    0.020
+ ESS      C24    C23       single      1.524    0.020
+ ESS      C23    O22       single      1.426    0.020
+ ESS      C25    C24       single      1.524    0.020
+ ESS      C26    C25       single      1.524    0.020
+ ESS      N27    C26       single      1.472    0.020
+ ESS      C17    C16       single      1.524    0.020
+ ESS      C17    C13       single      1.524    0.020
+ ESS      C19    C11       single      1.524    0.020
+ ESS      O20    C19       single      1.432    0.020
+ ESS      C16    N15       single      1.455    0.020
+ ESS      C12    C11       single      1.524    0.020
+ ESS      C13    C12       single      1.524    0.020
+ ESS      C14    C13       single      1.500    0.020
+ ESS      N15    C14       aromatic    1.330    0.020
+ ESS      O18    C14       double      1.220    0.020
+ ESS      C02    N03       deloc       1.330    0.020
+ ESS      O01    C02       deloc       1.220    0.020
+ ESS      O22    C02       single      1.454    0.020
+ ESS      C05    C04       single      1.524    0.020
+ ESS      C04    C09       single      1.500    0.020
+ ESS      N03    C04       single      1.455    0.020
+ ESS      C06    C05       single      1.524    0.020
+ ESS      C07    C06       single      1.524    0.020
+ ESS      C08    C06       single      1.524    0.020
+ ESS      C09    O21       double      1.220    0.020
+ ESS      H331   C33       single      1.092    0.020
+ ESS      H332   C33       single      1.092    0.020
+ ESS      H321   C32       single      1.092    0.020
+ ESS      H322   C32       single      1.092    0.020
+ ESS      H23    C23       single      1.099    0.020
+ ESS      H241   C24       single      1.092    0.020
+ ESS      H242   C24       single      1.092    0.020
+ ESS      H261   C26       single      1.092    0.020
+ ESS      H262   C26       single      1.092    0.020
+ ESS      H171   C17       single      1.092    0.020
+ ESS      H172   C17       single      1.092    0.020
+ ESS      H191   C19       single      1.092    0.020
+ ESS      H192   C19       single      1.092    0.020
+ ESS      H161   C16       single      1.092    0.020
+ ESS      H162   C16       single      1.092    0.020
+ ESS      H11    C11       single      1.099    0.020
+ ESS      H121   C12       single      1.092    0.020
+ ESS      H122   C12       single      1.092    0.020
+ ESS      H13    C13       single      1.099    0.020
+ ESS      H04    C04       single      1.099    0.020
+ ESS      H051   C05       single      1.092    0.020
+ ESS      H052   C05       single      1.092    0.020
+ ESS      H06    C06       single      1.099    0.020
+ ESS      H071   C07       single      1.059    0.020
+ ESS      H072   C07       single      1.059    0.020
+ ESS      H073   C07       single      1.059    0.020
+ ESS      H081   C08       single      1.059    0.020
+ ESS      H082   C08       single      1.059    0.020
+ ESS      H083   C08       single      1.059    0.020
+ ESS      HN27   N27       single      1.033    0.020
+ ESS      HO20   O20       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ ESS      O21    C09    N10     123.000    3.000
+ ESS      O21    C09    C04     120.500    3.000
+ ESS      N10    C09    C04     116.500    3.000
+ ESS      C09    N10    C11     121.000    3.000
+ ESS      N10    C11    H11     109.470    3.000
+ ESS      N10    C11    C19     105.000    3.000
+ ESS      N10    C11    C12     105.000    3.000
+ ESS      H11    C11    C19     108.340    3.000
+ ESS      H11    C11    C12     108.340    3.000
+ ESS      C19    C11    C12     109.470    3.000
+ ESS      C11    C19    H191    109.470    3.000
+ ESS      C11    C19    H192    109.470    3.000
+ ESS      C11    C19    O20     109.470    3.000
+ ESS      H191   C19    H192    107.900    3.000
+ ESS      H191   C19    O20     109.470    3.000
+ ESS      H192   C19    O20     109.470    3.000
+ ESS      C19    O20    HO20    109.470    3.000
+ ESS      C11    C12    H121    109.470    3.000
+ ESS      C11    C12    H122    109.470    3.000
+ ESS      C11    C12    C13     111.000    3.000
+ ESS      H121   C12    H122    107.900    3.000
+ ESS      H121   C12    C13     109.470    3.000
+ ESS      H122   C12    C13     109.470    3.000
+ ESS      C12    C13    H13     108.340    3.000
+ ESS      C12    C13    C14     109.470    3.000
+ ESS      C12    C13    C17     109.470    3.000
+ ESS      H13    C13    C14     108.810    3.000
+ ESS      H13    C13    C17     108.340    3.000
+ ESS      C14    C13    C17     109.470    3.000
+ ESS      C13    C14    O18     120.500    3.000
+ ESS      C13    C14    N15     116.500    3.000
+ ESS      O18    C14    N15     123.000    3.000
+ ESS      C14    N15    C16     127.000    3.000
+ ESS      N15    C16    H162    109.470    3.000
+ ESS      N15    C16    H161    109.470    3.000
+ ESS      N15    C16    C17     105.000    3.000
+ ESS      H162   C16    H161    107.900    3.000
+ ESS      H162   C16    C17     109.470    3.000
+ ESS      H161   C16    C17     109.470    3.000
+ ESS      C13    C17    H172    109.470    3.000
+ ESS      C13    C17    H171    109.470    3.000
+ ESS      C13    C17    C16     111.000    3.000
+ ESS      H172   C17    H171    107.900    3.000
+ ESS      H172   C17    C16     109.470    3.000
+ ESS      H171   C17    C16     109.470    3.000
+ ESS      C09    C04    H04     108.810    3.000
+ ESS      C09    C04    C05     109.470    3.000
+ ESS      C09    C04    N03     111.600    3.000
+ ESS      H04    C04    C05     108.340    3.000
+ ESS      H04    C04    N03     109.470    3.000
+ ESS      C05    C04    N03     105.000    3.000
+ ESS      C04    C05    H051    109.470    3.000
+ ESS      C04    C05    H052    109.470    3.000
+ ESS      C04    C05    C06     111.000    3.000
+ ESS      H051   C05    H052    107.900    3.000
+ ESS      H051   C05    C06     109.470    3.000
+ ESS      H052   C05    C06     109.470    3.000
+ ESS      C05    C06    H06     108.340    3.000
+ ESS      C05    C06    C08     111.000    3.000
+ ESS      C05    C06    C07     111.000    3.000
+ ESS      H06    C06    C08     108.340    3.000
+ ESS      H06    C06    C07     108.340    3.000
+ ESS      C08    C06    C07     111.000    3.000
+ ESS      C06    C08    H083    109.470    3.000
+ ESS      C06    C08    H082    109.470    3.000
+ ESS      C06    C08    H081    109.470    3.000
+ ESS      H083   C08    H082    109.470    3.000
+ ESS      H083   C08    H081    109.470    3.000
+ ESS      H082   C08    H081    109.470    3.000
+ ESS      C06    C07    H073    109.470    3.000
+ ESS      C06    C07    H072    109.470    3.000
+ ESS      C06    C07    H071    109.470    3.000
+ ESS      H073   C07    H072    109.470    3.000
+ ESS      H073   C07    H071    109.470    3.000
+ ESS      H072   C07    H071    109.470    3.000
+ ESS      C04    N03    C02     121.000    3.000
+ ESS      N03    C02    O01     123.000    3.000
+ ESS      N03    C02    O22     120.000    3.000
+ ESS      O01    C02    O22     119.000    3.000
+ ESS      C02    O22    C23     111.800    3.000
+ ESS      O22    C23    H23     109.470    3.000
+ ESS      O22    C23    C24     109.470    3.000
+ ESS      O22    C23    C33     109.470    3.000
+ ESS      H23    C23    C24     108.340    3.000
+ ESS      H23    C23    C33     108.340    3.000
+ ESS      C24    C23    C33     109.470    3.000
+ ESS      C23    C24    H241    109.470    3.000
+ ESS      C23    C24    H242    109.470    3.000
+ ESS      C23    C24    C25     111.000    3.000
+ ESS      H241   C24    H242    107.900    3.000
+ ESS      H241   C24    C25     109.470    3.000
+ ESS      H242   C24    C25     109.470    3.000
+ ESS      C24    C25    C33     111.000    3.000
+ ESS      C24    C25    C26     111.000    3.000
+ ESS      C24    C25    C32     111.000    3.000
+ ESS      C33    C25    C26     111.000    3.000
+ ESS      C33    C25    C32     111.000    3.000
+ ESS      C26    C25    C32     111.000    3.000
+ ESS      C25    C33    H332    109.470    3.000
+ ESS      C25    C33    H331    109.470    3.000
+ ESS      C25    C33    C23     111.000    3.000
+ ESS      H332   C33    H331    107.900    3.000
+ ESS      H332   C33    C23     109.470    3.000
+ ESS      H331   C33    C23     109.470    3.000
+ ESS      C25    C26    H261    109.470    3.000
+ ESS      C25    C26    H262    109.470    3.000
+ ESS      C25    C26    N27     109.500    3.000
+ ESS      H261   C26    H262    107.900    3.000
+ ESS      H261   C26    N27     109.500    3.000
+ ESS      H262   C26    N27     109.500    3.000
+ ESS      C26    N27    HN27    109.500    3.000
+ ESS      C26    N27    C32     109.500    3.000
+ ESS      HN27   N27    C32     109.500    3.000
+ ESS      N27    C32    H322    109.500    3.000
+ ESS      N27    C32    H321    109.500    3.000
+ ESS      N27    C32    C25     109.500    3.000
+ ESS      H322   C32    H321    107.900    3.000
+ ESS      H322   C32    C25     109.470    3.000
+ ESS      H321   C32    C25     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ ESS      CONST_1          O21    C09    N10    C11              180.000            0.000   0
+ ESS      var_1            C09    N10    C11    C12                0.000           20.000   3
+ ESS      var_2            N10    C11    C19    O20              180.000           20.000   3
+ ESS      var_3            C11    C19    O20    HO20             180.000           20.000   3
+ ESS      var_4            N10    C11    C12    C13              180.000           20.000   3
+ ESS      var_5            C11    C12    C13    C17              180.000           20.000   3
+ ESS      var_6            C12    C13    C14    N15              180.000           20.000   3
+ ESS      var_7            C13    C14    N15    C16              180.000           20.000   2
+ ESS      var_8            C14    N15    C16    C17              -10.409           20.000   3
+ ESS      var_9            C12    C13    C17    C16              180.000           20.000   3
+ ESS      var_10           C13    C17    C16    N15              180.000           20.000   3
+ ESS      var_11           O21    C09    C04    N03              180.000           20.000   3
+ ESS      var_12           C09    C04    C05    C06              180.000           20.000   3
+ ESS      var_13           C04    C05    C06    C07              180.000           20.000   3
+ ESS      var_14           C05    C06    C08    H081             180.000           20.000   3
+ ESS      var_15           C05    C06    C07    H071             180.000           20.000   3
+ ESS      var_16           C09    C04    N03    C02                0.000           20.000   3
+ ESS      CONST_2          C04    N03    C02    O22              180.000            0.000   0
+ ESS      var_17           N03    C02    O22    C23              166.950           20.000   3
+ ESS      var_18           C02    O22    C23    C24             -151.749           20.000   3
+ ESS      var_19           O22    C23    C24    C25              180.000           20.000   3
+ ESS      var_20           C23    C24    C25    C26              144.121           20.000   3
+ ESS      var_21           C24    C25    C33    C23              -17.579           20.000   3
+ ESS      var_22           C25    C33    C23    O22              180.000           20.000   3
+ ESS      var_23           C24    C25    C26    N27              123.875           20.000   3
+ ESS      var_24           C25    C26    N27    C32                3.240           20.000   3
+ ESS      var_25           C26    N27    C32    C25               -3.231           20.000   3
+ ESS      var_26           N27    C32    C25    C24             -126.132           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ ESS      chir_01          C23    C33    C24    O22       negativ
+ ESS      chir_02          C25    C33    C32    C24       positiv
+ ESS      chir_03          C11    N10    C19    C12       positiv
+ ESS      chir_04          C13    C17    C12    C14       negativ
+ ESS      chir_05          C04    C05    C09    N03       negativ
+ ESS      chir_06          C06    C05    C07    C08       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ ESS      plan-1            N10       0.020
+ ESS      plan-1            C11       0.020
+ ESS      plan-1            C09       0.020
+ ESS      plan-1            C04       0.020
+ ESS      plan-1            O21       0.020
+ ESS      plan-2            C14       0.020
+ ESS      plan-2            C13       0.020
+ ESS      plan-2            N15       0.020
+ ESS      plan-2            O18       0.020
+ ESS      plan-3            C02       0.020
+ ESS      plan-3            N03       0.020
+ ESS      plan-3            O01       0.020
+ ESS      plan-3            O22       0.020
+ ESS      plan-3            C04       0.020
+ ESS      plan-4            N15       0.020
+ ESS      plan-4            C16       0.020
+ ESS      plan-4            C14       0.020
+#
+data_comp_ET6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ ET6           O21    O    O         0.000     10.423   21.924   28.833
+ ET6           C09    C    C         0.000     10.924   21.459   27.813
+ ET6           N10    N    N         0.000     10.276   20.438   27.127
+ ET6           C11    C    CH1       0.000      8.998   19.873   27.596
+ ET6           H11    H    H         0.000      8.570   20.544   28.353
+ ET6           C19    C    CH2       0.000      9.241   18.469   28.243
+ ET6           H191   H    H         0.000      9.892   18.552   29.116
+ ET6           H192   H    H         0.000      9.688   17.782   27.521
+ ET6           O20    O    OH1       0.000      7.979   17.981   28.640
+ ET6           HO20   H    H         0.000      8.088   17.112   29.045
+ ET6           C12    C    CH2       0.000      7.996   19.754   26.401
+ ET6           H121   H    H         0.000      7.104   19.227   26.746
+ ET6           H122   H    H         0.000      8.472   19.178   25.604
+ ET6           C13    C    CH1       0.000      7.596   21.151   25.863
+ ET6           H13    H    H         0.000      8.491   21.719   25.573
+ ET6           C14    C    C         0.000      6.658   21.004   24.678
+ ET6           O18    O    O         0.000      6.813   20.297   23.688
+ ET6           N15    N    N         0.000      5.553   21.826   24.840
+ ET6           C16    C    CH2       0.000      5.601   22.585   26.098
+ ET6           H162   H    H         0.000      4.673   22.488   26.665
+ ET6           H161   H    H         0.000      5.812   23.642   25.926
+ ET6           C17    C    CH2       0.000      6.766   21.947   26.896
+ ET6           H172   H    H         0.000      7.363   22.733   27.362
+ ET6           H171   H    H         0.000      6.362   21.291   27.670
+ ET6           C04    C    CH1       0.000     12.294   22.005   27.273
+ ET6           H04    H    H         0.000     12.579   21.452   26.367
+ ET6           C05    C    CH2       0.000     13.350   21.769   28.377
+ ET6           H051   H    H         0.000     13.160   20.776   28.791
+ ET6           H052   H    H         0.000     13.177   22.523   29.148
+ ET6           C06    C    CH1       0.000     14.806   21.854   27.892
+ ET6           H06    H    H         0.000     14.906   22.724   27.227
+ ET6           C08    C    CH3       0.000     15.778   22.015   29.061
+ ET6           H083   H    H         0.000     15.550   22.903   29.591
+ ET6           H082   H    H         0.000     15.690   21.184   29.711
+ ET6           H081   H    H         0.000     16.769   22.070   28.692
+ ET6           C07    C    CH3       0.000     15.216   20.602   27.124
+ ET6           H073   H    H         0.000     15.122   19.755   27.753
+ ET6           H072   H    H         0.000     14.589   20.485   26.279
+ ET6           H071   H    H         0.000     16.222   20.696   26.806
+ ET6           N03    N    N         0.000     12.200   23.449   26.963
+ ET6           C02    C    C         0.000     11.335   23.994   26.036
+ ET6           O01    O    O         0.000     10.744   23.308   25.195
+ ET6           O22    O    O2        0.000     11.102   25.363   26.050
+ ET6           C23    C    CH1       0.000     10.618   26.036   24.892
+ ET6           H23    H    H         0.000     10.526   25.334   24.051
+ ET6           C24    C    CH2       0.000      9.272   26.829   25.093
+ ET6           H241   H    H         0.000      9.074   27.256   26.078
+ ET6           H242   H    H         0.000      8.355   26.385   24.699
+ ET6           C25    C    CT        0.000      9.761   27.942   24.135
+ ET6           C33    C    CH2       0.000     11.194   27.411   24.395
+ ET6           H332   H    H         0.000     11.772   27.876   25.196
+ ET6           H331   H    H         0.000     11.841   27.245   23.530
+ ET6           C26    C    CH2       0.000      9.233   28.174   22.681
+ ET6           H261   H    H         0.000      8.270   27.731   22.419
+ ET6           H262   H    H         0.000      9.937   28.023   21.860
+ ET6           N27    N    NT1       0.000      9.058   29.648   22.930
+ ET6           HN27   H    H         0.000      8.791   30.459   22.349
+ ET6           C32    C    CH2       0.000      9.433   29.453   24.375
+ ET6           H322   H    H         0.000      8.637   29.541   25.117
+ ET6           H321   H    H         0.000     10.326   29.967   24.737
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ ET6      O21    n/a    C09    START
+ ET6      C09    O21    C04    .
+ ET6      N10    C09    C11    .
+ ET6      C11    N10    C12    .
+ ET6      H11    C11    .      .
+ ET6      C19    C11    O20    .
+ ET6      H191   C19    .      .
+ ET6      H192   C19    .      .
+ ET6      O20    C19    HO20   .
+ ET6      HO20   O20    .      .
+ ET6      C12    C11    C13    .
+ ET6      H121   C12    .      .
+ ET6      H122   C12    .      .
+ ET6      C13    C12    C17    .
+ ET6      H13    C13    .      .
+ ET6      C14    C13    N15    .
+ ET6      O18    C14    .      .
+ ET6      N15    C14    C16    .
+ ET6      C16    N15    H161   .
+ ET6      H162   C16    .      .
+ ET6      H161   C16    .      .
+ ET6      C17    C13    H171   .
+ ET6      H172   C17    .      .
+ ET6      H171   C17    .      .
+ ET6      C04    C09    N03    .
+ ET6      H04    C04    .      .
+ ET6      C05    C04    C06    .
+ ET6      H051   C05    .      .
+ ET6      H052   C05    .      .
+ ET6      C06    C05    C07    .
+ ET6      H06    C06    .      .
+ ET6      C08    C06    H081   .
+ ET6      H083   C08    .      .
+ ET6      H082   C08    .      .
+ ET6      H081   C08    .      .
+ ET6      C07    C06    H071   .
+ ET6      H073   C07    .      .
+ ET6      H072   C07    .      .
+ ET6      H071   C07    .      .
+ ET6      N03    C04    C02    .
+ ET6      C02    N03    O22    .
+ ET6      O01    C02    .      .
+ ET6      O22    C02    C23    .
+ ET6      C23    O22    C24    .
+ ET6      H23    C23    .      .
+ ET6      C24    C23    C25    .
+ ET6      H241   C24    .      .
+ ET6      H242   C24    .      .
+ ET6      C25    C24    C26    .
+ ET6      C33    C25    H331   .
+ ET6      H332   C33    .      .
+ ET6      H331   C33    .      .
+ ET6      C26    C25    N27    .
+ ET6      H261   C26    .      .
+ ET6      H262   C26    .      .
+ ET6      N27    C26    C32    .
+ ET6      HN27   N27    .      .
+ ET6      C32    N27    H321   .
+ ET6      H322   C32    .      .
+ ET6      H321   C32    .      END
+ ET6      C33    C23    .    ADD
+ ET6      C32    C25    .    ADD
+ ET6      C17    C16    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ ET6      C33    C23       single      1.524    0.020
+ ET6      C33    C25       single      1.524    0.020
+ ET6      C32    C25       single      1.524    0.020
+ ET6      C32    N27       single      1.472    0.020
+ ET6      C11    N10       single      1.455    0.020
+ ET6      N10    C09       deloc       1.330    0.020
+ ET6      C24    C23       single      1.524    0.020
+ ET6      C23    O22       single      1.426    0.020
+ ET6      C25    C24       single      1.524    0.020
+ ET6      C26    C25       single      1.524    0.020
+ ET6      N27    C26       single      1.472    0.020
+ ET6      C17    C16       single      1.524    0.020
+ ET6      C17    C13       single      1.524    0.020
+ ET6      C19    C11       single      1.524    0.020
+ ET6      O20    C19       single      1.432    0.020
+ ET6      C16    N15       single      1.455    0.020
+ ET6      C12    C11       single      1.524    0.020
+ ET6      C13    C12       single      1.524    0.020
+ ET6      C14    C13       single      1.500    0.020
+ ET6      N15    C14       aromatic    1.330    0.020
+ ET6      O18    C14       double      1.220    0.020
+ ET6      C02    N03       deloc       1.330    0.020
+ ET6      O01    C02       deloc       1.220    0.020
+ ET6      O22    C02       single      1.454    0.020
+ ET6      C05    C04       single      1.524    0.020
+ ET6      C04    C09       single      1.500    0.020
+ ET6      N03    C04       single      1.455    0.020
+ ET6      C06    C05       single      1.524    0.020
+ ET6      C07    C06       single      1.524    0.020
+ ET6      C08    C06       single      1.524    0.020
+ ET6      C09    O21       double      1.220    0.020
+ ET6      H331   C33       single      1.092    0.020
+ ET6      H332   C33       single      1.092    0.020
+ ET6      H321   C32       single      1.092    0.020
+ ET6      H322   C32       single      1.092    0.020
+ ET6      H23    C23       single      1.099    0.020
+ ET6      H241   C24       single      1.092    0.020
+ ET6      H242   C24       single      1.092    0.020
+ ET6      H261   C26       single      1.092    0.020
+ ET6      H262   C26       single      1.092    0.020
+ ET6      H171   C17       single      1.092    0.020
+ ET6      H172   C17       single      1.092    0.020
+ ET6      H191   C19       single      1.092    0.020
+ ET6      H192   C19       single      1.092    0.020
+ ET6      H161   C16       single      1.092    0.020
+ ET6      H162   C16       single      1.092    0.020
+ ET6      H11    C11       single      1.099    0.020
+ ET6      H121   C12       single      1.092    0.020
+ ET6      H122   C12       single      1.092    0.020
+ ET6      H13    C13       single      1.099    0.020
+ ET6      H04    C04       single      1.099    0.020
+ ET6      H051   C05       single      1.092    0.020
+ ET6      H052   C05       single      1.092    0.020
+ ET6      H06    C06       single      1.099    0.020
+ ET6      H071   C07       single      1.059    0.020
+ ET6      H072   C07       single      1.059    0.020
+ ET6      H073   C07       single      1.059    0.020
+ ET6      H081   C08       single      1.059    0.020
+ ET6      H082   C08       single      1.059    0.020
+ ET6      H083   C08       single      1.059    0.020
+ ET6      HN27   N27       single      1.033    0.020
+ ET6      HO20   O20       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ ET6      O21    C09    N10     123.000    3.000
+ ET6      O21    C09    C04     120.500    3.000
+ ET6      N10    C09    C04     116.500    3.000
+ ET6      C09    N10    C11     121.000    3.000
+ ET6      N10    C11    H11     109.470    3.000
+ ET6      N10    C11    C19     105.000    3.000
+ ET6      N10    C11    C12     105.000    3.000
+ ET6      H11    C11    C19     108.340    3.000
+ ET6      H11    C11    C12     108.340    3.000
+ ET6      C19    C11    C12     109.470    3.000
+ ET6      C11    C19    H191    109.470    3.000
+ ET6      C11    C19    H192    109.470    3.000
+ ET6      C11    C19    O20     109.470    3.000
+ ET6      H191   C19    H192    107.900    3.000
+ ET6      H191   C19    O20     109.470    3.000
+ ET6      H192   C19    O20     109.470    3.000
+ ET6      C19    O20    HO20    109.470    3.000
+ ET6      C11    C12    H121    109.470    3.000
+ ET6      C11    C12    H122    109.470    3.000
+ ET6      C11    C12    C13     111.000    3.000
+ ET6      H121   C12    H122    107.900    3.000
+ ET6      H121   C12    C13     109.470    3.000
+ ET6      H122   C12    C13     109.470    3.000
+ ET6      C12    C13    H13     108.340    3.000
+ ET6      C12    C13    C14     109.470    3.000
+ ET6      C12    C13    C17     109.470    3.000
+ ET6      H13    C13    C14     108.810    3.000
+ ET6      H13    C13    C17     108.340    3.000
+ ET6      C14    C13    C17     109.470    3.000
+ ET6      C13    C14    O18     120.500    3.000
+ ET6      C13    C14    N15     116.500    3.000
+ ET6      O18    C14    N15     123.000    3.000
+ ET6      C14    N15    C16     127.000    3.000
+ ET6      N15    C16    H162    109.470    3.000
+ ET6      N15    C16    H161    109.470    3.000
+ ET6      N15    C16    C17     105.000    3.000
+ ET6      H162   C16    H161    107.900    3.000
+ ET6      H162   C16    C17     109.470    3.000
+ ET6      H161   C16    C17     109.470    3.000
+ ET6      C13    C17    H172    109.470    3.000
+ ET6      C13    C17    H171    109.470    3.000
+ ET6      C13    C17    C16     111.000    3.000
+ ET6      H172   C17    H171    107.900    3.000
+ ET6      H172   C17    C16     109.470    3.000
+ ET6      H171   C17    C16     109.470    3.000
+ ET6      C09    C04    H04     108.810    3.000
+ ET6      C09    C04    C05     109.470    3.000
+ ET6      C09    C04    N03     111.600    3.000
+ ET6      H04    C04    C05     108.340    3.000
+ ET6      H04    C04    N03     109.470    3.000
+ ET6      C05    C04    N03     105.000    3.000
+ ET6      C04    C05    H051    109.470    3.000
+ ET6      C04    C05    H052    109.470    3.000
+ ET6      C04    C05    C06     111.000    3.000
+ ET6      H051   C05    H052    107.900    3.000
+ ET6      H051   C05    C06     109.470    3.000
+ ET6      H052   C05    C06     109.470    3.000
+ ET6      C05    C06    H06     108.340    3.000
+ ET6      C05    C06    C08     111.000    3.000
+ ET6      C05    C06    C07     111.000    3.000
+ ET6      H06    C06    C08     108.340    3.000
+ ET6      H06    C06    C07     108.340    3.000
+ ET6      C08    C06    C07     111.000    3.000
+ ET6      C06    C08    H083    109.470    3.000
+ ET6      C06    C08    H082    109.470    3.000
+ ET6      C06    C08    H081    109.470    3.000
+ ET6      H083   C08    H082    109.470    3.000
+ ET6      H083   C08    H081    109.470    3.000
+ ET6      H082   C08    H081    109.470    3.000
+ ET6      C06    C07    H073    109.470    3.000
+ ET6      C06    C07    H072    109.470    3.000
+ ET6      C06    C07    H071    109.470    3.000
+ ET6      H073   C07    H072    109.470    3.000
+ ET6      H073   C07    H071    109.470    3.000
+ ET6      H072   C07    H071    109.470    3.000
+ ET6      C04    N03    C02     121.000    3.000
+ ET6      N03    C02    O01     123.000    3.000
+ ET6      N03    C02    O22     120.000    3.000
+ ET6      O01    C02    O22     119.000    3.000
+ ET6      C02    O22    C23     111.800    3.000
+ ET6      O22    C23    H23     109.470    3.000
+ ET6      O22    C23    C24     109.470    3.000
+ ET6      O22    C23    C33     109.470    3.000
+ ET6      H23    C23    C24     108.340    3.000
+ ET6      H23    C23    C33     108.340    3.000
+ ET6      C24    C23    C33     109.470    3.000
+ ET6      C23    C24    H241    109.470    3.000
+ ET6      C23    C24    H242    109.470    3.000
+ ET6      C23    C24    C25     111.000    3.000
+ ET6      H241   C24    H242    107.900    3.000
+ ET6      H241   C24    C25     109.470    3.000
+ ET6      H242   C24    C25     109.470    3.000
+ ET6      C24    C25    C33     111.000    3.000
+ ET6      C24    C25    C26     111.000    3.000
+ ET6      C24    C25    C32     111.000    3.000
+ ET6      C33    C25    C26     111.000    3.000
+ ET6      C33    C25    C32     111.000    3.000
+ ET6      C26    C25    C32     111.000    3.000
+ ET6      C25    C33    H332    109.470    3.000
+ ET6      C25    C33    H331    109.470    3.000
+ ET6      C25    C33    C23     111.000    3.000
+ ET6      H332   C33    H331    107.900    3.000
+ ET6      H332   C33    C23     109.470    3.000
+ ET6      H331   C33    C23     109.470    3.000
+ ET6      C25    C26    H261    109.470    3.000
+ ET6      C25    C26    H262    109.470    3.000
+ ET6      C25    C26    N27     109.500    3.000
+ ET6      H261   C26    H262    107.900    3.000
+ ET6      H261   C26    N27     109.500    3.000
+ ET6      H262   C26    N27     109.500    3.000
+ ET6      C26    N27    HN27    109.500    3.000
+ ET6      C26    N27    C32     109.500    3.000
+ ET6      HN27   N27    C32     109.500    3.000
+ ET6      N27    C32    H322    109.500    3.000
+ ET6      N27    C32    H321    109.500    3.000
+ ET6      N27    C32    C25     109.500    3.000
+ ET6      H322   C32    H321    107.900    3.000
+ ET6      H322   C32    C25     109.470    3.000
+ ET6      H321   C32    C25     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ ET6      CONST_1          O21    C09    N10    C11              180.000            0.000   0
+ ET6      var_1            C09    N10    C11    C12                0.000           20.000   3
+ ET6      var_2            N10    C11    C19    O20              180.000           20.000   3
+ ET6      var_3            C11    C19    O20    HO20             180.000           20.000   3
+ ET6      var_4            N10    C11    C12    C13              180.000           20.000   3
+ ET6      var_5            C11    C12    C13    C17              180.000           20.000   3
+ ET6      var_6            C12    C13    C14    N15              180.000           20.000   3
+ ET6      var_7            C13    C14    N15    C16              180.000           20.000   2
+ ET6      var_8            C14    N15    C16    C17              -10.830           20.000   3
+ ET6      var_9            C12    C13    C17    C16              180.000           20.000   3
+ ET6      var_10           C13    C17    C16    N15              180.000           20.000   3
+ ET6      var_11           O21    C09    C04    N03              180.000           20.000   3
+ ET6      var_12           C09    C04    C05    C06              180.000           20.000   3
+ ET6      var_13           C04    C05    C06    C07              180.000           20.000   3
+ ET6      var_14           C05    C06    C08    H081             180.000           20.000   3
+ ET6      var_15           C05    C06    C07    H071             180.000           20.000   3
+ ET6      var_16           C09    C04    N03    C02                0.000           20.000   3
+ ET6      CONST_2          C04    N03    C02    O22              180.000            0.000   0
+ ET6      var_17           N03    C02    O22    C23              158.166           20.000   3
+ ET6      var_18           C02    O22    C23    C24              122.969           20.000   3
+ ET6      var_19           O22    C23    C24    C25              180.000           20.000   3
+ ET6      var_20           C23    C24    C25    C26              106.844           20.000   3
+ ET6      var_21           C24    C25    C33    C23               19.673           20.000   3
+ ET6      var_22           C25    C33    C23    O22              180.000           20.000   3
+ ET6      var_23           C24    C25    C26    N27              132.037           20.000   3
+ ET6      var_24           C25    C26    N27    C32               -5.115           20.000   3
+ ET6      var_25           C26    N27    C32    C25                5.113           20.000   3
+ ET6      var_26           N27    C32    C25    C24             -134.480           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ ET6      chir_01          C23    C33    C24    O22       positiv
+ ET6      chir_02          C25    C33    C32    C24       positiv
+ ET6      chir_03          C11    N10    C19    C12       positiv
+ ET6      chir_04          C13    C17    C12    C14       negativ
+ ET6      chir_05          C04    C05    C09    N03       negativ
+ ET6      chir_06          C06    C05    C07    C08       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ ET6      plan-1            N10       0.020
+ ET6      plan-1            C11       0.020
+ ET6      plan-1            C09       0.020
+ ET6      plan-1            C04       0.020
+ ET6      plan-1            O21       0.020
+ ET6      plan-2            C14       0.020
+ ET6      plan-2            C13       0.020
+ ET6      plan-2            N15       0.020
+ ET6      plan-2            O18       0.020
+ ET6      plan-3            C02       0.020
+ ET6      plan-3            N03       0.020
+ ET6      plan-3            O01       0.020
+ ET6      plan-3            O22       0.020
+ ET6      plan-3            C04       0.020
+ ET6      plan-4            N15       0.020
+ ET6      plan-4            C16       0.020
+ ET6      plan-4            C14       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-ESS
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-ESS  1 SG      2 C19       .           1.800    0.020
+#
+data_link_CYS-ET6
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-ET6  1 SG      2 C19       .           1.810    0.020
+# ------------------------------------------------------

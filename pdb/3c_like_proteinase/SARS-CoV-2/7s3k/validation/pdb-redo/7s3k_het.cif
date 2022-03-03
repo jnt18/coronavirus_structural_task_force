@@ -1,0 +1,305 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+Z26      Z26 '.                                   ' .                  37  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_Z26
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ Z26           CL23   CL   CL        0.000    -18.150   -1.737   18.792
+ Z26           C5     C    CR6       0.000    -19.248   -0.984   17.638
+ Z26           C7     C    CR16      0.000    -20.146   -0.003   18.042
+ Z26           H7     H    H         0.000    -20.183    0.317   19.076
+ Z26           C19    C    CR16      0.000    -21.001    0.565   17.092
+ Z26           H19    H    H         0.000    -21.714    1.325   17.388
+ Z26           C20    C    CR6       0.000    -20.933    0.149   15.758
+ Z26           O21    O    O2        0.000    -21.718    0.641   14.754
+ Z26           C22    C    CH3       0.000    -21.961    2.052   14.714
+ Z26           H223   H    H         0.000    -22.442    2.354   15.608
+ Z26           H222   H    H         0.000    -21.041    2.568   14.617
+ Z26           H221   H    H         0.000    -22.582    2.282   13.886
+ Z26           C4     C    CR16      0.000    -19.173   -1.404   16.318
+ Z26           H4     H    H         0.000    -18.457   -2.164   16.031
+ Z26           C1     C    CR6       0.000    -20.017   -0.850   15.365
+ Z26           C2     C    CH2       0.000    -19.933   -1.292   13.931
+ Z26           H21    H    H         0.000    -20.946   -1.291   13.523
+ Z26           H22    H    H         0.000    -19.538   -2.310   13.919
+ Z26           C3     C    C         0.000    -19.039   -0.387   13.083
+ Z26           O18    O    O         0.000    -18.671    0.706   13.520
+ Z26           N6     N    N         0.000    -18.686   -0.852   11.852
+ Z26           C8     C    CR6       0.000    -17.884   -0.141   10.940
+ Z26           C13    C    CR16      0.000    -16.502   -0.143   10.992
+ Z26           H13    H    H         0.000    -16.017   -0.728   11.763
+ Z26           N12    N    NRD6      0.000    -15.721    0.556   10.120
+ Z26           C11    C    CR16      0.000    -16.311    1.267    9.180
+ Z26           H11    H    H         0.000    -15.686    1.819    8.489
+ Z26           C9     C    CR66      0.000    -18.547    0.626    9.933
+ Z26           C10    C    CR66      0.000    -17.717    1.351    9.022
+ Z26           C14    C    CR16      0.000    -19.960    0.708    9.784
+ Z26           H14    H    H         0.000    -20.608    0.169   10.464
+ Z26           C15    C    CR16      0.000    -20.505    1.472    8.775
+ Z26           H15    H    H         0.000    -21.582    1.527    8.671
+ Z26           C16    C    CR16      0.000    -19.680    2.187    7.872
+ Z26           H16    H    H         0.000    -20.128    2.780    7.084
+ Z26           C17    C    CR16      0.000    -18.309    2.129    7.995
+ Z26           H17    H    H         0.000    -17.682    2.679    7.305
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ Z26      CL23   n/a    C5     START
+ Z26      C5     CL23   C4     .
+ Z26      C7     C5     C19    .
+ Z26      H7     C7     .      .
+ Z26      C19    C7     C20    .
+ Z26      H19    C19    .      .
+ Z26      C20    C19    O21    .
+ Z26      O21    C20    C22    .
+ Z26      C22    O21    H221   .
+ Z26      H223   C22    .      .
+ Z26      H222   C22    .      .
+ Z26      H221   C22    .      .
+ Z26      C4     C5     C1     .
+ Z26      H4     C4     .      .
+ Z26      C1     C4     C2     .
+ Z26      C2     C1     C3     .
+ Z26      H21    C2     .      .
+ Z26      H22    C2     .      .
+ Z26      C3     C2     N6     .
+ Z26      O18    C3     .      .
+ Z26      N6     C3     C8     .
+ Z26      C8     N6     C9     .
+ Z26      C13    C8     N12    .
+ Z26      H13    C13    .      .
+ Z26      N12    C13    C11    .
+ Z26      C11    N12    H11    .
+ Z26      H11    C11    .      .
+ Z26      C9     C8     C14    .
+ Z26      C10    C9     .      .
+ Z26      C14    C9     C15    .
+ Z26      H14    C14    .      .
+ Z26      C15    C14    C16    .
+ Z26      H15    C15    .      .
+ Z26      C16    C15    C17    .
+ Z26      H16    C16    .      .
+ Z26      C17    C16    H17    .
+ Z26      H17    C17    .      END
+ Z26      C1     C20    .    ADD
+ Z26      C10    C11    .    ADD
+ Z26      C10    C17    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ Z26      C2     C1        single      1.511    0.020
+ Z26      C1     C20       aromatic    1.384    0.020
+ Z26      C1     C4        aromatic    1.390    0.020
+ Z26      C10    C11       aromatic    1.390    0.020
+ Z26      C10    C17       aromatic    1.390    0.020
+ Z26      C10    C9        aromatic    1.390    0.020
+ Z26      C11    N12       aromatic    1.337    0.020
+ Z26      C13    C8        aromatic    1.390    0.020
+ Z26      N12    C13       aromatic    1.337    0.020
+ Z26      C15    C14       aromatic    1.390    0.020
+ Z26      C14    C9        aromatic    1.390    0.020
+ Z26      C16    C15       aromatic    1.390    0.020
+ Z26      C17    C16       aromatic    1.390    0.020
+ Z26      C20    C19       aromatic    1.390    0.020
+ Z26      C19    C7        aromatic    1.390    0.020
+ Z26      C3     C2        single      1.510    0.020
+ Z26      O21    C20       single      1.370    0.020
+ Z26      C22    O21       single      1.426    0.020
+ Z26      N6     C3        deloc       1.330    0.020
+ Z26      O18    C3        double      1.220    0.020
+ Z26      C4     C5        aromatic    1.390    0.020
+ Z26      C7     C5        aromatic    1.390    0.020
+ Z26      C5     CL23      single      1.795    0.020
+ Z26      C9     C8        aromatic    1.390    0.020
+ Z26      C8     N6        single      1.400    0.020
+ Z26      H11    C11       single      1.083    0.020
+ Z26      H13    C13       single      1.083    0.020
+ Z26      H14    C14       single      1.083    0.020
+ Z26      H15    C15       single      1.083    0.020
+ Z26      H16    C16       single      1.083    0.020
+ Z26      H17    C17       single      1.083    0.020
+ Z26      H19    C19       single      1.083    0.020
+ Z26      H21    C2        single      1.092    0.020
+ Z26      H22    C2        single      1.092    0.020
+ Z26      H221   C22       single      1.059    0.020
+ Z26      H222   C22       single      1.059    0.020
+ Z26      H223   C22       single      1.059    0.020
+ Z26      H4     C4        single      1.083    0.020
+ Z26      H7     C7        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ Z26      CL23   C5     C7      120.000    3.000
+ Z26      CL23   C5     C4      120.000    3.000
+ Z26      C7     C5     C4      120.000    3.000
+ Z26      C5     C7     H7      120.000    3.000
+ Z26      C5     C7     C19     120.000    3.000
+ Z26      H7     C7     C19     120.000    3.000
+ Z26      C7     C19    H19     120.000    3.000
+ Z26      C7     C19    C20     120.000    3.000
+ Z26      H19    C19    C20     120.000    3.000
+ Z26      C19    C20    O21     120.000    3.000
+ Z26      C19    C20    C1      120.000    3.000
+ Z26      O21    C20    C1      120.000    3.000
+ Z26      C20    O21    C22     120.000    3.000
+ Z26      O21    C22    H223    109.470    3.000
+ Z26      O21    C22    H222    109.470    3.000
+ Z26      O21    C22    H221    109.470    3.000
+ Z26      H223   C22    H222    109.470    3.000
+ Z26      H223   C22    H221    109.470    3.000
+ Z26      H222   C22    H221    109.470    3.000
+ Z26      C5     C4     H4      120.000    3.000
+ Z26      C5     C4     C1      120.000    3.000
+ Z26      H4     C4     C1      120.000    3.000
+ Z26      C4     C1     C2      120.000    3.000
+ Z26      C4     C1     C20     120.000    3.000
+ Z26      C2     C1     C20     120.000    3.000
+ Z26      C1     C2     H21     109.470    3.000
+ Z26      C1     C2     H22     109.470    3.000
+ Z26      C1     C2     C3      109.470    3.000
+ Z26      H21    C2     H22     107.900    3.000
+ Z26      H21    C2     C3      109.470    3.000
+ Z26      H22    C2     C3      109.470    3.000
+ Z26      C2     C3     O18     120.500    3.000
+ Z26      C2     C3     N6      116.500    3.000
+ Z26      O18    C3     N6      123.000    3.000
+ Z26      C3     N6     C8      120.000    3.000
+ Z26      N6     C8     C13     120.000    3.000
+ Z26      N6     C8     C9      120.000    3.000
+ Z26      C13    C8     C9      120.000    3.000
+ Z26      C8     C13    H13     120.000    3.000
+ Z26      C8     C13    N12     120.000    3.000
+ Z26      H13    C13    N12     120.000    3.000
+ Z26      C13    N12    C11     120.000    3.000
+ Z26      N12    C11    H11     120.000    3.000
+ Z26      N12    C11    C10     120.000    3.000
+ Z26      H11    C11    C10     120.000    3.000
+ Z26      C8     C9     C10     120.000    3.000
+ Z26      C8     C9     C14     120.000    3.000
+ Z26      C10    C9     C14     120.000    3.000
+ Z26      C9     C10    C11     120.000    3.000
+ Z26      C9     C10    C17     120.000    3.000
+ Z26      C11    C10    C17     120.000    3.000
+ Z26      C9     C14    H14     120.000    3.000
+ Z26      C9     C14    C15     120.000    3.000
+ Z26      H14    C14    C15     120.000    3.000
+ Z26      C14    C15    H15     120.000    3.000
+ Z26      C14    C15    C16     120.000    3.000
+ Z26      H15    C15    C16     120.000    3.000
+ Z26      C15    C16    H16     120.000    3.000
+ Z26      C15    C16    C17     120.000    3.000
+ Z26      H16    C16    C17     120.000    3.000
+ Z26      C16    C17    H17     120.000    3.000
+ Z26      C16    C17    C10     120.000    3.000
+ Z26      H17    C17    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ Z26      CONST_1          CL23   C5     C7     C19                0.000            0.000   0
+ Z26      CONST_2          C5     C7     C19    C20                0.000            0.000   0
+ Z26      CONST_3          C7     C19    C20    O21                0.000            0.000   0
+ Z26      var_1            C19    C20    O21    C22               41.757           20.000   3
+ Z26      var_2            C20    O21    C22    H221             180.000           20.000   3
+ Z26      CONST_4          CL23   C5     C4     C1                 0.000            0.000   0
+ Z26      CONST_5          C5     C4     C1     C2                 0.000            0.000   0
+ Z26      CONST_6          C4     C1     C20    C19                0.000            0.000   0
+ Z26      var_3            C4     C1     C2     C3                 0.000           20.000   2
+ Z26      var_4            C1     C2     C3     N6               180.000           20.000   3
+ Z26      CONST_7          C2     C3     N6     C8               180.000            0.000   0
+ Z26      var_5            C3     N6     C8     C9               -95.744           20.000   3
+ Z26      CONST_8          N6     C8     C13    N12                0.000            0.000   0
+ Z26      CONST_9          C8     C13    N12    C11                0.000            0.000   0
+ Z26      CONST_10         C13    N12    C11    C10                0.000            0.000   0
+ Z26      CONST_11         N6     C8     C9     C14              180.000            0.000   0
+ Z26      CONST_12         C8     C9     C10    C11               -0.292            0.000   0
+ Z26      CONST_13         C9     C10    C11    N12              180.000            0.000   0
+ Z26      CONST_14         C9     C10    C17    C16              180.000            0.000   0
+ Z26      CONST_15         C8     C9     C14    C15              180.000            0.000   0
+ Z26      CONST_16         C9     C14    C15    C16                0.000            0.000   0
+ Z26      CONST_17         C14    C15    C16    C17                0.000            0.000   0
+ Z26      CONST_18         C15    C16    C17    C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ Z26      plan-1            C1        0.020
+ Z26      plan-1            C2        0.020
+ Z26      plan-1            C20       0.020
+ Z26      plan-1            C4        0.020
+ Z26      plan-1            C19       0.020
+ Z26      plan-1            C5        0.020
+ Z26      plan-1            C7        0.020
+ Z26      plan-1            H19       0.020
+ Z26      plan-1            O21       0.020
+ Z26      plan-1            H4        0.020
+ Z26      plan-1            CL23      0.020
+ Z26      plan-1            H7        0.020
+ Z26      plan-2            C10       0.020
+ Z26      plan-2            C11       0.020
+ Z26      plan-2            C17       0.020
+ Z26      plan-2            C9        0.020
+ Z26      plan-2            C14       0.020
+ Z26      plan-2            C15       0.020
+ Z26      plan-2            C16       0.020
+ Z26      plan-2            N12       0.020
+ Z26      plan-2            H11       0.020
+ Z26      plan-2            C13       0.020
+ Z26      plan-2            C8        0.020
+ Z26      plan-2            H13       0.020
+ Z26      plan-2            H14       0.020
+ Z26      plan-2            H15       0.020
+ Z26      plan-2            H16       0.020
+ Z26      plan-2            H17       0.020
+ Z26      plan-2            N6        0.020
+ Z26      plan-3            C3        0.020
+ Z26      plan-3            C2        0.020
+ Z26      plan-3            N6        0.020
+ Z26      plan-3            O18       0.020
+ Z26      plan-3            C8        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

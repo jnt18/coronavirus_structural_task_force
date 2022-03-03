@@ -1,0 +1,424 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+Y6J      Y6J '.                                   ' .                  52  31 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_Y6J
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ Y6J           O29    O    O         0.000     30.423   -3.943   14.288
+ Y6J           C25    C    C         0.000     29.795   -4.863   14.695
+ Y6J           C26    C    CH1       0.000     30.464   -6.216   14.997
+ Y6J           H26    H    H         0.000     30.606   -6.921   14.166
+ Y6J           C28    C    CH2       0.000     31.485   -6.230   16.139
+ Y6J           H281   H    H         0.000     31.668   -5.403   16.829
+ Y6J           H282   H    H         0.000     32.218   -7.020   16.317
+ Y6J           C27    C    CH2       0.000     30.075   -6.781   16.363
+ Y6J           H272   H    H         0.000     29.235   -6.212   16.768
+ Y6J           H271   H    H         0.000     29.786   -7.829   16.256
+ Y6J           N24    N    NH1       0.000     28.361   -4.745   14.922
+ Y6J           HN24   H    H         0.000     27.845   -5.546   15.257
+ Y6J           C23    C    CR6       0.000     27.653   -3.487   14.674
+ Y6J           C22    C    CR16      0.000     26.488   -3.502   13.912
+ Y6J           H22    H    H         0.000     26.114   -4.428   13.492
+ Y6J           C21    C    CR16      0.000     25.814   -2.302   13.701
+ Y6J           H21    H    H         0.000     24.902   -2.297   13.117
+ Y6J           C30    C    CR16      0.000     28.138   -2.288   15.216
+ Y6J           H30    H    H         0.000     29.044   -2.294   15.810
+ Y6J           C31    C    CR16      0.000     27.465   -1.092   14.997
+ Y6J           H31    H    H         0.000     27.841   -0.166   15.413
+ Y6J           C20    C    CR6       0.000     26.298   -1.103   14.233
+ Y6J           N13    N    N         0.000     25.577    0.165   14.005
+ Y6J           C14    C    CH2       0.000     25.999    1.079   12.924
+ Y6J           H141   H    H         0.000     27.066    0.982   12.713
+ Y6J           H142   H    H         0.000     25.771    2.119   13.169
+ Y6J           C15    C    CR5       0.000     25.187    0.651   11.685
+ Y6J           C16    C    CR15      0.000     24.512   -0.616   11.571
+ Y6J           H16    H    H         0.000     24.513   -1.378   12.340
+ Y6J           S17    S    S2        0.000     23.751   -0.758   10.150
+ Y6J           C18    C    CR15      0.000     24.126    0.697    9.518
+ Y6J           H18    H    H         0.000     23.799    1.040    8.544
+ Y6J           C19    C    CR15      0.000     24.947    1.472   10.418
+ Y6J           H19    H    H         0.000     25.328    2.467   10.228
+ Y6J           C02    C    C         0.000     24.419    0.483   14.867
+ Y6J           O01    O    O         0.000     23.822    1.501   14.708
+ Y6J           C03    C    CH2       0.000     24.017   -0.526   15.981
+ Y6J           H031   H    H         0.000     24.919   -0.805   16.530
+ Y6J           H032   H    H         0.000     23.596   -1.412   15.502
+ Y6J           N04    N    NR5       0.000     23.034    0.045   16.909
+ Y6J           N12    N    NRD5      0.000     21.707   -0.042   16.789
+ Y6J           N11    N    NRD5      0.000     21.124    0.602   17.822
+ Y6J           C05    C    CR56      0.000     23.329    0.766   18.042
+ Y6J           C06    C    CR16      0.000     24.554    1.170   18.645
+ Y6J           H06    H    H         0.000     25.497    0.892   18.191
+ Y6J           C07    C    CR16      0.000     24.543    1.926   19.824
+ Y6J           H07    H    H         0.000     25.475    2.239   20.278
+ Y6J           C08    C    CR16      0.000     23.312    2.278   20.418
+ Y6J           H08    H    H         0.000     23.302    2.854   21.335
+ Y6J           C09    C    CR16      0.000     22.101    1.885   19.827
+ Y6J           H09    H    H         0.000     21.160    2.162   20.286
+ Y6J           C10    C    CR56      0.000     22.111    1.125   18.629
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ Y6J      O29    n/a    C25    START
+ Y6J      C25    O29    N24    .
+ Y6J      C26    C25    C28    .
+ Y6J      H26    C26    .      .
+ Y6J      C28    C26    C27    .
+ Y6J      H281   C28    .      .
+ Y6J      H282   C28    .      .
+ Y6J      C27    C28    H271   .
+ Y6J      H272   C27    .      .
+ Y6J      H271   C27    .      .
+ Y6J      N24    C25    C23    .
+ Y6J      HN24   N24    .      .
+ Y6J      C23    N24    C30    .
+ Y6J      C22    C23    C21    .
+ Y6J      H22    C22    .      .
+ Y6J      C21    C22    H21    .
+ Y6J      H21    C21    .      .
+ Y6J      C30    C23    C31    .
+ Y6J      H30    C30    .      .
+ Y6J      C31    C30    C20    .
+ Y6J      H31    C31    .      .
+ Y6J      C20    C31    N13    .
+ Y6J      N13    C20    C02    .
+ Y6J      C14    N13    C15    .
+ Y6J      H141   C14    .      .
+ Y6J      H142   C14    .      .
+ Y6J      C15    C14    C16    .
+ Y6J      C16    C15    S17    .
+ Y6J      H16    C16    .      .
+ Y6J      S17    C16    C18    .
+ Y6J      C18    S17    C19    .
+ Y6J      H18    C18    .      .
+ Y6J      C19    C18    H19    .
+ Y6J      H19    C19    .      .
+ Y6J      C02    N13    C03    .
+ Y6J      O01    C02    .      .
+ Y6J      C03    C02    N04    .
+ Y6J      H031   C03    .      .
+ Y6J      H032   C03    .      .
+ Y6J      N04    C03    C05    .
+ Y6J      N12    N04    N11    .
+ Y6J      N11    N12    .      .
+ Y6J      C05    N04    C06    .
+ Y6J      C06    C05    C07    .
+ Y6J      H06    C06    .      .
+ Y6J      C07    C06    C08    .
+ Y6J      H07    C07    .      .
+ Y6J      C08    C07    C09    .
+ Y6J      H08    C08    .      .
+ Y6J      C09    C08    C10    .
+ Y6J      H09    C09    .      .
+ Y6J      C10    C09    .      END
+ Y6J      C10    N11    .    ADD
+ Y6J      C10    C05    .    ADD
+ Y6J      C15    C19    .    ADD
+ Y6J      C20    C21    .    ADD
+ Y6J      C26    C27    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ Y6J      C10    N11       aromatic    1.350    0.020
+ Y6J      C10    C05       aromatic    1.390    0.020
+ Y6J      C10    C09       aromatic    1.390    0.020
+ Y6J      N11    N12       aromatic    1.404    0.020
+ Y6J      N13    C20       single      1.400    0.020
+ Y6J      C02    N13       single      1.330    0.020
+ Y6J      C14    N13       single      1.455    0.020
+ Y6J      C15    C19       single      1.387    0.020
+ Y6J      C16    C15       aromatic    1.387    0.020
+ Y6J      C15    C14       single      1.510    0.020
+ Y6J      C20    C21       aromatic    1.390    0.020
+ Y6J      C20    C31       aromatic    1.390    0.020
+ Y6J      C22    C23       aromatic    1.390    0.020
+ Y6J      C30    C23       aromatic    1.390    0.020
+ Y6J      C23    N24       single      1.350    0.020
+ Y6J      C19    C18       aromatic    1.380    0.020
+ Y6J      C18    S17       single      1.745    0.020
+ Y6J      S17    C16       single      1.745    0.020
+ Y6J      C03    C02       single      1.510    0.020
+ Y6J      O01    C02       double      1.220    0.020
+ Y6J      N04    C03       single      1.462    0.020
+ Y6J      C06    C05       aromatic    1.390    0.020
+ Y6J      C05    N04       single      1.337    0.020
+ Y6J      C07    C06       aromatic    1.390    0.020
+ Y6J      C08    C07       aromatic    1.390    0.020
+ Y6J      C09    C08       aromatic    1.390    0.020
+ Y6J      C21    C22       aromatic    1.390    0.020
+ Y6J      C26    C25       single      1.500    0.020
+ Y6J      N24    C25       single      1.330    0.020
+ Y6J      C25    O29       double      1.220    0.020
+ Y6J      C26    C27       single      1.524    0.020
+ Y6J      C28    C26       single      1.524    0.020
+ Y6J      C27    C28       single      1.524    0.020
+ Y6J      C31    C30       aromatic    1.390    0.020
+ Y6J      N12    N04       single      1.402    0.020
+ Y6J      H19    C19       single      1.083    0.020
+ Y6J      H18    C18       single      1.083    0.020
+ Y6J      H16    C16       single      1.083    0.020
+ Y6J      H031   C03       single      1.092    0.020
+ Y6J      H032   C03       single      1.092    0.020
+ Y6J      H06    C06       single      1.083    0.020
+ Y6J      H07    C07       single      1.083    0.020
+ Y6J      H08    C08       single      1.083    0.020
+ Y6J      H09    C09       single      1.083    0.020
+ Y6J      H141   C14       single      1.092    0.020
+ Y6J      H142   C14       single      1.092    0.020
+ Y6J      H21    C21       single      1.083    0.020
+ Y6J      H22    C22       single      1.083    0.020
+ Y6J      H26    C26       single      1.099    0.020
+ Y6J      H271   C27       single      1.092    0.020
+ Y6J      H272   C27       single      1.092    0.020
+ Y6J      H281   C28       single      1.092    0.020
+ Y6J      H282   C28       single      1.092    0.020
+ Y6J      H30    C30       single      1.083    0.020
+ Y6J      H31    C31       single      1.083    0.020
+ Y6J      HN24   N24       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ Y6J      O29    C25    C26     120.500    3.000
+ Y6J      O29    C25    N24     123.000    3.000
+ Y6J      C26    C25    N24     116.500    3.000
+ Y6J      C25    C26    H26     108.810    3.000
+ Y6J      C25    C26    C28     109.470    3.000
+ Y6J      C25    C26    C27     109.470    3.000
+ Y6J      H26    C26    C28     108.340    3.000
+ Y6J      H26    C26    C27     108.340    3.000
+ Y6J      C28    C26    C27      60.000    3.000
+ Y6J      C26    C28    H281    109.470    3.000
+ Y6J      C26    C28    H282    109.470    3.000
+ Y6J      C26    C28    C27      60.000    3.000
+ Y6J      H281   C28    H282    107.900    3.000
+ Y6J      H281   C28    C27     109.470    3.000
+ Y6J      H282   C28    C27     109.470    3.000
+ Y6J      C28    C27    H272    109.470    3.000
+ Y6J      C28    C27    H271    109.470    3.000
+ Y6J      C28    C27    C26      60.000    3.000
+ Y6J      H272   C27    H271    107.900    3.000
+ Y6J      H272   C27    C26     109.470    3.000
+ Y6J      H271   C27    C26     109.470    3.000
+ Y6J      C25    N24    HN24    120.000    3.000
+ Y6J      C25    N24    C23     120.000    3.000
+ Y6J      HN24   N24    C23     120.000    3.000
+ Y6J      N24    C23    C22     120.000    3.000
+ Y6J      N24    C23    C30     120.000    3.000
+ Y6J      C22    C23    C30     120.000    3.000
+ Y6J      C23    C22    H22     120.000    3.000
+ Y6J      C23    C22    C21     120.000    3.000
+ Y6J      H22    C22    C21     120.000    3.000
+ Y6J      C22    C21    H21     120.000    3.000
+ Y6J      C22    C21    C20     120.000    3.000
+ Y6J      H21    C21    C20     120.000    3.000
+ Y6J      C23    C30    H30     120.000    3.000
+ Y6J      C23    C30    C31     120.000    3.000
+ Y6J      H30    C30    C31     120.000    3.000
+ Y6J      C30    C31    H31     120.000    3.000
+ Y6J      C30    C31    C20     120.000    3.000
+ Y6J      H31    C31    C20     120.000    3.000
+ Y6J      C31    C20    N13     120.000    3.000
+ Y6J      C31    C20    C21     120.000    3.000
+ Y6J      N13    C20    C21     120.000    3.000
+ Y6J      C20    N13    C14     120.000    3.000
+ Y6J      C20    N13    C02     120.000    3.000
+ Y6J      C14    N13    C02     127.000    3.000
+ Y6J      N13    C14    H141    109.470    3.000
+ Y6J      N13    C14    H142    109.470    3.000
+ Y6J      N13    C14    C15     109.500    3.000
+ Y6J      H141   C14    H142    107.900    3.000
+ Y6J      H141   C14    C15     109.470    3.000
+ Y6J      H142   C14    C15     109.470    3.000
+ Y6J      C14    C15    C16     126.000    3.000
+ Y6J      C14    C15    C19     126.000    3.000
+ Y6J      C16    C15    C19     108.000    3.000
+ Y6J      C15    C16    H16     126.000    3.000
+ Y6J      C15    C16    S17     108.000    3.000
+ Y6J      H16    C16    S17     108.000    3.000
+ Y6J      C16    S17    C18      98.856    3.000
+ Y6J      S17    C18    H18     108.000    3.000
+ Y6J      S17    C18    C19     108.000    3.000
+ Y6J      H18    C18    C19     126.000    3.000
+ Y6J      C18    C19    H19     126.000    3.000
+ Y6J      C18    C19    C15     108.000    3.000
+ Y6J      H19    C19    C15     126.000    3.000
+ Y6J      N13    C02    O01     123.000    3.000
+ Y6J      N13    C02    C03     116.500    3.000
+ Y6J      O01    C02    C03     120.500    3.000
+ Y6J      C02    C03    H031    109.470    3.000
+ Y6J      C02    C03    H032    109.470    3.000
+ Y6J      C02    C03    N04     109.500    3.000
+ Y6J      H031   C03    H032    107.900    3.000
+ Y6J      H031   C03    N04     109.500    3.000
+ Y6J      H032   C03    N04     109.500    3.000
+ Y6J      C03    N04    N12     108.000    3.000
+ Y6J      C03    N04    C05     126.000    3.000
+ Y6J      N12    N04    C05     108.000    3.000
+ Y6J      N04    N12    N11     108.000    3.000
+ Y6J      N12    N11    C10     108.000    3.000
+ Y6J      N04    C05    C06     132.000    3.000
+ Y6J      N04    C05    C10     108.000    3.000
+ Y6J      C06    C05    C10     120.000    3.000
+ Y6J      C05    C06    H06     120.000    3.000
+ Y6J      C05    C06    C07     120.000    3.000
+ Y6J      H06    C06    C07     120.000    3.000
+ Y6J      C06    C07    H07     120.000    3.000
+ Y6J      C06    C07    C08     120.000    3.000
+ Y6J      H07    C07    C08     120.000    3.000
+ Y6J      C07    C08    H08     120.000    3.000
+ Y6J      C07    C08    C09     120.000    3.000
+ Y6J      H08    C08    C09     120.000    3.000
+ Y6J      C08    C09    H09     120.000    3.000
+ Y6J      C08    C09    C10     120.000    3.000
+ Y6J      H09    C09    C10     120.000    3.000
+ Y6J      C09    C10    N11     132.000    3.000
+ Y6J      C09    C10    C05     120.000    3.000
+ Y6J      N11    C10    C05     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ Y6J      var_1            O29    C25    C26    C28              180.000           20.000   3
+ Y6J      var_2            C25    C26    C27    C28              180.000           20.000   3
+ Y6J      var_3            C25    C26    C28    C27              180.000           20.000   3
+ Y6J      var_4            O29    C25    N24    C23              180.000           20.000   2
+ Y6J      var_5            C25    N24    C23    C30              -50.389           20.000   3
+ Y6J      CONST_1          N24    C23    C22    C21                0.000            0.000   0
+ Y6J      CONST_2          C23    C22    C21    C20                0.000            0.000   0
+ Y6J      CONST_3          N24    C23    C30    C31                0.000            0.000   0
+ Y6J      CONST_4          C23    C30    C31    C20                0.000            0.000   0
+ Y6J      CONST_5          C30    C31    C20    N13                0.000            0.000   0
+ Y6J      CONST_6          C31    C20    C21    C22                0.000            0.000   0
+ Y6J      var_6            C31    C20    N13    C02              -97.645           20.000   3
+ Y6J      var_7            C20    N13    C14    C15               90.596           20.000   3
+ Y6J      var_8            N13    C14    C15    C16                0.000           20.000   2
+ Y6J      CONST_7          C14    C15    C19    C18                0.000            0.000   0
+ Y6J      CONST_8          C14    C15    C16    S17                0.000            0.000   0
+ Y6J      CONST_9          C15    C16    S17    C18               -0.845            0.000   0
+ Y6J      CONST_10         C16    S17    C18    C19                0.603            0.000   0
+ Y6J      CONST_11         S17    C18    C19    C15               -0.187            0.000   0
+ Y6J      var_9            C20    N13    C02    C03              180.000           20.000   2
+ Y6J      var_10           N13    C02    C03    N04              180.000           20.000   3
+ Y6J      var_11           C02    C03    N04    C05              -88.281           20.000   3
+ Y6J      CONST_12         C03    N04    N12    N11             -179.856            0.000   0
+ Y6J      CONST_13         N04    N12    N11    C10                0.271            0.000   0
+ Y6J      CONST_14         C03    N04    C05    C06              180.000            0.000   0
+ Y6J      CONST_15         N04    C05    C06    C07              180.000            0.000   0
+ Y6J      CONST_16         C05    C06    C07    C08                0.000            0.000   0
+ Y6J      CONST_17         C06    C07    C08    C09                0.000            0.000   0
+ Y6J      CONST_18         C07    C08    C09    C10                0.000            0.000   0
+ Y6J      CONST_19         C08    C09    C10    N11              180.000            0.000   0
+ Y6J      CONST_20         C09    C10    N11    N12              180.000            0.000   0
+ Y6J      CONST_21         C09    C10    C05    N04              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ Y6J      chir_01          C26    C25    C27    C28       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ Y6J      plan-1            C10       0.020
+ Y6J      plan-1            N11       0.020
+ Y6J      plan-1            C05       0.020
+ Y6J      plan-1            C09       0.020
+ Y6J      plan-1            C06       0.020
+ Y6J      plan-1            C07       0.020
+ Y6J      plan-1            C08       0.020
+ Y6J      plan-1            N12       0.020
+ Y6J      plan-1            N04       0.020
+ Y6J      plan-1            H06       0.020
+ Y6J      plan-1            H07       0.020
+ Y6J      plan-1            H08       0.020
+ Y6J      plan-1            H09       0.020
+ Y6J      plan-1            C03       0.020
+ Y6J      plan-2            N13       0.020
+ Y6J      plan-2            C20       0.020
+ Y6J      plan-2            C02       0.020
+ Y6J      plan-2            C14       0.020
+ Y6J      plan-3            C15       0.020
+ Y6J      plan-3            C19       0.020
+ Y6J      plan-3            C16       0.020
+ Y6J      plan-3            C14       0.020
+ Y6J      plan-3            C18       0.020
+ Y6J      plan-3            S17       0.020
+ Y6J      plan-3            H19       0.020
+ Y6J      plan-3            H18       0.020
+ Y6J      plan-3            H16       0.020
+ Y6J      plan-4            C20       0.020
+ Y6J      plan-4            N13       0.020
+ Y6J      plan-4            C21       0.020
+ Y6J      plan-4            C31       0.020
+ Y6J      plan-4            C23       0.020
+ Y6J      plan-4            C22       0.020
+ Y6J      plan-4            C30       0.020
+ Y6J      plan-4            N24       0.020
+ Y6J      plan-4            H21       0.020
+ Y6J      plan-4            H22       0.020
+ Y6J      plan-4            H30       0.020
+ Y6J      plan-4            H31       0.020
+ Y6J      plan-4            HN24      0.020
+ Y6J      plan-5            C02       0.020
+ Y6J      plan-5            N13       0.020
+ Y6J      plan-5            C03       0.020
+ Y6J      plan-5            O01       0.020
+ Y6J      plan-6            C25       0.020
+ Y6J      plan-6            C26       0.020
+ Y6J      plan-6            N24       0.020
+ Y6J      plan-6            O29       0.020
+ Y6J      plan-6            HN24      0.020
+ Y6J      plan-7            N24       0.020
+ Y6J      plan-7            C23       0.020
+ Y6J      plan-7            C25       0.020
+ Y6J      plan-7            HN24      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

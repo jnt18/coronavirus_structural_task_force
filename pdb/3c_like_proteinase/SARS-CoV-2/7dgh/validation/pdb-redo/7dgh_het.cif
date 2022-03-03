@@ -1,0 +1,593 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+H6F      H6F '.                                   ' .                  77  39 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-H6F  CYS      .        .        H6F      .        .
+ bond_CYS-SG_=_H6F-C02
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_H6F
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ H6F           O11    O    O         0.000    -15.308   21.088  -25.603
+ H6F           C10    C    C         0.000    -16.424   21.471  -25.479
+ H6F           N09    N    NH1       0.000    -16.754   22.654  -24.578
+ H6F           HN09   H    H         0.000    -16.043   23.154  -24.065
+ H6F           C08    C    CH2       0.000    -18.229   23.033  -24.502
+ H6F           H081   H    H         0.000    -18.376   23.890  -25.162
+ H6F           H082   H    H         0.000    -18.433   23.330  -23.471
+ H6F           C07    C    CH2       0.000    -19.152   21.939  -24.896
+ H6F           H072   H    H         0.000    -20.180   22.306  -24.860
+ H6F           H071   H    H         0.000    -19.040   21.106  -24.199
+ H6F           C05    C    C         0.000    -17.614   20.753  -26.256
+ H6F           C06    C    C1        0.000    -18.840   21.486  -26.255
+ H6F           H06    H    H         0.000    -19.446   21.678  -27.124
+ H6F           C04    C    CH2       0.000    -17.111   20.548  -27.750
+ H6F           H041   H    H         0.000    -16.125   20.081  -27.702
+ H6F           H042   H    H         0.000    -17.022   21.537  -28.203
+ H6F           C03    C    CH1       0.000    -18.050   19.679  -28.596
+ H6F           H03    H    H         0.000    -19.073   20.077  -28.548
+ H6F           C02    C    C1        0.000    -17.576   19.638  -30.048
+ H6F           H02    H    H         0.000    -17.221   18.719  -30.484
+ H6F           O01    O    O         0.000    -17.607   20.637  -30.685
+ H6F           N12    N    NH1       0.000    -18.035   18.295  -28.141
+ H6F           HN12   H    H         0.000    -17.190   17.744  -28.185
+ H6F           C13    C    C         0.000    -19.273   17.726  -27.621
+ H6F           O39    O    O         0.000    -20.243   18.400  -27.550
+ H6F           C14    C    CH1       0.000    -19.305   16.271  -27.172
+ H6F           H14    H    H         0.000    -18.282   15.902  -27.012
+ H6F           C15    C    CH2       0.000    -20.005   15.431  -28.235
+ H6F           H151   H    H         0.000    -19.525   15.606  -29.200
+ H6F           H152   H    H         0.000    -21.054   15.730  -28.292
+ H6F           C16    C    CH1       0.000    -19.915   13.944  -27.881
+ H6F           H16    H    H         0.000    -20.478   13.776  -26.952
+ H6F           C18    C    CH3       0.000    -20.514   13.053  -28.976
+ H6F           H183   H    H         0.000    -21.536   13.297  -29.113
+ H6F           H182   H    H         0.000    -19.991   13.207  -29.885
+ H6F           H181   H    H         0.000    -20.431   12.036  -28.691
+ H6F           C17    C    CH3       0.000    -18.452   13.580  -27.628
+ H6F           H173   H    H         0.000    -17.883   13.774  -28.500
+ H6F           H172   H    H         0.000    -18.076   14.161  -26.826
+ H6F           H171   H    H         0.000    -18.380   12.552  -27.382
+ H6F           N19    N    NH1       0.000    -20.062   16.202  -25.932
+ H6F           HN19   H    H         0.000    -21.014   15.865  -25.935
+ H6F           C20    C    C         0.000    -19.432   16.625  -24.678
+ H6F           O38    O    O         0.000    -18.317   17.020  -24.646
+ H6F           C21    C    CH1       0.000    -20.230   16.564  -23.386
+ H6F           H21    H    H         0.000    -21.199   16.070  -23.542
+ H6F           C22    C    CH1       0.000    -20.414   18.004  -22.966
+ H6F           H22    H    H         0.000    -19.417   18.465  -22.941
+ H6F           C23    C    CH3       0.000    -21.233   18.757  -24.007
+ H6F           H233   H    H         0.000    -20.730   18.730  -24.939
+ H6F           H232   H    H         0.000    -22.184   18.301  -24.105
+ H6F           H231   H    H         0.000    -21.354   19.763  -23.700
+ H6F           C24    C    CH3       0.000    -20.993   18.099  -21.548
+ H6F           H243   H    H         0.000    -21.936   17.616  -21.516
+ H6F           H242   H    H         0.000    -20.334   17.630  -20.863
+ H6F           H241   H    H         0.000    -21.111   19.117  -21.280
+ H6F           N25    N    NH1       0.000    -19.443   15.870  -22.380
+ H6F           HN25   H    H         0.000    -18.453   16.046  -22.285
+ H6F           C26    C    C         0.000    -20.120   14.912  -21.511
+ H6F           O37    O    O         0.000    -21.298   14.740  -21.638
+ H6F           C27    C    CR6       0.000    -19.273   14.208  -20.429
+ H6F           C28    C    CR16      0.000    -19.739   14.196  -19.114
+ H6F           H28    H    H         0.000    -20.683   14.668  -18.870
+ H6F           C29    C    CR66      0.000    -18.972   13.562  -18.090
+ H6F           C34    C    CR66      0.000    -17.768   12.983  -18.390
+ H6F           C35    C    CR16      0.000    -17.277   13.003  -19.738
+ H6F           H35    H    H         0.000    -16.325   12.546  -19.978
+ H6F           C36    C    CR16      0.000    -18.039   13.620  -20.747
+ H6F           H36    H    H         0.000    -17.674   13.641  -21.767
+ H6F           C33    C    CR16      0.000    -17.001   12.351  -17.355
+ H6F           H33    H    H         0.000    -16.050   11.889  -17.589
+ H6F           C32    C    CR16      0.000    -17.485   12.334  -16.043
+ H6F           H32    H    H         0.000    -16.908   11.858  -15.260
+ H6F           C31    C    CR16      0.000    -18.721   12.934  -15.739
+ H6F           H31    H    H         0.000    -19.091   12.925  -14.721
+ H6F           C30    C    CR16      0.000    -19.472   13.541  -16.749
+ H6F           H30    H    H         0.000    -20.428   13.994  -16.518
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ H6F      O11    n/a    C10    START
+ H6F      C10    O11    C05    .
+ H6F      N09    C10    C08    .
+ H6F      HN09   N09    .      .
+ H6F      C08    N09    C07    .
+ H6F      H081   C08    .      .
+ H6F      H082   C08    .      .
+ H6F      C07    C08    H071   .
+ H6F      H072   C07    .      .
+ H6F      H071   C07    .      .
+ H6F      C05    C10    C04    .
+ H6F      C06    C05    H06    .
+ H6F      H06    C06    .      .
+ H6F      C04    C05    C03    .
+ H6F      H041   C04    .      .
+ H6F      H042   C04    .      .
+ H6F      C03    C04    N12    .
+ H6F      H03    C03    .      .
+ H6F      C02    C03    O01    .
+ H6F      H02    C02    .      .
+ H6F      O01    C02    .      .
+ H6F      N12    C03    C13    .
+ H6F      HN12   N12    .      .
+ H6F      C13    N12    C14    .
+ H6F      O39    C13    .      .
+ H6F      C14    C13    N19    .
+ H6F      H14    C14    .      .
+ H6F      C15    C14    C16    .
+ H6F      H151   C15    .      .
+ H6F      H152   C15    .      .
+ H6F      C16    C15    C17    .
+ H6F      H16    C16    .      .
+ H6F      C18    C16    H181   .
+ H6F      H183   C18    .      .
+ H6F      H182   C18    .      .
+ H6F      H181   C18    .      .
+ H6F      C17    C16    H171   .
+ H6F      H173   C17    .      .
+ H6F      H172   C17    .      .
+ H6F      H171   C17    .      .
+ H6F      N19    C14    C20    .
+ H6F      HN19   N19    .      .
+ H6F      C20    N19    C21    .
+ H6F      O38    C20    .      .
+ H6F      C21    C20    N25    .
+ H6F      H21    C21    .      .
+ H6F      C22    C21    C24    .
+ H6F      H22    C22    .      .
+ H6F      C23    C22    H231   .
+ H6F      H233   C23    .      .
+ H6F      H232   C23    .      .
+ H6F      H231   C23    .      .
+ H6F      C24    C22    H241   .
+ H6F      H243   C24    .      .
+ H6F      H242   C24    .      .
+ H6F      H241   C24    .      .
+ H6F      N25    C21    C26    .
+ H6F      HN25   N25    .      .
+ H6F      C26    N25    C27    .
+ H6F      O37    C26    .      .
+ H6F      C27    C26    C28    .
+ H6F      C28    C27    C29    .
+ H6F      H28    C28    .      .
+ H6F      C29    C28    C34    .
+ H6F      C34    C29    C33    .
+ H6F      C35    C34    C36    .
+ H6F      H35    C35    .      .
+ H6F      C36    C35    H36    .
+ H6F      H36    C36    .      .
+ H6F      C33    C34    C32    .
+ H6F      H33    C33    .      .
+ H6F      C32    C33    C31    .
+ H6F      H32    C32    .      .
+ H6F      C31    C32    C30    .
+ H6F      H31    C31    .      .
+ H6F      C30    C31    H30    .
+ H6F      H30    C30    .      END
+ H6F      C27    C36    .    ADD
+ H6F      C29    C30    .    ADD
+ H6F      C07    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ H6F      O37    C26       double      1.220    0.020
+ H6F      C27    C26       single      1.500    0.020
+ H6F      C26    N25       single      1.330    0.020
+ H6F      C27    C36       aromatic    1.390    0.020
+ H6F      C28    C27       aromatic    1.390    0.020
+ H6F      C36    C35       aromatic    1.390    0.020
+ H6F      C35    C34       aromatic    1.390    0.020
+ H6F      C29    C28       aromatic    1.390    0.020
+ H6F      C29    C30       aromatic    1.390    0.020
+ H6F      C34    C29       aromatic    1.390    0.020
+ H6F      C30    C31       aromatic    1.390    0.020
+ H6F      C31    C32       aromatic    1.390    0.020
+ H6F      C32    C33       aromatic    1.390    0.020
+ H6F      C33    C34       aromatic    1.390    0.020
+ H6F      N25    C21       single      1.450    0.020
+ H6F      C21    C20       single      1.500    0.020
+ H6F      C22    C21       single      1.524    0.020
+ H6F      O38    C20       double      1.220    0.020
+ H6F      C20    N19       single      1.330    0.020
+ H6F      C24    C22       single      1.524    0.020
+ H6F      C23    C22       single      1.524    0.020
+ H6F      N19    C14       single      1.450    0.020
+ H6F      C14    C13       single      1.500    0.020
+ H6F      C15    C14       single      1.524    0.020
+ H6F      O39    C13       double      1.220    0.020
+ H6F      C13    N12       single      1.330    0.020
+ H6F      C16    C15       single      1.524    0.020
+ H6F      C17    C16       single      1.524    0.020
+ H6F      C18    C16       single      1.524    0.020
+ H6F      C07    C06       single      1.510    0.020
+ H6F      C07    C08       single      1.524    0.020
+ H6F      C03    C04       single      1.524    0.020
+ H6F      C02    C03       single      1.510    0.020
+ H6F      N12    C03       single      1.450    0.020
+ H6F      C06    C05       aromatic    1.340    0.020
+ H6F      C05    C10       single      1.460    0.020
+ H6F      N09    C10       single      1.330    0.020
+ H6F      C10    O11       double      1.220    0.020
+ H6F      C04    C05       single      1.510    0.020
+ H6F      O01    C02       double      1.220    0.020
+ H6F      C08    N09       single      1.450    0.020
+ H6F      H36    C36       single      1.083    0.020
+ H6F      H35    C35       single      1.083    0.020
+ H6F      H28    C28       single      1.083    0.020
+ H6F      H30    C30       single      1.083    0.020
+ H6F      H31    C31       single      1.083    0.020
+ H6F      H32    C32       single      1.083    0.020
+ H6F      H33    C33       single      1.083    0.020
+ H6F      HN25   N25       single      1.010    0.020
+ H6F      H21    C21       single      1.099    0.020
+ H6F      H22    C22       single      1.099    0.020
+ H6F      H241   C24       single      1.059    0.020
+ H6F      H242   C24       single      1.059    0.020
+ H6F      H243   C24       single      1.059    0.020
+ H6F      H231   C23       single      1.059    0.020
+ H6F      H232   C23       single      1.059    0.020
+ H6F      H233   C23       single      1.059    0.020
+ H6F      HN19   N19       single      1.010    0.020
+ H6F      H14    C14       single      1.099    0.020
+ H6F      H151   C15       single      1.092    0.020
+ H6F      H152   C15       single      1.092    0.020
+ H6F      H16    C16       single      1.099    0.020
+ H6F      H171   C17       single      1.059    0.020
+ H6F      H172   C17       single      1.059    0.020
+ H6F      H173   C17       single      1.059    0.020
+ H6F      H181   C18       single      1.059    0.020
+ H6F      H182   C18       single      1.059    0.020
+ H6F      H183   C18       single      1.059    0.020
+ H6F      H071   C07       single      1.092    0.020
+ H6F      H072   C07       single      1.092    0.020
+ H6F      H03    C03       single      1.099    0.020
+ H6F      H06    C06       single      1.077    0.020
+ H6F      H041   C04       single      1.092    0.020
+ H6F      H042   C04       single      1.092    0.020
+ H6F      H02    C02       single      1.077    0.020
+ H6F      H081   C08       single      1.092    0.020
+ H6F      H082   C08       single      1.092    0.020
+ H6F      HN12   N12       single      1.010    0.020
+ H6F      HN09   N09       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ H6F      O11    C10    N09     123.000    3.000
+ H6F      O11    C10    C05     120.500    3.000
+ H6F      N09    C10    C05     120.000    3.000
+ H6F      C10    N09    HN09    120.000    3.000
+ H6F      C10    N09    C08     121.500    3.000
+ H6F      HN09   N09    C08     118.500    3.000
+ H6F      N09    C08    H081    109.470    3.000
+ H6F      N09    C08    H082    109.470    3.000
+ H6F      N09    C08    C07     112.000    3.000
+ H6F      H081   C08    H082    107.900    3.000
+ H6F      H081   C08    C07     109.470    3.000
+ H6F      H082   C08    C07     109.470    3.000
+ H6F      C08    C07    H072    109.470    3.000
+ H6F      C08    C07    H071    109.470    3.000
+ H6F      C08    C07    C06     109.470    3.000
+ H6F      H072   C07    H071    107.900    3.000
+ H6F      H072   C07    C06     109.470    3.000
+ H6F      H071   C07    C06     109.470    3.000
+ H6F      C10    C05    C06     120.000    3.000
+ H6F      C10    C05    C04     120.000    3.000
+ H6F      C06    C05    C04     120.000    3.000
+ H6F      C05    C06    H06     120.000    3.000
+ H6F      C05    C06    C07     120.500    3.000
+ H6F      H06    C06    C07     120.000    3.000
+ H6F      C05    C04    H041    109.470    3.000
+ H6F      C05    C04    H042    109.470    3.000
+ H6F      C05    C04    C03     109.470    3.000
+ H6F      H041   C04    H042    107.900    3.000
+ H6F      H041   C04    C03     109.470    3.000
+ H6F      H042   C04    C03     109.470    3.000
+ H6F      C04    C03    H03     108.340    3.000
+ H6F      C04    C03    C02     109.470    3.000
+ H6F      C04    C03    N12     110.000    3.000
+ H6F      H03    C03    C02     108.810    3.000
+ H6F      H03    C03    N12     108.550    3.000
+ H6F      C02    C03    N12     111.600    3.000
+ H6F      C03    C02    H02     120.000    3.000
+ H6F      C03    C02    O01     120.500    3.000
+ H6F      H02    C02    O01     123.000    3.000
+ H6F      C03    N12    HN12    118.500    3.000
+ H6F      C03    N12    C13     121.500    3.000
+ H6F      HN12   N12    C13     120.000    3.000
+ H6F      N12    C13    O39     123.000    3.000
+ H6F      N12    C13    C14     116.500    3.000
+ H6F      O39    C13    C14     120.500    3.000
+ H6F      C13    C14    H14     108.810    3.000
+ H6F      C13    C14    C15     109.470    3.000
+ H6F      C13    C14    N19     111.600    3.000
+ H6F      H14    C14    C15     108.340    3.000
+ H6F      H14    C14    N19     108.550    3.000
+ H6F      C15    C14    N19     110.000    3.000
+ H6F      C14    C15    H151    109.470    3.000
+ H6F      C14    C15    H152    109.470    3.000
+ H6F      C14    C15    C16     111.000    3.000
+ H6F      H151   C15    H152    107.900    3.000
+ H6F      H151   C15    C16     109.470    3.000
+ H6F      H152   C15    C16     109.470    3.000
+ H6F      C15    C16    H16     108.340    3.000
+ H6F      C15    C16    C18     111.000    3.000
+ H6F      C15    C16    C17     111.000    3.000
+ H6F      H16    C16    C18     108.340    3.000
+ H6F      H16    C16    C17     108.340    3.000
+ H6F      C18    C16    C17     111.000    3.000
+ H6F      C16    C18    H183    109.470    3.000
+ H6F      C16    C18    H182    109.470    3.000
+ H6F      C16    C18    H181    109.470    3.000
+ H6F      H183   C18    H182    109.470    3.000
+ H6F      H183   C18    H181    109.470    3.000
+ H6F      H182   C18    H181    109.470    3.000
+ H6F      C16    C17    H173    109.470    3.000
+ H6F      C16    C17    H172    109.470    3.000
+ H6F      C16    C17    H171    109.470    3.000
+ H6F      H173   C17    H172    109.470    3.000
+ H6F      H173   C17    H171    109.470    3.000
+ H6F      H172   C17    H171    109.470    3.000
+ H6F      C14    N19    HN19    118.500    3.000
+ H6F      C14    N19    C20     121.500    3.000
+ H6F      HN19   N19    C20     120.000    3.000
+ H6F      N19    C20    O38     123.000    3.000
+ H6F      N19    C20    C21     116.500    3.000
+ H6F      O38    C20    C21     120.500    3.000
+ H6F      C20    C21    H21     108.810    3.000
+ H6F      C20    C21    C22     109.470    3.000
+ H6F      C20    C21    N25     111.600    3.000
+ H6F      H21    C21    C22     108.340    3.000
+ H6F      H21    C21    N25     108.550    3.000
+ H6F      C22    C21    N25     110.000    3.000
+ H6F      C21    C22    H22     108.340    3.000
+ H6F      C21    C22    C23     111.000    3.000
+ H6F      C21    C22    C24     111.000    3.000
+ H6F      H22    C22    C23     108.340    3.000
+ H6F      H22    C22    C24     108.340    3.000
+ H6F      C23    C22    C24     111.000    3.000
+ H6F      C22    C23    H233    109.470    3.000
+ H6F      C22    C23    H232    109.470    3.000
+ H6F      C22    C23    H231    109.470    3.000
+ H6F      H233   C23    H232    109.470    3.000
+ H6F      H233   C23    H231    109.470    3.000
+ H6F      H232   C23    H231    109.470    3.000
+ H6F      C22    C24    H243    109.470    3.000
+ H6F      C22    C24    H242    109.470    3.000
+ H6F      C22    C24    H241    109.470    3.000
+ H6F      H243   C24    H242    109.470    3.000
+ H6F      H243   C24    H241    109.470    3.000
+ H6F      H242   C24    H241    109.470    3.000
+ H6F      C21    N25    HN25    118.500    3.000
+ H6F      C21    N25    C26     121.500    3.000
+ H6F      HN25   N25    C26     120.000    3.000
+ H6F      N25    C26    O37     123.000    3.000
+ H6F      N25    C26    C27     120.000    3.000
+ H6F      O37    C26    C27     120.500    3.000
+ H6F      C26    C27    C28     120.000    3.000
+ H6F      C26    C27    C36     120.000    3.000
+ H6F      C28    C27    C36     120.000    3.000
+ H6F      C27    C28    H28     120.000    3.000
+ H6F      C27    C28    C29     120.000    3.000
+ H6F      H28    C28    C29     120.000    3.000
+ H6F      C28    C29    C34     120.000    3.000
+ H6F      C28    C29    C30     120.000    3.000
+ H6F      C34    C29    C30     120.000    3.000
+ H6F      C29    C34    C35     120.000    3.000
+ H6F      C29    C34    C33     120.000    3.000
+ H6F      C35    C34    C33     120.000    3.000
+ H6F      C34    C35    H35     120.000    3.000
+ H6F      C34    C35    C36     120.000    3.000
+ H6F      H35    C35    C36     120.000    3.000
+ H6F      C35    C36    H36     120.000    3.000
+ H6F      C35    C36    C27     120.000    3.000
+ H6F      H36    C36    C27     120.000    3.000
+ H6F      C34    C33    H33     120.000    3.000
+ H6F      C34    C33    C32     120.000    3.000
+ H6F      H33    C33    C32     120.000    3.000
+ H6F      C33    C32    H32     120.000    3.000
+ H6F      C33    C32    C31     120.000    3.000
+ H6F      H32    C32    C31     120.000    3.000
+ H6F      C32    C31    H31     120.000    3.000
+ H6F      C32    C31    C30     120.000    3.000
+ H6F      H31    C31    C30     120.000    3.000
+ H6F      C31    C30    H30     120.000    3.000
+ H6F      C31    C30    C29     120.000    3.000
+ H6F      H30    C30    C29     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ H6F      var_1            O11    C10    N09    C08              180.000           20.000   2
+ H6F      var_2            C10    N09    C08    C07                0.000           20.000   3
+ H6F      var_3            N09    C08    C07    C06              180.000           20.000   3
+ H6F      var_4            C08    C07    C06    C05               72.066           20.000   3
+ H6F      var_5            O11    C10    C05    C04              -45.568           20.000   3
+ H6F      var_6            C10    C05    C06    C07              -48.084           20.000   3
+ H6F      var_7            C10    C05    C04    C03              180.000           20.000   3
+ H6F      var_8            C05    C04    C03    N12              180.000           20.000   3
+ H6F      var_9            C04    C03    C02    O01              -66.114           20.000   3
+ H6F      var_10           C04    C03    N12    C13                0.000           20.000   3
+ H6F      var_11           C03    N12    C13    C14              180.000           20.000   2
+ H6F      var_12           N12    C13    C14    N19              180.000           20.000   3
+ H6F      var_13           C13    C14    C15    C16              180.000           20.000   3
+ H6F      var_14           C14    C15    C16    C17              180.000           20.000   3
+ H6F      var_15           C15    C16    C18    H181             180.000           20.000   3
+ H6F      var_16           C15    C16    C17    H171             180.000           20.000   3
+ H6F      var_17           C13    C14    N19    C20                0.000           20.000   3
+ H6F      var_18           C14    N19    C20    C21              180.000           20.000   2
+ H6F      var_19           N19    C20    C21    N25              180.000           20.000   3
+ H6F      var_20           C20    C21    C22    C24              180.000           20.000   3
+ H6F      var_21           C21    C22    C23    H231             180.000           20.000   3
+ H6F      var_22           C21    C22    C24    H241             180.000           20.000   3
+ H6F      var_23           C20    C21    N25    C26                0.000           20.000   3
+ H6F      var_24           C21    N25    C26    C27              180.000           20.000   2
+ H6F      var_25           N25    C26    C27    C28              129.955           20.000   3
+ H6F      CONST_1          C26    C27    C36    C35                0.000            0.000   0
+ H6F      CONST_2          C26    C27    C28    C29                0.000            0.000   0
+ H6F      CONST_3          C27    C28    C29    C34              180.000            0.000   0
+ H6F      CONST_4          C28    C29    C30    C31              180.000            0.000   0
+ H6F      CONST_5          C28    C29    C34    C33              179.824            0.000   0
+ H6F      CONST_6          C29    C34    C35    C36              180.000            0.000   0
+ H6F      CONST_7          C34    C35    C36    C27                0.000            0.000   0
+ H6F      CONST_8          C29    C34    C33    C32              180.000            0.000   0
+ H6F      CONST_9          C34    C33    C32    C31                0.000            0.000   0
+ H6F      CONST_10         C33    C32    C31    C30                0.000            0.000   0
+ H6F      CONST_11         C32    C31    C30    C29                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ H6F      chir_01          C21    N25    C20    C22       positiv
+ H6F      chir_02          C22    C21    C24    C23       positiv
+ H6F      chir_03          C14    N19    C13    C15       positiv
+ H6F      chir_04          C16    C15    C17    C18       positiv
+ H6F      chir_05          C03    C04    C02    N12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ H6F      plan-1            C26       0.020
+ H6F      plan-1            O37       0.020
+ H6F      plan-1            C27       0.020
+ H6F      plan-1            N25       0.020
+ H6F      plan-1            HN25      0.020
+ H6F      plan-2            C27       0.020
+ H6F      plan-2            C26       0.020
+ H6F      plan-2            C36       0.020
+ H6F      plan-2            C28       0.020
+ H6F      plan-2            C35       0.020
+ H6F      plan-2            H36       0.020
+ H6F      plan-2            C34       0.020
+ H6F      plan-2            H35       0.020
+ H6F      plan-2            C29       0.020
+ H6F      plan-2            H28       0.020
+ H6F      plan-2            C30       0.020
+ H6F      plan-2            C31       0.020
+ H6F      plan-2            C32       0.020
+ H6F      plan-2            C33       0.020
+ H6F      plan-2            H30       0.020
+ H6F      plan-2            H31       0.020
+ H6F      plan-2            H32       0.020
+ H6F      plan-2            H33       0.020
+ H6F      plan-3            N25       0.020
+ H6F      plan-3            C26       0.020
+ H6F      plan-3            C21       0.020
+ H6F      plan-3            HN25      0.020
+ H6F      plan-4            C20       0.020
+ H6F      plan-4            C21       0.020
+ H6F      plan-4            O38       0.020
+ H6F      plan-4            N19       0.020
+ H6F      plan-4            HN19      0.020
+ H6F      plan-5            N19       0.020
+ H6F      plan-5            C20       0.020
+ H6F      plan-5            C14       0.020
+ H6F      plan-5            HN19      0.020
+ H6F      plan-6            C13       0.020
+ H6F      plan-6            C14       0.020
+ H6F      plan-6            O39       0.020
+ H6F      plan-6            N12       0.020
+ H6F      plan-6            HN12      0.020
+ H6F      plan-7            C06       0.020
+ H6F      plan-7            C07       0.020
+ H6F      plan-7            C05       0.020
+ H6F      plan-7            H06       0.020
+ H6F      plan-8            C10       0.020
+ H6F      plan-8            C05       0.020
+ H6F      plan-8            N09       0.020
+ H6F      plan-8            O11       0.020
+ H6F      plan-8            HN09      0.020
+ H6F      plan-9            C02       0.020
+ H6F      plan-9            C03       0.020
+ H6F      plan-9            O01       0.020
+ H6F      plan-9            H02       0.020
+ H6F      plan-10           C05       0.020
+ H6F      plan-10           C06       0.020
+ H6F      plan-10           C10       0.020
+ H6F      plan-10           C04       0.020
+ H6F      plan-10           H06       0.020
+ H6F      plan-11           N12       0.020
+ H6F      plan-11           C13       0.020
+ H6F      plan-11           C03       0.020
+ H6F      plan-11           HN12      0.020
+ H6F      plan-12           N09       0.020
+ H6F      plan-12           C10       0.020
+ H6F      plan-12           C08       0.020
+ H6F      plan-12           HN09      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-H6F
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-H6F  1 SG      2 C02       .           1.770    0.020
+# ------------------------------------------------------

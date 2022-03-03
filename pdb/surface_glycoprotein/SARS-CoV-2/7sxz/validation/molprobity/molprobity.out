@@ -1,0 +1,133 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 28583  (anisotropic = 0)
+    B_iso: mean = 227.4  max = 750.8  min =  50.8
+  Macromolecules:
+    Number of atoms = 27687  (anisotropic = 0)
+    B_iso: mean = 228.9  max = 750.8  min =  50.8
+  Ligands:
+    Number of atoms = 896  (anisotropic = 0)
+    B_iso: mean = 179.1  max = 726.4  min =  73.1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.058 (Z=  4.539)
+  Mean delta:    0.004 (Z=  0.278)
+
+                        ----------Bond angles----------                        
+
+  Using conformation-dependent library for mainchain bond angle targets
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   B 359  SER  C      
+   B 360  ASN  N      
+   B 360  ASN  CA        122.82   129.36    -6.54  1.42e+00  2.12e+01   4.6*sigma
+   C 986  PRO  N      
+   C 986  PRO  CA     
+   C 986  PRO  C         110.70   116.27    -5.57  1.22e+00  2.08e+01   4.6*sigma
+   A 986  PRO  N      
+   A 986  PRO  CA     
+   A 986  PRO  C         110.70   116.23    -5.53  1.22e+00  2.05e+01   4.5*sigma
+   B 986  PRO  N      
+   B 986  PRO  CA     
+   B 986  PRO  C         110.70   115.88    -5.18  1.22e+00  1.81e+01   4.2*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   10.049 (Z=  4.603)
+  Mean delta:    0.797 (Z=  0.451)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   C 517  LEU  CA     
+   C 517  LEU  C      
+   C 518  LEU  N      
+   C 518  LEU  CA        180.00   154.55    25.45  5.00e+00  2.59e+01   5.1*sigma
+   C 515  PHE  CA     
+   C 515  PHE  C      
+   C 516  GLU  N      
+   C 516  GLU  CA        180.00   157.53    22.47  5.00e+00  2.02e+01   4.5*sigma
+
+  Min. delta:    0.000
+  Max. delta:   89.619
+  Mean delta:   13.150
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.357
+  Mean delta:    0.054
+
+                       ----------Planar groups----------                       
+
+  atoms                 rms_deltas   delta_max    residual   deviation
+   C 394  ASN  CB     
+   C 394  ASN  CG     
+   C 394  ASN  OD1    
+   C 394  ASN  ND2           0.071       0.123       50.80   6.2*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.071
+  Mean delta:    0.006
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.058  29241
+    Angle     :  0.797  10.049  39787
+    Chirality :  0.054   0.357   4653
+    Planarity :  0.006   0.071   5070
+    Dihedral  : 13.150  89.619  10568
+    Min Nonbonded Distance : 2.280
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 3.23
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  1.96 %
+      Favored  : 98.04 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.54 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -0.12 (0.13), residues: 3465
+    helix:  0.71 (0.14), residues: 1003
+    sheet:  0.55 (0.19), residues: 688
+    loop : -0.78 (0.13), residues: 1774
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A 926  GLN
+   B 907  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  98.04 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   3.23
+  RMS(bonds)            =   0.0042
+  RMS(angles)           =   0.80
+  MolProbity score      =   1.11
+  Refinement program    = phenix.real_space_refine

@@ -3,14 +3,16 @@ data_7JMW
 _entry.id   7JMW 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.336 
+_audit_conform.dict_version    5.355 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7JMW         
-WWPDB D_1000251082 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7JMW         pdb_00007jmw 10.2210/pdb7jmw/pdb 
+WWPDB D_1000251082 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -63,10 +65,13 @@ _citation.database_id_CSD
 _citation.pdbx_database_id_DOI 
 _citation.pdbx_database_id_PubMed 
 _citation.unpublished_flag 
-? ? ? ? ? ? ? US ? ? primary Biorxiv  ?      ?    ?         ? ? ?  ? ?    ? 
+? ? ? ? ? ? ? US ? ? primary Immunity IUNIEH 2048 1074-7613 ? ? 53 ? 1272 1280.e5 
+'Cross-Neutralization of a SARS-CoV-2 Antibody to a Functionally Conserved Site Is Mediated by Avidity.' 2020 ? 
+10.1016/j.immuni.2020.10.023 33242394 ? 
+? ? ? ? ? ? ? US ? ? 1       Biorxiv  ?      ?    ?         ? ? ?  ? ?    ?       
 'Cross-neutralization of a SARS-CoV-2 antibody to a functionally conserved site is mediated by avidity.' 2020 ? 
 10.1101/2020.08.02.233536    32793906 ? 
-? ? ? ? ? ? ? US ? ? 1       Immunity IUNIEH 2048 1074-7613 ? ? 53 ? 1272 ? 
+? ? ? ? ? ? ? US ? ? 2       Immunity IUNIEH 2048 1074-7613 ? ? 53 ? 1272 ?       
 'Cross-Neutralization of a SARS-CoV-2 Antibody to a Functionally Conserved Site Is Mediated by Avidity.' 2020 ? 
 10.1016/j.immuni.2020.10.023 33242394 ? 
 # 
@@ -103,6 +108,20 @@ primary 'Wilson, I.A.'     14 ?
 1       'Sanders, R.W.'    26 ? 
 1       'Ward, A.B.'       27 ? 
 1       'Wilson, I.A.'     28 ? 
+2       'Liu, H.'          29 ? 
+2       'Wu, N.C.'         30 ? 
+2       'Yuan, M.'         31 ? 
+2       'Bangaru, S.'      32 ? 
+2       'Torres, J.L.'     33 ? 
+2       'Caniels, T.G.'    34 ? 
+2       'van Schooten, J.' 35 ? 
+2       'Zhu, X.'          36 ? 
+2       'Lee, C.D.'        37 ? 
+2       'Brouwer, P.J.M.'  38 ? 
+2       'van Gils, M.J.'   39 ? 
+2       'Sanders, R.W.'    40 ? 
+2       'Ward, A.B.'       41 ? 
+2       'Wilson, I.A.'     42 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1453,7 +1472,6 @@ _refine_ls_shell.pdbx_fsc_free
 _struct.entry_id                     7JMW 
 _struct.title                        
 'Crystal structure of SARS-CoV-2 spike protein receptor-binding domain in complex with cross-neutralizing antibody COVA1-16 Fab' 
-_struct.pdbx_descriptor              ? 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -12415,6 +12433,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-10-14 
 2 'Structure model' 1 1 2020-12-16 
 3 'Structure model' 1 2 2020-12-30 
+4 'Structure model' 1 3 2022-02-09 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -12431,6 +12450,7 @@ _pdbx_audit_revision_group.data_content_type
 _pdbx_audit_revision_group.group 
 1 2 'Structure model' 'Database references' 
 2 3 'Structure model' 'Database references' 
+3 4 'Structure model' 'Database references' 
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -12441,21 +12461,32 @@ _pdbx_audit_revision_category.category
 2 2 'Structure model' citation_author 
 3 3 'Structure model' citation        
 4 3 'Structure model' citation_author 
+5 4 'Structure model' citation        
+6 4 'Structure model' citation_author 
+7 4 'Structure model' database_2      
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_citation.country'                 
-2 2 'Structure model' '_citation.journal_abbrev'          
-3 2 'Structure model' '_citation.journal_id_ASTM'         
-4 2 'Structure model' '_citation.journal_id_CSD'          
-5 2 'Structure model' '_citation.journal_id_ISSN'         
-6 2 'Structure model' '_citation.pdbx_database_id_DOI'    
-7 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
-8 2 'Structure model' '_citation.title'                   
-9 2 'Structure model' '_citation.year'                    
+1  2 'Structure model' '_citation.country'                   
+2  2 'Structure model' '_citation.journal_abbrev'            
+3  2 'Structure model' '_citation.journal_id_ASTM'           
+4  2 'Structure model' '_citation.journal_id_CSD'            
+5  2 'Structure model' '_citation.journal_id_ISSN'           
+6  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+7  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+8  2 'Structure model' '_citation.title'                     
+9  2 'Structure model' '_citation.year'                      
+10 4 'Structure model' '_database_2.pdbx_DOI'                
+11 4 'Structure model' '_database_2.pdbx_database_accession' 
+# 
+loop_
+_space_group_symop.id 
+_space_group_symop.operation_xyz 
+1 x,y,z       
+2 -x,y+1/2,-z 
 # 
 _pdbx_refine_tls.id               1 
 _pdbx_refine_tls.pdbx_refine_id   'X-RAY DIFFRACTION' 
@@ -12851,10 +12882,4 @@ _space_group.name_Hall        'P 2yb'
 _space_group.IT_number        4 
 _space_group.crystal_system   monoclinic 
 _space_group.id               1 
-# 
-loop_
-_space_group_symop.id 
-_space_group_symop.operation_xyz 
-1 x,y,z       
-2 -x,y+1/2,-z 
 # 

@@ -1,0 +1,273 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+0MI      0MI '.                                   ' .                  32  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_0MI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 0MI           O2     O    O         0.000      7.400  -79.172   21.117
+ 0MI           C8     C    CR6       0.000      6.691  -78.313   20.604
+ 0MI           N      N    NR6       0.000      7.111  -77.497   19.576
+ 0MI           C2     C    CR16      0.000      6.265  -76.564   19.007
+ 0MI           H2     H    H         0.000      6.633  -75.986   18.169
+ 0MI           C1     C    CR6       0.000      5.003  -76.331   19.437
+ 0MI           C      C    CH3       0.000      4.103  -75.294   18.826
+ 0MI           H30    H    H         0.000      4.552  -74.340   18.919
+ 0MI           H20    H    H         0.000      3.954  -75.517   17.802
+ 0MI           H1     H    H         0.000      3.171  -75.297   19.328
+ 0MI           C9     C    CR6       0.000      4.526  -77.128   20.546
+ 0MI           N4     N    NRD6      0.000      5.403  -78.076   21.036
+ 0MI           O3     O    O         0.000      3.417  -76.978   21.083
+ 0MI           C3     C    CH1       0.000      8.567  -77.522   19.214
+ 0MI           H3     H    H         0.000      9.149  -77.161   20.074
+ 0MI           O1     O    O2        0.000      8.779  -76.638   18.117
+ 0MI           C4     C    CH2       0.000      9.119  -78.874   18.787
+ 0MI           H41    H    H         0.000      8.560  -79.705   19.223
+ 0MI           H42    H    H         0.000     10.178  -78.983   19.029
+ 0MI           C5     C    CH1       0.000      8.939  -78.877   17.273
+ 0MI           H5     H    H         0.000      7.981  -79.335   16.989
+ 0MI           O      O    OH1       0.000     10.038  -79.570   16.680
+ 0MI           HO     H    H         0.000      9.933  -79.577   15.719
+ 0MI           C6     C    CH1       0.000      8.976  -77.389   16.893
+ 0MI           H6     H    H         0.000      9.975  -77.155   16.498
+ 0MI           C7     C    CH2       0.000      7.941  -76.960   15.868
+ 0MI           H71    H    H         0.000      7.670  -75.925   16.085
+ 0MI           H72    H    H         0.000      7.065  -77.599   15.996
+ 0MI           N1     N    NH1       0.000      8.433  -77.063   14.460
+ 0MI           HN1    H    H         0.000      9.145  -77.744   14.237
+ 0MI           N2     N    NS        0.000      7.970  -76.302   13.516
+ 0MI           N3     N    NS        0.000      7.427  -75.528   12.815
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 0MI      O2     n/a    C8     START
+ 0MI      C8     O2     N      .
+ 0MI      N      C8     C3     .
+ 0MI      C2     N      C1     .
+ 0MI      H2     C2     .      .
+ 0MI      C1     C2     C9     .
+ 0MI      C      C1     H1     .
+ 0MI      H30    C      .      .
+ 0MI      H20    C      .      .
+ 0MI      H1     C      .      .
+ 0MI      C9     C1     O3     .
+ 0MI      N4     C9     .      .
+ 0MI      O3     C9     .      .
+ 0MI      C3     N      C4     .
+ 0MI      H3     C3     .      .
+ 0MI      O1     C3     .      .
+ 0MI      C4     C3     C5     .
+ 0MI      H41    C4     .      .
+ 0MI      H42    C4     .      .
+ 0MI      C5     C4     C6     .
+ 0MI      H5     C5     .      .
+ 0MI      O      C5     HO     .
+ 0MI      HO     O      .      .
+ 0MI      C6     C5     C7     .
+ 0MI      H6     C6     .      .
+ 0MI      C7     C6     N1     .
+ 0MI      H71    C7     .      .
+ 0MI      H72    C7     .      .
+ 0MI      N1     C7     N2     .
+ 0MI      HN1    N1     .      .
+ 0MI      N2     N1     N3     .
+ 0MI      N3     N2     .      END
+ 0MI      C8     N4     .    ADD
+ 0MI      O1     C6     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 0MI      N1     C7        single      1.450    0.020
+ 0MI      N2     N1        single      1.375    0.020
+ 0MI      C7     C6        single      1.524    0.020
+ 0MI      C8     N4        aromatic    1.350    0.020
+ 0MI      N      C8        single      1.410    0.020
+ 0MI      C8     O2        double      1.250    0.020
+ 0MI      N3     N2        triple      1.158    0.020
+ 0MI      C9     C1        aromatic    1.384    0.020
+ 0MI      O3     C9        aromatic    1.250    0.020
+ 0MI      N4     C9        aromatic    1.350    0.020
+ 0MI      O1     C6        single      1.426    0.020
+ 0MI      O1     C3        single      1.426    0.020
+ 0MI      C1     C2        double      1.390    0.020
+ 0MI      C      C1        single      1.506    0.020
+ 0MI      C6     C5        single      1.524    0.020
+ 0MI      C5     C4        single      1.524    0.020
+ 0MI      O      C5        single      1.432    0.020
+ 0MI      C4     C3        single      1.524    0.020
+ 0MI      C3     N         single      1.465    0.020
+ 0MI      C2     N         single      1.337    0.020
+ 0MI      HN1    N1        single      1.010    0.020
+ 0MI      H71    C7        single      1.092    0.020
+ 0MI      H72    C7        single      1.092    0.020
+ 0MI      H5     C5        single      1.099    0.020
+ 0MI      H6     C6        single      1.099    0.020
+ 0MI      H41    C4        single      1.092    0.020
+ 0MI      H42    C4        single      1.092    0.020
+ 0MI      H3     C3        single      1.099    0.020
+ 0MI      H2     C2        single      1.083    0.020
+ 0MI      H1     C         single      1.059    0.020
+ 0MI      H20    C         single      1.059    0.020
+ 0MI      H30    C         single      1.059    0.020
+ 0MI      HO     O         single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 0MI      O2     C8     N       120.000    3.000
+ 0MI      O2     C8     N4      120.000    3.000
+ 0MI      N      C8     N4      120.000    3.000
+ 0MI      C8     N      C2      120.000    3.000
+ 0MI      C8     N      C3      120.000    3.000
+ 0MI      C2     N      C3      120.000    3.000
+ 0MI      N      C2     H2      120.000    3.000
+ 0MI      N      C2     C1      120.000    3.000
+ 0MI      H2     C2     C1      120.000    3.000
+ 0MI      C2     C1     C       120.000    3.000
+ 0MI      C2     C1     C9      120.000    3.000
+ 0MI      C      C1     C9      120.000    3.000
+ 0MI      C1     C      H30     109.470    3.000
+ 0MI      C1     C      H20     109.470    3.000
+ 0MI      C1     C      H1      109.470    3.000
+ 0MI      H30    C      H20     109.470    3.000
+ 0MI      H30    C      H1      109.470    3.000
+ 0MI      H20    C      H1      109.470    3.000
+ 0MI      C1     C9     N4      120.000    3.000
+ 0MI      C1     C9     O3      120.000    3.000
+ 0MI      N4     C9     O3      120.000    3.000
+ 0MI      C9     N4     C8      120.000    3.000
+ 0MI      N      C3     H3      109.470    3.000
+ 0MI      N      C3     O1      109.470    3.000
+ 0MI      N      C3     C4      109.470    3.000
+ 0MI      H3     C3     O1      109.470    3.000
+ 0MI      H3     C3     C4      108.340    3.000
+ 0MI      O1     C3     C4      109.470    3.000
+ 0MI      C3     O1     C6      111.800    3.000
+ 0MI      C3     C4     H41     109.470    3.000
+ 0MI      C3     C4     H42     109.470    3.000
+ 0MI      C3     C4     C5      111.000    3.000
+ 0MI      H41    C4     H42     107.900    3.000
+ 0MI      H41    C4     C5      109.470    3.000
+ 0MI      H42    C4     C5      109.470    3.000
+ 0MI      C4     C5     H5      108.340    3.000
+ 0MI      C4     C5     O       109.470    3.000
+ 0MI      C4     C5     C6      111.000    3.000
+ 0MI      H5     C5     O       109.470    3.000
+ 0MI      H5     C5     C6      108.340    3.000
+ 0MI      O      C5     C6      109.470    3.000
+ 0MI      C5     O      HO      109.470    3.000
+ 0MI      C5     C6     H6      108.340    3.000
+ 0MI      C5     C6     C7      111.000    3.000
+ 0MI      C5     C6     O1      109.470    3.000
+ 0MI      H6     C6     C7      108.340    3.000
+ 0MI      H6     C6     O1      109.470    3.000
+ 0MI      C7     C6     O1      109.470    3.000
+ 0MI      C6     C7     H71     109.470    3.000
+ 0MI      C6     C7     H72     109.470    3.000
+ 0MI      C6     C7     N1      110.000    3.000
+ 0MI      H71    C7     H72     107.900    3.000
+ 0MI      H71    C7     N1      109.470    3.000
+ 0MI      H72    C7     N1      109.470    3.000
+ 0MI      C7     N1     HN1     118.500    3.000
+ 0MI      C7     N1     N2      120.000    3.000
+ 0MI      HN1    N1     N2      120.000    3.000
+ 0MI      N1     N2     N3      180.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 0MI      CONST_1          O2     C8     N4     C9                 0.000            0.000   0
+ 0MI      CONST_2          O2     C8     N      C3                 0.000            0.000   0
+ 0MI      CONST_3          C8     N      C2     C1                 0.000            0.000   0
+ 0MI      CONST_4          N      C2     C1     C9                 0.000            0.000   0
+ 0MI      var_1            C2     C1     C      H1               180.000           20.000   3
+ 0MI      CONST_5          C2     C1     C9     O3                 0.000            0.000   0
+ 0MI      CONST_6          C1     C9     N4     C8                 0.000            0.000   0
+ 0MI      var_2            C8     N      C3     C4                59.150           20.000   3
+ 0MI      var_3            N      C3     O1     C6              -105.189           20.000   3
+ 0MI      var_4            C3     O1     C6     C5                -2.432           20.000   3
+ 0MI      var_5            N      C3     C4     C5               180.000           20.000   3
+ 0MI      var_6            C3     C4     C5     C6               180.000           20.000   3
+ 0MI      var_7            C4     C5     O      HO               180.000           20.000   3
+ 0MI      var_8            C4     C5     C6     C7               180.000           20.000   3
+ 0MI      var_9            C5     C6     C7     N1               180.000           20.000   3
+ 0MI      var_10           C6     C7     N1     N2                 0.000           20.000   3
+ 0MI      var_11           C7     N1     N2     N3                 0.069           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 0MI      chir_01          C5     C6     C4     O         positiv
+ 0MI      chir_02          C6     C7     O1     C5        negativ
+ 0MI      chir_03          C3     O1     C4     N         positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 0MI      plan-1            N1        0.020
+ 0MI      plan-1            C7        0.020
+ 0MI      plan-1            N2        0.020
+ 0MI      plan-1            HN1       0.020
+ 0MI      plan-2            C8        0.020
+ 0MI      plan-2            N4        0.020
+ 0MI      plan-2            N         0.020
+ 0MI      plan-2            O2        0.020
+ 0MI      plan-2            C9        0.020
+ 0MI      plan-2            C1        0.020
+ 0MI      plan-2            C2        0.020
+ 0MI      plan-2            O3        0.020
+ 0MI      plan-2            C         0.020
+ 0MI      plan-2            H2        0.020
+ 0MI      plan-2            C3        0.020
+ 0MI      plan-3            N2        0.020
+ 0MI      plan-3            N1        0.020
+ 0MI      plan-3            N3        0.020
+ 0MI      plan-3            HN1       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

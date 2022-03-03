@@ -12,16 +12,32 @@ abc_lst = string.ascii_uppercase
 import prody as pry
 pry.confProDy(verbosity='none')
 
+
+verbose = True
+
+def debug_print(message):
+    """
+    Prints, if verbose == True, the message.
+    Otherwise, nothing is printed.
+    """
+    global verbose
+    if verbose:
+        print(message)
+
+
 def main (prot_list, path):
     """
     :param id_dict: dict: keys contain the proteins which have to be analysed
     :param path: string: path to repo
     :return:
     """
+    debug_print("RMSD module")
     #get all ids out of list.txt
-    pdb_id = open(path + "/list.txt")
-    pdb_id = pdb_id.read().split("\n")
+    pdb_id_file = open(path + "/list.txt")
+    pdb_id = pdb_id_file.read().split("\n")
+    pdb_id_file.close()
     for protein in prot_list:
+        debug_print("protein: " + str(protein) + " | " + str(pdb_id))
         #Here exceptions can be added, e.g. for proteins which have to many entries
         repo_path = path+"/"+protein
         file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")

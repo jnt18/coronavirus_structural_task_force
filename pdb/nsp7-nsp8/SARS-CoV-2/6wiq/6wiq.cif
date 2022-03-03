@@ -3,14 +3,16 @@ data_6WIQ
 _entry.id   6WIQ 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.347 
+_audit_conform.dict_version    5.348 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   6WIQ         
-WWPDB D_1000248281 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   6WIQ         pdb_00006wiq 10.2210/pdb6wiq/pdb 
+WWPDB D_1000248281 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -56,10 +58,10 @@ _citation.journal_id_CSD            0030
 _citation.journal_id_ISSN           1542-0086 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            120 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                3152 
+_citation.page_last                 3165 
 _citation.title                     'Transient and stabilized complexes of Nsp7, Nsp8, and Nsp12 in SARS-CoV-2 replication.' 
 _citation.year                      2021 
 _citation.database_id_CSD           ? 
@@ -4520,6 +4522,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 2 0 2020-05-06 
 3 'Structure model' 2 1 2021-01-27 
 4 'Structure model' 2 2 2021-07-28 
+5 'Structure model' 2 3 2021-08-25 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -4544,6 +4547,7 @@ _pdbx_audit_revision_group.group
 8  2 'Structure model' 'Structure summary'      
 9  3 'Structure model' 'Structure summary'      
 10 4 'Structure model' 'Database references'    
+11 5 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -4567,6 +4571,8 @@ _pdbx_audit_revision_category.category
 15 3 'Structure model' entity_name_com                 
 16 4 'Structure model' citation                        
 17 4 'Structure model' citation_author                 
+18 5 'Structure model' citation                        
+19 5 'Structure model' database_2                      
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -4607,6 +4613,23 @@ _pdbx_audit_revision_item.item
 32 4 'Structure model' '_citation.pdbx_database_id_PubMed'            
 33 4 'Structure model' '_citation.title'                              
 34 4 'Structure model' '_citation.year'                               
+35 5 'Structure model' '_citation.journal_volume'                     
+36 5 'Structure model' '_citation.page_first'                         
+37 5 'Structure model' '_citation.page_last'                          
+38 5 'Structure model' '_database_2.pdbx_DOI'                         
+39 5 'Structure model' '_database_2.pdbx_database_accession'          
+# 
+loop_
+_space_group_symop.id 
+_space_group_symop.operation_xyz 
+1 x,y,z               
+2 x,-y,-z             
+3 -x,y,-z+1/2         
+4 -x,-y,z+1/2         
+5 x+1/2,y+1/2,z       
+6 x+1/2,-y+1/2,-z     
+7 -x+1/2,y+1/2,-z+1/2 
+8 -x+1/2,-y+1/2,z+1/2 
 # 
 loop_
 _pdbx_refine_tls.id 
@@ -4876,16 +4899,4 @@ _space_group.name_Hall        'C 2c 2'
 _space_group.IT_number        20 
 _space_group.crystal_system   orthorhombic 
 _space_group.id               1 
-# 
-loop_
-_space_group_symop.id 
-_space_group_symop.operation_xyz 
-1 x,y,z               
-2 x,-y,-z             
-3 -x,y,-z+1/2         
-4 -x,-y,z+1/2         
-5 x+1/2,y+1/2,z       
-6 x+1/2,-y+1/2,-z     
-7 -x+1/2,y+1/2,-z+1/2 
-8 -x+1/2,-y+1/2,z+1/2 
 # 

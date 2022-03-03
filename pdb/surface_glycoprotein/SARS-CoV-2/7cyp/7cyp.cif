@@ -3,15 +3,17 @@ data_7CYP
 _entry.id   7CYP 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.342 
+_audit_conform.dict_version    5.354 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7CYP         
-WWPDB D_1300018449 
-EMDB  EMD-30503    
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7CYP         pdb_00007cyp 10.2210/pdb7cyp/pdb 
+WWPDB D_1300018449 ?            ?                   
+EMDB  EMD-30503    ?            ?                   
 # 
 loop_
 _pdbx_database_related.db_name 
@@ -49,25 +51,25 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   CN 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Natl Sci Rev' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2053-714X 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            8 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Double Lock of a Potent Human Therapeutic Monoclonal Antibody against SARS-CoV-2' 
-_citation.year                      ? 
+_citation.page_first                nwaa297 
+_citation.page_last                 nwaa297 
+_citation.title                     'Double lock of a potent human therapeutic monoclonal antibody against SARS-CoV-2.' 
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1093/nsr/nwaa297 
+_citation.pdbx_database_id_PubMed   34676096 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -75,8 +77,38 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Wang, X.' 1 ? 
-primary 'Zhu, L.'  2 ? 
+primary 'Zhu, L.'     1  ? 
+primary 'Deng, Y.Q.'  2  ? 
+primary 'Zhang, R.R.' 3  ? 
+primary 'Cui, Z.'     4  ? 
+primary 'Sun, C.Y.'   5  ? 
+primary 'Fan, C.F.'   6  ? 
+primary 'Xing, X.'    7  ? 
+primary 'Huang, W.'   8  ? 
+primary 'Chen, Q.'    9  ? 
+primary 'Zhang, N.N.' 10 ? 
+primary 'Ye, Q.'      11 ? 
+primary 'Cao, T.S.'   12 ? 
+primary 'Wang, N.'    13 ? 
+primary 'Wang, L.'    14 ? 
+primary 'Cao, L.'     15 ? 
+primary 'Wang, H.'    16 ? 
+primary 'Kong, D.'    17 ? 
+primary 'Ma, J.'      18 ? 
+primary 'Luo, C.'     19 ? 
+primary 'Zhang, Y.'   20 ? 
+primary 'Nie, J.'     21 ? 
+primary 'Sun, Y.'     22 ? 
+primary 'Lv, Z.'      23 ? 
+primary 'Shaw, N.'    24 ? 
+primary 'Li, Q.'      25 ? 
+primary 'Li, X.F.'    26 ? 
+primary 'Hu, J.'      27 ? 
+primary 'Xie, L.'     28 ? 
+primary 'Rao, Z.'     29 ? 
+primary 'Wang, Y.'    30 ? 
+primary 'Wang, X.'    31 ? 
+primary 'Qin, C.F.'   32 ? 
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -1916,7 +1948,6 @@ _refine_ls_restr.pdbx_restraint_function
 # 
 _struct.entry_id                     7CYP 
 _struct.title                        'Complex of SARS-CoV-2 spike trimer with its neutralizing antibody HB27' 
-_struct.pdbx_descriptor              'Spike glycoprotein, Light chain of HB27, Heavy chain of HB27' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -37326,11 +37357,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-06-09 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-06-09 
+2 'Structure model' 1 1 2022-02-23 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -37339,6 +37373,39 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.country'                   
+2  2 'Structure model' '_citation.journal_abbrev'            
+3  2 'Structure model' '_citation.journal_id_CSD'            
+4  2 'Structure model' '_citation.journal_id_ISSN'           
+5  2 'Structure model' '_citation.journal_volume'            
+6  2 'Structure model' '_citation.page_first'                
+7  2 'Structure model' '_citation.page_last'                 
+8  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+9  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+10 2 'Structure model' '_citation.title'                     
+11 2 'Structure model' '_citation.year'                      
+12 2 'Structure model' '_database_2.pdbx_DOI'                
+13 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 _software.citation_id            ? 
 _software.classification         refinement 

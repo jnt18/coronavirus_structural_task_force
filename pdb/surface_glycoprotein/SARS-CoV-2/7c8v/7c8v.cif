@@ -3,14 +3,16 @@ data_7C8V
 _entry.id   7C8V 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.336 
+_audit_conform.dict_version    5.353 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7C8V         
-WWPDB D_1300017157 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7C8V         pdb_00007c8v 10.2210/pdb7c8v/pdb 
+WWPDB D_1300017157 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -42,25 +44,25 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Nat Commun' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2041-1723 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            12 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Potent synthetic nanobodies against SARS-CoV-2 and molecular basis for neutratlization' 
-_citation.year                      ? 
+_citation.page_first                4635 
+_citation.page_last                 4635 
+_citation.title                     'A synthetic nanobody targeting RBD protects hamsters from SARS-CoV-2 infection.' 
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1038/s41467-021-24905-z 
+_citation.pdbx_database_id_PubMed   34330908 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -68,14 +70,38 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Li, T.'         1 ? 
-primary 'Cai, H.'        2 ? 
-primary 'Yao, H.'        3 ? 
-primary 'Zhou, B.'       4 ? 
-primary 'Zhao, Y.'       5 ? 
-primary 'Qin, W.'        6 ? 
-primary 'Lavillette, D.' 7 ? 
-primary 'Li, D.'         8 ? 
+primary 'Li, T.'                1  0000-0003-3146-2761 
+primary 'Cai, H.'               2  0000-0001-7221-8330 
+primary 'Yao, H.'               3  0000-0002-8588-5877 
+primary 'Zhou, B.'              4  0000-0002-7753-4065 
+primary 'Zhang, N.'             5  ?                   
+primary 'van Vlissingen, M.F.'  6  0000-0003-2213-5910 
+primary 'Kuiken, T.'            7  0000-0001-5501-9049 
+primary 'Han, W.'               8  ?                   
+primary 'GeurtsvanKessel, C.H.' 9  0000-0002-7678-314X 
+primary 'Gong, Y.'              10 ?                   
+primary 'Zhao, Y.'              11 0000-0001-7738-6181 
+primary 'Shen, Q.'              12 ?                   
+primary 'Qin, W.'               13 ?                   
+primary 'Tian, X.X.'            14 ?                   
+primary 'Peng, C.'              15 0000-0002-6814-2676 
+primary 'Lai, Y.'               16 ?                   
+primary 'Wang, Y.'              17 ?                   
+primary 'Hutter, C.A.J.'        18 0000-0002-8920-3343 
+primary 'Kuo, S.M.'             19 0000-0002-4437-689X 
+primary 'Bao, J.'               20 ?                   
+primary 'Liu, C.'               21 ?                   
+primary 'Wang, Y.'              22 ?                   
+primary 'Richard, A.S.'         23 0000-0002-0207-0139 
+primary 'Raoul, H.'             24 0000-0002-4241-3255 
+primary 'Lan, J.'               25 ?                   
+primary 'Seeger, M.A.'          26 0000-0003-1761-8571 
+primary 'Cong, Y.'              27 0000-0002-7164-8694 
+primary 'Rockx, B.'             28 0000-0003-2463-027X 
+primary 'Wong, G.'              29 0000-0002-9044-8153 
+primary 'Bi, Y.'                30 0000-0002-5595-363X 
+primary 'Lavillette, D.'        31 0000-0002-4706-1519 
+primary 'Li, D.'                32 0000-0003-4729-4678 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1095,7 +1121,6 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     7C8V 
 _struct.title                        'Structure of sybody SR4 in complex with the SARS-CoV-2 S Receptor Binding domain (RBD)' 
-_struct.pdbx_descriptor              'Synthetic nanobody SR4, Spike glycoprotein' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -4904,6 +4929,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-06-24 
 2 'Structure model' 1 1 2020-07-29 
 3 'Structure model' 1 2 2021-03-10 
+4 'Structure model' 1 3 2022-01-05 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -4925,6 +4951,7 @@ _pdbx_audit_revision_group.group
 2 2 'Structure model' 'Derived calculations' 
 3 2 'Structure model' 'Structure summary'    
 4 3 'Structure model' 'Structure summary'    
+5 4 'Structure model' 'Database references'  
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -4941,19 +4968,51 @@ _pdbx_audit_revision_category.category
 8  3 'Structure model' chem_comp                 
 9  3 'Structure model' entity                    
 10 3 'Structure model' entity_name_com           
+11 4 'Structure model' citation                  
+12 4 'Structure model' citation_author           
+13 4 'Structure model' database_2                
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_chem_comp.name'           
-2 2 'Structure model' '_entity.pdbx_description'  
-3 2 'Structure model' '_pdbx_entity_nonpoly.name' 
-4 2 'Structure model' '_struct_conn.pdbx_role'    
-5 3 'Structure model' '_chem_comp.pdbx_synonyms'  
-6 3 'Structure model' '_entity.pdbx_description'  
-7 3 'Structure model' '_entity_name_com.name'     
+1  2 'Structure model' '_chem_comp.name'                     
+2  2 'Structure model' '_entity.pdbx_description'            
+3  2 'Structure model' '_pdbx_entity_nonpoly.name'           
+4  2 'Structure model' '_struct_conn.pdbx_role'              
+5  3 'Structure model' '_chem_comp.pdbx_synonyms'            
+6  3 'Structure model' '_entity.pdbx_description'            
+7  3 'Structure model' '_entity_name_com.name'               
+8  4 'Structure model' '_citation.country'                   
+9  4 'Structure model' '_citation.journal_abbrev'            
+10 4 'Structure model' '_citation.journal_id_CSD'            
+11 4 'Structure model' '_citation.journal_id_ISSN'           
+12 4 'Structure model' '_citation.journal_volume'            
+13 4 'Structure model' '_citation.page_first'                
+14 4 'Structure model' '_citation.page_last'                 
+15 4 'Structure model' '_citation.pdbx_database_id_DOI'      
+16 4 'Structure model' '_citation.pdbx_database_id_PubMed'   
+17 4 'Structure model' '_citation.title'                     
+18 4 'Structure model' '_citation.year'                      
+19 4 'Structure model' '_database_2.pdbx_DOI'                
+20 4 'Structure model' '_database_2.pdbx_database_accession' 
+# 
+loop_
+_space_group_symop.id 
+_space_group_symop.operation_xyz 
+1  x,y,z          
+2  x-y,x,z+5/6    
+3  y,-x+y,z+1/6   
+4  -y,x-y,z+2/3   
+5  -x+y,-x,z+1/3  
+6  x-y,-y,-z      
+7  -x,-x+y,-z+1/3 
+8  -x,-y,z+1/2    
+9  y,x,-z+2/3     
+10 -y,-x,-z+1/6   
+11 -x+y,y,-z+1/2  
+12 x,x-y,-z+5/6   
 # 
 loop_
 _software.citation_id 
@@ -5126,20 +5185,4 @@ _space_group.name_Hall        'P 65 2 (x,y,z+1/12)'
 _space_group.IT_number        179 
 _space_group.crystal_system   hexagonal 
 _space_group.id               1 
-# 
-loop_
-_space_group_symop.id 
-_space_group_symop.operation_xyz 
-1  x,y,z          
-2  x-y,x,z+5/6    
-3  y,-x+y,z+1/6   
-4  -y,x-y,z+2/3   
-5  -x+y,-x,z+1/3  
-6  x-y,-y,-z      
-7  -x,-x+y,-z+1/3 
-8  -x,-y,z+1/2    
-9  y,x,-z+2/3     
-10 -y,-x,-z+1/6   
-11 -x+y,y,-z+1/2  
-12 x,x-y,-z+5/6   
 # 

@@ -1,0 +1,284 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+860      860 '.                                   ' .                  33  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_860
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 860           CL21   CL   CL        0.000     14.664   -2.200   21.500
+ 860           C5     C    CR6       0.000     13.400   -1.360   22.383
+ 860           C7     C    CR16      0.000     13.724   -0.357   23.283
+ 860           H7     H    H         0.000     14.758   -0.079   23.446
+ 860           C19    C    CR16      0.000     12.702    0.290   23.976
+ 860           H19    H    H         0.000     12.940    1.068   24.691
+ 860           C20    C    CR16      0.000     11.376   -0.065   23.748
+ 860           H20    H    H         0.000     10.583    0.445   24.279
+ 860           C4     C    CR16      0.000     12.085   -1.722   22.148
+ 860           H4     H    H         0.000     11.857   -2.503   21.433
+ 860           C1     C    CR6       0.000     11.062   -1.084   22.829
+ 860           C2     C    CH2       0.000      9.632   -1.461   22.570
+ 860           H21    H    H         0.000      9.085   -1.348   23.508
+ 860           H22    H    H         0.000      9.616   -2.509   22.264
+ 860           C3     C    C         0.000      8.977   -0.604   21.490
+ 860           O18    O    O         0.000      9.419    0.508   21.230
+ 860           N6     N    N         0.000      7.903   -1.145   20.858
+ 860           C8     C    CR6       0.000      7.171   -0.501   19.855
+ 860           C13    C    CR16      0.000      7.485   -0.595   18.520
+ 860           H13    H    H         0.000      8.331   -1.206   18.233
+ 860           N12    N    NRD6      0.000      6.790    0.037   17.547
+ 860           C11    C    CR16      0.000      5.767    0.779   17.888
+ 860           H11    H    H         0.000      5.216    1.282   17.103
+ 860           C9     C    CR66      0.000      6.066    0.303   20.255
+ 860           C10    C    CR66      0.000      5.343    0.960   19.219
+ 860           C14    C    CR16      0.000      5.645    0.481   21.597
+ 860           H14    H    H         0.000      6.181   -0.009   22.400
+ 860           C15    C    CR16      0.000      4.563    1.272   21.879
+ 860           H15    H    H         0.000      4.251    1.403   22.907
+ 860           C16    C    CR16      0.000      3.853    1.917   20.848
+ 860           H16    H    H         0.000      2.997    2.535   21.091
+ 860           C17    C    CR16      0.000      4.234    1.769   19.542
+ 860           H17    H    H         0.000      3.684    2.273   18.757
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 860      CL21   n/a    C5     START
+ 860      C5     CL21   C4     .
+ 860      C7     C5     C19    .
+ 860      H7     C7     .      .
+ 860      C19    C7     C20    .
+ 860      H19    C19    .      .
+ 860      C20    C19    H20    .
+ 860      H20    C20    .      .
+ 860      C4     C5     C1     .
+ 860      H4     C4     .      .
+ 860      C1     C4     C2     .
+ 860      C2     C1     C3     .
+ 860      H21    C2     .      .
+ 860      H22    C2     .      .
+ 860      C3     C2     N6     .
+ 860      O18    C3     .      .
+ 860      N6     C3     C8     .
+ 860      C8     N6     C9     .
+ 860      C13    C8     N12    .
+ 860      H13    C13    .      .
+ 860      N12    C13    C11    .
+ 860      C11    N12    H11    .
+ 860      H11    C11    .      .
+ 860      C9     C8     C14    .
+ 860      C10    C9     .      .
+ 860      C14    C9     C15    .
+ 860      H14    C14    .      .
+ 860      C15    C14    C16    .
+ 860      H15    C15    .      .
+ 860      C16    C15    C17    .
+ 860      H16    C16    .      .
+ 860      C17    C16    H17    .
+ 860      H17    C17    .      END
+ 860      C1     C20    .    ADD
+ 860      C10    C11    .    ADD
+ 860      C10    C17    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 860      C2     C1        single      1.511    0.020
+ 860      C1     C20       aromatic    1.390    0.020
+ 860      C1     C4        aromatic    1.390    0.020
+ 860      C10    C11       aromatic    1.390    0.020
+ 860      C10    C17       aromatic    1.390    0.020
+ 860      C10    C9        aromatic    1.390    0.020
+ 860      C11    N12       aromatic    1.337    0.020
+ 860      C13    C8        aromatic    1.390    0.020
+ 860      N12    C13       deloc       1.337    0.020
+ 860      C15    C14       aromatic    1.390    0.020
+ 860      C14    C9        aromatic    1.390    0.020
+ 860      C16    C15       aromatic    1.390    0.020
+ 860      C17    C16       aromatic    1.390    0.020
+ 860      C20    C19       aromatic    1.390    0.020
+ 860      C19    C7        aromatic    1.390    0.020
+ 860      C3     C2        single      1.510    0.020
+ 860      N6     C3        deloc       1.330    0.020
+ 860      O18    C3        double      1.220    0.020
+ 860      C4     C5        aromatic    1.390    0.020
+ 860      C7     C5        aromatic    1.390    0.020
+ 860      C5     CL21      single      1.795    0.020
+ 860      C9     C8        aromatic    1.390    0.020
+ 860      C8     N6        single      1.400    0.020
+ 860      H11    C11       single      1.083    0.020
+ 860      H13    C13       single      1.083    0.020
+ 860      H14    C14       single      1.083    0.020
+ 860      H15    C15       single      1.083    0.020
+ 860      H16    C16       single      1.083    0.020
+ 860      H17    C17       single      1.083    0.020
+ 860      H19    C19       single      1.083    0.020
+ 860      H21    C2        single      1.092    0.020
+ 860      H22    C2        single      1.092    0.020
+ 860      H20    C20       single      1.083    0.020
+ 860      H4     C4        single      1.083    0.020
+ 860      H7     C7        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 860      CL21   C5     C7      120.000    3.000
+ 860      CL21   C5     C4      120.000    3.000
+ 860      C7     C5     C4      120.000    3.000
+ 860      C5     C7     H7      120.000    3.000
+ 860      C5     C7     C19     120.000    3.000
+ 860      H7     C7     C19     120.000    3.000
+ 860      C7     C19    H19     120.000    3.000
+ 860      C7     C19    C20     120.000    3.000
+ 860      H19    C19    C20     120.000    3.000
+ 860      C19    C20    H20     120.000    3.000
+ 860      C19    C20    C1      120.000    3.000
+ 860      H20    C20    C1      120.000    3.000
+ 860      C5     C4     H4      120.000    3.000
+ 860      C5     C4     C1      120.000    3.000
+ 860      H4     C4     C1      120.000    3.000
+ 860      C4     C1     C2      120.000    3.000
+ 860      C4     C1     C20     120.000    3.000
+ 860      C2     C1     C20     120.000    3.000
+ 860      C1     C2     H21     109.470    3.000
+ 860      C1     C2     H22     109.470    3.000
+ 860      C1     C2     C3      109.470    3.000
+ 860      H21    C2     H22     107.900    3.000
+ 860      H21    C2     C3      109.470    3.000
+ 860      H22    C2     C3      109.470    3.000
+ 860      C2     C3     O18     120.500    3.000
+ 860      C2     C3     N6      116.500    3.000
+ 860      O18    C3     N6      123.000    3.000
+ 860      C3     N6     C8      120.000    3.000
+ 860      N6     C8     C13     120.000    3.000
+ 860      N6     C8     C9      120.000    3.000
+ 860      C13    C8     C9      120.000    3.000
+ 860      C8     C13    H13     120.000    3.000
+ 860      C8     C13    N12     120.000    3.000
+ 860      H13    C13    N12     120.000    3.000
+ 860      C13    N12    C11     120.000    3.000
+ 860      N12    C11    H11     120.000    3.000
+ 860      N12    C11    C10     120.000    3.000
+ 860      H11    C11    C10     120.000    3.000
+ 860      C8     C9     C10     120.000    3.000
+ 860      C8     C9     C14     120.000    3.000
+ 860      C10    C9     C14     120.000    3.000
+ 860      C9     C10    C11     120.000    3.000
+ 860      C9     C10    C17     120.000    3.000
+ 860      C11    C10    C17     120.000    3.000
+ 860      C9     C14    H14     120.000    3.000
+ 860      C9     C14    C15     120.000    3.000
+ 860      H14    C14    C15     120.000    3.000
+ 860      C14    C15    H15     120.000    3.000
+ 860      C14    C15    C16     120.000    3.000
+ 860      H15    C15    C16     120.000    3.000
+ 860      C15    C16    H16     120.000    3.000
+ 860      C15    C16    C17     120.000    3.000
+ 860      H16    C16    C17     120.000    3.000
+ 860      C16    C17    H17     120.000    3.000
+ 860      C16    C17    C10     120.000    3.000
+ 860      H17    C17    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 860      CONST_1          CL21   C5     C7     C19                0.000            0.000   0
+ 860      CONST_2          C5     C7     C19    C20                0.000            0.000   0
+ 860      CONST_3          C7     C19    C20    C1                 0.000            0.000   0
+ 860      CONST_4          CL21   C5     C4     C1                 0.000            0.000   0
+ 860      CONST_5          C5     C4     C1     C2                 0.000            0.000   0
+ 860      CONST_6          C4     C1     C20    C19                0.000            0.000   0
+ 860      var_1            C4     C1     C2     C3                 0.000           20.000   2
+ 860      var_2            C1     C2     C3     N6               180.000           20.000   3
+ 860      CONST_7          C2     C3     N6     C8               180.000            0.000   0
+ 860      var_3            C3     N6     C8     C9               -89.682           20.000   3
+ 860      CONST_8          N6     C8     C13    N12                0.000            0.000   0
+ 860      CONST_9          C8     C13    N12    C11                0.000            0.000   0
+ 860      CONST_10         C13    N12    C11    C10                0.000            0.000   0
+ 860      CONST_11         N6     C8     C9     C14              180.000            0.000   0
+ 860      CONST_12         C8     C9     C10    C11               -0.318            0.000   0
+ 860      CONST_13         C9     C10    C11    N12              180.000            0.000   0
+ 860      CONST_14         C9     C10    C17    C16              180.000            0.000   0
+ 860      CONST_15         C8     C9     C14    C15              180.000            0.000   0
+ 860      CONST_16         C9     C14    C15    C16                0.000            0.000   0
+ 860      CONST_17         C14    C15    C16    C17                0.000            0.000   0
+ 860      CONST_18         C15    C16    C17    C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 860      plan-1            C1        0.020
+ 860      plan-1            C2        0.020
+ 860      plan-1            C20       0.020
+ 860      plan-1            C4        0.020
+ 860      plan-1            C19       0.020
+ 860      plan-1            C5        0.020
+ 860      plan-1            C7        0.020
+ 860      plan-1            H19       0.020
+ 860      plan-1            H20       0.020
+ 860      plan-1            H4        0.020
+ 860      plan-1            CL21      0.020
+ 860      plan-1            H7        0.020
+ 860      plan-2            C10       0.020
+ 860      plan-2            C11       0.020
+ 860      plan-2            C17       0.020
+ 860      plan-2            C9        0.020
+ 860      plan-2            C14       0.020
+ 860      plan-2            C15       0.020
+ 860      plan-2            C16       0.020
+ 860      plan-2            N12       0.020
+ 860      plan-2            H11       0.020
+ 860      plan-2            C13       0.020
+ 860      plan-2            C8        0.020
+ 860      plan-2            H13       0.020
+ 860      plan-2            H14       0.020
+ 860      plan-2            H15       0.020
+ 860      plan-2            H16       0.020
+ 860      plan-2            H17       0.020
+ 860      plan-2            N6        0.020
+ 860      plan-3            C3        0.020
+ 860      plan-3            C2        0.020
+ 860      plan-3            N6        0.020
+ 860      plan-3            O18       0.020
+ 860      plan-3            C8        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

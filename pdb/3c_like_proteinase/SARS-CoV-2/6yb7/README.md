@@ -39,7 +39,7 @@ No public deposition. --<br>
 
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.25 Å|97.1  %|<img width=50/>9.700|
+|   |1.25 Å|97.1  %|<img width=50/>9.300|
 
 **Discrepancy between model and data (the lower, the better)**
 

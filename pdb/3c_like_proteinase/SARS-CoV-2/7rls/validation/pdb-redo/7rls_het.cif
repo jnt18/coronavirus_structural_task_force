@@ -1,0 +1,296 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5YN      5YN '.                                   ' .                  35  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_5YN
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 5YN           CL25   CL   CL        0.000      6.469    2.069   21.677
+ 5YN           C12    C    CR6       0.000      7.093    1.003   20.426
+ 5YN           C13    C    CR6       0.000      6.206    0.390   19.547
+ 5YN           CL17   CL   CL        0.000      4.489    0.674   19.668
+ 5YN           C14    C    CR6       0.000      6.749   -0.455   18.570
+ 5YN           CL15   CL   CL        0.000      5.659   -1.228   17.441
+ 5YN           C16    C    CR16      0.000      8.114   -0.691   18.464
+ 5YN           H16    H    H         0.000      8.496   -1.352   17.696
+ 5YN           C11    C    CR16      0.000      8.462    0.792   20.351
+ 5YN           H11    H    H         0.000      9.123    1.285   21.053
+ 5YN           C10    C    CR6       0.000      8.997   -0.062   19.365
+ 5YN           N7     N    N         0.000     10.371   -0.279   19.293
+ 5YN           C6     C    CH2       0.000     10.855   -1.358   18.404
+ 5YN           H62    H    H         0.000     10.868   -1.006   17.371
+ 5YN           H61    H    H         0.000     10.196   -2.225   18.484
+ 5YN           C8     C    CH2       0.000     11.207    0.908   19.277
+ 5YN           H81    H    H         0.000     10.832    1.614   20.021
+ 5YN           H82    H    H         0.000     11.155    1.363   18.286
+ 5YN           C9     C    CH2       0.000     12.653    0.551   19.598
+ 5YN           H91    H    H         0.000     12.717    0.273   20.652
+ 5YN           H92    H    H         0.000     13.277    1.429   19.416
+ 5YN           N4     N    N         0.000     13.121   -0.564   18.767
+ 5YN           C5     C    CH2       0.000     12.260   -1.749   18.825
+ 5YN           H52    H    H         0.000     12.241   -2.140   19.844
+ 5YN           H51    H    H         0.000     12.644   -2.516   18.149
+ 5YN           C2     C    C         0.000     14.262   -0.447   18.065
+ 5YN           O3     O    O         0.000     14.958    0.577   18.018
+ 5YN           C1     C    CR6       0.000     14.679   -1.633   17.230
+ 5YN           N18    N    NRD6      0.000     15.344   -2.601   17.947
+ 5YN           C24    C    CSP       0.000     14.409   -1.786   15.908
+ 5YN           C22    C    CR6       0.000     14.863   -2.983   15.218
+ 5YN           O23    O    O         0.000     14.681   -3.235   14.023
+ 5YN           N21    N    NRD6      0.000     15.549   -3.889   16.014
+ 5YN           C19    C    CR6       0.000     15.815   -3.761   17.370
+ 5YN           O20    O    O         0.000     16.415   -4.612   18.008
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 5YN      CL25   n/a    C12    START
+ 5YN      C12    CL25   C11    .
+ 5YN      C13    C12    C14    .
+ 5YN      CL17   C13    .      .
+ 5YN      C14    C13    C16    .
+ 5YN      CL15   C14    .      .
+ 5YN      C16    C14    H16    .
+ 5YN      H16    C16    .      .
+ 5YN      C11    C12    C10    .
+ 5YN      H11    C11    .      .
+ 5YN      C10    C11    N7     .
+ 5YN      N7     C10    C8     .
+ 5YN      C6     N7     H61    .
+ 5YN      H62    C6     .      .
+ 5YN      H61    C6     .      .
+ 5YN      C8     N7     C9     .
+ 5YN      H81    C8     .      .
+ 5YN      H82    C8     .      .
+ 5YN      C9     C8     N4     .
+ 5YN      H91    C9     .      .
+ 5YN      H92    C9     .      .
+ 5YN      N4     C9     C2     .
+ 5YN      C5     N4     H51    .
+ 5YN      H52    C5     .      .
+ 5YN      H51    C5     .      .
+ 5YN      C2     N4     C1     .
+ 5YN      O3     C2     .      .
+ 5YN      C1     C2     C24    .
+ 5YN      N18    C1     .      .
+ 5YN      C24    C1     C22    .
+ 5YN      C22    C24    N21    .
+ 5YN      O23    C22    .      .
+ 5YN      N21    C22    C19    .
+ 5YN      C19    N21    O20    .
+ 5YN      O20    C19    .      END
+ 5YN      C16    C10    .    ADD
+ 5YN      C19    N18    .    ADD
+ 5YN      C6     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 5YN      C16    C10       aromatic    1.390    0.020
+ 5YN      C16    C14       aromatic    1.390    0.020
+ 5YN      C19    N18       aromatic    1.350    0.020
+ 5YN      C19    N21       aromatic    1.350    0.020
+ 5YN      O20    C19       double      1.250    0.020
+ 5YN      C1     C2        single      1.500    0.020
+ 5YN      O3     C2        deloc       1.220    0.020
+ 5YN      C2     N4        single      1.330    0.020
+ 5YN      C24    C1        double      1.285    0.020
+ 5YN      N18    C1        aromatic    1.350    0.020
+ 5YN      C6     C5        single      1.524    0.020
+ 5YN      C6     N7        single      1.455    0.020
+ 5YN      C5     N4        single      1.455    0.020
+ 5YN      C9     C8        single      1.524    0.020
+ 5YN      C8     N7        single      1.455    0.020
+ 5YN      N4     C9        single      1.455    0.020
+ 5YN      C10    C11       aromatic    1.390    0.020
+ 5YN      N7     C10       single      1.400    0.020
+ 5YN      C11    C12       aromatic    1.390    0.020
+ 5YN      C13    C12       aromatic    1.384    0.020
+ 5YN      C12    CL25      single      1.795    0.020
+ 5YN      C14    C13       aromatic    1.384    0.020
+ 5YN      CL17   C13       single      1.795    0.020
+ 5YN      CL15   C14       single      1.795    0.020
+ 5YN      C22    C24       aromatic    1.285    0.020
+ 5YN      N21    C22       aromatic    1.350    0.020
+ 5YN      O23    C22       double      1.250    0.020
+ 5YN      H16    C16       single      1.083    0.020
+ 5YN      H61    C6        single      1.092    0.020
+ 5YN      H62    C6        single      1.092    0.020
+ 5YN      H51    C5        single      1.092    0.020
+ 5YN      H52    C5        single      1.092    0.020
+ 5YN      H81    C8        single      1.092    0.020
+ 5YN      H82    C8        single      1.092    0.020
+ 5YN      H91    C9        single      1.092    0.020
+ 5YN      H92    C9        single      1.092    0.020
+ 5YN      H11    C11       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 5YN      CL25   C12    C13     120.000    3.000
+ 5YN      CL25   C12    C11     120.000    3.000
+ 5YN      C13    C12    C11     120.000    3.000
+ 5YN      C12    C13    CL17    120.000    3.000
+ 5YN      C12    C13    C14     120.000    3.000
+ 5YN      CL17   C13    C14     120.000    3.000
+ 5YN      C13    C14    CL15    120.000    3.000
+ 5YN      C13    C14    C16     120.000    3.000
+ 5YN      CL15   C14    C16     120.000    3.000
+ 5YN      C14    C16    H16     120.000    3.000
+ 5YN      C14    C16    C10     120.000    3.000
+ 5YN      H16    C16    C10     120.000    3.000
+ 5YN      C12    C11    H11     120.000    3.000
+ 5YN      C12    C11    C10     120.000    3.000
+ 5YN      H11    C11    C10     120.000    3.000
+ 5YN      C11    C10    N7      120.000    3.000
+ 5YN      C11    C10    C16     120.000    3.000
+ 5YN      N7     C10    C16     120.000    3.000
+ 5YN      C10    N7     C6      120.000    3.000
+ 5YN      C10    N7     C8      120.000    3.000
+ 5YN      C6     N7     C8      120.000    3.000
+ 5YN      N7     C6     H62     109.470    3.000
+ 5YN      N7     C6     H61     109.470    3.000
+ 5YN      N7     C6     C5      105.000    3.000
+ 5YN      H62    C6     H61     107.900    3.000
+ 5YN      H62    C6     C5      109.470    3.000
+ 5YN      H61    C6     C5      109.470    3.000
+ 5YN      N7     C8     H81     109.470    3.000
+ 5YN      N7     C8     H82     109.470    3.000
+ 5YN      N7     C8     C9      105.000    3.000
+ 5YN      H81    C8     H82     107.900    3.000
+ 5YN      H81    C8     C9      109.470    3.000
+ 5YN      H82    C8     C9      109.470    3.000
+ 5YN      C8     C9     H91     109.470    3.000
+ 5YN      C8     C9     H92     109.470    3.000
+ 5YN      C8     C9     N4      105.000    3.000
+ 5YN      H91    C9     H92     107.900    3.000
+ 5YN      H91    C9     N4      109.470    3.000
+ 5YN      H92    C9     N4      109.470    3.000
+ 5YN      C9     N4     C5      120.000    3.000
+ 5YN      C9     N4     C2      127.000    3.000
+ 5YN      C5     N4     C2      127.000    3.000
+ 5YN      N4     C5     H52     109.470    3.000
+ 5YN      N4     C5     H51     109.470    3.000
+ 5YN      N4     C5     C6      105.000    3.000
+ 5YN      H52    C5     H51     107.900    3.000
+ 5YN      H52    C5     C6      109.470    3.000
+ 5YN      H51    C5     C6      109.470    3.000
+ 5YN      N4     C2     O3      123.000    3.000
+ 5YN      N4     C2     C1      120.000    3.000
+ 5YN      O3     C2     C1      120.500    3.000
+ 5YN      C2     C1     N18     120.000    3.000
+ 5YN      C2     C1     C24     120.000    3.000
+ 5YN      N18    C1     C24     120.000    3.000
+ 5YN      C1     N18    C19     120.000    3.000
+ 5YN      C1     C24    C22     180.000    3.000
+ 5YN      C24    C22    O23     120.000    3.000
+ 5YN      C24    C22    N21     120.000    3.000
+ 5YN      O23    C22    N21     120.000    3.000
+ 5YN      C22    N21    C19     120.000    3.000
+ 5YN      N21    C19    O20     120.000    3.000
+ 5YN      N21    C19    N18     120.000    3.000
+ 5YN      O20    C19    N18     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 5YN      CONST_1          CL25   C12    C13    C14                0.000            0.000   0
+ 5YN      CONST_2          C12    C13    C14    C16                0.000            0.000   0
+ 5YN      CONST_3          C13    C14    C16    C10                0.000            0.000   0
+ 5YN      CONST_4          C14    C16    C10    C11                0.000            0.000   0
+ 5YN      CONST_5          CL25   C12    C11    C10                0.000            0.000   0
+ 5YN      CONST_6          C12    C11    C10    N7                 0.000            0.000   0
+ 5YN      var_1            C11    C10    N7     C8               -50.598           20.000   3
+ 5YN      var_2            C10    N7     C6     C5              -160.298           20.000   3
+ 5YN      var_3            N7     C6     C5     N4               180.000           20.000   3
+ 5YN      var_4            C10    N7     C8     C9               163.752           20.000   3
+ 5YN      var_5            N7     C8     C9     N4               180.000           20.000   3
+ 5YN      var_6            C8     C9     N4     C2               127.733           20.000   3
+ 5YN      var_7            C9     N4     C5     C6                57.473           20.000   3
+ 5YN      var_8            C9     N4     C2     C1               180.000           20.000   2
+ 5YN      var_9            N4     C2     C1     C24               95.451           20.000   3
+ 5YN      CONST_7          C2     C1     N18    C19                0.000            0.000   0
+ 5YN      CONST_8          C2     C1     C24    C22             -179.705            0.000   0
+ 5YN      CONST_9          C1     C24    C22    N21                0.316            0.000   0
+ 5YN      CONST_10         C24    C22    N21    C19                0.000            0.000   0
+ 5YN      CONST_11         C22    N21    C19    O20                0.000            0.000   0
+ 5YN      CONST_12         N21    C19    N18    C1                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 5YN      plan-1            C16       0.020
+ 5YN      plan-1            C10       0.020
+ 5YN      plan-1            C14       0.020
+ 5YN      plan-1            H16       0.020
+ 5YN      plan-1            C11       0.020
+ 5YN      plan-1            C12       0.020
+ 5YN      plan-1            C13       0.020
+ 5YN      plan-1            N7        0.020
+ 5YN      plan-1            H11       0.020
+ 5YN      plan-1            CL25      0.020
+ 5YN      plan-1            CL17      0.020
+ 5YN      plan-1            CL15      0.020
+ 5YN      plan-2            C19       0.020
+ 5YN      plan-2            N18       0.020
+ 5YN      plan-2            N21       0.020
+ 5YN      plan-2            O20       0.020
+ 5YN      plan-2            C1        0.020
+ 5YN      plan-2            C22       0.020
+ 5YN      plan-2            C24       0.020
+ 5YN      plan-2            C2        0.020
+ 5YN      plan-2            O23       0.020
+ 5YN      plan-3            C2        0.020
+ 5YN      plan-3            C1        0.020
+ 5YN      plan-3            O3        0.020
+ 5YN      plan-3            N4        0.020
+ 5YN      plan-4            N4        0.020
+ 5YN      plan-4            C2        0.020
+ 5YN      plan-4            C5        0.020
+ 5YN      plan-4            C9        0.020
+ 5YN      plan-5            N7        0.020
+ 5YN      plan-5            C6        0.020
+ 5YN      plan-5            C8        0.020
+ 5YN      plan-5            C10       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

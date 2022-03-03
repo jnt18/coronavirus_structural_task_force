@@ -34,15 +34,15 @@ Download all data in the methyltransferase subdirectory: ```python git_fetch.py 
 
 ## Total number of COVID structures by experimental methods
 
-X-ray Crystallography: 1153
+X-ray Crystallography: 1382
 <br>
-3D Electron Microscopy: 396
+3D Electron Microscopy: 632
 <br>
-Solution NMR: 31
+Solution NMR: 35
 <br>
 Solid-State NMR: 1
 <br>
-Neutron Diffraction: 2
+Joint X-ray and Neutron Diffraction: 3
 
 ## Folder stucture 
 
@@ -104,7 +104,7 @@ Poster on Spike protein function<br>
 
 This is a collaborative effort. These are the current contributors (in order of joining):<br><br>
 Universitaet Hamburg, Germany -<br>
-[Andrea Thorn - Group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
+[Andrea Thorn - Group leader](https://thorn-lab.com/team-member/andrea-thorn/)<br>
 Yunyun Gao - Postdoc in the AUSPEX project (www.auspex.de)<br>
 Kristopher Nolte - Biochemistry B.Sc. student<br>
 Ferdinand Kirsten - Biochemistry B.Sc. student<br>

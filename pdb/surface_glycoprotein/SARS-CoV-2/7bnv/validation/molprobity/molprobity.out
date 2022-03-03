@@ -1,0 +1,127 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 4977
+     H or D atoms   : 0
+     chains         : 6
+     a.a. residues  : 633
+     nucleotides    : 0
+     water          : 165
+     other (ligands): 1
+   Ligands: NAG:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   H  13  LYS  CE     
+   H  13  LYS  NZ          1.49     1.61    -0.12  3.00e-02  1.70e+01   4.1*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.124 (Z=  9.754)
+  Mean delta:    0.004 (Z=  0.276)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   H 162  GLU  C      
+   H 163  PRO  N      
+   H 163  PRO  CD        125.00   108.38    16.62  4.10e+00  1.64e+01   4.1*sigma
+   L 111  ARG  CG     
+   L 111  ARG  CD     
+   L 111  ARG  NE        112.00   101.59    10.41  2.20e+00  2.24e+01   4.7*sigma
+   H 162  GLU  N      
+   H 162  GLU  CA     
+   H 162  GLU  C         110.13   104.37     5.76  1.15e+00  2.51e+01   5.0*sigma
+   L 111  ARG  CB     
+   L 111  ARG  CG     
+   L 111  ARG  CD        111.30   124.47   -13.17  2.30e+00  3.28e+01   5.7*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   19.268 (Z=  5.725)
+  Mean delta:    0.835 (Z=  0.406)
+
+                      ----------Dihedral angles----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:   88.103
+  Mean delta:   13.584
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.295
+  Mean delta:    0.054
+
+                       ----------Planar groups----------                       
+
+  atoms                 rms_deltas   delta_max    residual   deviation
+   H 162  GLU  CG     
+   H 162  GLU  CD     
+   H 162  GLU  OE1    
+   H 162  GLU  OE2           0.050       0.086       24.72   4.3*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.088
+  Mean delta:    0.007
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.124   4941
+    Angle     :  0.835  19.268   6740
+    Chirality :  0.054   0.295    740
+    Planarity :  0.007   0.088    869
+    Dihedral  : 13.584  88.103   1719
+    Min Nonbonded Distance : 1.442
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 5.57
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  4.80 %
+      Favored  : 95.20 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 13.51 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -1.52 (0.31), residues: 625
+    helix: -3.62 (0.65), residues: 34
+    sheet: -0.46 (0.31), residues: 273
+    loop : -1.13 (0.30), residues: 318
+
+                     ----------Asn/Gln/His flips----------                     
+
+   H 185  GLN
+   L 127  GLN
+   L  80  GLN
+   L 202  GLN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  95.20 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   5.57
+  RMS(bonds)            =   0.0040
+  RMS(angles)           =   0.84
+  MolProbity score      =   1.64
+  Refinement program    = REFMAC

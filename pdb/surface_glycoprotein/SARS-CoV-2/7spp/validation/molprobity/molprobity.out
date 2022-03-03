@@ -1,0 +1,170 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 2584  (anisotropic = 2432)
+    B_iso: mean =  56.9  max = 142.9  min =  34.2
+    Occupancy: mean = 0.98  max = 1.00  min = 0.42
+    3 total B-factor or occupancy problem(s) detected
+  Macromolecules:
+    Number of atoms = 2432  (anisotropic = 2432)
+    B_iso: mean =  56.8  max = 142.9  min =  34.2
+    Occupancy: mean = 0.98  max = 1.00  min = 0.42
+    2 total B-factor or occupancy problem(s) detected
+  Ligands:
+    Number of atoms = 23  (anisotropic = 0)
+    B_iso: mean =  98.1  max = 134.0  min =  59.4
+  Waters:
+    Number of atoms = 129  (anisotropic = 0)
+    B_iso: mean =  51.0  max =  81.5  min =  36.4
+    Occupancy: mean = 0.99  max = 1.00  min = 0.45
+  (Hydrogen atoms not included in overall counts.)
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.077 (Z=  5.694)
+  Mean delta:    0.011 (Z=  0.746)
+
+                        ----------Bond angles----------                        
+
+  Using conformation-dependent library for mainchain bond angle targets
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    7.024 (Z=  3.549)
+  Mean delta:    1.038 (Z=  0.589)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 348  ALA  CA     
+   A 348  ALA  C      
+   A 349  SER  N      
+   A 349  SER  CA        180.00   158.77    21.23  5.00e+00  1.80e+01   4.2*sigma
+
+  Min. delta:    0.001
+  Max. delta:   80.553
+  Mean delta:   12.302
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.178
+  Mean delta:    0.060
+
+                       ----------Planar groups----------                       
+
+  atoms                 rms_deltas   delta_max    residual   deviation
+   C  27  ARG  CD     
+   C  27  ARG  NE     
+   C  27  ARG  CZ     
+   C  27  ARG  NH1    
+   C  27  ARG  NH2           0.068       0.102       58.09   5.1*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.068
+  Mean delta:    0.008
+
+============================= Hydrogen validation =============================
+
+
+                ----------H/D atoms in the input model----------               
+
+  Total number of hydrogen atoms : 2619
+  Total number of deuterium atoms: 0
+  Number of H atoms (protein)    : 2335
+  Number of D atoms (protein)    : 0
+  Number of H atoms (water)      : 258
+  Number of D atoms (water)      : 0
+  Number of H atoms (other)      : 26
+  Number of D atoms (other)      : 0
+
+                      ----------Water molecules----------                      
+
+  Number of water                            : 128
+  Number of water with 0 H (or D)            : 0
+  Number of water with 1 H (or D)            : 0
+  Number of water with 2 H (or D)            : 127
+  Number of water in alternative conformation: 1
+  Number of water without oxygen atom        : 0
+
+                    ----------MISSING H or D atoms----------                   
+
+  CYS A 336  conformer  : HG 
+  ASN A 343  conformer  : HD22 
+  CYS A 361  conformer  : HG 
+  CYS A 379  conformer  : HG 
+  CYS A 391  conformer  : HG 
+  CYS A 432  conformer  : HG 
+  CYS A 480  conformer  : HG 
+  CYS A 488  conformer  : HG 
+  HIS A 519  conformer  : HD1 
+  CYS A 525  conformer  : HG 
+  CYS C  41  conformer  : HG 
+  CYS C  48  conformer  : HG 
+  CYS C 102  conformer  : HG 
+  CYS C 112  conformer  : HG 
+  HIS C 117  conformer  : HE2 
+  NAG A 602  conformer  : HO1 
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.011   0.077   2515
+    Angle     :  1.038   7.024   3419
+    Chirality :  0.060   0.178    369
+    Planarity :  0.008   0.068    446
+    Dihedral  : 12.302  80.553    904
+    Min Nonbonded Distance : 2.147
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 2.70
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  3.99 %
+      Favored  : 96.01 %
+    Rotamer Outliers :  0.75 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 7.69 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -0.22 (0.45), residues: 316
+    helix: -4.09 (0.49), residues: 27
+    sheet:  0.88 (0.50), residues: 117
+    loop : -0.13 (0.41), residues: 172
+
+                     ----------Asn/Gln/His flips----------                     
+
+   C 115  ASN
+   C 117  HIS
+   A 334  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  96.01 %
+  Rotamer outliers      =   0.75 %
+  C-beta deviations     =     0
+  Clashscore            =   2.70
+  RMS(bonds)            =   0.0113
+  RMS(angles)           =   1.04
+  MolProbity score      =   1.33
+  Refinement program    = PHENIX

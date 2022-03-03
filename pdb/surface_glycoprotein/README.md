@@ -19,3 +19,6 @@ InsideCorona Blog: [**Spike Glycoprotein: Corona’s Key for Invasion**](https:/
 Proteome Information: [**surface glycoprotein**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/proteome_information.txt)
 
 Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/NetNGlyc_surface_glycoprotein) 
+
+Classification of Structures by Domain: [**SARS-CoV-2_spike**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/domains_and_infos_of_surface_glycoprotein.xlsx)
+

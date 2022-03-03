@@ -1,0 +1,238 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+4IJ      4IJ '.                                   ' .                  22  11 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-4IJ  CYS      .        .        4IJ      .        .
+ bond_CYS-SG_=_4IJ-C02
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_4IJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 4IJ           O12    O    OH1       0.000      4.936   32.122   21.838
+ 4IJ           HO12   H    H         0.000      5.071   32.631   21.049
+ 4IJ           C02    C    CH2       0.000      5.726   31.255   21.806
+ 4IJ           H021   H    H         0.000      6.721   31.702   21.766
+ 4IJ           H022   H    H         0.000      5.554   30.670   20.901
+ 4IJ           C03    C    CR6       0.000      5.623   30.347   23.028
+ 4IJ           C11    C    CR16      0.000      4.453   30.413   23.788
+ 4IJ           H11    H    H         0.000      3.665   31.101   23.507
+ 4IJ           C10    C    CR16      0.000      4.295   29.594   24.912
+ 4IJ           H10    H    H         0.000      3.384   29.648   25.495
+ 4IJ           C04    C    CR6       0.000      6.650   29.457   23.390
+ 4IJ           C08    C    CH2       0.000      8.018   29.176   22.774
+ 4IJ           H081   H    H         0.000      8.602   30.093   22.668
+ 4IJ           H082   H    H         0.000      7.923   28.691   21.801
+ 4IJ           C07    C    CH2       0.000      8.710   28.247   23.734
+ 4IJ           H071   H    H         0.000      9.521   28.763   24.253
+ 4IJ           H072   H    H         0.000      9.111   27.378   23.208
+ 4IJ           N06    N    NH1       0.000      7.712   27.812   24.702
+ 4IJ           HN06   H    H         0.000      7.825   27.067   25.375
+ 4IJ           C05    C    CR6       0.000      6.500   28.652   24.531
+ 4IJ           C09    C    CR16      0.000      5.303   28.711   25.284
+ 4IJ           H09    H    H         0.000      5.172   28.070   26.148
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 4IJ      O12    n/a    C02    START
+ 4IJ      HO12   O12    .      .
+ 4IJ      C02    O12    C03    .
+ 4IJ      H021   C02    .      .
+ 4IJ      H022   C02    .      .
+ 4IJ      C03    C02    C04    .
+ 4IJ      C11    C03    C10    .
+ 4IJ      H11    C11    .      .
+ 4IJ      C10    C11    H10    .
+ 4IJ      H10    C10    .      .
+ 4IJ      C04    C03    C08    .
+ 4IJ      C08    C04    C07    .
+ 4IJ      H081   C08    .      .
+ 4IJ      H082   C08    .      .
+ 4IJ      C07    C08    N06    .
+ 4IJ      H071   C07    .      .
+ 4IJ      H072   C07    .      .
+ 4IJ      N06    C07    C05    .
+ 4IJ      HN06   N06    .      .
+ 4IJ      C05    N06    C09    .
+ 4IJ      C09    C05    H09    .
+ 4IJ      H09    C09    .      END
+ 4IJ      C10    C09    .    ADD
+ 4IJ      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 4IJ      C10    C09       aromatic    1.390    0.020
+ 4IJ      C10    C11       aromatic    1.390    0.020
+ 4IJ      C03    C02       single      1.511    0.020
+ 4IJ      C02    O12       single      1.432    0.020
+ 4IJ      C04    C03       aromatic    1.384    0.020
+ 4IJ      C11    C03       aromatic    1.390    0.020
+ 4IJ      C04    C05       aromatic    1.384    0.020
+ 4IJ      C08    C04       single      1.511    0.020
+ 4IJ      C09    C05       aromatic    1.390    0.020
+ 4IJ      C05    N06       single      1.350    0.020
+ 4IJ      C07    C08       single      1.524    0.020
+ 4IJ      N06    C07       single      1.450    0.020
+ 4IJ      H10    C10       single      1.083    0.020
+ 4IJ      H021   C02       single      1.092    0.020
+ 4IJ      H022   C02       single      1.092    0.020
+ 4IJ      H071   C07       single      1.092    0.020
+ 4IJ      H072   C07       single      1.092    0.020
+ 4IJ      H081   C08       single      1.092    0.020
+ 4IJ      H082   C08       single      1.092    0.020
+ 4IJ      H09    C09       single      1.083    0.020
+ 4IJ      H11    C11       single      1.083    0.020
+ 4IJ      HN06   N06       single      1.010    0.020
+ 4IJ      HO12   O12       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 4IJ      HO12   O12    C02     109.470    3.000
+ 4IJ      O12    C02    H021    109.470    3.000
+ 4IJ      O12    C02    H022    109.470    3.000
+ 4IJ      O12    C02    C03     109.500    3.000
+ 4IJ      H021   C02    H022    107.900    3.000
+ 4IJ      H021   C02    C03     109.470    3.000
+ 4IJ      H022   C02    C03     109.470    3.000
+ 4IJ      C02    C03    C11     120.000    3.000
+ 4IJ      C02    C03    C04     120.000    3.000
+ 4IJ      C11    C03    C04     120.000    3.000
+ 4IJ      C03    C11    H11     120.000    3.000
+ 4IJ      C03    C11    C10     120.000    3.000
+ 4IJ      H11    C11    C10     120.000    3.000
+ 4IJ      C11    C10    H10     120.000    3.000
+ 4IJ      C11    C10    C09     120.000    3.000
+ 4IJ      H10    C10    C09     120.000    3.000
+ 4IJ      C03    C04    C08     120.000    3.000
+ 4IJ      C03    C04    C05     120.000    3.000
+ 4IJ      C08    C04    C05     120.000    3.000
+ 4IJ      C04    C08    H081    109.470    3.000
+ 4IJ      C04    C08    H082    109.470    3.000
+ 4IJ      C04    C08    C07     109.470    3.000
+ 4IJ      H081   C08    H082    107.900    3.000
+ 4IJ      H081   C08    C07     109.470    3.000
+ 4IJ      H082   C08    C07     109.470    3.000
+ 4IJ      C08    C07    H071    109.470    3.000
+ 4IJ      C08    C07    H072    109.470    3.000
+ 4IJ      C08    C07    N06     112.000    3.000
+ 4IJ      H071   C07    H072    107.900    3.000
+ 4IJ      H071   C07    N06     109.470    3.000
+ 4IJ      H072   C07    N06     109.470    3.000
+ 4IJ      C07    N06    HN06    118.500    3.000
+ 4IJ      C07    N06    C05     120.000    3.000
+ 4IJ      HN06   N06    C05     120.000    3.000
+ 4IJ      N06    C05    C09     120.000    3.000
+ 4IJ      N06    C05    C04     120.000    3.000
+ 4IJ      C09    C05    C04     120.000    3.000
+ 4IJ      C05    C09    H09     120.000    3.000
+ 4IJ      C05    C09    C10     120.000    3.000
+ 4IJ      H09    C09    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 4IJ      var_1            HO12   O12    C02    C03              180.000           20.000   3
+ 4IJ      var_2            O12    C02    C03    C04                0.000           20.000   2
+ 4IJ      CONST_1          C02    C03    C11    C10                0.000            0.000   0
+ 4IJ      CONST_2          C03    C11    C10    C09                0.000            0.000   0
+ 4IJ      CONST_3          C11    C10    C09    C05                0.000            0.000   0
+ 4IJ      CONST_4          C02    C03    C04    C08                0.000            0.000   0
+ 4IJ      CONST_5          C03    C04    C05    N06                0.000            0.000   0
+ 4IJ      var_3            C03    C04    C08    C07                0.000           20.000   2
+ 4IJ      var_4            C04    C08    C07    N06              180.000           20.000   3
+ 4IJ      var_5            C08    C07    N06    C05                0.000           20.000   3
+ 4IJ      var_6            C07    N06    C05    C09             -174.180           20.000   3
+ 4IJ      CONST_6          N06    C05    C09    C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 4IJ      plan-1            C10       0.020
+ 4IJ      plan-1            C09       0.020
+ 4IJ      plan-1            C11       0.020
+ 4IJ      plan-1            H10       0.020
+ 4IJ      plan-1            C03       0.020
+ 4IJ      plan-1            C04       0.020
+ 4IJ      plan-1            C05       0.020
+ 4IJ      plan-1            C02       0.020
+ 4IJ      plan-1            C08       0.020
+ 4IJ      plan-1            N06       0.020
+ 4IJ      plan-1            H09       0.020
+ 4IJ      plan-1            H11       0.020
+ 4IJ      plan-1            HN06      0.020
+ 4IJ      plan-2            N06       0.020
+ 4IJ      plan-2            C05       0.020
+ 4IJ      plan-2            C07       0.020
+ 4IJ      plan-2            HN06      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-4IJ
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-4IJ  1 SG      2 C02       .           1.870    0.020
+# ------------------------------------------------------

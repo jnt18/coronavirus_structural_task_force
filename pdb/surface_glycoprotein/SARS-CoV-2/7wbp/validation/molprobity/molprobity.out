@@ -1,0 +1,130 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 6533  (anisotropic = 6434)
+    B_iso: mean =  55.9  max = 143.7  min =  26.0
+    Occupancy: mean = 1.00  max = 1.00  min = 0.50
+    5 total B-factor or occupancy problem(s) detected
+  Macromolecules:
+    Number of atoms = 6434  (anisotropic = 6434)
+    B_iso: mean =  55.1  max = 143.7  min =  26.0
+    Occupancy: mean = 1.00  max = 1.00  min = 0.50
+    15 total B-factor or occupancy problem(s) detected
+  Ligands:
+    Number of atoms = 99  (anisotropic = 0)
+    B_iso: mean = 104.7  max = 131.2  min =  65.5
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.064 (Z=  2.573)
+  Mean delta:    0.003 (Z=  0.207)
+
+                        ----------Bond angles----------                        
+
+  Using conformation-dependent library for mainchain bond angle targets
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    9.242 (Z=  3.316)
+  Mean delta:    0.632 (Z=  0.347)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   B 374  PHE  CA     
+   B 374  PHE  C      
+   B 375  PHE  N      
+   B 375  PHE  CA        180.00  -159.54   -20.46  5.00e+00  1.67e+01   4.1*sigma
+   B 372  ALA  CA     
+   B 372  ALA  C      
+   B 373  PRO  N      
+   B 373  PRO  CA        180.00  -159.84   -20.16  5.00e+00  1.63e+01   4.0*sigma
+
+  Min. delta:    0.000
+  Max. delta:   89.106
+  Mean delta:   13.486
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.263
+  Mean delta:    0.044
+
+                       ----------Planar groups----------                       
+
+  atoms                 rms_deltas   delta_max    residual   deviation
+   C   2  NAG  C2     
+   C   2  NAG  C7     
+   C   2  NAG  C8     
+   C   2  NAG  N2     
+   C   2  NAG  O7            0.293       0.513     1071.36  25.7*sigma
+   C   1  NAG  C2     
+   C   1  NAG  C7     
+   C   1  NAG  C8     
+   C   1  NAG  N2     
+   C   1  NAG  O7            0.299       0.346     1118.19  17.3*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.299
+  Mean delta:    0.013
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.003   0.064   6718
+    Angle     :  0.632   9.242   9134
+    Chirality :  0.044   0.263    975
+    Planarity :  0.013   0.299   1175
+    Dihedral  : 13.486  89.106   2437
+    Min Nonbonded Distance : 2.090
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 2.82
+    Ramachandran Plot:
+      Outliers :  0.13 %
+      Allowed  :  3.05 %
+      Favored  : 96.82 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 2.56 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -1.16 (0.26), residues: 788
+    helix: -0.46 (0.23), residues: 397
+    sheet: -0.04 (0.68), residues: 59
+    loop : -1.16 (0.30), residues: 332
+
+                     ----------Asn/Gln/His flips----------                     
+
+  No backwards Asn/Gln/His sidechains found.
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.13 %
+                favored =  96.82 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   2.82
+  RMS(bonds)            =   0.0031
+  RMS(angles)           =   0.63
+  MolProbity score      =   1.27
+  Refinement program    = PHENIX

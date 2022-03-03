@@ -3,14 +3,16 @@ data_7JZ0
 _entry.id   7JZ0 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.333 
+_audit_conform.dict_version    5.352 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7JZ0         
-WWPDB D_1000251624 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7JZ0         pdb_00007jz0 10.2210/pdb7jz0/pdb 
+WWPDB D_1000251624 ?            ?                   
 # 
 loop_
 _pdbx_database_related.db_name 
@@ -45,48 +47,62 @@ _audit_author.identifier_ORCID
 'Satchell, K.J.F.'                                              6 ? 
 'Center for Structural Genomics of Infectious Diseases (CSGID)' 7 ? 
 # 
-_citation.abstract                  ? 
-_citation.abstract_id_CAS           ? 
-_citation.book_id_ISBN              ? 
-_citation.book_publisher            ? 
-_citation.book_publisher_city       ? 
-_citation.book_title                ? 
-_citation.coordinate_linkage        ? 
-_citation.country                   ? 
-_citation.database_id_Medline       ? 
-_citation.details                   ? 
-_citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
-_citation.journal_full              ? 
-_citation.journal_issue             ? 
-_citation.journal_volume            ? 
-_citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     
-;Crystal Structure of SARS-CoV-2 Nsp16/10 Heterodimer in Complex with (m7GpppA2m)pUpUpApApA (Cap-1) and S-Adenosyl-L-homocysteine (SAH).
+loop_
+_citation.abstract 
+_citation.abstract_id_CAS 
+_citation.book_id_ISBN 
+_citation.book_publisher 
+_citation.book_publisher_city 
+_citation.book_title 
+_citation.coordinate_linkage 
+_citation.country 
+_citation.database_id_Medline 
+_citation.details 
+_citation.id 
+_citation.journal_abbrev 
+_citation.journal_id_ASTM 
+_citation.journal_id_CSD 
+_citation.journal_id_ISSN 
+_citation.journal_full 
+_citation.journal_issue 
+_citation.journal_volume 
+_citation.language 
+_citation.page_first 
+_citation.page_last 
+_citation.title 
+_citation.year 
+_citation.database_id_CSD 
+_citation.pdbx_database_id_DOI 
+_citation.pdbx_database_id_PubMed 
+_citation.unpublished_flag 
+? ? ? ? ? ? ? US ? ? primary Sci.Signal. ? ? 1937-9145 ? ? 13 ? ? ? 
+;High-resolution structures of the SARS-CoV-2 2'- O -methyltransferase reveal strategies for structure-based inhibitor design.
 ;
-_citation.year                      ? 
-_citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
-_citation.unpublished_flag          ? 
+2020 ? 10.1126/scisignal.abe1202 32994211 ? 
+? ? ? ? ? ? ? US ? ? 1       Biorxiv     ? ? ?         ? ? ?  ? ? ? 
+;Structure of SARS-CoV-2 2&#8242;- O -methyltransferase heterodimer with RNA Cap analog and sulfates bound reveals new strategies for structure-based inhibitor design
+;
+2020 ? 10.1101/2020.08.03.234716 ?        ? 
 # 
 loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Minasov, G.'                                                   1 ? 
-primary 'Shuvalova, L.'                                                 2 ? 
-primary 'Rosas-Lemus, M.'                                               3 ? 
-primary 'Kiryukhina, O.'                                                4 ? 
-primary 'Brunzelle, J.S.'                                               5 ? 
-primary 'Satchell, K.J.F.'                                              6 ? 
-primary 'Center for Structural Genomics of Infectious Diseases (CSGID)' 7 ? 
+primary 'Rosas-Lemus, M.'  1  0000-0002-6243-0271 
+primary 'Minasov, G.'      2  0000-0001-5460-3462 
+primary 'Shuvalova, L.'    3  0000-0003-1702-6998 
+primary 'Inniss, N.L.'     4  0000-0002-1510-7412 
+primary 'Kiryukhina, O.'   5  0000-0001-5962-8423 
+primary 'Brunzelle, J.'    6  0000-0001-9197-0018 
+primary 'Satchell, K.J.F.' 7  0000-0003-3274-7611 
+1       'Rosas-Lemus, M.'  8  ?                   
+1       'Minasov, G.'      9  ?                   
+1       'Shuvalova, L.'    10 ?                   
+1       'Inniss, N.'       11 ?                   
+1       'Kiryukhina, O.'   12 ?                   
+1       'Brunzelle, J.'    13 ?                   
+1       'Satchell, K.J.F.' 14 ?                   
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1235,9 +1251,6 @@ _refine_ls_shell.pdbx_fsc_free                    ?
 _struct.entry_id                     7JZ0 
 _struct.title                        
 ;Crystal Structure of SARS-CoV-2 Nsp16/10 Heterodimer in Complex with (m7GpppA2m)pUpUpApApA (Cap-1) and S-Adenosyl-L-homocysteine (SAH).
-;
-_struct.pdbx_descriptor              
-;2'-O-methyltransferase, Non-structural protein 10,RNA (5'-D(*(M7G))-R(P*(A2M)P*UP*U)-3')
 ;
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
@@ -17321,11 +17334,14 @@ _pdbx_struct_conn_angle.value_esd
 64 SG  ? D  CYS 122 ? D CYS 4373 ? 1_555 ZN ? EA ZN . ? D ZN 4402 ? 1_555 SG  ? D  CYS 132 ? D CYS 4383 ? 1_555 114.4 ? 
 65 SG  ? D  CYS 130 ? D CYS 4381 ? 1_555 ZN ? EA ZN . ? D ZN 4402 ? 1_555 SG  ? D  CYS 132 ? D CYS 4383 ? 1_555 112.1 ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-09-16 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-09-16 
+2 'Structure model' 1 1 2021-12-15 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -17334,6 +17350,28 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_database_2.pdbx_DOI'                
+2 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 loop_
 _pdbx_refine_tls.id 

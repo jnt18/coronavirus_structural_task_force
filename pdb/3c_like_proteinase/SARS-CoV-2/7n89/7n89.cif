@@ -3,7 +3,7 @@ data_7N89
 _entry.id   7N89 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.344 
+_audit_conform.dict_version    5.352 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,8 +11,8 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7N89         ? ? 
-WWPDB D_1000257528 ? ? 
+PDB   7N89         pdb_00007n89 10.2210/pdb7n89/pdb 
+WWPDB D_1000257528 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -42,25 +42,26 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            Iucrj 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2052-2525 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            8 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Substrate binding to SARS-CoV-2 main protease' 
-_citation.year                      ? 
+_citation.page_first                973 
+_citation.page_last                 979 
+_citation.title                     
+'Michaelis-like complex of SARS-CoV-2 main protease visualized by room-temperature X-ray crystallography.' 
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1107/S2052252521010113 
+_citation.pdbx_database_id_PubMed   34804549 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -69,11 +70,11 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Kneller, D.W.' 1 ? 
-primary 'Zhang, Q.'     2 ? 
-primary 'Weiss, K.L.'   3 ? 
-primary 'Coates, L.'    4 ? 
-primary 'Louis, J.M.'   5 ? 
+primary 'Kneller, D.W.'  1 0000-0002-5416-5789 
+primary 'Zhang, Q.'      2 ?                   
+primary 'Coates, L.'     3 0000-0003-2342-049X 
+primary 'Louis, J.M.'    4 ?                   
+primary 'Kovalevsky, A.' 5 0000-0003-4459-9142 
 # 
 _cell.angle_alpha                  66.88 
 _cell.angle_alpha_esd              ? 
@@ -1074,7 +1075,6 @@ _refine_ls_shell.pdbx_fsc_free
 _struct.entry_id                     7N89 
 _struct.title                        
 'Room-temperature X-ray structure of SARS-CoV-2 main protease C145A mutant in complex with substrate Ac-SAVLQSGF-CONH2' 
-_struct.pdbx_descriptor              '3C-like proteinase (E.C.3.4.22.69), ACE-SER-ALA-VAL-LEU-GLN-SER-GLY-PHE-NHH' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -7432,11 +7432,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-06-23 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-06-23 
+2 'Structure model' 1 1 2021-12-15 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -7445,6 +7448,41 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.country'                   
+2  2 'Structure model' '_citation.journal_abbrev'            
+3  2 'Structure model' '_citation.journal_id_CSD'            
+4  2 'Structure model' '_citation.journal_id_ISSN'           
+5  2 'Structure model' '_citation.journal_volume'            
+6  2 'Structure model' '_citation.page_first'                
+7  2 'Structure model' '_citation.page_last'                 
+8  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+9  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+10 2 'Structure model' '_citation.title'                     
+11 2 'Structure model' '_citation.year'                      
+12 2 'Structure model' '_citation_author.identifier_ORCID'   
+13 2 'Structure model' '_citation_author.name'               
+14 2 'Structure model' '_database_2.pdbx_DOI'                
+15 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 loop_
 _software.citation_id 

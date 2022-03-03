@@ -1,0 +1,1169 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+FHS      FHS '.                                   ' .                  83  40 .
+FEY      FEY '.                                   ' .                  83  40 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-FHS  CYS      .        .        FHS      .        .
+ bond_CYS-SG_=_FHS-C19
+CYS-FEY  CYS      .        .        FEY      .        .
+ bond_CYS-SG_=_FEY-C19
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_FHS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ FHS           O21    O    O         0.000      8.290   -1.847   22.316
+ FHS           C09    C    C         0.000      9.266   -2.119   21.582
+ FHS           N10    N    N         0.000      9.035   -2.746   20.425
+ FHS           C11    C    CH1       0.000      7.715   -3.172   19.936
+ FHS           H11    H    H         0.000      7.023   -3.098   20.786
+ FHS           C19    C    CH2       0.000      7.845   -4.661   19.600
+ FHS           H191   H    H         0.000      8.202   -5.202   20.479
+ FHS           H192   H    H         0.000      8.557   -4.788   18.782
+ FHS           O20    O    OH1       0.000      6.618   -5.155   19.223
+ FHS           HO20   H    H         0.000      6.712   -6.090   19.015
+ FHS           C12    C    CH2       0.000      7.092   -2.376   18.788
+ FHS           H121   H    H         0.000      6.062   -2.729   18.704
+ FHS           H122   H    H         0.000      7.647   -2.660   17.892
+ FHS           C13    C    CH1       0.000      7.100   -0.867   18.932
+ FHS           H13    H    H         0.000      8.128   -0.544   19.146
+ FHS           C14    C    C         0.000      6.542    0.004   17.765
+ FHS           O18    O    O         0.000      7.080    0.100   16.701
+ FHS           N15    N    N         0.000      5.372    0.631   18.128
+ FHS           C17    C    CH2       0.000      6.196   -0.396   20.075
+ FHS           H171   H    H         0.000      6.740    0.310   20.705
+ FHS           H172   H    H         0.000      5.888   -1.254   20.676
+ FHS           C16    C    CH2       0.000      4.947    0.296   19.482
+ FHS           H162   H    H         0.000      4.679    1.209   20.017
+ FHS           H161   H    H         0.000      4.080   -0.367   19.440
+ FHS           C04    C    CH1       0.000     10.658   -1.667   22.117
+ FHS           H04    H    H         0.000     11.332   -1.570   21.254
+ FHS           C05    C    CH2       0.000     11.249   -2.727   23.051
+ FHS           H051   H    H         0.000     11.038   -3.703   22.610
+ FHS           H052   H    H         0.000     10.731   -2.642   24.009
+ FHS           C06    C    CH1       0.000     12.759   -2.580   23.271
+ FHS           H06    H    H         0.000     12.940   -1.521   23.501
+ FHS           C08    C    CH3       0.000     13.572   -2.897   22.015
+ FHS           H083   H    H         0.000     13.384   -3.895   21.714
+ FHS           H082   H    H         0.000     13.292   -2.236   21.236
+ FHS           H081   H    H         0.000     14.604   -2.780   22.223
+ FHS           C07    C    CH3       0.000     13.248   -3.380   24.486
+ FHS           H073   H    H         0.000     12.755   -3.038   25.359
+ FHS           H072   H    H         0.000     13.036   -4.409   24.344
+ FHS           H071   H    H         0.000     14.294   -3.250   24.600
+ FHS           N03    N    N         0.000     10.501   -0.346   22.705
+ FHS           C02    C    C         0.000      9.950    0.729   22.080
+ FHS           O01    O    O         0.000     10.222    0.995   20.911
+ FHS           O22    O    O2        0.000      8.975    1.516   22.682
+ FHS           C23    C    CH1       0.000      9.216    2.774   23.259
+ FHS           H23    H    H         0.000      9.212    2.714   24.357
+ FHS           C40    C    CH2       0.000     10.349    3.752   22.746
+ FHS           H401   H    H         0.000     10.864    3.489   21.820
+ FHS           H402   H    H         0.000     11.077    4.112   23.477
+ FHS           C25    C    CT        0.000      9.288    4.882   22.457
+ FHS           C24    C    CH2       0.000      8.195    3.812   22.757
+ FHS           H242   H    H         0.000      7.655    3.407   21.899
+ FHS           H241   H    H         0.000      7.487    4.043   23.556
+ FHS           C26    C    CH2       0.000      8.975    5.772   21.239
+ FHS           H262   H    H         0.000      7.906    5.983   21.312
+ FHS           H261   H    H         0.000      9.161    5.137   20.371
+ FHS           C39    C    CH2       0.000      9.520    5.805   23.686
+ FHS           H391   H    H         0.000     10.111    5.211   24.387
+ FHS           H392   H    H         0.000      8.528    5.981   24.107
+ FHS           C38    C    CH2       0.000     10.226    7.164   23.434
+ FHS           H381   H    H         0.000     11.279    6.955   23.232
+ FHS           H382   H    H         0.000     10.143    7.752   24.351
+ FHS           N28    N    NT        0.000      9.643    7.929   22.296
+ FHS           C27    C    CH2       0.000      9.744    7.080   21.088
+ FHS           H272   H    H         0.000     10.800    6.865   20.913
+ FHS           H271   H    H         0.000      9.343    7.644   20.243
+ FHS           C29    C    CH1       0.000      9.062    9.209   22.375
+ FHS           H29    H    H         0.000      8.087    8.754   22.599
+ FHS           O37    O    OH1       0.000      8.609    9.640   21.267
+ FHS           HO37   H    H         0.000      8.240   10.507   21.427
+ FHS           C30    C    CH2       0.000      8.842   10.234   23.492
+ FHS           H301   H    H         0.000      9.798   10.302   24.017
+ FHS           H302   H    H         0.000      8.096    9.788   24.153
+ FHS           C31    C    CR6       0.000      8.387   11.630   23.078
+ FHS           C32    C    CR16      0.000      7.060   11.909   22.739
+ FHS           H32    H    H         0.000      6.332   11.109   22.791
+ FHS           C36    C    CR16      0.000      9.292   12.705   22.953
+ FHS           H36    H    H         0.000     10.338   12.536   23.177
+ FHS           C35    C    CR16      0.000      8.887   13.977   22.551
+ FHS           H35    H    H         0.000      9.612   14.779   22.482
+ FHS           C34    C    CR16      0.000      7.547   14.218   22.238
+ FHS           H34    H    H         0.000      7.225   15.203   21.923
+ FHS           C33    C    CR16      0.000      6.634   13.175   22.337
+ FHS           H33    H    H         0.000      5.591   13.345   22.102
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ FHS      O21    n/a    C09    START
+ FHS      C09    O21    C04    .
+ FHS      N10    C09    C11    .
+ FHS      C11    N10    C12    .
+ FHS      H11    C11    .      .
+ FHS      C19    C11    O20    .
+ FHS      H191   C19    .      .
+ FHS      H192   C19    .      .
+ FHS      O20    C19    HO20   .
+ FHS      HO20   O20    .      .
+ FHS      C12    C11    C13    .
+ FHS      H121   C12    .      .
+ FHS      H122   C12    .      .
+ FHS      C13    C12    C17    .
+ FHS      H13    C13    .      .
+ FHS      C14    C13    N15    .
+ FHS      O18    C14    .      .
+ FHS      N15    C14    .      .
+ FHS      C17    C13    C16    .
+ FHS      H171   C17    .      .
+ FHS      H172   C17    .      .
+ FHS      C16    C17    H161   .
+ FHS      H162   C16    .      .
+ FHS      H161   C16    .      .
+ FHS      C04    C09    N03    .
+ FHS      H04    C04    .      .
+ FHS      C05    C04    C06    .
+ FHS      H051   C05    .      .
+ FHS      H052   C05    .      .
+ FHS      C06    C05    C07    .
+ FHS      H06    C06    .      .
+ FHS      C08    C06    H081   .
+ FHS      H083   C08    .      .
+ FHS      H082   C08    .      .
+ FHS      H081   C08    .      .
+ FHS      C07    C06    H071   .
+ FHS      H073   C07    .      .
+ FHS      H072   C07    .      .
+ FHS      H071   C07    .      .
+ FHS      N03    C04    C02    .
+ FHS      C02    N03    O22    .
+ FHS      O01    C02    .      .
+ FHS      O22    C02    C23    .
+ FHS      C23    O22    C40    .
+ FHS      H23    C23    .      .
+ FHS      C40    C23    C25    .
+ FHS      H401   C40    .      .
+ FHS      H402   C40    .      .
+ FHS      C25    C40    C39    .
+ FHS      C24    C25    H241   .
+ FHS      H242   C24    .      .
+ FHS      H241   C24    .      .
+ FHS      C26    C25    H261   .
+ FHS      H262   C26    .      .
+ FHS      H261   C26    .      .
+ FHS      C39    C25    C38    .
+ FHS      H391   C39    .      .
+ FHS      H392   C39    .      .
+ FHS      C38    C39    N28    .
+ FHS      H381   C38    .      .
+ FHS      H382   C38    .      .
+ FHS      N28    C38    C29    .
+ FHS      C27    N28    H271   .
+ FHS      H272   C27    .      .
+ FHS      H271   C27    .      .
+ FHS      C29    N28    C30    .
+ FHS      H29    C29    .      .
+ FHS      O37    C29    HO37   .
+ FHS      HO37   O37    .      .
+ FHS      C30    C29    C31    .
+ FHS      H301   C30    .      .
+ FHS      H302   C30    .      .
+ FHS      C31    C30    C36    .
+ FHS      C32    C31    H32    .
+ FHS      H32    C32    .      .
+ FHS      C36    C31    C35    .
+ FHS      H36    C36    .      .
+ FHS      C35    C36    C34    .
+ FHS      H35    C35    .      .
+ FHS      C34    C35    C33    .
+ FHS      H34    C34    .      .
+ FHS      C33    C34    H33    .
+ FHS      H33    C33    .      END
+ FHS      C16    N15    .    ADD
+ FHS      C23    C24    .    ADD
+ FHS      C27    C26    .    ADD
+ FHS      C32    C33    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ FHS      C02    N03       deloc       1.330    0.020
+ FHS      O01    C02       double      1.220    0.020
+ FHS      O22    C02       single      1.454    0.020
+ FHS      C05    C04       single      1.524    0.020
+ FHS      C04    C09       single      1.500    0.020
+ FHS      N03    C04       single      1.455    0.020
+ FHS      C06    C05       single      1.524    0.020
+ FHS      C07    C06       single      1.524    0.020
+ FHS      N10    C09       deloc       1.330    0.020
+ FHS      C09    O21       deloc       1.220    0.020
+ FHS      C12    C11       single      1.524    0.020
+ FHS      C19    C11       single      1.524    0.020
+ FHS      C11    N10       single      1.455    0.020
+ FHS      C13    C12       single      1.524    0.020
+ FHS      C14    C13       single      1.500    0.020
+ FHS      C17    C13       single      1.524    0.020
+ FHS      C16    N15       single      1.455    0.020
+ FHS      C16    C17       single      1.524    0.020
+ FHS      O20    C19       single      1.432    0.020
+ FHS      C23    C24       single      1.524    0.020
+ FHS      C40    C23       single      1.524    0.020
+ FHS      C23    O22       single      1.426    0.020
+ FHS      C27    C26       single      1.524    0.020
+ FHS      C27    N28       single      1.469    0.020
+ FHS      C30    C29       single      1.524    0.020
+ FHS      C29    N28       single      1.469    0.020
+ FHS      O37    C29       single      1.432    0.020
+ FHS      C32    C33       aromatic    1.390    0.020
+ FHS      C32    C31       aromatic    1.390    0.020
+ FHS      C33    C34       aromatic    1.390    0.020
+ FHS      N15    C14       aromatic    1.330    0.020
+ FHS      C08    C06       single      1.524    0.020
+ FHS      O18    C14       double      1.220    0.020
+ FHS      C24    C25       single      1.524    0.020
+ FHS      C26    C25       single      1.524    0.020
+ FHS      C39    C25       single      1.524    0.020
+ FHS      C25    C40       single      1.524    0.020
+ FHS      C31    C30       single      1.511    0.020
+ FHS      C36    C31       aromatic    1.390    0.020
+ FHS      C34    C35       aromatic    1.390    0.020
+ FHS      C35    C36       aromatic    1.390    0.020
+ FHS      C38    C39       single      1.524    0.020
+ FHS      N28    C38       single      1.469    0.020
+ FHS      H04    C04       single      1.099    0.020
+ FHS      H051   C05       single      1.092    0.020
+ FHS      H052   C05       single      1.092    0.020
+ FHS      H071   C07       single      1.059    0.020
+ FHS      H072   C07       single      1.059    0.020
+ FHS      H073   C07       single      1.059    0.020
+ FHS      H11    C11       single      1.099    0.020
+ FHS      H121   C12       single      1.092    0.020
+ FHS      H122   C12       single      1.092    0.020
+ FHS      H13    C13       single      1.099    0.020
+ FHS      H161   C16       single      1.092    0.020
+ FHS      H162   C16       single      1.092    0.020
+ FHS      H191   C19       single      1.092    0.020
+ FHS      H192   C19       single      1.092    0.020
+ FHS      H23    C23       single      1.099    0.020
+ FHS      H271   C27       single      1.092    0.020
+ FHS      H272   C27       single      1.092    0.020
+ FHS      H29    C29       single      1.099    0.020
+ FHS      H32    C32       single      1.083    0.020
+ FHS      H33    C33       single      1.083    0.020
+ FHS      H06    C06       single      1.099    0.020
+ FHS      H081   C08       single      1.059    0.020
+ FHS      H082   C08       single      1.059    0.020
+ FHS      H083   C08       single      1.059    0.020
+ FHS      H171   C17       single      1.092    0.020
+ FHS      H172   C17       single      1.092    0.020
+ FHS      H241   C24       single      1.092    0.020
+ FHS      H242   C24       single      1.092    0.020
+ FHS      H261   C26       single      1.092    0.020
+ FHS      H262   C26       single      1.092    0.020
+ FHS      H301   C30       single      1.092    0.020
+ FHS      H302   C30       single      1.092    0.020
+ FHS      H34    C34       single      1.083    0.020
+ FHS      H35    C35       single      1.083    0.020
+ FHS      H36    C36       single      1.083    0.020
+ FHS      H381   C38       single      1.092    0.020
+ FHS      H382   C38       single      1.092    0.020
+ FHS      H391   C39       single      1.092    0.020
+ FHS      H392   C39       single      1.092    0.020
+ FHS      H401   C40       single      1.092    0.020
+ FHS      H402   C40       single      1.092    0.020
+ FHS      HO20   O20       single      0.967    0.020
+ FHS      HO37   O37       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ FHS      O21    C09    N10     123.000    3.000
+ FHS      O21    C09    C04     120.500    3.000
+ FHS      N10    C09    C04     116.500    3.000
+ FHS      C09    N10    C11     121.000    3.000
+ FHS      N10    C11    H11     109.470    3.000
+ FHS      N10    C11    C19     105.000    3.000
+ FHS      N10    C11    C12     105.000    3.000
+ FHS      H11    C11    C19     108.340    3.000
+ FHS      H11    C11    C12     108.340    3.000
+ FHS      C19    C11    C12     109.470    3.000
+ FHS      C11    C19    H191    109.470    3.000
+ FHS      C11    C19    H192    109.470    3.000
+ FHS      C11    C19    O20     109.470    3.000
+ FHS      H191   C19    H192    107.900    3.000
+ FHS      H191   C19    O20     109.470    3.000
+ FHS      H192   C19    O20     109.470    3.000
+ FHS      C19    O20    HO20    109.470    3.000
+ FHS      C11    C12    H121    109.470    3.000
+ FHS      C11    C12    H122    109.470    3.000
+ FHS      C11    C12    C13     111.000    3.000
+ FHS      H121   C12    H122    107.900    3.000
+ FHS      H121   C12    C13     109.470    3.000
+ FHS      H122   C12    C13     109.470    3.000
+ FHS      C12    C13    H13     108.340    3.000
+ FHS      C12    C13    C14     109.470    3.000
+ FHS      C12    C13    C17     109.470    3.000
+ FHS      H13    C13    C14     108.810    3.000
+ FHS      H13    C13    C17     108.340    3.000
+ FHS      C14    C13    C17     109.470    3.000
+ FHS      C13    C14    O18     120.500    3.000
+ FHS      C13    C14    N15     116.500    3.000
+ FHS      O18    C14    N15     123.000    3.000
+ FHS      C14    N15    C16     127.000    3.000
+ FHS      C13    C17    H171    109.470    3.000
+ FHS      C13    C17    H172    109.470    3.000
+ FHS      C13    C17    C16     111.000    3.000
+ FHS      H171   C17    H172    107.900    3.000
+ FHS      H171   C17    C16     109.470    3.000
+ FHS      H172   C17    C16     109.470    3.000
+ FHS      C17    C16    H162    109.470    3.000
+ FHS      C17    C16    H161    109.470    3.000
+ FHS      C17    C16    N15     105.000    3.000
+ FHS      H162   C16    H161    107.900    3.000
+ FHS      H162   C16    N15     109.470    3.000
+ FHS      H161   C16    N15     109.470    3.000
+ FHS      C09    C04    H04     108.810    3.000
+ FHS      C09    C04    C05     109.470    3.000
+ FHS      C09    C04    N03     111.600    3.000
+ FHS      H04    C04    C05     108.340    3.000
+ FHS      H04    C04    N03     109.470    3.000
+ FHS      C05    C04    N03     105.000    3.000
+ FHS      C04    C05    H051    109.470    3.000
+ FHS      C04    C05    H052    109.470    3.000
+ FHS      C04    C05    C06     111.000    3.000
+ FHS      H051   C05    H052    107.900    3.000
+ FHS      H051   C05    C06     109.470    3.000
+ FHS      H052   C05    C06     109.470    3.000
+ FHS      C05    C06    H06     108.340    3.000
+ FHS      C05    C06    C08     111.000    3.000
+ FHS      C05    C06    C07     111.000    3.000
+ FHS      H06    C06    C08     108.340    3.000
+ FHS      H06    C06    C07     108.340    3.000
+ FHS      C08    C06    C07     111.000    3.000
+ FHS      C06    C08    H083    109.470    3.000
+ FHS      C06    C08    H082    109.470    3.000
+ FHS      C06    C08    H081    109.470    3.000
+ FHS      H083   C08    H082    109.470    3.000
+ FHS      H083   C08    H081    109.470    3.000
+ FHS      H082   C08    H081    109.470    3.000
+ FHS      C06    C07    H073    109.470    3.000
+ FHS      C06    C07    H072    109.470    3.000
+ FHS      C06    C07    H071    109.470    3.000
+ FHS      H073   C07    H072    109.470    3.000
+ FHS      H073   C07    H071    109.470    3.000
+ FHS      H072   C07    H071    109.470    3.000
+ FHS      C04    N03    C02     121.000    3.000
+ FHS      N03    C02    O01     123.000    3.000
+ FHS      N03    C02    O22     120.000    3.000
+ FHS      O01    C02    O22     119.000    3.000
+ FHS      C02    O22    C23     111.800    3.000
+ FHS      O22    C23    H23     109.470    3.000
+ FHS      O22    C23    C40     109.470    3.000
+ FHS      O22    C23    C24     109.470    3.000
+ FHS      H23    C23    C40     108.340    3.000
+ FHS      H23    C23    C24     108.340    3.000
+ FHS      C40    C23    C24     109.470    3.000
+ FHS      C23    C40    H401    109.470    3.000
+ FHS      C23    C40    H402    109.470    3.000
+ FHS      C23    C40    C25     111.000    3.000
+ FHS      H401   C40    H402    107.900    3.000
+ FHS      H401   C40    C25     109.470    3.000
+ FHS      H402   C40    C25     109.470    3.000
+ FHS      C40    C25    C24     111.000    3.000
+ FHS      C40    C25    C26     111.000    3.000
+ FHS      C40    C25    C39     111.000    3.000
+ FHS      C24    C25    C26     111.000    3.000
+ FHS      C24    C25    C39     111.000    3.000
+ FHS      C26    C25    C39     111.000    3.000
+ FHS      C25    C24    H242    109.470    3.000
+ FHS      C25    C24    H241    109.470    3.000
+ FHS      C25    C24    C23     111.000    3.000
+ FHS      H242   C24    H241    107.900    3.000
+ FHS      H242   C24    C23     109.470    3.000
+ FHS      H241   C24    C23     109.470    3.000
+ FHS      C25    C26    H262    109.470    3.000
+ FHS      C25    C26    H261    109.470    3.000
+ FHS      C25    C26    C27     111.000    3.000
+ FHS      H262   C26    H261    107.900    3.000
+ FHS      H262   C26    C27     109.470    3.000
+ FHS      H261   C26    C27     109.470    3.000
+ FHS      C25    C39    H391    109.470    3.000
+ FHS      C25    C39    H392    109.470    3.000
+ FHS      C25    C39    C38     111.000    3.000
+ FHS      H391   C39    H392    107.900    3.000
+ FHS      H391   C39    C38     109.470    3.000
+ FHS      H392   C39    C38     109.470    3.000
+ FHS      C39    C38    H381    109.470    3.000
+ FHS      C39    C38    H382    109.470    3.000
+ FHS      C39    C38    N28     109.470    3.000
+ FHS      H381   C38    H382    107.900    3.000
+ FHS      H381   C38    N28     109.470    3.000
+ FHS      H382   C38    N28     109.470    3.000
+ FHS      C38    N28    C27     109.470    3.000
+ FHS      C38    N28    C29     109.470    3.000
+ FHS      C27    N28    C29     109.470    3.000
+ FHS      N28    C27    H272    109.470    3.000
+ FHS      N28    C27    H271    109.470    3.000
+ FHS      N28    C27    C26     109.470    3.000
+ FHS      H272   C27    H271    107.900    3.000
+ FHS      H272   C27    C26     109.470    3.000
+ FHS      H271   C27    C26     109.470    3.000
+ FHS      N28    C29    H29     109.500    3.000
+ FHS      N28    C29    O37     109.500    3.000
+ FHS      N28    C29    C30     109.500    3.000
+ FHS      H29    C29    O37     109.470    3.000
+ FHS      H29    C29    C30     108.340    3.000
+ FHS      O37    C29    C30     109.470    3.000
+ FHS      C29    O37    HO37    109.470    3.000
+ FHS      C29    C30    H301    109.470    3.000
+ FHS      C29    C30    H302    109.470    3.000
+ FHS      C29    C30    C31     109.470    3.000
+ FHS      H301   C30    H302    107.900    3.000
+ FHS      H301   C30    C31     109.470    3.000
+ FHS      H302   C30    C31     109.470    3.000
+ FHS      C30    C31    C32     120.000    3.000
+ FHS      C30    C31    C36     120.000    3.000
+ FHS      C32    C31    C36     120.000    3.000
+ FHS      C31    C32    H32     120.000    3.000
+ FHS      C31    C32    C33     120.000    3.000
+ FHS      H32    C32    C33     120.000    3.000
+ FHS      C31    C36    H36     120.000    3.000
+ FHS      C31    C36    C35     120.000    3.000
+ FHS      H36    C36    C35     120.000    3.000
+ FHS      C36    C35    H35     120.000    3.000
+ FHS      C36    C35    C34     120.000    3.000
+ FHS      H35    C35    C34     120.000    3.000
+ FHS      C35    C34    H34     120.000    3.000
+ FHS      C35    C34    C33     120.000    3.000
+ FHS      H34    C34    C33     120.000    3.000
+ FHS      C34    C33    H33     120.000    3.000
+ FHS      C34    C33    C32     120.000    3.000
+ FHS      H33    C33    C32     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ FHS      CONST_1          O21    C09    N10    C11              180.000            0.000   0
+ FHS      var_1            C09    N10    C11    C12                0.000           20.000   3
+ FHS      var_2            N10    C11    C19    O20              180.000           20.000   3
+ FHS      var_3            C11    C19    O20    HO20             180.000           20.000   3
+ FHS      var_4            N10    C11    C12    C13              180.000           20.000   3
+ FHS      var_5            C11    C12    C13    C17              180.000           20.000   3
+ FHS      var_6            C12    C13    C14    N15              180.000           20.000   3
+ FHS      var_7            C13    C14    N15    C16              180.000           20.000   2
+ FHS      var_8            C12    C13    C17    C16              180.000           20.000   3
+ FHS      var_9            C13    C17    C16    N15              180.000           20.000   3
+ FHS      var_10           C17    C16    N15    C14               12.710           20.000   3
+ FHS      var_11           O21    C09    C04    N03              180.000           20.000   3
+ FHS      var_12           C09    C04    C05    C06              180.000           20.000   3
+ FHS      var_13           C04    C05    C06    C07              180.000           20.000   3
+ FHS      var_14           C05    C06    C08    H081             180.000           20.000   3
+ FHS      var_15           C05    C06    C07    H071             180.000           20.000   3
+ FHS      var_16           C09    C04    N03    C02                0.000           20.000   3
+ FHS      CONST_2          C04    N03    C02    O22              180.000            0.000   0
+ FHS      var_17           N03    C02    O22    C23              102.301           20.000   3
+ FHS      var_18           C02    O22    C23    C40               30.137           20.000   3
+ FHS      var_19           O22    C23    C24    C25              180.000           20.000   3
+ FHS      var_20           O22    C23    C40    C25              180.000           20.000   3
+ FHS      var_21           C23    C40    C25    C39              102.561           20.000   3
+ FHS      var_22           C40    C25    C24    C23                8.569           20.000   3
+ FHS      var_23           C40    C25    C26    C27              -86.894           20.000   3
+ FHS      var_24           C40    C25    C39    C38              107.892           20.000   3
+ FHS      var_25           C25    C39    C38    N28              180.000           20.000   3
+ FHS      var_26           C39    C38    N28    C29              119.590           20.000   3
+ FHS      var_27           C38    N28    C27    C26               60.664           20.000   3
+ FHS      var_28           N28    C27    C26    C25              180.000           20.000   3
+ FHS      var_29           C38    N28    C29    C30                1.686           20.000   3
+ FHS      var_30           N28    C29    O37    HO37             180.000           20.000   3
+ FHS      var_31           N28    C29    C30    C31              180.000           20.000   3
+ FHS      var_32           C29    C30    C31    C36                0.000           20.000   2
+ FHS      CONST_3          C30    C31    C32    C33                0.000            0.000   0
+ FHS      CONST_4          C31    C32    C33    C34                0.000            0.000   0
+ FHS      CONST_5          C30    C31    C36    C35                0.000            0.000   0
+ FHS      CONST_6          C31    C36    C35    C34                0.000            0.000   0
+ FHS      CONST_7          C36    C35    C34    C33                0.000            0.000   0
+ FHS      CONST_8          C35    C34    C33    C32                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ FHS      chir_01          C04    C05    C09    N03       negativ
+ FHS      chir_02          C11    C12    C19    N10       negativ
+ FHS      chir_03          C13    C12    C14    C17       negativ
+ FHS      chir_04          C23    C24    C40    O22       positiv
+ FHS      chir_05          C29    C30    N28    O37       positiv
+ FHS      chir_06          C06    C05    C07    C08       negativ
+ FHS      chir_07          C25    C24    C26    C39       negativ
+ FHS      chir_08          N28    C27    C29    C38       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ FHS      plan-1            C02       0.020
+ FHS      plan-1            N03       0.020
+ FHS      plan-1            O01       0.020
+ FHS      plan-1            O22       0.020
+ FHS      plan-1            C04       0.020
+ FHS      plan-2            C09       0.020
+ FHS      plan-2            C04       0.020
+ FHS      plan-2            N10       0.020
+ FHS      plan-2            O21       0.020
+ FHS      plan-2            C11       0.020
+ FHS      plan-3            C32       0.020
+ FHS      plan-3            C33       0.020
+ FHS      plan-3            C31       0.020
+ FHS      plan-3            H32       0.020
+ FHS      plan-3            C34       0.020
+ FHS      plan-3            C35       0.020
+ FHS      plan-3            C36       0.020
+ FHS      plan-3            H33       0.020
+ FHS      plan-3            C30       0.020
+ FHS      plan-3            H34       0.020
+ FHS      plan-3            H35       0.020
+ FHS      plan-3            H36       0.020
+ FHS      plan-4            N15       0.020
+ FHS      plan-4            C16       0.020
+ FHS      plan-4            C14       0.020
+ FHS      plan-5            C14       0.020
+ FHS      plan-5            C13       0.020
+ FHS      plan-5            N15       0.020
+ FHS      plan-5            O18       0.020
+#
+data_comp_FEY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ FEY           O21    O    O         0.000      8.260   -1.769   22.200
+ FEY           C09    C    C         0.000      9.225   -2.119   21.486
+ FEY           N10    N    N         0.000      8.963   -2.790   20.351
+ FEY           C11    C    CH1       0.000      7.616   -3.182   19.859
+ FEY           H11    H    H         0.000      6.935   -3.127   20.720
+ FEY           C19    C    CH2       0.000      7.712   -4.670   19.461
+ FEY           H191   H    H         0.000      8.446   -4.777   18.659
+ FEY           H192   H    H         0.000      6.736   -5.007   19.107
+ FEY           O20    O    OH1       0.000      8.096   -5.428   20.539
+ FEY           HO20   H    H         0.000      8.149   -6.350   20.266
+ FEY           C12    C    CH2       0.000      6.982   -2.345   18.739
+ FEY           H121   H    H         0.000      5.931   -2.641   18.719
+ FEY           H122   H    H         0.000      7.470   -2.678   17.821
+ FEY           C13    C    CH1       0.000      7.082   -0.831   18.849
+ FEY           H13    H    H         0.000      8.136   -0.562   19.004
+ FEY           C17    C    CH2       0.000      6.263   -0.277   20.018
+ FEY           H171   H    H         0.000      6.891    0.379   20.624
+ FEY           H172   H    H         0.000      5.902   -1.104   20.634
+ FEY           C16    C    CH2       0.000      5.054    0.526   19.466
+ FEY           H161   H    H         0.000      4.917    1.480   19.979
+ FEY           H162   H    H         0.000      4.123   -0.043   19.503
+ FEY           N15    N    N         0.000      5.422    0.767   18.081
+ FEY           C14    C    C         0.000      6.518    0.034   17.680
+ FEY           O18    O    O         0.000      6.995    0.043   16.583
+ FEY           C04    C    CH1       0.000     10.648   -1.706   22.019
+ FEY           H04    H    H         0.000     11.320   -1.630   21.153
+ FEY           C05    C    CH2       0.000     11.213   -2.782   22.953
+ FEY           H051   H    H         0.000     11.041   -3.748   22.473
+ FEY           H052   H    H         0.000     10.643   -2.733   23.883
+ FEY           C06    C    CH1       0.000     12.709   -2.619   23.258
+ FEY           H06    H    H         0.000     12.865   -1.560   23.508
+ FEY           C08    C    CH3       0.000     13.592   -2.915   22.046
+ FEY           H083   H    H         0.000     13.433   -3.913   21.727
+ FEY           H082   H    H         0.000     13.347   -2.250   21.259
+ FEY           H081   H    H         0.000     14.610   -2.788   22.310
+ FEY           C07    C    CH3       0.000     13.139   -3.428   24.490
+ FEY           H073   H    H         0.000     12.594   -3.102   25.338
+ FEY           H072   H    H         0.000     12.948   -4.457   24.324
+ FEY           H071   H    H         0.000     14.175   -3.287   24.664
+ FEY           N03    N    N         0.000     10.536   -0.375   22.613
+ FEY           C02    C    C         0.000      9.893    0.670   22.028
+ FEY           O01    O    O         0.000     10.029    0.910   20.827
+ FEY           O22    O    O2        0.000      8.963    1.445   22.722
+ FEY           C23    C    CH1       0.000      9.213    2.733   23.241
+ FEY           H23    H    H         0.000      9.212    2.720   24.340
+ FEY           C24    C    CH2       0.000      8.192    3.756   22.702
+ FEY           H241   H    H         0.000      7.467    4.152   23.417
+ FEY           H242   H    H         0.000      7.681    3.499   21.772
+ FEY           C25    C    CT        0.000      9.285    4.832   22.417
+ FEY           C39    C    CH2       0.000      9.519    5.739   23.660
+ FEY           H391   H    H         0.000     10.113    5.135   24.349
+ FEY           H392   H    H         0.000      8.527    5.905   24.086
+ FEY           C38    C    CH2       0.000     10.222    7.107   23.430
+ FEY           H382   H    H         0.000     11.277    6.903   23.234
+ FEY           H381   H    H         0.000     10.130    7.681   24.355
+ FEY           C40    C    CH2       0.000     10.343    3.691   22.689
+ FEY           H402   H    H         0.000     11.088    3.865   23.469
+ FEY           H401   H    H         0.000     10.824    3.228   21.825
+ FEY           C26    C    CH2       0.000      8.970    5.743   21.215
+ FEY           H261   H    H         0.000      7.902    5.956   21.296
+ FEY           H262   H    H         0.000      9.151    5.121   20.336
+ FEY           C27    C    CH2       0.000      9.743    7.053   21.081
+ FEY           H271   H    H         0.000      9.335    7.600   20.229
+ FEY           H272   H    H         0.000     10.790    6.809   20.888
+ FEY           N28    N    NT        0.000      9.646    7.889   22.298
+ FEY           C29    C    CH1       0.000      9.076    9.175   22.387
+ FEY           H29    H    H         0.000      8.096    8.727   22.604
+ FEY           O37    O    OH1       0.000      8.630    9.620   21.282
+ FEY           HO37   H    H         0.000      8.268   10.489   21.449
+ FEY           C30    C    CH2       0.000      8.860   10.194   23.510
+ FEY           H301   H    H         0.000      9.816   10.255   24.036
+ FEY           H302   H    H         0.000      8.112    9.747   24.169
+ FEY           C1     C    CR6       0.000      8.411   11.594   23.103
+ FEY           C6     C    CR16      0.000      9.318   12.670   22.993
+ FEY           H6     H    H         0.000     10.362   12.499   23.225
+ FEY           C5     C    CR16      0.000      8.918   13.945   22.597
+ FEY           H5     H    H         0.000      9.644   14.746   22.538
+ FEY           C4     C    CR16      0.000      7.580   14.190   22.276
+ FEY           H4     H    H         0.000      7.261   15.178   21.967
+ FEY           C3     C    CR16      0.000      6.665   13.147   22.360
+ FEY           H3     H    H         0.000      5.624   13.320   22.118
+ FEY           C2     C    CR16      0.000      7.087   11.877   22.756
+ FEY           H2     H    H         0.000      6.358   11.077   22.796
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ FEY      O21    n/a    C09    START
+ FEY      C09    O21    C04    .
+ FEY      N10    C09    C11    .
+ FEY      C11    N10    C12    .
+ FEY      H11    C11    .      .
+ FEY      C19    C11    O20    .
+ FEY      H191   C19    .      .
+ FEY      H192   C19    .      .
+ FEY      O20    C19    HO20   .
+ FEY      HO20   O20    .      .
+ FEY      C12    C11    C13    .
+ FEY      H121   C12    .      .
+ FEY      H122   C12    .      .
+ FEY      C13    C12    C17    .
+ FEY      H13    C13    .      .
+ FEY      C17    C13    C16    .
+ FEY      H171   C17    .      .
+ FEY      H172   C17    .      .
+ FEY      C16    C17    N15    .
+ FEY      H161   C16    .      .
+ FEY      H162   C16    .      .
+ FEY      N15    C16    C14    .
+ FEY      C14    N15    O18    .
+ FEY      O18    C14    .      .
+ FEY      C04    C09    N03    .
+ FEY      H04    C04    .      .
+ FEY      C05    C04    C06    .
+ FEY      H051   C05    .      .
+ FEY      H052   C05    .      .
+ FEY      C06    C05    C07    .
+ FEY      H06    C06    .      .
+ FEY      C08    C06    H081   .
+ FEY      H083   C08    .      .
+ FEY      H082   C08    .      .
+ FEY      H081   C08    .      .
+ FEY      C07    C06    H071   .
+ FEY      H073   C07    .      .
+ FEY      H072   C07    .      .
+ FEY      H071   C07    .      .
+ FEY      N03    C04    C02    .
+ FEY      C02    N03    O22    .
+ FEY      O01    C02    .      .
+ FEY      O22    C02    C23    .
+ FEY      C23    O22    C24    .
+ FEY      H23    C23    .      .
+ FEY      C24    C23    C25    .
+ FEY      H241   C24    .      .
+ FEY      H242   C24    .      .
+ FEY      C25    C24    C26    .
+ FEY      C39    C25    C38    .
+ FEY      H391   C39    .      .
+ FEY      H392   C39    .      .
+ FEY      C38    C39    H381   .
+ FEY      H382   C38    .      .
+ FEY      H381   C38    .      .
+ FEY      C40    C25    H401   .
+ FEY      H402   C40    .      .
+ FEY      H401   C40    .      .
+ FEY      C26    C25    C27    .
+ FEY      H261   C26    .      .
+ FEY      H262   C26    .      .
+ FEY      C27    C26    N28    .
+ FEY      H271   C27    .      .
+ FEY      H272   C27    .      .
+ FEY      N28    C27    C29    .
+ FEY      C29    N28    C30    .
+ FEY      H29    C29    .      .
+ FEY      O37    C29    HO37   .
+ FEY      HO37   O37    .      .
+ FEY      C30    C29    C1     .
+ FEY      H301   C30    .      .
+ FEY      H302   C30    .      .
+ FEY      C1     C30    C6     .
+ FEY      C6     C1     C5     .
+ FEY      H6     C6     .      .
+ FEY      C5     C6     C4     .
+ FEY      H5     C5     .      .
+ FEY      C4     C5     C3     .
+ FEY      H4     C4     .      .
+ FEY      C3     C4     C2     .
+ FEY      H3     C3     .      .
+ FEY      C2     C3     H2     .
+ FEY      H2     C2     .      END
+ FEY      C13    C14    .    ADD
+ FEY      N28    C38    .    ADD
+ FEY      C40    C23    .    ADD
+ FEY      C1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ FEY      C13    C14       single      1.500    0.020
+ FEY      C17    C13       single      1.524    0.020
+ FEY      C13    C12       single      1.524    0.020
+ FEY      C14    N15       aromatic    1.330    0.020
+ FEY      O18    C14       double      1.220    0.020
+ FEY      C16    C17       single      1.524    0.020
+ FEY      N15    C16       single      1.455    0.020
+ FEY      C19    C11       single      1.524    0.020
+ FEY      O20    C19       single      1.432    0.020
+ FEY      O22    C02       single      1.454    0.020
+ FEY      C23    O22       single      1.426    0.020
+ FEY      C29    N28       single      1.469    0.020
+ FEY      N28    C38       single      1.469    0.020
+ FEY      N28    C27       single      1.469    0.020
+ FEY      C30    C29       single      1.524    0.020
+ FEY      O37    C29       single      1.432    0.020
+ FEY      C1     C30       single      1.511    0.020
+ FEY      C38    C39       single      1.524    0.020
+ FEY      C39    C25       single      1.524    0.020
+ FEY      C40    C23       single      1.524    0.020
+ FEY      C40    C25       single      1.524    0.020
+ FEY      C02    N03       deloc       1.330    0.020
+ FEY      O01    C02       double      1.220    0.020
+ FEY      C05    C04       single      1.524    0.020
+ FEY      C04    C09       single      1.500    0.020
+ FEY      N03    C04       single      1.455    0.020
+ FEY      C06    C05       single      1.524    0.020
+ FEY      C07    C06       single      1.524    0.020
+ FEY      N10    C09       deloc       1.330    0.020
+ FEY      C09    O21       deloc       1.220    0.020
+ FEY      C12    C11       single      1.524    0.020
+ FEY      C11    N10       single      1.455    0.020
+ FEY      C24    C23       single      1.524    0.020
+ FEY      C27    C26       single      1.524    0.020
+ FEY      C08    C06       single      1.524    0.020
+ FEY      C25    C24       single      1.524    0.020
+ FEY      C26    C25       single      1.524    0.020
+ FEY      C1     C2        aromatic    1.390    0.020
+ FEY      C6     C1        aromatic    1.390    0.020
+ FEY      C2     C3        aromatic    1.390    0.020
+ FEY      C3     C4        aromatic    1.390    0.020
+ FEY      C4     C5        aromatic    1.390    0.020
+ FEY      C5     C6        aromatic    1.390    0.020
+ FEY      H13    C13       single      1.099    0.020
+ FEY      H161   C16       single      1.092    0.020
+ FEY      H162   C16       single      1.092    0.020
+ FEY      H171   C17       single      1.092    0.020
+ FEY      H172   C17       single      1.092    0.020
+ FEY      H191   C19       single      1.092    0.020
+ FEY      H192   C19       single      1.092    0.020
+ FEY      H29    C29       single      1.099    0.020
+ FEY      H301   C30       single      1.092    0.020
+ FEY      H302   C30       single      1.092    0.020
+ FEY      H381   C38       single      1.092    0.020
+ FEY      H382   C38       single      1.092    0.020
+ FEY      H391   C39       single      1.092    0.020
+ FEY      H392   C39       single      1.092    0.020
+ FEY      H401   C40       single      1.092    0.020
+ FEY      H402   C40       single      1.092    0.020
+ FEY      H04    C04       single      1.099    0.020
+ FEY      H051   C05       single      1.092    0.020
+ FEY      H052   C05       single      1.092    0.020
+ FEY      H071   C07       single      1.059    0.020
+ FEY      H072   C07       single      1.059    0.020
+ FEY      H073   C07       single      1.059    0.020
+ FEY      H11    C11       single      1.099    0.020
+ FEY      H121   C12       single      1.092    0.020
+ FEY      H122   C12       single      1.092    0.020
+ FEY      H23    C23       single      1.099    0.020
+ FEY      H271   C27       single      1.092    0.020
+ FEY      H272   C27       single      1.092    0.020
+ FEY      H06    C06       single      1.099    0.020
+ FEY      H081   C08       single      1.059    0.020
+ FEY      H082   C08       single      1.059    0.020
+ FEY      H083   C08       single      1.059    0.020
+ FEY      H241   C24       single      1.092    0.020
+ FEY      H242   C24       single      1.092    0.020
+ FEY      H261   C26       single      1.092    0.020
+ FEY      H262   C26       single      1.092    0.020
+ FEY      HO20   O20       single      0.967    0.020
+ FEY      HO37   O37       single      0.967    0.020
+ FEY      H2     C2        single      1.083    0.020
+ FEY      H3     C3        single      1.083    0.020
+ FEY      H4     C4        single      1.083    0.020
+ FEY      H5     C5        single      1.083    0.020
+ FEY      H6     C6        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ FEY      O21    C09    N10     123.000    3.000
+ FEY      O21    C09    C04     120.500    3.000
+ FEY      N10    C09    C04     116.500    3.000
+ FEY      C09    N10    C11     121.000    3.000
+ FEY      N10    C11    H11     109.470    3.000
+ FEY      N10    C11    C19     105.000    3.000
+ FEY      N10    C11    C12     105.000    3.000
+ FEY      H11    C11    C19     108.340    3.000
+ FEY      H11    C11    C12     108.340    3.000
+ FEY      C19    C11    C12     109.470    3.000
+ FEY      C11    C19    H191    109.470    3.000
+ FEY      C11    C19    H192    109.470    3.000
+ FEY      C11    C19    O20     109.470    3.000
+ FEY      H191   C19    H192    107.900    3.000
+ FEY      H191   C19    O20     109.470    3.000
+ FEY      H192   C19    O20     109.470    3.000
+ FEY      C19    O20    HO20    109.470    3.000
+ FEY      C11    C12    H121    109.470    3.000
+ FEY      C11    C12    H122    109.470    3.000
+ FEY      C11    C12    C13     111.000    3.000
+ FEY      H121   C12    H122    107.900    3.000
+ FEY      H121   C12    C13     109.470    3.000
+ FEY      H122   C12    C13     109.470    3.000
+ FEY      C12    C13    H13     108.340    3.000
+ FEY      C12    C13    C17     109.470    3.000
+ FEY      C12    C13    C14     109.470    3.000
+ FEY      H13    C13    C17     108.340    3.000
+ FEY      H13    C13    C14     108.810    3.000
+ FEY      C17    C13    C14     109.470    3.000
+ FEY      C13    C17    H171    109.470    3.000
+ FEY      C13    C17    H172    109.470    3.000
+ FEY      C13    C17    C16     111.000    3.000
+ FEY      H171   C17    H172    107.900    3.000
+ FEY      H171   C17    C16     109.470    3.000
+ FEY      H172   C17    C16     109.470    3.000
+ FEY      C17    C16    H161    109.470    3.000
+ FEY      C17    C16    H162    109.470    3.000
+ FEY      C17    C16    N15     105.000    3.000
+ FEY      H161   C16    H162    107.900    3.000
+ FEY      H161   C16    N15     109.470    3.000
+ FEY      H162   C16    N15     109.470    3.000
+ FEY      C16    N15    C14     127.000    3.000
+ FEY      N15    C14    O18     123.000    3.000
+ FEY      N15    C14    C13     116.500    3.000
+ FEY      O18    C14    C13     120.500    3.000
+ FEY      C09    C04    H04     108.810    3.000
+ FEY      C09    C04    C05     109.470    3.000
+ FEY      C09    C04    N03     111.600    3.000
+ FEY      H04    C04    C05     108.340    3.000
+ FEY      H04    C04    N03     109.470    3.000
+ FEY      C05    C04    N03     105.000    3.000
+ FEY      C04    C05    H051    109.470    3.000
+ FEY      C04    C05    H052    109.470    3.000
+ FEY      C04    C05    C06     111.000    3.000
+ FEY      H051   C05    H052    107.900    3.000
+ FEY      H051   C05    C06     109.470    3.000
+ FEY      H052   C05    C06     109.470    3.000
+ FEY      C05    C06    H06     108.340    3.000
+ FEY      C05    C06    C08     111.000    3.000
+ FEY      C05    C06    C07     111.000    3.000
+ FEY      H06    C06    C08     108.340    3.000
+ FEY      H06    C06    C07     108.340    3.000
+ FEY      C08    C06    C07     111.000    3.000
+ FEY      C06    C08    H083    109.470    3.000
+ FEY      C06    C08    H082    109.470    3.000
+ FEY      C06    C08    H081    109.470    3.000
+ FEY      H083   C08    H082    109.470    3.000
+ FEY      H083   C08    H081    109.470    3.000
+ FEY      H082   C08    H081    109.470    3.000
+ FEY      C06    C07    H073    109.470    3.000
+ FEY      C06    C07    H072    109.470    3.000
+ FEY      C06    C07    H071    109.470    3.000
+ FEY      H073   C07    H072    109.470    3.000
+ FEY      H073   C07    H071    109.470    3.000
+ FEY      H072   C07    H071    109.470    3.000
+ FEY      C04    N03    C02     121.000    3.000
+ FEY      N03    C02    O01     123.000    3.000
+ FEY      N03    C02    O22     120.000    3.000
+ FEY      O01    C02    O22     119.000    3.000
+ FEY      C02    O22    C23     111.800    3.000
+ FEY      O22    C23    H23     109.470    3.000
+ FEY      O22    C23    C24     109.470    3.000
+ FEY      O22    C23    C40     109.470    3.000
+ FEY      H23    C23    C24     108.340    3.000
+ FEY      H23    C23    C40     108.340    3.000
+ FEY      C24    C23    C40     109.470    3.000
+ FEY      C23    C24    H241    109.470    3.000
+ FEY      C23    C24    H242    109.470    3.000
+ FEY      C23    C24    C25     111.000    3.000
+ FEY      H241   C24    H242    107.900    3.000
+ FEY      H241   C24    C25     109.470    3.000
+ FEY      H242   C24    C25     109.470    3.000
+ FEY      C24    C25    C39     111.000    3.000
+ FEY      C24    C25    C40     111.000    3.000
+ FEY      C24    C25    C26     111.000    3.000
+ FEY      C39    C25    C40     111.000    3.000
+ FEY      C39    C25    C26     111.000    3.000
+ FEY      C40    C25    C26     111.000    3.000
+ FEY      C25    C39    H391    109.470    3.000
+ FEY      C25    C39    H392    109.470    3.000
+ FEY      C25    C39    C38     111.000    3.000
+ FEY      H391   C39    H392    107.900    3.000
+ FEY      H391   C39    C38     109.470    3.000
+ FEY      H392   C39    C38     109.470    3.000
+ FEY      C39    C38    H382    109.470    3.000
+ FEY      C39    C38    H381    109.470    3.000
+ FEY      C39    C38    N28     109.470    3.000
+ FEY      H382   C38    H381    107.900    3.000
+ FEY      H382   C38    N28     109.470    3.000
+ FEY      H381   C38    N28     109.470    3.000
+ FEY      C25    C40    H402    109.470    3.000
+ FEY      C25    C40    H401    109.470    3.000
+ FEY      C25    C40    C23     111.000    3.000
+ FEY      H402   C40    H401    107.900    3.000
+ FEY      H402   C40    C23     109.470    3.000
+ FEY      H401   C40    C23     109.470    3.000
+ FEY      C25    C26    H261    109.470    3.000
+ FEY      C25    C26    H262    109.470    3.000
+ FEY      C25    C26    C27     111.000    3.000
+ FEY      H261   C26    H262    107.900    3.000
+ FEY      H261   C26    C27     109.470    3.000
+ FEY      H262   C26    C27     109.470    3.000
+ FEY      C26    C27    H271    109.470    3.000
+ FEY      C26    C27    H272    109.470    3.000
+ FEY      C26    C27    N28     109.470    3.000
+ FEY      H271   C27    H272    107.900    3.000
+ FEY      H271   C27    N28     109.470    3.000
+ FEY      H272   C27    N28     109.470    3.000
+ FEY      C27    N28    C29     109.470    3.000
+ FEY      C27    N28    C38     109.470    3.000
+ FEY      C29    N28    C38     109.470    3.000
+ FEY      N28    C29    H29     109.500    3.000
+ FEY      N28    C29    O37     109.500    3.000
+ FEY      N28    C29    C30     109.500    3.000
+ FEY      H29    C29    O37     109.470    3.000
+ FEY      H29    C29    C30     108.340    3.000
+ FEY      O37    C29    C30     109.470    3.000
+ FEY      C29    O37    HO37    109.470    3.000
+ FEY      C29    C30    H301    109.470    3.000
+ FEY      C29    C30    H302    109.470    3.000
+ FEY      C29    C30    C1      109.470    3.000
+ FEY      H301   C30    H302    107.900    3.000
+ FEY      H301   C30    C1      109.470    3.000
+ FEY      H302   C30    C1      109.470    3.000
+ FEY      C30    C1     C6      120.000    3.000
+ FEY      C30    C1     C2      120.000    3.000
+ FEY      C6     C1     C2      120.000    3.000
+ FEY      C1     C6     H6      120.000    3.000
+ FEY      C1     C6     C5      120.000    3.000
+ FEY      H6     C6     C5      120.000    3.000
+ FEY      C6     C5     H5      120.000    3.000
+ FEY      C6     C5     C4      120.000    3.000
+ FEY      H5     C5     C4      120.000    3.000
+ FEY      C5     C4     H4      120.000    3.000
+ FEY      C5     C4     C3      120.000    3.000
+ FEY      H4     C4     C3      120.000    3.000
+ FEY      C4     C3     H3      120.000    3.000
+ FEY      C4     C3     C2      120.000    3.000
+ FEY      H3     C3     C2      120.000    3.000
+ FEY      C3     C2     H2      120.000    3.000
+ FEY      C3     C2     C1      120.000    3.000
+ FEY      H2     C2     C1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ FEY      CONST_1          O21    C09    N10    C11              180.000            0.000   0
+ FEY      var_1            C09    N10    C11    C12                0.000           20.000   3
+ FEY      var_2            N10    C11    C19    O20              180.000           20.000   3
+ FEY      var_3            C11    C19    O20    HO20             180.000           20.000   3
+ FEY      var_4            N10    C11    C12    C13              180.000           20.000   3
+ FEY      var_5            C11    C12    C13    C17              180.000           20.000   3
+ FEY      var_6            C12    C13    C14    N15              180.000           20.000   3
+ FEY      var_7            C12    C13    C17    C16              180.000           20.000   3
+ FEY      var_8            C13    C17    C16    N15              180.000           20.000   3
+ FEY      var_9            C17    C16    N15    C14               11.137           20.000   3
+ FEY      var_10           C16    N15    C14    O18              180.000           20.000   2
+ FEY      var_11           O21    C09    C04    N03              180.000           20.000   3
+ FEY      var_12           C09    C04    C05    C06              180.000           20.000   3
+ FEY      var_13           C04    C05    C06    C07              180.000           20.000   3
+ FEY      var_14           C05    C06    C08    H081             180.000           20.000   3
+ FEY      var_15           C05    C06    C07    H071             180.000           20.000   3
+ FEY      var_16           C09    C04    N03    C02                0.000           20.000   3
+ FEY      CONST_2          C04    N03    C02    O22              180.000            0.000   0
+ FEY      var_17           N03    C02    O22    C23              103.075           20.000   3
+ FEY      var_18           C02    O22    C23    C24              124.180           20.000   3
+ FEY      var_19           O22    C23    C24    C25              180.000           20.000   3
+ FEY      var_20           C23    C24    C25    C26              148.395           20.000   3
+ FEY      var_21           C24    C25    C39    C38             -161.356           20.000   3
+ FEY      var_22           C25    C39    C38    N28              180.000           20.000   3
+ FEY      var_23           C24    C25    C40    C23              -10.468           20.000   3
+ FEY      var_24           C25    C40    C23    O22              180.000           20.000   3
+ FEY      var_25           C24    C25    C26    C27              163.065           20.000   3
+ FEY      var_26           C25    C26    C27    N28              180.000           20.000   3
+ FEY      var_27           C26    C27    N28    C29             -117.801           20.000   3
+ FEY      var_28           C27    N28    C38    C39              -57.743           20.000   3
+ FEY      var_29           C27    N28    C29    C30              179.400           20.000   3
+ FEY      var_30           N28    C29    O37    HO37             180.000           20.000   3
+ FEY      var_31           N28    C29    C30    C1               180.000           20.000   3
+ FEY      var_32           C29    C30    C1     C6                 0.000           20.000   2
+ FEY      CONST_3          C30    C1     C2     C3                 0.000            0.000   0
+ FEY      CONST_4          C30    C1     C6     C5                 0.000            0.000   0
+ FEY      CONST_5          C1     C6     C5     C4                 0.000            0.000   0
+ FEY      CONST_6          C6     C5     C4     C3                 0.000            0.000   0
+ FEY      CONST_7          C5     C4     C3     C2                 0.000            0.000   0
+ FEY      CONST_8          C4     C3     C2     C1                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ FEY      chir_01          C13    C14    C17    C12       negativ
+ FEY      chir_02          N28    C29    C38    C27       negativ
+ FEY      chir_03          C29    N28    C30    O37       negativ
+ FEY      chir_04          C04    C05    C09    N03       negativ
+ FEY      chir_05          C11    C19    C12    N10       positiv
+ FEY      chir_06          C23    O22    C40    C24       negativ
+ FEY      chir_07          C06    C05    C07    C08       negativ
+ FEY      chir_08          C25    C39    C40    C24       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ FEY      plan-1            C14       0.020
+ FEY      plan-1            C13       0.020
+ FEY      plan-1            N15       0.020
+ FEY      plan-1            O18       0.020
+ FEY      plan-2            C02       0.020
+ FEY      plan-2            O22       0.020
+ FEY      plan-2            N03       0.020
+ FEY      plan-2            O01       0.020
+ FEY      plan-2            C04       0.020
+ FEY      plan-3            C09       0.020
+ FEY      plan-3            C04       0.020
+ FEY      plan-3            N10       0.020
+ FEY      plan-3            O21       0.020
+ FEY      plan-3            C11       0.020
+ FEY      plan-4            N15       0.020
+ FEY      plan-4            C14       0.020
+ FEY      plan-4            C16       0.020
+ FEY      plan-5            C1        0.020
+ FEY      plan-5            C30       0.020
+ FEY      plan-5            C2        0.020
+ FEY      plan-5            C6        0.020
+ FEY      plan-5            C3        0.020
+ FEY      plan-5            C4        0.020
+ FEY      plan-5            C5        0.020
+ FEY      plan-5            H2        0.020
+ FEY      plan-5            H3        0.020
+ FEY      plan-5            H4        0.020
+ FEY      plan-5            H5        0.020
+ FEY      plan-5            H6        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-FHS
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-FHS  1 SG      2 C19       .           1.800    0.020
+#
+data_link_CYS-FEY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-FEY  1 SG      2 C19       .           1.790    0.020
+# ------------------------------------------------------

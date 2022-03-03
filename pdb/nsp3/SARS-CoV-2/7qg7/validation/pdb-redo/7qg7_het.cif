@@ -1,0 +1,281 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+U08      U08 '.                                   ' .                  33  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_U08
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ U08           N3     N    NS        0.000    -23.090  -24.135    9.482
+ U08           C8     C    CSP       0.000    -23.023  -23.036    9.772
+ U08           C1     C    CT        0.000    -22.964  -21.627   10.193
+ U08           O1     O    O2        0.000    -21.697  -21.137    9.773
+ U08           C4     C    CH1       0.000    -21.805  -20.328    8.588
+ U08           H4     H    H         0.000    -21.136  -20.726    7.813
+ U08           C3     C    CH1       0.000    -23.255  -20.477    8.131
+ U08           H3     H    H         0.000    -23.615  -19.540    7.683
+ U08           O3     O    OH1       0.000    -23.396  -21.555    7.213
+ U08           HO3    H    H         0.000    -24.321  -21.626    6.942
+ U08           C2     C    CH1       0.000    -23.981  -20.757    9.430
+ U08           H2     H    H         0.000    -24.129  -19.813    9.973
+ U08           O2     O    OH1       0.000    -25.234  -21.407    9.270
+ U08           HO2    H    H         0.000    -25.633  -21.550   10.138
+ U08           C6     C    CH2       0.000    -21.389  -18.920    8.934
+ U08           H61    H    H         0.000    -20.425  -18.957    9.446
+ U08           H62    H    H         0.000    -22.138  -18.489    9.602
+ U08           O4     O    OH1       0.000    -21.276  -18.120    7.769
+ U08           HO4    H    H         0.000    -21.009  -17.226    8.020
+ U08           C5     C    CR5       0.000    -23.034  -21.619   11.704
+ U08           C7     C    CR15      0.000    -24.006  -21.056   12.532
+ U08           H7     H    H         0.000    -24.899  -20.540   12.201
+ U08           C10    C    CR15      0.000    -23.629  -21.273   13.867
+ U08           H10    H    H         0.000    -24.176  -20.952   14.745
+ U08           C9     C    CR56      0.000    -22.414  -21.981   13.860
+ U08           N1     N    NR56      0.000    -22.082  -22.178   12.534
+ U08           C11    C    CR6       0.000    -21.520  -22.518   14.843
+ U08           N5     N    N         0.000    -21.757  -22.410   16.154
+ U08           HN5    H    H         0.000    -21.140  -22.779   16.775
+ U08           N4     N    NRD6      0.000    -20.412  -23.178   14.439
+ U08           C12    C    CR16      0.000    -20.196  -23.320   13.123
+ U08           H12    H    H         0.000    -19.307  -23.867   12.834
+ U08           N2     N    NRD6      0.000    -20.961  -22.858   12.131
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ U08      N3     n/a    C8     START
+ U08      C8     N3     C1     .
+ U08      C1     C8     C5     .
+ U08      O1     C1     C4     .
+ U08      C4     O1     C6     .
+ U08      H4     C4     .      .
+ U08      C3     C4     C2     .
+ U08      H3     C3     .      .
+ U08      O3     C3     HO3    .
+ U08      HO3    O3     .      .
+ U08      C2     C3     O2     .
+ U08      H2     C2     .      .
+ U08      O2     C2     HO2    .
+ U08      HO2    O2     .      .
+ U08      C6     C4     O4     .
+ U08      H61    C6     .      .
+ U08      H62    C6     .      .
+ U08      O4     C6     HO4    .
+ U08      HO4    O4     .      .
+ U08      C5     C1     C7     .
+ U08      C7     C5     C10    .
+ U08      H7     C7     .      .
+ U08      C10    C7     C9     .
+ U08      H10    C10    .      .
+ U08      C9     C10    C11    .
+ U08      N1     C9     .      .
+ U08      C11    C9     N4     .
+ U08      N5     C11    HN5    .
+ U08      HN5    N5     .      .
+ U08      N4     C11    C12    .
+ U08      C12    N4     N2     .
+ U08      H12    C12    .      .
+ U08      N2     C12    .      END
+ U08      C5     N1     .    ADD
+ U08      N1     N2     .    ADD
+ U08      C2     C1     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ U08      C8     N3        triple      1.158    0.020
+ U08      C1     C8        single      1.470    0.020
+ U08      C5     N1        single      1.337    0.020
+ U08      C7     C5        aromatic    1.387    0.020
+ U08      C5     C1        single      1.500    0.020
+ U08      C6     C4        single      1.524    0.020
+ U08      O4     C6        single      1.432    0.020
+ U08      N1     N2        single      1.400    0.020
+ U08      N1     C9        single      1.337    0.020
+ U08      O2     C2        single      1.432    0.020
+ U08      C2     C1        single      1.524    0.020
+ U08      C2     C3        single      1.524    0.020
+ U08      C3     C4        single      1.524    0.020
+ U08      C4     O1        single      1.426    0.020
+ U08      N2     C12       aromatic    1.337    0.020
+ U08      N4     C11       aromatic    1.350    0.020
+ U08      C12    N4        aromatic    1.337    0.020
+ U08      C10    C7        aromatic    1.380    0.020
+ U08      O1     C1        single      1.426    0.020
+ U08      C9     C10       aromatic    1.440    0.020
+ U08      C11    C9        aromatic    1.390    0.020
+ U08      N5     C11       aromatic    1.355    0.020
+ U08      O3     C3        single      1.432    0.020
+ U08      H61    C6        single      1.092    0.020
+ U08      H62    C6        single      1.092    0.020
+ U08      H2     C2        single      1.099    0.020
+ U08      H4     C4        single      1.099    0.020
+ U08      HO2    O2        single      0.967    0.020
+ U08      HO4    O4        single      0.967    0.020
+ U08      H7     C7        single      1.083    0.020
+ U08      H10    C10       single      1.083    0.020
+ U08      H12    C12       single      1.083    0.020
+ U08      H3     C3        single      1.099    0.020
+ U08      HN5    N5        single      0.954    0.020
+ U08      HO3    O3        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ U08      N3     C8     C1      180.000    3.000
+ U08      C8     C1     O1      109.500    3.000
+ U08      C8     C1     C5      109.500    3.000
+ U08      C8     C1     C2      109.500    3.000
+ U08      O1     C1     C5      109.500    3.000
+ U08      O1     C1     C2      109.470    3.000
+ U08      C5     C1     C2      109.470    3.000
+ U08      C1     O1     C4      111.800    3.000
+ U08      O1     C4     H4      109.470    3.000
+ U08      O1     C4     C3      109.470    3.000
+ U08      O1     C4     C6      109.470    3.000
+ U08      H4     C4     C3      108.340    3.000
+ U08      H4     C4     C6      108.340    3.000
+ U08      C3     C4     C6      111.000    3.000
+ U08      C4     C3     H3      108.340    3.000
+ U08      C4     C3     O3      109.470    3.000
+ U08      C4     C3     C2      111.000    3.000
+ U08      H3     C3     O3      109.470    3.000
+ U08      H3     C3     C2      108.340    3.000
+ U08      O3     C3     C2      109.470    3.000
+ U08      C3     O3     HO3     109.470    3.000
+ U08      C3     C2     H2      108.340    3.000
+ U08      C3     C2     O2      109.470    3.000
+ U08      C3     C2     C1      111.000    3.000
+ U08      H2     C2     O2      109.470    3.000
+ U08      H2     C2     C1      108.340    3.000
+ U08      O2     C2     C1      109.470    3.000
+ U08      C2     O2     HO2     109.470    3.000
+ U08      C4     C6     H61     109.470    3.000
+ U08      C4     C6     H62     109.470    3.000
+ U08      C4     C6     O4      109.470    3.000
+ U08      H61    C6     H62     107.900    3.000
+ U08      H61    C6     O4      109.470    3.000
+ U08      H62    C6     O4      109.470    3.000
+ U08      C6     O4     HO4     109.470    3.000
+ U08      C1     C5     C7      108.000    3.000
+ U08      C1     C5     N1      108.000    3.000
+ U08      C7     C5     N1      108.000    3.000
+ U08      C5     C7     H7      126.000    3.000
+ U08      C5     C7     C10     108.000    3.000
+ U08      H7     C7     C10     126.000    3.000
+ U08      C7     C10    H10     126.000    3.000
+ U08      C7     C10    C9      108.000    3.000
+ U08      H10    C10    C9      108.000    3.000
+ U08      C10    C9     N1      108.000    3.000
+ U08      C10    C9     C11     132.000    3.000
+ U08      N1     C9     C11     120.000    3.000
+ U08      C9     N1     C5      108.000    3.000
+ U08      C9     N1     N2      120.000    3.000
+ U08      C5     N1     N2      120.000    3.000
+ U08      C9     C11    N5      120.000    3.000
+ U08      C9     C11    N4      120.000    3.000
+ U08      N5     C11    N4      120.000    3.000
+ U08      C11    N5     HN5     120.000    3.000
+ U08      C11    N4     C12     120.000    3.000
+ U08      N4     C12    H12     120.000    3.000
+ U08      N4     C12    N2      120.000    3.000
+ U08      H12    C12    N2      120.000    3.000
+ U08      C12    N2     N1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ U08      var_1            N3     C8     C1     C5              -130.258           20.000   3
+ U08      var_2            C8     C1     O1     C4               102.675           20.000   3
+ U08      var_3            C1     O1     C4     C6               115.748           20.000   3
+ U08      var_4            O1     C4     C3     C2               180.000           20.000   3
+ U08      var_5            C4     C3     O3     HO3              180.000           20.000   3
+ U08      var_6            C4     C3     C2     O2               180.000           20.000   3
+ U08      var_7            C3     C2     C1     C8               -81.858           20.000   3
+ U08      var_8            C3     C2     O2     HO2              180.000           20.000   3
+ U08      var_9            O1     C4     C6     O4               180.000           20.000   3
+ U08      var_10           C4     C6     O4     HO4              180.000           20.000   3
+ U08      var_11           C8     C1     C5     C7              -117.719           20.000   3
+ U08      CONST_1          C1     C5     N1     C9               178.609            0.000   0
+ U08      CONST_2          C1     C5     C7     C10                0.000            0.000   0
+ U08      CONST_3          C5     C7     C10    C9                -0.190            0.000   0
+ U08      CONST_4          C7     C10    C9     C11             -179.096            0.000   0
+ U08      CONST_5          C10    C9     N1     C5                 0.249            0.000   0
+ U08      CONST_6          C9     N1     N2     C12               -0.268            0.000   0
+ U08      CONST_7          C10    C9     C11    N4               180.000            0.000   0
+ U08      CONST_8          C9     C11    N5     HN5              180.000            0.000   0
+ U08      CONST_9          C9     C11    N4     C12                0.000            0.000   0
+ U08      CONST_10         C11    N4     C12    N2                 0.000            0.000   0
+ U08      CONST_11         N4     C12    N2     N1                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ U08      chir_01          C2     O2     C1     C3        negativ
+ U08      chir_02          C4     C6     C3     O1        positiv
+ U08      chir_03          C1     C8     C5     C2        positiv
+ U08      chir_04          C3     C2     C4     O3        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ U08      plan-1            C5        0.020
+ U08      plan-1            N1        0.020
+ U08      plan-1            C7        0.020
+ U08      plan-1            C1        0.020
+ U08      plan-1            C10       0.020
+ U08      plan-1            N2        0.020
+ U08      plan-1            C9        0.020
+ U08      plan-1            N4        0.020
+ U08      plan-1            C11       0.020
+ U08      plan-1            C12       0.020
+ U08      plan-1            H7        0.020
+ U08      plan-1            H10       0.020
+ U08      plan-1            N5        0.020
+ U08      plan-1            H12       0.020
+ U08      plan-1            HN5       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

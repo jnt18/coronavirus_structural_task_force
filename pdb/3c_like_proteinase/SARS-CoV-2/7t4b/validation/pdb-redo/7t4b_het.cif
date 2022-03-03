@@ -1,0 +1,1007 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+FWI      FWI '.                                   ' .                  70  34 .
+FZI      FZI '.                                   ' .                  70  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-FWI  CYS      .        .        FWI      .        .
+ bond_CYS-SG_=_FWI-C01
+CYS-FZI  CYS      .        .        FZI      .        .
+ bond_CYS-SG_=_FZI-C01
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_FWI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ FWI           O34    O    O         0.000     10.271   22.384   28.293
+ FWI           C12    C    C         0.000     10.832   21.730   27.471
+ FWI           N11    N    NH1       0.000     10.250   20.514   26.949
+ FWI           HN11   H    H         0.000     10.725   19.994   26.225
+ FWI           C03    C    CH1       0.000      8.982   20.045   27.468
+ FWI           H03    H    H         0.000      8.625   20.741   28.240
+ FWI           C04    C    CH2       0.000      7.925   19.931   26.358
+ FWI           H041   H    H         0.000      7.054   19.423   26.777
+ FWI           H042   H    H         0.000      8.347   19.323   25.555
+ FWI           C05    C    CR5       0.000      7.506   21.288   25.803
+ FWI           C09    C    CR15      0.000      6.844   21.942   26.673
+ FWI           H09    H    H         0.000      7.080   22.016   27.727
+ FWI           C08    C    CR15      0.000      5.536   22.673   25.898
+ FWI           H08    H    H         0.000      4.965   23.515   26.269
+ FWI           N07    N    NRD5      0.000      5.337   22.056   24.794
+ FWI           C06    C    CR5       0.000      6.558   21.096   24.555
+ FWI           O10    O    O         0.000      6.708   20.382   23.613
+ FWI           C01    C    CH2       0.000      9.197   18.671   28.089
+ FWI           H011   H    H         0.000      9.697   18.013   27.375
+ FWI           H012   H    H         0.000      8.236   18.235   28.372
+ FWI           O02    O    OH1       0.000      9.998   18.821   29.230
+ FWI           HO02   H    H         0.000     10.141   17.955   29.632
+ FWI           C13    C    CH1       0.000     12.159   22.184   26.897
+ FWI           H13    H    H         0.000     12.355   21.670   25.945
+ FWI           C14    C    CH2       0.000     13.294   21.922   27.878
+ FWI           H141   H    H         0.000     13.279   20.863   28.144
+ FWI           H142   H    H         0.000     13.119   22.523   28.773
+ FWI           C15    C    CH1       0.000     14.653   22.280   27.279
+ FWI           H15    H    H         0.000     14.580   23.263   26.792
+ FWI           C17    C    CH3       0.000     15.070   21.243   26.242
+ FWI           H173   H    H         0.000     15.136   20.291   26.701
+ FWI           H172   H    H         0.000     14.350   21.210   25.466
+ FWI           H171   H    H         0.000     16.012   21.507   25.838
+ FWI           C16    C    CH3       0.000     15.707   22.351   28.391
+ FWI           H163   H    H         0.000     15.429   23.091   29.096
+ FWI           H162   H    H         0.000     15.775   21.411   28.876
+ FWI           H161   H    H         0.000     16.648   22.599   27.973
+ FWI           N18    N    NH1       0.000     12.076   23.609   26.684
+ FWI           HN18   H    H         0.000     12.658   24.227   27.230
+ FWI           C19    C    C         0.000     11.178   24.166   25.707
+ FWI           O33    O    O         0.000     10.577   23.473   24.936
+ FWI           O20    O    O2        0.000     11.060   25.563   25.749
+ FWI           C21    C    CH2       0.000     10.364   26.190   24.719
+ FWI           H211   H    H         0.000      9.603   26.876   25.098
+ FWI           H212   H    H         0.000      9.898   25.470   24.043
+ FWI           C22    C    CH1       0.000     11.427   26.974   23.971
+ FWI           H22    H    H         0.000     12.094   26.335   23.376
+ FWI           C32    C    CH2       0.000     10.911   28.139   23.214
+ FWI           H321   H    H         0.000      9.829   28.279   23.157
+ FWI           H322   H    H         0.000     11.357   28.361   22.242
+ FWI           N24    N    N         0.000     11.482   29.058   24.249
+ FWI           C23    C    CH2       0.000     12.159   27.889   24.883
+ FWI           H232   H    H         0.000     11.909   27.649   25.919
+ FWI           H231   H    H         0.000     13.234   27.772   24.732
+ FWI           C25    C    C         0.000     11.512   30.494   24.494
+ FWI           O31    O    O         0.000     10.540   31.151   24.299
+ FWI           O26    O    O2        0.000     12.708   31.075   24.950
+ FWI           C27    C    CT        0.000     12.706   31.693   26.209
+ FWI           C30    C    CH3       0.000     14.151   31.895   26.659
+ FWI           H303   H    H         0.000     14.636   30.956   26.721
+ FWI           H302   H    H         0.000     14.657   32.508   25.959
+ FWI           H301   H    H         0.000     14.163   32.362   27.610
+ FWI           C29    C    CH3       0.000     12.028   33.060   26.124
+ FWI           H293   H    H         0.000     12.552   33.673   25.438
+ FWI           H292   H    H         0.000     11.028   32.939   25.795
+ FWI           H291   H    H         0.000     12.032   33.517   27.079
+ FWI           C28    C    CH3       0.000     12.003   30.827   27.262
+ FWI           H283   H    H         0.000     10.997   30.660   26.971
+ FWI           H282   H    H         0.000     12.502   29.897   27.348
+ FWI           H281   H    H         0.000     12.019   31.323   28.198
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ FWI      O34    n/a    C12    START
+ FWI      C12    O34    C13    .
+ FWI      N11    C12    C03    .
+ FWI      HN11   N11    .      .
+ FWI      C03    N11    C01    .
+ FWI      H03    C03    .      .
+ FWI      C04    C03    C05    .
+ FWI      H041   C04    .      .
+ FWI      H042   C04    .      .
+ FWI      C05    C04    C09    .
+ FWI      C09    C05    C08    .
+ FWI      H09    C09    .      .
+ FWI      C08    C09    N07    .
+ FWI      H08    C08    .      .
+ FWI      N07    C08    C06    .
+ FWI      C06    N07    O10    .
+ FWI      O10    C06    .      .
+ FWI      C01    C03    O02    .
+ FWI      H011   C01    .      .
+ FWI      H012   C01    .      .
+ FWI      O02    C01    HO02   .
+ FWI      HO02   O02    .      .
+ FWI      C13    C12    N18    .
+ FWI      H13    C13    .      .
+ FWI      C14    C13    C15    .
+ FWI      H141   C14    .      .
+ FWI      H142   C14    .      .
+ FWI      C15    C14    C16    .
+ FWI      H15    C15    .      .
+ FWI      C17    C15    H171   .
+ FWI      H173   C17    .      .
+ FWI      H172   C17    .      .
+ FWI      H171   C17    .      .
+ FWI      C16    C15    H161   .
+ FWI      H163   C16    .      .
+ FWI      H162   C16    .      .
+ FWI      H161   C16    .      .
+ FWI      N18    C13    C19    .
+ FWI      HN18   N18    .      .
+ FWI      C19    N18    O20    .
+ FWI      O33    C19    .      .
+ FWI      O20    C19    C21    .
+ FWI      C21    O20    C22    .
+ FWI      H211   C21    .      .
+ FWI      H212   C21    .      .
+ FWI      C22    C21    C32    .
+ FWI      H22    C22    .      .
+ FWI      C32    C22    N24    .
+ FWI      H321   C32    .      .
+ FWI      H322   C32    .      .
+ FWI      N24    C32    C25    .
+ FWI      C23    N24    H231   .
+ FWI      H232   C23    .      .
+ FWI      H231   C23    .      .
+ FWI      C25    N24    O26    .
+ FWI      O31    C25    .      .
+ FWI      O26    C25    C27    .
+ FWI      C27    O26    C28    .
+ FWI      C30    C27    H301   .
+ FWI      H303   C30    .      .
+ FWI      H302   C30    .      .
+ FWI      H301   C30    .      .
+ FWI      C29    C27    H291   .
+ FWI      H293   C29    .      .
+ FWI      H292   C29    .      .
+ FWI      H291   C29    .      .
+ FWI      C28    C27    H281   .
+ FWI      H283   C28    .      .
+ FWI      H282   C28    .      .
+ FWI      H281   C28    .      END
+ FWI      C05    C06    .    ADD
+ FWI      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ FWI      C01    C03       single      1.524    0.020
+ FWI      O02    C01       single      1.432    0.020
+ FWI      C04    C03       single      1.524    0.020
+ FWI      C03    N11       single      1.450    0.020
+ FWI      C05    C04       single      1.510    0.020
+ FWI      C05    C06       single      1.490    0.020
+ FWI      C09    C05       double      1.387    0.020
+ FWI      C06    N07       single      1.350    0.020
+ FWI      O10    C06       double      1.350    0.020
+ FWI      C08    C09       single      1.380    0.020
+ FWI      N07    C08       deloc       1.350    0.020
+ FWI      C13    C12       single      1.500    0.020
+ FWI      N11    C12       single      1.330    0.020
+ FWI      C12    O34       double      1.220    0.020
+ FWI      C14    C13       single      1.524    0.020
+ FWI      N18    C13       single      1.450    0.020
+ FWI      C15    C14       single      1.524    0.020
+ FWI      C16    C15       single      1.524    0.020
+ FWI      C17    C15       single      1.524    0.020
+ FWI      C19    N18       single      1.330    0.020
+ FWI      O20    C19       single      1.454    0.020
+ FWI      O33    C19       double      1.220    0.020
+ FWI      C22    C21       single      1.524    0.020
+ FWI      C21    O20       single      1.426    0.020
+ FWI      C22    C23       single      1.524    0.020
+ FWI      C32    C22       single      1.524    0.020
+ FWI      C23    N24       single      1.455    0.020
+ FWI      C25    N24       single      1.330    0.020
+ FWI      O26    C25       single      1.454    0.020
+ FWI      O31    C25       double      1.220    0.020
+ FWI      C28    C27       single      1.524    0.020
+ FWI      C29    C27       single      1.524    0.020
+ FWI      C30    C27       single      1.524    0.020
+ FWI      C27    O26       single      1.426    0.020
+ FWI      N24    C32       single      1.455    0.020
+ FWI      H011   C01       single      1.092    0.020
+ FWI      H012   C01       single      1.092    0.020
+ FWI      H03    C03       single      1.099    0.020
+ FWI      H041   C04       single      1.092    0.020
+ FWI      H042   C04       single      1.092    0.020
+ FWI      H08    C08       single      1.083    0.020
+ FWI      H09    C09       single      1.083    0.020
+ FWI      H13    C13       single      1.099    0.020
+ FWI      H141   C14       single      1.092    0.020
+ FWI      H142   C14       single      1.092    0.020
+ FWI      H15    C15       single      1.099    0.020
+ FWI      H161   C16       single      1.059    0.020
+ FWI      H162   C16       single      1.059    0.020
+ FWI      H163   C16       single      1.059    0.020
+ FWI      H171   C17       single      1.059    0.020
+ FWI      H172   C17       single      1.059    0.020
+ FWI      H173   C17       single      1.059    0.020
+ FWI      H211   C21       single      1.092    0.020
+ FWI      H212   C21       single      1.092    0.020
+ FWI      H22    C22       single      1.099    0.020
+ FWI      H231   C23       single      1.092    0.020
+ FWI      H232   C23       single      1.092    0.020
+ FWI      H281   C28       single      1.059    0.020
+ FWI      H282   C28       single      1.059    0.020
+ FWI      H283   C28       single      1.059    0.020
+ FWI      H291   C29       single      1.059    0.020
+ FWI      H292   C29       single      1.059    0.020
+ FWI      H293   C29       single      1.059    0.020
+ FWI      H301   C30       single      1.059    0.020
+ FWI      H302   C30       single      1.059    0.020
+ FWI      H303   C30       single      1.059    0.020
+ FWI      H321   C32       single      1.092    0.020
+ FWI      H322   C32       single      1.092    0.020
+ FWI      HN11   N11       single      1.010    0.020
+ FWI      HN18   N18       single      1.010    0.020
+ FWI      HO02   O02       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ FWI      O34    C12    N11     123.000    3.000
+ FWI      O34    C12    C13     120.500    3.000
+ FWI      N11    C12    C13     116.500    3.000
+ FWI      C12    N11    HN11    120.000    3.000
+ FWI      C12    N11    C03     121.500    3.000
+ FWI      HN11   N11    C03     118.500    3.000
+ FWI      N11    C03    H03     108.550    3.000
+ FWI      N11    C03    C04     110.000    3.000
+ FWI      N11    C03    C01     110.000    3.000
+ FWI      H03    C03    C04     108.340    3.000
+ FWI      H03    C03    C01     108.340    3.000
+ FWI      C04    C03    C01     109.470    3.000
+ FWI      C03    C04    H041    109.470    3.000
+ FWI      C03    C04    H042    109.470    3.000
+ FWI      C03    C04    C05     109.470    3.000
+ FWI      H041   C04    H042    107.900    3.000
+ FWI      H041   C04    C05     109.470    3.000
+ FWI      H042   C04    C05     109.470    3.000
+ FWI      C04    C05    C09     126.000    3.000
+ FWI      C04    C05    C06     126.000    3.000
+ FWI      C09    C05    C06     108.000    3.000
+ FWI      C05    C09    H09     126.000    3.000
+ FWI      C05    C09    C08     108.000    3.000
+ FWI      H09    C09    C08     126.000    3.000
+ FWI      C09    C08    H08     126.000    3.000
+ FWI      C09    C08    N07     108.000    3.000
+ FWI      H08    C08    N07     126.000    3.000
+ FWI      C08    N07    C06     108.000    3.000
+ FWI      N07    C06    O10     108.000    3.000
+ FWI      N07    C06    C05     108.000    3.000
+ FWI      O10    C06    C05     108.000    3.000
+ FWI      C03    C01    H011    109.470    3.000
+ FWI      C03    C01    H012    109.470    3.000
+ FWI      C03    C01    O02     109.470    3.000
+ FWI      H011   C01    H012    107.900    3.000
+ FWI      H011   C01    O02     109.470    3.000
+ FWI      H012   C01    O02     109.470    3.000
+ FWI      C01    O02    HO02    109.470    3.000
+ FWI      C12    C13    H13     108.810    3.000
+ FWI      C12    C13    C14     109.470    3.000
+ FWI      C12    C13    N18     111.600    3.000
+ FWI      H13    C13    C14     108.340    3.000
+ FWI      H13    C13    N18     108.550    3.000
+ FWI      C14    C13    N18     110.000    3.000
+ FWI      C13    C14    H141    109.470    3.000
+ FWI      C13    C14    H142    109.470    3.000
+ FWI      C13    C14    C15     111.000    3.000
+ FWI      H141   C14    H142    107.900    3.000
+ FWI      H141   C14    C15     109.470    3.000
+ FWI      H142   C14    C15     109.470    3.000
+ FWI      C14    C15    H15     108.340    3.000
+ FWI      C14    C15    C17     111.000    3.000
+ FWI      C14    C15    C16     111.000    3.000
+ FWI      H15    C15    C17     108.340    3.000
+ FWI      H15    C15    C16     108.340    3.000
+ FWI      C17    C15    C16     111.000    3.000
+ FWI      C15    C17    H173    109.470    3.000
+ FWI      C15    C17    H172    109.470    3.000
+ FWI      C15    C17    H171    109.470    3.000
+ FWI      H173   C17    H172    109.470    3.000
+ FWI      H173   C17    H171    109.470    3.000
+ FWI      H172   C17    H171    109.470    3.000
+ FWI      C15    C16    H163    109.470    3.000
+ FWI      C15    C16    H162    109.470    3.000
+ FWI      C15    C16    H161    109.470    3.000
+ FWI      H163   C16    H162    109.470    3.000
+ FWI      H163   C16    H161    109.470    3.000
+ FWI      H162   C16    H161    109.470    3.000
+ FWI      C13    N18    HN18    118.500    3.000
+ FWI      C13    N18    C19     121.500    3.000
+ FWI      HN18   N18    C19     120.000    3.000
+ FWI      N18    C19    O33     123.000    3.000
+ FWI      N18    C19    O20     118.000    3.000
+ FWI      O33    C19    O20     119.000    3.000
+ FWI      C19    O20    C21     120.000    3.000
+ FWI      O20    C21    H211    109.470    3.000
+ FWI      O20    C21    H212    109.470    3.000
+ FWI      O20    C21    C22     109.470    3.000
+ FWI      H211   C21    H212    107.900    3.000
+ FWI      H211   C21    C22     109.470    3.000
+ FWI      H212   C21    C22     109.470    3.000
+ FWI      C21    C22    H22     108.340    3.000
+ FWI      C21    C22    C32     109.470    3.000
+ FWI      C21    C22    C23     109.470    3.000
+ FWI      H22    C22    C32     108.340    3.000
+ FWI      H22    C22    C23     108.340    3.000
+ FWI      C32    C22    C23     109.470    3.000
+ FWI      C22    C32    H321    109.470    3.000
+ FWI      C22    C32    H322    109.470    3.000
+ FWI      C22    C32    N24     105.000    3.000
+ FWI      H321   C32    H322    107.900    3.000
+ FWI      H321   C32    N24     109.470    3.000
+ FWI      H322   C32    N24     109.470    3.000
+ FWI      C32    N24    C23     120.000    3.000
+ FWI      C32    N24    C25     127.000    3.000
+ FWI      C23    N24    C25     127.000    3.000
+ FWI      N24    C23    H232    109.470    3.000
+ FWI      N24    C23    H231    109.470    3.000
+ FWI      N24    C23    C22     105.000    3.000
+ FWI      H232   C23    H231    107.900    3.000
+ FWI      H232   C23    C22     109.470    3.000
+ FWI      H231   C23    C22     109.470    3.000
+ FWI      N24    C25    O31     123.000    3.000
+ FWI      N24    C25    O26     120.000    3.000
+ FWI      O31    C25    O26     119.000    3.000
+ FWI      C25    O26    C27     120.000    3.000
+ FWI      O26    C27    C30     109.470    3.000
+ FWI      O26    C27    C29     109.470    3.000
+ FWI      O26    C27    C28     109.470    3.000
+ FWI      C30    C27    C29     111.000    3.000
+ FWI      C30    C27    C28     111.000    3.000
+ FWI      C29    C27    C28     111.000    3.000
+ FWI      C27    C30    H303    109.470    3.000
+ FWI      C27    C30    H302    109.470    3.000
+ FWI      C27    C30    H301    109.470    3.000
+ FWI      H303   C30    H302    109.470    3.000
+ FWI      H303   C30    H301    109.470    3.000
+ FWI      H302   C30    H301    109.470    3.000
+ FWI      C27    C29    H293    109.470    3.000
+ FWI      C27    C29    H292    109.470    3.000
+ FWI      C27    C29    H291    109.470    3.000
+ FWI      H293   C29    H292    109.470    3.000
+ FWI      H293   C29    H291    109.470    3.000
+ FWI      H292   C29    H291    109.470    3.000
+ FWI      C27    C28    H283    109.470    3.000
+ FWI      C27    C28    H282    109.470    3.000
+ FWI      C27    C28    H281    109.470    3.000
+ FWI      H283   C28    H282    109.470    3.000
+ FWI      H283   C28    H281    109.470    3.000
+ FWI      H282   C28    H281    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ FWI      var_1            O34    C12    N11    C03              180.000           20.000   2
+ FWI      var_2            C12    N11    C03    C01                0.000           20.000   3
+ FWI      var_3            N11    C03    C04    C05              180.000           20.000   3
+ FWI      var_4            C03    C04    C05    C09                0.000           20.000   2
+ FWI      CONST_1          C04    C05    C06    N07                0.000            0.000   0
+ FWI      CONST_2          C04    C05    C09    C08                0.000            0.000   0
+ FWI      CONST_3          C05    C09    C08    N07               19.638            0.000   0
+ FWI      CONST_4          C09    C08    N07    C06                0.000            0.000   0
+ FWI      CONST_5          C08    N07    C06    O10                0.000            0.000   0
+ FWI      var_5            N11    C03    C01    O02              180.000           20.000   3
+ FWI      var_6            C03    C01    O02    HO02             180.000           20.000   3
+ FWI      var_7            O34    C12    C13    N18              180.000           20.000   3
+ FWI      var_8            C12    C13    C14    C15              180.000           20.000   3
+ FWI      var_9            C13    C14    C15    C16              180.000           20.000   3
+ FWI      var_10           C14    C15    C17    H171             180.000           20.000   3
+ FWI      var_11           C14    C15    C16    H161             180.000           20.000   3
+ FWI      var_12           C12    C13    N18    C19                0.000           20.000   3
+ FWI      var_13           C13    N18    C19    O20              180.000           20.000   2
+ FWI      var_14           N18    C19    O20    C21              170.968           20.000   3
+ FWI      var_15           C19    O20    C21    C22             -112.311           20.000   3
+ FWI      var_16           O20    C21    C22    C32              180.000           20.000   3
+ FWI      var_17           C21    C22    C23    N24              180.000           20.000   3
+ FWI      var_18           C21    C22    C32    N24              180.000           20.000   3
+ FWI      var_19           C22    C32    N24    C25             -178.034           20.000   3
+ FWI      var_20           C32    N24    C23    C22               -7.725           20.000   3
+ FWI      var_21           C32    N24    C25    O26              180.000           20.000   2
+ FWI      var_22           N24    C25    O26    C27             -117.636           20.000   3
+ FWI      var_23           C25    O26    C27    C28               45.509           20.000   3
+ FWI      var_24           O26    C27    C30    H301             180.000           20.000   3
+ FWI      var_25           O26    C27    C29    H291             180.000           20.000   3
+ FWI      var_26           O26    C27    C28    H281             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ FWI      chir_01          C03    C01    C04    N11       positiv
+ FWI      chir_02          C13    C12    C14    N18       positiv
+ FWI      chir_03          C15    C14    C16    C17       negativ
+ FWI      chir_04          C22    C21    C23    C32       positiv
+ FWI      chir_05          C27    C28    C29    C30       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ FWI      plan-1            C05       0.020
+ FWI      plan-1            C04       0.020
+ FWI      plan-1            C06       0.020
+ FWI      plan-1            C09       0.020
+ FWI      plan-1            C08       0.020
+ FWI      plan-1            N07       0.020
+ FWI      plan-1            O10       0.020
+ FWI      plan-1            H08       0.020
+ FWI      plan-1            H09       0.020
+ FWI      plan-2            C12       0.020
+ FWI      plan-2            C13       0.020
+ FWI      plan-2            N11       0.020
+ FWI      plan-2            O34       0.020
+ FWI      plan-2            HN11      0.020
+ FWI      plan-3            C19       0.020
+ FWI      plan-3            N18       0.020
+ FWI      plan-3            O20       0.020
+ FWI      plan-3            O33       0.020
+ FWI      plan-3            HN18      0.020
+ FWI      plan-4            C25       0.020
+ FWI      plan-4            N24       0.020
+ FWI      plan-4            O26       0.020
+ FWI      plan-4            O31       0.020
+ FWI      plan-5            N11       0.020
+ FWI      plan-5            C03       0.020
+ FWI      plan-5            C12       0.020
+ FWI      plan-5            HN11      0.020
+ FWI      plan-6            N18       0.020
+ FWI      plan-6            C13       0.020
+ FWI      plan-6            C19       0.020
+ FWI      plan-6            HN18      0.020
+ FWI      plan-7            N24       0.020
+ FWI      plan-7            C23       0.020
+ FWI      plan-7            C25       0.020
+ FWI      plan-7            C32       0.020
+#
+data_comp_FZI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ FZI           O34    O    O         0.000     10.227   22.499   28.180
+ FZI           C12    C    C         0.000     10.820   21.798   27.420
+ FZI           N11    N    NH1       0.000     10.267   20.543   26.958
+ FZI           HN11   H    H         0.000     10.767   19.992   26.275
+ FZI           C03    C    CH1       0.000      8.998   20.078   27.473
+ FZI           H03    H    H         0.000      8.636   20.778   28.239
+ FZI           C04    C    CH2       0.000      7.935   19.931   26.375
+ FZI           H041   H    H         0.000      7.068   19.423   26.805
+ FZI           H042   H    H         0.000      8.354   19.318   25.574
+ FZI           C05    C    CR5       0.000      7.507   21.282   25.812
+ FZI           C09    C    CR15      0.000      6.843   21.937   26.679
+ FZI           H09    H    H         0.000      7.075   22.013   27.734
+ FZI           C08    C    CR15      0.000      5.538   22.666   25.898
+ FZI           H08    H    H         0.000      4.968   23.512   26.262
+ FZI           N07    N    NRD5      0.000      5.340   22.041   24.796
+ FZI           C06    C    CR5       0.000      6.562   21.080   24.564
+ FZI           O10    O    O         0.000      6.713   20.362   23.627
+ FZI           C01    C    CH2       0.000      9.279   18.730   28.115
+ FZI           H011   H    H         0.000     10.023   18.858   28.904
+ FZI           H012   H    H         0.000      9.668   18.047   27.357
+ FZI           O02    O    OH1       0.000      8.098   18.199   28.664
+ FZI           HO02   H    H         0.000      8.292   17.344   29.067
+ FZI           C13    C    CH1       0.000     12.159   22.226   26.854
+ FZI           H13    H    H         0.000     12.357   21.696   25.912
+ FZI           C14    C    CH2       0.000     13.282   21.961   27.852
+ FZI           H141   H    H         0.000     13.252   20.905   28.129
+ FZI           H142   H    H         0.000     13.105   22.574   28.738
+ FZI           C15    C    CH1       0.000     14.651   22.297   27.263
+ FZI           H15    H    H         0.000     14.594   23.275   26.765
+ FZI           C17    C    CH3       0.000     15.063   21.245   26.239
+ FZI           H173   H    H         0.000     15.113   20.297   26.707
+ FZI           H172   H    H         0.000     14.349   21.215   25.457
+ FZI           H171   H    H         0.000     16.012   21.492   25.841
+ FZI           C16    C    CH3       0.000     15.703   22.367   28.378
+ FZI           H163   H    H         0.000     15.432   23.118   29.075
+ FZI           H162   H    H         0.000     15.759   21.432   28.873
+ FZI           H161   H    H         0.000     16.648   22.600   27.960
+ FZI           N18    N    NH1       0.000     12.092   23.647   26.618
+ FZI           HN18   H    H         0.000     12.713   24.266   27.119
+ FZI           C19    C    C         0.000     11.151   24.193   25.677
+ FZI           O33    O    O         0.000     10.569   23.500   24.892
+ FZI           O20    O    O2        0.000     10.963   25.579   25.772
+ FZI           C21    C    CH2       0.000     10.323   26.214   24.713
+ FZI           H211   H    H         0.000      9.564   26.915   25.067
+ FZI           H212   H    H         0.000      9.862   25.493   24.034
+ FZI           C22    C    CH1       0.000     11.416   26.974   23.981
+ FZI           H22    H    H         0.000     12.079   26.320   23.398
+ FZI           C32    C    CH2       0.000     10.924   28.140   23.210
+ FZI           H321   H    H         0.000      9.845   28.290   23.132
+ FZI           H322   H    H         0.000     11.390   28.356   22.246
+ FZI           N24    N    N         0.000     11.483   29.057   24.253
+ FZI           C23    C    CH2       0.000     12.151   27.886   24.893
+ FZI           H232   H    H         0.000     11.896   27.650   25.928
+ FZI           H231   H    H         0.000     13.225   27.762   24.746
+ FZI           C25    C    C         0.000     11.517   30.494   24.496
+ FZI           O31    O    O         0.000     10.547   31.152   24.298
+ FZI           O26    O    O2        0.000     12.714   31.074   24.952
+ FZI           C27    C    CT        0.000     12.710   31.691   26.211
+ FZI           C30    C    CH3       0.000     14.156   31.900   26.659
+ FZI           H303   H    H         0.000     14.646   30.963   26.719
+ FZI           H302   H    H         0.000     14.658   32.516   25.958
+ FZI           H301   H    H         0.000     14.168   32.366   27.610
+ FZI           C29    C    CH3       0.000     12.028   33.056   26.128
+ FZI           H293   H    H         0.000     12.550   33.672   25.442
+ FZI           H292   H    H         0.000     11.028   32.933   25.800
+ FZI           H291   H    H         0.000     12.031   33.512   27.084
+ FZI           C28    C    CH3       0.000     12.013   30.822   27.264
+ FZI           H283   H    H         0.000     11.008   30.650   26.974
+ FZI           H282   H    H         0.000     12.517   29.894   27.349
+ FZI           H281   H    H         0.000     12.028   31.318   28.200
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ FZI      O34    n/a    C12    START
+ FZI      C12    O34    C13    .
+ FZI      N11    C12    C03    .
+ FZI      HN11   N11    .      .
+ FZI      C03    N11    C01    .
+ FZI      H03    C03    .      .
+ FZI      C04    C03    C05    .
+ FZI      H041   C04    .      .
+ FZI      H042   C04    .      .
+ FZI      C05    C04    C09    .
+ FZI      C09    C05    C08    .
+ FZI      H09    C09    .      .
+ FZI      C08    C09    N07    .
+ FZI      H08    C08    .      .
+ FZI      N07    C08    C06    .
+ FZI      C06    N07    O10    .
+ FZI      O10    C06    .      .
+ FZI      C01    C03    O02    .
+ FZI      H011   C01    .      .
+ FZI      H012   C01    .      .
+ FZI      O02    C01    HO02   .
+ FZI      HO02   O02    .      .
+ FZI      C13    C12    N18    .
+ FZI      H13    C13    .      .
+ FZI      C14    C13    C15    .
+ FZI      H141   C14    .      .
+ FZI      H142   C14    .      .
+ FZI      C15    C14    C16    .
+ FZI      H15    C15    .      .
+ FZI      C17    C15    H171   .
+ FZI      H173   C17    .      .
+ FZI      H172   C17    .      .
+ FZI      H171   C17    .      .
+ FZI      C16    C15    H161   .
+ FZI      H163   C16    .      .
+ FZI      H162   C16    .      .
+ FZI      H161   C16    .      .
+ FZI      N18    C13    C19    .
+ FZI      HN18   N18    .      .
+ FZI      C19    N18    O20    .
+ FZI      O33    C19    .      .
+ FZI      O20    C19    C21    .
+ FZI      C21    O20    C22    .
+ FZI      H211   C21    .      .
+ FZI      H212   C21    .      .
+ FZI      C22    C21    C32    .
+ FZI      H22    C22    .      .
+ FZI      C32    C22    N24    .
+ FZI      H321   C32    .      .
+ FZI      H322   C32    .      .
+ FZI      N24    C32    C25    .
+ FZI      C23    N24    H231   .
+ FZI      H232   C23    .      .
+ FZI      H231   C23    .      .
+ FZI      C25    N24    O26    .
+ FZI      O31    C25    .      .
+ FZI      O26    C25    C27    .
+ FZI      C27    O26    C28    .
+ FZI      C30    C27    H301   .
+ FZI      H303   C30    .      .
+ FZI      H302   C30    .      .
+ FZI      H301   C30    .      .
+ FZI      C29    C27    H291   .
+ FZI      H293   C29    .      .
+ FZI      H292   C29    .      .
+ FZI      H291   C29    .      .
+ FZI      C28    C27    H281   .
+ FZI      H283   C28    .      .
+ FZI      H282   C28    .      .
+ FZI      H281   C28    .      END
+ FZI      C22    C23    .    ADD
+ FZI      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ FZI      C13    C12       single      1.500    0.020
+ FZI      N11    C12       single      1.330    0.020
+ FZI      C12    O34       double      1.220    0.020
+ FZI      C14    C13       single      1.524    0.020
+ FZI      N18    C13       single      1.450    0.020
+ FZI      C15    C14       single      1.524    0.020
+ FZI      C16    C15       single      1.524    0.020
+ FZI      C17    C15       single      1.524    0.020
+ FZI      C19    N18       single      1.330    0.020
+ FZI      O20    C19       single      1.454    0.020
+ FZI      O33    C19       double      1.220    0.020
+ FZI      C22    C21       single      1.524    0.020
+ FZI      C21    O20       single      1.426    0.020
+ FZI      C22    C23       single      1.524    0.020
+ FZI      C32    C22       single      1.524    0.020
+ FZI      C23    N24       single      1.455    0.020
+ FZI      C01    C03       single      1.524    0.020
+ FZI      O02    C01       single      1.432    0.020
+ FZI      C04    C03       single      1.524    0.020
+ FZI      C03    N11       single      1.450    0.020
+ FZI      C05    C04       single      1.510    0.020
+ FZI      C05    C06       single      1.490    0.020
+ FZI      C09    C05       double      1.387    0.020
+ FZI      C06    N07       single      1.350    0.020
+ FZI      O10    C06       double      1.350    0.020
+ FZI      C08    C09       single      1.380    0.020
+ FZI      N07    C08       deloc       1.350    0.020
+ FZI      C25    N24       single      1.330    0.020
+ FZI      O26    C25       single      1.454    0.020
+ FZI      O31    C25       double      1.220    0.020
+ FZI      C28    C27       single      1.524    0.020
+ FZI      C29    C27       single      1.524    0.020
+ FZI      C30    C27       single      1.524    0.020
+ FZI      C27    O26       single      1.426    0.020
+ FZI      N24    C32       single      1.455    0.020
+ FZI      H13    C13       single      1.099    0.020
+ FZI      H141   C14       single      1.092    0.020
+ FZI      H142   C14       single      1.092    0.020
+ FZI      H15    C15       single      1.099    0.020
+ FZI      H161   C16       single      1.059    0.020
+ FZI      H162   C16       single      1.059    0.020
+ FZI      H163   C16       single      1.059    0.020
+ FZI      H171   C17       single      1.059    0.020
+ FZI      H172   C17       single      1.059    0.020
+ FZI      H173   C17       single      1.059    0.020
+ FZI      H211   C21       single      1.092    0.020
+ FZI      H212   C21       single      1.092    0.020
+ FZI      H22    C22       single      1.099    0.020
+ FZI      H231   C23       single      1.092    0.020
+ FZI      H232   C23       single      1.092    0.020
+ FZI      H011   C01       single      1.092    0.020
+ FZI      H012   C01       single      1.092    0.020
+ FZI      H03    C03       single      1.099    0.020
+ FZI      H041   C04       single      1.092    0.020
+ FZI      H042   C04       single      1.092    0.020
+ FZI      H08    C08       single      1.083    0.020
+ FZI      H09    C09       single      1.083    0.020
+ FZI      H281   C28       single      1.059    0.020
+ FZI      H282   C28       single      1.059    0.020
+ FZI      H283   C28       single      1.059    0.020
+ FZI      H291   C29       single      1.059    0.020
+ FZI      H292   C29       single      1.059    0.020
+ FZI      H293   C29       single      1.059    0.020
+ FZI      H301   C30       single      1.059    0.020
+ FZI      H302   C30       single      1.059    0.020
+ FZI      H303   C30       single      1.059    0.020
+ FZI      H321   C32       single      1.092    0.020
+ FZI      H322   C32       single      1.092    0.020
+ FZI      HN11   N11       single      1.010    0.020
+ FZI      HN18   N18       single      1.010    0.020
+ FZI      HO02   O02       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ FZI      O34    C12    N11     123.000    3.000
+ FZI      O34    C12    C13     120.500    3.000
+ FZI      N11    C12    C13     116.500    3.000
+ FZI      C12    N11    HN11    120.000    3.000
+ FZI      C12    N11    C03     121.500    3.000
+ FZI      HN11   N11    C03     118.500    3.000
+ FZI      N11    C03    H03     108.550    3.000
+ FZI      N11    C03    C04     110.000    3.000
+ FZI      N11    C03    C01     110.000    3.000
+ FZI      H03    C03    C04     108.340    3.000
+ FZI      H03    C03    C01     108.340    3.000
+ FZI      C04    C03    C01     109.470    3.000
+ FZI      C03    C04    H041    109.470    3.000
+ FZI      C03    C04    H042    109.470    3.000
+ FZI      C03    C04    C05     109.470    3.000
+ FZI      H041   C04    H042    107.900    3.000
+ FZI      H041   C04    C05     109.470    3.000
+ FZI      H042   C04    C05     109.470    3.000
+ FZI      C04    C05    C09     126.000    3.000
+ FZI      C04    C05    C06     126.000    3.000
+ FZI      C09    C05    C06     108.000    3.000
+ FZI      C05    C09    H09     126.000    3.000
+ FZI      C05    C09    C08     108.000    3.000
+ FZI      H09    C09    C08     126.000    3.000
+ FZI      C09    C08    H08     126.000    3.000
+ FZI      C09    C08    N07     108.000    3.000
+ FZI      H08    C08    N07     126.000    3.000
+ FZI      C08    N07    C06     108.000    3.000
+ FZI      N07    C06    O10     108.000    3.000
+ FZI      N07    C06    C05     108.000    3.000
+ FZI      O10    C06    C05     108.000    3.000
+ FZI      C03    C01    H011    109.470    3.000
+ FZI      C03    C01    H012    109.470    3.000
+ FZI      C03    C01    O02     109.470    3.000
+ FZI      H011   C01    H012    107.900    3.000
+ FZI      H011   C01    O02     109.470    3.000
+ FZI      H012   C01    O02     109.470    3.000
+ FZI      C01    O02    HO02    109.470    3.000
+ FZI      C12    C13    H13     108.810    3.000
+ FZI      C12    C13    C14     109.470    3.000
+ FZI      C12    C13    N18     111.600    3.000
+ FZI      H13    C13    C14     108.340    3.000
+ FZI      H13    C13    N18     108.550    3.000
+ FZI      C14    C13    N18     110.000    3.000
+ FZI      C13    C14    H141    109.470    3.000
+ FZI      C13    C14    H142    109.470    3.000
+ FZI      C13    C14    C15     111.000    3.000
+ FZI      H141   C14    H142    107.900    3.000
+ FZI      H141   C14    C15     109.470    3.000
+ FZI      H142   C14    C15     109.470    3.000
+ FZI      C14    C15    H15     108.340    3.000
+ FZI      C14    C15    C17     111.000    3.000
+ FZI      C14    C15    C16     111.000    3.000
+ FZI      H15    C15    C17     108.340    3.000
+ FZI      H15    C15    C16     108.340    3.000
+ FZI      C17    C15    C16     111.000    3.000
+ FZI      C15    C17    H173    109.470    3.000
+ FZI      C15    C17    H172    109.470    3.000
+ FZI      C15    C17    H171    109.470    3.000
+ FZI      H173   C17    H172    109.470    3.000
+ FZI      H173   C17    H171    109.470    3.000
+ FZI      H172   C17    H171    109.470    3.000
+ FZI      C15    C16    H163    109.470    3.000
+ FZI      C15    C16    H162    109.470    3.000
+ FZI      C15    C16    H161    109.470    3.000
+ FZI      H163   C16    H162    109.470    3.000
+ FZI      H163   C16    H161    109.470    3.000
+ FZI      H162   C16    H161    109.470    3.000
+ FZI      C13    N18    HN18    118.500    3.000
+ FZI      C13    N18    C19     121.500    3.000
+ FZI      HN18   N18    C19     120.000    3.000
+ FZI      N18    C19    O33     123.000    3.000
+ FZI      N18    C19    O20     118.000    3.000
+ FZI      O33    C19    O20     119.000    3.000
+ FZI      C19    O20    C21     120.000    3.000
+ FZI      O20    C21    H211    109.470    3.000
+ FZI      O20    C21    H212    109.470    3.000
+ FZI      O20    C21    C22     109.470    3.000
+ FZI      H211   C21    H212    107.900    3.000
+ FZI      H211   C21    C22     109.470    3.000
+ FZI      H212   C21    C22     109.470    3.000
+ FZI      C21    C22    H22     108.340    3.000
+ FZI      C21    C22    C32     109.470    3.000
+ FZI      C21    C22    C23     109.470    3.000
+ FZI      H22    C22    C32     108.340    3.000
+ FZI      H22    C22    C23     108.340    3.000
+ FZI      C32    C22    C23     109.470    3.000
+ FZI      C22    C32    H321    109.470    3.000
+ FZI      C22    C32    H322    109.470    3.000
+ FZI      C22    C32    N24     105.000    3.000
+ FZI      H321   C32    H322    107.900    3.000
+ FZI      H321   C32    N24     109.470    3.000
+ FZI      H322   C32    N24     109.470    3.000
+ FZI      C32    N24    C23     120.000    3.000
+ FZI      C32    N24    C25     127.000    3.000
+ FZI      C23    N24    C25     127.000    3.000
+ FZI      N24    C23    H232    109.470    3.000
+ FZI      N24    C23    H231    109.470    3.000
+ FZI      N24    C23    C22     105.000    3.000
+ FZI      H232   C23    H231    107.900    3.000
+ FZI      H232   C23    C22     109.470    3.000
+ FZI      H231   C23    C22     109.470    3.000
+ FZI      N24    C25    O31     123.000    3.000
+ FZI      N24    C25    O26     120.000    3.000
+ FZI      O31    C25    O26     119.000    3.000
+ FZI      C25    O26    C27     120.000    3.000
+ FZI      O26    C27    C30     109.470    3.000
+ FZI      O26    C27    C29     109.470    3.000
+ FZI      O26    C27    C28     109.470    3.000
+ FZI      C30    C27    C29     111.000    3.000
+ FZI      C30    C27    C28     111.000    3.000
+ FZI      C29    C27    C28     111.000    3.000
+ FZI      C27    C30    H303    109.470    3.000
+ FZI      C27    C30    H302    109.470    3.000
+ FZI      C27    C30    H301    109.470    3.000
+ FZI      H303   C30    H302    109.470    3.000
+ FZI      H303   C30    H301    109.470    3.000
+ FZI      H302   C30    H301    109.470    3.000
+ FZI      C27    C29    H293    109.470    3.000
+ FZI      C27    C29    H292    109.470    3.000
+ FZI      C27    C29    H291    109.470    3.000
+ FZI      H293   C29    H292    109.470    3.000
+ FZI      H293   C29    H291    109.470    3.000
+ FZI      H292   C29    H291    109.470    3.000
+ FZI      C27    C28    H283    109.470    3.000
+ FZI      C27    C28    H282    109.470    3.000
+ FZI      C27    C28    H281    109.470    3.000
+ FZI      H283   C28    H282    109.470    3.000
+ FZI      H283   C28    H281    109.470    3.000
+ FZI      H282   C28    H281    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ FZI      var_1            O34    C12    N11    C03              180.000           20.000   2
+ FZI      var_2            C12    N11    C03    C01                0.000           20.000   3
+ FZI      var_3            N11    C03    C04    C05              180.000           20.000   3
+ FZI      var_4            C03    C04    C05    C09                0.000           20.000   2
+ FZI      CONST_1          C04    C05    C06    N07                0.000            0.000   0
+ FZI      CONST_2          C04    C05    C09    C08                0.000            0.000   0
+ FZI      CONST_3          C05    C09    C08    N07               19.927            0.000   0
+ FZI      CONST_4          C09    C08    N07    C06                0.000            0.000   0
+ FZI      CONST_5          C08    N07    C06    O10                0.000            0.000   0
+ FZI      var_5            N11    C03    C01    O02              180.000           20.000   3
+ FZI      var_6            C03    C01    O02    HO02             180.000           20.000   3
+ FZI      var_7            O34    C12    C13    N18              180.000           20.000   3
+ FZI      var_8            C12    C13    C14    C15              180.000           20.000   3
+ FZI      var_9            C13    C14    C15    C16              180.000           20.000   3
+ FZI      var_10           C14    C15    C17    H171             180.000           20.000   3
+ FZI      var_11           C14    C15    C16    H161             180.000           20.000   3
+ FZI      var_12           C12    C13    N18    C19                0.000           20.000   3
+ FZI      var_13           C13    N18    C19    O20              180.000           20.000   2
+ FZI      var_14           N18    C19    O20    C21              165.292           20.000   3
+ FZI      var_15           C19    O20    C21    C22             -106.534           20.000   3
+ FZI      var_16           O20    C21    C22    C32              180.000           20.000   3
+ FZI      var_17           C21    C22    C23    N24              180.000           20.000   3
+ FZI      var_18           C21    C22    C32    N24              180.000           20.000   3
+ FZI      var_19           C22    C32    N24    C25             -177.812           20.000   3
+ FZI      var_20           C32    N24    C23    C22               -8.367           20.000   3
+ FZI      var_21           C32    N24    C25    O26              180.000           20.000   2
+ FZI      var_22           N24    C25    O26    C27             -117.504           20.000   3
+ FZI      var_23           C25    O26    C27    C28               45.838           20.000   3
+ FZI      var_24           O26    C27    C30    H301             180.000           20.000   3
+ FZI      var_25           O26    C27    C29    H291             180.000           20.000   3
+ FZI      var_26           O26    C27    C28    H281             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ FZI      chir_01          C13    C12    C14    N18       positiv
+ FZI      chir_02          C15    C14    C16    C17       negativ
+ FZI      chir_03          C22    C21    C23    C32       positiv
+ FZI      chir_04          C03    C01    C04    N11       positiv
+ FZI      chir_05          C27    C28    C29    C30       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ FZI      plan-1            C12       0.020
+ FZI      plan-1            C13       0.020
+ FZI      plan-1            N11       0.020
+ FZI      plan-1            O34       0.020
+ FZI      plan-1            HN11      0.020
+ FZI      plan-2            C19       0.020
+ FZI      plan-2            N18       0.020
+ FZI      plan-2            O20       0.020
+ FZI      plan-2            O33       0.020
+ FZI      plan-2            HN18      0.020
+ FZI      plan-3            C05       0.020
+ FZI      plan-3            C04       0.020
+ FZI      plan-3            C06       0.020
+ FZI      plan-3            C09       0.020
+ FZI      plan-3            C08       0.020
+ FZI      plan-3            N07       0.020
+ FZI      plan-3            O10       0.020
+ FZI      plan-3            H08       0.020
+ FZI      plan-3            H09       0.020
+ FZI      plan-4            C25       0.020
+ FZI      plan-4            N24       0.020
+ FZI      plan-4            O26       0.020
+ FZI      plan-4            O31       0.020
+ FZI      plan-5            N11       0.020
+ FZI      plan-5            C12       0.020
+ FZI      plan-5            C03       0.020
+ FZI      plan-5            HN11      0.020
+ FZI      plan-6            N18       0.020
+ FZI      plan-6            C13       0.020
+ FZI      plan-6            C19       0.020
+ FZI      plan-6            HN18      0.020
+ FZI      plan-7            N24       0.020
+ FZI      plan-7            C23       0.020
+ FZI      plan-7            C25       0.020
+ FZI      plan-7            C32       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-FWI
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-FWI  1 SG      2 C01       .           1.820    0.020
+#
+data_link_CYS-FZI
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-FZI  1 SG      2 C01       .           1.830    0.020
+# ------------------------------------------------------

@@ -3,14 +3,16 @@ data_7NG6
 _entry.id   7NG6 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.341 
+_audit_conform.dict_version    5.352 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7NG6         
-WWPDB D_1292113919 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7NG6         pdb_00007ng6 10.2210/pdb7ng6/pdb 
+WWPDB D_1292113919 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -41,26 +43,27 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   CH 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Int J Mol Sci' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           1422-0067 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            22 
 _citation.language                  ? 
 _citation.page_first                ? 
 _citation.page_last                 ? 
 _citation.title                     
-'Crystal structure of MG-132 covalently bound to the main protease (3CLpro/Mpro) of SARS-CoV-2 in spacegroup P1 in absence of DTT.' 
-_citation.year                      ? 
+;Structural and Biochemical Analysis of the Dual Inhibition of MG-132 against SARS-CoV-2 Main Protease (Mpro/3CLpro) and Human Cathepsin-L.
+;
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.3390/ijms222111779 
+_citation.pdbx_database_id_PubMed   34769210 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -68,10 +71,17 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Costanzi, E.' 1 ? 
-primary 'Demitri, N.'  2 ? 
-primary 'Giabbai, B.'  3 ? 
-primary 'Storici, P.'  4 ? 
+primary 'Costanzi, E.'   1  ?                   
+primary 'Kuzikov, M.'    2  0000-0001-8771-1865 
+primary 'Esposito, F.'   3  0000-0001-9725-7977 
+primary 'Albani, S.'     4  0000-0002-3560-4539 
+primary 'Demitri, N.'    5  ?                   
+primary 'Giabbai, B.'    6  ?                   
+primary 'Camasta, M.'    7  ?                   
+primary 'Tramontano, E.' 8  0000-0002-4849-0980 
+primary 'Rossetti, G.'   9  0000-0002-2032-4630 
+primary 'Zaliani, A.'    10 0000-0002-1740-8390 
+primary 'Storici, P.'    11 0000-0002-2590-3332 
 # 
 _cell.angle_alpha                  114.362 
 _cell.angle_alpha_esd              ? 
@@ -123,15 +133,19 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Main Protease'                                                                         33825.547 2   
-3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.- ? ? ? 
-2 non-polymer syn 'N-[(benzyloxy)carbonyl]-L-leucyl-N-[(2S)-1-hydroxy-4-methylpentan-2-yl]-L-leucinamide' 477.637   2   ? ? ? ? 
-3 non-polymer syn 'ACETATE ION'                                                                           59.044    1   ? ? ? ? 
-4 non-polymer syn 'CHLORIDE ION'                                                                          35.453    1   ? ? ? ? 
-5 water       nat water                                                                                   18.015    413 ? ? ? ? 
+1 polymer     man '3C-like proteinase'                                                                    33825.547 2   3.4.22.69 
+? ? ? 
+2 non-polymer syn 'N-[(benzyloxy)carbonyl]-L-leucyl-N-[(2S)-1-hydroxy-4-methylpentan-2-yl]-L-leucinamide' 477.637   2   ?         
+? ? ? 
+3 non-polymer syn 'ACETATE ION'                                                                           59.044    1   ?         
+? ? ? 
+4 non-polymer syn 'CHLORIDE ION'                                                                          35.453    1   ?         
+? ? ? 
+5 water       nat water                                                                                   18.015    413 ?         
+? ? ? 
 # 
 _entity_name_com.entity_id   1 
-_entity_name_com.name        'pp1ab,ORF1ab polyprotein' 
+_entity_name_com.name        '3CL-PRO,3CLp,Main protease,Mpro,Non-structural protein 5,nsp5,SARS coronavirus main proteinase' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -470,7 +484,7 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   306 
-_entity_src_gen.gene_src_common_name               2019-nCoV 
+_entity_src_gen.gene_src_common_name               '2019-nCoV, SARS-CoV-2' 
 _entity_src_gen.gene_src_genus                     ? 
 _entity_src_gen.pdbx_gene_src_gene                 'rep, 1a-1b' 
 _entity_src_gen.gene_src_species                   ? 
@@ -1024,8 +1038,6 @@ _refine_ls_shell.pdbx_fsc_free
 _struct.entry_id                     7NG6 
 _struct.title                        
 'Crystal structure of MG-132 covalently bound to the main protease (3CLpro/Mpro) of SARS-CoV-2 in spacegroup P1 in absence of DTT.' 
-_struct.pdbx_descriptor              
-'Main Protease (E.C.3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.-)' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -17109,11 +17121,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-04-07 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-04-07 
+2 'Structure model' 1 1 2021-11-24 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -17122,6 +17137,57 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Data collection'     
+2 2 'Structure model' 'Database references' 
+3 2 'Structure model' 'Source and taxonomy' 
+4 2 'Structure model' 'Structure summary'   
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation           
+2 2 'Structure model' citation_author    
+3 2 'Structure model' database_2         
+4 2 'Structure model' entity             
+5 2 'Structure model' entity_name_com    
+6 2 'Structure model' entity_src_gen     
+7 2 'Structure model' pdbx_database_proc 
+8 2 'Structure model' struct             
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.country'                    
+2  2 'Structure model' '_citation.journal_abbrev'             
+3  2 'Structure model' '_citation.journal_id_CSD'             
+4  2 'Structure model' '_citation.journal_id_ISSN'            
+5  2 'Structure model' '_citation.journal_volume'             
+6  2 'Structure model' '_citation.pdbx_database_id_DOI'       
+7  2 'Structure model' '_citation.pdbx_database_id_PubMed'    
+8  2 'Structure model' '_citation.title'                      
+9  2 'Structure model' '_citation.year'                       
+10 2 'Structure model' '_database_2.pdbx_DOI'                 
+11 2 'Structure model' '_database_2.pdbx_database_accession'  
+12 2 'Structure model' '_entity.pdbx_description'             
+13 2 'Structure model' '_entity.pdbx_ec'                      
+14 2 'Structure model' '_entity_name_com.name'                
+15 2 'Structure model' '_entity_src_gen.gene_src_common_name' 
+16 2 'Structure model' '_struct.pdbx_center_of_mass_x'        
+17 2 'Structure model' '_struct.pdbx_center_of_mass_y'        
+18 2 'Structure model' '_struct.pdbx_center_of_mass_z'        
+# 
+_space_group_symop.id              1 
+_space_group_symop.operation_xyz   x,y,z 
 # 
 loop_
 _pdbx_refine_tls.id 
@@ -17417,7 +17483,4 @@ _space_group.name_Hall        'P 1'
 _space_group.IT_number        1 
 _space_group.crystal_system   triclinic 
 _space_group.id               1 
-# 
-_space_group_symop.id              1 
-_space_group_symop.operation_xyz   x,y,z 
 # 

@@ -3,14 +3,16 @@ data_7C53
 _entry.id   7C53 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.341 
+_audit_conform.dict_version    5.350 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7C53         
-WWPDB D_1300017052 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7C53         pdb_00007c53 10.2210/pdb7c53/pdb 
+WWPDB D_1300017052 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -40,25 +42,26 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Signal Transduct Target Ther' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2059-3635 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            6 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'The pan-coronavirus fusion inhibitor EK1 targeting the HR1 domain of SARS-CoV-2' 
-_citation.year                      ? 
+_citation.page_first                288 
+_citation.page_last                 288 
+_citation.title                     
+'Structural and functional basis for pan-CoV fusion inhibitors against SARS-CoV-2 and its variants with preclinical evaluation.' 
+_citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1038/s41392-021-00712-2 
+_citation.pdbx_database_id_PubMed   34326308 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -66,8 +69,29 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Zhu, Y.' 1 ? 
-primary 'Sun, F.' 2 ? 
+primary 'Xia, S.'       1  ?                   
+primary 'Lan, Q.'       2  0000-0001-5524-3542 
+primary 'Zhu, Y.'       3  ?                   
+primary 'Wang, C.'      4  ?                   
+primary 'Xu, W.'        5  ?                   
+primary 'Li, Y.'        6  ?                   
+primary 'Wang, L.'      7  ?                   
+primary 'Jiao, F.'      8  ?                   
+primary 'Zhou, J.'      9  ?                   
+primary 'Hua, C.'       10 ?                   
+primary 'Wang, Q.'      11 ?                   
+primary 'Cai, X.'       12 ?                   
+primary 'Wu, Y.'        13 ?                   
+primary 'Gao, J.'       14 ?                   
+primary 'Liu, H.'       15 ?                   
+primary 'Sun, G.'       16 ?                   
+primary 'Munch, J.'     17 0000-0001-7316-7141 
+primary 'Kirchhoff, F.' 18 0000-0002-7052-2360 
+primary 'Yuan, Z.'      19 ?                   
+primary 'Xie, Y.'       20 0000-0002-2416-7708 
+primary 'Sun, F.'       21 ?                   
+primary 'Jiang, S.'     22 0000-0001-8283-7135 
+primary 'Lu, L.'        23 0000-0002-2255-0391 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1042,9 +1066,6 @@ _struct_ncs_ens.details
 # 
 _struct.entry_id                     7C53 
 _struct.title                        'Crystal Structure of SARS-CoV-2 HR1 motif in complex with pan-CoVs inhibitor EK1' 
-_struct.pdbx_descriptor              
-;Spike protein S2',pan-CoVs inhibitor EK1
-;
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -11076,11 +11097,14 @@ _pdbx_struct_conn_angle.value_esd
 20 OE2 ? E GLU 106 ? E GLU 1035 ? 1_555 CA ? H CA . ? E CA 1101 ? 1_555 O   ? M HOH .   ? E HOH 1226 ? 1_555 105.1 ? 
 21 O   ? M HOH .   ? E HOH 1206 ? 1_555 CA ? H CA . ? E CA 1101 ? 1_555 O   ? M HOH .   ? E HOH 1226 ? 1_555 142.3 ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-05-19 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-05-19 
+2 'Structure model' 1 1 2021-12-01 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -11089,6 +11113,39 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.country'                   
+2  2 'Structure model' '_citation.journal_abbrev'            
+3  2 'Structure model' '_citation.journal_id_CSD'            
+4  2 'Structure model' '_citation.journal_id_ISSN'           
+5  2 'Structure model' '_citation.journal_volume'            
+6  2 'Structure model' '_citation.page_first'                
+7  2 'Structure model' '_citation.page_last'                 
+8  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+9  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+10 2 'Structure model' '_citation.title'                     
+11 2 'Structure model' '_citation.year'                      
+12 2 'Structure model' '_database_2.pdbx_DOI'                
+13 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 loop_
 _pdbx_refine_tls.id 

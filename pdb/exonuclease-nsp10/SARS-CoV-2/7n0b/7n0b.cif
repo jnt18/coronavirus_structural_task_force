@@ -3,7 +3,7 @@ data_7N0B
 _entry.id   7N0B 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.347 
+_audit_conform.dict_version    5.350 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,9 +11,9 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7N0B         ? ? 
-WWPDB D_1000256444 ? ? 
-EMDB  EMD-24102    ? ? 
+PDB   7N0B         pdb_00007n0b 10.2210/pdb7n0b/pdb 
+WWPDB D_1000256444 ?            ?                   
+EMDB  EMD-24102    ?            ?                   
 # 
 _pdbx_database_related.db_name        EMDB 
 _pdbx_database_related.details        'Cryo-EM structure of SARS-CoV-2 nsp10-nsp14 (WT)-RNA complex' 
@@ -57,15 +57,15 @@ _citation.journal_id_CSD            0038
 _citation.journal_id_ISSN           1095-9203 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            373 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Structural basis of mismatch recognition by a SARS-CoV-2 proofreading enzyme' 
+_citation.page_first                1142 
+_citation.page_last                 1146 
+_citation.title                     'Structural basis of mismatch recognition by a SARS-CoV-2 proofreading enzyme.' 
 _citation.year                      2021 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1126/science.abi9310 
+_citation.pdbx_database_id_PubMed   34315827 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -75,10 +75,10 @@ _citation_author.name
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
 primary 'Liu, C.'      1 0000-0003-1829-0117 
-primary 'Shi, W.'      2 ?                   
-primary 'Becker, S.T.' 3 ?                   
-primary 'Schatz, D.G.' 4 ?                   
-primary 'Liu, B.'      5 ?                   
+primary 'Shi, W.'      2 0000-0002-0741-6813 
+primary 'Becker, S.T.' 3 0000-0002-6730-803X 
+primary 'Schatz, D.G.' 4 0000-0002-5669-1176 
+primary 'Liu, B.'      5 0000-0002-6581-780X 
 primary 'Yang, Y.'     6 0000-0001-9061-3828 
 # 
 _cell.angle_alpha                  90.00 
@@ -8315,11 +8315,16 @@ _pdbx_struct_conn_angle.value_esd
 47 SG    ? B CYS 452 ? B CYS 452 ? 1_555 ZN ? K ZN . ? B ZN 605 ? 1_555 ND1   ? B HIS 487 ? B HIS 487 ? 1_555 153.9 ? 
 48 SG    ? B CYS 484 ? B CYS 484 ? 1_555 ZN ? K ZN . ? B ZN 605 ? 1_555 ND1   ? B HIS 487 ? B HIS 487 ? 1_555 112.4 ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-07-28 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-07-28 
+2 'Structure model' 1 1 2021-08-04 
+3 'Structure model' 1 2 2021-08-25 
+4 'Structure model' 1 3 2021-09-22 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -8328,6 +8333,43 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' 'Database references' 
+3 4 'Structure model' 'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 3 'Structure model' citation        
+3 3 'Structure model' citation_author 
+4 3 'Structure model' database_2      
+5 4 'Structure model' citation        
+6 4 'Structure model' citation_author 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+2  3 'Structure model' '_citation.pdbx_database_id_PubMed'   
+3  3 'Structure model' '_citation.title'                     
+4  3 'Structure model' '_citation_author.identifier_ORCID'   
+5  3 'Structure model' '_database_2.pdbx_DOI'                
+6  3 'Structure model' '_database_2.pdbx_database_accession' 
+7  4 'Structure model' '_citation.journal_volume'            
+8  4 'Structure model' '_citation.page_first'                
+9  4 'Structure model' '_citation.page_last'                 
+10 4 'Structure model' '_citation_author.identifier_ORCID'   
 # 
 _software.citation_id            ? 
 _software.classification         refinement 

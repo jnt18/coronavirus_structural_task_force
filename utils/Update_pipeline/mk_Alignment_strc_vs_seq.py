@@ -9,10 +9,24 @@ And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
 as part of the Coronavirus Structural Taskforce, insidecorona.net
 '''
 
+verbose = True
+
+def debug_print(message):
+    """
+    Prints, if verbose == True, the message.
+    Otherwise, nothing is printed.
+    """
+    global verbose
+    if verbose:
+        print(message)
+
+
 def main (prot_list, pdb_id, repo_path, taxo):
+    debug_print("seq alignment module")
     for element in prot_list:
         if element != "not_assigned":
-            file_walker(protein_chooser(element, repo_path),pdb_id,taxo)
+            debug_print("element: " + str(element) + " | " + str(pdb_id))
+            file_walker(protein_chooser(element, repo_path), pdb_id, taxo)
 
 def protein_chooser (prot_name, repo_path):
     #which protein should be compared
@@ -20,15 +34,46 @@ def protein_chooser (prot_name, repo_path):
     return repo_path
 
 def seq_finder (path_repo):
+    # check, if sequence_info.fasta exists and create it, if not
+    if not os.path.isfile(os.path.join(path_repo, "sequence_info.fasta")):
+        print("New seuquence_info.fasta has to be created in:")
+        print(os.path.join(path_repo, "sequence_info.fasta"))
+        # get involved proteins
+        prots = os.path.basename(os.path.normpath(path_repo))
+        prots = prots.split("-")
+        print(prots)
+        # get sequences from other fastas
+        fastas = ""
+        for prot in prots:
+            try:
+                file = open(os.path.join(path_repo, "..", prot, "sequence_info.fasta"), 'r')
+                content = file.read()
+                file.close()
+                fastas += content + "\n"
+            except FileNotFoundError:
+                print("ERROR! Alignment was not done, due to missing fasta!")
+                print(path_repo)
+                return        
+        
+        file = open(os.path.join(path_repo, "sequence_info.fasta"), 'w')
+        file.write(fastas)
+        file.close()
+    
     #gets the sequence out of fasta
-    seq_fasta = list(SeqIO.parse(path_repo+"/sequence_info.fasta", "fasta"))
+    seq_fasta = list(SeqIO.parse(
+        os.path.join(path_repo, "sequence_info.fasta"), "fasta"))
     return seq_fasta
 
 def structure_reader(pdb_path):
 #reads the pdb-file and returns an alignable string
 # reads the pdb-file and returns an alignable string
-    try: pdb_data = gemmi.read_structure(pdb_path)[0]
-    except RuntimeError: return ""
+    try:
+        pdb_data = gemmi.read_structure(pdb_path)[0]
+    except RuntimeError:
+        return ""
+    except ValueError:
+        return ""
+    
     i = 0
     seq = ""
     while True:
@@ -82,6 +127,11 @@ def aligner (seq_1, seq_2, doc, model_seq):
 
 def file_walker (path_repo, pdb_id, taxo):
     ncbi_seq = seq_finder(path_repo)
+    if ncbi_seq is None:
+        # error occured
+        return
+        
+    debug_print(path_repo+"/{}/structure_sequence_alignment.txt".format(taxo))
     doc = open(path_repo+"/{}/structure_sequence_alignment.txt".format(taxo), "a+")
 
     for dirpath, dirnames, files in os.walk(path_repo+"/"+taxo):
@@ -93,7 +143,8 @@ def file_walker (path_repo, pdb_id, taxo):
                 pdb_path = dirpath + "/" + "{}.pdb".format(key)
                 prot_seq = structure_reader(cif_path)
                 seq_depo = pdb_seq_reader(pdb_path)
-
+                
+                debug_print(len(ncbi_seq))
                 while i in range(len(ncbi_seq)):
                     if taxo == "SARS-CoV-2":
                         seq_name = ncbi_seq[i].description.split(" ")[1]
@@ -101,5 +152,7 @@ def file_walker (path_repo, pdb_id, taxo):
                         aligner(ncbi_seq[i].seq, seq_depo, doc, False)
                         doc.write(">Deposited genome against structure sequence:\n")
                         aligner(seq_depo, prot_seq, doc, True)
+                        i += 2
+                    else:
                         i += 2
     doc.close()

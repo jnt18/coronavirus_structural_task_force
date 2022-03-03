@@ -1,0 +1,144 @@
+
+=============================== Model properties ==============================
+
+   Number of:
+     all atoms      : 2800
+     H or D atoms   : 0
+     chains         : 1
+     a.a. residues  : 306
+     nucleotides    : 0
+     water          : 379
+     other (ligands): 3
+   Ligands: 7DI:1,DMS:1,H2S:1
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  atoms                 ideal   model   delta   sigma   slack  residual   deviation
+   A   1  SER  C      
+   A   1 BSER  CA          1.52     1.61    -0.09  2.10e-02  1.64e+01   4.1*sigma
+   A   1  SER  C      
+   A   1 ASER  CA          1.52     1.62    -0.10  2.10e-02  2.13e+01   4.6*sigma
+   A 402  DMS  C1     
+   A 402  DMS  S           1.81     1.69     0.12  2.00e-02  3.82e+01   6.2*sigma
+   A 402  DMS  C2     
+   A 402  DMS  S           1.81     1.69     0.13  2.00e-02  4.06e+01   6.4*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.127 (Z=  6.370)
+  Mean delta:    0.020 (Z=  0.973)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 264  MET  CB     
+   A 264  MET  CG     
+   A 264  MET  SD        112.70   100.48    12.22  3.00e+00  1.66e+01   4.1*sigma
+   A  49  MET  N      
+   A  49  MET  CA     
+   A  49  MET  C         111.00   123.30   -12.30  2.80e+00  1.93e+01   4.4*sigma
+   A   1  SER  O      
+   A   1  SER  C      
+   A   1 BSER  CA        120.80   128.28    -7.48  1.70e+00  1.94e+01   4.4*sigma
+   A   1  SER  O      
+   A   1  SER  C      
+   A   1 ASER  CA        120.80   128.35    -7.55  1.70e+00  1.97e+01   4.4*sigma
+   A 298  ARG  O      
+   A 298  ARG  C      
+   A 298 AARG  CA        120.80   132.34   -11.54  1.70e+00  4.60e+01   6.8*sigma
+   A 298  ARG  O      
+   A 298  ARG  C      
+   A 298 BARG  CA        120.80   132.59   -11.79  1.70e+00  4.81e+01   6.9*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   12.298 (Z=  6.936)
+  Mean delta:    1.667 (Z=  0.791)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 181  PHE  CA     
+   A 181  PHE  C      
+   A 182  TYR  N      
+   A 182  TYR  CA        180.00   158.95    21.05  5.00e+00  1.77e+01   4.2*sigma
+   A 164  HIS  CA     
+   A 164  HIS  C      
+   A 165  MET  N      
+   A 165  MET  CA        180.00  -156.46   -23.54  5.00e+00  2.22e+01   4.7*sigma
+
+  Min. delta:    0.004
+  Max. delta:   84.216
+  Mean delta:   13.494
+
+                       ----------Chiral volumes----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A  41  HIS  CA     
+   A  41  HIS  N      
+   A  41  HIS  C      
+   A  41  HIS  CB          2.51     1.71     0.80  2.00e-01  1.60e+01   4.0*sigma
+
+  Min. delta:    0.000
+  Max. delta:    0.801
+  Mean delta:    0.120
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.042
+  Mean delta:    0.008
+
+============================ Molprobity validation ============================
+
+
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values.
+    Bond      :  0.020   0.127   2441
+    Angle     :  1.667  12.298   3323
+    Chirality :  0.120   0.801    377
+    Planarity :  0.008   0.042    433
+    Dihedral  : 13.494  84.216    879
+    Min Nonbonded Distance : 1.181
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 4.61
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  1.64 %
+      Favored  : 98.36 %
+    Rotamer Outliers :  1.12 %
+    Cbeta Deviations :  1.40 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -0.36 (0.45), residues: 308
+    helix: -0.18 (0.49), residues: 90
+    sheet: -0.35 (0.63), residues: 63
+    loop : -0.05 (0.50), residues: 155
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A 277  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  98.36 %
+  Rotamer outliers      =   1.12 %
+  C-beta deviations     =     4
+  Clashscore            =   4.61
+  RMS(bonds)            =   0.0195
+  RMS(angles)           =   1.67
+  MolProbity score      =   1.27
+  Refinement program    = PHENIX

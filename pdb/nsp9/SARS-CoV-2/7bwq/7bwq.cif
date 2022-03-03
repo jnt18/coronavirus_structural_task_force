@@ -3,7 +3,7 @@ data_7BWQ
 _entry.id   7BWQ 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.344 
+_audit_conform.dict_version    5.354 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,8 +11,8 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7BWQ         ? ? 
-WWPDB D_1300016631 ? ? 
+PDB   7BWQ         pdb_00007bwq 10.2210/pdb7bwq/pdb 
+WWPDB D_1300016631 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -53,15 +53,15 @@ _citation.journal_id_CSD            ?
 _citation.journal_id_ISSN           2662-8651 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            1 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Structural basis for the multimerization of nonstructural protein nsp9 from SARS-CoV-2' 
+_citation.page_first                5 
+_citation.page_last                 5 
+_citation.title                     'Structural basis for the multimerization of nonstructural protein nsp9 from SARS-CoV-2.' 
 _citation.year                      2020 
 _citation.database_id_CSD           ? 
 _citation.pdbx_database_id_DOI      10.1186/s43556-020-00005-0 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_PubMed   35006420 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -846,7 +846,6 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     7BWQ 
 _struct.title                        'Structure of nonstructural protein Nsp9 from SARS-CoV-2' 
-_struct.pdbx_descriptor              'SARS-CoV-2 Nsp9' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -12074,11 +12073,14 @@ _pdbx_struct_oper_list.vector[3]
 2 'crystal symmetry operation' 8_555 x+1/2,-y+1/2,-z 1.0000000000 0.0000000000 0.0000000000 44.3565000000 0.0000000000 
 -1.0000000000 0.0000000000 67.2225000000 0.0000000000 0.0000000000 -1.0000000000 0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-07-21 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-07-21 
+2 'Structure model' 1 1 2022-02-16 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -12087,6 +12089,32 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation   
+2 2 'Structure model' database_2 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_citation.journal_volume'            
+2 2 'Structure model' '_citation.page_first'                
+3 2 'Structure model' '_citation.page_last'                 
+4 2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+5 2 'Structure model' '_citation.title'                     
+6 2 'Structure model' '_database_2.pdbx_DOI'                
+7 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 loop_
 _pdbx_refine_tls.id 

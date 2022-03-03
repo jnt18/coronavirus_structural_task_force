@@ -3,14 +3,16 @@ data_6W02
 _entry.id   6W02 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.337 
+_audit_conform.dict_version    5.348 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   6W02         
-WWPDB D_1000247369 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   6W02         pdb_00006w02 10.2210/pdb6w02/pdb 
+WWPDB D_1000247369 ?            ?                   
 # 
 _pdbx_database_related.db_name        PDB 
 _pdbx_database_related.details        'the same protein app-form' 
@@ -39,7 +41,7 @@ _audit_author.identifier_ORCID
 'Jedrzejczak, R.'                                               3 ? 
 'Maltseva, N.'                                                  4 ? 
 'Endres, M.'                                                    5 ? 
-'Mececar, A.'                                                   6 ? 
+'Mesecar, A.'                                                   6 ? 
 'Joachimiak, A.'                                                7 ? 
 'Center for Structural Genomics of Infectious Diseases (CSGID)' 8 ? 
 # 
@@ -888,7 +890,6 @@ _refine_ls_shell.pdbx_fsc_free
 _struct.entry_id                     6W02 
 _struct.title                        
 'Crystal Structure of ADP ribose phosphatase of NSP3 from SARS CoV-2 in the complex with ADP ribose' 
-_struct.pdbx_descriptor              'Non-structural protein 3' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -7618,6 +7619,7 @@ _pdbx_audit_revision_history.revision_date
 4 'Structure model' 2 2 2020-09-30 
 5 'Structure model' 2 3 2020-10-14 
 6 'Structure model' 2 4 2021-01-27 
+7 'Structure model' 2 5 2021-08-18 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -7647,6 +7649,8 @@ _pdbx_audit_revision_group.group
 13 5 'Structure model' 'Source and taxonomy'  
 14 5 'Structure model' 'Structure summary'    
 15 6 'Structure model' 'Structure summary'    
+16 7 'Structure model' 'Database references'  
+17 7 'Structure model' 'Structure summary'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -7682,6 +7686,8 @@ _pdbx_audit_revision_category.category
 27 5 'Structure model' struct                          
 28 6 'Structure model' entity                          
 29 6 'Structure model' entity_name_com                 
+30 7 'Structure model' audit_author                    
+31 7 'Structure model' database_2                      
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -7740,6 +7746,12 @@ _pdbx_audit_revision_item.item
 50 5 'Structure model' '_struct.pdbx_descriptor'                       
 51 6 'Structure model' '_entity.pdbx_ec'                               
 52 6 'Structure model' '_entity_name_com.name'                         
+53 7 'Structure model' '_audit_author.name'                            
+54 7 'Structure model' '_database_2.pdbx_DOI'                          
+55 7 'Structure model' '_database_2.pdbx_database_accession'           
+# 
+_space_group_symop.id              1 
+_space_group_symop.operation_xyz   x,y,z 
 # 
 loop_
 _pdbx_refine_tls.id 
@@ -8057,7 +8069,4 @@ _space_group.name_Hall        'P 1'
 _space_group.IT_number        1 
 _space_group.crystal_system   triclinic 
 _space_group.id               1 
-# 
-_space_group_symop.id              1 
-_space_group_symop.operation_xyz   x,y,z 
 # 

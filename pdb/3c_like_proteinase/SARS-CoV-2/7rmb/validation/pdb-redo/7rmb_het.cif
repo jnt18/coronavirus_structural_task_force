@@ -1,0 +1,296 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5Z7      5Z7 '.                                   ' .                  35  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_5Z7
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 5Z7           CL23   CL   CL        0.000      5.683   -1.385   17.656
+ 5Z7           C12    C    CR6       0.000      6.767   -0.465   18.674
+ 5Z7           C11    C    CR16      0.000      8.136   -0.672   18.560
+ 5Z7           H11    H    H         0.000      8.515   -1.397   17.850
+ 5Z7           C13    C    CR6       0.000      6.258    0.456   19.574
+ 5Z7           BR24   BR   BR        0.000      4.395    0.753   19.742
+ 5Z7           C14    C    CR16      0.000      7.144    1.181   20.365
+ 5Z7           H14    H    H         0.000      6.759    1.911   21.066
+ 5Z7           C15    C    CR16      0.000      8.502    0.983   20.269
+ 5Z7           H15    H    H         0.000      9.172    1.551   20.902
+ 5Z7           C10    C    CR6       0.000      9.028    0.054   19.360
+ 5Z7           N7     N    N         0.000     10.407   -0.139   19.284
+ 5Z7           C6     C    CH2       0.000     10.859   -1.241   18.431
+ 5Z7           H62    H    H         0.000     10.933   -0.903   17.395
+ 5Z7           H61    H    H         0.000     10.154   -2.072   18.492
+ 5Z7           C8     C    CH2       0.000     11.309    1.007   19.253
+ 5Z7           H81    H    H         0.000     10.961    1.752   19.971
+ 5Z7           H82    H    H         0.000     11.301    1.438   18.250
+ 5Z7           C9     C    CH2       0.000     12.726    0.577   19.611
+ 5Z7           H91    H    H         0.000     12.751    0.315   20.671
+ 5Z7           H92    H    H         0.000     13.400    1.417   19.429
+ 5Z7           N4     N    N         0.000     13.152   -0.574   18.812
+ 5Z7           C5     C    CH2       0.000     12.218   -1.695   18.913
+ 5Z7           H52    H    H         0.000     12.146   -2.024   19.952
+ 5Z7           H51    H    H         0.000     12.567   -2.524   18.294
+ 5Z7           C2     C    C         0.000     14.219   -0.472   18.005
+ 5Z7           O3     O    O         0.000     14.886    0.546   17.890
+ 5Z7           C1     C    CR6       0.000     14.671   -1.652   17.189
+ 5Z7           N16    N    NRD6      0.000     15.397   -2.543   17.923
+ 5Z7           C22    C    CSP       0.000     14.424   -1.866   15.882
+ 5Z7           C20    C    CR6       0.000     14.951   -3.070   15.288
+ 5Z7           O21    O    O         0.000     14.813   -3.410   14.135
+ 5Z7           N19    N    NRD6      0.000     15.673   -3.902   16.129
+ 5Z7           C17    C    CR6       0.000     15.930   -3.707   17.452
+ 5Z7           O18    O    O         0.000     16.574   -4.483   18.137
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 5Z7      CL23   n/a    C12    START
+ 5Z7      C12    CL23   C13    .
+ 5Z7      C11    C12    H11    .
+ 5Z7      H11    C11    .      .
+ 5Z7      C13    C12    C14    .
+ 5Z7      BR24   C13    .      .
+ 5Z7      C14    C13    C15    .
+ 5Z7      H14    C14    .      .
+ 5Z7      C15    C14    C10    .
+ 5Z7      H15    C15    .      .
+ 5Z7      C10    C15    N7     .
+ 5Z7      N7     C10    C8     .
+ 5Z7      C6     N7     H61    .
+ 5Z7      H62    C6     .      .
+ 5Z7      H61    C6     .      .
+ 5Z7      C8     N7     C9     .
+ 5Z7      H81    C8     .      .
+ 5Z7      H82    C8     .      .
+ 5Z7      C9     C8     N4     .
+ 5Z7      H91    C9     .      .
+ 5Z7      H92    C9     .      .
+ 5Z7      N4     C9     C2     .
+ 5Z7      C5     N4     H51    .
+ 5Z7      H52    C5     .      .
+ 5Z7      H51    C5     .      .
+ 5Z7      C2     N4     C1     .
+ 5Z7      O3     C2     .      .
+ 5Z7      C1     C2     C22    .
+ 5Z7      N16    C1     .      .
+ 5Z7      C22    C1     C20    .
+ 5Z7      C20    C22    N19    .
+ 5Z7      O21    C20    .      .
+ 5Z7      N19    C20    C17    .
+ 5Z7      C17    N19    O18    .
+ 5Z7      O18    C17    .      END
+ 5Z7      C10    C11    .    ADD
+ 5Z7      C17    N16    .    ADD
+ 5Z7      C5     C6     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 5Z7      C1     C2        single      1.500    0.020
+ 5Z7      C22    C1        double      1.285    0.020
+ 5Z7      N16    C1        aromatic    1.350    0.020
+ 5Z7      C10    C11       aromatic    1.390    0.020
+ 5Z7      C10    C15       aromatic    1.390    0.020
+ 5Z7      N7     C10       single      1.400    0.020
+ 5Z7      C11    C12       aromatic    1.390    0.020
+ 5Z7      C13    C12       aromatic    1.384    0.020
+ 5Z7      C12    CL23      single      1.795    0.020
+ 5Z7      C14    C13       aromatic    1.390    0.020
+ 5Z7      BR24   C13       single      1.890    0.020
+ 5Z7      C15    C14       aromatic    1.390    0.020
+ 5Z7      C17    N16       aromatic    1.350    0.020
+ 5Z7      C17    N19       aromatic    1.350    0.020
+ 5Z7      O18    C17       double      1.250    0.020
+ 5Z7      C2     N4        single      1.330    0.020
+ 5Z7      O3     C2        double      1.220    0.020
+ 5Z7      C20    C22       aromatic    1.285    0.020
+ 5Z7      N19    C20       aromatic    1.350    0.020
+ 5Z7      O21    C20       double      1.250    0.020
+ 5Z7      C5     C6        single      1.524    0.020
+ 5Z7      C5     N4        single      1.455    0.020
+ 5Z7      C6     N7        single      1.455    0.020
+ 5Z7      C9     C8        single      1.524    0.020
+ 5Z7      C8     N7        single      1.455    0.020
+ 5Z7      N4     C9        single      1.455    0.020
+ 5Z7      H11    C11       single      1.083    0.020
+ 5Z7      H14    C14       single      1.083    0.020
+ 5Z7      H15    C15       single      1.083    0.020
+ 5Z7      H51    C5        single      1.092    0.020
+ 5Z7      H52    C5        single      1.092    0.020
+ 5Z7      H61    C6        single      1.092    0.020
+ 5Z7      H62    C6        single      1.092    0.020
+ 5Z7      H81    C8        single      1.092    0.020
+ 5Z7      H82    C8        single      1.092    0.020
+ 5Z7      H91    C9        single      1.092    0.020
+ 5Z7      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 5Z7      CL23   C12    C11     120.000    3.000
+ 5Z7      CL23   C12    C13     120.000    3.000
+ 5Z7      C11    C12    C13     120.000    3.000
+ 5Z7      C12    C11    H11     120.000    3.000
+ 5Z7      C12    C11    C10     120.000    3.000
+ 5Z7      H11    C11    C10     120.000    3.000
+ 5Z7      C12    C13    BR24    120.000    3.000
+ 5Z7      C12    C13    C14     120.000    3.000
+ 5Z7      BR24   C13    C14     120.000    3.000
+ 5Z7      C13    C14    H14     120.000    3.000
+ 5Z7      C13    C14    C15     120.000    3.000
+ 5Z7      H14    C14    C15     120.000    3.000
+ 5Z7      C14    C15    H15     120.000    3.000
+ 5Z7      C14    C15    C10     120.000    3.000
+ 5Z7      H15    C15    C10     120.000    3.000
+ 5Z7      C15    C10    N7      120.000    3.000
+ 5Z7      C15    C10    C11     120.000    3.000
+ 5Z7      N7     C10    C11     120.000    3.000
+ 5Z7      C10    N7     C6      120.000    3.000
+ 5Z7      C10    N7     C8      120.000    3.000
+ 5Z7      C6     N7     C8      120.000    3.000
+ 5Z7      N7     C6     H62     109.470    3.000
+ 5Z7      N7     C6     H61     109.470    3.000
+ 5Z7      N7     C6     C5      105.000    3.000
+ 5Z7      H62    C6     H61     107.900    3.000
+ 5Z7      H62    C6     C5      109.470    3.000
+ 5Z7      H61    C6     C5      109.470    3.000
+ 5Z7      N7     C8     H81     109.470    3.000
+ 5Z7      N7     C8     H82     109.470    3.000
+ 5Z7      N7     C8     C9      105.000    3.000
+ 5Z7      H81    C8     H82     107.900    3.000
+ 5Z7      H81    C8     C9      109.470    3.000
+ 5Z7      H82    C8     C9      109.470    3.000
+ 5Z7      C8     C9     H91     109.470    3.000
+ 5Z7      C8     C9     H92     109.470    3.000
+ 5Z7      C8     C9     N4      105.000    3.000
+ 5Z7      H91    C9     H92     107.900    3.000
+ 5Z7      H91    C9     N4      109.470    3.000
+ 5Z7      H92    C9     N4      109.470    3.000
+ 5Z7      C9     N4     C5      120.000    3.000
+ 5Z7      C9     N4     C2      127.000    3.000
+ 5Z7      C5     N4     C2      127.000    3.000
+ 5Z7      N4     C5     H52     109.470    3.000
+ 5Z7      N4     C5     H51     109.470    3.000
+ 5Z7      N4     C5     C6      105.000    3.000
+ 5Z7      H52    C5     H51     107.900    3.000
+ 5Z7      H52    C5     C6      109.470    3.000
+ 5Z7      H51    C5     C6      109.470    3.000
+ 5Z7      N4     C2     O3      123.000    3.000
+ 5Z7      N4     C2     C1      120.000    3.000
+ 5Z7      O3     C2     C1      120.500    3.000
+ 5Z7      C2     C1     N16     120.000    3.000
+ 5Z7      C2     C1     C22     120.000    3.000
+ 5Z7      N16    C1     C22     120.000    3.000
+ 5Z7      C1     N16    C17     120.000    3.000
+ 5Z7      C1     C22    C20     180.000    3.000
+ 5Z7      C22    C20    O21     120.000    3.000
+ 5Z7      C22    C20    N19     120.000    3.000
+ 5Z7      O21    C20    N19     120.000    3.000
+ 5Z7      C20    N19    C17     120.000    3.000
+ 5Z7      N19    C17    O18     120.000    3.000
+ 5Z7      N19    C17    N16     120.000    3.000
+ 5Z7      O18    C17    N16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 5Z7      CONST_1          CL23   C12    C11    C10                0.000            0.000   0
+ 5Z7      CONST_2          CL23   C12    C13    C14                0.000            0.000   0
+ 5Z7      CONST_3          C12    C13    C14    C15                0.000            0.000   0
+ 5Z7      CONST_4          C13    C14    C15    C10                0.000            0.000   0
+ 5Z7      CONST_5          C14    C15    C10    N7                 0.000            0.000   0
+ 5Z7      CONST_6          C15    C10    C11    C12                0.000            0.000   0
+ 5Z7      var_1            C15    C10    N7     C8               -45.424           20.000   3
+ 5Z7      var_2            C10    N7     C6     C5              -155.285           20.000   3
+ 5Z7      var_3            C10    N7     C8     C9               162.103           20.000   3
+ 5Z7      var_4            N7     C8     C9     N4               180.000           20.000   3
+ 5Z7      var_5            C8     C9     N4     C2               119.309           20.000   3
+ 5Z7      var_6            C9     N4     C5     C6                59.433           20.000   3
+ 5Z7      var_7            N4     C5     C6     N7               180.000           20.000   3
+ 5Z7      var_8            C9     N4     C2     C1               180.000           20.000   2
+ 5Z7      var_9            N4     C2     C1     C22              100.342           20.000   3
+ 5Z7      CONST_7          C2     C1     N16    C17                0.000            0.000   0
+ 5Z7      CONST_8          C2     C1     C22    C20             -179.929            0.000   0
+ 5Z7      CONST_9          C1     C22    C20    N19               -0.115            0.000   0
+ 5Z7      CONST_10         C22    C20    N19    C17                0.000            0.000   0
+ 5Z7      CONST_11         C20    N19    C17    O18                0.000            0.000   0
+ 5Z7      CONST_12         N19    C17    N16    C1                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 5Z7      plan-1            C1        0.020
+ 5Z7      plan-1            C2        0.020
+ 5Z7      plan-1            C22       0.020
+ 5Z7      plan-1            N16       0.020
+ 5Z7      plan-1            C17       0.020
+ 5Z7      plan-1            C20       0.020
+ 5Z7      plan-1            N19       0.020
+ 5Z7      plan-1            O18       0.020
+ 5Z7      plan-1            O21       0.020
+ 5Z7      plan-2            C10       0.020
+ 5Z7      plan-2            C11       0.020
+ 5Z7      plan-2            C15       0.020
+ 5Z7      plan-2            N7        0.020
+ 5Z7      plan-2            C12       0.020
+ 5Z7      plan-2            C13       0.020
+ 5Z7      plan-2            C14       0.020
+ 5Z7      plan-2            H11       0.020
+ 5Z7      plan-2            CL23      0.020
+ 5Z7      plan-2            BR24      0.020
+ 5Z7      plan-2            H14       0.020
+ 5Z7      plan-2            H15       0.020
+ 5Z7      plan-3            C2        0.020
+ 5Z7      plan-3            C1        0.020
+ 5Z7      plan-3            N4        0.020
+ 5Z7      plan-3            O3        0.020
+ 5Z7      plan-4            N4        0.020
+ 5Z7      plan-4            C2        0.020
+ 5Z7      plan-4            C5        0.020
+ 5Z7      plan-4            C9        0.020
+ 5Z7      plan-5            N7        0.020
+ 5Z7      plan-5            C10       0.020
+ 5Z7      plan-5            C6        0.020
+ 5Z7      plan-5            C8        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
