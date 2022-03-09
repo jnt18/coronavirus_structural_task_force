@@ -3,7 +3,7 @@ data_7MBI
 _entry.id   7MBI 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.346 
+_audit_conform.dict_version    5.356 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,8 +11,8 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7MBI         ? ? 
-WWPDB D_1000255907 ? ? 
+PDB   7MBI         pdb_00007mbi 10.2210/pdb7mbi/pdb 
+WWPDB D_1000255907 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -53,14 +53,14 @@ _citation.journal_id_CSD            0151
 _citation.journal_id_ISSN           0022-2623 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            65 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                2905 
+_citation.page_last                 2925 
 _citation.title                     
 ;Peptidomimetic alpha-Acyloxymethylketone Warheads with Six-Membered Lactam P1 Glutamine Mimic: SARS-CoV-2 3CL Protease Inhibition, Coronavirus Antiviral Activity, and in Vitro Biological Stability.
 ;
-_citation.year                      2021 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
 _citation.pdbx_database_id_DOI      10.1021/acs.jmedchem.1c00616 
 _citation.pdbx_database_id_PubMed   34242027 
@@ -22182,6 +22182,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2021-07-21 
 2 'Structure model' 1 1 2021-07-28 
+3 'Structure model' 1 2 2022-03-09 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -22191,23 +22192,46 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Database references' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' Advisory              
+3 3 'Structure model' 'Database references' 
 # 
-_pdbx_audit_revision_category.ordinal             1 
-_pdbx_audit_revision_category.revision_ordinal    2 
-_pdbx_audit_revision_category.data_content_type   'Structure model' 
-_pdbx_audit_revision_category.category            citation 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation                     
+2 3 'Structure model' citation                     
+3 3 'Structure model' database_2                   
+4 3 'Structure model' pdbx_unobs_or_zero_occ_atoms 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
-2 2 'Structure model' '_citation.title'                   
+1 2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+2 2 'Structure model' '_citation.title'                     
+3 3 'Structure model' '_citation.journal_volume'            
+4 3 'Structure model' '_citation.page_first'                
+5 3 'Structure model' '_citation.page_last'                 
+6 3 'Structure model' '_citation.year'                      
+7 3 'Structure model' '_database_2.pdbx_DOI'                
+8 3 'Structure model' '_database_2.pdbx_database_accession' 
+# 
+loop_
+_space_group_symop.id 
+_space_group_symop.operation_xyz 
+1 x,y,z           
+2 x+1/2,-y+1/2,-z 
+3 -x,y+1/2,-z+1/2 
+4 -x+1/2,-y,z+1/2 
 # 
 loop_
 _software.citation_id 
@@ -22463,6 +22487,25 @@ _pdbx_validate_planes.type
 6 1 ARG D 279 ? ? 0.236 'SIDE CHAIN' 
 # 
 loop_
+_pdbx_unobs_or_zero_occ_atoms.id 
+_pdbx_unobs_or_zero_occ_atoms.PDB_model_num 
+_pdbx_unobs_or_zero_occ_atoms.polymer_flag 
+_pdbx_unobs_or_zero_occ_atoms.occupancy_flag 
+_pdbx_unobs_or_zero_occ_atoms.auth_asym_id 
+_pdbx_unobs_or_zero_occ_atoms.auth_comp_id 
+_pdbx_unobs_or_zero_occ_atoms.auth_seq_id 
+_pdbx_unobs_or_zero_occ_atoms.PDB_ins_code 
+_pdbx_unobs_or_zero_occ_atoms.auth_atom_id 
+_pdbx_unobs_or_zero_occ_atoms.label_alt_id 
+_pdbx_unobs_or_zero_occ_atoms.label_asym_id 
+_pdbx_unobs_or_zero_occ_atoms.label_comp_id 
+_pdbx_unobs_or_zero_occ_atoms.label_seq_id 
+_pdbx_unobs_or_zero_occ_atoms.label_atom_id 
+1 1 Y 0 B CYS 128 ? CA B B CYS 128 CA 
+2 1 Y 0 B CYS 128 ? CB B B CYS 128 CB 
+3 1 Y 0 B CYS 128 ? SG B B CYS 128 SG 
+# 
+loop_
 _pdbx_unobs_or_zero_occ_residues.id 
 _pdbx_unobs_or_zero_occ_residues.PDB_model_num 
 _pdbx_unobs_or_zero_occ_residues.polymer_flag 
@@ -22520,12 +22563,4 @@ _space_group.name_Hall        'P 2ac 2ab'
 _space_group.IT_number        19 
 _space_group.crystal_system   orthorhombic 
 _space_group.id               1 
-# 
-loop_
-_space_group_symop.id 
-_space_group_symop.operation_xyz 
-1 x,y,z           
-2 x+1/2,-y+1/2,-z 
-3 -x,y+1/2,-z+1/2 
-4 -x+1/2,-y,z+1/2 
 # 
