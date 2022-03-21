@@ -1,0 +1,236 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+I8D      I8D '.                                   ' .                  27  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_I8D
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ I8D           O1     O    O         0.000     45.484   27.804  109.550
+ I8D           C7     C    C         0.000     46.043   28.504  110.392
+ I8D           N1     N    N         0.000     47.242   28.186  110.927
+ I8D           C11    C    CH2       0.000     47.847   28.843  112.096
+ I8D           H111   H    H         0.000     47.251   29.721  112.355
+ I8D           H112   H    H         0.000     48.861   29.156  111.839
+ I8D           C10    C    CH2       0.000     47.893   27.895  113.278
+ I8D           H101   H    H         0.000     46.863   27.611  113.502
+ I8D           H102   H    H         0.000     48.307   28.453  114.121
+ I8D           S1     S    S2        0.000     48.878   26.413  112.994
+ I8D           C9     C    CH2       0.000     48.145   25.954  111.413
+ I8D           H91    H    H         0.000     47.135   25.592  111.616
+ I8D           H92    H    H         0.000     48.746   25.141  111.000
+ I8D           C8     C    CH2       0.000     48.084   27.095  110.418
+ I8D           H82    H    H         0.000     47.669   26.721  109.479
+ I8D           H81    H    H         0.000     49.097   27.465  110.245
+ I8D           C4     C    CR6       0.000     45.327   29.741  110.856
+ I8D           C3     C    CR16      0.000     45.971   30.972  110.853
+ I8D           H3     H    H         0.000     47.001   31.042  110.526
+ I8D           C2     C    CR16      0.000     45.302   32.106  111.266
+ I8D           H2     H    H         0.000     45.796   33.070  111.257
+ I8D           C1     C    CR6       0.000     43.997   31.994  111.689
+ I8D           CL1    CL   CL        0.000     43.176   33.422  112.232
+ I8D           C6     C    CR16      0.000     43.331   30.792  111.704
+ I8D           H6     H    H         0.000     42.301   30.733  112.034
+ I8D           C5     C    CR16      0.000     44.007   29.659  111.287
+ I8D           H5     H    H         0.000     43.504   28.700  111.296
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ I8D      O1     n/a    C7     START
+ I8D      C7     O1     C4     .
+ I8D      N1     C7     C11    .
+ I8D      C11    N1     C10    .
+ I8D      H111   C11    .      .
+ I8D      H112   C11    .      .
+ I8D      C10    C11    S1     .
+ I8D      H101   C10    .      .
+ I8D      H102   C10    .      .
+ I8D      S1     C10    C9     .
+ I8D      C9     S1     C8     .
+ I8D      H91    C9     .      .
+ I8D      H92    C9     .      .
+ I8D      C8     C9     H81    .
+ I8D      H82    C8     .      .
+ I8D      H81    C8     .      .
+ I8D      C4     C7     C3     .
+ I8D      C3     C4     C2     .
+ I8D      H3     C3     .      .
+ I8D      C2     C3     C1     .
+ I8D      H2     C2     .      .
+ I8D      C1     C2     C6     .
+ I8D      CL1    C1     .      .
+ I8D      C6     C1     C5     .
+ I8D      H6     C6     .      .
+ I8D      C5     C6     H5     .
+ I8D      H5     C5     .      END
+ I8D      N1     C8     .    ADD
+ I8D      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ I8D      N1     C7        single      1.330    0.020
+ I8D      N1     C8        single      1.455    0.020
+ I8D      C11    N1        single      1.455    0.020
+ I8D      C4     C5        aromatic    1.390    0.020
+ I8D      C4     C7        single      1.500    0.020
+ I8D      C3     C4        aromatic    1.390    0.020
+ I8D      C5     C6        aromatic    1.390    0.020
+ I8D      C6     C1        aromatic    1.390    0.020
+ I8D      C7     O1        double      1.220    0.020
+ I8D      C8     C9        single      1.524    0.020
+ I8D      S1     C10       single      1.762    0.020
+ I8D      C10    C11       single      1.524    0.020
+ I8D      CL1    C1        single      1.795    0.020
+ I8D      C1     C2        aromatic    1.390    0.020
+ I8D      C2     C3        aromatic    1.390    0.020
+ I8D      C9     S1        single      1.762    0.020
+ I8D      H5     C5        single      1.083    0.020
+ I8D      H6     C6        single      1.083    0.020
+ I8D      H81    C8        single      1.092    0.020
+ I8D      H82    C8        single      1.092    0.020
+ I8D      H101   C10       single      1.092    0.020
+ I8D      H102   C10       single      1.092    0.020
+ I8D      H2     C2        single      1.083    0.020
+ I8D      H3     C3        single      1.083    0.020
+ I8D      H91    C9        single      1.092    0.020
+ I8D      H92    C9        single      1.092    0.020
+ I8D      H111   C11       single      1.092    0.020
+ I8D      H112   C11       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ I8D      O1     C7     N1      123.000    3.000
+ I8D      O1     C7     C4      120.500    3.000
+ I8D      N1     C7     C4      120.000    3.000
+ I8D      C7     N1     C11     127.000    3.000
+ I8D      C7     N1     C8      127.000    3.000
+ I8D      C11    N1     C8      120.000    3.000
+ I8D      N1     C11    H111    109.470    3.000
+ I8D      N1     C11    H112    109.470    3.000
+ I8D      N1     C11    C10     105.000    3.000
+ I8D      H111   C11    H112    107.900    3.000
+ I8D      H111   C11    C10     109.470    3.000
+ I8D      H112   C11    C10     109.470    3.000
+ I8D      C11    C10    H101    109.470    3.000
+ I8D      C11    C10    H102    109.470    3.000
+ I8D      C11    C10    S1      109.500    3.000
+ I8D      H101   C10    H102    107.900    3.000
+ I8D      H101   C10    S1      109.500    3.000
+ I8D      H102   C10    S1      109.500    3.000
+ I8D      C10    S1     C9       97.204    3.000
+ I8D      S1     C9     H91     109.500    3.000
+ I8D      S1     C9     H92     109.500    3.000
+ I8D      S1     C9     C8      109.500    3.000
+ I8D      H91    C9     H92     107.900    3.000
+ I8D      H91    C9     C8      109.470    3.000
+ I8D      H92    C9     C8      109.470    3.000
+ I8D      C9     C8     H82     109.470    3.000
+ I8D      C9     C8     H81     109.470    3.000
+ I8D      C9     C8     N1      105.000    3.000
+ I8D      H82    C8     H81     107.900    3.000
+ I8D      H82    C8     N1      109.470    3.000
+ I8D      H81    C8     N1      109.470    3.000
+ I8D      C7     C4     C3      120.000    3.000
+ I8D      C7     C4     C5      120.000    3.000
+ I8D      C3     C4     C5      120.000    3.000
+ I8D      C4     C3     H3      120.000    3.000
+ I8D      C4     C3     C2      120.000    3.000
+ I8D      H3     C3     C2      120.000    3.000
+ I8D      C3     C2     H2      120.000    3.000
+ I8D      C3     C2     C1      120.000    3.000
+ I8D      H2     C2     C1      120.000    3.000
+ I8D      C2     C1     CL1     120.000    3.000
+ I8D      C2     C1     C6      120.000    3.000
+ I8D      CL1    C1     C6      120.000    3.000
+ I8D      C1     C6     H6      120.000    3.000
+ I8D      C1     C6     C5      120.000    3.000
+ I8D      H6     C6     C5      120.000    3.000
+ I8D      C6     C5     H5      120.000    3.000
+ I8D      C6     C5     C4      120.000    3.000
+ I8D      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ I8D      var_1            O1     C7     N1     C11              180.000           20.000   2
+ I8D      var_2            C7     N1     C8     C9              -110.892           20.000   3
+ I8D      var_3            C7     N1     C11    C10              111.465           20.000   3
+ I8D      var_4            N1     C11    C10    S1               180.000           20.000   3
+ I8D      var_5            C11    C10    S1     C9               -49.495           20.000   3
+ I8D      var_6            C10    S1     C9     C8                49.685           20.000   3
+ I8D      var_7            S1     C9     C8     N1               180.000           20.000   3
+ I8D      var_8            O1     C7     C4     C3              -128.810           20.000   3
+ I8D      CONST_1          C7     C4     C5     C6                 0.000            0.000   0
+ I8D      CONST_2          C7     C4     C3     C2                 0.000            0.000   0
+ I8D      CONST_3          C4     C3     C2     C1                 0.000            0.000   0
+ I8D      CONST_4          C3     C2     C1     C6                 0.000            0.000   0
+ I8D      CONST_5          C2     C1     C6     C5                 0.000            0.000   0
+ I8D      CONST_6          C1     C6     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ I8D      plan-1            N1        0.020
+ I8D      plan-1            C7        0.020
+ I8D      plan-1            C8        0.020
+ I8D      plan-1            C11       0.020
+ I8D      plan-2            C4        0.020
+ I8D      plan-2            C5        0.020
+ I8D      plan-2            C7        0.020
+ I8D      plan-2            C3        0.020
+ I8D      plan-2            C6        0.020
+ I8D      plan-2            C1        0.020
+ I8D      plan-2            C2        0.020
+ I8D      plan-2            H5        0.020
+ I8D      plan-2            H6        0.020
+ I8D      plan-2            CL1       0.020
+ I8D      plan-2            H2        0.020
+ I8D      plan-2            H3        0.020
+ I8D      plan-3            C7        0.020
+ I8D      plan-3            N1        0.020
+ I8D      plan-3            C4        0.020
+ I8D      plan-3            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

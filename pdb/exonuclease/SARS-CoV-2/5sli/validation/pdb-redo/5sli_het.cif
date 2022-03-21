@@ -1,0 +1,197 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LL0      LL0 '.                                   ' .                  20  14 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LL0
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LL0           F2     F    F         0.000     70.243    2.042   56.436
+ LL0           C7     C    CH1       0.000     71.039    2.156   55.369
+ LL0           H7     H    H         0.000     70.458    2.246   54.440
+ LL0           F1     F    F         0.000     71.755    1.035   55.390
+ LL0           O3     O    O2        0.000     71.868    3.210   55.539
+ LL0           C6     C    CR6       0.000     71.574    4.326   54.816
+ LL0           C5     C    CR16      0.000     70.508    5.144   55.128
+ LL0           H5     H    H         0.000     69.858    4.894   55.957
+ LL0           C1     C    CR6       0.000     72.382    4.632   53.710
+ LL0           S1     S    ST        0.000     73.772    3.623   53.298
+ LL0           O1     O    OS       -1.000     74.371    4.201   52.133
+ LL0           O2     O    OS       -1.000     73.329    2.262   53.250
+ LL0           N1     N    N         0.000     74.850    3.772   54.478
+ LL0           HN1    H    H         0.000     75.693    3.299   54.452
+ LL0           C2     C    CR16      0.000     72.136    5.776   52.970
+ LL0           H2     H    H         0.000     72.776    6.031   52.134
+ LL0           C3     C    CR16      0.000     71.071    6.592   53.301
+ LL0           H3     H    H         0.000     70.863    7.476   52.711
+ LL0           C4     C    CR16      0.000     70.271    6.281   54.383
+ LL0           H4     H    H         0.000     69.450    6.935   54.649
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LL0      F2     n/a    C7     START
+ LL0      C7     F2     O3     .
+ LL0      H7     C7     .      .
+ LL0      F1     C7     .      .
+ LL0      O3     C7     C6     .
+ LL0      C6     O3     C1     .
+ LL0      C5     C6     H5     .
+ LL0      H5     C5     .      .
+ LL0      C1     C6     C2     .
+ LL0      S1     C1     N1     .
+ LL0      O1     S1     .      .
+ LL0      O2     S1     .      .
+ LL0      N1     S1     HN1    .
+ LL0      HN1    N1     .      .
+ LL0      C2     C1     C3     .
+ LL0      H2     C2     .      .
+ LL0      C3     C2     C4     .
+ LL0      H3     C3     .      .
+ LL0      C4     C3     H4     .
+ LL0      H4     C4     .      END
+ LL0      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LL0      N1     S1        double      1.520    0.020
+ LL0      C4     C5        aromatic    1.390    0.020
+ LL0      C4     C3        aromatic    1.390    0.020
+ LL0      C5     C6        aromatic    1.390    0.020
+ LL0      C1     C6        aromatic    1.384    0.020
+ LL0      C6     O3        single      1.370    0.020
+ LL0      O3     C7        single      1.426    0.020
+ LL0      F1     C7        single      1.370    0.020
+ LL0      C7     F2        single      1.370    0.020
+ LL0      O1     S1        deloc       1.480    0.020
+ LL0      O2     S1        deloc       1.480    0.020
+ LL0      S1     C1        double      1.595    0.020
+ LL0      C2     C1        aromatic    1.390    0.020
+ LL0      C3     C2        aromatic    1.390    0.020
+ LL0      HN1    N1        single      0.954    0.020
+ LL0      H4     C4        single      1.083    0.020
+ LL0      H5     C5        single      1.083    0.020
+ LL0      H7     C7        single      1.099    0.020
+ LL0      H2     C2        single      1.083    0.020
+ LL0      H3     C3        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LL0      F2     C7     H7      109.500    3.000
+ LL0      F2     C7     F1      109.500    3.000
+ LL0      F2     C7     O3      109.500    3.000
+ LL0      H7     C7     F1      109.500    3.000
+ LL0      H7     C7     O3      109.470    3.000
+ LL0      F1     C7     O3      109.500    3.000
+ LL0      C7     O3     C6      120.000    3.000
+ LL0      O3     C6     C5      120.000    3.000
+ LL0      O3     C6     C1      120.000    3.000
+ LL0      C5     C6     C1      120.000    3.000
+ LL0      C6     C5     H5      120.000    3.000
+ LL0      C6     C5     C4      120.000    3.000
+ LL0      H5     C5     C4      120.000    3.000
+ LL0      C6     C1     S1      120.000    3.000
+ LL0      C6     C1     C2      120.000    3.000
+ LL0      S1     C1     C2      120.000    3.000
+ LL0      C1     S1     O1      109.500    3.000
+ LL0      C1     S1     O2      109.500    3.000
+ LL0      C1     S1     N1      109.500    3.000
+ LL0      O1     S1     O2      109.500    3.000
+ LL0      O1     S1     N1      109.500    3.000
+ LL0      O2     S1     N1      109.500    3.000
+ LL0      S1     N1     HN1     120.000    3.000
+ LL0      C1     C2     H2      120.000    3.000
+ LL0      C1     C2     C3      120.000    3.000
+ LL0      H2     C2     C3      120.000    3.000
+ LL0      C2     C3     H3      120.000    3.000
+ LL0      C2     C3     C4      120.000    3.000
+ LL0      H3     C3     C4      120.000    3.000
+ LL0      C3     C4     H4      120.000    3.000
+ LL0      C3     C4     C5      120.000    3.000
+ LL0      H4     C4     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LL0      var_1            F2     C7     O3     C6              -105.012           20.000   3
+ LL0      var_2            C7     O3     C6     C1              -105.843           20.000   3
+ LL0      CONST_1          O3     C6     C5     C4                 0.000            0.000   0
+ LL0      CONST_2          O3     C6     C1     C2                 0.000            0.000   0
+ LL0      var_3            C6     C1     S1     N1               -66.352           20.000   3
+ LL0      var_4            C1     S1     N1     HN1              180.000           20.000   3
+ LL0      CONST_3          C6     C1     C2     C3                 0.000            0.000   0
+ LL0      CONST_4          C1     C2     C3     C4                 0.000            0.000   0
+ LL0      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ LL0      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LL0      chir_01          C7     O3     F1     F2        negativ
+ LL0      chir_02          S1     N1     O1     O2        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LL0      plan-1            N1        0.020
+ LL0      plan-1            S1        0.020
+ LL0      plan-1            HN1       0.020
+ LL0      plan-2            C4        0.020
+ LL0      plan-2            C5        0.020
+ LL0      plan-2            C3        0.020
+ LL0      plan-2            H4        0.020
+ LL0      plan-2            C6        0.020
+ LL0      plan-2            C1        0.020
+ LL0      plan-2            C2        0.020
+ LL0      plan-2            H5        0.020
+ LL0      plan-2            O3        0.020
+ LL0      plan-2            S1        0.020
+ LL0      plan-2            H2        0.020
+ LL0      plan-2            H3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

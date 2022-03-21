@@ -1,0 +1,230 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+A5I      A5I '.                                   ' .                  27  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_A5I
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ A5I           S      S    S1        0.000     60.882   30.679   -5.048
+ A5I           C7     C    C         0.000     60.097   31.924   -5.889
+ A5I           N2     N    N         0.000     60.493   33.246   -5.890
+ A5I           HN2    H    H         0.000     60.004   33.908   -6.389
+ A5I           N1     N    N         0.000     59.014   31.603   -6.637
+ A5I           N      N    N         0.000     58.252   32.597   -7.201
+ A5I           C6     C    C1        0.000     57.660   32.304   -8.295
+ A5I           H6     H    H         0.000     57.719   31.296   -8.671
+ A5I           C4     C    CR6       0.000     56.906   33.301   -9.047
+ A5I           C5     C    CR16      0.000     56.772   34.617   -8.597
+ A5I           H5     H    H         0.000     57.243   34.920   -7.670
+ A5I           C      C    CR6       0.000     56.047   35.528   -9.322
+ A5I           C1     C    CR6       0.000     55.430   35.166  -10.560
+ A5I           O1     O    OH1       0.000     54.686   36.057  -11.255
+ A5I           HO1    H    H         0.000     54.352   35.637  -12.059
+ A5I           O2     O    O2        0.000     55.805   36.818   -8.891
+ A5I           C9     C    CH3       0.000     56.268   37.135   -7.540
+ A5I           H93    H    H         0.000     55.793   36.498   -6.836
+ A5I           H92    H    H         0.000     57.319   36.998   -7.476
+ A5I           H91    H    H         0.000     56.036   38.144   -7.305
+ A5I           C3     C    CSP       0.000     56.312   32.918  -10.259
+ A5I           C2     C    CR6       0.000     55.599   33.822  -10.981
+ A5I           O      O    O2        0.000     54.870   33.452  -12.110
+ A5I           C8     C    CH3       0.000     54.782   32.024  -12.350
+ A5I           H83    H    H         0.000     55.755   31.621  -12.478
+ A5I           H82    H    H         0.000     54.314   31.549  -11.524
+ A5I           H81    H    H         0.000     54.211   31.842  -13.226
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ A5I      S      n/a    C7     START
+ A5I      C7     S      N1     .
+ A5I      N2     C7     HN2    .
+ A5I      HN2    N2     .      .
+ A5I      N1     C7     N      .
+ A5I      N      N1     C6     .
+ A5I      C6     N      C4     .
+ A5I      H6     C6     .      .
+ A5I      C4     C6     C3     .
+ A5I      C5     C4     C      .
+ A5I      H5     C5     .      .
+ A5I      C      C5     O2     .
+ A5I      C1     C      O1     .
+ A5I      O1     C1     HO1    .
+ A5I      HO1    O1     .      .
+ A5I      O2     C      C9     .
+ A5I      C9     O2     H91    .
+ A5I      H93    C9     .      .
+ A5I      H92    C9     .      .
+ A5I      H91    C9     .      .
+ A5I      C3     C4     C2     .
+ A5I      C2     C3     O      .
+ A5I      O      C2     C8     .
+ A5I      C8     O      H81    .
+ A5I      H83    C8     .      .
+ A5I      H82    C8     .      .
+ A5I      H81    C8     .      END
+ A5I      C1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ A5I      N1     C7        deloc       1.330    0.020
+ A5I      N      N1        single      1.410    0.020
+ A5I      N2     C7        deloc       1.330    0.020
+ A5I      C7     S         double      1.565    0.020
+ A5I      C8     O         single      1.426    0.020
+ A5I      C9     O2        single      1.426    0.020
+ A5I      O1     C1        single      1.362    0.020
+ A5I      C1     C2        aromatic    1.384    0.020
+ A5I      C1     C         aromatic    1.384    0.020
+ A5I      C5     C4        aromatic    1.390    0.020
+ A5I      C      C5        aromatic    1.390    0.020
+ A5I      C4     C6        single      1.480    0.020
+ A5I      C6     N         double      1.260    0.020
+ A5I      C3     C4        aromatic    1.285    0.020
+ A5I      C2     C3        double      1.285    0.020
+ A5I      O      C2        single      1.370    0.020
+ A5I      O2     C         single      1.370    0.020
+ A5I      H81    C8        single      1.059    0.020
+ A5I      H82    C8        single      1.059    0.020
+ A5I      H83    C8        single      1.059    0.020
+ A5I      HN2    N2        single      0.954    0.020
+ A5I      H91    C9        single      1.059    0.020
+ A5I      H92    C9        single      1.059    0.020
+ A5I      H93    C9        single      1.059    0.020
+ A5I      HO1    O1        single      0.967    0.020
+ A5I      H5     C5        single      1.083    0.020
+ A5I      H6     C6        single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ A5I      S      C7     N2      120.000    3.000
+ A5I      S      C7     N1      120.000    3.000
+ A5I      N2     C7     N1      120.000    3.000
+ A5I      C7     N2     HN2     120.000    3.000
+ A5I      C7     N1     N       120.000    3.000
+ A5I      N1     N      C6      120.000    3.000
+ A5I      N      C6     H6      120.000    3.000
+ A5I      N      C6     C4      120.000    3.000
+ A5I      H6     C6     C4      120.000    3.000
+ A5I      C6     C4     C5      120.000    3.000
+ A5I      C6     C4     C3      120.000    3.000
+ A5I      C5     C4     C3      120.000    3.000
+ A5I      C4     C5     H5      120.000    3.000
+ A5I      C4     C5     C       120.000    3.000
+ A5I      H5     C5     C       120.000    3.000
+ A5I      C5     C      C1      120.000    3.000
+ A5I      C5     C      O2      120.000    3.000
+ A5I      C1     C      O2      120.000    3.000
+ A5I      C      C1     O1      120.000    3.000
+ A5I      C      C1     C2      120.000    3.000
+ A5I      O1     C1     C2      120.000    3.000
+ A5I      C1     O1     HO1     109.470    3.000
+ A5I      C      O2     C9      120.000    3.000
+ A5I      O2     C9     H93     109.470    3.000
+ A5I      O2     C9     H92     109.470    3.000
+ A5I      O2     C9     H91     109.470    3.000
+ A5I      H93    C9     H92     109.470    3.000
+ A5I      H93    C9     H91     109.470    3.000
+ A5I      H92    C9     H91     109.470    3.000
+ A5I      C4     C3     C2      180.000    3.000
+ A5I      C3     C2     O       120.000    3.000
+ A5I      C3     C2     C1      120.000    3.000
+ A5I      O      C2     C1      120.000    3.000
+ A5I      C2     O      C8      120.000    3.000
+ A5I      O      C8     H83     109.470    3.000
+ A5I      O      C8     H82     109.470    3.000
+ A5I      O      C8     H81     109.470    3.000
+ A5I      H83    C8     H82     109.470    3.000
+ A5I      H83    C8     H81     109.470    3.000
+ A5I      H82    C8     H81     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ A5I      CONST_1          S      C7     N2     HN2              180.000            0.000   0
+ A5I      CONST_2          S      C7     N1     N                180.000            0.000   0
+ A5I      var_1            C7     N1     N      C6               150.511           20.000   3
+ A5I      CONST_3          N1     N      C6     C4              -175.186            0.000   0
+ A5I      var_2            N      C6     C4     C3               178.275           20.000   3
+ A5I      CONST_4          C6     C4     C5     C                  0.000            0.000   0
+ A5I      CONST_5          C4     C5     C      O2                 0.000            0.000   0
+ A5I      CONST_6          C5     C      C1     O1                 0.000            0.000   0
+ A5I      CONST_7          C      C1     C2     C3                 0.000            0.000   0
+ A5I      var_3            C      C1     O1     HO1              180.000           20.000   3
+ A5I      var_4            C5     C      O2     C9                -5.393           20.000   3
+ A5I      var_5            C      O2     C9     H91              180.000           20.000   3
+ A5I      CONST_8          C6     C4     C3     C2               179.770            0.000   0
+ A5I      CONST_9          C4     C3     C2     O               -172.748            0.000   0
+ A5I      var_6            C3     C2     O      C8                 7.892           20.000   3
+ A5I      var_7            C2     O      C8     H81              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ A5I      plan-1            N1        0.020
+ A5I      plan-1            C7        0.020
+ A5I      plan-1            N         0.020
+ A5I      plan-1            N2        0.020
+ A5I      plan-1            S         0.020
+ A5I      plan-1            HN2       0.020
+ A5I      plan-2            C1        0.020
+ A5I      plan-2            O1        0.020
+ A5I      plan-2            C2        0.020
+ A5I      plan-2            C         0.020
+ A5I      plan-2            C5        0.020
+ A5I      plan-2            C4        0.020
+ A5I      plan-2            C3        0.020
+ A5I      plan-2            H5        0.020
+ A5I      plan-2            C6        0.020
+ A5I      plan-2            O         0.020
+ A5I      plan-2            O2        0.020
+ A5I      plan-2            H6        0.020
+ A5I      plan-3            C6        0.020
+ A5I      plan-3            C4        0.020
+ A5I      plan-3            N         0.020
+ A5I      plan-3            H6        0.020
+ A5I      plan-3            N1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

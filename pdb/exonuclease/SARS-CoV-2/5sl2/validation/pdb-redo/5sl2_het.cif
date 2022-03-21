@@ -1,0 +1,225 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LFO      LFO '.                                   ' .                  25  14 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LFO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LFO           O1     O    O         0.000     87.752   -6.662   84.490
+ LFO           C2     C    C         0.000     87.066   -5.714   84.905
+ LFO           N1     N    N         0.000     86.410   -4.919   84.057
+ LFO           C1     C    CH3       0.000     86.603   -4.988   82.623
+ LFO           H13    H    H         0.000     87.617   -4.787   82.395
+ LFO           H12    H    H         0.000     86.348   -5.956   82.280
+ LFO           H11    H    H         0.000     85.985   -4.271   82.150
+ LFO           C3     C    CR5       0.000     86.904   -5.496   86.340
+ LFO           C11    C    CR56      0.000     87.405   -6.344   87.397
+ LFO           C6     C    CR56      0.000     86.951   -5.797   88.613
+ LFO           N2     N    NR5       0.000     86.151   -4.718   88.332
+ LFO           C5     C    CH3       0.000     85.500   -3.856   89.320
+ LFO           H53    H    H         0.000     84.850   -4.439   89.916
+ LFO           H52    H    H         0.000     86.238   -3.407   89.930
+ LFO           H51    H    H         0.000     84.948   -3.107   88.818
+ LFO           C4     C    CR15      0.000     86.145   -4.524   86.956
+ LFO           H4     H    H         0.000     85.621   -3.727   86.443
+ LFO           C10    C    CR16      0.000     88.190   -7.499   87.442
+ LFO           H10    H    H         0.000     88.553   -7.951   86.527
+ LFO           C9     C    CR16      0.000     88.496   -8.056   88.663
+ LFO           H9     H    H         0.000     89.113   -8.945   88.702
+ LFO           C8     C    CR16      0.000     88.026   -7.497   89.852
+ LFO           H8     H    H         0.000     88.292   -7.955   90.797
+ LFO           C7     C    CR16      0.000     87.231   -6.375   89.845
+ LFO           H7     H    H         0.000     86.838   -5.958   90.764
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LFO      O1     n/a    C2     START
+ LFO      C2     O1     C3     .
+ LFO      N1     C2     C1     .
+ LFO      C1     N1     H11    .
+ LFO      H13    C1     .      .
+ LFO      H12    C1     .      .
+ LFO      H11    C1     .      .
+ LFO      C3     C2     C11    .
+ LFO      C11    C3     C10    .
+ LFO      C6     C11    N2     .
+ LFO      N2     C6     C4     .
+ LFO      C5     N2     H51    .
+ LFO      H53    C5     .      .
+ LFO      H52    C5     .      .
+ LFO      H51    C5     .      .
+ LFO      C4     N2     H4     .
+ LFO      H4     C4     .      .
+ LFO      C10    C11    C9     .
+ LFO      H10    C10    .      .
+ LFO      C9     C10    C8     .
+ LFO      H9     C9     .      .
+ LFO      C8     C9     C7     .
+ LFO      H8     C8     .      .
+ LFO      C7     C8     H7     .
+ LFO      H7     C7     .      END
+ LFO      C4     C3     .    ADD
+ LFO      C6     C7     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LFO      C1     N1        single      1.455    0.020
+ LFO      N1     C2        deloc       1.330    0.020
+ LFO      C4     C3        aromatic    1.387    0.020
+ LFO      C4     N2        single      1.337    0.020
+ LFO      C5     N2        single      1.485    0.020
+ LFO      C6     C7        aromatic    1.390    0.020
+ LFO      N2     C6        single      1.337    0.020
+ LFO      C6     C11       aromatic    1.390    0.020
+ LFO      C7     C8        aromatic    1.390    0.020
+ LFO      C8     C9        aromatic    1.390    0.020
+ LFO      C9     C10       aromatic    1.390    0.020
+ LFO      C10    C11       aromatic    1.390    0.020
+ LFO      C2     O1        deloc       1.220    0.020
+ LFO      C3     C2        single      1.490    0.020
+ LFO      C11    C3        aromatic    1.390    0.020
+ LFO      H4     C4        single      1.083    0.020
+ LFO      H51    C5        single      1.059    0.020
+ LFO      H52    C5        single      1.059    0.020
+ LFO      H53    C5        single      1.059    0.020
+ LFO      H7     C7        single      1.083    0.020
+ LFO      H8     C8        single      1.083    0.020
+ LFO      H10    C10       single      1.083    0.020
+ LFO      H11    C1        single      1.059    0.020
+ LFO      H12    C1        single      1.059    0.020
+ LFO      H13    C1        single      1.059    0.020
+ LFO      H9     C9        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LFO      O1     C2     N1      123.000    3.000
+ LFO      O1     C2     C3      120.500    3.000
+ LFO      N1     C2     C3      120.000    3.000
+ LFO      C2     N1     C1      127.000    3.000
+ LFO      N1     C1     H13     109.470    3.000
+ LFO      N1     C1     H12     109.470    3.000
+ LFO      N1     C1     H11     109.470    3.000
+ LFO      H13    C1     H12     109.470    3.000
+ LFO      H13    C1     H11     109.470    3.000
+ LFO      H12    C1     H11     109.470    3.000
+ LFO      C2     C3     C11     108.000    3.000
+ LFO      C2     C3     C4      126.000    3.000
+ LFO      C11    C3     C4      108.000    3.000
+ LFO      C3     C11    C6      108.000    3.000
+ LFO      C3     C11    C10     126.000    3.000
+ LFO      C6     C11    C10     120.000    3.000
+ LFO      C11    C6     N2      108.000    3.000
+ LFO      C11    C6     C7      120.000    3.000
+ LFO      N2     C6     C7      132.000    3.000
+ LFO      C6     N2     C5      126.000    3.000
+ LFO      C6     N2     C4      108.000    3.000
+ LFO      C5     N2     C4      126.000    3.000
+ LFO      N2     C5     H53     109.470    3.000
+ LFO      N2     C5     H52     109.470    3.000
+ LFO      N2     C5     H51     109.470    3.000
+ LFO      H53    C5     H52     109.470    3.000
+ LFO      H53    C5     H51     109.470    3.000
+ LFO      H52    C5     H51     109.470    3.000
+ LFO      N2     C4     H4      126.000    3.000
+ LFO      N2     C4     C3      108.000    3.000
+ LFO      H4     C4     C3      126.000    3.000
+ LFO      C11    C10    H10     120.000    3.000
+ LFO      C11    C10    C9      120.000    3.000
+ LFO      H10    C10    C9      120.000    3.000
+ LFO      C10    C9     H9      120.000    3.000
+ LFO      C10    C9     C8      120.000    3.000
+ LFO      H9     C9     C8      120.000    3.000
+ LFO      C9     C8     H8      120.000    3.000
+ LFO      C9     C8     C7      120.000    3.000
+ LFO      H8     C8     C7      120.000    3.000
+ LFO      C8     C7     H7      120.000    3.000
+ LFO      C8     C7     C6      120.000    3.000
+ LFO      H7     C7     C6      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LFO      CONST_1          O1     C2     N1     C1               180.000            0.000   0
+ LFO      var_1            C2     N1     C1     H11              180.000           20.000   3
+ LFO      var_2            O1     C2     C3     C11               -4.319           20.000   3
+ LFO      CONST_2          C2     C3     C11    C10              180.000            0.000   0
+ LFO      CONST_3          C3     C11    C6     N2               180.000            0.000   0
+ LFO      CONST_4          C11    C6     C7     C8               180.000            0.000   0
+ LFO      CONST_5          C11    C6     N2     C4               180.000            0.000   0
+ LFO      var_3            C6     N2     C5     H51              180.000           20.000   3
+ LFO      CONST_6          C6     N2     C4     C3               180.000            0.000   0
+ LFO      CONST_7          N2     C4     C3     C2                 0.000            0.000   0
+ LFO      CONST_8          C3     C11    C10    C9               180.000            0.000   0
+ LFO      CONST_9          C11    C10    C9     C8                 0.000            0.000   0
+ LFO      CONST_10         C10    C9     C8     C7                 0.000            0.000   0
+ LFO      CONST_11         C9     C8     C7     C6                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LFO      plan-1            N1        0.020
+ LFO      plan-1            C1        0.020
+ LFO      plan-1            C2        0.020
+ LFO      plan-1            O1        0.020
+ LFO      plan-1            C3        0.020
+ LFO      plan-2            C4        0.020
+ LFO      plan-2            C3        0.020
+ LFO      plan-2            N2        0.020
+ LFO      plan-2            H4        0.020
+ LFO      plan-2            C2        0.020
+ LFO      plan-2            C11       0.020
+ LFO      plan-2            C5        0.020
+ LFO      plan-2            C6        0.020
+ LFO      plan-2            C10       0.020
+ LFO      plan-2            C7        0.020
+ LFO      plan-2            C8        0.020
+ LFO      plan-2            C9        0.020
+ LFO      plan-2            H7        0.020
+ LFO      plan-2            H8        0.020
+ LFO      plan-2            H10       0.020
+ LFO      plan-2            H9        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

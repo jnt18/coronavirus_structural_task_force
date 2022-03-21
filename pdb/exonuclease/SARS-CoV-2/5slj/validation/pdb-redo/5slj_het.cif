@@ -1,0 +1,246 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LKU      LKU '.                                   ' .                  28  18 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LKU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LKU           F1     F    F         0.000     86.130   -4.140   90.136
+ LKU           C11    C    CR6       0.000     86.765   -5.017   89.315
+ LKU           C10    C    CR16      0.000     87.387   -6.124   89.863
+ LKU           H10    H    H         0.000     87.368   -6.307   90.930
+ LKU           C9     C    CR16      0.000     88.033   -6.987   89.001
+ LKU           H9     H    H         0.000     88.539   -7.861   89.392
+ LKU           C8     C    CR16      0.000     88.037   -6.740   87.633
+ LKU           H8     H    H         0.000     88.540   -7.423   86.960
+ LKU           C12    C    CSP       0.000     86.752   -4.734   87.995
+ LKU           C7     C    CR6       0.000     87.392   -5.611   87.130
+ LKU           C6     C    C         0.000     87.348   -5.329   85.672
+ LKU           O1     O    O         0.000     87.886   -6.102   84.885
+ LKU           N1     N    N         0.000     86.641   -4.246   85.273
+ LKU           C5     C    CR6       0.000     86.198   -3.978   83.938
+ LKU           C13    C    CR16      0.000     87.035   -4.210   82.850
+ LKU           H13    H    H         0.000     88.034   -4.595   83.011
+ LKU           C14    C    CR6       0.000     86.594   -3.949   81.557
+ LKU           O2     O    OH1       0.000     87.420   -4.171   80.494
+ LKU           HO2    H    H         0.000     86.961   -3.940   79.675
+ LKU           C2     C    CR6       0.000     85.309   -3.468   81.324
+ LKU           C1     C    CH3       0.000     84.844   -3.199   79.938
+ LKU           H130   H    H         0.000     85.471   -2.472   79.495
+ LKU           H12    H    H         0.000     84.885   -4.094   79.377
+ LKU           H11    H    H         0.000     83.849   -2.842   79.967
+ LKU           C3     C    CR16      0.000     84.491   -3.222   82.419
+ LKU           H3     H    H         0.000     83.496   -2.825   82.260
+ LKU           C4     C    CR16      0.000     84.922   -3.474   83.708
+ LKU           H4     H    H         0.000     84.262   -3.278   84.544
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LKU      F1     n/a    C11    START
+ LKU      C11    F1     C12    .
+ LKU      C10    C11    C9     .
+ LKU      H10    C10    .      .
+ LKU      C9     C10    C8     .
+ LKU      H9     C9     .      .
+ LKU      C8     C9     H8     .
+ LKU      H8     C8     .      .
+ LKU      C12    C11    C7     .
+ LKU      C7     C12    C6     .
+ LKU      C6     C7     N1     .
+ LKU      O1     C6     .      .
+ LKU      N1     C6     C5     .
+ LKU      C5     N1     C13    .
+ LKU      C13    C5     C14    .
+ LKU      H13    C13    .      .
+ LKU      C14    C13    C2     .
+ LKU      O2     C14    HO2    .
+ LKU      HO2    O2     .      .
+ LKU      C2     C14    C3     .
+ LKU      C1     C2     H11    .
+ LKU      H130   C1     .      .
+ LKU      H12    C1     .      .
+ LKU      H11    C1     .      .
+ LKU      C3     C2     C4     .
+ LKU      H3     C3     .      .
+ LKU      C4     C3     H4     .
+ LKU      H4     C4     .      END
+ LKU      C4     C5     .    ADD
+ LKU      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LKU      C5     N1        single      1.400    0.020
+ LKU      N1     C6        deloc       1.330    0.020
+ LKU      C4     C5        aromatic    1.390    0.020
+ LKU      C4     C3        aromatic    1.390    0.020
+ LKU      C13    C5        aromatic    1.390    0.020
+ LKU      C6     C7        single      1.500    0.020
+ LKU      O1     C6        double      1.220    0.020
+ LKU      C7     C8        aromatic    1.390    0.020
+ LKU      C7     C12       aromatic    1.285    0.020
+ LKU      C8     C9        aromatic    1.390    0.020
+ LKU      C9     C10       aromatic    1.390    0.020
+ LKU      C10    C11       aromatic    1.390    0.020
+ LKU      C14    C13       aromatic    1.390    0.020
+ LKU      C1     C2        single      1.506    0.020
+ LKU      C3     C2        aromatic    1.390    0.020
+ LKU      C2     C14       aromatic    1.384    0.020
+ LKU      C11    F1        single      1.345    0.020
+ LKU      C12    C11       double      1.285    0.020
+ LKU      O2     C14       single      1.362    0.020
+ LKU      H4     C4        single      1.083    0.020
+ LKU      H8     C8        single      1.083    0.020
+ LKU      H10    C10       single      1.083    0.020
+ LKU      H13    C13       single      1.083    0.020
+ LKU      H11    C1        single      1.059    0.020
+ LKU      H12    C1        single      1.059    0.020
+ LKU      H130   C1        single      1.059    0.020
+ LKU      H3     C3        single      1.083    0.020
+ LKU      H9     C9        single      1.083    0.020
+ LKU      HO2    O2        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LKU      F1     C11    C10     120.000    3.000
+ LKU      F1     C11    C12     120.000    3.000
+ LKU      C10    C11    C12     120.000    3.000
+ LKU      C11    C10    H10     120.000    3.000
+ LKU      C11    C10    C9      120.000    3.000
+ LKU      H10    C10    C9      120.000    3.000
+ LKU      C10    C9     H9      120.000    3.000
+ LKU      C10    C9     C8      120.000    3.000
+ LKU      H9     C9     C8      120.000    3.000
+ LKU      C9     C8     H8      120.000    3.000
+ LKU      C9     C8     C7      120.000    3.000
+ LKU      H8     C8     C7      120.000    3.000
+ LKU      C11    C12    C7      180.000    3.000
+ LKU      C12    C7     C6      120.000    3.000
+ LKU      C12    C7     C8      120.000    3.000
+ LKU      C6     C7     C8      120.000    3.000
+ LKU      C7     C6     O1      120.500    3.000
+ LKU      C7     C6     N1      120.000    3.000
+ LKU      O1     C6     N1      123.000    3.000
+ LKU      C6     N1     C5      120.000    3.000
+ LKU      N1     C5     C13     120.000    3.000
+ LKU      N1     C5     C4      120.000    3.000
+ LKU      C13    C5     C4      120.000    3.000
+ LKU      C5     C13    H13     120.000    3.000
+ LKU      C5     C13    C14     120.000    3.000
+ LKU      H13    C13    C14     120.000    3.000
+ LKU      C13    C14    O2      120.000    3.000
+ LKU      C13    C14    C2      120.000    3.000
+ LKU      O2     C14    C2      120.000    3.000
+ LKU      C14    O2     HO2     109.470    3.000
+ LKU      C14    C2     C1      120.000    3.000
+ LKU      C14    C2     C3      120.000    3.000
+ LKU      C1     C2     C3      120.000    3.000
+ LKU      C2     C1     H130    109.470    3.000
+ LKU      C2     C1     H12     109.470    3.000
+ LKU      C2     C1     H11     109.470    3.000
+ LKU      H130   C1     H12     109.470    3.000
+ LKU      H130   C1     H11     109.470    3.000
+ LKU      H12    C1     H11     109.470    3.000
+ LKU      C2     C3     H3      120.000    3.000
+ LKU      C2     C3     C4      120.000    3.000
+ LKU      H3     C3     C4      120.000    3.000
+ LKU      C3     C4     H4      120.000    3.000
+ LKU      C3     C4     C5      120.000    3.000
+ LKU      H4     C4     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LKU      CONST_1          F1     C11    C10    C9                 0.000            0.000   0
+ LKU      CONST_2          C11    C10    C9     C8                 0.000            0.000   0
+ LKU      CONST_3          C10    C9     C8     C7                 0.000            0.000   0
+ LKU      CONST_4          F1     C11    C12    C7               180.000            0.000   0
+ LKU      CONST_5          C11    C12    C7     C6               178.200            0.000   0
+ LKU      CONST_6          C12    C7     C8     C9                 0.000            0.000   0
+ LKU      var_1            C12    C7     C6     N1                -2.135           20.000   3
+ LKU      CONST_7          C7     C6     N1     C5               180.000            0.000   0
+ LKU      var_2            C6     N1     C5     C13              -42.068           20.000   3
+ LKU      CONST_8          N1     C5     C13    C14                0.000            0.000   0
+ LKU      CONST_9          C5     C13    C14    C2                 0.000            0.000   0
+ LKU      var_3            C13    C14    O2     HO2              180.000           20.000   3
+ LKU      CONST_10         C13    C14    C2     C3                 0.000            0.000   0
+ LKU      var_4            C14    C2     C1     H11              180.000           20.000   3
+ LKU      CONST_11         C14    C2     C3     C4                 0.000            0.000   0
+ LKU      CONST_12         C2     C3     C4     C5                 0.000            0.000   0
+ LKU      CONST_13         C3     C4     C5     N1                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LKU      plan-1            N1        0.020
+ LKU      plan-1            C5        0.020
+ LKU      plan-1            C6        0.020
+ LKU      plan-1            C7        0.020
+ LKU      plan-1            O1        0.020
+ LKU      plan-2            C4        0.020
+ LKU      plan-2            C5        0.020
+ LKU      plan-2            C3        0.020
+ LKU      plan-2            H4        0.020
+ LKU      plan-2            C13       0.020
+ LKU      plan-2            C2        0.020
+ LKU      plan-2            C14       0.020
+ LKU      plan-2            N1        0.020
+ LKU      plan-2            H13       0.020
+ LKU      plan-2            C1        0.020
+ LKU      plan-2            H3        0.020
+ LKU      plan-2            O2        0.020
+ LKU      plan-3            C7        0.020
+ LKU      plan-3            C6        0.020
+ LKU      plan-3            C8        0.020
+ LKU      plan-3            C12       0.020
+ LKU      plan-3            C10       0.020
+ LKU      plan-3            C9        0.020
+ LKU      plan-3            C11       0.020
+ LKU      plan-3            H8        0.020
+ LKU      plan-3            H10       0.020
+ LKU      plan-3            H9        0.020
+ LKU      plan-3            F1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

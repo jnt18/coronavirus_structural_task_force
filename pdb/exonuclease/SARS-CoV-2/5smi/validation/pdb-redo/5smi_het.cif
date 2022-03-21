@@ -1,0 +1,247 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LQV      LQV '.                                   ' .                  28  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LQV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LQV           O1     O    O         0.000     49.161   27.635  117.630
+ LQV           C6     C    C         0.000     48.608   28.654  117.271
+ LQV           C7     C    CH1       0.000     48.288   29.688  118.300
+ LQV           H7     H    H         0.000     47.386   29.380  118.847
+ LQV           O2     O    O2        0.000     49.380   29.782  119.219
+ LQV           C10    C    CH2       0.000     50.150   30.936  118.855
+ LQV           H101   H    H         0.000     50.905   30.672  118.111
+ LQV           H102   H    H         0.000     50.640   31.361  119.734
+ LQV           C9     C    CH2       0.000     49.214   31.931  118.280
+ LQV           H91    H    H         0.000     49.669   32.499  117.466
+ LQV           H92    H    H         0.000     48.835   32.622  119.036
+ LQV           C8     C    CH2       0.000     48.074   31.098  117.740
+ LQV           H82    H    H         0.000     48.090   31.064  116.649
+ LQV           H81    H    H         0.000     47.109   31.482  118.076
+ LQV           N1     N    N         0.000     48.265   28.947  115.995
+ LQV           C5     C    CR6       0.000     48.414   28.166  114.837
+ LQV           N2     N    NRD6      0.000     47.861   28.751  113.769
+ LQV           C11    C    CR16      0.000     47.916   28.086  112.606
+ LQV           H110   H    H         0.000     47.452   28.541  111.740
+ LQV           C2     C    CR6       0.000     48.529   26.854  112.441
+ LQV           C1     C    CH3       0.000     48.559   26.189  111.101
+ LQV           H13    H    H         0.000     47.568   26.022  110.770
+ LQV           H12    H    H         0.000     49.063   26.813  110.411
+ LQV           H11    H    H         0.000     49.068   25.264  111.180
+ LQV           C3     C    CR16      0.000     49.120   26.290  113.566
+ LQV           H3     H    H         0.000     49.638   25.342  113.484
+ LQV           C4     C    CR16      0.000     49.051   26.928  114.783
+ LQV           H4     H    H         0.000     49.479   26.481  115.672
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LQV      O1     n/a    C6     START
+ LQV      C6     O1     N1     .
+ LQV      C7     C6     O2     .
+ LQV      H7     C7     .      .
+ LQV      O2     C7     C10    .
+ LQV      C10    O2     C9     .
+ LQV      H101   C10    .      .
+ LQV      H102   C10    .      .
+ LQV      C9     C10    C8     .
+ LQV      H91    C9     .      .
+ LQV      H92    C9     .      .
+ LQV      C8     C9     H81    .
+ LQV      H82    C8     .      .
+ LQV      H81    C8     .      .
+ LQV      N1     C6     C5     .
+ LQV      C5     N1     N2     .
+ LQV      N2     C5     C11    .
+ LQV      C11    N2     C2     .
+ LQV      H110   C11    .      .
+ LQV      C2     C11    C3     .
+ LQV      C1     C2     H11    .
+ LQV      H13    C1     .      .
+ LQV      H12    C1     .      .
+ LQV      H11    C1     .      .
+ LQV      C3     C2     C4     .
+ LQV      H3     C3     .      .
+ LQV      C4     C3     H4     .
+ LQV      H4     C4     .      END
+ LQV      C4     C5     .    ADD
+ LQV      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LQV      C5     N1        single      1.400    0.020
+ LQV      N1     C6        deloc       1.330    0.020
+ LQV      C4     C5        aromatic    1.390    0.020
+ LQV      C4     C3        aromatic    1.390    0.020
+ LQV      N2     C5        aromatic    1.350    0.020
+ LQV      C7     C6        single      1.500    0.020
+ LQV      C6     O1        double      1.220    0.020
+ LQV      C7     C8        single      1.524    0.020
+ LQV      O2     C7        single      1.426    0.020
+ LQV      C8     C9        single      1.524    0.020
+ LQV      C9     C10       single      1.524    0.020
+ LQV      C10    O2        single      1.426    0.020
+ LQV      C1     C2        single      1.506    0.020
+ LQV      C3     C2        aromatic    1.390    0.020
+ LQV      C2     C11       aromatic    1.390    0.020
+ LQV      C11    N2        aromatic    1.337    0.020
+ LQV      H4     C4        single      1.083    0.020
+ LQV      H7     C7        single      1.099    0.020
+ LQV      H81    C8        single      1.092    0.020
+ LQV      H82    C8        single      1.092    0.020
+ LQV      H101   C10       single      1.092    0.020
+ LQV      H102   C10       single      1.092    0.020
+ LQV      H11    C1        single      1.059    0.020
+ LQV      H12    C1        single      1.059    0.020
+ LQV      H13    C1        single      1.059    0.020
+ LQV      H3     C3        single      1.083    0.020
+ LQV      H91    C9        single      1.092    0.020
+ LQV      H92    C9        single      1.092    0.020
+ LQV      H110   C11       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LQV      O1     C6     C7      120.500    3.000
+ LQV      O1     C6     N1      123.000    3.000
+ LQV      C7     C6     N1      116.500    3.000
+ LQV      C6     C7     H7      108.810    3.000
+ LQV      C6     C7     O2      109.470    3.000
+ LQV      C6     C7     C8      109.470    3.000
+ LQV      H7     C7     O2      109.470    3.000
+ LQV      H7     C7     C8      108.340    3.000
+ LQV      O2     C7     C8      109.470    3.000
+ LQV      C7     O2     C10     111.800    3.000
+ LQV      O2     C10    H101    109.470    3.000
+ LQV      O2     C10    H102    109.470    3.000
+ LQV      O2     C10    C9      109.470    3.000
+ LQV      H101   C10    H102    107.900    3.000
+ LQV      H101   C10    C9      109.470    3.000
+ LQV      H102   C10    C9      109.470    3.000
+ LQV      C10    C9     H91     109.470    3.000
+ LQV      C10    C9     H92     109.470    3.000
+ LQV      C10    C9     C8      111.000    3.000
+ LQV      H91    C9     H92     107.900    3.000
+ LQV      H91    C9     C8      109.470    3.000
+ LQV      H92    C9     C8      109.470    3.000
+ LQV      C9     C8     H82     109.470    3.000
+ LQV      C9     C8     H81     109.470    3.000
+ LQV      C9     C8     C7      111.000    3.000
+ LQV      H82    C8     H81     107.900    3.000
+ LQV      H82    C8     C7      109.470    3.000
+ LQV      H81    C8     C7      109.470    3.000
+ LQV      C6     N1     C5      120.000    3.000
+ LQV      N1     C5     N2      120.000    3.000
+ LQV      N1     C5     C4      120.000    3.000
+ LQV      N2     C5     C4      120.000    3.000
+ LQV      C5     N2     C11     120.000    3.000
+ LQV      N2     C11    H110    120.000    3.000
+ LQV      N2     C11    C2      120.000    3.000
+ LQV      H110   C11    C2      120.000    3.000
+ LQV      C11    C2     C1      120.000    3.000
+ LQV      C11    C2     C3      120.000    3.000
+ LQV      C1     C2     C3      120.000    3.000
+ LQV      C2     C1     H13     109.470    3.000
+ LQV      C2     C1     H12     109.470    3.000
+ LQV      C2     C1     H11     109.470    3.000
+ LQV      H13    C1     H12     109.470    3.000
+ LQV      H13    C1     H11     109.470    3.000
+ LQV      H12    C1     H11     109.470    3.000
+ LQV      C2     C3     H3      120.000    3.000
+ LQV      C2     C3     C4      120.000    3.000
+ LQV      H3     C3     C4      120.000    3.000
+ LQV      C3     C4     H4      120.000    3.000
+ LQV      C3     C4     C5      120.000    3.000
+ LQV      H4     C4     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LQV      var_1            O1     C6     C7     O2               180.000           20.000   3
+ LQV      var_2            C6     C7     C8     C9               180.000           20.000   3
+ LQV      var_3            C6     C7     O2     C10              100.852           20.000   3
+ LQV      var_4            C7     O2     C10    C9                31.384           20.000   3
+ LQV      var_5            O2     C10    C9     C8               180.000           20.000   3
+ LQV      var_6            C10    C9     C8     C7               180.000           20.000   3
+ LQV      CONST_1          O1     C6     N1     C5               180.000            0.000   0
+ LQV      var_7            C6     N1     C5     N2               175.130           20.000   3
+ LQV      CONST_2          N1     C5     N2     C11                0.000            0.000   0
+ LQV      CONST_3          C5     N2     C11    C2                 0.000            0.000   0
+ LQV      CONST_4          N2     C11    C2     C3                 0.000            0.000   0
+ LQV      var_8            C11    C2     C1     H11              180.000           20.000   3
+ LQV      CONST_5          C11    C2     C3     C4                 0.000            0.000   0
+ LQV      CONST_6          C2     C3     C4     C5                 0.000            0.000   0
+ LQV      CONST_7          C3     C4     C5     N1                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LQV      chir_01          C7     C6     C8     O2        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LQV      plan-1            N1        0.020
+ LQV      plan-1            C5        0.020
+ LQV      plan-1            C6        0.020
+ LQV      plan-1            C7        0.020
+ LQV      plan-1            O1        0.020
+ LQV      plan-2            C4        0.020
+ LQV      plan-2            C5        0.020
+ LQV      plan-2            C3        0.020
+ LQV      plan-2            H4        0.020
+ LQV      plan-2            C2        0.020
+ LQV      plan-2            N2        0.020
+ LQV      plan-2            C11       0.020
+ LQV      plan-2            N1        0.020
+ LQV      plan-2            C1        0.020
+ LQV      plan-2            H3        0.020
+ LQV      plan-2            H110      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,195 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+9OW      9OW '.                                   ' .                  14   7 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+ACE-9OW  ACE      .        .        9OW      .        .
+ bond_ACE-CH3_=_9OW-SE
+GLU-9OW  GLU      .        .        9OW      .        .
+ bond_GLU-C_=_9OW-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_9OW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 9OW           O      O    O         0.000     35.681  -20.885    2.681
+ 9OW           C      C    C         0.000     35.645  -19.903    3.407
+ 9OW           NB     N    N         0.000     35.199  -18.766    2.904
+ 9OW           HNB    H    H         0.000     35.162  -17.988    3.452
+ 9OW           CA     C    CH1       0.000     36.205  -19.987    4.839
+ 9OW           HA     H    H         0.000     37.015  -20.731    4.849
+ 9OW           N      N    NT2       0.000     36.767  -18.708    5.166
+ 9OW           HN2    H    H         0.000     36.649  -18.074    4.363
+ 9OW           HN1    H    H         0.000     37.148  -18.744    6.122
+ 9OW           CB     C    CH2       0.000     35.169  -20.378    5.942
+ 9OW           HB1    H    H         0.000     34.160  -20.302    5.532
+ 9OW           HB2    H    H         0.000     35.268  -19.695    6.789
+ 9OW           SE     SE   SE        0.000     35.487  -22.164    6.523
+ 9OW           HSE    H    H         0.000     34.598  -22.232    7.339
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 9OW      O      n/a    C      START
+ 9OW      C      O      CA     .
+ 9OW      NB     C      HNB    .
+ 9OW      HNB    NB     .      .
+ 9OW      CA     C      CB     .
+ 9OW      HA     CA     .      .
+ 9OW      N      CA     HN1    .
+ 9OW      HN2    N      .      .
+ 9OW      HN1    N      .      .
+ 9OW      CB     CA     SE     .
+ 9OW      HB1    CB     .      .
+ 9OW      HB2    CB     .      .
+ 9OW      SE     CB     HSE    .
+ 9OW      HSE    SE     .      END
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 9OW      N      CA        single      1.475    0.020
+ 9OW      CA     C         single      1.500    0.020
+ 9OW      CB     CA        single      1.524    0.020
+ 9OW      C      O         double      1.220    0.020
+ 9OW      NB     C         deloc       1.330    0.020
+ 9OW      SE     CB        single      1.948    0.020
+ 9OW      HN1    N         single      1.033    0.020
+ 9OW      HN2    N         single      1.033    0.020
+ 9OW      HA     CA        single      1.099    0.020
+ 9OW      HB1    CB        single      1.092    0.020
+ 9OW      HB2    CB        single      1.092    0.020
+ 9OW      HNB    NB        single      0.954    0.020
+ 9OW      HSE    SE        single      1.209    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 9OW      O      C      NB      123.000    3.000
+ 9OW      O      C      CA      120.500    3.000
+ 9OW      NB     C      CA      116.500    3.000
+ 9OW      C      NB     HNB     120.000    3.000
+ 9OW      C      CA     HA      108.810    3.000
+ 9OW      C      CA     N       109.500    3.000
+ 9OW      C      CA     CB      109.470    3.000
+ 9OW      HA     CA     N       109.500    3.000
+ 9OW      HA     CA     CB      108.340    3.000
+ 9OW      N      CA     CB      109.500    3.000
+ 9OW      CA     N      HN2     109.500    3.000
+ 9OW      CA     N      HN1     109.500    3.000
+ 9OW      HN2    N      HN1     109.500    3.000
+ 9OW      CA     CB     HB1     109.470    3.000
+ 9OW      CA     CB     HB2     109.470    3.000
+ 9OW      CA     CB     SE      109.500    3.000
+ 9OW      HB1    CB     HB2     107.900    3.000
+ 9OW      HB1    CB     SE      109.500    3.000
+ 9OW      HB2    CB     SE      109.500    3.000
+ 9OW      CB     SE     HSE      98.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 9OW      CONST_1          O      C      NB     HNB              180.000            0.000   0
+ 9OW      var_1            O      C      CA     CB               180.000           20.000   3
+ 9OW      var_2            C      CA     N      HN1              180.000           20.000   3
+ 9OW      var_3            C      CA     CB     SE               180.000           20.000   3
+ 9OW      var_4            CA     CB     SE     HSE              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 9OW      chir_01          CA     N      C      CB        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 9OW      plan-1            C         0.020
+ 9OW      plan-1            CA        0.020
+ 9OW      plan-1            O         0.020
+ 9OW      plan-1            NB        0.020
+ 9OW      plan-1            HNB       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_ACE-9OW
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ACE-9OW  1 CH3     2 SE        .           1.880    0.020
+#
+data_link_GLU-9OW
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLU-9OW  1 C       2 N         .           1.340    0.020
+# ------------------------------------------------------

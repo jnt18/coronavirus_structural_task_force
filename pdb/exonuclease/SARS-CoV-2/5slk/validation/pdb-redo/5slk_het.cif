@@ -1,0 +1,203 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LKL      LKL '.                                   ' .                  23  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LKL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LKL           F1     F    F         0.000     62.539   -1.941   79.150
+ LKL           C8     C    CR6       0.000     63.702   -2.142   78.496
+ LKL           C7     C    CR16      0.000     64.091   -3.422   78.214
+ LKL           H7     H    H         0.000     63.478   -4.265   78.508
+ LKL           C6     C    CR6       0.000     65.284   -3.614   77.545
+ LKL           CL1    CL   CL        0.000     65.803   -5.220   77.174
+ LKL           C5     C    CR16      0.000     66.046   -2.536   77.177
+ LKL           H5     H    H         0.000     66.975   -2.713   76.649
+ LKL           N2     N    NRD6      0.000     65.689   -1.267   77.444
+ LKL           C4     C    CR6       0.000     64.534   -1.039   78.104
+ LKL           N1     N    N         0.000     64.209    0.268   78.307
+ LKL           C1     C    CH3       0.000     65.126    1.330   77.944
+ LKL           H13    H    H         0.000     66.030    1.214   78.483
+ LKL           H12    H    H         0.000     65.325    1.283   76.905
+ LKL           H11    H    H         0.000     64.691    2.266   78.180
+ LKL           C2     C    CH2       0.000     62.882    0.687   78.759
+ LKL           H21    H    H         0.000     62.342   -0.221   79.037
+ LKL           H22    H    H         0.000     62.390    1.154   77.903
+ LKL           C3     C    CH2       0.000     62.888    1.648   79.924
+ LKL           H31    H    H         0.000     63.653    2.407   79.751
+ LKL           H32    H    H         0.000     63.125    1.095   80.836
+ LKL           O1     O    OH1       0.000     61.621    2.274   80.064
+ LKL           HO1    H    H         0.000     61.647    2.883   80.813
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LKL      F1     n/a    C8     START
+ LKL      C8     F1     C7     .
+ LKL      C7     C8     C6     .
+ LKL      H7     C7     .      .
+ LKL      C6     C7     C5     .
+ LKL      CL1    C6     .      .
+ LKL      C5     C6     N2     .
+ LKL      H5     C5     .      .
+ LKL      N2     C5     C4     .
+ LKL      C4     N2     N1     .
+ LKL      N1     C4     C2     .
+ LKL      C1     N1     H11    .
+ LKL      H13    C1     .      .
+ LKL      H12    C1     .      .
+ LKL      H11    C1     .      .
+ LKL      C2     N1     C3     .
+ LKL      H21    C2     .      .
+ LKL      H22    C2     .      .
+ LKL      C3     C2     O1     .
+ LKL      H31    C3     .      .
+ LKL      H32    C3     .      .
+ LKL      O1     C3     HO1    .
+ LKL      HO1    O1     .      END
+ LKL      C4     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LKL      N1     C4        single      1.400    0.020
+ LKL      C1     N1        single      1.455    0.020
+ LKL      C2     N1        single      1.455    0.020
+ LKL      C4     C8        aromatic    1.384    0.020
+ LKL      C4     N2        aromatic    1.350    0.020
+ LKL      C5     C6        aromatic    1.390    0.020
+ LKL      N2     C5        deloc       1.337    0.020
+ LKL      C6     C7        aromatic    1.390    0.020
+ LKL      CL1    C6        single      1.795    0.020
+ LKL      C7     C8        aromatic    1.390    0.020
+ LKL      C8     F1        single      1.345    0.020
+ LKL      C3     C2        single      1.524    0.020
+ LKL      O1     C3        single      1.432    0.020
+ LKL      H5     C5        single      1.083    0.020
+ LKL      H7     C7        single      1.083    0.020
+ LKL      H11    C1        single      1.059    0.020
+ LKL      H12    C1        single      1.059    0.020
+ LKL      H13    C1        single      1.059    0.020
+ LKL      H21    C2        single      1.092    0.020
+ LKL      H22    C2        single      1.092    0.020
+ LKL      H31    C3        single      1.092    0.020
+ LKL      H32    C3        single      1.092    0.020
+ LKL      HO1    O1        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LKL      F1     C8     C7      120.000    3.000
+ LKL      F1     C8     C4      120.000    3.000
+ LKL      C7     C8     C4      120.000    3.000
+ LKL      C8     C7     H7      120.000    3.000
+ LKL      C8     C7     C6      120.000    3.000
+ LKL      H7     C7     C6      120.000    3.000
+ LKL      C7     C6     CL1     120.000    3.000
+ LKL      C7     C6     C5      120.000    3.000
+ LKL      CL1    C6     C5      120.000    3.000
+ LKL      C6     C5     H5      120.000    3.000
+ LKL      C6     C5     N2      120.000    3.000
+ LKL      H5     C5     N2      120.000    3.000
+ LKL      C5     N2     C4      120.000    3.000
+ LKL      N2     C4     N1      120.000    3.000
+ LKL      N2     C4     C8      120.000    3.000
+ LKL      N1     C4     C8      120.000    3.000
+ LKL      C4     N1     C1      120.000    3.000
+ LKL      C4     N1     C2      120.000    3.000
+ LKL      C1     N1     C2      120.000    3.000
+ LKL      N1     C1     H13     109.470    3.000
+ LKL      N1     C1     H12     109.470    3.000
+ LKL      N1     C1     H11     109.470    3.000
+ LKL      H13    C1     H12     109.470    3.000
+ LKL      H13    C1     H11     109.470    3.000
+ LKL      H12    C1     H11     109.470    3.000
+ LKL      N1     C2     H21     109.470    3.000
+ LKL      N1     C2     H22     109.470    3.000
+ LKL      N1     C2     C3      105.000    3.000
+ LKL      H21    C2     H22     107.900    3.000
+ LKL      H21    C2     C3      109.470    3.000
+ LKL      H22    C2     C3      109.470    3.000
+ LKL      C2     C3     H31     109.470    3.000
+ LKL      C2     C3     H32     109.470    3.000
+ LKL      C2     C3     O1      109.470    3.000
+ LKL      H31    C3     H32     107.900    3.000
+ LKL      H31    C3     O1      109.470    3.000
+ LKL      H32    C3     O1      109.470    3.000
+ LKL      C3     O1     HO1     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LKL      CONST_1          F1     C8     C7     C6                 0.000            0.000   0
+ LKL      CONST_2          C8     C7     C6     C5                 0.000            0.000   0
+ LKL      CONST_3          C7     C6     C5     N2                 0.000            0.000   0
+ LKL      CONST_4          C6     C5     N2     C4                 0.000            0.000   0
+ LKL      CONST_5          C5     N2     C4     N1                 0.000            0.000   0
+ LKL      CONST_6          N2     C4     C8     F1                 0.000            0.000   0
+ LKL      var_1            N2     C4     N1     C2               167.451           20.000   3
+ LKL      var_2            C4     N1     C1     H11              180.000           20.000   3
+ LKL      var_3            C4     N1     C2     C3               130.774           20.000   3
+ LKL      var_4            N1     C2     C3     O1               180.000           20.000   3
+ LKL      var_5            C2     C3     O1     HO1              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LKL      plan-1            N1        0.020
+ LKL      plan-1            C4        0.020
+ LKL      plan-1            C1        0.020
+ LKL      plan-1            C2        0.020
+ LKL      plan-2            C4        0.020
+ LKL      plan-2            N1        0.020
+ LKL      plan-2            C8        0.020
+ LKL      plan-2            N2        0.020
+ LKL      plan-2            C5        0.020
+ LKL      plan-2            C6        0.020
+ LKL      plan-2            C7        0.020
+ LKL      plan-2            H5        0.020
+ LKL      plan-2            CL1       0.020
+ LKL      plan-2            H7        0.020
+ LKL      plan-2            F1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,237 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LK6      LK6 '.                                   ' .                  26  14 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LK6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LK6           O3     O    O         0.000     35.245   26.625  102.609
+ LK6           C6     C    C         0.000     34.824   25.491  102.384
+ LK6           C7     C    CH1       0.000     34.049   25.169  101.166
+ LK6           H7     H    H         0.000     33.345   24.328  101.234
+ LK6           C9     C    CH2       0.000     33.657   26.314  100.271
+ LK6           H91    H    H         0.000     34.059   27.327  100.336
+ LK6           H92    H    H         0.000     32.838   26.294   99.549
+ LK6           C8     C    CH2       0.000     34.718   25.390   99.837
+ LK6           H82    H    H         0.000     35.788   25.548   99.988
+ LK6           H81    H    H         0.000     34.567   24.515   99.202
+ LK6           N1     N    N         0.000     35.000   24.459  103.227
+ LK6           C2     C    CT        0.000     34.876   24.518  104.690
+ LK6           C1     C    CH3       0.000     33.579   25.243  105.027
+ LK6           H13    H    H         0.000     33.607   26.222  104.624
+ LK6           H12    H    H         0.000     32.761   24.713  104.613
+ LK6           H11    H    H         0.000     33.468   25.298  106.079
+ LK6           C3     C    CH2       0.000     36.095   25.141  105.403
+ LK6           H32    H    H         0.000     35.912   25.240  106.475
+ LK6           H31    H    H         0.000     36.335   26.120  104.984
+ LK6           C5     C    C1        0.000     34.839   23.096  105.289
+ LK6           H5     H    H         0.000     33.986   22.548  105.653
+ LK6           S1     S    ST        0.000     36.536   22.577  105.235
+ LK6           O1     O    OS       -1.000     36.881   21.915  106.463
+ LK6           O2     O    OS       -1.000     36.801   21.868  104.014
+ LK6           C4     C    C1        0.000     37.250   24.196  105.173
+ LK6           H4     H    H         0.000     38.283   24.451  105.007
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LK6      O3     n/a    C6     START
+ LK6      C6     O3     N1     .
+ LK6      C7     C6     C9     .
+ LK6      H7     C7     .      .
+ LK6      C9     C7     C8     .
+ LK6      H91    C9     .      .
+ LK6      H92    C9     .      .
+ LK6      C8     C9     H81    .
+ LK6      H82    C8     .      .
+ LK6      H81    C8     .      .
+ LK6      N1     C6     C2     .
+ LK6      C2     N1     C5     .
+ LK6      C1     C2     H11    .
+ LK6      H13    C1     .      .
+ LK6      H12    C1     .      .
+ LK6      H11    C1     .      .
+ LK6      C3     C2     H31    .
+ LK6      H32    C3     .      .
+ LK6      H31    C3     .      .
+ LK6      C5     C2     S1     .
+ LK6      H5     C5     .      .
+ LK6      S1     C5     C4     .
+ LK6      O1     S1     .      .
+ LK6      O2     S1     .      .
+ LK6      C4     S1     H4     .
+ LK6      H4     C4     .      END
+ LK6      C4     C3     .    ADD
+ LK6      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LK6      N1     C6        deloc       1.330    0.020
+ LK6      C2     N1        single      1.455    0.020
+ LK6      C4     C3        single      1.510    0.020
+ LK6      C4     S1        double      1.565    0.020
+ LK6      C5     C2        single      1.510    0.020
+ LK6      S1     C5        double      1.565    0.020
+ LK6      C7     C6        single      1.500    0.020
+ LK6      C6     O3        double      1.220    0.020
+ LK6      C7     C8        single      1.524    0.020
+ LK6      C9     C7        single      1.524    0.020
+ LK6      C8     C9        single      1.524    0.020
+ LK6      C1     C2        single      1.524    0.020
+ LK6      C3     C2        single      1.524    0.020
+ LK6      O1     S1        deloc       1.480    0.020
+ LK6      O2     S1        deloc       1.480    0.020
+ LK6      H4     C4        single      1.077    0.020
+ LK6      H5     C5        single      1.077    0.020
+ LK6      H7     C7        single      1.099    0.020
+ LK6      H81    C8        single      1.092    0.020
+ LK6      H82    C8        single      1.092    0.020
+ LK6      H11    C1        single      1.059    0.020
+ LK6      H12    C1        single      1.059    0.020
+ LK6      H13    C1        single      1.059    0.020
+ LK6      H31    C3        single      1.092    0.020
+ LK6      H32    C3        single      1.092    0.020
+ LK6      H91    C9        single      1.092    0.020
+ LK6      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LK6      O3     C6     C7      120.500    3.000
+ LK6      O3     C6     N1      123.000    3.000
+ LK6      C7     C6     N1      116.500    3.000
+ LK6      C6     C7     H7      108.810    3.000
+ LK6      C6     C7     C9      109.470    3.000
+ LK6      C6     C7     C8      109.470    3.000
+ LK6      H7     C7     C9      108.340    3.000
+ LK6      H7     C7     C8      108.340    3.000
+ LK6      C9     C7     C8       60.000    3.000
+ LK6      C7     C9     H91     109.470    3.000
+ LK6      C7     C9     H92     109.470    3.000
+ LK6      C7     C9     C8       60.000    3.000
+ LK6      H91    C9     H92     107.900    3.000
+ LK6      H91    C9     C8      109.470    3.000
+ LK6      H92    C9     C8      109.470    3.000
+ LK6      C9     C8     H82     109.470    3.000
+ LK6      C9     C8     H81     109.470    3.000
+ LK6      C9     C8     C7       60.000    3.000
+ LK6      H82    C8     H81     107.900    3.000
+ LK6      H82    C8     C7      109.470    3.000
+ LK6      H81    C8     C7      109.470    3.000
+ LK6      C6     N1     C2      121.000    3.000
+ LK6      N1     C2     C1      111.600    3.000
+ LK6      N1     C2     C3      111.600    3.000
+ LK6      N1     C2     C5      111.600    3.000
+ LK6      C1     C2     C3      111.000    3.000
+ LK6      C1     C2     C5      109.470    3.000
+ LK6      C3     C2     C5      109.470    3.000
+ LK6      C2     C1     H13     109.470    3.000
+ LK6      C2     C1     H12     109.470    3.000
+ LK6      C2     C1     H11     109.470    3.000
+ LK6      H13    C1     H12     109.470    3.000
+ LK6      H13    C1     H11     109.470    3.000
+ LK6      H12    C1     H11     109.470    3.000
+ LK6      C2     C3     H32     109.470    3.000
+ LK6      C2     C3     H31     109.470    3.000
+ LK6      C2     C3     C4      109.470    3.000
+ LK6      H32    C3     H31     107.900    3.000
+ LK6      H32    C3     C4      109.470    3.000
+ LK6      H31    C3     C4      109.470    3.000
+ LK6      C2     C5     H5      120.000    3.000
+ LK6      C2     C5     S1      120.000    3.000
+ LK6      H5     C5     S1      120.000    3.000
+ LK6      C5     S1     O1      109.500    3.000
+ LK6      C5     S1     O2      109.500    3.000
+ LK6      C5     S1     C4      109.500    3.000
+ LK6      O1     S1     O2      109.500    3.000
+ LK6      O1     S1     C4      109.500    3.000
+ LK6      O2     S1     C4      109.500    3.000
+ LK6      S1     C4     H4      120.000    3.000
+ LK6      S1     C4     C3      120.000    3.000
+ LK6      H4     C4     C3      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LK6      var_1            O3     C6     C7     C9               180.000           20.000   3
+ LK6      var_2            C6     C7     C8     C9               180.000           20.000   3
+ LK6      var_3            C6     C7     C9     C8               180.000           20.000   3
+ LK6      CONST_1          O3     C6     N1     C2               180.000            0.000   0
+ LK6      var_4            C6     N1     C2     C5               167.501           20.000   3
+ LK6      var_5            N1     C2     C1     H11              180.000           20.000   3
+ LK6      var_6            N1     C2     C3     C4               -65.976           20.000   3
+ LK6      var_7            N1     C2     C5     S1                76.974           20.000   3
+ LK6      var_8            C2     C5     S1     C4                22.189           20.000   3
+ LK6      var_9            C5     S1     C4     C3                 8.107           20.000   3
+ LK6      var_10           S1     C4     C3     C2               -36.621           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LK6      chir_01          C7     C6     C8     C9        positiv
+ LK6      chir_02          C2     N1     C5     C1        positiv
+ LK6      chir_03          S1     C4     C5     O1        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LK6      plan-1            N1        0.020
+ LK6      plan-1            C6        0.020
+ LK6      plan-1            C2        0.020
+ LK6      plan-1            C7        0.020
+ LK6      plan-1            O3        0.020
+ LK6      plan-2            C4        0.020
+ LK6      plan-2            C3        0.020
+ LK6      plan-2            S1        0.020
+ LK6      plan-2            H4        0.020
+ LK6      plan-3            C5        0.020
+ LK6      plan-3            C2        0.020
+ LK6      plan-3            S1        0.020
+ LK6      plan-3            H5        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

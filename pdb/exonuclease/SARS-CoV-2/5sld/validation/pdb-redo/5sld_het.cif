@@ -1,0 +1,267 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LJ6      LJ6 '.                                   ' .                  33  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LJ6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LJ6           O2     O    O         0.000     63.457    1.123   82.251
+ LJ6           C9     C    C         0.000     64.650    1.173   82.552
+ LJ6           N2     N    N         0.000     65.280    0.100   83.123
+ LJ6           C11    C    CH3       0.000     64.512   -1.099   83.441
+ LJ6           H113   H    H         0.000     63.742   -0.855   84.126
+ LJ6           H112   H    H         0.000     64.084   -1.490   82.555
+ LJ6           H111   H    H         0.000     65.151   -1.824   83.873
+ LJ6           C10    C    CH3       0.000     66.672   -0.078   83.524
+ LJ6           H103   H    H         0.000     67.301    0.033   82.679
+ LJ6           H102   H    H         0.000     66.927    0.650   84.250
+ LJ6           H101   H    H         0.000     66.801   -1.046   83.935
+ LJ6           C2     C    CH1       0.000     65.417    2.458   82.228
+ LJ6           H2     H    H         0.000     64.669    3.168   81.848
+ LJ6           C1     C    CH3       0.000     66.389    2.215   81.076
+ LJ6           H13    H    H         0.000     67.079    1.459   81.349
+ LJ6           H12    H    H         0.000     65.850    1.907   80.218
+ LJ6           H11    H    H         0.000     66.913    3.110   80.861
+ LJ6           C3     C    CH2       0.000     66.070    3.141   83.438
+ LJ6           H31    H    H         0.000     66.372    2.336   84.111
+ LJ6           H32    H    H         0.000     65.283    3.733   83.910
+ LJ6           C4     C    CR5       0.000     67.251    4.019   83.145
+ LJ6           C5     C    CR5       0.000     68.589    3.726   83.462
+ LJ6           C6     C    CH3       0.000     69.165    2.496   84.082
+ LJ6           H63    H    H         0.000     68.733    2.350   85.037
+ LJ6           H62    H    H         0.000     68.955    1.662   83.466
+ LJ6           H61    H    H         0.000     70.212    2.611   84.179
+ LJ6           C7     C    CR5       0.000     67.262    5.259   82.587
+ LJ6           C8     C    CH3       0.000     66.225    6.171   82.060
+ LJ6           H83    H    H         0.000     65.717    5.695   81.264
+ LJ6           H82    H    H         0.000     65.542    6.403   82.833
+ LJ6           H81    H    H         0.000     66.686    7.056   81.712
+ LJ6           O1     O    O2        0.000     68.540    5.689   82.514
+ LJ6           N1     N    NRD5      0.000     69.375    4.707   83.106
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LJ6      O2     n/a    C9     START
+ LJ6      C9     O2     C2     .
+ LJ6      N2     C9     C10    .
+ LJ6      C11    N2     H111   .
+ LJ6      H113   C11    .      .
+ LJ6      H112   C11    .      .
+ LJ6      H111   C11    .      .
+ LJ6      C10    N2     H101   .
+ LJ6      H103   C10    .      .
+ LJ6      H102   C10    .      .
+ LJ6      H101   C10    .      .
+ LJ6      C2     C9     C3     .
+ LJ6      H2     C2     .      .
+ LJ6      C1     C2     H11    .
+ LJ6      H13    C1     .      .
+ LJ6      H12    C1     .      .
+ LJ6      H11    C1     .      .
+ LJ6      C3     C2     C4     .
+ LJ6      H31    C3     .      .
+ LJ6      H32    C3     .      .
+ LJ6      C4     C3     C7     .
+ LJ6      C5     C4     C6     .
+ LJ6      C6     C5     H61    .
+ LJ6      H63    C6     .      .
+ LJ6      H62    C6     .      .
+ LJ6      H61    C6     .      .
+ LJ6      C7     C4     O1     .
+ LJ6      C8     C7     H81    .
+ LJ6      H83    C8     .      .
+ LJ6      H82    C8     .      .
+ LJ6      H81    C8     .      .
+ LJ6      O1     C7     N1     .
+ LJ6      N1     O1     .      END
+ LJ6      N1     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LJ6      N1     C5        aromatic    1.350    0.020
+ LJ6      N1     O1        single      1.337    0.020
+ LJ6      C5     C4        aromatic    1.390    0.020
+ LJ6      C7     C4        double      1.490    0.020
+ LJ6      C4     C3        single      1.510    0.020
+ LJ6      C6     C5        single      1.506    0.020
+ LJ6      C8     C7        single      1.506    0.020
+ LJ6      O1     C7        single      1.370    0.020
+ LJ6      C10    N2        single      1.455    0.020
+ LJ6      C1     C2        single      1.524    0.020
+ LJ6      C3     C2        single      1.524    0.020
+ LJ6      C2     C9        single      1.500    0.020
+ LJ6      C9     O2        double      1.220    0.020
+ LJ6      N2     C9        single      1.330    0.020
+ LJ6      C11    N2        single      1.455    0.020
+ LJ6      H61    C6        single      1.059    0.020
+ LJ6      H62    C6        single      1.059    0.020
+ LJ6      H63    C6        single      1.059    0.020
+ LJ6      H81    C8        single      1.059    0.020
+ LJ6      H82    C8        single      1.059    0.020
+ LJ6      H83    C8        single      1.059    0.020
+ LJ6      H101   C10       single      1.059    0.020
+ LJ6      H102   C10       single      1.059    0.020
+ LJ6      H103   C10       single      1.059    0.020
+ LJ6      H11    C1        single      1.059    0.020
+ LJ6      H12    C1        single      1.059    0.020
+ LJ6      H13    C1        single      1.059    0.020
+ LJ6      H2     C2        single      1.099    0.020
+ LJ6      H31    C3        single      1.092    0.020
+ LJ6      H32    C3        single      1.092    0.020
+ LJ6      H111   C11       single      1.059    0.020
+ LJ6      H112   C11       single      1.059    0.020
+ LJ6      H113   C11       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LJ6      O2     C9     N2      123.000    3.000
+ LJ6      O2     C9     C2      120.500    3.000
+ LJ6      N2     C9     C2      116.500    3.000
+ LJ6      C9     N2     C11     127.000    3.000
+ LJ6      C9     N2     C10     127.000    3.000
+ LJ6      C11    N2     C10     120.000    3.000
+ LJ6      N2     C11    H113    109.470    3.000
+ LJ6      N2     C11    H112    109.470    3.000
+ LJ6      N2     C11    H111    109.470    3.000
+ LJ6      H113   C11    H112    109.470    3.000
+ LJ6      H113   C11    H111    109.470    3.000
+ LJ6      H112   C11    H111    109.470    3.000
+ LJ6      N2     C10    H103    109.470    3.000
+ LJ6      N2     C10    H102    109.470    3.000
+ LJ6      N2     C10    H101    109.470    3.000
+ LJ6      H103   C10    H102    109.470    3.000
+ LJ6      H103   C10    H101    109.470    3.000
+ LJ6      H102   C10    H101    109.470    3.000
+ LJ6      C9     C2     H2      108.810    3.000
+ LJ6      C9     C2     C1      109.470    3.000
+ LJ6      C9     C2     C3      109.470    3.000
+ LJ6      H2     C2     C1      108.340    3.000
+ LJ6      H2     C2     C3      108.340    3.000
+ LJ6      C1     C2     C3      111.000    3.000
+ LJ6      C2     C1     H13     109.470    3.000
+ LJ6      C2     C1     H12     109.470    3.000
+ LJ6      C2     C1     H11     109.470    3.000
+ LJ6      H13    C1     H12     109.470    3.000
+ LJ6      H13    C1     H11     109.470    3.000
+ LJ6      H12    C1     H11     109.470    3.000
+ LJ6      C2     C3     H31     109.470    3.000
+ LJ6      C2     C3     H32     109.470    3.000
+ LJ6      C2     C3     C4      109.470    3.000
+ LJ6      H31    C3     H32     107.900    3.000
+ LJ6      H31    C3     C4      109.470    3.000
+ LJ6      H32    C3     C4      109.470    3.000
+ LJ6      C3     C4     C5      126.000    3.000
+ LJ6      C3     C4     C7      126.000    3.000
+ LJ6      C5     C4     C7      108.000    3.000
+ LJ6      C4     C5     C6      126.000    3.000
+ LJ6      C4     C5     N1      108.000    3.000
+ LJ6      C6     C5     N1      126.000    3.000
+ LJ6      C5     C6     H63     109.470    3.000
+ LJ6      C5     C6     H62     109.470    3.000
+ LJ6      C5     C6     H61     109.470    3.000
+ LJ6      H63    C6     H62     109.470    3.000
+ LJ6      H63    C6     H61     109.470    3.000
+ LJ6      H62    C6     H61     109.470    3.000
+ LJ6      C4     C7     C8      126.000    3.000
+ LJ6      C4     C7     O1      108.000    3.000
+ LJ6      C8     C7     O1      108.000    3.000
+ LJ6      C7     C8     H83     109.470    3.000
+ LJ6      C7     C8     H82     109.470    3.000
+ LJ6      C7     C8     H81     109.470    3.000
+ LJ6      H83    C8     H82     109.470    3.000
+ LJ6      H83    C8     H81     109.470    3.000
+ LJ6      H82    C8     H81     109.470    3.000
+ LJ6      C7     O1     N1      120.000    3.000
+ LJ6      O1     N1     C5      108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LJ6      var_1            O2     C9     N2     C10              180.000           20.000   2
+ LJ6      var_2            C9     N2     C11    H111             180.000           20.000   3
+ LJ6      var_3            C9     N2     C10    H101             180.000           20.000   3
+ LJ6      var_4            O2     C9     C2     C3               180.000           20.000   3
+ LJ6      var_5            C9     C2     C1     H11              180.000           20.000   3
+ LJ6      var_6            C9     C2     C3     C4               180.000           20.000   3
+ LJ6      var_7            C2     C3     C4     C7                 0.000           20.000   2
+ LJ6      CONST_1          C3     C4     C5     C6                 0.000            0.000   0
+ LJ6      var_8            C4     C5     C6     H61              180.000           20.000   3
+ LJ6      CONST_2          C3     C4     C7     O1                 0.000            0.000   0
+ LJ6      var_9            C4     C7     C8     H81              180.000           20.000   3
+ LJ6      CONST_3          C4     C7     O1     N1                -2.718            0.000   0
+ LJ6      CONST_4          C7     O1     N1     C5                 2.102            0.000   0
+ LJ6      CONST_5          O1     N1     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LJ6      chir_01          C2     C1     C3     C9        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LJ6      plan-1            N1        0.020
+ LJ6      plan-1            C5        0.020
+ LJ6      plan-1            O1        0.020
+ LJ6      plan-1            C4        0.020
+ LJ6      plan-1            C7        0.020
+ LJ6      plan-1            C3        0.020
+ LJ6      plan-1            C6        0.020
+ LJ6      plan-1            C8        0.020
+ LJ6      plan-2            C9        0.020
+ LJ6      plan-2            C2        0.020
+ LJ6      plan-2            O2        0.020
+ LJ6      plan-2            N2        0.020
+ LJ6      plan-3            N2        0.020
+ LJ6      plan-3            C10       0.020
+ LJ6      plan-3            C9        0.020
+ LJ6      plan-3            C11       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

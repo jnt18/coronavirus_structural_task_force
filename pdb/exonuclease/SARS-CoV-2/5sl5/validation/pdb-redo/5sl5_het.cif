@@ -1,0 +1,234 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WNV      WNV '.                                   ' .                  28  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WNV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WNV           O05    O    O         0.000     47.776    5.876   88.274
+ WNV           C04    C    C         0.000     46.724    6.299   87.792
+ WNV           N02    N    N         0.000     45.599    6.400   88.514
+ WNV           C03    C    CH3       0.000     45.501    5.768   89.822
+ WNV           H033   H    H         0.000     45.641    4.723   89.721
+ WNV           H032   H    H         0.000     46.246    6.164   90.462
+ WNV           H031   H    H         0.000     44.544    5.957   90.235
+ WNV           C01    C    CH3       0.000     44.409    7.115   88.072
+ WNV           H013   H    H         0.000     44.650    8.133   87.904
+ WNV           H012   H    H         0.000     44.051    6.684   87.173
+ WNV           H011   H    H         0.000     43.660    7.049   88.818
+ WNV           C06    C    CR6       0.000     46.712    6.697   86.341
+ WNV           C12    C    CR6       0.000     47.036    8.008   85.950
+ WNV           C13    C    CH3       0.000     47.291    9.086   86.972
+ WNV           H133   H    H         0.000     46.427    9.216   87.571
+ WNV           H132   H    H         0.000     48.107    8.805   87.586
+ WNV           H131   H    H         0.000     47.518    9.995   86.478
+ WNV           C10    C    CR6       0.000     47.084    8.329   84.588
+ WNV           C11    C    CH3       0.000     47.395    9.734   84.150
+ WNV           H113   H    H         0.000     46.665   10.395   84.540
+ WNV           H112   H    H         0.000     48.351   10.012   84.509
+ WNV           H111   H    H         0.000     47.387    9.784   83.092
+ WNV           C07    C    CR16      0.000     46.519    5.714   85.357
+ WNV           H07    H    H         0.000     46.334    4.688   85.650
+ WNV           C08    C    CR16      0.000     46.564    6.047   84.018
+ WNV           H08    H    H         0.000     46.377    5.292   83.265
+ WNV           C09    C    CR16      0.000     46.848    7.347   83.640
+ WNV           H09    H    H         0.000     46.886    7.601   82.588
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WNV      O05    n/a    C04    START
+ WNV      C04    O05    C06    .
+ WNV      N02    C04    C01    .
+ WNV      C03    N02    H031   .
+ WNV      H033   C03    .      .
+ WNV      H032   C03    .      .
+ WNV      H031   C03    .      .
+ WNV      C01    N02    H011   .
+ WNV      H013   C01    .      .
+ WNV      H012   C01    .      .
+ WNV      H011   C01    .      .
+ WNV      C06    C04    C07    .
+ WNV      C12    C06    C10    .
+ WNV      C13    C12    H131   .
+ WNV      H133   C13    .      .
+ WNV      H132   C13    .      .
+ WNV      H131   C13    .      .
+ WNV      C10    C12    C11    .
+ WNV      C11    C10    H111   .
+ WNV      H113   C11    .      .
+ WNV      H112   C11    .      .
+ WNV      H111   C11    .      .
+ WNV      C07    C06    C08    .
+ WNV      H07    C07    .      .
+ WNV      C08    C07    C09    .
+ WNV      H08    C08    .      .
+ WNV      C09    C08    H09    .
+ WNV      H09    C09    .      END
+ WNV      C10    C09    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WNV      C10    C09       aromatic    1.390    0.020
+ WNV      C11    C10       single      1.506    0.020
+ WNV      C10    C12       aromatic    1.384    0.020
+ WNV      C13    C12       single      1.506    0.020
+ WNV      C01    N02       single      1.455    0.020
+ WNV      C03    N02       single      1.455    0.020
+ WNV      C06    C04       single      1.500    0.020
+ WNV      N02    C04       single      1.330    0.020
+ WNV      C04    O05       double      1.220    0.020
+ WNV      C07    C06       aromatic    1.390    0.020
+ WNV      C12    C06       aromatic    1.384    0.020
+ WNV      C08    C07       aromatic    1.390    0.020
+ WNV      C09    C08       aromatic    1.390    0.020
+ WNV      H131   C13       single      1.059    0.020
+ WNV      H132   C13       single      1.059    0.020
+ WNV      H133   C13       single      1.059    0.020
+ WNV      H011   C01       single      1.059    0.020
+ WNV      H012   C01       single      1.059    0.020
+ WNV      H013   C01       single      1.059    0.020
+ WNV      H031   C03       single      1.059    0.020
+ WNV      H032   C03       single      1.059    0.020
+ WNV      H033   C03       single      1.059    0.020
+ WNV      H07    C07       single      1.083    0.020
+ WNV      H08    C08       single      1.083    0.020
+ WNV      H09    C09       single      1.083    0.020
+ WNV      H111   C11       single      1.059    0.020
+ WNV      H112   C11       single      1.059    0.020
+ WNV      H113   C11       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WNV      O05    C04    N02     123.000    3.000
+ WNV      O05    C04    C06     120.500    3.000
+ WNV      N02    C04    C06     120.000    3.000
+ WNV      C04    N02    C03     127.000    3.000
+ WNV      C04    N02    C01     127.000    3.000
+ WNV      C03    N02    C01     120.000    3.000
+ WNV      N02    C03    H033    109.470    3.000
+ WNV      N02    C03    H032    109.470    3.000
+ WNV      N02    C03    H031    109.470    3.000
+ WNV      H033   C03    H032    109.470    3.000
+ WNV      H033   C03    H031    109.470    3.000
+ WNV      H032   C03    H031    109.470    3.000
+ WNV      N02    C01    H013    109.470    3.000
+ WNV      N02    C01    H012    109.470    3.000
+ WNV      N02    C01    H011    109.470    3.000
+ WNV      H013   C01    H012    109.470    3.000
+ WNV      H013   C01    H011    109.470    3.000
+ WNV      H012   C01    H011    109.470    3.000
+ WNV      C04    C06    C12     120.000    3.000
+ WNV      C04    C06    C07     120.000    3.000
+ WNV      C12    C06    C07     120.000    3.000
+ WNV      C06    C12    C13     120.000    3.000
+ WNV      C06    C12    C10     120.000    3.000
+ WNV      C13    C12    C10     120.000    3.000
+ WNV      C12    C13    H133    109.470    3.000
+ WNV      C12    C13    H132    109.470    3.000
+ WNV      C12    C13    H131    109.470    3.000
+ WNV      H133   C13    H132    109.470    3.000
+ WNV      H133   C13    H131    109.470    3.000
+ WNV      H132   C13    H131    109.470    3.000
+ WNV      C12    C10    C11     120.000    3.000
+ WNV      C12    C10    C09     120.000    3.000
+ WNV      C11    C10    C09     120.000    3.000
+ WNV      C10    C11    H113    109.470    3.000
+ WNV      C10    C11    H112    109.470    3.000
+ WNV      C10    C11    H111    109.470    3.000
+ WNV      H113   C11    H112    109.470    3.000
+ WNV      H113   C11    H111    109.470    3.000
+ WNV      H112   C11    H111    109.470    3.000
+ WNV      C06    C07    H07     120.000    3.000
+ WNV      C06    C07    C08     120.000    3.000
+ WNV      H07    C07    C08     120.000    3.000
+ WNV      C07    C08    H08     120.000    3.000
+ WNV      C07    C08    C09     120.000    3.000
+ WNV      H08    C08    C09     120.000    3.000
+ WNV      C08    C09    H09     120.000    3.000
+ WNV      C08    C09    C10     120.000    3.000
+ WNV      H09    C09    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WNV      var_1            O05    C04    N02    C01              180.000           20.000   2
+ WNV      var_2            C04    N02    C03    H031             180.000           20.000   3
+ WNV      var_3            C04    N02    C01    H011             180.000           20.000   3
+ WNV      var_4            O05    C04    C06    C07               83.831           20.000   3
+ WNV      CONST_1          C04    C06    C12    C10                0.000            0.000   0
+ WNV      var_5            C06    C12    C13    H131             180.000           20.000   3
+ WNV      CONST_2          C06    C12    C10    C11                0.000            0.000   0
+ WNV      CONST_3          C12    C10    C09    C08                0.000            0.000   0
+ WNV      var_6            C12    C10    C11    H111             180.000           20.000   3
+ WNV      CONST_4          C04    C06    C07    C08                0.000            0.000   0
+ WNV      CONST_5          C06    C07    C08    C09                0.000            0.000   0
+ WNV      CONST_6          C07    C08    C09    C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WNV      plan-1            C10       0.020
+ WNV      plan-1            C09       0.020
+ WNV      plan-1            C11       0.020
+ WNV      plan-1            C12       0.020
+ WNV      plan-1            C06       0.020
+ WNV      plan-1            C07       0.020
+ WNV      plan-1            C08       0.020
+ WNV      plan-1            C04       0.020
+ WNV      plan-1            H07       0.020
+ WNV      plan-1            H08       0.020
+ WNV      plan-1            H09       0.020
+ WNV      plan-1            C13       0.020
+ WNV      plan-2            C04       0.020
+ WNV      plan-2            C06       0.020
+ WNV      plan-2            N02       0.020
+ WNV      plan-2            O05       0.020
+ WNV      plan-3            N02       0.020
+ WNV      plan-3            C01       0.020
+ WNV      plan-3            C03       0.020
+ WNV      plan-3            C04       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

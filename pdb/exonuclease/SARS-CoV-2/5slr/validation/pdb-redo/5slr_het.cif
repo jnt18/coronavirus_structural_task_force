@@ -1,0 +1,247 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LO6      LO6 '.                                   ' .                  30  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LO6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LO6           F2     F    F         0.000     33.828   30.611   97.888
+ LO6           C9     C    CH1       0.000     32.918   31.352   97.281
+ LO6           H9     H    H         0.000     32.637   32.192   97.931
+ LO6           F1     F    F         0.000     31.881   30.543   97.134
+ LO6           O3     O    O2        0.000     33.409   31.856   96.040
+ LO6           C8     C    CH2       0.000     32.445   32.584   95.300
+ LO6           H81    H    H         0.000     31.921   33.251   95.988
+ LO6           H82    H    H         0.000     31.735   31.872   94.874
+ LO6           C7     C    C         0.000     33.074   33.394   94.193
+ LO6           O2     O    O         0.000     33.465   34.533   94.457
+ LO6           N1     N    N         0.000     33.103   32.889   92.941
+ LO6           C3     C    CH2       0.000     32.891   31.482   92.554
+ LO6           H31    H    H         0.000     31.818   31.282   92.569
+ LO6           H32    H    H         0.000     33.389   30.847   93.290
+ LO6           C2     C    CH1       0.000     33.443   31.186   91.171
+ LO6           H2     H    H         0.000     32.668   31.408   90.424
+ LO6           C1     C    CH3       0.000     33.882   29.750   91.006
+ LO6           H13    H    H         0.000     34.641   29.533   91.710
+ LO6           H12    H    H         0.000     33.055   29.110   91.167
+ LO6           H11    H    H         0.000     34.255   29.609   90.026
+ LO6           O1     O    O2        0.000     34.583   32.021   90.919
+ LO6           C5     C    CH1       0.000     34.274   33.421   90.815
+ LO6           H5     H    H         0.000     33.885   33.616   89.806
+ LO6           C6     C    CH3       0.000     35.567   34.183   90.981
+ LO6           H63    H    H         0.000     35.983   33.964   91.929
+ LO6           H62    H    H         0.000     36.243   33.894   90.220
+ LO6           H61    H    H         0.000     35.373   35.221   90.909
+ LO6           C4     C    CH2       0.000     33.219   33.837   91.823
+ LO6           H42    H    H         0.000     32.263   33.903   91.300
+ LO6           H41    H    H         0.000     33.492   34.822   92.206
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LO6      F2     n/a    C9     START
+ LO6      C9     F2     O3     .
+ LO6      H9     C9     .      .
+ LO6      F1     C9     .      .
+ LO6      O3     C9     C8     .
+ LO6      C8     O3     C7     .
+ LO6      H81    C8     .      .
+ LO6      H82    C8     .      .
+ LO6      C7     C8     N1     .
+ LO6      O2     C7     .      .
+ LO6      N1     C7     C3     .
+ LO6      C3     N1     C2     .
+ LO6      H31    C3     .      .
+ LO6      H32    C3     .      .
+ LO6      C2     C3     O1     .
+ LO6      H2     C2     .      .
+ LO6      C1     C2     H11    .
+ LO6      H13    C1     .      .
+ LO6      H12    C1     .      .
+ LO6      H11    C1     .      .
+ LO6      O1     C2     C5     .
+ LO6      C5     O1     C4     .
+ LO6      H5     C5     .      .
+ LO6      C6     C5     H61    .
+ LO6      H63    C6     .      .
+ LO6      H62    C6     .      .
+ LO6      H61    C6     .      .
+ LO6      C4     C5     H41    .
+ LO6      H42    C4     .      .
+ LO6      H41    C4     .      END
+ LO6      N1     C4     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LO6      N1     C4        single      1.455    0.020
+ LO6      N1     C7        single      1.330    0.020
+ LO6      C3     N1        single      1.455    0.020
+ LO6      C4     C5        single      1.524    0.020
+ LO6      C6     C5        single      1.524    0.020
+ LO6      C5     O1        single      1.426    0.020
+ LO6      C7     C8        single      1.510    0.020
+ LO6      O2     C7        double      1.220    0.020
+ LO6      C8     O3        single      1.426    0.020
+ LO6      C1     C2        single      1.524    0.020
+ LO6      C2     C3        single      1.524    0.020
+ LO6      O1     C2        single      1.426    0.020
+ LO6      O3     C9        single      1.426    0.020
+ LO6      F1     C9        single      1.370    0.020
+ LO6      C9     F2        single      1.370    0.020
+ LO6      H41    C4        single      1.092    0.020
+ LO6      H42    C4        single      1.092    0.020
+ LO6      H5     C5        single      1.099    0.020
+ LO6      H61    C6        single      1.059    0.020
+ LO6      H62    C6        single      1.059    0.020
+ LO6      H63    C6        single      1.059    0.020
+ LO6      H81    C8        single      1.092    0.020
+ LO6      H82    C8        single      1.092    0.020
+ LO6      H11    C1        single      1.059    0.020
+ LO6      H12    C1        single      1.059    0.020
+ LO6      H13    C1        single      1.059    0.020
+ LO6      H2     C2        single      1.099    0.020
+ LO6      H31    C3        single      1.092    0.020
+ LO6      H32    C3        single      1.092    0.020
+ LO6      H9     C9        single      1.099    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LO6      F2     C9     H9      109.500    3.000
+ LO6      F2     C9     F1      109.500    3.000
+ LO6      F2     C9     O3      109.500    3.000
+ LO6      H9     C9     F1      109.500    3.000
+ LO6      H9     C9     O3      109.470    3.000
+ LO6      F1     C9     O3      109.500    3.000
+ LO6      C9     O3     C8      111.800    3.000
+ LO6      O3     C8     H81     109.470    3.000
+ LO6      O3     C8     H82     109.470    3.000
+ LO6      O3     C8     C7      109.470    3.000
+ LO6      H81    C8     H82     107.900    3.000
+ LO6      H81    C8     C7      109.470    3.000
+ LO6      H82    C8     C7      109.470    3.000
+ LO6      C8     C7     O2      120.500    3.000
+ LO6      C8     C7     N1      116.500    3.000
+ LO6      O2     C7     N1      123.000    3.000
+ LO6      C7     N1     C3      127.000    3.000
+ LO6      C7     N1     C4      127.000    3.000
+ LO6      C3     N1     C4      120.000    3.000
+ LO6      N1     C3     H31     109.470    3.000
+ LO6      N1     C3     H32     109.470    3.000
+ LO6      N1     C3     C2      105.000    3.000
+ LO6      H31    C3     H32     107.900    3.000
+ LO6      H31    C3     C2      109.470    3.000
+ LO6      H32    C3     C2      109.470    3.000
+ LO6      C3     C2     H2      108.340    3.000
+ LO6      C3     C2     C1      111.000    3.000
+ LO6      C3     C2     O1      109.470    3.000
+ LO6      H2     C2     C1      108.340    3.000
+ LO6      H2     C2     O1      109.470    3.000
+ LO6      C1     C2     O1      109.470    3.000
+ LO6      C2     C1     H13     109.470    3.000
+ LO6      C2     C1     H12     109.470    3.000
+ LO6      C2     C1     H11     109.470    3.000
+ LO6      H13    C1     H12     109.470    3.000
+ LO6      H13    C1     H11     109.470    3.000
+ LO6      H12    C1     H11     109.470    3.000
+ LO6      C2     O1     C5      111.800    3.000
+ LO6      O1     C5     H5      109.470    3.000
+ LO6      O1     C5     C6      109.470    3.000
+ LO6      O1     C5     C4      109.470    3.000
+ LO6      H5     C5     C6      108.340    3.000
+ LO6      H5     C5     C4      108.340    3.000
+ LO6      C6     C5     C4      111.000    3.000
+ LO6      C5     C6     H63     109.470    3.000
+ LO6      C5     C6     H62     109.470    3.000
+ LO6      C5     C6     H61     109.470    3.000
+ LO6      H63    C6     H62     109.470    3.000
+ LO6      H63    C6     H61     109.470    3.000
+ LO6      H62    C6     H61     109.470    3.000
+ LO6      C5     C4     H42     109.470    3.000
+ LO6      C5     C4     H41     109.470    3.000
+ LO6      C5     C4     N1      105.000    3.000
+ LO6      H42    C4     H41     107.900    3.000
+ LO6      H42    C4     N1      109.470    3.000
+ LO6      H41    C4     N1      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LO6      var_1            F2     C9     O3     C8               175.950           20.000   3
+ LO6      var_2            C9     O3     C8     C7               165.149           20.000   3
+ LO6      var_3            O3     C8     C7     N1               180.000           20.000   3
+ LO6      var_4            C8     C7     N1     C3               180.000           20.000   2
+ LO6      var_5            C7     N1     C4     C5               132.764           20.000   3
+ LO6      var_6            C7     N1     C3     C2              -160.749           20.000   3
+ LO6      var_7            N1     C3     C2     O1               180.000           20.000   3
+ LO6      var_8            C3     C2     C1     H11              180.000           20.000   3
+ LO6      var_9            C3     C2     O1     C5               -66.775           20.000   3
+ LO6      var_10           C2     O1     C5     C4                38.951           20.000   3
+ LO6      var_11           O1     C5     C6     H61              180.000           20.000   3
+ LO6      var_12           O1     C5     C4     N1               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LO6      chir_01          C5     C4     C6     O1        negativ
+ LO6      chir_02          C2     C1     C3     O1        negativ
+ LO6      chir_03          C9     O3     F1     F2        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LO6      plan-1            N1        0.020
+ LO6      plan-1            C4        0.020
+ LO6      plan-1            C7        0.020
+ LO6      plan-1            C3        0.020
+ LO6      plan-2            C7        0.020
+ LO6      plan-2            N1        0.020
+ LO6      plan-2            C8        0.020
+ LO6      plan-2            O2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,247 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WKS      WKS '.                                   ' .                  30  14 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WKS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WKS           C07    C    CH3       0.000     63.997   32.333  102.953
+ WKS           H071   H    H         0.000     64.872   32.894  103.152
+ WKS           H072   H    H         0.000     63.507   32.106  103.863
+ WKS           H073   H    H         0.000     64.256   31.436  102.456
+ WKS           C06    C    CR6       0.000     63.082   33.134  102.084
+ WKS           N08    N    NRD6      0.000     62.750   32.630  100.899
+ WKS           C02    C    CR6       0.000     61.928   33.341  100.111
+ WKS           C01    C    CH3       0.000     61.575   32.745   98.785
+ WKS           H013   H    H         0.000     62.458   32.600   98.220
+ WKS           H012   H    H         0.000     61.093   31.815   98.936
+ WKS           H011   H    H         0.000     60.926   33.401   98.267
+ WKS           N05    N    NRD6      0.000     62.646   34.309  102.549
+ WKS           C04    C    CR6       0.000     61.844   35.046  101.759
+ WKS           C03    C    CR16      0.000     61.451   34.556  100.503
+ WKS           H03    H    H         0.000     60.788   35.127   99.865
+ WKS           N09    N    N         0.000     61.358   36.243  102.273
+ WKS           C10    C    CH2       0.000     62.285   37.188  102.905
+ WKS           H102   H    H         0.000     62.767   37.784  102.127
+ WKS           H101   H    H         0.000     63.043   36.626  103.454
+ WKS           C14    C    CH2       0.000     60.224   36.906  101.619
+ WKS           H141   H    H         0.000     59.534   36.145  101.250
+ WKS           H142   H    H         0.000     60.596   37.496  100.779
+ WKS           C13    C    CH2       0.000     59.502   37.815  102.598
+ WKS           H131   H    H         0.000     59.063   37.205  103.390
+ WKS           H132   H    H         0.000     58.709   38.347  102.068
+ WKS           N12    N    NT1       0.000     60.433   38.781  103.183
+ WKS           HN12   H    H         0.000     60.322   39.806  103.126
+ WKS           C11    C    CH2       0.000     61.542   38.105  103.860
+ WKS           H112   H    H         0.000     61.140   37.520  104.690
+ WKS           H111   H    H         0.000     62.228   38.861  104.248
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WKS      C07    n/a    C06    START
+ WKS      H071   C07    .      .
+ WKS      H072   C07    .      .
+ WKS      H073   C07    .      .
+ WKS      C06    C07    N05    .
+ WKS      N08    C06    C02    .
+ WKS      C02    N08    C01    .
+ WKS      C01    C02    H011   .
+ WKS      H013   C01    .      .
+ WKS      H012   C01    .      .
+ WKS      H011   C01    .      .
+ WKS      N05    C06    C04    .
+ WKS      C04    N05    N09    .
+ WKS      C03    C04    H03    .
+ WKS      H03    C03    .      .
+ WKS      N09    C04    C14    .
+ WKS      C10    N09    H101   .
+ WKS      H102   C10    .      .
+ WKS      H101   C10    .      .
+ WKS      C14    N09    C13    .
+ WKS      H141   C14    .      .
+ WKS      H142   C14    .      .
+ WKS      C13    C14    N12    .
+ WKS      H131   C13    .      .
+ WKS      H132   C13    .      .
+ WKS      N12    C13    C11    .
+ WKS      HN12   N12    .      .
+ WKS      C11    N12    H111   .
+ WKS      H112   C11    .      .
+ WKS      H111   C11    .      END
+ WKS      C10    C11    .    ADD
+ WKS      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WKS      C10    C11       single      1.524    0.020
+ WKS      C10    N09       single      1.455    0.020
+ WKS      N12    C13       single      1.472    0.020
+ WKS      C11    N12       single      1.472    0.020
+ WKS      C13    C14       single      1.524    0.020
+ WKS      C01    C02       single      1.506    0.020
+ WKS      C02    C03       aromatic    1.390    0.020
+ WKS      C02    N08       aromatic    1.350    0.020
+ WKS      C03    C04       aromatic    1.390    0.020
+ WKS      C04    N05       aromatic    1.350    0.020
+ WKS      N09    C04       single      1.400    0.020
+ WKS      C06    C07       single      1.506    0.020
+ WKS      N05    C06       aromatic    1.350    0.020
+ WKS      N08    C06       aromat      1.350    0.020
+ WKS      C14    N09       single      1.455    0.020
+ WKS      H101   C10       single      1.092    0.020
+ WKS      H102   C10       single      1.092    0.020
+ WKS      HN12   N12       single      1.033    0.020
+ WKS      H131   C13       single      1.092    0.020
+ WKS      H132   C13       single      1.092    0.020
+ WKS      H011   C01       single      1.059    0.020
+ WKS      H012   C01       single      1.059    0.020
+ WKS      H013   C01       single      1.059    0.020
+ WKS      H03    C03       single      1.083    0.020
+ WKS      H071   C07       single      1.059    0.020
+ WKS      H072   C07       single      1.059    0.020
+ WKS      H073   C07       single      1.059    0.020
+ WKS      H111   C11       single      1.092    0.020
+ WKS      H112   C11       single      1.092    0.020
+ WKS      H141   C14       single      1.092    0.020
+ WKS      H142   C14       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WKS      H071   C07    H072    109.470    3.000
+ WKS      H071   C07    H073    109.470    3.000
+ WKS      H072   C07    H073    109.470    3.000
+ WKS      H071   C07    C06     109.470    3.000
+ WKS      H072   C07    C06     109.470    3.000
+ WKS      H073   C07    C06     109.470    3.000
+ WKS      C07    C06    N08     120.000    3.000
+ WKS      C07    C06    N05     120.000    3.000
+ WKS      N08    C06    N05     120.000    3.000
+ WKS      C06    N08    C02     120.000    3.000
+ WKS      N08    C02    C01     120.000    3.000
+ WKS      N08    C02    C03     120.000    3.000
+ WKS      C01    C02    C03     120.000    3.000
+ WKS      C02    C01    H013    109.470    3.000
+ WKS      C02    C01    H012    109.470    3.000
+ WKS      C02    C01    H011    109.470    3.000
+ WKS      H013   C01    H012    109.470    3.000
+ WKS      H013   C01    H011    109.470    3.000
+ WKS      H012   C01    H011    109.470    3.000
+ WKS      C06    N05    C04     120.000    3.000
+ WKS      N05    C04    C03     120.000    3.000
+ WKS      N05    C04    N09     120.000    3.000
+ WKS      C03    C04    N09     120.000    3.000
+ WKS      C04    C03    H03     120.000    3.000
+ WKS      C04    C03    C02     120.000    3.000
+ WKS      H03    C03    C02     120.000    3.000
+ WKS      C04    N09    C10     120.000    3.000
+ WKS      C04    N09    C14     120.000    3.000
+ WKS      C10    N09    C14     120.000    3.000
+ WKS      N09    C10    H102    109.470    3.000
+ WKS      N09    C10    H101    109.470    3.000
+ WKS      N09    C10    C11     105.000    3.000
+ WKS      H102   C10    H101    107.900    3.000
+ WKS      H102   C10    C11     109.470    3.000
+ WKS      H101   C10    C11     109.470    3.000
+ WKS      N09    C14    H141    109.470    3.000
+ WKS      N09    C14    H142    109.470    3.000
+ WKS      N09    C14    C13     105.000    3.000
+ WKS      H141   C14    H142    107.900    3.000
+ WKS      H141   C14    C13     109.470    3.000
+ WKS      H142   C14    C13     109.470    3.000
+ WKS      C14    C13    H131    109.470    3.000
+ WKS      C14    C13    H132    109.470    3.000
+ WKS      C14    C13    N12     109.500    3.000
+ WKS      H131   C13    H132    107.900    3.000
+ WKS      H131   C13    N12     109.500    3.000
+ WKS      H132   C13    N12     109.500    3.000
+ WKS      C13    N12    HN12    109.500    3.000
+ WKS      C13    N12    C11     109.500    3.000
+ WKS      HN12   N12    C11     109.500    3.000
+ WKS      N12    C11    H112    109.500    3.000
+ WKS      N12    C11    H111    109.500    3.000
+ WKS      N12    C11    C10     109.500    3.000
+ WKS      H112   C11    H111    107.900    3.000
+ WKS      H112   C11    C10     109.470    3.000
+ WKS      H111   C11    C10     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WKS      var_1            H073   C07    C06    N05              180.000           20.000   3
+ WKS      CONST_1          C07    C06    N08    C02                0.000            0.000   0
+ WKS      CONST_2          C06    N08    C02    C01                0.000            0.000   0
+ WKS      CONST_3          N08    C02    C03    C04                0.000            0.000   0
+ WKS      var_2            N08    C02    C01    H011             180.000           20.000   3
+ WKS      CONST_4          C07    C06    N05    C04                0.000            0.000   0
+ WKS      CONST_5          C06    N05    C04    N09                0.000            0.000   0
+ WKS      CONST_6          N05    C04    C03    C02                0.000            0.000   0
+ WKS      var_3            N05    C04    N09    C14             -164.073           20.000   3
+ WKS      var_4            C04    N09    C10    C11             -157.120           20.000   3
+ WKS      var_5            N09    C10    C11    N12              180.000           20.000   3
+ WKS      var_6            C04    N09    C14    C13              156.496           20.000   3
+ WKS      var_7            N09    C14    C13    N12              180.000           20.000   3
+ WKS      var_8            C14    C13    N12    C11              -57.821           20.000   3
+ WKS      var_9            C13    N12    C11    C10               57.430           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WKS      plan-1            C02       0.020
+ WKS      plan-1            C01       0.020
+ WKS      plan-1            C03       0.020
+ WKS      plan-1            N08       0.020
+ WKS      plan-1            C04       0.020
+ WKS      plan-1            C06       0.020
+ WKS      plan-1            N05       0.020
+ WKS      plan-1            H03       0.020
+ WKS      plan-1            N09       0.020
+ WKS      plan-1            C07       0.020
+ WKS      plan-2            N09       0.020
+ WKS      plan-2            C10       0.020
+ WKS      plan-2            C04       0.020
+ WKS      plan-2            C14       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
