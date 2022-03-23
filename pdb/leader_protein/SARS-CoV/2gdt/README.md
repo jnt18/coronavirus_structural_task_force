@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: leader protein
+**Protein name**: nsp1
 
 **Organism**: SARS-CoV
 
@@ -15,16 +15,6 @@ First structure of SARS-CoV NSP1 (leader protein). This NMR structure showed a p
 ## Basefolder
 
 2gdt.pdb and 2gdt.cif - the coordinates of the threedimensional molecular model
-
-
-## Comments On The Structure
-`Andrea Thorn`
-
-many Ramachandran outliers
-
-`Vincent Chen`
-
-Similar crystal structures in the PDB which have a similar fold to 2gdt (3zbd and 5xbc, for example) from different viruses.  It doesn't directly say whether 2gdt is correct, but lends credence to the idea that it might actually be a novel fold.  It might be worth taking a closer look at 3zbd and 5xbc though, for a start.
 
 
 

@@ -140,6 +140,13 @@ def delete_entry_from_database(pdb_id):
     print("Total number of database entries: " + str(len(df_new)))
     df_new.to_pickle(db_string)
     
+def print_entry(pdb_id):
+    """
+    Prints the entry with the given id.
+    """
+    
+    entry = df.loc[df['pdb_id'] == pdb_id]
+    print(entry)
 
 
 def run():
@@ -153,6 +160,5 @@ def run():
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
-    
     
 run()

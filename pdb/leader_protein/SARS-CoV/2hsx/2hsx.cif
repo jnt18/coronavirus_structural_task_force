@@ -3,15 +3,17 @@ data_2HSX
 _entry.id   2HSX 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.279 
+_audit_conform.dict_version    5.350 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   2HSX         
-RCSB  RCSB038722   
-WWPDB D_1000038722 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   2HSX         pdb_00002hsx 10.2210/pdb2hsx/pdb 
+RCSB  RCSB038722   ?            ?                   
+WWPDB D_1000038722 ?            ?                   
 # 
 loop_
 _pdbx_database_related.db_name 
@@ -31,6 +33,7 @@ _pdbx_database_status.status_code_mr                  REL
 _pdbx_database_status.SG_entry                        Y 
 _pdbx_database_status.pdb_format_compatible           Y 
 _pdbx_database_status.status_code_cs                  ? 
+_pdbx_database_status.status_code_nmr_data            ? 
 _pdbx_database_status.methods_development_category    ? 
 # 
 loop_
@@ -77,14 +80,15 @@ loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
-primary 'Almeida, M.S.' 1 
-primary 'Johnson, M.A.' 2 
-primary 'Herrmann, T.'  3 
-primary 'Geralt, M.'    4 
-primary 'Wuthrich, K.'  5 
-1       'Almeida, M.S.' 6 
-1       'Johnson, M.A.' 7 
-1       'Wuthrich, K.'  8 
+_citation_author.identifier_ORCID 
+primary 'Almeida, M.S.' 1 ? 
+primary 'Johnson, M.A.' 2 ? 
+primary 'Herrmann, T.'  3 ? 
+primary 'Geralt, M.'    4 ? 
+primary 'Wuthrich, K.'  5 ? 
+1       'Almeida, M.S.' 6 ? 
+1       'Johnson, M.A.' 7 ? 
+1       'Wuthrich, K.'  8 ? 
 # 
 _entity.id                         1 
 _entity.type                       polymer 
@@ -321,7 +325,7 @@ _struct_ref_seq_dif.pdbx_seq_db_name             UNP
 _struct_ref_seq_dif.pdbx_seq_db_accession_code   P59641 
 _struct_ref_seq_dif.db_mon_id                    THR 
 _struct_ref_seq_dif.pdbx_seq_db_seq_num          12 
-_struct_ref_seq_dif.details                      ENGINEERED 
+_struct_ref_seq_dif.details                      'engineered mutation' 
 _struct_ref_seq_dif.pdbx_auth_seq_num            1 
 _struct_ref_seq_dif.pdbx_ordinal                 1 
 # 
@@ -379,8 +383,8 @@ _pdbx_nmr_spectrometer.model
 _pdbx_nmr_spectrometer.manufacturer 
 _pdbx_nmr_spectrometer.field_strength 
 _pdbx_nmr_spectrometer.type 
-1 Avance Bruker 600 ? 
-2 Avance Bruker 800 ? 
+1 AVANCE Bruker 600 ? 
+2 AVANCE Bruker 800 ? 
 # 
 _pdbx_nmr_refine.entry_id           2HSX 
 _pdbx_nmr_refine.method             ATNOS/CANDID/CYANA 
@@ -412,7 +416,7 @@ _pdbx_nmr_software.name
 _pdbx_nmr_software.version 
 _pdbx_nmr_software.authors 
 _pdbx_nmr_software.ordinal 
-collection           TOPSPIN                   1.3   Bruker  1 
+collection           TopSpin                   1.3   Bruker  1 
 'data analysis'      'ATNOS/CANDID Standalone' 1.0   Torsten 2 
 'structure solution' CYANA                     1.0.3 Guntert 3 
 refinement           CYANA                     1.0.3 Guntert 4 
@@ -445,7 +449,6 @@ _diffrn_radiation_wavelength.wt           1.0
 # 
 _struct.entry_id                  2HSX 
 _struct.title                     'NMR Structure of the nonstructural protein 1 (nsp1) from the SARS coronavirus' 
-_struct.pdbx_descriptor           'Leader protein; p65 homolog; NSP1 (EC 3.4.22.-)' 
 _struct.pdbx_model_details        ? 
 _struct.pdbx_CASP_flag            ? 
 _struct.pdbx_model_type_details   ? 
@@ -2559,6 +2562,33 @@ _pdbx_SG_project.project_name          'PSI, Protein Structure Initiative'
 _pdbx_SG_project.full_name_of_center   'Joint Center for Structural Genomics' 
 _pdbx_SG_project.initial_of_center     JCSG 
 # 
+_pdbx_struct_assembly.id                   1 
+_pdbx_struct_assembly.details              author_defined_assembly 
+_pdbx_struct_assembly.method_details       ? 
+_pdbx_struct_assembly.oligomeric_details   monomeric 
+_pdbx_struct_assembly.oligomeric_count     1 
+# 
+_pdbx_struct_assembly_gen.assembly_id       1 
+_pdbx_struct_assembly_gen.oper_expression   1 
+_pdbx_struct_assembly_gen.asym_id_list      A 
+# 
+_pdbx_struct_oper_list.id                   1 
+_pdbx_struct_oper_list.type                 'identity operation' 
+_pdbx_struct_oper_list.name                 1_555 
+_pdbx_struct_oper_list.symmetry_operation   ? 
+_pdbx_struct_oper_list.matrix[1][1]         1.0000000000 
+_pdbx_struct_oper_list.matrix[1][2]         0.0000000000 
+_pdbx_struct_oper_list.matrix[1][3]         0.0000000000 
+_pdbx_struct_oper_list.vector[1]            0.0000000000 
+_pdbx_struct_oper_list.matrix[2][1]         0.0000000000 
+_pdbx_struct_oper_list.matrix[2][2]         1.0000000000 
+_pdbx_struct_oper_list.matrix[2][3]         0.0000000000 
+_pdbx_struct_oper_list.vector[2]            0.0000000000 
+_pdbx_struct_oper_list.matrix[3][1]         0.0000000000 
+_pdbx_struct_oper_list.matrix[3][2]         0.0000000000 
+_pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
+_pdbx_struct_oper_list.vector[3]            0.0000000000 
+# 
 loop_
 _pdbx_audit_revision_history.ordinal 
 _pdbx_audit_revision_history.data_content_type 
@@ -2568,6 +2598,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2007-02-06 
 2 'Structure model' 1 1 2007-11-14 
 3 'Structure model' 1 2 2011-07-13 
+4 'Structure model' 1 3 2021-10-20 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -2575,6 +2606,7 @@ _pdbx_audit_revision_details.data_content_type   'Structure model'
 _pdbx_audit_revision_details.provider            repository 
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
+_pdbx_audit_revision_details.details             ? 
 # 
 loop_
 _pdbx_audit_revision_group.ordinal 
@@ -2583,6 +2615,32 @@ _pdbx_audit_revision_group.data_content_type
 _pdbx_audit_revision_group.group 
 1 2 'Structure model' 'Version format compliance' 
 2 3 'Structure model' 'Version format compliance' 
+3 4 'Structure model' 'Data collection'           
+4 4 'Structure model' 'Database references'       
+5 4 'Structure model' 'Derived calculations'      
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 4 'Structure model' database_2            
+2 4 'Structure model' pdbx_nmr_software     
+3 4 'Structure model' pdbx_nmr_spectrometer 
+4 4 'Structure model' pdbx_struct_assembly  
+5 4 'Structure model' pdbx_struct_oper_list 
+6 4 'Structure model' struct_ref_seq_dif    
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 4 'Structure model' '_database_2.pdbx_DOI'                
+2 4 'Structure model' '_database_2.pdbx_database_accession' 
+3 4 'Structure model' '_pdbx_nmr_software.name'             
+4 4 'Structure model' '_pdbx_nmr_spectrometer.model'        
+5 4 'Structure model' '_struct_ref_seq_dif.details'         
 # 
 _pdbx_validate_close_contact.id               1 
 _pdbx_validate_close_contact.PDB_model_num    1 
