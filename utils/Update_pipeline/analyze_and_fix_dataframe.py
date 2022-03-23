@@ -11,7 +11,9 @@ This contains functions used to analyze the data frame or to fix bugs.
 import os
 import pandas as pd
 
-df = pd.read_pickle("main_repo_database_SARS-CoV-2.pkl")
+taxonomy = "SARS-CoV"
+db_string = "main_repo_database_" + taxonomy + ".pkl"
+df = pd.read_pickle(db_string)
 
 
 
@@ -58,7 +60,7 @@ def remove_duplicates():
         print(prot)
     
     print(len(nf))
-    nf.to_pickle("main_repo_database_SARS-CoV-2.pkl")
+    nf.to_pickle(db_string)
 
 
 # # # Change path of not assigned
@@ -95,7 +97,8 @@ def update_path_of_not_assigned():
         if str(entry).find('not_assigned') >= 0:
             prot = df.loc[df['path_in_repo'] == entry, 'protein'].iloc[0]
             pdb_id = df.loc[df['path_in_repo'] == entry, 'pdb_id'].iloc[0]
-            print(entry)
+            print("entry:" + entry)
+            print("prot:" + prot)
             
             if prot == "not_assigned":
                 # pdb has to be assigned manually
@@ -103,7 +106,7 @@ def update_path_of_not_assigned():
                 print(prot)
             else:
                 # update path
-                new_path = os.path.join("pdb", prot, "SARS-CoV-2", pdb_id)
+                new_path = os.path.join("pdb", prot, taxonomy, pdb_id)
                 print(new_path)
                 df.loc[df["pdb_id"] == pdb_id,"path_in_repo"] = new_path
                 print(df.loc[df["pdb_id"] == pdb_id,"path_in_repo"])
@@ -112,16 +115,31 @@ def update_path_of_not_assigned():
     print(len(not_assigned))
     print(not_assigned)
     print("these pdbs have to be assigned manually")
-    df.to_pickle("main_repo_database_SARS-CoV-2.pkl")
+    df.to_pickle(db_string)
     
 
 def assign_protein_to_data_frame_entry(pdb_id, protein):
     """
     Assign a protein to a certain database entry and save changes.
+    Used for not_assigned proteins which have the files in correct place.
     Returns: None
     """
     df.loc[df["pdb_id"] == pdb_id, "protein"] = protein
-    df.to_pickle("main_repo_database_SARS-CoV-2.pkl")
+    df.to_pickle(db_string)
+
+def delete_entry_from_database(pdb_id):
+    """
+    Use this function to delete entries which do not correspong to SARS-CoV
+    or SARS-CoV-2.
+    One example is 7f8l, which was somehow classified as SARS-CoV
+    """
+    print("Total number of database entries: " + str(len(df)))
+    # load old entry and drop it from old dataframe
+    entry = df.loc[df['pdb_id'] == pdb_id]
+    df_new = df.drop(entry.index)
+    print("Total number of database entries: " + str(len(df_new)))
+    df_new.to_pickle(db_string)
+    
 
 
 def run():
@@ -132,5 +150,9 @@ def run():
         print("Scan was succesful, no errors found!\n")
     else:
         print("Scan finished. Scan revealed " + str(errors) + " errors!\n")
+        print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
+              + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
-
+    
+    
+run()
