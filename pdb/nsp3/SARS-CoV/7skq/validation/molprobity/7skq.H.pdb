@@ -58,10 +58,10 @@ _citation.journal_id_CSD            ?
 _citation.journal_id_ISSN           2373-8227
 _citation.journal_full              ?
 _citation.journal_issue             ?
-_citation.journal_volume            ?
+_citation.journal_volume            8
 _citation.language                  ?
-_citation.page_first                ?
-_citation.page_last                 ?
+_citation.page_first                596
+_citation.page_last                 611
 _citation.title
 ;Exploring Noncovalent Protease Inhibitors for the Treatment of Severe Acute Res
 ;
@@ -78,7 +78,7 @@ _citation_author.name
 _citation_author.ordinal
 _citation_author.identifier_ORCID
 primary 'Freitas, B.T.'   1  ?
-primary 'Ahiadorme, D.A.' 2  0000-0001-8816-3872
+primary 'Ahiadorme, D.A.' 2  ?
 primary 'Bagul, R.S.'     3  ?
 primary 'Durie, I.A.'     4  ?
 primary 'Ghosh, S.'       5  ?
@@ -97,8 +97,8 @@ primary 'Subedi, Y.P.'    14 ?
 primary 'Upadhyaya, K.'   15 ?
 primary 'Tripp, R.A.'     16 ?
 primary 'Cummings, B.S.'  17 ?
-primary 'Crich, D.'       18 0000-0003-2400-0083
-primary 'Pegan, S.D.'     19 0000-0002-2958-5319
+primary 'Crich, D.'       18 ?
+primary 'Pegan, S.D.'     19 ?
 #
 _cell.angle_alpha                  90.000
 _cell.angle_alpha_esd              ?
@@ -7322,6 +7322,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2022-03-02
 2 'Structure model' 1 1 2022-03-09
+3 'Structure model' 1 2 2022-03-23
 #
 _pdbx_audit_revision_details.ordinal             1
 _pdbx_audit_revision_details.revision_ordinal    1
@@ -7331,10 +7332,13 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ?
 _pdbx_audit_revision_details.details             ?
 #
-_pdbx_audit_revision_group.ordinal             1
-_pdbx_audit_revision_group.revision_ordinal    2
-_pdbx_audit_revision_group.data_content_type   'Structure model'
-_pdbx_audit_revision_group.group               'Database references'
+loop_
+_pdbx_audit_revision_group.ordinal
+_pdbx_audit_revision_group.revision_ordinal
+_pdbx_audit_revision_group.data_content_type
+_pdbx_audit_revision_group.group
+1 2 'Structure model' 'Database references'
+2 3 'Structure model' 'Database references'
 #
 loop_
 _pdbx_audit_revision_category.ordinal
@@ -7343,6 +7347,8 @@ _pdbx_audit_revision_category.data_content_type
 _pdbx_audit_revision_category.category
 1 2 'Structure model' citation
 2 2 'Structure model' citation_author
+3 3 'Structure model' citation
+4 3 'Structure model' citation_author
 #
 loop_
 _pdbx_audit_revision_item.ordinal
@@ -7354,6 +7360,10 @@ _pdbx_audit_revision_item.item
 3 2 'Structure model' '_citation.title'
 4 2 'Structure model' '_citation_author.identifier_ORCID'
 5 2 'Structure model' '_citation_author.name'
+6 3 'Structure model' '_citation.journal_volume'
+7 3 'Structure model' '_citation.page_first'
+8 3 'Structure model' '_citation.page_last'
+9 3 'Structure model' '_citation_author.identifier_ORCID'
 #
 loop_
 _space_group_symop.id
