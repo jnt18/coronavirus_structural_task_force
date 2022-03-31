@@ -2,9 +2,9 @@
 
 ## Overview
 
-**Protein name**: not assigned
+**Protein name**: surface glycoprotein
 
-**Organism**: SARS-CoV
+**Organism**: SARS-CoV-2
 
 **Method**: X-Ray Diffraction
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/not_assigned/SARS-CoV/7p3e/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/not_assigned/SARS-CoV/7p3e/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/not_assigned/SARS-CoV/7p3e/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/not_assigned/SARS-CoV/7p3e/validation/Xtriage_output.log)   
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7p3e/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7p3e/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7p3e/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7p3e/validation/Xtriage_output.log)   
 
 
 
@@ -60,7 +60,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7p3e
 
-**PDBe-KB**:  
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/P0DTC2 
  
 **PDBr**: https://www.rcsb.org/structure/7p3e 
 

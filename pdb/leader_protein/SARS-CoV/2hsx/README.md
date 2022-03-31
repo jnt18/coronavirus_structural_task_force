@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nsp1
+**Protein name**: leader protein
 
 **Organism**: SARS-CoV
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nsp1
+**Protein name**: leader protein
 
 **Organism**: SARS-CoV
 
@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp1/SARS-CoV/7opl/validation/molprobity)    
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV/7opl/validation/molprobity)    
 
 
 
