@@ -198,7 +198,7 @@ def fill_database(workdir):
 
 
 # execute main function
-pwd = os.path.join(os.getcwd(), os.pardir, "pdb")
+pwd = os.path.join(os.getcwd(), os.pardir, os.pardir, "pdb")
 pwd = os.path.abspath(pwd)
 print(pwd)
 fill_database(pwd)
