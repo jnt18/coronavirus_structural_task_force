@@ -10,7 +10,7 @@
 cd ../../pdb
 
 base=$(pwd)
-
+fivedaysago=$(date -d 'now - 5 days' +%s)
 
 for x in */*/* ;
 do
@@ -18,11 +18,15 @@ do
     echo $x
     #e="${c,,}" ;
     cd $x ;
-    if [ "$c" == "7mhl" ] || [ "$c" == "7mhm" ] || [ "$c" == "7mhq" ] || [ "$c" == "6zp5" ] ; then
+    if [[ ( "$c" == "7mhl" ) || ( "$c" == "7mhm" ) || ( "$c" == "7mhq" ) || ( "$c" == "6zp5" ) || 
+    	( "$x" == *"txt"* ) || ( "$x" ==  *"xlsx"* ) || ( "$x" == *"fasta"* ) ]]; then
+    	cd $base
     	continue
     fi
-    if [[ $(find "$c" -mtime +2 -print) ]]; then
-  		echo "$c has been processed"
+    file_time=$(date -r "validation/molprobity/$c.H.pdb" +%s)
+    if [[ "$file_time" > "$fivedaysago" ]] ; then
+  		#echo "$c has been processed"
+  		cd $base
   		continue
 	fi
 #	    if [ -f $c.mtz ]; then
