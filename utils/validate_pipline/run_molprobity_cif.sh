@@ -18,7 +18,9 @@ do
     echo $x
     e="${c,,}" ;
     cd $x ;
-    if [ "$c" == "7mhl" ] || [ "$c" == "7mhm" ] || [ "$c" == "7mhq" ] ; then
+    if [[ ( "$c" == "7mhl" ) || ( "$c" == "7mhm" ) || ( "$c" == "7mhq" ) || ( "$c" == "6zp5" ) || 
+    	( "$x" == *"txt"* ) || ( "$x" ==  *"xlsx"* ) || ( "$x" == *"fasta"* ) || ( "$x" == *"pdf"* )]]; then
+    	cd $base
     	continue
     fi
     if [ -f validation/molprobity/molprobity.out ] && [ -f validation/molprobity/clashscore.txt ] && [ -f validation/molprobity/$c.H-rama.pdf ] ; then

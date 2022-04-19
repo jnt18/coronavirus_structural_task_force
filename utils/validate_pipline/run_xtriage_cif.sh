@@ -7,7 +7,7 @@
 #c is the pdb code
 #e is the entry in lower case (for pdb_redo)
 
-cd ../pdb
+cd ../../pdb
 
 base=$(pwd)
 
@@ -21,7 +21,7 @@ do
     if [ -f validation/Xtriage_output.log ] ; then
        echo "Nothing to do here"
     else
-	if [ -f $c.mtz ] ; then
+	 if [ -f $c.mtz ] ; then
 	    echo 'reflections here'
 	    phenix.xtriage $c.cif $c.mtz
             mkdir validation

@@ -5,7 +5,7 @@
 #c is the pdb code
 #e is the entry in lower case (for pdb_redo)
 
-cd ../pdb
+cd ../../pdb
 
 
 base=$(pwd)

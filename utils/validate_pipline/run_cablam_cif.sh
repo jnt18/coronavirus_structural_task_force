@@ -1,4 +1,4 @@
-cd ../pdb
+cd ../../pdb
 
 base=$(pwd)
 
