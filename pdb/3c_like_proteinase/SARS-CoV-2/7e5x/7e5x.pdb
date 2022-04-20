@@ -4,14 +4,12 @@ TITLE    2 ANGSTROM
 COMPND    MOL_ID: 1;                                                            
 COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;                                        
 COMPND   3 CHAIN: A, B, C, D;                                                   
-COMPND   4 SYNONYM: 3CL-PRO, 3CLP, MAIN PROTEASE, MPRO, NON-STRUCTURAL PROTEIN  
-COMPND   5 5, NSP5, SARS CORONAVIRUS MAIN PROTEINASE;                           
-COMPND   6 EC: 3.4.22.69;                                                       
-COMPND   7 ENGINEERED: YES                                                      
+COMPND   4 EC: 3.4.22.69;                                                       
+COMPND   5 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
 SOURCE   3 2;                                                                   
-SOURCE   4 ORGANISM_COMMON: 2019-NCOV;                                          
+SOURCE   4 ORGANISM_COMMON: 2019-NCOV,SARS-COV-2;                               
 SOURCE   5 ORGANISM_TAXID: 2697049;                                             
 SOURCE   6 GENE: REP, 1A-1B;                                                    
 SOURCE   7 EXPRESSION_SYSTEM: ESCHERICHIA COLI BL21(DE3);                       
@@ -21,6 +19,7 @@ SOURCE  10 EXPRESSION_SYSTEM_PLASMID: PGEX-6P-1
 KEYWDS    PROTEASE, VIRAL PROTEIN                                               
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    X.LIU,Y.ZHAO,H.YANG,Z.RAO                                             
+REVDAT   2   20-APR-22 7E5X    1       COMPND SOURCE REMARK ATOM                
 REVDAT   1   02-MAR-22 7E5X    0                                                
 JRNL        AUTH   X.LIU,Y.ZHAO,H.YANG,Z.RAO                                    
 JRNL        TITL   THE CRYSTAL STRUCTURE OF COVID-19 MAIN PROTEASE APO FORM AT  
@@ -67,7 +66,7 @@ REMARK   3  NUMBER OF NON-HYDROGEN ATOMS USED IN REFINEMENT.
 REMARK   3   PROTEIN ATOMS            : 9318                                    
 REMARK   3   NUCLEIC ACID ATOMS       : 0                                       
 REMARK   3   HETEROGEN ATOMS          : 0                                       
-REMARK   3   SOLVENT ATOMS            : 80                                      
+REMARK   3   SOLVENT ATOMS            : 82                                      
 REMARK   3                                                                      
 REMARK   3  B VALUES.                                                           
 REMARK   3   FROM WILSON PLOT           (A**2) : 65.47                          
@@ -313,7 +312,7 @@ REMARK 290   SMTRY3   1  0.000000  0.000000  1.000000        0.00000
 REMARK 290                                                                      
 REMARK 290 REMARK: NULL                                                         
 REMARK 300                                                                      
-REMARK 300 BIOMOLECULE: 1, 2                                                    
+REMARK 300 BIOMOLECULE: 1                                                       
 REMARK 300 SEE REMARK 350 FOR THE AUTHOR PROVIDED AND/OR PROGRAM                
 REMARK 300 GENERATED ASSEMBLY INFORMATION FOR THE STRUCTURE IN                  
 REMARK 300 THIS ENTRY. THE REMARK MAY ALSO PROVIDE INFORMATION ON               
@@ -326,25 +325,8 @@ REMARK 350 GIVEN BELOW.  BOTH NON-CRYSTALLOGRAPHIC AND
 REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.                               
 REMARK 350                                                                      
 REMARK 350 BIOMOLECULE: 1                                                       
-REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: DIMERIC                           
-REMARK 350 SOFTWARE DETERMINED QUATERNARY STRUCTURE: DIMERIC                    
-REMARK 350 SOFTWARE USED: PISA                                                  
-REMARK 350 TOTAL BURIED SURFACE AREA: 2830 ANGSTROM**2                          
-REMARK 350 SURFACE AREA OF THE COMPLEX: 26720 ANGSTROM**2                       
-REMARK 350 CHANGE IN SOLVENT FREE ENERGY: -13.0 KCAL/MOL                        
-REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, B                                  
-REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
-REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
-REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
-REMARK 350                                                                      
-REMARK 350 BIOMOLECULE: 2                                                       
-REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: DIMERIC                           
-REMARK 350 SOFTWARE DETERMINED QUATERNARY STRUCTURE: DIMERIC                    
-REMARK 350 SOFTWARE USED: PISA                                                  
-REMARK 350 TOTAL BURIED SURFACE AREA: 2910 ANGSTROM**2                          
-REMARK 350 SURFACE AREA OF THE COMPLEX: 26510 ANGSTROM**2                       
-REMARK 350 CHANGE IN SOLVENT FREE ENERGY: -11.0 KCAL/MOL                        
-REMARK 350 APPLY THE FOLLOWING TO CHAINS: C, D                                  
+REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: TETRAMERIC                        
+REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, B, C, D                            
 REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
 REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
 REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
@@ -443,6 +425,20 @@ REMARK 500    THR D 196       42.30    -89.84
 REMARK 500    ALA D 255      -78.45   -102.34                                   
 REMARK 500                                                                      
 REMARK 500 REMARK: NULL                                                         
+REMARK 525                                                                      
+REMARK 525 SOLVENT                                                              
+REMARK 525                                                                      
+REMARK 525 THE SOLVENT MOLECULES HAVE CHAIN IDENTIFIERS THAT                    
+REMARK 525 INDICATE THE POLYMER CHAIN WITH WHICH THEY ARE MOST                  
+REMARK 525 CLOSELY ASSOCIATED. THE REMARK LISTS ALL THE SOLVENT                 
+REMARK 525 MOLECULES WHICH ARE MORE THAN 5A AWAY FROM THE                       
+REMARK 525 NEAREST POLYMER CHAIN (M = MODEL NUMBER;                             
+REMARK 525 RES=RESIDUE NAME; C=CHAIN IDENTIFIER; SSEQ=SEQUENCE                  
+REMARK 525 NUMBER; I=INSERTION CODE):                                           
+REMARK 525                                                                      
+REMARK 525  M RES CSSEQI                                                        
+REMARK 525    HOH A 425        DISTANCE =  6.58 ANGSTROMS                       
+REMARK 525    HOH B 416        DISTANCE =  8.93 ANGSTROMS                       
 DBREF  7E5X A    1   306  UNP    P0DTD1   R1AB_SARS2    3264   3569             
 DBREF  7E5X B    1   306  UNP    P0DTD1   R1AB_SARS2    3264   3569             
 DBREF  7E5X C    1   306  UNP    P0DTD1   R1AB_SARS2    3264   3569             
@@ -543,7 +539,7 @@ SEQRES  21 D  306  VAL LEU ASP MET CYS ALA SER LEU LYS GLU LEU LEU GLN
 SEQRES  22 D  306  ASN GLY MET ASN GLY ARG THR ILE LEU GLY SER ALA LEU          
 SEQRES  23 D  306  LEU GLU ASP GLU PHE THR PRO PHE ASP VAL VAL ARG GLN          
 SEQRES  24 D  306  CYS SER GLY VAL THR PHE GLN                                  
-FORMUL   5  HOH   *80(H2 O)                                                     
+FORMUL   5  HOH   *82(H2 O)                                                     
 HELIX    1 AA1 SER A   10  GLY A   15  1                                   6    
 HELIX    2 AA2 HIS A   41  CYS A   44  5                                   4    
 HELIX    3 AA3 GLU A   47  ASN A   51  5                                   5    
@@ -14680,25 +14676,25 @@ ATOM   7014  CE2 PHE C 305     -26.138 -19.055   2.801  1.00 78.27           C
 ANISOU 7014  CE2 PHE C 305    10710   6126  12902  -1838   -529   2311       C  
 ATOM   7015  CZ  PHE C 305     -26.790 -18.163   1.996  1.00 80.85           C  
 ANISOU 7015  CZ  PHE C 305    11188   6230  13300  -1791   -472   2494       C  
-ATOM   7016  N   GLN C 306     -21.088 -20.907  -1.765  1.00 85.54           N  
+ATOM   7016  N   GLN C 306     -21.091 -20.800  -1.760  1.00 85.54           N  
 ANISOU 7016  N   GLN C 306    10637   7819  14046  -2580    356   3424       N  
-ATOM   7017  CA  GLN C 306     -19.773 -21.334  -2.318  1.00 85.25           C  
+ATOM   7017  CA  GLN C 306     -19.818 -21.098  -2.395  1.00 85.25           C  
 ANISOU 7017  CA  GLN C 306    10329   7948  14110  -2735    586   3603       C  
-ATOM   7018  C   GLN C 306     -18.809 -20.184  -2.608  1.00 88.44           C  
+ATOM   7018  C   GLN C 306     -18.853 -19.952  -2.638  1.00 88.44           C  
 ANISOU 7018  C   GLN C 306    10640   8114  14846  -3028    591   3780       C  
-ATOM   7019  O   GLN C 306     -18.108 -20.262  -3.573  1.00 94.79           O  
+ATOM   7019  O   GLN C 306     -17.873 -20.033  -3.376  1.00 94.79           O  
 ANISOU 7019  O   GLN C 306    11246   9000  15766  -3182    816   3986       O  
-ATOM   7020  CB  GLN C 306     -20.079 -22.166  -3.561  1.00 81.15           C  
+ATOM   7020  CB  GLN C 306     -20.102 -21.904  -3.643  1.00 81.15           C  
 ANISOU 7020  CB  GLN C 306     9879   7664  13288  -2599    870   3751       C  
-ATOM   7021  CG  GLN C 306     -21.441 -22.835  -3.515  1.00 73.56           C  
+ATOM   7021  CG  GLN C 306     -20.858 -23.167  -3.315  1.00 73.56           C  
 ANISOU 7021  CG  GLN C 306     8933   6970  12046  -2346    880   3560       C  
-ATOM   7022  CD  GLN C 306     -21.540 -24.018  -4.442  1.00 70.80           C  
+ATOM   7022  CD  GLN C 306     -21.495 -23.808  -4.497  1.00 70.80           C  
 ANISOU 7022  CD  GLN C 306     8770   6786  11343  -2191   1064   3648       C  
-ATOM   7023  OE1 GLN C 306     -22.241 -23.983  -5.443  1.00 74.66           O  
+ATOM   7023  OE1 GLN C 306     -21.955 -23.140  -5.362  1.00 74.66           O  
 ANISOU 7023  OE1 GLN C 306     9463   7168  11736  -2215   1103   3827       O  
-ATOM   7024  NE2 GLN C 306     -20.850 -25.091  -4.103  1.00 67.80           N  
+ATOM   7024  NE2 GLN C 306     -21.533 -25.106  -4.526  1.00 67.80           N  
 ANISOU 7024  NE2 GLN C 306     8308   6666  10785  -2057   1186   3543       N  
-ATOM   7025  OXT GLN C 306     -18.821 -19.212  -1.860  1.00 97.26           O  
+ATOM   7025  OXT GLN C 306     -19.040 -18.908  -2.027  1.00 97.26           O  
 ANISOU 7025  OXT GLN C 306    11877   8943  16133  -3122    381   3714       O  
 TER    7026      GLN C 306                                                      
 ATOM   7027  N   SER D   1     -39.529 -57.990  23.210  1.00 72.36           N  
@@ -19316,61 +19312,63 @@ HETATM 9343  O   HOH A 421     -20.078  -0.220 -21.861  1.00 86.39           O
 HETATM 9344  O   HOH A 422     -30.491 -14.406 -27.144  1.00 95.14           O  
 HETATM 9345  O   HOH A 423     -52.568 -42.856 -29.633  1.00 82.64           O  
 HETATM 9346  O   HOH A 424     -23.249   1.999 -19.496  1.00 85.33           O  
-HETATM 9347  O   HOH B 401       0.255 -34.851 -52.598  1.00 73.12           O  
-HETATM 9348  O   HOH B 402       6.014 -36.535 -39.104  1.00 70.75           O  
-HETATM 9349  O   HOH B 403     -23.962 -31.762 -19.874  1.00 70.31           O  
-HETATM 9350  O   HOH B 404       2.061 -47.690 -18.196  1.00 84.43           O  
-HETATM 9351  O   HOH B 405     -16.847 -29.486 -42.606  1.00 75.80           O  
-HETATM 9352  O   HOH B 406       6.380 -17.780 -26.338  1.00 77.93           O  
-HETATM 9353  O   HOH B 407      -5.876 -11.979 -32.288  1.00 72.70           O  
-HETATM 9354  O   HOH B 408     -34.237 -39.880 -10.922  1.00 91.08           O  
-HETATM 9355  O   HOH B 409     -10.388 -59.181  -8.542  1.00 87.27           O  
-HETATM 9356  O   HOH B 410     -26.938 -31.955 -15.107  1.00 78.31           O  
-HETATM 9357  O   HOH B 411      -3.082  -3.394 -45.510  1.00 82.89           O  
-HETATM 9358  O   HOH B 412     -10.478 -24.457  -5.570  1.00 80.29           O  
-HETATM 9359  O   HOH B 413       5.875 -32.086 -16.109  1.00 84.27           O  
-HETATM 9360  O   HOH B 414     -22.309 -60.677  -9.109  1.00 90.59           O  
-HETATM 9361  O   HOH B 415      -7.917   1.497 -35.662  1.00 82.65           O  
-HETATM 9362  O   HOH C 401     -33.496 -44.394   6.470  1.00 60.80           O  
-HETATM 9363  O   HOH C 402     -25.126 -50.787  21.632  1.00 83.10           O  
-HETATM 9364  O   HOH C 403     -28.369 -66.302  -1.927  1.00 76.77           O  
-HETATM 9365  O   HOH C 404     -22.369 -22.582   3.543  1.00 65.69           O  
-HETATM 9366  O   HOH C 405     -48.460 -61.068  20.930  1.00 77.70           O  
-HETATM 9367  O   HOH C 406     -24.712 -64.495   6.593  1.00 86.27           O  
-HETATM 9368  O   HOH C 407     -54.411 -60.382   8.062  1.00 78.27           O  
-HETATM 9369  O   HOH C 408     -21.854 -40.681  23.952  1.00 80.42           O  
-HETATM 9370  O   HOH C 409     -41.052 -41.790  15.747  1.00 66.55           O  
-HETATM 9371  O   HOH C 410     -22.168 -61.111   8.616  1.00 76.14           O  
-HETATM 9372  O   HOH C 411     -32.517 -80.754  -1.753  1.00 91.78           O  
-HETATM 9373  O   HOH C 412     -53.522 -56.313   2.126  1.00 85.52           O  
-HETATM 9374  O   HOH C 413     -18.756 -54.581  16.208  1.00 80.52           O  
-HETATM 9375  O   HOH C 414     -37.133 -58.500  -6.872  1.00 83.46           O  
-HETATM 9376  O   HOH C 415     -36.836 -75.988  -2.560  1.00 76.51           O  
-HETATM 9377  O   HOH C 416     -52.890 -49.670   2.407  1.00 81.70           O  
-HETATM 9378  O   HOH C 417     -21.113 -20.851   4.836  1.00 86.66           O  
-HETATM 9379  O   HOH C 418     -41.301 -71.713  17.046  1.00 73.13           O  
-HETATM 9380  O   HOH C 419     -40.262 -55.386  -9.538  1.00 84.82           O  
-HETATM 9381  O   HOH C 420     -26.430 -40.451   1.571  1.00 79.35           O  
-HETATM 9382  O   HOH C 421     -37.555 -58.216 -10.511  1.00 80.77           O  
-HETATM 9383  O   HOH D 401     -59.609 -13.082  -1.341  1.00 91.59           O  
-HETATM 9384  O   HOH D 402     -61.066 -47.549   8.254  1.00 78.24           O  
-HETATM 9385  O   HOH D 403     -61.209 -13.018   9.969  1.00 77.00           O  
-HETATM 9386  O   HOH D 404     -65.235 -14.366  -6.951  1.00 75.08           O  
-HETATM 9387  O   HOH D 405     -66.855 -24.862  17.050  1.00 74.97           O  
-HETATM 9388  O   HOH D 406     -36.762 -43.961  19.666  1.00 80.34           O  
-HETATM 9389  O   HOH D 407     -45.417 -14.352  -4.715  1.00 84.66           O  
-HETATM 9390  O   HOH D 408     -70.848 -23.199  -3.115  1.00 74.73           O  
-HETATM 9391  O   HOH D 409     -66.969 -43.736   5.104  1.00 77.68           O  
-HETATM 9392  O   HOH D 410     -57.139 -39.501  22.116  1.00 84.64           O  
-HETATM 9393  O   HOH D 411     -67.638 -30.081  20.003  1.00 83.56           O  
-HETATM 9394  O   HOH D 412     -54.674 -40.365  -2.694  1.00 71.46           O  
-HETATM 9395  O   HOH D 413     -43.941 -24.412   9.352  1.00 71.24           O  
-HETATM 9396  O   HOH D 414     -50.125 -60.023  19.631  1.00 80.20           O  
-HETATM 9397  O   HOH D 415     -52.638  -9.153  -2.029  1.00 83.49           O  
-HETATM 9398  O   HOH D 416     -68.683 -28.928   4.210  1.00 83.18           O  
-HETATM 9399  O   HOH D 417     -66.472 -44.320  -0.432  1.00 86.31           O  
-HETATM 9400  O   HOH D 418     -49.911 -60.591  24.821  1.00 85.78           O  
-HETATM 9401  O   HOH D 419     -52.504 -43.160 -16.463  1.00 86.41           O  
-HETATM 9402  O   HOH D 420     -19.398 -43.787  30.221  1.00 85.04           O  
-MASTER      416    0    0   41   60    0    0    6 9398    4    0   96          
+HETATM 9347  O   HOH A 425     -33.636 -42.278 -45.560  1.00 87.24           O  
+HETATM 9348  O   HOH B 401       0.255 -34.851 -52.598  1.00 73.12           O  
+HETATM 9349  O   HOH B 402       6.014 -36.535 -39.104  1.00 70.75           O  
+HETATM 9350  O   HOH B 403     -23.962 -31.762 -19.874  1.00 70.31           O  
+HETATM 9351  O   HOH B 404       2.061 -47.690 -18.196  1.00 84.43           O  
+HETATM 9352  O   HOH B 405     -16.847 -29.486 -42.606  1.00 75.80           O  
+HETATM 9353  O   HOH B 406       6.380 -17.780 -26.338  1.00 77.93           O  
+HETATM 9354  O   HOH B 407      -5.876 -11.979 -32.288  1.00 72.70           O  
+HETATM 9355  O   HOH B 408     -34.237 -39.880 -10.922  1.00 91.08           O  
+HETATM 9356  O   HOH B 409     -10.388 -59.181  -8.542  1.00 87.27           O  
+HETATM 9357  O   HOH B 410     -26.938 -31.955 -15.107  1.00 78.31           O  
+HETATM 9358  O   HOH B 411      -3.082  -3.394 -45.510  1.00 82.89           O  
+HETATM 9359  O   HOH B 412     -10.478 -24.457  -5.570  1.00 80.29           O  
+HETATM 9360  O   HOH B 413       5.875 -32.086 -16.109  1.00 84.27           O  
+HETATM 9361  O   HOH B 414     -22.309 -60.677  -9.109  1.00 90.59           O  
+HETATM 9362  O   HOH B 415      -7.917   1.497 -35.662  1.00 82.65           O  
+HETATM 9363  O   HOH B 416     -26.941 -45.954 -47.763  1.00 78.19           O  
+HETATM 9364  O   HOH C 401     -33.496 -44.394   6.470  1.00 60.80           O  
+HETATM 9365  O   HOH C 402     -25.126 -50.787  21.632  1.00 83.10           O  
+HETATM 9366  O   HOH C 403     -28.369 -66.302  -1.927  1.00 76.77           O  
+HETATM 9367  O   HOH C 404     -22.369 -22.582   3.543  1.00 65.69           O  
+HETATM 9368  O   HOH C 405     -48.460 -61.068  20.930  1.00 77.70           O  
+HETATM 9369  O   HOH C 406     -24.712 -64.495   6.593  1.00 86.27           O  
+HETATM 9370  O   HOH C 407     -54.411 -60.382   8.062  1.00 78.27           O  
+HETATM 9371  O   HOH C 408     -21.854 -40.681  23.952  1.00 80.42           O  
+HETATM 9372  O   HOH C 409     -41.052 -41.790  15.747  1.00 66.55           O  
+HETATM 9373  O   HOH C 410     -22.168 -61.111   8.616  1.00 76.14           O  
+HETATM 9374  O   HOH C 411     -32.517 -80.754  -1.753  1.00 91.78           O  
+HETATM 9375  O   HOH C 412     -53.522 -56.313   2.126  1.00 85.52           O  
+HETATM 9376  O   HOH C 413     -18.756 -54.581  16.208  1.00 80.52           O  
+HETATM 9377  O   HOH C 414     -37.133 -58.500  -6.872  1.00 83.46           O  
+HETATM 9378  O   HOH C 415     -36.836 -75.988  -2.560  1.00 76.51           O  
+HETATM 9379  O   HOH C 416     -52.890 -49.670   2.407  1.00 81.70           O  
+HETATM 9380  O   HOH C 417     -21.113 -20.851   4.836  1.00 86.66           O  
+HETATM 9381  O   HOH C 418     -41.301 -71.713  17.046  1.00 73.13           O  
+HETATM 9382  O   HOH C 419     -40.262 -55.386  -9.538  1.00 84.82           O  
+HETATM 9383  O   HOH C 420     -26.430 -40.451   1.571  1.00 79.35           O  
+HETATM 9384  O   HOH C 421     -37.555 -58.216 -10.511  1.00 80.77           O  
+HETATM 9385  O   HOH D 401     -59.609 -13.082  -1.341  1.00 91.59           O  
+HETATM 9386  O   HOH D 402     -61.066 -47.549   8.254  1.00 78.24           O  
+HETATM 9387  O   HOH D 403     -61.209 -13.018   9.969  1.00 77.00           O  
+HETATM 9388  O   HOH D 404     -65.235 -14.366  -6.951  1.00 75.08           O  
+HETATM 9389  O   HOH D 405     -66.855 -24.862  17.050  1.00 74.97           O  
+HETATM 9390  O   HOH D 406     -36.762 -43.961  19.666  1.00 80.34           O  
+HETATM 9391  O   HOH D 407     -45.417 -14.352  -4.715  1.00 84.66           O  
+HETATM 9392  O   HOH D 408     -70.848 -23.199  -3.115  1.00 74.73           O  
+HETATM 9393  O   HOH D 409     -66.969 -43.736   5.104  1.00 77.68           O  
+HETATM 9394  O   HOH D 410     -57.139 -39.501  22.116  1.00 84.64           O  
+HETATM 9395  O   HOH D 411     -67.638 -30.081  20.003  1.00 83.56           O  
+HETATM 9396  O   HOH D 412     -54.674 -40.365  -2.694  1.00 71.46           O  
+HETATM 9397  O   HOH D 413     -43.941 -24.412   9.352  1.00 71.24           O  
+HETATM 9398  O   HOH D 414     -50.125 -60.023  19.631  1.00 80.20           O  
+HETATM 9399  O   HOH D 415     -52.638  -9.153  -2.029  1.00 83.49           O  
+HETATM 9400  O   HOH D 416     -68.683 -28.928   4.210  1.00 83.18           O  
+HETATM 9401  O   HOH D 417     -66.472 -44.320  -0.432  1.00 86.31           O  
+HETATM 9402  O   HOH D 418     -49.911 -60.591  24.821  1.00 85.78           O  
+HETATM 9403  O   HOH D 419     -52.504 -43.160 -16.463  1.00 86.41           O  
+HETATM 9404  O   HOH D 420     -19.398 -43.787  30.221  1.00 85.04           O  
+MASTER      413    0    0   41   60    0    0    6 9400    4    0   96          
 END                                                                             
