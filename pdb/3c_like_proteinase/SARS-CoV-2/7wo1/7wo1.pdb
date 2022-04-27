@@ -16,6 +16,7 @@ SOURCE   6 EXPRESSION_SYSTEM_TAXID: 37762
 KEYWDS    SARS-COV-2 MAIN PROTEASE, VIRAL PROTEIN                               
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    Y.WANG,S.YE                                                           
+REVDAT   2   27-APR-22 7WO1    1       REMARK ATOM                              
 REVDAT   1   13-APR-22 7WO1    0                                                
 JRNL        AUTH   Y.WANG,S.YE                                                  
 JRNL        TITL   DISCOVERY OF SARS-COV-2 3CLPRO PEPTIDOMIMETIC INHIBITORS     
@@ -261,11 +262,19 @@ REMARK 350 GIVEN BELOW.  BOTH NON-CRYSTALLOGRAPHIC AND
 REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.                               
 REMARK 350                                                                      
 REMARK 350 BIOMOLECULE: 1                                                       
-REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: MONOMERIC                         
+REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: DIMERIC                           
+REMARK 350 SOFTWARE DETERMINED QUATERNARY STRUCTURE: DIMERIC                    
+REMARK 350 SOFTWARE USED: PISA                                                  
+REMARK 350 TOTAL BURIED SURFACE AREA: 3200 ANGSTROM**2                          
+REMARK 350 SURFACE AREA OF THE COMPLEX: 24930 ANGSTROM**2                       
+REMARK 350 CHANGE IN SOLVENT FREE ENERGY: -16.0 KCAL/MOL                        
 REMARK 350 APPLY THE FOLLOWING TO CHAINS: A                                     
 REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
 REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
 REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
+REMARK 350   BIOMT1   2 -1.000000  0.000000  0.000000        0.00000            
+REMARK 350   BIOMT2   2  0.000000 -1.000000  0.000000       62.46800            
+REMARK 350   BIOMT3   2  0.000000  0.000000  1.000000        0.00000            
 REMARK 375                                                                      
 REMARK 375 SPECIAL POSITION                                                     
 REMARK 375 THE FOLLOWING ATOMS ARE FOUND TO BE WITHIN 0.15 ANGSTROMS            
@@ -5180,8 +5189,8 @@ HETATM 2431  O   HOH A 528       0.955  23.751 -14.381  1.00 38.65           O
 HETATM 2432  O   HOH A 529     -13.079   5.094 -27.408  1.00 25.59           O  
 HETATM 2433  O   HOH A 530      -8.203  12.412 -24.170  1.00 20.88           O  
 HETATM 2434  O   HOH A 531      -3.442  20.405 -20.206  1.00 18.71           O  
-HETATM 2435  O   HOH A 532      -4.544  13.166 -46.047  1.00 43.16           O  
-HETATM 2436  O   HOH A 533     -23.988   6.745 -17.444  1.00 41.53           O  
+HETATM 2435  O   HOH A 532     -23.988   6.745 -17.444  1.00 41.53           O  
+HETATM 2436  O   HOH A 533      -4.544  13.166 -46.047  1.00 43.16           O  
 HETATM 2437  O   HOH A 534     -22.544   0.000 -34.281  0.50 44.61           O  
 HETATM 2438  O   HOH A 535      13.985  24.884  -1.783  1.00 24.15           O  
 HETATM 2439  O   HOH A 536       3.538  32.039  -2.955  1.00 38.06           O  
@@ -5321,5 +5330,5 @@ CONECT 2400 2386 2393
 CONECT 2401 2395 2399                                                           
 CONECT 2402 2397                                                                
 CONECT 2403 2395                                                                
-MASTER      290    0    1   11   15    0    0    6 2538    1   36   24          
+MASTER      298    0    1   11   15    0    0    6 2538    1   36   24          
 END                                                                             
