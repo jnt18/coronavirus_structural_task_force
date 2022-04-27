@@ -160,4 +160,3 @@ def run():
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
-    
