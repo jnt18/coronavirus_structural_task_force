@@ -1,0 +1,604 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5IW      5IW '.                                   ' .                  80  41 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-5IW  CYS      .        .        5IW      .        .
+ bond_CYS-SG_=_5IW-C02
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_5IW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 5IW           O11    O    O         0.000     11.562   -1.668  -19.232
+ 5IW           C10    C    CR6       0.000     11.471   -2.707  -19.798
+ 5IW           N09    N    NR16      0.000     10.556   -3.843  -19.328
+ 5IW           HN09   H    H         0.000      9.939   -3.761  -18.495
+ 5IW           C08    C    CH2       0.000     10.625   -5.100  -20.181
+ 5IW           H081   H    H         0.000      9.688   -5.644  -20.039
+ 5IW           H082   H    H         0.000     11.455   -5.703  -19.808
+ 5IW           C07    C    CR16      0.000     10.823   -4.822  -21.623
+ 5IW           H07    H    H         0.000     10.125   -5.153  -22.382
+ 5IW           C05    C    CR6       0.000     12.338   -2.954  -21.098
+ 5IW           C06    C    CR16      0.000     12.021   -4.074  -21.939
+ 5IW           H06    H    H         0.000     12.652   -4.347  -22.776
+ 5IW           C04    C    CH2       0.000     12.266   -1.622  -21.951
+ 5IW           H041   H    H         0.000     12.545   -0.782  -21.312
+ 5IW           H042   H    H         0.000     11.241   -1.486  -22.301
+ 5IW           C03    C    CH1       0.000     13.219   -1.688  -23.161
+ 5IW           H03    H    H         0.000     12.938   -2.549  -23.783
+ 5IW           C02    C    C1        0.000     13.089   -0.417  -24.001
+ 5IW           H02    H    H         0.000     13.951    0.177  -24.255
+ 5IW           O01    O    O         0.000     11.997   -0.109  -24.364
+ 5IW           N12    N    NH1       0.000     14.585   -1.883  -22.684
+ 5IW           HN12   H    H         0.000     15.028   -1.219  -22.065
+ 5IW           C13    C    C         0.000     15.280   -3.076  -23.141
+ 5IW           O41    O    O         0.000     14.726   -3.820  -23.880
+ 5IW           C14    C    CH1       0.000     16.707   -3.387  -22.684
+ 5IW           H14    H    H         0.000     16.999   -2.692  -21.884
+ 5IW           C15    C    CH2       0.000     17.668   -3.251  -23.859
+ 5IW           H151   H    H         0.000     17.597   -2.232  -24.247
+ 5IW           H152   H    H         0.000     17.365   -3.956  -24.636
+ 5IW           C16    C    CH1       0.000     19.116   -3.541  -23.438
+ 5IW           H16    H    H         0.000     19.174   -4.589  -23.113
+ 5IW           C18    C    CH3       0.000     20.062   -3.358  -24.627
+ 5IW           H183   H    H         0.000     19.788   -4.026  -25.403
+ 5IW           H182   H    H         0.000     19.999   -2.362  -24.981
+ 5IW           H181   H    H         0.000     21.056   -3.561  -24.323
+ 5IW           C17    C    CH3       0.000     19.546   -2.653  -22.264
+ 5IW           H173   H    H         0.000     19.477   -1.633  -22.546
+ 5IW           H172   H    H         0.000     18.913   -2.832  -21.433
+ 5IW           H171   H    H         0.000     20.547   -2.876  -21.998
+ 5IW           N19    N    NT1       0.000     16.728   -4.747  -22.182
+ 5IW           HN19   H    H         0.000     17.231   -5.481  -22.706
+ 5IW           C20    C    CH1       0.000     16.040   -5.082  -20.937
+ 5IW           H20    H    H         0.000     16.953   -4.854  -20.370
+ 5IW           O40    O    OH1       0.000     15.460   -4.248  -20.339
+ 5IW           HO40   H    H         0.000     15.093   -4.676  -19.575
+ 5IW           C21    C    CH1       0.000     16.066   -6.520  -20.402
+ 5IW           H21    H    H         0.000     15.230   -6.655  -19.701
+ 5IW           C22    C    CH2       0.000     17.377   -6.782  -19.666
+ 5IW           H221   H    H         0.000     17.428   -6.122  -18.798
+ 5IW           H222   H    H         0.000     18.207   -6.560  -20.340
+ 5IW           C23    C    CR6       0.000     17.465   -8.242  -19.207
+ 5IW           C28    C    CR16      0.000     16.863   -8.640  -18.016
+ 5IW           H28    H    H         0.000     16.330   -7.917  -17.412
+ 5IW           C27    C    CR16      0.000     16.946   -9.960  -17.604
+ 5IW           H27    H    H         0.000     16.480  -10.266  -16.676
+ 5IW           C26    C    CR16      0.000     17.625  -10.892  -18.377
+ 5IW           H26    H    H         0.000     17.690  -11.923  -18.052
+ 5IW           C25    C    CR16      0.000     18.220  -10.501  -19.565
+ 5IW           H25    H    H         0.000     18.752  -11.223  -20.172
+ 5IW           C24    C    CR16      0.000     18.129   -9.178  -19.971
+ 5IW           H24    H    H         0.000     18.588   -8.875  -20.904
+ 5IW           N29    N    NH1       0.000     15.957   -7.509  -21.462
+ 5IW           HN29   H    H         0.000     16.681   -7.617  -22.158
+ 5IW           C30    C    C         0.000     14.764   -8.332  -21.477
+ 5IW           O39    O    O         0.000     13.938   -8.145  -20.648
+ 5IW           C31    C    C1        0.000     14.565   -9.430  -22.531
+ 5IW           H31    H    H         0.000     14.506   -9.267  -23.594
+ 5IW           C32    C    C1        0.000     14.478  -10.609  -21.936
+ 5IW           H32    H    H         0.000     14.544  -10.708  -20.866
+ 5IW           C33    C    CR6       0.000     14.279  -11.828  -22.848
+ 5IW           C34    C    CR16      0.000     14.395  -13.111  -22.312
+ 5IW           H34    H    H         0.000     14.622  -13.239  -21.261
+ 5IW           C35    C    CR16      0.000     14.220  -14.225  -23.122
+ 5IW           H35    H    H         0.000     14.312  -15.220  -22.704
+ 5IW           C36    C    CR16      0.000     13.927  -14.061  -24.470
+ 5IW           H36    H    H         0.000     13.788  -14.929  -25.104
+ 5IW           C37    C    CR16      0.000     13.812  -12.783  -25.006
+ 5IW           H37    H    H         0.000     13.584  -12.658  -26.058
+ 5IW           C38    C    CR16      0.000     13.989  -11.664  -24.197
+ 5IW           H38    H    H         0.000     13.901  -10.670  -24.618
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 5IW      O11    n/a    C10    START
+ 5IW      C10    O11    C05    .
+ 5IW      N09    C10    C08    .
+ 5IW      HN09   N09    .      .
+ 5IW      C08    N09    C07    .
+ 5IW      H081   C08    .      .
+ 5IW      H082   C08    .      .
+ 5IW      C07    C08    H07    .
+ 5IW      H07    C07    .      .
+ 5IW      C05    C10    C04    .
+ 5IW      C06    C05    H06    .
+ 5IW      H06    C06    .      .
+ 5IW      C04    C05    C03    .
+ 5IW      H041   C04    .      .
+ 5IW      H042   C04    .      .
+ 5IW      C03    C04    N12    .
+ 5IW      H03    C03    .      .
+ 5IW      C02    C03    O01    .
+ 5IW      H02    C02    .      .
+ 5IW      O01    C02    .      .
+ 5IW      N12    C03    C13    .
+ 5IW      HN12   N12    .      .
+ 5IW      C13    N12    C14    .
+ 5IW      O41    C13    .      .
+ 5IW      C14    C13    N19    .
+ 5IW      H14    C14    .      .
+ 5IW      C15    C14    C16    .
+ 5IW      H151   C15    .      .
+ 5IW      H152   C15    .      .
+ 5IW      C16    C15    C17    .
+ 5IW      H16    C16    .      .
+ 5IW      C18    C16    H181   .
+ 5IW      H183   C18    .      .
+ 5IW      H182   C18    .      .
+ 5IW      H181   C18    .      .
+ 5IW      C17    C16    H171   .
+ 5IW      H173   C17    .      .
+ 5IW      H172   C17    .      .
+ 5IW      H171   C17    .      .
+ 5IW      N19    C14    C20    .
+ 5IW      HN19   N19    .      .
+ 5IW      C20    N19    C21    .
+ 5IW      H20    C20    .      .
+ 5IW      O40    C20    HO40   .
+ 5IW      HO40   O40    .      .
+ 5IW      C21    C20    N29    .
+ 5IW      H21    C21    .      .
+ 5IW      C22    C21    C23    .
+ 5IW      H221   C22    .      .
+ 5IW      H222   C22    .      .
+ 5IW      C23    C22    C28    .
+ 5IW      C28    C23    C27    .
+ 5IW      H28    C28    .      .
+ 5IW      C27    C28    C26    .
+ 5IW      H27    C27    .      .
+ 5IW      C26    C27    C25    .
+ 5IW      H26    C26    .      .
+ 5IW      C25    C26    C24    .
+ 5IW      H25    C25    .      .
+ 5IW      C24    C25    H24    .
+ 5IW      H24    C24    .      .
+ 5IW      N29    C21    C30    .
+ 5IW      HN29   N29    .      .
+ 5IW      C30    N29    C31    .
+ 5IW      O39    C30    .      .
+ 5IW      C31    C30    C32    .
+ 5IW      H31    C31    .      .
+ 5IW      C32    C31    C33    .
+ 5IW      H32    C32    .      .
+ 5IW      C33    C32    C34    .
+ 5IW      C34    C33    C35    .
+ 5IW      H34    C34    .      .
+ 5IW      C35    C34    C36    .
+ 5IW      H35    C35    .      .
+ 5IW      C36    C35    C37    .
+ 5IW      H36    C36    .      .
+ 5IW      C37    C36    C38    .
+ 5IW      H37    C37    .      .
+ 5IW      C38    C37    H38    .
+ 5IW      H38    C38    .      END
+ 5IW      C33    C38    .    ADD
+ 5IW      C23    C24    .    ADD
+ 5IW      C07    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 5IW      O39    C30       double      1.220    0.020
+ 5IW      C31    C30       single      1.475    0.020
+ 5IW      C30    N29       single      1.330    0.020
+ 5IW      C32    C31       double      1.330    0.020
+ 5IW      C33    C32       single      1.480    0.020
+ 5IW      C33    C38       aromatic    1.390    0.020
+ 5IW      C34    C33       aromatic    1.390    0.020
+ 5IW      C38    C37       aromatic    1.390    0.020
+ 5IW      C37    C36       aromatic    1.390    0.020
+ 5IW      C36    C35       aromatic    1.390    0.020
+ 5IW      C35    C34       aromatic    1.390    0.020
+ 5IW      N29    C21       single      1.450    0.020
+ 5IW      C21    C20       single      1.524    0.020
+ 5IW      C22    C21       single      1.524    0.020
+ 5IW      O40    C20       single      1.432    0.020
+ 5IW      C20    N19       single      1.475    0.020
+ 5IW      C23    C22       single      1.511    0.020
+ 5IW      C23    C24       aromatic    1.390    0.020
+ 5IW      C28    C23       aromatic    1.390    0.020
+ 5IW      C24    C25       aromatic    1.390    0.020
+ 5IW      C27    C28       aromatic    1.390    0.020
+ 5IW      C25    C26       aromatic    1.390    0.020
+ 5IW      C26    C27       aromatic    1.390    0.020
+ 5IW      N19    C14       single      1.475    0.020
+ 5IW      C14    C13       single      1.500    0.020
+ 5IW      C15    C14       single      1.524    0.020
+ 5IW      O41    C13       double      1.220    0.020
+ 5IW      C13    N12       single      1.330    0.020
+ 5IW      C16    C15       single      1.524    0.020
+ 5IW      C17    C16       single      1.524    0.020
+ 5IW      C18    C16       single      1.524    0.020
+ 5IW      C07    C06       aromatic    1.390    0.020
+ 5IW      C07    C08       single      1.457    0.020
+ 5IW      C03    C04       single      1.524    0.020
+ 5IW      C02    C03       single      1.510    0.020
+ 5IW      N12    C03       single      1.450    0.020
+ 5IW      C06    C05       aromatic    1.390    0.020
+ 5IW      C05    C10       single      1.487    0.020
+ 5IW      N09    C10       single      1.337    0.020
+ 5IW      C10    O11       double      1.250    0.020
+ 5IW      C04    C05       single      1.511    0.020
+ 5IW      O01    C02       double      1.220    0.020
+ 5IW      C08    N09       single      1.462    0.020
+ 5IW      H31    C31       single      1.077    0.020
+ 5IW      H32    C32       single      1.077    0.020
+ 5IW      H38    C38       single      1.083    0.020
+ 5IW      H37    C37       single      1.083    0.020
+ 5IW      H36    C36       single      1.083    0.020
+ 5IW      H35    C35       single      1.083    0.020
+ 5IW      H34    C34       single      1.083    0.020
+ 5IW      HN29   N29       single      1.010    0.020
+ 5IW      H21    C21       single      1.099    0.020
+ 5IW      H20    C20       single      1.099    0.020
+ 5IW      HO40   O40       single      0.967    0.020
+ 5IW      H221   C22       single      1.092    0.020
+ 5IW      H222   C22       single      1.092    0.020
+ 5IW      H24    C24       single      1.083    0.020
+ 5IW      H28    C28       single      1.083    0.020
+ 5IW      H25    C25       single      1.083    0.020
+ 5IW      H27    C27       single      1.083    0.020
+ 5IW      H26    C26       single      1.083    0.020
+ 5IW      HN19   N19       single      1.033    0.020
+ 5IW      H14    C14       single      1.099    0.020
+ 5IW      H151   C15       single      1.092    0.020
+ 5IW      H152   C15       single      1.092    0.020
+ 5IW      H16    C16       single      1.099    0.020
+ 5IW      H171   C17       single      1.059    0.020
+ 5IW      H172   C17       single      1.059    0.020
+ 5IW      H173   C17       single      1.059    0.020
+ 5IW      H181   C18       single      1.059    0.020
+ 5IW      H182   C18       single      1.059    0.020
+ 5IW      H183   C18       single      1.059    0.020
+ 5IW      H07    C07       single      1.083    0.020
+ 5IW      H03    C03       single      1.099    0.020
+ 5IW      H06    C06       single      1.083    0.020
+ 5IW      H041   C04       single      1.092    0.020
+ 5IW      H042   C04       single      1.092    0.020
+ 5IW      H02    C02       single      1.077    0.020
+ 5IW      H081   C08       single      1.092    0.020
+ 5IW      H082   C08       single      1.092    0.020
+ 5IW      HN12   N12       single      1.010    0.020
+ 5IW      HN09   N09       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 5IW      O11    C10    N09     120.000    3.000
+ 5IW      O11    C10    C05     120.000    3.000
+ 5IW      N09    C10    C05     120.000    3.000
+ 5IW      C10    N09    HN09    120.000    3.000
+ 5IW      C10    N09    C08     120.000    3.000
+ 5IW      HN09   N09    C08     120.000    3.000
+ 5IW      N09    C08    H081    109.500    3.000
+ 5IW      N09    C08    H082    109.500    3.000
+ 5IW      N09    C08    C07     109.500    3.000
+ 5IW      H081   C08    H082    107.900    3.000
+ 5IW      H081   C08    C07     109.470    3.000
+ 5IW      H082   C08    C07     109.470    3.000
+ 5IW      C08    C07    H07     120.000    3.000
+ 5IW      C08    C07    C06     120.000    3.000
+ 5IW      H07    C07    C06     120.000    3.000
+ 5IW      C10    C05    C06     120.000    3.000
+ 5IW      C10    C05    C04     120.000    3.000
+ 5IW      C06    C05    C04     120.000    3.000
+ 5IW      C05    C06    H06     120.000    3.000
+ 5IW      C05    C06    C07     120.000    3.000
+ 5IW      H06    C06    C07     120.000    3.000
+ 5IW      C05    C04    H041    109.470    3.000
+ 5IW      C05    C04    H042    109.470    3.000
+ 5IW      C05    C04    C03     109.470    3.000
+ 5IW      H041   C04    H042    107.900    3.000
+ 5IW      H041   C04    C03     109.470    3.000
+ 5IW      H042   C04    C03     109.470    3.000
+ 5IW      C04    C03    H03     108.340    3.000
+ 5IW      C04    C03    C02     109.470    3.000
+ 5IW      C04    C03    N12     110.000    3.000
+ 5IW      H03    C03    C02     108.810    3.000
+ 5IW      H03    C03    N12     108.550    3.000
+ 5IW      C02    C03    N12     111.600    3.000
+ 5IW      C03    C02    H02     120.000    3.000
+ 5IW      C03    C02    O01     120.500    3.000
+ 5IW      H02    C02    O01     123.000    3.000
+ 5IW      C03    N12    HN12    118.500    3.000
+ 5IW      C03    N12    C13     121.500    3.000
+ 5IW      HN12   N12    C13     120.000    3.000
+ 5IW      N12    C13    O41     123.000    3.000
+ 5IW      N12    C13    C14     116.500    3.000
+ 5IW      O41    C13    C14     120.500    3.000
+ 5IW      C13    C14    H14     108.810    3.000
+ 5IW      C13    C14    C15     109.470    3.000
+ 5IW      C13    C14    N19     109.500    3.000
+ 5IW      H14    C14    C15     108.340    3.000
+ 5IW      H14    C14    N19     109.500    3.000
+ 5IW      C15    C14    N19     109.500    3.000
+ 5IW      C14    C15    H151    109.470    3.000
+ 5IW      C14    C15    H152    109.470    3.000
+ 5IW      C14    C15    C16     111.000    3.000
+ 5IW      H151   C15    H152    107.900    3.000
+ 5IW      H151   C15    C16     109.470    3.000
+ 5IW      H152   C15    C16     109.470    3.000
+ 5IW      C15    C16    H16     108.340    3.000
+ 5IW      C15    C16    C18     111.000    3.000
+ 5IW      C15    C16    C17     111.000    3.000
+ 5IW      H16    C16    C18     108.340    3.000
+ 5IW      H16    C16    C17     108.340    3.000
+ 5IW      C18    C16    C17     111.000    3.000
+ 5IW      C16    C18    H183    109.470    3.000
+ 5IW      C16    C18    H182    109.470    3.000
+ 5IW      C16    C18    H181    109.470    3.000
+ 5IW      H183   C18    H182    109.470    3.000
+ 5IW      H183   C18    H181    109.470    3.000
+ 5IW      H182   C18    H181    109.470    3.000
+ 5IW      C16    C17    H173    109.470    3.000
+ 5IW      C16    C17    H172    109.470    3.000
+ 5IW      C16    C17    H171    109.470    3.000
+ 5IW      H173   C17    H172    109.470    3.000
+ 5IW      H173   C17    H171    109.470    3.000
+ 5IW      H172   C17    H171    109.470    3.000
+ 5IW      C14    N19    HN19    109.500    3.000
+ 5IW      C14    N19    C20     109.500    3.000
+ 5IW      HN19   N19    C20     109.500    3.000
+ 5IW      N19    C20    H20     109.500    3.000
+ 5IW      N19    C20    O40     109.500    3.000
+ 5IW      N19    C20    C21     109.500    3.000
+ 5IW      H20    C20    O40     109.470    3.000
+ 5IW      H20    C20    C21     108.340    3.000
+ 5IW      O40    C20    C21     109.470    3.000
+ 5IW      C20    O40    HO40    109.470    3.000
+ 5IW      C20    C21    H21     108.340    3.000
+ 5IW      C20    C21    C22     111.000    3.000
+ 5IW      C20    C21    N29     110.000    3.000
+ 5IW      H21    C21    C22     108.340    3.000
+ 5IW      H21    C21    N29     108.550    3.000
+ 5IW      C22    C21    N29     110.000    3.000
+ 5IW      C21    C22    H221    109.470    3.000
+ 5IW      C21    C22    H222    109.470    3.000
+ 5IW      C21    C22    C23     109.470    3.000
+ 5IW      H221   C22    H222    107.900    3.000
+ 5IW      H221   C22    C23     109.470    3.000
+ 5IW      H222   C22    C23     109.470    3.000
+ 5IW      C22    C23    C28     120.000    3.000
+ 5IW      C22    C23    C24     120.000    3.000
+ 5IW      C28    C23    C24     120.000    3.000
+ 5IW      C23    C28    H28     120.000    3.000
+ 5IW      C23    C28    C27     120.000    3.000
+ 5IW      H28    C28    C27     120.000    3.000
+ 5IW      C28    C27    H27     120.000    3.000
+ 5IW      C28    C27    C26     120.000    3.000
+ 5IW      H27    C27    C26     120.000    3.000
+ 5IW      C27    C26    H26     120.000    3.000
+ 5IW      C27    C26    C25     120.000    3.000
+ 5IW      H26    C26    C25     120.000    3.000
+ 5IW      C26    C25    H25     120.000    3.000
+ 5IW      C26    C25    C24     120.000    3.000
+ 5IW      H25    C25    C24     120.000    3.000
+ 5IW      C25    C24    H24     120.000    3.000
+ 5IW      C25    C24    C23     120.000    3.000
+ 5IW      H24    C24    C23     120.000    3.000
+ 5IW      C21    N29    HN29    118.500    3.000
+ 5IW      C21    N29    C30     121.500    3.000
+ 5IW      HN29   N29    C30     120.000    3.000
+ 5IW      N29    C30    O39     123.000    3.000
+ 5IW      N29    C30    C31     120.000    3.000
+ 5IW      O39    C30    C31     120.500    3.000
+ 5IW      C30    C31    H31     120.000    3.000
+ 5IW      C30    C31    C32     120.000    3.000
+ 5IW      H31    C31    C32     120.000    3.000
+ 5IW      C31    C32    H32     120.000    3.000
+ 5IW      C31    C32    C33     120.000    3.000
+ 5IW      H32    C32    C33     120.000    3.000
+ 5IW      C32    C33    C34     120.000    3.000
+ 5IW      C32    C33    C38     120.000    3.000
+ 5IW      C34    C33    C38     120.000    3.000
+ 5IW      C33    C34    H34     120.000    3.000
+ 5IW      C33    C34    C35     120.000    3.000
+ 5IW      H34    C34    C35     120.000    3.000
+ 5IW      C34    C35    H35     120.000    3.000
+ 5IW      C34    C35    C36     120.000    3.000
+ 5IW      H35    C35    C36     120.000    3.000
+ 5IW      C35    C36    H36     120.000    3.000
+ 5IW      C35    C36    C37     120.000    3.000
+ 5IW      H36    C36    C37     120.000    3.000
+ 5IW      C36    C37    H37     120.000    3.000
+ 5IW      C36    C37    C38     120.000    3.000
+ 5IW      H37    C37    C38     120.000    3.000
+ 5IW      C37    C38    H38     120.000    3.000
+ 5IW      C37    C38    C33     120.000    3.000
+ 5IW      H38    C38    C33     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 5IW      CONST_1          O11    C10    N09    C08                0.000            0.000   0
+ 5IW      CONST_2          C10    N09    C08    C07              -35.371            0.000   0
+ 5IW      CONST_3          N09    C08    C07    C06               58.608            0.000   0
+ 5IW      CONST_4          C08    C07    C06    C05                0.000            0.000   0
+ 5IW      CONST_5          O11    C10    C05    C04                0.000            0.000   0
+ 5IW      CONST_6          C10    C05    C06    C07                0.000            0.000   0
+ 5IW      var_1            C10    C05    C04    C03                0.000           20.000   2
+ 5IW      var_2            C05    C04    C03    N12              180.000           20.000   3
+ 5IW      var_3            C04    C03    C02    O01              -53.463           20.000   3
+ 5IW      var_4            C04    C03    N12    C13                0.000           20.000   3
+ 5IW      var_5            C03    N12    C13    C14              180.000           20.000   2
+ 5IW      var_6            N12    C13    C14    N19              180.000           20.000   3
+ 5IW      var_7            C13    C14    C15    C16              180.000           20.000   3
+ 5IW      var_8            C14    C15    C16    C17              180.000           20.000   3
+ 5IW      var_9            C15    C16    C18    H181             180.000           20.000   3
+ 5IW      var_10           C15    C16    C17    H171             180.000           20.000   3
+ 5IW      var_11           C13    C14    N19    C20              -69.144           20.000   3
+ 5IW      var_12           C14    N19    C20    C21             -179.771           20.000   3
+ 5IW      var_13           N19    C20    O40    HO40             180.000           20.000   3
+ 5IW      var_14           N19    C20    C21    N29              180.000           20.000   3
+ 5IW      var_15           C20    C21    C22    C23              180.000           20.000   3
+ 5IW      var_16           C21    C22    C23    C28                0.000           20.000   2
+ 5IW      CONST_7          C22    C23    C24    C25                0.000            0.000   0
+ 5IW      CONST_8          C22    C23    C28    C27                0.000            0.000   0
+ 5IW      CONST_9          C23    C28    C27    C26                0.000            0.000   0
+ 5IW      CONST_10         C28    C27    C26    C25                0.000            0.000   0
+ 5IW      CONST_11         C27    C26    C25    C24                0.000            0.000   0
+ 5IW      CONST_12         C26    C25    C24    C23                0.000            0.000   0
+ 5IW      var_17           C20    C21    N29    C30                0.000           20.000   3
+ 5IW      var_18           C21    N29    C30    C31              180.000           20.000   2
+ 5IW      var_19           N29    C30    C31    C32              118.216           20.000   3
+ 5IW      CONST_13         C30    C31    C32    C33             -179.875            0.000   0
+ 5IW      var_20           C31    C32    C33    C34              169.719           20.000   3
+ 5IW      CONST_14         C32    C33    C38    C37                0.000            0.000   0
+ 5IW      CONST_15         C32    C33    C34    C35                0.000            0.000   0
+ 5IW      CONST_16         C33    C34    C35    C36                0.000            0.000   0
+ 5IW      CONST_17         C34    C35    C36    C37                0.000            0.000   0
+ 5IW      CONST_18         C35    C36    C37    C38                0.000            0.000   0
+ 5IW      CONST_19         C36    C37    C38    C33                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 5IW      chir_01          C21    N29    C20    C22       positiv
+ 5IW      chir_02          C20    C21    O40    N19       positiv
+ 5IW      chir_03          C14    N19    C13    C15       positiv
+ 5IW      chir_04          C16    C15    C17    C18       positiv
+ 5IW      chir_05          C03    C04    C02    N12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 5IW      plan-1            C30       0.020
+ 5IW      plan-1            O39       0.020
+ 5IW      plan-1            C31       0.020
+ 5IW      plan-1            N29       0.020
+ 5IW      plan-1            H31       0.020
+ 5IW      plan-1            HN29      0.020
+ 5IW      plan-2            C31       0.020
+ 5IW      plan-2            C30       0.020
+ 5IW      plan-2            C32       0.020
+ 5IW      plan-2            H31       0.020
+ 5IW      plan-2            C33       0.020
+ 5IW      plan-2            H32       0.020
+ 5IW      plan-3            C33       0.020
+ 5IW      plan-3            C32       0.020
+ 5IW      plan-3            C38       0.020
+ 5IW      plan-3            C34       0.020
+ 5IW      plan-3            C37       0.020
+ 5IW      plan-3            C36       0.020
+ 5IW      plan-3            C35       0.020
+ 5IW      plan-3            H38       0.020
+ 5IW      plan-3            H37       0.020
+ 5IW      plan-3            H36       0.020
+ 5IW      plan-3            H35       0.020
+ 5IW      plan-3            H34       0.020
+ 5IW      plan-3            H32       0.020
+ 5IW      plan-4            N29       0.020
+ 5IW      plan-4            C30       0.020
+ 5IW      plan-4            C21       0.020
+ 5IW      plan-4            HN29      0.020
+ 5IW      plan-5            C23       0.020
+ 5IW      plan-5            C22       0.020
+ 5IW      plan-5            C24       0.020
+ 5IW      plan-5            C28       0.020
+ 5IW      plan-5            C25       0.020
+ 5IW      plan-5            C27       0.020
+ 5IW      plan-5            C26       0.020
+ 5IW      plan-5            H24       0.020
+ 5IW      plan-5            H28       0.020
+ 5IW      plan-5            H25       0.020
+ 5IW      plan-5            H27       0.020
+ 5IW      plan-5            H26       0.020
+ 5IW      plan-6            C13       0.020
+ 5IW      plan-6            C14       0.020
+ 5IW      plan-6            O41       0.020
+ 5IW      plan-6            N12       0.020
+ 5IW      plan-6            HN12      0.020
+ 5IW      plan-7            C07       0.020
+ 5IW      plan-7            C06       0.020
+ 5IW      plan-7            C08       0.020
+ 5IW      plan-7            H07       0.020
+ 5IW      plan-7            C10       0.020
+ 5IW      plan-7            C05       0.020
+ 5IW      plan-7            N09       0.020
+ 5IW      plan-7            H06       0.020
+ 5IW      plan-7            O11       0.020
+ 5IW      plan-7            C04       0.020
+ 5IW      plan-7            HN09      0.020
+ 5IW      plan-8            C02       0.020
+ 5IW      plan-8            C03       0.020
+ 5IW      plan-8            O01       0.020
+ 5IW      plan-8            H02       0.020
+ 5IW      plan-9            N12       0.020
+ 5IW      plan-9            C13       0.020
+ 5IW      plan-9            C03       0.020
+ 5IW      plan-9            HN12      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-5IW
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-5IW  1 SG      2 C02       .           1.720    0.020
+# ------------------------------------------------------
