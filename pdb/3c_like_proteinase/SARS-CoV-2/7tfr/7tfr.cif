@@ -3,7 +3,7 @@ data_7TFR
 _entry.id   7TFR 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.355 
+_audit_conform.dict_version    5.358 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -40,56 +40,76 @@ _audit_author.identifier_ORCID
 'Kneller, D.W.'  2 ? 
 'Coates, L.'     3 ? 
 # 
-_citation.abstract                  ? 
-_citation.abstract_id_CAS           ? 
-_citation.book_id_ISBN              ? 
-_citation.book_publisher            ? 
-_citation.book_publisher_city       ? 
-_citation.book_title                ? 
-_citation.coordinate_linkage        ? 
-_citation.country                   US 
-_citation.database_id_Medline       ? 
-_citation.details                   ? 
-_citation.id                        primary 
-_citation.journal_abbrev            'Res Sq' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            ? 
-_citation.journal_id_ISSN           2693-5015 
-_citation.journal_full              ? 
-_citation.journal_issue             ? 
-_citation.journal_volume            ? 
-_citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     
+loop_
+_citation.abstract 
+_citation.abstract_id_CAS 
+_citation.book_id_ISBN 
+_citation.book_publisher 
+_citation.book_publisher_city 
+_citation.book_title 
+_citation.coordinate_linkage 
+_citation.country 
+_citation.database_id_Medline 
+_citation.details 
+_citation.id 
+_citation.journal_abbrev 
+_citation.journal_id_ASTM 
+_citation.journal_id_CSD 
+_citation.journal_id_ISSN 
+_citation.journal_full 
+_citation.journal_issue 
+_citation.journal_volume 
+_citation.language 
+_citation.page_first 
+_citation.page_last 
+_citation.title 
+_citation.year 
+_citation.database_id_CSD 
+_citation.pdbx_database_id_DOI 
+_citation.pdbx_database_id_PubMed 
+_citation.pdbx_database_id_patent 
+_citation.unpublished_flag 
+? ? ? ? ? ? ? UK ? ? primary 'Nat Commun' ? ? 2041-1723 ? ? 13 ? 2268 ? 
+'Covalent narlaprevir- and boceprevir-derived hybrid inhibitors of SARS-CoV-2 main protease' 2022 ? 10.1038/s41467-022-29915-z  
+35477935 ? ? 
+? ? ? ? ? ? ? US ? ? 1       'Res Sq'     ? ? 2693-5015 ? ? ?  ? ?    ? 
 ;Covalent narlaprevir- and boceprevir-derived hybrid inhibitors of SARS-CoV-2 main protease: room-temperature X-ray and neutron crystallography, binding thermodynamics, and antiviral activity.
 ;
-_citation.year                      2022 
-_citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      10.21203/rs.3.rs-1318037/v1 
-_citation.pdbx_database_id_PubMed   35169792 
-_citation.pdbx_database_id_patent   ? 
-_citation.unpublished_flag          ? 
+2022 ? 10.21203/rs.3.rs-1318037/v1 35169792 ? ? 
 # 
 loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Kneller, D.'        1  ?                   
+primary 'Kneller, D.W.'      1  ?                   
 primary 'Li, H.'             2  ?                   
-primary 'Phillips, G.'       3  0000-0001-5858-3825 
-primary 'Weiss, K.'          4  0000-0002-6486-8007 
+primary 'Phillips, G.'       3  ?                   
+primary 'Weiss, K.L.'        4  ?                   
 primary 'Zhang, Q.'          5  ?                   
-primary 'Arnould, M.'        6  0000-0003-0172-8311 
-primary 'Jonsson, C.'        7  ?                   
+primary 'Arnould, M.A.'      6  ?                   
+primary 'Jonsson, C.B.'      7  ?                   
 primary 'Surendranathan, S.' 8  ?                   
 primary 'Parvathareddy, J.'  9  ?                   
-primary 'Blakeley, M.'       10 0000-0002-6412-4358 
-primary 'Coates, L.'         11 0000-0003-2342-049X 
-primary 'Louis, J.'          12 0000-0002-0052-1899 
-primary 'Bonnesen, P.'       13 0000-0002-1397-8281 
-primary 'Kovalevsky, A.'     14 0000-0003-4459-9142 
+primary 'Blakeley, M.P.'     10 ?                   
+primary 'Coates, L.'         11 ?                   
+primary 'Louis, J.M.'        12 ?                   
+primary 'Bonnesen, P.V.'     13 ?                   
+primary 'Kovalevsky, A.'     14 ?                   
+1       'Kneller, D.'        15 ?                   
+1       'Li, H.'             16 ?                   
+1       'Phillips, G.'       17 0000-0001-5858-3825 
+1       'Weiss, K.'          18 0000-0002-6486-8007 
+1       'Zhang, Q.'          19 ?                   
+1       'Arnould, M.'        20 0000-0003-0172-8311 
+1       'Jonsson, C.'        21 ?                   
+1       'Surendranathan, S.' 22 ?                   
+1       'Parvathareddy, J.'  23 ?                   
+1       'Blakeley, M.'       24 0000-0002-6412-4358 
+1       'Coates, L.'         25 0000-0003-2342-049X 
+1       'Louis, J.'          26 0000-0002-0052-1899 
+1       'Bonnesen, P.'       27 0000-0002-1397-8281 
+1       'Kovalevsky, A.'     28 0000-0003-4459-9142 
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -4427,11 +4447,14 @@ _pdbx_struct_special_symmetry.label_seq_id
 1 1 A HOH 505 ? C HOH . 
 2 1 A HOH 615 ? C HOH . 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-03-02 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-03-02 
+2 'Structure model' 1 1 2022-05-04 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -4440,6 +4463,19 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
 # 
 loop_
 _software.citation_id 
