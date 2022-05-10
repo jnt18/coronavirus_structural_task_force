@@ -1,0 +1,553 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+N63      N63 '.                                   ' .                  60  33 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-N63  CYS      .        .        N63      .        .
+ bond_CYS-SG_=_N63-C7
+ASN-NA   ASN      .        .        NA       .        .
+ bond_ASN-O_=_NA-NA
+ASN-NA0  ASN      .        .        NA       .        .
+ bond_ASN-OD1_=_NA-NA
+PHE-NA   PHE      .        .        NA       .        .
+ bond_PHE-O_=_NA-NA
+ASP-NA   ASP      .        .        NA       .        .
+ bond_ASP-O_=_NA-NA
+ASP-NA0  ASP      .        .        NA       .        .
+ bond_ASP-OD1_=_NA-NA
+NA-HOH   NA       .        .        HOH      .        .
+ bond_NA-NA_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_N63
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ N63           O5     O    O         0.000    -10.214   14.441   68.268
+ N63           C8     C    C         0.000    -11.392   14.546   68.414
+ N63           N2     N    N         0.000    -12.161   15.071   67.472
+ N63           C6     C    CH1       0.000    -11.592   15.564   66.211
+ N63           H6     H    H         0.000    -10.503   15.421   66.218
+ N63           C7     C    CH2       0.000    -11.911   17.048   66.103
+ N63           H71    H    H         0.000    -11.507   17.551   66.984
+ N63           H72    H    H         0.000    -12.997   17.165   66.084
+ N63           O2     O    OH1       0.000    -11.351   17.621   64.931
+ N63           HO2    H    H         0.000    -11.574   18.560   64.896
+ N63           C5     C    CH2       0.000    -12.204   14.776   65.053
+ N63           H51    H    H         0.000    -11.917   15.245   64.109
+ N63           H52    H    H         0.000    -13.292   14.788   65.147
+ N63           C4     C    CH1       0.000    -11.687   13.281   65.080
+ N63           H4     H    H         0.000    -11.915   12.840   66.060
+ N63           C3     C    CH2       0.000    -10.199   13.250   64.861
+ N63           H31    H    H         0.000     -9.632   13.151   65.788
+ N63           H32    H    H         0.000     -9.831   14.112   64.300
+ N63           C2     C    CH2       0.000    -10.026   11.950   63.999
+ N63           H21    H    H         0.000     -9.722   11.097   64.608
+ N63           H22    H    H         0.000     -9.308   12.093   63.189
+ N63           N1     N    N         0.000    -11.354   11.700   63.436
+ N63           C1     C    C         0.000    -12.298   12.445   64.020
+ N63           O1     O    O         0.000    -13.467   12.406   63.721
+ N63           C9     C    CH1       0.000    -12.054   14.067   69.681
+ N63           H9     H    H         0.000    -13.124   13.911   69.487
+ N63           C10    C    CH2       0.000    -11.893   15.156   70.784
+ N63           H101   H    H         0.000    -12.451   16.040   70.468
+ N63           H102   H    H         0.000    -10.832   15.405   70.859
+ N63           C11    C    CH1       0.000    -12.414   14.679   72.166
+ N63           H11    H    H         0.000    -11.881   13.766   72.468
+ N63           C13    C    CH3       0.000    -12.117   15.833   73.196
+ N63           H133   H    H         0.000    -11.072   16.023   73.240
+ N63           H132   H    H         0.000    -12.616   16.724   72.900
+ N63           H131   H    H         0.000    -12.456   15.554   74.164
+ N63           C12    C    CH3       0.000    -13.907   14.411   72.128
+ N63           H123   H    H         0.000    -14.417   15.300   71.863
+ N63           H122   H    H         0.000    -14.111   13.659   71.412
+ N63           H121   H    H         0.000    -14.230   14.088   73.083
+ N63           N3     N    N         0.000    -11.455   12.798   70.087
+ N63           C14    C    C         0.000    -11.409   11.733   69.288
+ N63           O4     O    O         0.000    -12.077   11.655   68.273
+ N63           O3     O    O2        0.000    -10.608   10.746   69.636
+ N63           C15    C    CH2       0.000    -10.694    9.548   68.873
+ N63           H151   H    H         0.000    -11.694    9.481   68.440
+ N63           H152   H    H         0.000    -10.529    8.698   69.538
+ N63           C16    C    CR6       0.000     -9.627    9.532   67.730
+ N63           C22    C    CR16      0.000     -9.568    8.446   66.861
+ N63           H220   H    H         0.000    -10.258    7.619   66.981
+ N63           C21    C    CR16      0.000     -8.626    8.421   65.840
+ N63           H210   H    H         0.000     -8.577    7.575   65.166
+ N63           C20    C    CR16      0.000     -7.746    9.487   65.687
+ N63           H20    H    H         0.000     -7.013    9.472   64.890
+ N63           C18    C    CR6       0.000     -7.806   10.573   66.556
+ N63           C17    C    CR16      0.000     -8.747   10.598   67.577
+ N63           H17    H    H         0.000     -8.795   11.444   68.251
+ N63           C19    C    CT        0.000     -6.840   11.742   66.381
+ N63           F1     F    F         0.000     -5.563   11.314   66.608
+ N63           F2     F    F         0.000     -6.945   12.223   65.108
+ N63           F3     F    F         0.000     -7.149   12.739   67.258
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ N63      O5     n/a    C8     START
+ N63      C8     O5     C9     .
+ N63      N2     C8     C6     .
+ N63      C6     N2     C5     .
+ N63      H6     C6     .      .
+ N63      C7     C6     O2     .
+ N63      H71    C7     .      .
+ N63      H72    C7     .      .
+ N63      O2     C7     HO2    .
+ N63      HO2    O2     .      .
+ N63      C5     C6     C4     .
+ N63      H51    C5     .      .
+ N63      H52    C5     .      .
+ N63      C4     C5     C3     .
+ N63      H4     C4     .      .
+ N63      C3     C4     C2     .
+ N63      H31    C3     .      .
+ N63      H32    C3     .      .
+ N63      C2     C3     N1     .
+ N63      H21    C2     .      .
+ N63      H22    C2     .      .
+ N63      N1     C2     C1     .
+ N63      C1     N1     O1     .
+ N63      O1     C1     .      .
+ N63      C9     C8     N3     .
+ N63      H9     C9     .      .
+ N63      C10    C9     C11    .
+ N63      H101   C10    .      .
+ N63      H102   C10    .      .
+ N63      C11    C10    C12    .
+ N63      H11    C11    .      .
+ N63      C13    C11    H131   .
+ N63      H133   C13    .      .
+ N63      H132   C13    .      .
+ N63      H131   C13    .      .
+ N63      C12    C11    H121   .
+ N63      H123   C12    .      .
+ N63      H122   C12    .      .
+ N63      H121   C12    .      .
+ N63      N3     C9     C14    .
+ N63      C14    N3     O3     .
+ N63      O4     C14    .      .
+ N63      O3     C14    C15    .
+ N63      C15    O3     C16    .
+ N63      H151   C15    .      .
+ N63      H152   C15    .      .
+ N63      C16    C15    C22    .
+ N63      C22    C16    C21    .
+ N63      H220   C22    .      .
+ N63      C21    C22    C20    .
+ N63      H210   C21    .      .
+ N63      C20    C21    C18    .
+ N63      H20    C20    .      .
+ N63      C18    C20    C19    .
+ N63      C17    C18    H17    .
+ N63      H17    C17    .      .
+ N63      C19    C18    F3     .
+ N63      F1     C19    .      .
+ N63      F2     C19    .      .
+ N63      F3     C19    .      END
+ N63      C1     C4     .    ADD
+ N63      C16    C17    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ N63      C1     C4        single      1.500    0.020
+ N63      C1     N1        aromatic    1.330    0.020
+ N63      O1     C1        double      1.220    0.020
+ N63      C11    C10       single      1.524    0.020
+ N63      C10    C9        single      1.524    0.020
+ N63      C12    C11       single      1.524    0.020
+ N63      C13    C11       single      1.524    0.020
+ N63      C14    N3        deloc       1.330    0.020
+ N63      O3     C14       single      1.454    0.020
+ N63      O4     C14       double      1.220    0.020
+ N63      C16    C15       single      1.511    0.020
+ N63      C15    O3        single      1.426    0.020
+ N63      C16    C17       aromatic    1.390    0.020
+ N63      C22    C16       aromatic    1.390    0.020
+ N63      C17    C18       aromatic    1.390    0.020
+ N63      C19    C18       single      1.500    0.020
+ N63      C18    C20       aromatic    1.390    0.020
+ N63      F1     C19       single      1.320    0.020
+ N63      F2     C19       single      1.320    0.020
+ N63      F3     C19       single      1.320    0.020
+ N63      C2     C3        single      1.524    0.020
+ N63      N1     C2        single      1.455    0.020
+ N63      C20    C21       aromatic    1.390    0.020
+ N63      C21    C22       aromatic    1.390    0.020
+ N63      C3     C4        single      1.524    0.020
+ N63      C4     C5        single      1.524    0.020
+ N63      C5     C6        single      1.524    0.020
+ N63      C7     C6        single      1.524    0.020
+ N63      C6     N2        single      1.455    0.020
+ N63      O2     C7        single      1.432    0.020
+ N63      C9     C8        single      1.500    0.020
+ N63      N2     C8        deloc       1.330    0.020
+ N63      C8     O5        double      1.220    0.020
+ N63      N3     C9        single      1.455    0.020
+ N63      H101   C10       single      1.092    0.020
+ N63      H102   C10       single      1.092    0.020
+ N63      H11    C11       single      1.099    0.020
+ N63      H121   C12       single      1.059    0.020
+ N63      H122   C12       single      1.059    0.020
+ N63      H123   C12       single      1.059    0.020
+ N63      H131   C13       single      1.059    0.020
+ N63      H132   C13       single      1.059    0.020
+ N63      H133   C13       single      1.059    0.020
+ N63      H151   C15       single      1.092    0.020
+ N63      H152   C15       single      1.092    0.020
+ N63      H17    C17       single      1.083    0.020
+ N63      H21    C2        single      1.092    0.020
+ N63      H22    C2        single      1.092    0.020
+ N63      H20    C20       single      1.083    0.020
+ N63      H210   C21       single      1.083    0.020
+ N63      H220   C22       single      1.083    0.020
+ N63      H31    C3        single      1.092    0.020
+ N63      H32    C3        single      1.092    0.020
+ N63      H4     C4        single      1.099    0.020
+ N63      H51    C5        single      1.092    0.020
+ N63      H52    C5        single      1.092    0.020
+ N63      H6     C6        single      1.099    0.020
+ N63      H71    C7        single      1.092    0.020
+ N63      H72    C7        single      1.092    0.020
+ N63      H9     C9        single      1.099    0.020
+ N63      HO2    O2        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ N63      O5     C8     N2      123.000    3.000
+ N63      O5     C8     C9      120.500    3.000
+ N63      N2     C8     C9      116.500    3.000
+ N63      C8     N2     C6      121.000    3.000
+ N63      N2     C6     H6      109.470    3.000
+ N63      N2     C6     C7      105.000    3.000
+ N63      N2     C6     C5      105.000    3.000
+ N63      H6     C6     C7      108.340    3.000
+ N63      H6     C6     C5      108.340    3.000
+ N63      C7     C6     C5      109.470    3.000
+ N63      C6     C7     H71     109.470    3.000
+ N63      C6     C7     H72     109.470    3.000
+ N63      C6     C7     O2      109.470    3.000
+ N63      H71    C7     H72     107.900    3.000
+ N63      H71    C7     O2      109.470    3.000
+ N63      H72    C7     O2      109.470    3.000
+ N63      C7     O2     HO2     109.470    3.000
+ N63      C6     C5     H51     109.470    3.000
+ N63      C6     C5     H52     109.470    3.000
+ N63      C6     C5     C4      111.000    3.000
+ N63      H51    C5     H52     107.900    3.000
+ N63      H51    C5     C4      109.470    3.000
+ N63      H52    C5     C4      109.470    3.000
+ N63      C5     C4     H4      108.340    3.000
+ N63      C5     C4     C3      109.470    3.000
+ N63      C5     C4     C1      109.470    3.000
+ N63      H4     C4     C3      108.340    3.000
+ N63      H4     C4     C1      108.810    3.000
+ N63      C3     C4     C1      109.470    3.000
+ N63      C4     C3     H31     109.470    3.000
+ N63      C4     C3     H32     109.470    3.000
+ N63      C4     C3     C2      111.000    3.000
+ N63      H31    C3     H32     107.900    3.000
+ N63      H31    C3     C2      109.470    3.000
+ N63      H32    C3     C2      109.470    3.000
+ N63      C3     C2     H21     109.470    3.000
+ N63      C3     C2     H22     109.470    3.000
+ N63      C3     C2     N1      105.000    3.000
+ N63      H21    C2     H22     107.900    3.000
+ N63      H21    C2     N1      109.470    3.000
+ N63      H22    C2     N1      109.470    3.000
+ N63      C2     N1     C1      127.000    3.000
+ N63      N1     C1     O1      123.000    3.000
+ N63      N1     C1     C4      116.500    3.000
+ N63      O1     C1     C4      120.500    3.000
+ N63      C8     C9     H9      108.810    3.000
+ N63      C8     C9     C10     109.470    3.000
+ N63      C8     C9     N3      111.600    3.000
+ N63      H9     C9     C10     108.340    3.000
+ N63      H9     C9     N3      109.470    3.000
+ N63      C10    C9     N3      105.000    3.000
+ N63      C9     C10    H101    109.470    3.000
+ N63      C9     C10    H102    109.470    3.000
+ N63      C9     C10    C11     111.000    3.000
+ N63      H101   C10    H102    107.900    3.000
+ N63      H101   C10    C11     109.470    3.000
+ N63      H102   C10    C11     109.470    3.000
+ N63      C10    C11    H11     108.340    3.000
+ N63      C10    C11    C13     111.000    3.000
+ N63      C10    C11    C12     111.000    3.000
+ N63      H11    C11    C13     108.340    3.000
+ N63      H11    C11    C12     108.340    3.000
+ N63      C13    C11    C12     111.000    3.000
+ N63      C11    C13    H133    109.470    3.000
+ N63      C11    C13    H132    109.470    3.000
+ N63      C11    C13    H131    109.470    3.000
+ N63      H133   C13    H132    109.470    3.000
+ N63      H133   C13    H131    109.470    3.000
+ N63      H132   C13    H131    109.470    3.000
+ N63      C11    C12    H123    109.470    3.000
+ N63      C11    C12    H122    109.470    3.000
+ N63      C11    C12    H121    109.470    3.000
+ N63      H123   C12    H122    109.470    3.000
+ N63      H123   C12    H121    109.470    3.000
+ N63      H122   C12    H121    109.470    3.000
+ N63      C9     N3     C14     121.000    3.000
+ N63      N3     C14    O4      123.000    3.000
+ N63      N3     C14    O3      120.000    3.000
+ N63      O4     C14    O3      119.000    3.000
+ N63      C14    O3     C15     120.000    3.000
+ N63      O3     C15    H151    109.470    3.000
+ N63      O3     C15    H152    109.470    3.000
+ N63      O3     C15    C16     109.470    3.000
+ N63      H151   C15    H152    107.900    3.000
+ N63      H151   C15    C16     109.470    3.000
+ N63      H152   C15    C16     109.470    3.000
+ N63      C15    C16    C22     120.000    3.000
+ N63      C15    C16    C17     120.000    3.000
+ N63      C22    C16    C17     120.000    3.000
+ N63      C16    C22    H220    120.000    3.000
+ N63      C16    C22    C21     120.000    3.000
+ N63      H220   C22    C21     120.000    3.000
+ N63      C22    C21    H210    120.000    3.000
+ N63      C22    C21    C20     120.000    3.000
+ N63      H210   C21    C20     120.000    3.000
+ N63      C21    C20    H20     120.000    3.000
+ N63      C21    C20    C18     120.000    3.000
+ N63      H20    C20    C18     120.000    3.000
+ N63      C20    C18    C17     120.000    3.000
+ N63      C20    C18    C19     120.000    3.000
+ N63      C17    C18    C19     120.000    3.000
+ N63      C18    C17    H17     120.000    3.000
+ N63      C18    C17    C16     120.000    3.000
+ N63      H17    C17    C16     120.000    3.000
+ N63      C18    C19    F1      109.470    3.000
+ N63      C18    C19    F2      109.470    3.000
+ N63      C18    C19    F3      109.470    3.000
+ N63      F1     C19    F2      109.470    3.000
+ N63      F1     C19    F3      109.470    3.000
+ N63      F2     C19    F3      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ N63      CONST_1          O5     C8     N2     C6               180.000            0.000   0
+ N63      var_1            C8     N2     C6     C5                 0.000           20.000   3
+ N63      var_2            N2     C6     C7     O2               180.000           20.000   3
+ N63      var_3            C6     C7     O2     HO2              180.000           20.000   3
+ N63      var_4            N2     C6     C5     C4               180.000           20.000   3
+ N63      var_5            C6     C5     C4     C3               180.000           20.000   3
+ N63      var_6            C5     C4     C3     C2               180.000           20.000   3
+ N63      var_7            C4     C3     C2     N1               180.000           20.000   3
+ N63      var_8            C3     C2     N1     C1               -12.499           20.000   3
+ N63      var_9            C2     N1     C1     O1               180.000           20.000   2
+ N63      var_10           N1     C1     C4     C5               180.000           20.000   3
+ N63      var_11           O5     C8     C9     N3               180.000           20.000   3
+ N63      var_12           C8     C9     C10    C11              180.000           20.000   3
+ N63      var_13           C9     C10    C11    C12              180.000           20.000   3
+ N63      var_14           C10    C11    C13    H131             180.000           20.000   3
+ N63      var_15           C10    C11    C12    H121             180.000           20.000   3
+ N63      var_16           C8     C9     N3     C14                0.000           20.000   3
+ N63      CONST_2          C9     N3     C14    O3               180.000            0.000   0
+ N63      var_17           N3     C14    O3     C15              172.170           20.000   3
+ N63      var_18           C14    O3     C15    C16               94.608           20.000   3
+ N63      var_19           O3     C15    C16    C22                0.000           20.000   2
+ N63      CONST_3          C15    C16    C17    C18                0.000            0.000   0
+ N63      CONST_4          C15    C16    C22    C21                0.000            0.000   0
+ N63      CONST_5          C16    C22    C21    C20                0.000            0.000   0
+ N63      CONST_6          C22    C21    C20    C18                0.000            0.000   0
+ N63      CONST_7          C21    C20    C18    C19                0.000            0.000   0
+ N63      CONST_8          C20    C18    C17    C16                0.000            0.000   0
+ N63      var_20           C20    C18    C19    F3               174.709           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ N63      chir_01          C11    C10    C12    C13       positiv
+ N63      chir_02          C19    C18    F1     F2        negativ
+ N63      chir_03          C4     C1     C3     C5        negativ
+ N63      chir_04          C6     C5     C7     N2        negativ
+ N63      chir_05          C9     C10    C8     N3        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ N63      plan-1            C1        0.020
+ N63      plan-1            C4        0.020
+ N63      plan-1            N1        0.020
+ N63      plan-1            O1        0.020
+ N63      plan-2            C14       0.020
+ N63      plan-2            N3        0.020
+ N63      plan-2            O3        0.020
+ N63      plan-2            O4        0.020
+ N63      plan-2            C9        0.020
+ N63      plan-3            C16       0.020
+ N63      plan-3            C15       0.020
+ N63      plan-3            C17       0.020
+ N63      plan-3            C22       0.020
+ N63      plan-3            C18       0.020
+ N63      plan-3            C20       0.020
+ N63      plan-3            C21       0.020
+ N63      plan-3            H17       0.020
+ N63      plan-3            C19       0.020
+ N63      plan-3            H20       0.020
+ N63      plan-3            H210      0.020
+ N63      plan-3            H220      0.020
+ N63      plan-4            C8        0.020
+ N63      plan-4            C9        0.020
+ N63      plan-4            N2        0.020
+ N63      plan-4            O5        0.020
+ N63      plan-4            C6        0.020
+ N63      plan-5            N1        0.020
+ N63      plan-5            C1        0.020
+ N63      plan-5            C2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-N63
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-N63  1 SG      2 C7        .           1.810    0.020
+#
+data_link_ASN-NA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASN-NA   1 O       2 NA        .           2.770    0.020
+#
+data_link_ASN-NA0
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASN-NA0  1 OD1     2 NA        .           2.310    0.020
+#
+data_link_PHE-NA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ PHE-NA   1 O       2 NA        .           2.450    0.020
+#
+data_link_ASP-NA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASP-NA   1 O       2 NA        .           2.630    0.020
+#
+data_link_ASP-NA0
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASP-NA0  1 OD1     2 NA        .           2.240    0.020
+#
+data_link_NA-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ NA-HOH   1 NA      2 O         .           2.410    0.020
+# ------------------------------------------------------

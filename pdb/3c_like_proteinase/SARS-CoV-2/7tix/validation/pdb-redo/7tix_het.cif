@@ -1,0 +1,572 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+Q56      Q56 '.                                   ' .                  61  33 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-Q56  CYS      .        .        Q56      .        .
+ bond_CYS-SG_=_Q56-C12
+ASN-MG   ASN      .        .        MG       .        .
+ bond_ASN-O_=_MG-MG
+ASN-MG0  ASN      .        .        MG       .        .
+ bond_ASN-OD1_=_MG-MG
+PHE-MG   PHE      .        .        MG       .        .
+ bond_PHE-O_=_MG-MG
+ASP-MG   ASP      .        .        MG       .        .
+ bond_ASP-O_=_MG-MG
+ASP-MG0  ASP      .        .        MG       .        .
+ bond_ASP-OD1_=_MG-MG
+MG-HOH   MG       .        .        HOH      .        .
+ bond_MG-MG_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_Q56
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ Q56           O33    O    O         0.000      7.580   -2.190   22.055
+ Q56           C20    C    C         0.000      8.073   -2.157   23.158
+ Q56           O21    O    O2        0.000      8.752   -3.180   23.656
+ Q56           C22    C    CH2       0.000      8.948   -4.286   22.804
+ Q56           H221   H    H         0.000      8.030   -4.435   22.232
+ Q56           H222   H    H         0.000      9.132   -5.162   23.429
+ Q56           C23    C    CR6       0.000     10.126   -4.086   21.841
+ Q56           C24    C    CR16      0.000     10.939   -2.949   21.907
+ Q56           H24    H    H         0.000     10.742   -2.188   22.651
+ Q56           C32    C    CR16      0.000     10.388   -5.062   20.885
+ Q56           H32    H    H         0.000      9.769   -5.949   20.835
+ Q56           C31    C    CR16      0.000     11.444   -4.902   19.991
+ Q56           H31    H    H         0.000     11.639   -5.661   19.243
+ Q56           C30    C    CR66      0.000     12.248   -3.769   20.056
+ Q56           C29    C    CR16      0.000     13.308   -3.616   19.161
+ Q56           H29    H    H         0.000     13.500   -4.376   18.413
+ Q56           C28    C    CR16      0.000     14.121   -2.482   19.229
+ Q56           H28    H    H         0.000     14.947   -2.363   18.538
+ Q56           C27    C    CR16      0.000     13.865   -1.504   20.189
+ Q56           H27    H    H         0.000     14.491   -0.622   20.241
+ Q56           C26    C    CR16      0.000     12.805   -1.659   21.083
+ Q56           H26    H    H         0.000     12.609   -0.896   21.826
+ Q56           C25    C    CR66      0.000     11.998   -2.793   21.021
+ Q56           N19    N    N         0.000      7.989   -1.083   23.950
+ Q56           C14    C    CH1       0.000      7.449    0.197   23.526
+ Q56           H14    H    H         0.000      6.382    0.096   23.285
+ Q56           C15    C    CH2       0.000      7.636    1.185   24.673
+ Q56           H151   H    H         0.000      7.861    2.157   24.228
+ Q56           H152   H    H         0.000      8.496    0.845   25.254
+ Q56           C16    C    CH1       0.000      6.409    1.311   25.593
+ Q56           H16    H    H         0.000      5.767    2.098   25.174
+ Q56           C18    C    CH3       0.000      6.856    1.777   26.975
+ Q56           H183   H    H         0.000      7.533    1.072   27.383
+ Q56           H182   H    H         0.000      7.334    2.719   26.893
+ Q56           H181   H    H         0.000      6.012    1.864   27.608
+ Q56           C17    C    CH3       0.000      5.557    0.053   25.725
+ Q56           H173   H    H         0.000      5.189   -0.226   24.772
+ Q56           H172   H    H         0.000      6.147   -0.733   26.119
+ Q56           H171   H    H         0.000      4.744    0.244   26.375
+ Q56           C2     C    C         0.000      8.221    0.712   22.300
+ Q56           O1     O    O         0.000      9.427    0.752   22.292
+ Q56           N3     N    N         0.000      7.536    1.135   21.235
+ Q56           C4     C    CH1       0.000      8.215    1.614   20.046
+ Q56           H4     H    H         0.000      9.300    1.479   20.161
+ Q56           C12    C    C1        0.000      7.901    3.100   19.838
+ Q56           H12    H    H         0.000      7.176    3.592   20.463
+ Q56           O13    O    O         0.000      8.471    3.717   18.969
+ Q56           C5     C    CH2       0.000      7.718    0.790   18.848
+ Q56           H51    H    H         0.000      8.102    1.244   17.932
+ Q56           H52    H    H         0.000      6.626    0.819   18.838
+ Q56           C6     C    CH1       0.000      8.203   -0.700   18.939
+ Q56           H6     H    H         0.000      7.780   -1.176   19.835
+ Q56           C7     C    CH2       0.000      9.706   -0.757   18.993
+ Q56           H71    H    H         0.000     10.086   -0.924   20.002
+ Q56           H72    H    H         0.000     10.177    0.133   18.570
+ Q56           C8     C    CH2       0.000     10.035   -1.999   18.097
+ Q56           H81    H    H         0.000     10.194   -2.905   18.686
+ Q56           H82    H    H         0.000     10.899   -1.829   17.452
+ Q56           N9     N    N         0.000      8.775   -2.161   17.236
+ Q56           C10    C    C         0.000      7.768   -1.435   17.725
+ Q56           O11    O    O         0.000      6.670   -1.379   17.255
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ Q56      O33    n/a    C20    START
+ Q56      C20    O33    N19    .
+ Q56      O21    C20    C22    .
+ Q56      C22    O21    C23    .
+ Q56      H221   C22    .      .
+ Q56      H222   C22    .      .
+ Q56      C23    C22    C32    .
+ Q56      C24    C23    H24    .
+ Q56      H24    C24    .      .
+ Q56      C32    C23    C31    .
+ Q56      H32    C32    .      .
+ Q56      C31    C32    C30    .
+ Q56      H31    C31    .      .
+ Q56      C30    C31    C25    .
+ Q56      C29    C30    C28    .
+ Q56      H29    C29    .      .
+ Q56      C28    C29    C27    .
+ Q56      H28    C28    .      .
+ Q56      C27    C28    C26    .
+ Q56      H27    C27    .      .
+ Q56      C26    C27    H26    .
+ Q56      H26    C26    .      .
+ Q56      C25    C30    .      .
+ Q56      N19    C20    C14    .
+ Q56      C14    N19    C2     .
+ Q56      H14    C14    .      .
+ Q56      C15    C14    C16    .
+ Q56      H151   C15    .      .
+ Q56      H152   C15    .      .
+ Q56      C16    C15    C17    .
+ Q56      H16    C16    .      .
+ Q56      C18    C16    H181   .
+ Q56      H183   C18    .      .
+ Q56      H182   C18    .      .
+ Q56      H181   C18    .      .
+ Q56      C17    C16    H171   .
+ Q56      H173   C17    .      .
+ Q56      H172   C17    .      .
+ Q56      H171   C17    .      .
+ Q56      C2     C14    N3     .
+ Q56      O1     C2     .      .
+ Q56      N3     C2     C4     .
+ Q56      C4     N3     C5     .
+ Q56      H4     C4     .      .
+ Q56      C12    C4     O13    .
+ Q56      H12    C12    .      .
+ Q56      O13    C12    .      .
+ Q56      C5     C4     C6     .
+ Q56      H51    C5     .      .
+ Q56      H52    C5     .      .
+ Q56      C6     C5     C7     .
+ Q56      H6     C6     .      .
+ Q56      C7     C6     C8     .
+ Q56      H71    C7     .      .
+ Q56      H72    C7     .      .
+ Q56      C8     C7     N9     .
+ Q56      H81    C8     .      .
+ Q56      H82    C8     .      .
+ Q56      N9     C8     C10    .
+ Q56      C10    N9     O11    .
+ Q56      O11    C10    .      END
+ Q56      C25    C26    .    ADD
+ Q56      C25    C24    .    ADD
+ Q56      C10    C6     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ Q56      C16    C15       single      1.524    0.020
+ Q56      C17    C16       single      1.524    0.020
+ Q56      C18    C16       single      1.524    0.020
+ Q56      C12    C4        single      1.510    0.020
+ Q56      O13    C12       double      1.220    0.020
+ Q56      C15    C14       single      1.524    0.020
+ Q56      C2     C14       single      1.500    0.020
+ Q56      C14    N19       single      1.455    0.020
+ Q56      C23    C22       single      1.511    0.020
+ Q56      C22    O21       single      1.426    0.020
+ Q56      C24    C23       aromatic    1.390    0.020
+ Q56      C32    C23       aromatic    1.390    0.020
+ Q56      C25    C26       aromatic    1.390    0.020
+ Q56      C25    C24       aromatic    1.390    0.020
+ Q56      C25    C30       aromatic    1.390    0.020
+ Q56      C26    C27       aromatic    1.390    0.020
+ Q56      C27    C28       aromatic    1.390    0.020
+ Q56      C28    C29       aromatic    1.390    0.020
+ Q56      C29    C30       aromatic    1.390    0.020
+ Q56      C10    C6        single      1.500    0.020
+ Q56      C10    N9        aromatic    1.330    0.020
+ Q56      O11    C10       double      1.220    0.020
+ Q56      N3     C2        deloc       1.330    0.020
+ Q56      O1     C2        double      1.220    0.020
+ Q56      N19    C20       deloc       1.330    0.020
+ Q56      O21    C20       single      1.454    0.020
+ Q56      C20    O33       double      1.220    0.020
+ Q56      C30    C31       aromatic    1.390    0.020
+ Q56      C31    C32       aromatic    1.390    0.020
+ Q56      C5     C4        single      1.524    0.020
+ Q56      C4     N3        single      1.455    0.020
+ Q56      C6     C5        single      1.524    0.020
+ Q56      C7     C6        single      1.524    0.020
+ Q56      C8     C7        single      1.524    0.020
+ Q56      N9     C8        single      1.455    0.020
+ Q56      H16    C16       single      1.099    0.020
+ Q56      H12    C12       single      1.077    0.020
+ Q56      H14    C14       single      1.099    0.020
+ Q56      H151   C15       single      1.092    0.020
+ Q56      H152   C15       single      1.092    0.020
+ Q56      H171   C17       single      1.059    0.020
+ Q56      H172   C17       single      1.059    0.020
+ Q56      H173   C17       single      1.059    0.020
+ Q56      H181   C18       single      1.059    0.020
+ Q56      H182   C18       single      1.059    0.020
+ Q56      H183   C18       single      1.059    0.020
+ Q56      H221   C22       single      1.092    0.020
+ Q56      H222   C22       single      1.092    0.020
+ Q56      H26    C26       single      1.083    0.020
+ Q56      H27    C27       single      1.083    0.020
+ Q56      H29    C29       single      1.083    0.020
+ Q56      H24    C24       single      1.083    0.020
+ Q56      H28    C28       single      1.083    0.020
+ Q56      H31    C31       single      1.083    0.020
+ Q56      H32    C32       single      1.083    0.020
+ Q56      H4     C4        single      1.099    0.020
+ Q56      H51    C5        single      1.092    0.020
+ Q56      H52    C5        single      1.092    0.020
+ Q56      H6     C6        single      1.099    0.020
+ Q56      H71    C7        single      1.092    0.020
+ Q56      H72    C7        single      1.092    0.020
+ Q56      H81    C8        single      1.092    0.020
+ Q56      H82    C8        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ Q56      O33    C20    O21     119.000    3.000
+ Q56      O33    C20    N19     123.000    3.000
+ Q56      O21    C20    N19     120.000    3.000
+ Q56      C20    O21    C22     120.000    3.000
+ Q56      O21    C22    H221    109.470    3.000
+ Q56      O21    C22    H222    109.470    3.000
+ Q56      O21    C22    C23     109.470    3.000
+ Q56      H221   C22    H222    107.900    3.000
+ Q56      H221   C22    C23     109.470    3.000
+ Q56      H222   C22    C23     109.470    3.000
+ Q56      C22    C23    C24     120.000    3.000
+ Q56      C22    C23    C32     120.000    3.000
+ Q56      C24    C23    C32     120.000    3.000
+ Q56      C23    C24    H24     120.000    3.000
+ Q56      C23    C24    C25     120.000    3.000
+ Q56      H24    C24    C25     120.000    3.000
+ Q56      C23    C32    H32     120.000    3.000
+ Q56      C23    C32    C31     120.000    3.000
+ Q56      H32    C32    C31     120.000    3.000
+ Q56      C32    C31    H31     120.000    3.000
+ Q56      C32    C31    C30     120.000    3.000
+ Q56      H31    C31    C30     120.000    3.000
+ Q56      C31    C30    C29     120.000    3.000
+ Q56      C31    C30    C25     120.000    3.000
+ Q56      C29    C30    C25     120.000    3.000
+ Q56      C30    C29    H29     120.000    3.000
+ Q56      C30    C29    C28     120.000    3.000
+ Q56      H29    C29    C28     120.000    3.000
+ Q56      C29    C28    H28     120.000    3.000
+ Q56      C29    C28    C27     120.000    3.000
+ Q56      H28    C28    C27     120.000    3.000
+ Q56      C28    C27    H27     120.000    3.000
+ Q56      C28    C27    C26     120.000    3.000
+ Q56      H27    C27    C26     120.000    3.000
+ Q56      C27    C26    H26     120.000    3.000
+ Q56      C27    C26    C25     120.000    3.000
+ Q56      H26    C26    C25     120.000    3.000
+ Q56      C30    C25    C26     120.000    3.000
+ Q56      C30    C25    C24     120.000    3.000
+ Q56      C26    C25    C24     120.000    3.000
+ Q56      C20    N19    C14     121.000    3.000
+ Q56      N19    C14    H14     109.470    3.000
+ Q56      N19    C14    C15     105.000    3.000
+ Q56      N19    C14    C2      111.600    3.000
+ Q56      H14    C14    C15     108.340    3.000
+ Q56      H14    C14    C2      108.810    3.000
+ Q56      C15    C14    C2      109.470    3.000
+ Q56      C14    C15    H151    109.470    3.000
+ Q56      C14    C15    H152    109.470    3.000
+ Q56      C14    C15    C16     111.000    3.000
+ Q56      H151   C15    H152    107.900    3.000
+ Q56      H151   C15    C16     109.470    3.000
+ Q56      H152   C15    C16     109.470    3.000
+ Q56      C15    C16    H16     108.340    3.000
+ Q56      C15    C16    C18     111.000    3.000
+ Q56      C15    C16    C17     111.000    3.000
+ Q56      H16    C16    C18     108.340    3.000
+ Q56      H16    C16    C17     108.340    3.000
+ Q56      C18    C16    C17     111.000    3.000
+ Q56      C16    C18    H183    109.470    3.000
+ Q56      C16    C18    H182    109.470    3.000
+ Q56      C16    C18    H181    109.470    3.000
+ Q56      H183   C18    H182    109.470    3.000
+ Q56      H183   C18    H181    109.470    3.000
+ Q56      H182   C18    H181    109.470    3.000
+ Q56      C16    C17    H173    109.470    3.000
+ Q56      C16    C17    H172    109.470    3.000
+ Q56      C16    C17    H171    109.470    3.000
+ Q56      H173   C17    H172    109.470    3.000
+ Q56      H173   C17    H171    109.470    3.000
+ Q56      H172   C17    H171    109.470    3.000
+ Q56      C14    C2     O1      120.500    3.000
+ Q56      C14    C2     N3      116.500    3.000
+ Q56      O1     C2     N3      123.000    3.000
+ Q56      C2     N3     C4      121.000    3.000
+ Q56      N3     C4     H4      109.470    3.000
+ Q56      N3     C4     C12     111.600    3.000
+ Q56      N3     C4     C5      105.000    3.000
+ Q56      H4     C4     C12     108.810    3.000
+ Q56      H4     C4     C5      108.340    3.000
+ Q56      C12    C4     C5      109.470    3.000
+ Q56      C4     C12    H12     120.000    3.000
+ Q56      C4     C12    O13     120.500    3.000
+ Q56      H12    C12    O13     123.000    3.000
+ Q56      C4     C5     H51     109.470    3.000
+ Q56      C4     C5     H52     109.470    3.000
+ Q56      C4     C5     C6      111.000    3.000
+ Q56      H51    C5     H52     107.900    3.000
+ Q56      H51    C5     C6      109.470    3.000
+ Q56      H52    C5     C6      109.470    3.000
+ Q56      C5     C6     H6      108.340    3.000
+ Q56      C5     C6     C7      109.470    3.000
+ Q56      C5     C6     C10     109.470    3.000
+ Q56      H6     C6     C7      108.340    3.000
+ Q56      H6     C6     C10     108.810    3.000
+ Q56      C7     C6     C10     109.470    3.000
+ Q56      C6     C7     H71     109.470    3.000
+ Q56      C6     C7     H72     109.470    3.000
+ Q56      C6     C7     C8      111.000    3.000
+ Q56      H71    C7     H72     107.900    3.000
+ Q56      H71    C7     C8      109.470    3.000
+ Q56      H72    C7     C8      109.470    3.000
+ Q56      C7     C8     H81     109.470    3.000
+ Q56      C7     C8     H82     109.470    3.000
+ Q56      C7     C8     N9      105.000    3.000
+ Q56      H81    C8     H82     107.900    3.000
+ Q56      H81    C8     N9      109.470    3.000
+ Q56      H82    C8     N9      109.470    3.000
+ Q56      C8     N9     C10     127.000    3.000
+ Q56      N9     C10    O11     123.000    3.000
+ Q56      N9     C10    C6      116.500    3.000
+ Q56      O11    C10    C6      120.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ Q56      var_1            O33    C20    O21    C22                3.906           20.000   3
+ Q56      var_2            C20    O21    C22    C23               81.936           20.000   3
+ Q56      var_3            O21    C22    C23    C32                0.000           20.000   2
+ Q56      CONST_1          C22    C23    C24    C25                0.000            0.000   0
+ Q56      CONST_2          C22    C23    C32    C31                0.000            0.000   0
+ Q56      CONST_3          C23    C32    C31    C30                0.000            0.000   0
+ Q56      CONST_4          C32    C31    C30    C25              180.000            0.000   0
+ Q56      CONST_5          C31    C30    C29    C28              180.000            0.000   0
+ Q56      CONST_6          C30    C29    C28    C27                0.000            0.000   0
+ Q56      CONST_7          C29    C28    C27    C26                0.000            0.000   0
+ Q56      CONST_8          C28    C27    C26    C25                0.000            0.000   0
+ Q56      CONST_9          C31    C30    C25    C26             -179.980            0.000   0
+ Q56      CONST_10         C30    C25    C26    C27              180.000            0.000   0
+ Q56      CONST_11         C30    C25    C24    C23              180.000            0.000   0
+ Q56      CONST_12         O33    C20    N19    C14              180.000            0.000   0
+ Q56      var_4            C20    N19    C14    C2                 0.000           20.000   3
+ Q56      var_5            N19    C14    C15    C16              180.000           20.000   3
+ Q56      var_6            C14    C15    C16    C17              180.000           20.000   3
+ Q56      var_7            C15    C16    C18    H181             180.000           20.000   3
+ Q56      var_8            C15    C16    C17    H171             180.000           20.000   3
+ Q56      var_9            N19    C14    C2     N3               180.000           20.000   3
+ Q56      CONST_13         C14    C2     N3     C4               180.000            0.000   0
+ Q56      var_10           C2     N3     C4     C5                 0.000           20.000   3
+ Q56      var_11           N3     C4     C12    O13              173.201           20.000   3
+ Q56      var_12           N3     C4     C5     C6               180.000           20.000   3
+ Q56      var_13           C4     C5     C6     C7               180.000           20.000   3
+ Q56      var_14           C5     C6     C7     C8               180.000           20.000   3
+ Q56      var_15           C6     C7     C8     N9               180.000           20.000   3
+ Q56      var_16           C7     C8     N9     C10              -13.856           20.000   3
+ Q56      var_17           C8     N9     C10    O11              180.000           20.000   2
+ Q56      var_18           N9     C10    C6     C5               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ Q56      chir_01          C16    C15    C17    C18       negativ
+ Q56      chir_02          C14    C15    C2     N19       negativ
+ Q56      chir_03          C4     C12    C5     N3        positiv
+ Q56      chir_04          C6     C10    C5     C7        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ Q56      plan-1            C12       0.020
+ Q56      plan-1            C4        0.020
+ Q56      plan-1            O13       0.020
+ Q56      plan-1            H12       0.020
+ Q56      plan-2            C23       0.020
+ Q56      plan-2            C22       0.020
+ Q56      plan-2            C24       0.020
+ Q56      plan-2            C32       0.020
+ Q56      plan-2            C31       0.020
+ Q56      plan-2            C25       0.020
+ Q56      plan-2            H24       0.020
+ Q56      plan-2            C30       0.020
+ Q56      plan-2            H31       0.020
+ Q56      plan-2            H32       0.020
+ Q56      plan-2            C26       0.020
+ Q56      plan-2            C27       0.020
+ Q56      plan-2            C29       0.020
+ Q56      plan-2            C28       0.020
+ Q56      plan-2            H26       0.020
+ Q56      plan-2            H27       0.020
+ Q56      plan-2            H29       0.020
+ Q56      plan-2            H28       0.020
+ Q56      plan-3            C10       0.020
+ Q56      plan-3            C6        0.020
+ Q56      plan-3            N9        0.020
+ Q56      plan-3            O11       0.020
+ Q56      plan-4            C2        0.020
+ Q56      plan-4            C14       0.020
+ Q56      plan-4            N3        0.020
+ Q56      plan-4            O1        0.020
+ Q56      plan-4            C4        0.020
+ Q56      plan-5            C20       0.020
+ Q56      plan-5            N19       0.020
+ Q56      plan-5            O21       0.020
+ Q56      plan-5            O33       0.020
+ Q56      plan-5            C14       0.020
+ Q56      plan-6            N9        0.020
+ Q56      plan-6            C10       0.020
+ Q56      plan-6            C8        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-Q56
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-Q56  1 SG      2 C12       .           1.830    0.020
+#
+data_link_ASN-MG
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASN-MG   1 O       2 MG        .           2.720    0.020
+#
+data_link_ASN-MG0
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASN-MG0  1 OD1     2 MG        .           2.390    0.020
+#
+data_link_PHE-MG
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ PHE-MG   1 O       2 MG        .           2.580    0.020
+#
+data_link_ASP-MG
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASP-MG   1 O       2 MG        .           2.730    0.020
+#
+data_link_ASP-MG0
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASP-MG0  1 OD1     2 MG        .           2.190    0.020
+#
+data_link_MG-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ MG-HOH   1 MG      2 O         .           2.280    0.020
+# ------------------------------------------------------
