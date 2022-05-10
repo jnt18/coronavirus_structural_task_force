@@ -5,6 +5,7 @@ import RMSD
 import mk_Alignment_strc_vs_seq as align
 import argparse
 import protein_and_domain_classifier as domain_classifier
+import tcp_scan_results
 
 """
 executable script for weekly update
@@ -64,6 +65,12 @@ RMSD.main(changed_prot_list, repo_path)
 # entries with wrong path containing 'not_assigned' after assignment
 # entries not assigned to a protein at all
 analyze_and_fix_dataframe.run()
+
+
+# check for common errors in the assignment and give warnings, so the
+# user can handle those manually.
+tcp_scan_results.main(taxo, c_new_pdb_lst)
+
 
 # check if new nsp3 structures are available
 try:
