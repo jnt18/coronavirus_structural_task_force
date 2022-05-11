@@ -1,0 +1,316 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+4N0      4N0 '.                                   ' .                  36  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_4N0
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 4N0           O08    O    O         0.000      8.449   -1.688   19.391
+ 4N0           C07    C    C         0.000      7.585   -1.440   20.275
+ 4N0           N06    N    NH1       0.000      8.103   -1.376   21.588
+ 4N0           HN06   H    H         0.000      7.434   -1.178   22.319
+ 4N0           C05    C    CR6       0.000      9.486   -1.561   22.019
+ 4N0           C04    C    CR16      0.000     10.388   -0.491   22.140
+ 4N0           H04    H    H         0.000     10.036    0.506   21.904
+ 4N0           C03    C    CR16      0.000     11.726   -0.646   22.552
+ 4N0           H03    H    H         0.000     12.381    0.213   22.631
+ 4N0           C20    C    CR16      0.000     10.018   -2.842   22.341
+ 4N0           H20    H    H         0.000      9.374   -3.710   22.265
+ 4N0           C21    C    CR16      0.000     11.358   -3.020   22.757
+ 4N0           H21    H    H         0.000     11.730   -4.009   22.997
+ 4N0           C02    C    CR6       0.000     12.189   -1.917   22.855
+ 4N0           I01    I    I         0.000     14.129   -2.160   23.455
+ 4N0           C09    C    CH1       0.000      6.133   -1.260   19.707
+ 4N0           H09    H    H         0.000      5.633   -2.233   19.810
+ 4N0           C19    C    CR6       0.000      5.240   -0.218   20.453
+ 4N0           C18    C    CR16      0.000      4.679   -0.496   21.713
+ 4N0           H18    H    H         0.000      4.878   -1.459   22.168
+ 4N0           C17    C    CR16      0.000      3.864    0.428   22.413
+ 4N0           H17    H    H         0.000      3.446    0.176   23.380
+ 4N0           C16    C    CR16      0.000      3.612    1.670   21.829
+ 4N0           H16    H    H         0.000      2.993    2.393   22.345
+ 4N0           C15    C    CR16      0.000      4.161    1.987   20.566
+ 4N0           H15    H    H         0.000      3.968    2.951   20.113
+ 4N0           C14    C    CR6       0.000      4.973    1.027   19.893
+ 4N0           N13    N    NH1       0.000      5.500    1.423   18.610
+ 4N0           HN13   H    H         0.000      5.436    2.381   18.296
+ 4N0           C11    C    CH1       0.000      6.102    0.444   17.813
+ 4N0           H11    H    H         0.000      5.133    0.226   17.344
+ 4N0           O12    O    OH1       0.000      6.547    0.868   16.703
+ 4N0           HO12   H    H         0.000      6.933    0.123   16.247
+ 4N0           C10    C    CH2       0.000      6.243   -0.977   18.191
+ 4N0           H102   H    H         0.000      7.221   -1.302   17.829
+ 4N0           H101   H    H         0.000      5.460   -1.522   17.660
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 4N0      O08    n/a    C07    START
+ 4N0      C07    O08    C09    .
+ 4N0      N06    C07    C05    .
+ 4N0      HN06   N06    .      .
+ 4N0      C05    N06    C20    .
+ 4N0      C04    C05    C03    .
+ 4N0      H04    C04    .      .
+ 4N0      C03    C04    H03    .
+ 4N0      H03    C03    .      .
+ 4N0      C20    C05    C21    .
+ 4N0      H20    C20    .      .
+ 4N0      C21    C20    C02    .
+ 4N0      H21    C21    .      .
+ 4N0      C02    C21    I01    .
+ 4N0      I01    C02    .      .
+ 4N0      C09    C07    C19    .
+ 4N0      H09    C09    .      .
+ 4N0      C19    C09    C14    .
+ 4N0      C18    C19    C17    .
+ 4N0      H18    C18    .      .
+ 4N0      C17    C18    C16    .
+ 4N0      H17    C17    .      .
+ 4N0      C16    C17    C15    .
+ 4N0      H16    C16    .      .
+ 4N0      C15    C16    H15    .
+ 4N0      H15    C15    .      .
+ 4N0      C14    C19    N13    .
+ 4N0      N13    C14    C11    .
+ 4N0      HN13   N13    .      .
+ 4N0      C11    N13    C10    .
+ 4N0      H11    C11    .      .
+ 4N0      O12    C11    HO12   .
+ 4N0      HO12   O12    .      .
+ 4N0      C10    C11    H101   .
+ 4N0      H102   C10    .      .
+ 4N0      H101   C10    .      END
+ 4N0      C02    C03    .    ADD
+ 4N0      C09    C10    .    ADD
+ 4N0      C14    C15    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 4N0      C02    C03       aromatic    1.390    0.020
+ 4N0      C02    C21       aromatic    1.390    0.020
+ 4N0      I01    C02       single      2.090    0.020
+ 4N0      C03    C04       aromatic    1.390    0.020
+ 4N0      C04    C05       aromatic    1.390    0.020
+ 4N0      C20    C05       aromatic    1.390    0.020
+ 4N0      C05    N06       single      1.350    0.020
+ 4N0      C09    C07       single      1.500    0.020
+ 4N0      N06    C07       single      1.330    0.020
+ 4N0      C07    O08       deloc       1.220    0.020
+ 4N0      C09    C10       single      1.524    0.020
+ 4N0      C19    C09       single      1.480    0.020
+ 4N0      C10    C11       single      1.524    0.020
+ 4N0      C11    N13       single      1.450    0.020
+ 4N0      O12    C11       single      1.432    0.020
+ 4N0      C14    C15       aromatic    1.390    0.020
+ 4N0      C14    C19       aromatic    1.384    0.020
+ 4N0      N13    C14       single      1.350    0.020
+ 4N0      C15    C16       aromatic    1.390    0.020
+ 4N0      C16    C17       aromatic    1.390    0.020
+ 4N0      C17    C18       aromatic    1.390    0.020
+ 4N0      C18    C19       aromatic    1.390    0.020
+ 4N0      C21    C20       aromatic    1.390    0.020
+ 4N0      H03    C03       single      1.083    0.020
+ 4N0      H04    C04       single      1.083    0.020
+ 4N0      H09    C09       single      1.099    0.020
+ 4N0      H101   C10       single      1.092    0.020
+ 4N0      H102   C10       single      1.092    0.020
+ 4N0      H11    C11       single      1.099    0.020
+ 4N0      H15    C15       single      1.083    0.020
+ 4N0      H16    C16       single      1.083    0.020
+ 4N0      H17    C17       single      1.083    0.020
+ 4N0      H18    C18       single      1.083    0.020
+ 4N0      H20    C20       single      1.083    0.020
+ 4N0      H21    C21       single      1.083    0.020
+ 4N0      HN06   N06       single      1.010    0.020
+ 4N0      HN13   N13       single      1.010    0.020
+ 4N0      HO12   O12       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 4N0      O08    C07    N06     123.000    3.000
+ 4N0      O08    C07    C09     120.500    3.000
+ 4N0      N06    C07    C09     116.500    3.000
+ 4N0      C07    N06    HN06    120.000    3.000
+ 4N0      C07    N06    C05     120.000    3.000
+ 4N0      HN06   N06    C05     120.000    3.000
+ 4N0      N06    C05    C04     120.000    3.000
+ 4N0      N06    C05    C20     120.000    3.000
+ 4N0      C04    C05    C20     120.000    3.000
+ 4N0      C05    C04    H04     120.000    3.000
+ 4N0      C05    C04    C03     120.000    3.000
+ 4N0      H04    C04    C03     120.000    3.000
+ 4N0      C04    C03    H03     120.000    3.000
+ 4N0      C04    C03    C02     120.000    3.000
+ 4N0      H03    C03    C02     120.000    3.000
+ 4N0      C05    C20    H20     120.000    3.000
+ 4N0      C05    C20    C21     120.000    3.000
+ 4N0      H20    C20    C21     120.000    3.000
+ 4N0      C20    C21    H21     120.000    3.000
+ 4N0      C20    C21    C02     120.000    3.000
+ 4N0      H21    C21    C02     120.000    3.000
+ 4N0      C21    C02    I01     120.000    3.000
+ 4N0      C21    C02    C03     120.000    3.000
+ 4N0      I01    C02    C03     120.000    3.000
+ 4N0      C07    C09    H09     108.810    3.000
+ 4N0      C07    C09    C19     109.500    3.000
+ 4N0      C07    C09    C10     109.470    3.000
+ 4N0      H09    C09    C19     109.470    3.000
+ 4N0      H09    C09    C10     108.340    3.000
+ 4N0      C19    C09    C10     109.470    3.000
+ 4N0      C09    C19    C18     120.000    3.000
+ 4N0      C09    C19    C14     120.000    3.000
+ 4N0      C18    C19    C14     120.000    3.000
+ 4N0      C19    C18    H18     120.000    3.000
+ 4N0      C19    C18    C17     120.000    3.000
+ 4N0      H18    C18    C17     120.000    3.000
+ 4N0      C18    C17    H17     120.000    3.000
+ 4N0      C18    C17    C16     120.000    3.000
+ 4N0      H17    C17    C16     120.000    3.000
+ 4N0      C17    C16    H16     120.000    3.000
+ 4N0      C17    C16    C15     120.000    3.000
+ 4N0      H16    C16    C15     120.000    3.000
+ 4N0      C16    C15    H15     120.000    3.000
+ 4N0      C16    C15    C14     120.000    3.000
+ 4N0      H15    C15    C14     120.000    3.000
+ 4N0      C19    C14    N13     120.000    3.000
+ 4N0      C19    C14    C15     120.000    3.000
+ 4N0      N13    C14    C15     120.000    3.000
+ 4N0      C14    N13    HN13    120.000    3.000
+ 4N0      C14    N13    C11     120.000    3.000
+ 4N0      HN13   N13    C11     118.500    3.000
+ 4N0      N13    C11    H11     108.550    3.000
+ 4N0      N13    C11    O12     109.470    3.000
+ 4N0      N13    C11    C10     110.000    3.000
+ 4N0      H11    C11    O12     109.470    3.000
+ 4N0      H11    C11    C10     108.340    3.000
+ 4N0      O12    C11    C10     109.470    3.000
+ 4N0      C11    O12    HO12    109.470    3.000
+ 4N0      C11    C10    H102    109.470    3.000
+ 4N0      C11    C10    H101    109.470    3.000
+ 4N0      C11    C10    C09     111.000    3.000
+ 4N0      H102   C10    H101    107.900    3.000
+ 4N0      H102   C10    C09     109.470    3.000
+ 4N0      H101   C10    C09     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 4N0      var_1            O08    C07    N06    C05              180.000           20.000   2
+ 4N0      var_2            C07    N06    C05    C20              -88.051           20.000   3
+ 4N0      CONST_1          N06    C05    C04    C03                0.000            0.000   0
+ 4N0      CONST_2          C05    C04    C03    C02                0.000            0.000   0
+ 4N0      CONST_3          N06    C05    C20    C21                0.000            0.000   0
+ 4N0      CONST_4          C05    C20    C21    C02                0.000            0.000   0
+ 4N0      CONST_5          C20    C21    C02    I01                0.000            0.000   0
+ 4N0      CONST_6          C21    C02    C03    C04                0.000            0.000   0
+ 4N0      var_3            O08    C07    C09    C19              180.000           20.000   3
+ 4N0      var_4            C07    C09    C10    C11              180.000           20.000   3
+ 4N0      var_5            C07    C09    C19    C14              105.252           20.000   3
+ 4N0      CONST_7          C09    C19    C18    C17                0.000            0.000   0
+ 4N0      CONST_8          C19    C18    C17    C16                0.000            0.000   0
+ 4N0      CONST_9          C18    C17    C16    C15                0.000            0.000   0
+ 4N0      CONST_10         C17    C16    C15    C14                0.000            0.000   0
+ 4N0      CONST_11         C09    C19    C14    N13                0.000            0.000   0
+ 4N0      CONST_12         C19    C14    C15    C16                0.000            0.000   0
+ 4N0      var_6            C19    C14    N13    C11               11.117           20.000   3
+ 4N0      var_7            C14    N13    C11    C10                0.000           20.000   3
+ 4N0      var_8            N13    C11    O12    HO12             180.000           20.000   3
+ 4N0      var_9            N13    C11    C10    C09              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 4N0      chir_01          C09    C07    C10    C19       positiv
+ 4N0      chir_02          C11    C10    N13    O12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 4N0      plan-1            C02       0.020
+ 4N0      plan-1            C03       0.020
+ 4N0      plan-1            C21       0.020
+ 4N0      plan-1            I01       0.020
+ 4N0      plan-1            C04       0.020
+ 4N0      plan-1            C05       0.020
+ 4N0      plan-1            C20       0.020
+ 4N0      plan-1            H03       0.020
+ 4N0      plan-1            H04       0.020
+ 4N0      plan-1            N06       0.020
+ 4N0      plan-1            H20       0.020
+ 4N0      plan-1            H21       0.020
+ 4N0      plan-1            HN06      0.020
+ 4N0      plan-2            C07       0.020
+ 4N0      plan-2            C09       0.020
+ 4N0      plan-2            N06       0.020
+ 4N0      plan-2            O08       0.020
+ 4N0      plan-2            HN06      0.020
+ 4N0      plan-3            C14       0.020
+ 4N0      plan-3            C15       0.020
+ 4N0      plan-3            C19       0.020
+ 4N0      plan-3            N13       0.020
+ 4N0      plan-3            C16       0.020
+ 4N0      plan-3            C17       0.020
+ 4N0      plan-3            C18       0.020
+ 4N0      plan-3            H15       0.020
+ 4N0      plan-3            H16       0.020
+ 4N0      plan-3            H17       0.020
+ 4N0      plan-3            H18       0.020
+ 4N0      plan-3            C09       0.020
+ 4N0      plan-3            HN13      0.020
+ 4N0      plan-4            N06       0.020
+ 4N0      plan-4            C05       0.020
+ 4N0      plan-4            C07       0.020
+ 4N0      plan-4            HN06      0.020
+ 4N0      plan-5            N13       0.020
+ 4N0      plan-5            C11       0.020
+ 4N0      plan-5            C14       0.020
+ 4N0      plan-5            HN13      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
