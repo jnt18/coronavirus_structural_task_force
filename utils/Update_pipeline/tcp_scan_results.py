@@ -28,6 +28,7 @@ def main(taxnonomy, c_new_pdb_lst):
     print("scan off.")
     
     # iterate over each entry and keept track of warnings
+    # entries are string of PDB id
     warnings = []
     for entry in c_new_pdb_lst:
         # TODO get titel from PDB and look for taxonomy keyword

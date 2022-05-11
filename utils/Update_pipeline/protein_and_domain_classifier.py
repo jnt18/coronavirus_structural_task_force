@@ -139,7 +139,7 @@ def main(taxonomy, protein):
                     print(entry)
                     continue
                 
-                chain_sequence = pp.get_sequence().replace('-', '')
+                chain_sequence = str(pp.get_sequence()).replace('-', '')
                 # do sequence alignment for each sequence from fasta and track best
                 for fasta in fasta_seq_domains_iter:
                     domain_name, domain_sequence = fasta

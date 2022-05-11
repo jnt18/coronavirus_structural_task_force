@@ -9,7 +9,7 @@ COMPND   6 MOLECULE: THSC20.HVTR26 FAB LIGHT CHAIN;
 COMPND   7 CHAIN: L;                                                            
 COMPND   8 ENGINEERED: YES;                                                     
 COMPND   9 MOL_ID: 3;                                                           
-COMPND  10 MOLECULE: SURFACE GLYCOPROTEIN;                                      
+COMPND  10 MOLECULE: SPIKE PROTEIN S1;                                          
 COMPND  11 CHAIN: R;                                                            
 COMPND  12 ENGINEERED: YES;                                                     
 COMPND  13 OTHER_DETAILS: 11TH RESOLVED AMINO ACID (ANNOTATED AS POSITION N343) 
@@ -41,15 +41,18 @@ SOURCE  22 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS
 SOURCE  23 2;                                                                   
 SOURCE  24 ORGANISM_TAXID: 2697049;                                             
 SOURCE  25 VARIANT: NONE;                                                       
-SOURCE  26 EXPRESSION_SYSTEM: HOMO SAPIENS;                                     
-SOURCE  27 EXPRESSION_SYSTEM_TAXID: 9606;                                       
-SOURCE  28 EXPRESSION_SYSTEM_CELL_LINE: EXPI293;                                
-SOURCE  29 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
-SOURCE  30 EXPRESSION_SYSTEM_PLASMID: PCDNA3.4                                  
+SOURCE  26 GENE: S, 2;                                                          
+SOURCE  27 EXPRESSION_SYSTEM: HOMO SAPIENS;                                     
+SOURCE  28 EXPRESSION_SYSTEM_TAXID: 9606;                                       
+SOURCE  29 EXPRESSION_SYSTEM_CELL_LINE: EXPI293;                                
+SOURCE  30 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  31 EXPRESSION_SYSTEM_PLASMID: PCDNA3.4                                  
 KEYWDS    NEUTRALIZING ANTIBODY, SARS-COV-2, SPIKE, RBD, ANTIVIRAL PROTEIN,     
 KEYWDS   2 IMMUNOLOGY                                                           
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    C.K.WIBMER                                                            
+REVDAT   2   11-MAY-22 7Z0X    1       COMPND SOURCE JRNL   DBREF               
+REVDAT   2 2                   1       SEQADV                                   
 REVDAT   1   13-APR-22 7Z0X    0                                                
 JRNL        AUTH   N.HINGANKAR,S.DESHPANDE,P.DAS,Z.A.RIZVI,C.K.WIBMER,          
 JRNL        AUTH 2 P.MASHILO,M.Y.ANSARI,A.BURNS,S.BARMAN,F.ZHAO,S.MUKHERJEE,    
@@ -61,8 +64,10 @@ JRNL        AUTH 7 A.AWASTHI,D.SOK,J.BHATTACHARYA
 JRNL        TITL   A COMBINATION OF POTENTLY NEUTRALIZING MONOCLONAL ANTIBODIES 
 JRNL        TITL 2 ISOLATED FROM AN INDIAN CONVALESCENT DONOR PROTECTS AGAINST  
 JRNL        TITL 3 THE SARS-COV-2 DELTA VARIANT.                                
-JRNL        REF    PLOS PATHOG.                               2022              
+JRNL        REF    PLOS PATHOG.                  V.  18 10465 2022              
 JRNL        REFN                   ESSN 1553-7374                               
+JRNL        PMID   35482816                                                     
+JRNL        DOI    10.1371/JOURNAL.PPAT.1010465                                 
 REMARK   1                                                                      
 REMARK   1 REFERENCE 1                                                          
 REMARK   1  AUTH   N.HINGANKAR,S.DESHPANDE,P.DAS,Z.A.RIZVI,A.BURNS,S.BARMAN,    
@@ -503,16 +508,15 @@ REMARK 525  M RES CSSEQI
 REMARK 525    HOH R 883        DISTANCE =  5.93 ANGSTROMS                       
 DBREF  7Z0X H    1   223  PDB    7Z0X     7Z0X             1    223             
 DBREF  7Z0X L    1   212  PDB    7Z0X     7Z0X             1    212             
-DBREF1 7Z0X R  331   527  UNP                  A0A894MTD1_SARS2                 
-DBREF2 7Z0X R     A0A894MTD1                          6         202             
-SEQADV 7Z0X GLN R  330  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X GLY R  528  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X LEU R  529  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X GLU R  530  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X VAL R  531  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X LEU R  532  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X PHE R  533  UNP  A0A894MTD           EXPRESSION TAG                 
-SEQADV 7Z0X GLN R  534  UNP  A0A894MTD           EXPRESSION TAG                 
+DBREF  7Z0X R  331   527  UNP    P0DTC2   SPIKE_SARS2    331    527             
+SEQADV 7Z0X GLN R  330  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X GLY R  528  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X LEU R  529  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X GLU R  530  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X VAL R  531  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X LEU R  532  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X PHE R  533  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7Z0X GLN R  534  UNP  P0DTC2              EXPRESSION TAG                 
 SEQRES   1 H  237  GLU VAL GLN LEU VAL GLU SER GLY GLY GLY LEU VAL GLN          
 SEQRES   2 H  237  PRO GLY GLY SER LEU ARG LEU SER CYS ALA ALA SER GLY          
 SEQRES   3 H  237  PHE THR VAL SER SER ASN TYR MET SER TRP VAL ARG GLN          
