@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: 3c like proteinase
+**Protein name**: surface glycoprotein
 
 **Organism**: SARS-CoV-2
 
@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7mjn/validation/molprobity)    
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7mjn/validation/molprobity)    
 
 
 
