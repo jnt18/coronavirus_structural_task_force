@@ -3,7 +3,7 @@ data_7QUR
 _entry.id   7QUR 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.358 
+_audit_conform.dict_version    5.359 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -129,7 +129,7 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Spike glycoprotein' 139735.922 3   ? ? ? ? 
+1 polymer     man 'Spike glycoprotein,Fibritin' 139735.922 3   ? ? ? ? 
 2 branched    man '2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose' 424.401    9   ? ? ? ? 
 3 branched    man 
 ;alpha-L-fucopyranose-(1-3)-[2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)][alpha-L-fucopyranose-(1-6)]2-acetamido-2-deoxy-beta-D-glucopyranose
@@ -142,7 +142,7 @@ _entity.details
 8 water       nat water 18.015     282 ? ? ? ? 
 # 
 _entity_name_com.entity_id   1 
-_entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
+_entity_name_com.name        'S glycoprotein,E2,Peplomer protein,Collar protein,Whisker antigen control protein' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -1452,62 +1452,71 @@ _entity_poly_seq.hetero
 1 1258 HIS n 
 1 1259 HIS n 
 # 
-_entity_src_gen.entity_id                          1 
-_entity_src_gen.pdbx_src_id                        1 
-_entity_src_gen.pdbx_alt_source_flag               sample 
-_entity_src_gen.pdbx_seq_type                      'Biological sequence' 
-_entity_src_gen.pdbx_beg_seq_num                   1 
-_entity_src_gen.pdbx_end_seq_num                   1259 
-_entity_src_gen.gene_src_common_name               ? 
-_entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 'S, 2' 
-_entity_src_gen.gene_src_species                   ? 
-_entity_src_gen.gene_src_strain                    ? 
-_entity_src_gen.gene_src_tissue                    ? 
-_entity_src_gen.gene_src_tissue_fraction           ? 
-_entity_src_gen.gene_src_details                   ? 
-_entity_src_gen.pdbx_gene_src_fragment             ? 
-_entity_src_gen.pdbx_gene_src_scientific_name      'Severe acute respiratory syndrome coronavirus 2' 
-_entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id     2697049 
-_entity_src_gen.pdbx_gene_src_variant              ? 
-_entity_src_gen.pdbx_gene_src_cell_line            ? 
-_entity_src_gen.pdbx_gene_src_atcc                 ? 
-_entity_src_gen.pdbx_gene_src_organ                ? 
-_entity_src_gen.pdbx_gene_src_organelle            ? 
-_entity_src_gen.pdbx_gene_src_cell                 ? 
-_entity_src_gen.pdbx_gene_src_cellular_location    ? 
-_entity_src_gen.host_org_common_name               ? 
-_entity_src_gen.pdbx_host_org_scientific_name      'Trichoplusia ni' 
-_entity_src_gen.pdbx_host_org_ncbi_taxonomy_id     7111 
-_entity_src_gen.host_org_genus                     ? 
-_entity_src_gen.pdbx_host_org_gene                 ? 
-_entity_src_gen.pdbx_host_org_organ                ? 
-_entity_src_gen.host_org_species                   ? 
-_entity_src_gen.pdbx_host_org_tissue               ? 
-_entity_src_gen.pdbx_host_org_tissue_fraction      ? 
-_entity_src_gen.pdbx_host_org_strain               ? 
-_entity_src_gen.pdbx_host_org_variant              ? 
-_entity_src_gen.pdbx_host_org_cell_line            ? 
-_entity_src_gen.pdbx_host_org_atcc                 ? 
-_entity_src_gen.pdbx_host_org_culture_collection   ? 
-_entity_src_gen.pdbx_host_org_cell                 ? 
-_entity_src_gen.pdbx_host_org_organelle            ? 
-_entity_src_gen.pdbx_host_org_cellular_location    ? 
-_entity_src_gen.pdbx_host_org_vector_type          ? 
-_entity_src_gen.pdbx_host_org_vector               ? 
-_entity_src_gen.host_org_details                   ? 
-_entity_src_gen.expression_system_id               ? 
-_entity_src_gen.plasmid_name                       ? 
-_entity_src_gen.plasmid_details                    ? 
-_entity_src_gen.pdbx_description                   ? 
+loop_
+_entity_src_gen.entity_id 
+_entity_src_gen.pdbx_src_id 
+_entity_src_gen.pdbx_alt_source_flag 
+_entity_src_gen.pdbx_seq_type 
+_entity_src_gen.pdbx_beg_seq_num 
+_entity_src_gen.pdbx_end_seq_num 
+_entity_src_gen.gene_src_common_name 
+_entity_src_gen.gene_src_genus 
+_entity_src_gen.pdbx_gene_src_gene 
+_entity_src_gen.gene_src_species 
+_entity_src_gen.gene_src_strain 
+_entity_src_gen.gene_src_tissue 
+_entity_src_gen.gene_src_tissue_fraction 
+_entity_src_gen.gene_src_details 
+_entity_src_gen.pdbx_gene_src_fragment 
+_entity_src_gen.pdbx_gene_src_scientific_name 
+_entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id 
+_entity_src_gen.pdbx_gene_src_variant 
+_entity_src_gen.pdbx_gene_src_cell_line 
+_entity_src_gen.pdbx_gene_src_atcc 
+_entity_src_gen.pdbx_gene_src_organ 
+_entity_src_gen.pdbx_gene_src_organelle 
+_entity_src_gen.pdbx_gene_src_cell 
+_entity_src_gen.pdbx_gene_src_cellular_location 
+_entity_src_gen.host_org_common_name 
+_entity_src_gen.pdbx_host_org_scientific_name 
+_entity_src_gen.pdbx_host_org_ncbi_taxonomy_id 
+_entity_src_gen.host_org_genus 
+_entity_src_gen.pdbx_host_org_gene 
+_entity_src_gen.pdbx_host_org_organ 
+_entity_src_gen.host_org_species 
+_entity_src_gen.pdbx_host_org_tissue 
+_entity_src_gen.pdbx_host_org_tissue_fraction 
+_entity_src_gen.pdbx_host_org_strain 
+_entity_src_gen.pdbx_host_org_variant 
+_entity_src_gen.pdbx_host_org_cell_line 
+_entity_src_gen.pdbx_host_org_atcc 
+_entity_src_gen.pdbx_host_org_culture_collection 
+_entity_src_gen.pdbx_host_org_cell 
+_entity_src_gen.pdbx_host_org_organelle 
+_entity_src_gen.pdbx_host_org_cellular_location 
+_entity_src_gen.pdbx_host_org_vector_type 
+_entity_src_gen.pdbx_host_org_vector 
+_entity_src_gen.host_org_details 
+_entity_src_gen.expression_system_id 
+_entity_src_gen.plasmid_name 
+_entity_src_gen.plasmid_details 
+_entity_src_gen.pdbx_description 
+1 1 sample 'Biological sequence' 1    1213 ?                  ? 'S, 2' ? ? ? ? ? ? 
+'Severe acute respiratory syndrome coronavirus 2' 2697049 ? ? ? ? ? ? ? ? 'Trichoplusia ni' 7111 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+? ? ? ? 
+1 2 sample 'Biological sequence' 1214 1259 'Bacteriophage T4' ? wac    ? ? ? ? ? ? 'Enterobacteria phage T4' 10665   ? ? ? ? ? ? ? 
+? 'Trichoplusia ni' 7111 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
 # 
-_struct_ref.id                         1 
-_struct_ref.db_name                    UNP 
-_struct_ref.db_code                    SPIKE_SARS2 
-_struct_ref.pdbx_db_accession          P0DTC2 
-_struct_ref.pdbx_db_isoform            ? 
-_struct_ref.entity_id                  1 
-_struct_ref.pdbx_seq_one_letter_code   
+loop_
+_struct_ref.id 
+_struct_ref.db_name 
+_struct_ref.db_code 
+_struct_ref.pdbx_db_accession 
+_struct_ref.pdbx_db_isoform 
+_struct_ref.entity_id 
+_struct_ref.pdbx_seq_one_letter_code 
+_struct_ref.pdbx_align_begin 
+1 UNP SPIKE_SARS2 P0DTC2 ? 1 
 ;MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFD
 NPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVY
 SSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQT
@@ -1525,7 +1534,8 @@ DFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNT
 FVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL
 QELGKYEQYIKWP
 ;
-_struct_ref.pdbx_align_begin           1 
+1   
+2 UNP WAC_BPT4    P10104 ? 1 GYIPEAPRDGQAYVRKDGEWVFLSTFL 458 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -1543,9 +1553,12 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 7QUR A 1 ? 1213 ? P0DTC2 1 ? 1213 ? 1 1213 
-2 1 7QUR B 1 ? 1213 ? P0DTC2 1 ? 1213 ? 1 1213 
-3 1 7QUR C 1 ? 1213 ? P0DTC2 1 ? 1213 ? 1 1213 
+1 1 7QUR A 1    ? 1213 ? P0DTC2 1   ? 1213 ? 1    1213 
+2 2 7QUR A 1226 ? 1252 ? P10104 458 ? 484  ? 1226 1252 
+3 1 7QUR B 1    ? 1213 ? P0DTC2 1   ? 1213 ? 1    1213 
+4 2 7QUR B 1226 ? 1252 ? P10104 458 ? 484  ? 1226 1252 
+5 1 7QUR C 1    ? 1213 ? P0DTC2 1   ? 1213 ? 1    1213 
+6 2 7QUR C 1226 ? 1252 ? P10104 458 ? 484  ? 1226 1252 
 # 
 loop_
 _struct_ref_seq_dif.align_id 
@@ -1561,147 +1574,69 @@ _struct_ref_seq_dif.pdbx_seq_db_seq_num
 _struct_ref_seq_dif.details 
 _struct_ref_seq_dif.pdbx_auth_seq_num 
 _struct_ref_seq_dif.pdbx_ordinal 
-1 7QUR ALA A 685  ? UNP P0DTC2 ARG 685 conflict         685  1   
-1 7QUR SER A 1214 ? UNP P0DTC2 ?   ?   'expression tag' 1214 2   
-1 7QUR GLY A 1215 ? UNP P0DTC2 ?   ?   'expression tag' 1215 3   
-1 7QUR ARG A 1216 ? UNP P0DTC2 ?   ?   'expression tag' 1216 4   
-1 7QUR LEU A 1217 ? UNP P0DTC2 ?   ?   'expression tag' 1217 5   
-1 7QUR VAL A 1218 ? UNP P0DTC2 ?   ?   'expression tag' 1218 6   
-1 7QUR PRO A 1219 ? UNP P0DTC2 ?   ?   'expression tag' 1219 7   
-1 7QUR ARG A 1220 ? UNP P0DTC2 ?   ?   'expression tag' 1220 8   
-1 7QUR GLY A 1221 ? UNP P0DTC2 ?   ?   'expression tag' 1221 9   
-1 7QUR SER A 1222 ? UNP P0DTC2 ?   ?   'expression tag' 1222 10  
-1 7QUR PRO A 1223 ? UNP P0DTC2 ?   ?   'expression tag' 1223 11  
-1 7QUR GLY A 1224 ? UNP P0DTC2 ?   ?   'expression tag' 1224 12  
-1 7QUR SER A 1225 ? UNP P0DTC2 ?   ?   'expression tag' 1225 13  
-1 7QUR GLY A 1226 ? UNP P0DTC2 ?   ?   'expression tag' 1226 14  
-1 7QUR TYR A 1227 ? UNP P0DTC2 ?   ?   'expression tag' 1227 15  
-1 7QUR ILE A 1228 ? UNP P0DTC2 ?   ?   'expression tag' 1228 16  
-1 7QUR PRO A 1229 ? UNP P0DTC2 ?   ?   'expression tag' 1229 17  
-1 7QUR GLU A 1230 ? UNP P0DTC2 ?   ?   'expression tag' 1230 18  
-1 7QUR ALA A 1231 ? UNP P0DTC2 ?   ?   'expression tag' 1231 19  
-1 7QUR PRO A 1232 ? UNP P0DTC2 ?   ?   'expression tag' 1232 20  
-1 7QUR ARG A 1233 ? UNP P0DTC2 ?   ?   'expression tag' 1233 21  
-1 7QUR ASP A 1234 ? UNP P0DTC2 ?   ?   'expression tag' 1234 22  
-1 7QUR GLY A 1235 ? UNP P0DTC2 ?   ?   'expression tag' 1235 23  
-1 7QUR GLN A 1236 ? UNP P0DTC2 ?   ?   'expression tag' 1236 24  
-1 7QUR ALA A 1237 ? UNP P0DTC2 ?   ?   'expression tag' 1237 25  
-1 7QUR TYR A 1238 ? UNP P0DTC2 ?   ?   'expression tag' 1238 26  
-1 7QUR VAL A 1239 ? UNP P0DTC2 ?   ?   'expression tag' 1239 27  
-1 7QUR ARG A 1240 ? UNP P0DTC2 ?   ?   'expression tag' 1240 28  
-1 7QUR LYS A 1241 ? UNP P0DTC2 ?   ?   'expression tag' 1241 29  
-1 7QUR ASP A 1242 ? UNP P0DTC2 ?   ?   'expression tag' 1242 30  
-1 7QUR GLY A 1243 ? UNP P0DTC2 ?   ?   'expression tag' 1243 31  
-1 7QUR GLU A 1244 ? UNP P0DTC2 ?   ?   'expression tag' 1244 32  
-1 7QUR TRP A 1245 ? UNP P0DTC2 ?   ?   'expression tag' 1245 33  
-1 7QUR VAL A 1246 ? UNP P0DTC2 ?   ?   'expression tag' 1246 34  
-1 7QUR LEU A 1247 ? UNP P0DTC2 ?   ?   'expression tag' 1247 35  
-1 7QUR LEU A 1248 ? UNP P0DTC2 ?   ?   'expression tag' 1248 36  
-1 7QUR SER A 1249 ? UNP P0DTC2 ?   ?   'expression tag' 1249 37  
-1 7QUR THR A 1250 ? UNP P0DTC2 ?   ?   'expression tag' 1250 38  
-1 7QUR PHE A 1251 ? UNP P0DTC2 ?   ?   'expression tag' 1251 39  
-1 7QUR LEU A 1252 ? UNP P0DTC2 ?   ?   'expression tag' 1252 40  
-1 7QUR GLY A 1253 ? UNP P0DTC2 ?   ?   'expression tag' 1253 41  
-1 7QUR HIS A 1254 ? UNP P0DTC2 ?   ?   'expression tag' 1254 42  
-1 7QUR HIS A 1255 ? UNP P0DTC2 ?   ?   'expression tag' 1255 43  
-1 7QUR HIS A 1256 ? UNP P0DTC2 ?   ?   'expression tag' 1256 44  
-1 7QUR HIS A 1257 ? UNP P0DTC2 ?   ?   'expression tag' 1257 45  
-1 7QUR HIS A 1258 ? UNP P0DTC2 ?   ?   'expression tag' 1258 46  
-1 7QUR HIS A 1259 ? UNP P0DTC2 ?   ?   'expression tag' 1259 47  
-2 7QUR ALA B 685  ? UNP P0DTC2 ARG 685 conflict         685  48  
-2 7QUR SER B 1214 ? UNP P0DTC2 ?   ?   'expression tag' 1214 49  
-2 7QUR GLY B 1215 ? UNP P0DTC2 ?   ?   'expression tag' 1215 50  
-2 7QUR ARG B 1216 ? UNP P0DTC2 ?   ?   'expression tag' 1216 51  
-2 7QUR LEU B 1217 ? UNP P0DTC2 ?   ?   'expression tag' 1217 52  
-2 7QUR VAL B 1218 ? UNP P0DTC2 ?   ?   'expression tag' 1218 53  
-2 7QUR PRO B 1219 ? UNP P0DTC2 ?   ?   'expression tag' 1219 54  
-2 7QUR ARG B 1220 ? UNP P0DTC2 ?   ?   'expression tag' 1220 55  
-2 7QUR GLY B 1221 ? UNP P0DTC2 ?   ?   'expression tag' 1221 56  
-2 7QUR SER B 1222 ? UNP P0DTC2 ?   ?   'expression tag' 1222 57  
-2 7QUR PRO B 1223 ? UNP P0DTC2 ?   ?   'expression tag' 1223 58  
-2 7QUR GLY B 1224 ? UNP P0DTC2 ?   ?   'expression tag' 1224 59  
-2 7QUR SER B 1225 ? UNP P0DTC2 ?   ?   'expression tag' 1225 60  
-2 7QUR GLY B 1226 ? UNP P0DTC2 ?   ?   'expression tag' 1226 61  
-2 7QUR TYR B 1227 ? UNP P0DTC2 ?   ?   'expression tag' 1227 62  
-2 7QUR ILE B 1228 ? UNP P0DTC2 ?   ?   'expression tag' 1228 63  
-2 7QUR PRO B 1229 ? UNP P0DTC2 ?   ?   'expression tag' 1229 64  
-2 7QUR GLU B 1230 ? UNP P0DTC2 ?   ?   'expression tag' 1230 65  
-2 7QUR ALA B 1231 ? UNP P0DTC2 ?   ?   'expression tag' 1231 66  
-2 7QUR PRO B 1232 ? UNP P0DTC2 ?   ?   'expression tag' 1232 67  
-2 7QUR ARG B 1233 ? UNP P0DTC2 ?   ?   'expression tag' 1233 68  
-2 7QUR ASP B 1234 ? UNP P0DTC2 ?   ?   'expression tag' 1234 69  
-2 7QUR GLY B 1235 ? UNP P0DTC2 ?   ?   'expression tag' 1235 70  
-2 7QUR GLN B 1236 ? UNP P0DTC2 ?   ?   'expression tag' 1236 71  
-2 7QUR ALA B 1237 ? UNP P0DTC2 ?   ?   'expression tag' 1237 72  
-2 7QUR TYR B 1238 ? UNP P0DTC2 ?   ?   'expression tag' 1238 73  
-2 7QUR VAL B 1239 ? UNP P0DTC2 ?   ?   'expression tag' 1239 74  
-2 7QUR ARG B 1240 ? UNP P0DTC2 ?   ?   'expression tag' 1240 75  
-2 7QUR LYS B 1241 ? UNP P0DTC2 ?   ?   'expression tag' 1241 76  
-2 7QUR ASP B 1242 ? UNP P0DTC2 ?   ?   'expression tag' 1242 77  
-2 7QUR GLY B 1243 ? UNP P0DTC2 ?   ?   'expression tag' 1243 78  
-2 7QUR GLU B 1244 ? UNP P0DTC2 ?   ?   'expression tag' 1244 79  
-2 7QUR TRP B 1245 ? UNP P0DTC2 ?   ?   'expression tag' 1245 80  
-2 7QUR VAL B 1246 ? UNP P0DTC2 ?   ?   'expression tag' 1246 81  
-2 7QUR LEU B 1247 ? UNP P0DTC2 ?   ?   'expression tag' 1247 82  
-2 7QUR LEU B 1248 ? UNP P0DTC2 ?   ?   'expression tag' 1248 83  
-2 7QUR SER B 1249 ? UNP P0DTC2 ?   ?   'expression tag' 1249 84  
-2 7QUR THR B 1250 ? UNP P0DTC2 ?   ?   'expression tag' 1250 85  
-2 7QUR PHE B 1251 ? UNP P0DTC2 ?   ?   'expression tag' 1251 86  
-2 7QUR LEU B 1252 ? UNP P0DTC2 ?   ?   'expression tag' 1252 87  
-2 7QUR GLY B 1253 ? UNP P0DTC2 ?   ?   'expression tag' 1253 88  
-2 7QUR HIS B 1254 ? UNP P0DTC2 ?   ?   'expression tag' 1254 89  
-2 7QUR HIS B 1255 ? UNP P0DTC2 ?   ?   'expression tag' 1255 90  
-2 7QUR HIS B 1256 ? UNP P0DTC2 ?   ?   'expression tag' 1256 91  
-2 7QUR HIS B 1257 ? UNP P0DTC2 ?   ?   'expression tag' 1257 92  
-2 7QUR HIS B 1258 ? UNP P0DTC2 ?   ?   'expression tag' 1258 93  
-2 7QUR HIS B 1259 ? UNP P0DTC2 ?   ?   'expression tag' 1259 94  
-3 7QUR ALA C 685  ? UNP P0DTC2 ARG 685 conflict         685  95  
-3 7QUR SER C 1214 ? UNP P0DTC2 ?   ?   'expression tag' 1214 96  
-3 7QUR GLY C 1215 ? UNP P0DTC2 ?   ?   'expression tag' 1215 97  
-3 7QUR ARG C 1216 ? UNP P0DTC2 ?   ?   'expression tag' 1216 98  
-3 7QUR LEU C 1217 ? UNP P0DTC2 ?   ?   'expression tag' 1217 99  
-3 7QUR VAL C 1218 ? UNP P0DTC2 ?   ?   'expression tag' 1218 100 
-3 7QUR PRO C 1219 ? UNP P0DTC2 ?   ?   'expression tag' 1219 101 
-3 7QUR ARG C 1220 ? UNP P0DTC2 ?   ?   'expression tag' 1220 102 
-3 7QUR GLY C 1221 ? UNP P0DTC2 ?   ?   'expression tag' 1221 103 
-3 7QUR SER C 1222 ? UNP P0DTC2 ?   ?   'expression tag' 1222 104 
-3 7QUR PRO C 1223 ? UNP P0DTC2 ?   ?   'expression tag' 1223 105 
-3 7QUR GLY C 1224 ? UNP P0DTC2 ?   ?   'expression tag' 1224 106 
-3 7QUR SER C 1225 ? UNP P0DTC2 ?   ?   'expression tag' 1225 107 
-3 7QUR GLY C 1226 ? UNP P0DTC2 ?   ?   'expression tag' 1226 108 
-3 7QUR TYR C 1227 ? UNP P0DTC2 ?   ?   'expression tag' 1227 109 
-3 7QUR ILE C 1228 ? UNP P0DTC2 ?   ?   'expression tag' 1228 110 
-3 7QUR PRO C 1229 ? UNP P0DTC2 ?   ?   'expression tag' 1229 111 
-3 7QUR GLU C 1230 ? UNP P0DTC2 ?   ?   'expression tag' 1230 112 
-3 7QUR ALA C 1231 ? UNP P0DTC2 ?   ?   'expression tag' 1231 113 
-3 7QUR PRO C 1232 ? UNP P0DTC2 ?   ?   'expression tag' 1232 114 
-3 7QUR ARG C 1233 ? UNP P0DTC2 ?   ?   'expression tag' 1233 115 
-3 7QUR ASP C 1234 ? UNP P0DTC2 ?   ?   'expression tag' 1234 116 
-3 7QUR GLY C 1235 ? UNP P0DTC2 ?   ?   'expression tag' 1235 117 
-3 7QUR GLN C 1236 ? UNP P0DTC2 ?   ?   'expression tag' 1236 118 
-3 7QUR ALA C 1237 ? UNP P0DTC2 ?   ?   'expression tag' 1237 119 
-3 7QUR TYR C 1238 ? UNP P0DTC2 ?   ?   'expression tag' 1238 120 
-3 7QUR VAL C 1239 ? UNP P0DTC2 ?   ?   'expression tag' 1239 121 
-3 7QUR ARG C 1240 ? UNP P0DTC2 ?   ?   'expression tag' 1240 122 
-3 7QUR LYS C 1241 ? UNP P0DTC2 ?   ?   'expression tag' 1241 123 
-3 7QUR ASP C 1242 ? UNP P0DTC2 ?   ?   'expression tag' 1242 124 
-3 7QUR GLY C 1243 ? UNP P0DTC2 ?   ?   'expression tag' 1243 125 
-3 7QUR GLU C 1244 ? UNP P0DTC2 ?   ?   'expression tag' 1244 126 
-3 7QUR TRP C 1245 ? UNP P0DTC2 ?   ?   'expression tag' 1245 127 
-3 7QUR VAL C 1246 ? UNP P0DTC2 ?   ?   'expression tag' 1246 128 
-3 7QUR LEU C 1247 ? UNP P0DTC2 ?   ?   'expression tag' 1247 129 
-3 7QUR LEU C 1248 ? UNP P0DTC2 ?   ?   'expression tag' 1248 130 
-3 7QUR SER C 1249 ? UNP P0DTC2 ?   ?   'expression tag' 1249 131 
-3 7QUR THR C 1250 ? UNP P0DTC2 ?   ?   'expression tag' 1250 132 
-3 7QUR PHE C 1251 ? UNP P0DTC2 ?   ?   'expression tag' 1251 133 
-3 7QUR LEU C 1252 ? UNP P0DTC2 ?   ?   'expression tag' 1252 134 
-3 7QUR GLY C 1253 ? UNP P0DTC2 ?   ?   'expression tag' 1253 135 
-3 7QUR HIS C 1254 ? UNP P0DTC2 ?   ?   'expression tag' 1254 136 
-3 7QUR HIS C 1255 ? UNP P0DTC2 ?   ?   'expression tag' 1255 137 
-3 7QUR HIS C 1256 ? UNP P0DTC2 ?   ?   'expression tag' 1256 138 
-3 7QUR HIS C 1257 ? UNP P0DTC2 ?   ?   'expression tag' 1257 139 
-3 7QUR HIS C 1258 ? UNP P0DTC2 ?   ?   'expression tag' 1258 140 
-3 7QUR HIS C 1259 ? UNP P0DTC2 ?   ?   'expression tag' 1259 141 
+1 7QUR ALA A 685  ? UNP P0DTC2 ARG 685 conflict              685  1  
+1 7QUR SER A 1214 ? UNP P0DTC2 ?   ?   linker                1214 2  
+1 7QUR GLY A 1215 ? UNP P0DTC2 ?   ?   linker                1215 3  
+1 7QUR ARG A 1216 ? UNP P0DTC2 ?   ?   linker                1216 4  
+1 7QUR LEU A 1217 ? UNP P0DTC2 ?   ?   linker                1217 5  
+1 7QUR VAL A 1218 ? UNP P0DTC2 ?   ?   linker                1218 6  
+1 7QUR PRO A 1219 ? UNP P0DTC2 ?   ?   linker                1219 7  
+1 7QUR ARG A 1220 ? UNP P0DTC2 ?   ?   linker                1220 8  
+1 7QUR GLY A 1221 ? UNP P0DTC2 ?   ?   linker                1221 9  
+1 7QUR SER A 1222 ? UNP P0DTC2 ?   ?   linker                1222 10 
+1 7QUR PRO A 1223 ? UNP P0DTC2 ?   ?   linker                1223 11 
+1 7QUR GLY A 1224 ? UNP P0DTC2 ?   ?   linker                1224 12 
+1 7QUR SER A 1225 ? UNP P0DTC2 ?   ?   linker                1225 13 
+2 7QUR LEU A 1247 ? UNP P10104 PHE 479 'engineered mutation' 1247 14 
+2 7QUR GLY A 1253 ? UNP P10104 ?   ?   'expression tag'      1253 15 
+2 7QUR HIS A 1254 ? UNP P10104 ?   ?   'expression tag'      1254 16 
+2 7QUR HIS A 1255 ? UNP P10104 ?   ?   'expression tag'      1255 17 
+2 7QUR HIS A 1256 ? UNP P10104 ?   ?   'expression tag'      1256 18 
+2 7QUR HIS A 1257 ? UNP P10104 ?   ?   'expression tag'      1257 19 
+2 7QUR HIS A 1258 ? UNP P10104 ?   ?   'expression tag'      1258 20 
+2 7QUR HIS A 1259 ? UNP P10104 ?   ?   'expression tag'      1259 21 
+3 7QUR ALA B 685  ? UNP P0DTC2 ARG 685 conflict              685  22 
+3 7QUR SER B 1214 ? UNP P0DTC2 ?   ?   linker                1214 23 
+3 7QUR GLY B 1215 ? UNP P0DTC2 ?   ?   linker                1215 24 
+3 7QUR ARG B 1216 ? UNP P0DTC2 ?   ?   linker                1216 25 
+3 7QUR LEU B 1217 ? UNP P0DTC2 ?   ?   linker                1217 26 
+3 7QUR VAL B 1218 ? UNP P0DTC2 ?   ?   linker                1218 27 
+3 7QUR PRO B 1219 ? UNP P0DTC2 ?   ?   linker                1219 28 
+3 7QUR ARG B 1220 ? UNP P0DTC2 ?   ?   linker                1220 29 
+3 7QUR GLY B 1221 ? UNP P0DTC2 ?   ?   linker                1221 30 
+3 7QUR SER B 1222 ? UNP P0DTC2 ?   ?   linker                1222 31 
+3 7QUR PRO B 1223 ? UNP P0DTC2 ?   ?   linker                1223 32 
+3 7QUR GLY B 1224 ? UNP P0DTC2 ?   ?   linker                1224 33 
+3 7QUR SER B 1225 ? UNP P0DTC2 ?   ?   linker                1225 34 
+4 7QUR LEU B 1247 ? UNP P10104 PHE 479 'engineered mutation' 1247 35 
+4 7QUR GLY B 1253 ? UNP P10104 ?   ?   'expression tag'      1253 36 
+4 7QUR HIS B 1254 ? UNP P10104 ?   ?   'expression tag'      1254 37 
+4 7QUR HIS B 1255 ? UNP P10104 ?   ?   'expression tag'      1255 38 
+4 7QUR HIS B 1256 ? UNP P10104 ?   ?   'expression tag'      1256 39 
+4 7QUR HIS B 1257 ? UNP P10104 ?   ?   'expression tag'      1257 40 
+4 7QUR HIS B 1258 ? UNP P10104 ?   ?   'expression tag'      1258 41 
+4 7QUR HIS B 1259 ? UNP P10104 ?   ?   'expression tag'      1259 42 
+5 7QUR ALA C 685  ? UNP P0DTC2 ARG 685 conflict              685  43 
+5 7QUR SER C 1214 ? UNP P0DTC2 ?   ?   linker                1214 44 
+5 7QUR GLY C 1215 ? UNP P0DTC2 ?   ?   linker                1215 45 
+5 7QUR ARG C 1216 ? UNP P0DTC2 ?   ?   linker                1216 46 
+5 7QUR LEU C 1217 ? UNP P0DTC2 ?   ?   linker                1217 47 
+5 7QUR VAL C 1218 ? UNP P0DTC2 ?   ?   linker                1218 48 
+5 7QUR PRO C 1219 ? UNP P0DTC2 ?   ?   linker                1219 49 
+5 7QUR ARG C 1220 ? UNP P0DTC2 ?   ?   linker                1220 50 
+5 7QUR GLY C 1221 ? UNP P0DTC2 ?   ?   linker                1221 51 
+5 7QUR SER C 1222 ? UNP P0DTC2 ?   ?   linker                1222 52 
+5 7QUR PRO C 1223 ? UNP P0DTC2 ?   ?   linker                1223 53 
+5 7QUR GLY C 1224 ? UNP P0DTC2 ?   ?   linker                1224 54 
+5 7QUR SER C 1225 ? UNP P0DTC2 ?   ?   linker                1225 55 
+6 7QUR LEU C 1247 ? UNP P10104 PHE 479 'engineered mutation' 1247 56 
+6 7QUR GLY C 1253 ? UNP P10104 ?   ?   'expression tag'      1253 57 
+6 7QUR HIS C 1254 ? UNP P10104 ?   ?   'expression tag'      1254 58 
+6 7QUR HIS C 1255 ? UNP P10104 ?   ?   'expression tag'      1255 59 
+6 7QUR HIS C 1256 ? UNP P10104 ?   ?   'expression tag'      1256 60 
+6 7QUR HIS C 1257 ? UNP P10104 ?   ?   'expression tag'      1257 61 
+6 7QUR HIS C 1258 ? UNP P10104 ?   ?   'expression tag'      1258 62 
+6 7QUR HIS C 1259 ? UNP P10104 ?   ?   'expression tag'      1259 63 
 # 
 loop_
 _chem_comp.id 
@@ -34277,11 +34212,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-06-01 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-06-01 
+2 'Structure model' 1 1 2022-06-15 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -34290,6 +34228,36 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 2 'Structure model' 'Source and taxonomy' 
+3 2 'Structure model' 'Structure summary'   
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' em_entity_assembly_naturalsource 
+2 2 'Structure model' entity                           
+3 2 'Structure model' entity_name_com                  
+4 2 'Structure model' entity_src_gen                   
+5 2 'Structure model' struct_ref                       
+6 2 'Structure model' struct_ref_seq                   
+7 2 'Structure model' struct_ref_seq_dif               
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_entity.pdbx_description' 
+2 2 'Structure model' '_entity_name_com.name'    
 # 
 loop_
 _software.citation_id 
@@ -34997,16 +34965,19 @@ _em_ctf_correction.em_image_processing_id   1
 _em_ctf_correction.type                     'PHASE FLIPPING ONLY' 
 _em_ctf_correction.details                  ? 
 # 
-_em_entity_assembly_naturalsource.id                   2 
-_em_entity_assembly_naturalsource.entity_assembly_id   1 
-_em_entity_assembly_naturalsource.cell                 ? 
-_em_entity_assembly_naturalsource.cellular_location    ? 
-_em_entity_assembly_naturalsource.ncbi_tax_id          2697049 
-_em_entity_assembly_naturalsource.organ                ? 
-_em_entity_assembly_naturalsource.organelle            ? 
-_em_entity_assembly_naturalsource.organism             'Severe acute respiratory syndrome coronavirus 2' 
-_em_entity_assembly_naturalsource.strain               ? 
-_em_entity_assembly_naturalsource.tissue               ? 
+loop_
+_em_entity_assembly_naturalsource.id 
+_em_entity_assembly_naturalsource.entity_assembly_id 
+_em_entity_assembly_naturalsource.cell 
+_em_entity_assembly_naturalsource.cellular_location 
+_em_entity_assembly_naturalsource.ncbi_tax_id 
+_em_entity_assembly_naturalsource.organ 
+_em_entity_assembly_naturalsource.organelle 
+_em_entity_assembly_naturalsource.organism 
+_em_entity_assembly_naturalsource.strain 
+_em_entity_assembly_naturalsource.tissue 
+2 1 ? ? 2697049 ? ? 'Severe acute respiratory syndrome coronavirus 2' ? ? 
+3 1 ? ? 10665   ? ? 'Enterobacteria phage T4'                         ? ? 
 # 
 _em_entity_assembly_recombinant.id                   2 
 _em_entity_assembly_recombinant.entity_assembly_id   1 

@@ -2,20 +2,23 @@ HEADER    VIRAL PROTEIN                           18-JAN-22   7QUR
 TITLE     SARS-COV-2 SPIKE WITH ETHYLBENZAMIDE-TRI-IODO SIALLYLLACTOSE, C3      
 TITLE    2 SYMMETRY                                                             
 COMPND    MOL_ID: 1;                                                            
-COMPND   2 MOLECULE: SPIKE GLYCOPROTEIN;                                        
+COMPND   2 MOLECULE: SPIKE GLYCOPROTEIN,FIBRITIN;                               
 COMPND   3 CHAIN: A, B, C;                                                      
-COMPND   4 SYNONYM: S GLYCOPROTEIN,E2,PEPLOMER PROTEIN;                         
-COMPND   5 ENGINEERED: YES                                                      
+COMPND   4 SYNONYM: S GLYCOPROTEIN,E2,PEPLOMER PROTEIN,COLLAR PROTEIN,WHISKER   
+COMPND   5 ANTIGEN CONTROL PROTEIN;                                             
+COMPND   6 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
-SOURCE   3 2;                                                                   
-SOURCE   4 ORGANISM_TAXID: 2697049;                                             
-SOURCE   5 GENE: S, 2;                                                          
-SOURCE   6 EXPRESSION_SYSTEM: TRICHOPLUSIA NI;                                  
-SOURCE   7 EXPRESSION_SYSTEM_TAXID: 7111                                        
+SOURCE   3 2, ENTEROBACTERIA PHAGE T4;                                          
+SOURCE   4 ORGANISM_COMMON: BACTERIOPHAGE T4;                                   
+SOURCE   5 ORGANISM_TAXID: 2697049, 10665;                                      
+SOURCE   6 GENE: S, 2, WAC;                                                     
+SOURCE   7 EXPRESSION_SYSTEM: TRICHOPLUSIA NI;                                  
+SOURCE   8 EXPRESSION_SYSTEM_TAXID: 7111                                        
 KEYWDS    SARS-COV-2 SPIKE, VIRAL PROTEIN                                       
 EXPDTA    ELECTRON MICROSCOPY                                                   
 AUTHOR    J.H.NAISMITH,Y.YANG,J.W.LIU                                           
+REVDAT   2   15-JUN-22 7QUR    1       COMPND SOURCE DBREF  SEQADV              
 REVDAT   1   01-JUN-22 7QUR    0                                                
 JRNL        AUTH   J.H.NAISMITH,Y.YANG,J.W.LIU                                  
 JRNL        TITL   PATHOGEN-SUGAR INTERACTIONS REVEALED BY UNIVERSAL SATURATION 
@@ -689,149 +692,74 @@ REMARK 900 RELATED ID: EMD-14152   RELATED DB: EMDB
 REMARK 900 SARS-COV-2 SPIKE WITH ETHYLBENZAMIDE-TRI-IODO SIALLYLLACTOSE, C3     
 REMARK 900 SYMMETRY                                                             
 DBREF  7QUR A    1  1213  UNP    P0DTC2   SPIKE_SARS2      1   1213             
+DBREF  7QUR A 1226  1252  UNP    P10104   WAC_BPT4       458    484             
 DBREF  7QUR B    1  1213  UNP    P0DTC2   SPIKE_SARS2      1   1213             
+DBREF  7QUR B 1226  1252  UNP    P10104   WAC_BPT4       458    484             
 DBREF  7QUR C    1  1213  UNP    P0DTC2   SPIKE_SARS2      1   1213             
+DBREF  7QUR C 1226  1252  UNP    P10104   WAC_BPT4       458    484             
 SEQADV 7QUR ALA A  685  UNP  P0DTC2    ARG   685 CONFLICT                       
-SEQADV 7QUR SER A 1214  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1215  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG A 1216  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU A 1217  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL A 1218  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO A 1219  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG A 1220  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1221  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER A 1222  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO A 1223  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1224  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER A 1225  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1226  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR A 1227  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ILE A 1228  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO A 1229  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU A 1230  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA A 1231  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO A 1232  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG A 1233  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP A 1234  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1235  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLN A 1236  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA A 1237  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR A 1238  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL A 1239  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG A 1240  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LYS A 1241  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP A 1242  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1243  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU A 1244  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TRP A 1245  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL A 1246  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU A 1247  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU A 1248  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER A 1249  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR THR A 1250  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PHE A 1251  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU A 1252  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY A 1253  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1254  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1255  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1256  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1257  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1258  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS A 1259  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7QUR SER A 1214  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY A 1215  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG A 1216  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU A 1217  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR VAL A 1218  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO A 1219  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG A 1220  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY A 1221  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER A 1222  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO A 1223  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY A 1224  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER A 1225  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU A 1247  UNP  P10104    PHE   479 ENGINEERED MUTATION            
+SEQADV 7QUR GLY A 1253  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1254  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1255  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1256  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1257  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1258  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS A 1259  UNP  P10104              EXPRESSION TAG                 
 SEQADV 7QUR ALA B  685  UNP  P0DTC2    ARG   685 CONFLICT                       
-SEQADV 7QUR SER B 1214  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1215  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG B 1216  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU B 1217  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL B 1218  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO B 1219  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG B 1220  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1221  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER B 1222  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO B 1223  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1224  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER B 1225  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1226  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR B 1227  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ILE B 1228  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO B 1229  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU B 1230  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA B 1231  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO B 1232  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG B 1233  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP B 1234  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1235  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLN B 1236  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA B 1237  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR B 1238  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL B 1239  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG B 1240  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LYS B 1241  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP B 1242  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1243  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU B 1244  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TRP B 1245  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL B 1246  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU B 1247  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU B 1248  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER B 1249  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR THR B 1250  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PHE B 1251  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU B 1252  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY B 1253  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1254  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1255  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1256  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1257  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1258  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS B 1259  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7QUR SER B 1214  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY B 1215  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG B 1216  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU B 1217  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR VAL B 1218  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO B 1219  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG B 1220  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY B 1221  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER B 1222  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO B 1223  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY B 1224  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER B 1225  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU B 1247  UNP  P10104    PHE   479 ENGINEERED MUTATION            
+SEQADV 7QUR GLY B 1253  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1254  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1255  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1256  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1257  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1258  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS B 1259  UNP  P10104              EXPRESSION TAG                 
 SEQADV 7QUR ALA C  685  UNP  P0DTC2    ARG   685 CONFLICT                       
-SEQADV 7QUR SER C 1214  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1215  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG C 1216  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU C 1217  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL C 1218  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO C 1219  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG C 1220  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1221  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER C 1222  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO C 1223  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1224  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER C 1225  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1226  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR C 1227  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ILE C 1228  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO C 1229  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU C 1230  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA C 1231  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PRO C 1232  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG C 1233  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP C 1234  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1235  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLN C 1236  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ALA C 1237  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TYR C 1238  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL C 1239  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ARG C 1240  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LYS C 1241  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR ASP C 1242  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1243  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLU C 1244  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR TRP C 1245  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR VAL C 1246  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU C 1247  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU C 1248  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR SER C 1249  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR THR C 1250  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR PHE C 1251  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR LEU C 1252  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR GLY C 1253  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1254  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1255  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1256  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1257  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1258  UNP  P0DTC2              EXPRESSION TAG                 
-SEQADV 7QUR HIS C 1259  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7QUR SER C 1214  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY C 1215  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG C 1216  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU C 1217  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR VAL C 1218  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO C 1219  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR ARG C 1220  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY C 1221  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER C 1222  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR PRO C 1223  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR GLY C 1224  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR SER C 1225  UNP  P0DTC2              LINKER                         
+SEQADV 7QUR LEU C 1247  UNP  P10104    PHE   479 ENGINEERED MUTATION            
+SEQADV 7QUR GLY C 1253  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1254  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1255  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1256  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1257  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1258  UNP  P10104              EXPRESSION TAG                 
+SEQADV 7QUR HIS C 1259  UNP  P10104              EXPRESSION TAG                 
 SEQRES   1 A 1259  MET PHE VAL PHE LEU VAL LEU LEU PRO LEU VAL SER SER          
 SEQRES   2 A 1259  GLN CYS VAL ASN LEU THR THR ARG THR GLN LEU PRO PRO          
 SEQRES   3 A 1259  ALA TYR THR ASN SER PHE THR ARG GLY VAL TYR TYR PRO          
