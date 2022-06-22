@@ -3,14 +3,16 @@ data_7DK0
 _entry.id   7DK0 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.342 
+_audit_conform.dict_version    5.358 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7DK0         
-WWPDB D_1300019556 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7DK0         pdb_00007dk0 10.2210/pdb7dk0/pdb 
+WWPDB D_1300019556 ?            ?                   
 # 
 _pdbx_database_related.db_name        PDB 
 _pdbx_database_related.details        'same primary citation' 
@@ -48,27 +50,27 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
+_citation.journal_abbrev            'Commun Biol' 
 _citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_id_CSD            ? 
+_citation.journal_id_ISSN           2399-3642 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            5 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                262 
+_citation.page_last                 262 
 _citation.title                     
-;Antibody-dependent enhancement (ADE) of SARS-CoV-2 infection requires FcgammaRIIB-mediated uptake of virus-antibody complex with bivalent interaction
+;Antibody-dependent enhancement (ADE) of SARS-CoV-2 pseudoviral infection requires Fc gamma RIIB and virus-antibody complex with bivalent interaction.
 ;
-_citation.year                      ? 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1038/s42003-022-03207-0 
+_citation.pdbx_database_id_PubMed   35332252 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -76,12 +78,29 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Wang, J.'  1 ? 
-primary 'Jiao, S.'  2 ? 
-primary 'Wang, R.'  3 ? 
-primary 'Zhang, J.' 4 ? 
-primary 'Zhang, M.' 5 ? 
-primary 'Wang, M.'  6 ? 
+primary 'Wang, S.'  1  ?                   
+primary 'Wang, J.'  2  ?                   
+primary 'Yu, X.'    3  ?                   
+primary 'Jiang, W.' 4  ?                   
+primary 'Chen, S.'  5  0000-0002-2985-2317 
+primary 'Wang, R.'  6  ?                   
+primary 'Wang, M.'  7  ?                   
+primary 'Jiao, S.'  8  ?                   
+primary 'Yang, Y.'  9  ?                   
+primary 'Wang, W.'  10 ?                   
+primary 'Chen, H.'  11 ?                   
+primary 'Chen, B.'  12 ?                   
+primary 'Gu, C.'    13 ?                   
+primary 'Liu, C.'   14 ?                   
+primary 'Wang, A.'  15 ?                   
+primary 'Wang, M.'  16 ?                   
+primary 'Li, G.'    17 ?                   
+primary 'Guo, C.'   18 ?                   
+primary 'Liu, D.'   19 ?                   
+primary 'Zhang, J.' 20 0000-0001-7519-2105 
+primary 'Zhang, M.' 21 0000-0001-9485-6069 
+primary 'Wang, L.'  22 0000-0003-0588-4899 
+primary 'Gui, X.'   23 0000-0002-5070-3527 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1386,7 +1405,6 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     7DK0 
 _struct.title                        'Crystal structure of SARS-CoV-2 Spike RBD in complex with MW05 Fab' 
-_struct.pdbx_descriptor              'MW05 heavy chain, MW05 light chain, Spike protein S1' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -7298,11 +7316,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-06-09 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-06-09 
+2 'Structure model' 1 1 2022-06-22 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -7311,6 +7332,39 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+3 2 'Structure model' database_2      
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_citation.country'                   
+2  2 'Structure model' '_citation.journal_abbrev'            
+3  2 'Structure model' '_citation.journal_id_CSD'            
+4  2 'Structure model' '_citation.journal_id_ISSN'           
+5  2 'Structure model' '_citation.journal_volume'            
+6  2 'Structure model' '_citation.page_first'                
+7  2 'Structure model' '_citation.page_last'                 
+8  2 'Structure model' '_citation.pdbx_database_id_DOI'      
+9  2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+10 2 'Structure model' '_citation.title'                     
+11 2 'Structure model' '_citation.year'                      
+12 2 'Structure model' '_database_2.pdbx_DOI'                
+13 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 _phasing.method   MR 
 # 
