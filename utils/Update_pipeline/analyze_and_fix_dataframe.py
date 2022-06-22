@@ -11,7 +11,7 @@ This contains functions used to analyze the data frame or to fix bugs.
 import os
 import pandas as pd
 
-taxonomy = "SARS-CoV"
+taxonomy = "SARS-CoV-2"
 db_string = "main_repo_database_" + taxonomy + ".pkl"
 df = pd.read_pickle(db_string)
 
@@ -160,3 +160,4 @@ def run():
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
+    
