@@ -51,6 +51,9 @@ repo_path = os.path.abspath(os.path.join(__file__ ,"..", "..", "..", "pdb"))
 reports_path = os.path.abspath(os.path.join(__file__ , "..",
     "weekly_reports", tcp_main.get_time() + "_update_report_" + taxo + ".txt"))
 print(reports_path)
+# set path to replace contents of latest report file
+latest_report_path = os.path.abspath(os.path.join(__file__ , "..",
+    "weekly_reports", "latest_update_report_" + taxo + ".txt"))
 
 
 print("Searching for new and changed structures")
@@ -73,13 +76,14 @@ tcp_scan_results.main(taxo, c_new_pdb_lst)
 
 
 # check if new nsp3 structures are available
+report_content = ""
 try:
     # open file
     file = open(reports_path, 'r')
-    content = file.read()
+    report_content = file.read()
     file.close()
     # check for new nsp3
-    if content.find('nsp3') > -1:
+    if report_content.find('nsp3') > -1:
         print("New Nsp3 structure: perform domain classification...")
         domain_classifier.main(taxo, 'nsp3')
     
@@ -87,3 +91,13 @@ except FileNotFoundError:
     print("weekly reports file not found. No domain classification was made.")
 except PermissionError():
     print("Permission denied for opening weekly reports file. No domain classification was made.")
+
+
+# copy file content of latest report into the 'latest_report' file
+if report_content != "":
+    content = report_content
+    file = open(latest_report_path, 'w')
+    file.write(content)
+    file.close()
+
+
