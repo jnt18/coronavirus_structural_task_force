@@ -1,0 +1,455 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+IFO      IFO '.                                   ' .                  57  35 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-IFO  CYS      .        .        IFO      .        .
+ bond_CYS-SG_=_IFO-C7
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_IFO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ IFO           F2     F    F         0.000     -2.742  -23.933  -25.448
+ IFO           C23    C    CR6       0.000     -1.511  -24.263  -24.982
+ IFO           C22    C    CR16      0.000     -0.408  -23.657  -25.543
+ IFO           H22    H    H         0.000     -0.505  -22.939  -26.348
+ IFO           C21    C    CR6       0.000      0.822  -24.006  -25.034
+ IFO           F1     F    F         0.000      1.925  -23.412  -25.554
+ IFO           C20    C    CR16      0.000      0.991  -24.903  -24.022
+ IFO           H20    H    H         0.000      1.977  -25.144  -23.646
+ IFO           C19    C    CR16      0.000     -0.140  -25.494  -23.492
+ IFO           H19    H    H         0.000     -0.038  -26.222  -22.697
+ IFO           C18    C    CR6       0.000     -1.409  -25.169  -23.963
+ IFO           C17    C    CH2       0.000     -2.600  -25.842  -23.361
+ IFO           H171   H    H         0.000     -2.477  -25.824  -22.276
+ IFO           H172   H    H         0.000     -2.607  -26.877  -23.709
+ IFO           O5     O    O2        0.000     -3.846  -25.206  -23.716
+ IFO           C16    C    C         0.000     -4.932  -25.921  -23.423
+ IFO           O4     O    O         0.000     -5.576  -26.502  -24.246
+ IFO           C4     C    CH1       0.000     -5.207  -25.948  -21.921
+ IFO           H4     H    H         0.000     -4.311  -26.356  -21.434
+ IFO           C2     C    CT        0.000     -5.428  -24.528  -21.354
+ IFO           C1     C    CH3       0.000     -6.232  -23.586  -22.258
+ IFO           H13    H    H         0.000     -5.730  -23.467  -23.183
+ IFO           H12    H    H         0.000     -7.195  -23.995  -22.431
+ IFO           H11    H    H         0.000     -6.332  -22.641  -21.788
+ IFO           C3     C    CH3       0.000     -6.022  -24.576  -19.944
+ IFO           H33    H    H         0.000     -6.956  -25.076  -19.970
+ IFO           H32    H    H         0.000     -5.362  -25.096  -19.299
+ IFO           H31    H    H         0.000     -6.162  -23.589  -19.584
+ IFO           S1     S    S3        0.000     -3.753  -23.781  -21.139
+ IFO           O7     O    OH1       0.000     -2.943  -24.588  -20.032
+ IFO           HO7    H    H         0.000     -2.056  -24.308  -19.819
+ IFO           O6     O    O         0.000     -3.956  -22.396  -20.646
+ IFO           N1     N    N         0.000     -6.318  -26.837  -21.594
+ IFO           C5     C    C1        0.000     -6.350  -27.668  -20.512
+ IFO           H5     H    H         0.000     -5.617  -27.545  -19.733
+ IFO           C6     C    C         0.000     -7.323  -28.686  -20.389
+ IFO           C7     C    C1        0.000     -7.265  -29.838  -19.452
+ IFO           H7     H    H         0.000     -8.139  -30.051  -18.860
+ IFO           O1     O    O         0.000     -6.298  -30.551  -19.313
+ IFO           N2     N    N         0.000     -8.586  -28.462  -20.995
+ IFO           C8     C    C         0.000     -9.307  -27.329  -20.782
+ IFO           O2     O    O         0.000     -8.942  -26.402  -20.068
+ IFO           C9     C    CH2       0.000    -10.654  -27.252  -21.447
+ IFO           H91    H    H         0.000    -10.818  -26.264  -21.882
+ IFO           H92    H    H         0.000    -11.453  -27.472  -20.736
+ IFO           O3     O    O2        0.000    -10.652  -28.230  -22.477
+ IFO           C10    C    CR6       0.000    -11.834  -28.494  -23.100
+ IFO           C15    C    CR16      0.000    -11.846  -29.580  -23.953
+ IFO           H15    H    H         0.000    -10.948  -30.165  -24.106
+ IFO           C14    C    CR16      0.000    -13.019  -29.916  -24.613
+ IFO           H14    H    H         0.000    -13.032  -30.765  -25.285
+ IFO           C13    C    CR16      0.000    -14.165  -29.182  -24.422
+ IFO           H130   H    H         0.000    -15.077  -29.448  -24.943
+ IFO           C12    C    CR16      0.000    -14.146  -28.106  -23.563
+ IFO           H120   H    H         0.000    -15.047  -27.524  -23.415
+ IFO           C11    C    CR16      0.000    -12.987  -27.759  -22.885
+ IFO           H110   H    H         0.000    -12.985  -26.923  -22.196
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ IFO      F2     n/a    C23    START
+ IFO      C23    F2     C18    .
+ IFO      C22    C23    C21    .
+ IFO      H22    C22    .      .
+ IFO      C21    C22    C20    .
+ IFO      F1     C21    .      .
+ IFO      C20    C21    C19    .
+ IFO      H20    C20    .      .
+ IFO      C19    C20    H19    .
+ IFO      H19    C19    .      .
+ IFO      C18    C23    C17    .
+ IFO      C17    C18    O5     .
+ IFO      H171   C17    .      .
+ IFO      H172   C17    .      .
+ IFO      O5     C17    C16    .
+ IFO      C16    O5     C4     .
+ IFO      O4     C16    .      .
+ IFO      C4     C16    N1     .
+ IFO      H4     C4     .      .
+ IFO      C2     C4     S1     .
+ IFO      C1     C2     H11    .
+ IFO      H13    C1     .      .
+ IFO      H12    C1     .      .
+ IFO      H11    C1     .      .
+ IFO      C3     C2     H31    .
+ IFO      H33    C3     .      .
+ IFO      H32    C3     .      .
+ IFO      H31    C3     .      .
+ IFO      S1     C2     O6     .
+ IFO      O7     S1     HO7    .
+ IFO      HO7    O7     .      .
+ IFO      O6     S1     .      .
+ IFO      N1     C4     C5     .
+ IFO      C5     N1     C6     .
+ IFO      H5     C5     .      .
+ IFO      C6     C5     N2     .
+ IFO      C7     C6     O1     .
+ IFO      H7     C7     .      .
+ IFO      O1     C7     .      .
+ IFO      N2     C6     C8     .
+ IFO      C8     N2     C9     .
+ IFO      O2     C8     .      .
+ IFO      C9     C8     O3     .
+ IFO      H91    C9     .      .
+ IFO      H92    C9     .      .
+ IFO      O3     C9     C10    .
+ IFO      C10    O3     C15    .
+ IFO      C15    C10    C14    .
+ IFO      H15    C15    .      .
+ IFO      C14    C15    C13    .
+ IFO      H14    C14    .      .
+ IFO      C13    C14    C12    .
+ IFO      H130   C13    .      .
+ IFO      C12    C13    C11    .
+ IFO      H120   C12    .      .
+ IFO      C11    C12    H110   .
+ IFO      H110   C11    .      END
+ IFO      C10    C11    .    ADD
+ IFO      C18    C19    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ IFO      O6     S1        double      1.480    0.020
+ IFO      C7     C6        single      1.475    0.020
+ IFO      C6     C5        deloc       1.340    0.020
+ IFO      N2     C6        single      1.330    0.020
+ IFO      O1     C7        double      1.220    0.020
+ IFO      O2     C8        double      1.220    0.020
+ IFO      C8     N2        deloc       1.330    0.020
+ IFO      C9     C8        single      1.510    0.020
+ IFO      C5     N1        deloc       1.260    0.020
+ IFO      C2     C4        single      1.524    0.020
+ IFO      N1     C4        single      1.455    0.020
+ IFO      C4     C16       single      1.500    0.020
+ IFO      C1     C2        single      1.524    0.020
+ IFO      C3     C2        single      1.524    0.020
+ IFO      S1     C2        single      1.707    0.020
+ IFO      O3     C9        single      1.426    0.020
+ IFO      C10    O3        single      1.370    0.020
+ IFO      C10    C11       aromatic    1.390    0.020
+ IFO      C15    C10       aromatic    1.390    0.020
+ IFO      C11    C12       aromatic    1.390    0.020
+ IFO      C12    C13       aromatic    1.390    0.020
+ IFO      C13    C14       aromatic    1.390    0.020
+ IFO      C14    C15       aromatic    1.390    0.020
+ IFO      O4     C16       double      1.220    0.020
+ IFO      C16    O5        single      1.454    0.020
+ IFO      O5     C17       single      1.426    0.020
+ IFO      C17    C18       single      1.511    0.020
+ IFO      C18    C19       aromatic    1.390    0.020
+ IFO      C18    C23       aromatic    1.384    0.020
+ IFO      C19    C20       aromatic    1.390    0.020
+ IFO      C20    C21       aromatic    1.390    0.020
+ IFO      F1     C21       single      1.345    0.020
+ IFO      C21    C22       aromatic    1.390    0.020
+ IFO      C22    C23       aromatic    1.390    0.020
+ IFO      C23    F2        single      1.345    0.020
+ IFO      O7     S1        single      1.679    0.020
+ IFO      H7     C7        single      1.077    0.020
+ IFO      H5     C5        single      1.077    0.020
+ IFO      H4     C4        single      1.099    0.020
+ IFO      H11    C1        single      1.059    0.020
+ IFO      H12    C1        single      1.059    0.020
+ IFO      H13    C1        single      1.059    0.020
+ IFO      H31    C3        single      1.059    0.020
+ IFO      H32    C3        single      1.059    0.020
+ IFO      H33    C3        single      1.059    0.020
+ IFO      H91    C9        single      1.092    0.020
+ IFO      H92    C9        single      1.092    0.020
+ IFO      H110   C11       single      1.083    0.020
+ IFO      H120   C12       single      1.083    0.020
+ IFO      H130   C13       single      1.083    0.020
+ IFO      H14    C14       single      1.083    0.020
+ IFO      H15    C15       single      1.083    0.020
+ IFO      H171   C17       single      1.092    0.020
+ IFO      H172   C17       single      1.092    0.020
+ IFO      H19    C19       single      1.083    0.020
+ IFO      H20    C20       single      1.083    0.020
+ IFO      H22    C22       single      1.083    0.020
+ IFO      HO7    O7        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ IFO      F2     C23    C22     120.000    3.000
+ IFO      F2     C23    C18     120.000    3.000
+ IFO      C22    C23    C18     120.000    3.000
+ IFO      C23    C22    H22     120.000    3.000
+ IFO      C23    C22    C21     120.000    3.000
+ IFO      H22    C22    C21     120.000    3.000
+ IFO      C22    C21    F1      120.000    3.000
+ IFO      C22    C21    C20     120.000    3.000
+ IFO      F1     C21    C20     120.000    3.000
+ IFO      C21    C20    H20     120.000    3.000
+ IFO      C21    C20    C19     120.000    3.000
+ IFO      H20    C20    C19     120.000    3.000
+ IFO      C20    C19    H19     120.000    3.000
+ IFO      C20    C19    C18     120.000    3.000
+ IFO      H19    C19    C18     120.000    3.000
+ IFO      C23    C18    C17     120.000    3.000
+ IFO      C23    C18    C19     120.000    3.000
+ IFO      C17    C18    C19     120.000    3.000
+ IFO      C18    C17    H171    109.470    3.000
+ IFO      C18    C17    H172    109.470    3.000
+ IFO      C18    C17    O5      109.470    3.000
+ IFO      H171   C17    H172    107.900    3.000
+ IFO      H171   C17    O5      109.470    3.000
+ IFO      H172   C17    O5      109.470    3.000
+ IFO      C17    O5     C16     120.000    3.000
+ IFO      O5     C16    O4      119.000    3.000
+ IFO      O5     C16    C4      120.000    3.000
+ IFO      O4     C16    C4      120.500    3.000
+ IFO      C16    C4     H4      108.810    3.000
+ IFO      C16    C4     C2      109.470    3.000
+ IFO      C16    C4     N1      111.600    3.000
+ IFO      H4     C4     C2      108.340    3.000
+ IFO      H4     C4     N1      109.470    3.000
+ IFO      C2     C4     N1      109.500    3.000
+ IFO      C4     C2     C1      111.000    3.000
+ IFO      C4     C2     C3      111.000    3.000
+ IFO      C4     C2     S1      109.500    3.000
+ IFO      C1     C2     C3      111.000    3.000
+ IFO      C1     C2     S1      109.500    3.000
+ IFO      C3     C2     S1      109.500    3.000
+ IFO      C2     C1     H13     109.470    3.000
+ IFO      C2     C1     H12     109.470    3.000
+ IFO      C2     C1     H11     109.470    3.000
+ IFO      H13    C1     H12     109.470    3.000
+ IFO      H13    C1     H11     109.470    3.000
+ IFO      H12    C1     H11     109.470    3.000
+ IFO      C2     C3     H33     109.470    3.000
+ IFO      C2     C3     H32     109.470    3.000
+ IFO      C2     C3     H31     109.470    3.000
+ IFO      H33    C3     H32     109.470    3.000
+ IFO      H33    C3     H31     109.470    3.000
+ IFO      H32    C3     H31     109.470    3.000
+ IFO      C2     S1     O7      109.727    3.000
+ IFO      C2     S1     O6      106.986    3.000
+ IFO      O7     S1     O6      108.166    3.000
+ IFO      S1     O7     HO7     120.000    3.000
+ IFO      C4     N1     C5      120.000    3.000
+ IFO      N1     C5     H5      120.000    3.000
+ IFO      N1     C5     C6      120.000    3.000
+ IFO      H5     C5     C6      120.000    3.000
+ IFO      C5     C6     C7      120.000    3.000
+ IFO      C5     C6     N2      116.500    3.000
+ IFO      C7     C6     N2      116.500    3.000
+ IFO      C6     C7     H7      120.000    3.000
+ IFO      C6     C7     O1      120.000    3.000
+ IFO      H7     C7     O1      123.000    3.000
+ IFO      C6     N2     C8      120.000    3.000
+ IFO      N2     C8     O2      123.000    3.000
+ IFO      N2     C8     C9      116.500    3.000
+ IFO      O2     C8     C9      120.500    3.000
+ IFO      C8     C9     H91     109.470    3.000
+ IFO      C8     C9     H92     109.470    3.000
+ IFO      C8     C9     O3      109.470    3.000
+ IFO      H91    C9     H92     107.900    3.000
+ IFO      H91    C9     O3      109.470    3.000
+ IFO      H92    C9     O3      109.470    3.000
+ IFO      C9     O3     C10     120.000    3.000
+ IFO      O3     C10    C15     120.000    3.000
+ IFO      O3     C10    C11     120.000    3.000
+ IFO      C15    C10    C11     120.000    3.000
+ IFO      C10    C15    H15     120.000    3.000
+ IFO      C10    C15    C14     120.000    3.000
+ IFO      H15    C15    C14     120.000    3.000
+ IFO      C15    C14    H14     120.000    3.000
+ IFO      C15    C14    C13     120.000    3.000
+ IFO      H14    C14    C13     120.000    3.000
+ IFO      C14    C13    H130    120.000    3.000
+ IFO      C14    C13    C12     120.000    3.000
+ IFO      H130   C13    C12     120.000    3.000
+ IFO      C13    C12    H120    120.000    3.000
+ IFO      C13    C12    C11     120.000    3.000
+ IFO      H120   C12    C11     120.000    3.000
+ IFO      C12    C11    H110    120.000    3.000
+ IFO      C12    C11    C10     120.000    3.000
+ IFO      H110   C11    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ IFO      CONST_1          F2     C23    C22    C21                0.000            0.000   0
+ IFO      CONST_2          C23    C22    C21    C20                0.000            0.000   0
+ IFO      CONST_3          C22    C21    C20    C19                0.000            0.000   0
+ IFO      CONST_4          C21    C20    C19    C18                0.000            0.000   0
+ IFO      CONST_5          F2     C23    C18    C17                0.000            0.000   0
+ IFO      CONST_6          C23    C18    C19    C20                0.000            0.000   0
+ IFO      var_1            C23    C18    C17    O5                 0.000           20.000   2
+ IFO      var_2            C18    C17    O5     C16              167.364           20.000   3
+ IFO      var_3            C17    O5     C16    C4                72.935           20.000   3
+ IFO      var_4            O5     C16    C4     N1               180.000           20.000   3
+ IFO      var_5            C16    C4     C2     S1               -79.552           20.000   3
+ IFO      var_6            C4     C2     C1     H11              180.000           20.000   3
+ IFO      var_7            C4     C2     C3     H31              180.000           20.000   3
+ IFO      var_8            C4     C2     S1     O6               177.768           20.000   3
+ IFO      var_9            C2     S1     O7     HO7              180.000           20.000   3
+ IFO      var_10           C16    C4     N1     C5                 0.000           20.000   3
+ IFO      CONST_7          C4     N1     C5     C6              -167.398            0.000   0
+ IFO      CONST_8          N1     C5     C6     N2               -29.772            0.000   0
+ IFO      var_11           C5     C6     C7     O1               -48.501           20.000   3
+ IFO      var_12           C5     C6     N2     C8               180.000           20.000   2
+ IFO      CONST_9          C6     N2     C8     C9               180.000            0.000   0
+ IFO      var_13           N2     C8     C9     O3               180.000           20.000   3
+ IFO      var_14           C8     C9     O3     C10              170.486           20.000   3
+ IFO      var_15           C9     O3     C10    C15             -170.752           20.000   3
+ IFO      CONST_10         O3     C10    C11    C12                0.000            0.000   0
+ IFO      CONST_11         O3     C10    C15    C14                0.000            0.000   0
+ IFO      CONST_12         C10    C15    C14    C13                0.000            0.000   0
+ IFO      CONST_13         C15    C14    C13    C12                0.000            0.000   0
+ IFO      CONST_14         C14    C13    C12    C11                0.000            0.000   0
+ IFO      CONST_15         C13    C12    C11    C10                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ IFO      chir_01          C4     C2     N1     C16       negativ
+ IFO      chir_02          C2     C4     C1     C3        negativ
+ IFO      chir_03          S1     O6     C2     O7        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ IFO      plan-1            C6        0.020
+ IFO      plan-1            C7        0.020
+ IFO      plan-1            C5        0.020
+ IFO      plan-1            N2        0.020
+ IFO      plan-1            N1        0.020
+ IFO      plan-1            H5        0.020
+ IFO      plan-1            C4        0.020
+ IFO      plan-1            H7        0.020
+ IFO      plan-2            C7        0.020
+ IFO      plan-2            C6        0.020
+ IFO      plan-2            O1        0.020
+ IFO      plan-2            H7        0.020
+ IFO      plan-3            C8        0.020
+ IFO      plan-3            O2        0.020
+ IFO      plan-3            N2        0.020
+ IFO      plan-3            C9        0.020
+ IFO      plan-3            C6        0.020
+ IFO      plan-4            C10       0.020
+ IFO      plan-4            O3        0.020
+ IFO      plan-4            C11       0.020
+ IFO      plan-4            C15       0.020
+ IFO      plan-4            C12       0.020
+ IFO      plan-4            C13       0.020
+ IFO      plan-4            C14       0.020
+ IFO      plan-4            H110      0.020
+ IFO      plan-4            H120      0.020
+ IFO      plan-4            H130      0.020
+ IFO      plan-4            H14       0.020
+ IFO      plan-4            H15       0.020
+ IFO      plan-5            C16       0.020
+ IFO      plan-5            C4        0.020
+ IFO      plan-5            O4        0.020
+ IFO      plan-5            O5        0.020
+ IFO      plan-6            C18       0.020
+ IFO      plan-6            C17       0.020
+ IFO      plan-6            C19       0.020
+ IFO      plan-6            C23       0.020
+ IFO      plan-6            C20       0.020
+ IFO      plan-6            C21       0.020
+ IFO      plan-6            C22       0.020
+ IFO      plan-6            H19       0.020
+ IFO      plan-6            H20       0.020
+ IFO      plan-6            F1        0.020
+ IFO      plan-6            H22       0.020
+ IFO      plan-6            F2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-IFO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-IFO  1 SG      2 C7        .           1.780    0.020
+# ------------------------------------------------------

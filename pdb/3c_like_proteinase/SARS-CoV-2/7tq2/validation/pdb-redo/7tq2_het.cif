@@ -1,0 +1,518 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+ISG      ISG '.                                   ' .                  67  32 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-ISG  CYS      .        .        ISG      .        .
+ bond_CYS-SG_=_ISG-C19
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_ISG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ ISG           O21    O    O         0.000     25.874   -1.846   14.857
+ ISG           C09    C    C         0.000     24.918   -2.030   14.132
+ ISG           N10    N    NH1       0.000     23.786   -2.718   14.580
+ ISG           HN10   H    H         0.000     23.021   -2.845   13.933
+ ISG           C11    C    CH1       0.000     23.639   -3.283   15.973
+ ISG           H11    H    H         0.000     24.624   -3.279   16.460
+ ISG           C19    C    CH2       0.000     23.122   -4.788   15.878
+ ISG           H191   H    H         0.000     22.200   -4.812   15.294
+ ISG           H192   H    H         0.000     22.923   -5.161   16.885
+ ISG           O20    O    OH1       0.000     24.080   -5.588   15.267
+ ISG           HO20   H    H         0.000     23.749   -6.492   15.219
+ ISG           C12    C    CH2       0.000     22.669   -2.446   16.817
+ ISG           H121   H    H         0.000     22.612   -2.886   17.815
+ ISG           H122   H    H         0.000     21.684   -2.482   16.348
+ ISG           C13    C    CH1       0.000     23.153   -0.927   16.929
+ ISG           H13    H    H         0.000     23.411   -0.511   15.945
+ ISG           C17    C    CH2       0.000     24.323   -0.900   17.863
+ ISG           H172   H    H         0.000     25.259   -1.053   17.322
+ ISG           H171   H    H         0.000     24.223   -1.662   18.638
+ ISG           C14    C    C         0.000     22.219    0.059   17.754
+ ISG           O18    O    O         0.000     21.020    0.049   17.564
+ ISG           N15    N    NH1       0.000     22.915    0.900   18.667
+ ISG           HN15   H    H         0.000     22.514    1.595   19.280
+ ISG           C16    C    CH2       0.000     24.325    0.554   18.538
+ ISG           H162   H    H         0.000     24.822    0.505   19.509
+ ISG           H161   H    H         0.000     24.858    1.255   17.893
+ ISG           C04    C    CH1       0.000     25.021   -1.466   12.635
+ ISG           H04    H    H         0.000     24.007   -1.221   12.290
+ ISG           C05    C    CH2       0.000     25.590   -2.612   11.717
+ ISG           H051   H    H         0.000     24.935   -3.477   11.841
+ ISG           H052   H    H         0.000     26.587   -2.856   12.090
+ ISG           C06    C    CH1       0.000     25.677   -2.232   10.195
+ ISG           H06    H    H         0.000     26.646   -1.742   10.021
+ ISG           C08    C    CH3       0.000     24.545   -1.222    9.805
+ ISG           H083   H    H         0.000     23.593   -1.655    9.990
+ ISG           H082   H    H         0.000     24.638   -0.333   10.380
+ ISG           H081   H    H         0.000     24.618   -0.976    8.774
+ ISG           C07    C    CH3       0.000     25.614   -3.505    9.300
+ ISG           H073   H    H         0.000     26.423   -4.151    9.533
+ ISG           H072   H    H         0.000     24.700   -4.019    9.468
+ ISG           H071   H    H         0.000     25.674   -3.230    8.276
+ ISG           N03    N    NH1       0.000     25.834   -0.243   12.575
+ ISG           HN03   H    H         0.000     26.676   -0.194   12.018
+ ISG           C02    C    C         0.000     25.379    0.871   13.340
+ ISG           O01    O    O         0.000     24.288    0.795   13.878
+ ISG           O22    O    O2        0.000     26.122    2.037   13.499
+ ISG           C23    C    CH2       0.000     25.665    3.135   14.381
+ ISG           H231   H    H         0.000     26.406    3.266   15.172
+ ISG           H232   H    H         0.000     24.711    2.841   14.822
+ ISG           C24    C    CH1       0.000     25.482    4.534   13.570
+ ISG           H24    H    H         0.000     24.536    5.072   13.721
+ ISG           C26    C    CH2       0.000     26.073    4.574   12.170
+ ISG           H261   H    H         0.000     25.723    5.220   11.362
+ ISG           H262   H    H         0.000     26.782    3.846   11.770
+ ISG           C25    C    CH1       0.000     26.755    5.415   13.233
+ ISG           H25    H    H         0.000     27.657    4.891   13.581
+ ISG           C27    C    CR6       0.000     27.132    6.900   12.867
+ ISG           C32    C    CR16      0.000     27.868    7.292   11.704
+ ISG           H32    H    H         0.000     28.182    6.530   11.001
+ ISG           C31    C    CR16      0.000     28.203    8.654   11.440
+ ISG           H31    H    H         0.000     28.753    8.916   10.544
+ ISG           C30    C    CR16      0.000     27.810    9.666   12.362
+ ISG           H30    H    H         0.000     28.060   10.701   12.165
+ ISG           C29    C    CR16      0.000     27.088    9.321   13.545
+ ISG           H29    H    H         0.000     26.796   10.089   14.250
+ ISG           C28    C    CR16      0.000     26.755    7.956   13.790
+ ISG           H28    H    H         0.000     26.207    7.700   14.688
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ ISG      O21    n/a    C09    START
+ ISG      C09    O21    C04    .
+ ISG      N10    C09    C11    .
+ ISG      HN10   N10    .      .
+ ISG      C11    N10    C12    .
+ ISG      H11    C11    .      .
+ ISG      C19    C11    O20    .
+ ISG      H191   C19    .      .
+ ISG      H192   C19    .      .
+ ISG      O20    C19    HO20   .
+ ISG      HO20   O20    .      .
+ ISG      C12    C11    C13    .
+ ISG      H121   C12    .      .
+ ISG      H122   C12    .      .
+ ISG      C13    C12    C14    .
+ ISG      H13    C13    .      .
+ ISG      C17    C13    H171   .
+ ISG      H172   C17    .      .
+ ISG      H171   C17    .      .
+ ISG      C14    C13    N15    .
+ ISG      O18    C14    .      .
+ ISG      N15    C14    C16    .
+ ISG      HN15   N15    .      .
+ ISG      C16    N15    H161   .
+ ISG      H162   C16    .      .
+ ISG      H161   C16    .      .
+ ISG      C04    C09    N03    .
+ ISG      H04    C04    .      .
+ ISG      C05    C04    C06    .
+ ISG      H051   C05    .      .
+ ISG      H052   C05    .      .
+ ISG      C06    C05    C07    .
+ ISG      H06    C06    .      .
+ ISG      C08    C06    H081   .
+ ISG      H083   C08    .      .
+ ISG      H082   C08    .      .
+ ISG      H081   C08    .      .
+ ISG      C07    C06    H071   .
+ ISG      H073   C07    .      .
+ ISG      H072   C07    .      .
+ ISG      H071   C07    .      .
+ ISG      N03    C04    C02    .
+ ISG      HN03   N03    .      .
+ ISG      C02    N03    O22    .
+ ISG      O01    C02    .      .
+ ISG      O22    C02    C23    .
+ ISG      C23    O22    C24    .
+ ISG      H231   C23    .      .
+ ISG      H232   C23    .      .
+ ISG      C24    C23    C26    .
+ ISG      H24    C24    .      .
+ ISG      C26    C24    C25    .
+ ISG      H261   C26    .      .
+ ISG      H262   C26    .      .
+ ISG      C25    C26    C27    .
+ ISG      H25    C25    .      .
+ ISG      C27    C25    C32    .
+ ISG      C32    C27    C31    .
+ ISG      H32    C32    .      .
+ ISG      C31    C32    C30    .
+ ISG      H31    C31    .      .
+ ISG      C30    C31    C29    .
+ ISG      H30    C30    .      .
+ ISG      C29    C30    C28    .
+ ISG      H29    C29    .      .
+ ISG      C28    C29    H28    .
+ ISG      H28    C28    .      END
+ ISG      C16    C17    .    ADD
+ ISG      C24    C25    .    ADD
+ ISG      C27    C28    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ ISG      C12    C11       single      1.524    0.020
+ ISG      C19    C11       single      1.524    0.020
+ ISG      C11    N10       single      1.450    0.020
+ ISG      C13    C12       single      1.524    0.020
+ ISG      C16    C17       single      1.524    0.020
+ ISG      C16    N15       single      1.450    0.020
+ ISG      C02    N03       single      1.330    0.020
+ ISG      O01    C02       double      1.220    0.020
+ ISG      O22    C02       single      1.454    0.020
+ ISG      C05    C04       single      1.524    0.020
+ ISG      C04    C09       single      1.500    0.020
+ ISG      N03    C04       single      1.450    0.020
+ ISG      C06    C05       single      1.524    0.020
+ ISG      C07    C06       single      1.524    0.020
+ ISG      C08    C06       single      1.524    0.020
+ ISG      N10    C09       single      1.330    0.020
+ ISG      C09    O21       double      1.220    0.020
+ ISG      C14    C13       single      1.500    0.020
+ ISG      C17    C13       single      1.524    0.020
+ ISG      N15    C14       single      1.330    0.020
+ ISG      O18    C14       double      1.220    0.020
+ ISG      O20    C19       single      1.432    0.020
+ ISG      C24    C23       single      1.524    0.020
+ ISG      C23    O22       single      1.426    0.020
+ ISG      C24    C25       single      1.524    0.020
+ ISG      C26    C24       single      1.524    0.020
+ ISG      C25    C26       single      1.524    0.020
+ ISG      C27    C25       single      1.480    0.020
+ ISG      C27    C28       aromatic    1.390    0.020
+ ISG      C32    C27       aromatic    1.390    0.020
+ ISG      C28    C29       aromatic    1.390    0.020
+ ISG      C29    C30       aromatic    1.390    0.020
+ ISG      C30    C31       aromatic    1.390    0.020
+ ISG      C31    C32       aromatic    1.390    0.020
+ ISG      H11    C11       single      1.099    0.020
+ ISG      H121   C12       single      1.092    0.020
+ ISG      H122   C12       single      1.092    0.020
+ ISG      H161   C16       single      1.092    0.020
+ ISG      H162   C16       single      1.092    0.020
+ ISG      H04    C04       single      1.099    0.020
+ ISG      H051   C05       single      1.092    0.020
+ ISG      H052   C05       single      1.092    0.020
+ ISG      H06    C06       single      1.099    0.020
+ ISG      H071   C07       single      1.059    0.020
+ ISG      H072   C07       single      1.059    0.020
+ ISG      H073   C07       single      1.059    0.020
+ ISG      H081   C08       single      1.059    0.020
+ ISG      H082   C08       single      1.059    0.020
+ ISG      H083   C08       single      1.059    0.020
+ ISG      H13    C13       single      1.099    0.020
+ ISG      H171   C17       single      1.092    0.020
+ ISG      H172   C17       single      1.092    0.020
+ ISG      H191   C19       single      1.092    0.020
+ ISG      H192   C19       single      1.092    0.020
+ ISG      H231   C23       single      1.092    0.020
+ ISG      H232   C23       single      1.092    0.020
+ ISG      H24    C24       single      1.099    0.020
+ ISG      H25    C25       single      1.099    0.020
+ ISG      H261   C26       single      1.092    0.020
+ ISG      H262   C26       single      1.092    0.020
+ ISG      H28    C28       single      1.083    0.020
+ ISG      H29    C29       single      1.083    0.020
+ ISG      H30    C30       single      1.083    0.020
+ ISG      H31    C31       single      1.083    0.020
+ ISG      H32    C32       single      1.083    0.020
+ ISG      HN03   N03       single      1.010    0.020
+ ISG      HN10   N10       single      1.010    0.020
+ ISG      HN15   N15       single      1.010    0.020
+ ISG      HO20   O20       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ ISG      O21    C09    N10     123.000    3.000
+ ISG      O21    C09    C04     120.500    3.000
+ ISG      N10    C09    C04     116.500    3.000
+ ISG      C09    N10    HN10    120.000    3.000
+ ISG      C09    N10    C11     121.500    3.000
+ ISG      HN10   N10    C11     118.500    3.000
+ ISG      N10    C11    H11     108.550    3.000
+ ISG      N10    C11    C19     110.000    3.000
+ ISG      N10    C11    C12     110.000    3.000
+ ISG      H11    C11    C19     108.340    3.000
+ ISG      H11    C11    C12     108.340    3.000
+ ISG      C19    C11    C12     109.470    3.000
+ ISG      C11    C19    H191    109.470    3.000
+ ISG      C11    C19    H192    109.470    3.000
+ ISG      C11    C19    O20     109.470    3.000
+ ISG      H191   C19    H192    107.900    3.000
+ ISG      H191   C19    O20     109.470    3.000
+ ISG      H192   C19    O20     109.470    3.000
+ ISG      C19    O20    HO20    109.470    3.000
+ ISG      C11    C12    H121    109.470    3.000
+ ISG      C11    C12    H122    109.470    3.000
+ ISG      C11    C12    C13     111.000    3.000
+ ISG      H121   C12    H122    107.900    3.000
+ ISG      H121   C12    C13     109.470    3.000
+ ISG      H122   C12    C13     109.470    3.000
+ ISG      C12    C13    H13     108.340    3.000
+ ISG      C12    C13    C17     109.470    3.000
+ ISG      C12    C13    C14     109.470    3.000
+ ISG      H13    C13    C17     108.340    3.000
+ ISG      H13    C13    C14     108.810    3.000
+ ISG      C17    C13    C14     109.470    3.000
+ ISG      C13    C17    H172    109.470    3.000
+ ISG      C13    C17    H171    109.470    3.000
+ ISG      C13    C17    C16     111.000    3.000
+ ISG      H172   C17    H171    107.900    3.000
+ ISG      H172   C17    C16     109.470    3.000
+ ISG      H171   C17    C16     109.470    3.000
+ ISG      C13    C14    O18     120.500    3.000
+ ISG      C13    C14    N15     116.500    3.000
+ ISG      O18    C14    N15     123.000    3.000
+ ISG      C14    N15    HN15    120.000    3.000
+ ISG      C14    N15    C16     121.500    3.000
+ ISG      HN15   N15    C16     118.500    3.000
+ ISG      N15    C16    H162    109.470    3.000
+ ISG      N15    C16    H161    109.470    3.000
+ ISG      N15    C16    C17     112.000    3.000
+ ISG      H162   C16    H161    107.900    3.000
+ ISG      H162   C16    C17     109.470    3.000
+ ISG      H161   C16    C17     109.470    3.000
+ ISG      C09    C04    H04     108.810    3.000
+ ISG      C09    C04    C05     109.470    3.000
+ ISG      C09    C04    N03     111.600    3.000
+ ISG      H04    C04    C05     108.340    3.000
+ ISG      H04    C04    N03     108.550    3.000
+ ISG      C05    C04    N03     110.000    3.000
+ ISG      C04    C05    H051    109.470    3.000
+ ISG      C04    C05    H052    109.470    3.000
+ ISG      C04    C05    C06     111.000    3.000
+ ISG      H051   C05    H052    107.900    3.000
+ ISG      H051   C05    C06     109.470    3.000
+ ISG      H052   C05    C06     109.470    3.000
+ ISG      C05    C06    H06     108.340    3.000
+ ISG      C05    C06    C08     111.000    3.000
+ ISG      C05    C06    C07     111.000    3.000
+ ISG      H06    C06    C08     108.340    3.000
+ ISG      H06    C06    C07     108.340    3.000
+ ISG      C08    C06    C07     111.000    3.000
+ ISG      C06    C08    H083    109.470    3.000
+ ISG      C06    C08    H082    109.470    3.000
+ ISG      C06    C08    H081    109.470    3.000
+ ISG      H083   C08    H082    109.470    3.000
+ ISG      H083   C08    H081    109.470    3.000
+ ISG      H082   C08    H081    109.470    3.000
+ ISG      C06    C07    H073    109.470    3.000
+ ISG      C06    C07    H072    109.470    3.000
+ ISG      C06    C07    H071    109.470    3.000
+ ISG      H073   C07    H072    109.470    3.000
+ ISG      H073   C07    H071    109.470    3.000
+ ISG      H072   C07    H071    109.470    3.000
+ ISG      C04    N03    HN03    118.500    3.000
+ ISG      C04    N03    C02     121.500    3.000
+ ISG      HN03   N03    C02     120.000    3.000
+ ISG      N03    C02    O01     123.000    3.000
+ ISG      N03    C02    O22     118.000    3.000
+ ISG      O01    C02    O22     119.000    3.000
+ ISG      C02    O22    C23     120.000    3.000
+ ISG      O22    C23    H231    109.470    3.000
+ ISG      O22    C23    H232    109.470    3.000
+ ISG      O22    C23    C24     109.470    3.000
+ ISG      H231   C23    H232    107.900    3.000
+ ISG      H231   C23    C24     109.470    3.000
+ ISG      H232   C23    C24     109.470    3.000
+ ISG      C23    C24    H24     108.340    3.000
+ ISG      C23    C24    C26     109.470    3.000
+ ISG      C23    C24    C25     111.000    3.000
+ ISG      H24    C24    C26     108.340    3.000
+ ISG      H24    C24    C25     108.340    3.000
+ ISG      C26    C24    C25      60.000    3.000
+ ISG      C24    C26    H261    109.470    3.000
+ ISG      C24    C26    H262    109.470    3.000
+ ISG      C24    C26    C25      60.000    3.000
+ ISG      H261   C26    H262    107.900    3.000
+ ISG      H261   C26    C25     109.470    3.000
+ ISG      H262   C26    C25     109.470    3.000
+ ISG      C26    C25    H25     108.340    3.000
+ ISG      C26    C25    C27     109.470    3.000
+ ISG      C26    C25    C24      60.000    3.000
+ ISG      H25    C25    C27     109.470    3.000
+ ISG      H25    C25    C24     108.340    3.000
+ ISG      C27    C25    C24     109.470    3.000
+ ISG      C25    C27    C32     120.000    3.000
+ ISG      C25    C27    C28     120.000    3.000
+ ISG      C32    C27    C28     120.000    3.000
+ ISG      C27    C32    H32     120.000    3.000
+ ISG      C27    C32    C31     120.000    3.000
+ ISG      H32    C32    C31     120.000    3.000
+ ISG      C32    C31    H31     120.000    3.000
+ ISG      C32    C31    C30     120.000    3.000
+ ISG      H31    C31    C30     120.000    3.000
+ ISG      C31    C30    H30     120.000    3.000
+ ISG      C31    C30    C29     120.000    3.000
+ ISG      H30    C30    C29     120.000    3.000
+ ISG      C30    C29    H29     120.000    3.000
+ ISG      C30    C29    C28     120.000    3.000
+ ISG      H29    C29    C28     120.000    3.000
+ ISG      C29    C28    H28     120.000    3.000
+ ISG      C29    C28    C27     120.000    3.000
+ ISG      H28    C28    C27     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ ISG      var_1            O21    C09    N10    C11              180.000           20.000   2
+ ISG      var_2            C09    N10    C11    C12                0.000           20.000   3
+ ISG      var_3            N10    C11    C19    O20              180.000           20.000   3
+ ISG      var_4            C11    C19    O20    HO20             180.000           20.000   3
+ ISG      var_5            N10    C11    C12    C13              180.000           20.000   3
+ ISG      var_6            C11    C12    C13    C14              180.000           20.000   3
+ ISG      var_7            C12    C13    C17    C16              180.000           20.000   3
+ ISG      var_8            C12    C13    C14    N15              180.000           20.000   3
+ ISG      var_9            C13    C14    N15    C16              180.000           20.000   2
+ ISG      var_10           C14    N15    C16    C17                0.000           20.000   3
+ ISG      var_11           N15    C16    C17    C13              180.000           20.000   3
+ ISG      var_12           O21    C09    C04    N03              180.000           20.000   3
+ ISG      var_13           C09    C04    C05    C06              180.000           20.000   3
+ ISG      var_14           C04    C05    C06    C07              180.000           20.000   3
+ ISG      var_15           C05    C06    C08    H081             180.000           20.000   3
+ ISG      var_16           C05    C06    C07    H071             180.000           20.000   3
+ ISG      var_17           C09    C04    N03    C02                0.000           20.000   3
+ ISG      var_18           C04    N03    C02    O22              180.000           20.000   2
+ ISG      var_19           N03    C02    O22    C23             -175.412           20.000   3
+ ISG      var_20           C02    O22    C23    C24             -120.997           20.000   3
+ ISG      var_21           O22    C23    C24    C26              180.000           20.000   3
+ ISG      var_22           C23    C24    C25    C26              180.000           20.000   3
+ ISG      var_23           C23    C24    C26    C25              180.000           20.000   3
+ ISG      var_24           C24    C26    C25    C27              180.000           20.000   3
+ ISG      var_25           C26    C25    C27    C32              -51.436           20.000   3
+ ISG      CONST_1          C25    C27    C28    C29                0.000            0.000   0
+ ISG      CONST_2          C25    C27    C32    C31                0.000            0.000   0
+ ISG      CONST_3          C27    C32    C31    C30                0.000            0.000   0
+ ISG      CONST_4          C32    C31    C30    C29                0.000            0.000   0
+ ISG      CONST_5          C31    C30    C29    C28                0.000            0.000   0
+ ISG      CONST_6          C30    C29    C28    C27                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ ISG      chir_01          C11    C12    C19    N10       negativ
+ ISG      chir_02          C04    C05    C09    N03       negativ
+ ISG      chir_03          C06    C05    C07    C08       negativ
+ ISG      chir_04          C13    C12    C14    C17       negativ
+ ISG      chir_05          C24    C23    C25    C26       negativ
+ ISG      chir_06          C25    C24    C26    C27       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ ISG      plan-1            C02       0.020
+ ISG      plan-1            N03       0.020
+ ISG      plan-1            O01       0.020
+ ISG      plan-1            O22       0.020
+ ISG      plan-1            HN03      0.020
+ ISG      plan-2            C09       0.020
+ ISG      plan-2            C04       0.020
+ ISG      plan-2            N10       0.020
+ ISG      plan-2            O21       0.020
+ ISG      plan-2            HN10      0.020
+ ISG      plan-3            C14       0.020
+ ISG      plan-3            C13       0.020
+ ISG      plan-3            N15       0.020
+ ISG      plan-3            O18       0.020
+ ISG      plan-3            HN15      0.020
+ ISG      plan-4            C27       0.020
+ ISG      plan-4            C25       0.020
+ ISG      plan-4            C28       0.020
+ ISG      plan-4            C32       0.020
+ ISG      plan-4            C29       0.020
+ ISG      plan-4            C30       0.020
+ ISG      plan-4            C31       0.020
+ ISG      plan-4            H28       0.020
+ ISG      plan-4            H29       0.020
+ ISG      plan-4            H30       0.020
+ ISG      plan-4            H31       0.020
+ ISG      plan-4            H32       0.020
+ ISG      plan-5            N03       0.020
+ ISG      plan-5            C02       0.020
+ ISG      plan-5            C04       0.020
+ ISG      plan-5            HN03      0.020
+ ISG      plan-6            N10       0.020
+ ISG      plan-6            C11       0.020
+ ISG      plan-6            C09       0.020
+ ISG      plan-6            HN10      0.020
+ ISG      plan-7            N15       0.020
+ ISG      plan-7            C16       0.020
+ ISG      plan-7            C14       0.020
+ ISG      plan-7            HN15      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-ISG
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-ISG  1 SG      2 C19       .           1.810    0.020
+# ------------------------------------------------------

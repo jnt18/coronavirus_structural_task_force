@@ -1,0 +1,1049 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+P8U      P8U '.                                   ' .                  73  32 .
+P8L      P8L '.                                   ' .                  73  32 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-P8U  CYS      .        .        P8U      .        .
+ bond_CYS-SG_=_P8U-C14
+CYS-P8L  CYS      .        .        P8L      .        .
+ bond_CYS-SG_=_P8L-C14
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_P8U
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ P8U           O4     O    O         0.000     19.006   19.463    0.330
+ P8U           C7     C    C         0.000     19.617   18.790   -0.446
+ P8U           N2     N    NH1       0.000     19.092   17.507   -0.931
+ P8U           HN2    H    H         0.000     19.628   16.975   -1.602
+ P8U           C8     C    CH1       0.000     17.820   16.990   -0.466
+ P8U           H8     H    H         0.000     17.399   17.672    0.286
+ P8U           C14    C    CH2       0.000     18.150   15.649    0.187
+ P8U           H141   H    H         0.000     18.889   15.818    0.973
+ P8U           H142   H    H         0.000     18.572   14.988   -0.572
+ P8U           O3     O    OH1       0.000     17.001   15.055    0.742
+ P8U           HO3    H    H         0.000     17.243   14.212    1.145
+ P8U           C9     C    CH2       0.000     16.805   16.799   -1.616
+ P8U           H91    H    H         0.000     15.910   16.319   -1.214
+ P8U           H92    H    H         0.000     17.254   16.153   -2.373
+ P8U           C10    C    CH1       0.000     16.416   18.176   -2.264
+ P8U           H10    H    H         0.000     17.320   18.653   -2.667
+ P8U           C13    C    CH2       0.000     15.800   19.078   -1.237
+ P8U           H131   H    H         0.000     16.505   19.845   -0.911
+ P8U           H132   H    H         0.000     15.453   18.512   -0.370
+ P8U           C12    C    CH2       0.000     14.576   19.757   -1.944
+ P8U           H121   H    H         0.000     14.801   20.786   -2.230
+ P8U           H122   H    H         0.000     13.689   19.743   -1.307
+ P8U           N3     N    NH1       0.000     14.316   18.918   -3.205
+ P8U           HN3    H    H         0.000     13.514   19.006   -3.813
+ P8U           C11    C    C         0.000     15.428   17.963   -3.383
+ P8U           O2     O    O         0.000     15.491   17.187   -4.278
+ P8U           C2     C    CH1       0.000     20.982   19.222   -0.987
+ P8U           H2     H    H         0.000     21.220   18.643   -1.891
+ P8U           C3     C    CH2       0.000     22.033   18.939    0.096
+ P8U           H31    H    H         0.000     22.043   17.866    0.300
+ P8U           H32    H    H         0.000     21.752   19.478    1.003
+ P8U           C4     C    CH1       0.000     23.447   19.394   -0.363
+ P8U           H4     H    H         0.000     23.423   20.458   -0.635
+ P8U           C5     C    CH3       0.000     24.442   19.177    0.812
+ P8U           H53    H    H         0.000     24.137   19.748    1.653
+ P8U           H52    H    H         0.000     24.465   18.150    1.080
+ P8U           H51    H    H         0.000     25.416   19.482    0.520
+ P8U           C6     C    CH3       0.000     23.935   18.561   -1.567
+ P8U           H63    H    H         0.000     23.982   17.536   -1.297
+ P8U           H62    H    H         0.000     23.263   18.679   -2.379
+ P8U           H61    H    H         0.000     24.899   18.889   -1.861
+ P8U           N1     N    NH1       0.000     20.957   20.633   -1.308
+ P8U           HN1    H    H         0.000     21.688   21.252   -0.987
+ P8U           C1     C    C         0.000     19.846   21.134   -2.108
+ P8U           O1     O    O         0.000     19.169   20.370   -2.721
+ P8U           O5     O    O2        0.000     19.621   22.530   -2.116
+ P8U           C15    C    CH2       0.000     18.581   22.977   -2.975
+ P8U           H151   H    H         0.000     17.719   23.282   -2.378
+ P8U           H152   H    H         0.000     18.288   22.168   -3.647
+ P8U           C16    C    CH1       0.000     19.090   24.186   -3.808
+ P8U           H16    H    H         0.000     19.949   24.025   -4.474
+ P8U           C18    C    CH2       0.000     17.983   25.083   -4.292
+ P8U           H181   H    H         0.000     16.953   25.059   -3.930
+ P8U           H182   H    H         0.000     18.048   25.749   -5.155
+ P8U           C17    C    CH1       0.000     18.919   25.600   -3.164
+ P8U           H17    H    H         0.000     18.413   25.503   -2.193
+ P8U           C19    C    CH1       0.000     20.061   26.624   -3.050
+ P8U           H19    H    H         0.000     20.680   26.577   -3.957
+ P8U           C24    C    CH2       0.000     19.462   28.032   -2.919
+ P8U           H241   H    H         0.000     18.800   28.041   -2.051
+ P8U           H242   H    H         0.000     18.881   28.241   -3.820
+ P8U           C23    C    CH2       0.000     20.555   29.111   -2.747
+ P8U           H231   H    H         0.000     20.059   30.070   -2.585
+ P8U           H232   H    H         0.000     21.135   29.154   -3.671
+ P8U           C22    C    CH2       0.000     21.492   28.811   -1.566
+ P8U           H221   H    H         0.000     20.928   28.938   -0.639
+ P8U           H222   H    H         0.000     22.316   29.527   -1.591
+ P8U           C21    C    CH2       0.000     22.052   27.380   -1.635
+ P8U           H211   H    H         0.000     22.588   27.181   -0.705
+ P8U           H212   H    H         0.000     22.749   27.329   -2.474
+ P8U           C20    C    CH2       0.000     20.935   26.323   -1.825
+ P8U           H202   H    H         0.000     20.315   26.318   -0.926
+ P8U           H201   H    H         0.000     21.408   25.346   -1.945
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ P8U      O4     n/a    C7     START
+ P8U      C7     O4     C2     .
+ P8U      N2     C7     C8     .
+ P8U      HN2    N2     .      .
+ P8U      C8     N2     C9     .
+ P8U      H8     C8     .      .
+ P8U      C14    C8     O3     .
+ P8U      H141   C14    .      .
+ P8U      H142   C14    .      .
+ P8U      O3     C14    HO3    .
+ P8U      HO3    O3     .      .
+ P8U      C9     C8     C10    .
+ P8U      H91    C9     .      .
+ P8U      H92    C9     .      .
+ P8U      C10    C9     C13    .
+ P8U      H10    C10    .      .
+ P8U      C13    C10    C12    .
+ P8U      H131   C13    .      .
+ P8U      H132   C13    .      .
+ P8U      C12    C13    N3     .
+ P8U      H121   C12    .      .
+ P8U      H122   C12    .      .
+ P8U      N3     C12    C11    .
+ P8U      HN3    N3     .      .
+ P8U      C11    N3     O2     .
+ P8U      O2     C11    .      .
+ P8U      C2     C7     N1     .
+ P8U      H2     C2     .      .
+ P8U      C3     C2     C4     .
+ P8U      H31    C3     .      .
+ P8U      H32    C3     .      .
+ P8U      C4     C3     C6     .
+ P8U      H4     C4     .      .
+ P8U      C5     C4     H51    .
+ P8U      H53    C5     .      .
+ P8U      H52    C5     .      .
+ P8U      H51    C5     .      .
+ P8U      C6     C4     H61    .
+ P8U      H63    C6     .      .
+ P8U      H62    C6     .      .
+ P8U      H61    C6     .      .
+ P8U      N1     C2     C1     .
+ P8U      HN1    N1     .      .
+ P8U      C1     N1     O5     .
+ P8U      O1     C1     .      .
+ P8U      O5     C1     C15    .
+ P8U      C15    O5     C16    .
+ P8U      H151   C15    .      .
+ P8U      H152   C15    .      .
+ P8U      C16    C15    C18    .
+ P8U      H16    C16    .      .
+ P8U      C18    C16    C17    .
+ P8U      H181   C18    .      .
+ P8U      H182   C18    .      .
+ P8U      C17    C18    C19    .
+ P8U      H17    C17    .      .
+ P8U      C19    C17    C24    .
+ P8U      H19    C19    .      .
+ P8U      C24    C19    C23    .
+ P8U      H241   C24    .      .
+ P8U      H242   C24    .      .
+ P8U      C23    C24    C22    .
+ P8U      H231   C23    .      .
+ P8U      H232   C23    .      .
+ P8U      C22    C23    C21    .
+ P8U      H221   C22    .      .
+ P8U      H222   C22    .      .
+ P8U      C21    C22    C20    .
+ P8U      H211   C21    .      .
+ P8U      H212   C21    .      .
+ P8U      C20    C21    H201   .
+ P8U      H202   C20    .      .
+ P8U      H201   C20    .      END
+ P8U      C10    C11    .    ADD
+ P8U      C16    C17    .    ADD
+ P8U      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ P8U      N1     C2        single      1.450    0.020
+ P8U      C1     N1        single      1.330    0.020
+ P8U      C3     C2        single      1.524    0.020
+ P8U      C2     C7        single      1.500    0.020
+ P8U      C4     C3        single      1.524    0.020
+ P8U      C6     C4        single      1.524    0.020
+ P8U      C5     C4        single      1.524    0.020
+ P8U      C9     C8        single      1.524    0.020
+ P8U      C14    C8        single      1.524    0.020
+ P8U      C8     N2        single      1.450    0.020
+ P8U      C10    C9        single      1.524    0.020
+ P8U      C10    C11       single      1.500    0.020
+ P8U      C13    C10       single      1.524    0.020
+ P8U      C11    N3        single      1.330    0.020
+ P8U      O2     C11       double      1.220    0.020
+ P8U      C16    C17       single      1.524    0.020
+ P8U      C16    C15       single      1.524    0.020
+ P8U      C18    C16       single      1.524    0.020
+ P8U      C19    C17       single      1.524    0.020
+ P8U      C17    C18       single      1.524    0.020
+ P8U      C19    C20       single      1.524    0.020
+ P8U      C24    C19       single      1.524    0.020
+ P8U      C20    C21       single      1.524    0.020
+ P8U      C21    C22       single      1.524    0.020
+ P8U      C22    C23       single      1.524    0.020
+ P8U      O1     C1        double      1.220    0.020
+ P8U      O5     C1        single      1.454    0.020
+ P8U      C12    C13       single      1.524    0.020
+ P8U      N3     C12       single      1.450    0.020
+ P8U      O3     C14       single      1.432    0.020
+ P8U      C15    O5        single      1.426    0.020
+ P8U      C23    C24       single      1.524    0.020
+ P8U      N2     C7        single      1.330    0.020
+ P8U      C7     O4        double      1.220    0.020
+ P8U      HN1    N1        single      1.010    0.020
+ P8U      H2     C2        single      1.099    0.020
+ P8U      H31    C3        single      1.092    0.020
+ P8U      H32    C3        single      1.092    0.020
+ P8U      H4     C4        single      1.099    0.020
+ P8U      H61    C6        single      1.059    0.020
+ P8U      H62    C6        single      1.059    0.020
+ P8U      H63    C6        single      1.059    0.020
+ P8U      H8     C8        single      1.099    0.020
+ P8U      H91    C9        single      1.092    0.020
+ P8U      H92    C9        single      1.092    0.020
+ P8U      H10    C10       single      1.099    0.020
+ P8U      H16    C16       single      1.099    0.020
+ P8U      H17    C17       single      1.099    0.020
+ P8U      H19    C19       single      1.099    0.020
+ P8U      H201   C20       single      1.092    0.020
+ P8U      H202   C20       single      1.092    0.020
+ P8U      H211   C21       single      1.092    0.020
+ P8U      H212   C21       single      1.092    0.020
+ P8U      H221   C22       single      1.092    0.020
+ P8U      H222   C22       single      1.092    0.020
+ P8U      H121   C12       single      1.092    0.020
+ P8U      H122   C12       single      1.092    0.020
+ P8U      H131   C13       single      1.092    0.020
+ P8U      H132   C13       single      1.092    0.020
+ P8U      H141   C14       single      1.092    0.020
+ P8U      H142   C14       single      1.092    0.020
+ P8U      H151   C15       single      1.092    0.020
+ P8U      H152   C15       single      1.092    0.020
+ P8U      H181   C18       single      1.092    0.020
+ P8U      H182   C18       single      1.092    0.020
+ P8U      H231   C23       single      1.092    0.020
+ P8U      H232   C23       single      1.092    0.020
+ P8U      H241   C24       single      1.092    0.020
+ P8U      H242   C24       single      1.092    0.020
+ P8U      H51    C5        single      1.059    0.020
+ P8U      H52    C5        single      1.059    0.020
+ P8U      H53    C5        single      1.059    0.020
+ P8U      HN2    N2        single      1.010    0.020
+ P8U      HN3    N3        single      1.010    0.020
+ P8U      HO3    O3        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ P8U      O4     C7     N2      123.000    3.000
+ P8U      O4     C7     C2      120.500    3.000
+ P8U      N2     C7     C2      116.500    3.000
+ P8U      C7     N2     HN2     120.000    3.000
+ P8U      C7     N2     C8      121.500    3.000
+ P8U      HN2    N2     C8      118.500    3.000
+ P8U      N2     C8     H8      108.550    3.000
+ P8U      N2     C8     C14     110.000    3.000
+ P8U      N2     C8     C9      110.000    3.000
+ P8U      H8     C8     C14     108.340    3.000
+ P8U      H8     C8     C9      108.340    3.000
+ P8U      C14    C8     C9      109.470    3.000
+ P8U      C8     C14    H141    109.470    3.000
+ P8U      C8     C14    H142    109.470    3.000
+ P8U      C8     C14    O3      109.470    3.000
+ P8U      H141   C14    H142    107.900    3.000
+ P8U      H141   C14    O3      109.470    3.000
+ P8U      H142   C14    O3      109.470    3.000
+ P8U      C14    O3     HO3     109.470    3.000
+ P8U      C8     C9     H91     109.470    3.000
+ P8U      C8     C9     H92     109.470    3.000
+ P8U      C8     C9     C10     111.000    3.000
+ P8U      H91    C9     H92     107.900    3.000
+ P8U      H91    C9     C10     109.470    3.000
+ P8U      H92    C9     C10     109.470    3.000
+ P8U      C9     C10    H10     108.340    3.000
+ P8U      C9     C10    C13     109.470    3.000
+ P8U      C9     C10    C11     109.470    3.000
+ P8U      H10    C10    C13     108.340    3.000
+ P8U      H10    C10    C11     108.810    3.000
+ P8U      C13    C10    C11     109.470    3.000
+ P8U      C10    C13    H131    109.470    3.000
+ P8U      C10    C13    H132    109.470    3.000
+ P8U      C10    C13    C12     111.000    3.000
+ P8U      H131   C13    H132    107.900    3.000
+ P8U      H131   C13    C12     109.470    3.000
+ P8U      H132   C13    C12     109.470    3.000
+ P8U      C13    C12    H121    109.470    3.000
+ P8U      C13    C12    H122    109.470    3.000
+ P8U      C13    C12    N3      112.000    3.000
+ P8U      H121   C12    H122    107.900    3.000
+ P8U      H121   C12    N3      109.470    3.000
+ P8U      H122   C12    N3      109.470    3.000
+ P8U      C12    N3     HN3     118.500    3.000
+ P8U      C12    N3     C11     121.500    3.000
+ P8U      HN3    N3     C11     120.000    3.000
+ P8U      N3     C11    O2      123.000    3.000
+ P8U      N3     C11    C10     116.500    3.000
+ P8U      O2     C11    C10     120.500    3.000
+ P8U      C7     C2     H2      108.810    3.000
+ P8U      C7     C2     C3      109.470    3.000
+ P8U      C7     C2     N1      111.600    3.000
+ P8U      H2     C2     C3      108.340    3.000
+ P8U      H2     C2     N1      108.550    3.000
+ P8U      C3     C2     N1      110.000    3.000
+ P8U      C2     C3     H31     109.470    3.000
+ P8U      C2     C3     H32     109.470    3.000
+ P8U      C2     C3     C4      111.000    3.000
+ P8U      H31    C3     H32     107.900    3.000
+ P8U      H31    C3     C4      109.470    3.000
+ P8U      H32    C3     C4      109.470    3.000
+ P8U      C3     C4     H4      108.340    3.000
+ P8U      C3     C4     C5      111.000    3.000
+ P8U      C3     C4     C6      111.000    3.000
+ P8U      H4     C4     C5      108.340    3.000
+ P8U      H4     C4     C6      108.340    3.000
+ P8U      C5     C4     C6      111.000    3.000
+ P8U      C4     C5     H53     109.470    3.000
+ P8U      C4     C5     H52     109.470    3.000
+ P8U      C4     C5     H51     109.470    3.000
+ P8U      H53    C5     H52     109.470    3.000
+ P8U      H53    C5     H51     109.470    3.000
+ P8U      H52    C5     H51     109.470    3.000
+ P8U      C4     C6     H63     109.470    3.000
+ P8U      C4     C6     H62     109.470    3.000
+ P8U      C4     C6     H61     109.470    3.000
+ P8U      H63    C6     H62     109.470    3.000
+ P8U      H63    C6     H61     109.470    3.000
+ P8U      H62    C6     H61     109.470    3.000
+ P8U      C2     N1     HN1     118.500    3.000
+ P8U      C2     N1     C1      121.500    3.000
+ P8U      HN1    N1     C1      120.000    3.000
+ P8U      N1     C1     O1      123.000    3.000
+ P8U      N1     C1     O5      118.000    3.000
+ P8U      O1     C1     O5      119.000    3.000
+ P8U      C1     O5     C15     120.000    3.000
+ P8U      O5     C15    H151    109.470    3.000
+ P8U      O5     C15    H152    109.470    3.000
+ P8U      O5     C15    C16     109.470    3.000
+ P8U      H151   C15    H152    107.900    3.000
+ P8U      H151   C15    C16     109.470    3.000
+ P8U      H152   C15    C16     109.470    3.000
+ P8U      C15    C16    H16     108.340    3.000
+ P8U      C15    C16    C18     109.470    3.000
+ P8U      C15    C16    C17     111.000    3.000
+ P8U      H16    C16    C18     108.340    3.000
+ P8U      H16    C16    C17     108.340    3.000
+ P8U      C18    C16    C17      60.000    3.000
+ P8U      C16    C18    H181    109.470    3.000
+ P8U      C16    C18    H182    109.470    3.000
+ P8U      C16    C18    C17      60.000    3.000
+ P8U      H181   C18    H182    107.900    3.000
+ P8U      H181   C18    C17     109.470    3.000
+ P8U      H182   C18    C17     109.470    3.000
+ P8U      C18    C17    H17     108.340    3.000
+ P8U      C18    C17    C19     111.000    3.000
+ P8U      C18    C17    C16      60.000    3.000
+ P8U      H17    C17    C19     108.340    3.000
+ P8U      H17    C17    C16     108.340    3.000
+ P8U      C19    C17    C16     111.000    3.000
+ P8U      C17    C19    H19     108.340    3.000
+ P8U      C17    C19    C24     111.000    3.000
+ P8U      C17    C19    C20     111.000    3.000
+ P8U      H19    C19    C24     108.340    3.000
+ P8U      H19    C19    C20     108.340    3.000
+ P8U      C24    C19    C20     109.470    3.000
+ P8U      C19    C24    H241    109.470    3.000
+ P8U      C19    C24    H242    109.470    3.000
+ P8U      C19    C24    C23     111.000    3.000
+ P8U      H241   C24    H242    107.900    3.000
+ P8U      H241   C24    C23     109.470    3.000
+ P8U      H242   C24    C23     109.470    3.000
+ P8U      C24    C23    H231    109.470    3.000
+ P8U      C24    C23    H232    109.470    3.000
+ P8U      C24    C23    C22     111.000    3.000
+ P8U      H231   C23    H232    107.900    3.000
+ P8U      H231   C23    C22     109.470    3.000
+ P8U      H232   C23    C22     109.470    3.000
+ P8U      C23    C22    H221    109.470    3.000
+ P8U      C23    C22    H222    109.470    3.000
+ P8U      C23    C22    C21     111.000    3.000
+ P8U      H221   C22    H222    107.900    3.000
+ P8U      H221   C22    C21     109.470    3.000
+ P8U      H222   C22    C21     109.470    3.000
+ P8U      C22    C21    H211    109.470    3.000
+ P8U      C22    C21    H212    109.470    3.000
+ P8U      C22    C21    C20     111.000    3.000
+ P8U      H211   C21    H212    107.900    3.000
+ P8U      H211   C21    C20     109.470    3.000
+ P8U      H212   C21    C20     109.470    3.000
+ P8U      C21    C20    H202    109.470    3.000
+ P8U      C21    C20    H201    109.470    3.000
+ P8U      C21    C20    C19     111.000    3.000
+ P8U      H202   C20    H201    107.900    3.000
+ P8U      H202   C20    C19     109.470    3.000
+ P8U      H201   C20    C19     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ P8U      var_1            O4     C7     N2     C8               180.000           20.000   2
+ P8U      var_2            C7     N2     C8     C9                 0.000           20.000   3
+ P8U      var_3            N2     C8     C14    O3               180.000           20.000   3
+ P8U      var_4            C8     C14    O3     HO3              180.000           20.000   3
+ P8U      var_5            N2     C8     C9     C10              180.000           20.000   3
+ P8U      var_6            C8     C9     C10    C13              180.000           20.000   3
+ P8U      var_7            C9     C10    C11    N3               180.000           20.000   3
+ P8U      var_8            C9     C10    C13    C12              180.000           20.000   3
+ P8U      var_9            C10    C13    C12    N3               180.000           20.000   3
+ P8U      var_10           C13    C12    N3     C11                0.000           20.000   3
+ P8U      var_11           C12    N3     C11    O2               180.000           20.000   2
+ P8U      var_12           O4     C7     C2     N1               180.000           20.000   3
+ P8U      var_13           C7     C2     C3     C4               180.000           20.000   3
+ P8U      var_14           C2     C3     C4     C6               180.000           20.000   3
+ P8U      var_15           C3     C4     C5     H51              180.000           20.000   3
+ P8U      var_16           C3     C4     C6     H61              180.000           20.000   3
+ P8U      var_17           C7     C2     N1     C1                 0.000           20.000   3
+ P8U      var_18           C2     N1     C1     O5               180.000           20.000   2
+ P8U      var_19           N1     C1     O5     C15              176.216           20.000   3
+ P8U      var_20           C1     O5     C15    C16             -132.641           20.000   3
+ P8U      var_21           O5     C15    C16    C18              180.000           20.000   3
+ P8U      var_22           C15    C16    C17    C18              180.000           20.000   3
+ P8U      var_23           C15    C16    C18    C17              180.000           20.000   3
+ P8U      var_24           C16    C18    C17    C19              180.000           20.000   3
+ P8U      var_25           C18    C17    C19    C24              180.000           20.000   3
+ P8U      var_26           C17    C19    C20    C21              180.000           20.000   3
+ P8U      var_27           C17    C19    C24    C23              180.000           20.000   3
+ P8U      var_28           C19    C24    C23    C22              180.000           20.000   3
+ P8U      var_29           C24    C23    C22    C21              180.000           20.000   3
+ P8U      var_30           C23    C22    C21    C20              180.000           20.000   3
+ P8U      var_31           C22    C21    C20    C19              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ P8U      chir_01          C2     N1     C3     C7        negativ
+ P8U      chir_02          C4     C3     C6     C5        positiv
+ P8U      chir_03          C8     C9     C14    N2        negativ
+ P8U      chir_04          C10    C9     C11    C13       negativ
+ P8U      chir_05          C16    C17    C15    C18       negativ
+ P8U      chir_06          C17    C16    C19    C18       negativ
+ P8U      chir_07          C19    C17    C20    C24       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ P8U      plan-1            N1        0.020
+ P8U      plan-1            C2        0.020
+ P8U      plan-1            C1        0.020
+ P8U      plan-1            HN1       0.020
+ P8U      plan-2            C11       0.020
+ P8U      plan-2            C10       0.020
+ P8U      plan-2            N3        0.020
+ P8U      plan-2            O2        0.020
+ P8U      plan-2            HN3       0.020
+ P8U      plan-3            C1        0.020
+ P8U      plan-3            N1        0.020
+ P8U      plan-3            O1        0.020
+ P8U      plan-3            O5        0.020
+ P8U      plan-3            HN1       0.020
+ P8U      plan-4            C7        0.020
+ P8U      plan-4            C2        0.020
+ P8U      plan-4            N2        0.020
+ P8U      plan-4            O4        0.020
+ P8U      plan-4            HN2       0.020
+ P8U      plan-5            N2        0.020
+ P8U      plan-5            C8        0.020
+ P8U      plan-5            C7        0.020
+ P8U      plan-5            HN2       0.020
+ P8U      plan-6            N3        0.020
+ P8U      plan-6            C11       0.020
+ P8U      plan-6            C12       0.020
+ P8U      plan-6            HN3       0.020
+#
+data_comp_P8L
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ P8L           O4     O    O         0.000     18.799   19.589    0.145
+ P8L           C7     C    C         0.000     19.513   18.863   -0.481
+ P8L           N2     N    NH1       0.000     19.109   17.489   -0.823
+ P8L           HN2    H    H         0.000     19.735   16.909   -1.363
+ P8L           C8     C    CH1       0.000     17.828   16.950   -0.399
+ P8L           H8     H    H         0.000     17.395   17.605    0.370
+ P8L           C14    C    CH2       0.000     18.088   15.565    0.204
+ P8L           H141   H    H         0.000     18.586   14.927   -0.530
+ P8L           H142   H    H         0.000     17.143   15.106    0.502
+ P8L           O3     O    OH1       0.000     18.922   15.719    1.343
+ P8L           HO3    H    H         0.000     19.094   14.852    1.733
+ P8L           C9     C    CH2       0.000     16.854   16.858   -1.603
+ P8L           H91    H    H         0.000     15.920   16.405   -1.263
+ P8L           H92    H    H         0.000     17.306   16.225   -2.370
+ P8L           C10    C    CH1       0.000     16.560   18.282   -2.203
+ P8L           H10    H    H         0.000     17.512   18.781   -2.430
+ P8L           C13    C    CH2       0.000     15.808   19.093   -1.189
+ P8L           H131   H    H         0.000     16.423   19.912   -0.810
+ P8L           H132   H    H         0.000     15.481   18.469   -0.355
+ P8L           C12    C    CH2       0.000     14.556   19.677   -1.928
+ P8L           H121   H    H         0.000     14.631   20.761   -2.034
+ P8L           H122   H    H         0.000     13.634   19.427   -1.399
+ P8L           N3     N    NH1       0.000     14.544   19.024   -3.319
+ P8L           HN3    H    H         0.000     13.829   19.155   -4.020
+ P8L           C11    C    C         0.000     15.744   18.175   -3.468
+ P8L           O2     O    O         0.000     15.992   17.559   -4.457
+ P8L           C2     C    CH1       0.000     20.884   19.340   -0.965
+ P8L           H2     H    H         0.000     21.151   18.813   -1.891
+ P8L           C3     C    CH2       0.000     21.949   19.066    0.109
+ P8L           H31    H    H         0.000     22.044   17.985    0.232
+ P8L           H32    H    H         0.000     21.612   19.510    1.048
+ P8L           C4     C    CH1       0.000     23.329   19.668   -0.286
+ P8L           H4     H    H         0.000     23.231   20.754   -0.420
+ P8L           C5     C    CH3       0.000     24.347   19.374    0.853
+ P8L           H53    H    H         0.000     24.012   19.814    1.759
+ P8L           H52    H    H         0.000     24.441   18.326    0.991
+ P8L           H51    H    H         0.000     25.296   19.778    0.601
+ P8L           C6     C    CH3       0.000     23.873   19.034   -1.584
+ P8L           H63    H    H         0.000     23.992   17.989   -1.449
+ P8L           H62    H    H         0.000     23.193   19.209   -2.379
+ P8L           H61    H    H         0.000     24.812   19.464   -1.826
+ P8L           N1     N    NH1       0.000     20.797   20.762   -1.224
+ P8L           HN1    H    H         0.000     21.183   21.436   -0.578
+ P8L           C1     C    C         0.000     20.131   21.187   -2.453
+ P8L           O1     O    O         0.000     19.520   20.402   -3.104
+ P8L           O5     O    O2        0.000     20.233   22.540   -2.842
+ P8L           C15    C    CH2       0.000     18.984   23.130   -3.157
+ P8L           H151   H    H         0.000     18.423   23.355   -2.248
+ P8L           H152   H    H         0.000     18.393   22.467   -3.793
+ P8L           C16    C    CH1       0.000     19.287   24.446   -3.919
+ P8L           H16    H    H         0.000     20.116   24.435   -4.641
+ P8L           C18    C    CH2       0.000     18.076   25.267   -4.264
+ P8L           H181   H    H         0.000     17.076   25.111   -3.854
+ P8L           H182   H    H         0.000     18.029   26.008   -5.065
+ P8L           C17    C    CH1       0.000     19.025   25.774   -3.141
+ P8L           H17    H    H         0.000     18.589   25.547   -2.158
+ P8L           C19    C    CH1       0.000     20.118   26.840   -2.988
+ P8L           H19    H    H         0.000     20.760   26.828   -3.880
+ P8L           C24    C    CH2       0.000     19.476   28.226   -2.851
+ P8L           H241   H    H         0.000     18.828   28.225   -1.972
+ P8L           H242   H    H         0.000     18.877   28.423   -3.743
+ P8L           C23    C    CH2       0.000     20.552   29.323   -2.699
+ P8L           H231   H    H         0.000     20.043   30.278   -2.552
+ P8L           H232   H    H         0.000     21.131   29.359   -3.624
+ P8L           C22    C    CH2       0.000     21.493   29.053   -1.513
+ P8L           H221   H    H         0.000     20.926   29.192   -0.590
+ P8L           H222   H    H         0.000     22.306   29.781   -1.552
+ P8L           C21    C    CH2       0.000     22.075   27.628   -1.550
+ P8L           H211   H    H         0.000     22.595   27.450   -0.607
+ P8L           H212   H    H         0.000     22.790   27.575   -2.374
+ P8L           C20    C    CH2       0.000     20.976   26.553   -1.747
+ P8L           H202   H    H         0.000     20.341   26.544   -0.858
+ P8L           H201   H    H         0.000     21.462   25.581   -1.856
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ P8L      O4     n/a    C7     START
+ P8L      C7     O4     C2     .
+ P8L      N2     C7     C8     .
+ P8L      HN2    N2     .      .
+ P8L      C8     N2     C9     .
+ P8L      H8     C8     .      .
+ P8L      C14    C8     O3     .
+ P8L      H141   C14    .      .
+ P8L      H142   C14    .      .
+ P8L      O3     C14    HO3    .
+ P8L      HO3    O3     .      .
+ P8L      C9     C8     C10    .
+ P8L      H91    C9     .      .
+ P8L      H92    C9     .      .
+ P8L      C10    C9     C13    .
+ P8L      H10    C10    .      .
+ P8L      C13    C10    C12    .
+ P8L      H131   C13    .      .
+ P8L      H132   C13    .      .
+ P8L      C12    C13    N3     .
+ P8L      H121   C12    .      .
+ P8L      H122   C12    .      .
+ P8L      N3     C12    C11    .
+ P8L      HN3    N3     .      .
+ P8L      C11    N3     O2     .
+ P8L      O2     C11    .      .
+ P8L      C2     C7     N1     .
+ P8L      H2     C2     .      .
+ P8L      C3     C2     C4     .
+ P8L      H31    C3     .      .
+ P8L      H32    C3     .      .
+ P8L      C4     C3     C6     .
+ P8L      H4     C4     .      .
+ P8L      C5     C4     H51    .
+ P8L      H53    C5     .      .
+ P8L      H52    C5     .      .
+ P8L      H51    C5     .      .
+ P8L      C6     C4     H61    .
+ P8L      H63    C6     .      .
+ P8L      H62    C6     .      .
+ P8L      H61    C6     .      .
+ P8L      N1     C2     C1     .
+ P8L      HN1    N1     .      .
+ P8L      C1     N1     O5     .
+ P8L      O1     C1     .      .
+ P8L      O5     C1     C15    .
+ P8L      C15    O5     C16    .
+ P8L      H151   C15    .      .
+ P8L      H152   C15    .      .
+ P8L      C16    C15    C18    .
+ P8L      H16    C16    .      .
+ P8L      C18    C16    C17    .
+ P8L      H181   C18    .      .
+ P8L      H182   C18    .      .
+ P8L      C17    C18    C19    .
+ P8L      H17    C17    .      .
+ P8L      C19    C17    C24    .
+ P8L      H19    C19    .      .
+ P8L      C24    C19    C23    .
+ P8L      H241   C24    .      .
+ P8L      H242   C24    .      .
+ P8L      C23    C24    C22    .
+ P8L      H231   C23    .      .
+ P8L      H232   C23    .      .
+ P8L      C22    C23    C21    .
+ P8L      H221   C22    .      .
+ P8L      H222   C22    .      .
+ P8L      C21    C22    C20    .
+ P8L      H211   C21    .      .
+ P8L      H212   C21    .      .
+ P8L      C20    C21    H201   .
+ P8L      H202   C20    .      .
+ P8L      H201   C20    .      END
+ P8L      C10    C11    .    ADD
+ P8L      C16    C17    .    ADD
+ P8L      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ P8L      N1     C2        single      1.450    0.020
+ P8L      C1     N1        single      1.330    0.020
+ P8L      C3     C2        single      1.524    0.020
+ P8L      C2     C7        single      1.500    0.020
+ P8L      C4     C3        single      1.524    0.020
+ P8L      C6     C4        single      1.524    0.020
+ P8L      C5     C4        single      1.524    0.020
+ P8L      C9     C8        single      1.524    0.020
+ P8L      C14    C8        single      1.524    0.020
+ P8L      C8     N2        single      1.450    0.020
+ P8L      C10    C9        single      1.524    0.020
+ P8L      C10    C11       single      1.500    0.020
+ P8L      C13    C10       single      1.524    0.020
+ P8L      C11    N3        single      1.330    0.020
+ P8L      O2     C11       double      1.220    0.020
+ P8L      C16    C17       single      1.524    0.020
+ P8L      C16    C15       single      1.524    0.020
+ P8L      C18    C16       single      1.524    0.020
+ P8L      C19    C17       single      1.524    0.020
+ P8L      C17    C18       single      1.524    0.020
+ P8L      C19    C20       single      1.524    0.020
+ P8L      C24    C19       single      1.524    0.020
+ P8L      C20    C21       single      1.524    0.020
+ P8L      C21    C22       single      1.524    0.020
+ P8L      C22    C23       single      1.524    0.020
+ P8L      O1     C1        double      1.220    0.020
+ P8L      O5     C1        single      1.454    0.020
+ P8L      C12    C13       single      1.524    0.020
+ P8L      N3     C12       single      1.450    0.020
+ P8L      O3     C14       single      1.432    0.020
+ P8L      C15    O5        single      1.426    0.020
+ P8L      C23    C24       single      1.524    0.020
+ P8L      N2     C7        single      1.330    0.020
+ P8L      C7     O4        double      1.220    0.020
+ P8L      HN1    N1        single      1.010    0.020
+ P8L      H2     C2        single      1.099    0.020
+ P8L      H31    C3        single      1.092    0.020
+ P8L      H32    C3        single      1.092    0.020
+ P8L      H4     C4        single      1.099    0.020
+ P8L      H61    C6        single      1.059    0.020
+ P8L      H62    C6        single      1.059    0.020
+ P8L      H63    C6        single      1.059    0.020
+ P8L      H8     C8        single      1.099    0.020
+ P8L      H91    C9        single      1.092    0.020
+ P8L      H92    C9        single      1.092    0.020
+ P8L      H10    C10       single      1.099    0.020
+ P8L      H16    C16       single      1.099    0.020
+ P8L      H17    C17       single      1.099    0.020
+ P8L      H19    C19       single      1.099    0.020
+ P8L      H201   C20       single      1.092    0.020
+ P8L      H202   C20       single      1.092    0.020
+ P8L      H211   C21       single      1.092    0.020
+ P8L      H212   C21       single      1.092    0.020
+ P8L      H221   C22       single      1.092    0.020
+ P8L      H222   C22       single      1.092    0.020
+ P8L      H121   C12       single      1.092    0.020
+ P8L      H122   C12       single      1.092    0.020
+ P8L      H131   C13       single      1.092    0.020
+ P8L      H132   C13       single      1.092    0.020
+ P8L      H141   C14       single      1.092    0.020
+ P8L      H142   C14       single      1.092    0.020
+ P8L      H151   C15       single      1.092    0.020
+ P8L      H152   C15       single      1.092    0.020
+ P8L      H181   C18       single      1.092    0.020
+ P8L      H182   C18       single      1.092    0.020
+ P8L      H231   C23       single      1.092    0.020
+ P8L      H232   C23       single      1.092    0.020
+ P8L      H241   C24       single      1.092    0.020
+ P8L      H242   C24       single      1.092    0.020
+ P8L      H51    C5        single      1.059    0.020
+ P8L      H52    C5        single      1.059    0.020
+ P8L      H53    C5        single      1.059    0.020
+ P8L      HN2    N2        single      1.010    0.020
+ P8L      HN3    N3        single      1.010    0.020
+ P8L      HO3    O3        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ P8L      O4     C7     N2      123.000    3.000
+ P8L      O4     C7     C2      120.500    3.000
+ P8L      N2     C7     C2      116.500    3.000
+ P8L      C7     N2     HN2     120.000    3.000
+ P8L      C7     N2     C8      121.500    3.000
+ P8L      HN2    N2     C8      118.500    3.000
+ P8L      N2     C8     H8      108.550    3.000
+ P8L      N2     C8     C14     110.000    3.000
+ P8L      N2     C8     C9      110.000    3.000
+ P8L      H8     C8     C14     108.340    3.000
+ P8L      H8     C8     C9      108.340    3.000
+ P8L      C14    C8     C9      109.470    3.000
+ P8L      C8     C14    H141    109.470    3.000
+ P8L      C8     C14    H142    109.470    3.000
+ P8L      C8     C14    O3      109.470    3.000
+ P8L      H141   C14    H142    107.900    3.000
+ P8L      H141   C14    O3      109.470    3.000
+ P8L      H142   C14    O3      109.470    3.000
+ P8L      C14    O3     HO3     109.470    3.000
+ P8L      C8     C9     H91     109.470    3.000
+ P8L      C8     C9     H92     109.470    3.000
+ P8L      C8     C9     C10     111.000    3.000
+ P8L      H91    C9     H92     107.900    3.000
+ P8L      H91    C9     C10     109.470    3.000
+ P8L      H92    C9     C10     109.470    3.000
+ P8L      C9     C10    H10     108.340    3.000
+ P8L      C9     C10    C13     109.470    3.000
+ P8L      C9     C10    C11     109.470    3.000
+ P8L      H10    C10    C13     108.340    3.000
+ P8L      H10    C10    C11     108.810    3.000
+ P8L      C13    C10    C11     109.470    3.000
+ P8L      C10    C13    H131    109.470    3.000
+ P8L      C10    C13    H132    109.470    3.000
+ P8L      C10    C13    C12     111.000    3.000
+ P8L      H131   C13    H132    107.900    3.000
+ P8L      H131   C13    C12     109.470    3.000
+ P8L      H132   C13    C12     109.470    3.000
+ P8L      C13    C12    H121    109.470    3.000
+ P8L      C13    C12    H122    109.470    3.000
+ P8L      C13    C12    N3      112.000    3.000
+ P8L      H121   C12    H122    107.900    3.000
+ P8L      H121   C12    N3      109.470    3.000
+ P8L      H122   C12    N3      109.470    3.000
+ P8L      C12    N3     HN3     118.500    3.000
+ P8L      C12    N3     C11     121.500    3.000
+ P8L      HN3    N3     C11     120.000    3.000
+ P8L      N3     C11    O2      123.000    3.000
+ P8L      N3     C11    C10     116.500    3.000
+ P8L      O2     C11    C10     120.500    3.000
+ P8L      C7     C2     H2      108.810    3.000
+ P8L      C7     C2     C3      109.470    3.000
+ P8L      C7     C2     N1      111.600    3.000
+ P8L      H2     C2     C3      108.340    3.000
+ P8L      H2     C2     N1      108.550    3.000
+ P8L      C3     C2     N1      110.000    3.000
+ P8L      C2     C3     H31     109.470    3.000
+ P8L      C2     C3     H32     109.470    3.000
+ P8L      C2     C3     C4      111.000    3.000
+ P8L      H31    C3     H32     107.900    3.000
+ P8L      H31    C3     C4      109.470    3.000
+ P8L      H32    C3     C4      109.470    3.000
+ P8L      C3     C4     H4      108.340    3.000
+ P8L      C3     C4     C5      111.000    3.000
+ P8L      C3     C4     C6      111.000    3.000
+ P8L      H4     C4     C5      108.340    3.000
+ P8L      H4     C4     C6      108.340    3.000
+ P8L      C5     C4     C6      111.000    3.000
+ P8L      C4     C5     H53     109.470    3.000
+ P8L      C4     C5     H52     109.470    3.000
+ P8L      C4     C5     H51     109.470    3.000
+ P8L      H53    C5     H52     109.470    3.000
+ P8L      H53    C5     H51     109.470    3.000
+ P8L      H52    C5     H51     109.470    3.000
+ P8L      C4     C6     H63     109.470    3.000
+ P8L      C4     C6     H62     109.470    3.000
+ P8L      C4     C6     H61     109.470    3.000
+ P8L      H63    C6     H62     109.470    3.000
+ P8L      H63    C6     H61     109.470    3.000
+ P8L      H62    C6     H61     109.470    3.000
+ P8L      C2     N1     HN1     118.500    3.000
+ P8L      C2     N1     C1      121.500    3.000
+ P8L      HN1    N1     C1      120.000    3.000
+ P8L      N1     C1     O1      123.000    3.000
+ P8L      N1     C1     O5      118.000    3.000
+ P8L      O1     C1     O5      119.000    3.000
+ P8L      C1     O5     C15     120.000    3.000
+ P8L      O5     C15    H151    109.470    3.000
+ P8L      O5     C15    H152    109.470    3.000
+ P8L      O5     C15    C16     109.470    3.000
+ P8L      H151   C15    H152    107.900    3.000
+ P8L      H151   C15    C16     109.470    3.000
+ P8L      H152   C15    C16     109.470    3.000
+ P8L      C15    C16    H16     108.340    3.000
+ P8L      C15    C16    C18     109.470    3.000
+ P8L      C15    C16    C17     111.000    3.000
+ P8L      H16    C16    C18     108.340    3.000
+ P8L      H16    C16    C17     108.340    3.000
+ P8L      C18    C16    C17      60.000    3.000
+ P8L      C16    C18    H181    109.470    3.000
+ P8L      C16    C18    H182    109.470    3.000
+ P8L      C16    C18    C17      60.000    3.000
+ P8L      H181   C18    H182    107.900    3.000
+ P8L      H181   C18    C17     109.470    3.000
+ P8L      H182   C18    C17     109.470    3.000
+ P8L      C18    C17    H17     108.340    3.000
+ P8L      C18    C17    C19     111.000    3.000
+ P8L      C18    C17    C16      60.000    3.000
+ P8L      H17    C17    C19     108.340    3.000
+ P8L      H17    C17    C16     108.340    3.000
+ P8L      C19    C17    C16     111.000    3.000
+ P8L      C17    C19    H19     108.340    3.000
+ P8L      C17    C19    C24     111.000    3.000
+ P8L      C17    C19    C20     111.000    3.000
+ P8L      H19    C19    C24     108.340    3.000
+ P8L      H19    C19    C20     108.340    3.000
+ P8L      C24    C19    C20     109.470    3.000
+ P8L      C19    C24    H241    109.470    3.000
+ P8L      C19    C24    H242    109.470    3.000
+ P8L      C19    C24    C23     111.000    3.000
+ P8L      H241   C24    H242    107.900    3.000
+ P8L      H241   C24    C23     109.470    3.000
+ P8L      H242   C24    C23     109.470    3.000
+ P8L      C24    C23    H231    109.470    3.000
+ P8L      C24    C23    H232    109.470    3.000
+ P8L      C24    C23    C22     111.000    3.000
+ P8L      H231   C23    H232    107.900    3.000
+ P8L      H231   C23    C22     109.470    3.000
+ P8L      H232   C23    C22     109.470    3.000
+ P8L      C23    C22    H221    109.470    3.000
+ P8L      C23    C22    H222    109.470    3.000
+ P8L      C23    C22    C21     111.000    3.000
+ P8L      H221   C22    H222    107.900    3.000
+ P8L      H221   C22    C21     109.470    3.000
+ P8L      H222   C22    C21     109.470    3.000
+ P8L      C22    C21    H211    109.470    3.000
+ P8L      C22    C21    H212    109.470    3.000
+ P8L      C22    C21    C20     111.000    3.000
+ P8L      H211   C21    H212    107.900    3.000
+ P8L      H211   C21    C20     109.470    3.000
+ P8L      H212   C21    C20     109.470    3.000
+ P8L      C21    C20    H202    109.470    3.000
+ P8L      C21    C20    H201    109.470    3.000
+ P8L      C21    C20    C19     111.000    3.000
+ P8L      H202   C20    H201    107.900    3.000
+ P8L      H202   C20    C19     109.470    3.000
+ P8L      H201   C20    C19     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ P8L      var_1            O4     C7     N2     C8               180.000           20.000   2
+ P8L      var_2            C7     N2     C8     C9                 0.000           20.000   3
+ P8L      var_3            N2     C8     C14    O3               180.000           20.000   3
+ P8L      var_4            C8     C14    O3     HO3              180.000           20.000   3
+ P8L      var_5            N2     C8     C9     C10              180.000           20.000   3
+ P8L      var_6            C8     C9     C10    C13              180.000           20.000   3
+ P8L      var_7            C9     C10    C11    N3               180.000           20.000   3
+ P8L      var_8            C9     C10    C13    C12              180.000           20.000   3
+ P8L      var_9            C10    C13    C12    N3               180.000           20.000   3
+ P8L      var_10           C13    C12    N3     C11                0.000           20.000   3
+ P8L      var_11           C12    N3     C11    O2               180.000           20.000   2
+ P8L      var_12           O4     C7     C2     N1               180.000           20.000   3
+ P8L      var_13           C7     C2     C3     C4               180.000           20.000   3
+ P8L      var_14           C2     C3     C4     C6               180.000           20.000   3
+ P8L      var_15           C3     C4     C5     H51              180.000           20.000   3
+ P8L      var_16           C3     C4     C6     H61              180.000           20.000   3
+ P8L      var_17           C7     C2     N1     C1                 0.000           20.000   3
+ P8L      var_18           C2     N1     C1     O5               180.000           20.000   2
+ P8L      var_19           N1     C1     O5     C15             -130.199           20.000   3
+ P8L      var_20           C1     O5     C15    C16             -164.858           20.000   3
+ P8L      var_21           O5     C15    C16    C18              180.000           20.000   3
+ P8L      var_22           C15    C16    C17    C18              180.000           20.000   3
+ P8L      var_23           C15    C16    C18    C17              180.000           20.000   3
+ P8L      var_24           C16    C18    C17    C19              180.000           20.000   3
+ P8L      var_25           C18    C17    C19    C24              180.000           20.000   3
+ P8L      var_26           C17    C19    C20    C21              180.000           20.000   3
+ P8L      var_27           C17    C19    C24    C23              180.000           20.000   3
+ P8L      var_28           C19    C24    C23    C22              180.000           20.000   3
+ P8L      var_29           C24    C23    C22    C21              180.000           20.000   3
+ P8L      var_30           C23    C22    C21    C20              180.000           20.000   3
+ P8L      var_31           C22    C21    C20    C19              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ P8L      chir_01          C2     N1     C3     C7        negativ
+ P8L      chir_02          C4     C3     C6     C5        positiv
+ P8L      chir_03          C8     C9     C14    N2        negativ
+ P8L      chir_04          C10    C9     C11    C13       negativ
+ P8L      chir_05          C16    C17    C15    C18       negativ
+ P8L      chir_06          C17    C16    C19    C18       negativ
+ P8L      chir_07          C19    C17    C20    C24       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ P8L      plan-1            N1        0.020
+ P8L      plan-1            C2        0.020
+ P8L      plan-1            C1        0.020
+ P8L      plan-1            HN1       0.020
+ P8L      plan-2            C11       0.020
+ P8L      plan-2            C10       0.020
+ P8L      plan-2            N3        0.020
+ P8L      plan-2            O2        0.020
+ P8L      plan-2            HN3       0.020
+ P8L      plan-3            C1        0.020
+ P8L      plan-3            N1        0.020
+ P8L      plan-3            O1        0.020
+ P8L      plan-3            O5        0.020
+ P8L      plan-3            HN1       0.020
+ P8L      plan-4            C7        0.020
+ P8L      plan-4            C2        0.020
+ P8L      plan-4            N2        0.020
+ P8L      plan-4            O4        0.020
+ P8L      plan-4            HN2       0.020
+ P8L      plan-5            N2        0.020
+ P8L      plan-5            C8        0.020
+ P8L      plan-5            C7        0.020
+ P8L      plan-5            HN2       0.020
+ P8L      plan-6            N3        0.020
+ P8L      plan-6            C11       0.020
+ P8L      plan-6            C12       0.020
+ P8L      plan-6            HN3       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-P8U
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-P8U  1 SG      2 C14       .           1.810    0.020
+#
+data_link_CYS-P8L
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-P8L  1 SG      2 C14       .           1.800    0.020
+# ------------------------------------------------------
