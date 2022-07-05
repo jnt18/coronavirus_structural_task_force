@@ -1,0 +1,124 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 3270  (anisotropic = 0)
+    B_iso: mean =  42.8  max =  77.4  min =  27.3
+  Macromolecules:
+    Number of atoms = 3242  (anisotropic = 0)
+    B_iso: mean =  42.7  max =  77.4  min =  27.3
+  Ligands:
+    Number of atoms = 28  (anisotropic = 0)
+    B_iso: mean =  55.8  max =  59.0  min =  52.7
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.029 (Z=  1.898)
+  Mean delta:    0.004 (Z=  0.217)
+
+                        ----------Bond angles----------                        
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   R 373  PRO  C      
+   R 374  PHE  N      
+   R 374  PHE  CA        121.70   132.63   -10.93  1.80e+00  3.69e+01   6.1*sigma
+   R 382  VAL  C      
+   R 383  SER  N      
+   R 383  SER  CA        121.70   114.45     7.25  1.80e+00  1.62e+01   4.0*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:   10.930 (Z=  6.072)
+  Mean delta:    0.977 (Z=  0.456)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   L  96  TRP  CA     
+   L  96  TRP  C      
+   L  97  PRO  N      
+   L  97  PRO  CA        180.00   134.00    46.00  5.00e+00  8.47e+01   9.2*sigma
+   R 364  ASP  CA     
+   R 364  ASP  CB     
+   R 364  ASP  CG     
+   R 364  ASP  OD1         0.00   178.07  -108.07  2.00e+01  3.14e+01   5.4*sigma
+   R 373  PRO  CA     
+   R 373  PRO  C      
+   R 374  PHE  N      
+   R 374  PHE  CA        180.00   159.88    20.12  5.00e+00  1.62e+01   4.0*sigma
+
+  Min. delta:    0.004
+  Max. delta:  108.072
+  Mean delta:   14.355
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.168
+  Mean delta:    0.043
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.066
+  Mean delta:    0.005
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.029   3355
+    Angle     :  0.977  10.930   4559
+    Chirality :  0.043   0.168    492
+    Planarity :  0.005   0.066    587
+    Dihedral  : 14.355 108.072   1182
+    Min Nonbonded Distance : 2.201
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 7.05
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  5.91 %
+      Favored  : 94.09 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 5.26 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 5.26 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -1.03 (0.40), residues: 406
+    helix: -3.69 (0.60), residues: 27
+    sheet: -0.30 (0.41), residues: 152
+    loop : -0.47 (0.41), residues: 227
+
+                     ----------Asn/Gln/His flips----------                     
+
+   R 394  ASN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  94.09 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   7.05
+  RMS(bonds)            =   0.0042
+  RMS(angles)           =   0.98
+  MolProbity score      =   1.79
+  Refinement program    = PHENIX
