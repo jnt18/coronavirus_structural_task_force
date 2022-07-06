@@ -200,8 +200,6 @@ def print_entry(pdb_id, taxonomy):
 
 
 def run(taxonomy):
-    print_entry('3i6k', 'SARS-CoV')
-    assign_protein_to_data_frame_entry('3i6k', 'membrane_glycoprotein', taxonomy)
     print("Perform scans for errors in database.")
     errors = scan_for_duplicates(taxonomy)
     errors += scan_for_not_assigned(taxonomy)
@@ -212,5 +210,3 @@ def run(taxonomy):
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
-
-run("SARS-CoV")
