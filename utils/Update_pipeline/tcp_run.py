@@ -67,7 +67,7 @@ RMSD.main(changed_prot_list, repo_path)
 # duplicate entries
 # entries with wrong path containing 'not_assigned' after assignment
 # entries not assigned to a protein at all
-analyze_and_fix_dataframe.run()
+analyze_and_fix_dataframe.run(args.taxonomy)
 
 
 # check for common errors in the assignment and give warnings, so the

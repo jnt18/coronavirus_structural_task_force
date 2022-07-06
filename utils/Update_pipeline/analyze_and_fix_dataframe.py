@@ -11,18 +11,25 @@ This contains functions used to analyze the data frame or to fix bugs.
 import os
 import pandas as pd
 
-taxonomy = "SARS-CoV-2"
-db_string = "main_repo_database_" + taxonomy + ".pkl"
-df = pd.read_pickle(db_string)
+db_string_1 = "main_repo_database_SARS-CoV.pkl"
+df_SC1 = pd.read_pickle(db_string_1)
+db_string_2 = "main_repo_database_SARS-CoV-2.pkl"
+df_SC2 = pd.read_pickle(db_string_2)
 
 
 
 # # # Remove duplicates
-def scan_for_duplicates():
+def scan_for_duplicates(taxonomy):
     """
     Look for duplicates but do not modify the database.
     Returns: Number of relevant cases.
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+    else:
+        df = df_SC1
+    
     duplicates = []
     for entry in df['pdb_id']:
         if len(df.loc[df['pdb_id'] == entry]) != 1:
@@ -36,11 +43,19 @@ def scan_for_duplicates():
     return len(duplicates)
     
 
-def remove_duplicates():
+def remove_duplicates(taxonomy):
     """
     Look for duplicates, drop them from the database and apply the changes.
     Returns: None
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+        db_string = db_string_2
+    else:
+        df = df_SC1
+        db_string = db_string_1
+    
     # locate duplicates
     duplicates = []
     for entry in df['pdb_id']:
@@ -64,12 +79,18 @@ def remove_duplicates():
 
 
 # # # Change path of not assigned
-def scan_for_not_assigned():
+def scan_for_not_assigned(taxonomy):
     """
     Look for entries containing 'not_assigned' in their path.
     Does not apply any changes to the database.
     Returns: Number of relevant cases.
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+    else:
+        df = df_SC1
+        
     # find entries with 'not_assigned' in their path
     print("Entries containing 'not_assigned':")
     not_assigned = []
@@ -84,13 +105,21 @@ def scan_for_not_assigned():
     return len(not_assigned)
 
 
-def update_path_of_not_assigned():
+def update_path_of_not_assigned(taxonomy):
     """
     Look for entries containing 'not_assigned' in their path.
     Fix their path, if they are in fact assigned and apply changes to
     database.
     Returns: None
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+        db_string = db_string_2
+    else:
+        df = df_SC1
+        db_string = db_string_1
+        
     # find entries with 'not_assigned' in their path
     not_assigned = []
     for entry in df['path_in_repo']:
@@ -118,21 +147,37 @@ def update_path_of_not_assigned():
     df.to_pickle(db_string)
     
 
-def assign_protein_to_data_frame_entry(pdb_id, protein):
+def assign_protein_to_data_frame_entry(pdb_id, protein, taxonomy):
     """
     Assign a protein to a certain database entry and save changes.
     Used for not_assigned proteins which have the files in correct place.
     Returns: None
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+        db_string = db_string_2
+    else:
+        df = df_SC1
+        db_string = db_string_1
+        
     df.loc[df["pdb_id"] == pdb_id, "protein"] = protein
     df.to_pickle(db_string)
 
-def delete_entry_from_database(pdb_id):
+def delete_entry_from_database(pdb_id, taxonomy):
     """
     Use this function to delete entries which do not correspong to SARS-CoV
     or SARS-CoV-2.
     One example is 7f8l, which was somehow classified as SARS-CoV
     """
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+        db_string = db_string_2
+    else:
+        df = df_SC1
+        db_string = db_string_1
+        
     print("Total number of database entries: " + str(len(df)))
     # load old entry and drop it from old dataframe
     entry = df.loc[df['pdb_id'] == pdb_id]
@@ -140,19 +185,26 @@ def delete_entry_from_database(pdb_id):
     print("Total number of database entries: " + str(len(df_new)))
     df_new.to_pickle(db_string)
     
-def print_entry(pdb_id):
+def print_entry(pdb_id, taxonomy):
     """
     Prints the entry with the given id.
     """
-    
+    # specify used data frame
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+    else:
+        df = df_SC1
+        
     entry = df.loc[df['pdb_id'] == pdb_id]
-    print(entry)
+    print(entry['protein'])
 
 
-def run():
+def run(taxonomy):
+    print_entry('3i6k', 'SARS-CoV')
+    assign_protein_to_data_frame_entry('3i6k', 'membrane_glycoprotein', taxonomy)
     print("Perform scans for errors in database.")
-    errors = scan_for_duplicates()
-    errors += scan_for_not_assigned()
+    errors = scan_for_duplicates(taxonomy)
+    errors += scan_for_not_assigned(taxonomy)
     if errors == 0:
         print("Scan was succesful, no errors found!\n")
     else:
@@ -160,4 +212,5 @@ def run():
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
-    
+
+run("SARS-CoV")
