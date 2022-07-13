@@ -3,7 +3,7 @@ data_7XOC
 _entry.id   7XOC 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.358 
+_audit_conform.dict_version    5.359 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -71,10 +71,10 @@ _citation.journal_id_CSD            ?
 _citation.journal_id_ISSN           1001-0602 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            32 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                609 
+_citation.page_last                 620 
 _citation.title                     
 ;Structural and biochemical mechanism for increased infectivity and immune evasion of Omicron BA.2 variant compared to BA.1 and their possible mouse origins.
 ;
@@ -90,22 +90,22 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Xu, Y.'     1  ? 
-primary 'Wu, C.'     2  ? 
-primary 'Cao, X.'    3  ? 
-primary 'Gu, C.'     4  ? 
-primary 'Liu, H.'    5  ? 
-primary 'Jiang, M.'  6  ? 
-primary 'Wang, X.'   7  ? 
-primary 'Yuan, Q.'   8  ? 
-primary 'Wu, K.'     9  ? 
-primary 'Liu, J.'    10 ? 
-primary 'Wang, D.'   11 ? 
-primary 'He, X.'     12 ? 
-primary 'Wang, X.'   13 ? 
-primary 'Deng, S.J.' 14 ? 
-primary 'Xu, H.E.'   15 ? 
-primary 'Yin, W.'    16 ? 
+primary 'Xu, Y.'     1  0000-0001-8069-7511 
+primary 'Wu, C.'     2  ?                   
+primary 'Cao, X.'    3  ?                   
+primary 'Gu, C.'     4  ?                   
+primary 'Liu, H.'    5  ?                   
+primary 'Jiang, M.'  6  ?                   
+primary 'Wang, X.'   7  ?                   
+primary 'Yuan, Q.'   8  ?                   
+primary 'Wu, K.'     9  ?                   
+primary 'Liu, J.'    10 ?                   
+primary 'Wang, D.'   11 ?                   
+primary 'He, X.'     12 ?                   
+primary 'Wang, X.'   13 ?                   
+primary 'Deng, S.J.' 14 0000-0001-9266-0644 
+primary 'Xu, H.E.'   15 0000-0002-6829-8144 
+primary 'Yin, W.'    16 0000-0002-6889-4907 
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -11497,6 +11497,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2022-06-15 
 2 'Structure model' 1 1 2022-06-22 
+3 'Structure model' 1 2 2022-07-13 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -11506,15 +11507,22 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Database references' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' 'Database references' 
 # 
-_pdbx_audit_revision_category.ordinal             1 
-_pdbx_audit_revision_category.revision_ordinal    2 
-_pdbx_audit_revision_category.data_content_type   'Structure model' 
-_pdbx_audit_revision_category.category            citation 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 3 'Structure model' citation        
+3 3 'Structure model' citation_author 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -11523,6 +11531,10 @@ _pdbx_audit_revision_item.data_content_type
 _pdbx_audit_revision_item.item 
 1 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
 2 2 'Structure model' '_citation.title'                   
+3 3 'Structure model' '_citation.journal_volume'          
+4 3 'Structure model' '_citation.page_first'              
+5 3 'Structure model' '_citation.page_last'               
+6 3 'Structure model' '_citation_author.identifier_ORCID' 
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
