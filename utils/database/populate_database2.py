@@ -27,6 +27,35 @@ conn.commit()
 url = 'https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master'
 
 
+def map_names(protein_name):
+    """
+    Takes a protein name as input and checks if it has synonyms, like
+    'leader_protein' <-> 'nsp1' and would return a string containing both
+    names.
+    Otherwise, it returns the input name.
+    """
+    # individual proteins
+    if protein_name == "leader_protein":
+        return "nsp1 / leader_protein"
+    if protein_name == "3c_like_proteinase":
+        return "nsp5 / 3c_like_proteinase"
+    if protein_name == "rna_polymerase":
+        return "nsp12 / rna_polymerase"
+    if protein_name == "helicase":
+        return "nsp13 / helicase"
+    if protein_name == "exonuclease":
+        return "nsp14 / exonuclease"
+    if protein_name == "endornase":
+        return "nsp15 / endornase"
+    if protein_name == "methyltransferase":
+        return "nsp16 / methyltransferase"
+    if protein_name == "surface_glycoprotein":
+        return "spike protein / surface_glycoprotein"
+    
+    # no mapping, return input
+    return protein_name
+
+
 def fill_database(workdir):
     """
     Collect relevant data of each pdb entry from local working directory and write this information into
@@ -51,7 +80,7 @@ def fill_database(workdir):
                 # extract virus name and protein name for this entry
                 local_path_split = os.path.split(path)
                 virus_name = local_path_split[1]
-                protein_name = os.path.split(local_path_split[0])[1]
+                protein_name = map_names(os.path.split(local_path_split[0])[1])
 
                 # check if entry contains a folder, which indicates a re-refinement
                 if (os.path.exists(os.path.join(folder, "isolde"))
