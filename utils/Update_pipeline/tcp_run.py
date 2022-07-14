@@ -14,6 +14,7 @@ executable script for weekly update
 # handle input arguments
 parser = argparse.ArgumentParser(description='Run weekly update.')
 parser.add_argument('-t', '--taxonomy', type=str, required=True, help="Give the taxonomy, either 'SARS-CoV' or 'SARS-CoV-2'")
+parser.add_argument('-db', '--database', action="store_true", help="If given, the database will be updated as well")
 args = parser.parse_args()
 
 taxo_sars_cov = "SARS-CoV"
@@ -100,4 +101,8 @@ if report_content != "":
     file.write(content)
     file.close()
 
-
+# if database flag given, update database
+if args.database:
+    os.chdir("..")
+    os.chdir("database")
+    os.system("populate_database2.py")
