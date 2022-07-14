@@ -27,6 +27,31 @@ conn.commit()
 url = 'https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master'
 
 
+def map_names_simple(protein_name):
+    """
+    Takes a protein name as input and checks if it has synonyms, like
+    'leader_protein' <-> 'nsp1' and would return a string containing only
+    the simpler nsp name.
+    Otherwise, it returns the input name.
+    """
+    if protein_name == "leader_protein":
+        return "nsp1"
+    if protein_name == "3c_like_proteinase":
+        return "nsp5"
+    if protein_name == "rna_polymerase":
+        return "nsp12"
+    if protein_name == "helicase":
+        return "nsp13"
+    if protein_name == "exonuclease":
+        return "nsp14"
+    if protein_name == "endornase":
+        return "nsp15"
+    if protein_name == "methyltransferase":
+        return "nsp16"
+    
+    return protein_name
+
+
 def map_names(protein_name):
     """
     Takes a protein name as input and checks if it has synonyms, like
@@ -51,6 +76,16 @@ def map_names(protein_name):
         return "nsp16 / methyltransferase"
     if protein_name == "surface_glycoprotein":
         return "spike protein / surface_glycoprotein"
+    
+    # complexes
+    if protein_name.find("-") > 0:
+        prots = protein_name.split("-")
+        new_names = []
+        for name in prots:
+            new_names.append(map_names_simple(name))
+        result = "-".join(new_names)
+        return result
+            
     
     # no mapping, return input
     return protein_name
