@@ -1,0 +1,592 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QYO      QYO '.                                   ' .                  35  21 .
+QYU      QYU '.                                   ' .                  36  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QYO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QYO           F15    F    F         0.000    -51.967  -28.791    4.807
+ QYO           C12    C    CR6       0.000    -50.646  -28.895    4.786
+ QYO           C13    C    CR16      0.000    -49.959  -28.948    3.536
+ QYO           H13    H    H         0.000    -50.520  -28.900    2.611
+ QYO           C11    C    CR16      0.000    -49.882  -28.952    5.985
+ QYO           H11    H    H         0.000    -50.366  -28.912    6.953
+ QYO           C10    C    CR56      0.000    -48.508  -29.060    5.886
+ QYO           N16    N    NR15      0.000    -47.581  -29.132    6.940
+ QYO           HN16   H    H         0.000    -47.795  -29.113    7.957
+ QYO           C17    C    CR56      0.000    -46.298  -29.235    6.348
+ QYO           N18    N    NRD6      0.000    -45.147  -29.328    7.070
+ QYO           C19    C    CR16      0.000    -44.035  -29.416    6.314
+ QYO           H19    H    H         0.000    -43.095  -29.488    6.848
+ QYO           N20    N    NRD6      0.000    -43.961  -29.424    4.963
+ QYO           C07    C    CR6       0.000    -45.151  -29.332    4.263
+ QYO           C08    C    CR56      0.000    -46.401  -29.232    4.939
+ QYO           C09    C    CR56      0.000    -47.811  -29.119    4.643
+ QYO           C14    C    CR16      0.000    -48.588  -29.060    3.500
+ QYO           H14    H    H         0.000    -48.096  -29.104    2.536
+ QYO           N06    N    N         0.000    -45.015  -29.345    2.885
+ QYO           C05    C    CH1       0.000    -44.000  -30.060    2.123
+ QYO           H05    H    H         0.000    -43.039  -29.534    2.208
+ QYO           C04    C    CH2       0.000    -44.432  -30.106    0.649
+ QYO           H041   H    H         0.000    -43.700  -29.573    0.038
+ QYO           H042   H    H         0.000    -45.410  -29.631    0.541
+ QYO           C03    C    CH2       0.000    -44.518  -31.578    0.186
+ QYO           H032   H    H         0.000    -43.684  -31.829   -0.472
+ QYO           H031   H    H         0.000    -45.460  -31.769   -0.333
+ QYO           C21    C    CH2       0.000    -43.807  -31.573    2.510
+ QYO           H211   H    H         0.000    -44.275  -31.764    3.478
+ QYO           H212   H    H         0.000    -42.741  -31.800    2.572
+ QYO           C02    C    CH1       0.000    -44.447  -32.443    1.461
+ QYO           H02    H    H         0.000    -43.848  -33.348    1.286
+ QYO           O01    O    OH1       0.000    -45.752  -32.781    1.898
+ QYO           HO01   H    H         0.000    -46.176  -33.340    1.234
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QYO      F15    n/a    C12    START
+ QYO      C12    F15    C11    .
+ QYO      C13    C12    H13    .
+ QYO      H13    C13    .      .
+ QYO      C11    C12    C10    .
+ QYO      H11    C11    .      .
+ QYO      C10    C11    N16    .
+ QYO      N16    C10    C17    .
+ QYO      HN16   N16    .      .
+ QYO      C17    N16    N18    .
+ QYO      N18    C17    C19    .
+ QYO      C19    N18    N20    .
+ QYO      H19    C19    .      .
+ QYO      N20    C19    C07    .
+ QYO      C07    N20    N06    .
+ QYO      C08    C07    C09    .
+ QYO      C09    C08    C14    .
+ QYO      C14    C09    H14    .
+ QYO      H14    C14    .      .
+ QYO      N06    C07    C05    .
+ QYO      C05    N06    C21    .
+ QYO      H05    C05    .      .
+ QYO      C04    C05    C03    .
+ QYO      H041   C04    .      .
+ QYO      H042   C04    .      .
+ QYO      C03    C04    H031   .
+ QYO      H032   C03    .      .
+ QYO      H031   C03    .      .
+ QYO      C21    C05    C02    .
+ QYO      H211   C21    .      .
+ QYO      H212   C21    .      .
+ QYO      C02    C21    O01    .
+ QYO      H02    C02    .      .
+ QYO      O01    C02    HO01   .
+ QYO      HO01   O01    .      END
+ QYO      C17    C08    .    ADD
+ QYO      C14    C13    .    ADD
+ QYO      C10    C09    .    ADD
+ QYO      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QYO      C17    C08       aromatic    1.390    0.020
+ QYO      C17    N16       single      1.340    0.020
+ QYO      N18    C17       aromatic    1.355    0.020
+ QYO      C14    C13       aromatic    1.390    0.020
+ QYO      C14    C09       aromatic    1.390    0.020
+ QYO      C13    C12       aromatic    1.390    0.020
+ QYO      C11    C12       aromatic    1.390    0.020
+ QYO      C12    F15       single      1.345    0.020
+ QYO      C10    C11       aromatic    1.390    0.020
+ QYO      C10    C09       aromatic    1.390    0.020
+ QYO      N16    C10       single      1.340    0.020
+ QYO      C19    N18       aromatic    1.337    0.020
+ QYO      N20    C19       aromatic    1.337    0.020
+ QYO      C02    C03       single      1.524    0.020
+ QYO      C02    C21       single      1.524    0.020
+ QYO      O01    C02       single      1.432    0.020
+ QYO      C03    C04       single      1.524    0.020
+ QYO      C04    C05       single      1.524    0.020
+ QYO      C21    C05       single      1.524    0.020
+ QYO      C05    N06       single      1.455    0.020
+ QYO      C08    C07       aromatic    1.390    0.020
+ QYO      N06    C07       deloc       1.355    0.020
+ QYO      C07    N20       aromatic    1.350    0.020
+ QYO      C09    C08       aromatic    1.390    0.020
+ QYO      H14    C14       single      1.083    0.020
+ QYO      H13    C13       single      1.083    0.020
+ QYO      H11    C11       single      1.083    0.020
+ QYO      H19    C19       single      1.083    0.020
+ QYO      H02    C02       single      1.099    0.020
+ QYO      H031   C03       single      1.092    0.020
+ QYO      H032   C03       single      1.092    0.020
+ QYO      H041   C04       single      1.092    0.020
+ QYO      H042   C04       single      1.092    0.020
+ QYO      H05    C05       single      1.099    0.020
+ QYO      H211   C21       single      1.092    0.020
+ QYO      H212   C21       single      1.092    0.020
+ QYO      HN16   N16       single      1.040    0.020
+ QYO      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QYO      F15    C12    C13     120.000    3.000
+ QYO      F15    C12    C11     120.000    3.000
+ QYO      C13    C12    C11     120.000    3.000
+ QYO      C12    C13    H13     120.000    3.000
+ QYO      C12    C13    C14     120.000    3.000
+ QYO      H13    C13    C14     120.000    3.000
+ QYO      C12    C11    H11     120.000    3.000
+ QYO      C12    C11    C10     120.000    3.000
+ QYO      H11    C11    C10     120.000    3.000
+ QYO      C11    C10    N16     132.000    3.000
+ QYO      C11    C10    C09     120.000    3.000
+ QYO      N16    C10    C09     108.000    3.000
+ QYO      C10    N16    HN16    126.000    3.000
+ QYO      C10    N16    C17     108.000    3.000
+ QYO      HN16   N16    C17     126.000    3.000
+ QYO      N16    C17    N18     132.000    3.000
+ QYO      N16    C17    C08     108.000    3.000
+ QYO      N18    C17    C08     120.000    3.000
+ QYO      C17    N18    C19     120.000    3.000
+ QYO      N18    C19    H19     120.000    3.000
+ QYO      N18    C19    N20     120.000    3.000
+ QYO      H19    C19    N20     120.000    3.000
+ QYO      C19    N20    C07     120.000    3.000
+ QYO      N20    C07    C08     120.000    3.000
+ QYO      N20    C07    N06     120.000    3.000
+ QYO      C08    C07    N06     120.000    3.000
+ QYO      C07    C08    C09     120.000    3.000
+ QYO      C07    C08    C17     120.000    3.000
+ QYO      C09    C08    C17     120.000    3.000
+ QYO      C08    C09    C14     120.000    3.000
+ QYO      C08    C09    C10     120.000    3.000
+ QYO      C14    C09    C10     120.000    3.000
+ QYO      C09    C14    H14     120.000    3.000
+ QYO      C09    C14    C13     120.000    3.000
+ QYO      H14    C14    C13     120.000    3.000
+ QYO      C07    N06    C05     120.000    3.000
+ QYO      N06    C05    H05     109.470    3.000
+ QYO      N06    C05    C04     105.000    3.000
+ QYO      N06    C05    C21     105.000    3.000
+ QYO      H05    C05    C04     108.340    3.000
+ QYO      H05    C05    C21     108.340    3.000
+ QYO      C04    C05    C21     109.470    3.000
+ QYO      C05    C04    H041    109.470    3.000
+ QYO      C05    C04    H042    109.470    3.000
+ QYO      C05    C04    C03     111.000    3.000
+ QYO      H041   C04    H042    107.900    3.000
+ QYO      H041   C04    C03     109.470    3.000
+ QYO      H042   C04    C03     109.470    3.000
+ QYO      C04    C03    H032    109.470    3.000
+ QYO      C04    C03    H031    109.470    3.000
+ QYO      C04    C03    C02     111.000    3.000
+ QYO      H032   C03    H031    107.900    3.000
+ QYO      H032   C03    C02     109.470    3.000
+ QYO      H031   C03    C02     109.470    3.000
+ QYO      C05    C21    H211    109.470    3.000
+ QYO      C05    C21    H212    109.470    3.000
+ QYO      C05    C21    C02     111.000    3.000
+ QYO      H211   C21    H212    107.900    3.000
+ QYO      H211   C21    C02     109.470    3.000
+ QYO      H212   C21    C02     109.470    3.000
+ QYO      C21    C02    H02     108.340    3.000
+ QYO      C21    C02    O01     109.470    3.000
+ QYO      C21    C02    C03     109.470    3.000
+ QYO      H02    C02    O01     109.470    3.000
+ QYO      H02    C02    C03     108.340    3.000
+ QYO      O01    C02    C03     109.470    3.000
+ QYO      C02    O01    HO01    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QYO      CONST_1          F15    C12    C13    C14                0.000            0.000   0
+ QYO      CONST_2          F15    C12    C11    C10                0.000            0.000   0
+ QYO      CONST_3          C12    C11    C10    N16              180.000            0.000   0
+ QYO      CONST_4          C11    C10    C09    C08              180.000            0.000   0
+ QYO      CONST_5          C11    C10    N16    C17              180.000            0.000   0
+ QYO      CONST_6          C10    N16    C17    N18              180.000            0.000   0
+ QYO      CONST_7          N16    C17    C08    C07              180.000            0.000   0
+ QYO      CONST_8          N16    C17    N18    C19              180.000            0.000   0
+ QYO      CONST_9          C17    N18    C19    N20                0.000            0.000   0
+ QYO      CONST_10         N18    C19    N20    C07                0.000            0.000   0
+ QYO      CONST_11         C19    N20    C07    N06                0.000            0.000   0
+ QYO      CONST_12         N20    C07    C08    C09              180.000            0.000   0
+ QYO      CONST_13         C07    C08    C09    C14              180.000            0.000   0
+ QYO      CONST_14         C08    C09    C14    C13              180.000            0.000   0
+ QYO      CONST_15         C09    C14    C13    C12                0.000            0.000   0
+ QYO      CONST_16         N20    C07    N06    C05               32.637            0.000   0
+ QYO      var_1            C07    N06    C05    C21                0.000           20.000   3
+ QYO      var_2            N06    C05    C04    C03              180.000           20.000   3
+ QYO      var_3            C05    C04    C03    C02              180.000           20.000   3
+ QYO      var_4            N06    C05    C21    C02              180.000           20.000   3
+ QYO      var_5            C05    C21    C02    O01              180.000           20.000   3
+ QYO      var_6            C21    C02    C03    C04              180.000           20.000   3
+ QYO      var_7            C21    C02    O01    HO01             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QYO      chir_01          C02    C03    C21    O01       negativ
+ QYO      chir_02          C05    C04    C21    N06       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QYO      plan-1            C17       0.020
+ QYO      plan-1            C08       0.020
+ QYO      plan-1            N16       0.020
+ QYO      plan-1            N18       0.020
+ QYO      plan-1            C07       0.020
+ QYO      plan-1            C09       0.020
+ QYO      plan-1            C14       0.020
+ QYO      plan-1            C10       0.020
+ QYO      plan-1            HN16      0.020
+ QYO      plan-1            C19       0.020
+ QYO      plan-1            N20       0.020
+ QYO      plan-1            C13       0.020
+ QYO      plan-1            C12       0.020
+ QYO      plan-1            C11       0.020
+ QYO      plan-1            H14       0.020
+ QYO      plan-1            H13       0.020
+ QYO      plan-1            F15       0.020
+ QYO      plan-1            H11       0.020
+ QYO      plan-1            H19       0.020
+ QYO      plan-1            N06       0.020
+ QYO      plan-1            C05       0.020
+#
+data_comp_QYU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QYU           F15    F    F         0.000    -51.670  -28.792    4.811
+ QYU           C12    C    CR6       0.000    -50.758  -28.881    4.790
+ QYU           C13    C    CR16      0.000    -50.130  -29.020    3.522
+ QYU           H13    H    H         0.000    -50.713  -29.019    2.609
+ QYU           C14    C    CR16      0.000    -48.731  -29.159    3.485
+ QYU           H14    H    H         0.000    -48.246  -29.266    2.523
+ QYU           C09    C    CR56      0.000    -47.922  -29.165    4.665
+ QYU           C11    C    CR16      0.000    -50.023  -28.878    5.995
+ QYU           H11    H    H         0.000    -50.523  -28.772    6.950
+ QYU           C10    C    CR56      0.000    -48.595  -29.019    5.923
+ QYU           N16    N    NR15      0.000    -47.593  -29.055    6.941
+ QYU           HN16   H    H         0.000    -47.781  -28.974    7.961
+ QYU           C17    C    CR56      0.000    -46.315  -29.216    6.370
+ QYU           C08    C    CR56      0.000    -46.459  -29.291    4.938
+ QYU           N18    N    NRD6      0.000    -45.080  -29.295    7.038
+ QYU           C19    C    CR16      0.000    -43.983  -29.453    6.233
+ QYU           H19    H    H         0.000    -43.016  -29.518    6.717
+ QYU           N20    N    NRD6      0.000    -44.008  -29.537    4.851
+ QYU           C07    C    CR6       0.000    -45.230  -29.449    4.175
+ QYU           N06    N    NH1       0.000    -45.199  -29.564    2.768
+ QYU           HN06   H    H         0.000    -45.635  -30.385    2.373
+ QYU           C05    C    CH1       0.000    -44.582  -28.589    1.787
+ QYU           H05    H    H         0.000    -43.831  -27.985    2.315
+ QYU           C04    C    CH2       0.000    -43.926  -29.208    0.523
+ QYU           H041   H    H         0.000    -43.466  -30.172    0.748
+ QYU           H042   H    H         0.000    -43.175  -28.538    0.099
+ QYU           C03    C    CH2       0.000    -45.032  -29.400   -0.456
+ QYU           H032   H    H         0.000    -45.579  -30.327   -0.271
+ QYU           H031   H    H         0.000    -44.667  -29.394   -1.485
+ QYU           C21    C    CH2       0.000    -45.630  -27.666    1.212
+ QYU           H211   H    H         0.000    -45.245  -26.646    1.153
+ QYU           H212   H    H         0.000    -46.529  -27.680    1.832
+ QYU           C02    C    CH1       0.000    -45.980  -28.180   -0.231
+ QYU           H02    H    H         0.000    -45.803  -27.398   -0.983
+ QYU           O01    O    OH1       0.000    -47.304  -28.612   -0.261
+ QYU           HO01   H    H         0.000    -47.511  -28.926   -1.149
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QYU      F15    n/a    C12    START
+ QYU      C12    F15    C11    .
+ QYU      C13    C12    C14    .
+ QYU      H13    C13    .      .
+ QYU      C14    C13    C09    .
+ QYU      H14    C14    .      .
+ QYU      C09    C14    .      .
+ QYU      C11    C12    C10    .
+ QYU      H11    C11    .      .
+ QYU      C10    C11    N16    .
+ QYU      N16    C10    C17    .
+ QYU      HN16   N16    .      .
+ QYU      C17    N16    N18    .
+ QYU      C08    C17    .      .
+ QYU      N18    C17    C19    .
+ QYU      C19    N18    N20    .
+ QYU      H19    C19    .      .
+ QYU      N20    C19    C07    .
+ QYU      C07    N20    N06    .
+ QYU      N06    C07    C05    .
+ QYU      HN06   N06    .      .
+ QYU      C05    N06    C21    .
+ QYU      H05    C05    .      .
+ QYU      C04    C05    C03    .
+ QYU      H041   C04    .      .
+ QYU      H042   C04    .      .
+ QYU      C03    C04    H031   .
+ QYU      H032   C03    .      .
+ QYU      H031   C03    .      .
+ QYU      C21    C05    C02    .
+ QYU      H211   C21    .      .
+ QYU      H212   C21    .      .
+ QYU      C02    C21    O01    .
+ QYU      H02    C02    .      .
+ QYU      O01    C02    HO01   .
+ QYU      HO01   O01    .      END
+ QYU      C02    C03    .    ADD
+ QYU      C07    C08    .    ADD
+ QYU      C08    C09    .    ADD
+ QYU      C09    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QYU      C02    C03       single      1.524    0.020
+ QYU      C02    C21       single      1.524    0.020
+ QYU      O01    C02       single      1.432    0.020
+ QYU      C03    C04       single      1.524    0.020
+ QYU      C04    C05       single      1.524    0.020
+ QYU      C21    C05       single      1.524    0.020
+ QYU      C05    N06       single      1.450    0.020
+ QYU      C07    C08       aromatic    1.390    0.020
+ QYU      N06    C07       single      1.350    0.020
+ QYU      C07    N20       single      1.350    0.020
+ QYU      C08    C09       single      1.490    0.020
+ QYU      C08    C17       aromatic    1.390    0.020
+ QYU      C09    C10       aromatic    1.390    0.020
+ QYU      C09    C14       aromatic    1.390    0.020
+ QYU      C10    C11       aromatic    1.390    0.020
+ QYU      N16    C10       single      1.340    0.020
+ QYU      C11    C12       aromatic    1.390    0.020
+ QYU      C13    C12       aromatic    1.390    0.020
+ QYU      C12    F15       single      1.345    0.020
+ QYU      C14    C13       aromatic    1.390    0.020
+ QYU      C17    N16       single      1.340    0.020
+ QYU      N18    C17       single      1.355    0.020
+ QYU      C19    N18       aromatic    1.337    0.020
+ QYU      N20    C19       aromatic    1.337    0.020
+ QYU      H02    C02       single      1.099    0.020
+ QYU      H031   C03       single      1.092    0.020
+ QYU      H032   C03       single      1.092    0.020
+ QYU      H041   C04       single      1.092    0.020
+ QYU      H042   C04       single      1.092    0.020
+ QYU      H05    C05       single      1.099    0.020
+ QYU      H11    C11       single      1.083    0.020
+ QYU      H13    C13       single      1.083    0.020
+ QYU      H14    C14       single      1.083    0.020
+ QYU      H19    C19       single      1.083    0.020
+ QYU      H211   C21       single      1.092    0.020
+ QYU      H212   C21       single      1.092    0.020
+ QYU      HN06   N06       single      1.010    0.020
+ QYU      HN16   N16       single      1.040    0.020
+ QYU      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QYU      F15    C12    C13     120.000    3.000
+ QYU      F15    C12    C11     120.000    3.000
+ QYU      C13    C12    C11     120.000    3.000
+ QYU      C12    C13    H13     120.000    3.000
+ QYU      C12    C13    C14     120.000    3.000
+ QYU      H13    C13    C14     120.000    3.000
+ QYU      C13    C14    H14     120.000    3.000
+ QYU      C13    C14    C09     120.000    3.000
+ QYU      H14    C14    C09     120.000    3.000
+ QYU      C14    C09    C08     120.000    3.000
+ QYU      C14    C09    C10     120.000    3.000
+ QYU      C08    C09    C10     120.000    3.000
+ QYU      C12    C11    H11     120.000    3.000
+ QYU      C12    C11    C10     120.000    3.000
+ QYU      H11    C11    C10     120.000    3.000
+ QYU      C11    C10    N16     132.000    3.000
+ QYU      C11    C10    C09     120.000    3.000
+ QYU      N16    C10    C09     108.000    3.000
+ QYU      C10    N16    HN16    126.000    3.000
+ QYU      C10    N16    C17     108.000    3.000
+ QYU      HN16   N16    C17     126.000    3.000
+ QYU      N16    C17    C08     108.000    3.000
+ QYU      N16    C17    N18     132.000    3.000
+ QYU      C08    C17    N18     120.000    3.000
+ QYU      C17    C08    C07     120.000    3.000
+ QYU      C17    C08    C09     120.000    3.000
+ QYU      C07    C08    C09     120.000    3.000
+ QYU      C17    N18    C19     120.000    3.000
+ QYU      N18    C19    H19     120.000    3.000
+ QYU      N18    C19    N20     120.000    3.000
+ QYU      H19    C19    N20     120.000    3.000
+ QYU      C19    N20    C07     120.000    3.000
+ QYU      N20    C07    N06     120.000    3.000
+ QYU      N20    C07    C08     120.000    3.000
+ QYU      N06    C07    C08     120.000    3.000
+ QYU      C07    N06    HN06    120.000    3.000
+ QYU      C07    N06    C05     120.000    3.000
+ QYU      HN06   N06    C05     118.500    3.000
+ QYU      N06    C05    H05     108.550    3.000
+ QYU      N06    C05    C04     110.000    3.000
+ QYU      N06    C05    C21     110.000    3.000
+ QYU      H05    C05    C04     108.340    3.000
+ QYU      H05    C05    C21     108.340    3.000
+ QYU      C04    C05    C21     109.470    3.000
+ QYU      C05    C04    H041    109.470    3.000
+ QYU      C05    C04    H042    109.470    3.000
+ QYU      C05    C04    C03     111.000    3.000
+ QYU      H041   C04    H042    107.900    3.000
+ QYU      H041   C04    C03     109.470    3.000
+ QYU      H042   C04    C03     109.470    3.000
+ QYU      C04    C03    H032    109.470    3.000
+ QYU      C04    C03    H031    109.470    3.000
+ QYU      C04    C03    C02     111.000    3.000
+ QYU      H032   C03    H031    107.900    3.000
+ QYU      H032   C03    C02     109.470    3.000
+ QYU      H031   C03    C02     109.470    3.000
+ QYU      C05    C21    H211    109.470    3.000
+ QYU      C05    C21    H212    109.470    3.000
+ QYU      C05    C21    C02     111.000    3.000
+ QYU      H211   C21    H212    107.900    3.000
+ QYU      H211   C21    C02     109.470    3.000
+ QYU      H212   C21    C02     109.470    3.000
+ QYU      C21    C02    H02     108.340    3.000
+ QYU      C21    C02    O01     109.470    3.000
+ QYU      C21    C02    C03     109.470    3.000
+ QYU      H02    C02    O01     109.470    3.000
+ QYU      H02    C02    C03     108.340    3.000
+ QYU      O01    C02    C03     109.470    3.000
+ QYU      C02    O01    HO01    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QYU      CONST_1          F15    C12    C13    C14                0.000            0.000   0
+ QYU      CONST_2          C12    C13    C14    C09                0.000            0.000   0
+ QYU      CONST_3          C13    C14    C09    C08              180.000            0.000   0
+ QYU      CONST_4          C14    C09    C10    C11              180.000            0.000   0
+ QYU      CONST_5          F15    C12    C11    C10                0.000            0.000   0
+ QYU      CONST_6          C12    C11    C10    N16              180.000            0.000   0
+ QYU      CONST_7          C11    C10    N16    C17              180.000            0.000   0
+ QYU      CONST_8          C10    N16    C17    N18              180.000            0.000   0
+ QYU      CONST_9          N16    C17    C08    C07              180.000            0.000   0
+ QYU      CONST_10         C17    C08    C09    C14              180.000            0.000   0
+ QYU      CONST_11         N16    C17    N18    C19              180.000            0.000   0
+ QYU      CONST_12         C17    N18    C19    N20                0.000            0.000   0
+ QYU      CONST_13         N18    C19    N20    C07                0.000            0.000   0
+ QYU      CONST_14         C19    N20    C07    N06                0.000            0.000   0
+ QYU      CONST_15         N20    C07    C08    C17              180.000            0.000   0
+ QYU      var_1            N20    C07    N06    C05              -67.000           20.000   3
+ QYU      var_2            C07    N06    C05    C21                0.000           20.000   3
+ QYU      var_3            N06    C05    C04    C03              180.000           20.000   3
+ QYU      var_4            C05    C04    C03    C02              180.000           20.000   3
+ QYU      var_5            N06    C05    C21    C02              180.000           20.000   3
+ QYU      var_6            C05    C21    C02    O01              180.000           20.000   3
+ QYU      var_7            C21    C02    C03    C04              180.000           20.000   3
+ QYU      var_8            C21    C02    O01    HO01             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QYU      chir_01          C02    C03    C21    O01       positiv
+ QYU      chir_02          C05    C04    C21    N06       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QYU      plan-1            C07       0.020
+ QYU      plan-1            C08       0.020
+ QYU      plan-1            N06       0.020
+ QYU      plan-1            N20       0.020
+ QYU      plan-1            C19       0.020
+ QYU      plan-1            N18       0.020
+ QYU      plan-1            C17       0.020
+ QYU      plan-1            N16       0.020
+ QYU      plan-1            HN16      0.020
+ QYU      plan-1            C09       0.020
+ QYU      plan-1            C10       0.020
+ QYU      plan-1            C11       0.020
+ QYU      plan-1            C12       0.020
+ QYU      plan-1            C13       0.020
+ QYU      plan-1            C14       0.020
+ QYU      plan-1            H11       0.020
+ QYU      plan-1            F15       0.020
+ QYU      plan-1            H13       0.020
+ QYU      plan-1            H14       0.020
+ QYU      plan-1            HN06      0.020
+ QYU      plan-1            H19       0.020
+ QYU      plan-2            N06       0.020
+ QYU      plan-2            C05       0.020
+ QYU      plan-2            C07       0.020
+ QYU      plan-2            HN06      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

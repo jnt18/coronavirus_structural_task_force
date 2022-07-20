@@ -1,0 +1,286 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RVO      RVO '.                                   ' .                  32  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RVO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RVO           CL04   CL   CL        0.000    -48.520  -29.318    7.695
+ RVO           C03    C    CR6       0.000    -49.177  -29.176    6.045
+ RVO           C02    C    CR6       0.000    -48.297  -29.035    4.966
+ RVO           N01    N    NH2       0.000    -46.854  -29.027    5.203
+ RVO           H012   H    H         0.000    -46.457  -29.123    6.149
+ RVO           H011   H    H         0.000    -46.176  -28.925    4.434
+ RVO           N20    N    NRD6      0.000    -48.773  -28.929    3.726
+ RVO           C19    C    CR16      0.000    -50.084  -28.947    3.516
+ RVO           H19    H    H         0.000    -50.453  -28.849    2.503
+ RVO           C05    C    CR6       0.000    -50.560  -29.193    5.766
+ RVO           N18    N    NRD6      0.000    -50.960  -29.082    4.510
+ RVO           N06    N    N         0.000    -51.612  -29.349    6.791
+ RVO           C17    C    CH2       0.000    -52.901  -29.559    6.515
+ RVO           H172   H    H         0.000    -53.095  -30.575    6.165
+ RVO           H171   H    H         0.000    -53.297  -28.844    5.791
+ RVO           C07    C    CH2       0.000    -51.451  -29.743    8.323
+ RVO           H071   H    H         0.000    -51.074  -28.916    8.928
+ RVO           H072   H    H         0.000    -50.810  -30.616    8.463
+ RVO           C08    C    C1        0.000    -52.938  -30.096    8.772
+ RVO           H08    H    H         0.000    -53.273  -30.790    9.524
+ RVO           C09    C    C         0.000    -53.643  -29.326    7.993
+ RVO           O10    O    O2        0.000    -53.468  -27.952    8.377
+ RVO           C11    C    CR6       0.000    -54.272  -27.555    9.555
+ RVO           C16    C    CR16      0.000    -54.101  -26.290   10.102
+ RVO           H16    H    H         0.000    -53.386  -25.595    9.680
+ RVO           C12    C    CR16      0.000    -55.221  -28.428   10.148
+ RVO           H12    H    H         0.000    -55.382  -29.422    9.748
+ RVO           C13    C    CR16      0.000    -55.943  -27.983   11.255
+ RVO           H13    H    H         0.000    -56.667  -28.646   11.712
+ RVO           N14    N    NRD6      0.000    -55.768  -26.764   11.768
+ RVO           C15    C    CR16      0.000    -54.882  -25.933   11.221
+ RVO           H15    H    H         0.000    -54.757  -24.947   11.651
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RVO      CL04   n/a    C03    START
+ RVO      C03    CL04   C05    .
+ RVO      C02    C03    N20    .
+ RVO      N01    C02    H011   .
+ RVO      H012   N01    .      .
+ RVO      H011   N01    .      .
+ RVO      N20    C02    C19    .
+ RVO      C19    N20    H19    .
+ RVO      H19    C19    .      .
+ RVO      C05    C03    N06    .
+ RVO      N18    C05    .      .
+ RVO      N06    C05    C07    .
+ RVO      C17    N06    H171   .
+ RVO      H172   C17    .      .
+ RVO      H171   C17    .      .
+ RVO      C07    N06    C08    .
+ RVO      H071   C07    .      .
+ RVO      H072   C07    .      .
+ RVO      C08    C07    C09    .
+ RVO      H08    C08    .      .
+ RVO      C09    C08    O10    .
+ RVO      O10    C09    C11    .
+ RVO      C11    O10    C12    .
+ RVO      C16    C11    H16    .
+ RVO      H16    C16    .      .
+ RVO      C12    C11    C13    .
+ RVO      H12    C12    .      .
+ RVO      C13    C12    N14    .
+ RVO      H13    C13    .      .
+ RVO      N14    C13    C15    .
+ RVO      C15    N14    H15    .
+ RVO      H15    C15    .      END
+ RVO      C16    C15    .    ADD
+ RVO      C17    C09    .    ADD
+ RVO      C19    N18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RVO      C16    C15       aromatic    1.390    0.020
+ RVO      C16    C11       aromatic    1.390    0.020
+ RVO      C17    C09       single      1.510    0.020
+ RVO      C17    N06       single      1.455    0.020
+ RVO      C15    N14       aromatic    1.337    0.020
+ RVO      C13    C12       aromatic    1.390    0.020
+ RVO      N14    C13       deloc       1.337    0.020
+ RVO      C12    C11       aromatic    1.390    0.020
+ RVO      C11    O10       single      1.370    0.020
+ RVO      C19    N18       aromatic    1.337    0.020
+ RVO      C19    N20       aromatic    1.337    0.020
+ RVO      C02    C03       aromatic    1.384    0.020
+ RVO      N01    C02       single      1.355    0.020
+ RVO      N20    C02       deloc       1.350    0.020
+ RVO      C05    C03       aromatic    1.384    0.020
+ RVO      C03    CL04      single      1.795    0.020
+ RVO      N06    C05       single      1.400    0.020
+ RVO      N18    C05       deloc       1.350    0.020
+ RVO      C08    C07       single      1.510    0.020
+ RVO      C07    N06       single      1.455    0.020
+ RVO      C09    C08       double      1.340    0.020
+ RVO      O10    C09       single      1.454    0.020
+ RVO      H16    C16       single      1.083    0.020
+ RVO      H171   C17       single      1.092    0.020
+ RVO      H172   C17       single      1.092    0.020
+ RVO      H15    C15       single      1.083    0.020
+ RVO      H13    C13       single      1.083    0.020
+ RVO      H12    C12       single      1.083    0.020
+ RVO      H19    C19       single      1.083    0.020
+ RVO      H071   C07       single      1.092    0.020
+ RVO      H072   C07       single      1.092    0.020
+ RVO      H08    C08       single      1.077    0.020
+ RVO      H011   N01       single      1.010    0.020
+ RVO      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RVO      CL04   C03    C02     120.000    3.000
+ RVO      CL04   C03    C05     120.000    3.000
+ RVO      C02    C03    C05     120.000    3.000
+ RVO      C03    C02    N01     120.000    3.000
+ RVO      C03    C02    N20     120.000    3.000
+ RVO      N01    C02    N20     120.000    3.000
+ RVO      C02    N01    H012    120.000    3.000
+ RVO      C02    N01    H011    120.000    3.000
+ RVO      H012   N01    H011    120.000    3.000
+ RVO      C02    N20    C19     120.000    3.000
+ RVO      N20    C19    H19     120.000    3.000
+ RVO      N20    C19    N18     120.000    3.000
+ RVO      H19    C19    N18     120.000    3.000
+ RVO      C03    C05    N18     120.000    3.000
+ RVO      C03    C05    N06     120.000    3.000
+ RVO      N18    C05    N06     120.000    3.000
+ RVO      C05    N18    C19     120.000    3.000
+ RVO      C05    N06    C17     120.000    3.000
+ RVO      C05    N06    C07     120.000    3.000
+ RVO      C17    N06    C07     120.000    3.000
+ RVO      N06    C17    H172    109.470    3.000
+ RVO      N06    C17    H171    109.470    3.000
+ RVO      N06    C17    C09     109.500    3.000
+ RVO      H172   C17    H171    107.900    3.000
+ RVO      H172   C17    C09     109.470    3.000
+ RVO      H171   C17    C09     109.470    3.000
+ RVO      N06    C07    H071    109.470    3.000
+ RVO      N06    C07    H072    109.470    3.000
+ RVO      N06    C07    C08     109.500    3.000
+ RVO      H071   C07    H072    107.900    3.000
+ RVO      H071   C07    C08     109.470    3.000
+ RVO      H072   C07    C08     109.470    3.000
+ RVO      C07    C08    H08     120.000    3.000
+ RVO      C07    C08    C09     120.500    3.000
+ RVO      H08    C08    C09     120.000    3.000
+ RVO      C08    C09    O10     120.000    3.000
+ RVO      C08    C09    C17     120.000    3.000
+ RVO      O10    C09    C17     120.000    3.000
+ RVO      C09    O10    C11     120.000    3.000
+ RVO      O10    C11    C16     120.000    3.000
+ RVO      O10    C11    C12     120.000    3.000
+ RVO      C16    C11    C12     120.000    3.000
+ RVO      C11    C16    H16     120.000    3.000
+ RVO      C11    C16    C15     120.000    3.000
+ RVO      H16    C16    C15     120.000    3.000
+ RVO      C11    C12    H12     120.000    3.000
+ RVO      C11    C12    C13     120.000    3.000
+ RVO      H12    C12    C13     120.000    3.000
+ RVO      C12    C13    H13     120.000    3.000
+ RVO      C12    C13    N14     120.000    3.000
+ RVO      H13    C13    N14     120.000    3.000
+ RVO      C13    N14    C15     120.000    3.000
+ RVO      N14    C15    H15     120.000    3.000
+ RVO      N14    C15    C16     120.000    3.000
+ RVO      H15    C15    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RVO      CONST_1          CL04   C03    C02    N20                0.000            0.000   0
+ RVO      CONST_2          C03    C02    N01    H011             180.000            0.000   0
+ RVO      CONST_3          C03    C02    N20    C19                0.000            0.000   0
+ RVO      CONST_4          C02    N20    C19    N18                0.000            0.000   0
+ RVO      CONST_5          N20    C19    N18    C05                0.000            0.000   0
+ RVO      CONST_6          CL04   C03    C05    N06                0.000            0.000   0
+ RVO      CONST_7          C03    C05    N18    C19                0.000            0.000   0
+ RVO      var_1            C03    C05    N06    C07              -10.230           20.000   3
+ RVO      var_2            C05    N06    C17    C09             -168.320           20.000   3
+ RVO      var_3            N06    C17    C09    C08              180.000           20.000   3
+ RVO      var_4            C05    N06    C07    C08             -166.288           20.000   3
+ RVO      var_5            N06    C07    C08    C09              -29.902           20.000   3
+ RVO      var_6            C07    C08    C09    O10              -69.658           20.000   3
+ RVO      var_7            C08    C09    O10    C11              -79.281           20.000   3
+ RVO      var_8            C09    O10    C11    C12               -6.016           20.000   3
+ RVO      CONST_8          O10    C11    C16    C15                0.000            0.000   0
+ RVO      CONST_9          C11    C16    C15    N14                0.000            0.000   0
+ RVO      CONST_10         O10    C11    C12    C13                0.000            0.000   0
+ RVO      CONST_11         C11    C12    C13    N14                0.000            0.000   0
+ RVO      CONST_12         C12    C13    N14    C15                0.000            0.000   0
+ RVO      CONST_13         C13    N14    C15    C16                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RVO      plan-1            C16       0.020
+ RVO      plan-1            C15       0.020
+ RVO      plan-1            C11       0.020
+ RVO      plan-1            H16       0.020
+ RVO      plan-1            C13       0.020
+ RVO      plan-1            C12       0.020
+ RVO      plan-1            N14       0.020
+ RVO      plan-1            H15       0.020
+ RVO      plan-1            H13       0.020
+ RVO      plan-1            H12       0.020
+ RVO      plan-1            O10       0.020
+ RVO      plan-2            C19       0.020
+ RVO      plan-2            N18       0.020
+ RVO      plan-2            N20       0.020
+ RVO      plan-2            H19       0.020
+ RVO      plan-2            C02       0.020
+ RVO      plan-2            C03       0.020
+ RVO      plan-2            C05       0.020
+ RVO      plan-2            N01       0.020
+ RVO      plan-2            CL04      0.020
+ RVO      plan-2            N06       0.020
+ RVO      plan-2            H012      0.020
+ RVO      plan-2            H011      0.020
+ RVO      plan-3            C08       0.020
+ RVO      plan-3            C07       0.020
+ RVO      plan-3            C09       0.020
+ RVO      plan-3            H08       0.020
+ RVO      plan-4            C09       0.020
+ RVO      plan-4            C17       0.020
+ RVO      plan-4            C08       0.020
+ RVO      plan-4            O10       0.020
+ RVO      plan-4            H08       0.020
+ RVO      plan-5            N01       0.020
+ RVO      plan-5            C02       0.020
+ RVO      plan-5            H011      0.020
+ RVO      plan-5            H012      0.020
+ RVO      plan-6            N06       0.020
+ RVO      plan-6            C17       0.020
+ RVO      plan-6            C05       0.020
+ RVO      plan-6            C07       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

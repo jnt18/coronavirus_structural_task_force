@@ -1,0 +1,703 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QNF      QNF '.                                   ' .                  42  27 .
+QNV      QNV '.                                   ' .                  42  27 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QNF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QNF           O27    O    OC        0.000    -43.350  -30.554    3.765
+ QNF           C02    C    C         0.000    -43.860  -30.962    2.690
+ QNF           O01    O    OC       -1.000    -44.262  -32.155    2.597
+ QNF           C03    C    CH1       0.000    -44.000  -30.027    1.490
+ QNF           H03    H    H         0.000    -43.679  -30.549    0.578
+ QNF           C04    C    CH2       0.000    -43.263  -28.721    1.607
+ QNF           H041   H    H         0.000    -42.243  -28.785    1.223
+ QNF           H042   H    H         0.000    -43.242  -28.348    2.633
+ QNF           C05    C    CR6       0.000    -44.088  -27.759    0.724
+ QNF           C06    C    CR6       0.000    -43.770  -26.551    0.099
+ QNF           O07    O    OH1       0.000    -42.498  -25.987    0.211
+ QNF           HO07   H    H         0.000    -42.461  -25.155   -0.285
+ QNF           C08    C    CR16      0.000    -44.741  -25.898   -0.652
+ QNF           H08    H    H         0.000    -44.491  -24.961   -1.134
+ QNF           C09    C    CR16      0.000    -46.018  -26.411   -0.802
+ QNF           H09    H    H         0.000    -46.753  -25.881   -1.395
+ QNF           C10    C    CR16      0.000    -46.345  -27.602   -0.190
+ QNF           H10    H    H         0.000    -47.338  -28.020   -0.297
+ QNF           C11    C    CR6       0.000    -45.376  -28.263    0.571
+ QNF           C12    C    CH1       0.000    -45.446  -29.593    1.343
+ QNF           H12    H    H         0.000    -45.965  -30.330    0.714
+ QNF           N13    N    NH1       0.000    -46.153  -29.482    2.583
+ QNF           HN13   H    H         0.000    -45.673  -29.604    3.463
+ QNF           C14    C    C         0.000    -47.565  -29.193    2.548
+ QNF           O26    O    O         0.000    -48.159  -29.032    1.534
+ QNF           C15    C    CR6       0.000    -48.277  -29.161    3.880
+ QNF           C16    C    CR16      0.000    -49.651  -29.190    3.851
+ QNF           H16    H    H         0.000    -50.185  -29.202    2.909
+ QNF           C25    C    CR16      0.000    -47.595  -29.181    5.102
+ QNF           H25    H    H         0.000    -46.512  -29.191    5.113
+ QNF           C24    C    CR16      0.000    -48.295  -29.188    6.300
+ QNF           H24    H    H         0.000    -47.770  -29.176    7.247
+ QNF           C18    C    CR6       0.000    -49.681  -29.211    6.258
+ QNF           N19    N    NH1       0.000    -50.419  -29.187    7.486
+ QNF           HN19   H    H         0.000    -49.951  -28.946    8.348
+ QNF           C20    C    C         0.000    -51.786  -29.496    7.499
+ QNF           O23    O    O         0.000    -52.445  -29.464    8.487
+ QNF           C21    C    CH2       0.000    -52.294  -29.899    6.123
+ QNF           H212   H    H         0.000    -53.377  -29.765    6.162
+ QNF           H211   H    H         0.000    -52.063  -30.962    6.027
+ QNF           O22    O    O2        0.000    -51.772  -29.201    5.015
+ QNF           C17    C    CR6       0.000    -50.335  -29.204    5.048
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QNF      O27    n/a    C02    START
+ QNF      C02    O27    C03    .
+ QNF      O01    C02    .      .
+ QNF      C03    C02    C12    .
+ QNF      H03    C03    .      .
+ QNF      C04    C03    C05    .
+ QNF      H041   C04    .      .
+ QNF      H042   C04    .      .
+ QNF      C05    C04    C11    .
+ QNF      C06    C05    C08    .
+ QNF      O07    C06    HO07   .
+ QNF      HO07   O07    .      .
+ QNF      C08    C06    C09    .
+ QNF      H08    C08    .      .
+ QNF      C09    C08    C10    .
+ QNF      H09    C09    .      .
+ QNF      C10    C09    H10    .
+ QNF      H10    C10    .      .
+ QNF      C11    C05    .      .
+ QNF      C12    C03    N13    .
+ QNF      H12    C12    .      .
+ QNF      N13    C12    C14    .
+ QNF      HN13   N13    .      .
+ QNF      C14    N13    C15    .
+ QNF      O26    C14    .      .
+ QNF      C15    C14    C25    .
+ QNF      C16    C15    H16    .
+ QNF      H16    C16    .      .
+ QNF      C25    C15    C24    .
+ QNF      H25    C25    .      .
+ QNF      C24    C25    C18    .
+ QNF      H24    C24    .      .
+ QNF      C18    C24    N19    .
+ QNF      N19    C18    C20    .
+ QNF      HN19   N19    .      .
+ QNF      C20    N19    C21    .
+ QNF      O23    C20    .      .
+ QNF      C21    C20    O22    .
+ QNF      H212   C21    .      .
+ QNF      H211   C21    .      .
+ QNF      O22    C21    C17    .
+ QNF      C17    O22    .      END
+ QNF      C18    C17    .    ADD
+ QNF      C16    C17    .    ADD
+ QNF      C12    C11    .    ADD
+ QNF      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QNF      C18    C17       aromatic    1.384    0.020
+ QNF      C18    C24       aromatic    1.390    0.020
+ QNF      N19    C18       single      1.350    0.020
+ QNF      C16    C17       aromatic    1.390    0.020
+ QNF      C16    C15       aromatic    1.390    0.020
+ QNF      C17    O22       single      1.370    0.020
+ QNF      C15    C14       single      1.500    0.020
+ QNF      C25    C15       aromatic    1.390    0.020
+ QNF      C14    N13       single      1.330    0.020
+ QNF      O26    C14       double      1.220    0.020
+ QNF      C12    C11       single      1.480    0.020
+ QNF      C12    C03       single      1.524    0.020
+ QNF      N13    C12       single      1.450    0.020
+ QNF      C11    C10       aromatic    1.390    0.020
+ QNF      C11    C05       aromatic    1.384    0.020
+ QNF      C10    C09       aromatic    1.390    0.020
+ QNF      C21    C20       single      1.510    0.020
+ QNF      C20    N19       single      1.330    0.020
+ QNF      O23    C20       double      1.220    0.020
+ QNF      C03    C02       single      1.500    0.020
+ QNF      O01    C02       deloc       1.250    0.020
+ QNF      C02    O27       deloc       1.250    0.020
+ QNF      C04    C03       single      1.524    0.020
+ QNF      C05    C04       single      1.511    0.020
+ QNF      C06    C05       aromatic    1.384    0.020
+ QNF      C08    C06       aromatic    1.390    0.020
+ QNF      O07    C06       single      1.362    0.020
+ QNF      C09    C08       aromatic    1.390    0.020
+ QNF      O22    C21       single      1.426    0.020
+ QNF      C24    C25       aromatic    1.390    0.020
+ QNF      H16    C16       single      1.083    0.020
+ QNF      H12    C12       single      1.099    0.020
+ QNF      H10    C10       single      1.083    0.020
+ QNF      H03    C03       single      1.099    0.020
+ QNF      H041   C04       single      1.092    0.020
+ QNF      H042   C04       single      1.092    0.020
+ QNF      H08    C08       single      1.083    0.020
+ QNF      H09    C09       single      1.083    0.020
+ QNF      H211   C21       single      1.092    0.020
+ QNF      H212   C21       single      1.092    0.020
+ QNF      H24    C24       single      1.083    0.020
+ QNF      H25    C25       single      1.083    0.020
+ QNF      HN13   N13       single      1.010    0.020
+ QNF      HN19   N19       single      1.010    0.020
+ QNF      HO07   O07       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QNF      O27    C02    O01     123.000    3.000
+ QNF      O27    C02    C03     118.500    3.000
+ QNF      O01    C02    C03     118.500    3.000
+ QNF      C02    C03    H03     108.810    3.000
+ QNF      C02    C03    C04     109.470    3.000
+ QNF      C02    C03    C12     109.470    3.000
+ QNF      H03    C03    C04     108.340    3.000
+ QNF      H03    C03    C12     108.340    3.000
+ QNF      C04    C03    C12     111.000    3.000
+ QNF      C03    C04    H041    109.470    3.000
+ QNF      C03    C04    H042    109.470    3.000
+ QNF      C03    C04    C05     109.470    3.000
+ QNF      H041   C04    H042    107.900    3.000
+ QNF      H041   C04    C05     109.470    3.000
+ QNF      H042   C04    C05     109.470    3.000
+ QNF      C04    C05    C06     120.000    3.000
+ QNF      C04    C05    C11     120.000    3.000
+ QNF      C06    C05    C11     120.000    3.000
+ QNF      C05    C06    O07     120.000    3.000
+ QNF      C05    C06    C08     120.000    3.000
+ QNF      O07    C06    C08     120.000    3.000
+ QNF      C06    O07    HO07    109.470    3.000
+ QNF      C06    C08    H08     120.000    3.000
+ QNF      C06    C08    C09     120.000    3.000
+ QNF      H08    C08    C09     120.000    3.000
+ QNF      C08    C09    H09     120.000    3.000
+ QNF      C08    C09    C10     120.000    3.000
+ QNF      H09    C09    C10     120.000    3.000
+ QNF      C09    C10    H10     120.000    3.000
+ QNF      C09    C10    C11     120.000    3.000
+ QNF      H10    C10    C11     120.000    3.000
+ QNF      C05    C11    C12     120.000    3.000
+ QNF      C05    C11    C10     120.000    3.000
+ QNF      C12    C11    C10     120.000    3.000
+ QNF      C03    C12    H12     108.340    3.000
+ QNF      C03    C12    N13     110.000    3.000
+ QNF      C03    C12    C11     109.470    3.000
+ QNF      H12    C12    N13     108.550    3.000
+ QNF      H12    C12    C11     109.470    3.000
+ QNF      N13    C12    C11     109.470    3.000
+ QNF      C12    N13    HN13    118.500    3.000
+ QNF      C12    N13    C14     121.500    3.000
+ QNF      HN13   N13    C14     120.000    3.000
+ QNF      N13    C14    O26     123.000    3.000
+ QNF      N13    C14    C15     120.000    3.000
+ QNF      O26    C14    C15     120.500    3.000
+ QNF      C14    C15    C16     120.000    3.000
+ QNF      C14    C15    C25     120.000    3.000
+ QNF      C16    C15    C25     120.000    3.000
+ QNF      C15    C16    H16     120.000    3.000
+ QNF      C15    C16    C17     120.000    3.000
+ QNF      H16    C16    C17     120.000    3.000
+ QNF      C15    C25    H25     120.000    3.000
+ QNF      C15    C25    C24     120.000    3.000
+ QNF      H25    C25    C24     120.000    3.000
+ QNF      C25    C24    H24     120.000    3.000
+ QNF      C25    C24    C18     120.000    3.000
+ QNF      H24    C24    C18     120.000    3.000
+ QNF      C24    C18    N19     120.000    3.000
+ QNF      C24    C18    C17     120.000    3.000
+ QNF      N19    C18    C17     120.000    3.000
+ QNF      C18    N19    HN19    120.000    3.000
+ QNF      C18    N19    C20     120.000    3.000
+ QNF      HN19   N19    C20     120.000    3.000
+ QNF      N19    C20    O23     123.000    3.000
+ QNF      N19    C20    C21     116.500    3.000
+ QNF      O23    C20    C21     120.500    3.000
+ QNF      C20    C21    H212    109.470    3.000
+ QNF      C20    C21    H211    109.470    3.000
+ QNF      C20    C21    O22     109.470    3.000
+ QNF      H212   C21    H211    107.900    3.000
+ QNF      H212   C21    O22     109.470    3.000
+ QNF      H211   C21    O22     109.470    3.000
+ QNF      C21    O22    C17     120.000    3.000
+ QNF      O22    C17    C18     120.000    3.000
+ QNF      O22    C17    C16     120.000    3.000
+ QNF      C18    C17    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QNF      var_1            O27    C02    C03    C12              180.000           20.000   3
+ QNF      var_2            C02    C03    C04    C05              180.000           20.000   3
+ QNF      var_3            C03    C04    C05    C11                0.000           20.000   2
+ QNF      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QNF      var_4            C05    C06    O07    HO07             180.000           20.000   3
+ QNF      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QNF      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QNF      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QNF      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QNF      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QNF      var_5            C02    C03    C12    N13              180.000           20.000   3
+ QNF      var_6            C03    C12    C11    C05              -20.419           20.000   3
+ QNF      var_7            C03    C12    N13    C14                0.000           20.000   3
+ QNF      var_8            C12    N13    C14    C15              180.000           20.000   2
+ QNF      var_9            N13    C14    C15    C25               10.565           20.000   3
+ QNF      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QNF      CONST_8          C15    C16    C17    O22                0.000            0.000   0
+ QNF      CONST_9          C14    C15    C25    C24                0.000            0.000   0
+ QNF      CONST_10         C15    C25    C24    C18                0.000            0.000   0
+ QNF      CONST_11         C25    C24    C18    N19                0.000            0.000   0
+ QNF      CONST_12         C24    C18    C17    O22                0.000            0.000   0
+ QNF      var_10           C24    C18    N19    C20             -166.225           20.000   3
+ QNF      var_11           C18    N19    C20    C21              180.000           20.000   2
+ QNF      var_12           N19    C20    C21    O22              180.000           20.000   3
+ QNF      var_13           C20    C21    O22    C17               51.892           20.000   3
+ QNF      var_14           C21    O22    C17    C18              -31.709           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QNF      chir_01          C12    C11    C03    N13       negativ
+ QNF      chir_02          C03    C12    C02    C04       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QNF      plan-1            C18       0.020
+ QNF      plan-1            C17       0.020
+ QNF      plan-1            C24       0.020
+ QNF      plan-1            N19       0.020
+ QNF      plan-1            C16       0.020
+ QNF      plan-1            C15       0.020
+ QNF      plan-1            C25       0.020
+ QNF      plan-1            H16       0.020
+ QNF      plan-1            O22       0.020
+ QNF      plan-1            C14       0.020
+ QNF      plan-1            H24       0.020
+ QNF      plan-1            H25       0.020
+ QNF      plan-1            HN19      0.020
+ QNF      plan-2            C14       0.020
+ QNF      plan-2            C15       0.020
+ QNF      plan-2            N13       0.020
+ QNF      plan-2            O26       0.020
+ QNF      plan-2            HN13      0.020
+ QNF      plan-3            C11       0.020
+ QNF      plan-3            C12       0.020
+ QNF      plan-3            C10       0.020
+ QNF      plan-3            C05       0.020
+ QNF      plan-3            C06       0.020
+ QNF      plan-3            C08       0.020
+ QNF      plan-3            C09       0.020
+ QNF      plan-3            H10       0.020
+ QNF      plan-3            C04       0.020
+ QNF      plan-3            O07       0.020
+ QNF      plan-3            H08       0.020
+ QNF      plan-3            H09       0.020
+ QNF      plan-4            C20       0.020
+ QNF      plan-4            C21       0.020
+ QNF      plan-4            N19       0.020
+ QNF      plan-4            O23       0.020
+ QNF      plan-4            HN19      0.020
+ QNF      plan-5            C02       0.020
+ QNF      plan-5            C03       0.020
+ QNF      plan-5            O01       0.020
+ QNF      plan-5            O27       0.020
+ QNF      plan-6            N13       0.020
+ QNF      plan-6            C14       0.020
+ QNF      plan-6            C12       0.020
+ QNF      plan-6            HN13      0.020
+ QNF      plan-7            N19       0.020
+ QNF      plan-7            C18       0.020
+ QNF      plan-7            C20       0.020
+ QNF      plan-7            HN19      0.020
+#
+data_comp_QNV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QNV           O27    O    OC       -1.000    -42.420  -29.425    3.631
+ QNV           C02    C    C         0.000    -43.303  -30.000    2.942
+ QNV           O01    O    OC        0.000    -43.767  -31.113    3.309
+ QNV           C03    C    CH1       0.000    -43.823  -29.328    1.649
+ QNV           H03    H    H         0.000    -43.638  -28.245    1.681
+ QNV           C12    C    CH1       0.000    -45.286  -29.600    1.466
+ QNV           H12    H    H         0.000    -45.676  -28.875    0.737
+ QNV           C11    C    CR6       0.000    -45.275  -31.002    0.788
+ QNV           C10    C    CR16      0.000    -46.208  -32.010    0.673
+ QNV           H10    H    H         0.000    -47.173  -31.902    1.153
+ QNV           C09    C    CR16      0.000    -45.927  -33.163   -0.050
+ QNV           H09    H    H         0.000    -46.673  -33.945   -0.122
+ QNV           C08    C    CR16      0.000    -44.694  -33.324   -0.684
+ QNV           H08    H    H         0.000    -44.475  -34.224   -1.245
+ QNV           C06    C    CR6       0.000    -43.751  -32.305   -0.581
+ QNV           O07    O    OH1       0.000    -42.499  -32.393   -1.192
+ QNV           HO07   H    H         0.000    -41.985  -31.592   -1.008
+ QNV           C05    C    CR6       0.000    -44.045  -31.164    0.148
+ QNV           C04    C    CH2       0.000    -43.202  -29.920    0.441
+ QNV           H042   H    H         0.000    -43.240  -29.200   -0.379
+ QNV           H041   H    H         0.000    -42.161  -30.174    0.653
+ QNV           N13    N    NH1       0.000    -46.094  -29.518    2.642
+ QNV           HN13   H    H         0.000    -45.674  -29.684    3.545
+ QNV           C14    C    C         0.000    -47.502  -29.201    2.560
+ QNV           O26    O    O         0.000    -48.050  -29.021    1.523
+ QNV           C15    C    CR6       0.000    -48.265  -29.171    3.875
+ QNV           C25    C    CR16      0.000    -47.597  -29.186    5.105
+ QNV           H25    H    H         0.000    -46.514  -29.199    5.123
+ QNV           C24    C    CR16      0.000    -48.300  -29.185    6.300
+ QNV           H24    H    H         0.000    -47.778  -29.177    7.249
+ QNV           C18    C    CR6       0.000    -49.685  -29.195    6.254
+ QNV           N19    N    NH1       0.000    -50.423  -29.175    7.483
+ QNV           HN19   H    H         0.000    -49.958  -28.923    8.343
+ QNV           C20    C    C         0.000    -51.786  -29.503    7.498
+ QNV           O23    O    O         0.000    -52.447  -29.489    8.482
+ QNV           C21    C    CH2       0.000    -52.293  -29.896    6.119
+ QNV           H211   H    H         0.000    -53.377  -29.774    6.160
+ QNV           H212   H    H         0.000    -52.051  -30.955    6.009
+ QNV           O22    O    O2        0.000    -51.780  -29.179    5.020
+ QNV           C17    C    CR6       0.000    -50.339  -29.185    5.043
+ QNV           C16    C    CR16      0.000    -49.644  -29.182    3.845
+ QNV           H16    H    H         0.000    -50.174  -29.188    2.901
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QNV      O27    n/a    C02    START
+ QNV      C02    O27    C03    .
+ QNV      O01    C02    .      .
+ QNV      C03    C02    C12    .
+ QNV      H03    C03    .      .
+ QNV      C12    C03    N13    .
+ QNV      H12    C12    .      .
+ QNV      C11    C12    C05    .
+ QNV      C10    C11    C09    .
+ QNV      H10    C10    .      .
+ QNV      C09    C10    C08    .
+ QNV      H09    C09    .      .
+ QNV      C08    C09    C06    .
+ QNV      H08    C08    .      .
+ QNV      C06    C08    O07    .
+ QNV      O07    C06    HO07   .
+ QNV      HO07   O07    .      .
+ QNV      C05    C11    C04    .
+ QNV      C04    C05    H041   .
+ QNV      H042   C04    .      .
+ QNV      H041   C04    .      .
+ QNV      N13    C12    C14    .
+ QNV      HN13   N13    .      .
+ QNV      C14    N13    C15    .
+ QNV      O26    C14    .      .
+ QNV      C15    C14    C25    .
+ QNV      C25    C15    C24    .
+ QNV      H25    C25    .      .
+ QNV      C24    C25    C18    .
+ QNV      H24    C24    .      .
+ QNV      C18    C24    N19    .
+ QNV      N19    C18    C20    .
+ QNV      HN19   N19    .      .
+ QNV      C20    N19    C21    .
+ QNV      O23    C20    .      .
+ QNV      C21    C20    O22    .
+ QNV      H211   C21    .      .
+ QNV      H212   C21    .      .
+ QNV      O22    C21    C17    .
+ QNV      C17    O22    C16    .
+ QNV      C16    C17    H16    .
+ QNV      H16    C16    .      END
+ QNV      C03    C04    .    ADD
+ QNV      C05    C06    .    ADD
+ QNV      C15    C16    .    ADD
+ QNV      C17    C18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QNV      C03    C02       single      1.500    0.020
+ QNV      O01    C02       deloc       1.250    0.020
+ QNV      C02    O27       deloc       1.250    0.020
+ QNV      C03    C04       single      1.524    0.020
+ QNV      C12    C03       single      1.524    0.020
+ QNV      C04    C05       single      1.511    0.020
+ QNV      C05    C06       aromatic    1.384    0.020
+ QNV      C05    C11       aromatic    1.384    0.020
+ QNV      C06    C08       aromatic    1.390    0.020
+ QNV      O07    C06       single      1.362    0.020
+ QNV      C08    C09       aromatic    1.390    0.020
+ QNV      C09    C10       aromatic    1.390    0.020
+ QNV      C10    C11       aromatic    1.390    0.020
+ QNV      C11    C12       single      1.480    0.020
+ QNV      N13    C12       single      1.450    0.020
+ QNV      C15    C14       single      1.500    0.020
+ QNV      C14    N13       single      1.330    0.020
+ QNV      O26    C14       double      1.220    0.020
+ QNV      C15    C16       aromatic    1.390    0.020
+ QNV      C25    C15       aromatic    1.390    0.020
+ QNV      C16    C17       aromatic    1.390    0.020
+ QNV      C17    C18       aromatic    1.384    0.020
+ QNV      C17    O22       single      1.370    0.020
+ QNV      C18    C24       aromatic    1.390    0.020
+ QNV      N19    C18       single      1.350    0.020
+ QNV      C21    C20       single      1.510    0.020
+ QNV      C20    N19       single      1.330    0.020
+ QNV      O23    C20       double      1.220    0.020
+ QNV      O22    C21       single      1.426    0.020
+ QNV      C24    C25       aromatic    1.390    0.020
+ QNV      H03    C03       single      1.099    0.020
+ QNV      H041   C04       single      1.092    0.020
+ QNV      H042   C04       single      1.092    0.020
+ QNV      H08    C08       single      1.083    0.020
+ QNV      H09    C09       single      1.083    0.020
+ QNV      H10    C10       single      1.083    0.020
+ QNV      H12    C12       single      1.099    0.020
+ QNV      H16    C16       single      1.083    0.020
+ QNV      H211   C21       single      1.092    0.020
+ QNV      H212   C21       single      1.092    0.020
+ QNV      H24    C24       single      1.083    0.020
+ QNV      H25    C25       single      1.083    0.020
+ QNV      HN13   N13       single      1.010    0.020
+ QNV      HN19   N19       single      1.010    0.020
+ QNV      HO07   O07       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QNV      O27    C02    O01     123.000    3.000
+ QNV      O27    C02    C03     118.500    3.000
+ QNV      O01    C02    C03     118.500    3.000
+ QNV      C02    C03    H03     108.810    3.000
+ QNV      C02    C03    C12     109.470    3.000
+ QNV      C02    C03    C04     109.470    3.000
+ QNV      H03    C03    C12     108.340    3.000
+ QNV      H03    C03    C04     108.340    3.000
+ QNV      C12    C03    C04     111.000    3.000
+ QNV      C03    C12    H12     108.340    3.000
+ QNV      C03    C12    C11     109.470    3.000
+ QNV      C03    C12    N13     110.000    3.000
+ QNV      H12    C12    C11     109.470    3.000
+ QNV      H12    C12    N13     108.550    3.000
+ QNV      C11    C12    N13     109.470    3.000
+ QNV      C12    C11    C10     120.000    3.000
+ QNV      C12    C11    C05     120.000    3.000
+ QNV      C10    C11    C05     120.000    3.000
+ QNV      C11    C10    H10     120.000    3.000
+ QNV      C11    C10    C09     120.000    3.000
+ QNV      H10    C10    C09     120.000    3.000
+ QNV      C10    C09    H09     120.000    3.000
+ QNV      C10    C09    C08     120.000    3.000
+ QNV      H09    C09    C08     120.000    3.000
+ QNV      C09    C08    H08     120.000    3.000
+ QNV      C09    C08    C06     120.000    3.000
+ QNV      H08    C08    C06     120.000    3.000
+ QNV      C08    C06    O07     120.000    3.000
+ QNV      C08    C06    C05     120.000    3.000
+ QNV      O07    C06    C05     120.000    3.000
+ QNV      C06    O07    HO07    109.470    3.000
+ QNV      C11    C05    C04     120.000    3.000
+ QNV      C11    C05    C06     120.000    3.000
+ QNV      C04    C05    C06     120.000    3.000
+ QNV      C05    C04    H042    109.470    3.000
+ QNV      C05    C04    H041    109.470    3.000
+ QNV      C05    C04    C03     109.470    3.000
+ QNV      H042   C04    H041    107.900    3.000
+ QNV      H042   C04    C03     109.470    3.000
+ QNV      H041   C04    C03     109.470    3.000
+ QNV      C12    N13    HN13    118.500    3.000
+ QNV      C12    N13    C14     121.500    3.000
+ QNV      HN13   N13    C14     120.000    3.000
+ QNV      N13    C14    O26     123.000    3.000
+ QNV      N13    C14    C15     120.000    3.000
+ QNV      O26    C14    C15     120.500    3.000
+ QNV      C14    C15    C25     120.000    3.000
+ QNV      C14    C15    C16     120.000    3.000
+ QNV      C25    C15    C16     120.000    3.000
+ QNV      C15    C25    H25     120.000    3.000
+ QNV      C15    C25    C24     120.000    3.000
+ QNV      H25    C25    C24     120.000    3.000
+ QNV      C25    C24    H24     120.000    3.000
+ QNV      C25    C24    C18     120.000    3.000
+ QNV      H24    C24    C18     120.000    3.000
+ QNV      C24    C18    N19     120.000    3.000
+ QNV      C24    C18    C17     120.000    3.000
+ QNV      N19    C18    C17     120.000    3.000
+ QNV      C18    N19    HN19    120.000    3.000
+ QNV      C18    N19    C20     120.000    3.000
+ QNV      HN19   N19    C20     120.000    3.000
+ QNV      N19    C20    O23     123.000    3.000
+ QNV      N19    C20    C21     116.500    3.000
+ QNV      O23    C20    C21     120.500    3.000
+ QNV      C20    C21    H211    109.470    3.000
+ QNV      C20    C21    H212    109.470    3.000
+ QNV      C20    C21    O22     109.470    3.000
+ QNV      H211   C21    H212    107.900    3.000
+ QNV      H211   C21    O22     109.470    3.000
+ QNV      H212   C21    O22     109.470    3.000
+ QNV      C21    O22    C17     120.000    3.000
+ QNV      O22    C17    C16     120.000    3.000
+ QNV      O22    C17    C18     120.000    3.000
+ QNV      C16    C17    C18     120.000    3.000
+ QNV      C17    C16    H16     120.000    3.000
+ QNV      C17    C16    C15     120.000    3.000
+ QNV      H16    C16    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QNV      var_1            O27    C02    C03    C12              180.000           20.000   3
+ QNV      var_2            C02    C03    C04    C05              180.000           20.000   3
+ QNV      var_3            C02    C03    C12    N13              180.000           20.000   3
+ QNV      var_4            C03    C12    C11    C05              -24.208           20.000   3
+ QNV      CONST_1          C12    C11    C10    C09                0.000            0.000   0
+ QNV      CONST_2          C11    C10    C09    C08                0.000            0.000   0
+ QNV      CONST_3          C10    C09    C08    C06                0.000            0.000   0
+ QNV      CONST_4          C09    C08    C06    O07                0.000            0.000   0
+ QNV      var_5            C08    C06    O07    HO07             180.000           20.000   3
+ QNV      CONST_5          C12    C11    C05    C04                0.000            0.000   0
+ QNV      CONST_6          C11    C05    C06    C08                0.000            0.000   0
+ QNV      var_6            C11    C05    C04    C03                0.000           20.000   2
+ QNV      var_7            C03    C12    N13    C14                0.000           20.000   3
+ QNV      var_8            C12    N13    C14    C15              180.000           20.000   2
+ QNV      var_9            N13    C14    C15    C25               12.184           20.000   3
+ QNV      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QNV      CONST_8          C14    C15    C25    C24                0.000            0.000   0
+ QNV      CONST_9          C15    C25    C24    C18                0.000            0.000   0
+ QNV      CONST_10         C25    C24    C18    N19                0.000            0.000   0
+ QNV      var_10           C24    C18    N19    C20             -164.686           20.000   3
+ QNV      var_11           C18    N19    C20    C21              180.000           20.000   2
+ QNV      var_12           N19    C20    C21    O22              180.000           20.000   3
+ QNV      var_13           C20    C21    O22    C17               52.724           20.000   3
+ QNV      var_14           C21    O22    C17    C16              147.271           20.000   3
+ QNV      CONST_11         O22    C17    C18    C24                0.000            0.000   0
+ QNV      CONST_12         O22    C17    C16    C15                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QNV      chir_01          C03    C02    C04    C12       negativ
+ QNV      chir_02          C12    C03    C11    N13       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QNV      plan-1            C02       0.020
+ QNV      plan-1            C03       0.020
+ QNV      plan-1            O01       0.020
+ QNV      plan-1            O27       0.020
+ QNV      plan-2            C05       0.020
+ QNV      plan-2            C04       0.020
+ QNV      plan-2            C06       0.020
+ QNV      plan-2            C11       0.020
+ QNV      plan-2            C08       0.020
+ QNV      plan-2            C09       0.020
+ QNV      plan-2            C10       0.020
+ QNV      plan-2            O07       0.020
+ QNV      plan-2            H08       0.020
+ QNV      plan-2            H09       0.020
+ QNV      plan-2            H10       0.020
+ QNV      plan-2            C12       0.020
+ QNV      plan-3            C14       0.020
+ QNV      plan-3            C15       0.020
+ QNV      plan-3            N13       0.020
+ QNV      plan-3            O26       0.020
+ QNV      plan-3            HN13      0.020
+ QNV      plan-4            C15       0.020
+ QNV      plan-4            C14       0.020
+ QNV      plan-4            C16       0.020
+ QNV      plan-4            C25       0.020
+ QNV      plan-4            C17       0.020
+ QNV      plan-4            C18       0.020
+ QNV      plan-4            C24       0.020
+ QNV      plan-4            H16       0.020
+ QNV      plan-4            O22       0.020
+ QNV      plan-4            N19       0.020
+ QNV      plan-4            H24       0.020
+ QNV      plan-4            H25       0.020
+ QNV      plan-4            HN19      0.020
+ QNV      plan-5            C20       0.020
+ QNV      plan-5            C21       0.020
+ QNV      plan-5            N19       0.020
+ QNV      plan-5            O23       0.020
+ QNV      plan-5            HN19      0.020
+ QNV      plan-6            N13       0.020
+ QNV      plan-6            C12       0.020
+ QNV      plan-6            C14       0.020
+ QNV      plan-6            HN13      0.020
+ QNV      plan-7            N19       0.020
+ QNV      plan-7            C18       0.020
+ QNV      plan-7            C20       0.020
+ QNV      plan-7            HN19      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,307 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RWQ      RWQ '.                                   ' .                  35  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RWQ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RWQ           F16    F    F         0.000    -52.036  -28.919    4.859
+ RWQ           C13    C    CR6       0.000    -50.676  -28.979    4.789
+ RWQ           C14    C    CR16      0.000    -50.036  -28.976    3.547
+ RWQ           H14    H    H         0.000    -50.622  -28.924    2.638
+ RWQ           C12    C    CR16      0.000    -49.921  -29.038    5.953
+ RWQ           H12    H    H         0.000    -50.415  -29.036    6.917
+ RWQ           C11    C    CR56      0.000    -48.511  -29.100    5.885
+ RWQ           N17    N    NRD5      0.000    -47.569  -29.166    6.857
+ RWQ           C18    C    CR56      0.000    -46.330  -29.212    6.312
+ RWQ           N19    N    NRD6      0.000    -45.094  -29.282    6.868
+ RWQ           C20    C    CR16      0.000    -44.007  -29.317    6.124
+ RWQ           H20    H    H         0.000    -43.038  -29.374    6.605
+ RWQ           N21    N    NRD6      0.000    -44.073  -29.284    4.798
+ RWQ           C08    C    CR6       0.000    -45.253  -29.213    4.189
+ RWQ           C09    C    CR56      0.000    -46.449  -29.178    4.942
+ RWQ           C10    C    CR56      0.000    -47.880  -29.105    4.663
+ RWQ           C15    C    CR16      0.000    -48.648  -29.039    3.474
+ RWQ           H15    H    H         0.000    -48.155  -29.038    2.510
+ RWQ           N07    N    N         0.000    -45.298  -29.195    2.741
+ RWQ           C06    C    CH2       0.000    -43.963  -28.981    2.035
+ RWQ           H061   H    H         0.000    -43.307  -29.791    2.361
+ RWQ           H062   H    H         0.000    -43.570  -28.028    2.397
+ RWQ           C05    C    C1        0.000    -44.030  -28.960    0.505
+ RWQ           H05    H    H         0.000    -43.204  -28.675   -0.124
+ RWQ           C04    C    C1        0.000    -45.309  -29.360    0.000
+ RWQ           H04    H    H         0.000    -45.841  -28.809   -0.757
+ RWQ           C22    C    CH2       0.000    -45.991  -30.401    2.111
+ RWQ           H221   H    H         0.000    -47.052  -30.297    2.347
+ RWQ           H222   H    H         0.000    -45.590  -31.280    2.620
+ RWQ           C03    C    C         0.000    -45.816  -30.562    0.595
+ RWQ           C02    C    CH2       0.000    -44.808  -31.757    0.264
+ RWQ           H021   H    H         0.000    -44.027  -31.382   -0.401
+ RWQ           H022   H    H         0.000    -45.361  -32.553   -0.239
+ RWQ           O01    O    OH1       0.000    -44.226  -32.258    1.434
+ RWQ           HO01   H    H         0.000    -43.624  -32.976    1.204
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RWQ      F16    n/a    C13    START
+ RWQ      C13    F16    C12    .
+ RWQ      C14    C13    H14    .
+ RWQ      H14    C14    .      .
+ RWQ      C12    C13    C11    .
+ RWQ      H12    C12    .      .
+ RWQ      C11    C12    N17    .
+ RWQ      N17    C11    C18    .
+ RWQ      C18    N17    N19    .
+ RWQ      N19    C18    C20    .
+ RWQ      C20    N19    N21    .
+ RWQ      H20    C20    .      .
+ RWQ      N21    C20    C08    .
+ RWQ      C08    N21    N07    .
+ RWQ      C09    C08    C10    .
+ RWQ      C10    C09    C15    .
+ RWQ      C15    C10    H15    .
+ RWQ      H15    C15    .      .
+ RWQ      N07    C08    C22    .
+ RWQ      C06    N07    C05    .
+ RWQ      H061   C06    .      .
+ RWQ      H062   C06    .      .
+ RWQ      C05    C06    C04    .
+ RWQ      H05    C05    .      .
+ RWQ      C04    C05    H04    .
+ RWQ      H04    C04    .      .
+ RWQ      C22    N07    C03    .
+ RWQ      H221   C22    .      .
+ RWQ      H222   C22    .      .
+ RWQ      C03    C22    C02    .
+ RWQ      C02    C03    O01    .
+ RWQ      H021   C02    .      .
+ RWQ      H022   C02    .      .
+ RWQ      O01    C02    HO01   .
+ RWQ      HO01   O01    .      END
+ RWQ      C18    C09    .    ADD
+ RWQ      C15    C14    .    ADD
+ RWQ      C11    C10    .    ADD
+ RWQ      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RWQ      C18    C09       aromatic    1.390    0.020
+ RWQ      C18    N17       aromatic    1.350    0.020
+ RWQ      N19    C18       aromatic    1.355    0.020
+ RWQ      C15    C14       aromatic    1.390    0.020
+ RWQ      C15    C10       aromatic    1.390    0.020
+ RWQ      C14    C13       aromatic    1.390    0.020
+ RWQ      C12    C13       aromatic    1.390    0.020
+ RWQ      C13    F16       single      1.345    0.020
+ RWQ      C11    C12       aromatic    1.390    0.020
+ RWQ      C11    C10       aromatic    1.390    0.020
+ RWQ      N17    C11       aromatic    1.350    0.020
+ RWQ      C10    C09       single      1.490    0.020
+ RWQ      C20    N19       aromatic    1.337    0.020
+ RWQ      N21    C20       aromatic    1.337    0.020
+ RWQ      C02    C03       single      1.510    0.020
+ RWQ      O01    C02       single      1.432    0.020
+ RWQ      C03    C04       aromatic    1.340    0.020
+ RWQ      C03    C22       single      1.510    0.020
+ RWQ      C04    C05       aromatic    1.330    0.020
+ RWQ      C05    C06       single      1.510    0.020
+ RWQ      C06    N07       single      1.455    0.020
+ RWQ      C09    C08       aromatic    1.390    0.020
+ RWQ      N07    C08       single      1.400    0.020
+ RWQ      C08    N21       aromat      1.350    0.020
+ RWQ      C22    N07       single      1.455    0.020
+ RWQ      H15    C15       single      1.083    0.020
+ RWQ      H14    C14       single      1.083    0.020
+ RWQ      H12    C12       single      1.083    0.020
+ RWQ      H20    C20       single      1.083    0.020
+ RWQ      H021   C02       single      1.092    0.020
+ RWQ      H022   C02       single      1.092    0.020
+ RWQ      H04    C04       single      1.077    0.020
+ RWQ      H05    C05       single      1.077    0.020
+ RWQ      H061   C06       single      1.092    0.020
+ RWQ      H062   C06       single      1.092    0.020
+ RWQ      H221   C22       single      1.092    0.020
+ RWQ      H222   C22       single      1.092    0.020
+ RWQ      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RWQ      F16    C13    C14     120.000    3.000
+ RWQ      F16    C13    C12     120.000    3.000
+ RWQ      C14    C13    C12     120.000    3.000
+ RWQ      C13    C14    H14     120.000    3.000
+ RWQ      C13    C14    C15     120.000    3.000
+ RWQ      H14    C14    C15     120.000    3.000
+ RWQ      C13    C12    H12     120.000    3.000
+ RWQ      C13    C12    C11     120.000    3.000
+ RWQ      H12    C12    C11     120.000    3.000
+ RWQ      C12    C11    N17     132.000    3.000
+ RWQ      C12    C11    C10     120.000    3.000
+ RWQ      N17    C11    C10     108.000    3.000
+ RWQ      C11    N17    C18     108.000    3.000
+ RWQ      N17    C18    N19     120.000    3.000
+ RWQ      N17    C18    C09     108.000    3.000
+ RWQ      N19    C18    C09     120.000    3.000
+ RWQ      C18    N19    C20     120.000    3.000
+ RWQ      N19    C20    H20     120.000    3.000
+ RWQ      N19    C20    N21     120.000    3.000
+ RWQ      H20    C20    N21     120.000    3.000
+ RWQ      C20    N21    C08     120.000    3.000
+ RWQ      N21    C08    C09     120.000    3.000
+ RWQ      N21    C08    N07     120.000    3.000
+ RWQ      C09    C08    N07     120.000    3.000
+ RWQ      C08    C09    C10     120.000    3.000
+ RWQ      C08    C09    C18     120.000    3.000
+ RWQ      C10    C09    C18     120.000    3.000
+ RWQ      C09    C10    C15     120.000    3.000
+ RWQ      C09    C10    C11     120.000    3.000
+ RWQ      C15    C10    C11     120.000    3.000
+ RWQ      C10    C15    H15     120.000    3.000
+ RWQ      C10    C15    C14     120.000    3.000
+ RWQ      H15    C15    C14     120.000    3.000
+ RWQ      C08    N07    C06     120.000    3.000
+ RWQ      C08    N07    C22     120.000    3.000
+ RWQ      C06    N07    C22     120.000    3.000
+ RWQ      N07    C06    H061    109.470    3.000
+ RWQ      N07    C06    H062    109.470    3.000
+ RWQ      N07    C06    C05     109.500    3.000
+ RWQ      H061   C06    H062    107.900    3.000
+ RWQ      H061   C06    C05     109.470    3.000
+ RWQ      H062   C06    C05     109.470    3.000
+ RWQ      C06    C05    H05     120.000    3.000
+ RWQ      C06    C05    C04     120.000    3.000
+ RWQ      H05    C05    C04     120.000    3.000
+ RWQ      C05    C04    H04     120.000    3.000
+ RWQ      C05    C04    C03     120.000    3.000
+ RWQ      H04    C04    C03     120.000    3.000
+ RWQ      N07    C22    H221    109.470    3.000
+ RWQ      N07    C22    H222    109.470    3.000
+ RWQ      N07    C22    C03     109.500    3.000
+ RWQ      H221   C22    H222    107.900    3.000
+ RWQ      H221   C22    C03     109.470    3.000
+ RWQ      H222   C22    C03     109.470    3.000
+ RWQ      C22    C03    C02     120.000    3.000
+ RWQ      C22    C03    C04     120.000    3.000
+ RWQ      C02    C03    C04     120.000    3.000
+ RWQ      C03    C02    H021    109.470    3.000
+ RWQ      C03    C02    H022    109.470    3.000
+ RWQ      C03    C02    O01     109.500    3.000
+ RWQ      H021   C02    H022    107.900    3.000
+ RWQ      H021   C02    O01     109.470    3.000
+ RWQ      H022   C02    O01     109.470    3.000
+ RWQ      C02    O01    HO01    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RWQ      CONST_1          F16    C13    C14    C15                0.000            0.000   0
+ RWQ      CONST_2          F16    C13    C12    C11                0.000            0.000   0
+ RWQ      CONST_3          C13    C12    C11    N17              180.000            0.000   0
+ RWQ      CONST_4          C12    C11    C10    C09              180.000            0.000   0
+ RWQ      CONST_5          C12    C11    N17    C18              180.000            0.000   0
+ RWQ      CONST_6          C11    N17    C18    N19              180.000            0.000   0
+ RWQ      CONST_7          N17    C18    C09    C08              180.000            0.000   0
+ RWQ      CONST_8          N17    C18    N19    C20              180.000            0.000   0
+ RWQ      CONST_9          C18    N19    C20    N21                0.000            0.000   0
+ RWQ      CONST_10         N19    C20    N21    C08                0.000            0.000   0
+ RWQ      CONST_11         C20    N21    C08    N07                0.000            0.000   0
+ RWQ      CONST_12         N21    C08    C09    C10              180.000            0.000   0
+ RWQ      CONST_13         C08    C09    C10    C15              180.000            0.000   0
+ RWQ      CONST_14         C09    C10    C15    C14              180.000            0.000   0
+ RWQ      CONST_15         C10    C15    C14    C13                0.000            0.000   0
+ RWQ      var_1            N21    C08    N07    C22              115.900           20.000   3
+ RWQ      var_2            C08    N07    C06    C05             -179.799           20.000   3
+ RWQ      var_3            N07    C06    C05    C04               -9.438           20.000   3
+ RWQ      var_4            C06    C05    C04    C03              -47.763           20.000   3
+ RWQ      var_5            C08    N07    C22    C03             -168.229           20.000   3
+ RWQ      var_6            N07    C22    C03    C02              180.000           20.000   3
+ RWQ      var_7            C22    C03    C04    C05               60.333           20.000   3
+ RWQ      var_8            C22    C03    C02    O01              180.000           20.000   3
+ RWQ      var_9            C03    C02    O01    HO01             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RWQ      plan-1            C18       0.020
+ RWQ      plan-1            C09       0.020
+ RWQ      plan-1            N17       0.020
+ RWQ      plan-1            N19       0.020
+ RWQ      plan-1            C20       0.020
+ RWQ      plan-1            C08       0.020
+ RWQ      plan-1            N21       0.020
+ RWQ      plan-1            H20       0.020
+ RWQ      plan-1            N07       0.020
+ RWQ      plan-1            C10       0.020
+ RWQ      plan-1            C11       0.020
+ RWQ      plan-1            C15       0.020
+ RWQ      plan-1            C14       0.020
+ RWQ      plan-1            C13       0.020
+ RWQ      plan-1            C12       0.020
+ RWQ      plan-1            H15       0.020
+ RWQ      plan-1            H14       0.020
+ RWQ      plan-1            F16       0.020
+ RWQ      plan-1            H12       0.020
+ RWQ      plan-2            C03       0.020
+ RWQ      plan-2            C02       0.020
+ RWQ      plan-2            C04       0.020
+ RWQ      plan-2            C22       0.020
+ RWQ      plan-2            H04       0.020
+ RWQ      plan-3            C04       0.020
+ RWQ      plan-3            C03       0.020
+ RWQ      plan-3            C05       0.020
+ RWQ      plan-3            H04       0.020
+ RWQ      plan-3            H05       0.020
+ RWQ      plan-4            C05       0.020
+ RWQ      plan-4            C04       0.020
+ RWQ      plan-4            C06       0.020
+ RWQ      plan-4            H05       0.020
+ RWQ      plan-4            H04       0.020
+ RWQ      plan-5            N07       0.020
+ RWQ      plan-5            C06       0.020
+ RWQ      plan-5            C08       0.020
+ RWQ      plan-5            C22       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

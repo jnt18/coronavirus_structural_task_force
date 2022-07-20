@@ -1,0 +1,306 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RQI      RQI '.                                   ' .                  32  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RQI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RQI           O23    O    OC        0.000    -43.632  -33.467    3.486
+ RQI           C02    C    C         0.000    -43.682  -32.221    3.320
+ RQI           O01    O    OC       -1.000    -43.138  -31.444    4.142
+ RQI           C03    C    CT        0.000    -44.405  -31.641    2.117
+ RQI           S05    S    ST        0.000    -45.511  -31.333   -0.065
+ RQI           N22    N    N         0.000    -44.785  -30.340    2.058
+ RQI           C04    C    C1        0.000    -44.725  -32.408    0.987
+ RQI           H04    H    H         0.000    -44.517  -33.452    0.823
+ RQI           C06    C    C         0.000    -45.398  -29.975    0.933
+ RQI           C07    C    CH2       0.000    -45.940  -28.600    0.611
+ RQI           H071   H    H         0.000    -45.839  -28.387   -0.455
+ RQI           H072   H    H         0.000    -45.414  -27.835    1.185
+ RQI           C08    C    CH2       0.000    -47.413  -28.600    0.993
+ RQI           H081   H    H         0.000    -47.907  -29.429    0.483
+ RQI           H082   H    H         0.000    -47.859  -27.657    0.669
+ RQI           N09    N    NH1       0.000    -47.576  -28.746    2.426
+ RQI           HN09   H    H         0.000    -46.775  -28.740    3.041
+ RQI           C10    C    C         0.000    -48.914  -28.900    2.952
+ RQI           O21    O    O         0.000    -49.841  -28.898    2.211
+ RQI           C11    C    CR6       0.000    -49.155  -29.017    4.450
+ RQI           C12    C    CR6       0.000    -48.109  -29.122    5.362
+ RQI           F13    F    F         0.000    -46.819  -29.160    4.923
+ RQI           C14    C    CR16      0.000    -48.384  -29.205    6.722
+ RQI           H14    H    H         0.000    -47.576  -29.297    7.437
+ RQI           C20    C    CR16      0.000    -50.468  -28.971    4.888
+ RQI           H20    H    H         0.000    -51.276  -28.869    4.174
+ RQI           C19    C    CR56      0.000    -50.748  -29.056    6.255
+ RQI           C15    C    CR56      0.000    -49.719  -29.169    7.164
+ RQI           N16    N    NRD5      0.000    -50.267  -29.226    8.387
+ RQI           N18    N    NRD5      0.000    -51.886  -29.047    6.964
+ RQI           C17    C    CR15      0.000    -51.575  -29.152    8.241
+ RQI           H17    H    H         0.000    -52.291  -29.174    9.053
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RQI      O23    n/a    C02    START
+ RQI      C02    O23    C03    .
+ RQI      O01    C02    .      .
+ RQI      C03    C02    S05    .
+ RQI      S05    C03    C06    .
+ RQI      N22    S05    .      .
+ RQI      C04    S05    H04    .
+ RQI      H04    C04    .      .
+ RQI      C06    S05    C07    .
+ RQI      C07    C06    C08    .
+ RQI      H071   C07    .      .
+ RQI      H072   C07    .      .
+ RQI      C08    C07    N09    .
+ RQI      H081   C08    .      .
+ RQI      H082   C08    .      .
+ RQI      N09    C08    C10    .
+ RQI      HN09   N09    .      .
+ RQI      C10    N09    C11    .
+ RQI      O21    C10    .      .
+ RQI      C11    C10    C20    .
+ RQI      C12    C11    C14    .
+ RQI      F13    C12    .      .
+ RQI      C14    C12    H14    .
+ RQI      H14    C14    .      .
+ RQI      C20    C11    C19    .
+ RQI      H20    C20    .      .
+ RQI      C19    C20    N18    .
+ RQI      C15    C19    N16    .
+ RQI      N16    C15    .      .
+ RQI      N18    C19    C17    .
+ RQI      C17    N18    H17    .
+ RQI      H17    C17    .      END
+ RQI      C17    N16    .    ADD
+ RQI      C15    C14    .    ADD
+ RQI      C03    C04    .    ADD
+ RQI      C03    N22    .    ADD
+ RQI      C06    N22    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RQI      C17    N16       aromatic    1.350    0.020
+ RQI      C17    N18       aromatic    1.350    0.020
+ RQI      C15    C14       aromatic    1.390    0.020
+ RQI      C15    C19       aromatic    1.390    0.020
+ RQI      N16    C15       aromatic    1.350    0.020
+ RQI      C14    C12       aromatic    1.390    0.020
+ RQI      C12    C11       aromatic    1.384    0.020
+ RQI      F13    C12       single      1.345    0.020
+ RQI      C11    C10       single      1.500    0.020
+ RQI      C20    C11       aromatic    1.390    0.020
+ RQI      C10    N09       single      1.330    0.020
+ RQI      O21    C10       double      1.220    0.020
+ RQI      C19    C20       aromatic    1.390    0.020
+ RQI      N18    C19       aromatic    1.350    0.020
+ RQI      C03    C02       single      1.507    0.020
+ RQI      O01    C02       deloc       1.250    0.020
+ RQI      C02    O23       deloc       1.250    0.020
+ RQI      C03    C04       single      1.510    0.020
+ RQI      C03    N22       single      1.455    0.020
+ RQI      S05    C03       single      1.662    0.020
+ RQI      C04    S05       double      1.565    0.020
+ RQI      C07    C06       single      1.510    0.020
+ RQI      C06    N22       single      1.330    0.020
+ RQI      C06    S05       double      1.565    0.020
+ RQI      C08    C07       single      1.524    0.020
+ RQI      N09    C08       single      1.450    0.020
+ RQI      N22    S05       single      1.520    0.020
+ RQI      H17    C17       single      1.083    0.020
+ RQI      H14    C14       single      1.083    0.020
+ RQI      H20    C20       single      1.083    0.020
+ RQI      H04    C04       single      1.077    0.020
+ RQI      H071   C07       single      1.092    0.020
+ RQI      H072   C07       single      1.092    0.020
+ RQI      H081   C08       single      1.092    0.020
+ RQI      H082   C08       single      1.092    0.020
+ RQI      HN09   N09       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RQI      O23    C02    O01     123.000    3.000
+ RQI      O23    C02    C03     118.500    3.000
+ RQI      O01    C02    C03     118.500    3.000
+ RQI      C02    C03    S05     109.500    3.000
+ RQI      C02    C03    C04     109.500    3.000
+ RQI      C02    C03    N22     111.600    3.000
+ RQI      C04    C03    N22     111.600    3.000
+ RQI      S05    C03    C04      58.893    3.000
+ RQI      S05    C03    N22      57.917    3.000
+ RQI      C03    S05    N22      54.198    3.000
+ RQI      C03    S05    C04      55.702    3.000
+ RQI      C03    S05    C06     109.500    3.000
+ RQI      N22    S05    C04     109.500    3.000
+ RQI      N22    S05    C06      51.052    3.000
+ RQI      C04    S05    C06     109.500    3.000
+ RQI      S05    N22    C03      67.885    3.000
+ RQI      S05    N22    C06      66.224    3.000
+ RQI      C03    N22    C06     121.000    3.000
+ RQI      S05    C04    H04     120.000    3.000
+ RQI      S05    C04    C03      65.405    3.000
+ RQI      H04    C04    C03     120.000    3.000
+ RQI      S05    C06    C07     120.000    3.000
+ RQI      S05    C06    N22      62.725    3.000
+ RQI      C07    C06    N22     116.500    3.000
+ RQI      C06    C07    H071    109.470    3.000
+ RQI      C06    C07    H072    109.470    3.000
+ RQI      C06    C07    C08     109.470    3.000
+ RQI      H071   C07    H072    107.900    3.000
+ RQI      H071   C07    C08     109.470    3.000
+ RQI      H072   C07    C08     109.470    3.000
+ RQI      C07    C08    H081    109.470    3.000
+ RQI      C07    C08    H082    109.470    3.000
+ RQI      C07    C08    N09     112.000    3.000
+ RQI      H081   C08    H082    107.900    3.000
+ RQI      H081   C08    N09     109.470    3.000
+ RQI      H082   C08    N09     109.470    3.000
+ RQI      C08    N09    HN09    118.500    3.000
+ RQI      C08    N09    C10     121.500    3.000
+ RQI      HN09   N09    C10     120.000    3.000
+ RQI      N09    C10    O21     123.000    3.000
+ RQI      N09    C10    C11     120.000    3.000
+ RQI      O21    C10    C11     120.500    3.000
+ RQI      C10    C11    C12     120.000    3.000
+ RQI      C10    C11    C20     120.000    3.000
+ RQI      C12    C11    C20     120.000    3.000
+ RQI      C11    C12    F13     120.000    3.000
+ RQI      C11    C12    C14     120.000    3.000
+ RQI      F13    C12    C14     120.000    3.000
+ RQI      C12    C14    H14     120.000    3.000
+ RQI      C12    C14    C15     120.000    3.000
+ RQI      H14    C14    C15     120.000    3.000
+ RQI      C11    C20    H20     120.000    3.000
+ RQI      C11    C20    C19     120.000    3.000
+ RQI      H20    C20    C19     120.000    3.000
+ RQI      C20    C19    C15     120.000    3.000
+ RQI      C20    C19    N18     132.000    3.000
+ RQI      C15    C19    N18     108.000    3.000
+ RQI      C19    C15    N16     108.000    3.000
+ RQI      C19    C15    C14     120.000    3.000
+ RQI      N16    C15    C14     132.000    3.000
+ RQI      C15    N16    C17     108.000    3.000
+ RQI      C19    N18    C17     108.000    3.000
+ RQI      N18    C17    H17     126.000    3.000
+ RQI      N18    C17    N16     108.000    3.000
+ RQI      H17    C17    N16     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RQI      var_1            O23    C02    C03    S05              -17.462           20.000   3
+ RQI      var_2            C02    C03    C04    S05             -179.952           20.000   3
+ RQI      var_3            C02    C03    N22    S05              179.918           20.000   3
+ RQI      var_4            C02    C03    S05    C06             -179.301           20.000   3
+ RQI      var_5            C03    S05    C06    C07             -178.758           20.000   3
+ RQI      var_6            S05    C06    C07    C08              180.000           20.000   3
+ RQI      var_7            C06    C07    C08    N09              180.000           20.000   3
+ RQI      var_8            C07    C08    N09    C10                0.000           20.000   3
+ RQI      var_9            C08    N09    C10    C11              180.000           20.000   2
+ RQI      var_10           N09    C10    C11    C20              171.070           20.000   3
+ RQI      CONST_1          C10    C11    C12    C14                0.000            0.000   0
+ RQI      CONST_2          C11    C12    C14    C15                0.000            0.000   0
+ RQI      CONST_3          C10    C11    C20    C19                0.000            0.000   0
+ RQI      CONST_4          C11    C20    C19    N18              180.000            0.000   0
+ RQI      CONST_5          C20    C19    C15    N16              180.000            0.000   0
+ RQI      CONST_6          C19    C15    C14    C12              180.000            0.000   0
+ RQI      CONST_7          C19    C15    N16    C17              180.000            0.000   0
+ RQI      CONST_8          C20    C19    N18    C17              180.000            0.000   0
+ RQI      CONST_9          C19    N18    C17    N16                0.000            0.000   0
+ RQI      CONST_10         N18    C17    N16    C15                0.000            0.000   0
+ RQI      var_1            C03    C04    S05    C06                0.482           20.000   3
+ RQI      var_1            S05    C06    N22    C03              180.000           20.000   2
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RQI      chir_01          C03    C02    C04    N22       positiv
+ RQI      chir_02          S05    C03    C04    C06       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RQI      plan-1            C17       0.020
+ RQI      plan-1            N16       0.020
+ RQI      plan-1            N18       0.020
+ RQI      plan-1            H17       0.020
+ RQI      plan-1            C15       0.020
+ RQI      plan-1            C19       0.020
+ RQI      plan-1            C14       0.020
+ RQI      plan-1            C12       0.020
+ RQI      plan-1            C11       0.020
+ RQI      plan-1            C20       0.020
+ RQI      plan-1            H14       0.020
+ RQI      plan-1            F13       0.020
+ RQI      plan-1            C10       0.020
+ RQI      plan-1            H20       0.020
+ RQI      plan-2            C10       0.020
+ RQI      plan-2            C11       0.020
+ RQI      plan-2            N09       0.020
+ RQI      plan-2            O21       0.020
+ RQI      plan-2            HN09      0.020
+ RQI      plan-3            C02       0.020
+ RQI      plan-3            C03       0.020
+ RQI      plan-3            O01       0.020
+ RQI      plan-3            O23       0.020
+ RQI      plan-4            C04       0.020
+ RQI      plan-4            C03       0.020
+ RQI      plan-4            S05       0.020
+ RQI      plan-4            H04       0.020
+ RQI      plan-5            C06       0.020
+ RQI      plan-5            C07       0.020
+ RQI      plan-5            N22       0.020
+ RQI      plan-5            S05       0.020
+ RQI      plan-6            N09       0.020
+ RQI      plan-6            C10       0.020
+ RQI      plan-6            C08       0.020
+ RQI      plan-6            HN09      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

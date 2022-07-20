@@ -1,0 +1,715 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QLF      QLF '.                                   ' .                  44  26 .
+QLU      QLU '.                                   ' .                  44  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QLF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QLF           O26    O    OC       -1.000    -44.350  -29.801    4.538
+ QLF           C02    C    C         0.000    -43.814  -30.130    3.446
+ QLF           O01    O    OC        0.000    -43.027  -31.113    3.410
+ QLF           C03    C    CH1       0.000    -44.150  -29.341    2.181
+ QLF           H03    H    H         0.000    -43.976  -28.266    2.332
+ QLF           C04    C    CH2       0.000    -43.389  -29.845    0.973
+ QLF           H041   H    H         0.000    -42.379  -30.172    1.228
+ QLF           H042   H    H         0.000    -43.339  -29.101    0.176
+ QLF           C05    C    CR6       0.000    -44.225  -31.064    0.494
+ QLF           C06    C    CR6       0.000    -43.871  -32.170   -0.271
+ QLF           O07    O    OH1       0.000    -42.569  -32.270   -0.763
+ QLF           HO07   H    H         0.000    -42.471  -33.088   -1.274
+ QLF           C08    C    CR16      0.000    -44.812  -33.150   -0.550
+ QLF           H08    H    H         0.000    -44.542  -34.010   -1.150
+ QLF           C09    C    CR16      0.000    -46.107  -33.020   -0.053
+ QLF           H09    H    H         0.000    -46.844  -33.784   -0.265
+ QLF           C10    C    CR16      0.000    -46.459  -31.913    0.715
+ QLF           H10    H    H         0.000    -47.470  -31.814    1.090
+ QLF           C11    C    CR6       0.000    -45.511  -30.932    1.002
+ QLF           C12    C    CH1       0.000    -45.565  -29.599    1.769
+ QLF           H12    H    H         0.000    -45.857  -28.813    1.058
+ QLF           N13    N    NH1       0.000    -46.515  -29.590    2.852
+ QLF           HN13   H    H         0.000    -46.225  -29.790    3.798
+ QLF           C14    C    C         0.000    -47.897  -29.286    2.547
+ QLF           O25    O    O         0.000    -48.247  -29.076    1.436
+ QLF           C15    C    CR6       0.000    -48.896  -29.297    3.688
+ QLF           C16    C    CR16      0.000    -48.445  -29.356    5.002
+ QLF           H16    H    H         0.000    -47.388  -29.379    5.238
+ QLF           C24    C    CR16      0.000    -50.258  -29.282    3.405
+ QLF           H24    H    H         0.000    -50.600  -29.245    2.378
+ QLF           N23    N    NRD6      0.000    -51.127  -29.313    4.388
+ QLF           C18    C    CR6       0.000    -50.765  -29.355    5.663
+ QLF           N19    N    NH1       0.000    -51.861  -29.392    6.650
+ QLF           HN19   H    H         0.000    -52.824  -29.215    6.402
+ QLF           C20    C    CH2       0.000    -51.449  -29.700    7.993
+ QLF           H201   H    H         0.000    -51.353  -30.786    8.059
+ QLF           H202   H    H         0.000    -52.247  -29.365    8.659
+ QLF           C21    C    CH2       0.000    -50.145  -29.051    8.399
+ QLF           H211   H    H         0.000    -49.923  -29.362    9.422
+ QLF           H212   H    H         0.000    -50.290  -27.969    8.372
+ QLF           C22    C    CH2       0.000    -48.992  -29.431    7.493
+ QLF           H222   H    H         0.000    -48.664  -30.441    7.747
+ QLF           H221   H    H         0.000    -48.170  -28.731    7.658
+ QLF           C17    C    CR6       0.000    -49.422  -29.384    6.007
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QLF      O26    n/a    C02    START
+ QLF      C02    O26    C03    .
+ QLF      O01    C02    .      .
+ QLF      C03    C02    C12    .
+ QLF      H03    C03    .      .
+ QLF      C04    C03    C05    .
+ QLF      H041   C04    .      .
+ QLF      H042   C04    .      .
+ QLF      C05    C04    C11    .
+ QLF      C06    C05    C08    .
+ QLF      O07    C06    HO07   .
+ QLF      HO07   O07    .      .
+ QLF      C08    C06    C09    .
+ QLF      H08    C08    .      .
+ QLF      C09    C08    C10    .
+ QLF      H09    C09    .      .
+ QLF      C10    C09    H10    .
+ QLF      H10    C10    .      .
+ QLF      C11    C05    .      .
+ QLF      C12    C03    N13    .
+ QLF      H12    C12    .      .
+ QLF      N13    C12    C14    .
+ QLF      HN13   N13    .      .
+ QLF      C14    N13    C15    .
+ QLF      O25    C14    .      .
+ QLF      C15    C14    C24    .
+ QLF      C16    C15    H16    .
+ QLF      H16    C16    .      .
+ QLF      C24    C15    N23    .
+ QLF      H24    C24    .      .
+ QLF      N23    C24    C18    .
+ QLF      C18    N23    N19    .
+ QLF      N19    C18    C20    .
+ QLF      HN19   N19    .      .
+ QLF      C20    N19    C21    .
+ QLF      H201   C20    .      .
+ QLF      H202   C20    .      .
+ QLF      C21    C20    C22    .
+ QLF      H211   C21    .      .
+ QLF      H212   C21    .      .
+ QLF      C22    C21    C17    .
+ QLF      H222   C22    .      .
+ QLF      H221   C22    .      .
+ QLF      C17    C22    .      END
+ QLF      C18    C17    .    ADD
+ QLF      C16    C17    .    ADD
+ QLF      C12    C11    .    ADD
+ QLF      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QLF      C18    C17       aromatic    1.384    0.020
+ QLF      N19    C18       single      1.350    0.020
+ QLF      C18    N23       aromatic    1.350    0.020
+ QLF      C16    C17       aromatic    1.390    0.020
+ QLF      C16    C15       aromatic    1.390    0.020
+ QLF      C17    C22       single      1.511    0.020
+ QLF      C15    C14       single      1.500    0.020
+ QLF      C24    C15       aromatic    1.390    0.020
+ QLF      C14    N13       single      1.330    0.020
+ QLF      O25    C14       double      1.220    0.020
+ QLF      C12    C11       single      1.480    0.020
+ QLF      C12    C03       single      1.524    0.020
+ QLF      N13    C12       single      1.450    0.020
+ QLF      C11    C10       aromatic    1.390    0.020
+ QLF      C11    C05       aromatic    1.384    0.020
+ QLF      C10    C09       aromatic    1.390    0.020
+ QLF      C21    C20       single      1.524    0.020
+ QLF      C20    N19       single      1.450    0.020
+ QLF      C03    C02       single      1.500    0.020
+ QLF      O01    C02       deloc       1.250    0.020
+ QLF      C02    O26       deloc       1.250    0.020
+ QLF      C04    C03       single      1.524    0.020
+ QLF      C05    C04       single      1.511    0.020
+ QLF      C06    C05       aromatic    1.384    0.020
+ QLF      C08    C06       aromatic    1.390    0.020
+ QLF      O07    C06       single      1.362    0.020
+ QLF      C09    C08       aromatic    1.390    0.020
+ QLF      C22    C21       single      1.524    0.020
+ QLF      N23    C24       aromatic    1.337    0.020
+ QLF      H16    C16       single      1.083    0.020
+ QLF      H12    C12       single      1.099    0.020
+ QLF      H10    C10       single      1.083    0.020
+ QLF      H201   C20       single      1.092    0.020
+ QLF      H202   C20       single      1.092    0.020
+ QLF      H03    C03       single      1.099    0.020
+ QLF      H041   C04       single      1.092    0.020
+ QLF      H042   C04       single      1.092    0.020
+ QLF      H08    C08       single      1.083    0.020
+ QLF      H09    C09       single      1.083    0.020
+ QLF      H211   C21       single      1.092    0.020
+ QLF      H212   C21       single      1.092    0.020
+ QLF      H221   C22       single      1.092    0.020
+ QLF      H222   C22       single      1.092    0.020
+ QLF      H24    C24       single      1.083    0.020
+ QLF      HN13   N13       single      1.010    0.020
+ QLF      HN19   N19       single      1.010    0.020
+ QLF      HO07   O07       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QLF      O26    C02    O01     123.000    3.000
+ QLF      O26    C02    C03     118.500    3.000
+ QLF      O01    C02    C03     118.500    3.000
+ QLF      C02    C03    H03     108.810    3.000
+ QLF      C02    C03    C04     109.470    3.000
+ QLF      C02    C03    C12     109.470    3.000
+ QLF      H03    C03    C04     108.340    3.000
+ QLF      H03    C03    C12     108.340    3.000
+ QLF      C04    C03    C12     111.000    3.000
+ QLF      C03    C04    H041    109.470    3.000
+ QLF      C03    C04    H042    109.470    3.000
+ QLF      C03    C04    C05     109.470    3.000
+ QLF      H041   C04    H042    107.900    3.000
+ QLF      H041   C04    C05     109.470    3.000
+ QLF      H042   C04    C05     109.470    3.000
+ QLF      C04    C05    C06     120.000    3.000
+ QLF      C04    C05    C11     120.000    3.000
+ QLF      C06    C05    C11     120.000    3.000
+ QLF      C05    C06    O07     120.000    3.000
+ QLF      C05    C06    C08     120.000    3.000
+ QLF      O07    C06    C08     120.000    3.000
+ QLF      C06    O07    HO07    109.470    3.000
+ QLF      C06    C08    H08     120.000    3.000
+ QLF      C06    C08    C09     120.000    3.000
+ QLF      H08    C08    C09     120.000    3.000
+ QLF      C08    C09    H09     120.000    3.000
+ QLF      C08    C09    C10     120.000    3.000
+ QLF      H09    C09    C10     120.000    3.000
+ QLF      C09    C10    H10     120.000    3.000
+ QLF      C09    C10    C11     120.000    3.000
+ QLF      H10    C10    C11     120.000    3.000
+ QLF      C05    C11    C12     120.000    3.000
+ QLF      C05    C11    C10     120.000    3.000
+ QLF      C12    C11    C10     120.000    3.000
+ QLF      C03    C12    H12     108.340    3.000
+ QLF      C03    C12    N13     110.000    3.000
+ QLF      C03    C12    C11     109.470    3.000
+ QLF      H12    C12    N13     108.550    3.000
+ QLF      H12    C12    C11     109.470    3.000
+ QLF      N13    C12    C11     109.470    3.000
+ QLF      C12    N13    HN13    118.500    3.000
+ QLF      C12    N13    C14     121.500    3.000
+ QLF      HN13   N13    C14     120.000    3.000
+ QLF      N13    C14    O25     123.000    3.000
+ QLF      N13    C14    C15     120.000    3.000
+ QLF      O25    C14    C15     120.500    3.000
+ QLF      C14    C15    C16     120.000    3.000
+ QLF      C14    C15    C24     120.000    3.000
+ QLF      C16    C15    C24     120.000    3.000
+ QLF      C15    C16    H16     120.000    3.000
+ QLF      C15    C16    C17     120.000    3.000
+ QLF      H16    C16    C17     120.000    3.000
+ QLF      C15    C24    H24     120.000    3.000
+ QLF      C15    C24    N23     120.000    3.000
+ QLF      H24    C24    N23     120.000    3.000
+ QLF      C24    N23    C18     120.000    3.000
+ QLF      N23    C18    N19     120.000    3.000
+ QLF      N23    C18    C17     120.000    3.000
+ QLF      N19    C18    C17     120.000    3.000
+ QLF      C18    N19    HN19    120.000    3.000
+ QLF      C18    N19    C20     120.000    3.000
+ QLF      HN19   N19    C20     118.500    3.000
+ QLF      N19    C20    H201    109.470    3.000
+ QLF      N19    C20    H202    109.470    3.000
+ QLF      N19    C20    C21     112.000    3.000
+ QLF      H201   C20    H202    107.900    3.000
+ QLF      H201   C20    C21     109.470    3.000
+ QLF      H202   C20    C21     109.470    3.000
+ QLF      C20    C21    H211    109.470    3.000
+ QLF      C20    C21    H212    109.470    3.000
+ QLF      C20    C21    C22     111.000    3.000
+ QLF      H211   C21    H212    107.900    3.000
+ QLF      H211   C21    C22     109.470    3.000
+ QLF      H212   C21    C22     109.470    3.000
+ QLF      C21    C22    H222    109.470    3.000
+ QLF      C21    C22    H221    109.470    3.000
+ QLF      C21    C22    C17     109.470    3.000
+ QLF      H222   C22    H221    107.900    3.000
+ QLF      H222   C22    C17     109.470    3.000
+ QLF      H221   C22    C17     109.470    3.000
+ QLF      C22    C17    C18     120.000    3.000
+ QLF      C22    C17    C16     120.000    3.000
+ QLF      C18    C17    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QLF      var_1            O26    C02    C03    C12              180.000           20.000   3
+ QLF      var_2            C02    C03    C04    C05              180.000           20.000   3
+ QLF      var_3            C03    C04    C05    C11                0.000           20.000   2
+ QLF      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QLF      var_4            C05    C06    O07    HO07             180.000           20.000   3
+ QLF      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QLF      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QLF      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QLF      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QLF      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QLF      var_5            C02    C03    C12    N13              180.000           20.000   3
+ QLF      var_6            C03    C12    C11    C05              -25.482           20.000   3
+ QLF      var_7            C03    C12    N13    C14                0.000           20.000   3
+ QLF      var_8            C12    N13    C14    C15              180.000           20.000   2
+ QLF      var_9            N13    C14    C15    C24             -166.962           20.000   3
+ QLF      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QLF      CONST_8          C15    C16    C17    C22                0.000            0.000   0
+ QLF      CONST_9          C14    C15    C24    N23                0.000            0.000   0
+ QLF      CONST_10         C15    C24    N23    C18                0.000            0.000   0
+ QLF      CONST_11         C24    N23    C18    N19                0.000            0.000   0
+ QLF      CONST_12         N23    C18    C17    C22                0.000            0.000   0
+ QLF      var_10           N23    C18    N19    C20              168.359           20.000   3
+ QLF      var_11           C18    N19    C20    C21                0.000           20.000   3
+ QLF      var_12           N19    C20    C21    C22              180.000           20.000   3
+ QLF      var_13           C20    C21    C22    C17              180.000           20.000   3
+ QLF      var_14           C21    C22    C17    C18                0.000           20.000   2
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QLF      chir_01          C12    C11    C03    N13       positiv
+ QLF      chir_02          C03    C12    C02    C04       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QLF      plan-1            C18       0.020
+ QLF      plan-1            C17       0.020
+ QLF      plan-1            N19       0.020
+ QLF      plan-1            N23       0.020
+ QLF      plan-1            C16       0.020
+ QLF      plan-1            C15       0.020
+ QLF      plan-1            C24       0.020
+ QLF      plan-1            H16       0.020
+ QLF      plan-1            C22       0.020
+ QLF      plan-1            C14       0.020
+ QLF      plan-1            H24       0.020
+ QLF      plan-1            HN19      0.020
+ QLF      plan-2            C14       0.020
+ QLF      plan-2            C15       0.020
+ QLF      plan-2            N13       0.020
+ QLF      plan-2            O25       0.020
+ QLF      plan-2            HN13      0.020
+ QLF      plan-3            C11       0.020
+ QLF      plan-3            C12       0.020
+ QLF      plan-3            C10       0.020
+ QLF      plan-3            C05       0.020
+ QLF      plan-3            C06       0.020
+ QLF      plan-3            C08       0.020
+ QLF      plan-3            C09       0.020
+ QLF      plan-3            H10       0.020
+ QLF      plan-3            C04       0.020
+ QLF      plan-3            O07       0.020
+ QLF      plan-3            H08       0.020
+ QLF      plan-3            H09       0.020
+ QLF      plan-4            C02       0.020
+ QLF      plan-4            C03       0.020
+ QLF      plan-4            O01       0.020
+ QLF      plan-4            O26       0.020
+ QLF      plan-5            N13       0.020
+ QLF      plan-5            C14       0.020
+ QLF      plan-5            C12       0.020
+ QLF      plan-5            HN13      0.020
+ QLF      plan-6            N19       0.020
+ QLF      plan-6            C18       0.020
+ QLF      plan-6            C20       0.020
+ QLF      plan-6            HN19      0.020
+#
+data_comp_QLU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QLU           O26    O    OC        0.000    -43.449  -30.169    3.468
+ QLU           C02    C    C         0.000    -43.848  -30.825    2.470
+ QLU           O01    O    OC       -1.000    -43.850  -32.084    2.506
+ QLU           C03    C    CH1       0.000    -44.336  -30.099    1.203
+ QLU           H03    H    H         0.000    -44.436  -30.839    0.396
+ QLU           C12    C    CH1       0.000    -45.692  -29.435    1.418
+ QLU           H12    H    H         0.000    -46.369  -29.900    0.687
+ QLU           C11    C    CR6       0.000    -45.517  -27.968    0.951
+ QLU           C10    C    CR16      0.000    -46.461  -26.957    0.866
+ QLU           H10    H    H         0.000    -47.481  -27.145    1.177
+ QLU           C09    C    CR16      0.000    -46.108  -25.711    0.387
+ QLU           H09    H    H         0.000    -46.849  -24.923    0.332
+ QLU           C08    C    CR16      0.000    -44.803  -25.467   -0.024
+ QLU           H08    H    H         0.000    -44.529  -24.490   -0.404
+ QLU           C06    C    CR6       0.000    -43.846  -26.478    0.052
+ QLU           O07    O    OH1       0.000    -42.541  -26.207   -0.380
+ QLU           HO07   H    H         0.000    -41.985  -26.995   -0.271
+ QLU           C05    C    CR6       0.000    -44.202  -27.747    0.537
+ QLU           C04    C    CH2       0.000    -43.385  -29.036    0.753
+ QLU           H042   H    H         0.000    -42.622  -28.880    1.519
+ QLU           H041   H    H         0.000    -42.906  -29.345   -0.179
+ QLU           N13    N    NH1       0.000    -46.388  -29.485    2.679
+ QLU           HN13   H    H         0.000    -45.929  -29.651    3.563
+ QLU           C14    C    C         0.000    -47.833  -29.269    2.544
+ QLU           O25    O    O         0.000    -48.289  -29.097    1.464
+ QLU           C15    C    CR6       0.000    -48.826  -29.294    3.700
+ QLU           C24    C    CR16      0.000    -50.191  -29.285    3.401
+ QLU           H24    H    H         0.000    -50.512  -29.246    2.367
+ QLU           N23    N    NRD6      0.000    -51.089  -29.323    4.359
+ QLU           C18    C    CR6       0.000    -50.741  -29.367    5.640
+ QLU           N19    N    NH1       0.000    -51.840  -29.415    6.627
+ QLU           HN19   H    H         0.000    -52.804  -29.265    6.364
+ QLU           C20    C    CH2       0.000    -51.452  -29.689    7.991
+ QLU           H201   H    H         0.000    -51.377  -30.774    8.093
+ QLU           H202   H    H         0.000    -52.253  -29.319    8.634
+ QLU           C21    C    CH2       0.000    -50.139  -29.050    8.397
+ QLU           H211   H    H         0.000    -49.919  -29.364    9.420
+ QLU           H212   H    H         0.000    -50.275  -27.967    8.371
+ QLU           C22    C    CH2       0.000    -48.988  -29.438    7.489
+ QLU           H221   H    H         0.000    -48.673  -30.452    7.743
+ QLU           H222   H    H         0.000    -48.161  -28.747    7.664
+ QLU           C17    C    CR6       0.000    -49.402  -29.382    6.002
+ QLU           C16    C    CR16      0.000    -48.401  -29.348    5.020
+ QLU           H16    H    H         0.000    -47.349  -29.363    5.279
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QLU      O26    n/a    C02    START
+ QLU      C02    O26    C03    .
+ QLU      O01    C02    .      .
+ QLU      C03    C02    C12    .
+ QLU      H03    C03    .      .
+ QLU      C12    C03    N13    .
+ QLU      H12    C12    .      .
+ QLU      C11    C12    C05    .
+ QLU      C10    C11    C09    .
+ QLU      H10    C10    .      .
+ QLU      C09    C10    C08    .
+ QLU      H09    C09    .      .
+ QLU      C08    C09    C06    .
+ QLU      H08    C08    .      .
+ QLU      C06    C08    O07    .
+ QLU      O07    C06    HO07   .
+ QLU      HO07   O07    .      .
+ QLU      C05    C11    C04    .
+ QLU      C04    C05    H041   .
+ QLU      H042   C04    .      .
+ QLU      H041   C04    .      .
+ QLU      N13    C12    C14    .
+ QLU      HN13   N13    .      .
+ QLU      C14    N13    C15    .
+ QLU      O25    C14    .      .
+ QLU      C15    C14    C24    .
+ QLU      C24    C15    N23    .
+ QLU      H24    C24    .      .
+ QLU      N23    C24    C18    .
+ QLU      C18    N23    N19    .
+ QLU      N19    C18    C20    .
+ QLU      HN19   N19    .      .
+ QLU      C20    N19    C21    .
+ QLU      H201   C20    .      .
+ QLU      H202   C20    .      .
+ QLU      C21    C20    C22    .
+ QLU      H211   C21    .      .
+ QLU      H212   C21    .      .
+ QLU      C22    C21    C17    .
+ QLU      H221   C22    .      .
+ QLU      H222   C22    .      .
+ QLU      C17    C22    C16    .
+ QLU      C16    C17    H16    .
+ QLU      H16    C16    .      END
+ QLU      C03    C04    .    ADD
+ QLU      C05    C06    .    ADD
+ QLU      C15    C16    .    ADD
+ QLU      C17    C18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QLU      C03    C02       single      1.500    0.020
+ QLU      O01    C02       deloc       1.250    0.020
+ QLU      C02    O26       deloc       1.250    0.020
+ QLU      C03    C04       single      1.524    0.020
+ QLU      C12    C03       single      1.524    0.020
+ QLU      C04    C05       single      1.511    0.020
+ QLU      C05    C06       aromatic    1.384    0.020
+ QLU      C05    C11       aromatic    1.384    0.020
+ QLU      C06    C08       aromatic    1.390    0.020
+ QLU      O07    C06       single      1.362    0.020
+ QLU      C08    C09       aromatic    1.390    0.020
+ QLU      C09    C10       aromatic    1.390    0.020
+ QLU      C10    C11       aromatic    1.390    0.020
+ QLU      C11    C12       single      1.480    0.020
+ QLU      N13    C12       single      1.450    0.020
+ QLU      C15    C14       single      1.500    0.020
+ QLU      C14    N13       single      1.330    0.020
+ QLU      O25    C14       double      1.220    0.020
+ QLU      C15    C16       aromatic    1.390    0.020
+ QLU      C24    C15       aromatic    1.390    0.020
+ QLU      C16    C17       aromatic    1.390    0.020
+ QLU      C17    C18       aromatic    1.384    0.020
+ QLU      C17    C22       single      1.511    0.020
+ QLU      N19    C18       single      1.350    0.020
+ QLU      C18    N23       aromatic    1.350    0.020
+ QLU      C21    C20       single      1.524    0.020
+ QLU      C20    N19       single      1.450    0.020
+ QLU      C22    C21       single      1.524    0.020
+ QLU      N23    C24       aromatic    1.337    0.020
+ QLU      H03    C03       single      1.099    0.020
+ QLU      H041   C04       single      1.092    0.020
+ QLU      H042   C04       single      1.092    0.020
+ QLU      H08    C08       single      1.083    0.020
+ QLU      H09    C09       single      1.083    0.020
+ QLU      H10    C10       single      1.083    0.020
+ QLU      H12    C12       single      1.099    0.020
+ QLU      H16    C16       single      1.083    0.020
+ QLU      H201   C20       single      1.092    0.020
+ QLU      H202   C20       single      1.092    0.020
+ QLU      H211   C21       single      1.092    0.020
+ QLU      H212   C21       single      1.092    0.020
+ QLU      H221   C22       single      1.092    0.020
+ QLU      H222   C22       single      1.092    0.020
+ QLU      H24    C24       single      1.083    0.020
+ QLU      HN13   N13       single      1.010    0.020
+ QLU      HN19   N19       single      1.010    0.020
+ QLU      HO07   O07       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QLU      O26    C02    O01     123.000    3.000
+ QLU      O26    C02    C03     118.500    3.000
+ QLU      O01    C02    C03     118.500    3.000
+ QLU      C02    C03    H03     108.810    3.000
+ QLU      C02    C03    C12     109.470    3.000
+ QLU      C02    C03    C04     109.470    3.000
+ QLU      H03    C03    C12     108.340    3.000
+ QLU      H03    C03    C04     108.340    3.000
+ QLU      C12    C03    C04     111.000    3.000
+ QLU      C03    C12    H12     108.340    3.000
+ QLU      C03    C12    C11     109.470    3.000
+ QLU      C03    C12    N13     110.000    3.000
+ QLU      H12    C12    C11     109.470    3.000
+ QLU      H12    C12    N13     108.550    3.000
+ QLU      C11    C12    N13     109.470    3.000
+ QLU      C12    C11    C10     120.000    3.000
+ QLU      C12    C11    C05     120.000    3.000
+ QLU      C10    C11    C05     120.000    3.000
+ QLU      C11    C10    H10     120.000    3.000
+ QLU      C11    C10    C09     120.000    3.000
+ QLU      H10    C10    C09     120.000    3.000
+ QLU      C10    C09    H09     120.000    3.000
+ QLU      C10    C09    C08     120.000    3.000
+ QLU      H09    C09    C08     120.000    3.000
+ QLU      C09    C08    H08     120.000    3.000
+ QLU      C09    C08    C06     120.000    3.000
+ QLU      H08    C08    C06     120.000    3.000
+ QLU      C08    C06    O07     120.000    3.000
+ QLU      C08    C06    C05     120.000    3.000
+ QLU      O07    C06    C05     120.000    3.000
+ QLU      C06    O07    HO07    109.470    3.000
+ QLU      C11    C05    C04     120.000    3.000
+ QLU      C11    C05    C06     120.000    3.000
+ QLU      C04    C05    C06     120.000    3.000
+ QLU      C05    C04    H042    109.470    3.000
+ QLU      C05    C04    H041    109.470    3.000
+ QLU      C05    C04    C03     109.470    3.000
+ QLU      H042   C04    H041    107.900    3.000
+ QLU      H042   C04    C03     109.470    3.000
+ QLU      H041   C04    C03     109.470    3.000
+ QLU      C12    N13    HN13    118.500    3.000
+ QLU      C12    N13    C14     121.500    3.000
+ QLU      HN13   N13    C14     120.000    3.000
+ QLU      N13    C14    O25     123.000    3.000
+ QLU      N13    C14    C15     120.000    3.000
+ QLU      O25    C14    C15     120.500    3.000
+ QLU      C14    C15    C24     120.000    3.000
+ QLU      C14    C15    C16     120.000    3.000
+ QLU      C24    C15    C16     120.000    3.000
+ QLU      C15    C24    H24     120.000    3.000
+ QLU      C15    C24    N23     120.000    3.000
+ QLU      H24    C24    N23     120.000    3.000
+ QLU      C24    N23    C18     120.000    3.000
+ QLU      N23    C18    N19     120.000    3.000
+ QLU      N23    C18    C17     120.000    3.000
+ QLU      N19    C18    C17     120.000    3.000
+ QLU      C18    N19    HN19    120.000    3.000
+ QLU      C18    N19    C20     120.000    3.000
+ QLU      HN19   N19    C20     118.500    3.000
+ QLU      N19    C20    H201    109.470    3.000
+ QLU      N19    C20    H202    109.470    3.000
+ QLU      N19    C20    C21     112.000    3.000
+ QLU      H201   C20    H202    107.900    3.000
+ QLU      H201   C20    C21     109.470    3.000
+ QLU      H202   C20    C21     109.470    3.000
+ QLU      C20    C21    H211    109.470    3.000
+ QLU      C20    C21    H212    109.470    3.000
+ QLU      C20    C21    C22     111.000    3.000
+ QLU      H211   C21    H212    107.900    3.000
+ QLU      H211   C21    C22     109.470    3.000
+ QLU      H212   C21    C22     109.470    3.000
+ QLU      C21    C22    H221    109.470    3.000
+ QLU      C21    C22    H222    109.470    3.000
+ QLU      C21    C22    C17     109.470    3.000
+ QLU      H221   C22    H222    107.900    3.000
+ QLU      H221   C22    C17     109.470    3.000
+ QLU      H222   C22    C17     109.470    3.000
+ QLU      C22    C17    C16     120.000    3.000
+ QLU      C22    C17    C18     120.000    3.000
+ QLU      C16    C17    C18     120.000    3.000
+ QLU      C17    C16    H16     120.000    3.000
+ QLU      C17    C16    C15     120.000    3.000
+ QLU      H16    C16    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QLU      var_1            O26    C02    C03    C12              180.000           20.000   3
+ QLU      var_2            C02    C03    C04    C05              180.000           20.000   3
+ QLU      var_3            C02    C03    C12    N13              180.000           20.000   3
+ QLU      var_4            C03    C12    C11    C05               -1.586           20.000   3
+ QLU      CONST_1          C12    C11    C10    C09                0.000            0.000   0
+ QLU      CONST_2          C11    C10    C09    C08                0.000            0.000   0
+ QLU      CONST_3          C10    C09    C08    C06                0.000            0.000   0
+ QLU      CONST_4          C09    C08    C06    O07                0.000            0.000   0
+ QLU      var_5            C08    C06    O07    HO07             180.000           20.000   3
+ QLU      CONST_5          C12    C11    C05    C04                0.000            0.000   0
+ QLU      CONST_6          C11    C05    C06    C08                0.000            0.000   0
+ QLU      var_6            C11    C05    C04    C03                0.000           20.000   2
+ QLU      var_7            C03    C12    N13    C14                0.000           20.000   3
+ QLU      var_8            C12    N13    C14    C15              180.000           20.000   2
+ QLU      var_9            N13    C14    C15    C24             -169.945           20.000   3
+ QLU      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QLU      CONST_8          C14    C15    C24    N23                0.000            0.000   0
+ QLU      CONST_9          C15    C24    N23    C18                0.000            0.000   0
+ QLU      CONST_10         C24    N23    C18    N19                0.000            0.000   0
+ QLU      var_10           N23    C18    N19    C20              169.929           20.000   3
+ QLU      var_11           C18    N19    C20    C21                0.000           20.000   3
+ QLU      var_12           N19    C20    C21    C22              180.000           20.000   3
+ QLU      var_13           C20    C21    C22    C17              180.000           20.000   3
+ QLU      var_14           C21    C22    C17    C16                0.000           20.000   2
+ QLU      CONST_11         C22    C17    C18    N23                0.000            0.000   0
+ QLU      CONST_12         C22    C17    C16    C15                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QLU      chir_01          C03    C02    C04    C12       positiv
+ QLU      chir_02          C12    C03    C11    N13       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QLU      plan-1            C02       0.020
+ QLU      plan-1            C03       0.020
+ QLU      plan-1            O01       0.020
+ QLU      plan-1            O26       0.020
+ QLU      plan-2            C05       0.020
+ QLU      plan-2            C04       0.020
+ QLU      plan-2            C06       0.020
+ QLU      plan-2            C11       0.020
+ QLU      plan-2            C08       0.020
+ QLU      plan-2            C09       0.020
+ QLU      plan-2            C10       0.020
+ QLU      plan-2            O07       0.020
+ QLU      plan-2            H08       0.020
+ QLU      plan-2            H09       0.020
+ QLU      plan-2            H10       0.020
+ QLU      plan-2            C12       0.020
+ QLU      plan-3            C14       0.020
+ QLU      plan-3            C15       0.020
+ QLU      plan-3            N13       0.020
+ QLU      plan-3            O25       0.020
+ QLU      plan-3            HN13      0.020
+ QLU      plan-4            C15       0.020
+ QLU      plan-4            C14       0.020
+ QLU      plan-4            C16       0.020
+ QLU      plan-4            C24       0.020
+ QLU      plan-4            C17       0.020
+ QLU      plan-4            C18       0.020
+ QLU      plan-4            N23       0.020
+ QLU      plan-4            H16       0.020
+ QLU      plan-4            C22       0.020
+ QLU      plan-4            N19       0.020
+ QLU      plan-4            H24       0.020
+ QLU      plan-4            HN19      0.020
+ QLU      plan-5            N13       0.020
+ QLU      plan-5            C12       0.020
+ QLU      plan-5            C14       0.020
+ QLU      plan-5            HN13      0.020
+ QLU      plan-6            N19       0.020
+ QLU      plan-6            C18       0.020
+ QLU      plan-6            C20       0.020
+ QLU      plan-6            HN19      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

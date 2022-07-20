@@ -1,0 +1,292 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S4F      S4F '.                                   ' .                  35  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S4F
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S4F           CL04   CL   CL        0.000    -42.638  -36.685   -4.306
+ S4F           C03    C    CR6       0.000    -42.652  -34.931   -4.652
+ S4F           C02    C    CR6       0.000    -41.962  -34.465   -5.742
+ S4F           N01    N    NH2       0.000    -41.279  -35.444   -6.541
+ S4F           H012   H    H         0.000    -41.308  -36.442   -6.306
+ S4F           H011   H    H         0.000    -40.741  -35.176   -7.372
+ S4F           N19    N    NRD6      0.000    -41.935  -33.180   -6.041
+ S4F           C18    C    CR16      0.000    -42.578  -32.324   -5.278
+ S4F           H18    H    H         0.000    -42.545  -31.270   -5.525
+ S4F           C05    C    CR6       0.000    -43.326  -33.996   -3.882
+ S4F           N17    N    NRD6      0.000    -43.266  -32.716   -4.215
+ S4F           N06    N    N         0.000    -44.055  -34.456   -2.713
+ S4F           C11    C    CH2       0.000    -44.458  -33.343   -1.831
+ S4F           H112   H    H         0.000    -45.238  -32.752   -2.316
+ S4F           H111   H    H         0.000    -43.596  -32.706   -1.623
+ S4F           C07    C    CH2       0.000    -45.260  -35.276   -3.039
+ S4F           H071   H    H         0.000    -44.963  -36.060   -3.739
+ S4F           H072   H    H         0.000    -45.999  -34.627   -3.514
+ S4F           C08    C    CH2       0.000    -45.869  -35.914   -1.781
+ S4F           H081   H    H         0.000    -45.174  -36.675   -1.419
+ S4F           H082   H    H         0.000    -46.810  -36.388   -2.066
+ S4F           C09    C    CH2       0.000    -46.121  -34.912   -0.699
+ S4F           H091   H    H         0.000    -46.278  -35.469    0.227
+ S4F           H092   H    H         0.000    -47.037  -34.378   -0.960
+ S4F           C10    C    CH1       0.000    -44.999  -33.926   -0.510
+ S4F           H10    H    H         0.000    -44.174  -34.432    0.012
+ S4F           C12    C    CH2       0.000    -45.497  -32.753    0.376
+ S4F           H121   H    H         0.000    -45.949  -33.177    1.275
+ S4F           H122   H    H         0.000    -46.255  -32.203   -0.186
+ S4F           C13    C    CH2       0.000    -44.362  -31.801    0.773
+ S4F           H131   H    H         0.000    -44.787  -30.819    0.992
+ S4F           H132   H    H         0.000    -43.666  -31.716   -0.064
+ S4F           C14    C    C         0.000    -43.620  -32.324    2.005
+ S4F           O15    O    OC       -1.000    -43.375  -33.554    2.098
+ S4F           O16    O    OC        0.000    -43.261  -31.543    2.927
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S4F      CL04   n/a    C03    START
+ S4F      C03    CL04   C05    .
+ S4F      C02    C03    N19    .
+ S4F      N01    C02    H011   .
+ S4F      H012   N01    .      .
+ S4F      H011   N01    .      .
+ S4F      N19    C02    C18    .
+ S4F      C18    N19    H18    .
+ S4F      H18    C18    .      .
+ S4F      C05    C03    N06    .
+ S4F      N17    C05    .      .
+ S4F      N06    C05    C07    .
+ S4F      C11    N06    H111   .
+ S4F      H112   C11    .      .
+ S4F      H111   C11    .      .
+ S4F      C07    N06    C08    .
+ S4F      H071   C07    .      .
+ S4F      H072   C07    .      .
+ S4F      C08    C07    C09    .
+ S4F      H081   C08    .      .
+ S4F      H082   C08    .      .
+ S4F      C09    C08    C10    .
+ S4F      H091   C09    .      .
+ S4F      H092   C09    .      .
+ S4F      C10    C09    C12    .
+ S4F      H10    C10    .      .
+ S4F      C12    C10    C13    .
+ S4F      H121   C12    .      .
+ S4F      H122   C12    .      .
+ S4F      C13    C12    C14    .
+ S4F      H131   C13    .      .
+ S4F      H132   C13    .      .
+ S4F      C14    C13    O16    .
+ S4F      O15    C14    .      .
+ S4F      O16    C14    .      END
+ S4F      C18    N17    .    ADD
+ S4F      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S4F      C18    N17       aromatic    1.337    0.020
+ S4F      C18    N19       aromatic    1.337    0.020
+ S4F      C14    C13       single      1.510    0.020
+ S4F      O15    C14       deloc       1.250    0.020
+ S4F      O16    C14       deloc       1.250    0.020
+ S4F      C13    C12       single      1.524    0.020
+ S4F      C12    C10       single      1.524    0.020
+ S4F      C11    C10       single      1.524    0.020
+ S4F      C11    N06       single      1.455    0.020
+ S4F      C10    C09       single      1.524    0.020
+ S4F      C02    C03       aromatic    1.384    0.020
+ S4F      N01    C02       single      1.355    0.020
+ S4F      N19    C02       deloc       1.350    0.020
+ S4F      C05    C03       aromatic    1.384    0.020
+ S4F      C03    CL04      single      1.795    0.020
+ S4F      N06    C05       single      1.400    0.020
+ S4F      N17    C05       deloc       1.350    0.020
+ S4F      C08    C07       single      1.524    0.020
+ S4F      C07    N06       single      1.455    0.020
+ S4F      C09    C08       single      1.524    0.020
+ S4F      H18    C18       single      1.083    0.020
+ S4F      H131   C13       single      1.092    0.020
+ S4F      H132   C13       single      1.092    0.020
+ S4F      H121   C12       single      1.092    0.020
+ S4F      H122   C12       single      1.092    0.020
+ S4F      H111   C11       single      1.092    0.020
+ S4F      H112   C11       single      1.092    0.020
+ S4F      H10    C10       single      1.099    0.020
+ S4F      H071   C07       single      1.092    0.020
+ S4F      H072   C07       single      1.092    0.020
+ S4F      H081   C08       single      1.092    0.020
+ S4F      H082   C08       single      1.092    0.020
+ S4F      H091   C09       single      1.092    0.020
+ S4F      H092   C09       single      1.092    0.020
+ S4F      H011   N01       single      1.010    0.020
+ S4F      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S4F      CL04   C03    C02     120.000    3.000
+ S4F      CL04   C03    C05     120.000    3.000
+ S4F      C02    C03    C05     120.000    3.000
+ S4F      C03    C02    N01     120.000    3.000
+ S4F      C03    C02    N19     120.000    3.000
+ S4F      N01    C02    N19     120.000    3.000
+ S4F      C02    N01    H012    120.000    3.000
+ S4F      C02    N01    H011    120.000    3.000
+ S4F      H012   N01    H011    120.000    3.000
+ S4F      C02    N19    C18     120.000    3.000
+ S4F      N19    C18    H18     120.000    3.000
+ S4F      N19    C18    N17     120.000    3.000
+ S4F      H18    C18    N17     120.000    3.000
+ S4F      C03    C05    N17     120.000    3.000
+ S4F      C03    C05    N06     120.000    3.000
+ S4F      N17    C05    N06     120.000    3.000
+ S4F      C05    N17    C18     120.000    3.000
+ S4F      C05    N06    C11     120.000    3.000
+ S4F      C05    N06    C07     120.000    3.000
+ S4F      C11    N06    C07     120.000    3.000
+ S4F      N06    C11    H112    109.470    3.000
+ S4F      N06    C11    H111    109.470    3.000
+ S4F      N06    C11    C10     105.000    3.000
+ S4F      H112   C11    H111    107.900    3.000
+ S4F      H112   C11    C10     109.470    3.000
+ S4F      H111   C11    C10     109.470    3.000
+ S4F      N06    C07    H071    109.470    3.000
+ S4F      N06    C07    H072    109.470    3.000
+ S4F      N06    C07    C08     105.000    3.000
+ S4F      H071   C07    H072    107.900    3.000
+ S4F      H071   C07    C08     109.470    3.000
+ S4F      H072   C07    C08     109.470    3.000
+ S4F      C07    C08    H081    109.470    3.000
+ S4F      C07    C08    H082    109.470    3.000
+ S4F      C07    C08    C09     111.000    3.000
+ S4F      H081   C08    H082    107.900    3.000
+ S4F      H081   C08    C09     109.470    3.000
+ S4F      H082   C08    C09     109.470    3.000
+ S4F      C08    C09    H091    109.470    3.000
+ S4F      C08    C09    H092    109.470    3.000
+ S4F      C08    C09    C10     111.000    3.000
+ S4F      H091   C09    H092    107.900    3.000
+ S4F      H091   C09    C10     109.470    3.000
+ S4F      H092   C09    C10     109.470    3.000
+ S4F      C09    C10    H10     108.340    3.000
+ S4F      C09    C10    C12     109.470    3.000
+ S4F      C09    C10    C11     109.470    3.000
+ S4F      H10    C10    C12     108.340    3.000
+ S4F      H10    C10    C11     108.340    3.000
+ S4F      C12    C10    C11     109.470    3.000
+ S4F      C10    C12    H121    109.470    3.000
+ S4F      C10    C12    H122    109.470    3.000
+ S4F      C10    C12    C13     111.000    3.000
+ S4F      H121   C12    H122    107.900    3.000
+ S4F      H121   C12    C13     109.470    3.000
+ S4F      H122   C12    C13     109.470    3.000
+ S4F      C12    C13    H131    109.470    3.000
+ S4F      C12    C13    H132    109.470    3.000
+ S4F      C12    C13    C14     109.470    3.000
+ S4F      H131   C13    H132    107.900    3.000
+ S4F      H131   C13    C14     109.470    3.000
+ S4F      H132   C13    C14     109.470    3.000
+ S4F      C13    C14    O15     118.500    3.000
+ S4F      C13    C14    O16     118.500    3.000
+ S4F      O15    C14    O16     123.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S4F      CONST_1          CL04   C03    C02    N19                0.000            0.000   0
+ S4F      CONST_2          C03    C02    N01    H011             180.000            0.000   0
+ S4F      CONST_3          C03    C02    N19    C18                0.000            0.000   0
+ S4F      CONST_4          C02    N19    C18    N17                0.000            0.000   0
+ S4F      CONST_5          N19    C18    N17    C05                0.000            0.000   0
+ S4F      CONST_6          CL04   C03    C05    N06                0.000            0.000   0
+ S4F      CONST_7          C03    C05    N17    C18                0.000            0.000   0
+ S4F      var_1            C03    C05    N06    C07              -68.721           20.000   3
+ S4F      var_2            C05    N06    C11    C10             -170.187           20.000   3
+ S4F      var_3            N06    C11    C10    C09              180.000           20.000   3
+ S4F      var_4            C05    N06    C07    C08              171.276           20.000   3
+ S4F      var_5            N06    C07    C08    C09              180.000           20.000   3
+ S4F      var_6            C07    C08    C09    C10              180.000           20.000   3
+ S4F      var_7            C08    C09    C10    C12              180.000           20.000   3
+ S4F      var_8            C09    C10    C12    C13              180.000           20.000   3
+ S4F      var_9            C10    C12    C13    C14              180.000           20.000   3
+ S4F      var_10           C12    C13    C14    O16              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S4F      chir_01          C10    C12    C11    C09       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S4F      plan-1            C18       0.020
+ S4F      plan-1            N17       0.020
+ S4F      plan-1            N19       0.020
+ S4F      plan-1            H18       0.020
+ S4F      plan-1            C02       0.020
+ S4F      plan-1            C03       0.020
+ S4F      plan-1            C05       0.020
+ S4F      plan-1            N01       0.020
+ S4F      plan-1            CL04      0.020
+ S4F      plan-1            N06       0.020
+ S4F      plan-1            H012      0.020
+ S4F      plan-1            H011      0.020
+ S4F      plan-2            C14       0.020
+ S4F      plan-2            C13       0.020
+ S4F      plan-2            O15       0.020
+ S4F      plan-2            O16       0.020
+ S4F      plan-3            N01       0.020
+ S4F      plan-3            C02       0.020
+ S4F      plan-3            H011      0.020
+ S4F      plan-3            H012      0.020
+ S4F      plan-4            N06       0.020
+ S4F      plan-4            C11       0.020
+ S4F      plan-4            C05       0.020
+ S4F      plan-4            C07       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

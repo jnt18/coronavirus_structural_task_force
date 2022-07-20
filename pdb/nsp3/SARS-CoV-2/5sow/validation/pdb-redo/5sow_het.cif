@@ -1,0 +1,248 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WXG      WXG '.                                   ' .                  28  18 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WXG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WXG           O01    O    O         0.000    -44.371  -32.999    3.130
+ WXG           C02    C    CR5       0.000    -44.593  -32.629    2.026
+ WXG           N06    N    NR5       0.000    -44.280  -31.406    1.521
+ WXG           C05    C    CH2       0.000    -44.765  -31.356    0.030
+ WXG           H051   H    H         0.000    -43.932  -31.178   -0.654
+ WXG           H052   H    H         0.000    -45.525  -30.586   -0.116
+ WXG           C04    C    CR15      0.000    -45.387  -32.768   -0.256
+ WXG           H04    H    H         0.000    -45.814  -33.098   -1.195
+ WXG           C03    C    CR15      0.000    -45.296  -33.498    0.874
+ WXG           H03    H    H         0.000    -45.645  -34.517    0.987
+ WXG           C07    C    CH2       0.000    -43.642  -30.305    2.260
+ WXG           H071   H    H         0.000    -42.623  -30.144    1.903
+ WXG           H072   H    H         0.000    -43.622  -30.523    3.330
+ WXG           C08    C    CH2       0.000    -44.480  -29.042    2.008
+ WXG           H081   H    H         0.000    -44.533  -28.858    0.933
+ WXG           H082   H    H         0.000    -44.001  -28.192    2.499
+ WXG           S09    S    S2        0.000    -46.169  -29.261    2.675
+ WXG           C10    C    CR6       0.000    -45.968  -29.211    4.488
+ WXG           N11    N    NRD6      0.000    -44.756  -29.243    5.024
+ WXG           C12    C    CR16      0.000    -44.609  -29.211    6.342
+ WXG           H12    H    H         0.000    -43.617  -29.242    6.775
+ WXG           N13    N    NRD6      0.000    -45.671  -29.141    7.130
+ WXG           C14    C    CR56      0.000    -46.946  -29.092    6.652
+ WXG           N15    N    NRD5      0.000    -48.167  -29.017    7.247
+ WXG           C16    C    CR15      0.000    -49.080  -29.002    6.263
+ WXG           H16    H    H         0.000    -50.152  -28.944    6.409
+ WXG           N17    N    NRD5      0.000    -48.466  -29.069    5.071
+ WXG           C18    C    CR56      0.000    -47.130  -29.128    5.305
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WXG      O01    n/a    C02    START
+ WXG      C02    O01    N06    .
+ WXG      N06    C02    C07    .
+ WXG      C05    N06    C04    .
+ WXG      H051   C05    .      .
+ WXG      H052   C05    .      .
+ WXG      C04    C05    C03    .
+ WXG      H04    C04    .      .
+ WXG      C03    C04    H03    .
+ WXG      H03    C03    .      .
+ WXG      C07    N06    C08    .
+ WXG      H071   C07    .      .
+ WXG      H072   C07    .      .
+ WXG      C08    C07    S09    .
+ WXG      H081   C08    .      .
+ WXG      H082   C08    .      .
+ WXG      S09    C08    C10    .
+ WXG      C10    S09    N11    .
+ WXG      N11    C10    C12    .
+ WXG      C12    N11    N13    .
+ WXG      H12    C12    .      .
+ WXG      N13    C12    C14    .
+ WXG      C14    N13    N15    .
+ WXG      N15    C14    C16    .
+ WXG      C16    N15    N17    .
+ WXG      H16    C16    .      .
+ WXG      N17    C16    C18    .
+ WXG      C18    N17    .      END
+ WXG      C10    C18    .    ADD
+ WXG      C02    C03    .    ADD
+ WXG      C14    C18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WXG      C10    C18       aromatic    1.390    0.020
+ WXG      N11    C10       aromatic    1.350    0.020
+ WXG      C10    S09       single      1.695    0.020
+ WXG      C02    C03       single      1.387    0.020
+ WXG      N06    C02       single      1.337    0.020
+ WXG      C02    O01       double      1.350    0.020
+ WXG      C03    C04       double      1.380    0.020
+ WXG      C04    C05       single      1.507    0.020
+ WXG      C05    N06       single      1.462    0.020
+ WXG      C08    C07       single      1.524    0.020
+ WXG      C07    N06       single      1.462    0.020
+ WXG      S09    C08       single      1.762    0.020
+ WXG      C12    N11       aromatic    1.337    0.020
+ WXG      N13    C12       aromatic    1.337    0.020
+ WXG      C14    C18       double      1.490    0.020
+ WXG      C14    N13       aromatic    1.355    0.020
+ WXG      N15    C14       aromatic    1.350    0.020
+ WXG      C16    N15       aromatic    1.350    0.020
+ WXG      N17    C16       aromatic    1.350    0.020
+ WXG      C18    N17       aromatic    1.350    0.020
+ WXG      H03    C03       single      1.083    0.020
+ WXG      H04    C04       single      1.083    0.020
+ WXG      H051   C05       single      1.092    0.020
+ WXG      H052   C05       single      1.092    0.020
+ WXG      H071   C07       single      1.092    0.020
+ WXG      H072   C07       single      1.092    0.020
+ WXG      H081   C08       single      1.092    0.020
+ WXG      H082   C08       single      1.092    0.020
+ WXG      H12    C12       single      1.083    0.020
+ WXG      H16    C16       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WXG      O01    C02    N06     108.000    3.000
+ WXG      O01    C02    C03     108.000    3.000
+ WXG      N06    C02    C03     108.000    3.000
+ WXG      C02    N06    C05     126.000    3.000
+ WXG      C02    N06    C07     126.000    3.000
+ WXG      C05    N06    C07     108.000    3.000
+ WXG      N06    C05    H051    109.500    3.000
+ WXG      N06    C05    H052    109.500    3.000
+ WXG      N06    C05    C04     109.500    3.000
+ WXG      H051   C05    H052    107.900    3.000
+ WXG      H051   C05    C04     109.470    3.000
+ WXG      H052   C05    C04     109.470    3.000
+ WXG      C05    C04    H04     126.000    3.000
+ WXG      C05    C04    C03     126.000    3.000
+ WXG      H04    C04    C03     126.000    3.000
+ WXG      C04    C03    H03     126.000    3.000
+ WXG      C04    C03    C02     108.000    3.000
+ WXG      H03    C03    C02     126.000    3.000
+ WXG      N06    C07    H071    109.500    3.000
+ WXG      N06    C07    H072    109.500    3.000
+ WXG      N06    C07    C08     109.500    3.000
+ WXG      H071   C07    H072    107.900    3.000
+ WXG      H071   C07    C08     109.470    3.000
+ WXG      H072   C07    C08     109.470    3.000
+ WXG      C07    C08    H081    109.470    3.000
+ WXG      C07    C08    H082    109.470    3.000
+ WXG      C07    C08    S09     109.500    3.000
+ WXG      H081   C08    H082    107.900    3.000
+ WXG      H081   C08    S09     109.500    3.000
+ WXG      H082   C08    S09     109.500    3.000
+ WXG      C08    S09    C10     104.911    3.000
+ WXG      S09    C10    N11     120.000    3.000
+ WXG      S09    C10    C18     120.000    3.000
+ WXG      N11    C10    C18     120.000    3.000
+ WXG      C10    N11    C12     120.000    3.000
+ WXG      N11    C12    H12     120.000    3.000
+ WXG      N11    C12    N13     120.000    3.000
+ WXG      H12    C12    N13     120.000    3.000
+ WXG      C12    N13    C14     120.000    3.000
+ WXG      N13    C14    N15     120.000    3.000
+ WXG      N13    C14    C18     120.000    3.000
+ WXG      N15    C14    C18     108.000    3.000
+ WXG      C14    N15    C16     108.000    3.000
+ WXG      N15    C16    H16     126.000    3.000
+ WXG      N15    C16    N17     108.000    3.000
+ WXG      H16    C16    N17     126.000    3.000
+ WXG      C16    N17    C18     108.000    3.000
+ WXG      N17    C18    C10     132.000    3.000
+ WXG      N17    C18    C14     108.000    3.000
+ WXG      C10    C18    C14     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WXG      CONST_1          O01    C02    C03    C04                0.000            0.000   0
+ WXG      CONST_2          O01    C02    N06    C07               -1.759            0.000   0
+ WXG      CONST_3          C02    N06    C05    C04               -1.128            0.000   0
+ WXG      CONST_4          N06    C05    C04    C03                0.759            0.000   0
+ WXG      CONST_5          C05    C04    C03    C02               -0.172            0.000   0
+ WXG      var_1            C02    N06    C07    C08             -130.360           20.000   3
+ WXG      var_2            N06    C07    C08    S09              180.000           20.000   3
+ WXG      var_3            C07    C08    S09    C10               71.392           20.000   3
+ WXG      var_4            C08    S09    C10    N11              -10.053           20.000   3
+ WXG      CONST_6          S09    C10    C18    N17              180.000            0.000   0
+ WXG      CONST_7          S09    C10    N11    C12                0.000            0.000   0
+ WXG      CONST_8          C10    N11    C12    N13                0.000            0.000   0
+ WXG      CONST_9          N11    C12    N13    C14                0.000            0.000   0
+ WXG      CONST_10         C12    N13    C14    N15              180.000            0.000   0
+ WXG      CONST_11         N13    C14    C18    N17              180.000            0.000   0
+ WXG      CONST_12         N13    C14    N15    C16              180.000            0.000   0
+ WXG      CONST_13         C14    N15    C16    N17                0.000            0.000   0
+ WXG      CONST_14         N15    C16    N17    C18                0.000            0.000   0
+ WXG      CONST_15         C16    N17    C18    C10              180.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WXG      plan-1            C10       0.020
+ WXG      plan-1            C18       0.020
+ WXG      plan-1            N11       0.020
+ WXG      plan-1            S09       0.020
+ WXG      plan-1            C12       0.020
+ WXG      plan-1            N13       0.020
+ WXG      plan-1            H12       0.020
+ WXG      plan-1            C14       0.020
+ WXG      plan-1            N17       0.020
+ WXG      plan-1            C16       0.020
+ WXG      plan-1            N15       0.020
+ WXG      plan-1            H16       0.020
+ WXG      plan-2            C02       0.020
+ WXG      plan-2            C03       0.020
+ WXG      plan-2            N06       0.020
+ WXG      plan-2            O01       0.020
+ WXG      plan-2            C04       0.020
+ WXG      plan-2            C05       0.020
+ WXG      plan-2            H03       0.020
+ WXG      plan-2            H04       0.020
+ WXG      plan-2            C07       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

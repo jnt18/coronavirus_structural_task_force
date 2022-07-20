@@ -1,0 +1,238 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QS6      QS6 '.                                   ' .                  25  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QS6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QS6           O01    O    OH1       0.000    -46.606  -28.671   -0.547
+ QS6           HO01   H    H         0.000    -45.863  -28.205   -0.930
+ QS6           C02    C    CR5       0.000    -46.558  -30.085   -0.460
+ QS6           C03    C    CR15      0.000    -47.651  -30.527    0.084
+ QS6           H03    H    H         0.000    -48.555  -30.829   -0.430
+ QS6           C04    C    CH2       0.000    -47.400  -30.537    1.659
+ QS6           H041   H    H         0.000    -47.898  -31.380    2.143
+ QS6           H042   H    H         0.000    -47.726  -29.606    2.127
+ QS6           C05    C    CR5       0.000    -45.816  -30.689    1.818
+ QS6           C16    C    CR15      0.000    -45.338  -30.656    0.577
+ QS6           H16    H    H         0.000    -44.338  -30.945    0.277
+ QS6           N06    N    NH1       0.000    -45.201  -29.518    2.627
+ QS6           HN06   H    H         0.000    -44.736  -28.779    2.118
+ QS6           C07    C    CR6       0.000    -45.258  -29.420    4.132
+ QS6           N15    N    NRD6      0.000    -44.072  -29.524    4.863
+ QS6           C14    C    CR16      0.000    -44.076  -29.432    6.176
+ QS6           H14    H    H         0.000    -43.142  -29.521    6.718
+ QS6           C08    C    CR56      0.000    -46.432  -29.204    4.807
+ QS6           C09    C    CR15      0.000    -47.795  -29.035    4.475
+ QS6           H09    H    H         0.000    -48.209  -29.044    3.474
+ QS6           C10    C    CR15      0.000    -48.503  -28.858    5.632
+ QS6           H10    H    H         0.000    -49.572  -28.704    5.706
+ QS6           N11    N    NRD5      0.000    -47.628  -28.909    6.673
+ QS6           C12    C    CR56      0.000    -46.379  -29.112    6.195
+ QS6           N13    N    NRD6      0.000    -45.167  -29.239    6.827
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QS6      O01    n/a    C02    START
+ QS6      HO01   O01    .      .
+ QS6      C02    O01    C03    .
+ QS6      C03    C02    C04    .
+ QS6      H03    C03    .      .
+ QS6      C04    C03    C05    .
+ QS6      H041   C04    .      .
+ QS6      H042   C04    .      .
+ QS6      C05    C04    N06    .
+ QS6      C16    C05    H16    .
+ QS6      H16    C16    .      .
+ QS6      N06    C05    C07    .
+ QS6      HN06   N06    .      .
+ QS6      C07    N06    C08    .
+ QS6      N15    C07    C14    .
+ QS6      C14    N15    H14    .
+ QS6      H14    C14    .      .
+ QS6      C08    C07    C09    .
+ QS6      C09    C08    C10    .
+ QS6      H09    C09    .      .
+ QS6      C10    C09    N11    .
+ QS6      H10    C10    .      .
+ QS6      N11    C10    C12    .
+ QS6      C12    N11    N13    .
+ QS6      N13    C12    .      END
+ QS6      C16    C02    .    ADD
+ QS6      C14    N13    .    ADD
+ QS6      C12    C08    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QS6      C16    C02       single      1.387    0.020
+ QS6      C16    C05       double      1.387    0.020
+ QS6      C14    N13       aromatic    1.337    0.020
+ QS6      C14    N15       aromatic    1.337    0.020
+ QS6      C12    C08       aromatic    1.390    0.020
+ QS6      C12    N11       aromatic    1.350    0.020
+ QS6      N13    C12       aromatic    1.355    0.020
+ QS6      C10    C09       aromatic    1.380    0.020
+ QS6      N11    C10       aromatic    1.350    0.020
+ QS6      C03    C02       double      1.387    0.020
+ QS6      C02    O01       single      1.480    0.020
+ QS6      C04    C03       single      1.507    0.020
+ QS6      C05    C04       single      1.510    0.020
+ QS6      N06    C05       single      1.350    0.020
+ QS6      C08    C07       aromatic    1.390    0.020
+ QS6      C07    N06       single      1.350    0.020
+ QS6      N15    C07       single      1.350    0.020
+ QS6      C09    C08       aromatic    1.440    0.020
+ QS6      H16    C16       single      1.083    0.020
+ QS6      H14    C14       single      1.083    0.020
+ QS6      H10    C10       single      1.083    0.020
+ QS6      H03    C03       single      1.083    0.020
+ QS6      H041   C04       single      1.092    0.020
+ QS6      H042   C04       single      1.092    0.020
+ QS6      H09    C09       single      1.083    0.020
+ QS6      HN06   N06       single      1.010    0.020
+ QS6      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QS6      HO01   O01    C02     120.000    3.000
+ QS6      O01    C02    C03     108.000    3.000
+ QS6      O01    C02    C16     108.000    3.000
+ QS6      C03    C02    C16     108.000    3.000
+ QS6      C02    C03    H03     126.000    3.000
+ QS6      C02    C03    C04     108.000    3.000
+ QS6      H03    C03    C04     126.000    3.000
+ QS6      C03    C04    H041    109.470    3.000
+ QS6      C03    C04    H042    109.470    3.000
+ QS6      C03    C04    C05     109.500    3.000
+ QS6      H041   C04    H042    107.900    3.000
+ QS6      H041   C04    C05     109.470    3.000
+ QS6      H042   C04    C05     109.470    3.000
+ QS6      C04    C05    C16     126.000    3.000
+ QS6      C04    C05    N06     108.000    3.000
+ QS6      C16    C05    N06     126.000    3.000
+ QS6      C05    C16    H16     126.000    3.000
+ QS6      C05    C16    C02     108.000    3.000
+ QS6      H16    C16    C02     126.000    3.000
+ QS6      C05    N06    HN06    120.000    3.000
+ QS6      C05    N06    C07     120.000    3.000
+ QS6      HN06   N06    C07     120.000    3.000
+ QS6      N06    C07    N15     120.000    3.000
+ QS6      N06    C07    C08     120.000    3.000
+ QS6      N15    C07    C08     120.000    3.000
+ QS6      C07    N15    C14     120.000    3.000
+ QS6      N15    C14    H14     120.000    3.000
+ QS6      N15    C14    N13     120.000    3.000
+ QS6      H14    C14    N13     120.000    3.000
+ QS6      C07    C08    C09     132.000    3.000
+ QS6      C07    C08    C12     120.000    3.000
+ QS6      C09    C08    C12     120.000    3.000
+ QS6      C08    C09    H09     108.000    3.000
+ QS6      C08    C09    C10     108.000    3.000
+ QS6      H09    C09    C10     126.000    3.000
+ QS6      C09    C10    H10     126.000    3.000
+ QS6      C09    C10    N11     108.000    3.000
+ QS6      H10    C10    N11     126.000    3.000
+ QS6      C10    N11    C12     108.000    3.000
+ QS6      N11    C12    N13     120.000    3.000
+ QS6      N11    C12    C08     108.000    3.000
+ QS6      N13    C12    C08     120.000    3.000
+ QS6      C12    N13    C14     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QS6      var_1            HO01   O01    C02    C03              180.000           20.000   3
+ QS6      CONST_1          O01    C02    C03    C04                0.000            0.000   0
+ QS6      CONST_2          C02    C03    C04    C05              -26.223            0.000   0
+ QS6      CONST_3          C03    C04    C05    N06                0.000            0.000   0
+ QS6      CONST_4          C04    C05    C16    C02                0.000            0.000   0
+ QS6      CONST_5          C05    C16    C02    O01                0.000            0.000   0
+ QS6      var_2            C04    C05    N06    C07               78.709           20.000   3
+ QS6      var_3            C05    N06    C07    C08              -68.373           20.000   3
+ QS6      CONST_6          N06    C07    N15    C14                0.000            0.000   0
+ QS6      CONST_7          C07    N15    C14    N13                0.000            0.000   0
+ QS6      CONST_8          N15    C14    N13    C12                0.000            0.000   0
+ QS6      CONST_9          N06    C07    C08    C09              180.000            0.000   0
+ QS6      CONST_10         C07    C08    C09    C10              179.640            0.000   0
+ QS6      CONST_11         C08    C09    C10    N11                0.084            0.000   0
+ QS6      CONST_12         C09    C10    N11    C12                0.000            0.000   0
+ QS6      CONST_13         C10    N11    C12    N13              180.000            0.000   0
+ QS6      CONST_14         N11    C12    C08    C07              180.000            0.000   0
+ QS6      CONST_15         N11    C12    N13    C14              180.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QS6      plan-1            C16       0.020
+ QS6      plan-1            C02       0.020
+ QS6      plan-1            C05       0.020
+ QS6      plan-1            H16       0.020
+ QS6      plan-1            C03       0.020
+ QS6      plan-1            C04       0.020
+ QS6      plan-1            O01       0.020
+ QS6      plan-1            H03       0.020
+ QS6      plan-1            N06       0.020
+ QS6      plan-1            HN06      0.020
+ QS6      plan-2            C14       0.020
+ QS6      plan-2            N13       0.020
+ QS6      plan-2            N15       0.020
+ QS6      plan-2            H14       0.020
+ QS6      plan-2            C07       0.020
+ QS6      plan-2            C08       0.020
+ QS6      plan-2            N06       0.020
+ QS6      plan-2            C12       0.020
+ QS6      plan-2            C09       0.020
+ QS6      plan-2            C10       0.020
+ QS6      plan-2            H09       0.020
+ QS6      plan-2            N11       0.020
+ QS6      plan-2            H10       0.020
+ QS6      plan-2            HN06      0.020
+ QS6      plan-3            N06       0.020
+ QS6      plan-3            C05       0.020
+ QS6      plan-3            C07       0.020
+ QS6      plan-3            HN06      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

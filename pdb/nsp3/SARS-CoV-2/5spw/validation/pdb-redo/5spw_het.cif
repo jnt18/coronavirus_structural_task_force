@@ -1,0 +1,310 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S5O      S5O '.                                   ' .                  36  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S5O
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S5O           O21    O    OC        0.000    -43.096  -31.623    3.651
+ S5O           C02    C    C         0.000    -43.761  -32.303    2.826
+ S5O           O01    O    OC       -1.000    -44.314  -33.367    3.201
+ S5O           C03    C    CH1       0.000    -43.882  -31.901    1.338
+ S5O           H03    H    H         0.000    -43.659  -32.802    0.750
+ S5O           C08    C    CH1       0.000    -45.299  -31.437    0.918
+ S5O           H08    H    H         0.000    -45.914  -32.330    0.740
+ S5O           C07    C    CH2       0.000    -45.326  -30.577   -0.350
+ S5O           H071   H    H         0.000    -46.360  -30.267   -0.512
+ S5O           H072   H    H         0.000    -45.002  -31.209   -1.180
+ S5O           C06    C    CH2       0.000    -44.426  -29.337   -0.267
+ S5O           H061   H    H         0.000    -45.061  -28.462   -0.109
+ S5O           H062   H    H         0.000    -43.896  -29.234   -1.216
+ S5O           C05    C    CH1       0.000    -43.395  -29.450    0.897
+ S5O           H05    H    H         0.000    -42.581  -28.731    0.728
+ S5O           C04    C    CH2       0.000    -42.808  -30.862    0.976
+ S5O           H042   H    H         0.000    -42.024  -30.867    1.736
+ S5O           H041   H    H         0.000    -42.373  -31.109    0.005
+ S5O           C09    C    CH2       0.000    -45.988  -30.590    1.980
+ S5O           H091   H    H         0.000    -45.944  -31.240    2.856
+ S5O           H092   H    H         0.000    -47.015  -30.549    1.610
+ S5O           N10    N    N         0.000    -45.559  -29.286    2.335
+ S5O           C20    C    CH2       0.000    -44.110  -29.101    2.221
+ S5O           H202   H    H         0.000    -43.700  -29.710    3.029
+ S5O           H201   H    H         0.000    -43.958  -28.044    2.451
+ S5O           C11    C    CR6       0.000    -46.169  -29.064    3.631
+ S5O           N19    N    NRD6      0.000    -47.461  -28.783    3.639
+ S5O           C18    C    CR16      0.000    -48.119  -28.589    4.765
+ S5O           H18    H    H         0.000    -49.174  -28.348    4.728
+ S5O           C12    C    CR56      0.000    -45.486  -29.192    4.857
+ S5O           N13    N    NRD5      0.000    -44.229  -29.471    5.247
+ S5O           C14    C    CR15      0.000    -44.183  -29.430    6.558
+ S5O           H14    H    H         0.000    -43.298  -29.608    7.156
+ S5O           N15    N    NRD5      0.000    -45.374  -29.140    7.038
+ S5O           C16    C    CR56      0.000    -46.216  -28.981    6.011
+ S5O           N17    N    NRD6      0.000    -47.519  -28.682    5.933
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S5O      O21    n/a    C02    START
+ S5O      C02    O21    C03    .
+ S5O      O01    C02    .      .
+ S5O      C03    C02    C08    .
+ S5O      H03    C03    .      .
+ S5O      C08    C03    C09    .
+ S5O      H08    C08    .      .
+ S5O      C07    C08    C06    .
+ S5O      H071   C07    .      .
+ S5O      H072   C07    .      .
+ S5O      C06    C07    C05    .
+ S5O      H061   C06    .      .
+ S5O      H062   C06    .      .
+ S5O      C05    C06    C04    .
+ S5O      H05    C05    .      .
+ S5O      C04    C05    H041   .
+ S5O      H042   C04    .      .
+ S5O      H041   C04    .      .
+ S5O      C09    C08    N10    .
+ S5O      H091   C09    .      .
+ S5O      H092   C09    .      .
+ S5O      N10    C09    C11    .
+ S5O      C20    N10    H201   .
+ S5O      H202   C20    .      .
+ S5O      H201   C20    .      .
+ S5O      C11    N10    C12    .
+ S5O      N19    C11    C18    .
+ S5O      C18    N19    H18    .
+ S5O      H18    C18    .      .
+ S5O      C12    C11    N13    .
+ S5O      N13    C12    C14    .
+ S5O      C14    N13    N15    .
+ S5O      H14    C14    .      .
+ S5O      N15    C14    C16    .
+ S5O      C16    N15    N17    .
+ S5O      N17    C16    .      END
+ S5O      C18    N17    .    ADD
+ S5O      C16    C12    .    ADD
+ S5O      C20    C05    .    ADD
+ S5O      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S5O      C18    N17       aromatic    1.337    0.020
+ S5O      C18    N19       aromatic    1.337    0.020
+ S5O      C16    C12       aromatic    1.390    0.020
+ S5O      C16    N15       aromatic    1.350    0.020
+ S5O      N17    C16       deloc       1.355    0.020
+ S5O      C14    N13       aromatic    1.350    0.020
+ S5O      N15    C14       aromatic    1.350    0.020
+ S5O      C12    C11       aromatic    1.390    0.020
+ S5O      N13    C12       deloc       1.350    0.020
+ S5O      C11    N10       single      1.400    0.020
+ S5O      N19    C11       deloc       1.350    0.020
+ S5O      C20    C05       single      1.524    0.020
+ S5O      C20    N10       single      1.455    0.020
+ S5O      C03    C02       single      1.500    0.020
+ S5O      O01    C02       deloc       1.250    0.020
+ S5O      C02    O21       deloc       1.250    0.020
+ S5O      C03    C04       single      1.524    0.020
+ S5O      C08    C03       single      1.524    0.020
+ S5O      C04    C05       single      1.524    0.020
+ S5O      C05    C06       single      1.524    0.020
+ S5O      C06    C07       single      1.524    0.020
+ S5O      C07    C08       single      1.524    0.020
+ S5O      C09    C08       single      1.524    0.020
+ S5O      N10    C09       single      1.455    0.020
+ S5O      H18    C18       single      1.083    0.020
+ S5O      H14    C14       single      1.083    0.020
+ S5O      H201   C20       single      1.092    0.020
+ S5O      H202   C20       single      1.092    0.020
+ S5O      H03    C03       single      1.099    0.020
+ S5O      H041   C04       single      1.092    0.020
+ S5O      H042   C04       single      1.092    0.020
+ S5O      H05    C05       single      1.099    0.020
+ S5O      H061   C06       single      1.092    0.020
+ S5O      H062   C06       single      1.092    0.020
+ S5O      H071   C07       single      1.092    0.020
+ S5O      H072   C07       single      1.092    0.020
+ S5O      H08    C08       single      1.099    0.020
+ S5O      H091   C09       single      1.092    0.020
+ S5O      H092   C09       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S5O      O21    C02    O01     123.000    3.000
+ S5O      O21    C02    C03     118.500    3.000
+ S5O      O01    C02    C03     118.500    3.000
+ S5O      C02    C03    H03     108.810    3.000
+ S5O      C02    C03    C08     109.470    3.000
+ S5O      C02    C03    C04     109.470    3.000
+ S5O      H03    C03    C08     108.340    3.000
+ S5O      H03    C03    C04     108.340    3.000
+ S5O      C08    C03    C04     111.000    3.000
+ S5O      C03    C08    H08     108.340    3.000
+ S5O      C03    C08    C07     111.000    3.000
+ S5O      C03    C08    C09     111.000    3.000
+ S5O      H08    C08    C07     108.340    3.000
+ S5O      H08    C08    C09     108.340    3.000
+ S5O      C07    C08    C09     109.470    3.000
+ S5O      C08    C07    H071    109.470    3.000
+ S5O      C08    C07    H072    109.470    3.000
+ S5O      C08    C07    C06     111.000    3.000
+ S5O      H071   C07    H072    107.900    3.000
+ S5O      H071   C07    C06     109.470    3.000
+ S5O      H072   C07    C06     109.470    3.000
+ S5O      C07    C06    H061    109.470    3.000
+ S5O      C07    C06    H062    109.470    3.000
+ S5O      C07    C06    C05     111.000    3.000
+ S5O      H061   C06    H062    107.900    3.000
+ S5O      H061   C06    C05     109.470    3.000
+ S5O      H062   C06    C05     109.470    3.000
+ S5O      C06    C05    H05     108.340    3.000
+ S5O      C06    C05    C04     109.470    3.000
+ S5O      C06    C05    C20     109.470    3.000
+ S5O      H05    C05    C04     108.340    3.000
+ S5O      H05    C05    C20     108.340    3.000
+ S5O      C04    C05    C20     109.470    3.000
+ S5O      C05    C04    H042    109.470    3.000
+ S5O      C05    C04    H041    109.470    3.000
+ S5O      C05    C04    C03     111.000    3.000
+ S5O      H042   C04    H041    107.900    3.000
+ S5O      H042   C04    C03     109.470    3.000
+ S5O      H041   C04    C03     109.470    3.000
+ S5O      C08    C09    H091    109.470    3.000
+ S5O      C08    C09    H092    109.470    3.000
+ S5O      C08    C09    N10     105.000    3.000
+ S5O      H091   C09    H092    107.900    3.000
+ S5O      H091   C09    N10     109.470    3.000
+ S5O      H092   C09    N10     109.470    3.000
+ S5O      C09    N10    C20     120.000    3.000
+ S5O      C09    N10    C11     120.000    3.000
+ S5O      C20    N10    C11     120.000    3.000
+ S5O      N10    C20    H202    109.470    3.000
+ S5O      N10    C20    H201    109.470    3.000
+ S5O      N10    C20    C05     105.000    3.000
+ S5O      H202   C20    H201    107.900    3.000
+ S5O      H202   C20    C05     109.470    3.000
+ S5O      H201   C20    C05     109.470    3.000
+ S5O      N10    C11    N19     120.000    3.000
+ S5O      N10    C11    C12     120.000    3.000
+ S5O      N19    C11    C12     120.000    3.000
+ S5O      C11    N19    C18     120.000    3.000
+ S5O      N19    C18    H18     120.000    3.000
+ S5O      N19    C18    N17     120.000    3.000
+ S5O      H18    C18    N17     120.000    3.000
+ S5O      C11    C12    N13     132.000    3.000
+ S5O      C11    C12    C16     120.000    3.000
+ S5O      N13    C12    C16     108.000    3.000
+ S5O      C12    N13    C14     108.000    3.000
+ S5O      N13    C14    H14     126.000    3.000
+ S5O      N13    C14    N15     108.000    3.000
+ S5O      H14    C14    N15     126.000    3.000
+ S5O      C14    N15    C16     108.000    3.000
+ S5O      N15    C16    N17     120.000    3.000
+ S5O      N15    C16    C12     108.000    3.000
+ S5O      N17    C16    C12     120.000    3.000
+ S5O      C16    N17    C18     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S5O      var_1            O21    C02    C03    C08              180.000           20.000   3
+ S5O      var_2            C02    C03    C04    C05              180.000           20.000   3
+ S5O      var_3            C02    C03    C08    C09              180.000           20.000   3
+ S5O      var_4            C03    C08    C07    C06              180.000           20.000   3
+ S5O      var_5            C08    C07    C06    C05              180.000           20.000   3
+ S5O      var_6            C07    C06    C05    C04              180.000           20.000   3
+ S5O      var_7            C06    C05    C04    C03              180.000           20.000   3
+ S5O      var_8            C03    C08    C09    N10              180.000           20.000   3
+ S5O      var_9            C08    C09    N10    C11             -161.212           20.000   3
+ S5O      var_10           C09    N10    C20    C05               53.113           20.000   3
+ S5O      var_11           N10    C20    C05    C06              180.000           20.000   3
+ S5O      var_12           C09    N10    C11    C12              100.596           20.000   3
+ S5O      CONST_1          N10    C11    N19    C18                0.000            0.000   0
+ S5O      CONST_2          C11    N19    C18    N17                0.000            0.000   0
+ S5O      CONST_3          N19    C18    N17    C16                0.000            0.000   0
+ S5O      CONST_4          N10    C11    C12    N13              180.000            0.000   0
+ S5O      CONST_5          C11    C12    N13    C14              180.000            0.000   0
+ S5O      CONST_6          C12    N13    C14    N15                0.000            0.000   0
+ S5O      CONST_7          N13    C14    N15    C16                0.000            0.000   0
+ S5O      CONST_8          C14    N15    C16    N17              180.000            0.000   0
+ S5O      CONST_9          N15    C16    C12    C11              180.000            0.000   0
+ S5O      CONST_10         N15    C16    N17    C18              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S5O      chir_01          C03    C02    C04    C08       positiv
+ S5O      chir_02          C05    C20    C04    C06       negativ
+ S5O      chir_03          C08    C03    C07    C09       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S5O      plan-1            C18       0.020
+ S5O      plan-1            N17       0.020
+ S5O      plan-1            N19       0.020
+ S5O      plan-1            H18       0.020
+ S5O      plan-1            C11       0.020
+ S5O      plan-1            C12       0.020
+ S5O      plan-1            N10       0.020
+ S5O      plan-1            C16       0.020
+ S5O      plan-1            C14       0.020
+ S5O      plan-1            N13       0.020
+ S5O      plan-1            N15       0.020
+ S5O      plan-1            H14       0.020
+ S5O      plan-2            C02       0.020
+ S5O      plan-2            C03       0.020
+ S5O      plan-2            O01       0.020
+ S5O      plan-2            O21       0.020
+ S5O      plan-3            N10       0.020
+ S5O      plan-3            C11       0.020
+ S5O      plan-3            C20       0.020
+ S5O      plan-3            C09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

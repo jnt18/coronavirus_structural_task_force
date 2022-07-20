@@ -1,0 +1,393 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QMF      QMF '.                                   ' .                  47  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QMF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QMF           O23    O    O         0.000    -51.041  -29.148    4.576
+ QMF           C22    C    C         0.000    -50.436  -29.171    5.597
+ QMF           N24    N    NH1       0.000    -51.086  -29.223    6.903
+ QMF           HN24   H    H         0.000    -50.501  -29.289    7.724
+ QMF           C25    C    CH1       0.000    -52.545  -29.185    7.093
+ QMF           H25    H    H         0.000    -53.088  -28.342    6.642
+ QMF           C27    C    CH2       0.000    -53.009  -29.657    8.479
+ QMF           H271   H    H         0.000    -53.948  -29.373    8.958
+ QMF           H272   H    H         0.000    -52.405  -30.235    9.181
+ QMF           C26    C    CH2       0.000    -53.302  -30.501    7.242
+ QMF           H262   H    H         0.000    -54.224  -30.460    6.658
+ QMF           H261   H    H         0.000    -52.680  -31.323    6.881
+ QMF           N21    N    NH1       0.000    -48.984  -29.185    5.632
+ QMF           HN21   H    H         0.000    -48.543  -29.232    6.539
+ QMF           C20    C    CR6       0.000    -48.113  -29.137    4.470
+ QMF           C19    C    CR16      0.000    -46.770  -29.169    4.770
+ QMF           H19    H    H         0.000    -46.445  -29.247    5.800
+ QMF           C18    C    CR16      0.000    -45.842  -29.101    3.755
+ QMF           H18    H    H         0.000    -44.786  -29.123    3.993
+ QMF           C28    C    CR16      0.000    -48.529  -29.014    3.150
+ QMF           H28    H    H         0.000    -49.587  -28.979    2.920
+ QMF           C29    C    CR16      0.000    -47.595  -28.936    2.123
+ QMF           H29    H    H         0.000    -47.914  -28.824    1.094
+ QMF           C17    C    CR6       0.000    -46.241  -29.005    2.444
+ QMF           C15    C    C         0.000    -45.080  -28.887    1.446
+ QMF           O16    O    O         0.000    -45.177  -28.152    0.504
+ QMF           N14    N    NH1       0.000    -43.824  -29.578    1.768
+ QMF           HN14   H    H         0.000    -43.754  -30.154    2.594
+ QMF           C13    C    CH2       0.000    -42.670  -29.419    0.871
+ QMF           H131   H    H         0.000    -41.976  -28.749    1.383
+ QMF           H132   H    H         0.000    -43.049  -28.930   -0.029
+ QMF           C12    C    CR5       0.000    -41.937  -30.723    0.481
+ QMF           C04    C    CR5       0.000    -42.087  -31.984    1.096
+ QMF           C02    C    C         0.000    -42.987  -32.379    2.256
+ QMF           O03    O    OC        0.000    -43.013  -31.677    3.310
+ QMF           O01    O    OC       -1.000    -43.665  -33.426    2.156
+ QMF           S05    S    S2        0.000    -41.066  -33.081    0.288
+ QMF           C06    C    CR56      0.000    -40.391  -31.975   -0.838
+ QMF           C11    C    CR56      0.000    -40.973  -30.725   -0.598
+ QMF           C07    C    CR16      0.000    -39.447  -32.092   -1.861
+ QMF           H07    H    H         0.000    -38.986  -33.053   -2.055
+ QMF           C08    C    CR16      0.000    -39.089  -30.985   -2.639
+ QMF           H08    H    H         0.000    -38.357  -31.093   -3.430
+ QMF           C09    C    CR16      0.000    -39.675  -29.742   -2.395
+ QMF           H09    H    H         0.000    -39.402  -28.882   -2.994
+ QMF           C10    C    CR16      0.000    -40.612  -29.617   -1.377
+ QMF           H10    H    H         0.000    -41.068  -28.654   -1.183
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QMF      O23    n/a    C22    START
+ QMF      C22    O23    N21    .
+ QMF      N24    C22    C25    .
+ QMF      HN24   N24    .      .
+ QMF      C25    N24    C27    .
+ QMF      H25    C25    .      .
+ QMF      C27    C25    C26    .
+ QMF      H271   C27    .      .
+ QMF      H272   C27    .      .
+ QMF      C26    C27    H261   .
+ QMF      H262   C26    .      .
+ QMF      H261   C26    .      .
+ QMF      N21    C22    C20    .
+ QMF      HN21   N21    .      .
+ QMF      C20    N21    C28    .
+ QMF      C19    C20    C18    .
+ QMF      H19    C19    .      .
+ QMF      C18    C19    H18    .
+ QMF      H18    C18    .      .
+ QMF      C28    C20    C29    .
+ QMF      H28    C28    .      .
+ QMF      C29    C28    C17    .
+ QMF      H29    C29    .      .
+ QMF      C17    C29    C15    .
+ QMF      C15    C17    N14    .
+ QMF      O16    C15    .      .
+ QMF      N14    C15    C13    .
+ QMF      HN14   N14    .      .
+ QMF      C13    N14    C12    .
+ QMF      H131   C13    .      .
+ QMF      H132   C13    .      .
+ QMF      C12    C13    C04    .
+ QMF      C04    C12    S05    .
+ QMF      C02    C04    O01    .
+ QMF      O03    C02    .      .
+ QMF      O01    C02    .      .
+ QMF      S05    C04    C06    .
+ QMF      C06    S05    C07    .
+ QMF      C11    C06    .      .
+ QMF      C07    C06    C08    .
+ QMF      H07    C07    .      .
+ QMF      C08    C07    C09    .
+ QMF      H08    C08    .      .
+ QMF      C09    C08    C10    .
+ QMF      H09    C09    .      .
+ QMF      C10    C09    H10    .
+ QMF      H10    C10    .      END
+ QMF      C18    C17    .    ADD
+ QMF      C12    C11    .    ADD
+ QMF      C11    C10    .    ADD
+ QMF      C25    C26    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QMF      C18    C17       aromatic    1.390    0.020
+ QMF      C18    C19       aromatic    1.390    0.020
+ QMF      C15    C17       single      1.500    0.020
+ QMF      C17    C29       aromatic    1.390    0.020
+ QMF      N14    C15       single      1.330    0.020
+ QMF      O16    C15       double      1.220    0.020
+ QMF      C12    C13       single      1.510    0.020
+ QMF      C13    N14       single      1.450    0.020
+ QMF      C12    C11       aromatic    1.390    0.020
+ QMF      C04    C12       aromatic    1.390    0.020
+ QMF      C11    C10       aromatic    1.390    0.020
+ QMF      C11    C06       aromatic    1.390    0.020
+ QMF      C10    C09       aromatic    1.390    0.020
+ QMF      C19    C20       aromatic    1.390    0.020
+ QMF      C28    C20       aromatic    1.390    0.020
+ QMF      C20    N21       single      1.350    0.020
+ QMF      C02    C04       single      1.490    0.020
+ QMF      O01    C02       deloc       1.250    0.020
+ QMF      O03    C02       deloc       1.250    0.020
+ QMF      S05    C04       single      1.745    0.020
+ QMF      C07    C06       aromatic    1.390    0.020
+ QMF      C06    S05       single      1.695    0.020
+ QMF      C08    C07       aromatic    1.390    0.020
+ QMF      C09    C08       aromatic    1.390    0.020
+ QMF      N21    C22       single      1.330    0.020
+ QMF      N24    C22       single      1.330    0.020
+ QMF      C22    O23       double      1.220    0.020
+ QMF      C25    C26       single      1.524    0.020
+ QMF      C27    C25       single      1.524    0.020
+ QMF      C25    N24       single      1.450    0.020
+ QMF      C26    C27       single      1.524    0.020
+ QMF      C29    C28       aromatic    1.390    0.020
+ QMF      H18    C18       single      1.083    0.020
+ QMF      H131   C13       single      1.092    0.020
+ QMF      H132   C13       single      1.092    0.020
+ QMF      H10    C10       single      1.083    0.020
+ QMF      H19    C19       single      1.083    0.020
+ QMF      H07    C07       single      1.083    0.020
+ QMF      H08    C08       single      1.083    0.020
+ QMF      H09    C09       single      1.083    0.020
+ QMF      H25    C25       single      1.099    0.020
+ QMF      H261   C26       single      1.092    0.020
+ QMF      H262   C26       single      1.092    0.020
+ QMF      H271   C27       single      1.092    0.020
+ QMF      H272   C27       single      1.092    0.020
+ QMF      H28    C28       single      1.083    0.020
+ QMF      H29    C29       single      1.083    0.020
+ QMF      HN14   N14       single      1.010    0.020
+ QMF      HN21   N21       single      1.010    0.020
+ QMF      HN24   N24       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QMF      O23    C22    N24     123.000    3.000
+ QMF      O23    C22    N21     123.000    3.000
+ QMF      N24    C22    N21     120.000    3.000
+ QMF      C22    N24    HN24    120.000    3.000
+ QMF      C22    N24    C25     121.500    3.000
+ QMF      HN24   N24    C25     118.500    3.000
+ QMF      N24    C25    H25     108.550    3.000
+ QMF      N24    C25    C27     110.000    3.000
+ QMF      N24    C25    C26     110.000    3.000
+ QMF      H25    C25    C27     108.340    3.000
+ QMF      H25    C25    C26     108.340    3.000
+ QMF      C27    C25    C26      60.000    3.000
+ QMF      C25    C27    H271    109.470    3.000
+ QMF      C25    C27    H272    109.470    3.000
+ QMF      C25    C27    C26      60.000    3.000
+ QMF      H271   C27    H272    107.900    3.000
+ QMF      H271   C27    C26     109.470    3.000
+ QMF      H272   C27    C26     109.470    3.000
+ QMF      C27    C26    H262    109.470    3.000
+ QMF      C27    C26    H261    109.470    3.000
+ QMF      C27    C26    C25      60.000    3.000
+ QMF      H262   C26    H261    107.900    3.000
+ QMF      H262   C26    C25     109.470    3.000
+ QMF      H261   C26    C25     109.470    3.000
+ QMF      C22    N21    HN21    120.000    3.000
+ QMF      C22    N21    C20     120.000    3.000
+ QMF      HN21   N21    C20     120.000    3.000
+ QMF      N21    C20    C19     120.000    3.000
+ QMF      N21    C20    C28     120.000    3.000
+ QMF      C19    C20    C28     120.000    3.000
+ QMF      C20    C19    H19     120.000    3.000
+ QMF      C20    C19    C18     120.000    3.000
+ QMF      H19    C19    C18     120.000    3.000
+ QMF      C19    C18    H18     120.000    3.000
+ QMF      C19    C18    C17     120.000    3.000
+ QMF      H18    C18    C17     120.000    3.000
+ QMF      C20    C28    H28     120.000    3.000
+ QMF      C20    C28    C29     120.000    3.000
+ QMF      H28    C28    C29     120.000    3.000
+ QMF      C28    C29    H29     120.000    3.000
+ QMF      C28    C29    C17     120.000    3.000
+ QMF      H29    C29    C17     120.000    3.000
+ QMF      C29    C17    C15     120.000    3.000
+ QMF      C29    C17    C18     120.000    3.000
+ QMF      C15    C17    C18     120.000    3.000
+ QMF      C17    C15    O16     120.500    3.000
+ QMF      C17    C15    N14     120.000    3.000
+ QMF      O16    C15    N14     123.000    3.000
+ QMF      C15    N14    HN14    120.000    3.000
+ QMF      C15    N14    C13     121.500    3.000
+ QMF      HN14   N14    C13     118.500    3.000
+ QMF      N14    C13    H131    109.470    3.000
+ QMF      N14    C13    H132    109.470    3.000
+ QMF      N14    C13    C12     109.500    3.000
+ QMF      H131   C13    H132    107.900    3.000
+ QMF      H131   C13    C12     109.470    3.000
+ QMF      H132   C13    C12     109.470    3.000
+ QMF      C13    C12    C04     126.000    3.000
+ QMF      C13    C12    C11     126.000    3.000
+ QMF      C04    C12    C11     108.000    3.000
+ QMF      C12    C04    C02     117.000    3.000
+ QMF      C12    C04    S05     108.000    3.000
+ QMF      C02    C04    S05     108.000    3.000
+ QMF      C04    C02    O03     120.000    3.000
+ QMF      C04    C02    O01     120.000    3.000
+ QMF      O03    C02    O01     123.000    3.000
+ QMF      C04    S05    C06      97.584    3.000
+ QMF      S05    C06    C11     120.000    3.000
+ QMF      S05    C06    C07     120.000    3.000
+ QMF      C11    C06    C07     120.000    3.000
+ QMF      C06    C11    C12     108.000    3.000
+ QMF      C06    C11    C10     120.000    3.000
+ QMF      C12    C11    C10     126.000    3.000
+ QMF      C06    C07    H07     120.000    3.000
+ QMF      C06    C07    C08     120.000    3.000
+ QMF      H07    C07    C08     120.000    3.000
+ QMF      C07    C08    H08     120.000    3.000
+ QMF      C07    C08    C09     120.000    3.000
+ QMF      H08    C08    C09     120.000    3.000
+ QMF      C08    C09    H09     120.000    3.000
+ QMF      C08    C09    C10     120.000    3.000
+ QMF      H09    C09    C10     120.000    3.000
+ QMF      C09    C10    H10     120.000    3.000
+ QMF      C09    C10    C11     120.000    3.000
+ QMF      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QMF      var_1            O23    C22    N24    C25              180.000           20.000   2
+ QMF      var_2            C22    N24    C25    C27                0.000           20.000   3
+ QMF      var_3            N24    C25    C26    C27              180.000           20.000   3
+ QMF      var_4            N24    C25    C27    C26              180.000           20.000   3
+ QMF      var_5            O23    C22    N21    C20              180.000           20.000   2
+ QMF      var_6            C22    N21    C20    C28                2.868           20.000   3
+ QMF      CONST_1          N21    C20    C19    C18                0.000            0.000   0
+ QMF      CONST_2          C20    C19    C18    C17                0.000            0.000   0
+ QMF      CONST_3          C19    C18    C17    C29                0.000            0.000   0
+ QMF      CONST_4          N21    C20    C28    C29                0.000            0.000   0
+ QMF      CONST_5          C20    C28    C29    C17                0.000            0.000   0
+ QMF      CONST_6          C28    C29    C17    C15                0.000            0.000   0
+ QMF      var_7            C29    C17    C15    N14             -151.604           20.000   3
+ QMF      var_8            C17    C15    N14    C13              180.000           20.000   2
+ QMF      var_9            C15    N14    C13    C12                0.000           20.000   3
+ QMF      var_10           N14    C13    C12    C04                0.000           20.000   2
+ QMF      CONST_7          C13    C12    C11    C06              180.000            0.000   0
+ QMF      CONST_8          C13    C12    C04    S05                0.000            0.000   0
+ QMF      var_11           C12    C04    C02    O01              133.512           20.000   3
+ QMF      CONST_9          C12    C04    S05    C06                1.010            0.000   0
+ QMF      CONST_10         C04    S05    C06    C07              179.485            0.000   0
+ QMF      CONST_11         S05    C06    C11    C12              180.000            0.000   0
+ QMF      CONST_12         C06    C11    C10    C09              180.000            0.000   0
+ QMF      CONST_13         S05    C06    C07    C08              180.000            0.000   0
+ QMF      CONST_14         C06    C07    C08    C09                0.000            0.000   0
+ QMF      CONST_15         C07    C08    C09    C10                0.000            0.000   0
+ QMF      CONST_16         C08    C09    C10    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QMF      chir_01          C25    C26    C27    N24       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QMF      plan-1            C18       0.020
+ QMF      plan-1            C17       0.020
+ QMF      plan-1            C19       0.020
+ QMF      plan-1            H18       0.020
+ QMF      plan-1            C20       0.020
+ QMF      plan-1            C28       0.020
+ QMF      plan-1            C29       0.020
+ QMF      plan-1            C15       0.020
+ QMF      plan-1            N21       0.020
+ QMF      plan-1            H19       0.020
+ QMF      plan-1            H28       0.020
+ QMF      plan-1            H29       0.020
+ QMF      plan-1            HN21      0.020
+ QMF      plan-2            C15       0.020
+ QMF      plan-2            C17       0.020
+ QMF      plan-2            N14       0.020
+ QMF      plan-2            O16       0.020
+ QMF      plan-2            HN14      0.020
+ QMF      plan-3            C12       0.020
+ QMF      plan-3            C13       0.020
+ QMF      plan-3            C11       0.020
+ QMF      plan-3            C04       0.020
+ QMF      plan-3            S05       0.020
+ QMF      plan-3            C10       0.020
+ QMF      plan-3            C06       0.020
+ QMF      plan-3            C07       0.020
+ QMF      plan-3            C08       0.020
+ QMF      plan-3            C09       0.020
+ QMF      plan-3            H10       0.020
+ QMF      plan-3            C02       0.020
+ QMF      plan-3            H07       0.020
+ QMF      plan-3            H08       0.020
+ QMF      plan-3            H09       0.020
+ QMF      plan-4            C02       0.020
+ QMF      plan-4            C04       0.020
+ QMF      plan-4            O01       0.020
+ QMF      plan-4            O03       0.020
+ QMF      plan-5            C22       0.020
+ QMF      plan-5            N21       0.020
+ QMF      plan-5            N24       0.020
+ QMF      plan-5            O23       0.020
+ QMF      plan-5            HN21      0.020
+ QMF      plan-5            HN24      0.020
+ QMF      plan-6            N14       0.020
+ QMF      plan-6            C15       0.020
+ QMF      plan-6            C13       0.020
+ QMF      plan-6            HN14      0.020
+ QMF      plan-7            N21       0.020
+ QMF      plan-7            C20       0.020
+ QMF      plan-7            C22       0.020
+ QMF      plan-7            HN21      0.020
+ QMF      plan-8            N24       0.020
+ QMF      plan-8            C22       0.020
+ QMF      plan-8            C25       0.020
+ QMF      plan-8            HN24      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

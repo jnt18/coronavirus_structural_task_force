@@ -1,0 +1,316 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S6N      S6N '.                                   ' .                  38  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S6N
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S6N           O21    O    O         0.000    -44.759  -32.145    3.307
+ S6N           C11    C    C         0.000    -44.896  -30.970    3.255
+ S6N           N10    N    N         0.000    -44.993  -30.283    2.002
+ S6N           C09    C    CH2       0.000    -45.175  -28.804    1.857
+ S6N           H091   H    H         0.000    -44.179  -28.400    1.664
+ S6N           H092   H    H         0.000    -45.527  -28.452    2.829
+ S6N           C05    C    CH1       0.000    -46.136  -28.336    0.765
+ S6N           H05    H    H         0.000    -47.167  -28.349    1.147
+ S6N           C06    C    C         0.000    -45.711  -26.868    0.442
+ S6N           O08    O    OC        0.000    -46.447  -25.900    0.756
+ S6N           O07    O    OC       -1.000    -44.608  -26.658   -0.128
+ S6N           C04    C    CH2       0.000    -46.059  -29.109   -0.490
+ S6N           H041   H    H         0.000    -45.921  -28.385   -1.295
+ S6N           H042   H    H         0.000    -47.024  -29.606   -0.611
+ S6N           C03    C    CH2       0.000    -44.979  -30.111   -0.537
+ S6N           H032   H    H         0.000    -44.047  -29.557   -0.665
+ S6N           H031   H    H         0.000    -45.162  -30.723   -1.423
+ S6N           C02    C    CT        0.000    -44.873  -31.018    0.703
+ S6N           C22    C    CH3       0.000    -43.513  -31.694    0.707
+ S6N           H223   H    H         0.000    -42.756  -30.960    0.796
+ S6N           H222   H    H         0.000    -43.455  -32.363    1.525
+ S6N           H221   H    H         0.000    -43.383  -32.229   -0.197
+ S6N           C01    C    CH3       0.000    -45.957  -32.089    0.748
+ S6N           H013   H    H         0.000    -45.787  -32.729    1.574
+ S6N           H012   H    H         0.000    -46.905  -31.628    0.848
+ S6N           H011   H    H         0.000    -45.932  -32.654   -0.147
+ S6N           C12    C    CR6       0.000    -45.048  -30.241    4.561
+ S6N           C13    C    CR56      0.000    -46.304  -29.714    4.900
+ S6N           C14    C    CR15      0.000    -47.580  -29.606    4.317
+ S6N           H14    H    H         0.000    -47.883  -29.984    3.348
+ S6N           N20    N    NRD6      0.000    -44.016  -30.175    5.369
+ S6N           C19    C    CR16      0.000    -44.173  -29.578    6.525
+ S6N           H19    H    H         0.000    -43.332  -29.515    7.205
+ S6N           N18    N    NRD6      0.000    -45.318  -29.057    6.879
+ S6N           C17    C    CR56      0.000    -46.400  -29.097    6.114
+ S6N           N16    N    NRD5      0.000    -47.641  -28.642    6.281
+ S6N           C15    C    CR15      0.000    -48.376  -28.921    5.226
+ S6N           H15    H    H         0.000    -49.419  -28.662    5.090
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S6N      O21    n/a    C11    START
+ S6N      C11    O21    C12    .
+ S6N      N10    C11    C02    .
+ S6N      C09    N10    C05    .
+ S6N      H091   C09    .      .
+ S6N      H092   C09    .      .
+ S6N      C05    C09    C04    .
+ S6N      H05    C05    .      .
+ S6N      C06    C05    O07    .
+ S6N      O08    C06    .      .
+ S6N      O07    C06    .      .
+ S6N      C04    C05    C03    .
+ S6N      H041   C04    .      .
+ S6N      H042   C04    .      .
+ S6N      C03    C04    H031   .
+ S6N      H032   C03    .      .
+ S6N      H031   C03    .      .
+ S6N      C02    N10    C01    .
+ S6N      C22    C02    H221   .
+ S6N      H223   C22    .      .
+ S6N      H222   C22    .      .
+ S6N      H221   C22    .      .
+ S6N      C01    C02    H011   .
+ S6N      H013   C01    .      .
+ S6N      H012   C01    .      .
+ S6N      H011   C01    .      .
+ S6N      C12    C11    N20    .
+ S6N      C13    C12    C14    .
+ S6N      C14    C13    H14    .
+ S6N      H14    C14    .      .
+ S6N      N20    C12    C19    .
+ S6N      C19    N20    N18    .
+ S6N      H19    C19    .      .
+ S6N      N18    C19    C17    .
+ S6N      C17    N18    N16    .
+ S6N      N16    C17    C15    .
+ S6N      C15    N16    H15    .
+ S6N      H15    C15    .      END
+ S6N      C17    C13    .    ADD
+ S6N      C15    C14    .    ADD
+ S6N      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S6N      C17    C13       aromatic    1.390    0.020
+ S6N      N16    C17       aromatic    1.350    0.020
+ S6N      C17    N18       aromatic    1.355    0.020
+ S6N      C15    C14       aromatic    1.380    0.020
+ S6N      C15    N16       aromatic    1.350    0.020
+ S6N      C14    C13       aromatic    1.440    0.020
+ S6N      C13    C12       aromatic    1.390    0.020
+ S6N      C12    C11       single      1.500    0.020
+ S6N      N20    C12       aromatic    1.350    0.020
+ S6N      N10    C11       single      1.330    0.020
+ S6N      C11    O21       double      1.220    0.020
+ S6N      N18    C19       aromatic    1.337    0.020
+ S6N      C19    N20       aromatic    1.337    0.020
+ S6N      C01    C02       single      1.524    0.020
+ S6N      C02    C03       single      1.524    0.020
+ S6N      C22    C02       single      1.524    0.020
+ S6N      C02    N10       single      1.455    0.020
+ S6N      C03    C04       single      1.524    0.020
+ S6N      C04    C05       single      1.524    0.020
+ S6N      C06    C05       single      1.500    0.020
+ S6N      C05    C09       single      1.524    0.020
+ S6N      O07    C06       deloc       1.250    0.020
+ S6N      O08    C06       deloc       1.250    0.020
+ S6N      C09    N10       single      1.455    0.020
+ S6N      H15    C15       single      1.083    0.020
+ S6N      H14    C14       single      1.083    0.020
+ S6N      H19    C19       single      1.083    0.020
+ S6N      H011   C01       single      1.059    0.020
+ S6N      H012   C01       single      1.059    0.020
+ S6N      H013   C01       single      1.059    0.020
+ S6N      H031   C03       single      1.092    0.020
+ S6N      H032   C03       single      1.092    0.020
+ S6N      H041   C04       single      1.092    0.020
+ S6N      H042   C04       single      1.092    0.020
+ S6N      H05    C05       single      1.099    0.020
+ S6N      H091   C09       single      1.092    0.020
+ S6N      H092   C09       single      1.092    0.020
+ S6N      H221   C22       single      1.059    0.020
+ S6N      H222   C22       single      1.059    0.020
+ S6N      H223   C22       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S6N      O21    C11    N10     123.000    3.000
+ S6N      O21    C11    C12     120.500    3.000
+ S6N      N10    C11    C12     120.000    3.000
+ S6N      C11    N10    C09     127.000    3.000
+ S6N      C11    N10    C02     121.000    3.000
+ S6N      C09    N10    C02     120.000    3.000
+ S6N      N10    C09    H091    109.470    3.000
+ S6N      N10    C09    H092    109.470    3.000
+ S6N      N10    C09    C05     105.000    3.000
+ S6N      H091   C09    H092    107.900    3.000
+ S6N      H091   C09    C05     109.470    3.000
+ S6N      H092   C09    C05     109.470    3.000
+ S6N      C09    C05    H05     108.340    3.000
+ S6N      C09    C05    C06     109.470    3.000
+ S6N      C09    C05    C04     109.470    3.000
+ S6N      H05    C05    C06     108.810    3.000
+ S6N      H05    C05    C04     108.340    3.000
+ S6N      C06    C05    C04     109.470    3.000
+ S6N      C05    C06    O08     118.500    3.000
+ S6N      C05    C06    O07     118.500    3.000
+ S6N      O08    C06    O07     123.000    3.000
+ S6N      C05    C04    H041    109.470    3.000
+ S6N      C05    C04    H042    109.470    3.000
+ S6N      C05    C04    C03     111.000    3.000
+ S6N      H041   C04    H042    107.900    3.000
+ S6N      H041   C04    C03     109.470    3.000
+ S6N      H042   C04    C03     109.470    3.000
+ S6N      C04    C03    H032    109.470    3.000
+ S6N      C04    C03    H031    109.470    3.000
+ S6N      C04    C03    C02     111.000    3.000
+ S6N      H032   C03    H031    107.900    3.000
+ S6N      H032   C03    C02     109.470    3.000
+ S6N      H031   C03    C02     109.470    3.000
+ S6N      N10    C02    C22     111.600    3.000
+ S6N      N10    C02    C01     111.600    3.000
+ S6N      N10    C02    C03     111.600    3.000
+ S6N      C22    C02    C01     111.000    3.000
+ S6N      C22    C02    C03     111.000    3.000
+ S6N      C01    C02    C03     111.000    3.000
+ S6N      C02    C22    H223    109.470    3.000
+ S6N      C02    C22    H222    109.470    3.000
+ S6N      C02    C22    H221    109.470    3.000
+ S6N      H223   C22    H222    109.470    3.000
+ S6N      H223   C22    H221    109.470    3.000
+ S6N      H222   C22    H221    109.470    3.000
+ S6N      C02    C01    H013    109.470    3.000
+ S6N      C02    C01    H012    109.470    3.000
+ S6N      C02    C01    H011    109.470    3.000
+ S6N      H013   C01    H012    109.470    3.000
+ S6N      H013   C01    H011    109.470    3.000
+ S6N      H012   C01    H011    109.470    3.000
+ S6N      C11    C12    C13     120.000    3.000
+ S6N      C11    C12    N20     120.000    3.000
+ S6N      C13    C12    N20     120.000    3.000
+ S6N      C12    C13    C14     132.000    3.000
+ S6N      C12    C13    C17     120.000    3.000
+ S6N      C14    C13    C17     120.000    3.000
+ S6N      C13    C14    H14     108.000    3.000
+ S6N      C13    C14    C15     108.000    3.000
+ S6N      H14    C14    C15     126.000    3.000
+ S6N      C12    N20    C19     120.000    3.000
+ S6N      N20    C19    H19     120.000    3.000
+ S6N      N20    C19    N18     120.000    3.000
+ S6N      H19    C19    N18     120.000    3.000
+ S6N      C19    N18    C17     120.000    3.000
+ S6N      N18    C17    N16     120.000    3.000
+ S6N      N18    C17    C13     120.000    3.000
+ S6N      N16    C17    C13     108.000    3.000
+ S6N      C17    N16    C15     108.000    3.000
+ S6N      N16    C15    H15     126.000    3.000
+ S6N      N16    C15    C14     108.000    3.000
+ S6N      H15    C15    C14     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S6N      var_1            O21    C11    N10    C02              180.000           20.000   2
+ S6N      var_2            C11    N10    C09    C05             -139.574           20.000   3
+ S6N      var_3            N10    C09    C05    C04              180.000           20.000   3
+ S6N      var_4            C09    C05    C06    O07              180.000           20.000   3
+ S6N      var_5            C09    C05    C04    C03              180.000           20.000   3
+ S6N      var_6            C05    C04    C03    C02              180.000           20.000   3
+ S6N      var_7            C11    N10    C02    C01               56.920           20.000   3
+ S6N      var_8            N10    C02    C03    C04              -44.379           20.000   3
+ S6N      var_9            N10    C02    C22    H221             180.000           20.000   3
+ S6N      var_10           N10    C02    C01    H011             180.000           20.000   3
+ S6N      var_11           O21    C11    C12    N20               68.511           20.000   3
+ S6N      CONST_1          C11    C12    C13    C14              180.000            0.000   0
+ S6N      CONST_2          C12    C13    C14    C15             -178.825            0.000   0
+ S6N      CONST_3          C11    C12    N20    C19                0.000            0.000   0
+ S6N      CONST_4          C12    N20    C19    N18                0.000            0.000   0
+ S6N      CONST_5          N20    C19    N18    C17                0.000            0.000   0
+ S6N      CONST_6          C19    N18    C17    N16              180.000            0.000   0
+ S6N      CONST_7          N18    C17    C13    C12              180.000            0.000   0
+ S6N      CONST_8          N18    C17    N16    C15              180.000            0.000   0
+ S6N      CONST_9          C17    N16    C15    C14                0.000            0.000   0
+ S6N      CONST_10         N16    C15    C14    C13               -0.310            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S6N      chir_01          C02    C01    C03    C22       positiv
+ S6N      chir_02          C05    C04    C06    C09       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S6N      plan-1            C17       0.020
+ S6N      plan-1            C13       0.020
+ S6N      plan-1            N16       0.020
+ S6N      plan-1            N18       0.020
+ S6N      plan-1            C12       0.020
+ S6N      plan-1            C19       0.020
+ S6N      plan-1            N20       0.020
+ S6N      plan-1            C14       0.020
+ S6N      plan-1            C11       0.020
+ S6N      plan-1            H19       0.020
+ S6N      plan-1            C15       0.020
+ S6N      plan-1            H15       0.020
+ S6N      plan-1            H14       0.020
+ S6N      plan-2            C11       0.020
+ S6N      plan-2            C12       0.020
+ S6N      plan-2            N10       0.020
+ S6N      plan-2            O21       0.020
+ S6N      plan-3            C06       0.020
+ S6N      plan-3            C05       0.020
+ S6N      plan-3            O07       0.020
+ S6N      plan-3            O08       0.020
+ S6N      plan-4            N10       0.020
+ S6N      plan-4            C11       0.020
+ S6N      plan-4            C02       0.020
+ S6N      plan-4            C09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

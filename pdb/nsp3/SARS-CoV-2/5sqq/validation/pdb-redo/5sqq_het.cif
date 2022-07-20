@@ -1,0 +1,321 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QU3      QU3 '.                                   ' .                  38  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QU3
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QU3           O12    O    O         0.000    -52.014  -29.155    4.719
+ QU3           C11    C    C         0.000    -51.446  -29.507    5.697
+ QU3           N13    N    N         0.000    -50.047  -29.125    5.862
+ QU3           C14    C    CH2       0.000    -49.414  -28.346    4.817
+ QU3           H141   H    H         0.000    -49.060  -27.404    5.240
+ QU3           H142   H    H         0.000    -50.146  -28.140    4.033
+ QU3           C15    C    CH2       0.000    -48.246  -29.109    4.231
+ QU3           H152   H    H         0.000    -47.819  -28.581    3.376
+ QU3           H151   H    H         0.000    -48.545  -30.114    3.925
+ QU3           C23    C    CH2       0.000    -49.172  -29.473    6.984
+ QU3           H231   H    H         0.000    -49.395  -30.501    7.277
+ QU3           H232   H    H         0.000    -49.406  -28.801    7.813
+ QU3           C22    C    CR6       0.000    -47.667  -29.350    6.625
+ QU3           C16    C    CR6       0.000    -47.213  -29.202    5.338
+ QU3           N17    N    NRD6      0.000    -45.884  -29.114    5.108
+ QU3           C21    C    CR16      0.000    -46.725  -29.440    7.652
+ QU3           H21    H    H         0.000    -47.038  -29.582    8.679
+ QU3           N20    N    NRD6      0.000    -45.436  -29.347    7.341
+ QU3           C18    C    CR6       0.000    -45.019  -29.181    6.098
+ QU3           N19    N    NH2       0.000    -43.594  -29.084    5.842
+ QU3           H192   H    H         0.000    -42.903  -29.141    6.601
+ QU3           H191   H    H         0.000    -43.223  -28.955    4.892
+ QU3           C08    C    CR5       0.000    -52.240  -30.343    6.708
+ QU3           C07    C    CR15      0.000    -53.590  -30.607    6.559
+ QU3           H07    H    H         0.000    -54.232  -30.252    5.762
+ QU3           C09    C    CR15      0.000    -51.814  -30.954    7.880
+ QU3           H09    H    H         0.000    -50.813  -30.930    8.293
+ QU3           O10    O    O2        0.000    -52.884  -31.582    8.406
+ QU3           C06    C    CR5       0.000    -53.965  -31.410    7.621
+ QU3           S03    S    ST        0.000    -55.635  -32.073    7.882
+ QU3           O04    O    OS        0.000    -56.561  -31.596    6.853
+ QU3           O05    O    OS        0.000    -55.683  -33.525    7.686
+ QU3           N02    N    NT1       0.000    -56.175  -31.606    9.419
+ QU3           HN02   H    H         0.000    -57.006  -31.002    9.522
+ QU3           C01    C    CH3       0.000    -55.452  -32.068   10.587
+ QU3           H013   H    H         0.000    -55.464  -33.125   10.608
+ QU3           H012   H    H         0.000    -54.454  -31.723   10.537
+ QU3           H011   H    H         0.000    -55.917  -31.689   11.457
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QU3      O12    n/a    C11    START
+ QU3      C11    O12    C08    .
+ QU3      N13    C11    C23    .
+ QU3      C14    N13    C15    .
+ QU3      H141   C14    .      .
+ QU3      H142   C14    .      .
+ QU3      C15    C14    H151   .
+ QU3      H152   C15    .      .
+ QU3      H151   C15    .      .
+ QU3      C23    N13    C22    .
+ QU3      H231   C23    .      .
+ QU3      H232   C23    .      .
+ QU3      C22    C23    C21    .
+ QU3      C16    C22    N17    .
+ QU3      N17    C16    .      .
+ QU3      C21    C22    N20    .
+ QU3      H21    C21    .      .
+ QU3      N20    C21    C18    .
+ QU3      C18    N20    N19    .
+ QU3      N19    C18    H191   .
+ QU3      H192   N19    .      .
+ QU3      H191   N19    .      .
+ QU3      C08    C11    C09    .
+ QU3      C07    C08    H07    .
+ QU3      H07    C07    .      .
+ QU3      C09    C08    O10    .
+ QU3      H09    C09    .      .
+ QU3      O10    C09    C06    .
+ QU3      C06    O10    S03    .
+ QU3      S03    C06    N02    .
+ QU3      O04    S03    .      .
+ QU3      O05    S03    .      .
+ QU3      N02    S03    C01    .
+ QU3      HN02   N02    .      .
+ QU3      C01    N02    H011   .
+ QU3      H013   C01    .      .
+ QU3      H012   C01    .      .
+ QU3      H011   C01    .      END
+ QU3      C18    N17    .    ADD
+ QU3      C16    C15    .    ADD
+ QU3      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QU3      C18    N17       aromatic    1.350    0.020
+ QU3      N19    C18       single      1.355    0.020
+ QU3      C18    N20       aromatic    1.350    0.020
+ QU3      C16    C15       single      1.511    0.020
+ QU3      C16    C22       aromatic    1.384    0.020
+ QU3      N17    C16       deloc       1.350    0.020
+ QU3      C15    C14       single      1.524    0.020
+ QU3      C14    N13       single      1.455    0.020
+ QU3      C08    C11       single      1.490    0.020
+ QU3      N13    C11       single      1.330    0.020
+ QU3      C11    O12       double      1.220    0.020
+ QU3      C01    N02       single      1.472    0.020
+ QU3      C06    C07       aromatic    1.387    0.020
+ QU3      C06    O10       single      1.370    0.020
+ QU3      S03    C06       single      1.645    0.020
+ QU3      C07    C08       aromatic    1.387    0.020
+ QU3      C09    C08       aromatic    1.387    0.020
+ QU3      O10    C09       single      1.380    0.020
+ QU3      C21    C22       aromatic    1.390    0.020
+ QU3      N20    C21       aromat      1.337    0.020
+ QU3      C22    C23       single      1.511    0.020
+ QU3      C23    N13       single      1.455    0.020
+ QU3      N02    S03       single      1.610    0.020
+ QU3      O04    S03       double      1.436    0.020
+ QU3      O05    S03       double      1.436    0.020
+ QU3      H151   C15       single      1.092    0.020
+ QU3      H152   C15       single      1.092    0.020
+ QU3      H141   C14       single      1.092    0.020
+ QU3      H142   C14       single      1.092    0.020
+ QU3      H011   C01       single      1.059    0.020
+ QU3      H012   C01       single      1.059    0.020
+ QU3      H013   C01       single      1.059    0.020
+ QU3      H07    C07       single      1.083    0.020
+ QU3      H09    C09       single      1.083    0.020
+ QU3      H21    C21       single      1.083    0.020
+ QU3      H231   C23       single      1.092    0.020
+ QU3      H232   C23       single      1.092    0.020
+ QU3      HN02   N02       single      1.033    0.020
+ QU3      H191   N19       single      1.010    0.020
+ QU3      H192   N19       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QU3      O12    C11    N13     123.000    3.000
+ QU3      O12    C11    C08     120.500    3.000
+ QU3      N13    C11    C08     120.000    3.000
+ QU3      C11    N13    C14     127.000    3.000
+ QU3      C11    N13    C23     127.000    3.000
+ QU3      C14    N13    C23     120.000    3.000
+ QU3      N13    C14    H141    109.470    3.000
+ QU3      N13    C14    H142    109.470    3.000
+ QU3      N13    C14    C15     105.000    3.000
+ QU3      H141   C14    H142    107.900    3.000
+ QU3      H141   C14    C15     109.470    3.000
+ QU3      H142   C14    C15     109.470    3.000
+ QU3      C14    C15    H152    109.470    3.000
+ QU3      C14    C15    H151    109.470    3.000
+ QU3      C14    C15    C16     109.470    3.000
+ QU3      H152   C15    H151    107.900    3.000
+ QU3      H152   C15    C16     109.470    3.000
+ QU3      H151   C15    C16     109.470    3.000
+ QU3      N13    C23    H231    109.470    3.000
+ QU3      N13    C23    H232    109.470    3.000
+ QU3      N13    C23    C22     109.470    3.000
+ QU3      H231   C23    H232    107.900    3.000
+ QU3      H231   C23    C22     109.470    3.000
+ QU3      H232   C23    C22     109.470    3.000
+ QU3      C23    C22    C16     120.000    3.000
+ QU3      C23    C22    C21     120.000    3.000
+ QU3      C16    C22    C21     120.000    3.000
+ QU3      C22    C16    N17     120.000    3.000
+ QU3      C22    C16    C15     120.000    3.000
+ QU3      N17    C16    C15     120.000    3.000
+ QU3      C16    N17    C18     120.000    3.000
+ QU3      C22    C21    H21     120.000    3.000
+ QU3      C22    C21    N20     120.000    3.000
+ QU3      H21    C21    N20     120.000    3.000
+ QU3      C21    N20    C18     120.000    3.000
+ QU3      N20    C18    N19     120.000    3.000
+ QU3      N20    C18    N17     120.000    3.000
+ QU3      N19    C18    N17     120.000    3.000
+ QU3      C18    N19    H192    120.000    3.000
+ QU3      C18    N19    H191    120.000    3.000
+ QU3      H192   N19    H191    120.000    3.000
+ QU3      C11    C08    C07     126.000    3.000
+ QU3      C11    C08    C09     126.000    3.000
+ QU3      C07    C08    C09     108.000    3.000
+ QU3      C08    C07    H07     126.000    3.000
+ QU3      C08    C07    C06     108.000    3.000
+ QU3      H07    C07    C06     126.000    3.000
+ QU3      C08    C09    H09     126.000    3.000
+ QU3      C08    C09    O10     108.000    3.000
+ QU3      H09    C09    O10     126.000    3.000
+ QU3      C09    O10    C06     108.000    3.000
+ QU3      O10    C06    S03     108.000    3.000
+ QU3      O10    C06    C07     108.000    3.000
+ QU3      S03    C06    C07     108.000    3.000
+ QU3      C06    S03    O04     109.500    3.000
+ QU3      C06    S03    O05     109.500    3.000
+ QU3      C06    S03    N02     109.500    3.000
+ QU3      O04    S03    O05     109.500    3.000
+ QU3      O04    S03    N02     109.500    3.000
+ QU3      O05    S03    N02     109.500    3.000
+ QU3      S03    N02    HN02    109.500    3.000
+ QU3      S03    N02    C01     109.500    3.000
+ QU3      HN02   N02    C01     109.500    3.000
+ QU3      N02    C01    H013    109.500    3.000
+ QU3      N02    C01    H012    109.500    3.000
+ QU3      N02    C01    H011    109.500    3.000
+ QU3      H013   C01    H012    109.470    3.000
+ QU3      H013   C01    H011    109.470    3.000
+ QU3      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QU3      var_1            O12    C11    N13    C23              180.000           20.000   2
+ QU3      var_2            C11    N13    C14    C15             -118.950           20.000   3
+ QU3      var_3            N13    C14    C15    C16              180.000           20.000   3
+ QU3      var_4            C11    N13    C23    C22              159.754           20.000   3
+ QU3      var_5            N13    C23    C22    C21                0.000           20.000   2
+ QU3      CONST_1          C23    C22    C16    N17                0.000            0.000   0
+ QU3      var_6            C22    C16    C15    C14                0.000           20.000   2
+ QU3      CONST_2          C22    C16    N17    C18                0.000            0.000   0
+ QU3      CONST_3          C23    C22    C21    N20                0.000            0.000   0
+ QU3      CONST_4          C22    C21    N20    C18                0.000            0.000   0
+ QU3      CONST_5          C21    N20    C18    N19                0.000            0.000   0
+ QU3      CONST_6          N20    C18    N17    C16                0.000            0.000   0
+ QU3      CONST_7          N20    C18    N19    H191             180.000            0.000   0
+ QU3      var_7            O12    C11    C08    C09              175.420           20.000   3
+ QU3      CONST_8          C11    C08    C07    C06                0.000            0.000   0
+ QU3      CONST_9          C11    C08    C09    O10                0.000            0.000   0
+ QU3      CONST_10         C08    C09    O10    C06                0.527            0.000   0
+ QU3      CONST_11         C09    O10    C06    S03              179.147            0.000   0
+ QU3      CONST_12         O10    C06    C07    C08                0.000            0.000   0
+ QU3      var_8            O10    C06    S03    N02               54.745           20.000   3
+ QU3      var_9            C06    S03    N02    C01              -62.463           20.000   3
+ QU3      var_10           S03    N02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QU3      chir_01          S03    C06    N02    O04       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QU3      plan-1            C18       0.020
+ QU3      plan-1            N17       0.020
+ QU3      plan-1            N19       0.020
+ QU3      plan-1            N20       0.020
+ QU3      plan-1            C16       0.020
+ QU3      plan-1            C21       0.020
+ QU3      plan-1            C22       0.020
+ QU3      plan-1            C15       0.020
+ QU3      plan-1            H21       0.020
+ QU3      plan-1            C23       0.020
+ QU3      plan-1            H192      0.020
+ QU3      plan-1            H191      0.020
+ QU3      plan-2            C11       0.020
+ QU3      plan-2            C08       0.020
+ QU3      plan-2            N13       0.020
+ QU3      plan-2            O12       0.020
+ QU3      plan-3            C06       0.020
+ QU3      plan-3            C07       0.020
+ QU3      plan-3            O10       0.020
+ QU3      plan-3            S03       0.020
+ QU3      plan-3            C08       0.020
+ QU3      plan-3            C09       0.020
+ QU3      plan-3            H07       0.020
+ QU3      plan-3            C11       0.020
+ QU3      plan-3            H09       0.020
+ QU3      plan-4            N13       0.020
+ QU3      plan-4            C14       0.020
+ QU3      plan-4            C11       0.020
+ QU3      plan-4            C23       0.020
+ QU3      plan-5            N19       0.020
+ QU3      plan-5            C18       0.020
+ QU3      plan-5            H191      0.020
+ QU3      plan-5            H192      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

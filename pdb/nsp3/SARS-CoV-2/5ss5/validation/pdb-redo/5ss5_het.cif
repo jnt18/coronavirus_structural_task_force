@@ -1,0 +1,314 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RKU      RKU '.                                   ' .                  36  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RKU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RKU           BR09   BR   BR        0.000    -46.068  -36.313   -2.285
+ RKU           C08    C    CR6       0.000    -45.529  -34.667   -1.453
+ RKU           C10    C    CR16      0.000    -44.440  -33.965   -1.942
+ RKU           H10    H    H         0.000    -43.879  -34.337   -2.790
+ RKU           C07    C    CR16      0.000    -46.257  -34.214   -0.373
+ RKU           H07    H    H         0.000    -47.102  -34.783   -0.006
+ RKU           C06    C    CR16      0.000    -45.899  -33.029    0.236
+ RKU           H06    H    H         0.000    -46.463  -32.657    1.083
+ RKU           C05    C    CR6       0.000    -44.812  -32.320   -0.246
+ RKU           C11    C    CR16      0.000    -44.083  -32.782   -1.328
+ RKU           H11    H    H         0.000    -43.234  -32.216   -1.692
+ RKU           C04    C    CH1       0.000    -44.393  -31.011    0.405
+ RKU           H04    H    H         0.000    -44.273  -30.246   -0.375
+ RKU           C03    C    CH2       0.000    -43.062  -31.204    1.118
+ RKU           H031   H    H         0.000    -42.656  -30.213    1.331
+ RKU           H032   H    H         0.000    -42.395  -31.730    0.432
+ RKU           C02    C    C         0.000    -43.185  -31.997    2.420
+ RKU           O25    O    OC        0.000    -43.633  -33.171    2.401
+ RKU           O01    O    OC       -1.000    -42.850  -31.468    3.510
+ RKU           N12    N    NH1       0.000    -45.371  -30.552    1.369
+ RKU           HN12   H    H         0.000    -45.229  -30.734    2.352
+ RKU           C13    C    C         0.000    -46.540  -29.841    0.937
+ RKU           O24    O    O         0.000    -46.709  -29.685   -0.222
+ RKU           C14    C    CR6       0.000    -47.562  -29.379    1.974
+ RKU           C23    C    CR16      0.000    -48.829  -29.049    1.530
+ RKU           H23    H    H         0.000    -49.067  -29.107    0.475
+ RKU           C21    C    CR6       0.000    -49.798  -28.642    2.441
+ RKU           F22    F    F         0.000    -51.043  -28.313    2.014
+ RKU           C20    C    CR16      0.000    -49.517  -28.564    3.786
+ RKU           H20    H    H         0.000    -50.281  -28.248    4.485
+ RKU           C19    C    CR56      0.000    -48.238  -28.895    4.243
+ RKU           C15    C    CR56      0.000    -47.262  -29.309    3.352
+ RKU           N16    N    NRD5      0.000    -46.160  -29.554    4.084
+ RKU           N18    N    NRD5      0.000    -47.696  -28.907    5.467
+ RKU           C17    C    CR15      0.000    -46.444  -29.305    5.353
+ RKU           H17    H    H         0.000    -45.750  -29.413    6.177
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RKU      BR09   n/a    C08    START
+ RKU      C08    BR09   C07    .
+ RKU      C10    C08    H10    .
+ RKU      H10    C10    .      .
+ RKU      C07    C08    C06    .
+ RKU      H07    C07    .      .
+ RKU      C06    C07    C05    .
+ RKU      H06    C06    .      .
+ RKU      C05    C06    C04    .
+ RKU      C11    C05    H11    .
+ RKU      H11    C11    .      .
+ RKU      C04    C05    N12    .
+ RKU      H04    C04    .      .
+ RKU      C03    C04    C02    .
+ RKU      H031   C03    .      .
+ RKU      H032   C03    .      .
+ RKU      C02    C03    O01    .
+ RKU      O25    C02    .      .
+ RKU      O01    C02    .      .
+ RKU      N12    C04    C13    .
+ RKU      HN12   N12    .      .
+ RKU      C13    N12    C14    .
+ RKU      O24    C13    .      .
+ RKU      C14    C13    C23    .
+ RKU      C23    C14    C21    .
+ RKU      H23    C23    .      .
+ RKU      C21    C23    C20    .
+ RKU      F22    C21    .      .
+ RKU      C20    C21    C19    .
+ RKU      H20    C20    .      .
+ RKU      C19    C20    N18    .
+ RKU      C15    C19    N16    .
+ RKU      N16    C15    .      .
+ RKU      N18    C19    C17    .
+ RKU      C17    N18    H17    .
+ RKU      H17    C17    .      END
+ RKU      C17    N16    .    ADD
+ RKU      C15    C14    .    ADD
+ RKU      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RKU      C17    N16       aromatic    1.350    0.020
+ RKU      C17    N18       aromatic    1.350    0.020
+ RKU      C15    C14       aromatic    1.390    0.020
+ RKU      C15    C19       aromatic    1.390    0.020
+ RKU      N16    C15       deloc       1.350    0.020
+ RKU      C14    C13       single      1.500    0.020
+ RKU      C23    C14       aromatic    1.390    0.020
+ RKU      C13    N12       single      1.330    0.020
+ RKU      O24    C13       double      1.220    0.020
+ RKU      C11    C10       aromatic    1.390    0.020
+ RKU      C11    C05       aromatic    1.390    0.020
+ RKU      C10    C08       aromatic    1.390    0.020
+ RKU      C19    C20       aromatic    1.390    0.020
+ RKU      C20    C21       aromatic    1.390    0.020
+ RKU      N18    C19       deloc       1.350    0.020
+ RKU      C02    C03       single      1.510    0.020
+ RKU      O01    C02       deloc       1.250    0.020
+ RKU      O25    C02       deloc       1.250    0.020
+ RKU      C03    C04       single      1.524    0.020
+ RKU      C04    C05       single      1.480    0.020
+ RKU      N12    C04       single      1.450    0.020
+ RKU      C05    C06       aromatic    1.390    0.020
+ RKU      C06    C07       aromatic    1.390    0.020
+ RKU      C07    C08       aromatic    1.390    0.020
+ RKU      C08    BR09      single      1.890    0.020
+ RKU      C21    C23       aromatic    1.390    0.020
+ RKU      F22    C21       single      1.345    0.020
+ RKU      H17    C17       single      1.083    0.020
+ RKU      H11    C11       single      1.083    0.020
+ RKU      H10    C10       single      1.083    0.020
+ RKU      H20    C20       single      1.083    0.020
+ RKU      H031   C03       single      1.092    0.020
+ RKU      H032   C03       single      1.092    0.020
+ RKU      H04    C04       single      1.099    0.020
+ RKU      H06    C06       single      1.083    0.020
+ RKU      H07    C07       single      1.083    0.020
+ RKU      H23    C23       single      1.083    0.020
+ RKU      HN12   N12       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RKU      BR09   C08    C10     120.000    3.000
+ RKU      BR09   C08    C07     120.000    3.000
+ RKU      C10    C08    C07     120.000    3.000
+ RKU      C08    C10    H10     120.000    3.000
+ RKU      C08    C10    C11     120.000    3.000
+ RKU      H10    C10    C11     120.000    3.000
+ RKU      C08    C07    H07     120.000    3.000
+ RKU      C08    C07    C06     120.000    3.000
+ RKU      H07    C07    C06     120.000    3.000
+ RKU      C07    C06    H06     120.000    3.000
+ RKU      C07    C06    C05     120.000    3.000
+ RKU      H06    C06    C05     120.000    3.000
+ RKU      C06    C05    C11     120.000    3.000
+ RKU      C06    C05    C04     120.000    3.000
+ RKU      C11    C05    C04     120.000    3.000
+ RKU      C05    C11    H11     120.000    3.000
+ RKU      C05    C11    C10     120.000    3.000
+ RKU      H11    C11    C10     120.000    3.000
+ RKU      C05    C04    H04     109.470    3.000
+ RKU      C05    C04    C03     109.470    3.000
+ RKU      C05    C04    N12     109.470    3.000
+ RKU      H04    C04    C03     108.340    3.000
+ RKU      H04    C04    N12     108.550    3.000
+ RKU      C03    C04    N12     110.000    3.000
+ RKU      C04    C03    H031    109.470    3.000
+ RKU      C04    C03    H032    109.470    3.000
+ RKU      C04    C03    C02     109.470    3.000
+ RKU      H031   C03    H032    107.900    3.000
+ RKU      H031   C03    C02     109.470    3.000
+ RKU      H032   C03    C02     109.470    3.000
+ RKU      C03    C02    O25     118.500    3.000
+ RKU      C03    C02    O01     118.500    3.000
+ RKU      O25    C02    O01     123.000    3.000
+ RKU      C04    N12    HN12    118.500    3.000
+ RKU      C04    N12    C13     121.500    3.000
+ RKU      HN12   N12    C13     120.000    3.000
+ RKU      N12    C13    O24     123.000    3.000
+ RKU      N12    C13    C14     120.000    3.000
+ RKU      O24    C13    C14     120.500    3.000
+ RKU      C13    C14    C23     120.000    3.000
+ RKU      C13    C14    C15     120.000    3.000
+ RKU      C23    C14    C15     120.000    3.000
+ RKU      C14    C23    H23     120.000    3.000
+ RKU      C14    C23    C21     120.000    3.000
+ RKU      H23    C23    C21     120.000    3.000
+ RKU      C23    C21    F22     120.000    3.000
+ RKU      C23    C21    C20     120.000    3.000
+ RKU      F22    C21    C20     120.000    3.000
+ RKU      C21    C20    H20     120.000    3.000
+ RKU      C21    C20    C19     120.000    3.000
+ RKU      H20    C20    C19     120.000    3.000
+ RKU      C20    C19    C15     120.000    3.000
+ RKU      C20    C19    N18     132.000    3.000
+ RKU      C15    C19    N18     108.000    3.000
+ RKU      C19    C15    N16     108.000    3.000
+ RKU      C19    C15    C14     120.000    3.000
+ RKU      N16    C15    C14     132.000    3.000
+ RKU      C15    N16    C17     108.000    3.000
+ RKU      C19    N18    C17     108.000    3.000
+ RKU      N18    C17    H17     126.000    3.000
+ RKU      N18    C17    N16     108.000    3.000
+ RKU      H17    C17    N16     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RKU      CONST_1          BR09   C08    C10    C11                0.000            0.000   0
+ RKU      CONST_2          BR09   C08    C07    C06                0.000            0.000   0
+ RKU      CONST_3          C08    C07    C06    C05                0.000            0.000   0
+ RKU      CONST_4          C07    C06    C05    C04                0.000            0.000   0
+ RKU      CONST_5          C06    C05    C11    C10                0.000            0.000   0
+ RKU      CONST_6          C05    C11    C10    C08                0.000            0.000   0
+ RKU      var_1            C06    C05    C04    N12               -9.461           20.000   3
+ RKU      var_2            C05    C04    C03    C02              180.000           20.000   3
+ RKU      var_3            C04    C03    C02    O01              180.000           20.000   3
+ RKU      var_4            C05    C04    N12    C13                0.000           20.000   3
+ RKU      var_5            C04    N12    C13    C14              180.000           20.000   2
+ RKU      var_6            N12    C13    C14    C23             -161.928           20.000   3
+ RKU      CONST_7          C13    C14    C23    C21                0.000            0.000   0
+ RKU      CONST_8          C14    C23    C21    C20                0.000            0.000   0
+ RKU      CONST_9          C23    C21    C20    C19                0.000            0.000   0
+ RKU      CONST_10         C21    C20    C19    N18              180.000            0.000   0
+ RKU      CONST_11         C20    C19    C15    N16              180.000            0.000   0
+ RKU      CONST_12         C19    C15    C14    C13              180.000            0.000   0
+ RKU      CONST_13         C19    C15    N16    C17              180.000            0.000   0
+ RKU      CONST_14         C20    C19    N18    C17              180.000            0.000   0
+ RKU      CONST_15         C19    N18    C17    N16                0.000            0.000   0
+ RKU      CONST_16         N18    C17    N16    C15                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RKU      chir_01          C04    C03    C05    N12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RKU      plan-1            C17       0.020
+ RKU      plan-1            N16       0.020
+ RKU      plan-1            N18       0.020
+ RKU      plan-1            H17       0.020
+ RKU      plan-1            C15       0.020
+ RKU      plan-1            C19       0.020
+ RKU      plan-1            C14       0.020
+ RKU      plan-1            C20       0.020
+ RKU      plan-1            C21       0.020
+ RKU      plan-1            C23       0.020
+ RKU      plan-1            C13       0.020
+ RKU      plan-1            H20       0.020
+ RKU      plan-1            F22       0.020
+ RKU      plan-1            H23       0.020
+ RKU      plan-2            C13       0.020
+ RKU      plan-2            C14       0.020
+ RKU      plan-2            N12       0.020
+ RKU      plan-2            O24       0.020
+ RKU      plan-2            HN12      0.020
+ RKU      plan-3            C11       0.020
+ RKU      plan-3            C10       0.020
+ RKU      plan-3            C05       0.020
+ RKU      plan-3            H11       0.020
+ RKU      plan-3            C06       0.020
+ RKU      plan-3            C07       0.020
+ RKU      plan-3            C08       0.020
+ RKU      plan-3            H10       0.020
+ RKU      plan-3            C04       0.020
+ RKU      plan-3            H06       0.020
+ RKU      plan-3            H07       0.020
+ RKU      plan-3            BR09      0.020
+ RKU      plan-4            C02       0.020
+ RKU      plan-4            C03       0.020
+ RKU      plan-4            O01       0.020
+ RKU      plan-4            O25       0.020
+ RKU      plan-5            N12       0.020
+ RKU      plan-5            C13       0.020
+ RKU      plan-5            C04       0.020
+ RKU      plan-5            HN12      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

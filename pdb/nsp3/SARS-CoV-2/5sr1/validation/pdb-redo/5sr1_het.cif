@@ -1,0 +1,269 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QXL      QXL '.                                   ' .                  29  18 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QXL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QXL           O18    O    OS       -1.000    -47.238  -27.924    0.836
+ QXL           S02    S    ST        0.000    -46.212  -28.421   -0.081
+ QXL           O01    O    OS       -1.000    -46.608  -28.918   -1.401
+ QXL           C17    C    C1        0.000    -45.294  -29.654    0.706
+ QXL           H17    H    H         0.000    -45.168  -30.640    0.291
+ QXL           C03    C    C1        0.000    -45.005  -27.242   -0.330
+ QXL           H03    H    H         0.000    -44.732  -26.877   -1.306
+ QXL           C04    C    CH2       0.000    -44.350  -26.754    0.955
+ QXL           H041   H    H         0.000    -45.112  -26.187    1.493
+ QXL           H042   H    H         0.000    -43.543  -26.082    0.654
+ QXL           C05    C    CH2       0.000    -43.757  -27.916    1.918
+ QXL           H051   H    H         0.000    -43.633  -27.470    2.907
+ QXL           H052   H    H         0.000    -42.778  -28.187    1.516
+ QXL           C06    C    CH1       0.000    -44.677  -29.236    2.033
+ QXL           H06    H    H         0.000    -44.058  -30.063    2.408
+ QXL           N07    N    NH1       0.000    -45.740  -29.008    2.958
+ QXL           HN07   H    H         0.000    -46.655  -28.777    2.597
+ QXL           C08    C    CR6       0.000    -45.562  -29.094    4.390
+ QXL           N16    N    NRD6      0.000    -44.371  -29.308    4.947
+ QXL           C15    C    CR16      0.000    -44.279  -29.370    6.273
+ QXL           H15    H    H         0.000    -43.311  -29.540    6.729
+ QXL           C09    C    CR56      0.000    -46.721  -28.932    5.189
+ QXL           C10    C    CR15      0.000    -48.097  -28.697    4.966
+ QXL           H10    H    H         0.000    -48.578  -28.582    4.002
+ QXL           C11    C    CR15      0.000    -48.720  -28.640    6.203
+ QXL           H11    H    H         0.000    -49.776  -28.474    6.379
+ QXL           N12    N    NRD5      0.000    -47.792  -28.825    7.132
+ QXL           C13    C    CR56      0.000    -46.574  -29.005    6.545
+ QXL           N14    N    NRD6      0.000    -45.339  -29.229    7.045
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QXL      O18    n/a    S02    START
+ QXL      S02    O18    C03    .
+ QXL      O01    S02    .      .
+ QXL      C17    S02    H17    .
+ QXL      H17    C17    .      .
+ QXL      C03    S02    C04    .
+ QXL      H03    C03    .      .
+ QXL      C04    C03    C05    .
+ QXL      H041   C04    .      .
+ QXL      H042   C04    .      .
+ QXL      C05    C04    C06    .
+ QXL      H051   C05    .      .
+ QXL      H052   C05    .      .
+ QXL      C06    C05    N07    .
+ QXL      H06    C06    .      .
+ QXL      N07    C06    C08    .
+ QXL      HN07   N07    .      .
+ QXL      C08    N07    C09    .
+ QXL      N16    C08    C15    .
+ QXL      C15    N16    H15    .
+ QXL      H15    C15    .      .
+ QXL      C09    C08    C10    .
+ QXL      C10    C09    C11    .
+ QXL      H10    C10    .      .
+ QXL      C11    C10    N12    .
+ QXL      H11    C11    .      .
+ QXL      N12    C11    C13    .
+ QXL      C13    N12    N14    .
+ QXL      N14    C13    .      END
+ QXL      C17    C06    .    ADD
+ QXL      C15    N14    .    ADD
+ QXL      C13    C09    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QXL      C17    C06       single      1.510    0.020
+ QXL      C17    S02       double      1.565    0.020
+ QXL      C15    N14       aromatic    1.337    0.020
+ QXL      C15    N16       aromat      1.337    0.020
+ QXL      C13    C09       aromatic    1.390    0.020
+ QXL      C13    N12       aromatic    1.350    0.020
+ QXL      N14    C13       deloc       1.355    0.020
+ QXL      C11    C10       aromatic    1.380    0.020
+ QXL      N12    C11       deloc       1.350    0.020
+ QXL      C10    C09       aromatic    1.440    0.020
+ QXL      C04    C03       single      1.510    0.020
+ QXL      C03    S02       double      1.565    0.020
+ QXL      C05    C04       single      1.524    0.020
+ QXL      C06    C05       single      1.524    0.020
+ QXL      N07    C06       single      1.450    0.020
+ QXL      C09    C08       aromatic    1.390    0.020
+ QXL      C08    N07       single      1.350    0.020
+ QXL      N16    C08       deloc       1.350    0.020
+ QXL      O01    S02       deloc       1.480    0.020
+ QXL      S02    O18       deloc       1.480    0.020
+ QXL      H17    C17       single      1.077    0.020
+ QXL      H15    C15       single      1.083    0.020
+ QXL      H11    C11       single      1.083    0.020
+ QXL      H10    C10       single      1.083    0.020
+ QXL      H03    C03       single      1.077    0.020
+ QXL      H041   C04       single      1.092    0.020
+ QXL      H042   C04       single      1.092    0.020
+ QXL      H051   C05       single      1.092    0.020
+ QXL      H052   C05       single      1.092    0.020
+ QXL      H06    C06       single      1.099    0.020
+ QXL      HN07   N07       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QXL      O18    S02    O01     109.500    3.000
+ QXL      O18    S02    C17     109.500    3.000
+ QXL      O18    S02    C03     109.500    3.000
+ QXL      O01    S02    C17     109.500    3.000
+ QXL      O01    S02    C03     109.500    3.000
+ QXL      C17    S02    C03     109.500    3.000
+ QXL      S02    C17    H17     120.000    3.000
+ QXL      S02    C17    C06     120.000    3.000
+ QXL      H17    C17    C06     120.000    3.000
+ QXL      S02    C03    H03     120.000    3.000
+ QXL      S02    C03    C04     120.000    3.000
+ QXL      H03    C03    C04     120.000    3.000
+ QXL      C03    C04    H041    109.470    3.000
+ QXL      C03    C04    H042    109.470    3.000
+ QXL      C03    C04    C05     109.470    3.000
+ QXL      H041   C04    H042    107.900    3.000
+ QXL      H041   C04    C05     109.470    3.000
+ QXL      H042   C04    C05     109.470    3.000
+ QXL      C04    C05    H051    109.470    3.000
+ QXL      C04    C05    H052    109.470    3.000
+ QXL      C04    C05    C06     111.000    3.000
+ QXL      H051   C05    H052    107.900    3.000
+ QXL      H051   C05    C06     109.470    3.000
+ QXL      H052   C05    C06     109.470    3.000
+ QXL      C05    C06    H06     108.340    3.000
+ QXL      C05    C06    N07     110.000    3.000
+ QXL      C05    C06    C17     109.470    3.000
+ QXL      H06    C06    N07     108.550    3.000
+ QXL      H06    C06    C17     108.810    3.000
+ QXL      N07    C06    C17     111.600    3.000
+ QXL      C06    N07    HN07    118.500    3.000
+ QXL      C06    N07    C08     120.000    3.000
+ QXL      HN07   N07    C08     120.000    3.000
+ QXL      N07    C08    N16     120.000    3.000
+ QXL      N07    C08    C09     120.000    3.000
+ QXL      N16    C08    C09     120.000    3.000
+ QXL      C08    N16    C15     120.000    3.000
+ QXL      N16    C15    H15     120.000    3.000
+ QXL      N16    C15    N14     120.000    3.000
+ QXL      H15    C15    N14     120.000    3.000
+ QXL      C08    C09    C10     132.000    3.000
+ QXL      C08    C09    C13     120.000    3.000
+ QXL      C10    C09    C13     120.000    3.000
+ QXL      C09    C10    H10     108.000    3.000
+ QXL      C09    C10    C11     108.000    3.000
+ QXL      H10    C10    C11     126.000    3.000
+ QXL      C10    C11    H11     126.000    3.000
+ QXL      C10    C11    N12     108.000    3.000
+ QXL      H11    C11    N12     126.000    3.000
+ QXL      C11    N12    C13     108.000    3.000
+ QXL      N12    C13    N14     120.000    3.000
+ QXL      N12    C13    C09     108.000    3.000
+ QXL      N14    C13    C09     120.000    3.000
+ QXL      C13    N14    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QXL      var_1            O18    S02    C17    C06              -54.948           20.000   3
+ QXL      var_2            S02    C17    C06    C05              -55.133           20.000   3
+ QXL      var_3            O18    S02    C03    C04               56.046           20.000   3
+ QXL      var_4            S02    C03    C04    C05               53.139           20.000   3
+ QXL      var_5            C03    C04    C05    C06              180.000           20.000   3
+ QXL      var_6            C04    C05    C06    N07              180.000           20.000   3
+ QXL      var_7            C05    C06    N07    C08                0.000           20.000   3
+ QXL      var_8            C06    N07    C08    C09             -175.906           20.000   3
+ QXL      CONST_1          N07    C08    N16    C15                0.000            0.000   0
+ QXL      CONST_2          C08    N16    C15    N14                0.000            0.000   0
+ QXL      CONST_3          N16    C15    N14    C13                0.000            0.000   0
+ QXL      CONST_4          N07    C08    C09    C10              180.000            0.000   0
+ QXL      CONST_5          C08    C09    C10    C11              179.966            0.000   0
+ QXL      CONST_6          C09    C10    C11    N12                0.097            0.000   0
+ QXL      CONST_7          C10    C11    N12    C13                0.000            0.000   0
+ QXL      CONST_8          C11    N12    C13    N14              180.000            0.000   0
+ QXL      CONST_9          N12    C13    C09    C08              180.000            0.000   0
+ QXL      CONST_10         N12    C13    N14    C15              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QXL      chir_01          C06    C17    C05    N07       negativ
+ QXL      chir_02          S02    C17    C03    O01       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QXL      plan-1            C17       0.020
+ QXL      plan-1            C06       0.020
+ QXL      plan-1            S02       0.020
+ QXL      plan-1            H17       0.020
+ QXL      plan-2            C15       0.020
+ QXL      plan-2            N14       0.020
+ QXL      plan-2            N16       0.020
+ QXL      plan-2            H15       0.020
+ QXL      plan-2            C08       0.020
+ QXL      plan-2            C09       0.020
+ QXL      plan-2            N07       0.020
+ QXL      plan-2            C13       0.020
+ QXL      plan-2            C10       0.020
+ QXL      plan-2            C11       0.020
+ QXL      plan-2            N12       0.020
+ QXL      plan-2            H11       0.020
+ QXL      plan-2            H10       0.020
+ QXL      plan-2            HN07      0.020
+ QXL      plan-3            C03       0.020
+ QXL      plan-3            C04       0.020
+ QXL      plan-3            S02       0.020
+ QXL      plan-3            H03       0.020
+ QXL      plan-4            N07       0.020
+ QXL      plan-4            C06       0.020
+ QXL      plan-4            C08       0.020
+ QXL      plan-4            HN07      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

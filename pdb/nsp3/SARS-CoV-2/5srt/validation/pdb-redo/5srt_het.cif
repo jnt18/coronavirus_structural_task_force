@@ -1,0 +1,320 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RG5      RG5 '.                                   ' .                  36  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RG5
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RG5           F1     F    F         0.000    -52.062  -28.895    4.838
+ RG5           C1     C    CR6       0.000    -50.710  -28.963    4.719
+ RG5           C15    C    CR16      0.000    -50.189  -28.982    3.443
+ RG5           H15    H    H         0.000    -50.851  -28.938    2.587
+ RG5           C2     C    CR16      0.000    -49.890  -28.995    5.832
+ RG5           H2     H    H         0.000    -50.318  -28.971    6.827
+ RG5           C3     C    CR56      0.000    -48.528  -29.057    5.664
+ RG5           N1     N    NRD5      0.000    -47.549  -29.108    6.435
+ RG5           C13    C    CR56      0.000    -47.979  -29.096    4.360
+ RG5           C14    C    CR16      0.000    -48.819  -29.058    3.256
+ RG5           H14    H    H         0.000    -48.406  -29.088    2.255
+ RG5           C5     C    CR56      0.000    -46.519  -29.183    4.601
+ RG5           C4     C    CR56      0.000    -46.401  -29.165    5.999
+ RG5           N7     N    NRD6      0.000    -45.234  -29.228    6.639
+ RG5           C12    C    CR16      0.000    -44.194  -29.277    5.821
+ RG5           H12    H    H         0.000    -43.221  -29.314    6.296
+ RG5           C6     C    CR6       0.000    -45.345  -29.239    3.884
+ RG5           N6     N    NRD6      0.000    -44.191  -29.286    4.502
+ RG5           N2     N    N         0.000    -45.414  -29.289    2.438
+ RG5           C11    C    CH2       0.000    -44.269  -28.856    1.667
+ RG5           H112   H    H         0.000    -43.443  -29.553    1.822
+ RG5           H111   H    H         0.000    -43.968  -27.858    1.994
+ RG5           C7     C    CH2       0.000    -46.016  -30.524    1.974
+ RG5           H71    H    H         0.000    -46.973  -30.641    2.486
+ RG5           H72    H    H         0.000    -45.352  -31.345    2.254
+ RG5           C8     C    CH2       0.000    -46.239  -30.540    0.466
+ RG5           H81    H    H         0.000    -47.124  -29.935    0.260
+ RG5           H82    H    H         0.000    -46.431  -31.575    0.175
+ RG5           O1     O    O2        0.000    -45.158  -30.046   -0.258
+ RG5           C9     C    CH1       0.000    -44.637  -28.819    0.175
+ RG5           H9     H    H         0.000    -43.709  -28.642   -0.386
+ RG5           C10    C    CR5       0.000    -45.563  -27.636   -0.093
+ RG5           N8     N    NRD5      0.000    -45.749  -26.611    0.775
+ RG5           N5     N    NRD5      0.000    -46.637  -25.777    0.136
+ RG5           N4     N    NRD5      0.000    -46.938  -26.282   -1.057
+ RG5           N3     N    NRD5      0.000    -46.284  -27.424   -1.196
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RG5      F1     n/a    C1     START
+ RG5      C1     F1     C2     .
+ RG5      C15    C1     H15    .
+ RG5      H15    C15    .      .
+ RG5      C2     C1     C3     .
+ RG5      H2     C2     .      .
+ RG5      C3     C2     C13    .
+ RG5      N1     C3     .      .
+ RG5      C13    C3     C5     .
+ RG5      C14    C13    H14    .
+ RG5      H14    C14    .      .
+ RG5      C5     C13    C6     .
+ RG5      C4     C5     N7     .
+ RG5      N7     C4     C12    .
+ RG5      C12    N7     H12    .
+ RG5      H12    C12    .      .
+ RG5      C6     C5     N2     .
+ RG5      N6     C6     .      .
+ RG5      N2     C6     C7     .
+ RG5      C11    N2     H111   .
+ RG5      H112   C11    .      .
+ RG5      H111   C11    .      .
+ RG5      C7     N2     C8     .
+ RG5      H71    C7     .      .
+ RG5      H72    C7     .      .
+ RG5      C8     C7     O1     .
+ RG5      H81    C8     .      .
+ RG5      H82    C8     .      .
+ RG5      O1     C8     C9     .
+ RG5      C9     O1     C10    .
+ RG5      H9     C9     .      .
+ RG5      C10    C9     N8     .
+ RG5      N8     C10    N5     .
+ RG5      N5     N8     N4     .
+ RG5      N4     N5     N3     .
+ RG5      N3     N4     .      END
+ RG5      N1     C4     .    ADD
+ RG5      C15    C14    .    ADD
+ RG5      C12    N6     .    ADD
+ RG5      C11    C9     .    ADD
+ RG5      C10    N3     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RG5      N1     C4        double      1.350    0.020
+ RG5      N1     C3        double      1.350    0.020
+ RG5      C15    C14       aromatic    1.390    0.020
+ RG5      C15    C1        aromatic    1.390    0.020
+ RG5      C14    C13       aromatic    1.390    0.020
+ RG5      C5     C13       single      1.490    0.020
+ RG5      C13    C3        aromatic    1.390    0.020
+ RG5      C12    N6        aromatic    1.337    0.020
+ RG5      C12    N7        aromatic    1.337    0.020
+ RG5      C11    C9        single      1.524    0.020
+ RG5      C11    N2        single      1.455    0.020
+ RG5      C10    C9        single      1.480    0.020
+ RG5      C10    N3        aromatic    1.350    0.020
+ RG5      N8     C10       aromatic    1.350    0.020
+ RG5      C9     O1        single      1.426    0.020
+ RG5      C8     C7        single      1.524    0.020
+ RG5      O1     C8        single      1.426    0.020
+ RG5      C7     N2        single      1.455    0.020
+ RG5      C6     C5        aromatic    1.390    0.020
+ RG5      N2     C6        single      1.400    0.020
+ RG5      N6     C6        aromatic    1.350    0.020
+ RG5      C4     C5        aromatic    1.390    0.020
+ RG5      N7     C4        deloc       1.355    0.020
+ RG5      C3     C2        aromatic    1.390    0.020
+ RG5      C2     C1        aromatic    1.390    0.020
+ RG5      C1     F1        single      1.345    0.020
+ RG5      N3     N4        aromatic    1.404    0.020
+ RG5      N4     N5        aromatic    1.404    0.020
+ RG5      N5     N8        single      1.404    0.020
+ RG5      H15    C15       single      1.083    0.020
+ RG5      H14    C14       single      1.083    0.020
+ RG5      H12    C12       single      1.083    0.020
+ RG5      H111   C11       single      1.092    0.020
+ RG5      H112   C11       single      1.092    0.020
+ RG5      H9     C9        single      1.099    0.020
+ RG5      H81    C8        single      1.092    0.020
+ RG5      H82    C8        single      1.092    0.020
+ RG5      H71    C7        single      1.092    0.020
+ RG5      H72    C7        single      1.092    0.020
+ RG5      H2     C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RG5      F1     C1     C15     120.000    3.000
+ RG5      F1     C1     C2      120.000    3.000
+ RG5      C15    C1     C2      120.000    3.000
+ RG5      C1     C15    H15     120.000    3.000
+ RG5      C1     C15    C14     120.000    3.000
+ RG5      H15    C15    C14     120.000    3.000
+ RG5      C1     C2     H2      120.000    3.000
+ RG5      C1     C2     C3      120.000    3.000
+ RG5      H2     C2     C3      120.000    3.000
+ RG5      C2     C3     N1      132.000    3.000
+ RG5      C2     C3     C13     120.000    3.000
+ RG5      N1     C3     C13     108.000    3.000
+ RG5      C3     N1     C4      108.000    3.000
+ RG5      C3     C13    C14     120.000    3.000
+ RG5      C3     C13    C5      120.000    3.000
+ RG5      C14    C13    C5      120.000    3.000
+ RG5      C13    C14    H14     120.000    3.000
+ RG5      C13    C14    C15     120.000    3.000
+ RG5      H14    C14    C15     120.000    3.000
+ RG5      C13    C5     C4      120.000    3.000
+ RG5      C13    C5     C6      120.000    3.000
+ RG5      C4     C5     C6      120.000    3.000
+ RG5      C5     C4     N7      120.000    3.000
+ RG5      C5     C4     N1      108.000    3.000
+ RG5      N7     C4     N1      120.000    3.000
+ RG5      C4     N7     C12     120.000    3.000
+ RG5      N7     C12    H12     120.000    3.000
+ RG5      N7     C12    N6      120.000    3.000
+ RG5      H12    C12    N6      120.000    3.000
+ RG5      C5     C6     N6      120.000    3.000
+ RG5      C5     C6     N2      120.000    3.000
+ RG5      N6     C6     N2      120.000    3.000
+ RG5      C6     N6     C12     120.000    3.000
+ RG5      C6     N2     C11     120.000    3.000
+ RG5      C6     N2     C7      120.000    3.000
+ RG5      C11    N2     C7      120.000    3.000
+ RG5      N2     C11    H112    109.470    3.000
+ RG5      N2     C11    H111    109.470    3.000
+ RG5      N2     C11    C9      105.000    3.000
+ RG5      H112   C11    H111    107.900    3.000
+ RG5      H112   C11    C9      109.470    3.000
+ RG5      H111   C11    C9      109.470    3.000
+ RG5      N2     C7     H71     109.470    3.000
+ RG5      N2     C7     H72     109.470    3.000
+ RG5      N2     C7     C8      105.000    3.000
+ RG5      H71    C7     H72     107.900    3.000
+ RG5      H71    C7     C8      109.470    3.000
+ RG5      H72    C7     C8      109.470    3.000
+ RG5      C7     C8     H81     109.470    3.000
+ RG5      C7     C8     H82     109.470    3.000
+ RG5      C7     C8     O1      109.470    3.000
+ RG5      H81    C8     H82     107.900    3.000
+ RG5      H81    C8     O1      109.470    3.000
+ RG5      H82    C8     O1      109.470    3.000
+ RG5      C8     O1     C9      111.800    3.000
+ RG5      O1     C9     H9      109.470    3.000
+ RG5      O1     C9     C10     109.500    3.000
+ RG5      O1     C9     C11     109.470    3.000
+ RG5      H9     C9     C10     109.470    3.000
+ RG5      H9     C9     C11     108.340    3.000
+ RG5      C10    C9     C11     109.470    3.000
+ RG5      C9     C10    N8      126.000    3.000
+ RG5      C9     C10    N3      126.000    3.000
+ RG5      N8     C10    N3      108.000    3.000
+ RG5      C10    N8     N5      108.000    3.000
+ RG5      N8     N5     N4      108.000    3.000
+ RG5      N5     N4     N3      108.000    3.000
+ RG5      N4     N3     C10     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RG5      CONST_1          F1     C1     C15    C14                0.000            0.000   0
+ RG5      CONST_2          C1     C15    C14    C13                0.000            0.000   0
+ RG5      CONST_3          F1     C1     C2     C3                 0.000            0.000   0
+ RG5      CONST_4          C1     C2     C3     C13              180.000            0.000   0
+ RG5      CONST_5          C2     C3     N1     C4               180.000            0.000   0
+ RG5      CONST_6          C3     N1     C4     C5               180.000            0.000   0
+ RG5      CONST_7          C2     C3     C13    C5               180.000            0.000   0
+ RG5      CONST_8          C3     C13    C14    C15              180.000            0.000   0
+ RG5      CONST_9          C3     C13    C5     C6               180.000            0.000   0
+ RG5      CONST_10         C13    C5     C4     N7               180.000            0.000   0
+ RG5      CONST_11         C5     C4     N7     C12              180.000            0.000   0
+ RG5      CONST_12         C4     N7     C12    N6                 0.000            0.000   0
+ RG5      CONST_13         N7     C12    N6     C6                 0.000            0.000   0
+ RG5      CONST_14         C13    C5     C6     N2               180.000            0.000   0
+ RG5      CONST_15         C5     C6     N6     C12                0.000            0.000   0
+ RG5      var_1            C5     C6     N2     C7               -66.129           20.000   3
+ RG5      var_2            C6     N2     C11    C9              -172.457           20.000   3
+ RG5      var_3            N2     C11    C9     O1               180.000           20.000   3
+ RG5      var_4            C6     N2     C7     C8               173.800           20.000   3
+ RG5      var_5            N2     C7     C8     O1               180.000           20.000   3
+ RG5      var_6            C7     C8     O1     C9               -48.774           20.000   3
+ RG5      var_7            C8     O1     C9     C10              -70.151           20.000   3
+ RG5      var_8            O1     C9     C10    N8               140.346           20.000   3
+ RG5      CONST_16         C9     C10    N3     N4                 0.000            0.000   0
+ RG5      CONST_17         C9     C10    N8     N5                 0.000            0.000   0
+ RG5      CONST_18         C10    N8     N5     N4                -0.923            0.000   0
+ RG5      CONST_19         N8     N5     N4     N3                 0.823            0.000   0
+ RG5      CONST_20         N5     N4     N3     C10               -0.377            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RG5      chir_01          C9     C11    C10    O1        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RG5      plan-1            N1        0.020
+ RG5      plan-1            C4        0.020
+ RG5      plan-1            C3        0.020
+ RG5      plan-1            C5        0.020
+ RG5      plan-1            N7        0.020
+ RG5      plan-1            C13       0.020
+ RG5      plan-1            C2        0.020
+ RG5      plan-1            C1        0.020
+ RG5      plan-1            H2        0.020
+ RG5      plan-1            C15       0.020
+ RG5      plan-1            F1        0.020
+ RG5      plan-1            C12       0.020
+ RG5      plan-1            C14       0.020
+ RG5      plan-1            C6        0.020
+ RG5      plan-1            N6        0.020
+ RG5      plan-1            H15       0.020
+ RG5      plan-1            H14       0.020
+ RG5      plan-1            H12       0.020
+ RG5      plan-1            N2        0.020
+ RG5      plan-2            C10       0.020
+ RG5      plan-2            C9        0.020
+ RG5      plan-2            N3        0.020
+ RG5      plan-2            N8        0.020
+ RG5      plan-2            N4        0.020
+ RG5      plan-2            N5        0.020
+ RG5      plan-3            N2        0.020
+ RG5      plan-3            C11       0.020
+ RG5      plan-3            C7        0.020
+ RG5      plan-3            C6        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

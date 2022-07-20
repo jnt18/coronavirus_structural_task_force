@@ -1,0 +1,357 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QJU      QJU '.                                   ' .                  42  27 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QJU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QJU           F20    F    F         0.000    -52.070  -29.050    4.910
+ QJU           C17    C    CR6       0.000    -50.713  -29.024    4.830
+ QJU           C16    C    CR16      0.000    -49.951  -29.184    5.978
+ QJU           H16    H    H         0.000    -50.438  -29.332    6.934
+ QJU           C15    C    CR56      0.000    -48.541  -29.154    5.902
+ QJU           N21    N    NRD5      0.000    -47.602  -29.288    6.868
+ QJU           C22    C    CR56      0.000    -46.372  -29.195    6.319
+ QJU           C13    C    CR56      0.000    -46.477  -29.000    4.965
+ QJU           C14    C    CR56      0.000    -47.911  -28.970    4.689
+ QJU           C19    C    CR16      0.000    -48.695  -28.807    3.517
+ QJU           H19    H    H         0.000    -48.211  -28.662    2.559
+ QJU           C18    C    CR16      0.000    -50.087  -28.833    3.595
+ QJU           H18    H    H         0.000    -50.683  -28.705    2.699
+ QJU           N23    N    NRD6      0.000    -45.146  -29.268    6.880
+ QJU           C24    C    CR16      0.000    -44.051  -29.149    6.169
+ QJU           H24    H    H         0.000    -43.088  -29.207    6.661
+ QJU           N25    N    NRD6      0.000    -44.101  -28.959    4.861
+ QJU           C12    C    CR6       0.000    -45.275  -28.886    4.240
+ QJU           N11    N    N         0.000    -45.303  -28.669    2.823
+ QJU           C10    C    CH2       0.000    -45.925  -29.682    1.883
+ QJU           H102   H    H         0.000    -46.845  -30.056    2.338
+ QJU           H101   H    H         0.000    -45.223  -30.508    1.752
+ QJU           C26    C    CH2       0.000    -44.034  -28.232    2.138
+ QJU           H261   H    H         0.000    -43.375  -29.099    2.061
+ QJU           H262   H    H         0.000    -43.559  -27.470    2.759
+ QJU           C07    C    C         0.000    -44.289  -27.682    0.788
+ QJU           C08    C    C1        0.000    -45.092  -28.415   -0.083
+ QJU           H08    H    H         0.000    -44.871  -28.498   -1.134
+ QJU           C09    C    C1        0.000    -46.244  -29.058    0.517
+ QJU           H09    H    H         0.000    -47.216  -29.094    0.056
+ QJU           C06    C    CH2       0.000    -42.996  -27.147    0.171
+ QJU           H061   H    H         0.000    -42.490  -27.974   -0.332
+ QJU           H062   H    H         0.000    -42.363  -26.770    0.977
+ QJU           C05    C    CR5       0.000    -43.263  -26.038   -0.823
+ QJU           O04    O    O2        0.000    -42.367  -25.463   -1.598
+ QJU           N03    N    NRD5      0.000    -42.963  -24.535   -2.338
+ QJU           N27    N    NRD5      0.000    -44.445  -25.482   -1.065
+ QJU           C02    C    CR5       0.000    -44.251  -24.547   -2.012
+ QJU           C01    C    CH3       0.000    -45.340  -23.653   -2.588
+ QJU           H013   H    H         0.000    -46.090  -24.251   -3.040
+ QJU           H012   H    H         0.000    -45.773  -23.074   -1.813
+ QJU           H011   H    H         0.000    -44.922  -23.006   -3.317
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QJU      F20    n/a    C17    START
+ QJU      C17    F20    C16    .
+ QJU      C16    C17    C15    .
+ QJU      H16    C16    .      .
+ QJU      C15    C16    N21    .
+ QJU      N21    C15    C22    .
+ QJU      C22    N21    N23    .
+ QJU      C13    C22    C14    .
+ QJU      C14    C13    C19    .
+ QJU      C19    C14    C18    .
+ QJU      H19    C19    .      .
+ QJU      C18    C19    H18    .
+ QJU      H18    C18    .      .
+ QJU      N23    C22    C24    .
+ QJU      C24    N23    N25    .
+ QJU      H24    C24    .      .
+ QJU      N25    C24    C12    .
+ QJU      C12    N25    N11    .
+ QJU      N11    C12    C26    .
+ QJU      C10    N11    H101   .
+ QJU      H102   C10    .      .
+ QJU      H101   C10    .      .
+ QJU      C26    N11    C07    .
+ QJU      H261   C26    .      .
+ QJU      H262   C26    .      .
+ QJU      C07    C26    C06    .
+ QJU      C08    C07    C09    .
+ QJU      H08    C08    .      .
+ QJU      C09    C08    H09    .
+ QJU      H09    C09    .      .
+ QJU      C06    C07    C05    .
+ QJU      H061   C06    .      .
+ QJU      H062   C06    .      .
+ QJU      C05    C06    N27    .
+ QJU      O04    C05    N03    .
+ QJU      N03    O04    .      .
+ QJU      N27    C05    C02    .
+ QJU      C02    N27    C01    .
+ QJU      C01    C02    H011   .
+ QJU      H013   C01    .      .
+ QJU      H012   C01    .      .
+ QJU      H011   C01    .      END
+ QJU      C18    C17    .    ADD
+ QJU      C15    C14    .    ADD
+ QJU      C13    C12    .    ADD
+ QJU      C10    C09    .    ADD
+ QJU      C02    N03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QJU      C18    C17       aromatic    1.390    0.020
+ QJU      C18    C19       aromatic    1.390    0.020
+ QJU      C16    C17       aromatic    1.390    0.020
+ QJU      C15    C16       aromatic    1.390    0.020
+ QJU      C17    F20       single      1.345    0.020
+ QJU      C15    C14       aromatic    1.390    0.020
+ QJU      N21    C15       aromatic    1.350    0.020
+ QJU      C14    C13       single      1.490    0.020
+ QJU      C19    C14       aromatic    1.390    0.020
+ QJU      C13    C12       aromatic    1.390    0.020
+ QJU      C13    C22       aromatic    1.390    0.020
+ QJU      N11    C12       single      1.400    0.020
+ QJU      C12    N25       aromat      1.350    0.020
+ QJU      C10    C09       single      1.510    0.020
+ QJU      C10    N11       single      1.455    0.020
+ QJU      C01    C02       single      1.506    0.020
+ QJU      C02    N03       aromat      1.350    0.020
+ QJU      C02    N27       aromatic    1.350    0.020
+ QJU      C05    C06       single      1.510    0.020
+ QJU      N27    C05       aromatic    1.350    0.020
+ QJU      O04    C05       single      1.370    0.020
+ QJU      C06    C07       single      1.510    0.020
+ QJU      C08    C07       aromatic    1.340    0.020
+ QJU      C07    C26       single      1.510    0.020
+ QJU      C09    C08       aromatic    1.330    0.020
+ QJU      C22    N21       deloc       1.350    0.020
+ QJU      N23    C22       aromatic    1.355    0.020
+ QJU      C24    N23       aromatic    1.337    0.020
+ QJU      N25    C24       deloc       1.337    0.020
+ QJU      C26    N11       single      1.455    0.020
+ QJU      N03    O04       single      1.337    0.020
+ QJU      H18    C18       single      1.083    0.020
+ QJU      H16    C16       single      1.083    0.020
+ QJU      H101   C10       single      1.092    0.020
+ QJU      H102   C10       single      1.092    0.020
+ QJU      H19    C19       single      1.083    0.020
+ QJU      H011   C01       single      1.059    0.020
+ QJU      H012   C01       single      1.059    0.020
+ QJU      H013   C01       single      1.059    0.020
+ QJU      H061   C06       single      1.092    0.020
+ QJU      H062   C06       single      1.092    0.020
+ QJU      H08    C08       single      1.077    0.020
+ QJU      H09    C09       single      1.077    0.020
+ QJU      H24    C24       single      1.083    0.020
+ QJU      H261   C26       single      1.092    0.020
+ QJU      H262   C26       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QJU      F20    C17    C16     120.000    3.000
+ QJU      F20    C17    C18     120.000    3.000
+ QJU      C16    C17    C18     120.000    3.000
+ QJU      C17    C16    H16     120.000    3.000
+ QJU      C17    C16    C15     120.000    3.000
+ QJU      H16    C16    C15     120.000    3.000
+ QJU      C16    C15    N21     132.000    3.000
+ QJU      C16    C15    C14     120.000    3.000
+ QJU      N21    C15    C14     108.000    3.000
+ QJU      C15    N21    C22     108.000    3.000
+ QJU      N21    C22    C13     108.000    3.000
+ QJU      N21    C22    N23     120.000    3.000
+ QJU      C13    C22    N23     120.000    3.000
+ QJU      C22    C13    C14     120.000    3.000
+ QJU      C22    C13    C12     120.000    3.000
+ QJU      C14    C13    C12     120.000    3.000
+ QJU      C13    C14    C19     120.000    3.000
+ QJU      C13    C14    C15     120.000    3.000
+ QJU      C19    C14    C15     120.000    3.000
+ QJU      C14    C19    H19     120.000    3.000
+ QJU      C14    C19    C18     120.000    3.000
+ QJU      H19    C19    C18     120.000    3.000
+ QJU      C19    C18    H18     120.000    3.000
+ QJU      C19    C18    C17     120.000    3.000
+ QJU      H18    C18    C17     120.000    3.000
+ QJU      C22    N23    C24     120.000    3.000
+ QJU      N23    C24    H24     120.000    3.000
+ QJU      N23    C24    N25     120.000    3.000
+ QJU      H24    C24    N25     120.000    3.000
+ QJU      C24    N25    C12     120.000    3.000
+ QJU      N25    C12    N11     120.000    3.000
+ QJU      N25    C12    C13     120.000    3.000
+ QJU      N11    C12    C13     120.000    3.000
+ QJU      C12    N11    C10     120.000    3.000
+ QJU      C12    N11    C26     120.000    3.000
+ QJU      C10    N11    C26     120.000    3.000
+ QJU      N11    C10    H102    109.470    3.000
+ QJU      N11    C10    H101    109.470    3.000
+ QJU      N11    C10    C09     109.500    3.000
+ QJU      H102   C10    H101    107.900    3.000
+ QJU      H102   C10    C09     109.470    3.000
+ QJU      H101   C10    C09     109.470    3.000
+ QJU      N11    C26    H261    109.470    3.000
+ QJU      N11    C26    H262    109.470    3.000
+ QJU      N11    C26    C07     109.500    3.000
+ QJU      H261   C26    H262    107.900    3.000
+ QJU      H261   C26    C07     109.470    3.000
+ QJU      H262   C26    C07     109.470    3.000
+ QJU      C26    C07    C08     120.000    3.000
+ QJU      C26    C07    C06     120.000    3.000
+ QJU      C08    C07    C06     120.000    3.000
+ QJU      C07    C08    H08     120.000    3.000
+ QJU      C07    C08    C09     120.000    3.000
+ QJU      H08    C08    C09     120.000    3.000
+ QJU      C08    C09    H09     120.000    3.000
+ QJU      C08    C09    C10     120.000    3.000
+ QJU      H09    C09    C10     120.000    3.000
+ QJU      C07    C06    H061    109.470    3.000
+ QJU      C07    C06    H062    109.470    3.000
+ QJU      C07    C06    C05     109.500    3.000
+ QJU      H061   C06    H062    107.900    3.000
+ QJU      H061   C06    C05     109.470    3.000
+ QJU      H062   C06    C05     109.470    3.000
+ QJU      C06    C05    O04     126.000    3.000
+ QJU      C06    C05    N27     126.000    3.000
+ QJU      O04    C05    N27     108.000    3.000
+ QJU      C05    O04    N03     120.000    3.000
+ QJU      O04    N03    C02     108.000    3.000
+ QJU      C05    N27    C02     108.000    3.000
+ QJU      N27    C02    C01     126.000    3.000
+ QJU      N27    C02    N03     108.000    3.000
+ QJU      C01    C02    N03     126.000    3.000
+ QJU      C02    C01    H013    109.470    3.000
+ QJU      C02    C01    H012    109.470    3.000
+ QJU      C02    C01    H011    109.470    3.000
+ QJU      H013   C01    H012    109.470    3.000
+ QJU      H013   C01    H011    109.470    3.000
+ QJU      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QJU      CONST_1          F20    C17    C16    C15                0.000            0.000   0
+ QJU      CONST_2          C17    C16    C15    N21              180.000            0.000   0
+ QJU      CONST_3          C16    C15    C14    C13              180.000            0.000   0
+ QJU      CONST_4          C16    C15    N21    C22              180.000            0.000   0
+ QJU      CONST_5          C15    N21    C22    N23              180.000            0.000   0
+ QJU      CONST_6          N21    C22    C13    C14              180.000            0.000   0
+ QJU      CONST_7          C22    C13    C12    N25              180.000            0.000   0
+ QJU      CONST_8          C22    C13    C14    C19              180.000            0.000   0
+ QJU      CONST_9          C13    C14    C19    C18              180.000            0.000   0
+ QJU      CONST_10         C14    C19    C18    C17                0.000            0.000   0
+ QJU      CONST_11         C19    C18    C17    F20                0.000            0.000   0
+ QJU      CONST_12         N21    C22    N23    C24              180.000            0.000   0
+ QJU      CONST_13         C22    N23    C24    N25                0.000            0.000   0
+ QJU      CONST_14         N23    C24    N25    C12                0.000            0.000   0
+ QJU      CONST_15         C24    N25    C12    N11                0.000            0.000   0
+ QJU      var_1            N25    C12    N11    C26              -13.271           20.000   3
+ QJU      var_2            C12    N11    C10    C09              161.689           20.000   3
+ QJU      var_3            N11    C10    C09    C08               53.928           20.000   3
+ QJU      var_4            C12    N11    C26    C07             -163.683           20.000   3
+ QJU      var_5            N11    C26    C07    C06              180.000           20.000   3
+ QJU      var_6            C26    C07    C08    C09               39.694           20.000   3
+ QJU      var_7            C07    C08    C09    C10              -41.020           20.000   3
+ QJU      var_8            C26    C07    C06    C05              180.000           20.000   3
+ QJU      var_9            C07    C06    C05    N27                0.000           20.000   2
+ QJU      CONST_16         C06    C05    O04    N03              179.934            0.000   0
+ QJU      CONST_17         C05    O04    N03    C02               -0.245            0.000   0
+ QJU      CONST_18         C06    C05    N27    C02                0.000            0.000   0
+ QJU      CONST_19         C05    N27    C02    C01                0.000            0.000   0
+ QJU      CONST_20         N27    C02    N03    O04                0.000            0.000   0
+ QJU      var_10           N27    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QJU      plan-1            C18       0.020
+ QJU      plan-1            C17       0.020
+ QJU      plan-1            C19       0.020
+ QJU      plan-1            H18       0.020
+ QJU      plan-1            C16       0.020
+ QJU      plan-1            C15       0.020
+ QJU      plan-1            H16       0.020
+ QJU      plan-1            F20       0.020
+ QJU      plan-1            C14       0.020
+ QJU      plan-1            N21       0.020
+ QJU      plan-1            C13       0.020
+ QJU      plan-1            C12       0.020
+ QJU      plan-1            C22       0.020
+ QJU      plan-1            C24       0.020
+ QJU      plan-1            N23       0.020
+ QJU      plan-1            N25       0.020
+ QJU      plan-1            N11       0.020
+ QJU      plan-1            H19       0.020
+ QJU      plan-1            H24       0.020
+ QJU      plan-2            C02       0.020
+ QJU      plan-2            C01       0.020
+ QJU      plan-2            N03       0.020
+ QJU      plan-2            N27       0.020
+ QJU      plan-2            C05       0.020
+ QJU      plan-2            O04       0.020
+ QJU      plan-2            C06       0.020
+ QJU      plan-3            C07       0.020
+ QJU      plan-3            C06       0.020
+ QJU      plan-3            C08       0.020
+ QJU      plan-3            C26       0.020
+ QJU      plan-3            H08       0.020
+ QJU      plan-4            C08       0.020
+ QJU      plan-4            C07       0.020
+ QJU      plan-4            C09       0.020
+ QJU      plan-4            H08       0.020
+ QJU      plan-4            H09       0.020
+ QJU      plan-5            C09       0.020
+ QJU      plan-5            C10       0.020
+ QJU      plan-5            C08       0.020
+ QJU      plan-5            H09       0.020
+ QJU      plan-5            H08       0.020
+ QJU      plan-6            N11       0.020
+ QJU      plan-6            C12       0.020
+ QJU      plan-6            C10       0.020
+ QJU      plan-6            C26       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,310 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S7F      S7F '.                                   ' .                  36  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S7F
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S7F           O19    O    OS       -0.500    -36.003  -21.975   18.154
+ S7F           S08    S    ST        0.000    -35.662  -20.687   18.759
+ S7F           O09    O    OS       -0.500    -35.900  -19.742   17.667
+ S7F           C07    C    CR6       0.000    -33.959  -20.643   19.353
+ S7F           C06    C    CR16      0.000    -33.422  -21.752   19.956
+ S7F           H06    H    H         0.000    -34.021  -22.648   20.062
+ S7F           N05    N    NRD6      0.000    -32.185  -21.736   20.407
+ S7F           C03    C    CR6       0.000    -31.426  -20.671   20.310
+ S7F           N04    N    NH2       0.000    -30.072  -20.718   20.818
+ S7F           H042   H    H         0.000    -29.689  -21.566   21.254
+ S7F           H041   H    H         0.000    -29.446  -19.905   20.761
+ S7F           C02    C    CR6       0.000    -31.903  -19.514   19.734
+ S7F           C01    C    CH3       0.000    -31.000  -18.291   19.643
+ S7F           H013   H    H         0.000    -30.705  -17.992   20.617
+ S7F           H012   H    H         0.000    -30.137  -18.526   19.073
+ S7F           H011   H    H         0.000    -31.522  -17.496   19.175
+ S7F           C20    C    CR16      0.000    -33.202  -19.493   19.252
+ S7F           H20    H    H         0.000    -33.614  -18.596   18.807
+ S7F           N10    N    NT        0.000    -36.593  -20.352   20.133
+ S7F           C18    C    CH2       0.000    -36.695  -21.424   21.202
+ S7F           H182   H    H         0.000    -35.752  -21.471   21.751
+ S7F           H181   H    H         0.000    -36.884  -22.387   20.724
+ S7F           C11    C    CH2       0.000    -36.417  -18.997   20.839
+ S7F           H111   H    H         0.000    -36.439  -18.216   20.076
+ S7F           H112   H    H         0.000    -35.441  -18.999   21.329
+ S7F           C12    C    C1        0.000    -37.511  -18.729   21.878
+ S7F           H12    H    H         0.000    -38.129  -17.847   21.897
+ S7F           C13    C    C1        0.000    -37.607  -19.816   22.832
+ S7F           H13    H    H         0.000    -37.519  -19.693   23.898
+ S7F           C14    C    CH1       0.000    -37.838  -21.099   22.171
+ S7F           H14    H    H         0.000    -38.781  -21.048   21.609
+ S7F           C15    C    C         0.000    -37.907  -22.299   23.181
+ S7F           O17    O    O         0.000    -37.030  -22.493   23.952
+ S7F           N16    N    NH2       0.000    -39.049  -23.185   23.127
+ S7F           H162   H    H         0.000    -39.815  -23.052   22.448
+ S7F           H161   H    H         0.000    -39.149  -23.990   23.765
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S7F      O19    n/a    S08    START
+ S7F      S08    O19    N10    .
+ S7F      O09    S08    .      .
+ S7F      C07    S08    C20    .
+ S7F      C06    C07    N05    .
+ S7F      H06    C06    .      .
+ S7F      N05    C06    C03    .
+ S7F      C03    N05    C02    .
+ S7F      N04    C03    H041   .
+ S7F      H042   N04    .      .
+ S7F      H041   N04    .      .
+ S7F      C02    C03    C01    .
+ S7F      C01    C02    H011   .
+ S7F      H013   C01    .      .
+ S7F      H012   C01    .      .
+ S7F      H011   C01    .      .
+ S7F      C20    C07    H20    .
+ S7F      H20    C20    .      .
+ S7F      N10    S08    C11    .
+ S7F      C18    N10    H181   .
+ S7F      H182   C18    .      .
+ S7F      H181   C18    .      .
+ S7F      C11    N10    C12    .
+ S7F      H111   C11    .      .
+ S7F      H112   C11    .      .
+ S7F      C12    C11    C13    .
+ S7F      H12    C12    .      .
+ S7F      C13    C12    C14    .
+ S7F      H13    C13    .      .
+ S7F      C14    C13    C15    .
+ S7F      H14    C14    .      .
+ S7F      C15    C14    N16    .
+ S7F      O17    C15    .      .
+ S7F      N16    C15    H161   .
+ S7F      H162   N16    .      .
+ S7F      H161   N16    .      END
+ S7F      C18    C14    .    ADD
+ S7F      C20    C02    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S7F      C18    C14       single      1.524    0.020
+ S7F      C18    N10       single      1.469    0.020
+ S7F      C15    C14       single      1.500    0.020
+ S7F      N16    C15       single      1.332    0.020
+ S7F      O17    C15       double      1.220    0.020
+ S7F      C14    C13       single      1.510    0.020
+ S7F      C13    C12       aromatic    1.330    0.020
+ S7F      C12    C11       single      1.510    0.020
+ S7F      C11    N10       single      1.469    0.020
+ S7F      C20    C02       aromatic    1.390    0.020
+ S7F      C20    C07       aromatic    1.390    0.020
+ S7F      C01    C02       single      1.506    0.020
+ S7F      C02    C03       aromatic    1.384    0.020
+ S7F      N04    C03       single      1.355    0.020
+ S7F      C03    N05       aromatic    1.350    0.020
+ S7F      C06    C07       aromatic    1.390    0.020
+ S7F      N05    C06       aromatic    1.337    0.020
+ S7F      C07    S08       double      1.595    0.020
+ S7F      N10    S08       single      1.610    0.020
+ S7F      O09    S08       deloc       1.480    0.020
+ S7F      S08    O19       deloc       1.480    0.020
+ S7F      H181   C18       single      1.092    0.020
+ S7F      H182   C18       single      1.092    0.020
+ S7F      H14    C14       single      1.099    0.020
+ S7F      H13    C13       single      1.077    0.020
+ S7F      H12    C12       single      1.077    0.020
+ S7F      H111   C11       single      1.092    0.020
+ S7F      H112   C11       single      1.092    0.020
+ S7F      H20    C20       single      1.083    0.020
+ S7F      H011   C01       single      1.059    0.020
+ S7F      H012   C01       single      1.059    0.020
+ S7F      H013   C01       single      1.059    0.020
+ S7F      H06    C06       single      1.083    0.020
+ S7F      H041   N04       single      1.010    0.020
+ S7F      H042   N04       single      1.010    0.020
+ S7F      H161   N16       single      1.010    0.020
+ S7F      H162   N16       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S7F      O19    S08    O09     109.500    3.000
+ S7F      O19    S08    C07     109.500    3.000
+ S7F      O19    S08    N10     109.500    3.000
+ S7F      O09    S08    C07     109.500    3.000
+ S7F      O09    S08    N10     109.500    3.000
+ S7F      C07    S08    N10     109.500    3.000
+ S7F      S08    C07    C06     120.000    3.000
+ S7F      S08    C07    C20     120.000    3.000
+ S7F      C06    C07    C20     120.000    3.000
+ S7F      C07    C06    H06     120.000    3.000
+ S7F      C07    C06    N05     120.000    3.000
+ S7F      H06    C06    N05     120.000    3.000
+ S7F      C06    N05    C03     120.000    3.000
+ S7F      N05    C03    N04     120.000    3.000
+ S7F      N05    C03    C02     120.000    3.000
+ S7F      N04    C03    C02     120.000    3.000
+ S7F      C03    N04    H042    120.000    3.000
+ S7F      C03    N04    H041    120.000    3.000
+ S7F      H042   N04    H041    120.000    3.000
+ S7F      C03    C02    C01     120.000    3.000
+ S7F      C03    C02    C20     120.000    3.000
+ S7F      C01    C02    C20     120.000    3.000
+ S7F      C02    C01    H013    109.470    3.000
+ S7F      C02    C01    H012    109.470    3.000
+ S7F      C02    C01    H011    109.470    3.000
+ S7F      H013   C01    H012    109.470    3.000
+ S7F      H013   C01    H011    109.470    3.000
+ S7F      H012   C01    H011    109.470    3.000
+ S7F      C07    C20    H20     120.000    3.000
+ S7F      C07    C20    C02     120.000    3.000
+ S7F      H20    C20    C02     120.000    3.000
+ S7F      S08    N10    C18     109.500    3.000
+ S7F      S08    N10    C11     109.500    3.000
+ S7F      C18    N10    C11     109.470    3.000
+ S7F      N10    C18    H182    109.470    3.000
+ S7F      N10    C18    H181    109.470    3.000
+ S7F      N10    C18    C14     109.500    3.000
+ S7F      H182   C18    H181    107.900    3.000
+ S7F      H182   C18    C14     109.470    3.000
+ S7F      H181   C18    C14     109.470    3.000
+ S7F      N10    C11    H111    109.470    3.000
+ S7F      N10    C11    H112    109.470    3.000
+ S7F      N10    C11    C12     109.500    3.000
+ S7F      H111   C11    H112    107.900    3.000
+ S7F      H111   C11    C12     109.470    3.000
+ S7F      H112   C11    C12     109.470    3.000
+ S7F      C11    C12    H12     120.000    3.000
+ S7F      C11    C12    C13     120.000    3.000
+ S7F      H12    C12    C13     120.000    3.000
+ S7F      C12    C13    H13     120.000    3.000
+ S7F      C12    C13    C14     120.000    3.000
+ S7F      H13    C13    C14     120.000    3.000
+ S7F      C13    C14    H14     108.810    3.000
+ S7F      C13    C14    C15     109.470    3.000
+ S7F      C13    C14    C18     109.470    3.000
+ S7F      H14    C14    C15     108.810    3.000
+ S7F      H14    C14    C18     108.340    3.000
+ S7F      C15    C14    C18     109.470    3.000
+ S7F      C14    C15    O17     120.500    3.000
+ S7F      C14    C15    N16     120.000    3.000
+ S7F      O17    C15    N16     123.000    3.000
+ S7F      C15    N16    H162    120.000    3.000
+ S7F      C15    N16    H161    120.000    3.000
+ S7F      H162   N16    H161    120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S7F      var_1            O19    S08    C07    C20              143.282           20.000   3
+ S7F      CONST_1          S08    C07    C06    N05                0.000            0.000   0
+ S7F      CONST_2          C07    C06    N05    C03                0.000            0.000   0
+ S7F      CONST_3          C06    N05    C03    C02                0.000            0.000   0
+ S7F      CONST_4          N05    C03    N04    H041             180.000            0.000   0
+ S7F      CONST_5          N05    C03    C02    C01                0.000            0.000   0
+ S7F      var_2            C03    C02    C01    H011             180.000           20.000   3
+ S7F      CONST_6          S08    C07    C20    C02                0.000            0.000   0
+ S7F      CONST_7          C07    C20    C02    C03                0.000            0.000   0
+ S7F      var_3            O19    S08    N10    C11             -176.372           20.000   3
+ S7F      var_4            S08    N10    C18    C14             -165.549           20.000   3
+ S7F      var_5            N10    C18    C14    C13              180.000           20.000   3
+ S7F      var_6            S08    N10    C11    C12              168.426           20.000   3
+ S7F      var_7            N10    C11    C12    C13               54.060           20.000   3
+ S7F      var_8            C11    C12    C13    C14              -56.173           20.000   3
+ S7F      var_9            C12    C13    C14    C15              178.444           20.000   3
+ S7F      var_10           C13    C14    C15    N16              180.000           20.000   3
+ S7F      CONST_8          C14    C15    N16    H161             180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S7F      chir_01          C14    C18    C15    C13       negativ
+ S7F      chir_02          N10    C18    C11    S08       negativ
+ S7F      chir_03          S08    C07    N10    O09       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S7F      plan-1            C15       0.020
+ S7F      plan-1            C14       0.020
+ S7F      plan-1            N16       0.020
+ S7F      plan-1            O17       0.020
+ S7F      plan-1            H162      0.020
+ S7F      plan-1            H161      0.020
+ S7F      plan-2            C13       0.020
+ S7F      plan-2            C14       0.020
+ S7F      plan-2            C12       0.020
+ S7F      plan-2            H13       0.020
+ S7F      plan-2            H12       0.020
+ S7F      plan-3            C12       0.020
+ S7F      plan-3            C13       0.020
+ S7F      plan-3            C11       0.020
+ S7F      plan-3            H12       0.020
+ S7F      plan-3            H13       0.020
+ S7F      plan-4            C20       0.020
+ S7F      plan-4            C02       0.020
+ S7F      plan-4            C07       0.020
+ S7F      plan-4            H20       0.020
+ S7F      plan-4            C03       0.020
+ S7F      plan-4            C06       0.020
+ S7F      plan-4            N05       0.020
+ S7F      plan-4            C01       0.020
+ S7F      plan-4            N04       0.020
+ S7F      plan-4            H06       0.020
+ S7F      plan-4            S08       0.020
+ S7F      plan-4            H042      0.020
+ S7F      plan-4            H041      0.020
+ S7F      plan-5            N04       0.020
+ S7F      plan-5            C03       0.020
+ S7F      plan-5            H041      0.020
+ S7F      plan-5            H042      0.020
+ S7F      plan-6            N16       0.020
+ S7F      plan-6            C15       0.020
+ S7F      plan-6            H161      0.020
+ S7F      plan-6            H162      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

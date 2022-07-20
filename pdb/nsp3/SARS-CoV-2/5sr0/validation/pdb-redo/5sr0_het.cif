@@ -1,0 +1,535 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QXS      QXS '.                                   ' .                  32  17 .
+QY0      QY0 '.                                   ' .                  32  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QXS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QXS           O01    O    OH1       0.000    -45.436  -32.650    2.249
+ QXS           HO01   H    H         0.000    -45.743  -33.338    1.646
+ QXS           C02    C    CH1       0.000    -44.704  -31.691    1.523
+ QXS           H02    H    H         0.000    -43.835  -32.179    1.061
+ QXS           C07    C    CH1       0.000    -44.213  -30.595    2.474
+ QXS           H07    H    H         0.000    -43.657  -31.063    3.298
+ QXS           C06    C    CH2       0.000    -43.279  -29.645    1.724
+ QXS           H061   H    H         0.000    -42.267  -30.055    1.755
+ QXS           H062   H    H         0.000    -43.293  -28.675    2.226
+ QXS           C05    C    CH2       0.000    -43.718  -29.474    0.267
+ QXS           H051   H    H         0.000    -43.199  -30.213   -0.347
+ QXS           H052   H    H         0.000    -43.448  -28.470   -0.067
+ QXS           C04    C    CH2       0.000    -45.229  -29.668    0.133
+ QXS           H041   H    H         0.000    -45.535  -29.408   -0.883
+ QXS           H042   H    H         0.000    -45.738  -29.014    0.844
+ QXS           C03    C    CH2       0.000    -45.599  -31.123    0.421
+ QXS           H032   H    H         0.000    -45.472  -31.709   -0.491
+ QXS           H031   H    H         0.000    -46.643  -31.168    0.739
+ QXS           N08    N    NH1       0.000    -45.339  -29.829    3.034
+ QXS           HN08   H    H         0.000    -46.059  -29.464    2.427
+ QXS           C09    C    CR6       0.000    -45.403  -29.605    4.456
+ QXS           N17    N    NRD6      0.000    -44.302  -29.675    5.192
+ QXS           C16    C    CR16      0.000    -44.369  -29.480    6.498
+ QXS           H16    H    H         0.000    -43.467  -29.541    7.095
+ QXS           C10    C    CR56      0.000    -46.654  -29.318    5.059
+ QXS           C11    C    CR15      0.000    -47.973  -29.168    4.616
+ QXS           H11    H    H         0.000    -48.317  -29.259    3.593
+ QXS           C12    C    CR15      0.000    -48.761  -28.882    5.722
+ QXS           H12    H    H         0.000    -49.830  -28.710    5.716
+ QXS           N13    N    NRD5      0.000    -47.965  -28.857    6.797
+ QXS           C14    C    CR56      0.000    -46.677  -29.122    6.405
+ QXS           N15    N    NRD6      0.000    -45.514  -29.214    7.079
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QXS      O01    n/a    C02    START
+ QXS      HO01   O01    .      .
+ QXS      C02    O01    C07    .
+ QXS      H02    C02    .      .
+ QXS      C07    C02    N08    .
+ QXS      H07    C07    .      .
+ QXS      C06    C07    C05    .
+ QXS      H061   C06    .      .
+ QXS      H062   C06    .      .
+ QXS      C05    C06    C04    .
+ QXS      H051   C05    .      .
+ QXS      H052   C05    .      .
+ QXS      C04    C05    C03    .
+ QXS      H041   C04    .      .
+ QXS      H042   C04    .      .
+ QXS      C03    C04    H031   .
+ QXS      H032   C03    .      .
+ QXS      H031   C03    .      .
+ QXS      N08    C07    C09    .
+ QXS      HN08   N08    .      .
+ QXS      C09    N08    C10    .
+ QXS      N17    C09    C16    .
+ QXS      C16    N17    H16    .
+ QXS      H16    C16    .      .
+ QXS      C10    C09    C11    .
+ QXS      C11    C10    C12    .
+ QXS      H11    C11    .      .
+ QXS      C12    C11    N13    .
+ QXS      H12    C12    .      .
+ QXS      N13    C12    C14    .
+ QXS      C14    N13    N15    .
+ QXS      N15    C14    .      END
+ QXS      C16    N15    .    ADD
+ QXS      C14    C10    .    ADD
+ QXS      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QXS      C16    N15       aromatic    1.337    0.020
+ QXS      C16    N17       aromatic    1.337    0.020
+ QXS      C14    C10       aromatic    1.390    0.020
+ QXS      C14    N13       aromatic    1.350    0.020
+ QXS      N15    C14       deloc       1.355    0.020
+ QXS      C12    C11       aromatic    1.380    0.020
+ QXS      N13    C12       aromatic    1.350    0.020
+ QXS      C11    C10       aromatic    1.440    0.020
+ QXS      C10    C09       aromatic    1.390    0.020
+ QXS      C02    C03       single      1.524    0.020
+ QXS      C07    C02       single      1.524    0.020
+ QXS      C02    O01       single      1.432    0.020
+ QXS      C03    C04       single      1.524    0.020
+ QXS      C04    C05       single      1.524    0.020
+ QXS      C05    C06       single      1.524    0.020
+ QXS      C06    C07       single      1.524    0.020
+ QXS      N08    C07       single      1.450    0.020
+ QXS      C09    N08       single      1.350    0.020
+ QXS      N17    C09       deloc       1.350    0.020
+ QXS      H16    C16       single      1.083    0.020
+ QXS      H12    C12       single      1.083    0.020
+ QXS      H11    C11       single      1.083    0.020
+ QXS      H02    C02       single      1.099    0.020
+ QXS      H031   C03       single      1.092    0.020
+ QXS      H032   C03       single      1.092    0.020
+ QXS      H041   C04       single      1.092    0.020
+ QXS      H042   C04       single      1.092    0.020
+ QXS      H051   C05       single      1.092    0.020
+ QXS      H052   C05       single      1.092    0.020
+ QXS      H061   C06       single      1.092    0.020
+ QXS      H062   C06       single      1.092    0.020
+ QXS      H07    C07       single      1.099    0.020
+ QXS      HN08   N08       single      1.010    0.020
+ QXS      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QXS      HO01   O01    C02     109.470    3.000
+ QXS      O01    C02    H02     109.470    3.000
+ QXS      O01    C02    C07     109.470    3.000
+ QXS      O01    C02    C03     109.470    3.000
+ QXS      H02    C02    C07     108.340    3.000
+ QXS      H02    C02    C03     108.340    3.000
+ QXS      C07    C02    C03     111.000    3.000
+ QXS      C02    C07    H07     108.340    3.000
+ QXS      C02    C07    C06     111.000    3.000
+ QXS      C02    C07    N08     110.000    3.000
+ QXS      H07    C07    C06     108.340    3.000
+ QXS      H07    C07    N08     108.550    3.000
+ QXS      C06    C07    N08     110.000    3.000
+ QXS      C07    C06    H061    109.470    3.000
+ QXS      C07    C06    H062    109.470    3.000
+ QXS      C07    C06    C05     111.000    3.000
+ QXS      H061   C06    H062    107.900    3.000
+ QXS      H061   C06    C05     109.470    3.000
+ QXS      H062   C06    C05     109.470    3.000
+ QXS      C06    C05    H051    109.470    3.000
+ QXS      C06    C05    H052    109.470    3.000
+ QXS      C06    C05    C04     111.000    3.000
+ QXS      H051   C05    H052    107.900    3.000
+ QXS      H051   C05    C04     109.470    3.000
+ QXS      H052   C05    C04     109.470    3.000
+ QXS      C05    C04    H041    109.470    3.000
+ QXS      C05    C04    H042    109.470    3.000
+ QXS      C05    C04    C03     111.000    3.000
+ QXS      H041   C04    H042    107.900    3.000
+ QXS      H041   C04    C03     109.470    3.000
+ QXS      H042   C04    C03     109.470    3.000
+ QXS      C04    C03    H032    109.470    3.000
+ QXS      C04    C03    H031    109.470    3.000
+ QXS      C04    C03    C02     111.000    3.000
+ QXS      H032   C03    H031    107.900    3.000
+ QXS      H032   C03    C02     109.470    3.000
+ QXS      H031   C03    C02     109.470    3.000
+ QXS      C07    N08    HN08    118.500    3.000
+ QXS      C07    N08    C09     120.000    3.000
+ QXS      HN08   N08    C09     120.000    3.000
+ QXS      N08    C09    N17     120.000    3.000
+ QXS      N08    C09    C10     120.000    3.000
+ QXS      N17    C09    C10     120.000    3.000
+ QXS      C09    N17    C16     120.000    3.000
+ QXS      N17    C16    H16     120.000    3.000
+ QXS      N17    C16    N15     120.000    3.000
+ QXS      H16    C16    N15     120.000    3.000
+ QXS      C09    C10    C11     132.000    3.000
+ QXS      C09    C10    C14     120.000    3.000
+ QXS      C11    C10    C14     120.000    3.000
+ QXS      C10    C11    H11     108.000    3.000
+ QXS      C10    C11    C12     108.000    3.000
+ QXS      H11    C11    C12     126.000    3.000
+ QXS      C11    C12    H12     126.000    3.000
+ QXS      C11    C12    N13     108.000    3.000
+ QXS      H12    C12    N13     126.000    3.000
+ QXS      C12    N13    C14     108.000    3.000
+ QXS      N13    C14    N15     120.000    3.000
+ QXS      N13    C14    C10     108.000    3.000
+ QXS      N15    C14    C10     120.000    3.000
+ QXS      C14    N15    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QXS      var_1            HO01   O01    C02    C07              180.000           20.000   3
+ QXS      var_2            O01    C02    C03    C04              180.000           20.000   3
+ QXS      var_3            O01    C02    C07    N08              180.000           20.000   3
+ QXS      var_4            C02    C07    C06    C05              180.000           20.000   3
+ QXS      var_5            C07    C06    C05    C04              180.000           20.000   3
+ QXS      var_6            C06    C05    C04    C03              180.000           20.000   3
+ QXS      var_7            C05    C04    C03    C02              180.000           20.000   3
+ QXS      var_8            C02    C07    N08    C09                0.000           20.000   3
+ QXS      var_9            C07    N08    C09    C10             -157.384           20.000   3
+ QXS      CONST_1          N08    C09    N17    C16                0.000            0.000   0
+ QXS      CONST_2          C09    N17    C16    N15                0.000            0.000   0
+ QXS      CONST_3          N17    C16    N15    C14                0.000            0.000   0
+ QXS      CONST_4          N08    C09    C10    C11              180.000            0.000   0
+ QXS      CONST_5          C09    C10    C11    C12             -179.895            0.000   0
+ QXS      CONST_6          C10    C11    C12    N13               -0.020            0.000   0
+ QXS      CONST_7          C11    C12    N13    C14                0.000            0.000   0
+ QXS      CONST_8          C12    N13    C14    N15              180.000            0.000   0
+ QXS      CONST_9          N13    C14    C10    C09              180.000            0.000   0
+ QXS      CONST_10         N13    C14    N15    C16              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QXS      chir_01          C02    C03    C07    O01       negativ
+ QXS      chir_02          C07    C02    C06    N08       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QXS      plan-1            C16       0.020
+ QXS      plan-1            N15       0.020
+ QXS      plan-1            N17       0.020
+ QXS      plan-1            H16       0.020
+ QXS      plan-1            C09       0.020
+ QXS      plan-1            C10       0.020
+ QXS      plan-1            N08       0.020
+ QXS      plan-1            C14       0.020
+ QXS      plan-1            C12       0.020
+ QXS      plan-1            C11       0.020
+ QXS      plan-1            N13       0.020
+ QXS      plan-1            H12       0.020
+ QXS      plan-1            H11       0.020
+ QXS      plan-1            HN08      0.020
+ QXS      plan-2            N08       0.020
+ QXS      plan-2            C07       0.020
+ QXS      plan-2            C09       0.020
+ QXS      plan-2            HN08      0.020
+#
+data_comp_QY0
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QY0           O01    O    OH1       0.000    -44.393  -32.122    2.787
+ QY0           HO01   H    H         0.000    -44.082  -33.028    2.667
+ QY0           C02    C    CH1       0.000    -45.266  -31.791    1.735
+ QY0           H02    H    H         0.000    -46.131  -32.469    1.756
+ QY0           C07    C    CH1       0.000    -45.748  -30.350    1.945
+ QY0           H07    H    H         0.000    -46.832  -30.334    2.124
+ QY0           C06    C    CH2       0.000    -45.400  -29.495    0.723
+ QY0           H061   H    H         0.000    -45.685  -28.465    0.948
+ QY0           H062   H    H         0.000    -45.995  -29.860   -0.117
+ QY0           C05    C    CH2       0.000    -43.907  -29.548    0.357
+ QY0           H051   H    H         0.000    -43.360  -28.954    1.092
+ QY0           H052   H    H         0.000    -43.788  -29.100   -0.632
+ QY0           C04    C    CH2       0.000    -43.357  -30.976    0.342
+ QY0           H041   H    H         0.000    -42.702  -31.123    1.203
+ QY0           H042   H    H         0.000    -42.790  -31.138   -0.577
+ QY0           C03    C    CH2       0.000    -44.517  -31.968    0.408
+ QY0           H032   H    H         0.000    -44.129  -32.986    0.341
+ QY0           H031   H    H         0.000    -45.200  -31.785   -0.424
+ QY0           N08    N    NH1       0.000    -45.045  -29.656    3.027
+ QY0           HN08   H    H         0.000    -44.208  -29.171    2.737
+ QY0           C09    C    CR6       0.000    -45.343  -29.545    4.443
+ QY0           N17    N    NRD6      0.000    -44.291  -29.623    5.246
+ QY0           C16    C    CR16      0.000    -44.403  -29.510    6.556
+ QY0           H16    H    H         0.000    -43.518  -29.601    7.173
+ QY0           N15    N    NRD6      0.000    -45.566  -29.289    7.128
+ QY0           C14    C    CR56      0.000    -46.691  -29.172    6.381
+ QY0           C10    C    CR56      0.000    -46.621  -29.283    5.014
+ QY0           N13    N    NRD5      0.000    -47.994  -28.944    6.741
+ QY0           C12    C    CR15      0.000    -48.755  -28.908    5.642
+ QY0           H12    H    H         0.000    -49.825  -28.746    5.614
+ QY0           C11    C    CR15      0.000    -47.932  -29.115    4.543
+ QY0           H11    H    H         0.000    -48.246  -29.142    3.507
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QY0      O01    n/a    C02    START
+ QY0      HO01   O01    .      .
+ QY0      C02    O01    C07    .
+ QY0      H02    C02    .      .
+ QY0      C07    C02    N08    .
+ QY0      H07    C07    .      .
+ QY0      C06    C07    C05    .
+ QY0      H061   C06    .      .
+ QY0      H062   C06    .      .
+ QY0      C05    C06    C04    .
+ QY0      H051   C05    .      .
+ QY0      H052   C05    .      .
+ QY0      C04    C05    C03    .
+ QY0      H041   C04    .      .
+ QY0      H042   C04    .      .
+ QY0      C03    C04    H031   .
+ QY0      H032   C03    .      .
+ QY0      H031   C03    .      .
+ QY0      N08    C07    C09    .
+ QY0      HN08   N08    .      .
+ QY0      C09    N08    N17    .
+ QY0      N17    C09    C16    .
+ QY0      C16    N17    N15    .
+ QY0      H16    C16    .      .
+ QY0      N15    C16    C14    .
+ QY0      C14    N15    N13    .
+ QY0      C10    C14    .      .
+ QY0      N13    C14    C12    .
+ QY0      C12    N13    C11    .
+ QY0      H12    C12    .      .
+ QY0      C11    C12    H11    .
+ QY0      H11    C11    .      END
+ QY0      C02    C03    .    ADD
+ QY0      C09    C10    .    ADD
+ QY0      C10    C11    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QY0      C02    C03       single      1.524    0.020
+ QY0      C07    C02       single      1.524    0.020
+ QY0      C02    O01       single      1.432    0.020
+ QY0      C03    C04       single      1.524    0.020
+ QY0      C04    C05       single      1.524    0.020
+ QY0      C05    C06       single      1.524    0.020
+ QY0      C06    C07       single      1.524    0.020
+ QY0      N08    C07       single      1.450    0.020
+ QY0      C09    C10       aromatic    1.390    0.020
+ QY0      C09    N08       single      1.350    0.020
+ QY0      N17    C09       aromatic    1.350    0.020
+ QY0      C10    C11       aromatic    1.440    0.020
+ QY0      C10    C14       aromatic    1.390    0.020
+ QY0      C11    C12       aromatic    1.380    0.020
+ QY0      C12    N13       aromatic    1.350    0.020
+ QY0      N13    C14       aromatic    1.350    0.020
+ QY0      C14    N15       aromatic    1.355    0.020
+ QY0      N15    C16       aromatic    1.337    0.020
+ QY0      C16    N17       deloc       1.337    0.020
+ QY0      H02    C02       single      1.099    0.020
+ QY0      H031   C03       single      1.092    0.020
+ QY0      H032   C03       single      1.092    0.020
+ QY0      H041   C04       single      1.092    0.020
+ QY0      H042   C04       single      1.092    0.020
+ QY0      H051   C05       single      1.092    0.020
+ QY0      H052   C05       single      1.092    0.020
+ QY0      H061   C06       single      1.092    0.020
+ QY0      H062   C06       single      1.092    0.020
+ QY0      H07    C07       single      1.099    0.020
+ QY0      H11    C11       single      1.083    0.020
+ QY0      H12    C12       single      1.083    0.020
+ QY0      H16    C16       single      1.083    0.020
+ QY0      HN08   N08       single      1.010    0.020
+ QY0      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QY0      HO01   O01    C02     109.470    3.000
+ QY0      O01    C02    H02     109.470    3.000
+ QY0      O01    C02    C07     109.470    3.000
+ QY0      O01    C02    C03     109.470    3.000
+ QY0      H02    C02    C07     108.340    3.000
+ QY0      H02    C02    C03     108.340    3.000
+ QY0      C07    C02    C03     111.000    3.000
+ QY0      C02    C07    H07     108.340    3.000
+ QY0      C02    C07    C06     111.000    3.000
+ QY0      C02    C07    N08     110.000    3.000
+ QY0      H07    C07    C06     108.340    3.000
+ QY0      H07    C07    N08     108.550    3.000
+ QY0      C06    C07    N08     110.000    3.000
+ QY0      C07    C06    H061    109.470    3.000
+ QY0      C07    C06    H062    109.470    3.000
+ QY0      C07    C06    C05     111.000    3.000
+ QY0      H061   C06    H062    107.900    3.000
+ QY0      H061   C06    C05     109.470    3.000
+ QY0      H062   C06    C05     109.470    3.000
+ QY0      C06    C05    H051    109.470    3.000
+ QY0      C06    C05    H052    109.470    3.000
+ QY0      C06    C05    C04     111.000    3.000
+ QY0      H051   C05    H052    107.900    3.000
+ QY0      H051   C05    C04     109.470    3.000
+ QY0      H052   C05    C04     109.470    3.000
+ QY0      C05    C04    H041    109.470    3.000
+ QY0      C05    C04    H042    109.470    3.000
+ QY0      C05    C04    C03     111.000    3.000
+ QY0      H041   C04    H042    107.900    3.000
+ QY0      H041   C04    C03     109.470    3.000
+ QY0      H042   C04    C03     109.470    3.000
+ QY0      C04    C03    H032    109.470    3.000
+ QY0      C04    C03    H031    109.470    3.000
+ QY0      C04    C03    C02     111.000    3.000
+ QY0      H032   C03    H031    107.900    3.000
+ QY0      H032   C03    C02     109.470    3.000
+ QY0      H031   C03    C02     109.470    3.000
+ QY0      C07    N08    HN08    118.500    3.000
+ QY0      C07    N08    C09     120.000    3.000
+ QY0      HN08   N08    C09     120.000    3.000
+ QY0      N08    C09    N17     120.000    3.000
+ QY0      N08    C09    C10     120.000    3.000
+ QY0      N17    C09    C10     120.000    3.000
+ QY0      C09    N17    C16     120.000    3.000
+ QY0      N17    C16    H16     120.000    3.000
+ QY0      N17    C16    N15     120.000    3.000
+ QY0      H16    C16    N15     120.000    3.000
+ QY0      C16    N15    C14     120.000    3.000
+ QY0      N15    C14    C10     120.000    3.000
+ QY0      N15    C14    N13     120.000    3.000
+ QY0      C10    C14    N13     108.000    3.000
+ QY0      C14    C10    C09     120.000    3.000
+ QY0      C14    C10    C11     120.000    3.000
+ QY0      C09    C10    C11     132.000    3.000
+ QY0      C14    N13    C12     108.000    3.000
+ QY0      N13    C12    H12     126.000    3.000
+ QY0      N13    C12    C11     108.000    3.000
+ QY0      H12    C12    C11     126.000    3.000
+ QY0      C12    C11    H11     126.000    3.000
+ QY0      C12    C11    C10     108.000    3.000
+ QY0      H11    C11    C10     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QY0      var_1            HO01   O01    C02    C07              180.000           20.000   3
+ QY0      var_2            O01    C02    C03    C04              180.000           20.000   3
+ QY0      var_3            O01    C02    C07    N08              180.000           20.000   3
+ QY0      var_4            C02    C07    C06    C05              180.000           20.000   3
+ QY0      var_5            C07    C06    C05    C04              180.000           20.000   3
+ QY0      var_6            C06    C05    C04    C03              180.000           20.000   3
+ QY0      var_7            C05    C04    C03    C02              180.000           20.000   3
+ QY0      var_8            C02    C07    N08    C09                0.000           20.000   3
+ QY0      var_9            C07    N08    C09    N17              139.870           20.000   3
+ QY0      CONST_1          N08    C09    C10    C14              180.000            0.000   0
+ QY0      CONST_2          N08    C09    N17    C16                0.000            0.000   0
+ QY0      CONST_3          C09    N17    C16    N15                0.000            0.000   0
+ QY0      CONST_4          N17    C16    N15    C14                0.000            0.000   0
+ QY0      CONST_5          C16    N15    C14    N13              180.000            0.000   0
+ QY0      CONST_6          N15    C14    C10    C09              180.000            0.000   0
+ QY0      CONST_7          C14    C10    C11    C12               -0.028            0.000   0
+ QY0      CONST_8          N15    C14    N13    C12              180.000            0.000   0
+ QY0      CONST_9          C14    N13    C12    C11                0.000            0.000   0
+ QY0      CONST_10         N13    C12    C11    C10                0.063            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QY0      chir_01          C02    C03    C07    O01       positiv
+ QY0      chir_02          C07    C02    C06    N08       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QY0      plan-1            C09       0.020
+ QY0      plan-1            C10       0.020
+ QY0      plan-1            N08       0.020
+ QY0      plan-1            N17       0.020
+ QY0      plan-1            C16       0.020
+ QY0      plan-1            N15       0.020
+ QY0      plan-1            C11       0.020
+ QY0      plan-1            C14       0.020
+ QY0      plan-1            C12       0.020
+ QY0      plan-1            N13       0.020
+ QY0      plan-1            H11       0.020
+ QY0      plan-1            H12       0.020
+ QY0      plan-1            HN08      0.020
+ QY0      plan-1            H16       0.020
+ QY0      plan-2            N08       0.020
+ QY0      plan-2            C07       0.020
+ QY0      plan-2            C09       0.020
+ QY0      plan-2            HN08      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

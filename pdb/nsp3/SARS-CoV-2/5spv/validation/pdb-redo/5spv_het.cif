@@ -1,0 +1,247 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S7O      S7O '.                                   ' .                  28  18 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S7O
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S7O           O18    O    OC        0.000    -43.994  -33.385    2.525
+ S7O           C16    C    C         0.000    -44.125  -32.163    2.791
+ S7O           O17    O    OC       -1.000    -43.429  -31.628    3.698
+ S7O           C15    C    CH2       0.000    -45.106  -31.302    1.999
+ S7O           H151   H    H         0.000    -46.041  -31.149    2.541
+ S7O           H152   H    H         0.000    -45.322  -31.730    1.018
+ S7O           N02    N    N         0.000    -44.430  -30.038    1.836
+ S7O           C01    C    CH3       0.000    -43.273  -30.004    0.950
+ S7O           H013   H    H         0.000    -42.534  -30.673    1.308
+ S7O           H012   H    H         0.000    -43.566  -30.292   -0.026
+ S7O           H011   H    H         0.000    -42.877  -29.022    0.923
+ S7O           C03    C    C         0.000    -44.881  -28.868    2.566
+ S7O           O14    O    O         0.000    -44.324  -27.829    2.436
+ S7O           C04    C    CR6       0.000    -46.087  -28.938    3.497
+ S7O           C05    C    CR16      0.000    -45.917  -29.050    4.864
+ S7O           H05    H    H         0.000    -44.928  -29.099    5.302
+ S7O           C06    C    CR16      0.000    -47.052  -29.098    5.654
+ S7O           H06    H    H         0.000    -46.967  -29.186    6.730
+ S7O           C07    C    CR56      0.000    -48.321  -29.031    5.043
+ S7O           N08    N    NR15      0.000    -49.631  -29.080    5.865
+ S7O           HN08   H    H         0.000    -49.794  -29.157    6.889
+ S7O           N09    N    NR15      0.000    -50.601  -28.981    4.706
+ S7O           HN09   H    H         0.000    -51.640  -28.976    4.745
+ S7O           N11    N    NR56      0.000    -48.445  -28.930    3.772
+ S7O           C10    C    CR16      0.000    -47.364  -28.882    2.977
+ S7O           H10    H    H         0.000    -47.497  -28.798    1.906
+ S7O           C12    C    CR5       0.000    -49.784  -28.897    3.565
+ S7O           O13    O    O         0.000    -50.253  -28.806    2.480
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S7O      O18    n/a    C16    START
+ S7O      C16    O18    C15    .
+ S7O      O17    C16    .      .
+ S7O      C15    C16    N02    .
+ S7O      H151   C15    .      .
+ S7O      H152   C15    .      .
+ S7O      N02    C15    C03    .
+ S7O      C01    N02    H011   .
+ S7O      H013   C01    .      .
+ S7O      H012   C01    .      .
+ S7O      H011   C01    .      .
+ S7O      C03    N02    C04    .
+ S7O      O14    C03    .      .
+ S7O      C04    C03    C05    .
+ S7O      C05    C04    C06    .
+ S7O      H05    C05    .      .
+ S7O      C06    C05    C07    .
+ S7O      H06    C06    .      .
+ S7O      C07    C06    N11    .
+ S7O      N08    C07    N09    .
+ S7O      HN08   N08    .      .
+ S7O      N09    N08    HN09   .
+ S7O      HN09   N09    .      .
+ S7O      N11    C07    C12    .
+ S7O      C10    N11    H10    .
+ S7O      H10    C10    .      .
+ S7O      C12    N11    O13    .
+ S7O      O13    C12    .      END
+ S7O      C12    N09    .    ADD
+ S7O      C10    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S7O      C15    C16       single      1.510    0.020
+ S7O      O17    C16       deloc       1.250    0.020
+ S7O      C16    O18       deloc       1.250    0.020
+ S7O      N02    C15       single      1.455    0.020
+ S7O      C12    N09       single      1.340    0.020
+ S7O      C12    N11       single      1.337    0.020
+ S7O      O13    C12       double      1.350    0.020
+ S7O      C10    C04       aromatic    1.390    0.020
+ S7O      C10    N11       single      1.337    0.020
+ S7O      C01    N02       single      1.455    0.020
+ S7O      C04    C03       single      1.500    0.020
+ S7O      C03    N02       single      1.330    0.020
+ S7O      O14    C03       double      1.220    0.020
+ S7O      C05    C04       aromatic    1.390    0.020
+ S7O      C06    C05       aromatic    1.390    0.020
+ S7O      C07    C06       aromatic    1.390    0.020
+ S7O      N08    C07       single      1.340    0.020
+ S7O      N11    C07       single      1.337    0.020
+ S7O      N09    N08       single      1.304    0.020
+ S7O      H151   C15       single      1.092    0.020
+ S7O      H152   C15       single      1.092    0.020
+ S7O      H10    C10       single      1.083    0.020
+ S7O      H011   C01       single      1.059    0.020
+ S7O      H012   C01       single      1.059    0.020
+ S7O      H013   C01       single      1.059    0.020
+ S7O      H05    C05       single      1.083    0.020
+ S7O      H06    C06       single      1.083    0.020
+ S7O      HN08   N08       single      1.040    0.020
+ S7O      HN09   N09       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S7O      O18    C16    O17     123.000    3.000
+ S7O      O18    C16    C15     118.500    3.000
+ S7O      O17    C16    C15     118.500    3.000
+ S7O      C16    C15    H151    109.470    3.000
+ S7O      C16    C15    H152    109.470    3.000
+ S7O      C16    C15    N02     109.500    3.000
+ S7O      H151   C15    H152    107.900    3.000
+ S7O      H151   C15    N02     109.470    3.000
+ S7O      H152   C15    N02     109.470    3.000
+ S7O      C15    N02    C01     120.000    3.000
+ S7O      C15    N02    C03     127.000    3.000
+ S7O      C01    N02    C03     127.000    3.000
+ S7O      N02    C01    H013    109.470    3.000
+ S7O      N02    C01    H012    109.470    3.000
+ S7O      N02    C01    H011    109.470    3.000
+ S7O      H013   C01    H012    109.470    3.000
+ S7O      H013   C01    H011    109.470    3.000
+ S7O      H012   C01    H011    109.470    3.000
+ S7O      N02    C03    O14     123.000    3.000
+ S7O      N02    C03    C04     120.000    3.000
+ S7O      O14    C03    C04     120.500    3.000
+ S7O      C03    C04    C05     120.000    3.000
+ S7O      C03    C04    C10     120.000    3.000
+ S7O      C05    C04    C10     120.000    3.000
+ S7O      C04    C05    H05     120.000    3.000
+ S7O      C04    C05    C06     120.000    3.000
+ S7O      H05    C05    C06     120.000    3.000
+ S7O      C05    C06    H06     120.000    3.000
+ S7O      C05    C06    C07     120.000    3.000
+ S7O      H06    C06    C07     120.000    3.000
+ S7O      C06    C07    N08     132.000    3.000
+ S7O      C06    C07    N11     120.000    3.000
+ S7O      N08    C07    N11     108.000    3.000
+ S7O      C07    N08    HN08    126.000    3.000
+ S7O      C07    N08    N09     108.000    3.000
+ S7O      HN08   N08    N09     108.000    3.000
+ S7O      N08    N09    HN09    108.000    3.000
+ S7O      N08    N09    C12     108.000    3.000
+ S7O      HN09   N09    C12     126.000    3.000
+ S7O      C07    N11    C10     120.000    3.000
+ S7O      C07    N11    C12     108.000    3.000
+ S7O      C10    N11    C12     132.000    3.000
+ S7O      N11    C10    H10     120.000    3.000
+ S7O      N11    C10    C04     120.000    3.000
+ S7O      H10    C10    C04     120.000    3.000
+ S7O      N11    C12    O13     108.000    3.000
+ S7O      N11    C12    N09     108.000    3.000
+ S7O      O13    C12    N09     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S7O      var_1            O18    C16    C15    N02              180.000           20.000   3
+ S7O      var_2            C16    C15    N02    C03             -108.602           20.000   3
+ S7O      var_3            C15    N02    C01    H011             180.000           20.000   3
+ S7O      var_4            C15    N02    C03    C04              180.000           20.000   2
+ S7O      var_5            N02    C03    C04    C05              100.229           20.000   3
+ S7O      CONST_1          C03    C04    C05    C06                0.000            0.000   0
+ S7O      CONST_2          C04    C05    C06    C07                0.000            0.000   0
+ S7O      CONST_3          C05    C06    C07    N11              180.000            0.000   0
+ S7O      CONST_4          C06    C07    N08    N09              180.000            0.000   0
+ S7O      CONST_5          C07    N08    N09    C12               -0.227            0.000   0
+ S7O      CONST_6          C06    C07    N11    C12              179.844            0.000   0
+ S7O      CONST_7          C07    N11    C10    C04               -0.069            0.000   0
+ S7O      CONST_8          N11    C10    C04    C03                0.000            0.000   0
+ S7O      CONST_9          C07    N11    C12    O13              179.972            0.000   0
+ S7O      CONST_10         N11    C12    N09    N08                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S7O      plan-1            C16       0.020
+ S7O      plan-1            C15       0.020
+ S7O      plan-1            O17       0.020
+ S7O      plan-1            O18       0.020
+ S7O      plan-2            C12       0.020
+ S7O      plan-2            N09       0.020
+ S7O      plan-2            N11       0.020
+ S7O      plan-2            O13       0.020
+ S7O      plan-2            N08       0.020
+ S7O      plan-2            C07       0.020
+ S7O      plan-2            HN08      0.020
+ S7O      plan-2            HN09      0.020
+ S7O      plan-2            C10       0.020
+ S7O      plan-2            C04       0.020
+ S7O      plan-2            C05       0.020
+ S7O      plan-2            C06       0.020
+ S7O      plan-2            H10       0.020
+ S7O      plan-2            C03       0.020
+ S7O      plan-2            H05       0.020
+ S7O      plan-2            H06       0.020
+ S7O      plan-3            C03       0.020
+ S7O      plan-3            C04       0.020
+ S7O      plan-3            N02       0.020
+ S7O      plan-3            O14       0.020
+ S7O      plan-4            N02       0.020
+ S7O      plan-4            C15       0.020
+ S7O      plan-4            C01       0.020
+ S7O      plan-4            C03       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

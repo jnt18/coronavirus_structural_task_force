@@ -1,0 +1,342 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RDN      RDN '.                                   ' .                  40  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RDN
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RDN           O1     O    OC        0.000    -42.804  -31.602    3.715
+ RDN           C1     C    C         0.000    -43.565  -31.691    2.726
+ RDN           O2     O    OC       -1.000    -43.641  -32.782    2.096
+ RDN           C2     C    CH1       0.000    -44.413  -30.501    2.267
+ RDN           H2     H    H         0.000    -44.339  -30.394    1.176
+ RDN           C15    C    CT        0.000    -44.128  -29.162    2.933
+ RDN           C16    C    CH2       0.000    -42.794  -28.440    2.617
+ RDN           H161   H    H         0.000    -42.791  -27.349    2.564
+ RDN           H162   H    H         0.000    -42.157  -28.843    1.827
+ RDN           C17    C    CH2       0.000    -42.269  -28.882    3.965
+ RDN           H172   H    H         0.000    -41.737  -28.160    4.588
+ RDN           H171   H    H         0.000    -41.788  -29.859    4.051
+ RDN           C18    C    CH2       0.000    -43.699  -28.983    4.421
+ RDN           H182   H    H         0.000    -43.807  -29.831    5.101
+ RDN           H181   H    H         0.000    -43.983  -28.065    4.939
+ RDN           C3     C    CH2       0.000    -45.864  -30.665    2.665
+ RDN           H31    H    H         0.000    -45.969  -30.816    3.741
+ RDN           H32    H    H         0.000    -46.333  -31.497    2.135
+ RDN           N1     N    N         0.000    -46.508  -29.422    2.284
+ RDN           C14    C    CH2       0.000    -45.443  -28.460    2.549
+ RDN           H142   H    H         0.000    -45.762  -27.810    3.366
+ RDN           H141   H    H         0.000    -45.288  -27.862    1.649
+ RDN           C4     C    CR6       0.000    -47.951  -29.169    2.408
+ RDN           N4     N    NRD6      0.000    -48.531  -29.087    1.247
+ RDN           C13    C    CR16      0.000    -49.814  -28.902    1.167
+ RDN           H13    H    H         0.000    -50.225  -28.853    0.166
+ RDN           C5     C    CR56      0.000    -48.718  -29.055    3.599
+ RDN           C6     C    CR56      0.000    -48.594  -29.063    5.063
+ RDN           C11    C    CR16      0.000    -47.551  -29.214    6.026
+ RDN           H11    H    H         0.000    -46.531  -29.363    5.695
+ RDN           C7     C    CR56      0.000    -49.924  -28.869    5.548
+ RDN           N2     N    NRD5      0.000    -50.722  -28.752    4.516
+ RDN           C12    C    CR56      0.000    -50.111  -28.847    3.380
+ RDN           N3     N    NRD6      0.000    -50.686  -28.765    2.162
+ RDN           C8     C    CR16      0.000    -50.176  -28.826    6.919
+ RDN           H8     H    H         0.000    -51.191  -28.676    7.266
+ RDN           C9     C    CR16      0.000    -49.153  -28.972    7.851
+ RDN           H9     H    H         0.000    -49.371  -28.933    8.911
+ RDN           C10    C    CR16      0.000    -47.841  -29.170    7.408
+ RDN           H10    H    H         0.000    -47.042  -29.290    8.129
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RDN      O1     n/a    C1     START
+ RDN      C1     O1     C2     .
+ RDN      O2     C1     .      .
+ RDN      C2     C1     C3     .
+ RDN      H2     C2     .      .
+ RDN      C15    C2     C18    .
+ RDN      C16    C15    C17    .
+ RDN      H161   C16    .      .
+ RDN      H162   C16    .      .
+ RDN      C17    C16    H171   .
+ RDN      H172   C17    .      .
+ RDN      H171   C17    .      .
+ RDN      C18    C15    H181   .
+ RDN      H182   C18    .      .
+ RDN      H181   C18    .      .
+ RDN      C3     C2     N1     .
+ RDN      H31    C3     .      .
+ RDN      H32    C3     .      .
+ RDN      N1     C3     C4     .
+ RDN      C14    N1     H141   .
+ RDN      H142   C14    .      .
+ RDN      H141   C14    .      .
+ RDN      C4     N1     C5     .
+ RDN      N4     C4     C13    .
+ RDN      C13    N4     H13    .
+ RDN      H13    C13    .      .
+ RDN      C5     C4     C6     .
+ RDN      C6     C5     C7     .
+ RDN      C11    C6     H11    .
+ RDN      H11    C11    .      .
+ RDN      C7     C6     C8     .
+ RDN      N2     C7     C12    .
+ RDN      C12    N2     N3     .
+ RDN      N3     C12    .      .
+ RDN      C8     C7     C9     .
+ RDN      H8     C8     .      .
+ RDN      C9     C8     C10    .
+ RDN      H9     C9     .      .
+ RDN      C10    C9     H10    .
+ RDN      H10    C10    .      END
+ RDN      C18    C17    .    ADD
+ RDN      C15    C14    .    ADD
+ RDN      C13    N3     .    ADD
+ RDN      C12    C5     .    ADD
+ RDN      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RDN      C18    C17       single      1.524    0.020
+ RDN      C18    C15       single      1.524    0.020
+ RDN      C14    N1        single      1.455    0.020
+ RDN      C4     N1        single      1.400    0.020
+ RDN      N1     C3        single      1.455    0.020
+ RDN      C17    C16       single      1.524    0.020
+ RDN      C16    C15       single      1.524    0.020
+ RDN      C15    C14       single      1.524    0.020
+ RDN      C15    C2        single      1.524    0.020
+ RDN      C13    N3        aromat      1.337    0.020
+ RDN      C13    N4        aromatic    1.337    0.020
+ RDN      O2     C1        deloc       1.250    0.020
+ RDN      C12    C5        aromatic    1.390    0.020
+ RDN      C12    N2        aromatic    1.350    0.020
+ RDN      N3     C12       deloc       1.355    0.020
+ RDN      C11    C10       aromatic    1.390    0.020
+ RDN      C11    C6        aromatic    1.390    0.020
+ RDN      C10    C9        aromatic    1.390    0.020
+ RDN      C9     C8        aromatic    1.390    0.020
+ RDN      C8     C7        aromatic    1.390    0.020
+ RDN      C7     C6        aromatic    1.390    0.020
+ RDN      N2     C7        aromatic    1.350    0.020
+ RDN      C6     C5        single      1.490    0.020
+ RDN      C5     C4        aromatic    1.390    0.020
+ RDN      N4     C4        deloc       1.350    0.020
+ RDN      C3     C2        single      1.524    0.020
+ RDN      C2     C1        single      1.500    0.020
+ RDN      C1     O1        deloc       1.250    0.020
+ RDN      H181   C18       single      1.092    0.020
+ RDN      H182   C18       single      1.092    0.020
+ RDN      H161   C16       single      1.092    0.020
+ RDN      H162   C16       single      1.092    0.020
+ RDN      H171   C17       single      1.092    0.020
+ RDN      H172   C17       single      1.092    0.020
+ RDN      H141   C14       single      1.092    0.020
+ RDN      H142   C14       single      1.092    0.020
+ RDN      H13    C13       single      1.083    0.020
+ RDN      H11    C11       single      1.083    0.020
+ RDN      H10    C10       single      1.083    0.020
+ RDN      H9     C9        single      1.083    0.020
+ RDN      H8     C8        single      1.083    0.020
+ RDN      H31    C3        single      1.092    0.020
+ RDN      H32    C3        single      1.092    0.020
+ RDN      H2     C2        single      1.099    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RDN      O1     C1     O2      123.000    3.000
+ RDN      O1     C1     C2      118.500    3.000
+ RDN      O2     C1     C2      118.500    3.000
+ RDN      C1     C2     H2      108.810    3.000
+ RDN      C1     C2     C15     109.470    3.000
+ RDN      C1     C2     C3      109.470    3.000
+ RDN      H2     C2     C15     108.340    3.000
+ RDN      H2     C2     C3      108.340    3.000
+ RDN      C15    C2     C3      111.000    3.000
+ RDN      C2     C15    C16     111.000    3.000
+ RDN      C2     C15    C18     111.000    3.000
+ RDN      C2     C15    C14     111.000    3.000
+ RDN      C16    C15    C18     111.000    3.000
+ RDN      C16    C15    C14     111.000    3.000
+ RDN      C18    C15    C14     111.000    3.000
+ RDN      C15    C16    H161    109.470    3.000
+ RDN      C15    C16    H162    109.470    3.000
+ RDN      C15    C16    C17     111.000    3.000
+ RDN      H161   C16    H162    107.900    3.000
+ RDN      H161   C16    C17     109.470    3.000
+ RDN      H162   C16    C17     109.470    3.000
+ RDN      C16    C17    H172    109.470    3.000
+ RDN      C16    C17    H171    109.470    3.000
+ RDN      C16    C17    C18     111.000    3.000
+ RDN      H172   C17    H171    107.900    3.000
+ RDN      H172   C17    C18     109.470    3.000
+ RDN      H171   C17    C18     109.470    3.000
+ RDN      C15    C18    H182    109.470    3.000
+ RDN      C15    C18    H181    109.470    3.000
+ RDN      C15    C18    C17     111.000    3.000
+ RDN      H182   C18    H181    107.900    3.000
+ RDN      H182   C18    C17     109.470    3.000
+ RDN      H181   C18    C17     109.470    3.000
+ RDN      C2     C3     H31     109.470    3.000
+ RDN      C2     C3     H32     109.470    3.000
+ RDN      C2     C3     N1      105.000    3.000
+ RDN      H31    C3     H32     107.900    3.000
+ RDN      H31    C3     N1      109.470    3.000
+ RDN      H32    C3     N1      109.470    3.000
+ RDN      C3     N1     C14     120.000    3.000
+ RDN      C3     N1     C4      120.000    3.000
+ RDN      C14    N1     C4      120.000    3.000
+ RDN      N1     C14    H142    109.470    3.000
+ RDN      N1     C14    H141    109.470    3.000
+ RDN      N1     C14    C15     109.500    3.000
+ RDN      H142   C14    H141    107.900    3.000
+ RDN      H142   C14    C15     109.470    3.000
+ RDN      H141   C14    C15     109.470    3.000
+ RDN      N1     C4     N4      120.000    3.000
+ RDN      N1     C4     C5      120.000    3.000
+ RDN      N4     C4     C5      120.000    3.000
+ RDN      C4     N4     C13     120.000    3.000
+ RDN      N4     C13    H13     120.000    3.000
+ RDN      N4     C13    N3      120.000    3.000
+ RDN      H13    C13    N3      120.000    3.000
+ RDN      C4     C5     C6      120.000    3.000
+ RDN      C4     C5     C12     120.000    3.000
+ RDN      C6     C5     C12     120.000    3.000
+ RDN      C5     C6     C11     120.000    3.000
+ RDN      C5     C6     C7      120.000    3.000
+ RDN      C11    C6     C7      120.000    3.000
+ RDN      C6     C11    H11     120.000    3.000
+ RDN      C6     C11    C10     120.000    3.000
+ RDN      H11    C11    C10     120.000    3.000
+ RDN      C6     C7     N2      108.000    3.000
+ RDN      C6     C7     C8      120.000    3.000
+ RDN      N2     C7     C8      132.000    3.000
+ RDN      C7     N2     C12     108.000    3.000
+ RDN      N2     C12    N3      120.000    3.000
+ RDN      N2     C12    C5      108.000    3.000
+ RDN      N3     C12    C5      120.000    3.000
+ RDN      C12    N3     C13     120.000    3.000
+ RDN      C7     C8     H8      120.000    3.000
+ RDN      C7     C8     C9      120.000    3.000
+ RDN      H8     C8     C9      120.000    3.000
+ RDN      C8     C9     H9      120.000    3.000
+ RDN      C8     C9     C10     120.000    3.000
+ RDN      H9     C9     C10     120.000    3.000
+ RDN      C9     C10    H10     120.000    3.000
+ RDN      C9     C10    C11     120.000    3.000
+ RDN      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RDN      var_1            O1     C1     C2     C3               180.000           20.000   3
+ RDN      var_2            C1     C2     C15    C18              -34.528           20.000   3
+ RDN      var_3            C2     C15    C14    N1                23.624           20.000   3
+ RDN      var_4            C2     C15    C16    C17             -103.668           20.000   3
+ RDN      var_5            C15    C16    C17    C18              180.000           20.000   3
+ RDN      var_6            C2     C15    C18    C17               98.105           20.000   3
+ RDN      var_7            C15    C18    C17    C16              180.000           20.000   3
+ RDN      var_8            C1     C2     C3     N1               180.000           20.000   3
+ RDN      var_9            C2     C3     N1     C4               175.946           20.000   3
+ RDN      var_10           C3     N1     C14    C15                6.448           20.000   3
+ RDN      var_11           C3     N1     C4     C5                66.903           20.000   3
+ RDN      CONST_1          N1     C4     N4     C13                0.000            0.000   0
+ RDN      CONST_2          C4     N4     C13    N3                 0.000            0.000   0
+ RDN      CONST_3          N4     C13    N3     C12                0.000            0.000   0
+ RDN      CONST_4          N1     C4     C5     C6               180.000            0.000   0
+ RDN      CONST_5          C4     C5     C6     C7               180.000            0.000   0
+ RDN      CONST_6          C5     C6     C11    C10              180.000            0.000   0
+ RDN      CONST_7          C6     C11    C10    C9                 0.000            0.000   0
+ RDN      CONST_8          C5     C6     C7     C8               180.000            0.000   0
+ RDN      CONST_9          C6     C7     N2     C12              180.000            0.000   0
+ RDN      CONST_10         C7     N2     C12    N3               180.000            0.000   0
+ RDN      CONST_11         N2     C12    C5     C4               180.000            0.000   0
+ RDN      CONST_12         N2     C12    N3     C13              180.000            0.000   0
+ RDN      CONST_13         C6     C7     C8     C9               180.000            0.000   0
+ RDN      CONST_14         C7     C8     C9     C10                0.000            0.000   0
+ RDN      CONST_15         C8     C9     C10    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RDN      chir_01          C15    C18    C16    C14       positiv
+ RDN      chir_02          C2     C15    C3     C1        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RDN      plan-1            N1        0.020
+ RDN      plan-1            C14       0.020
+ RDN      plan-1            C4        0.020
+ RDN      plan-1            C3        0.020
+ RDN      plan-2            C13       0.020
+ RDN      plan-2            N3        0.020
+ RDN      plan-2            N4        0.020
+ RDN      plan-2            H13       0.020
+ RDN      plan-2            C4        0.020
+ RDN      plan-2            N1        0.020
+ RDN      plan-2            C5        0.020
+ RDN      plan-2            C12       0.020
+ RDN      plan-2            C7        0.020
+ RDN      plan-2            C6        0.020
+ RDN      plan-2            N2        0.020
+ RDN      plan-2            C11       0.020
+ RDN      plan-2            C10       0.020
+ RDN      plan-2            C9        0.020
+ RDN      plan-2            C8        0.020
+ RDN      plan-2            H11       0.020
+ RDN      plan-2            H10       0.020
+ RDN      plan-2            H9        0.020
+ RDN      plan-2            H8        0.020
+ RDN      plan-3            C1        0.020
+ RDN      plan-3            O2        0.020
+ RDN      plan-3            C2        0.020
+ RDN      plan-3            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,300 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RKI      RKI '.                                   ' .                  34  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RKI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RKI           O13    O    O         0.000    -42.233  -35.196   -4.441
+ RKI           C12    C    C         0.000    -42.716  -36.096   -3.840
+ RKI           C14    C    CR6       0.000    -41.951  -37.382   -3.610
+ RKI           N15    N    NRD6      0.000    -42.429  -38.307   -2.790
+ RKI           C22    C    CR6       0.000    -40.752  -37.584   -4.263
+ RKI           S21    S    ST        0.000    -39.834  -36.666   -5.357
+ RKI           HS21   H    H         0.000    -39.236  -36.140   -4.415
+ RKI           C19    C    C         0.000    -38.839  -38.853   -4.770
+ RKI           C20    C    CSP       0.000    -38.552  -37.744   -5.571
+ RKI           C18    C    CR6       0.000    -40.071  -38.773   -4.029
+ RKI           N17    N    NRD6      0.000    -40.602  -39.666   -3.194
+ RKI           C16    C    CR16      0.000    -41.750  -39.426   -2.596
+ RKI           H16    H    H         0.000    -42.153  -40.171   -1.921
+ RKI           N11    N    NH1       0.000    -44.048  -36.008   -3.298
+ RKI           HN11   H    H         0.000    -44.439  -36.785   -2.784
+ RKI           C10    C    CH2       0.000    -44.817  -34.811   -3.492
+ RKI           H101   H    H         0.000    -45.743  -35.071   -4.009
+ RKI           H102   H    H         0.000    -44.238  -34.120   -4.109
+ RKI           C09    C    CR6       0.000    -45.144  -34.154   -2.167
+ RKI           C08    C    CR16      0.000    -46.375  -34.415   -1.614
+ RKI           H08    H    H         0.000    -47.069  -35.078   -2.116
+ RKI           C07    C    CR16      0.000    -46.719  -33.828   -0.419
+ RKI           H07    H    H         0.000    -47.688  -34.026    0.022
+ RKI           C06    C    CR16      0.000    -45.829  -32.985    0.220
+ RKI           H06    H    H         0.000    -46.107  -32.527    1.161
+ RKI           C23    C    CR16      0.000    -44.242  -33.314   -1.535
+ RKI           H23    H    H         0.000    -43.273  -33.122   -1.980
+ RKI           C05    C    CR6       0.000    -44.586  -32.720   -0.330
+ RKI           C04    C    CH2       0.000    -43.635  -31.778    0.413
+ RKI           H041   H    H         0.000    -44.115  -30.803    0.519
+ RKI           H042   H    H         0.000    -42.719  -31.669   -0.171
+ RKI           C02    C    C         0.000    -43.297  -32.335    1.797
+ RKI           O01    O    OC       -1.000    -42.892  -31.598    2.740
+ RKI           O03    O    OC        0.000    -43.447  -33.566    1.991
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RKI      O13    n/a    C12    START
+ RKI      C12    O13    N11    .
+ RKI      C14    C12    C22    .
+ RKI      N15    C14    .      .
+ RKI      C22    C14    C18    .
+ RKI      S21    C22    C20    .
+ RKI      HS21   S21    .      .
+ RKI      C19    S21    .      .
+ RKI      C20    S21    .      .
+ RKI      C18    C22    N17    .
+ RKI      N17    C18    C16    .
+ RKI      C16    N17    H16    .
+ RKI      H16    C16    .      .
+ RKI      N11    C12    C10    .
+ RKI      HN11   N11    .      .
+ RKI      C10    N11    C09    .
+ RKI      H101   C10    .      .
+ RKI      H102   C10    .      .
+ RKI      C09    C10    C23    .
+ RKI      C08    C09    C07    .
+ RKI      H08    C08    .      .
+ RKI      C07    C08    C06    .
+ RKI      H07    C07    .      .
+ RKI      C06    C07    H06    .
+ RKI      H06    C06    .      .
+ RKI      C23    C09    C05    .
+ RKI      H23    C23    .      .
+ RKI      C05    C23    C04    .
+ RKI      C04    C05    C02    .
+ RKI      H041   C04    .      .
+ RKI      H042   C04    .      .
+ RKI      C02    C04    O03    .
+ RKI      O01    C02    .      .
+ RKI      O03    C02    .      END
+ RKI      C18    C19    .    ADD
+ RKI      C16    N15    .    ADD
+ RKI      C20    C19    .    ADD
+ RKI      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RKI      C18    C19       aromatic    1.500    0.020
+ RKI      C18    C22       aromatic    1.384    0.020
+ RKI      N17    C18       aromatic    1.350    0.020
+ RKI      C16    N15       aromatic    1.337    0.020
+ RKI      C16    N17       aromatic    1.337    0.020
+ RKI      C14    C12       single      1.500    0.020
+ RKI      C22    C14       aromatic    1.384    0.020
+ RKI      N15    C14       deloc       1.350    0.020
+ RKI      N11    C12       single      1.330    0.020
+ RKI      C12    O13       double      1.220    0.020
+ RKI      C09    C10       single      1.511    0.020
+ RKI      C10    N11       single      1.450    0.020
+ RKI      C20    C19       aromatic    1.255    0.020
+ RKI      C20    S21       double      1.490    0.020
+ RKI      C19    S21       single      1.565    0.020
+ RKI      C02    C04       single      1.510    0.020
+ RKI      O01    C02       deloc       1.250    0.020
+ RKI      O03    C02       deloc       1.250    0.020
+ RKI      C04    C05       single      1.511    0.020
+ RKI      C05    C06       aromatic    1.390    0.020
+ RKI      C05    C23       aromatic    1.390    0.020
+ RKI      C06    C07       aromatic    1.390    0.020
+ RKI      C07    C08       aromatic    1.390    0.020
+ RKI      C08    C09       aromatic    1.390    0.020
+ RKI      C23    C09       aromatic    1.390    0.020
+ RKI      S21    C22       double      1.595    0.020
+ RKI      H16    C16       single      1.083    0.020
+ RKI      H101   C10       single      1.092    0.020
+ RKI      H102   C10       single      1.092    0.020
+ RKI      H041   C04       single      1.092    0.020
+ RKI      H042   C04       single      1.092    0.020
+ RKI      H06    C06       single      1.083    0.020
+ RKI      H07    C07       single      1.083    0.020
+ RKI      H08    C08       single      1.083    0.020
+ RKI      H23    C23       single      1.083    0.020
+ RKI      HN11   N11       single      1.010    0.020
+ RKI      HS21   S21       single      1.234    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RKI      O13    C12    C14     120.500    3.000
+ RKI      O13    C12    N11     123.000    3.000
+ RKI      C14    C12    N11     120.000    3.000
+ RKI      C12    C14    N15     120.000    3.000
+ RKI      C12    C14    C22     120.000    3.000
+ RKI      N15    C14    C22     120.000    3.000
+ RKI      C14    N15    C16     120.000    3.000
+ RKI      C14    C22    S21     120.000    3.000
+ RKI      C14    C22    C18     120.000    3.000
+ RKI      S21    C22    C18     120.000    3.000
+ RKI      C22    S21    HS21    109.500    3.000
+ RKI      C22    S21    C19     109.500    3.000
+ RKI      C22    S21    C20     109.500    3.000
+ RKI      HS21   S21    C19     109.500    3.000
+ RKI      HS21   S21    C20     109.500    3.000
+ RKI      C19    S21    C20      48.434    3.000
+ RKI      S21    C19    C18     120.000    3.000
+ RKI      S21    C19    C20      62.659    3.000
+ RKI      C18    C19    C20     120.000    3.000
+ RKI      S21    C20    C19      68.907    3.000
+ RKI      C22    C18    N17     120.000    3.000
+ RKI      C22    C18    C19     120.000    3.000
+ RKI      N17    C18    C19     120.000    3.000
+ RKI      C18    N17    C16     120.000    3.000
+ RKI      N17    C16    H16     120.000    3.000
+ RKI      N17    C16    N15     120.000    3.000
+ RKI      H16    C16    N15     120.000    3.000
+ RKI      C12    N11    HN11    120.000    3.000
+ RKI      C12    N11    C10     121.500    3.000
+ RKI      HN11   N11    C10     118.500    3.000
+ RKI      N11    C10    H101    109.470    3.000
+ RKI      N11    C10    H102    109.470    3.000
+ RKI      N11    C10    C09     109.500    3.000
+ RKI      H101   C10    H102    107.900    3.000
+ RKI      H101   C10    C09     109.470    3.000
+ RKI      H102   C10    C09     109.470    3.000
+ RKI      C10    C09    C08     120.000    3.000
+ RKI      C10    C09    C23     120.000    3.000
+ RKI      C08    C09    C23     120.000    3.000
+ RKI      C09    C08    H08     120.000    3.000
+ RKI      C09    C08    C07     120.000    3.000
+ RKI      H08    C08    C07     120.000    3.000
+ RKI      C08    C07    H07     120.000    3.000
+ RKI      C08    C07    C06     120.000    3.000
+ RKI      H07    C07    C06     120.000    3.000
+ RKI      C07    C06    H06     120.000    3.000
+ RKI      C07    C06    C05     120.000    3.000
+ RKI      H06    C06    C05     120.000    3.000
+ RKI      C09    C23    H23     120.000    3.000
+ RKI      C09    C23    C05     120.000    3.000
+ RKI      H23    C23    C05     120.000    3.000
+ RKI      C23    C05    C04     120.000    3.000
+ RKI      C23    C05    C06     120.000    3.000
+ RKI      C04    C05    C06     120.000    3.000
+ RKI      C05    C04    H041    109.470    3.000
+ RKI      C05    C04    H042    109.470    3.000
+ RKI      C05    C04    C02     109.470    3.000
+ RKI      H041   C04    H042    107.900    3.000
+ RKI      H041   C04    C02     109.470    3.000
+ RKI      H042   C04    C02     109.470    3.000
+ RKI      C04    C02    O01     118.500    3.000
+ RKI      C04    C02    O03     118.500    3.000
+ RKI      O01    C02    O03     123.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RKI      var_1            O13    C12    C14    C22               -9.096           20.000   3
+ RKI      CONST_1          C12    C14    N15    C16                0.000            0.000   0
+ RKI      CONST_2          C12    C14    C22    C18                0.000            0.000   0
+ RKI      CONST_3          C14    C22    S21    C20              179.821            0.000   0
+ RKI      CONST_4          C22    S21    C19    C18               -0.117            0.000   0
+ RKI      CONST_5          C22    S21    C20    C19               -0.044            0.000   0
+ RKI      CONST_6          C14    C22    C18    N17                0.000            0.000   0
+ RKI      CONST_7          C22    C18    C19    S21                0.143            0.000   0
+ RKI      CONST_8          C22    C18    N17    C16                0.000            0.000   0
+ RKI      CONST_9          C18    N17    C16    N15                0.000            0.000   0
+ RKI      CONST_10         N17    C16    N15    C14                0.000            0.000   0
+ RKI      var_2            O13    C12    N11    C10              180.000           20.000   2
+ RKI      var_3            C12    N11    C10    C09                0.000           20.000   3
+ RKI      var_4            N11    C10    C09    C23                0.000           20.000   2
+ RKI      CONST_11         C10    C09    C08    C07                0.000            0.000   0
+ RKI      CONST_12         C09    C08    C07    C06                0.000            0.000   0
+ RKI      CONST_13         C08    C07    C06    C05                0.000            0.000   0
+ RKI      CONST_14         C10    C09    C23    C05                0.000            0.000   0
+ RKI      CONST_15         C09    C23    C05    C04                0.000            0.000   0
+ RKI      CONST_16         C23    C05    C06    C07                0.000            0.000   0
+ RKI      var_5            C23    C05    C04    C02                0.000           20.000   2
+ RKI      var_6            C05    C04    C02    O03              180.000           20.000   3
+ RKI      CONST_1          C18    C19    C20    S21               -0.079            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RKI      plan-1            C18       0.020
+ RKI      plan-1            C19       0.020
+ RKI      plan-1            C22       0.020
+ RKI      plan-1            N17       0.020
+ RKI      plan-1            C16       0.020
+ RKI      plan-1            C14       0.020
+ RKI      plan-1            N15       0.020
+ RKI      plan-1            H16       0.020
+ RKI      plan-1            C12       0.020
+ RKI      plan-1            S21       0.020
+ RKI      plan-1            C20       0.020
+ RKI      plan-2            C12       0.020
+ RKI      plan-2            C14       0.020
+ RKI      plan-2            N11       0.020
+ RKI      plan-2            O13       0.020
+ RKI      plan-2            HN11      0.020
+ RKI      plan-3            C02       0.020
+ RKI      plan-3            C04       0.020
+ RKI      plan-3            O01       0.020
+ RKI      plan-3            O03       0.020
+ RKI      plan-4            C05       0.020
+ RKI      plan-4            C04       0.020
+ RKI      plan-4            C06       0.020
+ RKI      plan-4            C23       0.020
+ RKI      plan-4            C07       0.020
+ RKI      plan-4            C08       0.020
+ RKI      plan-4            C09       0.020
+ RKI      plan-4            H06       0.020
+ RKI      plan-4            H07       0.020
+ RKI      plan-4            H08       0.020
+ RKI      plan-4            C10       0.020
+ RKI      plan-4            H23       0.020
+ RKI      plan-5            N11       0.020
+ RKI      plan-5            C12       0.020
+ RKI      plan-5            C10       0.020
+ RKI      plan-5            HN11      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,264 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RYQ      RYQ '.                                   ' .                  29  18 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RYQ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RYQ           N14    N    NH2       0.000    -43.716  -29.826    6.716
+ RYQ           H141   H    H         0.000    -42.783  -29.939    6.313
+ RYQ           H142   H    H         0.000    -43.802  -29.866    7.734
+ RYQ           C13    C    CR6       0.000    -44.851  -29.621    5.891
+ RYQ           N15    N    NRD6      0.000    -44.653  -29.583    4.602
+ RYQ           C16    C    CR56      0.000    -45.765  -29.418    3.833
+ RYQ           N06    N    NR5       0.000    -45.917  -29.350    2.503
+ RYQ           C07    C    CR15      0.000    -47.235  -29.175    2.239
+ RYQ           H07    H    H         0.000    -47.668  -29.086    1.250
+ RYQ           N08    N    NRD5      0.000    -47.917  -29.129    3.385
+ RYQ           C09    C    CR56      0.000    -47.016  -29.280    4.382
+ RYQ           C10    C    CR6       0.000    -47.110  -29.331    5.784
+ RYQ           N12    N    NRD6      0.000    -46.018  -29.510    6.482
+ RYQ           N11    N    NH2       0.000    -48.354  -29.183    6.478
+ RYQ           H112   H    H         0.000    -49.233  -29.033    5.973
+ RYQ           H111   H    H         0.000    -48.403  -29.223    7.501
+ RYQ           C05    C    CH2       0.000    -44.844  -29.512    1.552
+ RYQ           H051   H    H         0.000    -45.194  -30.214    0.792
+ RYQ           H052   H    H         0.000    -44.002  -29.951    2.092
+ RYQ           C04    C    CR5       0.000    -44.408  -28.239    0.895
+ RYQ           N03    N    NRD5      0.000    -45.297  -27.522    0.032
+ RYQ           C02    C    CR5       0.000    -44.651  -26.409   -0.460
+ RYQ           C01    C    CH3       0.000    -45.377  -25.515   -1.440
+ RYQ           H013   H    H         0.000    -45.638  -26.073   -2.302
+ RYQ           H012   H    H         0.000    -46.256  -25.133   -0.988
+ RYQ           H011   H    H         0.000    -44.747  -24.710   -1.719
+ RYQ           S18    S    S2        0.000    -43.081  -26.246    0.086
+ RYQ           C17    C    CR15      0.000    -43.148  -27.611    0.967
+ RYQ           H17    H    H         0.000    -42.317  -27.995    1.545
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RYQ      N14    n/a    C13    START
+ RYQ      H141   N14    .      .
+ RYQ      H142   N14    .      .
+ RYQ      C13    N14    N15    .
+ RYQ      N15    C13    C16    .
+ RYQ      C16    N15    N06    .
+ RYQ      N06    C16    C05    .
+ RYQ      C07    N06    N08    .
+ RYQ      H07    C07    .      .
+ RYQ      N08    C07    C09    .
+ RYQ      C09    N08    C10    .
+ RYQ      C10    C09    N11    .
+ RYQ      N12    C10    .      .
+ RYQ      N11    C10    H111   .
+ RYQ      H112   N11    .      .
+ RYQ      H111   N11    .      .
+ RYQ      C05    N06    C04    .
+ RYQ      H051   C05    .      .
+ RYQ      H052   C05    .      .
+ RYQ      C04    C05    N03    .
+ RYQ      N03    C04    C02    .
+ RYQ      C02    N03    S18    .
+ RYQ      C01    C02    H011   .
+ RYQ      H013   C01    .      .
+ RYQ      H012   C01    .      .
+ RYQ      H011   C01    .      .
+ RYQ      S18    C02    C17    .
+ RYQ      C17    S18    H17    .
+ RYQ      H17    C17    .      END
+ RYQ      C16    C09    .    ADD
+ RYQ      C17    C04    .    ADD
+ RYQ      C13    N12    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RYQ      C16    C09       aromatic    1.390    0.020
+ RYQ      N06    C16       single      1.337    0.020
+ RYQ      C16    N15       aromatic    1.355    0.020
+ RYQ      C17    C04       aromatic    1.387    0.020
+ RYQ      C17    S18       single      1.745    0.020
+ RYQ      C13    N12       aromatic    1.350    0.020
+ RYQ      C13    N14       single      1.355    0.020
+ RYQ      N15    C13       aromatic    1.350    0.020
+ RYQ      C10    C09       aromatic    1.390    0.020
+ RYQ      N11    C10       single      1.355    0.020
+ RYQ      N12    C10       aromatic    1.350    0.020
+ RYQ      C01    C02       single      1.506    0.020
+ RYQ      C02    N03       aromatic    1.350    0.020
+ RYQ      S18    C02       single      1.745    0.020
+ RYQ      C04    C05       single      1.510    0.020
+ RYQ      N03    C04       single      1.350    0.020
+ RYQ      C05    N06       single      1.462    0.020
+ RYQ      C07    N06       single      1.337    0.020
+ RYQ      N08    C07       aromatic    1.350    0.020
+ RYQ      C09    N08       deloc       1.350    0.020
+ RYQ      H17    C17       single      1.083    0.020
+ RYQ      H011   C01       single      1.059    0.020
+ RYQ      H012   C01       single      1.059    0.020
+ RYQ      H013   C01       single      1.059    0.020
+ RYQ      H051   C05       single      1.092    0.020
+ RYQ      H052   C05       single      1.092    0.020
+ RYQ      H07    C07       single      1.083    0.020
+ RYQ      H111   N11       single      1.010    0.020
+ RYQ      H112   N11       single      1.010    0.020
+ RYQ      H141   N14       single      1.010    0.020
+ RYQ      H142   N14       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RYQ      H141   N14    H142    120.000    3.000
+ RYQ      H141   N14    C13     120.000    3.000
+ RYQ      H142   N14    C13     120.000    3.000
+ RYQ      N14    C13    N15     120.000    3.000
+ RYQ      N14    C13    N12     120.000    3.000
+ RYQ      N15    C13    N12     120.000    3.000
+ RYQ      C13    N15    C16     120.000    3.000
+ RYQ      N15    C16    N06     132.000    3.000
+ RYQ      N15    C16    C09     120.000    3.000
+ RYQ      N06    C16    C09     108.000    3.000
+ RYQ      C16    N06    C07     108.000    3.000
+ RYQ      C16    N06    C05     126.000    3.000
+ RYQ      C07    N06    C05     126.000    3.000
+ RYQ      N06    C07    H07     126.000    3.000
+ RYQ      N06    C07    N08     108.000    3.000
+ RYQ      H07    C07    N08     126.000    3.000
+ RYQ      C07    N08    C09     108.000    3.000
+ RYQ      N08    C09    C10     132.000    3.000
+ RYQ      N08    C09    C16     108.000    3.000
+ RYQ      C10    C09    C16     120.000    3.000
+ RYQ      C09    C10    N12     120.000    3.000
+ RYQ      C09    C10    N11     120.000    3.000
+ RYQ      N12    C10    N11     120.000    3.000
+ RYQ      C10    N12    C13     120.000    3.000
+ RYQ      C10    N11    H112    120.000    3.000
+ RYQ      C10    N11    H111    120.000    3.000
+ RYQ      H112   N11    H111    120.000    3.000
+ RYQ      N06    C05    H051    109.500    3.000
+ RYQ      N06    C05    H052    109.500    3.000
+ RYQ      N06    C05    C04     109.500    3.000
+ RYQ      H051   C05    H052    107.900    3.000
+ RYQ      H051   C05    C04     109.470    3.000
+ RYQ      H052   C05    C04     109.470    3.000
+ RYQ      C05    C04    N03     126.000    3.000
+ RYQ      C05    C04    C17     126.000    3.000
+ RYQ      N03    C04    C17     108.000    3.000
+ RYQ      C04    N03    C02     108.000    3.000
+ RYQ      N03    C02    C01     126.000    3.000
+ RYQ      N03    C02    S18     108.000    3.000
+ RYQ      C01    C02    S18     108.000    3.000
+ RYQ      C02    C01    H013    109.470    3.000
+ RYQ      C02    C01    H012    109.470    3.000
+ RYQ      C02    C01    H011    109.470    3.000
+ RYQ      H013   C01    H012    109.470    3.000
+ RYQ      H013   C01    H011    109.470    3.000
+ RYQ      H012   C01    H011    109.470    3.000
+ RYQ      C02    S18    C17      93.237    3.000
+ RYQ      S18    C17    H17     108.000    3.000
+ RYQ      S18    C17    C04     108.000    3.000
+ RYQ      H17    C17    C04     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RYQ      CONST_1          H142   N14    C13    N15              180.000            0.000   0
+ RYQ      CONST_2          N14    C13    N12    C10                0.000            0.000   0
+ RYQ      CONST_3          N14    C13    N15    C16                0.000            0.000   0
+ RYQ      CONST_4          C13    N15    C16    N06              180.000            0.000   0
+ RYQ      CONST_5          N15    C16    C09    N08              180.000            0.000   0
+ RYQ      CONST_6          N15    C16    N06    C05              180.000            0.000   0
+ RYQ      CONST_7          C16    N06    C07    N08              180.000            0.000   0
+ RYQ      CONST_8          N06    C07    N08    C09                0.000            0.000   0
+ RYQ      CONST_9          C07    N08    C09    C10              180.000            0.000   0
+ RYQ      CONST_10         N08    C09    C10    N11              180.000            0.000   0
+ RYQ      CONST_11         C09    C10    N12    C13                0.000            0.000   0
+ RYQ      CONST_12         C09    C10    N11    H111             180.000            0.000   0
+ RYQ      var_1            C16    N06    C05    C04             -106.516           20.000   3
+ RYQ      var_2            N06    C05    C04    N03                0.000           20.000   2
+ RYQ      CONST_13         C05    C04    N03    C02                0.000            0.000   0
+ RYQ      CONST_14         C04    N03    C02    S18                0.000            0.000   0
+ RYQ      var_3            N03    C02    C01    H011             180.000           20.000   3
+ RYQ      CONST_15         N03    C02    S18    C17                0.722            0.000   0
+ RYQ      CONST_16         C02    S18    C17    C04               -1.215            0.000   0
+ RYQ      CONST_17         S18    C17    C04    C05                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RYQ      plan-1            C16       0.020
+ RYQ      plan-1            C09       0.020
+ RYQ      plan-1            N06       0.020
+ RYQ      plan-1            N15       0.020
+ RYQ      plan-1            C07       0.020
+ RYQ      plan-1            N08       0.020
+ RYQ      plan-1            H07       0.020
+ RYQ      plan-1            C10       0.020
+ RYQ      plan-1            C05       0.020
+ RYQ      plan-1            C13       0.020
+ RYQ      plan-1            N12       0.020
+ RYQ      plan-1            N14       0.020
+ RYQ      plan-1            N11       0.020
+ RYQ      plan-1            H141      0.020
+ RYQ      plan-1            H142      0.020
+ RYQ      plan-1            H112      0.020
+ RYQ      plan-1            H111      0.020
+ RYQ      plan-2            C17       0.020
+ RYQ      plan-2            C04       0.020
+ RYQ      plan-2            S18       0.020
+ RYQ      plan-2            H17       0.020
+ RYQ      plan-2            C02       0.020
+ RYQ      plan-2            N03       0.020
+ RYQ      plan-2            C01       0.020
+ RYQ      plan-2            C05       0.020
+ RYQ      plan-3            N11       0.020
+ RYQ      plan-3            C10       0.020
+ RYQ      plan-3            H111      0.020
+ RYQ      plan-3            H112      0.020
+ RYQ      plan-4            N14       0.020
+ RYQ      plan-4            C13       0.020
+ RYQ      plan-4            H141      0.020
+ RYQ      plan-4            H142      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,249 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QJO      QJO '.                                   ' .                  28  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QJO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QJO           O18    O    OS       -0.500    -46.052  -28.858    0.642
+ QJO           S06    S    ST        0.000    -45.171  -28.625    1.741
+ QJO           O07    O    OS       -0.500    -44.629  -27.314    1.774
+ QJO           N08    N    NT        0.000    -44.050  -29.748    1.903
+ QJO           C09    C    CH2       0.000    -42.742  -29.664    1.280
+ QJO           H091   H    H         0.000    -42.055  -29.167    1.968
+ QJO           H092   H    H         0.000    -42.825  -29.076    0.363
+ QJO           C10    C    CT        0.000    -42.203  -31.084    0.941
+ QJO           F11    F    F         0.000    -41.403  -31.576    1.869
+ QJO           F17    F    F         0.000    -41.451  -31.075   -0.162
+ QJO           C12    C    CH2       0.000    -43.555  -31.828    0.805
+ QJO           H122   H    H         0.000    -43.449  -32.898    0.994
+ QJO           H121   H    H         0.000    -44.004  -31.676   -0.179
+ QJO           C13    C    CH1       0.000    -44.431  -31.218    1.854
+ QJO           H13    H    H         0.000    -45.476  -31.296    1.523
+ QJO           C14    C    C         0.000    -44.263  -32.058    3.199
+ QJO           O16    O    OC       -1.000    -43.560  -31.459    4.096
+ QJO           O15    O    OC        0.000    -44.779  -33.157    3.286
+ QJO           C05    C    CR6       0.000    -46.179  -28.758    3.164
+ QJO           C04    C    CR16      0.000    -47.579  -28.781    3.203
+ QJO           H04    H    H         0.000    -48.088  -28.725    2.249
+ QJO           N03    N    NRD6      0.000    -48.350  -28.864    4.280
+ QJO           C02    C    CR6       0.000    -47.702  -28.945    5.503
+ QJO           N01    N    N         0.000    -48.446  -29.043    6.634
+ QJO           HN01   H    H         0.000    -48.017  -29.100    7.484
+ QJO           N20    N    NRD6      0.000    -46.328  -28.946    5.612
+ QJO           C19    C    CR16      0.000    -45.661  -28.848    4.462
+ QJO           H19    H    H         0.000    -44.581  -28.837    4.542
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QJO      O18    n/a    S06    START
+ QJO      S06    O18    C05    .
+ QJO      O07    S06    .      .
+ QJO      N08    S06    C13    .
+ QJO      C09    N08    C10    .
+ QJO      H091   C09    .      .
+ QJO      H092   C09    .      .
+ QJO      C10    C09    C12    .
+ QJO      F11    C10    .      .
+ QJO      F17    C10    .      .
+ QJO      C12    C10    H121   .
+ QJO      H122   C12    .      .
+ QJO      H121   C12    .      .
+ QJO      C13    N08    C14    .
+ QJO      H13    C13    .      .
+ QJO      C14    C13    O15    .
+ QJO      O16    C14    .      .
+ QJO      O15    C14    .      .
+ QJO      C05    S06    C04    .
+ QJO      C04    C05    N03    .
+ QJO      H04    C04    .      .
+ QJO      N03    C04    C02    .
+ QJO      C02    N03    N20    .
+ QJO      N01    C02    HN01   .
+ QJO      HN01   N01    .      .
+ QJO      N20    C02    C19    .
+ QJO      C19    N20    H19    .
+ QJO      H19    C19    .      END
+ QJO      C13    C12    .    ADD
+ QJO      C19    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QJO      C14    C13       single      1.500    0.020
+ QJO      O15    C14       deloc       1.250    0.020
+ QJO      O16    C14       deloc       1.250    0.020
+ QJO      C13    C12       single      1.524    0.020
+ QJO      C13    N08       single      1.469    0.020
+ QJO      C12    C10       single      1.524    0.020
+ QJO      C10    C09       single      1.524    0.020
+ QJO      F11    C10       single      1.320    0.020
+ QJO      F17    C10       single      1.320    0.020
+ QJO      C19    C05       aromatic    1.390    0.020
+ QJO      C19    N20       aromatic    1.337    0.020
+ QJO      N01    C02       deloc       1.355    0.020
+ QJO      C02    N03       aromatic    1.350    0.020
+ QJO      N20    C02       aromatic    1.350    0.020
+ QJO      C04    C05       aromatic    1.390    0.020
+ QJO      N03    C04       deloc       1.337    0.020
+ QJO      C05    S06       double      1.595    0.020
+ QJO      C09    N08       single      1.469    0.020
+ QJO      N08    S06       single      1.610    0.020
+ QJO      O07    S06       deloc       1.480    0.020
+ QJO      S06    O18       deloc       1.480    0.020
+ QJO      H13    C13       single      1.099    0.020
+ QJO      H121   C12       single      1.092    0.020
+ QJO      H122   C12       single      1.092    0.020
+ QJO      H19    C19       single      1.083    0.020
+ QJO      H04    C04       single      1.083    0.020
+ QJO      H091   C09       single      1.092    0.020
+ QJO      H092   C09       single      1.092    0.020
+ QJO      HN01   N01       single      0.954    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QJO      O18    S06    O07     109.500    3.000
+ QJO      O18    S06    N08     109.500    3.000
+ QJO      O18    S06    C05     109.500    3.000
+ QJO      O07    S06    N08     109.500    3.000
+ QJO      O07    S06    C05     109.500    3.000
+ QJO      N08    S06    C05     109.500    3.000
+ QJO      S06    N08    C09     109.500    3.000
+ QJO      S06    N08    C13     109.500    3.000
+ QJO      C09    N08    C13     109.470    3.000
+ QJO      N08    C09    H091    109.470    3.000
+ QJO      N08    C09    H092    109.470    3.000
+ QJO      N08    C09    C10     109.500    3.000
+ QJO      H091   C09    H092    107.900    3.000
+ QJO      H091   C09    C10     109.470    3.000
+ QJO      H092   C09    C10     109.470    3.000
+ QJO      C09    C10    F11     109.470    3.000
+ QJO      C09    C10    F17     109.470    3.000
+ QJO      C09    C10    C12     111.000    3.000
+ QJO      F11    C10    F17     109.470    3.000
+ QJO      F11    C10    C12     109.470    3.000
+ QJO      F17    C10    C12     109.470    3.000
+ QJO      C10    C12    H122    109.470    3.000
+ QJO      C10    C12    H121    109.470    3.000
+ QJO      C10    C12    C13     111.000    3.000
+ QJO      H122   C12    H121    107.900    3.000
+ QJO      H122   C12    C13     109.470    3.000
+ QJO      H121   C12    C13     109.470    3.000
+ QJO      N08    C13    H13     109.500    3.000
+ QJO      N08    C13    C14     109.500    3.000
+ QJO      N08    C13    C12     109.500    3.000
+ QJO      H13    C13    C14     108.810    3.000
+ QJO      H13    C13    C12     108.340    3.000
+ QJO      C14    C13    C12     109.470    3.000
+ QJO      C13    C14    O16     118.500    3.000
+ QJO      C13    C14    O15     118.500    3.000
+ QJO      O16    C14    O15     123.000    3.000
+ QJO      S06    C05    C04     120.000    3.000
+ QJO      S06    C05    C19     120.000    3.000
+ QJO      C04    C05    C19     120.000    3.000
+ QJO      C05    C04    H04     120.000    3.000
+ QJO      C05    C04    N03     120.000    3.000
+ QJO      H04    C04    N03     120.000    3.000
+ QJO      C04    N03    C02     120.000    3.000
+ QJO      N03    C02    N01     120.000    3.000
+ QJO      N03    C02    N20     120.000    3.000
+ QJO      N01    C02    N20     120.000    3.000
+ QJO      C02    N01    HN01    120.000    3.000
+ QJO      C02    N20    C19     120.000    3.000
+ QJO      N20    C19    H19     120.000    3.000
+ QJO      N20    C19    C05     120.000    3.000
+ QJO      H19    C19    C05     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QJO      var_1            O18    S06    N08    C13              -47.477           20.000   3
+ QJO      var_2            S06    N08    C09    C10             -148.955           20.000   3
+ QJO      var_3            N08    C09    C10    C12               25.912           20.000   3
+ QJO      var_4            C09    C10    C12    C13              -36.656           20.000   3
+ QJO      var_5            S06    N08    C13    C14             -113.081           20.000   3
+ QJO      var_6            N08    C13    C12    C10              180.000           20.000   3
+ QJO      var_7            N08    C13    C14    O15              180.000           20.000   3
+ QJO      var_8            O18    S06    C05    C04              -13.040           20.000   3
+ QJO      CONST_1          S06    C05    C04    N03                0.000            0.000   0
+ QJO      CONST_2          C05    C04    N03    C02                0.000            0.000   0
+ QJO      CONST_3          C04    N03    C02    N20                0.000            0.000   0
+ QJO      CONST_4          N03    C02    N01    HN01             180.000            0.000   0
+ QJO      CONST_5          N03    C02    N20    C19                0.000            0.000   0
+ QJO      CONST_6          C02    N20    C19    C05                0.000            0.000   0
+ QJO      CONST_7          N20    C19    C05    S06                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QJO      chir_01          C13    C14    C12    N08       positiv
+ QJO      chir_02          C10    C12    C09    F11       negativ
+ QJO      chir_03          N08    C13    C09    S06       negativ
+ QJO      chir_04          S06    C05    N08    O07       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QJO      plan-1            C14       0.020
+ QJO      plan-1            C13       0.020
+ QJO      plan-1            O15       0.020
+ QJO      plan-1            O16       0.020
+ QJO      plan-2            C19       0.020
+ QJO      plan-2            C05       0.020
+ QJO      plan-2            N20       0.020
+ QJO      plan-2            H19       0.020
+ QJO      plan-2            C02       0.020
+ QJO      plan-2            C04       0.020
+ QJO      plan-2            N03       0.020
+ QJO      plan-2            N01       0.020
+ QJO      plan-2            H04       0.020
+ QJO      plan-2            S06       0.020
+ QJO      plan-2            HN01      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

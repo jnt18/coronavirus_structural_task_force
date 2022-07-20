@@ -1,0 +1,172 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+9FF      9FF '.                                   ' .                  16  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_9FF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 9FF           O1     O    O         0.000    -16.152   16.922  -32.394
+ 9FF           C9     C    CSP       0.000    -17.153   17.233  -31.768
+ 9FF           C7     C    CR5       0.000    -17.810   16.439  -30.785
+ 9FF           N1     N    NRD5      0.000    -18.743   16.989  -29.939
+ 9FF           C8     C    CR15      0.000    -17.681   15.102  -30.503
+ 9FF           H8     H    H         0.000    -17.028   14.400  -31.007
+ 9FF           C1     C    CR56      0.000    -18.560   14.809  -29.430
+ 9FF           C6     C    CR56      0.000    -19.205   16.018  -29.101
+ 9FF           C5     C    CR16      0.000    -20.141   16.112  -28.082
+ 9FF           H5     H    H         0.000    -20.621   17.054  -27.847
+ 9FF           C2     C    CR16      0.000    -18.895   13.664  -28.691
+ 9FF           H2     H    H         0.000    -18.425   12.714  -28.914
+ 9FF           C3     C    CR16      0.000    -19.823   13.758  -27.683
+ 9FF           H3     H    H         0.000    -20.081   12.874  -27.113
+ 9FF           C4     C    CR16      0.000    -20.438   14.970  -27.382
+ 9FF           H4     H    H         0.000    -21.165   15.012  -26.580
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 9FF      O1     n/a    C9     START
+ 9FF      C9     O1     C7     .
+ 9FF      C7     C9     C8     .
+ 9FF      N1     C7     .      .
+ 9FF      C8     C7     C1     .
+ 9FF      H8     C8     .      .
+ 9FF      C1     C8     C2     .
+ 9FF      C6     C1     C5     .
+ 9FF      C5     C6     H5     .
+ 9FF      H5     C5     .      .
+ 9FF      C2     C1     C3     .
+ 9FF      H2     C2     .      .
+ 9FF      C3     C2     C4     .
+ 9FF      H3     C3     .      .
+ 9FF      C4     C3     H4     .
+ 9FF      H4     C4     .      END
+ 9FF      N1     C6     .    ADD
+ 9FF      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 9FF      N1     C6        aromatic    1.350    0.020
+ 9FF      N1     C7        aromatic    1.350    0.020
+ 9FF      C4     C5        aromatic    1.390    0.020
+ 9FF      C4     C3        aromatic    1.390    0.020
+ 9FF      C5     C6        aromatic    1.390    0.020
+ 9FF      C6     C1        aromatic    1.390    0.020
+ 9FF      C8     C7        aromatic    1.387    0.020
+ 9FF      C7     C9        deloc       1.335    0.020
+ 9FF      C1     C8        aromatic    1.440    0.020
+ 9FF      C2     C1        aromatic    1.390    0.020
+ 9FF      C3     C2        aromatic    1.390    0.020
+ 9FF      C9     O1        double      1.195    0.020
+ 9FF      H4     C4        single      1.083    0.020
+ 9FF      H5     C5        single      1.083    0.020
+ 9FF      H8     C8        single      1.083    0.020
+ 9FF      H2     C2        single      1.083    0.020
+ 9FF      H3     C3        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 9FF      O1     C9     C7      180.000    3.000
+ 9FF      C9     C7     N1      108.000    3.000
+ 9FF      C9     C7     C8      108.000    3.000
+ 9FF      N1     C7     C8      108.000    3.000
+ 9FF      C7     N1     C6      108.000    3.000
+ 9FF      C7     C8     H8      126.000    3.000
+ 9FF      C7     C8     C1      108.000    3.000
+ 9FF      H8     C8     C1      108.000    3.000
+ 9FF      C8     C1     C6      120.000    3.000
+ 9FF      C8     C1     C2      126.000    3.000
+ 9FF      C6     C1     C2      120.000    3.000
+ 9FF      C1     C6     C5      120.000    3.000
+ 9FF      C1     C6     N1      108.000    3.000
+ 9FF      C5     C6     N1      132.000    3.000
+ 9FF      C6     C5     H5      120.000    3.000
+ 9FF      C6     C5     C4      120.000    3.000
+ 9FF      H5     C5     C4      120.000    3.000
+ 9FF      C1     C2     H2      120.000    3.000
+ 9FF      C1     C2     C3      120.000    3.000
+ 9FF      H2     C2     C3      120.000    3.000
+ 9FF      C2     C3     H3      120.000    3.000
+ 9FF      C2     C3     C4      120.000    3.000
+ 9FF      H3     C3     C4      120.000    3.000
+ 9FF      C3     C4     H4      120.000    3.000
+ 9FF      C3     C4     C5      120.000    3.000
+ 9FF      H4     C4     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 9FF      var_1            O1     C9     C7     C8               -14.915           20.000   3
+ 9FF      CONST_1          C9     C7     N1     C6                 0.000            0.000   0
+ 9FF      CONST_2          C7     N1     C6     C1               180.000            0.000   0
+ 9FF      CONST_3          C9     C7     C8     C1                 0.000            0.000   0
+ 9FF      CONST_4          C7     C8     C1     C2              -179.966            0.000   0
+ 9FF      CONST_5          C8     C1     C6     C5               180.000            0.000   0
+ 9FF      CONST_6          C1     C6     C5     C4               180.000            0.000   0
+ 9FF      CONST_7          C8     C1     C2     C3               180.000            0.000   0
+ 9FF      CONST_8          C1     C2     C3     C4                 0.000            0.000   0
+ 9FF      CONST_9          C2     C3     C4     C5                 0.000            0.000   0
+ 9FF      CONST_10         C3     C4     C5     C6                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 9FF      plan-1            N1        0.020
+ 9FF      plan-1            C6        0.020
+ 9FF      plan-1            C7        0.020
+ 9FF      plan-1            C8        0.020
+ 9FF      plan-1            C5        0.020
+ 9FF      plan-1            C1        0.020
+ 9FF      plan-1            C9        0.020
+ 9FF      plan-1            H8        0.020
+ 9FF      plan-1            C2        0.020
+ 9FF      plan-1            C3        0.020
+ 9FF      plan-1            H2        0.020
+ 9FF      plan-1            C4        0.020
+ 9FF      plan-1            H3        0.020
+ 9FF      plan-1            H4        0.020
+ 9FF      plan-1            H5        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

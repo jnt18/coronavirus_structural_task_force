@@ -1,0 +1,307 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RL5      RL5 '.                                   ' .                  34  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RL5
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RL5           O21    O    OC       -1.000    -44.238  -29.376    1.992
+ RL5           C19    C    C         0.000    -44.366  -29.801    3.171
+ RL5           O20    O    OC        0.000    -43.443  -30.474    3.698
+ RL5           C17    C    CR5       0.000    -45.629  -29.498    3.972
+ RL5           N16    N    NRD5      0.000    -45.675  -29.241    5.266
+ RL5           C15    C    CR15      0.000    -46.926  -29.022    5.608
+ RL5           H15    H    H         0.000    -47.271  -28.789    6.608
+ RL5           N14    N    NR5       0.000    -47.690  -29.130    4.546
+ RL5           C18    C    CR15      0.000    -46.933  -29.433    3.505
+ RL5           H18    H    H         0.000    -47.266  -29.598    2.488
+ RL5           C13    C    CH2       0.000    -49.121  -28.956    4.600
+ RL5           H131   H    H         0.000    -49.570  -28.961    3.605
+ RL5           H132   H    H         0.000    -49.401  -28.037    5.119
+ RL5           C12    C    CH2       0.000    -49.620  -30.161    5.391
+ RL5           H121   H    H         0.000    -48.735  -30.692    5.749
+ RL5           H122   H    H         0.000    -50.165  -30.796    4.689
+ RL5           N11    N    NH1       0.000    -50.477  -29.834    6.515
+ RL5           HN11   H    H         0.000    -50.098  -29.791    7.450
+ RL5           C09    C    C         0.000    -51.888  -29.569    6.281
+ RL5           O10    O    O         0.000    -52.321  -29.584    5.178
+ RL5           C07    C    CR5       0.000    -52.803  -29.251    7.459
+ RL5           S08    S    ST        0.000    -54.358  -28.573    7.451
+ RL5           C06    C    CR5       0.000    -52.519  -29.481    8.812
+ RL5           N05    N    NR5       0.000    -53.500  -29.117    9.680
+ RL5           C04    C    CR5       0.000    -54.597  -28.595    9.128
+ RL5           N03    N    NH1       0.000    -55.762  -28.139    9.864
+ RL5           HN03   H    H         0.000    -56.690  -28.264    9.485
+ RL5           C02    C    CH2       0.000    -55.570  -27.500   11.155
+ RL5           H021   H    H         0.000    -55.672  -26.420   11.030
+ RL5           H022   H    H         0.000    -54.565  -27.730   11.514
+ RL5           C01    C    CH3       0.000    -56.600  -27.996   12.168
+ RL5           H013   H    H         0.000    -57.577  -27.773   11.821
+ RL5           H012   H    H         0.000    -56.503  -29.044   12.291
+ RL5           H011   H    H         0.000    -56.442  -27.518   13.101
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RL5      O21    n/a    C19    START
+ RL5      C19    O21    C17    .
+ RL5      O20    C19    .      .
+ RL5      C17    C19    N16    .
+ RL5      N16    C17    C15    .
+ RL5      C15    N16    N14    .
+ RL5      H15    C15    .      .
+ RL5      N14    C15    C13    .
+ RL5      C18    N14    H18    .
+ RL5      H18    C18    .      .
+ RL5      C13    N14    C12    .
+ RL5      H131   C13    .      .
+ RL5      H132   C13    .      .
+ RL5      C12    C13    N11    .
+ RL5      H121   C12    .      .
+ RL5      H122   C12    .      .
+ RL5      N11    C12    C09    .
+ RL5      HN11   N11    .      .
+ RL5      C09    N11    C07    .
+ RL5      O10    C09    .      .
+ RL5      C07    C09    S08    .
+ RL5      S08    C07    C04    .
+ RL5      C06    S08    .      .
+ RL5      N05    S08    .      .
+ RL5      C04    S08    N03    .
+ RL5      N03    C04    C02    .
+ RL5      HN03   N03    .      .
+ RL5      C02    N03    C01    .
+ RL5      H021   C02    .      .
+ RL5      H022   C02    .      .
+ RL5      C01    C02    H011   .
+ RL5      H013   C01    .      .
+ RL5      H012   C01    .      .
+ RL5      H011   C01    .      END
+ RL5      C18    C17    .    ADD
+ RL5      C04    N05    .    ADD
+ RL5      C06    C07    .    ADD
+ RL5      C06    N05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RL5      C18    C17       aromatic    1.387    0.020
+ RL5      C18    N14       single      1.337    0.020
+ RL5      C17    C19       single      1.490    0.020
+ RL5      N16    C17       aromatic    1.350    0.020
+ RL5      N14    C15       single      1.337    0.020
+ RL5      C15    N16       aromatic    1.350    0.020
+ RL5      C12    C13       single      1.524    0.020
+ RL5      C13    N14       single      1.462    0.020
+ RL5      N11    C12       single      1.450    0.020
+ RL5      O20    C19       deloc       1.250    0.020
+ RL5      C19    O21       deloc       1.250    0.020
+ RL5      C01    C02       single      1.513    0.020
+ RL5      C02    N03       single      1.450    0.020
+ RL5      N03    C04       single      1.350    0.020
+ RL5      C04    N05       single      1.337    0.020
+ RL5      C04    S08       double      1.645    0.020
+ RL5      C06    C07       aromatic    1.390    0.020
+ RL5      C06    N05       single      1.337    0.020
+ RL5      C06    S08       single      1.645    0.020
+ RL5      C07    C09       single      1.490    0.020
+ RL5      S08    C07       double      1.645    0.020
+ RL5      C09    N11       single      1.330    0.020
+ RL5      O10    C09       double      1.220    0.020
+ RL5      N05    S08       single      1.600    0.020
+ RL5      H18    C18       single      1.083    0.020
+ RL5      H15    C15       single      1.083    0.020
+ RL5      H131   C13       single      1.092    0.020
+ RL5      H132   C13       single      1.092    0.020
+ RL5      H121   C12       single      1.092    0.020
+ RL5      H122   C12       single      1.092    0.020
+ RL5      H011   C01       single      1.059    0.020
+ RL5      H012   C01       single      1.059    0.020
+ RL5      H013   C01       single      1.059    0.020
+ RL5      H021   C02       single      1.092    0.020
+ RL5      H022   C02       single      1.092    0.020
+ RL5      HN03   N03       single      1.010    0.020
+ RL5      HN11   N11       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RL5      O21    C19    O20     123.000    3.000
+ RL5      O21    C19    C17     120.000    3.000
+ RL5      O20    C19    C17     120.000    3.000
+ RL5      C19    C17    N16     126.000    3.000
+ RL5      C19    C17    C18     126.000    3.000
+ RL5      N16    C17    C18     108.000    3.000
+ RL5      C17    N16    C15     108.000    3.000
+ RL5      N16    C15    H15     126.000    3.000
+ RL5      N16    C15    N14     108.000    3.000
+ RL5      H15    C15    N14     126.000    3.000
+ RL5      C15    N14    C18     108.000    3.000
+ RL5      C15    N14    C13     126.000    3.000
+ RL5      C18    N14    C13     126.000    3.000
+ RL5      N14    C18    H18     126.000    3.000
+ RL5      N14    C18    C17     108.000    3.000
+ RL5      H18    C18    C17     126.000    3.000
+ RL5      N14    C13    H131    109.500    3.000
+ RL5      N14    C13    H132    109.500    3.000
+ RL5      N14    C13    C12     109.500    3.000
+ RL5      H131   C13    H132    107.900    3.000
+ RL5      H131   C13    C12     109.470    3.000
+ RL5      H132   C13    C12     109.470    3.000
+ RL5      C13    C12    H121    109.470    3.000
+ RL5      C13    C12    H122    109.470    3.000
+ RL5      C13    C12    N11     112.000    3.000
+ RL5      H121   C12    H122    107.900    3.000
+ RL5      H121   C12    N11     109.470    3.000
+ RL5      H122   C12    N11     109.470    3.000
+ RL5      C12    N11    HN11    118.500    3.000
+ RL5      C12    N11    C09     121.500    3.000
+ RL5      HN11   N11    C09     120.000    3.000
+ RL5      N11    C09    O10     123.000    3.000
+ RL5      N11    C09    C07     120.000    3.000
+ RL5      O10    C09    C07     120.500    3.000
+ RL5      C09    C07    S08     108.000    3.000
+ RL5      C09    C07    C06     117.000    3.000
+ RL5      S08    C07    C06      65.008    3.000
+ RL5      C07    S08    C06      49.984    3.000
+ RL5      C07    S08    N05     109.500    3.000
+ RL5      C07    S08    C04     109.500    3.000
+ RL5      C06    S08    N05      48.639    3.000
+ RL5      C06    S08    C04     109.500    3.000
+ RL5      N05    S08    C04      48.639    3.000
+ RL5      S08    C06    C07      65.008    3.000
+ RL5      S08    C06    N05      63.923    3.000
+ RL5      C07    C06    N05     108.000    3.000
+ RL5      S08    N05    C04      67.438    3.000
+ RL5      S08    N05    C06      67.438    3.000
+ RL5      C04    N05    C06     108.000    3.000
+ RL5      S08    C04    N03     108.000    3.000
+ RL5      S08    C04    N05      63.923    3.000
+ RL5      N03    C04    N05     108.000    3.000
+ RL5      C04    N03    HN03    120.000    3.000
+ RL5      C04    N03    C02     120.000    3.000
+ RL5      HN03   N03    C02     118.500    3.000
+ RL5      N03    C02    H021    109.470    3.000
+ RL5      N03    C02    H022    109.470    3.000
+ RL5      N03    C02    C01     112.000    3.000
+ RL5      H021   C02    H022    107.900    3.000
+ RL5      H021   C02    C01     109.470    3.000
+ RL5      H022   C02    C01     109.470    3.000
+ RL5      C02    C01    H013    109.470    3.000
+ RL5      C02    C01    H012    109.470    3.000
+ RL5      C02    C01    H011    109.470    3.000
+ RL5      H013   C01    H012    109.470    3.000
+ RL5      H013   C01    H011    109.470    3.000
+ RL5      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RL5      var_1            O21    C19    C17    N16             -143.016           20.000   3
+ RL5      CONST_1          C19    C17    N16    C15                0.000            0.000   0
+ RL5      CONST_2          C17    N16    C15    N14                0.000            0.000   0
+ RL5      CONST_3          N16    C15    N14    C13              180.000            0.000   0
+ RL5      CONST_4          C15    N14    C18    C17              180.000            0.000   0
+ RL5      CONST_5          N14    C18    C17    C19                0.000            0.000   0
+ RL5      var_2            C15    N14    C13    C12              -68.631           20.000   3
+ RL5      var_3            N14    C13    C12    N11              180.000           20.000   3
+ RL5      var_4            C13    C12    N11    C09                0.000           20.000   3
+ RL5      var_5            C12    N11    C09    C07              180.000           20.000   2
+ RL5      var_6            N11    C09    C07    S08              164.640           20.000   3
+ RL5      CONST_6          C09    C07    S08    C04                0.000            0.000   0
+ RL5      CONST_7          S08    C06    C07    C09                0.000            0.000   0
+ RL5      CONST_8          C07    S08    N05    C04              179.880            0.000   0
+ RL5      CONST_9          C07    S08    C04    N03              179.824            0.000   0
+ RL5      var_7            S08    C04    N03    C02             -143.899           20.000   3
+ RL5      var_8            C04    N03    C02    C01                0.000           20.000   3
+ RL5      var_9            N03    C02    C01    H011             180.000           20.000   3
+ RL5      CONST_1          C04    N05    C06    C07                0.145            0.000   0
+ RL5      CONST_1          S08    C04    N05    C06               -0.020            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RL5      chir_01          S08    C04    C06    C07       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RL5      plan-1            C18       0.020
+ RL5      plan-1            C17       0.020
+ RL5      plan-1            N14       0.020
+ RL5      plan-1            H18       0.020
+ RL5      plan-1            C15       0.020
+ RL5      plan-1            N16       0.020
+ RL5      plan-1            C19       0.020
+ RL5      plan-1            H15       0.020
+ RL5      plan-1            C13       0.020
+ RL5      plan-2            C19       0.020
+ RL5      plan-2            C17       0.020
+ RL5      plan-2            O20       0.020
+ RL5      plan-2            O21       0.020
+ RL5      plan-3            C04       0.020
+ RL5      plan-3            N03       0.020
+ RL5      plan-3            N05       0.020
+ RL5      plan-3            S08       0.020
+ RL5      plan-3            C06       0.020
+ RL5      plan-3            C07       0.020
+ RL5      plan-3            HN03      0.020
+ RL5      plan-4            C09       0.020
+ RL5      plan-4            C07       0.020
+ RL5      plan-4            N11       0.020
+ RL5      plan-4            O10       0.020
+ RL5      plan-4            HN11      0.020
+ RL5      plan-5            N03       0.020
+ RL5      plan-5            C02       0.020
+ RL5      plan-5            C04       0.020
+ RL5      plan-5            HN03      0.020
+ RL5      plan-6            N11       0.020
+ RL5      plan-6            C12       0.020
+ RL5      plan-6            C09       0.020
+ RL5      plan-6            HN11      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

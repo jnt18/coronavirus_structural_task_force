@@ -1,0 +1,581 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WVG      WVG '.                                   ' .                  36  20 .
+WYY      WYY '.                                   ' .                  36  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WVG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WVG           O03    O    OC        0.000    -42.720  -31.950    3.091
+ WVG           C02    C    C         0.000    -43.094  -32.344    1.958
+ WVG           O01    O    OC       -1.000    -43.411  -33.548    1.775
+ WVG           C04    C    CH2       0.000    -43.166  -31.350    0.803
+ WVG           H041   H    H         0.000    -42.788  -31.841   -0.096
+ WVG           H042   H    H         0.000    -42.530  -30.496    1.045
+ WVG           C05    C    CH2       0.000    -44.593  -30.870    0.560
+ WVG           H051   H    H         0.000    -45.237  -31.266    1.348
+ WVG           H052   H    H         0.000    -44.931  -31.245   -0.408
+ WVG           C06    C    CH1       0.000    -44.658  -29.309    0.567
+ WVG           H06    H    H         0.000    -43.809  -28.914   -0.008
+ WVG           C11    C    CH2       0.000    -44.536  -28.839    2.021
+ WVG           H111   H    H         0.000    -44.391  -27.757    2.045
+ WVG           H112   H    H         0.000    -43.683  -29.330    2.494
+ WVG           N10    N    N         0.000    -45.781  -29.190    2.753
+ WVG           C09    C    CH2       0.000    -47.009  -28.566    2.204
+ WVG           H091   H    H         0.000    -47.342  -27.784    2.890
+ WVG           H092   H    H         0.000    -47.784  -29.330    2.121
+ WVG           C08    C    CH2       0.000    -46.742  -27.961    0.833
+ WVG           H081   H    H         0.000    -46.222  -27.014    0.991
+ WVG           H082   H    H         0.000    -47.711  -27.769    0.368
+ WVG           C07    C    CH2       0.000    -45.927  -28.835   -0.056
+ WVG           H072   H    H         0.000    -45.699  -28.259   -0.956
+ WVG           H071   H    H         0.000    -46.546  -29.694   -0.322
+ WVG           C12    C    CR6       0.000    -45.683  -29.186    4.204
+ WVG           N13    N    NRD6      0.000    -44.490  -29.301    4.770
+ WVG           C14    C    CR16      0.000    -44.379  -29.317    6.085
+ WVG           H14    H    H         0.000    -43.397  -29.406    6.534
+ WVG           N15    N    NRD6      0.000    -45.433  -29.227    6.858
+ WVG           C16    C    CR56      0.000    -46.665  -29.110    6.365
+ WVG           N17    N    NRD5      0.000    -47.855  -29.002    6.957
+ WVG           C18    C    CR15      0.000    -48.813  -28.910    6.060
+ WVG           H18    H    H         0.000    -49.871  -28.808    6.266
+ WVG           C19    C    CR15      0.000    -48.231  -28.966    4.810
+ WVG           H19    H    H         0.000    -48.746  -28.922    3.858
+ WVG           C20    C    CR56      0.000    -46.839  -29.092    5.004
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WVG      O03    n/a    C02    START
+ WVG      C02    O03    C04    .
+ WVG      O01    C02    .      .
+ WVG      C04    C02    C05    .
+ WVG      H041   C04    .      .
+ WVG      H042   C04    .      .
+ WVG      C05    C04    C06    .
+ WVG      H051   C05    .      .
+ WVG      H052   C05    .      .
+ WVG      C06    C05    C11    .
+ WVG      H06    C06    .      .
+ WVG      C11    C06    N10    .
+ WVG      H111   C11    .      .
+ WVG      H112   C11    .      .
+ WVG      N10    C11    C12    .
+ WVG      C09    N10    C08    .
+ WVG      H091   C09    .      .
+ WVG      H092   C09    .      .
+ WVG      C08    C09    C07    .
+ WVG      H081   C08    .      .
+ WVG      H082   C08    .      .
+ WVG      C07    C08    H071   .
+ WVG      H072   C07    .      .
+ WVG      H071   C07    .      .
+ WVG      C12    N10    N13    .
+ WVG      N13    C12    C14    .
+ WVG      C14    N13    N15    .
+ WVG      H14    C14    .      .
+ WVG      N15    C14    C16    .
+ WVG      C16    N15    N17    .
+ WVG      N17    C16    C18    .
+ WVG      C18    N17    C19    .
+ WVG      H18    C18    .      .
+ WVG      C19    C18    C20    .
+ WVG      H19    C19    .      .
+ WVG      C20    C19    .      END
+ WVG      C20    C12    .    ADD
+ WVG      C20    C16    .    ADD
+ WVG      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WVG      C20    C12       aromatic    1.390    0.020
+ WVG      C20    C16       aromatic    1.390    0.020
+ WVG      C20    C19       aromatic    1.440    0.020
+ WVG      C04    C02       single      1.510    0.020
+ WVG      O01    C02       deloc       1.250    0.020
+ WVG      C02    O03       deloc       1.250    0.020
+ WVG      C05    C04       single      1.524    0.020
+ WVG      C06    C05       single      1.524    0.020
+ WVG      C06    C07       single      1.524    0.020
+ WVG      C11    C06       single      1.524    0.020
+ WVG      C07    C08       single      1.524    0.020
+ WVG      C08    C09       single      1.524    0.020
+ WVG      C09    N10       single      1.455    0.020
+ WVG      N10    C11       single      1.455    0.020
+ WVG      C12    N10       single      1.400    0.020
+ WVG      N13    C12       aromatic    1.350    0.020
+ WVG      C14    N13       aromatic    1.337    0.020
+ WVG      N15    C14       aromatic    1.337    0.020
+ WVG      C16    N15       deloc       1.355    0.020
+ WVG      N17    C16       aromatic    1.350    0.020
+ WVG      C19    C18       aromatic    1.380    0.020
+ WVG      C18    N17       aromatic    1.350    0.020
+ WVG      H041   C04       single      1.092    0.020
+ WVG      H042   C04       single      1.092    0.020
+ WVG      H051   C05       single      1.092    0.020
+ WVG      H052   C05       single      1.092    0.020
+ WVG      H06    C06       single      1.099    0.020
+ WVG      H071   C07       single      1.092    0.020
+ WVG      H072   C07       single      1.092    0.020
+ WVG      H081   C08       single      1.092    0.020
+ WVG      H082   C08       single      1.092    0.020
+ WVG      H091   C09       single      1.092    0.020
+ WVG      H092   C09       single      1.092    0.020
+ WVG      H111   C11       single      1.092    0.020
+ WVG      H112   C11       single      1.092    0.020
+ WVG      H14    C14       single      1.083    0.020
+ WVG      H18    C18       single      1.083    0.020
+ WVG      H19    C19       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WVG      O03    C02    O01     123.000    3.000
+ WVG      O03    C02    C04     118.500    3.000
+ WVG      O01    C02    C04     118.500    3.000
+ WVG      C02    C04    H041    109.470    3.000
+ WVG      C02    C04    H042    109.470    3.000
+ WVG      C02    C04    C05     109.470    3.000
+ WVG      H041   C04    H042    107.900    3.000
+ WVG      H041   C04    C05     109.470    3.000
+ WVG      H042   C04    C05     109.470    3.000
+ WVG      C04    C05    H051    109.470    3.000
+ WVG      C04    C05    H052    109.470    3.000
+ WVG      C04    C05    C06     111.000    3.000
+ WVG      H051   C05    H052    107.900    3.000
+ WVG      H051   C05    C06     109.470    3.000
+ WVG      H052   C05    C06     109.470    3.000
+ WVG      C05    C06    H06     108.340    3.000
+ WVG      C05    C06    C11     109.470    3.000
+ WVG      C05    C06    C07     109.470    3.000
+ WVG      H06    C06    C11     108.340    3.000
+ WVG      H06    C06    C07     108.340    3.000
+ WVG      C11    C06    C07     109.470    3.000
+ WVG      C06    C11    H111    109.470    3.000
+ WVG      C06    C11    H112    109.470    3.000
+ WVG      C06    C11    N10     105.000    3.000
+ WVG      H111   C11    H112    107.900    3.000
+ WVG      H111   C11    N10     109.470    3.000
+ WVG      H112   C11    N10     109.470    3.000
+ WVG      C11    N10    C09     120.000    3.000
+ WVG      C11    N10    C12     120.000    3.000
+ WVG      C09    N10    C12     120.000    3.000
+ WVG      N10    C09    H091    109.470    3.000
+ WVG      N10    C09    H092    109.470    3.000
+ WVG      N10    C09    C08     105.000    3.000
+ WVG      H091   C09    H092    107.900    3.000
+ WVG      H091   C09    C08     109.470    3.000
+ WVG      H092   C09    C08     109.470    3.000
+ WVG      C09    C08    H081    109.470    3.000
+ WVG      C09    C08    H082    109.470    3.000
+ WVG      C09    C08    C07     111.000    3.000
+ WVG      H081   C08    H082    107.900    3.000
+ WVG      H081   C08    C07     109.470    3.000
+ WVG      H082   C08    C07     109.470    3.000
+ WVG      C08    C07    H072    109.470    3.000
+ WVG      C08    C07    H071    109.470    3.000
+ WVG      C08    C07    C06     111.000    3.000
+ WVG      H072   C07    H071    107.900    3.000
+ WVG      H072   C07    C06     109.470    3.000
+ WVG      H071   C07    C06     109.470    3.000
+ WVG      N10    C12    N13     120.000    3.000
+ WVG      N10    C12    C20     120.000    3.000
+ WVG      N13    C12    C20     120.000    3.000
+ WVG      C12    N13    C14     120.000    3.000
+ WVG      N13    C14    H14     120.000    3.000
+ WVG      N13    C14    N15     120.000    3.000
+ WVG      H14    C14    N15     120.000    3.000
+ WVG      C14    N15    C16     120.000    3.000
+ WVG      N15    C16    N17     120.000    3.000
+ WVG      N15    C16    C20     120.000    3.000
+ WVG      N17    C16    C20     108.000    3.000
+ WVG      C16    N17    C18     108.000    3.000
+ WVG      N17    C18    H18     126.000    3.000
+ WVG      N17    C18    C19     108.000    3.000
+ WVG      H18    C18    C19     126.000    3.000
+ WVG      C18    C19    H19     126.000    3.000
+ WVG      C18    C19    C20     108.000    3.000
+ WVG      H19    C19    C20     108.000    3.000
+ WVG      C19    C20    C12     132.000    3.000
+ WVG      C19    C20    C16     120.000    3.000
+ WVG      C12    C20    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WVG      var_1            O03    C02    C04    C05              180.000           20.000   3
+ WVG      var_2            C02    C04    C05    C06              180.000           20.000   3
+ WVG      var_3            C04    C05    C06    C11              180.000           20.000   3
+ WVG      var_4            C05    C06    C07    C08              180.000           20.000   3
+ WVG      var_5            C05    C06    C11    N10              180.000           20.000   3
+ WVG      var_6            C06    C11    N10    C12              162.176           20.000   3
+ WVG      var_7            C11    N10    C09    C08               12.701           20.000   3
+ WVG      var_8            N10    C09    C08    C07              180.000           20.000   3
+ WVG      var_9            C09    C08    C07    C06              180.000           20.000   3
+ WVG      var_10           C11    N10    C12    N13              -21.065           20.000   3
+ WVG      CONST_1          N10    C12    N13    C14                0.000            0.000   0
+ WVG      CONST_2          C12    N13    C14    N15                0.000            0.000   0
+ WVG      CONST_3          N13    C14    N15    C16                0.000            0.000   0
+ WVG      CONST_4          C14    N15    C16    N17              180.000            0.000   0
+ WVG      CONST_5          N15    C16    N17    C18              180.000            0.000   0
+ WVG      CONST_6          C16    N17    C18    C19                0.000            0.000   0
+ WVG      CONST_7          N17    C18    C19    C20               -0.328            0.000   0
+ WVG      CONST_8          C18    C19    C20    C12             -179.219            0.000   0
+ WVG      CONST_9          C19    C20    C12    N10              180.000            0.000   0
+ WVG      CONST_10         C19    C20    C16    N15              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WVG      chir_01          C06    C05    C07    C11       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WVG      plan-1            C20       0.020
+ WVG      plan-1            C12       0.020
+ WVG      plan-1            C16       0.020
+ WVG      plan-1            C19       0.020
+ WVG      plan-1            C18       0.020
+ WVG      plan-1            N17       0.020
+ WVG      plan-1            N10       0.020
+ WVG      plan-1            N13       0.020
+ WVG      plan-1            C14       0.020
+ WVG      plan-1            N15       0.020
+ WVG      plan-1            H14       0.020
+ WVG      plan-1            H18       0.020
+ WVG      plan-1            H19       0.020
+ WVG      plan-2            C02       0.020
+ WVG      plan-2            C04       0.020
+ WVG      plan-2            O01       0.020
+ WVG      plan-2            O03       0.020
+ WVG      plan-3            N10       0.020
+ WVG      plan-3            C09       0.020
+ WVG      plan-3            C11       0.020
+ WVG      plan-3            C12       0.020
+#
+data_comp_WYY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WYY           O03    O    OC        0.000    -47.517  -25.638   -1.394
+ WYY           C02    C    C         0.000    -46.627  -26.138   -0.656
+ WYY           O01    O    OC       -1.000    -46.365  -25.612    0.458
+ WYY           C04    C    CH2       0.000    -45.862  -27.380   -1.101
+ WYY           H041   H    H         0.000    -44.800  -27.133   -1.169
+ WYY           H042   H    H         0.000    -46.228  -27.685   -2.084
+ WYY           C05    C    CH2       0.000    -46.057  -28.516   -0.112
+ WYY           H051   H    H         0.000    -46.634  -29.282   -0.634
+ WYY           H052   H    H         0.000    -46.652  -28.109    0.708
+ WYY           C06    C    CH1       0.000    -44.745  -29.148    0.457
+ WYY           H06    H    H         0.000    -43.877  -28.762   -0.095
+ WYY           C11    C    CH2       0.000    -44.604  -28.810    1.952
+ WYY           H111   H    H         0.000    -44.339  -27.756    2.056
+ WYY           H112   H    H         0.000    -43.814  -29.427    2.385
+ WYY           N10    N    N         0.000    -45.886  -29.074    2.661
+ WYY           C09    C    CH2       0.000    -46.540  -30.308    2.130
+ WYY           H091   H    H         0.000    -47.313  -29.997    1.424
+ WYY           H092   H    H         0.000    -47.005  -30.826    2.972
+ WYY           C08    C    CH2       0.000    -45.553  -31.252    1.428
+ WYY           H081   H    H         0.000    -46.122  -32.114    1.074
+ WYY           H082   H    H         0.000    -44.827  -31.579    2.175
+ WYY           C07    C    CH2       0.000    -44.839  -30.620    0.281
+ WYY           H072   H    H         0.000    -45.386  -30.844   -0.637
+ WYY           H071   H    H         0.000    -43.835  -31.045    0.218
+ WYY           C12    C    CR6       0.000    -45.722  -29.143    4.107
+ WYY           N13    N    NRD6      0.000    -44.519  -29.283    4.646
+ WYY           C14    C    CR16      0.000    -44.377  -29.348    5.962
+ WYY           H14    H    H         0.000    -43.384  -29.467    6.378
+ WYY           N15    N    NRD6      0.000    -45.406  -29.272    6.778
+ WYY           C16    C    CR56      0.000    -46.649  -29.125    6.308
+ WYY           N17    N    NRD5      0.000    -47.830  -29.023    6.925
+ WYY           C18    C    CR15      0.000    -48.800  -28.888    6.043
+ WYY           H18    H    H         0.000    -49.854  -28.785    6.268
+ WYY           C19    C    CR15      0.000    -48.235  -28.901    4.775
+ WYY           H19    H    H         0.000    -48.763  -28.811    3.834
+ WYY           C20    C    CR56      0.000    -46.847  -29.053    4.945
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WYY      O03    n/a    C02    START
+ WYY      C02    O03    C04    .
+ WYY      O01    C02    .      .
+ WYY      C04    C02    C05    .
+ WYY      H041   C04    .      .
+ WYY      H042   C04    .      .
+ WYY      C05    C04    C06    .
+ WYY      H051   C05    .      .
+ WYY      H052   C05    .      .
+ WYY      C06    C05    C11    .
+ WYY      H06    C06    .      .
+ WYY      C11    C06    N10    .
+ WYY      H111   C11    .      .
+ WYY      H112   C11    .      .
+ WYY      N10    C11    C12    .
+ WYY      C09    N10    C08    .
+ WYY      H091   C09    .      .
+ WYY      H092   C09    .      .
+ WYY      C08    C09    C07    .
+ WYY      H081   C08    .      .
+ WYY      H082   C08    .      .
+ WYY      C07    C08    H071   .
+ WYY      H072   C07    .      .
+ WYY      H071   C07    .      .
+ WYY      C12    N10    N13    .
+ WYY      N13    C12    C14    .
+ WYY      C14    N13    N15    .
+ WYY      H14    C14    .      .
+ WYY      N15    C14    C16    .
+ WYY      C16    N15    N17    .
+ WYY      N17    C16    C18    .
+ WYY      C18    N17    C19    .
+ WYY      H18    C18    .      .
+ WYY      C19    C18    C20    .
+ WYY      H19    C19    .      .
+ WYY      C20    C19    .      END
+ WYY      C20    C12    .    ADD
+ WYY      C20    C16    .    ADD
+ WYY      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WYY      C20    C12       aromatic    1.390    0.020
+ WYY      C20    C16       aromatic    1.390    0.020
+ WYY      C20    C19       aromatic    1.440    0.020
+ WYY      C04    C02       single      1.510    0.020
+ WYY      O01    C02       deloc       1.250    0.020
+ WYY      C02    O03       deloc       1.250    0.020
+ WYY      C05    C04       single      1.524    0.020
+ WYY      C06    C05       single      1.524    0.020
+ WYY      C06    C07       single      1.524    0.020
+ WYY      C11    C06       single      1.524    0.020
+ WYY      C07    C08       single      1.524    0.020
+ WYY      C08    C09       single      1.524    0.020
+ WYY      C09    N10       single      1.455    0.020
+ WYY      N10    C11       single      1.455    0.020
+ WYY      C12    N10       single      1.400    0.020
+ WYY      N13    C12       aromatic    1.350    0.020
+ WYY      C14    N13       aromatic    1.337    0.020
+ WYY      N15    C14       aromatic    1.337    0.020
+ WYY      C16    N15       aromatic    1.355    0.020
+ WYY      N17    C16       aromatic    1.350    0.020
+ WYY      C19    C18       aromatic    1.380    0.020
+ WYY      C18    N17       aromatic    1.350    0.020
+ WYY      H041   C04       single      1.092    0.020
+ WYY      H042   C04       single      1.092    0.020
+ WYY      H051   C05       single      1.092    0.020
+ WYY      H052   C05       single      1.092    0.020
+ WYY      H06    C06       single      1.099    0.020
+ WYY      H071   C07       single      1.092    0.020
+ WYY      H072   C07       single      1.092    0.020
+ WYY      H081   C08       single      1.092    0.020
+ WYY      H082   C08       single      1.092    0.020
+ WYY      H091   C09       single      1.092    0.020
+ WYY      H092   C09       single      1.092    0.020
+ WYY      H111   C11       single      1.092    0.020
+ WYY      H112   C11       single      1.092    0.020
+ WYY      H14    C14       single      1.083    0.020
+ WYY      H18    C18       single      1.083    0.020
+ WYY      H19    C19       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WYY      O03    C02    O01     123.000    3.000
+ WYY      O03    C02    C04     118.500    3.000
+ WYY      O01    C02    C04     118.500    3.000
+ WYY      C02    C04    H041    109.470    3.000
+ WYY      C02    C04    H042    109.470    3.000
+ WYY      C02    C04    C05     109.470    3.000
+ WYY      H041   C04    H042    107.900    3.000
+ WYY      H041   C04    C05     109.470    3.000
+ WYY      H042   C04    C05     109.470    3.000
+ WYY      C04    C05    H051    109.470    3.000
+ WYY      C04    C05    H052    109.470    3.000
+ WYY      C04    C05    C06     111.000    3.000
+ WYY      H051   C05    H052    107.900    3.000
+ WYY      H051   C05    C06     109.470    3.000
+ WYY      H052   C05    C06     109.470    3.000
+ WYY      C05    C06    H06     108.340    3.000
+ WYY      C05    C06    C11     109.470    3.000
+ WYY      C05    C06    C07     109.470    3.000
+ WYY      H06    C06    C11     108.340    3.000
+ WYY      H06    C06    C07     108.340    3.000
+ WYY      C11    C06    C07     109.470    3.000
+ WYY      C06    C11    H111    109.470    3.000
+ WYY      C06    C11    H112    109.470    3.000
+ WYY      C06    C11    N10     105.000    3.000
+ WYY      H111   C11    H112    107.900    3.000
+ WYY      H111   C11    N10     109.470    3.000
+ WYY      H112   C11    N10     109.470    3.000
+ WYY      C11    N10    C09     120.000    3.000
+ WYY      C11    N10    C12     120.000    3.000
+ WYY      C09    N10    C12     120.000    3.000
+ WYY      N10    C09    H091    109.470    3.000
+ WYY      N10    C09    H092    109.470    3.000
+ WYY      N10    C09    C08     105.000    3.000
+ WYY      H091   C09    H092    107.900    3.000
+ WYY      H091   C09    C08     109.470    3.000
+ WYY      H092   C09    C08     109.470    3.000
+ WYY      C09    C08    H081    109.470    3.000
+ WYY      C09    C08    H082    109.470    3.000
+ WYY      C09    C08    C07     111.000    3.000
+ WYY      H081   C08    H082    107.900    3.000
+ WYY      H081   C08    C07     109.470    3.000
+ WYY      H082   C08    C07     109.470    3.000
+ WYY      C08    C07    H072    109.470    3.000
+ WYY      C08    C07    H071    109.470    3.000
+ WYY      C08    C07    C06     111.000    3.000
+ WYY      H072   C07    H071    107.900    3.000
+ WYY      H072   C07    C06     109.470    3.000
+ WYY      H071   C07    C06     109.470    3.000
+ WYY      N10    C12    N13     120.000    3.000
+ WYY      N10    C12    C20     120.000    3.000
+ WYY      N13    C12    C20     120.000    3.000
+ WYY      C12    N13    C14     120.000    3.000
+ WYY      N13    C14    H14     120.000    3.000
+ WYY      N13    C14    N15     120.000    3.000
+ WYY      H14    C14    N15     120.000    3.000
+ WYY      C14    N15    C16     120.000    3.000
+ WYY      N15    C16    N17     120.000    3.000
+ WYY      N15    C16    C20     120.000    3.000
+ WYY      N17    C16    C20     108.000    3.000
+ WYY      C16    N17    C18     108.000    3.000
+ WYY      N17    C18    H18     126.000    3.000
+ WYY      N17    C18    C19     108.000    3.000
+ WYY      H18    C18    C19     126.000    3.000
+ WYY      C18    C19    H19     126.000    3.000
+ WYY      C18    C19    C20     108.000    3.000
+ WYY      H19    C19    C20     108.000    3.000
+ WYY      C19    C20    C12     132.000    3.000
+ WYY      C19    C20    C16     120.000    3.000
+ WYY      C12    C20    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WYY      var_1            O03    C02    C04    C05              180.000           20.000   3
+ WYY      var_2            C02    C04    C05    C06              180.000           20.000   3
+ WYY      var_3            C04    C05    C06    C11              180.000           20.000   3
+ WYY      var_4            C05    C06    C07    C08              180.000           20.000   3
+ WYY      var_5            C05    C06    C11    N10              180.000           20.000   3
+ WYY      var_6            C06    C11    N10    C12              163.618           20.000   3
+ WYY      var_7            C11    N10    C09    C08               21.801           20.000   3
+ WYY      var_8            N10    C09    C08    C07              180.000           20.000   3
+ WYY      var_9            C09    C08    C07    C06              180.000           20.000   3
+ WYY      var_10           C11    N10    C12    N13              -15.378           20.000   3
+ WYY      CONST_1          N10    C12    N13    C14                0.000            0.000   0
+ WYY      CONST_2          C12    N13    C14    N15                0.000            0.000   0
+ WYY      CONST_3          N13    C14    N15    C16                0.000            0.000   0
+ WYY      CONST_4          C14    N15    C16    N17              180.000            0.000   0
+ WYY      CONST_5          N15    C16    N17    C18              180.000            0.000   0
+ WYY      CONST_6          C16    N17    C18    C19                0.000            0.000   0
+ WYY      CONST_7          N17    C18    C19    C20               -0.040            0.000   0
+ WYY      CONST_8          C18    C19    C20    C12              179.856            0.000   0
+ WYY      CONST_9          C19    C20    C12    N10              180.000            0.000   0
+ WYY      CONST_10         C19    C20    C16    N15              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WYY      chir_01          C06    C05    C07    C11       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WYY      plan-1            C20       0.020
+ WYY      plan-1            C12       0.020
+ WYY      plan-1            C16       0.020
+ WYY      plan-1            C19       0.020
+ WYY      plan-1            C18       0.020
+ WYY      plan-1            N17       0.020
+ WYY      plan-1            N10       0.020
+ WYY      plan-1            N13       0.020
+ WYY      plan-1            C14       0.020
+ WYY      plan-1            N15       0.020
+ WYY      plan-1            H14       0.020
+ WYY      plan-1            H18       0.020
+ WYY      plan-1            H19       0.020
+ WYY      plan-2            C02       0.020
+ WYY      plan-2            C04       0.020
+ WYY      plan-2            O01       0.020
+ WYY      plan-2            O03       0.020
+ WYY      plan-3            N10       0.020
+ WYY      plan-3            C09       0.020
+ WYY      plan-3            C11       0.020
+ WYY      plan-3            C12       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

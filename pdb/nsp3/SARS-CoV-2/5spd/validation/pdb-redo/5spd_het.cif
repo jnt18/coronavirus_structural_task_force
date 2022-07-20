@@ -1,0 +1,803 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QYJ      QYJ '.                                   ' .                  51  29 .
+QRU      QRU '.                                   ' .                  51  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QYJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QYJ           O28    O    O         0.000    -48.299  -28.912    1.796
+ QYJ           C14    C    C         0.000    -47.782  -29.261    2.805
+ QYJ           N13    N    NH1       0.000    -46.488  -29.941    2.812
+ QYJ           HN13   H    H         0.000    -46.089  -30.298    3.668
+ QYJ           C12    C    CH1       0.000    -45.801  -30.083    1.551
+ QYJ           H12    H    H         0.000    -46.306  -29.434    0.822
+ QYJ           C03    C    CH1       0.000    -44.421  -29.556    1.745
+ QYJ           H03    H    H         0.000    -44.431  -28.462    1.637
+ QYJ           C02    C    CH1       0.000    -43.809  -29.926    3.099
+ QYJ           H02    H    H         0.000    -42.898  -30.279    2.596
+ QYJ           O29    O    OH1       0.000    -43.989  -31.077    3.594
+ QYJ           HO29   H    H         0.000    -43.530  -31.102    4.431
+ QYJ           O01    O    O        -1.000    -43.136  -29.056    3.720
+ QYJ           C04    C    CH2       0.000    -43.654  -30.160    0.607
+ QYJ           H041   H    H         0.000    -42.615  -30.358    0.878
+ QYJ           H042   H    H         0.000    -43.683  -29.527   -0.283
+ QYJ           C05    C    CR6       0.000    -44.378  -31.501    0.314
+ QYJ           C06    C    CR6       0.000    -43.926  -32.614   -0.382
+ QYJ           O07    O    OH1       0.000    -42.634  -32.565   -0.936
+ QYJ           HO07   H    H         0.000    -42.436  -33.398   -1.394
+ QYJ           C08    C    CR16      0.000    -44.750  -33.727   -0.520
+ QYJ           H08    H    H         0.000    -44.403  -34.597   -1.064
+ QYJ           C09    C    CR16      0.000    -46.028  -33.717    0.047
+ QYJ           H09    H    H         0.000    -46.671  -34.582   -0.060
+ QYJ           C10    C    CR16      0.000    -46.480  -32.597    0.751
+ QYJ           H10    H    H         0.000    -47.476  -32.591    1.177
+ QYJ           C11    C    CR6       0.000    -45.644  -31.480    0.906
+ QYJ           C15    C    CR6       0.000    -48.468  -29.155    4.167
+ QYJ           C16    C    CR16      0.000    -47.700  -29.186    5.328
+ QYJ           H16    H    H         0.000    -46.620  -29.255    5.276
+ QYJ           C27    C    CR16      0.000    -49.851  -29.103    4.201
+ QYJ           H27    H    H         0.000    -50.421  -29.102    3.280
+ QYJ           C26    C    CR16      0.000    -50.498  -29.052    5.421
+ QYJ           H26    H    H         0.000    -51.579  -29.025    5.476
+ QYJ           C18    C    CR6       0.000    -49.722  -29.036    6.577
+ QYJ           C17    C    CR16      0.000    -48.345  -29.127    6.545
+ QYJ           H17    H    H         0.000    -47.777  -29.152    7.467
+ QYJ           N19    N    NH1       0.000    -50.275  -29.043    7.908
+ QYJ           HN19   H    H         0.000    -49.637  -28.992    8.689
+ QYJ           C20    C    C         0.000    -51.691  -29.119    8.187
+ QYJ           O25    O    O         0.000    -52.542  -29.106    7.358
+ QYJ           N21    N    NH1       0.000    -52.007  -29.185    9.596
+ QYJ           HN21   H    H         0.000    -51.280  -29.184   10.297
+ QYJ           C22    C    CH1       0.000    -53.405  -29.252    9.964
+ QYJ           H22    H    H         0.000    -54.008  -28.333    9.959
+ QYJ           C24    C    CH2       0.000    -53.754  -30.369   10.942
+ QYJ           H241   H    H         0.000    -54.693  -30.450   11.494
+ QYJ           H242   H    H         0.000    -53.062  -31.139   11.289
+ QYJ           C23    C    CH2       0.000    -54.022  -30.557    9.448
+ QYJ           H232   H    H         0.000    -54.968  -30.341    8.947
+ QYJ           H231   H    H         0.000    -53.337  -31.030    8.741
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QYJ      O28    n/a    C14    START
+ QYJ      C14    O28    C15    .
+ QYJ      N13    C14    C12    .
+ QYJ      HN13   N13    .      .
+ QYJ      C12    N13    C03    .
+ QYJ      H12    C12    .      .
+ QYJ      C03    C12    C04    .
+ QYJ      H03    C03    .      .
+ QYJ      C02    C03    O01    .
+ QYJ      H02    C02    .      .
+ QYJ      O29    C02    HO29   .
+ QYJ      HO29   O29    .      .
+ QYJ      O01    C02    .      .
+ QYJ      C04    C03    C05    .
+ QYJ      H041   C04    .      .
+ QYJ      H042   C04    .      .
+ QYJ      C05    C04    C11    .
+ QYJ      C06    C05    C08    .
+ QYJ      O07    C06    HO07   .
+ QYJ      HO07   O07    .      .
+ QYJ      C08    C06    C09    .
+ QYJ      H08    C08    .      .
+ QYJ      C09    C08    C10    .
+ QYJ      H09    C09    .      .
+ QYJ      C10    C09    H10    .
+ QYJ      H10    C10    .      .
+ QYJ      C11    C05    .      .
+ QYJ      C15    C14    C27    .
+ QYJ      C16    C15    H16    .
+ QYJ      H16    C16    .      .
+ QYJ      C27    C15    C26    .
+ QYJ      H27    C27    .      .
+ QYJ      C26    C27    C18    .
+ QYJ      H26    C26    .      .
+ QYJ      C18    C26    N19    .
+ QYJ      C17    C18    H17    .
+ QYJ      H17    C17    .      .
+ QYJ      N19    C18    C20    .
+ QYJ      HN19   N19    .      .
+ QYJ      C20    N19    N21    .
+ QYJ      O25    C20    .      .
+ QYJ      N21    C20    C22    .
+ QYJ      HN21   N21    .      .
+ QYJ      C22    N21    C24    .
+ QYJ      H22    C22    .      .
+ QYJ      C24    C22    C23    .
+ QYJ      H241   C24    .      .
+ QYJ      H242   C24    .      .
+ QYJ      C23    C24    H231   .
+ QYJ      H232   C23    .      .
+ QYJ      H231   C23    .      END
+ QYJ      C16    C17    .    ADD
+ QYJ      C12    C11    .    ADD
+ QYJ      C11    C10    .    ADD
+ QYJ      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QYJ      C17    C18       aromatic    1.390    0.020
+ QYJ      C18    C26       aromatic    1.390    0.020
+ QYJ      N19    C18       single      1.350    0.020
+ QYJ      C16    C17       aromatic    1.390    0.020
+ QYJ      C16    C15       aromatic    1.390    0.020
+ QYJ      C15    C14       single      1.500    0.020
+ QYJ      C27    C15       aromatic    1.390    0.020
+ QYJ      N13    C14       single      1.330    0.020
+ QYJ      C14    O28       double      1.220    0.020
+ QYJ      C12    C11       single      1.480    0.020
+ QYJ      C03    C12       single      1.524    0.020
+ QYJ      C12    N13       single      1.450    0.020
+ QYJ      C11    C10       aromatic    1.390    0.020
+ QYJ      C11    C05       aromatic    1.384    0.020
+ QYJ      C10    C09       aromatic    1.390    0.020
+ QYJ      C20    N19       single      1.330    0.020
+ QYJ      N21    C20       single      1.330    0.020
+ QYJ      O25    C20       double      1.220    0.020
+ QYJ      C02    C03       single      1.524    0.020
+ QYJ      O01    C02       single      1.420    0.020
+ QYJ      O29    C02       single      1.432    0.020
+ QYJ      C04    C03       single      1.524    0.020
+ QYJ      C05    C04       single      1.511    0.020
+ QYJ      C06    C05       aromatic    1.384    0.020
+ QYJ      C08    C06       aromatic    1.390    0.020
+ QYJ      O07    C06       single      1.362    0.020
+ QYJ      C09    C08       aromatic    1.390    0.020
+ QYJ      C22    C23       single      1.524    0.020
+ QYJ      C24    C22       single      1.524    0.020
+ QYJ      C22    N21       single      1.450    0.020
+ QYJ      C23    C24       single      1.524    0.020
+ QYJ      C26    C27       aromatic    1.390    0.020
+ QYJ      H16    C16       single      1.083    0.020
+ QYJ      H17    C17       single      1.083    0.020
+ QYJ      H12    C12       single      1.099    0.020
+ QYJ      H10    C10       single      1.083    0.020
+ QYJ      H02    C02       single      1.099    0.020
+ QYJ      H03    C03       single      1.099    0.020
+ QYJ      H041   C04       single      1.092    0.020
+ QYJ      H042   C04       single      1.092    0.020
+ QYJ      H08    C08       single      1.083    0.020
+ QYJ      H09    C09       single      1.083    0.020
+ QYJ      H22    C22       single      1.099    0.020
+ QYJ      H231   C23       single      1.092    0.020
+ QYJ      H232   C23       single      1.092    0.020
+ QYJ      H241   C24       single      1.092    0.020
+ QYJ      H242   C24       single      1.092    0.020
+ QYJ      H26    C26       single      1.083    0.020
+ QYJ      H27    C27       single      1.083    0.020
+ QYJ      HN13   N13       single      1.010    0.020
+ QYJ      HN19   N19       single      1.010    0.020
+ QYJ      HN21   N21       single      1.010    0.020
+ QYJ      HO07   O07       single      0.967    0.020
+ QYJ      HO29   O29       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QYJ      O28    C14    N13     123.000    3.000
+ QYJ      O28    C14    C15     120.500    3.000
+ QYJ      N13    C14    C15     120.000    3.000
+ QYJ      C14    N13    HN13    120.000    3.000
+ QYJ      C14    N13    C12     121.500    3.000
+ QYJ      HN13   N13    C12     118.500    3.000
+ QYJ      N13    C12    H12     108.550    3.000
+ QYJ      N13    C12    C03     110.000    3.000
+ QYJ      N13    C12    C11     109.470    3.000
+ QYJ      H12    C12    C03     108.340    3.000
+ QYJ      H12    C12    C11     109.470    3.000
+ QYJ      C03    C12    C11     109.470    3.000
+ QYJ      C12    C03    H03     108.340    3.000
+ QYJ      C12    C03    C02     111.000    3.000
+ QYJ      C12    C03    C04     111.000    3.000
+ QYJ      H03    C03    C02     108.340    3.000
+ QYJ      H03    C03    C04     108.340    3.000
+ QYJ      C02    C03    C04     111.000    3.000
+ QYJ      C03    C02    H02     108.340    3.000
+ QYJ      C03    C02    O29     109.470    3.000
+ QYJ      C03    C02    O01     109.470    3.000
+ QYJ      H02    C02    O29     109.470    3.000
+ QYJ      H02    C02    O01     109.470    3.000
+ QYJ      O29    C02    O01     109.470    3.000
+ QYJ      C02    O29    HO29    109.470    3.000
+ QYJ      C03    C04    H041    109.470    3.000
+ QYJ      C03    C04    H042    109.470    3.000
+ QYJ      C03    C04    C05     109.470    3.000
+ QYJ      H041   C04    H042    107.900    3.000
+ QYJ      H041   C04    C05     109.470    3.000
+ QYJ      H042   C04    C05     109.470    3.000
+ QYJ      C04    C05    C06     120.000    3.000
+ QYJ      C04    C05    C11     120.000    3.000
+ QYJ      C06    C05    C11     120.000    3.000
+ QYJ      C05    C06    O07     120.000    3.000
+ QYJ      C05    C06    C08     120.000    3.000
+ QYJ      O07    C06    C08     120.000    3.000
+ QYJ      C06    O07    HO07    109.470    3.000
+ QYJ      C06    C08    H08     120.000    3.000
+ QYJ      C06    C08    C09     120.000    3.000
+ QYJ      H08    C08    C09     120.000    3.000
+ QYJ      C08    C09    H09     120.000    3.000
+ QYJ      C08    C09    C10     120.000    3.000
+ QYJ      H09    C09    C10     120.000    3.000
+ QYJ      C09    C10    H10     120.000    3.000
+ QYJ      C09    C10    C11     120.000    3.000
+ QYJ      H10    C10    C11     120.000    3.000
+ QYJ      C05    C11    C12     120.000    3.000
+ QYJ      C05    C11    C10     120.000    3.000
+ QYJ      C12    C11    C10     120.000    3.000
+ QYJ      C14    C15    C16     120.000    3.000
+ QYJ      C14    C15    C27     120.000    3.000
+ QYJ      C16    C15    C27     120.000    3.000
+ QYJ      C15    C16    H16     120.000    3.000
+ QYJ      C15    C16    C17     120.000    3.000
+ QYJ      H16    C16    C17     120.000    3.000
+ QYJ      C15    C27    H27     120.000    3.000
+ QYJ      C15    C27    C26     120.000    3.000
+ QYJ      H27    C27    C26     120.000    3.000
+ QYJ      C27    C26    H26     120.000    3.000
+ QYJ      C27    C26    C18     120.000    3.000
+ QYJ      H26    C26    C18     120.000    3.000
+ QYJ      C26    C18    C17     120.000    3.000
+ QYJ      C26    C18    N19     120.000    3.000
+ QYJ      C17    C18    N19     120.000    3.000
+ QYJ      C18    C17    H17     120.000    3.000
+ QYJ      C18    C17    C16     120.000    3.000
+ QYJ      H17    C17    C16     120.000    3.000
+ QYJ      C18    N19    HN19    120.000    3.000
+ QYJ      C18    N19    C20     120.000    3.000
+ QYJ      HN19   N19    C20     120.000    3.000
+ QYJ      N19    C20    O25     123.000    3.000
+ QYJ      N19    C20    N21     120.000    3.000
+ QYJ      O25    C20    N21     123.000    3.000
+ QYJ      C20    N21    HN21    120.000    3.000
+ QYJ      C20    N21    C22     121.500    3.000
+ QYJ      HN21   N21    C22     118.500    3.000
+ QYJ      N21    C22    H22     108.550    3.000
+ QYJ      N21    C22    C24     110.000    3.000
+ QYJ      N21    C22    C23     110.000    3.000
+ QYJ      H22    C22    C24     108.340    3.000
+ QYJ      H22    C22    C23     108.340    3.000
+ QYJ      C24    C22    C23      60.000    3.000
+ QYJ      C22    C24    H241    109.470    3.000
+ QYJ      C22    C24    H242    109.470    3.000
+ QYJ      C22    C24    C23      60.000    3.000
+ QYJ      H241   C24    H242    107.900    3.000
+ QYJ      H241   C24    C23     109.470    3.000
+ QYJ      H242   C24    C23     109.470    3.000
+ QYJ      C24    C23    H232    109.470    3.000
+ QYJ      C24    C23    H231    109.470    3.000
+ QYJ      C24    C23    C22      60.000    3.000
+ QYJ      H232   C23    H231    107.900    3.000
+ QYJ      H232   C23    C22     109.470    3.000
+ QYJ      H231   C23    C22     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QYJ      var_1            O28    C14    N13    C12              180.000           20.000   2
+ QYJ      var_2            C14    N13    C12    C03                0.000           20.000   3
+ QYJ      var_3            N13    C12    C11    C05             -142.826           20.000   3
+ QYJ      var_4            N13    C12    C03    C04              180.000           20.000   3
+ QYJ      var_5            C12    C03    C02    O01              180.000           20.000   3
+ QYJ      var_6            C03    C02    O29    HO29             180.000           20.000   3
+ QYJ      var_7            C12    C03    C04    C05              180.000           20.000   3
+ QYJ      var_8            C03    C04    C05    C11                0.000           20.000   2
+ QYJ      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QYJ      var_9            C05    C06    O07    HO07             180.000           20.000   3
+ QYJ      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QYJ      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QYJ      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QYJ      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QYJ      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QYJ      var_10           O28    C14    C15    C27               22.999           20.000   3
+ QYJ      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QYJ      CONST_8          C15    C16    C17    C18                0.000            0.000   0
+ QYJ      CONST_9          C14    C15    C27    C26                0.000            0.000   0
+ QYJ      CONST_10         C15    C27    C26    C18                0.000            0.000   0
+ QYJ      CONST_11         C27    C26    C18    N19                0.000            0.000   0
+ QYJ      CONST_12         C26    C18    C17    C16                0.000            0.000   0
+ QYJ      var_11           C26    C18    N19    C20                2.463           20.000   3
+ QYJ      var_12           C18    N19    C20    N21              180.000           20.000   2
+ QYJ      var_13           N19    C20    N21    C22              180.000           20.000   2
+ QYJ      var_14           C20    N21    C22    C24                0.000           20.000   3
+ QYJ      var_15           N21    C22    C23    C24              180.000           20.000   3
+ QYJ      var_16           N21    C22    C24    C23              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QYJ      chir_01          C12    C11    C03    N13       positiv
+ QYJ      chir_02          C02    C03    O01    O29       negativ
+ QYJ      chir_03          C03    C12    C02    C04       negativ
+ QYJ      chir_04          C22    C23    C24    N21       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QYJ      plan-1            C18       0.020
+ QYJ      plan-1            C17       0.020
+ QYJ      plan-1            C26       0.020
+ QYJ      plan-1            N19       0.020
+ QYJ      plan-1            C16       0.020
+ QYJ      plan-1            C15       0.020
+ QYJ      plan-1            C27       0.020
+ QYJ      plan-1            H16       0.020
+ QYJ      plan-1            H17       0.020
+ QYJ      plan-1            C14       0.020
+ QYJ      plan-1            H26       0.020
+ QYJ      plan-1            H27       0.020
+ QYJ      plan-1            HN19      0.020
+ QYJ      plan-2            C14       0.020
+ QYJ      plan-2            C15       0.020
+ QYJ      plan-2            N13       0.020
+ QYJ      plan-2            O28       0.020
+ QYJ      plan-2            HN13      0.020
+ QYJ      plan-3            C11       0.020
+ QYJ      plan-3            C12       0.020
+ QYJ      plan-3            C10       0.020
+ QYJ      plan-3            C05       0.020
+ QYJ      plan-3            C06       0.020
+ QYJ      plan-3            C08       0.020
+ QYJ      plan-3            C09       0.020
+ QYJ      plan-3            H10       0.020
+ QYJ      plan-3            C04       0.020
+ QYJ      plan-3            O07       0.020
+ QYJ      plan-3            H08       0.020
+ QYJ      plan-3            H09       0.020
+ QYJ      plan-4            C20       0.020
+ QYJ      plan-4            N19       0.020
+ QYJ      plan-4            N21       0.020
+ QYJ      plan-4            O25       0.020
+ QYJ      plan-4            HN19      0.020
+ QYJ      plan-4            HN21      0.020
+ QYJ      plan-5            N13       0.020
+ QYJ      plan-5            C14       0.020
+ QYJ      plan-5            C12       0.020
+ QYJ      plan-5            HN13      0.020
+ QYJ      plan-6            N19       0.020
+ QYJ      plan-6            C18       0.020
+ QYJ      plan-6            C20       0.020
+ QYJ      plan-6            HN19      0.020
+ QYJ      plan-7            N21       0.020
+ QYJ      plan-7            C20       0.020
+ QYJ      plan-7            C22       0.020
+ QYJ      plan-7            HN21      0.020
+#
+data_comp_QRU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QRU           O28    O    O         0.000    -48.322  -29.006    1.775
+ QRU           C14    C    C         0.000    -47.725  -29.190    2.784
+ QRU           N13    N    NH1       0.000    -46.309  -29.563    2.777
+ QRU           HN13   H    H         0.000    -45.815  -29.727    3.643
+ QRU           C12    C    CH1       0.000    -45.624  -29.694    1.492
+ QRU           H12    H    H         0.000    -46.196  -30.376    0.847
+ QRU           C03    C    CH1       0.000    -44.214  -30.206    1.622
+ QRU           H03    H    H         0.000    -43.933  -30.749    0.709
+ QRU           C02    C    CH1       0.000    -44.075  -31.133    2.836
+ QRU           H02    H    H         0.000    -45.069  -30.821    3.185
+ QRU           O29    O    OH1       0.000    -44.479  -32.330    2.763
+ QRU           HO29   H    H         0.000    -44.308  -32.740    3.608
+ QRU           O01    O    O        -1.000    -43.566  -30.700    3.907
+ QRU           C04    C    CH2       0.000    -43.358  -28.963    1.760
+ QRU           H041   H    H         0.000    -42.360  -29.091    1.335
+ QRU           H042   H    H         0.000    -43.271  -28.626    2.795
+ QRU           C05    C    CR6       0.000    -44.149  -27.900    0.928
+ QRU           C06    C    CR6       0.000    -43.756  -26.686    0.358
+ QRU           O07    O    OH1       0.000    -42.434  -26.224    0.485
+ QRU           HO07   H    H         0.000    -42.335  -25.371    0.033
+ QRU           C08    C    CR16      0.000    -44.677  -25.918   -0.349
+ QRU           H08    H    H         0.000    -44.368  -24.977   -0.788
+ QRU           C09    C    CR16      0.000    -45.999  -26.353   -0.496
+ QRU           H09    H    H         0.000    -46.709  -25.750   -1.047
+ QRU           C10    C    CR16      0.000    -46.402  -27.565    0.068
+ QRU           H10    H    H         0.000    -47.424  -27.906   -0.046
+ QRU           C11    C    CR6       0.000    -45.476  -28.339    0.784
+ QRU           C15    C    CR6       0.000    -48.431  -29.119    4.152
+ QRU           C16    C    CR16      0.000    -47.680  -29.157    5.326
+ QRU           H16    H    H         0.000    -46.599  -29.212    5.285
+ QRU           C27    C    CR16      0.000    -49.818  -29.081    4.187
+ QRU           H27    H    H         0.000    -50.383  -29.076    3.263
+ QRU           C26    C    CR16      0.000    -50.480  -29.050    5.405
+ QRU           H26    H    H         0.000    -51.562  -29.026    5.451
+ QRU           C18    C    CR6       0.000    -49.712  -29.051    6.567
+ QRU           C17    C    CR16      0.000    -48.334  -29.124    6.541
+ QRU           H17    H    H         0.000    -47.771  -29.155    7.466
+ QRU           N19    N    NH1       0.000    -50.273  -29.069    7.902
+ QRU           HN19   H    H         0.000    -49.637  -29.033    8.685
+ QRU           C20    C    C         0.000    -51.688  -29.136    8.179
+ QRU           O25    O    O         0.000    -52.533  -29.126    7.347
+ QRU           N21    N    NH1       0.000    -52.006  -29.200    9.590
+ QRU           HN21   H    H         0.000    -51.280  -29.202   10.292
+ QRU           C22    C    CH1       0.000    -53.404  -29.261    9.956
+ QRU           H22    H    H         0.000    -54.003  -28.340    9.949
+ QRU           C24    C    CH2       0.000    -53.754  -30.372   10.940
+ QRU           H241   H    H         0.000    -54.692  -30.448   11.494
+ QRU           H242   H    H         0.000    -53.064  -31.144   11.288
+ QRU           C23    C    CH2       0.000    -54.025  -30.563    9.448
+ QRU           H232   H    H         0.000    -54.971  -30.346    8.948
+ QRU           H231   H    H         0.000    -53.343  -31.042    8.742
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QRU      O28    n/a    C14    START
+ QRU      C14    O28    C15    .
+ QRU      N13    C14    C12    .
+ QRU      HN13   N13    .      .
+ QRU      C12    N13    C03    .
+ QRU      H12    C12    .      .
+ QRU      C03    C12    C04    .
+ QRU      H03    C03    .      .
+ QRU      C02    C03    O01    .
+ QRU      H02    C02    .      .
+ QRU      O29    C02    HO29   .
+ QRU      HO29   O29    .      .
+ QRU      O01    C02    .      .
+ QRU      C04    C03    C05    .
+ QRU      H041   C04    .      .
+ QRU      H042   C04    .      .
+ QRU      C05    C04    C11    .
+ QRU      C06    C05    C08    .
+ QRU      O07    C06    HO07   .
+ QRU      HO07   O07    .      .
+ QRU      C08    C06    C09    .
+ QRU      H08    C08    .      .
+ QRU      C09    C08    C10    .
+ QRU      H09    C09    .      .
+ QRU      C10    C09    H10    .
+ QRU      H10    C10    .      .
+ QRU      C11    C05    .      .
+ QRU      C15    C14    C27    .
+ QRU      C16    C15    H16    .
+ QRU      H16    C16    .      .
+ QRU      C27    C15    C26    .
+ QRU      H27    C27    .      .
+ QRU      C26    C27    C18    .
+ QRU      H26    C26    .      .
+ QRU      C18    C26    N19    .
+ QRU      C17    C18    H17    .
+ QRU      H17    C17    .      .
+ QRU      N19    C18    C20    .
+ QRU      HN19   N19    .      .
+ QRU      C20    N19    N21    .
+ QRU      O25    C20    .      .
+ QRU      N21    C20    C22    .
+ QRU      HN21   N21    .      .
+ QRU      C22    N21    C24    .
+ QRU      H22    C22    .      .
+ QRU      C24    C22    C23    .
+ QRU      H241   C24    .      .
+ QRU      H242   C24    .      .
+ QRU      C23    C24    H231   .
+ QRU      H232   C23    .      .
+ QRU      H231   C23    .      END
+ QRU      C16    C17    .    ADD
+ QRU      C12    C11    .    ADD
+ QRU      C11    C10    .    ADD
+ QRU      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QRU      C17    C18       aromatic    1.390    0.020
+ QRU      C18    C26       aromatic    1.390    0.020
+ QRU      N19    C18       single      1.350    0.020
+ QRU      C16    C17       aromatic    1.390    0.020
+ QRU      C16    C15       aromatic    1.390    0.020
+ QRU      C15    C14       single      1.500    0.020
+ QRU      C27    C15       aromatic    1.390    0.020
+ QRU      N13    C14       single      1.330    0.020
+ QRU      C14    O28       double      1.220    0.020
+ QRU      C12    C11       single      1.480    0.020
+ QRU      C03    C12       single      1.524    0.020
+ QRU      C12    N13       single      1.450    0.020
+ QRU      C11    C10       aromatic    1.390    0.020
+ QRU      C11    C05       aromatic    1.384    0.020
+ QRU      C10    C09       aromatic    1.390    0.020
+ QRU      C20    N19       single      1.330    0.020
+ QRU      N21    C20       single      1.330    0.020
+ QRU      O25    C20       double      1.220    0.020
+ QRU      C02    C03       single      1.524    0.020
+ QRU      O01    C02       single      1.420    0.020
+ QRU      O29    C02       single      1.432    0.020
+ QRU      C04    C03       single      1.524    0.020
+ QRU      C05    C04       single      1.511    0.020
+ QRU      C06    C05       aromatic    1.384    0.020
+ QRU      C08    C06       aromatic    1.390    0.020
+ QRU      O07    C06       single      1.362    0.020
+ QRU      C09    C08       aromatic    1.390    0.020
+ QRU      C22    C23       single      1.524    0.020
+ QRU      C24    C22       single      1.524    0.020
+ QRU      C22    N21       single      1.450    0.020
+ QRU      C23    C24       single      1.524    0.020
+ QRU      C26    C27       aromatic    1.390    0.020
+ QRU      H16    C16       single      1.083    0.020
+ QRU      H17    C17       single      1.083    0.020
+ QRU      H12    C12       single      1.099    0.020
+ QRU      H10    C10       single      1.083    0.020
+ QRU      H02    C02       single      1.099    0.020
+ QRU      H03    C03       single      1.099    0.020
+ QRU      H041   C04       single      1.092    0.020
+ QRU      H042   C04       single      1.092    0.020
+ QRU      H08    C08       single      1.083    0.020
+ QRU      H09    C09       single      1.083    0.020
+ QRU      H22    C22       single      1.099    0.020
+ QRU      H231   C23       single      1.092    0.020
+ QRU      H232   C23       single      1.092    0.020
+ QRU      H241   C24       single      1.092    0.020
+ QRU      H242   C24       single      1.092    0.020
+ QRU      H26    C26       single      1.083    0.020
+ QRU      H27    C27       single      1.083    0.020
+ QRU      HN13   N13       single      1.010    0.020
+ QRU      HN19   N19       single      1.010    0.020
+ QRU      HN21   N21       single      1.010    0.020
+ QRU      HO07   O07       single      0.967    0.020
+ QRU      HO29   O29       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QRU      O28    C14    N13     123.000    3.000
+ QRU      O28    C14    C15     120.500    3.000
+ QRU      N13    C14    C15     120.000    3.000
+ QRU      C14    N13    HN13    120.000    3.000
+ QRU      C14    N13    C12     121.500    3.000
+ QRU      HN13   N13    C12     118.500    3.000
+ QRU      N13    C12    H12     108.550    3.000
+ QRU      N13    C12    C03     110.000    3.000
+ QRU      N13    C12    C11     109.470    3.000
+ QRU      H12    C12    C03     108.340    3.000
+ QRU      H12    C12    C11     109.470    3.000
+ QRU      C03    C12    C11     109.470    3.000
+ QRU      C12    C03    H03     108.340    3.000
+ QRU      C12    C03    C02     111.000    3.000
+ QRU      C12    C03    C04     111.000    3.000
+ QRU      H03    C03    C02     108.340    3.000
+ QRU      H03    C03    C04     108.340    3.000
+ QRU      C02    C03    C04     111.000    3.000
+ QRU      C03    C02    H02     108.340    3.000
+ QRU      C03    C02    O29     109.470    3.000
+ QRU      C03    C02    O01     109.470    3.000
+ QRU      H02    C02    O29     109.470    3.000
+ QRU      H02    C02    O01     109.470    3.000
+ QRU      O29    C02    O01     109.470    3.000
+ QRU      C02    O29    HO29    109.470    3.000
+ QRU      C03    C04    H041    109.470    3.000
+ QRU      C03    C04    H042    109.470    3.000
+ QRU      C03    C04    C05     109.470    3.000
+ QRU      H041   C04    H042    107.900    3.000
+ QRU      H041   C04    C05     109.470    3.000
+ QRU      H042   C04    C05     109.470    3.000
+ QRU      C04    C05    C06     120.000    3.000
+ QRU      C04    C05    C11     120.000    3.000
+ QRU      C06    C05    C11     120.000    3.000
+ QRU      C05    C06    O07     120.000    3.000
+ QRU      C05    C06    C08     120.000    3.000
+ QRU      O07    C06    C08     120.000    3.000
+ QRU      C06    O07    HO07    109.470    3.000
+ QRU      C06    C08    H08     120.000    3.000
+ QRU      C06    C08    C09     120.000    3.000
+ QRU      H08    C08    C09     120.000    3.000
+ QRU      C08    C09    H09     120.000    3.000
+ QRU      C08    C09    C10     120.000    3.000
+ QRU      H09    C09    C10     120.000    3.000
+ QRU      C09    C10    H10     120.000    3.000
+ QRU      C09    C10    C11     120.000    3.000
+ QRU      H10    C10    C11     120.000    3.000
+ QRU      C05    C11    C12     120.000    3.000
+ QRU      C05    C11    C10     120.000    3.000
+ QRU      C12    C11    C10     120.000    3.000
+ QRU      C14    C15    C16     120.000    3.000
+ QRU      C14    C15    C27     120.000    3.000
+ QRU      C16    C15    C27     120.000    3.000
+ QRU      C15    C16    H16     120.000    3.000
+ QRU      C15    C16    C17     120.000    3.000
+ QRU      H16    C16    C17     120.000    3.000
+ QRU      C15    C27    H27     120.000    3.000
+ QRU      C15    C27    C26     120.000    3.000
+ QRU      H27    C27    C26     120.000    3.000
+ QRU      C27    C26    H26     120.000    3.000
+ QRU      C27    C26    C18     120.000    3.000
+ QRU      H26    C26    C18     120.000    3.000
+ QRU      C26    C18    C17     120.000    3.000
+ QRU      C26    C18    N19     120.000    3.000
+ QRU      C17    C18    N19     120.000    3.000
+ QRU      C18    C17    H17     120.000    3.000
+ QRU      C18    C17    C16     120.000    3.000
+ QRU      H17    C17    C16     120.000    3.000
+ QRU      C18    N19    HN19    120.000    3.000
+ QRU      C18    N19    C20     120.000    3.000
+ QRU      HN19   N19    C20     120.000    3.000
+ QRU      N19    C20    O25     123.000    3.000
+ QRU      N19    C20    N21     120.000    3.000
+ QRU      O25    C20    N21     123.000    3.000
+ QRU      C20    N21    HN21    120.000    3.000
+ QRU      C20    N21    C22     121.500    3.000
+ QRU      HN21   N21    C22     118.500    3.000
+ QRU      N21    C22    H22     108.550    3.000
+ QRU      N21    C22    C24     110.000    3.000
+ QRU      N21    C22    C23     110.000    3.000
+ QRU      H22    C22    C24     108.340    3.000
+ QRU      H22    C22    C23     108.340    3.000
+ QRU      C24    C22    C23      60.000    3.000
+ QRU      C22    C24    H241    109.470    3.000
+ QRU      C22    C24    H242    109.470    3.000
+ QRU      C22    C24    C23      60.000    3.000
+ QRU      H241   C24    H242    107.900    3.000
+ QRU      H241   C24    C23     109.470    3.000
+ QRU      H242   C24    C23     109.470    3.000
+ QRU      C24    C23    H232    109.470    3.000
+ QRU      C24    C23    H231    109.470    3.000
+ QRU      C24    C23    C22      60.000    3.000
+ QRU      H232   C23    H231    107.900    3.000
+ QRU      H232   C23    C22     109.470    3.000
+ QRU      H231   C23    C22     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QRU      var_1            O28    C14    N13    C12              180.000           20.000   2
+ QRU      var_2            C14    N13    C12    C03                0.000           20.000   3
+ QRU      var_3            N13    C12    C11    C05              103.529           20.000   3
+ QRU      var_4            N13    C12    C03    C04              180.000           20.000   3
+ QRU      var_5            C12    C03    C02    O01              180.000           20.000   3
+ QRU      var_6            C03    C02    O29    HO29             180.000           20.000   3
+ QRU      var_7            C12    C03    C04    C05              180.000           20.000   3
+ QRU      var_8            C03    C04    C05    C11                0.000           20.000   2
+ QRU      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QRU      var_9            C05    C06    O07    HO07             180.000           20.000   3
+ QRU      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QRU      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QRU      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QRU      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QRU      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QRU      var_10           O28    C14    C15    C27               11.736           20.000   3
+ QRU      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QRU      CONST_8          C15    C16    C17    C18                0.000            0.000   0
+ QRU      CONST_9          C14    C15    C27    C26                0.000            0.000   0
+ QRU      CONST_10         C15    C27    C26    C18                0.000            0.000   0
+ QRU      CONST_11         C27    C26    C18    N19                0.000            0.000   0
+ QRU      CONST_12         C26    C18    C17    C16                0.000            0.000   0
+ QRU      var_11           C26    C18    N19    C20                2.300           20.000   3
+ QRU      var_12           C18    N19    C20    N21              180.000           20.000   2
+ QRU      var_13           N19    C20    N21    C22              180.000           20.000   2
+ QRU      var_14           C20    N21    C22    C24                0.000           20.000   3
+ QRU      var_15           N21    C22    C23    C24              180.000           20.000   3
+ QRU      var_16           N21    C22    C24    C23              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QRU      chir_01          C12    C11    C03    N13       negativ
+ QRU      chir_02          C02    C03    O01    O29       negativ
+ QRU      chir_03          C03    C12    C02    C04       positiv
+ QRU      chir_04          C22    C23    C24    N21       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QRU      plan-1            C18       0.020
+ QRU      plan-1            C17       0.020
+ QRU      plan-1            C26       0.020
+ QRU      plan-1            N19       0.020
+ QRU      plan-1            C16       0.020
+ QRU      plan-1            C15       0.020
+ QRU      plan-1            C27       0.020
+ QRU      plan-1            H16       0.020
+ QRU      plan-1            H17       0.020
+ QRU      plan-1            C14       0.020
+ QRU      plan-1            H26       0.020
+ QRU      plan-1            H27       0.020
+ QRU      plan-1            HN19      0.020
+ QRU      plan-2            C14       0.020
+ QRU      plan-2            C15       0.020
+ QRU      plan-2            N13       0.020
+ QRU      plan-2            O28       0.020
+ QRU      plan-2            HN13      0.020
+ QRU      plan-3            C11       0.020
+ QRU      plan-3            C12       0.020
+ QRU      plan-3            C10       0.020
+ QRU      plan-3            C05       0.020
+ QRU      plan-3            C06       0.020
+ QRU      plan-3            C08       0.020
+ QRU      plan-3            C09       0.020
+ QRU      plan-3            H10       0.020
+ QRU      plan-3            C04       0.020
+ QRU      plan-3            O07       0.020
+ QRU      plan-3            H08       0.020
+ QRU      plan-3            H09       0.020
+ QRU      plan-4            C20       0.020
+ QRU      plan-4            N19       0.020
+ QRU      plan-4            N21       0.020
+ QRU      plan-4            O25       0.020
+ QRU      plan-4            HN19      0.020
+ QRU      plan-4            HN21      0.020
+ QRU      plan-5            N13       0.020
+ QRU      plan-5            C14       0.020
+ QRU      plan-5            C12       0.020
+ QRU      plan-5            HN13      0.020
+ QRU      plan-6            N19       0.020
+ QRU      plan-6            C18       0.020
+ QRU      plan-6            C20       0.020
+ QRU      plan-6            HN19      0.020
+ QRU      plan-7            N21       0.020
+ QRU      plan-7            C20       0.020
+ QRU      plan-7            C22       0.020
+ QRU      plan-7            HN21      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

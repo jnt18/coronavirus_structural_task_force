@@ -1,0 +1,699 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RY6      RY6 '.                                   ' .                  42  26 .
+RYC      RYC '.                                   ' .                  42  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RY6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RY6           O26    O    O         0.000    -52.618  -28.991    7.080
+ RY6           C02    C    C         0.000    -51.811  -29.057    7.944
+ RY6           N01    N    NH2       0.000    -52.194  -29.110    9.326
+ RY6           H012   H    H         0.000    -53.182  -29.093    9.618
+ RY6           H011   H    H         0.000    -51.497  -29.167   10.082
+ RY6           N03    N    NH1       0.000    -50.389  -29.051    7.729
+ RY6           HN03   H    H         0.000    -49.787  -29.050    8.540
+ RY6           C04    C    CR6       0.000    -49.772  -29.047    6.428
+ RY6           C25    C    CR16      0.000    -50.497  -29.044    5.243
+ RY6           H25    H    H         0.000    -51.579  -29.011    5.262
+ RY6           C24    C    CR16      0.000    -49.820  -29.084    4.043
+ RY6           H24    H    H         0.000    -50.365  -29.082    3.107
+ RY6           C07    C    CR6       0.000    -48.444  -29.126    4.045
+ RY6           C06    C    CR16      0.000    -47.710  -29.171    5.220
+ RY6           H06    H    H         0.000    -46.629  -29.240    5.197
+ RY6           C05    C    CR16      0.000    -48.390  -29.126    6.420
+ RY6           H05    H    H         0.000    -47.843  -29.152    7.354
+ RY6           C08    C    C         0.000    -47.754  -29.230    2.710
+ RY6           O23    O    O         0.000    -48.284  -28.924    1.694
+ RY6           N09    N    NH1       0.000    -46.465  -29.874    2.735
+ RY6           HN09   H    H         0.000    -46.061  -30.201    3.601
+ RY6           C10    C    CH1       0.000    -45.781  -30.033    1.498
+ RY6           H10    H    H         0.000    -46.281  -29.387    0.763
+ RY6           C11    C    CH1       0.000    -44.386  -29.525    1.661
+ RY6           H11    H    H         0.000    -44.389  -28.432    1.543
+ RY6           C12    C    C         0.000    -43.750  -29.874    2.998
+ RY6           O14    O    OC        0.000    -43.152  -28.948    3.603
+ RY6           O13    O    OC       -1.000    -43.823  -31.037    3.485
+ RY6           C15    C    CH2       0.000    -43.656  -30.135    0.507
+ RY6           H152   H    H         0.000    -42.614  -30.351    0.750
+ RY6           H151   H    H         0.000    -43.698  -29.504   -0.383
+ RY6           C22    C    CR6       0.000    -45.634  -31.432    0.857
+ RY6           C16    C    CR6       0.000    -44.399  -31.442    0.241
+ RY6           C21    C    CR16      0.000    -46.474  -32.542    0.724
+ RY6           H21    H    H         0.000    -47.458  -32.534    1.176
+ RY6           C20    C    CR16      0.000    -46.046  -33.653    0.013
+ RY6           H20    H    H         0.000    -46.689  -34.520   -0.080
+ RY6           C19    C    CR16      0.000    -44.791  -33.650   -0.579
+ RY6           H19    H    H         0.000    -44.455  -34.517   -1.135
+ RY6           C17    C    CR6       0.000    -43.965  -32.541   -0.462
+ RY6           O18    O    OH1       0.000    -42.692  -32.453   -1.035
+ RY6           HO18   H    H         0.000    -42.294  -31.593   -0.827
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RY6      O26    n/a    C02    START
+ RY6      C02    O26    N03    .
+ RY6      N01    C02    H011   .
+ RY6      H012   N01    .      .
+ RY6      H011   N01    .      .
+ RY6      N03    C02    C04    .
+ RY6      HN03   N03    .      .
+ RY6      C04    N03    C25    .
+ RY6      C25    C04    C24    .
+ RY6      H25    C25    .      .
+ RY6      C24    C25    C07    .
+ RY6      H24    C24    .      .
+ RY6      C07    C24    C08    .
+ RY6      C06    C07    C05    .
+ RY6      H06    C06    .      .
+ RY6      C05    C06    H05    .
+ RY6      H05    C05    .      .
+ RY6      C08    C07    N09    .
+ RY6      O23    C08    .      .
+ RY6      N09    C08    C10    .
+ RY6      HN09   N09    .      .
+ RY6      C10    N09    C22    .
+ RY6      H10    C10    .      .
+ RY6      C11    C10    C15    .
+ RY6      H11    C11    .      .
+ RY6      C12    C11    O13    .
+ RY6      O14    C12    .      .
+ RY6      O13    C12    .      .
+ RY6      C15    C11    H151   .
+ RY6      H152   C15    .      .
+ RY6      H151   C15    .      .
+ RY6      C22    C10    C21    .
+ RY6      C16    C22    .      .
+ RY6      C21    C22    C20    .
+ RY6      H21    C21    .      .
+ RY6      C20    C21    C19    .
+ RY6      H20    C20    .      .
+ RY6      C19    C20    C17    .
+ RY6      H19    C19    .      .
+ RY6      C17    C19    O18    .
+ RY6      O18    C17    HO18   .
+ RY6      HO18   O18    .      END
+ RY6      C16    C17    .    ADD
+ RY6      C16    C15    .    ADD
+ RY6      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RY6      C16    C17       aromatic    1.384    0.020
+ RY6      C16    C15       single      1.511    0.020
+ RY6      C16    C22       aromatic    1.384    0.020
+ RY6      C17    C19       aromatic    1.390    0.020
+ RY6      O18    C17       single      1.362    0.020
+ RY6      C15    C11       single      1.524    0.020
+ RY6      C12    C11       single      1.500    0.020
+ RY6      O13    C12       deloc       1.250    0.020
+ RY6      O14    C12       deloc       1.250    0.020
+ RY6      C11    C10       single      1.524    0.020
+ RY6      C22    C10       single      1.480    0.020
+ RY6      C10    N09       single      1.450    0.020
+ RY6      C19    C20       aromatic    1.390    0.020
+ RY6      C20    C21       aromatic    1.390    0.020
+ RY6      N01    C02       single      1.332    0.020
+ RY6      N03    C02       single      1.330    0.020
+ RY6      C02    O26       double      1.220    0.020
+ RY6      C04    C05       aromatic    1.390    0.020
+ RY6      C25    C04       aromatic    1.390    0.020
+ RY6      C04    N03       single      1.350    0.020
+ RY6      C05    C06       aromatic    1.390    0.020
+ RY6      C06    C07       aromatic    1.390    0.020
+ RY6      C08    C07       single      1.500    0.020
+ RY6      C07    C24       aromatic    1.390    0.020
+ RY6      N09    C08       single      1.330    0.020
+ RY6      O23    C08       double      1.220    0.020
+ RY6      C21    C22       aromatic    1.390    0.020
+ RY6      C24    C25       aromatic    1.390    0.020
+ RY6      H151   C15       single      1.092    0.020
+ RY6      H152   C15       single      1.092    0.020
+ RY6      H11    C11       single      1.099    0.020
+ RY6      H10    C10       single      1.099    0.020
+ RY6      H20    C20       single      1.083    0.020
+ RY6      H19    C19       single      1.083    0.020
+ RY6      H05    C05       single      1.083    0.020
+ RY6      H06    C06       single      1.083    0.020
+ RY6      H21    C21       single      1.083    0.020
+ RY6      H24    C24       single      1.083    0.020
+ RY6      H25    C25       single      1.083    0.020
+ RY6      H011   N01       single      1.010    0.020
+ RY6      H012   N01       single      1.010    0.020
+ RY6      HN03   N03       single      1.010    0.020
+ RY6      HN09   N09       single      1.010    0.020
+ RY6      HO18   O18       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RY6      O26    C02    N01     123.000    3.000
+ RY6      O26    C02    N03     123.000    3.000
+ RY6      N01    C02    N03     120.000    3.000
+ RY6      C02    N01    H012    120.000    3.000
+ RY6      C02    N01    H011    120.000    3.000
+ RY6      H012   N01    H011    120.000    3.000
+ RY6      C02    N03    HN03    120.000    3.000
+ RY6      C02    N03    C04     120.000    3.000
+ RY6      HN03   N03    C04     120.000    3.000
+ RY6      N03    C04    C25     120.000    3.000
+ RY6      N03    C04    C05     120.000    3.000
+ RY6      C25    C04    C05     120.000    3.000
+ RY6      C04    C25    H25     120.000    3.000
+ RY6      C04    C25    C24     120.000    3.000
+ RY6      H25    C25    C24     120.000    3.000
+ RY6      C25    C24    H24     120.000    3.000
+ RY6      C25    C24    C07     120.000    3.000
+ RY6      H24    C24    C07     120.000    3.000
+ RY6      C24    C07    C06     120.000    3.000
+ RY6      C24    C07    C08     120.000    3.000
+ RY6      C06    C07    C08     120.000    3.000
+ RY6      C07    C06    H06     120.000    3.000
+ RY6      C07    C06    C05     120.000    3.000
+ RY6      H06    C06    C05     120.000    3.000
+ RY6      C06    C05    H05     120.000    3.000
+ RY6      C06    C05    C04     120.000    3.000
+ RY6      H05    C05    C04     120.000    3.000
+ RY6      C07    C08    O23     120.500    3.000
+ RY6      C07    C08    N09     120.000    3.000
+ RY6      O23    C08    N09     123.000    3.000
+ RY6      C08    N09    HN09    120.000    3.000
+ RY6      C08    N09    C10     121.500    3.000
+ RY6      HN09   N09    C10     118.500    3.000
+ RY6      N09    C10    H10     108.550    3.000
+ RY6      N09    C10    C11     110.000    3.000
+ RY6      N09    C10    C22     109.470    3.000
+ RY6      H10    C10    C11     108.340    3.000
+ RY6      H10    C10    C22     109.470    3.000
+ RY6      C11    C10    C22     109.470    3.000
+ RY6      C10    C11    H11     108.340    3.000
+ RY6      C10    C11    C12     109.470    3.000
+ RY6      C10    C11    C15     111.000    3.000
+ RY6      H11    C11    C12     108.810    3.000
+ RY6      H11    C11    C15     108.340    3.000
+ RY6      C12    C11    C15     109.470    3.000
+ RY6      C11    C12    O14     118.500    3.000
+ RY6      C11    C12    O13     118.500    3.000
+ RY6      O14    C12    O13     123.000    3.000
+ RY6      C11    C15    H152    109.470    3.000
+ RY6      C11    C15    H151    109.470    3.000
+ RY6      C11    C15    C16     109.470    3.000
+ RY6      H152   C15    H151    107.900    3.000
+ RY6      H152   C15    C16     109.470    3.000
+ RY6      H151   C15    C16     109.470    3.000
+ RY6      C10    C22    C16     120.000    3.000
+ RY6      C10    C22    C21     120.000    3.000
+ RY6      C16    C22    C21     120.000    3.000
+ RY6      C22    C16    C17     120.000    3.000
+ RY6      C22    C16    C15     120.000    3.000
+ RY6      C17    C16    C15     120.000    3.000
+ RY6      C22    C21    H21     120.000    3.000
+ RY6      C22    C21    C20     120.000    3.000
+ RY6      H21    C21    C20     120.000    3.000
+ RY6      C21    C20    H20     120.000    3.000
+ RY6      C21    C20    C19     120.000    3.000
+ RY6      H20    C20    C19     120.000    3.000
+ RY6      C20    C19    H19     120.000    3.000
+ RY6      C20    C19    C17     120.000    3.000
+ RY6      H19    C19    C17     120.000    3.000
+ RY6      C19    C17    O18     120.000    3.000
+ RY6      C19    C17    C16     120.000    3.000
+ RY6      O18    C17    C16     120.000    3.000
+ RY6      C17    O18    HO18    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RY6      CONST_1          O26    C02    N01    H011             180.000            0.000   0
+ RY6      var_1            O26    C02    N03    C04              180.000           20.000   2
+ RY6      var_2            C02    N03    C04    C25                0.225           20.000   3
+ RY6      CONST_2          N03    C04    C05    C06                0.000            0.000   0
+ RY6      CONST_3          N03    C04    C25    C24                0.000            0.000   0
+ RY6      CONST_4          C04    C25    C24    C07                0.000            0.000   0
+ RY6      CONST_5          C25    C24    C07    C08                0.000            0.000   0
+ RY6      CONST_6          C24    C07    C06    C05                0.000            0.000   0
+ RY6      CONST_7          C07    C06    C05    C04                0.000            0.000   0
+ RY6      var_3            C24    C07    C08    N09             -152.384           20.000   3
+ RY6      var_4            C07    C08    N09    C10              180.000           20.000   2
+ RY6      var_5            C08    N09    C10    C22                0.000           20.000   3
+ RY6      var_6            N09    C10    C11    C15              180.000           20.000   3
+ RY6      var_7            C10    C11    C12    O13              180.000           20.000   3
+ RY6      var_8            C10    C11    C15    C16              180.000           20.000   3
+ RY6      var_9            N09    C10    C22    C21               39.698           20.000   3
+ RY6      CONST_8          C10    C22    C16    C17                0.000            0.000   0
+ RY6      CONST_9          C22    C16    C17    C19                0.000            0.000   0
+ RY6      var_10           C22    C16    C15    C11                0.000           20.000   2
+ RY6      CONST_10         C10    C22    C21    C20                0.000            0.000   0
+ RY6      CONST_11         C22    C21    C20    C19                0.000            0.000   0
+ RY6      CONST_12         C21    C20    C19    C17                0.000            0.000   0
+ RY6      CONST_13         C20    C19    C17    O18                0.000            0.000   0
+ RY6      var_11           C19    C17    O18    HO18             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RY6      chir_01          C11    C15    C12    C10       positiv
+ RY6      chir_02          C10    C11    C22    N09       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RY6      plan-1            C16       0.020
+ RY6      plan-1            C17       0.020
+ RY6      plan-1            C15       0.020
+ RY6      plan-1            C22       0.020
+ RY6      plan-1            C20       0.020
+ RY6      plan-1            C19       0.020
+ RY6      plan-1            C21       0.020
+ RY6      plan-1            O18       0.020
+ RY6      plan-1            H20       0.020
+ RY6      plan-1            H19       0.020
+ RY6      plan-1            H21       0.020
+ RY6      plan-1            C10       0.020
+ RY6      plan-2            C12       0.020
+ RY6      plan-2            C11       0.020
+ RY6      plan-2            O13       0.020
+ RY6      plan-2            O14       0.020
+ RY6      plan-3            C02       0.020
+ RY6      plan-3            N01       0.020
+ RY6      plan-3            N03       0.020
+ RY6      plan-3            O26       0.020
+ RY6      plan-3            H012      0.020
+ RY6      plan-3            H011      0.020
+ RY6      plan-3            HN03      0.020
+ RY6      plan-4            C04       0.020
+ RY6      plan-4            C05       0.020
+ RY6      plan-4            C25       0.020
+ RY6      plan-4            N03       0.020
+ RY6      plan-4            C06       0.020
+ RY6      plan-4            C07       0.020
+ RY6      plan-4            C24       0.020
+ RY6      plan-4            H05       0.020
+ RY6      plan-4            H06       0.020
+ RY6      plan-4            C08       0.020
+ RY6      plan-4            H24       0.020
+ RY6      plan-4            H25       0.020
+ RY6      plan-4            HN03      0.020
+ RY6      plan-5            C08       0.020
+ RY6      plan-5            C07       0.020
+ RY6      plan-5            N09       0.020
+ RY6      plan-5            O23       0.020
+ RY6      plan-5            HN09      0.020
+ RY6      plan-6            N01       0.020
+ RY6      plan-6            C02       0.020
+ RY6      plan-6            H011      0.020
+ RY6      plan-6            H012      0.020
+ RY6      plan-7            N03       0.020
+ RY6      plan-7            C02       0.020
+ RY6      plan-7            C04       0.020
+ RY6      plan-7            HN03      0.020
+ RY6      plan-8            N09       0.020
+ RY6      plan-8            C10       0.020
+ RY6      plan-8            C08       0.020
+ RY6      plan-8            HN09      0.020
+#
+data_comp_RYC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RYC           O26    O    O         0.000    -52.615  -29.014    7.072
+ RYC           C02    C    C         0.000    -51.810  -29.070    7.939
+ RYC           N01    N    NH2       0.000    -52.195  -29.117    9.323
+ RYC           H012   H    H         0.000    -53.183  -29.104    9.614
+ RYC           H011   H    H         0.000    -51.499  -29.166   10.081
+ RYC           N03    N    NH1       0.000    -50.387  -29.071    7.722
+ RYC           HN03   H    H         0.000    -49.785  -29.078    8.533
+ RYC           C04    C    CR6       0.000    -49.765  -29.062    6.419
+ RYC           C25    C    CR16      0.000    -50.480  -29.046    5.226
+ RYC           H25    H    H         0.000    -51.563  -29.017    5.235
+ RYC           C24    C    CR16      0.000    -49.787  -29.068    4.027
+ RYC           H24    H    H         0.000    -50.329  -29.056    3.089
+ RYC           C07    C    CR6       0.000    -48.401  -29.105    4.025
+ RYC           C06    C    CR16      0.000    -47.694  -29.149    5.219
+ RYC           H06    H    H         0.000    -46.612  -29.202    5.212
+ RYC           C05    C    CR16      0.000    -48.383  -29.124    6.416
+ RYC           H05    H    H         0.000    -47.841  -29.153    7.353
+ RYC           C08    C    C         0.000    -47.663  -29.168    2.695
+ RYC           O23    O    O         0.000    -48.238  -28.989    1.674
+ RYC           N09    N    NH1       0.000    -46.256  -29.520    2.715
+ RYC           HN09   H    H         0.000    -45.781  -29.669    3.594
+ RYC           C10    C    CH1       0.000    -45.531  -29.658    1.454
+ RYC           H10    H    H         0.000    -46.078  -30.364    0.814
+ RYC           C22    C    CR6       0.000    -45.399  -28.327    0.704
+ RYC           C16    C    CR6       0.000    -44.088  -27.860    0.834
+ RYC           C15    C    CH2       0.000    -43.272  -28.869    1.695
+ RYC           H151   H    H         0.000    -43.196  -28.574    2.744
+ RYC           H152   H    H         0.000    -42.273  -29.060    1.299
+ RYC           C11    C    CH1       0.000    -44.116  -30.133    1.581
+ RYC           H11    H    H         0.000    -43.833  -30.676    0.668
+ RYC           C12    C    C         0.000    -43.972  -31.062    2.784
+ RYC           O14    O    OC        0.000    -44.485  -32.214    2.746
+ RYC           O13    O    OC       -1.000    -43.343  -30.674    3.804
+ RYC           C21    C    CR16      0.000    -46.342  -27.608   -0.032
+ RYC           H21    H    H         0.000    -47.356  -27.977   -0.131
+ RYC           C20    C    CR16      0.000    -45.969  -26.422   -0.632
+ RYC           H20    H    H         0.000    -46.693  -25.855   -1.204
+ RYC           C19    C    CR16      0.000    -44.670  -25.956   -0.504
+ RYC           H19    H    H         0.000    -44.390  -25.024   -0.980
+ RYC           C17    C    CR6       0.000    -43.725  -26.660    0.221
+ RYC           O18    O    OH1       0.000    -42.427  -26.146    0.312
+ RYC           HO18   H    H         0.000    -41.874  -26.737    0.846
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RYC      O26    n/a    C02    START
+ RYC      C02    O26    N03    .
+ RYC      N01    C02    H011   .
+ RYC      H012   N01    .      .
+ RYC      H011   N01    .      .
+ RYC      N03    C02    C04    .
+ RYC      HN03   N03    .      .
+ RYC      C04    N03    C25    .
+ RYC      C25    C04    C24    .
+ RYC      H25    C25    .      .
+ RYC      C24    C25    C07    .
+ RYC      H24    C24    .      .
+ RYC      C07    C24    C08    .
+ RYC      C06    C07    C05    .
+ RYC      H06    C06    .      .
+ RYC      C05    C06    H05    .
+ RYC      H05    C05    .      .
+ RYC      C08    C07    N09    .
+ RYC      O23    C08    .      .
+ RYC      N09    C08    C10    .
+ RYC      HN09   N09    .      .
+ RYC      C10    N09    C22    .
+ RYC      H10    C10    .      .
+ RYC      C22    C10    C21    .
+ RYC      C16    C22    C15    .
+ RYC      C15    C16    C11    .
+ RYC      H151   C15    .      .
+ RYC      H152   C15    .      .
+ RYC      C11    C15    C12    .
+ RYC      H11    C11    .      .
+ RYC      C12    C11    O13    .
+ RYC      O14    C12    .      .
+ RYC      O13    C12    .      .
+ RYC      C21    C22    C20    .
+ RYC      H21    C21    .      .
+ RYC      C20    C21    C19    .
+ RYC      H20    C20    .      .
+ RYC      C19    C20    C17    .
+ RYC      H19    C19    .      .
+ RYC      C17    C19    O18    .
+ RYC      O18    C17    HO18   .
+ RYC      HO18   O18    .      END
+ RYC      C04    C05    .    ADD
+ RYC      C10    C11    .    ADD
+ RYC      C16    C17    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RYC      N01    C02       single      1.332    0.020
+ RYC      N03    C02       single      1.330    0.020
+ RYC      C02    O26       double      1.220    0.020
+ RYC      C04    C05       aromatic    1.390    0.020
+ RYC      C25    C04       aromatic    1.390    0.020
+ RYC      C04    N03       single      1.350    0.020
+ RYC      C05    C06       aromatic    1.390    0.020
+ RYC      C06    C07       aromatic    1.390    0.020
+ RYC      C08    C07       single      1.500    0.020
+ RYC      C07    C24       aromatic    1.390    0.020
+ RYC      N09    C08       single      1.330    0.020
+ RYC      O23    C08       double      1.220    0.020
+ RYC      C10    C11       single      1.524    0.020
+ RYC      C22    C10       single      1.480    0.020
+ RYC      C10    N09       single      1.450    0.020
+ RYC      C12    C11       single      1.500    0.020
+ RYC      C11    C15       single      1.524    0.020
+ RYC      O13    C12       deloc       1.250    0.020
+ RYC      O14    C12       deloc       1.250    0.020
+ RYC      C15    C16       single      1.511    0.020
+ RYC      C16    C17       aromatic    1.384    0.020
+ RYC      C16    C22       aromatic    1.384    0.020
+ RYC      C17    C19       aromatic    1.390    0.020
+ RYC      O18    C17       single      1.362    0.020
+ RYC      C19    C20       aromatic    1.390    0.020
+ RYC      C20    C21       aromatic    1.390    0.020
+ RYC      C21    C22       aromatic    1.390    0.020
+ RYC      C24    C25       aromatic    1.390    0.020
+ RYC      H05    C05       single      1.083    0.020
+ RYC      H06    C06       single      1.083    0.020
+ RYC      H10    C10       single      1.099    0.020
+ RYC      H11    C11       single      1.099    0.020
+ RYC      H151   C15       single      1.092    0.020
+ RYC      H152   C15       single      1.092    0.020
+ RYC      H19    C19       single      1.083    0.020
+ RYC      H20    C20       single      1.083    0.020
+ RYC      H21    C21       single      1.083    0.020
+ RYC      H24    C24       single      1.083    0.020
+ RYC      H25    C25       single      1.083    0.020
+ RYC      H011   N01       single      1.010    0.020
+ RYC      H012   N01       single      1.010    0.020
+ RYC      HN03   N03       single      1.010    0.020
+ RYC      HN09   N09       single      1.010    0.020
+ RYC      HO18   O18       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RYC      O26    C02    N01     123.000    3.000
+ RYC      O26    C02    N03     123.000    3.000
+ RYC      N01    C02    N03     120.000    3.000
+ RYC      C02    N01    H012    120.000    3.000
+ RYC      C02    N01    H011    120.000    3.000
+ RYC      H012   N01    H011    120.000    3.000
+ RYC      C02    N03    HN03    120.000    3.000
+ RYC      C02    N03    C04     120.000    3.000
+ RYC      HN03   N03    C04     120.000    3.000
+ RYC      N03    C04    C25     120.000    3.000
+ RYC      N03    C04    C05     120.000    3.000
+ RYC      C25    C04    C05     120.000    3.000
+ RYC      C04    C25    H25     120.000    3.000
+ RYC      C04    C25    C24     120.000    3.000
+ RYC      H25    C25    C24     120.000    3.000
+ RYC      C25    C24    H24     120.000    3.000
+ RYC      C25    C24    C07     120.000    3.000
+ RYC      H24    C24    C07     120.000    3.000
+ RYC      C24    C07    C06     120.000    3.000
+ RYC      C24    C07    C08     120.000    3.000
+ RYC      C06    C07    C08     120.000    3.000
+ RYC      C07    C06    H06     120.000    3.000
+ RYC      C07    C06    C05     120.000    3.000
+ RYC      H06    C06    C05     120.000    3.000
+ RYC      C06    C05    H05     120.000    3.000
+ RYC      C06    C05    C04     120.000    3.000
+ RYC      H05    C05    C04     120.000    3.000
+ RYC      C07    C08    O23     120.500    3.000
+ RYC      C07    C08    N09     120.000    3.000
+ RYC      O23    C08    N09     123.000    3.000
+ RYC      C08    N09    HN09    120.000    3.000
+ RYC      C08    N09    C10     121.500    3.000
+ RYC      HN09   N09    C10     118.500    3.000
+ RYC      N09    C10    H10     108.550    3.000
+ RYC      N09    C10    C22     109.470    3.000
+ RYC      N09    C10    C11     110.000    3.000
+ RYC      H10    C10    C22     109.470    3.000
+ RYC      H10    C10    C11     108.340    3.000
+ RYC      C22    C10    C11     109.470    3.000
+ RYC      C10    C22    C16     120.000    3.000
+ RYC      C10    C22    C21     120.000    3.000
+ RYC      C16    C22    C21     120.000    3.000
+ RYC      C22    C16    C15     120.000    3.000
+ RYC      C22    C16    C17     120.000    3.000
+ RYC      C15    C16    C17     120.000    3.000
+ RYC      C16    C15    H151    109.470    3.000
+ RYC      C16    C15    H152    109.470    3.000
+ RYC      C16    C15    C11     109.470    3.000
+ RYC      H151   C15    H152    107.900    3.000
+ RYC      H151   C15    C11     109.470    3.000
+ RYC      H152   C15    C11     109.470    3.000
+ RYC      C15    C11    H11     108.340    3.000
+ RYC      C15    C11    C12     109.470    3.000
+ RYC      C15    C11    C10     111.000    3.000
+ RYC      H11    C11    C12     108.810    3.000
+ RYC      H11    C11    C10     108.340    3.000
+ RYC      C12    C11    C10     109.470    3.000
+ RYC      C11    C12    O14     118.500    3.000
+ RYC      C11    C12    O13     118.500    3.000
+ RYC      O14    C12    O13     123.000    3.000
+ RYC      C22    C21    H21     120.000    3.000
+ RYC      C22    C21    C20     120.000    3.000
+ RYC      H21    C21    C20     120.000    3.000
+ RYC      C21    C20    H20     120.000    3.000
+ RYC      C21    C20    C19     120.000    3.000
+ RYC      H20    C20    C19     120.000    3.000
+ RYC      C20    C19    H19     120.000    3.000
+ RYC      C20    C19    C17     120.000    3.000
+ RYC      H19    C19    C17     120.000    3.000
+ RYC      C19    C17    O18     120.000    3.000
+ RYC      C19    C17    C16     120.000    3.000
+ RYC      O18    C17    C16     120.000    3.000
+ RYC      C17    O18    HO18    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RYC      CONST_1          O26    C02    N01    H011             180.000            0.000   0
+ RYC      var_1            O26    C02    N03    C04              180.000           20.000   2
+ RYC      var_2            C02    N03    C04    C25                0.262           20.000   3
+ RYC      CONST_2          N03    C04    C05    C06                0.000            0.000   0
+ RYC      CONST_3          N03    C04    C25    C24                0.000            0.000   0
+ RYC      CONST_4          C04    C25    C24    C07                0.000            0.000   0
+ RYC      CONST_5          C25    C24    C07    C08                0.000            0.000   0
+ RYC      CONST_6          C24    C07    C06    C05                0.000            0.000   0
+ RYC      CONST_7          C07    C06    C05    C04                0.000            0.000   0
+ RYC      var_3            C24    C07    C08    N09             -165.778           20.000   3
+ RYC      var_4            C07    C08    N09    C10              180.000           20.000   2
+ RYC      var_5            C08    N09    C10    C22                0.000           20.000   3
+ RYC      var_6            N09    C10    C11    C15              180.000           20.000   3
+ RYC      var_7            N09    C10    C22    C21              -75.493           20.000   3
+ RYC      CONST_8          C10    C22    C16    C15                0.000            0.000   0
+ RYC      CONST_9          C22    C16    C17    C19                0.000            0.000   0
+ RYC      var_8            C22    C16    C15    C11                0.000           20.000   2
+ RYC      var_9            C16    C15    C11    C12              180.000           20.000   3
+ RYC      var_10           C15    C11    C12    O13              180.000           20.000   3
+ RYC      CONST_10         C10    C22    C21    C20                0.000            0.000   0
+ RYC      CONST_11         C22    C21    C20    C19                0.000            0.000   0
+ RYC      CONST_12         C21    C20    C19    C17                0.000            0.000   0
+ RYC      CONST_13         C20    C19    C17    O18                0.000            0.000   0
+ RYC      var_11           C19    C17    O18    HO18             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RYC      chir_01          C10    C11    C22    N09       positiv
+ RYC      chir_02          C11    C10    C12    C15       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RYC      plan-1            C02       0.020
+ RYC      plan-1            N01       0.020
+ RYC      plan-1            N03       0.020
+ RYC      plan-1            O26       0.020
+ RYC      plan-1            H012      0.020
+ RYC      plan-1            H011      0.020
+ RYC      plan-1            HN03      0.020
+ RYC      plan-2            C04       0.020
+ RYC      plan-2            C05       0.020
+ RYC      plan-2            C25       0.020
+ RYC      plan-2            N03       0.020
+ RYC      plan-2            C06       0.020
+ RYC      plan-2            C07       0.020
+ RYC      plan-2            C24       0.020
+ RYC      plan-2            H05       0.020
+ RYC      plan-2            H06       0.020
+ RYC      plan-2            C08       0.020
+ RYC      plan-2            H24       0.020
+ RYC      plan-2            H25       0.020
+ RYC      plan-2            HN03      0.020
+ RYC      plan-3            C08       0.020
+ RYC      plan-3            C07       0.020
+ RYC      plan-3            N09       0.020
+ RYC      plan-3            O23       0.020
+ RYC      plan-3            HN09      0.020
+ RYC      plan-4            C12       0.020
+ RYC      plan-4            C11       0.020
+ RYC      plan-4            O13       0.020
+ RYC      plan-4            O14       0.020
+ RYC      plan-5            C16       0.020
+ RYC      plan-5            C15       0.020
+ RYC      plan-5            C17       0.020
+ RYC      plan-5            C22       0.020
+ RYC      plan-5            C19       0.020
+ RYC      plan-5            C20       0.020
+ RYC      plan-5            C21       0.020
+ RYC      plan-5            O18       0.020
+ RYC      plan-5            H19       0.020
+ RYC      plan-5            H20       0.020
+ RYC      plan-5            H21       0.020
+ RYC      plan-5            C10       0.020
+ RYC      plan-6            N01       0.020
+ RYC      plan-6            C02       0.020
+ RYC      plan-6            H011      0.020
+ RYC      plan-6            H012      0.020
+ RYC      plan-7            N03       0.020
+ RYC      plan-7            C02       0.020
+ RYC      plan-7            C04       0.020
+ RYC      plan-7            HN03      0.020
+ RYC      plan-8            N09       0.020
+ RYC      plan-8            C08       0.020
+ RYC      plan-8            C10       0.020
+ RYC      plan-8            HN09      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

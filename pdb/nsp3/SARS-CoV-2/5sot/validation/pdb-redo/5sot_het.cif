@@ -1,0 +1,608 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WX4      WX4 '.                                   ' .                  37  22 .
+S1O      S1O '.                                   ' .                  37  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WX4
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WX4           O01    O    OH1       0.000    -46.358  -35.149   -0.027
+ WX4           HO01   H    H         0.000    -46.845  -35.969   -0.169
+ WX4           C02    C    CH2       0.000    -47.077  -34.338    0.857
+ WX4           H021   H    H         0.000    -47.204  -34.842    1.817
+ WX4           H022   H    H         0.000    -48.058  -34.098    0.441
+ WX4           C03    C    CR5       0.000    -46.282  -33.058    1.056
+ WX4           N07    N    NRD5      0.000    -45.179  -32.930    1.794
+ WX4           N06    N    NR15      0.000    -44.785  -31.627    1.713
+ WX4           HN06   H    H         0.000    -43.959  -31.204    2.183
+ WX4           N05    N    NR5       0.000    -45.665  -30.985    0.910
+ WX4           C04    C    CR15      0.000    -46.583  -31.820    0.503
+ WX4           H04    H    H         0.000    -47.421  -31.590   -0.144
+ WX4           C08    C    C         0.000    -45.617  -29.523    0.554
+ WX4           C09    C    C1        0.000    -44.356  -29.172    0.004
+ WX4           H09    H    H         0.000    -44.067  -29.464   -0.991
+ WX4           C13    C    CH2       0.000    -45.910  -28.716    1.827
+ WX4           H131   H    H         0.000    -46.906  -28.976    2.192
+ WX4           H132   H    H         0.000    -45.877  -27.651    1.589
+ WX4           N12    N    N         0.000    -44.877  -29.030    2.899
+ WX4           C11    C    CH2       0.000    -43.478  -28.874    2.323
+ WX4           H111   H    H         0.000    -42.986  -29.847    2.387
+ WX4           H112   H    H         0.000    -42.944  -28.156    2.948
+ WX4           C10    C    CH2       0.000    -43.473  -28.391    0.867
+ WX4           H102   H    H         0.000    -42.447  -28.460    0.499
+ WX4           H101   H    H         0.000    -43.790  -27.346    0.864
+ WX4           C14    C    CR6       0.000    -45.096  -29.043    4.328
+ WX4           N15    N    NRD6      0.000    -44.020  -29.158    5.103
+ WX4           C16    C    CR16      0.000    -44.139  -29.186    6.420
+ WX4           H16    H    H         0.000    -43.253  -29.265    7.037
+ WX4           N17    N    NRD6      0.000    -45.318  -29.119    6.984
+ WX4           C18    C    CR56      0.000    -46.467  -29.006    6.289
+ WX4           C22    C    CR56      0.000    -46.389  -28.972    4.925
+ WX4           C21    C    CR15      0.000    -47.738  -28.859    4.516
+ WX4           H21    H    H         0.000    -48.085  -28.804    3.492
+ WX4           N19    N    NRD5      0.000    -47.762  -28.920    6.709
+ WX4           C20    C    CR15      0.000    -48.543  -28.830    5.647
+ WX4           H20    H    H         0.000    -49.623  -28.748    5.657
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WX4      O01    n/a    C02    START
+ WX4      HO01   O01    .      .
+ WX4      C02    O01    C03    .
+ WX4      H021   C02    .      .
+ WX4      H022   C02    .      .
+ WX4      C03    C02    N07    .
+ WX4      N07    C03    N06    .
+ WX4      N06    N07    N05    .
+ WX4      HN06   N06    .      .
+ WX4      N05    N06    C08    .
+ WX4      C04    N05    H04    .
+ WX4      H04    C04    .      .
+ WX4      C08    N05    C13    .
+ WX4      C09    C08    H09    .
+ WX4      H09    C09    .      .
+ WX4      C13    C08    N12    .
+ WX4      H131   C13    .      .
+ WX4      H132   C13    .      .
+ WX4      N12    C13    C14    .
+ WX4      C11    N12    C10    .
+ WX4      H111   C11    .      .
+ WX4      H112   C11    .      .
+ WX4      C10    C11    H101   .
+ WX4      H102   C10    .      .
+ WX4      H101   C10    .      .
+ WX4      C14    N12    N15    .
+ WX4      N15    C14    C16    .
+ WX4      C16    N15    N17    .
+ WX4      H16    C16    .      .
+ WX4      N17    C16    C18    .
+ WX4      C18    N17    N19    .
+ WX4      C22    C18    C21    .
+ WX4      C21    C22    H21    .
+ WX4      H21    C21    .      .
+ WX4      N19    C18    C20    .
+ WX4      C20    N19    H20    .
+ WX4      H20    C20    .      END
+ WX4      C10    C09    .    ADD
+ WX4      C20    C21    .    ADD
+ WX4      C22    C14    .    ADD
+ WX4      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WX4      C10    C09       single      1.510    0.020
+ WX4      C10    C11       single      1.524    0.020
+ WX4      N12    C13       single      1.455    0.020
+ WX4      C11    N12       single      1.455    0.020
+ WX4      C14    N12       single      1.400    0.020
+ WX4      C13    C08       single      1.510    0.020
+ WX4      C20    C21       aromatic    1.380    0.020
+ WX4      C20    N19       aromatic    1.350    0.020
+ WX4      C21    C22       aromatic    1.440    0.020
+ WX4      C22    C14       aromatic    1.390    0.020
+ WX4      C22    C18       aromatic    1.390    0.020
+ WX4      C03    C02       single      1.510    0.020
+ WX4      C02    O01       single      1.432    0.020
+ WX4      C03    C04       aromatic    1.387    0.020
+ WX4      N07    C03       aromatic    1.350    0.020
+ WX4      C04    N05       single      1.337    0.020
+ WX4      C09    C08       aromatic    1.340    0.020
+ WX4      C08    N05       single      1.365    0.020
+ WX4      N15    C14       aromatic    1.350    0.020
+ WX4      C16    N15       aromatic    1.337    0.020
+ WX4      N17    C16       aromatic    1.337    0.020
+ WX4      C18    N17       deloc       1.355    0.020
+ WX4      N19    C18       aromatic    1.350    0.020
+ WX4      N05    N06       single      1.400    0.020
+ WX4      N06    N07       single      1.402    0.020
+ WX4      H101   C10       single      1.092    0.020
+ WX4      H102   C10       single      1.092    0.020
+ WX4      H131   C13       single      1.092    0.020
+ WX4      H132   C13       single      1.092    0.020
+ WX4      H20    C20       single      1.083    0.020
+ WX4      H21    C21       single      1.083    0.020
+ WX4      H021   C02       single      1.092    0.020
+ WX4      H022   C02       single      1.092    0.020
+ WX4      H04    C04       single      1.083    0.020
+ WX4      H09    C09       single      1.077    0.020
+ WX4      H111   C11       single      1.092    0.020
+ WX4      H112   C11       single      1.092    0.020
+ WX4      H16    C16       single      1.083    0.020
+ WX4      HN06   N06       single      1.040    0.020
+ WX4      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WX4      HO01   O01    C02     109.470    3.000
+ WX4      O01    C02    H021    109.470    3.000
+ WX4      O01    C02    H022    109.470    3.000
+ WX4      O01    C02    C03     109.500    3.000
+ WX4      H021   C02    H022    107.900    3.000
+ WX4      H021   C02    C03     109.470    3.000
+ WX4      H022   C02    C03     109.470    3.000
+ WX4      C02    C03    N07     126.000    3.000
+ WX4      C02    C03    C04     126.000    3.000
+ WX4      N07    C03    C04     108.000    3.000
+ WX4      C03    N07    N06     108.000    3.000
+ WX4      N07    N06    HN06    108.000    3.000
+ WX4      N07    N06    N05     108.000    3.000
+ WX4      HN06   N06    N05     108.000    3.000
+ WX4      N06    N05    C04     108.000    3.000
+ WX4      N06    N05    C08     108.000    3.000
+ WX4      C04    N05    C08     108.000    3.000
+ WX4      N05    C04    H04     126.000    3.000
+ WX4      N05    C04    C03     108.000    3.000
+ WX4      H04    C04    C03     126.000    3.000
+ WX4      N05    C08    C09     120.000    3.000
+ WX4      N05    C08    C13     120.000    3.000
+ WX4      C09    C08    C13     120.000    3.000
+ WX4      C08    C09    H09     120.000    3.000
+ WX4      C08    C09    C10     120.500    3.000
+ WX4      H09    C09    C10     120.000    3.000
+ WX4      C08    C13    H131    109.470    3.000
+ WX4      C08    C13    H132    109.470    3.000
+ WX4      C08    C13    N12     109.500    3.000
+ WX4      H131   C13    H132    107.900    3.000
+ WX4      H131   C13    N12     109.470    3.000
+ WX4      H132   C13    N12     109.470    3.000
+ WX4      C13    N12    C11     120.000    3.000
+ WX4      C13    N12    C14     120.000    3.000
+ WX4      C11    N12    C14     120.000    3.000
+ WX4      N12    C11    H111    109.470    3.000
+ WX4      N12    C11    H112    109.470    3.000
+ WX4      N12    C11    C10     105.000    3.000
+ WX4      H111   C11    H112    107.900    3.000
+ WX4      H111   C11    C10     109.470    3.000
+ WX4      H112   C11    C10     109.470    3.000
+ WX4      C11    C10    H102    109.470    3.000
+ WX4      C11    C10    H101    109.470    3.000
+ WX4      C11    C10    C09     109.470    3.000
+ WX4      H102   C10    H101    107.900    3.000
+ WX4      H102   C10    C09     109.470    3.000
+ WX4      H101   C10    C09     109.470    3.000
+ WX4      N12    C14    N15     120.000    3.000
+ WX4      N12    C14    C22     120.000    3.000
+ WX4      N15    C14    C22     120.000    3.000
+ WX4      C14    N15    C16     120.000    3.000
+ WX4      N15    C16    H16     120.000    3.000
+ WX4      N15    C16    N17     120.000    3.000
+ WX4      H16    C16    N17     120.000    3.000
+ WX4      C16    N17    C18     120.000    3.000
+ WX4      N17    C18    C22     120.000    3.000
+ WX4      N17    C18    N19     120.000    3.000
+ WX4      C22    C18    N19     108.000    3.000
+ WX4      C18    C22    C21     120.000    3.000
+ WX4      C18    C22    C14     120.000    3.000
+ WX4      C21    C22    C14     132.000    3.000
+ WX4      C22    C21    H21     108.000    3.000
+ WX4      C22    C21    C20     108.000    3.000
+ WX4      H21    C21    C20     126.000    3.000
+ WX4      C18    N19    C20     108.000    3.000
+ WX4      N19    C20    H20     126.000    3.000
+ WX4      N19    C20    C21     108.000    3.000
+ WX4      H20    C20    C21     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WX4      var_1            HO01   O01    C02    C03              180.000           20.000   3
+ WX4      var_2            O01    C02    C03    N07                0.000           20.000   2
+ WX4      CONST_1          C02    C03    C04    N05                0.000            0.000   0
+ WX4      CONST_2          C02    C03    N07    N06                0.000            0.000   0
+ WX4      CONST_3          C03    N07    N06    N05               -0.363            0.000   0
+ WX4      CONST_4          N07    N06    N05    C08              179.449            0.000   0
+ WX4      CONST_5          N06    N05    C04    C03              180.000            0.000   0
+ WX4      var_3            N06    N05    C08    C13              -67.427           20.000   3
+ WX4      var_4            N05    C08    C09    C10             -106.668           20.000   3
+ WX4      var_5            N05    C08    C13    N12              180.000           20.000   3
+ WX4      var_6            C08    C13    N12    C14             -147.763           20.000   3
+ WX4      var_7            C13    N12    C11    C10                2.568           20.000   3
+ WX4      var_8            N12    C11    C10    C09              180.000           20.000   3
+ WX4      var_9            C11    C10    C09    C08               41.388           20.000   3
+ WX4      var_10           C13    N12    C14    N15             -170.810           20.000   3
+ WX4      CONST_6          N12    C14    N15    C16                0.000            0.000   0
+ WX4      CONST_7          C14    N15    C16    N17                0.000            0.000   0
+ WX4      CONST_8          N15    C16    N17    C18                0.000            0.000   0
+ WX4      CONST_9          C16    N17    C18    N19              180.000            0.000   0
+ WX4      CONST_10         N17    C18    C22    C21              180.000            0.000   0
+ WX4      CONST_11         C18    C22    C14    N12              180.000            0.000   0
+ WX4      CONST_12         C18    C22    C21    C20                0.074            0.000   0
+ WX4      CONST_13         N17    C18    N19    C20              180.000            0.000   0
+ WX4      CONST_14         C18    N19    C20    C21                0.000            0.000   0
+ WX4      CONST_15         N19    C20    C21    C22               -0.066            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WX4      plan-1            N12       0.020
+ WX4      plan-1            C13       0.020
+ WX4      plan-1            C11       0.020
+ WX4      plan-1            C14       0.020
+ WX4      plan-2            C20       0.020
+ WX4      plan-2            C21       0.020
+ WX4      plan-2            N19       0.020
+ WX4      plan-2            H20       0.020
+ WX4      plan-2            C22       0.020
+ WX4      plan-2            H21       0.020
+ WX4      plan-2            C14       0.020
+ WX4      plan-2            C18       0.020
+ WX4      plan-2            C16       0.020
+ WX4      plan-2            N15       0.020
+ WX4      plan-2            N17       0.020
+ WX4      plan-2            N12       0.020
+ WX4      plan-2            H16       0.020
+ WX4      plan-3            C03       0.020
+ WX4      plan-3            C02       0.020
+ WX4      plan-3            C04       0.020
+ WX4      plan-3            N07       0.020
+ WX4      plan-3            N05       0.020
+ WX4      plan-3            N06       0.020
+ WX4      plan-3            H04       0.020
+ WX4      plan-3            C08       0.020
+ WX4      plan-3            HN06      0.020
+ WX4      plan-4            C08       0.020
+ WX4      plan-4            C13       0.020
+ WX4      plan-4            C09       0.020
+ WX4      plan-4            N05       0.020
+ WX4      plan-4            H09       0.020
+ WX4      plan-5            C09       0.020
+ WX4      plan-5            C10       0.020
+ WX4      plan-5            C08       0.020
+ WX4      plan-5            H09       0.020
+#
+data_comp_S1O
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S1O           O01    O    OH1       0.000    -44.945  -24.481    0.093
+ S1O           HO01   H    H         0.000    -44.637  -23.592   -0.118
+ S1O           C02    C    CH2       0.000    -46.134  -24.718   -0.583
+ S1O           H021   H    H         0.000    -46.044  -24.716   -1.671
+ S1O           H022   H    H         0.000    -46.960  -24.069   -0.286
+ S1O           C03    C    CR5       0.000    -46.398  -26.125   -0.101
+ S1O           N22    N    NRD5      0.000    -47.473  -26.568    0.546
+ S1O           N21    N    NR15      0.000    -47.254  -27.885    0.816
+ S1O           HN21   H    H         0.000    -47.910  -28.529    1.303
+ S1O           N05    N    NR5       0.000    -46.031  -28.205    0.337
+ S1O           C04    C    CR15      0.000    -45.479  -27.157   -0.226
+ S1O           H04    H    H         0.000    -44.503  -27.107   -0.694
+ S1O           C06    C    C         0.000    -45.412  -29.573    0.452
+ S1O           C20    C    CH2       0.000    -45.524  -30.024    1.925
+ S1O           H201   H    H         0.000    -44.965  -30.953    2.053
+ S1O           H202   H    H         0.000    -46.576  -30.198    2.161
+ S1O           N10    N    N         0.000    -44.963  -28.960    2.856
+ S1O           C09    C    CH2       0.000    -43.763  -28.280    2.195
+ S1O           H091   H    H         0.000    -43.026  -28.130    2.987
+ S1O           H092   H    H         0.000    -44.121  -27.310    1.844
+ S1O           C08    C    CH2       0.000    -43.112  -29.046    1.022
+ S1O           H081   H    H         0.000    -42.563  -29.879    1.466
+ S1O           H082   H    H         0.000    -42.407  -28.354    0.556
+ S1O           C07    C    C1        0.000    -44.036  -29.553    0.014
+ S1O           H07    H    H         0.000    -43.722  -29.881   -0.963
+ S1O           C11    C    CR6       0.000    -45.094  -29.031    4.305
+ S1O           N19    N    NRD6      0.000    -44.012  -29.152    5.067
+ S1O           C18    C    CR16      0.000    -44.110  -29.211    6.391
+ S1O           H18    H    H         0.000    -43.207  -29.308    6.981
+ S1O           N17    N    NRD6      0.000    -45.274  -29.155    7.007
+ S1O           C16    C    CR56      0.000    -46.429  -29.031    6.308
+ S1O           C12    C    CR56      0.000    -46.369  -28.964    4.939
+ S1O           N15    N    NRD5      0.000    -47.725  -28.954    6.728
+ S1O           C14    C    CR15      0.000    -48.517  -28.838    5.669
+ S1O           H14    H    H         0.000    -49.597  -28.755    5.688
+ S1O           C13    C    CR15      0.000    -47.717  -28.841    4.529
+ S1O           H13    H    H         0.000    -48.066  -28.763    3.507
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S1O      O01    n/a    C02    START
+ S1O      HO01   O01    .      .
+ S1O      C02    O01    C03    .
+ S1O      H021   C02    .      .
+ S1O      H022   C02    .      .
+ S1O      C03    C02    N22    .
+ S1O      N22    C03    N21    .
+ S1O      N21    N22    N05    .
+ S1O      HN21   N21    .      .
+ S1O      N05    N21    C06    .
+ S1O      C04    N05    H04    .
+ S1O      H04    C04    .      .
+ S1O      C06    N05    C20    .
+ S1O      C20    C06    N10    .
+ S1O      H201   C20    .      .
+ S1O      H202   C20    .      .
+ S1O      N10    C20    C11    .
+ S1O      C09    N10    C08    .
+ S1O      H091   C09    .      .
+ S1O      H092   C09    .      .
+ S1O      C08    C09    C07    .
+ S1O      H081   C08    .      .
+ S1O      H082   C08    .      .
+ S1O      C07    C08    H07    .
+ S1O      H07    C07    .      .
+ S1O      C11    N10    N19    .
+ S1O      N19    C11    C18    .
+ S1O      C18    N19    N17    .
+ S1O      H18    C18    .      .
+ S1O      N17    C18    C16    .
+ S1O      C16    N17    N15    .
+ S1O      C12    C16    .      .
+ S1O      N15    C16    C14    .
+ S1O      C14    N15    C13    .
+ S1O      H14    C14    .      .
+ S1O      C13    C14    H13    .
+ S1O      H13    C13    .      END
+ S1O      C03    C04    .    ADD
+ S1O      C06    C07    .    ADD
+ S1O      C11    C12    .    ADD
+ S1O      C12    C13    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S1O      C03    C02       single      1.510    0.020
+ S1O      C02    O01       single      1.432    0.020
+ S1O      C03    C04       aromatic    1.387    0.020
+ S1O      N22    C03       aromat      1.350    0.020
+ S1O      C04    N05       single      1.337    0.020
+ S1O      C06    C07       aromatic    1.340    0.020
+ S1O      C20    C06       single      1.510    0.020
+ S1O      C06    N05       single      1.365    0.020
+ S1O      C07    C08       single      1.510    0.020
+ S1O      C08    C09       single      1.524    0.020
+ S1O      C09    N10       single      1.455    0.020
+ S1O      C11    C12       aromatic    1.390    0.020
+ S1O      C11    N10       single      1.400    0.020
+ S1O      N19    C11       aromat      1.350    0.020
+ S1O      C12    C13       aromatic    1.440    0.020
+ S1O      C12    C16       aromatic    1.390    0.020
+ S1O      C13    C14       aromatic    1.380    0.020
+ S1O      C14    N15       aromatic    1.350    0.020
+ S1O      N15    C16       aromatic    1.350    0.020
+ S1O      C16    N17       aromatic    1.355    0.020
+ S1O      N17    C18       aromatic    1.337    0.020
+ S1O      C18    N19       aromat      1.337    0.020
+ S1O      N10    C20       single      1.455    0.020
+ S1O      N05    N21       single      1.400    0.020
+ S1O      N21    N22       single      1.402    0.020
+ S1O      H021   C02       single      1.092    0.020
+ S1O      H022   C02       single      1.092    0.020
+ S1O      H04    C04       single      1.083    0.020
+ S1O      H07    C07       single      1.077    0.020
+ S1O      H081   C08       single      1.092    0.020
+ S1O      H082   C08       single      1.092    0.020
+ S1O      H091   C09       single      1.092    0.020
+ S1O      H092   C09       single      1.092    0.020
+ S1O      H13    C13       single      1.083    0.020
+ S1O      H14    C14       single      1.083    0.020
+ S1O      H18    C18       single      1.083    0.020
+ S1O      H201   C20       single      1.092    0.020
+ S1O      H202   C20       single      1.092    0.020
+ S1O      HN21   N21       single      1.040    0.020
+ S1O      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S1O      HO01   O01    C02     109.470    3.000
+ S1O      O01    C02    H021    109.470    3.000
+ S1O      O01    C02    H022    109.470    3.000
+ S1O      O01    C02    C03     109.500    3.000
+ S1O      H021   C02    H022    107.900    3.000
+ S1O      H021   C02    C03     109.470    3.000
+ S1O      H022   C02    C03     109.470    3.000
+ S1O      C02    C03    N22     126.000    3.000
+ S1O      C02    C03    C04     126.000    3.000
+ S1O      N22    C03    C04     108.000    3.000
+ S1O      C03    N22    N21     108.000    3.000
+ S1O      N22    N21    HN21    108.000    3.000
+ S1O      N22    N21    N05     108.000    3.000
+ S1O      HN21   N21    N05     108.000    3.000
+ S1O      N21    N05    C04     108.000    3.000
+ S1O      N21    N05    C06     108.000    3.000
+ S1O      C04    N05    C06     108.000    3.000
+ S1O      N05    C04    H04     126.000    3.000
+ S1O      N05    C04    C03     108.000    3.000
+ S1O      H04    C04    C03     126.000    3.000
+ S1O      N05    C06    C20     120.000    3.000
+ S1O      N05    C06    C07     120.000    3.000
+ S1O      C20    C06    C07     120.000    3.000
+ S1O      C06    C20    H201    109.470    3.000
+ S1O      C06    C20    H202    109.470    3.000
+ S1O      C06    C20    N10     109.500    3.000
+ S1O      H201   C20    H202    107.900    3.000
+ S1O      H201   C20    N10     109.470    3.000
+ S1O      H202   C20    N10     109.470    3.000
+ S1O      C20    N10    C09     120.000    3.000
+ S1O      C20    N10    C11     120.000    3.000
+ S1O      C09    N10    C11     120.000    3.000
+ S1O      N10    C09    H091    109.470    3.000
+ S1O      N10    C09    H092    109.470    3.000
+ S1O      N10    C09    C08     105.000    3.000
+ S1O      H091   C09    H092    107.900    3.000
+ S1O      H091   C09    C08     109.470    3.000
+ S1O      H092   C09    C08     109.470    3.000
+ S1O      C09    C08    H081    109.470    3.000
+ S1O      C09    C08    H082    109.470    3.000
+ S1O      C09    C08    C07     109.470    3.000
+ S1O      H081   C08    H082    107.900    3.000
+ S1O      H081   C08    C07     109.470    3.000
+ S1O      H082   C08    C07     109.470    3.000
+ S1O      C08    C07    H07     120.000    3.000
+ S1O      C08    C07    C06     120.500    3.000
+ S1O      H07    C07    C06     120.000    3.000
+ S1O      N10    C11    N19     120.000    3.000
+ S1O      N10    C11    C12     120.000    3.000
+ S1O      N19    C11    C12     120.000    3.000
+ S1O      C11    N19    C18     120.000    3.000
+ S1O      N19    C18    H18     120.000    3.000
+ S1O      N19    C18    N17     120.000    3.000
+ S1O      H18    C18    N17     120.000    3.000
+ S1O      C18    N17    C16     120.000    3.000
+ S1O      N17    C16    C12     120.000    3.000
+ S1O      N17    C16    N15     120.000    3.000
+ S1O      C12    C16    N15     108.000    3.000
+ S1O      C16    C12    C11     120.000    3.000
+ S1O      C16    C12    C13     120.000    3.000
+ S1O      C11    C12    C13     132.000    3.000
+ S1O      C16    N15    C14     108.000    3.000
+ S1O      N15    C14    H14     126.000    3.000
+ S1O      N15    C14    C13     108.000    3.000
+ S1O      H14    C14    C13     126.000    3.000
+ S1O      C14    C13    H13     126.000    3.000
+ S1O      C14    C13    C12     108.000    3.000
+ S1O      H13    C13    C12     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S1O      var_1            HO01   O01    C02    C03              180.000           20.000   3
+ S1O      var_2            O01    C02    C03    N22                0.000           20.000   2
+ S1O      CONST_1          C02    C03    C04    N05                0.000            0.000   0
+ S1O      CONST_2          C02    C03    N22    N21                0.000            0.000   0
+ S1O      CONST_3          C03    N22    N21    N05                0.846            0.000   0
+ S1O      CONST_4          N22    N21    N05    C06                0.000            0.000   0
+ S1O      CONST_5          N21    N05    C04    C03              180.000            0.000   0
+ S1O      var_3            N21    N05    C06    C20              -49.972           20.000   3
+ S1O      var_4            N05    C06    C07    C08               80.289           20.000   3
+ S1O      var_5            N05    C06    C20    N10              180.000           20.000   3
+ S1O      var_6            C06    C20    N10    C11              171.709           20.000   3
+ S1O      var_7            C20    N10    C09    C08              -18.384           20.000   3
+ S1O      var_8            N10    C09    C08    C07              180.000           20.000   3
+ S1O      var_9            C09    C08    C07    C06              -15.803           20.000   3
+ S1O      var_10           C20    N10    C11    N19              115.746           20.000   3
+ S1O      CONST_6          N10    C11    C12    C16              180.000            0.000   0
+ S1O      CONST_7          N10    C11    N19    C18                0.000            0.000   0
+ S1O      CONST_8          C11    N19    C18    N17                0.000            0.000   0
+ S1O      CONST_9          N19    C18    N17    C16                0.000            0.000   0
+ S1O      CONST_10         C18    N17    C16    N15              180.000            0.000   0
+ S1O      CONST_11         N17    C16    C12    C11              180.000            0.000   0
+ S1O      CONST_12         C16    C12    C13    C14                0.099            0.000   0
+ S1O      CONST_13         N17    C16    N15    C14              180.000            0.000   0
+ S1O      CONST_14         C16    N15    C14    C13                0.000            0.000   0
+ S1O      CONST_15         N15    C14    C13    C12               -0.103            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S1O      plan-1            C03       0.020
+ S1O      plan-1            C02       0.020
+ S1O      plan-1            C04       0.020
+ S1O      plan-1            N22       0.020
+ S1O      plan-1            N05       0.020
+ S1O      plan-1            N21       0.020
+ S1O      plan-1            H04       0.020
+ S1O      plan-1            HN21      0.020
+ S1O      plan-2            C06       0.020
+ S1O      plan-2            C07       0.020
+ S1O      plan-2            C20       0.020
+ S1O      plan-2            N05       0.020
+ S1O      plan-2            H07       0.020
+ S1O      plan-3            C07       0.020
+ S1O      plan-3            C06       0.020
+ S1O      plan-3            C08       0.020
+ S1O      plan-3            H07       0.020
+ S1O      plan-4            C11       0.020
+ S1O      plan-4            C12       0.020
+ S1O      plan-4            N10       0.020
+ S1O      plan-4            N19       0.020
+ S1O      plan-4            C18       0.020
+ S1O      plan-4            N17       0.020
+ S1O      plan-4            C13       0.020
+ S1O      plan-4            C16       0.020
+ S1O      plan-4            C14       0.020
+ S1O      plan-4            N15       0.020
+ S1O      plan-4            H13       0.020
+ S1O      plan-4            H14       0.020
+ S1O      plan-4            H18       0.020
+ S1O      plan-5            N10       0.020
+ S1O      plan-5            C09       0.020
+ S1O      plan-5            C11       0.020
+ S1O      plan-5            C20       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

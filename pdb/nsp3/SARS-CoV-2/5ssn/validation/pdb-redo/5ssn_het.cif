@@ -1,0 +1,354 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RS9      RS9 '.                                   ' .                  42  27 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RS9
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RS9           O26    O    O         0.000    -47.821  -28.954    1.465
+ RS9           C11    C    C         0.000    -47.302  -28.962    2.527
+ RS9           N12    N    NH1       0.000    -45.863  -29.006    2.700
+ RS9           HN12   H    H         0.000    -45.497  -29.034    3.641
+ RS9           C13    C    CH1       0.000    -44.930  -29.012    1.612
+ RS9           H13    H    H         0.000    -45.034  -29.939    1.030
+ RS9           C14    C    CH1       0.000    -43.560  -28.941    2.231
+ RS9           H14    H    H         0.000    -43.550  -28.225    3.065
+ RS9           C15    C    C         0.000    -43.155  -30.329    2.713
+ RS9           O17    O    OC        0.000    -42.571  -31.132    1.934
+ RS9           O16    O    OC       -1.000    -43.406  -30.673    3.896
+ RS9           C25    C    CR6       0.000    -44.963  -27.794    0.676
+ RS9           C24    C    CR16      0.000    -46.025  -27.065    0.140
+ RS9           H24    H    H         0.000    -47.047  -27.334    0.375
+ RS9           C23    C    CR16      0.000    -45.758  -25.998   -0.692
+ RS9           H23    H    H         0.000    -46.571  -25.420   -1.113
+ RS9           C22    C    CR16      0.000    -44.442  -25.669   -0.987
+ RS9           H22    H    H         0.000    -44.242  -24.831   -1.643
+ RS9           C20    C    CR6       0.000    -43.377  -26.386   -0.464
+ RS9           O21    O    OH1       0.000    -42.058  -26.031   -0.779
+ RS9           HO21   H    H         0.000    -41.438  -26.630   -0.334
+ RS9           C19    C    CR6       0.000    -43.646  -27.464    0.371
+ RS9           C18    C    CH2       0.000    -42.698  -28.441    1.093
+ RS9           H182   H    H         0.000    -41.809  -27.952    1.496
+ RS9           H181   H    H         0.000    -42.396  -29.283    0.466
+ RS9           C10    C    CR6       0.000    -48.122  -29.023    3.800
+ RS9           C27    C    CR16      0.000    -49.484  -29.217    3.706
+ RS9           H27    H    H         0.000    -49.965  -29.290    2.738
+ RS9           C05    C    CR56      0.000    -50.230  -29.318    4.878
+ RS9           N04    N    NRD5      0.000    -51.530  -29.506    5.101
+ RS9           C06    C    CR56      0.000    -49.627  -29.223    6.106
+ RS9           C08    C    CR16      0.000    -48.253  -29.039    6.205
+ RS9           H08    H    H         0.000    -47.776  -28.970    7.175
+ RS9           C09    C    CR16      0.000    -47.504  -28.945    5.047
+ RS9           H09    H    H         0.000    -46.431  -28.810    5.109
+ RS9           N07    N    NRD5      0.000    -50.595  -29.359    7.013
+ RS9           C03    C    CR5       0.000    -51.738  -29.528    6.398
+ RS9           C02    C    CH2       0.000    -53.081  -29.703    7.099
+ RS9           H021   H    H         0.000    -53.419  -28.738    7.481
+ RS9           H022   H    H         0.000    -52.968  -30.403    7.930
+ RS9           O01    O    OH1       0.000    -54.023  -30.203    6.190
+ RS9           HO01   H    H         0.000    -54.869  -30.311    6.640
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RS9      O26    n/a    C11    START
+ RS9      C11    O26    C10    .
+ RS9      N12    C11    C13    .
+ RS9      HN12   N12    .      .
+ RS9      C13    N12    C25    .
+ RS9      H13    C13    .      .
+ RS9      C14    C13    C15    .
+ RS9      H14    C14    .      .
+ RS9      C15    C14    O16    .
+ RS9      O17    C15    .      .
+ RS9      O16    C15    .      .
+ RS9      C25    C13    C19    .
+ RS9      C24    C25    C23    .
+ RS9      H24    C24    .      .
+ RS9      C23    C24    C22    .
+ RS9      H23    C23    .      .
+ RS9      C22    C23    C20    .
+ RS9      H22    C22    .      .
+ RS9      C20    C22    O21    .
+ RS9      O21    C20    HO21   .
+ RS9      HO21   O21    .      .
+ RS9      C19    C25    C18    .
+ RS9      C18    C19    H181   .
+ RS9      H182   C18    .      .
+ RS9      H181   C18    .      .
+ RS9      C10    C11    C27    .
+ RS9      C27    C10    C05    .
+ RS9      H27    C27    .      .
+ RS9      C05    C27    C06    .
+ RS9      N04    C05    .      .
+ RS9      C06    C05    N07    .
+ RS9      C08    C06    C09    .
+ RS9      H08    C08    .      .
+ RS9      C09    C08    H09    .
+ RS9      H09    C09    .      .
+ RS9      N07    C06    C03    .
+ RS9      C03    N07    C02    .
+ RS9      C02    C03    O01    .
+ RS9      H021   C02    .      .
+ RS9      H022   C02    .      .
+ RS9      O01    C02    HO01   .
+ RS9      HO01   O01    .      END
+ RS9      C18    C14    .    ADD
+ RS9      C10    C09    .    ADD
+ RS9      C20    C19    .    ADD
+ RS9      C03    N04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RS9      C18    C14       single      1.524    0.020
+ RS9      C18    C19       single      1.511    0.020
+ RS9      C15    C14       single      1.500    0.020
+ RS9      O16    C15       deloc       1.250    0.020
+ RS9      O17    C15       deloc       1.250    0.020
+ RS9      C14    C13       single      1.524    0.020
+ RS9      C25    C13       single      1.480    0.020
+ RS9      C13    N12       single      1.450    0.020
+ RS9      C10    C11       single      1.500    0.020
+ RS9      N12    C11       single      1.330    0.020
+ RS9      C11    O26       double      1.220    0.020
+ RS9      C10    C09       aromatic    1.390    0.020
+ RS9      C27    C10       aromatic    1.390    0.020
+ RS9      C20    C19       aromatic    1.384    0.020
+ RS9      C20    C22       aromatic    1.390    0.020
+ RS9      O21    C20       single      1.362    0.020
+ RS9      C19    C25       aromatic    1.384    0.020
+ RS9      C02    C03       single      1.510    0.020
+ RS9      O01    C02       single      1.432    0.020
+ RS9      C03    N04       aromatic    1.350    0.020
+ RS9      C03    N07       aromatic    1.350    0.020
+ RS9      C06    C05       aromatic    1.390    0.020
+ RS9      C05    C27       aromatic    1.390    0.020
+ RS9      N04    C05       deloc       1.350    0.020
+ RS9      C08    C06       aromatic    1.390    0.020
+ RS9      N07    C06       deloc       1.350    0.020
+ RS9      C09    C08       aromatic    1.390    0.020
+ RS9      C22    C23       aromatic    1.390    0.020
+ RS9      C23    C24       aromatic    1.390    0.020
+ RS9      C24    C25       aromatic    1.390    0.020
+ RS9      H181   C18       single      1.092    0.020
+ RS9      H182   C18       single      1.092    0.020
+ RS9      H14    C14       single      1.099    0.020
+ RS9      H13    C13       single      1.099    0.020
+ RS9      H021   C02       single      1.092    0.020
+ RS9      H022   C02       single      1.092    0.020
+ RS9      H08    C08       single      1.083    0.020
+ RS9      H09    C09       single      1.083    0.020
+ RS9      H22    C22       single      1.083    0.020
+ RS9      H23    C23       single      1.083    0.020
+ RS9      H24    C24       single      1.083    0.020
+ RS9      H27    C27       single      1.083    0.020
+ RS9      HN12   N12       single      1.010    0.020
+ RS9      HO01   O01       single      0.967    0.020
+ RS9      HO21   O21       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RS9      O26    C11    N12     123.000    3.000
+ RS9      O26    C11    C10     120.500    3.000
+ RS9      N12    C11    C10     120.000    3.000
+ RS9      C11    N12    HN12    120.000    3.000
+ RS9      C11    N12    C13     121.500    3.000
+ RS9      HN12   N12    C13     118.500    3.000
+ RS9      N12    C13    H13     108.550    3.000
+ RS9      N12    C13    C14     110.000    3.000
+ RS9      N12    C13    C25     109.470    3.000
+ RS9      H13    C13    C14     108.340    3.000
+ RS9      H13    C13    C25     109.470    3.000
+ RS9      C14    C13    C25     109.470    3.000
+ RS9      C13    C14    H14     108.340    3.000
+ RS9      C13    C14    C15     109.470    3.000
+ RS9      C13    C14    C18     111.000    3.000
+ RS9      H14    C14    C15     108.810    3.000
+ RS9      H14    C14    C18     108.340    3.000
+ RS9      C15    C14    C18     109.470    3.000
+ RS9      C14    C15    O17     118.500    3.000
+ RS9      C14    C15    O16     118.500    3.000
+ RS9      O17    C15    O16     123.000    3.000
+ RS9      C13    C25    C24     120.000    3.000
+ RS9      C13    C25    C19     120.000    3.000
+ RS9      C24    C25    C19     120.000    3.000
+ RS9      C25    C24    H24     120.000    3.000
+ RS9      C25    C24    C23     120.000    3.000
+ RS9      H24    C24    C23     120.000    3.000
+ RS9      C24    C23    H23     120.000    3.000
+ RS9      C24    C23    C22     120.000    3.000
+ RS9      H23    C23    C22     120.000    3.000
+ RS9      C23    C22    H22     120.000    3.000
+ RS9      C23    C22    C20     120.000    3.000
+ RS9      H22    C22    C20     120.000    3.000
+ RS9      C22    C20    O21     120.000    3.000
+ RS9      C22    C20    C19     120.000    3.000
+ RS9      O21    C20    C19     120.000    3.000
+ RS9      C20    O21    HO21    109.470    3.000
+ RS9      C25    C19    C18     120.000    3.000
+ RS9      C25    C19    C20     120.000    3.000
+ RS9      C18    C19    C20     120.000    3.000
+ RS9      C19    C18    H182    109.470    3.000
+ RS9      C19    C18    H181    109.470    3.000
+ RS9      C19    C18    C14     109.470    3.000
+ RS9      H182   C18    H181    107.900    3.000
+ RS9      H182   C18    C14     109.470    3.000
+ RS9      H181   C18    C14     109.470    3.000
+ RS9      C11    C10    C27     120.000    3.000
+ RS9      C11    C10    C09     120.000    3.000
+ RS9      C27    C10    C09     120.000    3.000
+ RS9      C10    C27    H27     120.000    3.000
+ RS9      C10    C27    C05     120.000    3.000
+ RS9      H27    C27    C05     120.000    3.000
+ RS9      C27    C05    N04     132.000    3.000
+ RS9      C27    C05    C06     120.000    3.000
+ RS9      N04    C05    C06     108.000    3.000
+ RS9      C05    N04    C03     108.000    3.000
+ RS9      C05    C06    C08     120.000    3.000
+ RS9      C05    C06    N07     108.000    3.000
+ RS9      C08    C06    N07     132.000    3.000
+ RS9      C06    C08    H08     120.000    3.000
+ RS9      C06    C08    C09     120.000    3.000
+ RS9      H08    C08    C09     120.000    3.000
+ RS9      C08    C09    H09     120.000    3.000
+ RS9      C08    C09    C10     120.000    3.000
+ RS9      H09    C09    C10     120.000    3.000
+ RS9      C06    N07    C03     108.000    3.000
+ RS9      N07    C03    C02     126.000    3.000
+ RS9      N07    C03    N04     108.000    3.000
+ RS9      C02    C03    N04     126.000    3.000
+ RS9      C03    C02    H021    109.470    3.000
+ RS9      C03    C02    H022    109.470    3.000
+ RS9      C03    C02    O01     109.500    3.000
+ RS9      H021   C02    H022    107.900    3.000
+ RS9      H021   C02    O01     109.470    3.000
+ RS9      H022   C02    O01     109.470    3.000
+ RS9      C02    O01    HO01    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RS9      var_1            O26    C11    N12    C13              180.000           20.000   2
+ RS9      var_2            C11    N12    C13    C25                0.000           20.000   3
+ RS9      var_3            N12    C13    C14    C15              180.000           20.000   3
+ RS9      var_4            C13    C14    C15    O16              180.000           20.000   3
+ RS9      var_5            N12    C13    C25    C19              139.304           20.000   3
+ RS9      CONST_1          C13    C25    C24    C23                0.000            0.000   0
+ RS9      CONST_2          C25    C24    C23    C22                0.000            0.000   0
+ RS9      CONST_3          C24    C23    C22    C20                0.000            0.000   0
+ RS9      CONST_4          C23    C22    C20    O21                0.000            0.000   0
+ RS9      CONST_5          C22    C20    C19    C25                0.000            0.000   0
+ RS9      var_6            C22    C20    O21    HO21             180.000           20.000   3
+ RS9      CONST_6          C13    C25    C19    C18                0.000            0.000   0
+ RS9      var_7            C25    C19    C18    C14                0.000           20.000   2
+ RS9      var_8            C19    C18    C14    C13              180.000           20.000   3
+ RS9      var_9            O26    C11    C10    C27                7.023           20.000   3
+ RS9      CONST_7          C11    C10    C09    C08                0.000            0.000   0
+ RS9      CONST_8          C11    C10    C27    C05                0.000            0.000   0
+ RS9      CONST_9          C10    C27    C05    C06              180.000            0.000   0
+ RS9      CONST_10         C27    C05    N04    C03              180.000            0.000   0
+ RS9      CONST_11         C27    C05    C06    N07              180.000            0.000   0
+ RS9      CONST_12         C05    C06    C08    C09              180.000            0.000   0
+ RS9      CONST_13         C06    C08    C09    C10                0.000            0.000   0
+ RS9      CONST_14         C05    C06    N07    C03              180.000            0.000   0
+ RS9      CONST_15         C06    N07    C03    C02                0.000            0.000   0
+ RS9      CONST_16         N07    C03    N04    C05                0.000            0.000   0
+ RS9      var_10           N07    C03    C02    O01                0.000           20.000   2
+ RS9      var_11           C03    C02    O01    HO01             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RS9      chir_01          C14    C18    C15    C13       positiv
+ RS9      chir_02          C13    C14    C25    N12       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RS9      plan-1            C15       0.020
+ RS9      plan-1            C14       0.020
+ RS9      plan-1            O16       0.020
+ RS9      plan-1            O17       0.020
+ RS9      plan-2            C11       0.020
+ RS9      plan-2            C10       0.020
+ RS9      plan-2            N12       0.020
+ RS9      plan-2            O26       0.020
+ RS9      plan-2            HN12      0.020
+ RS9      plan-3            C10       0.020
+ RS9      plan-3            C11       0.020
+ RS9      plan-3            C09       0.020
+ RS9      plan-3            C27       0.020
+ RS9      plan-3            C08       0.020
+ RS9      plan-3            C06       0.020
+ RS9      plan-3            H08       0.020
+ RS9      plan-3            H09       0.020
+ RS9      plan-3            C05       0.020
+ RS9      plan-3            H27       0.020
+ RS9      plan-3            C03       0.020
+ RS9      plan-3            N04       0.020
+ RS9      plan-3            N07       0.020
+ RS9      plan-3            C02       0.020
+ RS9      plan-4            C20       0.020
+ RS9      plan-4            C19       0.020
+ RS9      plan-4            C22       0.020
+ RS9      plan-4            O21       0.020
+ RS9      plan-4            C23       0.020
+ RS9      plan-4            C24       0.020
+ RS9      plan-4            C25       0.020
+ RS9      plan-4            C18       0.020
+ RS9      plan-4            H22       0.020
+ RS9      plan-4            H23       0.020
+ RS9      plan-4            H24       0.020
+ RS9      plan-4            C13       0.020
+ RS9      plan-5            N12       0.020
+ RS9      plan-5            C13       0.020
+ RS9      plan-5            C11       0.020
+ RS9      plan-5            HN12      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

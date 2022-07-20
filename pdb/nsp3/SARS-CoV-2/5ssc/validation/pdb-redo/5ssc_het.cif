@@ -1,0 +1,292 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RNC      RNC '.                                   ' .                  34  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RNC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RNC           O19    O    OH1       0.000    -40.668  -29.684    2.735
+ RNC           HO19   H    H         0.000    -40.757  -28.851    3.186
+ RNC           C18    C    CR5       0.000    -41.808  -30.282    2.231
+ RNC           O17    O    O2        0.000    -41.823  -31.429    1.589
+ RNC           N16    N    NRD5      0.000    -43.063  -31.732    1.252
+ RNC           C15    C    CR5       0.000    -43.816  -30.735    1.704
+ RNC           N20    N    NRD5      0.000    -43.051  -29.820    2.313
+ RNC           C13    C    CH1       0.000    -45.298  -30.596    1.552
+ RNC           H13    H    H         0.000    -45.749  -31.561    1.281
+ RNC           C12    C    CH2       0.000    -45.906  -30.069    2.804
+ RNC           H121   H    H         0.000    -45.363  -29.333    3.401
+ RNC           H122   H    H         0.000    -46.448  -30.746    3.468
+ RNC           N11    N    NT        0.000    -46.866  -29.374    1.914
+ RNC           C14    C    CH2       0.000    -45.928  -29.497    0.788
+ RNC           H142   H    H         0.000    -45.195  -28.707    0.612
+ RNC           H141   H    H         0.000    -46.288  -29.878   -0.170
+ RNC           C09    C    CH1       0.000    -48.170  -28.812    1.996
+ RNC           H09    H    H         0.000    -47.760  -27.830    2.269
+ RNC           O10    O    OH1       0.000    -48.645  -28.373    1.010
+ RNC           HO10   H    H         0.000    -49.503  -28.046    1.251
+ RNC           C06    C    CR6       0.000    -48.908  -28.911    3.305
+ RNC           N05    N    NRD6      0.000    -48.250  -29.018    4.436
+ RNC           C04    C    CR16      0.000    -48.953  -29.136    5.540
+ RNC           H04    H    H         0.000    -48.441  -29.212    6.492
+ RNC           C07    C    CR16      0.000    -50.291  -28.916    3.267
+ RNC           H07    H    H         0.000    -50.806  -28.805    2.321
+ RNC           N08    N    NRD6      0.000    -50.978  -29.055    4.372
+ RNC           C03    C    CR6       0.000    -50.338  -29.165    5.507
+ RNC           N02    N    NH1       0.000    -51.145  -29.306    6.679
+ RNC           HN02   H    H         0.000    -50.761  -29.183    7.605
+ RNC           C01    C    CH3       0.000    -52.539  -29.634    6.474
+ RNC           H013   H    H         0.000    -52.999  -28.874    5.898
+ RNC           H012   H    H         0.000    -52.612  -30.558    5.962
+ RNC           H011   H    H         0.000    -53.025  -29.710    7.412
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RNC      O19    n/a    C18    START
+ RNC      HO19   O19    .      .
+ RNC      C18    O19    O17    .
+ RNC      O17    C18    N16    .
+ RNC      N16    O17    C15    .
+ RNC      C15    N16    C13    .
+ RNC      N20    C15    .      .
+ RNC      C13    C15    C12    .
+ RNC      H13    C13    .      .
+ RNC      C12    C13    N11    .
+ RNC      H121   C12    .      .
+ RNC      H122   C12    .      .
+ RNC      N11    C12    C09    .
+ RNC      C14    N11    H141   .
+ RNC      H142   C14    .      .
+ RNC      H141   C14    .      .
+ RNC      C09    N11    C06    .
+ RNC      H09    C09    .      .
+ RNC      O10    C09    HO10   .
+ RNC      HO10   O10    .      .
+ RNC      C06    C09    C07    .
+ RNC      N05    C06    C04    .
+ RNC      C04    N05    H04    .
+ RNC      H04    C04    .      .
+ RNC      C07    C06    N08    .
+ RNC      H07    C07    .      .
+ RNC      N08    C07    C03    .
+ RNC      C03    N08    N02    .
+ RNC      N02    C03    C01    .
+ RNC      HN02   N02    .      .
+ RNC      C01    N02    H011   .
+ RNC      H013   C01    .      .
+ RNC      H012   C01    .      .
+ RNC      H011   C01    .      END
+ RNC      C18    N20    .    ADD
+ RNC      C14    C13    .    ADD
+ RNC      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RNC      C18    N20       aromat      1.350    0.020
+ RNC      O17    C18       single      1.370    0.020
+ RNC      C18    O19       single      1.480    0.020
+ RNC      C13    C15       single      1.480    0.020
+ RNC      C15    N16       aromat      1.350    0.020
+ RNC      N20    C15       deloc       1.350    0.020
+ RNC      C14    C13       single      1.524    0.020
+ RNC      C14    N11       single      1.469    0.020
+ RNC      C12    C13       single      1.524    0.020
+ RNC      N11    C12       single      1.469    0.020
+ RNC      C01    N02       single      1.450    0.020
+ RNC      C03    C04       aromatic    1.390    0.020
+ RNC      N02    C03       single      1.350    0.020
+ RNC      C03    N08       aromatic    1.350    0.020
+ RNC      C04    N05       aromatic    1.337    0.020
+ RNC      C07    C06       aromatic    1.390    0.020
+ RNC      C06    C09       single      1.480    0.020
+ RNC      N05    C06       aromatic    1.350    0.020
+ RNC      N08    C07       aromatic    1.337    0.020
+ RNC      C09    N11       single      1.469    0.020
+ RNC      O10    C09       single      1.432    0.020
+ RNC      N16    O17       single      1.337    0.020
+ RNC      H141   C14       single      1.092    0.020
+ RNC      H142   C14       single      1.092    0.020
+ RNC      H13    C13       single      1.099    0.020
+ RNC      H121   C12       single      1.092    0.020
+ RNC      H122   C12       single      1.092    0.020
+ RNC      H011   C01       single      1.059    0.020
+ RNC      H012   C01       single      1.059    0.020
+ RNC      H013   C01       single      1.059    0.020
+ RNC      H04    C04       single      1.083    0.020
+ RNC      H07    C07       single      1.083    0.020
+ RNC      H09    C09       single      1.099    0.020
+ RNC      HN02   N02       single      1.010    0.020
+ RNC      HO10   O10       single      0.967    0.020
+ RNC      HO19   O19       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RNC      HO19   O19    C18     120.000    3.000
+ RNC      O19    C18    O17     108.000    3.000
+ RNC      O19    C18    N20     108.000    3.000
+ RNC      O17    C18    N20     108.000    3.000
+ RNC      C18    O17    N16     120.000    3.000
+ RNC      O17    N16    C15     108.000    3.000
+ RNC      N16    C15    N20     108.000    3.000
+ RNC      N16    C15    C13     126.000    3.000
+ RNC      N20    C15    C13     126.000    3.000
+ RNC      C15    N20    C18     108.000    3.000
+ RNC      C15    C13    H13     109.470    3.000
+ RNC      C15    C13    C12     109.470    3.000
+ RNC      C15    C13    C14     109.470    3.000
+ RNC      H13    C13    C12     108.340    3.000
+ RNC      H13    C13    C14     108.340    3.000
+ RNC      C12    C13    C14     109.470    3.000
+ RNC      C13    C12    H121    109.470    3.000
+ RNC      C13    C12    H122    109.470    3.000
+ RNC      C13    C12    N11     109.500    3.000
+ RNC      H121   C12    H122    107.900    3.000
+ RNC      H121   C12    N11     109.470    3.000
+ RNC      H122   C12    N11     109.470    3.000
+ RNC      C12    N11    C14     109.470    3.000
+ RNC      C12    N11    C09     109.470    3.000
+ RNC      C14    N11    C09     109.470    3.000
+ RNC      N11    C14    H142    109.470    3.000
+ RNC      N11    C14    H141    109.470    3.000
+ RNC      N11    C14    C13     109.500    3.000
+ RNC      H142   C14    H141    107.900    3.000
+ RNC      H142   C14    C13     109.470    3.000
+ RNC      H141   C14    C13     109.470    3.000
+ RNC      N11    C09    H09     109.500    3.000
+ RNC      N11    C09    O10     109.500    3.000
+ RNC      N11    C09    C06     109.500    3.000
+ RNC      H09    C09    O10     109.470    3.000
+ RNC      H09    C09    C06     109.470    3.000
+ RNC      O10    C09    C06     109.470    3.000
+ RNC      C09    O10    HO10    109.470    3.000
+ RNC      C09    C06    N05     120.000    3.000
+ RNC      C09    C06    C07     120.000    3.000
+ RNC      N05    C06    C07     120.000    3.000
+ RNC      C06    N05    C04     120.000    3.000
+ RNC      N05    C04    H04     120.000    3.000
+ RNC      N05    C04    C03     120.000    3.000
+ RNC      H04    C04    C03     120.000    3.000
+ RNC      C06    C07    H07     120.000    3.000
+ RNC      C06    C07    N08     120.000    3.000
+ RNC      H07    C07    N08     120.000    3.000
+ RNC      C07    N08    C03     120.000    3.000
+ RNC      N08    C03    N02     120.000    3.000
+ RNC      N08    C03    C04     120.000    3.000
+ RNC      N02    C03    C04     120.000    3.000
+ RNC      C03    N02    HN02    120.000    3.000
+ RNC      C03    N02    C01     120.000    3.000
+ RNC      HN02   N02    C01     118.500    3.000
+ RNC      N02    C01    H013    109.470    3.000
+ RNC      N02    C01    H012    109.470    3.000
+ RNC      N02    C01    H011    109.470    3.000
+ RNC      H013   C01    H012    109.470    3.000
+ RNC      H013   C01    H011    109.470    3.000
+ RNC      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RNC      var_1            HO19   O19    C18    O17              180.000           20.000   3
+ RNC      CONST_1          O19    C18    N20    C15                0.000            0.000   0
+ RNC      CONST_2          O19    C18    O17    N16              179.306            0.000   0
+ RNC      CONST_3          C18    O17    N16    C15                0.088            0.000   0
+ RNC      CONST_4          O17    N16    C15    C13                0.000            0.000   0
+ RNC      CONST_5          N16    C15    N20    C18                0.000            0.000   0
+ RNC      var_2            N16    C15    C13    C12              139.758           20.000   3
+ RNC      var_3            C15    C13    C12    N11              180.000           20.000   3
+ RNC      var_4            C13    C12    N11    C09              158.264           20.000   3
+ RNC      var_5            C12    N11    C14    C13               20.662           20.000   3
+ RNC      var_6            N11    C14    C13    C15              180.000           20.000   3
+ RNC      var_7            C12    N11    C09    C06               -1.651           20.000   3
+ RNC      var_8            N11    C09    O10    HO10             180.000           20.000   3
+ RNC      var_9            N11    C09    C06    C07             -152.745           20.000   3
+ RNC      CONST_6          C09    C06    N05    C04                0.000            0.000   0
+ RNC      CONST_7          C06    N05    C04    C03                0.000            0.000   0
+ RNC      CONST_8          C09    C06    C07    N08                0.000            0.000   0
+ RNC      CONST_9          C06    C07    N08    C03                0.000            0.000   0
+ RNC      CONST_10         C07    N08    C03    N02                0.000            0.000   0
+ RNC      CONST_11         N08    C03    C04    N05                0.000            0.000   0
+ RNC      var_10           N08    C03    N02    C01               14.437           20.000   3
+ RNC      var_11           C03    N02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RNC      chir_01          C13    C15    C14    C12       positiv
+ RNC      chir_02          C09    C06    N11    O10       negativ
+ RNC      chir_03          N11    C14    C12    C09       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RNC      plan-1            C18       0.020
+ RNC      plan-1            N20       0.020
+ RNC      plan-1            O17       0.020
+ RNC      plan-1            O19       0.020
+ RNC      plan-1            C15       0.020
+ RNC      plan-1            N16       0.020
+ RNC      plan-1            C13       0.020
+ RNC      plan-2            C03       0.020
+ RNC      plan-2            C04       0.020
+ RNC      plan-2            N02       0.020
+ RNC      plan-2            N08       0.020
+ RNC      plan-2            C06       0.020
+ RNC      plan-2            C07       0.020
+ RNC      plan-2            N05       0.020
+ RNC      plan-2            H04       0.020
+ RNC      plan-2            C09       0.020
+ RNC      plan-2            H07       0.020
+ RNC      plan-2            HN02      0.020
+ RNC      plan-3            N02       0.020
+ RNC      plan-3            C01       0.020
+ RNC      plan-3            C03       0.020
+ RNC      plan-3            HN02      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

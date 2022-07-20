@@ -1,0 +1,354 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RDU      RDU '.                                   ' .                  43  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RDU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RDU           F14    F    F         0.000    -52.089  -28.852    5.099
+ RDU           C11    C    CR6       0.000    -50.753  -28.944    4.973
+ RDU           C12    C    CR16      0.000    -50.225  -28.983    3.689
+ RDU           H12    H    H         0.000    -50.870  -28.937    2.821
+ RDU           C10    C    CR16      0.000    -49.968  -28.992    6.111
+ RDU           H10    H    H         0.000    -50.407  -28.958    7.101
+ RDU           C09    C    CR56      0.000    -48.578  -29.086    5.930
+ RDU           N15    N    NRD5      0.000    -47.572  -29.155    6.906
+ RDU           C16    C    CR56      0.000    -46.320  -29.248    6.298
+ RDU           N17    N    NRD6      0.000    -45.157  -29.328    6.992
+ RDU           C08    C    CR56      0.000    -47.943  -29.142    4.636
+ RDU           C13    C    CR16      0.000    -48.848  -29.083    3.549
+ RDU           H13    H    H         0.000    -48.441  -29.118    2.546
+ RDU           C07    C    CR56      0.000    -46.457  -29.248    4.868
+ RDU           C06    C    CR6       0.000    -45.171  -29.338    4.151
+ RDU           N19    N    NRD6      0.000    -44.020  -29.418    4.875
+ RDU           C18    C    CR16      0.000    -44.071  -29.409    6.231
+ RDU           H18    H    H         0.000    -43.123  -29.475    6.750
+ RDU           N05    N    N         0.000    -45.027  -29.364    2.675
+ RDU           C20    C    CH2       0.000    -43.960  -30.263    2.120
+ RDU           H202   H    H         0.000    -43.585  -30.856    2.957
+ RDU           H201   H    H         0.000    -43.164  -29.612    1.751
+ RDU           C04    C    CH2       0.000    -46.225  -29.307    1.792
+ RDU           H041   H    H         0.000    -46.622  -28.296    1.908
+ RDU           H042   H    H         0.000    -46.931  -30.025    2.215
+ RDU           C03    C    CH1       0.000    -46.009  -29.621    0.240
+ RDU           H03    H    H         0.000    -45.817  -28.686   -0.304
+ RDU           C02    C    CH2       0.000    -47.286  -30.313   -0.335
+ RDU           H021   H    H         0.000    -47.641  -31.062    0.376
+ RDU           H022   H    H         0.000    -47.038  -30.799   -1.281
+ RDU           O01    O    OH1       0.000    -48.267  -29.377   -0.544
+ RDU           HO01   H    H         0.000    -49.045  -29.819   -0.898
+ RDU           O22    O    O2        0.000    -45.018  -30.521   -0.026
+ RDU           C21    C    CT        0.000    -44.426  -31.207    0.984
+ RDU           C25    C    CH2       0.000    -43.564  -32.422    0.483
+ RDU           H251   H    H         0.000    -42.568  -32.546    0.913
+ RDU           H252   H    H         0.000    -43.519  -32.600   -0.593
+ RDU           C24    C    CH2       0.000    -44.534  -33.428    1.132
+ RDU           H241   H    H         0.000    -44.218  -33.936    2.046
+ RDU           H242   H    H         0.000    -45.055  -34.137    0.485
+ RDU           C23    C    CH2       0.000    -45.461  -32.288    1.482
+ RDU           H232   H    H         0.000    -45.676  -32.127    2.540
+ RDU           H231   H    H         0.000    -46.385  -32.201    0.906
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RDU      F14    n/a    C11    START
+ RDU      C11    F14    C10    .
+ RDU      C12    C11    H12    .
+ RDU      H12    C12    .      .
+ RDU      C10    C11    C09    .
+ RDU      H10    C10    .      .
+ RDU      C09    C10    C08    .
+ RDU      N15    C09    C16    .
+ RDU      C16    N15    N17    .
+ RDU      N17    C16    .      .
+ RDU      C08    C09    C07    .
+ RDU      C13    C08    H13    .
+ RDU      H13    C13    .      .
+ RDU      C07    C08    C06    .
+ RDU      C06    C07    N05    .
+ RDU      N19    C06    C18    .
+ RDU      C18    N19    H18    .
+ RDU      H18    C18    .      .
+ RDU      N05    C06    C04    .
+ RDU      C20    N05    H201   .
+ RDU      H202   C20    .      .
+ RDU      H201   C20    .      .
+ RDU      C04    N05    C03    .
+ RDU      H041   C04    .      .
+ RDU      H042   C04    .      .
+ RDU      C03    C04    O22    .
+ RDU      H03    C03    .      .
+ RDU      C02    C03    O01    .
+ RDU      H021   C02    .      .
+ RDU      H022   C02    .      .
+ RDU      O01    C02    HO01   .
+ RDU      HO01   O01    .      .
+ RDU      O22    C03    C21    .
+ RDU      C21    O22    C25    .
+ RDU      C25    C21    C24    .
+ RDU      H251   C25    .      .
+ RDU      H252   C25    .      .
+ RDU      C24    C25    C23    .
+ RDU      H241   C24    .      .
+ RDU      H242   C24    .      .
+ RDU      C23    C24    H231   .
+ RDU      H232   C23    .      .
+ RDU      H231   C23    .      END
+ RDU      C18    N17    .    ADD
+ RDU      C16    C07    .    ADD
+ RDU      C13    C12    .    ADD
+ RDU      C20    C21    .    ADD
+ RDU      C21    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RDU      C18    N17       aromat      1.337    0.020
+ RDU      C18    N19       aromatic    1.337    0.020
+ RDU      C16    C07       aromatic    1.390    0.020
+ RDU      C16    N15       aromatic    1.350    0.020
+ RDU      N17    C16       aromatic    1.355    0.020
+ RDU      C13    C12       aromatic    1.390    0.020
+ RDU      C13    C08       aromatic    1.390    0.020
+ RDU      C12    C11       aromatic    1.390    0.020
+ RDU      C10    C11       aromatic    1.390    0.020
+ RDU      C11    F14       single      1.345    0.020
+ RDU      C09    C10       aromatic    1.390    0.020
+ RDU      C20    C21       single      1.524    0.020
+ RDU      C20    N05       single      1.455    0.020
+ RDU      C02    C03       single      1.524    0.020
+ RDU      O01    C02       single      1.432    0.020
+ RDU      C03    C04       single      1.524    0.020
+ RDU      O22    C03       single      1.426    0.020
+ RDU      C04    N05       single      1.455    0.020
+ RDU      C06    C07       single      1.490    0.020
+ RDU      N05    C06       single      1.400    0.020
+ RDU      N19    C06       aromatic    1.350    0.020
+ RDU      C07    C08       single      1.490    0.020
+ RDU      C08    C09       aromatic    1.390    0.020
+ RDU      N15    C09       single      1.350    0.020
+ RDU      C21    C23       single      1.524    0.020
+ RDU      C25    C21       single      1.524    0.020
+ RDU      C21    O22       single      1.426    0.020
+ RDU      C23    C24       single      1.524    0.020
+ RDU      C24    C25       single      1.524    0.020
+ RDU      H18    C18       single      1.083    0.020
+ RDU      H13    C13       single      1.083    0.020
+ RDU      H12    C12       single      1.083    0.020
+ RDU      H10    C10       single      1.083    0.020
+ RDU      H201   C20       single      1.092    0.020
+ RDU      H202   C20       single      1.092    0.020
+ RDU      H021   C02       single      1.092    0.020
+ RDU      H022   C02       single      1.092    0.020
+ RDU      H03    C03       single      1.099    0.020
+ RDU      H041   C04       single      1.092    0.020
+ RDU      H042   C04       single      1.092    0.020
+ RDU      H231   C23       single      1.092    0.020
+ RDU      H232   C23       single      1.092    0.020
+ RDU      H241   C24       single      1.092    0.020
+ RDU      H242   C24       single      1.092    0.020
+ RDU      H251   C25       single      1.092    0.020
+ RDU      H252   C25       single      1.092    0.020
+ RDU      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RDU      F14    C11    C12     120.000    3.000
+ RDU      F14    C11    C10     120.000    3.000
+ RDU      C12    C11    C10     120.000    3.000
+ RDU      C11    C12    H12     120.000    3.000
+ RDU      C11    C12    C13     120.000    3.000
+ RDU      H12    C12    C13     120.000    3.000
+ RDU      C11    C10    H10     120.000    3.000
+ RDU      C11    C10    C09     120.000    3.000
+ RDU      H10    C10    C09     120.000    3.000
+ RDU      C10    C09    N15     132.000    3.000
+ RDU      C10    C09    C08     120.000    3.000
+ RDU      N15    C09    C08     108.000    3.000
+ RDU      C09    N15    C16     108.000    3.000
+ RDU      N15    C16    N17     120.000    3.000
+ RDU      N15    C16    C07     108.000    3.000
+ RDU      N17    C16    C07     120.000    3.000
+ RDU      C16    N17    C18     120.000    3.000
+ RDU      C09    C08    C13     120.000    3.000
+ RDU      C09    C08    C07     120.000    3.000
+ RDU      C13    C08    C07     120.000    3.000
+ RDU      C08    C13    H13     120.000    3.000
+ RDU      C08    C13    C12     120.000    3.000
+ RDU      H13    C13    C12     120.000    3.000
+ RDU      C08    C07    C06     120.000    3.000
+ RDU      C08    C07    C16     120.000    3.000
+ RDU      C06    C07    C16     120.000    3.000
+ RDU      C07    C06    N19     120.000    3.000
+ RDU      C07    C06    N05     120.000    3.000
+ RDU      N19    C06    N05     120.000    3.000
+ RDU      C06    N19    C18     120.000    3.000
+ RDU      N19    C18    H18     120.000    3.000
+ RDU      N19    C18    N17     120.000    3.000
+ RDU      H18    C18    N17     120.000    3.000
+ RDU      C06    N05    C20     120.000    3.000
+ RDU      C06    N05    C04     120.000    3.000
+ RDU      C20    N05    C04     120.000    3.000
+ RDU      N05    C20    H202    109.470    3.000
+ RDU      N05    C20    H201    109.470    3.000
+ RDU      N05    C20    C21     109.500    3.000
+ RDU      H202   C20    H201    107.900    3.000
+ RDU      H202   C20    C21     109.470    3.000
+ RDU      H201   C20    C21     109.470    3.000
+ RDU      N05    C04    H041    109.470    3.000
+ RDU      N05    C04    H042    109.470    3.000
+ RDU      N05    C04    C03     105.000    3.000
+ RDU      H041   C04    H042    107.900    3.000
+ RDU      H041   C04    C03     109.470    3.000
+ RDU      H042   C04    C03     109.470    3.000
+ RDU      C04    C03    H03     108.340    3.000
+ RDU      C04    C03    C02     109.470    3.000
+ RDU      C04    C03    O22     109.470    3.000
+ RDU      H03    C03    C02     108.340    3.000
+ RDU      H03    C03    O22     109.470    3.000
+ RDU      C02    C03    O22     109.470    3.000
+ RDU      C03    C02    H021    109.470    3.000
+ RDU      C03    C02    H022    109.470    3.000
+ RDU      C03    C02    O01     109.470    3.000
+ RDU      H021   C02    H022    107.900    3.000
+ RDU      H021   C02    O01     109.470    3.000
+ RDU      H022   C02    O01     109.470    3.000
+ RDU      C02    O01    HO01    109.470    3.000
+ RDU      C03    O22    C21     111.800    3.000
+ RDU      O22    C21    C25     109.470    3.000
+ RDU      O22    C21    C20     109.470    3.000
+ RDU      O22    C21    C23     109.470    3.000
+ RDU      C20    C21    C23     111.000    3.000
+ RDU      C25    C21    C20     111.000    3.000
+ RDU      C25    C21    C23     111.000    3.000
+ RDU      C21    C25    H251    109.470    3.000
+ RDU      C21    C25    H252    109.470    3.000
+ RDU      C21    C25    C24     111.000    3.000
+ RDU      H251   C25    H252    107.900    3.000
+ RDU      H251   C25    C24     109.470    3.000
+ RDU      H252   C25    C24     109.470    3.000
+ RDU      C25    C24    H241    109.470    3.000
+ RDU      C25    C24    H242    109.470    3.000
+ RDU      C25    C24    C23     111.000    3.000
+ RDU      H241   C24    H242    107.900    3.000
+ RDU      H241   C24    C23     109.470    3.000
+ RDU      H242   C24    C23     109.470    3.000
+ RDU      C24    C23    H232    109.470    3.000
+ RDU      C24    C23    H231    109.470    3.000
+ RDU      C24    C23    C21     111.000    3.000
+ RDU      H232   C23    H231    107.900    3.000
+ RDU      H232   C23    C21     109.470    3.000
+ RDU      H231   C23    C21     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RDU      CONST_1          F14    C11    C12    C13                0.000            0.000   0
+ RDU      CONST_2          F14    C11    C10    C09                0.000            0.000   0
+ RDU      CONST_3          C11    C10    C09    C08              180.000            0.000   0
+ RDU      CONST_4          C10    C09    N15    C16              180.000            0.000   0
+ RDU      CONST_5          C09    N15    C16    N17              180.000            0.000   0
+ RDU      CONST_6          N15    C16    C07    C08              180.000            0.000   0
+ RDU      CONST_7          N15    C16    N17    C18              180.000            0.000   0
+ RDU      CONST_8          C10    C09    C08    C07              180.000            0.000   0
+ RDU      CONST_9          C09    C08    C13    C12              180.000            0.000   0
+ RDU      CONST_10         C08    C13    C12    C11                0.000            0.000   0
+ RDU      CONST_11         C09    C08    C07    C06              180.000            0.000   0
+ RDU      CONST_12         C08    C07    C06    N05              180.000            0.000   0
+ RDU      CONST_13         C07    C06    N19    C18                0.000            0.000   0
+ RDU      CONST_14         C06    N19    C18    N17                0.000            0.000   0
+ RDU      CONST_15         N19    C18    N17    C16                0.000            0.000   0
+ RDU      var_1            C07    C06    N05    C04               -0.409           20.000   3
+ RDU      var_2            C06    N05    C20    C21              130.126           20.000   3
+ RDU      var_3            N05    C20    C21    O22               54.149           20.000   3
+ RDU      var_4            C06    N05    C04    C03             -168.518           20.000   3
+ RDU      var_5            N05    C04    C03    O22              180.000           20.000   3
+ RDU      var_6            C04    C03    C02    O01              180.000           20.000   3
+ RDU      var_7            C03    C02    O01    HO01             180.000           20.000   3
+ RDU      var_8            C04    C03    O22    C21                8.824           20.000   3
+ RDU      var_9            C03    O22    C21    C25              166.476           20.000   3
+ RDU      var_10           O22    C21    C23    C24              119.126           20.000   3
+ RDU      var_11           O22    C21    C25    C24             -112.989           20.000   3
+ RDU      var_12           C21    C25    C24    C23              180.000           20.000   3
+ RDU      var_13           C25    C24    C23    C21              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RDU      chir_01          C03    C02    C04    O22       negativ
+ RDU      chir_02          C21    C20    C23    C25       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RDU      plan-1            C18       0.020
+ RDU      plan-1            N17       0.020
+ RDU      plan-1            N19       0.020
+ RDU      plan-1            H18       0.020
+ RDU      plan-1            C06       0.020
+ RDU      plan-1            C07       0.020
+ RDU      plan-1            N05       0.020
+ RDU      plan-1            C16       0.020
+ RDU      plan-1            C08       0.020
+ RDU      plan-1            C13       0.020
+ RDU      plan-1            C09       0.020
+ RDU      plan-1            C10       0.020
+ RDU      plan-1            N15       0.020
+ RDU      plan-1            C12       0.020
+ RDU      plan-1            C11       0.020
+ RDU      plan-1            H13       0.020
+ RDU      plan-1            H12       0.020
+ RDU      plan-1            F14       0.020
+ RDU      plan-1            H10       0.020
+ RDU      plan-2            N05       0.020
+ RDU      plan-2            C20       0.020
+ RDU      plan-2            C04       0.020
+ RDU      plan-2            C06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

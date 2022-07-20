@@ -1,0 +1,312 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WVY      WVY '.                                   ' .                  38  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WVY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WVY           O23    O    O         0.000    -51.513  -29.527    4.826
+ WVY           C22    C    CR6       0.000    -50.785  -29.271    5.725
+ WVY           N21    N    NR16      0.000    -51.239  -29.329    7.169
+ WVY           HN21   H    H         0.000    -52.203  -29.594    7.456
+ WVY           C20    C    CH2       0.000    -50.147  -28.962    8.154
+ WVY           H202   H    H         0.000    -50.450  -29.310    9.144
+ WVY           H201   H    H         0.000    -50.050  -27.874    8.166
+ WVY           C17    C    CR6       0.000    -49.277  -28.834    5.494
+ WVY           C18    C    CR16      0.000    -48.313  -29.098    6.526
+ WVY           H18    H    H         0.000    -47.251  -28.956    6.371
+ WVY           C19    C    CR16      0.000    -48.853  -29.568    7.793
+ WVY           H19    H    H         0.000    -48.349  -30.298    8.415
+ WVY           C16    C    CH2       0.000    -48.862  -29.603    4.190
+ WVY           H161   H    H         0.000    -49.436  -29.236    3.337
+ WVY           H162   H    H         0.000    -49.037  -30.674    4.312
+ WVY           O15    O    O2        0.000    -47.504  -29.374    3.971
+ WVY           C02    C    C         0.000    -47.138  -29.187    2.636
+ WVY           O01    O    O         0.000    -47.891  -28.754    1.833
+ WVY           C03    C    CH2       0.000    -45.725  -29.545    2.221
+ WVY           H031   H    H         0.000    -45.148  -29.705    3.135
+ WVY           H032   H    H         0.000    -45.318  -28.688    1.680
+ WVY           C04    C    CR6       0.000    -45.643  -30.787    1.343
+ WVY           C09    C    CR16      0.000    -44.564  -30.930    0.493
+ WVY           H09    H    H         0.000    -43.800  -30.163    0.453
+ WVY           C08    C    CR16      0.000    -44.460  -32.050   -0.304
+ WVY           H08    H    H         0.000    -43.607  -32.174   -0.959
+ WVY           C07    C    CR6       0.000    -45.447  -33.012   -0.263
+ WVY           C06    C    CR16      0.000    -46.534  -32.877    0.580
+ WVY           H06    H    H         0.000    -47.304  -33.639    0.606
+ WVY           C05    C    CR16      0.000    -46.629  -31.759    1.390
+ WVY           H05    H    H         0.000    -47.473  -31.644    2.059
+ WVY           N10    N    NR5       0.000    -45.326  -34.148   -1.139
+ WVY           C11    C    CR15      0.000    -45.992  -35.272   -1.042
+ WVY           H11    H    H         0.000    -46.719  -35.530   -0.282
+ WVY           C12    C    CSP       0.000    -45.593  -36.050   -2.080
+ WVY           N14    N    NRD5      0.000    -44.506  -34.169   -2.243
+ WVY           C13    C    CR15      0.000    -44.662  -35.355   -2.828
+ WVY           H13    H    H         0.000    -44.156  -35.707   -3.719
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WVY      O23    n/a    C22    START
+ WVY      C22    O23    C17    .
+ WVY      N21    C22    C20    .
+ WVY      HN21   N21    .      .
+ WVY      C20    N21    H201   .
+ WVY      H202   C20    .      .
+ WVY      H201   C20    .      .
+ WVY      C17    C22    C16    .
+ WVY      C18    C17    C19    .
+ WVY      H18    C18    .      .
+ WVY      C19    C18    H19    .
+ WVY      H19    C19    .      .
+ WVY      C16    C17    O15    .
+ WVY      H161   C16    .      .
+ WVY      H162   C16    .      .
+ WVY      O15    C16    C02    .
+ WVY      C02    O15    C03    .
+ WVY      O01    C02    .      .
+ WVY      C03    C02    C04    .
+ WVY      H031   C03    .      .
+ WVY      H032   C03    .      .
+ WVY      C04    C03    C09    .
+ WVY      C09    C04    C08    .
+ WVY      H09    C09    .      .
+ WVY      C08    C09    C07    .
+ WVY      H08    C08    .      .
+ WVY      C07    C08    N10    .
+ WVY      C06    C07    C05    .
+ WVY      H06    C06    .      .
+ WVY      C05    C06    H05    .
+ WVY      H05    C05    .      .
+ WVY      N10    C07    N14    .
+ WVY      C11    N10    C12    .
+ WVY      H11    C11    .      .
+ WVY      C12    C11    .      .
+ WVY      N14    N10    C13    .
+ WVY      C13    N14    H13    .
+ WVY      H13    C13    .      END
+ WVY      C13    C12    .    ADD
+ WVY      C20    C19    .    ADD
+ WVY      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WVY      C13    C12       aromatic    1.335    0.020
+ WVY      C13    N14       aromatic    1.350    0.020
+ WVY      C17    C22       single      1.487    0.020
+ WVY      C16    C17       single      1.511    0.020
+ WVY      C18    C17       aromatic    1.390    0.020
+ WVY      C20    C19       single      1.457    0.020
+ WVY      C20    N21       single      1.462    0.020
+ WVY      N21    C22       single      1.337    0.020
+ WVY      C22    O23       double      1.250    0.020
+ WVY      C03    C02       single      1.510    0.020
+ WVY      O01    C02       double      1.220    0.020
+ WVY      C02    O15       single      1.454    0.020
+ WVY      C04    C03       single      1.511    0.020
+ WVY      C04    C05       aromatic    1.390    0.020
+ WVY      C09    C04       aromatic    1.390    0.020
+ WVY      C05    C06       aromatic    1.390    0.020
+ WVY      C06    C07       aromatic    1.390    0.020
+ WVY      C07    C08       aromatic    1.390    0.020
+ WVY      N10    C07       single      1.337    0.020
+ WVY      C08    C09       aromatic    1.390    0.020
+ WVY      C12    C11       double      1.335    0.020
+ WVY      C11    N10       single      1.337    0.020
+ WVY      O15    C16       single      1.426    0.020
+ WVY      C19    C18       aromatic    1.390    0.020
+ WVY      N14    N10       single      1.402    0.020
+ WVY      H13    C13       single      1.083    0.020
+ WVY      H201   C20       single      1.092    0.020
+ WVY      H202   C20       single      1.092    0.020
+ WVY      H031   C03       single      1.092    0.020
+ WVY      H032   C03       single      1.092    0.020
+ WVY      H05    C05       single      1.083    0.020
+ WVY      H06    C06       single      1.083    0.020
+ WVY      H08    C08       single      1.083    0.020
+ WVY      H09    C09       single      1.083    0.020
+ WVY      H11    C11       single      1.083    0.020
+ WVY      H161   C16       single      1.092    0.020
+ WVY      H162   C16       single      1.092    0.020
+ WVY      H18    C18       single      1.083    0.020
+ WVY      H19    C19       single      1.083    0.020
+ WVY      HN21   N21       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WVY      O23    C22    N21     120.000    3.000
+ WVY      O23    C22    C17     120.000    3.000
+ WVY      N21    C22    C17     120.000    3.000
+ WVY      C22    N21    HN21    120.000    3.000
+ WVY      C22    N21    C20     120.000    3.000
+ WVY      HN21   N21    C20     120.000    3.000
+ WVY      N21    C20    H202    109.500    3.000
+ WVY      N21    C20    H201    109.500    3.000
+ WVY      N21    C20    C19     109.500    3.000
+ WVY      H202   C20    H201    107.900    3.000
+ WVY      H202   C20    C19     109.470    3.000
+ WVY      H201   C20    C19     109.470    3.000
+ WVY      C22    C17    C18     120.000    3.000
+ WVY      C22    C17    C16     120.000    3.000
+ WVY      C18    C17    C16     120.000    3.000
+ WVY      C17    C18    H18     120.000    3.000
+ WVY      C17    C18    C19     120.000    3.000
+ WVY      H18    C18    C19     120.000    3.000
+ WVY      C18    C19    H19     120.000    3.000
+ WVY      C18    C19    C20     120.000    3.000
+ WVY      H19    C19    C20     120.000    3.000
+ WVY      C17    C16    H161    109.470    3.000
+ WVY      C17    C16    H162    109.470    3.000
+ WVY      C17    C16    O15     109.470    3.000
+ WVY      H161   C16    H162    107.900    3.000
+ WVY      H161   C16    O15     109.470    3.000
+ WVY      H162   C16    O15     109.470    3.000
+ WVY      C16    O15    C02     120.000    3.000
+ WVY      O15    C02    O01     119.000    3.000
+ WVY      O15    C02    C03     120.000    3.000
+ WVY      O01    C02    C03     120.500    3.000
+ WVY      C02    C03    H031    109.470    3.000
+ WVY      C02    C03    H032    109.470    3.000
+ WVY      C02    C03    C04     109.470    3.000
+ WVY      H031   C03    H032    107.900    3.000
+ WVY      H031   C03    C04     109.470    3.000
+ WVY      H032   C03    C04     109.470    3.000
+ WVY      C03    C04    C09     120.000    3.000
+ WVY      C03    C04    C05     120.000    3.000
+ WVY      C09    C04    C05     120.000    3.000
+ WVY      C04    C09    H09     120.000    3.000
+ WVY      C04    C09    C08     120.000    3.000
+ WVY      H09    C09    C08     120.000    3.000
+ WVY      C09    C08    H08     120.000    3.000
+ WVY      C09    C08    C07     120.000    3.000
+ WVY      H08    C08    C07     120.000    3.000
+ WVY      C08    C07    C06     120.000    3.000
+ WVY      C08    C07    N10     132.000    3.000
+ WVY      C06    C07    N10     132.000    3.000
+ WVY      C07    C06    H06     120.000    3.000
+ WVY      C07    C06    C05     120.000    3.000
+ WVY      H06    C06    C05     120.000    3.000
+ WVY      C06    C05    H05     120.000    3.000
+ WVY      C06    C05    C04     120.000    3.000
+ WVY      H05    C05    C04     120.000    3.000
+ WVY      C07    N10    C11     108.000    3.000
+ WVY      C07    N10    N14     108.000    3.000
+ WVY      C11    N10    N14     108.000    3.000
+ WVY      N10    C11    H11     126.000    3.000
+ WVY      N10    C11    C12     108.000    3.000
+ WVY      H11    C11    C12     108.000    3.000
+ WVY      C11    C12    C13     180.000    3.000
+ WVY      N10    N14    C13     108.000    3.000
+ WVY      N14    C13    H13     126.000    3.000
+ WVY      N14    C13    C12     108.000    3.000
+ WVY      H13    C13    C12     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WVY      CONST_1          O23    C22    N21    C20                0.000            0.000   0
+ WVY      CONST_2          C22    N21    C20    C19              -42.512            0.000   0
+ WVY      CONST_3          N21    C20    C19    C18               63.954            0.000   0
+ WVY      CONST_4          O23    C22    C17    C16                0.000            0.000   0
+ WVY      CONST_5          C22    C17    C18    C19                0.000            0.000   0
+ WVY      CONST_6          C17    C18    C19    C20                0.000            0.000   0
+ WVY      var_1            C22    C17    C16    O15                0.000           20.000   2
+ WVY      var_2            C17    C16    O15    C02             -140.753           20.000   3
+ WVY      var_3            C16    O15    C02    C03             -153.046           20.000   3
+ WVY      var_4            O15    C02    C03    C04              180.000           20.000   3
+ WVY      var_5            C02    C03    C04    C09                0.000           20.000   2
+ WVY      CONST_7          C03    C04    C05    C06                0.000            0.000   0
+ WVY      CONST_8          C03    C04    C09    C08                0.000            0.000   0
+ WVY      CONST_9          C04    C09    C08    C07                0.000            0.000   0
+ WVY      CONST_10         C09    C08    C07    N10                0.000            0.000   0
+ WVY      CONST_11         C08    C07    C06    C05                0.000            0.000   0
+ WVY      CONST_12         C07    C06    C05    C04                0.000            0.000   0
+ WVY      var_6            C08    C07    N10    N14              -17.948           20.000   3
+ WVY      CONST_13         C07    N10    C11    C12              180.000            0.000   0
+ WVY      CONST_14         N10    C11    C12    C13               -0.518            0.000   0
+ WVY      CONST_15         C07    N10    N14    C13             -178.835            0.000   0
+ WVY      CONST_16         N10    N14    C13    C12                0.000            0.000   0
+ WVY      CONST_17         N14    C13    C12    C11               -0.077            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WVY      plan-1            C13       0.020
+ WVY      plan-1            C12       0.020
+ WVY      plan-1            N14       0.020
+ WVY      plan-1            H13       0.020
+ WVY      plan-1            C11       0.020
+ WVY      plan-1            N10       0.020
+ WVY      plan-1            H11       0.020
+ WVY      plan-1            C07       0.020
+ WVY      plan-2            C17       0.020
+ WVY      plan-2            C22       0.020
+ WVY      plan-2            C16       0.020
+ WVY      plan-2            C18       0.020
+ WVY      plan-2            C20       0.020
+ WVY      plan-2            C19       0.020
+ WVY      plan-2            N21       0.020
+ WVY      plan-2            O23       0.020
+ WVY      plan-2            H18       0.020
+ WVY      plan-2            H19       0.020
+ WVY      plan-2            HN21      0.020
+ WVY      plan-3            C02       0.020
+ WVY      plan-3            C03       0.020
+ WVY      plan-3            O01       0.020
+ WVY      plan-3            O15       0.020
+ WVY      plan-4            C04       0.020
+ WVY      plan-4            C03       0.020
+ WVY      plan-4            C05       0.020
+ WVY      plan-4            C09       0.020
+ WVY      plan-4            C06       0.020
+ WVY      plan-4            C07       0.020
+ WVY      plan-4            C08       0.020
+ WVY      plan-4            H05       0.020
+ WVY      plan-4            H06       0.020
+ WVY      plan-4            N10       0.020
+ WVY      plan-4            H08       0.020
+ WVY      plan-4            H09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,309 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RQC      RQC '.                                   ' .                  37  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RQC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RQC           O21    O    OC       -1.000    -46.502  -29.311    3.113
+ RQC           C19    C    C         0.000    -46.200  -29.301    4.301
+ RQC           O20    O    OC        0.000    -45.055  -29.377    4.781
+ RQC           C17    C    C         0.000    -47.506  -29.131    5.231
+ RQC           C16    C    C1        0.000    -47.578  -29.469    6.520
+ RQC           H16    H    H         0.000    -46.735  -29.700    7.150
+ RQC           C15    C    CH2       0.000    -49.028  -29.478    6.961
+ RQC           H151   H    H         0.000    -49.251  -28.640    7.624
+ RQC           H152   H    H         0.000    -49.291  -30.414    7.458
+ RQC           N14    N    N         0.000    -49.841  -29.339    5.666
+ RQC           C18    C    CH2       0.000    -48.857  -29.099    4.575
+ RQC           H182   H    H         0.000    -49.013  -28.124    4.108
+ RQC           H181   H    H         0.000    -48.912  -29.879    3.813
+ RQC           C12    C    C         0.000    -51.158  -29.443    5.508
+ RQC           O13    O    O         0.000    -51.702  -29.320    4.408
+ RQC           C11    C    CH2       0.000    -52.147  -29.699    6.657
+ RQC           H111   H    H         0.000    -51.938  -28.921    7.394
+ RQC           H112   H    H         0.000    -51.866  -30.671    7.066
+ RQC           C10    C    CH2       0.000    -53.625  -29.698    6.324
+ RQC           H101   H    H         0.000    -53.783  -30.203    5.369
+ RQC           H102   H    H         0.000    -53.981  -28.668    6.253
+ RQC           C09    C    CR6       0.000    -54.428  -30.461    7.469
+ RQC           N08    N    NR16      0.000    -54.533  -31.845    7.281
+ RQC           HN08   H    H         0.000    -54.127  -32.311    6.445
+ RQC           C06    C    CR6       0.000    -55.239  -32.607    8.312
+ RQC           O07    O    O         0.000    -55.346  -33.824    8.130
+ RQC           N22    N    NRD6      0.000    -54.862  -29.815    8.506
+ RQC           C23    C    CR56      0.000    -55.541  -30.491    9.523
+ RQC           C05    C    CR56      0.000    -55.749  -31.880    9.461
+ RQC           N02    N    NR5       0.000    -56.133  -30.049   10.733
+ RQC           C01    C    CH3       0.000    -56.197  -28.661   11.276
+ RQC           H013   H    H         0.000    -55.215  -28.290   11.419
+ RQC           H012   H    H         0.000    -56.713  -28.036   10.593
+ RQC           H011   H    H         0.000    -56.709  -28.666   12.204
+ RQC           N03    N    NRD5      0.000    -56.700  -31.114   11.424
+ RQC           C04    C    CR15      0.000    -56.472  -32.218   10.670
+ RQC           H04    H    H         0.000    -56.788  -33.219   10.936
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RQC      O21    n/a    C19    START
+ RQC      C19    O21    C17    .
+ RQC      O20    C19    .      .
+ RQC      C17    C19    C16    .
+ RQC      C16    C17    C15    .
+ RQC      H16    C16    .      .
+ RQC      C15    C16    N14    .
+ RQC      H151   C15    .      .
+ RQC      H152   C15    .      .
+ RQC      N14    C15    C12    .
+ RQC      C18    N14    H181   .
+ RQC      H182   C18    .      .
+ RQC      H181   C18    .      .
+ RQC      C12    N14    C11    .
+ RQC      O13    C12    .      .
+ RQC      C11    C12    C10    .
+ RQC      H111   C11    .      .
+ RQC      H112   C11    .      .
+ RQC      C10    C11    C09    .
+ RQC      H101   C10    .      .
+ RQC      H102   C10    .      .
+ RQC      C09    C10    N22    .
+ RQC      N08    C09    C06    .
+ RQC      HN08   N08    .      .
+ RQC      C06    N08    O07    .
+ RQC      O07    C06    .      .
+ RQC      N22    C09    C23    .
+ RQC      C23    N22    N02    .
+ RQC      C05    C23    .      .
+ RQC      N02    C23    N03    .
+ RQC      C01    N02    H011   .
+ RQC      H013   C01    .      .
+ RQC      H012   C01    .      .
+ RQC      H011   C01    .      .
+ RQC      N03    N02    C04    .
+ RQC      C04    N03    H04    .
+ RQC      H04    C04    .      END
+ RQC      C18    C17    .    ADD
+ RQC      C04    C05    .    ADD
+ RQC      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RQC      C18    C17       single      1.510    0.020
+ RQC      C18    N14       single      1.455    0.020
+ RQC      C16    C17       double      1.340    0.020
+ RQC      C15    C16       single      1.510    0.020
+ RQC      C17    C19       single      1.460    0.020
+ RQC      N14    C15       single      1.455    0.020
+ RQC      C11    C12       single      1.510    0.020
+ RQC      C12    N14       single      1.330    0.020
+ RQC      O13    C12       double      1.220    0.020
+ RQC      C10    C11       single      1.524    0.020
+ RQC      C09    C10       single      1.511    0.020
+ RQC      O20    C19       deloc       1.250    0.020
+ RQC      C19    O21       deloc       1.250    0.020
+ RQC      C01    N02       single      1.485    0.020
+ RQC      C04    C05       aromatic    1.440    0.020
+ RQC      C04    N03       aromatic    1.350    0.020
+ RQC      C05    C06       aromatic    1.390    0.020
+ RQC      C05    C23       aromatic    1.390    0.020
+ RQC      C06    N08       single      1.337    0.020
+ RQC      O07    C06       aromatic    1.250    0.020
+ RQC      N08    C09       single      1.337    0.020
+ RQC      N22    C09       aromatic    1.350    0.020
+ RQC      N02    C23       single      1.337    0.020
+ RQC      C23    N22       single      1.355    0.020
+ RQC      N03    N02       single      1.402    0.020
+ RQC      H181   C18       single      1.092    0.020
+ RQC      H182   C18       single      1.092    0.020
+ RQC      H16    C16       single      1.077    0.020
+ RQC      H151   C15       single      1.092    0.020
+ RQC      H152   C15       single      1.092    0.020
+ RQC      H111   C11       single      1.092    0.020
+ RQC      H112   C11       single      1.092    0.020
+ RQC      H101   C10       single      1.092    0.020
+ RQC      H102   C10       single      1.092    0.020
+ RQC      H011   C01       single      1.059    0.020
+ RQC      H012   C01       single      1.059    0.020
+ RQC      H013   C01       single      1.059    0.020
+ RQC      H04    C04       single      1.083    0.020
+ RQC      HN08   N08       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RQC      O21    C19    O20     123.000    3.000
+ RQC      O21    C19    C17     120.000    3.000
+ RQC      O20    C19    C17     120.000    3.000
+ RQC      C19    C17    C16     120.000    3.000
+ RQC      C19    C17    C18     120.000    3.000
+ RQC      C16    C17    C18     120.000    3.000
+ RQC      C17    C16    H16     120.000    3.000
+ RQC      C17    C16    C15     120.500    3.000
+ RQC      H16    C16    C15     120.000    3.000
+ RQC      C16    C15    H151    109.470    3.000
+ RQC      C16    C15    H152    109.470    3.000
+ RQC      C16    C15    N14     109.500    3.000
+ RQC      H151   C15    H152    107.900    3.000
+ RQC      H151   C15    N14     109.470    3.000
+ RQC      H152   C15    N14     109.470    3.000
+ RQC      C15    N14    C18     120.000    3.000
+ RQC      C15    N14    C12     127.000    3.000
+ RQC      C18    N14    C12     127.000    3.000
+ RQC      N14    C18    H182    109.470    3.000
+ RQC      N14    C18    H181    109.470    3.000
+ RQC      N14    C18    C17     109.500    3.000
+ RQC      H182   C18    H181    107.900    3.000
+ RQC      H182   C18    C17     109.470    3.000
+ RQC      H181   C18    C17     109.470    3.000
+ RQC      N14    C12    O13     123.000    3.000
+ RQC      N14    C12    C11     116.500    3.000
+ RQC      O13    C12    C11     120.500    3.000
+ RQC      C12    C11    H111    109.470    3.000
+ RQC      C12    C11    H112    109.470    3.000
+ RQC      C12    C11    C10     109.470    3.000
+ RQC      H111   C11    H112    107.900    3.000
+ RQC      H111   C11    C10     109.470    3.000
+ RQC      H112   C11    C10     109.470    3.000
+ RQC      C11    C10    H101    109.470    3.000
+ RQC      C11    C10    H102    109.470    3.000
+ RQC      C11    C10    C09     109.470    3.000
+ RQC      H101   C10    H102    107.900    3.000
+ RQC      H101   C10    C09     109.470    3.000
+ RQC      H102   C10    C09     109.470    3.000
+ RQC      C10    C09    N08     120.000    3.000
+ RQC      C10    C09    N22     120.000    3.000
+ RQC      N08    C09    N22     120.000    3.000
+ RQC      C09    N08    HN08    120.000    3.000
+ RQC      C09    N08    C06     120.000    3.000
+ RQC      HN08   N08    C06     120.000    3.000
+ RQC      N08    C06    O07     120.000    3.000
+ RQC      N08    C06    C05     120.000    3.000
+ RQC      O07    C06    C05     120.000    3.000
+ RQC      C09    N22    C23     120.000    3.000
+ RQC      N22    C23    C05     120.000    3.000
+ RQC      N22    C23    N02     132.000    3.000
+ RQC      C05    C23    N02     108.000    3.000
+ RQC      C23    C05    C04     120.000    3.000
+ RQC      C23    C05    C06     120.000    3.000
+ RQC      C04    C05    C06     132.000    3.000
+ RQC      C23    N02    C01     126.000    3.000
+ RQC      C23    N02    N03     108.000    3.000
+ RQC      C01    N02    N03     108.000    3.000
+ RQC      N02    C01    H013    109.470    3.000
+ RQC      N02    C01    H012    109.470    3.000
+ RQC      N02    C01    H011    109.470    3.000
+ RQC      H013   C01    H012    109.470    3.000
+ RQC      H013   C01    H011    109.470    3.000
+ RQC      H012   C01    H011    109.470    3.000
+ RQC      N02    N03    C04     108.000    3.000
+ RQC      N03    C04    H04     126.000    3.000
+ RQC      N03    C04    C05     108.000    3.000
+ RQC      H04    C04    C05     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RQC      var_1            O21    C19    C17    C16              159.173           20.000   3
+ RQC      var_2            C19    C17    C16    C15             -166.487           20.000   3
+ RQC      var_3            C17    C16    C15    N14                9.990           20.000   3
+ RQC      var_4            C16    C15    N14    C12              171.910           20.000   3
+ RQC      var_5            C15    N14    C18    C17                1.201           20.000   3
+ RQC      var_6            N14    C18    C17    C19              180.000           20.000   3
+ RQC      var_7            C15    N14    C12    C11              180.000           20.000   2
+ RQC      var_8            N14    C12    C11    C10              180.000           20.000   3
+ RQC      var_9            C12    C11    C10    C09              180.000           20.000   3
+ RQC      var_10           C11    C10    C09    N22                0.000           20.000   2
+ RQC      CONST_1          C10    C09    N08    C06                0.000            0.000   0
+ RQC      CONST_2          C09    N08    C06    O07                0.000            0.000   0
+ RQC      CONST_3          C10    C09    N22    C23                0.000            0.000   0
+ RQC      CONST_4          C09    N22    C23    N02              180.000            0.000   0
+ RQC      CONST_5          N22    C23    C05    C04              180.000            0.000   0
+ RQC      CONST_6          C23    C05    C06    N08              180.000            0.000   0
+ RQC      CONST_7          N22    C23    N02    N03              180.000            0.000   0
+ RQC      var_11           C23    N02    C01    H011             180.000           20.000   3
+ RQC      CONST_8          C23    N02    N03    C04                0.120            0.000   0
+ RQC      CONST_9          N02    N03    C04    C05                0.000            0.000   0
+ RQC      CONST_10         N03    C04    C05    C23                0.244            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RQC      plan-1            C16       0.020
+ RQC      plan-1            C17       0.020
+ RQC      plan-1            C15       0.020
+ RQC      plan-1            H16       0.020
+ RQC      plan-2            C17       0.020
+ RQC      plan-2            C18       0.020
+ RQC      plan-2            C16       0.020
+ RQC      plan-2            C19       0.020
+ RQC      plan-2            H16       0.020
+ RQC      plan-3            C12       0.020
+ RQC      plan-3            C11       0.020
+ RQC      plan-3            N14       0.020
+ RQC      plan-3            O13       0.020
+ RQC      plan-4            C19       0.020
+ RQC      plan-4            C17       0.020
+ RQC      plan-4            O20       0.020
+ RQC      plan-4            O21       0.020
+ RQC      plan-5            C04       0.020
+ RQC      plan-5            C05       0.020
+ RQC      plan-5            N03       0.020
+ RQC      plan-5            H04       0.020
+ RQC      plan-5            N02       0.020
+ RQC      plan-5            C06       0.020
+ RQC      plan-5            C23       0.020
+ RQC      plan-5            C09       0.020
+ RQC      plan-5            N08       0.020
+ RQC      plan-5            N22       0.020
+ RQC      plan-5            O07       0.020
+ RQC      plan-5            C10       0.020
+ RQC      plan-5            C01       0.020
+ RQC      plan-5            HN08      0.020
+ RQC      plan-6            N14       0.020
+ RQC      plan-6            C18       0.020
+ RQC      plan-6            C15       0.020
+ RQC      plan-6            C12       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

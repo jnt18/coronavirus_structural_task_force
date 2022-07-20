@@ -1,0 +1,333 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RIK      RIK '.                                   ' .                  40  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RIK
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RIK           O25    O    OC        0.000    -43.910  -26.532   -2.901
+ RIK           C02    C    C         0.000    -44.515  -26.417   -1.801
+ RIK           O01    O    OC       -1.000    -45.753  -26.658   -1.742
+ RIK           C03    C    CH2       0.000    -43.754  -25.970   -0.547
+ RIK           H031   H    H         0.000    -44.447  -25.365    0.042
+ RIK           H032   H    H         0.000    -42.926  -25.345   -0.888
+ RIK           C04    C    CH2       0.000    -43.212  -27.112    0.315
+ RIK           H041   H    H         0.000    -42.520  -26.722    1.064
+ RIK           H042   H    H         0.000    -42.695  -27.843   -0.310
+ RIK           C05    C    CH1       0.000    -44.384  -27.775    1.005
+ RIK           H05    H    H         0.000    -45.180  -27.028    1.129
+ RIK           O24    O    O2        0.000    -44.856  -28.789    0.138
+ RIK           C23    C    CH2       0.000    -46.080  -29.277    0.652
+ RIK           H231   H    H         0.000    -46.414  -30.111    0.032
+ RIK           H232   H    H         0.000    -46.822  -28.476    0.614
+ RIK           C22    C    CH2       0.000    -45.911  -29.750    2.098
+ RIK           H221   H    H         0.000    -45.279  -30.641    2.103
+ RIK           H222   H    H         0.000    -46.895  -30.001    2.501
+ RIK           N07    N    N         0.000    -45.310  -28.733    2.903
+ RIK           C06    C    CH2       0.000    -44.046  -28.348    2.377
+ RIK           H062   H    H         0.000    -43.370  -29.198    2.261
+ RIK           H061   H    H         0.000    -43.562  -27.580    2.984
+ RIK           C08    C    CR6       0.000    -45.347  -28.900    4.341
+ RIK           C09    C    CR56      0.000    -46.580  -28.962    5.028
+ RIK           C10    C    CR56      0.000    -47.984  -28.914    4.720
+ RIK           C15    C    CR16      0.000    -48.743  -28.783    3.539
+ RIK           H15    H    H         0.000    -48.244  -28.681    2.583
+ RIK           N21    N    NRD6      0.000    -44.202  -28.963    5.009
+ RIK           C20    C    CR16      0.000    -44.211  -29.103    6.324
+ RIK           H20    H    H         0.000    -43.269  -29.158    6.856
+ RIK           N19    N    NRD6      0.000    -45.327  -29.176    6.996
+ RIK           C18    C    CR56      0.000    -46.512  -29.104    6.401
+ RIK           N17    N    NRD5      0.000    -47.742  -29.155    6.905
+ RIK           C11    C    CR56      0.000    -48.645  -29.041    5.933
+ RIK           C12    C    CR16      0.000    -50.036  -29.052    5.997
+ RIK           H12    H    H         0.000    -50.542  -29.162    6.948
+ RIK           C13    C    CR6       0.000    -50.758  -28.921    4.830
+ RIK           F16    F    F         0.000    -52.107  -28.920    4.883
+ RIK           C14    C    CR16      0.000    -50.132  -28.785    3.601
+ RIK           H14    H    H         0.000    -50.719  -28.681    2.697
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RIK      O25    n/a    C02    START
+ RIK      C02    O25    C03    .
+ RIK      O01    C02    .      .
+ RIK      C03    C02    C04    .
+ RIK      H031   C03    .      .
+ RIK      H032   C03    .      .
+ RIK      C04    C03    C05    .
+ RIK      H041   C04    .      .
+ RIK      H042   C04    .      .
+ RIK      C05    C04    O24    .
+ RIK      H05    C05    .      .
+ RIK      O24    C05    C23    .
+ RIK      C23    O24    C22    .
+ RIK      H231   C23    .      .
+ RIK      H232   C23    .      .
+ RIK      C22    C23    N07    .
+ RIK      H221   C22    .      .
+ RIK      H222   C22    .      .
+ RIK      N07    C22    C08    .
+ RIK      C06    N07    H061   .
+ RIK      H062   C06    .      .
+ RIK      H061   C06    .      .
+ RIK      C08    N07    N21    .
+ RIK      C09    C08    C10    .
+ RIK      C10    C09    C15    .
+ RIK      C15    C10    H15    .
+ RIK      H15    C15    .      .
+ RIK      N21    C08    C20    .
+ RIK      C20    N21    N19    .
+ RIK      H20    C20    .      .
+ RIK      N19    C20    C18    .
+ RIK      C18    N19    N17    .
+ RIK      N17    C18    C11    .
+ RIK      C11    N17    C12    .
+ RIK      C12    C11    C13    .
+ RIK      H12    C12    .      .
+ RIK      C13    C12    C14    .
+ RIK      F16    C13    .      .
+ RIK      C14    C13    H14    .
+ RIK      H14    C14    .      END
+ RIK      C18    C09    .    ADD
+ RIK      C15    C14    .    ADD
+ RIK      C11    C10    .    ADD
+ RIK      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RIK      C18    C09       aromatic    1.390    0.020
+ RIK      N17    C18       aromat      1.350    0.020
+ RIK      C18    N19       aromatic    1.355    0.020
+ RIK      C15    C14       aromatic    1.390    0.020
+ RIK      C15    C10       aromatic    1.390    0.020
+ RIK      C14    C13       aromatic    1.390    0.020
+ RIK      C13    C12       aromatic    1.390    0.020
+ RIK      F16    C13       single      1.345    0.020
+ RIK      C12    C11       aromatic    1.390    0.020
+ RIK      C11    C10       aromatic    1.390    0.020
+ RIK      C11    N17       deloc       1.350    0.020
+ RIK      C10    C09       aromatic    1.390    0.020
+ RIK      N19    C20       aromatic    1.337    0.020
+ RIK      C20    N21       aromatic    1.337    0.020
+ RIK      C03    C02       single      1.510    0.020
+ RIK      O01    C02       deloc       1.250    0.020
+ RIK      C02    O25       deloc       1.250    0.020
+ RIK      C04    C03       single      1.524    0.020
+ RIK      C05    C04       single      1.524    0.020
+ RIK      C05    C06       single      1.524    0.020
+ RIK      O24    C05       single      1.426    0.020
+ RIK      C06    N07       single      1.455    0.020
+ RIK      C09    C08       aromatic    1.390    0.020
+ RIK      C08    N07       single      1.400    0.020
+ RIK      N21    C08       deloc       1.350    0.020
+ RIK      C22    C23       single      1.524    0.020
+ RIK      N07    C22       single      1.455    0.020
+ RIK      C23    O24       single      1.426    0.020
+ RIK      H15    C15       single      1.083    0.020
+ RIK      H14    C14       single      1.083    0.020
+ RIK      H12    C12       single      1.083    0.020
+ RIK      H20    C20       single      1.083    0.020
+ RIK      H031   C03       single      1.092    0.020
+ RIK      H032   C03       single      1.092    0.020
+ RIK      H041   C04       single      1.092    0.020
+ RIK      H042   C04       single      1.092    0.020
+ RIK      H05    C05       single      1.099    0.020
+ RIK      H061   C06       single      1.092    0.020
+ RIK      H062   C06       single      1.092    0.020
+ RIK      H221   C22       single      1.092    0.020
+ RIK      H222   C22       single      1.092    0.020
+ RIK      H231   C23       single      1.092    0.020
+ RIK      H232   C23       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RIK      O25    C02    O01     123.000    3.000
+ RIK      O25    C02    C03     118.500    3.000
+ RIK      O01    C02    C03     118.500    3.000
+ RIK      C02    C03    H031    109.470    3.000
+ RIK      C02    C03    H032    109.470    3.000
+ RIK      C02    C03    C04     109.470    3.000
+ RIK      H031   C03    H032    107.900    3.000
+ RIK      H031   C03    C04     109.470    3.000
+ RIK      H032   C03    C04     109.470    3.000
+ RIK      C03    C04    H041    109.470    3.000
+ RIK      C03    C04    H042    109.470    3.000
+ RIK      C03    C04    C05     111.000    3.000
+ RIK      H041   C04    H042    107.900    3.000
+ RIK      H041   C04    C05     109.470    3.000
+ RIK      H042   C04    C05     109.470    3.000
+ RIK      C04    C05    H05     108.340    3.000
+ RIK      C04    C05    O24     109.470    3.000
+ RIK      C04    C05    C06     109.470    3.000
+ RIK      H05    C05    O24     109.470    3.000
+ RIK      H05    C05    C06     108.340    3.000
+ RIK      O24    C05    C06     109.470    3.000
+ RIK      C05    O24    C23     111.800    3.000
+ RIK      O24    C23    H231    109.470    3.000
+ RIK      O24    C23    H232    109.470    3.000
+ RIK      O24    C23    C22     109.470    3.000
+ RIK      H231   C23    H232    107.900    3.000
+ RIK      H231   C23    C22     109.470    3.000
+ RIK      H232   C23    C22     109.470    3.000
+ RIK      C23    C22    H221    109.470    3.000
+ RIK      C23    C22    H222    109.470    3.000
+ RIK      C23    C22    N07     105.000    3.000
+ RIK      H221   C22    H222    107.900    3.000
+ RIK      H221   C22    N07     109.470    3.000
+ RIK      H222   C22    N07     109.470    3.000
+ RIK      C22    N07    C06     120.000    3.000
+ RIK      C22    N07    C08     120.000    3.000
+ RIK      C06    N07    C08     120.000    3.000
+ RIK      N07    C06    H062    109.470    3.000
+ RIK      N07    C06    H061    109.470    3.000
+ RIK      N07    C06    C05     105.000    3.000
+ RIK      H062   C06    H061    107.900    3.000
+ RIK      H062   C06    C05     109.470    3.000
+ RIK      H061   C06    C05     109.470    3.000
+ RIK      N07    C08    C09     120.000    3.000
+ RIK      N07    C08    N21     120.000    3.000
+ RIK      C09    C08    N21     120.000    3.000
+ RIK      C08    C09    C10     120.000    3.000
+ RIK      C08    C09    C18     120.000    3.000
+ RIK      C10    C09    C18     120.000    3.000
+ RIK      C09    C10    C15     120.000    3.000
+ RIK      C09    C10    C11     120.000    3.000
+ RIK      C15    C10    C11     120.000    3.000
+ RIK      C10    C15    H15     120.000    3.000
+ RIK      C10    C15    C14     120.000    3.000
+ RIK      H15    C15    C14     120.000    3.000
+ RIK      C08    N21    C20     120.000    3.000
+ RIK      N21    C20    H20     120.000    3.000
+ RIK      N21    C20    N19     120.000    3.000
+ RIK      H20    C20    N19     120.000    3.000
+ RIK      C20    N19    C18     120.000    3.000
+ RIK      N19    C18    N17     120.000    3.000
+ RIK      N19    C18    C09     120.000    3.000
+ RIK      N17    C18    C09     108.000    3.000
+ RIK      C18    N17    C11     108.000    3.000
+ RIK      N17    C11    C12     132.000    3.000
+ RIK      N17    C11    C10     108.000    3.000
+ RIK      C12    C11    C10     120.000    3.000
+ RIK      C11    C12    H12     120.000    3.000
+ RIK      C11    C12    C13     120.000    3.000
+ RIK      H12    C12    C13     120.000    3.000
+ RIK      C12    C13    F16     120.000    3.000
+ RIK      C12    C13    C14     120.000    3.000
+ RIK      F16    C13    C14     120.000    3.000
+ RIK      C13    C14    H14     120.000    3.000
+ RIK      C13    C14    C15     120.000    3.000
+ RIK      H14    C14    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RIK      var_1            O25    C02    C03    C04              180.000           20.000   3
+ RIK      var_2            C02    C03    C04    C05              180.000           20.000   3
+ RIK      var_3            C03    C04    C05    O24              180.000           20.000   3
+ RIK      var_4            C04    C05    C06    N07              180.000           20.000   3
+ RIK      var_5            C04    C05    O24    C23             -170.472           20.000   3
+ RIK      var_6            C05    O24    C23    C22              -55.333           20.000   3
+ RIK      var_7            O24    C23    C22    N07              180.000           20.000   3
+ RIK      var_8            C23    C22    N07    C08              166.699           20.000   3
+ RIK      var_9            C22    N07    C06    C05               62.588           20.000   3
+ RIK      var_10           C22    N07    C08    N21              119.983           20.000   3
+ RIK      CONST_1          N07    C08    C09    C10              180.000            0.000   0
+ RIK      CONST_2          C08    C09    C10    C15              180.000            0.000   0
+ RIK      CONST_3          C09    C10    C15    C14              180.000            0.000   0
+ RIK      CONST_4          C10    C15    C14    C13                0.000            0.000   0
+ RIK      CONST_5          N07    C08    N21    C20                0.000            0.000   0
+ RIK      CONST_6          C08    N21    C20    N19                0.000            0.000   0
+ RIK      CONST_7          N21    C20    N19    C18                0.000            0.000   0
+ RIK      CONST_8          C20    N19    C18    N17              180.000            0.000   0
+ RIK      CONST_9          N19    C18    C09    C08              180.000            0.000   0
+ RIK      CONST_10         N19    C18    N17    C11              180.000            0.000   0
+ RIK      CONST_11         C18    N17    C11    C12              180.000            0.000   0
+ RIK      CONST_12         N17    C11    C10    C09              180.000            0.000   0
+ RIK      CONST_13         N17    C11    C12    C13              180.000            0.000   0
+ RIK      CONST_14         C11    C12    C13    C14                0.000            0.000   0
+ RIK      CONST_15         C12    C13    C14    C15                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RIK      chir_01          C05    C04    C06    O24       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RIK      plan-1            C18       0.020
+ RIK      plan-1            C09       0.020
+ RIK      plan-1            N17       0.020
+ RIK      plan-1            N19       0.020
+ RIK      plan-1            C20       0.020
+ RIK      plan-1            C08       0.020
+ RIK      plan-1            N21       0.020
+ RIK      plan-1            H20       0.020
+ RIK      plan-1            N07       0.020
+ RIK      plan-1            C10       0.020
+ RIK      plan-1            C11       0.020
+ RIK      plan-1            C15       0.020
+ RIK      plan-1            C14       0.020
+ RIK      plan-1            C13       0.020
+ RIK      plan-1            C12       0.020
+ RIK      plan-1            H15       0.020
+ RIK      plan-1            H14       0.020
+ RIK      plan-1            F16       0.020
+ RIK      plan-1            H12       0.020
+ RIK      plan-2            C02       0.020
+ RIK      plan-2            C03       0.020
+ RIK      plan-2            O01       0.020
+ RIK      plan-2            O25       0.020
+ RIK      plan-3            N07       0.020
+ RIK      plan-3            C06       0.020
+ RIK      plan-3            C08       0.020
+ RIK      plan-3            C22       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

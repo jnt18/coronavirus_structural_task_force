@@ -1,0 +1,812 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QW3      QW3 '.                                   ' .                  52  30 .
+QWC      QWC '.                                   ' .                  52  30 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QW3
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QW3           O29    O    O         0.000    -48.461  -29.138    1.904
+ QW3           C14    C    C         0.000    -47.832  -29.267    2.904
+ QW3           N13    N    NH1       0.000    -46.399  -29.574    2.863
+ QW3           HN13   H    H         0.000    -45.875  -29.684    3.719
+ QW3           C12    C    CH1       0.000    -45.739  -29.718    1.569
+ QW3           H12    H    H         0.000    -46.308  -30.420    0.943
+ QW3           C03    C    CH1       0.000    -44.319  -30.198    1.699
+ QW3           H03    H    H         0.000    -44.026  -30.722    0.778
+ QW3           C02    C    CH1       0.000    -44.176  -31.145    2.885
+ QW3           H02    H    H         0.000    -43.151  -31.386    2.571
+ QW3           O30    O    OH1       0.000    -44.503  -32.357    2.753
+ QW3           HO30   H    H         0.000    -44.345  -32.787    3.591
+ QW3           O01    O    O        -1.000    -43.738  -30.712    3.989
+ QW3           C04    C    CH2       0.000    -43.475  -28.942    1.854
+ QW3           H041   H    H         0.000    -42.462  -29.056    1.463
+ QW3           H042   H    H         0.000    -43.428  -28.582    2.884
+ QW3           C05    C    CR6       0.000    -44.263  -27.914    0.975
+ QW3           C06    C    CR6       0.000    -43.896  -26.706    0.366
+ QW3           O07    O    OH1       0.000    -42.595  -26.190    0.489
+ QW3           HO07   H    H         0.000    -42.523  -25.352    0.005
+ QW3           C08    C    CR16      0.000    -44.829  -25.994   -0.373
+ QW3           H08    H    H         0.000    -44.540  -25.061   -0.840
+ QW3           C09    C    CR16      0.000    -46.129  -26.461   -0.523
+ QW3           H09    H    H         0.000    -46.846  -25.893   -1.103
+ QW3           C10    C    CR16      0.000    -46.507  -27.655    0.071
+ QW3           H10    H    H         0.000    -47.518  -28.025   -0.050
+ QW3           C11    C    CR6       0.000    -45.580  -28.381    0.827
+ QW3           C15    C    CR6       0.000    -48.508  -29.178    4.285
+ QW3           C16    C    CR6       0.000    -49.897  -29.154    4.364
+ QW3           O17    O    OH1       0.000    -50.688  -29.167    3.216
+ QW3           HO17   H    H         0.000    -51.626  -29.147    3.461
+ QW3           C28    C    CR16      0.000    -47.736  -29.169    5.444
+ QW3           H28    H    H         0.000    -46.655  -29.207    5.387
+ QW3           C27    C    CR16      0.000    -48.375  -29.110    6.670
+ QW3           H27    H    H         0.000    -47.797  -29.098    7.586
+ QW3           C19    C    CR6       0.000    -49.759  -29.067    6.717
+ QW3           C18    C    CR16      0.000    -50.544  -29.109    5.579
+ QW3           H18    H    H         0.000    -51.625  -29.107    5.641
+ QW3           N20    N    NH1       0.000    -50.320  -29.052    8.039
+ QW3           HN20   H    H         0.000    -49.673  -29.032    8.814
+ QW3           C21    C    C         0.000    -51.721  -29.063    8.355
+ QW3           O26    O    O         0.000    -52.597  -29.023    7.559
+ QW3           N22    N    NH1       0.000    -51.936  -29.104    9.781
+ QW3           HN22   H    H         0.000    -51.142  -29.139   10.405
+ QW3           C23    C    CH1       0.000    -53.277  -29.095   10.328
+ QW3           H23    H    H         0.000    -54.050  -28.525    9.794
+ QW3           C25    C    CH2       0.000    -53.291  -29.068   11.853
+ QW3           H251   H    H         0.000    -54.121  -28.713   12.467
+ QW3           H252   H    H         0.000    -52.433  -29.286   12.493
+ QW3           C24    C    CH2       0.000    -53.710  -30.336   11.111
+ QW3           H242   H    H         0.000    -54.736  -30.597   10.843
+ QW3           H241   H    H         0.000    -53.048  -31.170   10.869
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QW3      O29    n/a    C14    START
+ QW3      C14    O29    C15    .
+ QW3      N13    C14    C12    .
+ QW3      HN13   N13    .      .
+ QW3      C12    N13    C03    .
+ QW3      H12    C12    .      .
+ QW3      C03    C12    C04    .
+ QW3      H03    C03    .      .
+ QW3      C02    C03    O01    .
+ QW3      H02    C02    .      .
+ QW3      O30    C02    HO30   .
+ QW3      HO30   O30    .      .
+ QW3      O01    C02    .      .
+ QW3      C04    C03    C05    .
+ QW3      H041   C04    .      .
+ QW3      H042   C04    .      .
+ QW3      C05    C04    C11    .
+ QW3      C06    C05    C08    .
+ QW3      O07    C06    HO07   .
+ QW3      HO07   O07    .      .
+ QW3      C08    C06    C09    .
+ QW3      H08    C08    .      .
+ QW3      C09    C08    C10    .
+ QW3      H09    C09    .      .
+ QW3      C10    C09    H10    .
+ QW3      H10    C10    .      .
+ QW3      C11    C05    .      .
+ QW3      C15    C14    C28    .
+ QW3      C16    C15    O17    .
+ QW3      O17    C16    HO17   .
+ QW3      HO17   O17    .      .
+ QW3      C28    C15    C27    .
+ QW3      H28    C28    .      .
+ QW3      C27    C28    C19    .
+ QW3      H27    C27    .      .
+ QW3      C19    C27    N20    .
+ QW3      C18    C19    H18    .
+ QW3      H18    C18    .      .
+ QW3      N20    C19    C21    .
+ QW3      HN20   N20    .      .
+ QW3      C21    N20    N22    .
+ QW3      O26    C21    .      .
+ QW3      N22    C21    C23    .
+ QW3      HN22   N22    .      .
+ QW3      C23    N22    C25    .
+ QW3      H23    C23    .      .
+ QW3      C25    C23    C24    .
+ QW3      H251   C25    .      .
+ QW3      H252   C25    .      .
+ QW3      C24    C25    H241   .
+ QW3      H242   C24    .      .
+ QW3      H241   C24    .      END
+ QW3      C18    C16    .    ADD
+ QW3      C12    C11    .    ADD
+ QW3      C11    C10    .    ADD
+ QW3      C23    C24    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QW3      C18    C16       aromatic    1.390    0.020
+ QW3      C18    C19       aromatic    1.390    0.020
+ QW3      C16    C15       aromatic    1.384    0.020
+ QW3      O17    C16       single      1.362    0.020
+ QW3      C15    C14       single      1.500    0.020
+ QW3      C28    C15       aromatic    1.390    0.020
+ QW3      N13    C14       single      1.330    0.020
+ QW3      C14    O29       double      1.220    0.020
+ QW3      C12    C11       single      1.480    0.020
+ QW3      C03    C12       single      1.524    0.020
+ QW3      C12    N13       single      1.450    0.020
+ QW3      C11    C10       aromatic    1.390    0.020
+ QW3      C11    C05       aromatic    1.384    0.020
+ QW3      C10    C09       aromatic    1.390    0.020
+ QW3      C19    C27       aromatic    1.390    0.020
+ QW3      N20    C19       single      1.350    0.020
+ QW3      C02    C03       single      1.524    0.020
+ QW3      O01    C02       single      1.420    0.020
+ QW3      O30    C02       single      1.432    0.020
+ QW3      C04    C03       single      1.524    0.020
+ QW3      C05    C04       single      1.511    0.020
+ QW3      C06    C05       aromatic    1.384    0.020
+ QW3      C08    C06       aromatic    1.390    0.020
+ QW3      O07    C06       single      1.362    0.020
+ QW3      C09    C08       aromatic    1.390    0.020
+ QW3      C21    N20       single      1.330    0.020
+ QW3      N22    C21       single      1.330    0.020
+ QW3      O26    C21       double      1.220    0.020
+ QW3      C23    C24       single      1.524    0.020
+ QW3      C25    C23       single      1.524    0.020
+ QW3      C23    N22       single      1.450    0.020
+ QW3      C24    C25       single      1.524    0.020
+ QW3      C27    C28       aromatic    1.390    0.020
+ QW3      H18    C18       single      1.083    0.020
+ QW3      H12    C12       single      1.099    0.020
+ QW3      H10    C10       single      1.083    0.020
+ QW3      H02    C02       single      1.099    0.020
+ QW3      H03    C03       single      1.099    0.020
+ QW3      H041   C04       single      1.092    0.020
+ QW3      H042   C04       single      1.092    0.020
+ QW3      H08    C08       single      1.083    0.020
+ QW3      H09    C09       single      1.083    0.020
+ QW3      H23    C23       single      1.099    0.020
+ QW3      H241   C24       single      1.092    0.020
+ QW3      H242   C24       single      1.092    0.020
+ QW3      H251   C25       single      1.092    0.020
+ QW3      H252   C25       single      1.092    0.020
+ QW3      H27    C27       single      1.083    0.020
+ QW3      H28    C28       single      1.083    0.020
+ QW3      HN13   N13       single      1.010    0.020
+ QW3      HN20   N20       single      1.010    0.020
+ QW3      HN22   N22       single      1.010    0.020
+ QW3      HO07   O07       single      0.967    0.020
+ QW3      HO17   O17       single      0.967    0.020
+ QW3      HO30   O30       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QW3      O29    C14    N13     123.000    3.000
+ QW3      O29    C14    C15     120.500    3.000
+ QW3      N13    C14    C15     120.000    3.000
+ QW3      C14    N13    HN13    120.000    3.000
+ QW3      C14    N13    C12     121.500    3.000
+ QW3      HN13   N13    C12     118.500    3.000
+ QW3      N13    C12    H12     108.550    3.000
+ QW3      N13    C12    C03     110.000    3.000
+ QW3      N13    C12    C11     109.470    3.000
+ QW3      H12    C12    C03     108.340    3.000
+ QW3      H12    C12    C11     109.470    3.000
+ QW3      C03    C12    C11     109.470    3.000
+ QW3      C12    C03    H03     108.340    3.000
+ QW3      C12    C03    C02     111.000    3.000
+ QW3      C12    C03    C04     111.000    3.000
+ QW3      H03    C03    C02     108.340    3.000
+ QW3      H03    C03    C04     108.340    3.000
+ QW3      C02    C03    C04     111.000    3.000
+ QW3      C03    C02    H02     108.340    3.000
+ QW3      C03    C02    O30     109.470    3.000
+ QW3      C03    C02    O01     109.470    3.000
+ QW3      H02    C02    O30     109.470    3.000
+ QW3      H02    C02    O01     109.470    3.000
+ QW3      O30    C02    O01     109.470    3.000
+ QW3      C02    O30    HO30    109.470    3.000
+ QW3      C03    C04    H041    109.470    3.000
+ QW3      C03    C04    H042    109.470    3.000
+ QW3      C03    C04    C05     109.470    3.000
+ QW3      H041   C04    H042    107.900    3.000
+ QW3      H041   C04    C05     109.470    3.000
+ QW3      H042   C04    C05     109.470    3.000
+ QW3      C04    C05    C06     120.000    3.000
+ QW3      C04    C05    C11     120.000    3.000
+ QW3      C06    C05    C11     120.000    3.000
+ QW3      C05    C06    O07     120.000    3.000
+ QW3      C05    C06    C08     120.000    3.000
+ QW3      O07    C06    C08     120.000    3.000
+ QW3      C06    O07    HO07    109.470    3.000
+ QW3      C06    C08    H08     120.000    3.000
+ QW3      C06    C08    C09     120.000    3.000
+ QW3      H08    C08    C09     120.000    3.000
+ QW3      C08    C09    H09     120.000    3.000
+ QW3      C08    C09    C10     120.000    3.000
+ QW3      H09    C09    C10     120.000    3.000
+ QW3      C09    C10    H10     120.000    3.000
+ QW3      C09    C10    C11     120.000    3.000
+ QW3      H10    C10    C11     120.000    3.000
+ QW3      C05    C11    C12     120.000    3.000
+ QW3      C05    C11    C10     120.000    3.000
+ QW3      C12    C11    C10     120.000    3.000
+ QW3      C14    C15    C16     120.000    3.000
+ QW3      C14    C15    C28     120.000    3.000
+ QW3      C16    C15    C28     120.000    3.000
+ QW3      C15    C16    O17     120.000    3.000
+ QW3      C15    C16    C18     120.000    3.000
+ QW3      O17    C16    C18     120.000    3.000
+ QW3      C16    O17    HO17    109.470    3.000
+ QW3      C15    C28    H28     120.000    3.000
+ QW3      C15    C28    C27     120.000    3.000
+ QW3      H28    C28    C27     120.000    3.000
+ QW3      C28    C27    H27     120.000    3.000
+ QW3      C28    C27    C19     120.000    3.000
+ QW3      H27    C27    C19     120.000    3.000
+ QW3      C27    C19    C18     120.000    3.000
+ QW3      C27    C19    N20     120.000    3.000
+ QW3      C18    C19    N20     120.000    3.000
+ QW3      C19    C18    H18     120.000    3.000
+ QW3      C19    C18    C16     120.000    3.000
+ QW3      H18    C18    C16     120.000    3.000
+ QW3      C19    N20    HN20    120.000    3.000
+ QW3      C19    N20    C21     120.000    3.000
+ QW3      HN20   N20    C21     120.000    3.000
+ QW3      N20    C21    O26     123.000    3.000
+ QW3      N20    C21    N22     120.000    3.000
+ QW3      O26    C21    N22     123.000    3.000
+ QW3      C21    N22    HN22    120.000    3.000
+ QW3      C21    N22    C23     121.500    3.000
+ QW3      HN22   N22    C23     118.500    3.000
+ QW3      N22    C23    H23     108.550    3.000
+ QW3      N22    C23    C25     110.000    3.000
+ QW3      N22    C23    C24     110.000    3.000
+ QW3      H23    C23    C25     108.340    3.000
+ QW3      H23    C23    C24     108.340    3.000
+ QW3      C25    C23    C24      60.000    3.000
+ QW3      C23    C25    H251    109.470    3.000
+ QW3      C23    C25    H252    109.470    3.000
+ QW3      C23    C25    C24      60.000    3.000
+ QW3      H251   C25    H252    107.900    3.000
+ QW3      H251   C25    C24     109.470    3.000
+ QW3      H252   C25    C24     109.470    3.000
+ QW3      C25    C24    H242    109.470    3.000
+ QW3      C25    C24    H241    109.470    3.000
+ QW3      C25    C24    C23      60.000    3.000
+ QW3      H242   C24    H241    107.900    3.000
+ QW3      H242   C24    C23     109.470    3.000
+ QW3      H241   C24    C23     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QW3      var_1            O29    C14    N13    C12              180.000           20.000   2
+ QW3      var_2            C14    N13    C12    C03                0.000           20.000   3
+ QW3      var_3            N13    C12    C11    C05              101.113           20.000   3
+ QW3      var_4            N13    C12    C03    C04              180.000           20.000   3
+ QW3      var_5            C12    C03    C02    O01              180.000           20.000   3
+ QW3      var_6            C03    C02    O30    HO30             180.000           20.000   3
+ QW3      var_7            C12    C03    C04    C05              180.000           20.000   3
+ QW3      var_8            C03    C04    C05    C11                0.000           20.000   2
+ QW3      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QW3      var_9            C05    C06    O07    HO07             180.000           20.000   3
+ QW3      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QW3      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QW3      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QW3      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QW3      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QW3      var_10           O29    C14    C15    C28             -172.192           20.000   3
+ QW3      CONST_7          C14    C15    C16    O17                0.000            0.000   0
+ QW3      var_11           C15    C16    O17    HO17             180.000           20.000   3
+ QW3      CONST_8          C14    C15    C28    C27                0.000            0.000   0
+ QW3      CONST_9          C15    C28    C27    C19                0.000            0.000   0
+ QW3      CONST_10         C28    C27    C19    N20                0.000            0.000   0
+ QW3      CONST_11         C27    C19    C18    C16                0.000            0.000   0
+ QW3      CONST_12         C19    C18    C16    C15                0.000            0.000   0
+ QW3      var_12           C27    C19    N20    C21             -177.346           20.000   3
+ QW3      var_13           C19    N20    C21    N22              180.000           20.000   2
+ QW3      var_14           N20    C21    N22    C23              180.000           20.000   2
+ QW3      var_15           C21    N22    C23    C25                0.000           20.000   3
+ QW3      var_16           N22    C23    C24    C25              180.000           20.000   3
+ QW3      var_17           N22    C23    C25    C24              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QW3      chir_01          C12    C11    C03    N13       negativ
+ QW3      chir_02          C02    C03    O01    O30       negativ
+ QW3      chir_03          C03    C12    C02    C04       positiv
+ QW3      chir_04          C23    C24    C25    N22       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QW3      plan-1            C18       0.020
+ QW3      plan-1            C16       0.020
+ QW3      plan-1            C19       0.020
+ QW3      plan-1            H18       0.020
+ QW3      plan-1            C15       0.020
+ QW3      plan-1            C27       0.020
+ QW3      plan-1            C28       0.020
+ QW3      plan-1            O17       0.020
+ QW3      plan-1            C14       0.020
+ QW3      plan-1            N20       0.020
+ QW3      plan-1            H27       0.020
+ QW3      plan-1            H28       0.020
+ QW3      plan-1            HN20      0.020
+ QW3      plan-2            C14       0.020
+ QW3      plan-2            C15       0.020
+ QW3      plan-2            N13       0.020
+ QW3      plan-2            O29       0.020
+ QW3      plan-2            HN13      0.020
+ QW3      plan-3            C11       0.020
+ QW3      plan-3            C12       0.020
+ QW3      plan-3            C10       0.020
+ QW3      plan-3            C05       0.020
+ QW3      plan-3            C06       0.020
+ QW3      plan-3            C08       0.020
+ QW3      plan-3            C09       0.020
+ QW3      plan-3            H10       0.020
+ QW3      plan-3            C04       0.020
+ QW3      plan-3            O07       0.020
+ QW3      plan-3            H08       0.020
+ QW3      plan-3            H09       0.020
+ QW3      plan-4            C21       0.020
+ QW3      plan-4            N20       0.020
+ QW3      plan-4            N22       0.020
+ QW3      plan-4            O26       0.020
+ QW3      plan-4            HN20      0.020
+ QW3      plan-4            HN22      0.020
+ QW3      plan-5            N13       0.020
+ QW3      plan-5            C14       0.020
+ QW3      plan-5            C12       0.020
+ QW3      plan-5            HN13      0.020
+ QW3      plan-6            N20       0.020
+ QW3      plan-6            C19       0.020
+ QW3      plan-6            C21       0.020
+ QW3      plan-6            HN20      0.020
+ QW3      plan-7            N22       0.020
+ QW3      plan-7            C21       0.020
+ QW3      plan-7            C23       0.020
+ QW3      plan-7            HN22      0.020
+#
+data_comp_QWC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QWC           O29    O    O         0.000    -48.494  -29.109    1.926
+ QWC           C14    C    C         0.000    -47.878  -29.291    2.925
+ QWC           N13    N    NH1       0.000    -46.481  -29.719    2.909
+ QWC           HN13   H    H         0.000    -45.996  -29.922    3.771
+ QWC           C12    C    CH1       0.000    -45.814  -29.845    1.651
+ QWC           H12    H    H         0.000    -46.311  -29.175    0.935
+ QWC           C11    C    CR6       0.000    -45.719  -31.244    1.007
+ QWC           C10    C    CR16      0.000    -46.608  -32.317    0.924
+ QWC           H10    H    H         0.000    -47.574  -32.272    1.413
+ QWC           C09    C    CR16      0.000    -46.232  -33.445    0.203
+ QWC           H09    H    H         0.000    -46.904  -34.293    0.149
+ QWC           C08    C    CR16      0.000    -45.003  -33.500   -0.451
+ QWC           H08    H    H         0.000    -44.724  -34.384   -1.011
+ QWC           C06    C    CR6       0.000    -44.138  -32.416   -0.381
+ QWC           O07    O    OH1       0.000    -42.882  -32.379   -1.008
+ QWC           HO07   H    H         0.000    -42.446  -31.531   -0.829
+ QWC           C05    C    CR6       0.000    -44.508  -31.299    0.343
+ QWC           C04    C    CH2       0.000    -43.733  -30.009    0.584
+ QWC           H042   H    H         0.000    -43.811  -29.321   -0.261
+ QWC           H041   H    H         0.000    -42.680  -30.199    0.801
+ QWC           C03    C    CH1       0.000    -44.392  -29.401    1.789
+ QWC           H03    H    H         0.000    -44.342  -28.305    1.719
+ QWC           C02    C    CH1       0.000    -43.767  -29.853    3.097
+ QWC           H02    H    H         0.000    -42.941  -30.326    2.547
+ QWC           O30    O    OH1       0.000    -44.075  -30.967    3.608
+ QWC           HO30   H    H         0.000    -43.576  -31.056    4.417
+ QWC           O01    O    O        -1.000    -42.953  -29.071    3.664
+ QWC           C15    C    CR6       0.000    -48.530  -29.192    4.303
+ QWC           C28    C    CR16      0.000    -47.744  -29.185    5.447
+ QWC           H28    H    H         0.000    -46.664  -29.229    5.380
+ QWC           C27    C    CR16      0.000    -48.377  -29.121    6.672
+ QWC           H27    H    H         0.000    -47.799  -29.112    7.588
+ QWC           C19    C    CR6       0.000    -49.763  -29.068    6.716
+ QWC           C18    C    CR16      0.000    -50.556  -29.109    5.580
+ QWC           H18    H    H         0.000    -51.637  -29.098    5.645
+ QWC           C16    C    CR6       0.000    -49.910  -29.164    4.365
+ QWC           O17    O    OH1       0.000    -50.638  -29.186    3.172
+ QWC           HO17   H    H         0.000    -50.032  -29.225    2.416
+ QWC           N20    N    NH1       0.000    -50.320  -29.049    8.042
+ QWC           HN20   H    H         0.000    -49.672  -29.023    8.816
+ QWC           C21    C    C         0.000    -51.725  -29.064    8.357
+ QWC           O26    O    O         0.000    -52.602  -29.028    7.561
+ QWC           N22    N    NH1       0.000    -51.939  -29.105    9.783
+ QWC           HN22   H    H         0.000    -51.145  -29.142   10.406
+ QWC           C23    C    CH1       0.000    -53.280  -29.094   10.331
+ QWC           H23    H    H         0.000    -54.054  -28.525    9.796
+ QWC           C25    C    CH2       0.000    -53.293  -29.067   11.856
+ QWC           H251   H    H         0.000    -54.123  -28.714   12.471
+ QWC           H252   H    H         0.000    -52.435  -29.283   12.495
+ QWC           C24    C    CH2       0.000    -53.710  -30.336   11.114
+ QWC           H242   H    H         0.000    -54.735  -30.599   10.847
+ QWC           H241   H    H         0.000    -53.047  -31.169   10.871
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QWC      O29    n/a    C14    START
+ QWC      C14    O29    C15    .
+ QWC      N13    C14    C12    .
+ QWC      HN13   N13    .      .
+ QWC      C12    N13    C03    .
+ QWC      H12    C12    .      .
+ QWC      C11    C12    C05    .
+ QWC      C10    C11    C09    .
+ QWC      H10    C10    .      .
+ QWC      C09    C10    C08    .
+ QWC      H09    C09    .      .
+ QWC      C08    C09    C06    .
+ QWC      H08    C08    .      .
+ QWC      C06    C08    O07    .
+ QWC      O07    C06    HO07   .
+ QWC      HO07   O07    .      .
+ QWC      C05    C11    C04    .
+ QWC      C04    C05    H041   .
+ QWC      H042   C04    .      .
+ QWC      H041   C04    .      .
+ QWC      C03    C12    C02    .
+ QWC      H03    C03    .      .
+ QWC      C02    C03    O01    .
+ QWC      H02    C02    .      .
+ QWC      O30    C02    HO30   .
+ QWC      HO30   O30    .      .
+ QWC      O01    C02    .      .
+ QWC      C15    C14    C28    .
+ QWC      C28    C15    C27    .
+ QWC      H28    C28    .      .
+ QWC      C27    C28    C19    .
+ QWC      H27    C27    .      .
+ QWC      C19    C27    N20    .
+ QWC      C18    C19    C16    .
+ QWC      H18    C18    .      .
+ QWC      C16    C18    O17    .
+ QWC      O17    C16    HO17   .
+ QWC      HO17   O17    .      .
+ QWC      N20    C19    C21    .
+ QWC      HN20   N20    .      .
+ QWC      C21    N20    N22    .
+ QWC      O26    C21    .      .
+ QWC      N22    C21    C23    .
+ QWC      HN22   N22    .      .
+ QWC      C23    N22    C25    .
+ QWC      H23    C23    .      .
+ QWC      C25    C23    C24    .
+ QWC      H251   C25    .      .
+ QWC      H252   C25    .      .
+ QWC      C24    C25    H241   .
+ QWC      H242   C24    .      .
+ QWC      H241   C24    .      END
+ QWC      C03    C04    .    ADD
+ QWC      C05    C06    .    ADD
+ QWC      C15    C16    .    ADD
+ QWC      C23    C24    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QWC      C02    C03       single      1.524    0.020
+ QWC      O01    C02       single      1.420    0.020
+ QWC      O30    C02       single      1.432    0.020
+ QWC      C03    C04       single      1.524    0.020
+ QWC      C03    C12       single      1.524    0.020
+ QWC      C04    C05       single      1.511    0.020
+ QWC      C05    C06       aromatic    1.384    0.020
+ QWC      C05    C11       aromatic    1.384    0.020
+ QWC      C06    C08       aromatic    1.390    0.020
+ QWC      O07    C06       single      1.362    0.020
+ QWC      C08    C09       aromatic    1.390    0.020
+ QWC      C09    C10       aromatic    1.390    0.020
+ QWC      C10    C11       aromatic    1.390    0.020
+ QWC      C11    C12       single      1.480    0.020
+ QWC      C12    N13       single      1.450    0.020
+ QWC      C15    C14       single      1.500    0.020
+ QWC      N13    C14       single      1.330    0.020
+ QWC      C14    O29       double      1.220    0.020
+ QWC      C15    C16       aromatic    1.384    0.020
+ QWC      C28    C15       aromatic    1.390    0.020
+ QWC      C16    C18       aromatic    1.390    0.020
+ QWC      O17    C16       single      1.362    0.020
+ QWC      C18    C19       aromatic    1.390    0.020
+ QWC      C19    C27       aromatic    1.390    0.020
+ QWC      N20    C19       single      1.350    0.020
+ QWC      C21    N20       single      1.330    0.020
+ QWC      N22    C21       single      1.330    0.020
+ QWC      O26    C21       double      1.220    0.020
+ QWC      C23    C24       single      1.524    0.020
+ QWC      C25    C23       single      1.524    0.020
+ QWC      C23    N22       single      1.450    0.020
+ QWC      C24    C25       single      1.524    0.020
+ QWC      C27    C28       aromatic    1.390    0.020
+ QWC      H02    C02       single      1.099    0.020
+ QWC      H03    C03       single      1.099    0.020
+ QWC      H041   C04       single      1.092    0.020
+ QWC      H042   C04       single      1.092    0.020
+ QWC      H08    C08       single      1.083    0.020
+ QWC      H09    C09       single      1.083    0.020
+ QWC      H10    C10       single      1.083    0.020
+ QWC      H12    C12       single      1.099    0.020
+ QWC      H18    C18       single      1.083    0.020
+ QWC      H23    C23       single      1.099    0.020
+ QWC      H241   C24       single      1.092    0.020
+ QWC      H242   C24       single      1.092    0.020
+ QWC      H251   C25       single      1.092    0.020
+ QWC      H252   C25       single      1.092    0.020
+ QWC      H27    C27       single      1.083    0.020
+ QWC      H28    C28       single      1.083    0.020
+ QWC      HN13   N13       single      1.010    0.020
+ QWC      HN20   N20       single      1.010    0.020
+ QWC      HN22   N22       single      1.010    0.020
+ QWC      HO07   O07       single      0.967    0.020
+ QWC      HO17   O17       single      0.967    0.020
+ QWC      HO30   O30       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QWC      O29    C14    N13     123.000    3.000
+ QWC      O29    C14    C15     120.500    3.000
+ QWC      N13    C14    C15     120.000    3.000
+ QWC      C14    N13    HN13    120.000    3.000
+ QWC      C14    N13    C12     121.500    3.000
+ QWC      HN13   N13    C12     118.500    3.000
+ QWC      N13    C12    H12     108.550    3.000
+ QWC      N13    C12    C11     109.470    3.000
+ QWC      N13    C12    C03     110.000    3.000
+ QWC      H12    C12    C11     109.470    3.000
+ QWC      H12    C12    C03     108.340    3.000
+ QWC      C11    C12    C03     109.470    3.000
+ QWC      C12    C11    C10     120.000    3.000
+ QWC      C12    C11    C05     120.000    3.000
+ QWC      C10    C11    C05     120.000    3.000
+ QWC      C11    C10    H10     120.000    3.000
+ QWC      C11    C10    C09     120.000    3.000
+ QWC      H10    C10    C09     120.000    3.000
+ QWC      C10    C09    H09     120.000    3.000
+ QWC      C10    C09    C08     120.000    3.000
+ QWC      H09    C09    C08     120.000    3.000
+ QWC      C09    C08    H08     120.000    3.000
+ QWC      C09    C08    C06     120.000    3.000
+ QWC      H08    C08    C06     120.000    3.000
+ QWC      C08    C06    O07     120.000    3.000
+ QWC      C08    C06    C05     120.000    3.000
+ QWC      O07    C06    C05     120.000    3.000
+ QWC      C06    O07    HO07    109.470    3.000
+ QWC      C11    C05    C04     120.000    3.000
+ QWC      C11    C05    C06     120.000    3.000
+ QWC      C04    C05    C06     120.000    3.000
+ QWC      C05    C04    H042    109.470    3.000
+ QWC      C05    C04    H041    109.470    3.000
+ QWC      C05    C04    C03     109.470    3.000
+ QWC      H042   C04    H041    107.900    3.000
+ QWC      H042   C04    C03     109.470    3.000
+ QWC      H041   C04    C03     109.470    3.000
+ QWC      C12    C03    H03     108.340    3.000
+ QWC      C12    C03    C02     111.000    3.000
+ QWC      C12    C03    C04     111.000    3.000
+ QWC      H03    C03    C02     108.340    3.000
+ QWC      H03    C03    C04     108.340    3.000
+ QWC      C02    C03    C04     111.000    3.000
+ QWC      C03    C02    H02     108.340    3.000
+ QWC      C03    C02    O30     109.470    3.000
+ QWC      C03    C02    O01     109.470    3.000
+ QWC      H02    C02    O30     109.470    3.000
+ QWC      H02    C02    O01     109.470    3.000
+ QWC      O30    C02    O01     109.470    3.000
+ QWC      C02    O30    HO30    109.470    3.000
+ QWC      C14    C15    C28     120.000    3.000
+ QWC      C14    C15    C16     120.000    3.000
+ QWC      C28    C15    C16     120.000    3.000
+ QWC      C15    C28    H28     120.000    3.000
+ QWC      C15    C28    C27     120.000    3.000
+ QWC      H28    C28    C27     120.000    3.000
+ QWC      C28    C27    H27     120.000    3.000
+ QWC      C28    C27    C19     120.000    3.000
+ QWC      H27    C27    C19     120.000    3.000
+ QWC      C27    C19    C18     120.000    3.000
+ QWC      C27    C19    N20     120.000    3.000
+ QWC      C18    C19    N20     120.000    3.000
+ QWC      C19    C18    H18     120.000    3.000
+ QWC      C19    C18    C16     120.000    3.000
+ QWC      H18    C18    C16     120.000    3.000
+ QWC      C18    C16    O17     120.000    3.000
+ QWC      C18    C16    C15     120.000    3.000
+ QWC      O17    C16    C15     120.000    3.000
+ QWC      C16    O17    HO17    109.470    3.000
+ QWC      C19    N20    HN20    120.000    3.000
+ QWC      C19    N20    C21     120.000    3.000
+ QWC      HN20   N20    C21     120.000    3.000
+ QWC      N20    C21    O26     123.000    3.000
+ QWC      N20    C21    N22     120.000    3.000
+ QWC      O26    C21    N22     123.000    3.000
+ QWC      C21    N22    HN22    120.000    3.000
+ QWC      C21    N22    C23     121.500    3.000
+ QWC      HN22   N22    C23     118.500    3.000
+ QWC      N22    C23    H23     108.550    3.000
+ QWC      N22    C23    C25     110.000    3.000
+ QWC      N22    C23    C24     110.000    3.000
+ QWC      H23    C23    C25     108.340    3.000
+ QWC      H23    C23    C24     108.340    3.000
+ QWC      C25    C23    C24      60.000    3.000
+ QWC      C23    C25    H251    109.470    3.000
+ QWC      C23    C25    H252    109.470    3.000
+ QWC      C23    C25    C24      60.000    3.000
+ QWC      H251   C25    H252    107.900    3.000
+ QWC      H251   C25    C24     109.470    3.000
+ QWC      H252   C25    C24     109.470    3.000
+ QWC      C25    C24    H242    109.470    3.000
+ QWC      C25    C24    H241    109.470    3.000
+ QWC      C25    C24    C23      60.000    3.000
+ QWC      H242   C24    H241    107.900    3.000
+ QWC      H242   C24    C23     109.470    3.000
+ QWC      H241   C24    C23     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QWC      var_1            O29    C14    N13    C12              180.000           20.000   2
+ QWC      var_2            C14    N13    C12    C03                0.000           20.000   3
+ QWC      var_3            N13    C12    C11    C05             -145.899           20.000   3
+ QWC      CONST_1          C12    C11    C10    C09                0.000            0.000   0
+ QWC      CONST_2          C11    C10    C09    C08                0.000            0.000   0
+ QWC      CONST_3          C10    C09    C08    C06                0.000            0.000   0
+ QWC      CONST_4          C09    C08    C06    O07                0.000            0.000   0
+ QWC      var_4            C08    C06    O07    HO07             180.000           20.000   3
+ QWC      CONST_5          C12    C11    C05    C04                0.000            0.000   0
+ QWC      CONST_6          C11    C05    C06    C08                0.000            0.000   0
+ QWC      var_5            C11    C05    C04    C03                0.000           20.000   2
+ QWC      var_6            N13    C12    C03    C02              180.000           20.000   3
+ QWC      var_7            C12    C03    C04    C05              180.000           20.000   3
+ QWC      var_8            C12    C03    C02    O01              180.000           20.000   3
+ QWC      var_9            C03    C02    O30    HO30             180.000           20.000   3
+ QWC      var_10           O29    C14    C15    C28             -169.054           20.000   3
+ QWC      CONST_7          C14    C15    C16    C18                0.000            0.000   0
+ QWC      CONST_8          C14    C15    C28    C27                0.000            0.000   0
+ QWC      CONST_9          C15    C28    C27    C19                0.000            0.000   0
+ QWC      CONST_10         C28    C27    C19    N20                0.000            0.000   0
+ QWC      CONST_11         C27    C19    C18    C16                0.000            0.000   0
+ QWC      CONST_12         C19    C18    C16    O17                0.000            0.000   0
+ QWC      var_11           C18    C16    O17    HO17             180.000           20.000   3
+ QWC      var_12           C27    C19    N20    C21             -176.669           20.000   3
+ QWC      var_13           C19    N20    C21    N22              180.000           20.000   2
+ QWC      var_14           N20    C21    N22    C23              180.000           20.000   2
+ QWC      var_15           C21    N22    C23    C25                0.000           20.000   3
+ QWC      var_16           N22    C23    C24    C25              180.000           20.000   3
+ QWC      var_17           N22    C23    C25    C24              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QWC      chir_01          C02    C03    O01    O30       negativ
+ QWC      chir_02          C03    C02    C04    C12       negativ
+ QWC      chir_03          C12    C03    C11    N13       negativ
+ QWC      chir_04          C23    C24    C25    N22       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QWC      plan-1            C05       0.020
+ QWC      plan-1            C04       0.020
+ QWC      plan-1            C06       0.020
+ QWC      plan-1            C11       0.020
+ QWC      plan-1            C08       0.020
+ QWC      plan-1            C09       0.020
+ QWC      plan-1            C10       0.020
+ QWC      plan-1            H09       0.020
+ QWC      plan-1            H10       0.020
+ QWC      plan-1            C12       0.020
+ QWC      plan-1            H08       0.020
+ QWC      plan-2            C14       0.020
+ QWC      plan-2            C15       0.020
+ QWC      plan-2            N13       0.020
+ QWC      plan-2            O29       0.020
+ QWC      plan-2            HN13      0.020
+ QWC      plan-3            C15       0.020
+ QWC      plan-3            C14       0.020
+ QWC      plan-3            C16       0.020
+ QWC      plan-3            C28       0.020
+ QWC      plan-3            C18       0.020
+ QWC      plan-3            C19       0.020
+ QWC      plan-3            C27       0.020
+ QWC      plan-3            O17       0.020
+ QWC      plan-3            H18       0.020
+ QWC      plan-3            N20       0.020
+ QWC      plan-3            H27       0.020
+ QWC      plan-3            H28       0.020
+ QWC      plan-3            HN20      0.020
+ QWC      plan-4            C21       0.020
+ QWC      plan-4            N20       0.020
+ QWC      plan-4            N22       0.020
+ QWC      plan-4            O26       0.020
+ QWC      plan-4            HN20      0.020
+ QWC      plan-4            HN22      0.020
+ QWC      plan-5            N13       0.020
+ QWC      plan-5            C12       0.020
+ QWC      plan-5            C14       0.020
+ QWC      plan-5            HN13      0.020
+ QWC      plan-6            N20       0.020
+ QWC      plan-6            C19       0.020
+ QWC      plan-6            C21       0.020
+ QWC      plan-6            HN20      0.020
+ QWC      plan-7            N22       0.020
+ QWC      plan-7            C21       0.020
+ QWC      plan-7            C23       0.020
+ QWC      plan-7            HN22      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

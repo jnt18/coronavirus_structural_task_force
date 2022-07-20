@@ -1,0 +1,647 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QIO      QIO '.                                   ' .                  40  25 .
+QIR      QIR '.                                   ' .                  40  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QIO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QIO           O05    O    OC        0.000    -45.227  -25.455    0.816
+ QIO           C03    C    C         0.000    -45.927  -26.304    0.204
+ QIO           O04    O    OC       -1.000    -47.157  -26.099    0.043
+ QIO           C02    C    CH1       0.000    -45.285  -27.559   -0.380
+ QIO           H02    H    H         0.000    -44.864  -27.282   -1.356
+ QIO           O01    O    OH1       0.000    -46.242  -28.548   -0.612
+ QIO           HO01   H    H         0.000    -45.807  -29.326   -0.980
+ QIO           C06    C    CH1       0.000    -44.118  -28.115    0.479
+ QIO           H06    H    H         0.000    -43.202  -27.583    0.186
+ QIO           C25    C    CH2       0.000    -44.275  -27.975    1.994
+ QIO           H251   H    H         0.000    -44.417  -26.911    2.195
+ QIO           H252   H    H         0.000    -43.333  -28.306    2.437
+ QIO           N10    N    N         0.000    -45.372  -28.728    2.570
+ QIO           C09    C    CH2       0.000    -45.891  -29.825    1.783
+ QIO           H091   H    H         0.000    -46.693  -29.408    1.171
+ QIO           H092   H    H         0.000    -46.311  -30.539    2.495
+ QIO           C08    C    CH2       0.000    -44.876  -30.536    0.883
+ QIO           H081   H    H         0.000    -45.445  -31.123    0.159
+ QIO           H082   H    H         0.000    -44.298  -31.208    1.520
+ QIO           C07    C    CH2       0.000    -43.928  -29.591    0.144
+ QIO           H072   H    H         0.000    -44.094  -29.747   -0.924
+ QIO           H071   H    H         0.000    -42.912  -29.896    0.402
+ QIO           C11    C    CR6       0.000    -45.277  -28.971    4.000
+ QIO           N24    N    NRD6      0.000    -44.099  -29.051    4.593
+ QIO           C23    C    CR16      0.000    -44.041  -29.235    5.899
+ QIO           H23    H    H         0.000    -43.068  -29.319    6.368
+ QIO           N22    N    NRD6      0.000    -45.110  -29.320    6.652
+ QIO           C21    C    CR56      0.000    -46.327  -29.219    6.120
+ QIO           C12    C    CR56      0.000    -46.458  -29.050    4.760
+ QIO           C13    C    CR56      0.000    -47.861  -28.963    4.505
+ QIO           C18    C    CR16      0.000    -48.647  -28.786    3.355
+ QIO           H18    H    H         0.000    -48.175  -28.665    2.388
+ QIO           N20    N    NRD5      0.000    -47.537  -29.269    6.665
+ QIO           C14    C    CR56      0.000    -48.476  -29.120    5.730
+ QIO           C15    C    CR16      0.000    -49.862  -29.106    5.828
+ QIO           H15    H    H         0.000    -50.335  -29.231    6.794
+ QIO           C16    C    CR6       0.000    -50.638  -28.934    4.702
+ QIO           F19    F    F         0.000    -51.994  -28.922    4.816
+ QIO           C17    C    CR16      0.000    -50.036  -28.767    3.463
+ QIO           H17    H    H         0.000    -50.646  -28.622    2.580
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QIO      O05    n/a    C03    START
+ QIO      C03    O05    C02    .
+ QIO      O04    C03    .      .
+ QIO      C02    C03    C06    .
+ QIO      H02    C02    .      .
+ QIO      O01    C02    HO01   .
+ QIO      HO01   O01    .      .
+ QIO      C06    C02    C25    .
+ QIO      H06    C06    .      .
+ QIO      C25    C06    N10    .
+ QIO      H251   C25    .      .
+ QIO      H252   C25    .      .
+ QIO      N10    C25    C11    .
+ QIO      C09    N10    C08    .
+ QIO      H091   C09    .      .
+ QIO      H092   C09    .      .
+ QIO      C08    C09    C07    .
+ QIO      H081   C08    .      .
+ QIO      H082   C08    .      .
+ QIO      C07    C08    H071   .
+ QIO      H072   C07    .      .
+ QIO      H071   C07    .      .
+ QIO      C11    N10    N24    .
+ QIO      N24    C11    C23    .
+ QIO      C23    N24    N22    .
+ QIO      H23    C23    .      .
+ QIO      N22    C23    C21    .
+ QIO      C21    N22    N20    .
+ QIO      C12    C21    C13    .
+ QIO      C13    C12    C18    .
+ QIO      C18    C13    H18    .
+ QIO      H18    C18    .      .
+ QIO      N20    C21    C14    .
+ QIO      C14    N20    C15    .
+ QIO      C15    C14    C16    .
+ QIO      H15    C15    .      .
+ QIO      C16    C15    C17    .
+ QIO      F19    C16    .      .
+ QIO      C17    C16    H17    .
+ QIO      H17    C17    .      END
+ QIO      C18    C17    .    ADD
+ QIO      C14    C13    .    ADD
+ QIO      C12    C11    .    ADD
+ QIO      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QIO      C18    C17       aromatic    1.390    0.020
+ QIO      C18    C13       aromatic    1.390    0.020
+ QIO      C17    C16       aromatic    1.390    0.020
+ QIO      C16    C15       aromatic    1.390    0.020
+ QIO      F19    C16       single      1.345    0.020
+ QIO      C15    C14       aromatic    1.390    0.020
+ QIO      C14    C13       aromatic    1.390    0.020
+ QIO      C14    N20       aromatic    1.350    0.020
+ QIO      C13    C12       aromatic    1.390    0.020
+ QIO      C12    C11       aromatic    1.390    0.020
+ QIO      C12    C21       aromatic    1.390    0.020
+ QIO      C11    N10       single      1.400    0.020
+ QIO      N24    C11       aromatic    1.350    0.020
+ QIO      C02    C03       single      1.500    0.020
+ QIO      C06    C02       single      1.524    0.020
+ QIO      O01    C02       single      1.432    0.020
+ QIO      O04    C03       deloc       1.250    0.020
+ QIO      C03    O05       deloc       1.250    0.020
+ QIO      C06    C07       single      1.524    0.020
+ QIO      C25    C06       single      1.524    0.020
+ QIO      C07    C08       single      1.524    0.020
+ QIO      C08    C09       single      1.524    0.020
+ QIO      C09    N10       single      1.455    0.020
+ QIO      N20    C21       deloc       1.350    0.020
+ QIO      C21    N22       aromatic    1.355    0.020
+ QIO      N22    C23       aromatic    1.337    0.020
+ QIO      C23    N24       deloc       1.337    0.020
+ QIO      N10    C25       single      1.455    0.020
+ QIO      H18    C18       single      1.083    0.020
+ QIO      H17    C17       single      1.083    0.020
+ QIO      H15    C15       single      1.083    0.020
+ QIO      H02    C02       single      1.099    0.020
+ QIO      H06    C06       single      1.099    0.020
+ QIO      H071   C07       single      1.092    0.020
+ QIO      H072   C07       single      1.092    0.020
+ QIO      H081   C08       single      1.092    0.020
+ QIO      H082   C08       single      1.092    0.020
+ QIO      H091   C09       single      1.092    0.020
+ QIO      H092   C09       single      1.092    0.020
+ QIO      H23    C23       single      1.083    0.020
+ QIO      H251   C25       single      1.092    0.020
+ QIO      H252   C25       single      1.092    0.020
+ QIO      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QIO      O05    C03    O04     123.000    3.000
+ QIO      O05    C03    C02     118.500    3.000
+ QIO      O04    C03    C02     118.500    3.000
+ QIO      C03    C02    H02     108.810    3.000
+ QIO      C03    C02    O01     109.470    3.000
+ QIO      C03    C02    C06     109.470    3.000
+ QIO      H02    C02    O01     109.470    3.000
+ QIO      H02    C02    C06     108.340    3.000
+ QIO      O01    C02    C06     109.470    3.000
+ QIO      C02    O01    HO01    109.470    3.000
+ QIO      C02    C06    H06     108.340    3.000
+ QIO      C02    C06    C25     111.000    3.000
+ QIO      C02    C06    C07     111.000    3.000
+ QIO      H06    C06    C25     108.340    3.000
+ QIO      H06    C06    C07     108.340    3.000
+ QIO      C25    C06    C07     109.470    3.000
+ QIO      C06    C25    H251    109.470    3.000
+ QIO      C06    C25    H252    109.470    3.000
+ QIO      C06    C25    N10     105.000    3.000
+ QIO      H251   C25    H252    107.900    3.000
+ QIO      H251   C25    N10     109.470    3.000
+ QIO      H252   C25    N10     109.470    3.000
+ QIO      C25    N10    C09     120.000    3.000
+ QIO      C25    N10    C11     120.000    3.000
+ QIO      C09    N10    C11     120.000    3.000
+ QIO      N10    C09    H091    109.470    3.000
+ QIO      N10    C09    H092    109.470    3.000
+ QIO      N10    C09    C08     105.000    3.000
+ QIO      H091   C09    H092    107.900    3.000
+ QIO      H091   C09    C08     109.470    3.000
+ QIO      H092   C09    C08     109.470    3.000
+ QIO      C09    C08    H081    109.470    3.000
+ QIO      C09    C08    H082    109.470    3.000
+ QIO      C09    C08    C07     111.000    3.000
+ QIO      H081   C08    H082    107.900    3.000
+ QIO      H081   C08    C07     109.470    3.000
+ QIO      H082   C08    C07     109.470    3.000
+ QIO      C08    C07    H072    109.470    3.000
+ QIO      C08    C07    H071    109.470    3.000
+ QIO      C08    C07    C06     111.000    3.000
+ QIO      H072   C07    H071    107.900    3.000
+ QIO      H072   C07    C06     109.470    3.000
+ QIO      H071   C07    C06     109.470    3.000
+ QIO      N10    C11    N24     120.000    3.000
+ QIO      N10    C11    C12     120.000    3.000
+ QIO      N24    C11    C12     120.000    3.000
+ QIO      C11    N24    C23     120.000    3.000
+ QIO      N24    C23    H23     120.000    3.000
+ QIO      N24    C23    N22     120.000    3.000
+ QIO      H23    C23    N22     120.000    3.000
+ QIO      C23    N22    C21     120.000    3.000
+ QIO      N22    C21    C12     120.000    3.000
+ QIO      N22    C21    N20     120.000    3.000
+ QIO      C12    C21    N20     108.000    3.000
+ QIO      C21    C12    C13     120.000    3.000
+ QIO      C21    C12    C11     120.000    3.000
+ QIO      C13    C12    C11     120.000    3.000
+ QIO      C12    C13    C18     120.000    3.000
+ QIO      C12    C13    C14     120.000    3.000
+ QIO      C18    C13    C14     120.000    3.000
+ QIO      C13    C18    H18     120.000    3.000
+ QIO      C13    C18    C17     120.000    3.000
+ QIO      H18    C18    C17     120.000    3.000
+ QIO      C21    N20    C14     108.000    3.000
+ QIO      N20    C14    C15     132.000    3.000
+ QIO      N20    C14    C13     108.000    3.000
+ QIO      C15    C14    C13     120.000    3.000
+ QIO      C14    C15    H15     120.000    3.000
+ QIO      C14    C15    C16     120.000    3.000
+ QIO      H15    C15    C16     120.000    3.000
+ QIO      C15    C16    F19     120.000    3.000
+ QIO      C15    C16    C17     120.000    3.000
+ QIO      F19    C16    C17     120.000    3.000
+ QIO      C16    C17    H17     120.000    3.000
+ QIO      C16    C17    C18     120.000    3.000
+ QIO      H17    C17    C18     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QIO      var_1            O05    C03    C02    C06              180.000           20.000   3
+ QIO      var_2            C03    C02    O01    HO01             180.000           20.000   3
+ QIO      var_3            C03    C02    C06    C25              180.000           20.000   3
+ QIO      var_4            C02    C06    C07    C08              180.000           20.000   3
+ QIO      var_5            C02    C06    C25    N10              180.000           20.000   3
+ QIO      var_6            C06    C25    N10    C11              160.368           20.000   3
+ QIO      var_7            C25    N10    C09    C08               31.165           20.000   3
+ QIO      var_8            N10    C09    C08    C07              180.000           20.000   3
+ QIO      var_9            C09    C08    C07    C06              180.000           20.000   3
+ QIO      var_10           C25    N10    C11    N24              -28.501           20.000   3
+ QIO      CONST_1          N10    C11    N24    C23                0.000            0.000   0
+ QIO      CONST_2          C11    N24    C23    N22                0.000            0.000   0
+ QIO      CONST_3          N24    C23    N22    C21                0.000            0.000   0
+ QIO      CONST_4          C23    N22    C21    N20              180.000            0.000   0
+ QIO      CONST_5          N22    C21    C12    C13              180.000            0.000   0
+ QIO      CONST_6          C21    C12    C11    N10              180.000            0.000   0
+ QIO      CONST_7          C21    C12    C13    C18              180.000            0.000   0
+ QIO      CONST_8          C12    C13    C18    C17              180.000            0.000   0
+ QIO      CONST_9          C13    C18    C17    C16                0.000            0.000   0
+ QIO      CONST_10         N22    C21    N20    C14              180.000            0.000   0
+ QIO      CONST_11         C21    N20    C14    C15              180.000            0.000   0
+ QIO      CONST_12         N20    C14    C13    C12              180.000            0.000   0
+ QIO      CONST_13         N20    C14    C15    C16              180.000            0.000   0
+ QIO      CONST_14         C14    C15    C16    C17                0.000            0.000   0
+ QIO      CONST_15         C15    C16    C17    C18                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QIO      chir_01          C02    C03    C06    O01       negativ
+ QIO      chir_02          C06    C02    C07    C25       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QIO      plan-1            C18       0.020
+ QIO      plan-1            C17       0.020
+ QIO      plan-1            C13       0.020
+ QIO      plan-1            H18       0.020
+ QIO      plan-1            C16       0.020
+ QIO      plan-1            C15       0.020
+ QIO      plan-1            F19       0.020
+ QIO      plan-1            H17       0.020
+ QIO      plan-1            C14       0.020
+ QIO      plan-1            H15       0.020
+ QIO      plan-1            N20       0.020
+ QIO      plan-1            C12       0.020
+ QIO      plan-1            C11       0.020
+ QIO      plan-1            C21       0.020
+ QIO      plan-1            C23       0.020
+ QIO      plan-1            N22       0.020
+ QIO      plan-1            N24       0.020
+ QIO      plan-1            N10       0.020
+ QIO      plan-1            H23       0.020
+ QIO      plan-2            C03       0.020
+ QIO      plan-2            C02       0.020
+ QIO      plan-2            O04       0.020
+ QIO      plan-2            O05       0.020
+ QIO      plan-3            N10       0.020
+ QIO      plan-3            C11       0.020
+ QIO      plan-3            C09       0.020
+ QIO      plan-3            C25       0.020
+#
+data_comp_QIR
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QIR           O05    O    OC        0.000    -46.600  -30.213   -0.912
+ QIR           C03    C    C         0.000    -46.681  -28.971   -1.100
+ QIR           O04    O    OC       -1.000    -47.566  -28.561   -1.895
+ QIR           C02    C    CH1       0.000    -45.779  -27.912   -0.446
+ QIR           H02    H    H         0.000    -45.466  -27.250   -1.265
+ QIR           O01    O    OH1       0.000    -46.558  -27.119    0.393
+ QIR           HO01   H    H         0.000    -45.996  -26.453    0.806
+ QIR           C06    C    CH1       0.000    -44.441  -28.330    0.290
+ QIR           H06    H    H         0.000    -43.636  -27.738   -0.168
+ QIR           C25    C    CH2       0.000    -44.403  -28.021    1.811
+ QIR           H251   H    H         0.000    -44.538  -26.947    1.951
+ QIR           H252   H    H         0.000    -43.428  -28.318    2.202
+ QIR           N10    N    N         0.000    -45.472  -28.754    2.533
+ QIR           C09    C    CH2       0.000    -45.879  -30.011    1.875
+ QIR           H091   H    H         0.000    -46.729  -29.777    1.231
+ QIR           H092   H    H         0.000    -46.198  -30.698    2.662
+ QIR           C08    C    CH2       0.000    -44.767  -30.666    1.041
+ QIR           H081   H    H         0.000    -45.228  -31.495    0.501
+ QIR           H082   H    H         0.000    -44.034  -31.057    1.749
+ QIR           C07    C    CH2       0.000    -44.090  -29.756    0.074
+ QIR           H072   H    H         0.000    -44.387  -30.057   -0.933
+ QIR           H071   H    H         0.000    -43.012  -29.888    0.189
+ QIR           C11    C    CR6       0.000    -45.296  -28.943    3.962
+ QIR           N24    N    NRD6      0.000    -44.103  -29.043    4.535
+ QIR           C23    C    CR16      0.000    -44.029  -29.211    5.852
+ QIR           H23    H    H         0.000    -43.051  -29.288    6.310
+ QIR           N22    N    NRD6      0.000    -45.090  -29.288    6.621
+ QIR           C21    C    CR56      0.000    -46.314  -29.199    6.103
+ QIR           C12    C    CR56      0.000    -46.456  -29.024    4.743
+ QIR           N20    N    NRD5      0.000    -47.522  -29.244    6.663
+ QIR           C14    C    CR56      0.000    -48.467  -29.107    5.730
+ QIR           C15    C    CR16      0.000    -49.854  -29.093    5.830
+ QIR           H15    H    H         0.000    -50.326  -29.207    6.798
+ QIR           C16    C    CR6       0.000    -50.632  -28.935    4.701
+ QIR           F19    F    F         0.000    -51.986  -28.923    4.817
+ QIR           C17    C    CR16      0.000    -50.033  -28.786    3.457
+ QIR           H17    H    H         0.000    -50.644  -28.657    2.572
+ QIR           C18    C    CR16      0.000    -48.646  -28.803    3.350
+ QIR           H18    H    H         0.000    -48.175  -28.692    2.381
+ QIR           C13    C    CR56      0.000    -47.860  -28.964    4.500
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QIR      O05    n/a    C03    START
+ QIR      C03    O05    C02    .
+ QIR      O04    C03    .      .
+ QIR      C02    C03    C06    .
+ QIR      H02    C02    .      .
+ QIR      O01    C02    HO01   .
+ QIR      HO01   O01    .      .
+ QIR      C06    C02    C25    .
+ QIR      H06    C06    .      .
+ QIR      C25    C06    N10    .
+ QIR      H251   C25    .      .
+ QIR      H252   C25    .      .
+ QIR      N10    C25    C11    .
+ QIR      C09    N10    C08    .
+ QIR      H091   C09    .      .
+ QIR      H092   C09    .      .
+ QIR      C08    C09    C07    .
+ QIR      H081   C08    .      .
+ QIR      H082   C08    .      .
+ QIR      C07    C08    H071   .
+ QIR      H072   C07    .      .
+ QIR      H071   C07    .      .
+ QIR      C11    N10    N24    .
+ QIR      N24    C11    C23    .
+ QIR      C23    N24    N22    .
+ QIR      H23    C23    .      .
+ QIR      N22    C23    C21    .
+ QIR      C21    N22    N20    .
+ QIR      C12    C21    .      .
+ QIR      N20    C21    C14    .
+ QIR      C14    N20    C15    .
+ QIR      C15    C14    C16    .
+ QIR      H15    C15    .      .
+ QIR      C16    C15    C17    .
+ QIR      F19    C16    .      .
+ QIR      C17    C16    C18    .
+ QIR      H17    C17    .      .
+ QIR      C18    C17    C13    .
+ QIR      H18    C18    .      .
+ QIR      C13    C18    .      END
+ QIR      C06    C07    .    ADD
+ QIR      C11    C12    .    ADD
+ QIR      C12    C13    .    ADD
+ QIR      C13    C14    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QIR      C02    C03       single      1.500    0.020
+ QIR      C06    C02       single      1.524    0.020
+ QIR      O01    C02       single      1.432    0.020
+ QIR      O04    C03       deloc       1.250    0.020
+ QIR      C03    O05       deloc       1.250    0.020
+ QIR      C06    C07       single      1.524    0.020
+ QIR      C25    C06       single      1.524    0.020
+ QIR      C07    C08       single      1.524    0.020
+ QIR      C08    C09       single      1.524    0.020
+ QIR      C09    N10       single      1.455    0.020
+ QIR      C11    C12       aromatic    1.390    0.020
+ QIR      C11    N10       single      1.400    0.020
+ QIR      N24    C11       aromatic    1.350    0.020
+ QIR      C12    C13       aromatic    1.390    0.020
+ QIR      C12    C21       aromatic    1.390    0.020
+ QIR      C13    C14       aromatic    1.390    0.020
+ QIR      C13    C18       aromatic    1.390    0.020
+ QIR      C15    C14       aromatic    1.390    0.020
+ QIR      C14    N20       aromatic    1.350    0.020
+ QIR      C16    C15       aromatic    1.390    0.020
+ QIR      C17    C16       aromatic    1.390    0.020
+ QIR      F19    C16       single      1.345    0.020
+ QIR      C18    C17       aromatic    1.390    0.020
+ QIR      N20    C21       deloc       1.350    0.020
+ QIR      C21    N22       aromatic    1.355    0.020
+ QIR      N22    C23       aromatic    1.337    0.020
+ QIR      C23    N24       aromat      1.337    0.020
+ QIR      N10    C25       single      1.455    0.020
+ QIR      H02    C02       single      1.099    0.020
+ QIR      H06    C06       single      1.099    0.020
+ QIR      H071   C07       single      1.092    0.020
+ QIR      H072   C07       single      1.092    0.020
+ QIR      H081   C08       single      1.092    0.020
+ QIR      H082   C08       single      1.092    0.020
+ QIR      H091   C09       single      1.092    0.020
+ QIR      H092   C09       single      1.092    0.020
+ QIR      H15    C15       single      1.083    0.020
+ QIR      H17    C17       single      1.083    0.020
+ QIR      H18    C18       single      1.083    0.020
+ QIR      H23    C23       single      1.083    0.020
+ QIR      H251   C25       single      1.092    0.020
+ QIR      H252   C25       single      1.092    0.020
+ QIR      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QIR      O05    C03    O04     123.000    3.000
+ QIR      O05    C03    C02     118.500    3.000
+ QIR      O04    C03    C02     118.500    3.000
+ QIR      C03    C02    H02     108.810    3.000
+ QIR      C03    C02    O01     109.470    3.000
+ QIR      C03    C02    C06     109.470    3.000
+ QIR      H02    C02    O01     109.470    3.000
+ QIR      H02    C02    C06     108.340    3.000
+ QIR      O01    C02    C06     109.470    3.000
+ QIR      C02    O01    HO01    109.470    3.000
+ QIR      C02    C06    H06     108.340    3.000
+ QIR      C02    C06    C25     111.000    3.000
+ QIR      C02    C06    C07     111.000    3.000
+ QIR      H06    C06    C25     108.340    3.000
+ QIR      H06    C06    C07     108.340    3.000
+ QIR      C25    C06    C07     109.470    3.000
+ QIR      C06    C25    H251    109.470    3.000
+ QIR      C06    C25    H252    109.470    3.000
+ QIR      C06    C25    N10     105.000    3.000
+ QIR      H251   C25    H252    107.900    3.000
+ QIR      H251   C25    N10     109.470    3.000
+ QIR      H252   C25    N10     109.470    3.000
+ QIR      C25    N10    C09     120.000    3.000
+ QIR      C25    N10    C11     120.000    3.000
+ QIR      C09    N10    C11     120.000    3.000
+ QIR      N10    C09    H091    109.470    3.000
+ QIR      N10    C09    H092    109.470    3.000
+ QIR      N10    C09    C08     105.000    3.000
+ QIR      H091   C09    H092    107.900    3.000
+ QIR      H091   C09    C08     109.470    3.000
+ QIR      H092   C09    C08     109.470    3.000
+ QIR      C09    C08    H081    109.470    3.000
+ QIR      C09    C08    H082    109.470    3.000
+ QIR      C09    C08    C07     111.000    3.000
+ QIR      H081   C08    H082    107.900    3.000
+ QIR      H081   C08    C07     109.470    3.000
+ QIR      H082   C08    C07     109.470    3.000
+ QIR      C08    C07    H072    109.470    3.000
+ QIR      C08    C07    H071    109.470    3.000
+ QIR      C08    C07    C06     111.000    3.000
+ QIR      H072   C07    H071    107.900    3.000
+ QIR      H072   C07    C06     109.470    3.000
+ QIR      H071   C07    C06     109.470    3.000
+ QIR      N10    C11    N24     120.000    3.000
+ QIR      N10    C11    C12     120.000    3.000
+ QIR      N24    C11    C12     120.000    3.000
+ QIR      C11    N24    C23     120.000    3.000
+ QIR      N24    C23    H23     120.000    3.000
+ QIR      N24    C23    N22     120.000    3.000
+ QIR      H23    C23    N22     120.000    3.000
+ QIR      C23    N22    C21     120.000    3.000
+ QIR      N22    C21    C12     120.000    3.000
+ QIR      N22    C21    N20     120.000    3.000
+ QIR      C12    C21    N20     108.000    3.000
+ QIR      C21    C12    C11     120.000    3.000
+ QIR      C21    C12    C13     120.000    3.000
+ QIR      C11    C12    C13     120.000    3.000
+ QIR      C21    N20    C14     108.000    3.000
+ QIR      N20    C14    C15     132.000    3.000
+ QIR      N20    C14    C13     108.000    3.000
+ QIR      C15    C14    C13     120.000    3.000
+ QIR      C14    C15    H15     120.000    3.000
+ QIR      C14    C15    C16     120.000    3.000
+ QIR      H15    C15    C16     120.000    3.000
+ QIR      C15    C16    F19     120.000    3.000
+ QIR      C15    C16    C17     120.000    3.000
+ QIR      F19    C16    C17     120.000    3.000
+ QIR      C16    C17    H17     120.000    3.000
+ QIR      C16    C17    C18     120.000    3.000
+ QIR      H17    C17    C18     120.000    3.000
+ QIR      C17    C18    H18     120.000    3.000
+ QIR      C17    C18    C13     120.000    3.000
+ QIR      H18    C18    C13     120.000    3.000
+ QIR      C18    C13    C12     120.000    3.000
+ QIR      C18    C13    C14     120.000    3.000
+ QIR      C12    C13    C14     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QIR      var_1            O05    C03    C02    C06              180.000           20.000   3
+ QIR      var_2            C03    C02    O01    HO01             180.000           20.000   3
+ QIR      var_3            C03    C02    C06    C25              180.000           20.000   3
+ QIR      var_4            C02    C06    C07    C08              180.000           20.000   3
+ QIR      var_5            C02    C06    C25    N10              180.000           20.000   3
+ QIR      var_6            C06    C25    N10    C11              159.329           20.000   3
+ QIR      var_7            C25    N10    C09    C08               28.112           20.000   3
+ QIR      var_8            N10    C09    C08    C07              180.000           20.000   3
+ QIR      var_9            C09    C08    C07    C06              180.000           20.000   3
+ QIR      var_10           C25    N10    C11    N24              -29.827           20.000   3
+ QIR      CONST_1          N10    C11    C12    C21              180.000            0.000   0
+ QIR      CONST_2          N10    C11    N24    C23                0.000            0.000   0
+ QIR      CONST_3          C11    N24    C23    N22                0.000            0.000   0
+ QIR      CONST_4          N24    C23    N22    C21                0.000            0.000   0
+ QIR      CONST_5          C23    N22    C21    N20              180.000            0.000   0
+ QIR      CONST_6          N22    C21    C12    C11              180.000            0.000   0
+ QIR      CONST_7          C21    C12    C13    C18              180.000            0.000   0
+ QIR      CONST_8          N22    C21    N20    C14              180.000            0.000   0
+ QIR      CONST_9          C21    N20    C14    C15              180.000            0.000   0
+ QIR      CONST_10         N20    C14    C15    C16              180.000            0.000   0
+ QIR      CONST_11         C14    C15    C16    C17                0.000            0.000   0
+ QIR      CONST_12         C15    C16    C17    C18                0.000            0.000   0
+ QIR      CONST_13         C16    C17    C18    C13                0.000            0.000   0
+ QIR      CONST_14         C17    C18    C13    C12              180.000            0.000   0
+ QIR      CONST_15         C18    C13    C14    N20              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QIR      chir_01          C02    C03    C06    O01       positiv
+ QIR      chir_02          C06    C02    C07    C25       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QIR      plan-1            C03       0.020
+ QIR      plan-1            C02       0.020
+ QIR      plan-1            O04       0.020
+ QIR      plan-1            O05       0.020
+ QIR      plan-2            C11       0.020
+ QIR      plan-2            C12       0.020
+ QIR      plan-2            N10       0.020
+ QIR      plan-2            N24       0.020
+ QIR      plan-2            C23       0.020
+ QIR      plan-2            N22       0.020
+ QIR      plan-2            C13       0.020
+ QIR      plan-2            C21       0.020
+ QIR      plan-2            N20       0.020
+ QIR      plan-2            C14       0.020
+ QIR      plan-2            C18       0.020
+ QIR      plan-2            C15       0.020
+ QIR      plan-2            C16       0.020
+ QIR      plan-2            C17       0.020
+ QIR      plan-2            H15       0.020
+ QIR      plan-2            F19       0.020
+ QIR      plan-2            H17       0.020
+ QIR      plan-2            H18       0.020
+ QIR      plan-2            H23       0.020
+ QIR      plan-3            N10       0.020
+ QIR      plan-3            C09       0.020
+ QIR      plan-3            C11       0.020
+ QIR      plan-3            C25       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,442 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QWO      QWO '.                                   ' .                  51  32 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QWO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QWO           O32    O    OC        0.000    -42.885  -32.154    3.535
+ QWO           C02    C    C         0.000    -43.066  -32.579    2.359
+ QWO           O01    O    OC       -1.000    -43.355  -33.789    2.156
+ QWO           C03    C    CH1       0.000    -42.952  -31.605    1.197
+ QWO           H03    H    H         0.000    -42.111  -30.912    1.339
+ QWO           C04    C    CH2       0.000    -42.895  -32.265   -0.163
+ QWO           H041   H    H         0.000    -42.219  -33.123   -0.182
+ QWO           H042   H    H         0.000    -42.616  -31.566   -0.954
+ QWO           C05    C    CR6       0.000    -44.339  -32.743   -0.386
+ QWO           C06    C    CR6       0.000    -44.865  -33.788   -1.149
+ QWO           O07    O    OH1       0.000    -44.002  -34.634   -1.860
+ QWO           HO07   H    H         0.000    -44.514  -35.305   -2.338
+ QWO           C08    C    CR16      0.000    -46.243  -33.982   -1.168
+ QWO           H08    H    H         0.000    -46.669  -34.791   -1.748
+ QWO           C09    C    CR16      0.000    -47.077  -33.130   -0.436
+ QWO           H09    H    H         0.000    -48.148  -33.288   -0.448
+ QWO           C10    C    CR16      0.000    -46.542  -32.078    0.309
+ QWO           H10    H    H         0.000    -47.193  -31.418    0.868
+ QWO           C11    C    CR6       0.000    -45.155  -31.885    0.326
+ QWO           C12    C    CH1       0.000    -44.246  -30.863    1.032
+ QWO           H12    H    H         0.000    -44.106  -29.969    0.408
+ QWO           N13    N    NH1       0.000    -44.895  -30.528    2.261
+ QWO           HN13   H    H         0.000    -44.890  -31.193    3.021
+ QWO           C14    C    C         0.000    -45.565  -29.244    2.439
+ QWO           O31    O    O         0.000    -45.626  -28.422    1.584
+ QWO           C15    C    CR6       0.000    -46.253  -29.142    3.806
+ QWO           C30    C    CR16      0.000    -47.626  -28.907    3.787
+ QWO           H30    H    H         0.000    -48.140  -28.784    2.842
+ QWO           C29    C    CR16      0.000    -48.336  -28.830    4.977
+ QWO           H29    H    H         0.000    -49.403  -28.643    4.960
+ QWO           C21    C    CR6       0.000    -47.680  -28.993    6.190
+ QWO           C20    C    CT        0.000    -46.301  -29.250    6.199
+ QWO           S17    S    ST        0.000    -43.964  -29.640    5.515
+ QWO           C16    C    CR6       0.000    -45.573  -29.328    5.010
+ QWO           N19    N    N         0.000    -45.568  -29.441    7.345
+ QWO           C18    C    C1        0.000    -44.262  -29.664    7.190
+ QWO           H18    H    H         0.000    -43.539  -29.827    7.971
+ QWO           N22    N    NH1       0.000    -48.407  -28.958    7.470
+ QWO           HN22   H    H         0.000    -47.903  -28.758    8.322
+ QWO           C23    C    C         0.000    -49.857  -29.210    7.527
+ QWO           O28    O    O         0.000    -50.499  -29.409    6.548
+ QWO           N24    N    NH1       0.000    -50.542  -29.221    8.817
+ QWO           HN24   H    H         0.000    -50.018  -29.078    9.668
+ QWO           C25    C    CH1       0.000    -51.991  -29.440    8.876
+ QWO           H25    H    H         0.000    -52.637  -28.556    8.786
+ QWO           C27    C    CH2       0.000    -52.527  -30.760    8.315
+ QWO           H271   H    H         0.000    -51.913  -31.618    8.033
+ QWO           H272   H    H         0.000    -53.564  -30.945    8.026
+ QWO           C26    C    CH2       0.000    -52.448  -30.549    9.829
+ QWO           H262   H    H         0.000    -51.612  -30.853   10.463
+ QWO           H261   H    H         0.000    -53.263  -30.180   10.455
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QWO      O32    n/a    C02    START
+ QWO      C02    O32    C03    .
+ QWO      O01    C02    .      .
+ QWO      C03    C02    C12    .
+ QWO      H03    C03    .      .
+ QWO      C04    C03    C05    .
+ QWO      H041   C04    .      .
+ QWO      H042   C04    .      .
+ QWO      C05    C04    C11    .
+ QWO      C06    C05    C08    .
+ QWO      O07    C06    HO07   .
+ QWO      HO07   O07    .      .
+ QWO      C08    C06    C09    .
+ QWO      H08    C08    .      .
+ QWO      C09    C08    C10    .
+ QWO      H09    C09    .      .
+ QWO      C10    C09    H10    .
+ QWO      H10    C10    .      .
+ QWO      C11    C05    .      .
+ QWO      C12    C03    N13    .
+ QWO      H12    C12    .      .
+ QWO      N13    C12    C14    .
+ QWO      HN13   N13    .      .
+ QWO      C14    N13    C15    .
+ QWO      O31    C14    .      .
+ QWO      C15    C14    C30    .
+ QWO      C30    C15    C29    .
+ QWO      H30    C30    .      .
+ QWO      C29    C30    C21    .
+ QWO      H29    C29    .      .
+ QWO      C21    C29    N22    .
+ QWO      C20    C21    S17    .
+ QWO      S17    C20    C18    .
+ QWO      C16    S17    .      .
+ QWO      N19    S17    .      .
+ QWO      C18    S17    H18    .
+ QWO      H18    C18    .      .
+ QWO      N22    C21    C23    .
+ QWO      HN22   N22    .      .
+ QWO      C23    N22    N24    .
+ QWO      O28    C23    .      .
+ QWO      N24    C23    C25    .
+ QWO      HN24   N24    .      .
+ QWO      C25    N24    C27    .
+ QWO      H25    C25    .      .
+ QWO      C27    C25    C26    .
+ QWO      H271   C27    .      .
+ QWO      H272   C27    .      .
+ QWO      C26    C27    H261   .
+ QWO      H262   C26    .      .
+ QWO      H261   C26    .      END
+ QWO      C18    N19    .    ADD
+ QWO      C16    C15    .    ADD
+ QWO      C16    C20    .    ADD
+ QWO      C12    C11    .    ADD
+ QWO      C11    C10    .    ADD
+ QWO      C20    N19    .    ADD
+ QWO      C25    C26    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QWO      C18    N19       single      1.260    0.020
+ QWO      C18    S17       double      1.565    0.020
+ QWO      C16    C15       aromatic    1.384    0.020
+ QWO      C16    C20       single      1.500    0.020
+ QWO      C16    S17       double      1.595    0.020
+ QWO      C15    C14       single      1.500    0.020
+ QWO      C30    C15       aromatic    1.390    0.020
+ QWO      C14    N13       single      1.330    0.020
+ QWO      O31    C14       double      1.220    0.020
+ QWO      C12    C11       single      1.480    0.020
+ QWO      C12    C03       single      1.524    0.020
+ QWO      N13    C12       single      1.450    0.020
+ QWO      C11    C10       aromatic    1.390    0.020
+ QWO      C11    C05       aromatic    1.384    0.020
+ QWO      C10    C09       aromatic    1.390    0.020
+ QWO      C20    C21       single      1.500    0.020
+ QWO      C20    N19       single      1.455    0.020
+ QWO      S17    C20       single      1.662    0.020
+ QWO      C03    C02       single      1.500    0.020
+ QWO      O01    C02       deloc       1.250    0.020
+ QWO      C02    O32       deloc       1.250    0.020
+ QWO      C04    C03       single      1.524    0.020
+ QWO      C05    C04       single      1.511    0.020
+ QWO      C06    C05       aromatic    1.384    0.020
+ QWO      C08    C06       aromatic    1.390    0.020
+ QWO      O07    C06       single      1.362    0.020
+ QWO      C09    C08       aromatic    1.390    0.020
+ QWO      C21    C29       aromatic    1.390    0.020
+ QWO      N22    C21       single      1.350    0.020
+ QWO      C23    N22       single      1.330    0.020
+ QWO      N24    C23       single      1.330    0.020
+ QWO      O28    C23       double      1.220    0.020
+ QWO      C25    C26       single      1.524    0.020
+ QWO      C27    C25       single      1.524    0.020
+ QWO      C25    N24       single      1.450    0.020
+ QWO      C26    C27       single      1.524    0.020
+ QWO      C29    C30       aromatic    1.390    0.020
+ QWO      N19    S17       single      1.520    0.020
+ QWO      H18    C18       single      1.077    0.020
+ QWO      H12    C12       single      1.099    0.020
+ QWO      H10    C10       single      1.083    0.020
+ QWO      H03    C03       single      1.099    0.020
+ QWO      H041   C04       single      1.092    0.020
+ QWO      H042   C04       single      1.092    0.020
+ QWO      H08    C08       single      1.083    0.020
+ QWO      H09    C09       single      1.083    0.020
+ QWO      H25    C25       single      1.099    0.020
+ QWO      H261   C26       single      1.092    0.020
+ QWO      H262   C26       single      1.092    0.020
+ QWO      H271   C27       single      1.092    0.020
+ QWO      H272   C27       single      1.092    0.020
+ QWO      H29    C29       single      1.083    0.020
+ QWO      H30    C30       single      1.083    0.020
+ QWO      HN13   N13       single      1.010    0.020
+ QWO      HN22   N22       single      1.010    0.020
+ QWO      HN24   N24       single      1.010    0.020
+ QWO      HO07   O07       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QWO      O32    C02    O01     123.000    3.000
+ QWO      O32    C02    C03     118.500    3.000
+ QWO      O01    C02    C03     118.500    3.000
+ QWO      C02    C03    H03     108.810    3.000
+ QWO      C02    C03    C04     109.470    3.000
+ QWO      C02    C03    C12     109.470    3.000
+ QWO      H03    C03    C04     108.340    3.000
+ QWO      H03    C03    C12     108.340    3.000
+ QWO      C04    C03    C12     111.000    3.000
+ QWO      C03    C04    H041    109.470    3.000
+ QWO      C03    C04    H042    109.470    3.000
+ QWO      C03    C04    C05     109.470    3.000
+ QWO      H041   C04    H042    107.900    3.000
+ QWO      H041   C04    C05     109.470    3.000
+ QWO      H042   C04    C05     109.470    3.000
+ QWO      C04    C05    C06     120.000    3.000
+ QWO      C04    C05    C11     120.000    3.000
+ QWO      C06    C05    C11     120.000    3.000
+ QWO      C05    C06    O07     120.000    3.000
+ QWO      C05    C06    C08     120.000    3.000
+ QWO      O07    C06    C08     120.000    3.000
+ QWO      C06    O07    HO07    109.470    3.000
+ QWO      C06    C08    H08     120.000    3.000
+ QWO      C06    C08    C09     120.000    3.000
+ QWO      H08    C08    C09     120.000    3.000
+ QWO      C08    C09    H09     120.000    3.000
+ QWO      C08    C09    C10     120.000    3.000
+ QWO      H09    C09    C10     120.000    3.000
+ QWO      C09    C10    H10     120.000    3.000
+ QWO      C09    C10    C11     120.000    3.000
+ QWO      H10    C10    C11     120.000    3.000
+ QWO      C05    C11    C12     120.000    3.000
+ QWO      C05    C11    C10     120.000    3.000
+ QWO      C12    C11    C10     120.000    3.000
+ QWO      C03    C12    H12     108.340    3.000
+ QWO      C03    C12    N13     110.000    3.000
+ QWO      C03    C12    C11     109.470    3.000
+ QWO      H12    C12    N13     108.550    3.000
+ QWO      H12    C12    C11     109.470    3.000
+ QWO      N13    C12    C11     109.470    3.000
+ QWO      C12    N13    HN13    118.500    3.000
+ QWO      C12    N13    C14     121.500    3.000
+ QWO      HN13   N13    C14     120.000    3.000
+ QWO      N13    C14    O31     123.000    3.000
+ QWO      N13    C14    C15     120.000    3.000
+ QWO      O31    C14    C15     120.500    3.000
+ QWO      C14    C15    C30     120.000    3.000
+ QWO      C14    C15    C16     120.000    3.000
+ QWO      C30    C15    C16     120.000    3.000
+ QWO      C15    C30    H30     120.000    3.000
+ QWO      C15    C30    C29     120.000    3.000
+ QWO      H30    C30    C29     120.000    3.000
+ QWO      C30    C29    H29     120.000    3.000
+ QWO      C30    C29    C21     120.000    3.000
+ QWO      H29    C29    C21     120.000    3.000
+ QWO      C29    C21    C20     120.000    3.000
+ QWO      C29    C21    N22     120.000    3.000
+ QWO      C20    C21    N22     120.000    3.000
+ QWO      C21    C20    S17     109.500    3.000
+ QWO      C21    C20    C16     109.500    3.000
+ QWO      C21    C20    N19     109.500    3.000
+ QWO      C16    C20    N19     109.500    3.000
+ QWO      S17    C20    C16      60.328    3.000
+ QWO      S17    C20    N19      57.917    3.000
+ QWO      C20    S17    C16      54.798    3.000
+ QWO      C20    S17    N19      54.198    3.000
+ QWO      C20    S17    C18     109.500    3.000
+ QWO      C16    S17    N19     109.500    3.000
+ QWO      C16    S17    C18     109.500    3.000
+ QWO      N19    S17    C18      48.185    3.000
+ QWO      S17    C16    C15     120.000    3.000
+ QWO      S17    C16    C20      64.874    3.000
+ QWO      C15    C16    C20     120.000    3.000
+ QWO      S17    N19    C18      67.776    3.000
+ QWO      S17    N19    C20      67.885    3.000
+ QWO      C18    N19    C20     121.000    3.000
+ QWO      S17    C18    H18     120.000    3.000
+ QWO      S17    C18    N19      64.039    3.000
+ QWO      H18    C18    N19     120.000    3.000
+ QWO      C21    N22    HN22    120.000    3.000
+ QWO      C21    N22    C23     120.000    3.000
+ QWO      HN22   N22    C23     120.000    3.000
+ QWO      N22    C23    O28     123.000    3.000
+ QWO      N22    C23    N24     120.000    3.000
+ QWO      O28    C23    N24     123.000    3.000
+ QWO      C23    N24    HN24    120.000    3.000
+ QWO      C23    N24    C25     121.500    3.000
+ QWO      HN24   N24    C25     118.500    3.000
+ QWO      N24    C25    H25     108.550    3.000
+ QWO      N24    C25    C27     110.000    3.000
+ QWO      N24    C25    C26     110.000    3.000
+ QWO      H25    C25    C27     108.340    3.000
+ QWO      H25    C25    C26     108.340    3.000
+ QWO      C27    C25    C26      60.000    3.000
+ QWO      C25    C27    H271    109.470    3.000
+ QWO      C25    C27    H272    109.470    3.000
+ QWO      C25    C27    C26      60.000    3.000
+ QWO      H271   C27    H272    107.900    3.000
+ QWO      H271   C27    C26     109.470    3.000
+ QWO      H272   C27    C26     109.470    3.000
+ QWO      C27    C26    H262    109.470    3.000
+ QWO      C27    C26    H261    109.470    3.000
+ QWO      C27    C26    C25      60.000    3.000
+ QWO      H262   C26    H261    107.900    3.000
+ QWO      H262   C26    C25     109.470    3.000
+ QWO      H261   C26    C25     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QWO      var_1            O32    C02    C03    C12              180.000           20.000   3
+ QWO      var_2            C02    C03    C04    C05              180.000           20.000   3
+ QWO      var_3            C03    C04    C05    C11                0.000           20.000   2
+ QWO      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QWO      var_4            C05    C06    O07    HO07             180.000           20.000   3
+ QWO      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QWO      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QWO      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QWO      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QWO      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QWO      var_5            C02    C03    C12    N13              180.000           20.000   3
+ QWO      var_6            C03    C12    C11    C05              -26.718           20.000   3
+ QWO      var_7            C03    C12    N13    C14                0.000           20.000   3
+ QWO      var_8            C12    N13    C14    C15              180.000           20.000   2
+ QWO      var_9            N13    C14    C15    C30             -121.471           20.000   3
+ QWO      CONST_7          C14    C15    C30    C29                0.000            0.000   0
+ QWO      CONST_8          C15    C30    C29    C21                0.000            0.000   0
+ QWO      CONST_9          C30    C29    C21    N22                0.000            0.000   0
+ QWO      CONST_10         C29    C21    C20    S17                1.765            0.000   0
+ QWO      var_10           C21    C20    N19    S17             -179.707           20.000   3
+ QWO      var_11           C21    C20    S17    C18              178.910           20.000   3
+ QWO      CONST_11         C20    S17    C16    C15              179.403            0.000   0
+ QWO      CONST_12         S17    C16    C15    C14                0.000            0.000   0
+ QWO      CONST_13         S17    C16    C20    C21              179.602            0.000   0
+ QWO      var_12           C20    S17    N19    C18             -179.596           20.000   3
+ QWO      var_13           C20    S17    C18    N19                0.241           20.000   3
+ QWO      var_14           C29    C21    N22    C23               21.126           20.000   3
+ QWO      var_15           C21    N22    C23    N24              180.000           20.000   2
+ QWO      var_16           N22    C23    N24    C25              180.000           20.000   2
+ QWO      var_17           C23    N24    C25    C27                0.000           20.000   3
+ QWO      var_18           N24    C25    C26    C27              180.000           20.000   3
+ QWO      var_19           N24    C25    C27    C26              180.000           20.000   3
+ QWO      var_1            S17    C18    N19    C20               -0.437           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QWO      chir_01          C12    C11    C03    N13       positiv
+ QWO      chir_02          C20    C16    C21    N19       positiv
+ QWO      chir_03          C03    C12    C02    C04       negativ
+ QWO      chir_04          C25    C26    C27    N24       positiv
+ QWO      chir_05          S17    C18    C16    C20       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QWO      plan-1            C18       0.020
+ QWO      plan-1            N19       0.020
+ QWO      plan-1            S17       0.020
+ QWO      plan-1            H18       0.020
+ QWO      plan-2            C16       0.020
+ QWO      plan-2            C15       0.020
+ QWO      plan-2            C20       0.020
+ QWO      plan-2            S17       0.020
+ QWO      plan-2            C21       0.020
+ QWO      plan-2            C29       0.020
+ QWO      plan-2            C30       0.020
+ QWO      plan-2            C14       0.020
+ QWO      plan-2            N22       0.020
+ QWO      plan-2            H29       0.020
+ QWO      plan-2            H30       0.020
+ QWO      plan-2            HN22      0.020
+ QWO      plan-3            C14       0.020
+ QWO      plan-3            C15       0.020
+ QWO      plan-3            N13       0.020
+ QWO      plan-3            O31       0.020
+ QWO      plan-3            HN13      0.020
+ QWO      plan-4            C11       0.020
+ QWO      plan-4            C12       0.020
+ QWO      plan-4            C10       0.020
+ QWO      plan-4            C05       0.020
+ QWO      plan-4            C06       0.020
+ QWO      plan-4            C08       0.020
+ QWO      plan-4            C09       0.020
+ QWO      plan-4            H10       0.020
+ QWO      plan-4            C04       0.020
+ QWO      plan-4            O07       0.020
+ QWO      plan-4            H08       0.020
+ QWO      plan-4            H09       0.020
+ QWO      plan-5            C02       0.020
+ QWO      plan-5            C03       0.020
+ QWO      plan-5            O01       0.020
+ QWO      plan-5            O32       0.020
+ QWO      plan-6            C23       0.020
+ QWO      plan-6            N22       0.020
+ QWO      plan-6            N24       0.020
+ QWO      plan-6            O28       0.020
+ QWO      plan-6            HN22      0.020
+ QWO      plan-6            HN24      0.020
+ QWO      plan-7            N13       0.020
+ QWO      plan-7            C14       0.020
+ QWO      plan-7            C12       0.020
+ QWO      plan-7            HN13      0.020
+ QWO      plan-8            N22       0.020
+ QWO      plan-8            C21       0.020
+ QWO      plan-8            C23       0.020
+ QWO      plan-8            HN22      0.020
+ QWO      plan-9            N24       0.020
+ QWO      plan-9            C23       0.020
+ QWO      plan-9            C25       0.020
+ QWO      plan-9            HN24      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

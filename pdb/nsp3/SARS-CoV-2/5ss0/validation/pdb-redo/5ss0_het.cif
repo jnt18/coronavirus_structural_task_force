@@ -1,0 +1,315 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RJL      RJL '.                                   ' .                  39  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RJL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RJL           O16    O    O         0.000    -46.367  -33.439    1.710
+ RJL           C15    C    C         0.000    -47.231  -34.258    1.792
+ RJL           C17    C    CR6       0.000    -48.358  -34.062    2.791
+ RJL           N18    N    NRD6      0.000    -48.339  -33.012    3.581
+ RJL           C19    C    CR16      0.000    -49.279  -32.793    4.472
+ RJL           H19    H    H         0.000    -49.229  -31.912    5.099
+ RJL           C22    C    CR6       0.000    -49.376  -34.999    2.883
+ RJL           O23    O    OH1       0.000    -49.385  -36.117    2.038
+ RJL           HO23   H    H         0.000    -50.159  -36.671    2.229
+ RJL           C21    C    CR16      0.000    -50.389  -34.805    3.810
+ RJL           H21    H    H         0.000    -51.202  -35.514    3.902
+ RJL           C20    C    CR16      0.000    -50.332  -33.678    4.616
+ RJL           H20    H    H         0.000    -51.105  -33.493    5.352
+ RJL           N14    N    NH1       0.000    -47.242  -35.463    0.980
+ RJL           HN14   H    H         0.000    -47.995  -36.130    1.076
+ RJL           C13    C    CH2       0.000    -46.175  -35.708    0.034
+ RJL           H131   H    H         0.000    -45.935  -36.773    0.063
+ RJL           H132   H    H         0.000    -45.303  -35.131    0.350
+ RJL           C12    C    CH2       0.000    -46.563  -35.310   -1.389
+ RJL           H121   H    H         0.000    -46.630  -34.225   -1.488
+ RJL           H122   H    H         0.000    -47.516  -35.760   -1.676
+ RJL           N11    N    NH1       0.000    -45.514  -35.810   -2.247
+ RJL           HN11   H    H         0.000    -45.521  -36.783   -2.517
+ RJL           C09    C    C         0.000    -44.454  -34.953   -2.730
+ RJL           O10    O    O         0.000    -44.422  -33.805   -2.440
+ RJL           C07    C    CR6       0.000    -43.375  -35.584   -3.606
+ RJL           C06    C    CR16      0.000    -42.920  -36.853   -3.296
+ RJL           H06    H    H         0.000    -43.345  -37.369   -2.444
+ RJL           N05    N    NRD6      0.000    -41.985  -37.454   -4.006
+ RJL           C04    C    CR16      0.000    -41.453  -36.849   -5.048
+ RJL           H04    H    H         0.000    -40.687  -37.356   -5.622
+ RJL           C08    C    CR16      0.000    -42.835  -34.920   -4.691
+ RJL           H08    H    H         0.000    -43.164  -33.924   -4.960
+ RJL           C03    C    CR6       0.000    -41.852  -35.578   -5.425
+ RJL           O02    O    O2        0.000    -41.252  -34.974   -6.534
+ RJL           C01    C    CH3       0.000    -41.999  -33.942   -7.104
+ RJL           H013   H    H         0.000    -42.930  -34.325   -7.424
+ RJL           H012   H    H         0.000    -42.151  -33.186   -6.382
+ RJL           H011   H    H         0.000    -41.470  -33.548   -7.930
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RJL      O16    n/a    C15    START
+ RJL      C15    O16    N14    .
+ RJL      C17    C15    C22    .
+ RJL      N18    C17    C19    .
+ RJL      C19    N18    H19    .
+ RJL      H19    C19    .      .
+ RJL      C22    C17    C21    .
+ RJL      O23    C22    HO23   .
+ RJL      HO23   O23    .      .
+ RJL      C21    C22    C20    .
+ RJL      H21    C21    .      .
+ RJL      C20    C21    H20    .
+ RJL      H20    C20    .      .
+ RJL      N14    C15    C13    .
+ RJL      HN14   N14    .      .
+ RJL      C13    N14    C12    .
+ RJL      H131   C13    .      .
+ RJL      H132   C13    .      .
+ RJL      C12    C13    N11    .
+ RJL      H121   C12    .      .
+ RJL      H122   C12    .      .
+ RJL      N11    C12    C09    .
+ RJL      HN11   N11    .      .
+ RJL      C09    N11    C07    .
+ RJL      O10    C09    .      .
+ RJL      C07    C09    C08    .
+ RJL      C06    C07    N05    .
+ RJL      H06    C06    .      .
+ RJL      N05    C06    C04    .
+ RJL      C04    N05    H04    .
+ RJL      H04    C04    .      .
+ RJL      C08    C07    C03    .
+ RJL      H08    C08    .      .
+ RJL      C03    C08    O02    .
+ RJL      O02    C03    C01    .
+ RJL      C01    O02    H011   .
+ RJL      H013   C01    .      .
+ RJL      H012   C01    .      .
+ RJL      H011   C01    .      END
+ RJL      C20    C19    .    ADD
+ RJL      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RJL      C17    C15       single      1.500    0.020
+ RJL      C22    C17       aromatic    1.384    0.020
+ RJL      N18    C17       aromatic    1.350    0.020
+ RJL      N14    C15       single      1.330    0.020
+ RJL      C15    O16       double      1.220    0.020
+ RJL      C12    C13       single      1.524    0.020
+ RJL      C13    N14       single      1.450    0.020
+ RJL      N11    C12       single      1.450    0.020
+ RJL      C20    C19       aromatic    1.390    0.020
+ RJL      C20    C21       aromatic    1.390    0.020
+ RJL      C19    N18       aromatic    1.337    0.020
+ RJL      C01    O02       single      1.426    0.020
+ RJL      C03    C04       aromatic    1.390    0.020
+ RJL      C03    C08       aromatic    1.390    0.020
+ RJL      O02    C03       single      1.370    0.020
+ RJL      C04    N05       aromatic    1.337    0.020
+ RJL      C06    C07       aromatic    1.390    0.020
+ RJL      N05    C06       deloc       1.337    0.020
+ RJL      C08    C07       aromatic    1.390    0.020
+ RJL      C07    C09       single      1.500    0.020
+ RJL      C09    N11       single      1.330    0.020
+ RJL      O10    C09       double      1.220    0.020
+ RJL      C21    C22       aromatic    1.390    0.020
+ RJL      O23    C22       single      1.362    0.020
+ RJL      H131   C13       single      1.092    0.020
+ RJL      H132   C13       single      1.092    0.020
+ RJL      H121   C12       single      1.092    0.020
+ RJL      H122   C12       single      1.092    0.020
+ RJL      H20    C20       single      1.083    0.020
+ RJL      H19    C19       single      1.083    0.020
+ RJL      H011   C01       single      1.059    0.020
+ RJL      H012   C01       single      1.059    0.020
+ RJL      H013   C01       single      1.059    0.020
+ RJL      H04    C04       single      1.083    0.020
+ RJL      H06    C06       single      1.083    0.020
+ RJL      H08    C08       single      1.083    0.020
+ RJL      H21    C21       single      1.083    0.020
+ RJL      HN11   N11       single      1.010    0.020
+ RJL      HN14   N14       single      1.010    0.020
+ RJL      HO23   O23       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RJL      O16    C15    C17     120.500    3.000
+ RJL      O16    C15    N14     123.000    3.000
+ RJL      C17    C15    N14     120.000    3.000
+ RJL      C15    C17    N18     120.000    3.000
+ RJL      C15    C17    C22     120.000    3.000
+ RJL      N18    C17    C22     120.000    3.000
+ RJL      C17    N18    C19     120.000    3.000
+ RJL      N18    C19    H19     120.000    3.000
+ RJL      N18    C19    C20     120.000    3.000
+ RJL      H19    C19    C20     120.000    3.000
+ RJL      C17    C22    O23     120.000    3.000
+ RJL      C17    C22    C21     120.000    3.000
+ RJL      O23    C22    C21     120.000    3.000
+ RJL      C22    O23    HO23    109.470    3.000
+ RJL      C22    C21    H21     120.000    3.000
+ RJL      C22    C21    C20     120.000    3.000
+ RJL      H21    C21    C20     120.000    3.000
+ RJL      C21    C20    H20     120.000    3.000
+ RJL      C21    C20    C19     120.000    3.000
+ RJL      H20    C20    C19     120.000    3.000
+ RJL      C15    N14    HN14    120.000    3.000
+ RJL      C15    N14    C13     121.500    3.000
+ RJL      HN14   N14    C13     118.500    3.000
+ RJL      N14    C13    H131    109.470    3.000
+ RJL      N14    C13    H132    109.470    3.000
+ RJL      N14    C13    C12     112.000    3.000
+ RJL      H131   C13    H132    107.900    3.000
+ RJL      H131   C13    C12     109.470    3.000
+ RJL      H132   C13    C12     109.470    3.000
+ RJL      C13    C12    H121    109.470    3.000
+ RJL      C13    C12    H122    109.470    3.000
+ RJL      C13    C12    N11     112.000    3.000
+ RJL      H121   C12    H122    107.900    3.000
+ RJL      H121   C12    N11     109.470    3.000
+ RJL      H122   C12    N11     109.470    3.000
+ RJL      C12    N11    HN11    118.500    3.000
+ RJL      C12    N11    C09     121.500    3.000
+ RJL      HN11   N11    C09     120.000    3.000
+ RJL      N11    C09    O10     123.000    3.000
+ RJL      N11    C09    C07     120.000    3.000
+ RJL      O10    C09    C07     120.500    3.000
+ RJL      C09    C07    C06     120.000    3.000
+ RJL      C09    C07    C08     120.000    3.000
+ RJL      C06    C07    C08     120.000    3.000
+ RJL      C07    C06    H06     120.000    3.000
+ RJL      C07    C06    N05     120.000    3.000
+ RJL      H06    C06    N05     120.000    3.000
+ RJL      C06    N05    C04     120.000    3.000
+ RJL      N05    C04    H04     120.000    3.000
+ RJL      N05    C04    C03     120.000    3.000
+ RJL      H04    C04    C03     120.000    3.000
+ RJL      C07    C08    H08     120.000    3.000
+ RJL      C07    C08    C03     120.000    3.000
+ RJL      H08    C08    C03     120.000    3.000
+ RJL      C08    C03    O02     120.000    3.000
+ RJL      C08    C03    C04     120.000    3.000
+ RJL      O02    C03    C04     120.000    3.000
+ RJL      C03    O02    C01     120.000    3.000
+ RJL      O02    C01    H013    109.470    3.000
+ RJL      O02    C01    H012    109.470    3.000
+ RJL      O02    C01    H011    109.470    3.000
+ RJL      H013   C01    H012    109.470    3.000
+ RJL      H013   C01    H011    109.470    3.000
+ RJL      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RJL      var_1            O16    C15    C17    C22              179.193           20.000   3
+ RJL      CONST_1          C15    C17    N18    C19                0.000            0.000   0
+ RJL      CONST_2          C17    N18    C19    C20                0.000            0.000   0
+ RJL      CONST_3          C15    C17    C22    C21                0.000            0.000   0
+ RJL      var_2            C17    C22    O23    HO23             180.000           20.000   3
+ RJL      CONST_4          C17    C22    C21    C20                0.000            0.000   0
+ RJL      CONST_5          C22    C21    C20    C19                0.000            0.000   0
+ RJL      CONST_6          C21    C20    C19    N18                0.000            0.000   0
+ RJL      var_3            O16    C15    N14    C13              180.000           20.000   2
+ RJL      var_4            C15    N14    C13    C12                0.000           20.000   3
+ RJL      var_5            N14    C13    C12    N11              180.000           20.000   3
+ RJL      var_6            C13    C12    N11    C09                0.000           20.000   3
+ RJL      var_7            C12    N11    C09    C07              180.000           20.000   2
+ RJL      var_8            N11    C09    C07    C08              141.438           20.000   3
+ RJL      CONST_7          C09    C07    C06    N05                0.000            0.000   0
+ RJL      CONST_8          C07    C06    N05    C04                0.000            0.000   0
+ RJL      CONST_9          C06    N05    C04    C03                0.000            0.000   0
+ RJL      CONST_10         C09    C07    C08    C03                0.000            0.000   0
+ RJL      CONST_11         C07    C08    C03    O02                0.000            0.000   0
+ RJL      CONST_12         C08    C03    C04    N05                0.000            0.000   0
+ RJL      var_9            C08    C03    O02    C01              -21.308           20.000   3
+ RJL      var_10           C03    O02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RJL      plan-1            C17       0.020
+ RJL      plan-1            C15       0.020
+ RJL      plan-1            C22       0.020
+ RJL      plan-1            N18       0.020
+ RJL      plan-1            C20       0.020
+ RJL      plan-1            C19       0.020
+ RJL      plan-1            C21       0.020
+ RJL      plan-1            H20       0.020
+ RJL      plan-1            H19       0.020
+ RJL      plan-1            H21       0.020
+ RJL      plan-1            O23       0.020
+ RJL      plan-2            C15       0.020
+ RJL      plan-2            C17       0.020
+ RJL      plan-2            N14       0.020
+ RJL      plan-2            O16       0.020
+ RJL      plan-2            HN14      0.020
+ RJL      plan-3            C03       0.020
+ RJL      plan-3            C04       0.020
+ RJL      plan-3            C08       0.020
+ RJL      plan-3            O02       0.020
+ RJL      plan-3            C06       0.020
+ RJL      plan-3            C07       0.020
+ RJL      plan-3            N05       0.020
+ RJL      plan-3            H04       0.020
+ RJL      plan-3            H06       0.020
+ RJL      plan-3            C09       0.020
+ RJL      plan-3            H08       0.020
+ RJL      plan-4            C09       0.020
+ RJL      plan-4            C07       0.020
+ RJL      plan-4            N11       0.020
+ RJL      plan-4            O10       0.020
+ RJL      plan-4            HN11      0.020
+ RJL      plan-5            N11       0.020
+ RJL      plan-5            C12       0.020
+ RJL      plan-5            C09       0.020
+ RJL      plan-5            HN11      0.020
+ RJL      plan-6            N14       0.020
+ RJL      plan-6            C15       0.020
+ RJL      plan-6            C13       0.020
+ RJL      plan-6            HN14      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

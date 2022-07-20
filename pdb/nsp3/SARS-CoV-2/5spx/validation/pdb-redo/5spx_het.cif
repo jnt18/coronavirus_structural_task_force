@@ -1,0 +1,290 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QIW      QIW '.                                   ' .                  35  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QIW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QIW           O16    O    OC       -1.000    -43.630  -31.574    4.466
+ QIW           C14    C    C         0.000    -43.606  -30.732    3.529
+ QIW           O15    O    OC        0.000    -43.257  -29.541    3.751
+ QIW           C13    C    CR5       0.000    -43.989  -31.181    2.120
+ QIW           C12    C    CR5       0.000    -45.253  -31.613    1.650
+ QIW           N20    N    NR5       0.000    -45.076  -31.899    0.378
+ QIW           C21    C    CH3       0.000    -46.061  -32.383   -0.560
+ QIW           H213   H    H         0.000    -46.442  -33.304   -0.213
+ QIW           H212   H    H         0.000    -46.841  -31.675   -0.634
+ QIW           H211   H    H         0.000    -45.602  -32.515   -1.502
+ QIW           N19    N    NRD5      0.000    -43.821  -31.691    0.008
+ QIW           C17    C    CR5       0.000    -43.120  -31.258    1.017
+ QIW           C18    C    CH3       0.000    -41.641  -30.899    1.006
+ QIW           H183   H    H         0.000    -41.070  -31.749    0.730
+ QIW           H182   H    H         0.000    -41.468  -30.120    0.308
+ QIW           H181   H    H         0.000    -41.345  -30.576    1.972
+ QIW           C09    C    CR6       0.000    -46.511  -31.700    2.523
+ QIW           C10    C    CR16      0.000    -47.329  -32.835    2.608
+ QIW           H10    H    H         0.000    -47.100  -33.721    2.029
+ QIW           C08    C    CR16      0.000    -46.841  -30.603    3.309
+ QIW           H08    H    H         0.000    -46.216  -29.720    3.269
+ QIW           N07    N    NRD6      0.000    -47.887  -30.607    4.097
+ QIW           C06    C    CR56      0.000    -48.692  -31.660    4.193
+ QIW           C11    C    CR56      0.000    -48.455  -32.807    3.458
+ QIW           N05    N    NRD5      0.000    -49.784  -31.818    4.937
+ QIW           C04    C    CR15      0.000    -50.274  -33.010    4.730
+ QIW           H04    H    H         0.000    -51.161  -33.406    5.208
+ QIW           C03    C    CR5       0.000    -49.508  -33.686    3.825
+ QIW           C02    C    CH2       0.000    -49.908  -35.105    3.437
+ QIW           H021   H    H         0.000    -50.738  -35.031    2.732
+ QIW           H022   H    H         0.000    -50.246  -35.611    4.344
+ QIW           C01    C    CH3       0.000    -48.776  -35.896    2.807
+ QIW           H013   H    H         0.000    -48.448  -35.405    1.927
+ QIW           H012   H    H         0.000    -47.970  -35.968    3.491
+ QIW           H011   H    H         0.000    -49.117  -36.868    2.562
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QIW      O16    n/a    C14    START
+ QIW      C14    O16    C13    .
+ QIW      O15    C14    .      .
+ QIW      C13    C14    C12    .
+ QIW      C12    C13    C09    .
+ QIW      N20    C12    N19    .
+ QIW      C21    N20    H211   .
+ QIW      H213   C21    .      .
+ QIW      H212   C21    .      .
+ QIW      H211   C21    .      .
+ QIW      N19    N20    C17    .
+ QIW      C17    N19    C18    .
+ QIW      C18    C17    H181   .
+ QIW      H183   C18    .      .
+ QIW      H182   C18    .      .
+ QIW      H181   C18    .      .
+ QIW      C09    C12    C08    .
+ QIW      C10    C09    H10    .
+ QIW      H10    C10    .      .
+ QIW      C08    C09    N07    .
+ QIW      H08    C08    .      .
+ QIW      N07    C08    C06    .
+ QIW      C06    N07    N05    .
+ QIW      C11    C06    .      .
+ QIW      N05    C06    C04    .
+ QIW      C04    N05    C03    .
+ QIW      H04    C04    .      .
+ QIW      C03    C04    C02    .
+ QIW      C02    C03    C01    .
+ QIW      H021   C02    .      .
+ QIW      H022   C02    .      .
+ QIW      C01    C02    H011   .
+ QIW      H013   C01    .      .
+ QIW      H012   C01    .      .
+ QIW      H011   C01    .      END
+ QIW      C17    C13    .    ADD
+ QIW      C11    C10    .    ADD
+ QIW      C11    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QIW      C18    C17       single      1.506    0.020
+ QIW      C17    C13       aromatic    1.390    0.020
+ QIW      C17    N19       aromatic    1.350    0.020
+ QIW      C13    C14       single      1.490    0.020
+ QIW      O15    C14       deloc       1.250    0.020
+ QIW      C14    O16       deloc       1.250    0.020
+ QIW      C12    C13       aromatic    1.390    0.020
+ QIW      C09    C12       single      1.490    0.020
+ QIW      N20    C12       single      1.337    0.020
+ QIW      C11    C10       aromatic    1.390    0.020
+ QIW      C11    C03       aromatic    1.390    0.020
+ QIW      C11    C06       aromatic    1.390    0.020
+ QIW      C10    C09       aromatic    1.390    0.020
+ QIW      C01    C02       single      1.513    0.020
+ QIW      C02    C03       single      1.510    0.020
+ QIW      C03    C04       aromatic    1.387    0.020
+ QIW      C04    N05       aromatic    1.350    0.020
+ QIW      N05    C06       aromat      1.350    0.020
+ QIW      C06    N07       aromat      1.355    0.020
+ QIW      C08    C09       aromatic    1.390    0.020
+ QIW      N07    C08       aromatic    1.337    0.020
+ QIW      C21    N20       single      1.485    0.020
+ QIW      N19    N20       single      1.402    0.020
+ QIW      H181   C18       single      1.059    0.020
+ QIW      H182   C18       single      1.059    0.020
+ QIW      H183   C18       single      1.059    0.020
+ QIW      H10    C10       single      1.083    0.020
+ QIW      H011   C01       single      1.059    0.020
+ QIW      H012   C01       single      1.059    0.020
+ QIW      H013   C01       single      1.059    0.020
+ QIW      H021   C02       single      1.092    0.020
+ QIW      H022   C02       single      1.092    0.020
+ QIW      H04    C04       single      1.083    0.020
+ QIW      H08    C08       single      1.083    0.020
+ QIW      H211   C21       single      1.059    0.020
+ QIW      H212   C21       single      1.059    0.020
+ QIW      H213   C21       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QIW      O16    C14    O15     123.000    3.000
+ QIW      O16    C14    C13     120.000    3.000
+ QIW      O15    C14    C13     120.000    3.000
+ QIW      C14    C13    C12     117.000    3.000
+ QIW      C14    C13    C17     117.000    3.000
+ QIW      C12    C13    C17     108.000    3.000
+ QIW      C13    C12    N20     108.000    3.000
+ QIW      C13    C12    C09     126.000    3.000
+ QIW      N20    C12    C09     126.000    3.000
+ QIW      C12    N20    C21     126.000    3.000
+ QIW      C12    N20    N19     108.000    3.000
+ QIW      C21    N20    N19     108.000    3.000
+ QIW      N20    C21    H213    109.470    3.000
+ QIW      N20    C21    H212    109.470    3.000
+ QIW      N20    C21    H211    109.470    3.000
+ QIW      H213   C21    H212    109.470    3.000
+ QIW      H213   C21    H211    109.470    3.000
+ QIW      H212   C21    H211    109.470    3.000
+ QIW      N20    N19    C17     108.000    3.000
+ QIW      N19    C17    C18     126.000    3.000
+ QIW      N19    C17    C13     108.000    3.000
+ QIW      C18    C17    C13     126.000    3.000
+ QIW      C17    C18    H183    109.470    3.000
+ QIW      C17    C18    H182    109.470    3.000
+ QIW      C17    C18    H181    109.470    3.000
+ QIW      H183   C18    H182    109.470    3.000
+ QIW      H183   C18    H181    109.470    3.000
+ QIW      H182   C18    H181    109.470    3.000
+ QIW      C12    C09    C10     120.000    3.000
+ QIW      C12    C09    C08     120.000    3.000
+ QIW      C10    C09    C08     120.000    3.000
+ QIW      C09    C10    H10     120.000    3.000
+ QIW      C09    C10    C11     120.000    3.000
+ QIW      H10    C10    C11     120.000    3.000
+ QIW      C09    C08    H08     120.000    3.000
+ QIW      C09    C08    N07     120.000    3.000
+ QIW      H08    C08    N07     120.000    3.000
+ QIW      C08    N07    C06     120.000    3.000
+ QIW      N07    C06    C11     120.000    3.000
+ QIW      N07    C06    N05     120.000    3.000
+ QIW      C11    C06    N05     108.000    3.000
+ QIW      C06    C11    C10     120.000    3.000
+ QIW      C06    C11    C03     108.000    3.000
+ QIW      C10    C11    C03     126.000    3.000
+ QIW      C06    N05    C04     108.000    3.000
+ QIW      N05    C04    H04     126.000    3.000
+ QIW      N05    C04    C03     108.000    3.000
+ QIW      H04    C04    C03     126.000    3.000
+ QIW      C04    C03    C02     126.000    3.000
+ QIW      C04    C03    C11     108.000    3.000
+ QIW      C02    C03    C11     126.000    3.000
+ QIW      C03    C02    H021    109.470    3.000
+ QIW      C03    C02    H022    109.470    3.000
+ QIW      C03    C02    C01     109.470    3.000
+ QIW      H021   C02    H022    107.900    3.000
+ QIW      H021   C02    C01     109.470    3.000
+ QIW      H022   C02    C01     109.470    3.000
+ QIW      C02    C01    H013    109.470    3.000
+ QIW      C02    C01    H012    109.470    3.000
+ QIW      C02    C01    H011    109.470    3.000
+ QIW      H013   C01    H012    109.470    3.000
+ QIW      H013   C01    H011    109.470    3.000
+ QIW      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QIW      var_1            O16    C14    C13    C12               66.442           20.000   3
+ QIW      CONST_1          C14    C13    C12    C09                0.000            0.000   0
+ QIW      CONST_2          C13    C12    N20    N19                0.186            0.000   0
+ QIW      var_2            C12    N20    C21    H211             180.000           20.000   3
+ QIW      CONST_3          C12    N20    N19    C17               -0.114            0.000   0
+ QIW      CONST_4          N20    N19    C17    C18                0.000            0.000   0
+ QIW      CONST_5          N19    C17    C13    C14                0.000            0.000   0
+ QIW      var_3            N19    C17    C18    H181             180.000           20.000   3
+ QIW      var_4            C13    C12    C09    C08               48.759           20.000   3
+ QIW      CONST_6          C12    C09    C10    C11                0.000            0.000   0
+ QIW      CONST_7          C12    C09    C08    N07                0.000            0.000   0
+ QIW      CONST_8          C09    C08    N07    C06                0.000            0.000   0
+ QIW      CONST_9          C08    N07    C06    N05              180.000            0.000   0
+ QIW      CONST_10         N07    C06    C11    C10              180.000            0.000   0
+ QIW      CONST_11         C06    C11    C10    C09              180.000            0.000   0
+ QIW      CONST_12         C06    C11    C03    C04              180.000            0.000   0
+ QIW      CONST_13         N07    C06    N05    C04              180.000            0.000   0
+ QIW      CONST_14         C06    N05    C04    C03                0.000            0.000   0
+ QIW      CONST_15         N05    C04    C03    C02                0.000            0.000   0
+ QIW      var_5            C04    C03    C02    C01                0.000           20.000   2
+ QIW      var_6            C03    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QIW      plan-1            C17       0.020
+ QIW      plan-1            C18       0.020
+ QIW      plan-1            C13       0.020
+ QIW      plan-1            N19       0.020
+ QIW      plan-1            C12       0.020
+ QIW      plan-1            N20       0.020
+ QIW      plan-1            C14       0.020
+ QIW      plan-1            C09       0.020
+ QIW      plan-1            C21       0.020
+ QIW      plan-2            C14       0.020
+ QIW      plan-2            C13       0.020
+ QIW      plan-2            O15       0.020
+ QIW      plan-2            O16       0.020
+ QIW      plan-3            C11       0.020
+ QIW      plan-3            C10       0.020
+ QIW      plan-3            C03       0.020
+ QIW      plan-3            C06       0.020
+ QIW      plan-3            C04       0.020
+ QIW      plan-3            N05       0.020
+ QIW      plan-3            C09       0.020
+ QIW      plan-3            H10       0.020
+ QIW      plan-3            C08       0.020
+ QIW      plan-3            N07       0.020
+ QIW      plan-3            C02       0.020
+ QIW      plan-3            H04       0.020
+ QIW      plan-3            H08       0.020
+ QIW      plan-3            C12       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

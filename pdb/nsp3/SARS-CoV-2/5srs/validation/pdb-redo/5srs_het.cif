@@ -1,0 +1,638 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RFI      RFI '.                                   ' .                  37  25 .
+RFU      RFU '.                                   ' .                  38  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RFI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RFI           F01    F    F         0.000    -51.996  -28.845    4.966
+ RFI           C02    C    CR6       0.000    -50.632  -28.925    4.858
+ RFI           C25    C    CSP       0.000    -49.996  -28.925    3.562
+ RFI           C24    C    CR16      0.000    -48.650  -29.006    3.454
+ RFI           H24    H    H         0.000    -48.193  -29.009    2.472
+ RFI           C23    C    CR56      0.000    -47.781  -29.092    4.673
+ RFI           C07    C    CR56      0.000    -46.302  -29.188    4.986
+ RFI           C08    C    CR6       0.000    -45.045  -29.251    4.287
+ RFI           N20    N    NRD6      0.000    -43.961  -29.331    4.931
+ RFI           C21    C    CR16      0.000    -43.961  -29.368    6.243
+ RFI           H21    H    H         0.000    -43.018  -29.440    6.771
+ RFI           N22    N    NRD6      0.000    -45.074  -29.320    6.926
+ RFI           C06    C    CR56      0.000    -46.226  -29.230    6.346
+ RFI           N05    N    NRD5      0.000    -47.499  -29.170    6.883
+ RFI           C04    C    CR56      0.000    -48.415  -29.086    5.900
+ RFI           C03    C    CR16      0.000    -49.835  -29.004    6.005
+ RFI           H03    H    H         0.000    -50.301  -29.003    6.983
+ RFI           N09    N    NR5       0.000    -44.904  -29.235    2.806
+ RFI           C10    C    CR15      0.000    -46.009  -29.653    1.807
+ RFI           H10    H    H         0.000    -47.046  -29.878    2.024
+ RFI           C11    C    CR15      0.000    -45.406  -29.674    0.629
+ RFI           H11    H    H         0.000    -45.761  -29.298   -0.322
+ RFI           C19    C    CR15      0.000    -43.628  -29.842    2.121
+ RFI           H19    H    H         0.000    -42.618  -29.815    2.511
+ RFI           C12    C    CR5       0.000    -44.015  -30.398    0.968
+ RFI           N13    N    N         0.000    -44.271  -31.858    1.043
+ RFI           C14    C    CH2       0.000    -44.590  -32.676   -0.069
+ RFI           H141   H    H         0.000    -43.716  -32.811   -0.710
+ RFI           H142   H    H         0.000    -45.402  -32.234   -0.651
+ RFI           C15    C    CH2       0.000    -45.033  -34.027    0.479
+ RFI           H151   H    H         0.000    -44.621  -34.842   -0.120
+ RFI           H152   H    H         0.000    -46.122  -34.101    0.492
+ RFI           O16    O    O2        0.000    -44.537  -34.114    1.802
+ RFI           C17    C    CH1       0.000    -44.255  -32.743    2.247
+ RFI           H17    H    H         0.000    -43.179  -32.917    2.107
+ RFI           O18    O    OH1       0.000    -44.063  -32.430    3.347
+ RFI           HO18   H    H         0.000    -43.912  -31.494    3.329
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RFI      F01    n/a    C02    START
+ RFI      C02    F01    C25    .
+ RFI      C25    C02    C24    .
+ RFI      C24    C25    C23    .
+ RFI      H24    C24    .      .
+ RFI      C23    C24    C07    .
+ RFI      C07    C23    C08    .
+ RFI      C08    C07    N09    .
+ RFI      N20    C08    C21    .
+ RFI      C21    N20    N22    .
+ RFI      H21    C21    .      .
+ RFI      N22    C21    C06    .
+ RFI      C06    N22    N05    .
+ RFI      N05    C06    C04    .
+ RFI      C04    N05    C03    .
+ RFI      C03    C04    H03    .
+ RFI      H03    C03    .      .
+ RFI      N09    C08    C19    .
+ RFI      C10    N09    C11    .
+ RFI      H10    C10    .      .
+ RFI      C11    C10    H11    .
+ RFI      H11    C11    .      .
+ RFI      C19    N09    C12    .
+ RFI      H19    C19    .      .
+ RFI      C12    C19    N13    .
+ RFI      N13    C12    C14    .
+ RFI      C14    N13    C15    .
+ RFI      H141   C14    .      .
+ RFI      H142   C14    .      .
+ RFI      C15    C14    O16    .
+ RFI      H151   C15    .      .
+ RFI      H152   C15    .      .
+ RFI      O16    C15    C17    .
+ RFI      C17    O16    O18    .
+ RFI      H17    C17    .      .
+ RFI      O18    C17    HO18   .
+ RFI      HO18   O18    .      END
+ RFI      C17    N13    .    ADD
+ RFI      C12    C11    .    ADD
+ RFI      C02    C03    .    ADD
+ RFI      C04    C23    .    ADD
+ RFI      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RFI      C17    N13       single      1.455    0.020
+ RFI      C17    O16       single      1.426    0.020
+ RFI      O18    C17       single      1.432    0.020
+ RFI      C15    C14       single      1.524    0.020
+ RFI      O16    C15       single      1.426    0.020
+ RFI      C14    N13       single      1.455    0.020
+ RFI      C12    C11       single      1.387    0.020
+ RFI      C12    C19       double      1.387    0.020
+ RFI      N13    C12       single      1.365    0.020
+ RFI      C11    C10       double      1.380    0.020
+ RFI      C10    N09       single      1.337    0.020
+ RFI      C19    N09       single      1.337    0.020
+ RFI      C02    C03       aromatic    1.390    0.020
+ RFI      C25    C02       aromatic    1.285    0.020
+ RFI      C02    F01       single      1.345    0.020
+ RFI      C03    C04       aromatic    1.390    0.020
+ RFI      C04    C23       aromatic    1.390    0.020
+ RFI      C04    N05       aromatic    1.350    0.020
+ RFI      C06    C07       aromatic    1.390    0.020
+ RFI      N05    C06       aromatic    1.350    0.020
+ RFI      C06    N22       aromatic    1.355    0.020
+ RFI      C08    C07       aromatic    1.390    0.020
+ RFI      C07    C23       single      1.490    0.020
+ RFI      N09    C08       single      1.337    0.020
+ RFI      N20    C08       double      1.350    0.020
+ RFI      C21    N20       aromatic    1.337    0.020
+ RFI      N22    C21       aromatic    1.337    0.020
+ RFI      C23    C24       single      1.390    0.020
+ RFI      C24    C25       double      1.285    0.020
+ RFI      H17    C17       single      1.099    0.020
+ RFI      H151   C15       single      1.092    0.020
+ RFI      H152   C15       single      1.092    0.020
+ RFI      H141   C14       single      1.092    0.020
+ RFI      H142   C14       single      1.092    0.020
+ RFI      H11    C11       single      1.083    0.020
+ RFI      H10    C10       single      1.083    0.020
+ RFI      H19    C19       single      1.083    0.020
+ RFI      H03    C03       single      1.083    0.020
+ RFI      H21    C21       single      1.083    0.020
+ RFI      H24    C24       single      1.083    0.020
+ RFI      HO18   O18       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RFI      F01    C02    C25     120.000    3.000
+ RFI      F01    C02    C03     120.000    3.000
+ RFI      C25    C02    C03     120.000    3.000
+ RFI      C02    C25    C24     180.000    3.000
+ RFI      C25    C24    H24     120.000    3.000
+ RFI      C25    C24    C23     120.000    3.000
+ RFI      H24    C24    C23     120.000    3.000
+ RFI      C24    C23    C07     120.000    3.000
+ RFI      C24    C23    C04     120.000    3.000
+ RFI      C07    C23    C04     120.000    3.000
+ RFI      C23    C07    C08     120.000    3.000
+ RFI      C23    C07    C06     120.000    3.000
+ RFI      C08    C07    C06     120.000    3.000
+ RFI      C07    C08    N20     120.000    3.000
+ RFI      C07    C08    N09     120.000    3.000
+ RFI      N20    C08    N09     120.000    3.000
+ RFI      C08    N20    C21     120.000    3.000
+ RFI      N20    C21    H21     120.000    3.000
+ RFI      N20    C21    N22     120.000    3.000
+ RFI      H21    C21    N22     120.000    3.000
+ RFI      C21    N22    C06     120.000    3.000
+ RFI      N22    C06    N05     120.000    3.000
+ RFI      N22    C06    C07     120.000    3.000
+ RFI      N05    C06    C07     108.000    3.000
+ RFI      C06    N05    C04     108.000    3.000
+ RFI      N05    C04    C03     132.000    3.000
+ RFI      N05    C04    C23     108.000    3.000
+ RFI      C03    C04    C23     120.000    3.000
+ RFI      C04    C03    H03     120.000    3.000
+ RFI      C04    C03    C02     120.000    3.000
+ RFI      H03    C03    C02     120.000    3.000
+ RFI      C08    N09    C10     108.000    3.000
+ RFI      C08    N09    C19     108.000    3.000
+ RFI      C10    N09    C19     108.000    3.000
+ RFI      N09    C10    H10     126.000    3.000
+ RFI      N09    C10    C11     108.000    3.000
+ RFI      H10    C10    C11     126.000    3.000
+ RFI      C10    C11    H11     126.000    3.000
+ RFI      C10    C11    C12     108.000    3.000
+ RFI      H11    C11    C12     126.000    3.000
+ RFI      N09    C19    H19     126.000    3.000
+ RFI      N09    C19    C12     108.000    3.000
+ RFI      H19    C19    C12     126.000    3.000
+ RFI      C19    C12    N13     108.000    3.000
+ RFI      C19    C12    C11     108.000    3.000
+ RFI      N13    C12    C11     108.000    3.000
+ RFI      C12    N13    C14     120.000    3.000
+ RFI      C12    N13    C17     120.000    3.000
+ RFI      C14    N13    C17     112.000    3.000
+ RFI      N13    C14    H141    109.470    3.000
+ RFI      N13    C14    H142    109.470    3.000
+ RFI      N13    C14    C15     105.000    3.000
+ RFI      H141   C14    H142    107.900    3.000
+ RFI      H141   C14    C15     109.470    3.000
+ RFI      H142   C14    C15     109.470    3.000
+ RFI      C14    C15    H151    109.470    3.000
+ RFI      C14    C15    H152    109.470    3.000
+ RFI      C14    C15    O16     109.470    3.000
+ RFI      H151   C15    H152    107.900    3.000
+ RFI      H151   C15    O16     109.470    3.000
+ RFI      H152   C15    O16     109.470    3.000
+ RFI      C15    O16    C17     111.800    3.000
+ RFI      O16    C17    H17     109.470    3.000
+ RFI      O16    C17    O18     109.470    3.000
+ RFI      O16    C17    N13     109.500    3.000
+ RFI      H17    C17    O18     109.470    3.000
+ RFI      H17    C17    N13     109.470    3.000
+ RFI      O18    C17    N13     109.500    3.000
+ RFI      C17    O18    HO18    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RFI      CONST_1          F01    C02    C03    C04                0.000            0.000   0
+ RFI      CONST_2          F01    C02    C25    C24             -179.901            0.000   0
+ RFI      CONST_3          C02    C25    C24    C23               -0.263            0.000   0
+ RFI      CONST_4          C25    C24    C23    C07              180.000            0.000   0
+ RFI      CONST_5          C24    C23    C07    C08              180.000            0.000   0
+ RFI      CONST_6          C23    C07    C08    N09              180.000            0.000   0
+ RFI      CONST_7          C07    C08    N20    C21                0.000            0.000   0
+ RFI      CONST_8          C08    N20    C21    N22                0.000            0.000   0
+ RFI      CONST_9          N20    C21    N22    C06                0.000            0.000   0
+ RFI      CONST_10         C21    N22    C06    N05              180.000            0.000   0
+ RFI      CONST_11         N22    C06    C07    C23              180.000            0.000   0
+ RFI      CONST_12         N22    C06    N05    C04              180.000            0.000   0
+ RFI      CONST_13         C06    N05    C04    C03              180.000            0.000   0
+ RFI      CONST_14         N05    C04    C23    C24              180.000            0.000   0
+ RFI      CONST_15         N05    C04    C03    C02              180.000            0.000   0
+ RFI      var_1            C07    C08    N09    C19             -156.411           20.000   3
+ RFI      CONST_16         C08    N09    C10    C11              180.000            0.000   0
+ RFI      CONST_17         N09    C10    C11    C12               43.267            0.000   0
+ RFI      CONST_18         C08    N09    C19    C12              180.000            0.000   0
+ RFI      CONST_19         N09    C19    C12    N13                0.000            0.000   0
+ RFI      CONST_20         C19    C12    C11    C10                0.000            0.000   0
+ RFI      var_2            C19    C12    N13    C14             -174.964           20.000   3
+ RFI      var_3            C12    N13    C14    C15             -169.259           20.000   3
+ RFI      var_4            N13    C14    C15    O16              180.000           20.000   3
+ RFI      var_5            C14    C15    O16    C17               20.191           20.000   3
+ RFI      var_6            C15    O16    C17    O18              165.713           20.000   3
+ RFI      var_7            O16    C17    N13    C12                0.000           20.000   3
+ RFI      var_8            O16    C17    O18    HO18             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RFI      chir_01          C17    N13    O16    O18       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RFI      plan-1            C12       0.020
+ RFI      plan-1            C11       0.020
+ RFI      plan-1            C19       0.020
+ RFI      plan-1            N13       0.020
+ RFI      plan-1            C10       0.020
+ RFI      plan-1            N09       0.020
+ RFI      plan-1            H11       0.020
+ RFI      plan-1            H10       0.020
+ RFI      plan-1            H19       0.020
+ RFI      plan-1            C08       0.020
+ RFI      plan-2            C02       0.020
+ RFI      plan-2            C03       0.020
+ RFI      plan-2            C25       0.020
+ RFI      plan-2            F01       0.020
+ RFI      plan-2            C24       0.020
+ RFI      plan-2            C04       0.020
+ RFI      plan-2            H03       0.020
+ RFI      plan-2            C23       0.020
+ RFI      plan-2            N05       0.020
+ RFI      plan-2            C07       0.020
+ RFI      plan-2            H24       0.020
+ RFI      plan-2            C06       0.020
+ RFI      plan-2            C08       0.020
+ RFI      plan-2            C21       0.020
+ RFI      plan-2            N20       0.020
+ RFI      plan-2            N22       0.020
+ RFI      plan-2            N09       0.020
+ RFI      plan-2            H21       0.020
+ RFI      plan-3            N13       0.020
+ RFI      plan-3            C17       0.020
+ RFI      plan-3            C14       0.020
+ RFI      plan-3            C12       0.020
+#
+data_comp_RFU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RFU           O18    O    O         0.000    -47.168  -28.362   -0.507
+ RFU           C17    C    C         0.000    -46.232  -27.601   -0.534
+ RFU           O16    O    O2        0.000    -46.273  -26.246   -1.043
+ RFU           C15    C    CH2       0.000    -45.170  -25.580   -0.454
+ RFU           H152   H    H         0.000    -45.480  -25.048    0.448
+ RFU           H151   H    H         0.000    -44.728  -24.872   -1.159
+ RFU           N13    N    N         0.000    -44.861  -27.856   -0.056
+ RFU           C14    C    CH2       0.000    -44.163  -26.624   -0.097
+ RFU           H142   H    H         0.000    -43.376  -26.646   -0.854
+ RFU           H141   H    H         0.000    -43.725  -26.391    0.876
+ RFU           C12    C    C         0.000    -44.247  -29.196    0.430
+ RFU           C11    C    C1        0.000    -45.142  -30.169    0.526
+ RFU           H11    H    H         0.000    -45.340  -30.952   -0.186
+ RFU           C19    C    CH2       0.000    -43.754  -29.008    1.935
+ RFU           H191   H    H         0.000    -43.328  -28.018    2.111
+ RFU           H192   H    H         0.000    -43.033  -29.772    2.234
+ RFU           N09    N    N         0.000    -45.085  -29.172    2.785
+ RFU           C10    C    CH2       0.000    -45.890  -29.914    1.985
+ RFU           H102   H    H         0.000    -46.831  -29.383    1.825
+ RFU           H101   H    H         0.000    -46.092  -30.874    2.465
+ RFU           C08    C    CR6       0.000    -45.096  -29.215    4.243
+ RFU           C07    C    CR56      0.000    -46.340  -29.171    4.996
+ RFU           C23    C    CR56      0.000    -47.776  -29.081    4.688
+ RFU           C24    C    CR16      0.000    -48.567  -28.994    3.511
+ RFU           H24    H    H         0.000    -48.085  -28.985    2.541
+ RFU           C25    C    CR16      0.000    -49.978  -28.919    3.592
+ RFU           H25    H    H         0.000    -50.566  -28.853    2.685
+ RFU           C02    C    CR6       0.000    -50.614  -28.929    4.830
+ RFU           F01    F    F         0.000    -52.014  -28.854    4.910
+ RFU           N20    N    NRD6      0.000    -43.929  -29.304    4.887
+ RFU           C21    C    CR16      0.000    -43.899  -29.353    6.235
+ RFU           H21    H    H         0.000    -42.942  -29.424    6.737
+ RFU           N22    N    NRD6      0.000    -44.992  -29.317    6.954
+ RFU           C06    C    CR56      0.000    -46.249  -29.223    6.350
+ RFU           N05    N    NRD5      0.000    -47.503  -29.174    6.883
+ RFU           C04    C    CR56      0.000    -48.412  -29.088    5.907
+ RFU           C03    C    CR16      0.000    -49.846  -29.012    5.986
+ RFU           H03    H    H         0.000    -50.332  -29.019    6.954
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RFU      O18    n/a    C17    START
+ RFU      C17    O18    N13    .
+ RFU      O16    C17    C15    .
+ RFU      C15    O16    H151   .
+ RFU      H152   C15    .      .
+ RFU      H151   C15    .      .
+ RFU      N13    C17    C12    .
+ RFU      C14    N13    H141   .
+ RFU      H142   C14    .      .
+ RFU      H141   C14    .      .
+ RFU      C12    N13    C19    .
+ RFU      C11    C12    H11    .
+ RFU      H11    C11    .      .
+ RFU      C19    C12    N09    .
+ RFU      H191   C19    .      .
+ RFU      H192   C19    .      .
+ RFU      N09    C19    C08    .
+ RFU      C10    N09    H101   .
+ RFU      H102   C10    .      .
+ RFU      H101   C10    .      .
+ RFU      C08    N09    N20    .
+ RFU      C07    C08    C23    .
+ RFU      C23    C07    C24    .
+ RFU      C24    C23    C25    .
+ RFU      H24    C24    .      .
+ RFU      C25    C24    C02    .
+ RFU      H25    C25    .      .
+ RFU      C02    C25    F01    .
+ RFU      F01    C02    .      .
+ RFU      N20    C08    C21    .
+ RFU      C21    N20    N22    .
+ RFU      H21    C21    .      .
+ RFU      N22    C21    C06    .
+ RFU      C06    N22    N05    .
+ RFU      N05    C06    C04    .
+ RFU      C04    N05    C03    .
+ RFU      C03    C04    H03    .
+ RFU      H03    C03    .      END
+ RFU      C02    C03    .    ADD
+ RFU      C04    C23    .    ADD
+ RFU      C06    C07    .    ADD
+ RFU      C10    C11    .    ADD
+ RFU      C14    C15    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RFU      C02    C03       aromatic    1.390    0.020
+ RFU      C02    C25       aromatic    1.390    0.020
+ RFU      F01    C02       single      1.345    0.020
+ RFU      C03    C04       aromatic    1.390    0.020
+ RFU      C04    C23       aromatic    1.390    0.020
+ RFU      C04    N05       aromatic    1.350    0.020
+ RFU      C06    C07       double      1.490    0.020
+ RFU      N05    C06       aromatic    1.350    0.020
+ RFU      C06    N22       single      1.355    0.020
+ RFU      C07    C08       aromatic    1.390    0.020
+ RFU      C23    C07       single      1.490    0.020
+ RFU      C08    N09       single      1.400    0.020
+ RFU      N20    C08       aromatic    1.350    0.020
+ RFU      C10    C11       single      1.510    0.020
+ RFU      C10    N09       single      1.455    0.020
+ RFU      C11    C12       double      1.340    0.020
+ RFU      C19    C12       single      1.510    0.020
+ RFU      C12    N13       single      1.330    0.020
+ RFU      C14    C15       single      1.524    0.020
+ RFU      C14    N13       single      1.455    0.020
+ RFU      C15    O16       single      1.426    0.020
+ RFU      N13    C17       single      1.330    0.020
+ RFU      O16    C17       single      1.454    0.020
+ RFU      C17    O18       double      1.220    0.020
+ RFU      N09    C19       single      1.455    0.020
+ RFU      C21    N20       aromatic    1.337    0.020
+ RFU      N22    C21       aromatic    1.337    0.020
+ RFU      C24    C23       aromatic    1.390    0.020
+ RFU      C25    C24       aromatic    1.390    0.020
+ RFU      H03    C03       single      1.083    0.020
+ RFU      H101   C10       single      1.092    0.020
+ RFU      H102   C10       single      1.092    0.020
+ RFU      H11    C11       single      1.077    0.020
+ RFU      H141   C14       single      1.092    0.020
+ RFU      H142   C14       single      1.092    0.020
+ RFU      H151   C15       single      1.092    0.020
+ RFU      H152   C15       single      1.092    0.020
+ RFU      H191   C19       single      1.092    0.020
+ RFU      H192   C19       single      1.092    0.020
+ RFU      H21    C21       single      1.083    0.020
+ RFU      H24    C24       single      1.083    0.020
+ RFU      H25    C25       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RFU      O18    C17    O16     119.000    3.000
+ RFU      O18    C17    N13     123.000    3.000
+ RFU      O16    C17    N13     120.000    3.000
+ RFU      C17    O16    C15     120.000    3.000
+ RFU      O16    C15    H152    109.470    3.000
+ RFU      O16    C15    H151    109.470    3.000
+ RFU      O16    C15    C14     109.470    3.000
+ RFU      H152   C15    H151    107.900    3.000
+ RFU      H152   C15    C14     109.470    3.000
+ RFU      H151   C15    C14     109.470    3.000
+ RFU      C17    N13    C14     127.000    3.000
+ RFU      C17    N13    C12     120.000    3.000
+ RFU      C14    N13    C12     127.000    3.000
+ RFU      N13    C14    H142    109.470    3.000
+ RFU      N13    C14    H141    109.470    3.000
+ RFU      N13    C14    C15     105.000    3.000
+ RFU      H142   C14    H141    107.900    3.000
+ RFU      H142   C14    C15     109.470    3.000
+ RFU      H141   C14    C15     109.470    3.000
+ RFU      N13    C12    C11     116.500    3.000
+ RFU      N13    C12    C19     116.500    3.000
+ RFU      C11    C12    C19     120.000    3.000
+ RFU      C12    C11    H11     120.000    3.000
+ RFU      C12    C11    C10     120.500    3.000
+ RFU      H11    C11    C10     120.000    3.000
+ RFU      C12    C19    H191    109.470    3.000
+ RFU      C12    C19    H192    109.470    3.000
+ RFU      C12    C19    N09     109.500    3.000
+ RFU      H191   C19    H192    107.900    3.000
+ RFU      H191   C19    N09     109.470    3.000
+ RFU      H192   C19    N09     109.470    3.000
+ RFU      C19    N09    C10     120.000    3.000
+ RFU      C19    N09    C08     120.000    3.000
+ RFU      C10    N09    C08     120.000    3.000
+ RFU      N09    C10    H102    109.470    3.000
+ RFU      N09    C10    H101    109.470    3.000
+ RFU      N09    C10    C11     109.500    3.000
+ RFU      H102   C10    H101    107.900    3.000
+ RFU      H102   C10    C11     109.470    3.000
+ RFU      H101   C10    C11     109.470    3.000
+ RFU      N09    C08    C07     120.000    3.000
+ RFU      N09    C08    N20     120.000    3.000
+ RFU      C07    C08    N20     120.000    3.000
+ RFU      C08    C07    C23     120.000    3.000
+ RFU      C08    C07    C06     120.000    3.000
+ RFU      C23    C07    C06     120.000    3.000
+ RFU      C07    C23    C24     120.000    3.000
+ RFU      C07    C23    C04     120.000    3.000
+ RFU      C24    C23    C04     120.000    3.000
+ RFU      C23    C24    H24     120.000    3.000
+ RFU      C23    C24    C25     120.000    3.000
+ RFU      H24    C24    C25     120.000    3.000
+ RFU      C24    C25    H25     120.000    3.000
+ RFU      C24    C25    C02     120.000    3.000
+ RFU      H25    C25    C02     120.000    3.000
+ RFU      C25    C02    F01     120.000    3.000
+ RFU      C25    C02    C03     120.000    3.000
+ RFU      F01    C02    C03     120.000    3.000
+ RFU      C08    N20    C21     120.000    3.000
+ RFU      N20    C21    H21     120.000    3.000
+ RFU      N20    C21    N22     120.000    3.000
+ RFU      H21    C21    N22     120.000    3.000
+ RFU      C21    N22    C06     120.000    3.000
+ RFU      N22    C06    N05     120.000    3.000
+ RFU      N22    C06    C07     120.000    3.000
+ RFU      N05    C06    C07     108.000    3.000
+ RFU      C06    N05    C04     108.000    3.000
+ RFU      N05    C04    C03     132.000    3.000
+ RFU      N05    C04    C23     108.000    3.000
+ RFU      C03    C04    C23     120.000    3.000
+ RFU      C04    C03    H03     120.000    3.000
+ RFU      C04    C03    C02     120.000    3.000
+ RFU      H03    C03    C02     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RFU      var_1            O18    C17    O16    C15              159.041           20.000   3
+ RFU      var_2            C17    O16    C15    C14               24.374           20.000   3
+ RFU      var_3            O18    C17    N13    C12              180.000           20.000   2
+ RFU      var_4            C17    N13    C14    C15                6.493           20.000   3
+ RFU      var_5            N13    C14    C15    O16              180.000           20.000   3
+ RFU      var_6            C17    N13    C12    C19              180.000           20.000   2
+ RFU      var_7            N13    C12    C11    C10              -81.277           20.000   3
+ RFU      var_8            N13    C12    C19    N09              180.000           20.000   3
+ RFU      var_9            C12    C19    N09    C08              173.392           20.000   3
+ RFU      var_10           C19    N09    C10    C11               -4.077           20.000   3
+ RFU      var_11           N09    C10    C11    C12              -21.865           20.000   3
+ RFU      var_12           C19    N09    C08    N20               -9.403           20.000   3
+ RFU      CONST_1          N09    C08    C07    C23              180.000            0.000   0
+ RFU      CONST_2          C08    C07    C23    C24              180.000            0.000   0
+ RFU      CONST_3          C07    C23    C24    C25              180.000            0.000   0
+ RFU      CONST_4          C23    C24    C25    C02                0.000            0.000   0
+ RFU      CONST_5          C24    C25    C02    F01                0.000            0.000   0
+ RFU      CONST_6          C25    C02    C03    C04                0.000            0.000   0
+ RFU      CONST_7          N09    C08    N20    C21                0.000            0.000   0
+ RFU      CONST_8          C08    N20    C21    N22                0.000            0.000   0
+ RFU      CONST_9          N20    C21    N22    C06                0.000            0.000   0
+ RFU      CONST_10         C21    N22    C06    N05              180.000            0.000   0
+ RFU      CONST_11         N22    C06    C07    C08              180.000            0.000   0
+ RFU      CONST_12         N22    C06    N05    C04              180.000            0.000   0
+ RFU      CONST_13         C06    N05    C04    C03              180.000            0.000   0
+ RFU      CONST_14         N05    C04    C23    C07              180.000            0.000   0
+ RFU      CONST_15         N05    C04    C03    C02              180.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RFU      plan-1            C02       0.020
+ RFU      plan-1            C03       0.020
+ RFU      plan-1            C25       0.020
+ RFU      plan-1            F01       0.020
+ RFU      plan-1            C24       0.020
+ RFU      plan-1            C04       0.020
+ RFU      plan-1            H25       0.020
+ RFU      plan-1            C23       0.020
+ RFU      plan-1            C06       0.020
+ RFU      plan-1            C07       0.020
+ RFU      plan-1            N05       0.020
+ RFU      plan-1            C08       0.020
+ RFU      plan-1            C21       0.020
+ RFU      plan-1            N20       0.020
+ RFU      plan-1            N22       0.020
+ RFU      plan-1            N09       0.020
+ RFU      plan-1            H21       0.020
+ RFU      plan-1            H03       0.020
+ RFU      plan-1            H24       0.020
+ RFU      plan-2            C11       0.020
+ RFU      plan-2            C10       0.020
+ RFU      plan-2            C12       0.020
+ RFU      plan-2            H11       0.020
+ RFU      plan-3            C12       0.020
+ RFU      plan-3            C11       0.020
+ RFU      plan-3            C19       0.020
+ RFU      plan-3            N13       0.020
+ RFU      plan-3            H11       0.020
+ RFU      plan-4            C17       0.020
+ RFU      plan-4            N13       0.020
+ RFU      plan-4            O16       0.020
+ RFU      plan-4            O18       0.020
+ RFU      plan-5            N09       0.020
+ RFU      plan-5            C08       0.020
+ RFU      plan-5            C10       0.020
+ RFU      plan-5            C19       0.020
+ RFU      plan-6            N13       0.020
+ RFU      plan-6            C12       0.020
+ RFU      plan-6            C14       0.020
+ RFU      plan-6            C17       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

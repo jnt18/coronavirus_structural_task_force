@@ -1,0 +1,370 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RZR      RZR '.                                   ' .                  44  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RZR
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RZR           O26    O    O         0.000    -52.440  -29.074    7.152
+ RZR           C03    C    C         0.000    -51.641  -29.158    8.019
+ RZR           N02    N    NH1       0.000    -52.063  -29.297    9.396
+ RZR           HN02   H    H         0.000    -51.369  -29.363   10.127
+ RZR           C01    C    CH3       0.000    -53.470  -29.342    9.736
+ RZR           H013   H    H         0.000    -53.938  -28.446    9.421
+ RZR           H012   H    H         0.000    -53.924  -30.167    9.251
+ RZR           H011   H    H         0.000    -53.576  -29.446   10.784
+ RZR           N04    N    NH1       0.000    -50.214  -29.100    7.785
+ RZR           HN04   H    H         0.000    -49.606  -29.120    8.591
+ RZR           C05    C    CR6       0.000    -49.594  -29.015    6.477
+ RZR           C25    C    CR16      0.000    -48.214  -29.079    6.456
+ RZR           H25    H    H         0.000    -47.665  -29.151    7.387
+ RZR           C24    C    CR16      0.000    -47.533  -29.052    5.262
+ RZR           H24    H    H         0.000    -46.451  -29.102    5.256
+ RZR           C08    C    CR6       0.000    -48.227  -28.961    4.068
+ RZR           C07    C    CR16      0.000    -49.614  -28.933    4.076
+ RZR           H07    H    H         0.000    -50.160  -28.887    3.142
+ RZR           C06    C    CR16      0.000    -50.303  -28.964    5.283
+ RZR           H06    H    H         0.000    -51.386  -28.948    5.293
+ RZR           C09    C    C         0.000    -47.421  -28.970    2.774
+ RZR           O23    O    O         0.000    -47.956  -28.979    1.718
+ RZR           N10    N    NH1       0.000    -45.975  -29.033    2.885
+ RZR           HN10   H    H         0.000    -45.563  -29.025    3.807
+ RZR           C11    C    CH1       0.000    -45.096  -29.107    1.737
+ RZR           H11    H    H         0.000    -45.379  -29.964    1.110
+ RZR           C12    C    CH1       0.000    -43.713  -29.297    2.250
+ RZR           H12    H    H         0.000    -43.575  -28.754    3.195
+ RZR           C13    C    C         0.000    -43.459  -30.799    2.450
+ RZR           O15    O    OC        0.000    -43.000  -31.234    3.538
+ RZR           O14    O    OC       -1.000    -43.723  -31.609    1.521
+ RZR           C16    C    CH2       0.000    -42.808  -28.734    1.178
+ RZR           H162   H    H         0.000    -42.543  -29.474    0.420
+ RZR           H161   H    H         0.000    -41.897  -28.291    1.587
+ RZR           C18    C    CR6       0.000    -45.024  -27.841    0.877
+ RZR           C19    C    CR16      0.000    -46.014  -26.984    0.415
+ RZR           H19    H    H         0.000    -47.052  -27.164    0.668
+ RZR           C20    C    CR16      0.000    -45.666  -25.896   -0.372
+ RZR           H20    H    H         0.000    -46.433  -25.219   -0.729
+ RZR           C21    C    CR16      0.000    -44.331  -25.673   -0.704
+ RZR           H21    H    H         0.000    -44.067  -24.822   -1.319
+ RZR           C22    C    CR16      0.000    -43.338  -26.530   -0.255
+ RZR           H22    H    H         0.000    -42.302  -26.352   -0.517
+ RZR           C17    C    CR6       0.000    -43.685  -27.620    0.534
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RZR      O26    n/a    C03    START
+ RZR      C03    O26    N04    .
+ RZR      N02    C03    C01    .
+ RZR      HN02   N02    .      .
+ RZR      C01    N02    H011   .
+ RZR      H013   C01    .      .
+ RZR      H012   C01    .      .
+ RZR      H011   C01    .      .
+ RZR      N04    C03    C05    .
+ RZR      HN04   N04    .      .
+ RZR      C05    N04    C25    .
+ RZR      C25    C05    C24    .
+ RZR      H25    C25    .      .
+ RZR      C24    C25    C08    .
+ RZR      H24    C24    .      .
+ RZR      C08    C24    C09    .
+ RZR      C07    C08    C06    .
+ RZR      H07    C07    .      .
+ RZR      C06    C07    H06    .
+ RZR      H06    C06    .      .
+ RZR      C09    C08    N10    .
+ RZR      O23    C09    .      .
+ RZR      N10    C09    C11    .
+ RZR      HN10   N10    .      .
+ RZR      C11    N10    C18    .
+ RZR      H11    C11    .      .
+ RZR      C12    C11    C16    .
+ RZR      H12    C12    .      .
+ RZR      C13    C12    O14    .
+ RZR      O15    C13    .      .
+ RZR      O14    C13    .      .
+ RZR      C16    C12    H161   .
+ RZR      H162   C16    .      .
+ RZR      H161   C16    .      .
+ RZR      C18    C11    C19    .
+ RZR      C19    C18    C20    .
+ RZR      H19    C19    .      .
+ RZR      C20    C19    C21    .
+ RZR      H20    C20    .      .
+ RZR      C21    C20    C22    .
+ RZR      H21    C21    .      .
+ RZR      C22    C21    C17    .
+ RZR      H22    C22    .      .
+ RZR      C17    C22    .      END
+ RZR      C18    C17    .    ADD
+ RZR      C16    C17    .    ADD
+ RZR      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RZR      C18    C17       aromatic    1.384    0.020
+ RZR      C18    C11       single      1.480    0.020
+ RZR      C19    C18       aromatic    1.390    0.020
+ RZR      C16    C17       single      1.511    0.020
+ RZR      C16    C12       single      1.524    0.020
+ RZR      C17    C22       aromatic    1.390    0.020
+ RZR      C13    C12       single      1.500    0.020
+ RZR      O14    C13       deloc       1.250    0.020
+ RZR      O15    C13       deloc       1.250    0.020
+ RZR      C12    C11       single      1.524    0.020
+ RZR      C11    N10       single      1.450    0.020
+ RZR      C20    C19       aromatic    1.390    0.020
+ RZR      C21    C20       aromatic    1.390    0.020
+ RZR      C01    N02       single      1.450    0.020
+ RZR      N02    C03       single      1.330    0.020
+ RZR      N04    C03       single      1.330    0.020
+ RZR      C03    O26       double      1.220    0.020
+ RZR      C05    C06       aromatic    1.390    0.020
+ RZR      C25    C05       aromatic    1.390    0.020
+ RZR      C05    N04       single      1.350    0.020
+ RZR      C06    C07       aromatic    1.390    0.020
+ RZR      C07    C08       aromatic    1.390    0.020
+ RZR      C09    C08       single      1.500    0.020
+ RZR      C08    C24       aromatic    1.390    0.020
+ RZR      N10    C09       single      1.330    0.020
+ RZR      O23    C09       double      1.220    0.020
+ RZR      C22    C21       aromatic    1.390    0.020
+ RZR      C24    C25       aromatic    1.390    0.020
+ RZR      H161   C16       single      1.092    0.020
+ RZR      H162   C16       single      1.092    0.020
+ RZR      H12    C12       single      1.099    0.020
+ RZR      H11    C11       single      1.099    0.020
+ RZR      H20    C20       single      1.083    0.020
+ RZR      H19    C19       single      1.083    0.020
+ RZR      H011   C01       single      1.059    0.020
+ RZR      H012   C01       single      1.059    0.020
+ RZR      H013   C01       single      1.059    0.020
+ RZR      H06    C06       single      1.083    0.020
+ RZR      H07    C07       single      1.083    0.020
+ RZR      H21    C21       single      1.083    0.020
+ RZR      H22    C22       single      1.083    0.020
+ RZR      H24    C24       single      1.083    0.020
+ RZR      H25    C25       single      1.083    0.020
+ RZR      HN02   N02       single      1.010    0.020
+ RZR      HN04   N04       single      1.010    0.020
+ RZR      HN10   N10       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RZR      O26    C03    N02     123.000    3.000
+ RZR      O26    C03    N04     123.000    3.000
+ RZR      N02    C03    N04     120.000    3.000
+ RZR      C03    N02    HN02    120.000    3.000
+ RZR      C03    N02    C01     121.500    3.000
+ RZR      HN02   N02    C01     118.500    3.000
+ RZR      N02    C01    H013    109.470    3.000
+ RZR      N02    C01    H012    109.470    3.000
+ RZR      N02    C01    H011    109.470    3.000
+ RZR      H013   C01    H012    109.470    3.000
+ RZR      H013   C01    H011    109.470    3.000
+ RZR      H012   C01    H011    109.470    3.000
+ RZR      C03    N04    HN04    120.000    3.000
+ RZR      C03    N04    C05     120.000    3.000
+ RZR      HN04   N04    C05     120.000    3.000
+ RZR      N04    C05    C25     120.000    3.000
+ RZR      N04    C05    C06     120.000    3.000
+ RZR      C25    C05    C06     120.000    3.000
+ RZR      C05    C25    H25     120.000    3.000
+ RZR      C05    C25    C24     120.000    3.000
+ RZR      H25    C25    C24     120.000    3.000
+ RZR      C25    C24    H24     120.000    3.000
+ RZR      C25    C24    C08     120.000    3.000
+ RZR      H24    C24    C08     120.000    3.000
+ RZR      C24    C08    C07     120.000    3.000
+ RZR      C24    C08    C09     120.000    3.000
+ RZR      C07    C08    C09     120.000    3.000
+ RZR      C08    C07    H07     120.000    3.000
+ RZR      C08    C07    C06     120.000    3.000
+ RZR      H07    C07    C06     120.000    3.000
+ RZR      C07    C06    H06     120.000    3.000
+ RZR      C07    C06    C05     120.000    3.000
+ RZR      H06    C06    C05     120.000    3.000
+ RZR      C08    C09    O23     120.500    3.000
+ RZR      C08    C09    N10     120.000    3.000
+ RZR      O23    C09    N10     123.000    3.000
+ RZR      C09    N10    HN10    120.000    3.000
+ RZR      C09    N10    C11     121.500    3.000
+ RZR      HN10   N10    C11     118.500    3.000
+ RZR      N10    C11    H11     108.550    3.000
+ RZR      N10    C11    C12     110.000    3.000
+ RZR      N10    C11    C18     109.470    3.000
+ RZR      H11    C11    C12     108.340    3.000
+ RZR      H11    C11    C18     109.470    3.000
+ RZR      C12    C11    C18     109.470    3.000
+ RZR      C11    C12    H12     108.340    3.000
+ RZR      C11    C12    C13     109.470    3.000
+ RZR      C11    C12    C16     111.000    3.000
+ RZR      H12    C12    C13     108.810    3.000
+ RZR      H12    C12    C16     108.340    3.000
+ RZR      C13    C12    C16     109.470    3.000
+ RZR      C12    C13    O15     118.500    3.000
+ RZR      C12    C13    O14     118.500    3.000
+ RZR      O15    C13    O14     123.000    3.000
+ RZR      C12    C16    H162    109.470    3.000
+ RZR      C12    C16    H161    109.470    3.000
+ RZR      C12    C16    C17     109.470    3.000
+ RZR      H162   C16    H161    107.900    3.000
+ RZR      H162   C16    C17     109.470    3.000
+ RZR      H161   C16    C17     109.470    3.000
+ RZR      C11    C18    C19     120.000    3.000
+ RZR      C11    C18    C17     120.000    3.000
+ RZR      C19    C18    C17     120.000    3.000
+ RZR      C18    C19    H19     120.000    3.000
+ RZR      C18    C19    C20     120.000    3.000
+ RZR      H19    C19    C20     120.000    3.000
+ RZR      C19    C20    H20     120.000    3.000
+ RZR      C19    C20    C21     120.000    3.000
+ RZR      H20    C20    C21     120.000    3.000
+ RZR      C20    C21    H21     120.000    3.000
+ RZR      C20    C21    C22     120.000    3.000
+ RZR      H21    C21    C22     120.000    3.000
+ RZR      C21    C22    H22     120.000    3.000
+ RZR      C21    C22    C17     120.000    3.000
+ RZR      H22    C22    C17     120.000    3.000
+ RZR      C22    C17    C18     120.000    3.000
+ RZR      C22    C17    C16     120.000    3.000
+ RZR      C18    C17    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RZR      var_1            O26    C03    N02    C01              180.000           20.000   2
+ RZR      var_2            C03    N02    C01    H011             180.000           20.000   3
+ RZR      var_3            O26    C03    N04    C05              180.000           20.000   2
+ RZR      var_4            C03    N04    C05    C25             -174.932           20.000   3
+ RZR      CONST_1          N04    C05    C06    C07                0.000            0.000   0
+ RZR      CONST_2          N04    C05    C25    C24                0.000            0.000   0
+ RZR      CONST_3          C05    C25    C24    C08                0.000            0.000   0
+ RZR      CONST_4          C25    C24    C08    C09                0.000            0.000   0
+ RZR      CONST_5          C24    C08    C07    C06                0.000            0.000   0
+ RZR      CONST_6          C08    C07    C06    C05                0.000            0.000   0
+ RZR      var_5            C24    C08    C09    N10               -1.814           20.000   3
+ RZR      var_6            C08    C09    N10    C11              180.000           20.000   2
+ RZR      var_7            C09    N10    C11    C18                0.000           20.000   3
+ RZR      var_8            N10    C11    C12    C16              180.000           20.000   3
+ RZR      var_9            C11    C12    C13    O14              180.000           20.000   3
+ RZR      var_10           C11    C12    C16    C17              180.000           20.000   3
+ RZR      var_11           C12    C16    C17    C22                0.000           20.000   2
+ RZR      var_12           N10    C11    C18    C19              -43.877           20.000   3
+ RZR      CONST_7          C11    C18    C17    C22                0.000            0.000   0
+ RZR      CONST_8          C11    C18    C19    C20                0.000            0.000   0
+ RZR      CONST_9          C18    C19    C20    C21                0.000            0.000   0
+ RZR      CONST_10         C19    C20    C21    C22                0.000            0.000   0
+ RZR      CONST_11         C20    C21    C22    C17                0.000            0.000   0
+ RZR      CONST_12         C21    C22    C17    C18                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RZR      chir_01          C12    C16    C13    C11       positiv
+ RZR      chir_02          C11    C18    C12    N10       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RZR      plan-1            C18       0.020
+ RZR      plan-1            C17       0.020
+ RZR      plan-1            C11       0.020
+ RZR      plan-1            C19       0.020
+ RZR      plan-1            C20       0.020
+ RZR      plan-1            C21       0.020
+ RZR      plan-1            C22       0.020
+ RZR      plan-1            C16       0.020
+ RZR      plan-1            H20       0.020
+ RZR      plan-1            H19       0.020
+ RZR      plan-1            H21       0.020
+ RZR      plan-1            H22       0.020
+ RZR      plan-2            C13       0.020
+ RZR      plan-2            C12       0.020
+ RZR      plan-2            O14       0.020
+ RZR      plan-2            O15       0.020
+ RZR      plan-3            C03       0.020
+ RZR      plan-3            N02       0.020
+ RZR      plan-3            N04       0.020
+ RZR      plan-3            O26       0.020
+ RZR      plan-3            HN02      0.020
+ RZR      plan-3            HN04      0.020
+ RZR      plan-4            C05       0.020
+ RZR      plan-4            C06       0.020
+ RZR      plan-4            C25       0.020
+ RZR      plan-4            N04       0.020
+ RZR      plan-4            C07       0.020
+ RZR      plan-4            C08       0.020
+ RZR      plan-4            C24       0.020
+ RZR      plan-4            H06       0.020
+ RZR      plan-4            H07       0.020
+ RZR      plan-4            C09       0.020
+ RZR      plan-4            H24       0.020
+ RZR      plan-4            H25       0.020
+ RZR      plan-4            HN04      0.020
+ RZR      plan-5            C09       0.020
+ RZR      plan-5            C08       0.020
+ RZR      plan-5            N10       0.020
+ RZR      plan-5            O23       0.020
+ RZR      plan-5            HN10      0.020
+ RZR      plan-6            N02       0.020
+ RZR      plan-6            C01       0.020
+ RZR      plan-6            C03       0.020
+ RZR      plan-6            HN02      0.020
+ RZR      plan-7            N04       0.020
+ RZR      plan-7            C03       0.020
+ RZR      plan-7            C05       0.020
+ RZR      plan-7            HN04      0.020
+ RZR      plan-8            N10       0.020
+ RZR      plan-8            C11       0.020
+ RZR      plan-8            C09       0.020
+ RZR      plan-8            HN10      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,255 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QSL      QSL '.                                   ' .                  25  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QSL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QSL           O03    O    OS        0.000    -51.136  -33.538    6.248
+ QSL           S02    S    S         0.000    -51.396  -32.441    7.184
+ QSL           O01    O    OS        0.000    -52.471  -32.532    8.175
+ QSL           C17    C    C1        0.000    -51.388  -30.974    6.373
+ QSL           H17    H    H         0.000    -52.124  -30.349    5.896
+ QSL           C04    C    C1        0.000    -49.962  -31.956    7.910
+ QSL           H04    H    H         0.000    -49.419  -32.209    8.805
+ QSL           C05    C    CT        0.000    -49.752  -30.908    6.628
+ QSL           C06    C    CH2       0.000    -49.317  -29.499    7.020
+ QSL           H061   H    H         0.000    -50.018  -29.113    7.763
+ QSL           H062   H    H         0.000    -49.346  -28.866    6.130
+ QSL           N07    N    NH1       0.000    -47.979  -29.498    7.571
+ QSL           HN07   H    H         0.000    -47.867  -29.468    8.574
+ QSL           C08    C    CR6       0.000    -46.789  -29.539    6.736
+ QSL           C16    C    CR56      0.000    -46.779  -29.434    5.322
+ QSL           N09    N    NRD6      0.000    -45.624  -29.685    7.332
+ QSL           C10    C    CR16      0.000    -44.463  -29.723    6.707
+ QSL           H10    H    H         0.000    -43.547  -29.829    7.274
+ QSL           N11    N    NRD6      0.000    -44.417  -29.632    5.397
+ QSL           C12    C    CR56      0.000    -45.564  -29.491    4.682
+ QSL           N13    N    NRD5      0.000    -45.778  -29.373    3.342
+ QSL           C14    C    CR15      0.000    -47.075  -29.249    3.097
+ QSL           H14    H    H         0.000    -47.531  -29.140    2.121
+ QSL           C15    C    CR15      0.000    -47.743  -29.283    4.304
+ QSL           H15    H    H         0.000    -48.814  -29.207    4.444
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QSL      O03    n/a    S02    START
+ QSL      S02    O03    C05    .
+ QSL      O01    S02    .      .
+ QSL      C17    S02    H17    .
+ QSL      H17    C17    .      .
+ QSL      C04    S02    H04    .
+ QSL      H04    C04    .      .
+ QSL      C05    S02    C06    .
+ QSL      C06    C05    N07    .
+ QSL      H061   C06    .      .
+ QSL      H062   C06    .      .
+ QSL      N07    C06    C08    .
+ QSL      HN07   N07    .      .
+ QSL      C08    N07    N09    .
+ QSL      C16    C08    .      .
+ QSL      N09    C08    C10    .
+ QSL      C10    N09    N11    .
+ QSL      H10    C10    .      .
+ QSL      N11    C10    C12    .
+ QSL      C12    N11    N13    .
+ QSL      N13    C12    C14    .
+ QSL      C14    N13    C15    .
+ QSL      H14    C14    .      .
+ QSL      C15    C14    H15    .
+ QSL      H15    C15    .      END
+ QSL      C16    C15    .    ADD
+ QSL      C16    C12    .    ADD
+ QSL      C17    C05    .    ADD
+ QSL      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QSL      C16    C15       aromatic    1.440    0.020
+ QSL      C16    C12       aromatic    1.390    0.020
+ QSL      C16    C08       aromatic    1.390    0.020
+ QSL      C17    C05       single      1.510    0.020
+ QSL      C17    S02       double      1.610    0.020
+ QSL      C15    C14       aromatic    1.380    0.020
+ QSL      C14    N13       aromatic    1.350    0.020
+ QSL      C12    N11       aromatic    1.355    0.020
+ QSL      N13    C12       aromatic    1.350    0.020
+ QSL      C10    N09       aromatic    1.337    0.020
+ QSL      N11    C10       aromatic    1.337    0.020
+ QSL      C04    C05       single      1.510    0.020
+ QSL      C04    S02       double      1.610    0.020
+ QSL      C06    C05       single      1.524    0.020
+ QSL      C05    S02       single      1.707    0.020
+ QSL      N07    C06       single      1.450    0.020
+ QSL      C08    N07       single      1.350    0.020
+ QSL      N09    C08       aromatic    1.350    0.020
+ QSL      O01    S02       deloc       1.470    0.020
+ QSL      S02    O03       deloc       1.470    0.020
+ QSL      H17    C17       single      1.077    0.020
+ QSL      H15    C15       single      1.083    0.020
+ QSL      H14    C14       single      1.083    0.020
+ QSL      H10    C10       single      1.083    0.020
+ QSL      H04    C04       single      1.077    0.020
+ QSL      H061   C06       single      1.092    0.020
+ QSL      H062   C06       single      1.092    0.020
+ QSL      HN07   N07       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QSL      O03    S02    O01     109.470    3.000
+ QSL      O03    S02    C17      90.000    3.000
+ QSL      O03    S02    C04      90.000    3.000
+ QSL      O03    S02    C05      90.000    3.000
+ QSL      O01    S02    C17      90.000    3.000
+ QSL      O01    S02    C04      90.000    3.000
+ QSL      C17    S02    C04      90.000    3.000
+ QSL      O01    S02    C05      90.000    3.000
+ QSL      C17    S02    C05      54.064    3.000
+ QSL      C04    S02    C05      54.064    3.000
+ QSL      S02    C17    H17     120.000    3.000
+ QSL      S02    C17    C05      66.249    3.000
+ QSL      H17    C17    C05     120.000    3.000
+ QSL      S02    C04    H04     120.000    3.000
+ QSL      S02    C04    C05      66.249    3.000
+ QSL      H04    C04    C05     120.000    3.000
+ QSL      S02    C05    C06     109.500    3.000
+ QSL      S02    C05    C17      59.688    3.000
+ QSL      S02    C05    C04      59.688    3.000
+ QSL      C17    C05    C04     109.500    3.000
+ QSL      C06    C05    C17     109.470    3.000
+ QSL      C06    C05    C04     109.470    3.000
+ QSL      C05    C06    H061    109.470    3.000
+ QSL      C05    C06    H062    109.470    3.000
+ QSL      C05    C06    N07     109.500    3.000
+ QSL      H061   C06    H062    107.900    3.000
+ QSL      H061   C06    N07     109.470    3.000
+ QSL      H062   C06    N07     109.470    3.000
+ QSL      C06    N07    HN07    118.500    3.000
+ QSL      C06    N07    C08     120.000    3.000
+ QSL      HN07   N07    C08     120.000    3.000
+ QSL      N07    C08    C16     120.000    3.000
+ QSL      N07    C08    N09     120.000    3.000
+ QSL      C16    C08    N09     120.000    3.000
+ QSL      C08    C16    C15     132.000    3.000
+ QSL      C08    C16    C12     120.000    3.000
+ QSL      C15    C16    C12     120.000    3.000
+ QSL      C08    N09    C10     120.000    3.000
+ QSL      N09    C10    H10     120.000    3.000
+ QSL      N09    C10    N11     120.000    3.000
+ QSL      H10    C10    N11     120.000    3.000
+ QSL      C10    N11    C12     120.000    3.000
+ QSL      N11    C12    N13     120.000    3.000
+ QSL      N11    C12    C16     120.000    3.000
+ QSL      N13    C12    C16     108.000    3.000
+ QSL      C12    N13    C14     108.000    3.000
+ QSL      N13    C14    H14     126.000    3.000
+ QSL      N13    C14    C15     108.000    3.000
+ QSL      H14    C14    C15     126.000    3.000
+ QSL      C14    C15    H15     126.000    3.000
+ QSL      C14    C15    C16     108.000    3.000
+ QSL      H15    C15    C16     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QSL      var_1            O03    S02    C17    C05              -87.860           20.000   3
+ QSL      var_2            O03    S02    C04    C05               88.283           20.000   3
+ QSL      var_3            O03    S02    C05    C06              176.356           20.000   3
+ QSL      var_4            S02    C05    C06    N07              118.506           20.000   3
+ QSL      var_5            C05    C06    N07    C08                0.000           20.000   3
+ QSL      var_6            C06    N07    C08    N09             -172.574           20.000   3
+ QSL      CONST_1          N07    C08    C16    C15              180.000            0.000   0
+ QSL      CONST_2          C08    C16    C15    C14             -179.808            0.000   0
+ QSL      CONST_3          C08    C16    C12    N11              180.000            0.000   0
+ QSL      CONST_4          N07    C08    N09    C10                0.000            0.000   0
+ QSL      CONST_5          C08    N09    C10    N11                0.000            0.000   0
+ QSL      CONST_6          N09    C10    N11    C12                0.000            0.000   0
+ QSL      CONST_7          C10    N11    C12    N13              180.000            0.000   0
+ QSL      CONST_8          N11    C12    N13    C14              180.000            0.000   0
+ QSL      CONST_9          C12    N13    C14    C15                0.000            0.000   0
+ QSL      CONST_10         N13    C14    C15    C16                0.107            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QSL      chir_01          C05    C17    C04    C06       positiv
+ QSL      chir_02          S02    C17    C04    C05       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QSL      plan-1            C16       0.020
+ QSL      plan-1            C15       0.020
+ QSL      plan-1            C12       0.020
+ QSL      plan-1            C08       0.020
+ QSL      plan-1            C10       0.020
+ QSL      plan-1            N09       0.020
+ QSL      plan-1            N11       0.020
+ QSL      plan-1            C14       0.020
+ QSL      plan-1            H15       0.020
+ QSL      plan-1            N13       0.020
+ QSL      plan-1            H14       0.020
+ QSL      plan-1            H10       0.020
+ QSL      plan-1            N07       0.020
+ QSL      plan-1            HN07      0.020
+ QSL      plan-2            C17       0.020
+ QSL      plan-2            C05       0.020
+ QSL      plan-2            S02       0.020
+ QSL      plan-2            H17       0.020
+ QSL      plan-3            C04       0.020
+ QSL      plan-3            C05       0.020
+ QSL      plan-3            S02       0.020
+ QSL      plan-3            H04       0.020
+ QSL      plan-4            N07       0.020
+ QSL      plan-4            C06       0.020
+ QSL      plan-4            C08       0.020
+ QSL      plan-4            HN07      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

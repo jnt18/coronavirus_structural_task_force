@@ -1,0 +1,359 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QTO      QTO '.                                   ' .                  43  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QTO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QTO           O25    O    OC        0.000    -45.397  -30.762   -0.082
+ QTO           C02    C    C         0.000    -46.134  -29.759   -0.414
+ QTO           O01    O    OC       -1.000    -46.881  -29.725   -1.405
+ QTO           C03    C    CT        0.000    -46.087  -28.460    0.506
+ QTO           F24    F    F         0.000    -47.075  -27.552    0.025
+ QTO           C20    C    CT        0.000    -44.705  -27.793    0.772
+ QTO           C23    C    CH2       0.000    -43.694  -27.629   -0.414
+ QTO           H231   H    H         0.000    -44.073  -27.700   -1.436
+ QTO           H232   H    H         0.000    -42.729  -28.135   -0.350
+ QTO           C22    C    CH2       0.000    -43.523  -26.124   -0.022
+ QTO           H221   H    H         0.000    -43.756  -25.365   -0.772
+ QTO           H222   H    H         0.000    -42.622  -25.831    0.522
+ QTO           C21    C    CH2       0.000    -44.698  -26.254    0.961
+ QTO           H212   H    H         0.000    -45.664  -25.845    0.659
+ QTO           H211   H    H         0.000    -44.515  -26.016    2.011
+ QTO           C04    C    CH2       0.000    -46.530  -28.870    1.893
+ QTO           H041   H    H         0.000    -47.249  -29.690    1.827
+ QTO           H042   H    H         0.000    -46.992  -28.022    2.402
+ QTO           N05    N    N         0.000    -45.318  -29.323    2.667
+ QTO           C19    C    CH2       0.000    -44.203  -28.468    2.108
+ QTO           H192   H    H         0.000    -43.330  -29.089    1.898
+ QTO           H191   H    H         0.000    -43.933  -27.694    2.829
+ QTO           C06    C    CR6       0.000    -45.405  -29.283    4.140
+ QTO           C18    C    CR16      0.000    -46.649  -29.358    4.825
+ QTO           H18    H    H         0.000    -47.577  -29.447    4.275
+ QTO           N07    N    NRD6      0.000    -44.226  -29.183    4.835
+ QTO           C08    C    CR16      0.000    -44.319  -29.147    6.193
+ QTO           H08    H    H         0.000    -43.396  -29.059    6.753
+ QTO           N09    N    NRD6      0.000    -45.480  -29.213    6.904
+ QTO           C10    C    CR6       0.000    -46.651  -29.313    6.259
+ QTO           N11    N    NH1       0.000    -47.820  -29.377    7.053
+ QTO           HN11   H    H         0.000    -47.724  -29.371    8.058
+ QTO           C12    C    CR6       0.000    -49.164  -29.452    6.477
+ QTO           C17    C    CR16      0.000    -49.602  -28.586    5.441
+ QTO           H17    H    H         0.000    -48.924  -27.838    5.049
+ QTO           C13    C    CR16      0.000    -50.087  -30.392    6.963
+ QTO           H13    H    H         0.000    -49.787  -31.060    7.761
+ QTO           C14    C    CR16      0.000    -51.394  -30.492    6.442
+ QTO           H14    H    H         0.000    -52.078  -31.233    6.836
+ QTO           C15    C    CR16      0.000    -51.808  -29.636    5.418
+ QTO           H15    H    H         0.000    -52.812  -29.708    5.019
+ QTO           C16    C    CR16      0.000    -50.913  -28.684    4.911
+ QTO           H16    H    H         0.000    -51.224  -28.022    4.112
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QTO      O25    n/a    C02    START
+ QTO      C02    O25    C03    .
+ QTO      O01    C02    .      .
+ QTO      C03    C02    C04    .
+ QTO      F24    C03    .      .
+ QTO      C20    C03    C23    .
+ QTO      C23    C20    C22    .
+ QTO      H231   C23    .      .
+ QTO      H232   C23    .      .
+ QTO      C22    C23    C21    .
+ QTO      H221   C22    .      .
+ QTO      H222   C22    .      .
+ QTO      C21    C22    H211   .
+ QTO      H212   C21    .      .
+ QTO      H211   C21    .      .
+ QTO      C04    C03    N05    .
+ QTO      H041   C04    .      .
+ QTO      H042   C04    .      .
+ QTO      N05    C04    C06    .
+ QTO      C19    N05    H191   .
+ QTO      H192   C19    .      .
+ QTO      H191   C19    .      .
+ QTO      C06    N05    N07    .
+ QTO      C18    C06    H18    .
+ QTO      H18    C18    .      .
+ QTO      N07    C06    C08    .
+ QTO      C08    N07    N09    .
+ QTO      H08    C08    .      .
+ QTO      N09    C08    C10    .
+ QTO      C10    N09    N11    .
+ QTO      N11    C10    C12    .
+ QTO      HN11   N11    .      .
+ QTO      C12    N11    C13    .
+ QTO      C17    C12    H17    .
+ QTO      H17    C17    .      .
+ QTO      C13    C12    C14    .
+ QTO      H13    C13    .      .
+ QTO      C14    C13    C15    .
+ QTO      H14    C14    .      .
+ QTO      C15    C14    C16    .
+ QTO      H15    C15    .      .
+ QTO      C16    C15    H16    .
+ QTO      H16    C16    .      END
+ QTO      C18    C10    .    ADD
+ QTO      C16    C17    .    ADD
+ QTO      C20    C19    .    ADD
+ QTO      C20    C21    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QTO      C18    C10       aromatic    1.390    0.020
+ QTO      C18    C06       aromatic    1.390    0.020
+ QTO      C16    C17       aromatic    1.390    0.020
+ QTO      C16    C15       aromatic    1.390    0.020
+ QTO      C17    C12       aromatic    1.390    0.020
+ QTO      C15    C14       aromatic    1.390    0.020
+ QTO      C14    C13       aromatic    1.390    0.020
+ QTO      C13    C12       aromatic    1.390    0.020
+ QTO      C12    N11       single      1.350    0.020
+ QTO      C10    N09       aromatic    1.350    0.020
+ QTO      N11    C10       single      1.350    0.020
+ QTO      C20    C19       single      1.524    0.020
+ QTO      C20    C03       single      1.524    0.020
+ QTO      C20    C21       single      1.524    0.020
+ QTO      C23    C20       single      1.524    0.020
+ QTO      C19    N05       single      1.455    0.020
+ QTO      C03    C02       single      1.507    0.020
+ QTO      O01    C02       deloc       1.250    0.020
+ QTO      C02    O25       deloc       1.250    0.020
+ QTO      C04    C03       single      1.524    0.020
+ QTO      F24    C03       single      1.320    0.020
+ QTO      N05    C04       single      1.455    0.020
+ QTO      C06    N05       single      1.400    0.020
+ QTO      N07    C06       aromatic    1.350    0.020
+ QTO      C08    N07       aromatic    1.337    0.020
+ QTO      N09    C08       aromatic    1.337    0.020
+ QTO      C21    C22       single      1.524    0.020
+ QTO      C22    C23       single      1.524    0.020
+ QTO      H18    C18       single      1.083    0.020
+ QTO      H16    C16       single      1.083    0.020
+ QTO      H17    C17       single      1.083    0.020
+ QTO      H15    C15       single      1.083    0.020
+ QTO      H14    C14       single      1.083    0.020
+ QTO      H13    C13       single      1.083    0.020
+ QTO      H191   C19       single      1.092    0.020
+ QTO      H192   C19       single      1.092    0.020
+ QTO      H041   C04       single      1.092    0.020
+ QTO      H042   C04       single      1.092    0.020
+ QTO      H08    C08       single      1.083    0.020
+ QTO      H211   C21       single      1.092    0.020
+ QTO      H212   C21       single      1.092    0.020
+ QTO      H221   C22       single      1.092    0.020
+ QTO      H222   C22       single      1.092    0.020
+ QTO      H231   C23       single      1.092    0.020
+ QTO      H232   C23       single      1.092    0.020
+ QTO      HN11   N11       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QTO      O25    C02    O01     123.000    3.000
+ QTO      O25    C02    C03     118.500    3.000
+ QTO      O01    C02    C03     118.500    3.000
+ QTO      C02    C03    F24     109.470    3.000
+ QTO      C02    C03    C20     111.000    3.000
+ QTO      C02    C03    C04     109.470    3.000
+ QTO      F24    C03    C20     109.470    3.000
+ QTO      F24    C03    C04     109.470    3.000
+ QTO      C20    C03    C04     111.000    3.000
+ QTO      C03    C20    C23     111.000    3.000
+ QTO      C03    C20    C19     111.000    3.000
+ QTO      C03    C20    C21     111.000    3.000
+ QTO      C19    C20    C21     111.000    3.000
+ QTO      C23    C20    C19     111.000    3.000
+ QTO      C23    C20    C21     111.000    3.000
+ QTO      C20    C23    H231    109.470    3.000
+ QTO      C20    C23    H232    109.470    3.000
+ QTO      C20    C23    C22     111.000    3.000
+ QTO      H231   C23    H232    107.900    3.000
+ QTO      H231   C23    C22     109.470    3.000
+ QTO      H232   C23    C22     109.470    3.000
+ QTO      C23    C22    H221    109.470    3.000
+ QTO      C23    C22    H222    109.470    3.000
+ QTO      C23    C22    C21     111.000    3.000
+ QTO      H221   C22    H222    107.900    3.000
+ QTO      H221   C22    C21     109.470    3.000
+ QTO      H222   C22    C21     109.470    3.000
+ QTO      C22    C21    H212    109.470    3.000
+ QTO      C22    C21    H211    109.470    3.000
+ QTO      C22    C21    C20     111.000    3.000
+ QTO      H212   C21    H211    107.900    3.000
+ QTO      H212   C21    C20     109.470    3.000
+ QTO      H211   C21    C20     109.470    3.000
+ QTO      C03    C04    H041    109.470    3.000
+ QTO      C03    C04    H042    109.470    3.000
+ QTO      C03    C04    N05     109.500    3.000
+ QTO      H041   C04    H042    107.900    3.000
+ QTO      H041   C04    N05     109.470    3.000
+ QTO      H042   C04    N05     109.470    3.000
+ QTO      C04    N05    C19     120.000    3.000
+ QTO      C04    N05    C06     120.000    3.000
+ QTO      C19    N05    C06     120.000    3.000
+ QTO      N05    C19    H192    109.470    3.000
+ QTO      N05    C19    H191    109.470    3.000
+ QTO      N05    C19    C20     109.500    3.000
+ QTO      H192   C19    H191    107.900    3.000
+ QTO      H192   C19    C20     109.470    3.000
+ QTO      H191   C19    C20     109.470    3.000
+ QTO      N05    C06    C18     120.000    3.000
+ QTO      N05    C06    N07     120.000    3.000
+ QTO      C18    C06    N07     120.000    3.000
+ QTO      C06    C18    H18     120.000    3.000
+ QTO      C06    C18    C10     120.000    3.000
+ QTO      H18    C18    C10     120.000    3.000
+ QTO      C06    N07    C08     120.000    3.000
+ QTO      N07    C08    H08     120.000    3.000
+ QTO      N07    C08    N09     120.000    3.000
+ QTO      H08    C08    N09     120.000    3.000
+ QTO      C08    N09    C10     120.000    3.000
+ QTO      N09    C10    N11     120.000    3.000
+ QTO      N09    C10    C18     120.000    3.000
+ QTO      N11    C10    C18     120.000    3.000
+ QTO      C10    N11    HN11    120.000    3.000
+ QTO      C10    N11    C12     120.000    3.000
+ QTO      HN11   N11    C12     120.000    3.000
+ QTO      N11    C12    C17     120.000    3.000
+ QTO      N11    C12    C13     120.000    3.000
+ QTO      C17    C12    C13     120.000    3.000
+ QTO      C12    C17    H17     120.000    3.000
+ QTO      C12    C17    C16     120.000    3.000
+ QTO      H17    C17    C16     120.000    3.000
+ QTO      C12    C13    H13     120.000    3.000
+ QTO      C12    C13    C14     120.000    3.000
+ QTO      H13    C13    C14     120.000    3.000
+ QTO      C13    C14    H14     120.000    3.000
+ QTO      C13    C14    C15     120.000    3.000
+ QTO      H14    C14    C15     120.000    3.000
+ QTO      C14    C15    H15     120.000    3.000
+ QTO      C14    C15    C16     120.000    3.000
+ QTO      H15    C15    C16     120.000    3.000
+ QTO      C15    C16    H16     120.000    3.000
+ QTO      C15    C16    C17     120.000    3.000
+ QTO      H16    C16    C17     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QTO      var_1            O25    C02    C03    C04              -60.045           20.000   3
+ QTO      var_2            C02    C03    C20    C23               42.752           20.000   3
+ QTO      var_3            C03    C20    C19    N05               -7.365           20.000   3
+ QTO      var_4            C03    C20    C21    C22             -132.291           20.000   3
+ QTO      var_5            C03    C20    C23    C22              129.983           20.000   3
+ QTO      var_6            C20    C23    C22    C21              180.000           20.000   3
+ QTO      var_7            C23    C22    C21    C20              180.000           20.000   3
+ QTO      var_8            C02    C03    C04    N05               88.746           20.000   3
+ QTO      var_9            C03    C04    N05    C06              157.622           20.000   3
+ QTO      var_10           C04    N05    C19    C20              -14.215           20.000   3
+ QTO      var_11           C04    N05    C06    N07             -155.503           20.000   3
+ QTO      CONST_1          N05    C06    C18    C10                0.000            0.000   0
+ QTO      CONST_2          C06    C18    C10    N09                0.000            0.000   0
+ QTO      CONST_3          N05    C06    N07    C08                0.000            0.000   0
+ QTO      CONST_4          C06    N07    C08    N09                0.000            0.000   0
+ QTO      CONST_5          N07    C08    N09    C10                0.000            0.000   0
+ QTO      CONST_6          C08    N09    C10    N11                0.000            0.000   0
+ QTO      var_12           N09    C10    N11    C12              178.345           20.000   3
+ QTO      var_13           C10    N11    C12    C13              133.034           20.000   3
+ QTO      CONST_7          N11    C12    C17    C16                0.000            0.000   0
+ QTO      CONST_8          N11    C12    C13    C14                0.000            0.000   0
+ QTO      CONST_9          C12    C13    C14    C15                0.000            0.000   0
+ QTO      CONST_10         C13    C14    C15    C16                0.000            0.000   0
+ QTO      CONST_11         C14    C15    C16    C17                0.000            0.000   0
+ QTO      CONST_12         C15    C16    C17    C12                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QTO      chir_01          C20    C19    C03    C21       negativ
+ QTO      chir_02          C03    C20    C02    C04       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QTO      plan-1            C18       0.020
+ QTO      plan-1            C10       0.020
+ QTO      plan-1            C06       0.020
+ QTO      plan-1            H18       0.020
+ QTO      plan-1            C08       0.020
+ QTO      plan-1            N07       0.020
+ QTO      plan-1            N09       0.020
+ QTO      plan-1            N11       0.020
+ QTO      plan-1            N05       0.020
+ QTO      plan-1            H08       0.020
+ QTO      plan-1            HN11      0.020
+ QTO      plan-2            C16       0.020
+ QTO      plan-2            C17       0.020
+ QTO      plan-2            C15       0.020
+ QTO      plan-2            H16       0.020
+ QTO      plan-2            C14       0.020
+ QTO      plan-2            C13       0.020
+ QTO      plan-2            C12       0.020
+ QTO      plan-2            H17       0.020
+ QTO      plan-2            H15       0.020
+ QTO      plan-2            H14       0.020
+ QTO      plan-2            H13       0.020
+ QTO      plan-2            N11       0.020
+ QTO      plan-2            HN11      0.020
+ QTO      plan-3            C02       0.020
+ QTO      plan-3            C03       0.020
+ QTO      plan-3            O01       0.020
+ QTO      plan-3            O25       0.020
+ QTO      plan-4            N05       0.020
+ QTO      plan-4            C19       0.020
+ QTO      plan-4            C04       0.020
+ QTO      plan-4            C06       0.020
+ QTO      plan-5            N11       0.020
+ QTO      plan-5            C12       0.020
+ QTO      plan-5            C10       0.020
+ QTO      plan-5            HN11      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

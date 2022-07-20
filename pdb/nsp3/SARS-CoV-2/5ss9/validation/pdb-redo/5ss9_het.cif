@@ -1,0 +1,308 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RLU      RLU '.                                   ' .                  35  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RLU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RLU           BR09   BR   BR        0.000    -43.894  -24.474   -1.966
+ RLU           C08    C    CR6       0.000    -44.185  -26.144   -1.068
+ RLU           C10    C    CR16      0.000    -43.171  -26.555   -0.240
+ RLU           H10    H    H         0.000    -42.280  -25.950   -0.128
+ RLU           C07    C    CR16      0.000    -45.344  -26.884   -1.244
+ RLU           H07    H    H         0.000    -46.129  -26.538   -1.905
+ RLU           C06    C    CR16      0.000    -45.470  -28.071   -0.556
+ RLU           H06    H    H         0.000    -46.366  -28.670   -0.657
+ RLU           C05    C    CR6       0.000    -44.438  -28.489    0.266
+ RLU           C11    C    CR16      0.000    -43.295  -27.737    0.444
+ RLU           H11    H    H         0.000    -42.511  -28.074    1.111
+ RLU           C04    C    CH1       0.000    -44.621  -29.794    1.004
+ RLU           H04    H    H         0.000    -45.553  -30.274    0.675
+ RLU           C03    C    CH2       0.000    -43.481  -30.814    0.964
+ RLU           H031   H    H         0.000    -42.532  -30.280    1.038
+ RLU           H032   H    H         0.000    -43.524  -31.348    0.012
+ RLU           C02    C    C         0.000    -43.597  -31.814    2.118
+ RLU           O24    O    OC        0.000    -43.060  -31.593    3.241
+ RLU           O01    O    OC       -1.000    -44.246  -32.876    1.938
+ RLU           N12    N    NH1       0.000    -44.696  -29.520    2.386
+ RLU           HN12   H    H         0.000    -43.859  -29.511    2.951
+ RLU           C13    C    C         0.000    -45.954  -29.259    2.969
+ RLU           O23    O    O         0.000    -46.960  -29.292    2.349
+ RLU           C14    C    CR6       0.000    -45.863  -29.113    4.452
+ RLU           N22    N    NRD6      0.000    -44.703  -29.175    5.077
+ RLU           C21    C    CR16      0.000    -44.673  -29.114    6.390
+ RLU           H21    H    H         0.000    -43.719  -29.133    6.902
+ RLU           N20    N    NRD6      0.000    -45.784  -29.030    7.093
+ RLU           C19    C    CR56      0.000    -46.982  -28.995    6.503
+ RLU           N18    N    NRD5      0.000    -48.234  -28.908    6.942
+ RLU           C17    C    CR15      0.000    -49.064  -28.916    5.915
+ RLU           H17    H    H         0.000    -50.143  -28.858    5.992
+ RLU           C15    C    CR56      0.000    -47.041  -29.060    5.144
+ RLU           C16    C    CR15      0.000    -48.365  -29.008    4.734
+ RLU           H16    H    H         0.000    -48.756  -29.034    3.724
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RLU      BR09   n/a    C08    START
+ RLU      C08    BR09   C07    .
+ RLU      C10    C08    H10    .
+ RLU      H10    C10    .      .
+ RLU      C07    C08    C06    .
+ RLU      H07    C07    .      .
+ RLU      C06    C07    C05    .
+ RLU      H06    C06    .      .
+ RLU      C05    C06    C04    .
+ RLU      C11    C05    H11    .
+ RLU      H11    C11    .      .
+ RLU      C04    C05    N12    .
+ RLU      H04    C04    .      .
+ RLU      C03    C04    C02    .
+ RLU      H031   C03    .      .
+ RLU      H032   C03    .      .
+ RLU      C02    C03    O01    .
+ RLU      O24    C02    .      .
+ RLU      O01    C02    .      .
+ RLU      N12    C04    C13    .
+ RLU      HN12   N12    .      .
+ RLU      C13    N12    C14    .
+ RLU      O23    C13    .      .
+ RLU      C14    C13    N22    .
+ RLU      N22    C14    C21    .
+ RLU      C21    N22    N20    .
+ RLU      H21    C21    .      .
+ RLU      N20    C21    C19    .
+ RLU      C19    N20    C15    .
+ RLU      N18    C19    C17    .
+ RLU      C17    N18    H17    .
+ RLU      H17    C17    .      .
+ RLU      C15    C19    C16    .
+ RLU      C16    C15    H16    .
+ RLU      H16    C16    .      END
+ RLU      C16    C17    .    ADD
+ RLU      C15    C14    .    ADD
+ RLU      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RLU      C16    C17       aromatic    1.380    0.020
+ RLU      C16    C15       aromatic    1.440    0.020
+ RLU      C17    N18       aromatic    1.350    0.020
+ RLU      C15    C14       aromatic    1.390    0.020
+ RLU      C15    C19       aromatic    1.390    0.020
+ RLU      C14    C13       single      1.500    0.020
+ RLU      N22    C14       aromatic    1.350    0.020
+ RLU      C13    N12       single      1.330    0.020
+ RLU      O23    C13       double      1.220    0.020
+ RLU      C11    C10       aromatic    1.390    0.020
+ RLU      C11    C05       aromatic    1.390    0.020
+ RLU      C10    C08       aromatic    1.390    0.020
+ RLU      N18    C19       aromat      1.350    0.020
+ RLU      C19    N20       aromatic    1.355    0.020
+ RLU      C02    C03       single      1.510    0.020
+ RLU      O01    C02       deloc       1.250    0.020
+ RLU      O24    C02       deloc       1.250    0.020
+ RLU      C03    C04       single      1.524    0.020
+ RLU      C04    C05       single      1.480    0.020
+ RLU      N12    C04       single      1.450    0.020
+ RLU      C05    C06       aromatic    1.390    0.020
+ RLU      C06    C07       aromatic    1.390    0.020
+ RLU      C07    C08       aromatic    1.390    0.020
+ RLU      C08    BR09      single      1.890    0.020
+ RLU      N20    C21       aromatic    1.337    0.020
+ RLU      C21    N22       aromatic    1.337    0.020
+ RLU      H16    C16       single      1.083    0.020
+ RLU      H17    C17       single      1.083    0.020
+ RLU      H11    C11       single      1.083    0.020
+ RLU      H10    C10       single      1.083    0.020
+ RLU      H031   C03       single      1.092    0.020
+ RLU      H032   C03       single      1.092    0.020
+ RLU      H04    C04       single      1.099    0.020
+ RLU      H06    C06       single      1.083    0.020
+ RLU      H07    C07       single      1.083    0.020
+ RLU      H21    C21       single      1.083    0.020
+ RLU      HN12   N12       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RLU      BR09   C08    C10     120.000    3.000
+ RLU      BR09   C08    C07     120.000    3.000
+ RLU      C10    C08    C07     120.000    3.000
+ RLU      C08    C10    H10     120.000    3.000
+ RLU      C08    C10    C11     120.000    3.000
+ RLU      H10    C10    C11     120.000    3.000
+ RLU      C08    C07    H07     120.000    3.000
+ RLU      C08    C07    C06     120.000    3.000
+ RLU      H07    C07    C06     120.000    3.000
+ RLU      C07    C06    H06     120.000    3.000
+ RLU      C07    C06    C05     120.000    3.000
+ RLU      H06    C06    C05     120.000    3.000
+ RLU      C06    C05    C11     120.000    3.000
+ RLU      C06    C05    C04     120.000    3.000
+ RLU      C11    C05    C04     120.000    3.000
+ RLU      C05    C11    H11     120.000    3.000
+ RLU      C05    C11    C10     120.000    3.000
+ RLU      H11    C11    C10     120.000    3.000
+ RLU      C05    C04    H04     109.470    3.000
+ RLU      C05    C04    C03     109.470    3.000
+ RLU      C05    C04    N12     109.470    3.000
+ RLU      H04    C04    C03     108.340    3.000
+ RLU      H04    C04    N12     108.550    3.000
+ RLU      C03    C04    N12     110.000    3.000
+ RLU      C04    C03    H031    109.470    3.000
+ RLU      C04    C03    H032    109.470    3.000
+ RLU      C04    C03    C02     109.470    3.000
+ RLU      H031   C03    H032    107.900    3.000
+ RLU      H031   C03    C02     109.470    3.000
+ RLU      H032   C03    C02     109.470    3.000
+ RLU      C03    C02    O24     118.500    3.000
+ RLU      C03    C02    O01     118.500    3.000
+ RLU      O24    C02    O01     123.000    3.000
+ RLU      C04    N12    HN12    118.500    3.000
+ RLU      C04    N12    C13     121.500    3.000
+ RLU      HN12   N12    C13     120.000    3.000
+ RLU      N12    C13    O23     123.000    3.000
+ RLU      N12    C13    C14     120.000    3.000
+ RLU      O23    C13    C14     120.500    3.000
+ RLU      C13    C14    N22     120.000    3.000
+ RLU      C13    C14    C15     120.000    3.000
+ RLU      N22    C14    C15     120.000    3.000
+ RLU      C14    N22    C21     120.000    3.000
+ RLU      N22    C21    H21     120.000    3.000
+ RLU      N22    C21    N20     120.000    3.000
+ RLU      H21    C21    N20     120.000    3.000
+ RLU      C21    N20    C19     120.000    3.000
+ RLU      N20    C19    N18     120.000    3.000
+ RLU      N20    C19    C15     120.000    3.000
+ RLU      N18    C19    C15     108.000    3.000
+ RLU      C19    N18    C17     108.000    3.000
+ RLU      N18    C17    H17     126.000    3.000
+ RLU      N18    C17    C16     108.000    3.000
+ RLU      H17    C17    C16     126.000    3.000
+ RLU      C19    C15    C16     120.000    3.000
+ RLU      C19    C15    C14     120.000    3.000
+ RLU      C16    C15    C14     132.000    3.000
+ RLU      C15    C16    H16     108.000    3.000
+ RLU      C15    C16    C17     108.000    3.000
+ RLU      H16    C16    C17     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RLU      CONST_1          BR09   C08    C10    C11                0.000            0.000   0
+ RLU      CONST_2          BR09   C08    C07    C06                0.000            0.000   0
+ RLU      CONST_3          C08    C07    C06    C05                0.000            0.000   0
+ RLU      CONST_4          C07    C06    C05    C04                0.000            0.000   0
+ RLU      CONST_5          C06    C05    C11    C10                0.000            0.000   0
+ RLU      CONST_6          C05    C11    C10    C08                0.000            0.000   0
+ RLU      var_1            C06    C05    C04    N12             -113.624           20.000   3
+ RLU      var_2            C05    C04    C03    C02              180.000           20.000   3
+ RLU      var_3            C04    C03    C02    O01              180.000           20.000   3
+ RLU      var_4            C05    C04    N12    C13                0.000           20.000   3
+ RLU      var_5            C04    N12    C13    C14              180.000           20.000   2
+ RLU      var_6            N12    C13    C14    N22                2.647           20.000   3
+ RLU      CONST_7          C13    C14    N22    C21                0.000            0.000   0
+ RLU      CONST_8          C14    N22    C21    N20                0.000            0.000   0
+ RLU      CONST_9          N22    C21    N20    C19                0.000            0.000   0
+ RLU      CONST_10         C21    N20    C19    C15              180.000            0.000   0
+ RLU      CONST_11         N20    C19    N18    C17              180.000            0.000   0
+ RLU      CONST_12         C19    N18    C17    C16                0.000            0.000   0
+ RLU      CONST_13         N20    C19    C15    C16              180.000            0.000   0
+ RLU      CONST_14         C19    C15    C14    C13              180.000            0.000   0
+ RLU      CONST_15         C19    C15    C16    C17               -0.241            0.000   0
+ RLU      CONST_16         C15    C16    C17    N18                0.232            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RLU      chir_01          C04    C03    C05    N12       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RLU      plan-1            C16       0.020
+ RLU      plan-1            C17       0.020
+ RLU      plan-1            C15       0.020
+ RLU      plan-1            H16       0.020
+ RLU      plan-1            N18       0.020
+ RLU      plan-1            H17       0.020
+ RLU      plan-1            C14       0.020
+ RLU      plan-1            C19       0.020
+ RLU      plan-1            C21       0.020
+ RLU      plan-1            N20       0.020
+ RLU      plan-1            N22       0.020
+ RLU      plan-1            C13       0.020
+ RLU      plan-1            H21       0.020
+ RLU      plan-2            C13       0.020
+ RLU      plan-2            C14       0.020
+ RLU      plan-2            N12       0.020
+ RLU      plan-2            O23       0.020
+ RLU      plan-2            HN12      0.020
+ RLU      plan-3            C11       0.020
+ RLU      plan-3            C10       0.020
+ RLU      plan-3            C05       0.020
+ RLU      plan-3            H11       0.020
+ RLU      plan-3            C06       0.020
+ RLU      plan-3            C07       0.020
+ RLU      plan-3            C08       0.020
+ RLU      plan-3            H10       0.020
+ RLU      plan-3            C04       0.020
+ RLU      plan-3            H06       0.020
+ RLU      plan-3            H07       0.020
+ RLU      plan-3            BR09      0.020
+ RLU      plan-4            C02       0.020
+ RLU      plan-4            C03       0.020
+ RLU      plan-4            O01       0.020
+ RLU      plan-4            O24       0.020
+ RLU      plan-5            N12       0.020
+ RLU      plan-5            C13       0.020
+ RLU      plan-5            C04       0.020
+ RLU      plan-5            HN12      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

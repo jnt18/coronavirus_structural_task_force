@@ -1,0 +1,415 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RVS      RVS '.                                   ' .                  51  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RVS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RVS           O29    O    OC        0.000    -42.242  -31.133    3.444
+ RVS           C02    C    C         0.000    -43.159  -30.281    3.589
+ RVS           O01    O    OC       -1.000    -43.816  -30.328    4.667
+ RVS           C03    C    CH1       0.000    -43.513  -29.218    2.505
+ RVS           H03    H    H         0.000    -43.465  -28.216    2.954
+ RVS           C04    C    CH2       0.000    -42.655  -29.237    1.204
+ RVS           H041   H    H         0.000    -41.636  -28.924    1.440
+ RVS           H042   H    H         0.000    -43.087  -28.546    0.477
+ RVS           C05    C    CH2       0.000    -42.634  -30.669    0.610
+ RVS           H051   H    H         0.000    -41.883  -31.238    1.162
+ RVS           H052   H    H         0.000    -42.328  -30.582   -0.435
+ RVS           C06    C    CR6       0.000    -44.008  -31.403    0.692
+ RVS           C11    C    CR16      0.000    -44.120  -32.638    0.041
+ RVS           H11    H    H         0.000    -43.272  -33.043   -0.497
+ RVS           C07    C    CR6       0.000    -45.072  -30.870    1.382
+ RVS           C08    C    CR16      0.000    -46.288  -31.580    1.423
+ RVS           H08    H    H         0.000    -47.137  -31.167    1.954
+ RVS           C09    C    CR16      0.000    -46.402  -32.818    0.779
+ RVS           H09    H    H         0.000    -47.335  -33.367    0.821
+ RVS           C10    C    CR16      0.000    -45.314  -33.344    0.083
+ RVS           H10    H    H         0.000    -45.400  -34.298   -0.422
+ RVS           C12    C    CH1       0.000    -44.943  -29.503    2.074
+ RVS           H12    H    H         0.000    -45.246  -28.727    1.358
+ RVS           N13    N    NH1       0.000    -45.822  -29.418    3.236
+ RVS           HN13   H    H         0.000    -45.485  -29.734    4.134
+ RVS           C14    C    C         0.000    -47.176  -28.887    3.131
+ RVS           O28    O    O         0.000    -47.649  -28.511    2.111
+ RVS           C15    C    CR6       0.000    -47.972  -28.873    4.435
+ RVS           C16    C    CR16      0.000    -49.350  -28.746    4.391
+ RVS           H16    H    H         0.000    -49.853  -28.640    3.438
+ RVS           C20    C    CR16      0.000    -47.292  -29.010    5.627
+ RVS           H20    H    H         0.000    -46.214  -29.113    5.643
+ RVS           C19    C    CR16      0.000    -48.018  -29.012    6.796
+ RVS           H19    H    H         0.000    -47.515  -29.156    7.744
+ RVS           C18    C    CR6       0.000    -49.387  -28.831    6.763
+ RVS           C17    C    CR16      0.000    -50.086  -28.755    5.566
+ RVS           H17    H    H         0.000    -51.168  -28.705    5.551
+ RVS           N21    N    NH1       0.000    -50.023  -28.953    8.041
+ RVS           HN21   H    H         0.000    -49.434  -28.959    8.862
+ RVS           C22    C    C         0.000    -51.437  -29.067    8.232
+ RVS           O27    O    O         0.000    -52.252  -28.916    7.388
+ RVS           N23    N    NH1       0.000    -51.769  -29.299    9.609
+ RVS           HN23   H    H         0.000    -51.038  -29.334   10.305
+ RVS           C24    C    CH1       0.000    -53.145  -29.483   10.002
+ RVS           H24    H    H         0.000    -53.802  -28.612   10.134
+ RVS           C26    C    CH2       0.000    -53.722  -30.816    9.467
+ RVS           H261   H    H         0.000    -53.142  -31.599    8.975
+ RVS           H262   H    H         0.000    -54.783  -31.069    9.424
+ RVS           C25    C    CH2       0.000    -53.283  -30.696   10.928
+ RVS           H252   H    H         0.000    -52.300  -30.975   11.313
+ RVS           H251   H    H         0.000    -53.941  -30.445   11.762
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RVS      O29    n/a    C02    START
+ RVS      C02    O29    C03    .
+ RVS      O01    C02    .      .
+ RVS      C03    C02    C04    .
+ RVS      H03    C03    .      .
+ RVS      C04    C03    C05    .
+ RVS      H041   C04    .      .
+ RVS      H042   C04    .      .
+ RVS      C05    C04    C06    .
+ RVS      H051   C05    .      .
+ RVS      H052   C05    .      .
+ RVS      C06    C05    C07    .
+ RVS      C11    C06    H11    .
+ RVS      H11    C11    .      .
+ RVS      C07    C06    C12    .
+ RVS      C08    C07    C09    .
+ RVS      H08    C08    .      .
+ RVS      C09    C08    C10    .
+ RVS      H09    C09    .      .
+ RVS      C10    C09    H10    .
+ RVS      H10    C10    .      .
+ RVS      C12    C07    N13    .
+ RVS      H12    C12    .      .
+ RVS      N13    C12    C14    .
+ RVS      HN13   N13    .      .
+ RVS      C14    N13    C15    .
+ RVS      O28    C14    .      .
+ RVS      C15    C14    C20    .
+ RVS      C16    C15    H16    .
+ RVS      H16    C16    .      .
+ RVS      C20    C15    C19    .
+ RVS      H20    C20    .      .
+ RVS      C19    C20    C18    .
+ RVS      H19    C19    .      .
+ RVS      C18    C19    N21    .
+ RVS      C17    C18    H17    .
+ RVS      H17    C17    .      .
+ RVS      N21    C18    C22    .
+ RVS      HN21   N21    .      .
+ RVS      C22    N21    N23    .
+ RVS      O27    C22    .      .
+ RVS      N23    C22    C24    .
+ RVS      HN23   N23    .      .
+ RVS      C24    N23    C26    .
+ RVS      H24    C24    .      .
+ RVS      C26    C24    C25    .
+ RVS      H261   C26    .      .
+ RVS      H262   C26    .      .
+ RVS      C25    C26    H251   .
+ RVS      H252   C25    .      .
+ RVS      H251   C25    .      END
+ RVS      C16    C17    .    ADD
+ RVS      C12    C03    .    ADD
+ RVS      C11    C10    .    ADD
+ RVS      C24    C25    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RVS      C17    C18       aromatic    1.390    0.020
+ RVS      C18    C19       aromatic    1.390    0.020
+ RVS      N21    C18       single      1.350    0.020
+ RVS      C16    C17       aromatic    1.390    0.020
+ RVS      C16    C15       aromatic    1.390    0.020
+ RVS      C15    C14       single      1.500    0.020
+ RVS      C20    C15       aromatic    1.390    0.020
+ RVS      C14    N13       single      1.330    0.020
+ RVS      O28    C14       double      1.220    0.020
+ RVS      C12    C03       single      1.524    0.020
+ RVS      C12    C07       single      1.480    0.020
+ RVS      N13    C12       single      1.450    0.020
+ RVS      C11    C10       aromatic    1.390    0.020
+ RVS      C11    C06       aromatic    1.390    0.020
+ RVS      C10    C09       aromatic    1.390    0.020
+ RVS      C19    C20       aromatic    1.390    0.020
+ RVS      C03    C02       single      1.500    0.020
+ RVS      O01    C02       deloc       1.250    0.020
+ RVS      C02    O29       deloc       1.250    0.020
+ RVS      C04    C03       single      1.524    0.020
+ RVS      C05    C04       single      1.524    0.020
+ RVS      C06    C05       single      1.511    0.020
+ RVS      C07    C06       aromatic    1.384    0.020
+ RVS      C08    C07       aromatic    1.390    0.020
+ RVS      C09    C08       aromatic    1.390    0.020
+ RVS      C22    N21       single      1.330    0.020
+ RVS      N23    C22       single      1.330    0.020
+ RVS      O27    C22       double      1.220    0.020
+ RVS      C24    C25       single      1.524    0.020
+ RVS      C26    C24       single      1.524    0.020
+ RVS      C24    N23       single      1.450    0.020
+ RVS      C25    C26       single      1.524    0.020
+ RVS      H16    C16       single      1.083    0.020
+ RVS      H17    C17       single      1.083    0.020
+ RVS      H12    C12       single      1.099    0.020
+ RVS      H11    C11       single      1.083    0.020
+ RVS      H10    C10       single      1.083    0.020
+ RVS      H20    C20       single      1.083    0.020
+ RVS      H19    C19       single      1.083    0.020
+ RVS      H03    C03       single      1.099    0.020
+ RVS      H041   C04       single      1.092    0.020
+ RVS      H042   C04       single      1.092    0.020
+ RVS      H051   C05       single      1.092    0.020
+ RVS      H052   C05       single      1.092    0.020
+ RVS      H08    C08       single      1.083    0.020
+ RVS      H09    C09       single      1.083    0.020
+ RVS      H24    C24       single      1.099    0.020
+ RVS      H251   C25       single      1.092    0.020
+ RVS      H252   C25       single      1.092    0.020
+ RVS      H261   C26       single      1.092    0.020
+ RVS      H262   C26       single      1.092    0.020
+ RVS      HN13   N13       single      1.010    0.020
+ RVS      HN21   N21       single      1.010    0.020
+ RVS      HN23   N23       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RVS      O29    C02    O01     123.000    3.000
+ RVS      O29    C02    C03     118.500    3.000
+ RVS      O01    C02    C03     118.500    3.000
+ RVS      C02    C03    H03     108.810    3.000
+ RVS      C02    C03    C04     109.470    3.000
+ RVS      C02    C03    C12     109.470    3.000
+ RVS      H03    C03    C04     108.340    3.000
+ RVS      H03    C03    C12     108.340    3.000
+ RVS      C04    C03    C12     111.000    3.000
+ RVS      C03    C04    H041    109.470    3.000
+ RVS      C03    C04    H042    109.470    3.000
+ RVS      C03    C04    C05     111.000    3.000
+ RVS      H041   C04    H042    107.900    3.000
+ RVS      H041   C04    C05     109.470    3.000
+ RVS      H042   C04    C05     109.470    3.000
+ RVS      C04    C05    H051    109.470    3.000
+ RVS      C04    C05    H052    109.470    3.000
+ RVS      C04    C05    C06     109.470    3.000
+ RVS      H051   C05    H052    107.900    3.000
+ RVS      H051   C05    C06     109.470    3.000
+ RVS      H052   C05    C06     109.470    3.000
+ RVS      C05    C06    C11     120.000    3.000
+ RVS      C05    C06    C07     120.000    3.000
+ RVS      C11    C06    C07     120.000    3.000
+ RVS      C06    C11    H11     120.000    3.000
+ RVS      C06    C11    C10     120.000    3.000
+ RVS      H11    C11    C10     120.000    3.000
+ RVS      C06    C07    C08     120.000    3.000
+ RVS      C06    C07    C12     120.000    3.000
+ RVS      C08    C07    C12     120.000    3.000
+ RVS      C07    C08    H08     120.000    3.000
+ RVS      C07    C08    C09     120.000    3.000
+ RVS      H08    C08    C09     120.000    3.000
+ RVS      C08    C09    H09     120.000    3.000
+ RVS      C08    C09    C10     120.000    3.000
+ RVS      H09    C09    C10     120.000    3.000
+ RVS      C09    C10    H10     120.000    3.000
+ RVS      C09    C10    C11     120.000    3.000
+ RVS      H10    C10    C11     120.000    3.000
+ RVS      C07    C12    H12     109.470    3.000
+ RVS      C07    C12    N13     109.470    3.000
+ RVS      C07    C12    C03     109.470    3.000
+ RVS      H12    C12    N13     108.550    3.000
+ RVS      H12    C12    C03     108.340    3.000
+ RVS      N13    C12    C03     110.000    3.000
+ RVS      C12    N13    HN13    118.500    3.000
+ RVS      C12    N13    C14     121.500    3.000
+ RVS      HN13   N13    C14     120.000    3.000
+ RVS      N13    C14    O28     123.000    3.000
+ RVS      N13    C14    C15     120.000    3.000
+ RVS      O28    C14    C15     120.500    3.000
+ RVS      C14    C15    C16     120.000    3.000
+ RVS      C14    C15    C20     120.000    3.000
+ RVS      C16    C15    C20     120.000    3.000
+ RVS      C15    C16    H16     120.000    3.000
+ RVS      C15    C16    C17     120.000    3.000
+ RVS      H16    C16    C17     120.000    3.000
+ RVS      C15    C20    H20     120.000    3.000
+ RVS      C15    C20    C19     120.000    3.000
+ RVS      H20    C20    C19     120.000    3.000
+ RVS      C20    C19    H19     120.000    3.000
+ RVS      C20    C19    C18     120.000    3.000
+ RVS      H19    C19    C18     120.000    3.000
+ RVS      C19    C18    C17     120.000    3.000
+ RVS      C19    C18    N21     120.000    3.000
+ RVS      C17    C18    N21     120.000    3.000
+ RVS      C18    C17    H17     120.000    3.000
+ RVS      C18    C17    C16     120.000    3.000
+ RVS      H17    C17    C16     120.000    3.000
+ RVS      C18    N21    HN21    120.000    3.000
+ RVS      C18    N21    C22     120.000    3.000
+ RVS      HN21   N21    C22     120.000    3.000
+ RVS      N21    C22    O27     123.000    3.000
+ RVS      N21    C22    N23     120.000    3.000
+ RVS      O27    C22    N23     123.000    3.000
+ RVS      C22    N23    HN23    120.000    3.000
+ RVS      C22    N23    C24     121.500    3.000
+ RVS      HN23   N23    C24     118.500    3.000
+ RVS      N23    C24    H24     108.550    3.000
+ RVS      N23    C24    C26     110.000    3.000
+ RVS      N23    C24    C25     110.000    3.000
+ RVS      H24    C24    C26     108.340    3.000
+ RVS      H24    C24    C25     108.340    3.000
+ RVS      C26    C24    C25      60.000    3.000
+ RVS      C24    C26    H261    109.470    3.000
+ RVS      C24    C26    H262    109.470    3.000
+ RVS      C24    C26    C25      60.000    3.000
+ RVS      H261   C26    H262    107.900    3.000
+ RVS      H261   C26    C25     109.470    3.000
+ RVS      H262   C26    C25     109.470    3.000
+ RVS      C26    C25    H252    109.470    3.000
+ RVS      C26    C25    H251    109.470    3.000
+ RVS      C26    C25    C24      60.000    3.000
+ RVS      H252   C25    H251    107.900    3.000
+ RVS      H252   C25    C24     109.470    3.000
+ RVS      H251   C25    C24     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RVS      var_1            O29    C02    C03    C04              180.000           20.000   3
+ RVS      var_2            C02    C03    C04    C05              180.000           20.000   3
+ RVS      var_3            C03    C04    C05    C06              180.000           20.000   3
+ RVS      var_4            C04    C05    C06    C07                0.000           20.000   2
+ RVS      CONST_1          C05    C06    C11    C10                0.000            0.000   0
+ RVS      CONST_2          C06    C11    C10    C09                0.000            0.000   0
+ RVS      CONST_3          C05    C06    C07    C12                0.000            0.000   0
+ RVS      CONST_4          C06    C07    C08    C09                0.000            0.000   0
+ RVS      CONST_5          C07    C08    C09    C10                0.000            0.000   0
+ RVS      CONST_6          C08    C09    C10    C11                0.000            0.000   0
+ RVS      var_5            C06    C07    C12    N13             -151.266           20.000   3
+ RVS      var_6            C07    C12    C03    C02              180.000           20.000   3
+ RVS      var_7            C07    C12    N13    C14                0.000           20.000   3
+ RVS      var_8            C12    N13    C14    C15              180.000           20.000   2
+ RVS      var_9            N13    C14    C15    C20               16.670           20.000   3
+ RVS      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ RVS      CONST_8          C15    C16    C17    C18                0.000            0.000   0
+ RVS      CONST_9          C14    C15    C20    C19                0.000            0.000   0
+ RVS      CONST_10         C15    C20    C19    C18                0.000            0.000   0
+ RVS      CONST_11         C20    C19    C18    N21                0.000            0.000   0
+ RVS      CONST_12         C19    C18    C17    C16                0.000            0.000   0
+ RVS      var_10           C19    C18    N21    C22             -167.304           20.000   3
+ RVS      var_11           C18    N21    C22    N23              180.000           20.000   2
+ RVS      var_12           N21    C22    N23    C24              180.000           20.000   2
+ RVS      var_13           C22    N23    C24    C26                0.000           20.000   3
+ RVS      var_14           N23    C24    C25    C26              180.000           20.000   3
+ RVS      var_15           N23    C24    C26    C25              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RVS      chir_01          C12    C03    C07    N13       negativ
+ RVS      chir_02          C03    C12    C02    C04       negativ
+ RVS      chir_03          C24    C25    C26    N23       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RVS      plan-1            C18       0.020
+ RVS      plan-1            C17       0.020
+ RVS      plan-1            C19       0.020
+ RVS      plan-1            N21       0.020
+ RVS      plan-1            C16       0.020
+ RVS      plan-1            C15       0.020
+ RVS      plan-1            C20       0.020
+ RVS      plan-1            H16       0.020
+ RVS      plan-1            H17       0.020
+ RVS      plan-1            C14       0.020
+ RVS      plan-1            H20       0.020
+ RVS      plan-1            H19       0.020
+ RVS      plan-1            HN21      0.020
+ RVS      plan-2            C14       0.020
+ RVS      plan-2            C15       0.020
+ RVS      plan-2            N13       0.020
+ RVS      plan-2            O28       0.020
+ RVS      plan-2            HN13      0.020
+ RVS      plan-3            C11       0.020
+ RVS      plan-3            C10       0.020
+ RVS      plan-3            C06       0.020
+ RVS      plan-3            H11       0.020
+ RVS      plan-3            C07       0.020
+ RVS      plan-3            C08       0.020
+ RVS      plan-3            C09       0.020
+ RVS      plan-3            H10       0.020
+ RVS      plan-3            C05       0.020
+ RVS      plan-3            C12       0.020
+ RVS      plan-3            H08       0.020
+ RVS      plan-3            H09       0.020
+ RVS      plan-4            C02       0.020
+ RVS      plan-4            C03       0.020
+ RVS      plan-4            O01       0.020
+ RVS      plan-4            O29       0.020
+ RVS      plan-5            C22       0.020
+ RVS      plan-5            N21       0.020
+ RVS      plan-5            N23       0.020
+ RVS      plan-5            O27       0.020
+ RVS      plan-5            HN21      0.020
+ RVS      plan-5            HN23      0.020
+ RVS      plan-6            N13       0.020
+ RVS      plan-6            C14       0.020
+ RVS      plan-6            C12       0.020
+ RVS      plan-6            HN13      0.020
+ RVS      plan-7            N21       0.020
+ RVS      plan-7            C18       0.020
+ RVS      plan-7            C22       0.020
+ RVS      plan-7            HN21      0.020
+ RVS      plan-8            N23       0.020
+ RVS      plan-8            C22       0.020
+ RVS      plan-8            C24       0.020
+ RVS      plan-8            HN23      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

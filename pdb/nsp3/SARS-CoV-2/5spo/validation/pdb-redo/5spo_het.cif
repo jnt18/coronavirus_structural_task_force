@@ -1,0 +1,352 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S5F      S5F '.                                   ' .                  41  22 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S5F
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S5F           CL01   CL   CL        0.000    -21.499    8.346   10.774
+ S5F           C02    C    CH1       0.000    -21.370    7.166   12.103
+ S5F           H02    H    H         0.000    -22.127    6.535   11.616
+ S5F           N21    N    NH1       0.000    -20.404    6.066   12.029
+ S5F           HN21   H    H         0.000    -19.808    5.976   11.219
+ S5F           C20    C    C         0.000    -20.296    5.083   13.136
+ S5F           O22    O    O         0.000    -19.496    4.179   13.064
+ S5F           C03    C    CH2       0.000    -22.251    7.291   13.312
+ S5F           H031   H    H         0.000    -23.263    7.274   12.902
+ S5F           H032   H    H         0.000    -22.031    8.290   13.694
+ S5F           C04    C    CH1       0.000    -22.146    6.302   14.417
+ S5F           H04    H    H         0.000    -22.900    5.670   13.927
+ S5F           N19    N    NH1       0.000    -21.177    5.208   14.345
+ S5F           HN19   H    H         0.000    -21.102    4.543   15.102
+ S5F           N05    N    N         0.000    -23.038    6.480   15.568
+ S5F           C06    C    C1        0.000    -23.155    5.636   16.889
+ S5F           H06    H    H         0.000    -23.168    4.576   17.078
+ S5F           C09    C    CH2       0.000    -24.117    7.644   15.760
+ S5F           H091   H    H         0.000    -24.983    7.509   15.108
+ S5F           H092   H    H         0.000    -23.685    8.633   15.590
+ S5F           C08    C    CT        0.000    -24.501    7.535   17.049
+ S5F           C10    C    CH2       0.000    -24.681    8.929   17.647
+ S5F           H102   H    H         0.000    -24.732    9.785   16.971
+ S5F           H101   H    H         0.000    -24.097    9.198   18.529
+ S5F           C12    C    CH2       0.000    -26.017    7.326   17.146
+ S5F           H121   H    H         0.000    -26.390    6.441   17.667
+ S5F           H122   H    H         0.000    -26.627    7.509   16.259
+ S5F           C11    C    CH2       0.000    -26.091    8.529   18.071
+ S5F           H112   H    H         0.000    -26.112    8.352   19.148
+ S5F           H111   H    H         0.000    -26.789    9.331   17.821
+ S5F           C07    C    C         0.000    -23.234    6.714   17.705
+ S5F           C13    C    CH2       0.000    -23.457    6.364   19.183
+ S5F           H131   H    H         0.000    -24.014    5.428   19.256
+ S5F           H132   H    H         0.000    -24.025    7.163   19.665
+ S5F           N14    N    NR5       0.000    -22.158    6.215   19.849
+ S5F           C15    C    CR15      0.000    -21.014    6.923   19.620
+ S5F           H15    H    H         0.000    -20.900    7.722   18.898
+ S5F           N16    N    NRD5      0.000    -20.073    6.473   20.422
+ S5F           N17    N    NRD5      0.000    -20.603    5.482   21.170
+ S5F           C18    C    CR15      0.000    -21.873    5.333   20.812
+ S5F           H18    H    H         0.000    -22.565    4.614   21.232
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S5F      CL01   n/a    C02    START
+ S5F      C02    CL01   C03    .
+ S5F      H02    C02    .      .
+ S5F      N21    C02    C20    .
+ S5F      HN21   N21    .      .
+ S5F      C20    N21    O22    .
+ S5F      O22    C20    .      .
+ S5F      C03    C02    C04    .
+ S5F      H031   C03    .      .
+ S5F      H032   C03    .      .
+ S5F      C04    C03    N05    .
+ S5F      H04    C04    .      .
+ S5F      N19    C04    HN19   .
+ S5F      HN19   N19    .      .
+ S5F      N05    C04    C09    .
+ S5F      C06    N05    H06    .
+ S5F      H06    C06    .      .
+ S5F      C09    N05    C08    .
+ S5F      H091   C09    .      .
+ S5F      H092   C09    .      .
+ S5F      C08    C09    C07    .
+ S5F      C10    C08    H101   .
+ S5F      H102   C10    .      .
+ S5F      H101   C10    .      .
+ S5F      C12    C08    C11    .
+ S5F      H121   C12    .      .
+ S5F      H122   C12    .      .
+ S5F      C11    C12    H111   .
+ S5F      H112   C11    .      .
+ S5F      H111   C11    .      .
+ S5F      C07    C08    C13    .
+ S5F      C13    C07    N14    .
+ S5F      H131   C13    .      .
+ S5F      H132   C13    .      .
+ S5F      N14    C13    C15    .
+ S5F      C15    N14    N16    .
+ S5F      H15    C15    .      .
+ S5F      N16    C15    N17    .
+ S5F      N17    N16    C18    .
+ S5F      C18    N17    H18    .
+ S5F      H18    C18    .      END
+ S5F      C18    N14    .    ADD
+ S5F      C20    N19    .    ADD
+ S5F      C10    C11    .    ADD
+ S5F      C06    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S5F      C18    N14       single      1.337    0.020
+ S5F      C18    N17       aromatic    1.350    0.020
+ S5F      C20    N19       single      1.330    0.020
+ S5F      C20    N21       single      1.330    0.020
+ S5F      O22    C20       double      1.220    0.020
+ S5F      C10    C11       single      1.524    0.020
+ S5F      C10    C08       single      1.524    0.020
+ S5F      C11    C12       single      1.524    0.020
+ S5F      C15    N14       single      1.337    0.020
+ S5F      N16    C15       aromatic    1.350    0.020
+ S5F      C13    C07       single      1.510    0.020
+ S5F      N14    C13       single      1.462    0.020
+ S5F      C12    C08       single      1.524    0.020
+ S5F      C03    C02       single      1.524    0.020
+ S5F      N21    C02       single      1.450    0.020
+ S5F      C02    CL01      single      1.790    0.020
+ S5F      C04    C03       single      1.524    0.020
+ S5F      N05    C04       single      1.455    0.020
+ S5F      N19    C04       single      1.450    0.020
+ S5F      C06    C07       double      1.340    0.020
+ S5F      C06    N05       single      1.260    0.020
+ S5F      C07    C08       single      1.507    0.020
+ S5F      C08    C09       single      1.524    0.020
+ S5F      C09    N05       single      1.455    0.020
+ S5F      N17    N16       aromatic    1.404    0.020
+ S5F      H18    C18       single      1.083    0.020
+ S5F      H101   C10       single      1.092    0.020
+ S5F      H102   C10       single      1.092    0.020
+ S5F      H111   C11       single      1.092    0.020
+ S5F      H112   C11       single      1.092    0.020
+ S5F      H15    C15       single      1.083    0.020
+ S5F      H131   C13       single      1.092    0.020
+ S5F      H132   C13       single      1.092    0.020
+ S5F      H121   C12       single      1.092    0.020
+ S5F      H122   C12       single      1.092    0.020
+ S5F      H02    C02       single      1.099    0.020
+ S5F      H031   C03       single      1.092    0.020
+ S5F      H032   C03       single      1.092    0.020
+ S5F      H04    C04       single      1.099    0.020
+ S5F      H06    C06       single      1.077    0.020
+ S5F      H091   C09       single      1.092    0.020
+ S5F      H092   C09       single      1.092    0.020
+ S5F      HN19   N19       single      1.010    0.020
+ S5F      HN21   N21       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S5F      CL01   C02    H02     109.470    3.000
+ S5F      CL01   C02    N21     109.500    3.000
+ S5F      CL01   C02    C03     109.500    3.000
+ S5F      H02    C02    N21     108.550    3.000
+ S5F      H02    C02    C03     108.340    3.000
+ S5F      N21    C02    C03     110.000    3.000
+ S5F      C02    N21    HN21    118.500    3.000
+ S5F      C02    N21    C20     121.500    3.000
+ S5F      HN21   N21    C20     120.000    3.000
+ S5F      N21    C20    O22     123.000    3.000
+ S5F      N21    C20    N19     120.000    3.000
+ S5F      O22    C20    N19     123.000    3.000
+ S5F      C02    C03    H031    109.470    3.000
+ S5F      C02    C03    H032    109.470    3.000
+ S5F      C02    C03    C04     111.000    3.000
+ S5F      H031   C03    H032    107.900    3.000
+ S5F      H031   C03    C04     109.470    3.000
+ S5F      H032   C03    C04     109.470    3.000
+ S5F      C03    C04    H04     108.340    3.000
+ S5F      C03    C04    N19     110.000    3.000
+ S5F      C03    C04    N05     105.000    3.000
+ S5F      H04    C04    N19     108.550    3.000
+ S5F      H04    C04    N05     109.470    3.000
+ S5F      N19    C04    N05     109.500    3.000
+ S5F      C04    N19    HN19    118.500    3.000
+ S5F      C04    N19    C20     121.500    3.000
+ S5F      HN19   N19    C20     120.000    3.000
+ S5F      C04    N05    C06     120.000    3.000
+ S5F      C04    N05    C09     112.000    3.000
+ S5F      C06    N05    C09     120.000    3.000
+ S5F      N05    C06    H06     120.000    3.000
+ S5F      N05    C06    C07     120.000    3.000
+ S5F      H06    C06    C07     120.000    3.000
+ S5F      N05    C09    H091    109.470    3.000
+ S5F      N05    C09    H092    109.470    3.000
+ S5F      N05    C09    C08     109.500    3.000
+ S5F      H091   C09    H092    107.900    3.000
+ S5F      H091   C09    C08     109.470    3.000
+ S5F      H092   C09    C08     109.470    3.000
+ S5F      C09    C08    C10     111.000    3.000
+ S5F      C09    C08    C12     111.000    3.000
+ S5F      C09    C08    C07     109.470    3.000
+ S5F      C10    C08    C12     111.000    3.000
+ S5F      C10    C08    C07     109.470    3.000
+ S5F      C12    C08    C07     109.470    3.000
+ S5F      C08    C10    H102    109.470    3.000
+ S5F      C08    C10    H101    109.470    3.000
+ S5F      C08    C10    C11     111.000    3.000
+ S5F      H102   C10    H101    107.900    3.000
+ S5F      H102   C10    C11     109.470    3.000
+ S5F      H101   C10    C11     109.470    3.000
+ S5F      C08    C12    H121    109.470    3.000
+ S5F      C08    C12    H122    109.470    3.000
+ S5F      C08    C12    C11     111.000    3.000
+ S5F      H121   C12    H122    107.900    3.000
+ S5F      H121   C12    C11     109.470    3.000
+ S5F      H122   C12    C11     109.470    3.000
+ S5F      C12    C11    H112    109.470    3.000
+ S5F      C12    C11    H111    109.470    3.000
+ S5F      C12    C11    C10     111.000    3.000
+ S5F      H112   C11    H111    107.900    3.000
+ S5F      H112   C11    C10     109.470    3.000
+ S5F      H111   C11    C10     109.470    3.000
+ S5F      C08    C07    C13     120.000    3.000
+ S5F      C08    C07    C06     120.000    3.000
+ S5F      C13    C07    C06     120.000    3.000
+ S5F      C07    C13    H131    109.470    3.000
+ S5F      C07    C13    H132    109.470    3.000
+ S5F      C07    C13    N14     109.500    3.000
+ S5F      H131   C13    H132    107.900    3.000
+ S5F      H131   C13    N14     109.500    3.000
+ S5F      H132   C13    N14     109.500    3.000
+ S5F      C13    N14    C15     126.000    3.000
+ S5F      C13    N14    C18     126.000    3.000
+ S5F      C15    N14    C18     108.000    3.000
+ S5F      N14    C15    H15     126.000    3.000
+ S5F      N14    C15    N16     108.000    3.000
+ S5F      H15    C15    N16     126.000    3.000
+ S5F      C15    N16    N17     108.000    3.000
+ S5F      N16    N17    C18     108.000    3.000
+ S5F      N17    C18    H18     126.000    3.000
+ S5F      N17    C18    N14     108.000    3.000
+ S5F      H18    C18    N14     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S5F      var_1            CL01   C02    N21    C20                0.000           20.000   3
+ S5F      var_2            C02    N21    C20    O22              180.000           20.000   2
+ S5F      var_3            N21    C20    N19    C04              180.000           20.000   2
+ S5F      var_4            CL01   C02    C03    C04              180.000           20.000   3
+ S5F      var_5            C02    C03    C04    N05              180.000           20.000   3
+ S5F      var_6            C03    C04    N19    C20                0.000           20.000   3
+ S5F      var_7            C03    C04    N05    C09                0.000           20.000   3
+ S5F      var_8            C04    N05    C06    C07              136.039           20.000   3
+ S5F      var_9            N05    C06    C07    C08               54.830           20.000   3
+ S5F      var_10           C04    N05    C09    C08             -168.961           20.000   3
+ S5F      var_11           N05    C09    C08    C07               21.165           20.000   3
+ S5F      var_12           C09    C08    C10    C11              126.216           20.000   3
+ S5F      var_13           C08    C10    C11    C12              180.000           20.000   3
+ S5F      var_14           C09    C08    C12    C11             -125.180           20.000   3
+ S5F      var_15           C08    C12    C11    C10              180.000           20.000   3
+ S5F      var_16           C09    C08    C07    C13             -176.097           20.000   3
+ S5F      var_17           C08    C07    C13    N14              180.000           20.000   3
+ S5F      var_18           C07    C13    N14    C15               35.735           20.000   3
+ S5F      CONST_1          C13    N14    C15    N16              180.000            0.000   0
+ S5F      CONST_2          N14    C15    N16    N17                0.000            0.000   0
+ S5F      CONST_3          C15    N16    N17    C18                0.149            0.000   0
+ S5F      CONST_4          N16    N17    C18    N14                0.000            0.000   0
+ S5F      CONST_5          N17    C18    N14    C13              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S5F      chir_01          C02    C03    N21    CL01      positiv
+ S5F      chir_02          C04    C03    N05    N19       positiv
+ S5F      chir_03          C08    C10    C12    C07       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S5F      plan-1            C18       0.020
+ S5F      plan-1            N14       0.020
+ S5F      plan-1            N17       0.020
+ S5F      plan-1            H18       0.020
+ S5F      plan-1            C15       0.020
+ S5F      plan-1            N16       0.020
+ S5F      plan-1            H15       0.020
+ S5F      plan-1            C13       0.020
+ S5F      plan-2            C20       0.020
+ S5F      plan-2            N19       0.020
+ S5F      plan-2            N21       0.020
+ S5F      plan-2            O22       0.020
+ S5F      plan-2            HN19      0.020
+ S5F      plan-2            HN21      0.020
+ S5F      plan-3            C06       0.020
+ S5F      plan-3            C07       0.020
+ S5F      plan-3            N05       0.020
+ S5F      plan-3            H06       0.020
+ S5F      plan-4            C07       0.020
+ S5F      plan-4            C13       0.020
+ S5F      plan-4            C06       0.020
+ S5F      plan-4            C08       0.020
+ S5F      plan-4            H06       0.020
+ S5F      plan-5            N05       0.020
+ S5F      plan-5            C04       0.020
+ S5F      plan-5            C06       0.020
+ S5F      plan-5            C09       0.020
+ S5F      plan-5            H06       0.020
+ S5F      plan-6            N19       0.020
+ S5F      plan-6            C20       0.020
+ S5F      plan-6            C04       0.020
+ S5F      plan-6            HN19      0.020
+ S5F      plan-7            N21       0.020
+ S5F      plan-7            C20       0.020
+ S5F      plan-7            C02       0.020
+ S5F      plan-7            HN21      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

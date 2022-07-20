@@ -1,0 +1,301 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RJS      RJS '.                                   ' .                  33  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RJS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RJS           BR24   BR   BR        0.000    -47.301  -35.017   -0.376
+ RJS           C23    C    CR6       0.000    -46.003  -33.601   -0.156
+ RJS           C02    C    CR6       0.000    -44.913  -33.516   -1.002
+ RJS           F01    F    F         0.000    -44.740  -34.432   -1.999
+ RJS           C22    C    CR16      0.000    -46.182  -32.676    0.853
+ RJS           H22    H    H         0.000    -47.039  -32.754    1.510
+ RJS           C21    C    CR16      0.000    -45.279  -31.660    1.026
+ RJS           H21    H    H         0.000    -45.423  -30.930    1.813
+ RJS           C04    C    CR6       0.000    -44.187  -31.573    0.192
+ RJS           C03    C    CR16      0.000    -44.000  -32.493   -0.822
+ RJS           H03    H    H         0.000    -43.140  -32.413   -1.475
+ RJS           C05    C    CH2       0.000    -43.189  -30.445    0.365
+ RJS           H051   H    H         0.000    -43.739  -29.502    0.347
+ RJS           H052   H    H         0.000    -42.495  -30.477   -0.478
+ RJS           S06    S    ST        0.000    -42.265  -30.576    1.915
+ RJS           O07    O    OS        0.000    -41.329  -29.451    1.986
+ RJS           O08    O    OS        0.000    -41.368  -31.732    1.947
+ RJS           N09    N    NH1       0.000    -43.252  -30.500    3.299
+ RJS           HN09   H    H         0.000    -43.082  -31.109    4.086
+ RJS           C10    C    C         0.000    -44.337  -29.549    3.327
+ RJS           O11    O    O         0.000    -44.552  -28.821    2.413
+ RJS           C12    C    CR5       0.000    -45.169  -29.445    4.581
+ RJS           C20    C    CR5       0.000    -46.514  -29.119    4.736
+ RJS           C19    C    CSP       0.000    -47.564  -28.816    3.838
+ RJS           C18    C    CSP       0.000    -48.797  -28.536    4.322
+ RJS           N15    N    NR5       0.000    -46.749  -29.115    6.030
+ RJS           N14    N    NRD5      0.000    -45.606  -29.423    6.752
+ RJS           C13    C    CR15      0.000    -44.661  -29.622    5.849
+ RJS           H13    H    H         0.000    -43.635  -29.886    6.074
+ RJS           C16    C    C1        0.000    -47.999  -28.830    6.533
+ RJS           H16    H    H         0.000    -48.172  -28.838    7.596
+ RJS           C17    C    C1        0.000    -49.027  -28.535    5.664
+ RJS           H17    H    H         0.000    -50.008  -28.305    6.045
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RJS      BR24   n/a    C23    START
+ RJS      C23    BR24   C22    .
+ RJS      C02    C23    F01    .
+ RJS      F01    C02    .      .
+ RJS      C22    C23    C21    .
+ RJS      H22    C22    .      .
+ RJS      C21    C22    C04    .
+ RJS      H21    C21    .      .
+ RJS      C04    C21    C05    .
+ RJS      C03    C04    H03    .
+ RJS      H03    C03    .      .
+ RJS      C05    C04    S06    .
+ RJS      H051   C05    .      .
+ RJS      H052   C05    .      .
+ RJS      S06    C05    N09    .
+ RJS      O07    S06    .      .
+ RJS      O08    S06    .      .
+ RJS      N09    S06    C10    .
+ RJS      HN09   N09    .      .
+ RJS      C10    N09    C12    .
+ RJS      O11    C10    .      .
+ RJS      C12    C10    C20    .
+ RJS      C20    C12    N15    .
+ RJS      C19    C20    C18    .
+ RJS      C18    C19    .      .
+ RJS      N15    C20    C16    .
+ RJS      N14    N15    C13    .
+ RJS      C13    N14    H13    .
+ RJS      H13    C13    .      .
+ RJS      C16    N15    C17    .
+ RJS      H16    C16    .      .
+ RJS      C17    C16    H17    .
+ RJS      H17    C17    .      END
+ RJS      C18    C17    .    ADD
+ RJS      C13    C12    .    ADD
+ RJS      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RJS      C18    C17       aromatic    1.255    0.020
+ RJS      C18    C19       double      1.180    0.020
+ RJS      C17    C16       aromatic    1.330    0.020
+ RJS      C16    N15       single      1.365    0.020
+ RJS      C13    C12       aromatic    1.387    0.020
+ RJS      C13    N14       aromatic    1.350    0.020
+ RJS      C12    C10       single      1.490    0.020
+ RJS      C20    C12       aromatic    1.390    0.020
+ RJS      C10    N09       single      1.330    0.020
+ RJS      O11    C10       double      1.220    0.020
+ RJS      C19    C20       aromatic    1.335    0.020
+ RJS      N15    C20       single      1.337    0.020
+ RJS      C02    C03       aromatic    1.390    0.020
+ RJS      C02    C23       aromatic    1.384    0.020
+ RJS      F01    C02       single      1.345    0.020
+ RJS      C03    C04       aromatic    1.390    0.020
+ RJS      C05    C04       single      1.511    0.020
+ RJS      C04    C21       aromatic    1.390    0.020
+ RJS      S06    C05       single      1.662    0.020
+ RJS      C21    C22       aromatic    1.390    0.020
+ RJS      C22    C23       aromatic    1.390    0.020
+ RJS      C23    BR24      single      1.890    0.020
+ RJS      N09    S06       single      1.600    0.020
+ RJS      N14    N15       single      1.402    0.020
+ RJS      O07    S06       double      1.436    0.020
+ RJS      O08    S06       double      1.436    0.020
+ RJS      H16    C16       single      1.077    0.020
+ RJS      H17    C17       single      1.077    0.020
+ RJS      H13    C13       single      1.083    0.020
+ RJS      H03    C03       single      1.083    0.020
+ RJS      H051   C05       single      1.092    0.020
+ RJS      H052   C05       single      1.092    0.020
+ RJS      H21    C21       single      1.083    0.020
+ RJS      H22    C22       single      1.083    0.020
+ RJS      HN09   N09       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RJS      BR24   C23    C02     120.000    3.000
+ RJS      BR24   C23    C22     120.000    3.000
+ RJS      C02    C23    C22     120.000    3.000
+ RJS      C23    C02    F01     120.000    3.000
+ RJS      C23    C02    C03     120.000    3.000
+ RJS      F01    C02    C03     120.000    3.000
+ RJS      C23    C22    H22     120.000    3.000
+ RJS      C23    C22    C21     120.000    3.000
+ RJS      H22    C22    C21     120.000    3.000
+ RJS      C22    C21    H21     120.000    3.000
+ RJS      C22    C21    C04     120.000    3.000
+ RJS      H21    C21    C04     120.000    3.000
+ RJS      C21    C04    C03     120.000    3.000
+ RJS      C21    C04    C05     120.000    3.000
+ RJS      C03    C04    C05     120.000    3.000
+ RJS      C04    C03    H03     120.000    3.000
+ RJS      C04    C03    C02     120.000    3.000
+ RJS      H03    C03    C02     120.000    3.000
+ RJS      C04    C05    H051    109.470    3.000
+ RJS      C04    C05    H052    109.470    3.000
+ RJS      C04    C05    S06     109.500    3.000
+ RJS      H051   C05    H052    107.900    3.000
+ RJS      H051   C05    S06     109.500    3.000
+ RJS      H052   C05    S06     109.500    3.000
+ RJS      C05    S06    O07     109.500    3.000
+ RJS      C05    S06    O08     109.500    3.000
+ RJS      C05    S06    N09     109.500    3.000
+ RJS      O07    S06    O08     109.500    3.000
+ RJS      O07    S06    N09     109.500    3.000
+ RJS      O08    S06    N09     109.500    3.000
+ RJS      S06    N09    HN09    120.000    3.000
+ RJS      S06    N09    C10     120.000    3.000
+ RJS      HN09   N09    C10     120.000    3.000
+ RJS      N09    C10    O11     123.000    3.000
+ RJS      N09    C10    C12     120.000    3.000
+ RJS      O11    C10    C12     120.500    3.000
+ RJS      C10    C12    C20     117.000    3.000
+ RJS      C10    C12    C13     126.000    3.000
+ RJS      C20    C12    C13     108.000    3.000
+ RJS      C12    C20    C19     108.000    3.000
+ RJS      C12    C20    N15     108.000    3.000
+ RJS      C19    C20    N15     108.000    3.000
+ RJS      C20    C19    C18     180.000    3.000
+ RJS      C19    C18    C17     180.000    3.000
+ RJS      C20    N15    N14     108.000    3.000
+ RJS      C20    N15    C16     108.000    3.000
+ RJS      N14    N15    C16     108.000    3.000
+ RJS      N15    N14    C13     108.000    3.000
+ RJS      N14    C13    H13     126.000    3.000
+ RJS      N14    C13    C12     108.000    3.000
+ RJS      H13    C13    C12     126.000    3.000
+ RJS      N15    C16    H16     120.000    3.000
+ RJS      N15    C16    C17     120.000    3.000
+ RJS      H16    C16    C17     120.000    3.000
+ RJS      C16    C17    H17     120.000    3.000
+ RJS      C16    C17    C18     120.000    3.000
+ RJS      H17    C17    C18     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RJS      CONST_1          BR24   C23    C02    F01                0.000            0.000   0
+ RJS      CONST_2          C23    C02    C03    C04                0.000            0.000   0
+ RJS      CONST_3          BR24   C23    C22    C21                0.000            0.000   0
+ RJS      CONST_4          C23    C22    C21    C04                0.000            0.000   0
+ RJS      CONST_5          C22    C21    C04    C05                0.000            0.000   0
+ RJS      CONST_6          C21    C04    C03    C02                0.000            0.000   0
+ RJS      var_1            C21    C04    C05    S06                0.000           20.000   2
+ RJS      var_2            C04    C05    S06    N09              -61.361           20.000   3
+ RJS      var_3            C05    S06    N09    C10              -41.079           20.000   3
+ RJS      var_4            S06    N09    C10    C12              180.000           20.000   2
+ RJS      var_5            N09    C10    C12    C20             -148.816           20.000   3
+ RJS      CONST_7          C10    C12    C20    N15                0.000            0.000   0
+ RJS      var_6            C12    C20    C19    C18              179.880           20.000   3
+ RJS      var_7            C20    C19    C18    C17                0.495           20.000   3
+ RJS      var_8            C19    C18    C17    C16               -0.441           20.000   3
+ RJS      CONST_8          C12    C20    N15    C16             -179.857            0.000   0
+ RJS      CONST_9          C20    N15    N14    C13               -0.262            0.000   0
+ RJS      CONST_10         N15    N14    C13    C12                0.000            0.000   0
+ RJS      CONST_11         N14    C13    C12    C10                0.000            0.000   0
+ RJS      var_9            C20    N15    C16    C17               -0.351           20.000   3
+ RJS      var_10           N15    C16    C17    C18                0.357           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RJS      chir_01          S06    C05    N09    O07       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RJS      plan-1            C16       0.020
+ RJS      plan-1            C17       0.020
+ RJS      plan-1            N15       0.020
+ RJS      plan-1            H16       0.020
+ RJS      plan-1            H17       0.020
+ RJS      plan-2            C17       0.020
+ RJS      plan-2            C18       0.020
+ RJS      plan-2            C16       0.020
+ RJS      plan-2            H17       0.020
+ RJS      plan-2            H16       0.020
+ RJS      plan-3            C13       0.020
+ RJS      plan-3            C12       0.020
+ RJS      plan-3            N14       0.020
+ RJS      plan-3            H13       0.020
+ RJS      plan-3            C20       0.020
+ RJS      plan-3            N15       0.020
+ RJS      plan-3            C10       0.020
+ RJS      plan-3            C19       0.020
+ RJS      plan-3            C16       0.020
+ RJS      plan-3            H16       0.020
+ RJS      plan-4            C10       0.020
+ RJS      plan-4            C12       0.020
+ RJS      plan-4            N09       0.020
+ RJS      plan-4            O11       0.020
+ RJS      plan-4            HN09      0.020
+ RJS      plan-5            C02       0.020
+ RJS      plan-5            C03       0.020
+ RJS      plan-5            C23       0.020
+ RJS      plan-5            F01       0.020
+ RJS      plan-5            C04       0.020
+ RJS      plan-5            C21       0.020
+ RJS      plan-5            C22       0.020
+ RJS      plan-5            H03       0.020
+ RJS      plan-5            C05       0.020
+ RJS      plan-5            H21       0.020
+ RJS      plan-5            H22       0.020
+ RJS      plan-5            BR24      0.020
+ RJS      plan-6            N09       0.020
+ RJS      plan-6            C10       0.020
+ RJS      plan-6            S06       0.020
+ RJS      plan-6            HN09      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

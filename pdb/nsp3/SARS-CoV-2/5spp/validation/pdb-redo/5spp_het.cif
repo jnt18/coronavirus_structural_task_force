@@ -1,0 +1,261 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S5U      S5U '.                                   ' .                  31  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S5U
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S5U           O10    O    O         0.000    -44.646  -27.891    2.171
+ S5U           C09    C    C         0.000    -45.100  -28.911    2.570
+ S5U           N02    N    N         0.000    -45.491  -29.923    1.605
+ S5U           C03    C    CH2       0.000    -45.324  -29.670    0.185
+ S5U           H031   H    H         0.000    -44.761  -30.483   -0.279
+ S5U           H032   H    H         0.000    -44.795  -28.727    0.030
+ S5U           C04    C    CH2       0.000    -46.717  -29.586   -0.448
+ S5U           H041   H    H         0.000    -47.293  -30.464   -0.148
+ S5U           H042   H    H         0.000    -46.609  -29.576   -1.535
+ S5U           C05    C    CH2       0.000    -47.439  -28.328    0.002
+ S5U           H051   H    H         0.000    -47.563  -28.370    1.086
+ S5U           H052   H    H         0.000    -48.421  -28.305   -0.475
+ S5U           C06    C    C         0.000    -46.657  -27.068   -0.375
+ S5U           O08    O    OC       -1.000    -46.084  -27.013   -1.494
+ S5U           O07    O    OC        0.000    -46.575  -26.099    0.421
+ S5U           C01    C    CH3       0.000    -46.054  -31.189    2.028
+ S5U           H013   H    H         0.000    -45.357  -31.695    2.644
+ S5U           H012   H    H         0.000    -46.945  -31.013    2.572
+ S5U           H011   H    H         0.000    -46.269  -31.780    1.177
+ S5U           C11    C    CR6       0.000    -45.231  -29.075    4.086
+ S5U           C19    C    CR56      0.000    -46.478  -29.029    4.737
+ S5U           C18    C    CR15      0.000    -47.813  -28.883    4.328
+ S5U           H18    H    H         0.000    -48.171  -28.758    3.313
+ S5U           N12    N    NRD6      0.000    -44.135  -29.216    4.820
+ S5U           C13    C    CR16      0.000    -44.215  -29.339    6.135
+ S5U           H13    H    H         0.000    -43.304  -29.467    6.706
+ S5U           N14    N    NRD6      0.000    -45.364  -29.311    6.770
+ S5U           C15    C    CR56      0.000    -46.514  -29.156    6.110
+ S5U           N16    N    NRD5      0.000    -47.786  -29.094    6.515
+ S5U           C17    C    CR15      0.000    -48.584  -28.931    5.482
+ S5U           H17    H    H         0.000    -49.663  -28.848    5.524
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S5U      O10    n/a    C09    START
+ S5U      C09    O10    C11    .
+ S5U      N02    C09    C01    .
+ S5U      C03    N02    C04    .
+ S5U      H031   C03    .      .
+ S5U      H032   C03    .      .
+ S5U      C04    C03    C05    .
+ S5U      H041   C04    .      .
+ S5U      H042   C04    .      .
+ S5U      C05    C04    C06    .
+ S5U      H051   C05    .      .
+ S5U      H052   C05    .      .
+ S5U      C06    C05    O07    .
+ S5U      O08    C06    .      .
+ S5U      O07    C06    .      .
+ S5U      C01    N02    H011   .
+ S5U      H013   C01    .      .
+ S5U      H012   C01    .      .
+ S5U      H011   C01    .      .
+ S5U      C11    C09    N12    .
+ S5U      C19    C11    C18    .
+ S5U      C18    C19    H18    .
+ S5U      H18    C18    .      .
+ S5U      N12    C11    C13    .
+ S5U      C13    N12    N14    .
+ S5U      H13    C13    .      .
+ S5U      N14    C13    C15    .
+ S5U      C15    N14    N16    .
+ S5U      N16    C15    C17    .
+ S5U      C17    N16    H17    .
+ S5U      H17    C17    .      END
+ S5U      C18    C17    .    ADD
+ S5U      C15    C19    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S5U      C18    C17       aromatic    1.380    0.020
+ S5U      C18    C19       aromatic    1.440    0.020
+ S5U      C17    N16       aromatic    1.350    0.020
+ S5U      C15    C19       aromatic    1.390    0.020
+ S5U      C15    N14       aromatic    1.355    0.020
+ S5U      N16    C15       deloc       1.350    0.020
+ S5U      C13    N12       aromatic    1.337    0.020
+ S5U      N14    C13       aromatic    1.337    0.020
+ S5U      C19    C11       aromatic    1.390    0.020
+ S5U      C11    C09       single      1.500    0.020
+ S5U      N12    C11       deloc       1.350    0.020
+ S5U      C01    N02       single      1.455    0.020
+ S5U      C04    C03       single      1.524    0.020
+ S5U      C03    N02       single      1.455    0.020
+ S5U      C05    C04       single      1.524    0.020
+ S5U      C06    C05       single      1.510    0.020
+ S5U      O07    C06       deloc       1.250    0.020
+ S5U      O08    C06       deloc       1.250    0.020
+ S5U      N02    C09       single      1.330    0.020
+ S5U      C09    O10       double      1.220    0.020
+ S5U      H18    C18       single      1.083    0.020
+ S5U      H17    C17       single      1.083    0.020
+ S5U      H13    C13       single      1.083    0.020
+ S5U      H011   C01       single      1.059    0.020
+ S5U      H012   C01       single      1.059    0.020
+ S5U      H013   C01       single      1.059    0.020
+ S5U      H031   C03       single      1.092    0.020
+ S5U      H032   C03       single      1.092    0.020
+ S5U      H041   C04       single      1.092    0.020
+ S5U      H042   C04       single      1.092    0.020
+ S5U      H051   C05       single      1.092    0.020
+ S5U      H052   C05       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S5U      O10    C09    N02     123.000    3.000
+ S5U      O10    C09    C11     120.500    3.000
+ S5U      N02    C09    C11     120.000    3.000
+ S5U      C09    N02    C03     127.000    3.000
+ S5U      C09    N02    C01     127.000    3.000
+ S5U      C03    N02    C01     120.000    3.000
+ S5U      N02    C03    H031    109.470    3.000
+ S5U      N02    C03    H032    109.470    3.000
+ S5U      N02    C03    C04     105.000    3.000
+ S5U      H031   C03    H032    107.900    3.000
+ S5U      H031   C03    C04     109.470    3.000
+ S5U      H032   C03    C04     109.470    3.000
+ S5U      C03    C04    H041    109.470    3.000
+ S5U      C03    C04    H042    109.470    3.000
+ S5U      C03    C04    C05     111.000    3.000
+ S5U      H041   C04    H042    107.900    3.000
+ S5U      H041   C04    C05     109.470    3.000
+ S5U      H042   C04    C05     109.470    3.000
+ S5U      C04    C05    H051    109.470    3.000
+ S5U      C04    C05    H052    109.470    3.000
+ S5U      C04    C05    C06     109.470    3.000
+ S5U      H051   C05    H052    107.900    3.000
+ S5U      H051   C05    C06     109.470    3.000
+ S5U      H052   C05    C06     109.470    3.000
+ S5U      C05    C06    O08     118.500    3.000
+ S5U      C05    C06    O07     118.500    3.000
+ S5U      O08    C06    O07     123.000    3.000
+ S5U      N02    C01    H013    109.470    3.000
+ S5U      N02    C01    H012    109.470    3.000
+ S5U      N02    C01    H011    109.470    3.000
+ S5U      H013   C01    H012    109.470    3.000
+ S5U      H013   C01    H011    109.470    3.000
+ S5U      H012   C01    H011    109.470    3.000
+ S5U      C09    C11    C19     120.000    3.000
+ S5U      C09    C11    N12     120.000    3.000
+ S5U      C19    C11    N12     120.000    3.000
+ S5U      C11    C19    C18     132.000    3.000
+ S5U      C11    C19    C15     120.000    3.000
+ S5U      C18    C19    C15     120.000    3.000
+ S5U      C19    C18    H18     108.000    3.000
+ S5U      C19    C18    C17     108.000    3.000
+ S5U      H18    C18    C17     126.000    3.000
+ S5U      C11    N12    C13     120.000    3.000
+ S5U      N12    C13    H13     120.000    3.000
+ S5U      N12    C13    N14     120.000    3.000
+ S5U      H13    C13    N14     120.000    3.000
+ S5U      C13    N14    C15     120.000    3.000
+ S5U      N14    C15    N16     120.000    3.000
+ S5U      N14    C15    C19     120.000    3.000
+ S5U      N16    C15    C19     108.000    3.000
+ S5U      C15    N16    C17     108.000    3.000
+ S5U      N16    C17    H17     126.000    3.000
+ S5U      N16    C17    C18     108.000    3.000
+ S5U      H17    C17    C18     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S5U      var_1            O10    C09    N02    C01              180.000           20.000   2
+ S5U      var_2            C09    N02    C03    C04             -113.381           20.000   3
+ S5U      var_3            N02    C03    C04    C05              180.000           20.000   3
+ S5U      var_4            C03    C04    C05    C06              180.000           20.000   3
+ S5U      var_5            C04    C05    C06    O07              180.000           20.000   3
+ S5U      var_6            C09    N02    C01    H011             180.000           20.000   3
+ S5U      var_7            O10    C09    C11    N12              -70.196           20.000   3
+ S5U      CONST_1          C09    C11    C19    C18              180.000            0.000   0
+ S5U      CONST_2          C11    C19    C18    C17              179.543            0.000   0
+ S5U      CONST_3          C19    C18    C17    N16               -0.028            0.000   0
+ S5U      CONST_4          C09    C11    N12    C13                0.000            0.000   0
+ S5U      CONST_5          C11    N12    C13    N14                0.000            0.000   0
+ S5U      CONST_6          N12    C13    N14    C15                0.000            0.000   0
+ S5U      CONST_7          C13    N14    C15    N16              180.000            0.000   0
+ S5U      CONST_8          N14    C15    C19    C11              180.000            0.000   0
+ S5U      CONST_9          N14    C15    N16    C17              180.000            0.000   0
+ S5U      CONST_10         C15    N16    C17    C18                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S5U      plan-1            C18       0.020
+ S5U      plan-1            C17       0.020
+ S5U      plan-1            C19       0.020
+ S5U      plan-1            H18       0.020
+ S5U      plan-1            N16       0.020
+ S5U      plan-1            H17       0.020
+ S5U      plan-1            C15       0.020
+ S5U      plan-1            C11       0.020
+ S5U      plan-1            C13       0.020
+ S5U      plan-1            N12       0.020
+ S5U      plan-1            N14       0.020
+ S5U      plan-1            H13       0.020
+ S5U      plan-1            C09       0.020
+ S5U      plan-2            C06       0.020
+ S5U      plan-2            C05       0.020
+ S5U      plan-2            O07       0.020
+ S5U      plan-2            O08       0.020
+ S5U      plan-3            C09       0.020
+ S5U      plan-3            C11       0.020
+ S5U      plan-3            N02       0.020
+ S5U      plan-3            O10       0.020
+ S5U      plan-4            N02       0.020
+ S5U      plan-4            C01       0.020
+ S5U      plan-4            C03       0.020
+ S5U      plan-4            C09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

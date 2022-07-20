@@ -1,0 +1,347 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RI3      RI3 '.                                   ' .                  40  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RI3
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RI3           O01    O    O        -1.000    -47.289  -26.728   -0.070
+ RI3           C02    C    CH1       0.000    -46.908  -27.926   -0.177
+ RI3           H02    H    H         0.000    -47.693  -28.238    0.526
+ RI3           O26    O    OH1       0.000    -47.404  -28.676   -1.064
+ RI3           HO26   H    H         0.000    -46.987  -29.531   -0.979
+ RI3           C03    C    CT        0.000    -45.835  -28.488    0.772
+ RI3           F25    F    F         0.000    -45.206  -29.480    0.246
+ RI3           C21    C    C         0.000    -44.887  -27.406    1.308
+ RI3           C22    C    CH1       0.000    -43.808  -27.041    0.227
+ RI3           H22    H    H         0.000    -43.125  -27.887    0.065
+ RI3           C24    C    CH2       0.000    -43.957  -26.224   -1.053
+ RI3           H241   H    H         0.000    -44.749  -25.497   -1.246
+ RI3           H242   H    H         0.000    -43.362  -26.361   -1.958
+ RI3           C23    C    CH2       0.000    -43.065  -25.719    0.070
+ RI3           H232   H    H         0.000    -43.376  -25.029    0.857
+ RI3           H231   H    H         0.000    -41.990  -25.893    0.145
+ RI3           C04    C    CH2       0.000    -46.445  -28.872    2.186
+ RI3           H041   H    H         0.000    -47.072  -29.766    2.161
+ RI3           H042   H    H         0.000    -46.996  -28.056    2.658
+ RI3           N05    N    N         0.000    -45.349  -29.121    2.876
+ RI3           C20    C    C1        0.000    -44.295  -27.969    2.416
+ RI3           H20    H    H         0.000    -43.355  -27.708    2.872
+ RI3           C06    C    CR6       0.000    -45.494  -29.143    4.336
+ RI3           N19    N    NRD6      0.000    -44.337  -29.191    4.997
+ RI3           C18    C    CR16      0.000    -44.283  -29.226    6.317
+ RI3           H18    H    H         0.000    -43.326  -29.259    6.824
+ RI3           C07    C    CR56      0.000    -46.734  -29.137    5.054
+ RI3           C08    C    CR56      0.000    -48.173  -29.097    4.802
+ RI3           C13    C    CR16      0.000    -49.058  -29.050    3.686
+ RI3           H13    H    H         0.000    -48.650  -29.037    2.683
+ RI3           C09    C    CR56      0.000    -48.755  -29.115    6.065
+ RI3           N15    N    NRD5      0.000    -47.807  -29.165    7.002
+ RI3           C16    C    CR56      0.000    -46.605  -29.176    6.436
+ RI3           N17    N    NRD6      0.000    -45.396  -29.220    7.007
+ RI3           C10    C    CR16      0.000    -50.143  -29.096    6.234
+ RI3           H10    H    H         0.000    -50.563  -29.119    7.232
+ RI3           C11    C    CR6       0.000    -50.983  -29.048    5.138
+ RI3           F14    F    F         0.000    -52.336  -29.027    5.306
+ RI3           C12    C    CR16      0.000    -50.437  -29.021    3.865
+ RI3           H12    H    H         0.000    -51.090  -28.977    3.002
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RI3      O01    n/a    C02    START
+ RI3      C02    O01    C03    .
+ RI3      H02    C02    .      .
+ RI3      O26    C02    HO26   .
+ RI3      HO26   O26    .      .
+ RI3      C03    C02    C04    .
+ RI3      F25    C03    .      .
+ RI3      C21    C03    C22    .
+ RI3      C22    C21    C24    .
+ RI3      H22    C22    .      .
+ RI3      C24    C22    C23    .
+ RI3      H241   C24    .      .
+ RI3      H242   C24    .      .
+ RI3      C23    C24    H231   .
+ RI3      H232   C23    .      .
+ RI3      H231   C23    .      .
+ RI3      C04    C03    N05    .
+ RI3      H041   C04    .      .
+ RI3      H042   C04    .      .
+ RI3      N05    C04    C06    .
+ RI3      C20    N05    H20    .
+ RI3      H20    C20    .      .
+ RI3      C06    N05    C07    .
+ RI3      N19    C06    C18    .
+ RI3      C18    N19    H18    .
+ RI3      H18    C18    .      .
+ RI3      C07    C06    C08    .
+ RI3      C08    C07    C09    .
+ RI3      C13    C08    H13    .
+ RI3      H13    C13    .      .
+ RI3      C09    C08    C10    .
+ RI3      N15    C09    C16    .
+ RI3      C16    N15    N17    .
+ RI3      N17    C16    .      .
+ RI3      C10    C09    C11    .
+ RI3      H10    C10    .      .
+ RI3      C11    C10    C12    .
+ RI3      F14    C11    .      .
+ RI3      C12    C11    H12    .
+ RI3      H12    C12    .      END
+ RI3      C18    N17    .    ADD
+ RI3      C16    C07    .    ADD
+ RI3      C13    C12    .    ADD
+ RI3      C20    C21    .    ADD
+ RI3      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RI3      C18    N17       aromatic    1.337    0.020
+ RI3      C18    N19       aromatic    1.337    0.020
+ RI3      C16    C07       aromatic    1.390    0.020
+ RI3      C16    N15       aromat      1.350    0.020
+ RI3      N17    C16       aromatic    1.355    0.020
+ RI3      C13    C12       aromatic    1.390    0.020
+ RI3      C13    C08       aromatic    1.390    0.020
+ RI3      C12    C11       aromatic    1.390    0.020
+ RI3      C11    C10       aromatic    1.390    0.020
+ RI3      F14    C11       single      1.345    0.020
+ RI3      C10    C09       aromatic    1.390    0.020
+ RI3      C20    C21       aromatic    1.340    0.020
+ RI3      C20    N05       single      1.260    0.020
+ RI3      C03    C02       single      1.524    0.020
+ RI3      C02    O01       single      1.420    0.020
+ RI3      O26    C02       single      1.432    0.020
+ RI3      C04    C03       single      1.524    0.020
+ RI3      C21    C03       single      1.507    0.020
+ RI3      F25    C03       single      1.320    0.020
+ RI3      N05    C04       single      1.455    0.020
+ RI3      C07    C06       aromatic    1.390    0.020
+ RI3      C06    N05       single      1.400    0.020
+ RI3      N19    C06       deloc       1.350    0.020
+ RI3      C08    C07       single      1.490    0.020
+ RI3      C09    C08       aromatic    1.390    0.020
+ RI3      N15    C09       deloc       1.350    0.020
+ RI3      C22    C21       single      1.500    0.020
+ RI3      C22    C23       single      1.524    0.020
+ RI3      C24    C22       single      1.524    0.020
+ RI3      C23    C24       single      1.524    0.020
+ RI3      H18    C18       single      1.083    0.020
+ RI3      H13    C13       single      1.083    0.020
+ RI3      H12    C12       single      1.083    0.020
+ RI3      H10    C10       single      1.083    0.020
+ RI3      H20    C20       single      1.077    0.020
+ RI3      H02    C02       single      1.099    0.020
+ RI3      H041   C04       single      1.092    0.020
+ RI3      H042   C04       single      1.092    0.020
+ RI3      H22    C22       single      1.099    0.020
+ RI3      H231   C23       single      1.092    0.020
+ RI3      H232   C23       single      1.092    0.020
+ RI3      H241   C24       single      1.092    0.020
+ RI3      H242   C24       single      1.092    0.020
+ RI3      HO26   O26       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RI3      O01    C02    H02     109.470    3.000
+ RI3      O01    C02    O26     109.470    3.000
+ RI3      O01    C02    C03     109.500    3.000
+ RI3      H02    C02    O26     109.470    3.000
+ RI3      H02    C02    C03     108.340    3.000
+ RI3      O26    C02    C03     109.470    3.000
+ RI3      C02    O26    HO26    109.470    3.000
+ RI3      C02    C03    F25     109.470    3.000
+ RI3      C02    C03    C21     109.470    3.000
+ RI3      C02    C03    C04     111.000    3.000
+ RI3      F25    C03    C21     109.470    3.000
+ RI3      F25    C03    C04     109.470    3.000
+ RI3      C21    C03    C04     109.470    3.000
+ RI3      C03    C21    C22     120.000    3.000
+ RI3      C03    C21    C20     120.000    3.000
+ RI3      C22    C21    C20     120.000    3.000
+ RI3      C21    C22    H22     108.810    3.000
+ RI3      C21    C22    C24     109.470    3.000
+ RI3      C21    C22    C23     109.470    3.000
+ RI3      H22    C22    C24     108.340    3.000
+ RI3      H22    C22    C23     108.340    3.000
+ RI3      C24    C22    C23      60.000    3.000
+ RI3      C22    C24    H241    109.470    3.000
+ RI3      C22    C24    H242    109.470    3.000
+ RI3      C22    C24    C23      60.000    3.000
+ RI3      H241   C24    H242    107.900    3.000
+ RI3      H241   C24    C23     109.470    3.000
+ RI3      H242   C24    C23     109.470    3.000
+ RI3      C24    C23    H232    109.470    3.000
+ RI3      C24    C23    H231    109.470    3.000
+ RI3      C24    C23    C22      60.000    3.000
+ RI3      H232   C23    H231    107.900    3.000
+ RI3      H232   C23    C22     109.470    3.000
+ RI3      H231   C23    C22     109.470    3.000
+ RI3      C03    C04    H041    109.470    3.000
+ RI3      C03    C04    H042    109.470    3.000
+ RI3      C03    C04    N05     109.500    3.000
+ RI3      H041   C04    H042    107.900    3.000
+ RI3      H041   C04    N05     109.470    3.000
+ RI3      H042   C04    N05     109.470    3.000
+ RI3      C04    N05    C20     120.000    3.000
+ RI3      C04    N05    C06     120.000    3.000
+ RI3      C20    N05    C06     120.000    3.000
+ RI3      N05    C20    H20     120.000    3.000
+ RI3      N05    C20    C21     120.000    3.000
+ RI3      H20    C20    C21     120.000    3.000
+ RI3      N05    C06    N19     120.000    3.000
+ RI3      N05    C06    C07     120.000    3.000
+ RI3      N19    C06    C07     120.000    3.000
+ RI3      C06    N19    C18     120.000    3.000
+ RI3      N19    C18    H18     120.000    3.000
+ RI3      N19    C18    N17     120.000    3.000
+ RI3      H18    C18    N17     120.000    3.000
+ RI3      C06    C07    C08     120.000    3.000
+ RI3      C06    C07    C16     120.000    3.000
+ RI3      C08    C07    C16     120.000    3.000
+ RI3      C07    C08    C13     120.000    3.000
+ RI3      C07    C08    C09     120.000    3.000
+ RI3      C13    C08    C09     120.000    3.000
+ RI3      C08    C13    H13     120.000    3.000
+ RI3      C08    C13    C12     120.000    3.000
+ RI3      H13    C13    C12     120.000    3.000
+ RI3      C08    C09    N15     108.000    3.000
+ RI3      C08    C09    C10     120.000    3.000
+ RI3      N15    C09    C10     132.000    3.000
+ RI3      C09    N15    C16     108.000    3.000
+ RI3      N15    C16    N17     120.000    3.000
+ RI3      N15    C16    C07     108.000    3.000
+ RI3      N17    C16    C07     120.000    3.000
+ RI3      C16    N17    C18     120.000    3.000
+ RI3      C09    C10    H10     120.000    3.000
+ RI3      C09    C10    C11     120.000    3.000
+ RI3      H10    C10    C11     120.000    3.000
+ RI3      C10    C11    F14     120.000    3.000
+ RI3      C10    C11    C12     120.000    3.000
+ RI3      F14    C11    C12     120.000    3.000
+ RI3      C11    C12    H12     120.000    3.000
+ RI3      C11    C12    C13     120.000    3.000
+ RI3      H12    C12    C13     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RI3      var_1            O01    C02    O26    HO26             180.000           20.000   3
+ RI3      var_2            O01    C02    C03    C04               79.316           20.000   3
+ RI3      var_3            C02    C03    C21    C22              -78.961           20.000   3
+ RI3      var_4            C03    C21    C22    C24              180.000           20.000   3
+ RI3      var_5            C21    C22    C23    C24              180.000           20.000   3
+ RI3      var_6            C21    C22    C24    C23              180.000           20.000   3
+ RI3      var_7            C02    C03    C04    N05             -170.781           20.000   3
+ RI3      var_8            C03    C04    N05    C06              163.233           20.000   3
+ RI3      var_9            C04    N05    C20    C21              -12.358           20.000   3
+ RI3      var_10           N05    C20    C21    C03              -23.314           20.000   3
+ RI3      var_11           C04    N05    C06    C07               10.801           20.000   3
+ RI3      CONST_1          N05    C06    N19    C18                0.000            0.000   0
+ RI3      CONST_2          C06    N19    C18    N17                0.000            0.000   0
+ RI3      CONST_3          N19    C18    N17    C16                0.000            0.000   0
+ RI3      CONST_4          N05    C06    C07    C08              180.000            0.000   0
+ RI3      CONST_5          C06    C07    C08    C09              180.000            0.000   0
+ RI3      CONST_6          C07    C08    C13    C12              180.000            0.000   0
+ RI3      CONST_7          C08    C13    C12    C11                0.000            0.000   0
+ RI3      CONST_8          C07    C08    C09    C10              180.000            0.000   0
+ RI3      CONST_9          C08    C09    N15    C16              180.000            0.000   0
+ RI3      CONST_10         C09    N15    C16    N17              180.000            0.000   0
+ RI3      CONST_11         N15    C16    C07    C06              180.000            0.000   0
+ RI3      CONST_12         N15    C16    N17    C18              180.000            0.000   0
+ RI3      CONST_13         C08    C09    C10    C11              180.000            0.000   0
+ RI3      CONST_14         C09    C10    C11    C12                0.000            0.000   0
+ RI3      CONST_15         C10    C11    C12    C13                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RI3      chir_01          C02    C03    O01    O26       positiv
+ RI3      chir_02          C03    C02    C04    C21       positiv
+ RI3      chir_03          C22    C21    C23    C24       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RI3      plan-1            C18       0.020
+ RI3      plan-1            N17       0.020
+ RI3      plan-1            N19       0.020
+ RI3      plan-1            H18       0.020
+ RI3      plan-1            C06       0.020
+ RI3      plan-1            C07       0.020
+ RI3      plan-1            N05       0.020
+ RI3      plan-1            C16       0.020
+ RI3      plan-1            C08       0.020
+ RI3      plan-1            C13       0.020
+ RI3      plan-1            C09       0.020
+ RI3      plan-1            C10       0.020
+ RI3      plan-1            N15       0.020
+ RI3      plan-1            C12       0.020
+ RI3      plan-1            C11       0.020
+ RI3      plan-1            H13       0.020
+ RI3      plan-1            H12       0.020
+ RI3      plan-1            F14       0.020
+ RI3      plan-1            H10       0.020
+ RI3      plan-2            C20       0.020
+ RI3      plan-2            C21       0.020
+ RI3      plan-2            N05       0.020
+ RI3      plan-2            H20       0.020
+ RI3      plan-3            C21       0.020
+ RI3      plan-3            C20       0.020
+ RI3      plan-3            C03       0.020
+ RI3      plan-3            C22       0.020
+ RI3      plan-3            H20       0.020
+ RI3      plan-4            N05       0.020
+ RI3      plan-4            C20       0.020
+ RI3      plan-4            C04       0.020
+ RI3      plan-4            C06       0.020
+ RI3      plan-4            H20       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

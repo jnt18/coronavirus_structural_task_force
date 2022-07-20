@@ -1,0 +1,327 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QKC      QKC '.                                   ' .                  37  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QKC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QKC           O24    O    OS       -0.500    -46.893  -27.630    0.132
+ QKC           S02    S    ST        0.000    -45.494  -27.204    0.052
+ QKC           O03    O    OS       -0.500    -45.427  -26.236    1.145
+ QKC           C01    C    CH3       0.000    -45.137  -26.398   -1.536
+ QKC           H013   H    H         0.000    -45.321  -27.061   -2.356
+ QKC           H012   H    H         0.000    -45.748  -25.530   -1.675
+ QKC           H011   H    H         0.000    -44.114  -26.088   -1.591
+ QKC           C04    C    C         0.000    -44.318  -28.643    0.341
+ QKC           C23    C    CH2       0.000    -44.086  -28.790    1.868
+ QKC           H231   H    H         0.000    -43.781  -27.812    2.246
+ QKC           H232   H    H         0.000    -43.270  -29.503    2.005
+ QKC           N08    N    N         0.000    -45.317  -29.270    2.631
+ QKC           C07    C    CH2       0.000    -45.868  -30.510    1.917
+ QKC           H071   H    H         0.000    -46.901  -30.287    1.641
+ QKC           H072   H    H         0.000    -45.855  -31.328    2.641
+ QKC           C06    C    C1        0.000    -45.076  -30.920    0.662
+ QKC           H06    H    H         0.000    -44.699  -31.915    0.496
+ QKC           C05    C    C1        0.000    -44.889  -29.826   -0.275
+ QKC           H05    H    H         0.000    -45.147  -29.887   -1.319
+ QKC           C09    C    CR6       0.000    -45.242  -29.301    4.078
+ QKC           C10    C    CR56      0.000    -46.412  -29.249    4.872
+ QKC           C11    C    CR56      0.000    -47.849  -29.158    4.645
+ QKC           C16    C    CR16      0.000    -48.643  -29.083    3.479
+ QKC           H16    H    H         0.000    -48.177  -29.091    2.501
+ QKC           N22    N    NRD6      0.000    -44.049  -29.389    4.653
+ QKC           C21    C    CR16      0.000    -43.949  -29.426    5.975
+ QKC           H21    H    H         0.000    -42.967  -29.496    6.426
+ QKC           N20    N    NRD6      0.000    -45.007  -29.380    6.754
+ QKC           C19    C    CR56      0.000    -46.254  -29.292    6.238
+ QKC           N18    N    NRD5      0.000    -47.472  -29.233    6.826
+ QKC           C12    C    CR56      0.000    -48.446  -29.151    5.885
+ QKC           C13    C    CR16      0.000    -49.855  -29.069    5.996
+ QKC           H13    H    H         0.000    -50.322  -29.063    6.973
+ QKC           C14    C    CR6       0.000    -50.637  -28.996    4.852
+ QKC           F17    F    F         0.000    -51.996  -28.917    4.955
+ QKC           C15    C    CR16      0.000    -50.029  -28.999    3.594
+ QKC           H15    H    H         0.000    -50.640  -28.936    2.702
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QKC      O24    n/a    S02    START
+ QKC      S02    O24    C04    .
+ QKC      O03    S02    .      .
+ QKC      C01    S02    H011   .
+ QKC      H013   C01    .      .
+ QKC      H012   C01    .      .
+ QKC      H011   C01    .      .
+ QKC      C04    S02    C23    .
+ QKC      C23    C04    N08    .
+ QKC      H231   C23    .      .
+ QKC      H232   C23    .      .
+ QKC      N08    C23    C09    .
+ QKC      C07    N08    C06    .
+ QKC      H071   C07    .      .
+ QKC      H072   C07    .      .
+ QKC      C06    C07    C05    .
+ QKC      H06    C06    .      .
+ QKC      C05    C06    H05    .
+ QKC      H05    C05    .      .
+ QKC      C09    N08    N22    .
+ QKC      C10    C09    C11    .
+ QKC      C11    C10    C16    .
+ QKC      C16    C11    H16    .
+ QKC      H16    C16    .      .
+ QKC      N22    C09    C21    .
+ QKC      C21    N22    N20    .
+ QKC      H21    C21    .      .
+ QKC      N20    C21    C19    .
+ QKC      C19    N20    N18    .
+ QKC      N18    C19    C12    .
+ QKC      C12    N18    C13    .
+ QKC      C13    C12    C14    .
+ QKC      H13    C13    .      .
+ QKC      C14    C13    C15    .
+ QKC      F17    C14    .      .
+ QKC      C15    C14    H15    .
+ QKC      H15    C15    .      END
+ QKC      C16    C15    .    ADD
+ QKC      C12    C11    .    ADD
+ QKC      C10    C19    .    ADD
+ QKC      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QKC      C16    C15       aromatic    1.390    0.020
+ QKC      C16    C11       aromatic    1.390    0.020
+ QKC      C15    C14       aromatic    1.390    0.020
+ QKC      C14    C13       aromatic    1.390    0.020
+ QKC      F17    C14       single      1.345    0.020
+ QKC      C13    C12       aromatic    1.390    0.020
+ QKC      C12    C11       aromatic    1.390    0.020
+ QKC      C12    N18       aromatic    1.350    0.020
+ QKC      C11    C10       single      1.490    0.020
+ QKC      C10    C19       aromatic    1.390    0.020
+ QKC      C10    C09       aromatic    1.390    0.020
+ QKC      N18    C19       aromatic    1.350    0.020
+ QKC      C19    N20       aromatic    1.355    0.020
+ QKC      C01    S02       single      1.662    0.020
+ QKC      C04    C05       aromatic    1.340    0.020
+ QKC      C23    C04       single      1.510    0.020
+ QKC      C04    S02       double      1.565    0.020
+ QKC      C05    C06       aromatic    1.330    0.020
+ QKC      C06    C07       single      1.510    0.020
+ QKC      C07    N08       single      1.455    0.020
+ QKC      C09    N08       single      1.400    0.020
+ QKC      N22    C09       aromatic    1.350    0.020
+ QKC      N20    C21       aromatic    1.337    0.020
+ QKC      C21    N22       deloc       1.337    0.020
+ QKC      N08    C23       single      1.455    0.020
+ QKC      O03    S02       deloc       1.480    0.020
+ QKC      S02    O24       deloc       1.480    0.020
+ QKC      H16    C16       single      1.083    0.020
+ QKC      H15    C15       single      1.083    0.020
+ QKC      H13    C13       single      1.083    0.020
+ QKC      H011   C01       single      1.059    0.020
+ QKC      H012   C01       single      1.059    0.020
+ QKC      H013   C01       single      1.059    0.020
+ QKC      H05    C05       single      1.077    0.020
+ QKC      H06    C06       single      1.077    0.020
+ QKC      H071   C07       single      1.092    0.020
+ QKC      H072   C07       single      1.092    0.020
+ QKC      H21    C21       single      1.083    0.020
+ QKC      H231   C23       single      1.092    0.020
+ QKC      H232   C23       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QKC      O24    S02    O03     109.500    3.000
+ QKC      O24    S02    C01     109.500    3.000
+ QKC      O24    S02    C04     109.500    3.000
+ QKC      O03    S02    C01     109.500    3.000
+ QKC      O03    S02    C04     109.500    3.000
+ QKC      C01    S02    C04     109.500    3.000
+ QKC      S02    C01    H013    109.500    3.000
+ QKC      S02    C01    H012    109.500    3.000
+ QKC      S02    C01    H011    109.500    3.000
+ QKC      H013   C01    H012    109.470    3.000
+ QKC      H013   C01    H011    109.470    3.000
+ QKC      H012   C01    H011    109.470    3.000
+ QKC      S02    C04    C23     120.000    3.000
+ QKC      S02    C04    C05     120.000    3.000
+ QKC      C23    C04    C05     120.000    3.000
+ QKC      C04    C23    H231    109.470    3.000
+ QKC      C04    C23    H232    109.470    3.000
+ QKC      C04    C23    N08     109.500    3.000
+ QKC      H231   C23    H232    107.900    3.000
+ QKC      H231   C23    N08     109.470    3.000
+ QKC      H232   C23    N08     109.470    3.000
+ QKC      C23    N08    C07     120.000    3.000
+ QKC      C23    N08    C09     120.000    3.000
+ QKC      C07    N08    C09     120.000    3.000
+ QKC      N08    C07    H071    109.470    3.000
+ QKC      N08    C07    H072    109.470    3.000
+ QKC      N08    C07    C06     109.500    3.000
+ QKC      H071   C07    H072    107.900    3.000
+ QKC      H071   C07    C06     109.470    3.000
+ QKC      H072   C07    C06     109.470    3.000
+ QKC      C07    C06    H06     120.000    3.000
+ QKC      C07    C06    C05     120.000    3.000
+ QKC      H06    C06    C05     120.000    3.000
+ QKC      C06    C05    H05     120.000    3.000
+ QKC      C06    C05    C04     120.000    3.000
+ QKC      H05    C05    C04     120.000    3.000
+ QKC      N08    C09    C10     120.000    3.000
+ QKC      N08    C09    N22     120.000    3.000
+ QKC      C10    C09    N22     120.000    3.000
+ QKC      C09    C10    C11     120.000    3.000
+ QKC      C09    C10    C19     120.000    3.000
+ QKC      C11    C10    C19     120.000    3.000
+ QKC      C10    C11    C16     120.000    3.000
+ QKC      C10    C11    C12     120.000    3.000
+ QKC      C16    C11    C12     120.000    3.000
+ QKC      C11    C16    H16     120.000    3.000
+ QKC      C11    C16    C15     120.000    3.000
+ QKC      H16    C16    C15     120.000    3.000
+ QKC      C09    N22    C21     120.000    3.000
+ QKC      N22    C21    H21     120.000    3.000
+ QKC      N22    C21    N20     120.000    3.000
+ QKC      H21    C21    N20     120.000    3.000
+ QKC      C21    N20    C19     120.000    3.000
+ QKC      N20    C19    N18     120.000    3.000
+ QKC      N20    C19    C10     120.000    3.000
+ QKC      N18    C19    C10     108.000    3.000
+ QKC      C19    N18    C12     108.000    3.000
+ QKC      N18    C12    C13     132.000    3.000
+ QKC      N18    C12    C11     108.000    3.000
+ QKC      C13    C12    C11     120.000    3.000
+ QKC      C12    C13    H13     120.000    3.000
+ QKC      C12    C13    C14     120.000    3.000
+ QKC      H13    C13    C14     120.000    3.000
+ QKC      C13    C14    F17     120.000    3.000
+ QKC      C13    C14    C15     120.000    3.000
+ QKC      F17    C14    C15     120.000    3.000
+ QKC      C14    C15    H15     120.000    3.000
+ QKC      C14    C15    C16     120.000    3.000
+ QKC      H15    C15    C16     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QKC      var_1            O24    S02    C01    H011             180.000           20.000   3
+ QKC      var_2            O24    S02    C04    C23              -86.447           20.000   3
+ QKC      var_3            S02    C04    C05    C06             -122.730           20.000   3
+ QKC      var_4            S02    C04    C23    N08              180.000           20.000   3
+ QKC      var_5            C04    C23    N08    C09             -173.550           20.000   3
+ QKC      var_6            C23    N08    C07    C06               -0.556           20.000   3
+ QKC      var_7            N08    C07    C06    C05              -52.101           20.000   3
+ QKC      var_8            C07    C06    C05    C04               52.652           20.000   3
+ QKC      var_9            C23    N08    C09    N22              -23.788           20.000   3
+ QKC      CONST_1          N08    C09    C10    C11              180.000            0.000   0
+ QKC      CONST_2          C09    C10    C19    N20              180.000            0.000   0
+ QKC      CONST_3          C09    C10    C11    C16              180.000            0.000   0
+ QKC      CONST_4          C10    C11    C16    C15              180.000            0.000   0
+ QKC      CONST_5          C11    C16    C15    C14                0.000            0.000   0
+ QKC      CONST_6          N08    C09    N22    C21                0.000            0.000   0
+ QKC      CONST_7          C09    N22    C21    N20                0.000            0.000   0
+ QKC      CONST_8          N22    C21    N20    C19                0.000            0.000   0
+ QKC      CONST_9          C21    N20    C19    N18              180.000            0.000   0
+ QKC      CONST_10         N20    C19    N18    C12              180.000            0.000   0
+ QKC      CONST_11         C19    N18    C12    C13              180.000            0.000   0
+ QKC      CONST_12         N18    C12    C11    C10              180.000            0.000   0
+ QKC      CONST_13         N18    C12    C13    C14              180.000            0.000   0
+ QKC      CONST_14         C12    C13    C14    C15                0.000            0.000   0
+ QKC      CONST_15         C13    C14    C15    C16                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QKC      chir_01          S02    C01    C04    O03       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QKC      plan-1            C16       0.020
+ QKC      plan-1            C15       0.020
+ QKC      plan-1            C11       0.020
+ QKC      plan-1            H16       0.020
+ QKC      plan-1            C14       0.020
+ QKC      plan-1            C13       0.020
+ QKC      plan-1            H15       0.020
+ QKC      plan-1            F17       0.020
+ QKC      plan-1            C12       0.020
+ QKC      plan-1            H13       0.020
+ QKC      plan-1            N18       0.020
+ QKC      plan-1            C10       0.020
+ QKC      plan-1            C19       0.020
+ QKC      plan-1            C09       0.020
+ QKC      plan-1            C21       0.020
+ QKC      plan-1            N20       0.020
+ QKC      plan-1            N22       0.020
+ QKC      plan-1            N08       0.020
+ QKC      plan-1            H21       0.020
+ QKC      plan-2            C04       0.020
+ QKC      plan-2            C05       0.020
+ QKC      plan-2            C23       0.020
+ QKC      plan-2            S02       0.020
+ QKC      plan-2            H05       0.020
+ QKC      plan-3            C05       0.020
+ QKC      plan-3            C04       0.020
+ QKC      plan-3            C06       0.020
+ QKC      plan-3            H05       0.020
+ QKC      plan-3            H06       0.020
+ QKC      plan-4            C06       0.020
+ QKC      plan-4            C05       0.020
+ QKC      plan-4            C07       0.020
+ QKC      plan-4            H06       0.020
+ QKC      plan-4            H05       0.020
+ QKC      plan-5            N08       0.020
+ QKC      plan-5            C07       0.020
+ QKC      plan-5            C09       0.020
+ QKC      plan-5            C23       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

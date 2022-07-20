@@ -1,0 +1,672 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RTI      RTI '.                                   ' .                  41  25 .
+RTU      RTU '.                                   ' .                  41  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RTI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RTI           O24    O    O         0.000    -48.237  -29.012    1.769
+ RTI           C14    C    C         0.000    -47.659  -29.331    2.748
+ RTI           C15    C    CR6       0.000    -48.270  -29.245    4.128
+ RTI           C16    C    CR16      0.000    -49.636  -29.441    4.239
+ RTI           H16    H    H         0.000    -50.242  -29.614    3.358
+ RTI           C23    C    CR16      0.000    -47.472  -29.062    5.255
+ RTI           H23    H    H         0.000    -46.401  -28.945    5.149
+ RTI           C22    C    CR16      0.000    -48.055  -29.030    6.512
+ RTI           H22    H    H         0.000    -47.445  -28.871    7.392
+ RTI           C18    C    CR56      0.000    -49.442  -29.205    6.636
+ RTI           N19    N    NRD5      0.000    -50.244  -29.231    7.711
+ RTI           C20    C    CR15      0.000    -51.499  -29.443    7.342
+ RTI           H20    H    H         0.000    -52.350  -29.511    8.008
+ RTI           C21    C    CR15      0.000    -51.541  -29.564    5.960
+ RTI           H21    H    H         0.000    -52.418  -29.740    5.350
+ RTI           C17    C    CR56      0.000    -50.219  -29.412    5.510
+ RTI           N13    N    NH1       0.000    -46.343  -29.926    2.688
+ RTI           HN13   H    H         0.000    -45.869  -30.207    3.534
+ RTI           C12    C    CH1       0.000    -45.727  -30.110    1.424
+ RTI           H12    H    H         0.000    -46.135  -29.359    0.733
+ RTI           C03    C    CH1       0.000    -44.223  -30.034    1.363
+ RTI           H03    H    H         0.000    -43.938  -29.071    0.917
+ RTI           C02    C    CH1       0.000    -43.612  -30.123    2.776
+ RTI           H02    H    H         0.000    -42.629  -30.356    2.342
+ RTI           O25    O    OH1       0.000    -43.609  -31.226    3.392
+ RTI           HO25   H    H         0.000    -43.193  -31.078    4.239
+ RTI           O01    O    O        -1.000    -43.140  -29.068    3.294
+ RTI           C04    C    CH2       0.000    -43.815  -31.126    0.437
+ RTI           H041   H    H         0.000    -42.957  -31.663    0.847
+ RTI           H042   H    H         0.000    -43.551  -30.710   -0.538
+ RTI           C05    C    CR6       0.000    -44.997  -32.091    0.280
+ RTI           C11    C    CR6       0.000    -46.112  -31.518    0.888
+ RTI           C06    C    CR6       0.000    -45.105  -33.355   -0.300
+ RTI           O07    O    OH1       0.000    -44.021  -33.969   -0.930
+ RTI           HO07   H    H         0.000    -44.285  -34.838   -1.270
+ RTI           C08    C    CR16      0.000    -46.319  -34.027   -0.276
+ RTI           H08    H    H         0.000    -46.401  -35.007   -0.729
+ RTI           C09    C    CR16      0.000    -47.432  -33.449    0.327
+ RTI           H09    H    H         0.000    -48.377  -33.978    0.344
+ RTI           C10    C    CR16      0.000    -47.326  -32.195    0.905
+ RTI           H10    H    H         0.000    -48.191  -31.741    1.372
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RTI      O24    n/a    C14    START
+ RTI      C14    O24    N13    .
+ RTI      C15    C14    C23    .
+ RTI      C16    C15    H16    .
+ RTI      H16    C16    .      .
+ RTI      C23    C15    C22    .
+ RTI      H23    C23    .      .
+ RTI      C22    C23    C18    .
+ RTI      H22    C22    .      .
+ RTI      C18    C22    N19    .
+ RTI      N19    C18    C20    .
+ RTI      C20    N19    C21    .
+ RTI      H20    C20    .      .
+ RTI      C21    C20    C17    .
+ RTI      H21    C21    .      .
+ RTI      C17    C21    .      .
+ RTI      N13    C14    C12    .
+ RTI      HN13   N13    .      .
+ RTI      C12    N13    C03    .
+ RTI      H12    C12    .      .
+ RTI      C03    C12    C04    .
+ RTI      H03    C03    .      .
+ RTI      C02    C03    O01    .
+ RTI      H02    C02    .      .
+ RTI      O25    C02    HO25   .
+ RTI      HO25   O25    .      .
+ RTI      O01    C02    .      .
+ RTI      C04    C03    C05    .
+ RTI      H041   C04    .      .
+ RTI      H042   C04    .      .
+ RTI      C05    C04    C06    .
+ RTI      C11    C05    .      .
+ RTI      C06    C05    C08    .
+ RTI      O07    C06    HO07   .
+ RTI      HO07   O07    .      .
+ RTI      C08    C06    C09    .
+ RTI      H08    C08    .      .
+ RTI      C09    C08    C10    .
+ RTI      H09    C09    .      .
+ RTI      C10    C09    H10    .
+ RTI      H10    C10    .      END
+ RTI      C18    C17    .    ADD
+ RTI      C16    C17    .    ADD
+ RTI      C12    C11    .    ADD
+ RTI      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RTI      C18    C17       aromatic    1.390    0.020
+ RTI      C18    C22       aromatic    1.390    0.020
+ RTI      N19    C18       aromatic    1.350    0.020
+ RTI      C16    C17       aromatic    1.390    0.020
+ RTI      C16    C15       aromatic    1.390    0.020
+ RTI      C17    C21       aromatic    1.440    0.020
+ RTI      C15    C14       single      1.500    0.020
+ RTI      C23    C15       aromatic    1.390    0.020
+ RTI      N13    C14       single      1.330    0.020
+ RTI      C14    O24       double      1.220    0.020
+ RTI      C12    C11       single      1.480    0.020
+ RTI      C03    C12       single      1.524    0.020
+ RTI      C12    N13       single      1.450    0.020
+ RTI      C11    C10       aromatic    1.390    0.020
+ RTI      C11    C05       aromatic    1.384    0.020
+ RTI      C10    C09       aromatic    1.390    0.020
+ RTI      C21    C20       aromatic    1.380    0.020
+ RTI      C20    N19       deloc       1.350    0.020
+ RTI      C02    C03       single      1.524    0.020
+ RTI      O01    C02       single      1.420    0.020
+ RTI      O25    C02       single      1.432    0.020
+ RTI      C04    C03       single      1.524    0.020
+ RTI      C05    C04       single      1.511    0.020
+ RTI      C06    C05       aromatic    1.384    0.020
+ RTI      C08    C06       aromatic    1.390    0.020
+ RTI      O07    C06       single      1.362    0.020
+ RTI      C09    C08       aromatic    1.390    0.020
+ RTI      C22    C23       aromatic    1.390    0.020
+ RTI      H16    C16       single      1.083    0.020
+ RTI      H12    C12       single      1.099    0.020
+ RTI      H10    C10       single      1.083    0.020
+ RTI      H20    C20       single      1.083    0.020
+ RTI      H02    C02       single      1.099    0.020
+ RTI      H03    C03       single      1.099    0.020
+ RTI      H041   C04       single      1.092    0.020
+ RTI      H042   C04       single      1.092    0.020
+ RTI      H08    C08       single      1.083    0.020
+ RTI      H09    C09       single      1.083    0.020
+ RTI      H21    C21       single      1.083    0.020
+ RTI      H22    C22       single      1.083    0.020
+ RTI      H23    C23       single      1.083    0.020
+ RTI      HN13   N13       single      1.010    0.020
+ RTI      HO07   O07       single      0.967    0.020
+ RTI      HO25   O25       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RTI      O24    C14    C15     120.500    3.000
+ RTI      O24    C14    N13     123.000    3.000
+ RTI      C15    C14    N13     120.000    3.000
+ RTI      C14    C15    C16     120.000    3.000
+ RTI      C14    C15    C23     120.000    3.000
+ RTI      C16    C15    C23     120.000    3.000
+ RTI      C15    C16    H16     120.000    3.000
+ RTI      C15    C16    C17     120.000    3.000
+ RTI      H16    C16    C17     120.000    3.000
+ RTI      C15    C23    H23     120.000    3.000
+ RTI      C15    C23    C22     120.000    3.000
+ RTI      H23    C23    C22     120.000    3.000
+ RTI      C23    C22    H22     120.000    3.000
+ RTI      C23    C22    C18     120.000    3.000
+ RTI      H22    C22    C18     120.000    3.000
+ RTI      C22    C18    N19     132.000    3.000
+ RTI      C22    C18    C17     120.000    3.000
+ RTI      N19    C18    C17     108.000    3.000
+ RTI      C18    N19    C20     108.000    3.000
+ RTI      N19    C20    H20     126.000    3.000
+ RTI      N19    C20    C21     108.000    3.000
+ RTI      H20    C20    C21     126.000    3.000
+ RTI      C20    C21    H21     126.000    3.000
+ RTI      C20    C21    C17     108.000    3.000
+ RTI      H21    C21    C17     108.000    3.000
+ RTI      C21    C17    C18     120.000    3.000
+ RTI      C21    C17    C16     126.000    3.000
+ RTI      C18    C17    C16     120.000    3.000
+ RTI      C14    N13    HN13    120.000    3.000
+ RTI      C14    N13    C12     121.500    3.000
+ RTI      HN13   N13    C12     118.500    3.000
+ RTI      N13    C12    H12     108.550    3.000
+ RTI      N13    C12    C03     110.000    3.000
+ RTI      N13    C12    C11     109.470    3.000
+ RTI      H12    C12    C03     108.340    3.000
+ RTI      H12    C12    C11     109.470    3.000
+ RTI      C03    C12    C11     109.470    3.000
+ RTI      C12    C03    H03     108.340    3.000
+ RTI      C12    C03    C02     111.000    3.000
+ RTI      C12    C03    C04     111.000    3.000
+ RTI      H03    C03    C02     108.340    3.000
+ RTI      H03    C03    C04     108.340    3.000
+ RTI      C02    C03    C04     111.000    3.000
+ RTI      C03    C02    H02     108.340    3.000
+ RTI      C03    C02    O25     109.470    3.000
+ RTI      C03    C02    O01     109.470    3.000
+ RTI      H02    C02    O25     109.470    3.000
+ RTI      H02    C02    O01     109.470    3.000
+ RTI      O25    C02    O01     109.470    3.000
+ RTI      C02    O25    HO25    109.470    3.000
+ RTI      C03    C04    H041    109.470    3.000
+ RTI      C03    C04    H042    109.470    3.000
+ RTI      C03    C04    C05     109.470    3.000
+ RTI      H041   C04    H042    107.900    3.000
+ RTI      H041   C04    C05     109.470    3.000
+ RTI      H042   C04    C05     109.470    3.000
+ RTI      C04    C05    C11     120.000    3.000
+ RTI      C04    C05    C06     120.000    3.000
+ RTI      C11    C05    C06     120.000    3.000
+ RTI      C05    C11    C12     120.000    3.000
+ RTI      C05    C11    C10     120.000    3.000
+ RTI      C12    C11    C10     120.000    3.000
+ RTI      C05    C06    O07     120.000    3.000
+ RTI      C05    C06    C08     120.000    3.000
+ RTI      O07    C06    C08     120.000    3.000
+ RTI      C06    O07    HO07    109.470    3.000
+ RTI      C06    C08    H08     120.000    3.000
+ RTI      C06    C08    C09     120.000    3.000
+ RTI      H08    C08    C09     120.000    3.000
+ RTI      C08    C09    H09     120.000    3.000
+ RTI      C08    C09    C10     120.000    3.000
+ RTI      H09    C09    C10     120.000    3.000
+ RTI      C09    C10    H10     120.000    3.000
+ RTI      C09    C10    C11     120.000    3.000
+ RTI      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RTI      var_1            O24    C14    C15    C23             -152.092           20.000   3
+ RTI      CONST_1          C14    C15    C16    C17                0.000            0.000   0
+ RTI      CONST_2          C15    C16    C17    C21              180.000            0.000   0
+ RTI      CONST_3          C14    C15    C23    C22                0.000            0.000   0
+ RTI      CONST_4          C15    C23    C22    C18                0.000            0.000   0
+ RTI      CONST_5          C23    C22    C18    N19              180.000            0.000   0
+ RTI      CONST_6          C22    C18    C17    C21              180.000            0.000   0
+ RTI      CONST_7          C22    C18    N19    C20              180.000            0.000   0
+ RTI      CONST_8          C18    N19    C20    C21                0.000            0.000   0
+ RTI      CONST_9          N19    C20    C21    C17                0.069            0.000   0
+ RTI      CONST_10         C20    C21    C17    C18               -0.084            0.000   0
+ RTI      var_2            O24    C14    N13    C12              180.000           20.000   2
+ RTI      var_3            C14    N13    C12    C03                0.000           20.000   3
+ RTI      var_4            N13    C12    C11    C05             -139.983           20.000   3
+ RTI      var_5            N13    C12    C03    C04              180.000           20.000   3
+ RTI      var_6            C12    C03    C02    O01              180.000           20.000   3
+ RTI      var_7            C03    C02    O25    HO25             180.000           20.000   3
+ RTI      var_8            C12    C03    C04    C05              180.000           20.000   3
+ RTI      var_9            C03    C04    C05    C06                0.000           20.000   2
+ RTI      CONST_11         C04    C05    C11    C12                0.000            0.000   0
+ RTI      CONST_12         C05    C11    C10    C09                0.000            0.000   0
+ RTI      CONST_13         C04    C05    C06    C08                0.000            0.000   0
+ RTI      var_10           C05    C06    O07    HO07             180.000           20.000   3
+ RTI      CONST_14         C05    C06    C08    C09                0.000            0.000   0
+ RTI      CONST_15         C06    C08    C09    C10                0.000            0.000   0
+ RTI      CONST_16         C08    C09    C10    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RTI      chir_01          C12    C11    C03    N13       positiv
+ RTI      chir_02          C02    C03    O01    O25       negativ
+ RTI      chir_03          C03    C12    C02    C04       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RTI      plan-1            C18       0.020
+ RTI      plan-1            C17       0.020
+ RTI      plan-1            C22       0.020
+ RTI      plan-1            N19       0.020
+ RTI      plan-1            C20       0.020
+ RTI      plan-1            C21       0.020
+ RTI      plan-1            C16       0.020
+ RTI      plan-1            H20       0.020
+ RTI      plan-1            H21       0.020
+ RTI      plan-1            C23       0.020
+ RTI      plan-1            H22       0.020
+ RTI      plan-1            C15       0.020
+ RTI      plan-1            H23       0.020
+ RTI      plan-1            H16       0.020
+ RTI      plan-1            C14       0.020
+ RTI      plan-2            C14       0.020
+ RTI      plan-2            C15       0.020
+ RTI      plan-2            N13       0.020
+ RTI      plan-2            O24       0.020
+ RTI      plan-2            HN13      0.020
+ RTI      plan-3            C11       0.020
+ RTI      plan-3            C12       0.020
+ RTI      plan-3            C10       0.020
+ RTI      plan-3            C05       0.020
+ RTI      plan-3            C06       0.020
+ RTI      plan-3            C08       0.020
+ RTI      plan-3            C09       0.020
+ RTI      plan-3            H10       0.020
+ RTI      plan-3            C04       0.020
+ RTI      plan-3            O07       0.020
+ RTI      plan-3            H08       0.020
+ RTI      plan-3            H09       0.020
+ RTI      plan-4            N13       0.020
+ RTI      plan-4            C14       0.020
+ RTI      plan-4            C12       0.020
+ RTI      plan-4            HN13      0.020
+#
+data_comp_RTU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RTU           O24    O    O         0.000    -48.202  -29.002    1.731
+ RTU           C14    C    C         0.000    -47.593  -29.280    2.709
+ RTU           N13    N    NH1       0.000    -46.195  -29.676    2.648
+ RTU           HN13   H    H         0.000    -45.715  -29.888    3.511
+ RTU           C12    C    CH1       0.000    -45.465  -29.779    1.413
+ RTU           H12    H    H         0.000    -45.975  -30.485    0.743
+ RTU           C11    C    CR6       0.000    -45.320  -28.406    0.704
+ RTU           C10    C    CR16      0.000    -46.245  -27.684   -0.038
+ RTU           H10    H    H         0.000    -47.247  -28.069   -0.181
+ RTU           C09    C    CR16      0.000    -45.880  -26.470   -0.594
+ RTU           H09    H    H         0.000    -46.601  -25.906   -1.173
+ RTU           C08    C    CR16      0.000    -44.596  -25.970   -0.415
+ RTU           H08    H    H         0.000    -44.324  -25.017   -0.851
+ RTU           C06    C    CR6       0.000    -43.663  -26.683    0.318
+ RTU           O07    O    OH1       0.000    -42.384  -26.135    0.470
+ RTU           HO07   H    H         0.000    -41.830  -26.729    1.001
+ RTU           C05    C    CR6       0.000    -44.018  -27.909    0.890
+ RTU           C04    C    CH2       0.000    -43.230  -28.923    1.735
+ RTU           H042   H    H         0.000    -43.200  -28.652    2.792
+ RTU           H041   H    H         0.000    -42.211  -29.069    1.369
+ RTU           C03    C    CH1       0.000    -44.008  -30.187    1.565
+ RTU           H03    H    H         0.000    -43.677  -30.695    0.648
+ RTU           C02    C    CH1       0.000    -43.825  -31.136    2.764
+ RTU           H02    H    H         0.000    -42.828  -31.414    2.393
+ RTU           O25    O    OH1       0.000    -44.196  -32.340    2.673
+ RTU           HO25   H    H         0.000    -44.002  -32.761    3.508
+ RTU           O01    O    O        -1.000    -43.308  -30.697    3.829
+ RTU           C15    C    CR6       0.000    -48.250  -29.249    4.088
+ RTU           C23    C    CR16      0.000    -47.468  -29.062    5.231
+ RTU           H23    H    H         0.000    -46.397  -28.932    5.133
+ RTU           C22    C    CR16      0.000    -48.051  -29.041    6.492
+ RTU           H22    H    H         0.000    -47.438  -28.889    7.372
+ RTU           C18    C    CR56      0.000    -49.438  -29.218    6.620
+ RTU           N19    N    NRD5      0.000    -50.235  -29.247    7.702
+ RTU           C20    C    CR15      0.000    -51.491  -29.450    7.335
+ RTU           H20    H    H         0.000    -52.341  -29.518    8.002
+ RTU           C21    C    CR15      0.000    -51.535  -29.561    5.952
+ RTU           H21    H    H         0.000    -52.416  -29.730    5.345
+ RTU           C17    C    CR56      0.000    -50.212  -29.412    5.491
+ RTU           C16    C    CR16      0.000    -49.624  -29.430    4.212
+ RTU           H16    H    H         0.000    -50.236  -29.583    3.332
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RTU      O24    n/a    C14    START
+ RTU      C14    O24    C15    .
+ RTU      N13    C14    C12    .
+ RTU      HN13   N13    .      .
+ RTU      C12    N13    C03    .
+ RTU      H12    C12    .      .
+ RTU      C11    C12    C05    .
+ RTU      C10    C11    C09    .
+ RTU      H10    C10    .      .
+ RTU      C09    C10    C08    .
+ RTU      H09    C09    .      .
+ RTU      C08    C09    C06    .
+ RTU      H08    C08    .      .
+ RTU      C06    C08    O07    .
+ RTU      O07    C06    HO07   .
+ RTU      HO07   O07    .      .
+ RTU      C05    C11    C04    .
+ RTU      C04    C05    H041   .
+ RTU      H042   C04    .      .
+ RTU      H041   C04    .      .
+ RTU      C03    C12    C02    .
+ RTU      H03    C03    .      .
+ RTU      C02    C03    O01    .
+ RTU      H02    C02    .      .
+ RTU      O25    C02    HO25   .
+ RTU      HO25   O25    .      .
+ RTU      O01    C02    .      .
+ RTU      C15    C14    C23    .
+ RTU      C23    C15    C22    .
+ RTU      H23    C23    .      .
+ RTU      C22    C23    C18    .
+ RTU      H22    C22    .      .
+ RTU      C18    C22    N19    .
+ RTU      N19    C18    C20    .
+ RTU      C20    N19    C21    .
+ RTU      H20    C20    .      .
+ RTU      C21    C20    C17    .
+ RTU      H21    C21    .      .
+ RTU      C17    C21    C16    .
+ RTU      C16    C17    H16    .
+ RTU      H16    C16    .      END
+ RTU      C03    C04    .    ADD
+ RTU      C05    C06    .    ADD
+ RTU      C15    C16    .    ADD
+ RTU      C17    C18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RTU      C02    C03       single      1.524    0.020
+ RTU      O01    C02       single      1.420    0.020
+ RTU      O25    C02       single      1.432    0.020
+ RTU      C03    C04       single      1.524    0.020
+ RTU      C03    C12       single      1.524    0.020
+ RTU      C04    C05       single      1.511    0.020
+ RTU      C05    C06       aromatic    1.384    0.020
+ RTU      C05    C11       aromatic    1.384    0.020
+ RTU      C06    C08       aromatic    1.390    0.020
+ RTU      O07    C06       single      1.362    0.020
+ RTU      C08    C09       aromatic    1.390    0.020
+ RTU      C09    C10       aromatic    1.390    0.020
+ RTU      C10    C11       aromatic    1.390    0.020
+ RTU      C11    C12       single      1.480    0.020
+ RTU      C12    N13       single      1.450    0.020
+ RTU      C15    C14       single      1.500    0.020
+ RTU      N13    C14       single      1.330    0.020
+ RTU      C14    O24       double      1.220    0.020
+ RTU      C15    C16       aromatic    1.390    0.020
+ RTU      C23    C15       aromatic    1.390    0.020
+ RTU      C16    C17       aromatic    1.390    0.020
+ RTU      C17    C18       aromatic    1.390    0.020
+ RTU      C17    C21       aromatic    1.440    0.020
+ RTU      C18    C22       aromatic    1.390    0.020
+ RTU      N19    C18       aromatic    1.350    0.020
+ RTU      C21    C20       aromatic    1.380    0.020
+ RTU      C20    N19       deloc       1.350    0.020
+ RTU      C22    C23       aromatic    1.390    0.020
+ RTU      H02    C02       single      1.099    0.020
+ RTU      H03    C03       single      1.099    0.020
+ RTU      H041   C04       single      1.092    0.020
+ RTU      H042   C04       single      1.092    0.020
+ RTU      H08    C08       single      1.083    0.020
+ RTU      H09    C09       single      1.083    0.020
+ RTU      H10    C10       single      1.083    0.020
+ RTU      H12    C12       single      1.099    0.020
+ RTU      H16    C16       single      1.083    0.020
+ RTU      H20    C20       single      1.083    0.020
+ RTU      H21    C21       single      1.083    0.020
+ RTU      H22    C22       single      1.083    0.020
+ RTU      H23    C23       single      1.083    0.020
+ RTU      HN13   N13       single      1.010    0.020
+ RTU      HO07   O07       single      0.967    0.020
+ RTU      HO25   O25       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RTU      O24    C14    N13     123.000    3.000
+ RTU      O24    C14    C15     120.500    3.000
+ RTU      N13    C14    C15     120.000    3.000
+ RTU      C14    N13    HN13    120.000    3.000
+ RTU      C14    N13    C12     121.500    3.000
+ RTU      HN13   N13    C12     118.500    3.000
+ RTU      N13    C12    H12     108.550    3.000
+ RTU      N13    C12    C11     109.470    3.000
+ RTU      N13    C12    C03     110.000    3.000
+ RTU      H12    C12    C11     109.470    3.000
+ RTU      H12    C12    C03     108.340    3.000
+ RTU      C11    C12    C03     109.470    3.000
+ RTU      C12    C11    C10     120.000    3.000
+ RTU      C12    C11    C05     120.000    3.000
+ RTU      C10    C11    C05     120.000    3.000
+ RTU      C11    C10    H10     120.000    3.000
+ RTU      C11    C10    C09     120.000    3.000
+ RTU      H10    C10    C09     120.000    3.000
+ RTU      C10    C09    H09     120.000    3.000
+ RTU      C10    C09    C08     120.000    3.000
+ RTU      H09    C09    C08     120.000    3.000
+ RTU      C09    C08    H08     120.000    3.000
+ RTU      C09    C08    C06     120.000    3.000
+ RTU      H08    C08    C06     120.000    3.000
+ RTU      C08    C06    O07     120.000    3.000
+ RTU      C08    C06    C05     120.000    3.000
+ RTU      O07    C06    C05     120.000    3.000
+ RTU      C06    O07    HO07    109.470    3.000
+ RTU      C11    C05    C04     120.000    3.000
+ RTU      C11    C05    C06     120.000    3.000
+ RTU      C04    C05    C06     120.000    3.000
+ RTU      C05    C04    H042    109.470    3.000
+ RTU      C05    C04    H041    109.470    3.000
+ RTU      C05    C04    C03     109.470    3.000
+ RTU      H042   C04    H041    107.900    3.000
+ RTU      H042   C04    C03     109.470    3.000
+ RTU      H041   C04    C03     109.470    3.000
+ RTU      C12    C03    H03     108.340    3.000
+ RTU      C12    C03    C02     111.000    3.000
+ RTU      C12    C03    C04     111.000    3.000
+ RTU      H03    C03    C02     108.340    3.000
+ RTU      H03    C03    C04     108.340    3.000
+ RTU      C02    C03    C04     111.000    3.000
+ RTU      C03    C02    H02     108.340    3.000
+ RTU      C03    C02    O25     109.470    3.000
+ RTU      C03    C02    O01     109.470    3.000
+ RTU      H02    C02    O25     109.470    3.000
+ RTU      H02    C02    O01     109.470    3.000
+ RTU      O25    C02    O01     109.470    3.000
+ RTU      C02    O25    HO25    109.470    3.000
+ RTU      C14    C15    C23     120.000    3.000
+ RTU      C14    C15    C16     120.000    3.000
+ RTU      C23    C15    C16     120.000    3.000
+ RTU      C15    C23    H23     120.000    3.000
+ RTU      C15    C23    C22     120.000    3.000
+ RTU      H23    C23    C22     120.000    3.000
+ RTU      C23    C22    H22     120.000    3.000
+ RTU      C23    C22    C18     120.000    3.000
+ RTU      H22    C22    C18     120.000    3.000
+ RTU      C22    C18    N19     132.000    3.000
+ RTU      C22    C18    C17     120.000    3.000
+ RTU      N19    C18    C17     108.000    3.000
+ RTU      C18    N19    C20     108.000    3.000
+ RTU      N19    C20    H20     126.000    3.000
+ RTU      N19    C20    C21     108.000    3.000
+ RTU      H20    C20    C21     126.000    3.000
+ RTU      C20    C21    H21     126.000    3.000
+ RTU      C20    C21    C17     108.000    3.000
+ RTU      H21    C21    C17     108.000    3.000
+ RTU      C21    C17    C16     126.000    3.000
+ RTU      C21    C17    C18     120.000    3.000
+ RTU      C16    C17    C18     120.000    3.000
+ RTU      C17    C16    H16     120.000    3.000
+ RTU      C17    C16    C15     120.000    3.000
+ RTU      H16    C16    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RTU      var_1            O24    C14    N13    C12              180.000           20.000   2
+ RTU      var_2            C14    N13    C12    C03                0.000           20.000   3
+ RTU      var_3            N13    C12    C11    C05              103.507           20.000   3
+ RTU      CONST_1          C12    C11    C10    C09                0.000            0.000   0
+ RTU      CONST_2          C11    C10    C09    C08                0.000            0.000   0
+ RTU      CONST_3          C10    C09    C08    C06                0.000            0.000   0
+ RTU      CONST_4          C09    C08    C06    O07                0.000            0.000   0
+ RTU      var_4            C08    C06    O07    HO07             180.000           20.000   3
+ RTU      CONST_5          C12    C11    C05    C04                0.000            0.000   0
+ RTU      CONST_6          C11    C05    C06    C08                0.000            0.000   0
+ RTU      var_5            C11    C05    C04    C03                0.000           20.000   2
+ RTU      var_6            N13    C12    C03    C02              180.000           20.000   3
+ RTU      var_7            C12    C03    C04    C05              180.000           20.000   3
+ RTU      var_8            C12    C03    C02    O01              180.000           20.000   3
+ RTU      var_9            C03    C02    O25    HO25             180.000           20.000   3
+ RTU      var_10           O24    C14    C15    C23             -155.120           20.000   3
+ RTU      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ RTU      CONST_8          C14    C15    C23    C22                0.000            0.000   0
+ RTU      CONST_9          C15    C23    C22    C18                0.000            0.000   0
+ RTU      CONST_10         C23    C22    C18    N19              180.000            0.000   0
+ RTU      CONST_11         C22    C18    N19    C20              180.000            0.000   0
+ RTU      CONST_12         C18    N19    C20    C21                0.000            0.000   0
+ RTU      CONST_13         N19    C20    C21    C17                0.040            0.000   0
+ RTU      CONST_14         C20    C21    C17    C16              179.844            0.000   0
+ RTU      CONST_15         C21    C17    C18    C22              180.000            0.000   0
+ RTU      CONST_16         C21    C17    C16    C15              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RTU      chir_01          C02    C03    O01    O25       negativ
+ RTU      chir_02          C03    C02    C04    C12       positiv
+ RTU      chir_03          C12    C03    C11    N13       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RTU      plan-1            C05       0.020
+ RTU      plan-1            C04       0.020
+ RTU      plan-1            C06       0.020
+ RTU      plan-1            C11       0.020
+ RTU      plan-1            C08       0.020
+ RTU      plan-1            C09       0.020
+ RTU      plan-1            C10       0.020
+ RTU      plan-1            H09       0.020
+ RTU      plan-1            H10       0.020
+ RTU      plan-1            C12       0.020
+ RTU      plan-1            H08       0.020
+ RTU      plan-2            C14       0.020
+ RTU      plan-2            C15       0.020
+ RTU      plan-2            N13       0.020
+ RTU      plan-2            O24       0.020
+ RTU      plan-2            HN13      0.020
+ RTU      plan-3            C15       0.020
+ RTU      plan-3            C14       0.020
+ RTU      plan-3            C16       0.020
+ RTU      plan-3            C23       0.020
+ RTU      plan-3            C22       0.020
+ RTU      plan-3            C17       0.020
+ RTU      plan-3            H16       0.020
+ RTU      plan-3            C18       0.020
+ RTU      plan-3            C21       0.020
+ RTU      plan-3            C20       0.020
+ RTU      plan-3            N19       0.020
+ RTU      plan-3            H20       0.020
+ RTU      plan-3            H21       0.020
+ RTU      plan-3            H22       0.020
+ RTU      plan-3            H23       0.020
+ RTU      plan-4            N13       0.020
+ RTU      plan-4            C12       0.020
+ RTU      plan-4            C14       0.020
+ RTU      plan-4            HN13      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

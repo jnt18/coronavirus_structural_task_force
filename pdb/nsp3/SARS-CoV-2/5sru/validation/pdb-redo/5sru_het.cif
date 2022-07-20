@@ -1,0 +1,350 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RGF      RGF '.                                   ' .                  42  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RGF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RGF           O01    O    O        -1.000    -47.350  -26.767   -0.081
+ RGF           C02    C    CH1       0.000    -46.469  -27.548   -0.552
+ RGF           H02    H    H         0.000    -47.212  -28.353   -0.638
+ RGF           O25    O    OH1       0.000    -46.204  -27.643   -1.785
+ RGF           HO25   H    H         0.000    -45.511  -28.293   -1.878
+ RGF           C03    C    CH1       0.000    -45.625  -28.409    0.414
+ RGF           H03    H    H         0.000    -45.418  -29.389   -0.039
+ RGF           C21    C    CT        0.000    -44.333  -27.728    0.780
+ RGF           C24    C    CH2       0.000    -44.349  -26.158    0.851
+ RGF           H241   H    H         0.000    -44.357  -25.683    1.834
+ RGF           H242   H    H         0.000    -45.019  -25.615    0.181
+ RGF           C23    C    CH2       0.000    -42.920  -26.135    0.280
+ RGF           H231   H    H         0.000    -42.076  -26.155    0.972
+ RGF           H232   H    H         0.000    -42.694  -25.460   -0.548
+ RGF           C22    C    CH2       0.000    -43.176  -27.569   -0.271
+ RGF           H222   H    H         0.000    -42.419  -28.337   -0.100
+ RGF           H221   H    H         0.000    -43.581  -27.677   -1.279
+ RGF           C04    C    CH2       0.000    -46.302  -28.594    1.778
+ RGF           H041   H    H         0.000    -47.075  -29.365    1.771
+ RGF           H042   H    H         0.000    -46.718  -27.667    2.178
+ RGF           N05    N    N         0.000    -45.159  -29.039    2.633
+ RGF           C20    C    CH2       0.000    -43.907  -28.480    2.025
+ RGF           H202   H    H         0.000    -43.216  -29.280    1.750
+ RGF           H201   H    H         0.000    -43.411  -27.794    2.715
+ RGF           C06    C    CR6       0.000    -45.396  -29.094    4.063
+ RGF           N19    N    NRD6      0.000    -44.224  -29.206    4.772
+ RGF           C18    C    CR16      0.000    -44.265  -29.308    6.111
+ RGF           H18    H    H         0.000    -43.312  -29.384    6.620
+ RGF           C07    C    CR56      0.000    -46.657  -29.111    4.764
+ RGF           C08    C    CR56      0.000    -48.108  -29.028    4.566
+ RGF           C13    C    CR16      0.000    -48.983  -28.912    3.484
+ RGF           H13    H    H         0.000    -48.577  -28.856    2.482
+ RGF           C09    C    CR56      0.000    -48.718  -29.095    5.850
+ RGF           N15    N    NRD5      0.000    -47.742  -29.219    6.825
+ RGF           C16    C    CR56      0.000    -46.502  -29.220    6.186
+ RGF           N17    N    NRD6      0.000    -45.356  -29.326    6.881
+ RGF           C10    C    CR16      0.000    -50.088  -29.068    6.059
+ RGF           H10    H    H         0.000    -50.509  -29.139    7.054
+ RGF           C11    C    CR6       0.000    -50.895  -28.947    4.941
+ RGF           F14    F    F         0.000    -52.191  -28.914    5.099
+ RGF           C12    C    CR16      0.000    -50.353  -28.867    3.658
+ RGF           H12    H    H         0.000    -51.005  -28.770    2.799
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RGF      O01    n/a    C02    START
+ RGF      C02    O01    C03    .
+ RGF      H02    C02    .      .
+ RGF      O25    C02    HO25   .
+ RGF      HO25   O25    .      .
+ RGF      C03    C02    C04    .
+ RGF      H03    C03    .      .
+ RGF      C21    C03    C24    .
+ RGF      C24    C21    C23    .
+ RGF      H241   C24    .      .
+ RGF      H242   C24    .      .
+ RGF      C23    C24    C22    .
+ RGF      H231   C23    .      .
+ RGF      H232   C23    .      .
+ RGF      C22    C23    H221   .
+ RGF      H222   C22    .      .
+ RGF      H221   C22    .      .
+ RGF      C04    C03    N05    .
+ RGF      H041   C04    .      .
+ RGF      H042   C04    .      .
+ RGF      N05    C04    C06    .
+ RGF      C20    N05    H201   .
+ RGF      H202   C20    .      .
+ RGF      H201   C20    .      .
+ RGF      C06    N05    C07    .
+ RGF      N19    C06    C18    .
+ RGF      C18    N19    H18    .
+ RGF      H18    C18    .      .
+ RGF      C07    C06    C08    .
+ RGF      C08    C07    C09    .
+ RGF      C13    C08    H13    .
+ RGF      H13    C13    .      .
+ RGF      C09    C08    C10    .
+ RGF      N15    C09    C16    .
+ RGF      C16    N15    N17    .
+ RGF      N17    C16    .      .
+ RGF      C10    C09    C11    .
+ RGF      H10    C10    .      .
+ RGF      C11    C10    C12    .
+ RGF      F14    C11    .      .
+ RGF      C12    C11    H12    .
+ RGF      H12    C12    .      END
+ RGF      C18    N17    .    ADD
+ RGF      C16    C07    .    ADD
+ RGF      C13    C12    .    ADD
+ RGF      C20    C21    .    ADD
+ RGF      C21    C22    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RGF      C18    N17       aromatic    1.337    0.020
+ RGF      C18    N19       aromatic    1.337    0.020
+ RGF      C16    C07       aromatic    1.390    0.020
+ RGF      C16    N15       aromatic    1.350    0.020
+ RGF      N17    C16       aromatic    1.355    0.020
+ RGF      C13    C12       aromatic    1.390    0.020
+ RGF      C13    C08       aromatic    1.390    0.020
+ RGF      C12    C11       aromatic    1.390    0.020
+ RGF      C11    C10       aromatic    1.390    0.020
+ RGF      F14    C11       single      1.345    0.020
+ RGF      C10    C09       aromatic    1.390    0.020
+ RGF      C20    C21       single      1.524    0.020
+ RGF      C20    N05       single      1.455    0.020
+ RGF      C03    C02       single      1.524    0.020
+ RGF      C02    O01       single      1.420    0.020
+ RGF      O25    C02       single      1.432    0.020
+ RGF      C04    C03       single      1.524    0.020
+ RGF      C21    C03       single      1.524    0.020
+ RGF      N05    C04       single      1.455    0.020
+ RGF      C07    C06       aromatic    1.390    0.020
+ RGF      C06    N05       single      1.400    0.020
+ RGF      N19    C06       aromatic    1.350    0.020
+ RGF      C08    C07       single      1.490    0.020
+ RGF      C09    C08       aromatic    1.390    0.020
+ RGF      N15    C09       aromatic    1.350    0.020
+ RGF      C21    C22       single      1.524    0.020
+ RGF      C24    C21       single      1.524    0.020
+ RGF      C22    C23       single      1.524    0.020
+ RGF      C23    C24       single      1.524    0.020
+ RGF      H18    C18       single      1.083    0.020
+ RGF      H13    C13       single      1.083    0.020
+ RGF      H12    C12       single      1.083    0.020
+ RGF      H10    C10       single      1.083    0.020
+ RGF      H201   C20       single      1.092    0.020
+ RGF      H202   C20       single      1.092    0.020
+ RGF      H02    C02       single      1.099    0.020
+ RGF      H03    C03       single      1.099    0.020
+ RGF      H041   C04       single      1.092    0.020
+ RGF      H042   C04       single      1.092    0.020
+ RGF      H221   C22       single      1.092    0.020
+ RGF      H222   C22       single      1.092    0.020
+ RGF      H231   C23       single      1.092    0.020
+ RGF      H232   C23       single      1.092    0.020
+ RGF      H241   C24       single      1.092    0.020
+ RGF      H242   C24       single      1.092    0.020
+ RGF      HO25   O25       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RGF      O01    C02    H02     109.470    3.000
+ RGF      O01    C02    O25     109.470    3.000
+ RGF      O01    C02    C03     109.470    3.000
+ RGF      H02    C02    O25     109.470    3.000
+ RGF      H02    C02    C03     108.340    3.000
+ RGF      O25    C02    C03     109.470    3.000
+ RGF      C02    O25    HO25    109.470    3.000
+ RGF      C02    C03    H03     108.340    3.000
+ RGF      C02    C03    C21     111.000    3.000
+ RGF      C02    C03    C04     111.000    3.000
+ RGF      H03    C03    C21     108.340    3.000
+ RGF      H03    C03    C04     108.340    3.000
+ RGF      C21    C03    C04     111.000    3.000
+ RGF      C03    C21    C24     111.000    3.000
+ RGF      C03    C21    C20     111.000    3.000
+ RGF      C03    C21    C22     111.000    3.000
+ RGF      C20    C21    C22     111.000    3.000
+ RGF      C24    C21    C20     111.000    3.000
+ RGF      C24    C21    C22     111.000    3.000
+ RGF      C21    C24    H241    109.470    3.000
+ RGF      C21    C24    H242    109.470    3.000
+ RGF      C21    C24    C23     111.000    3.000
+ RGF      H241   C24    H242    107.900    3.000
+ RGF      H241   C24    C23     109.470    3.000
+ RGF      H242   C24    C23     109.470    3.000
+ RGF      C24    C23    H231    109.470    3.000
+ RGF      C24    C23    H232    109.470    3.000
+ RGF      C24    C23    C22     111.000    3.000
+ RGF      H231   C23    H232    107.900    3.000
+ RGF      H231   C23    C22     109.470    3.000
+ RGF      H232   C23    C22     109.470    3.000
+ RGF      C23    C22    H222    109.470    3.000
+ RGF      C23    C22    H221    109.470    3.000
+ RGF      C23    C22    C21     111.000    3.000
+ RGF      H222   C22    H221    107.900    3.000
+ RGF      H222   C22    C21     109.470    3.000
+ RGF      H221   C22    C21     109.470    3.000
+ RGF      C03    C04    H041    109.470    3.000
+ RGF      C03    C04    H042    109.470    3.000
+ RGF      C03    C04    N05     105.000    3.000
+ RGF      H041   C04    H042    107.900    3.000
+ RGF      H041   C04    N05     109.470    3.000
+ RGF      H042   C04    N05     109.470    3.000
+ RGF      C04    N05    C20     120.000    3.000
+ RGF      C04    N05    C06     120.000    3.000
+ RGF      C20    N05    C06     120.000    3.000
+ RGF      N05    C20    H202    109.470    3.000
+ RGF      N05    C20    H201    109.470    3.000
+ RGF      N05    C20    C21     109.500    3.000
+ RGF      H202   C20    H201    107.900    3.000
+ RGF      H202   C20    C21     109.470    3.000
+ RGF      H201   C20    C21     109.470    3.000
+ RGF      N05    C06    N19     120.000    3.000
+ RGF      N05    C06    C07     120.000    3.000
+ RGF      N19    C06    C07     120.000    3.000
+ RGF      C06    N19    C18     120.000    3.000
+ RGF      N19    C18    H18     120.000    3.000
+ RGF      N19    C18    N17     120.000    3.000
+ RGF      H18    C18    N17     120.000    3.000
+ RGF      C06    C07    C08     120.000    3.000
+ RGF      C06    C07    C16     120.000    3.000
+ RGF      C08    C07    C16     120.000    3.000
+ RGF      C07    C08    C13     120.000    3.000
+ RGF      C07    C08    C09     120.000    3.000
+ RGF      C13    C08    C09     120.000    3.000
+ RGF      C08    C13    H13     120.000    3.000
+ RGF      C08    C13    C12     120.000    3.000
+ RGF      H13    C13    C12     120.000    3.000
+ RGF      C08    C09    N15     108.000    3.000
+ RGF      C08    C09    C10     120.000    3.000
+ RGF      N15    C09    C10     132.000    3.000
+ RGF      C09    N15    C16     108.000    3.000
+ RGF      N15    C16    N17     120.000    3.000
+ RGF      N15    C16    C07     108.000    3.000
+ RGF      N17    C16    C07     120.000    3.000
+ RGF      C16    N17    C18     120.000    3.000
+ RGF      C09    C10    H10     120.000    3.000
+ RGF      C09    C10    C11     120.000    3.000
+ RGF      H10    C10    C11     120.000    3.000
+ RGF      C10    C11    F14     120.000    3.000
+ RGF      C10    C11    C12     120.000    3.000
+ RGF      F14    C11    C12     120.000    3.000
+ RGF      C11    C12    H12     120.000    3.000
+ RGF      C11    C12    C13     120.000    3.000
+ RGF      H12    C12    C13     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RGF      var_1            O01    C02    O25    HO25             180.000           20.000   3
+ RGF      var_2            O01    C02    C03    C04              180.000           20.000   3
+ RGF      var_3            C02    C03    C21    C24               32.119           20.000   3
+ RGF      var_4            C03    C21    C22    C23              139.857           20.000   3
+ RGF      var_5            C03    C21    C24    C23             -143.747           20.000   3
+ RGF      var_6            C21    C24    C23    C22              180.000           20.000   3
+ RGF      var_7            C24    C23    C22    C21              180.000           20.000   3
+ RGF      var_8            C02    C03    C04    N05              180.000           20.000   3
+ RGF      var_9            C03    C04    N05    C06              169.909           20.000   3
+ RGF      var_10           C04    N05    C20    C21               -1.347           20.000   3
+ RGF      var_11           N05    C20    C21    C03              -25.135           20.000   3
+ RGF      var_12           C04    N05    C06    C07               17.461           20.000   3
+ RGF      CONST_1          N05    C06    N19    C18                0.000            0.000   0
+ RGF      CONST_2          C06    N19    C18    N17                0.000            0.000   0
+ RGF      CONST_3          N19    C18    N17    C16                0.000            0.000   0
+ RGF      CONST_4          N05    C06    C07    C08              180.000            0.000   0
+ RGF      CONST_5          C06    C07    C08    C09              180.000            0.000   0
+ RGF      CONST_6          C07    C08    C13    C12              180.000            0.000   0
+ RGF      CONST_7          C08    C13    C12    C11                0.000            0.000   0
+ RGF      CONST_8          C07    C08    C09    C10              180.000            0.000   0
+ RGF      CONST_9          C08    C09    N15    C16              180.000            0.000   0
+ RGF      CONST_10         C09    N15    C16    N17              180.000            0.000   0
+ RGF      CONST_11         N15    C16    C07    C06              180.000            0.000   0
+ RGF      CONST_12         N15    C16    N17    C18              180.000            0.000   0
+ RGF      CONST_13         C08    C09    C10    C11              180.000            0.000   0
+ RGF      CONST_14         C09    C10    C11    C12                0.000            0.000   0
+ RGF      CONST_15         C10    C11    C12    C13                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RGF      chir_01          C02    C03    O01    O25       negativ
+ RGF      chir_02          C03    C02    C04    C21       positiv
+ RGF      chir_03          C21    C20    C03    C22       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RGF      plan-1            C18       0.020
+ RGF      plan-1            N17       0.020
+ RGF      plan-1            N19       0.020
+ RGF      plan-1            H18       0.020
+ RGF      plan-1            C06       0.020
+ RGF      plan-1            C07       0.020
+ RGF      plan-1            N05       0.020
+ RGF      plan-1            C16       0.020
+ RGF      plan-1            C08       0.020
+ RGF      plan-1            C13       0.020
+ RGF      plan-1            C09       0.020
+ RGF      plan-1            C10       0.020
+ RGF      plan-1            N15       0.020
+ RGF      plan-1            C12       0.020
+ RGF      plan-1            C11       0.020
+ RGF      plan-1            H13       0.020
+ RGF      plan-1            H12       0.020
+ RGF      plan-1            F14       0.020
+ RGF      plan-1            H10       0.020
+ RGF      plan-2            N05       0.020
+ RGF      plan-2            C20       0.020
+ RGF      plan-2            C04       0.020
+ RGF      plan-2            C06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

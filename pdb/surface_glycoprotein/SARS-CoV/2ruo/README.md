@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: membrane glycoprotein
+**Protein name**: surface glycoprotein
 
 **Organism**: SARS-CoV
 
@@ -14,20 +14,14 @@
 
 2ruo.pdb and 2ruo.cif - the coordinates of the threedimensional molecular model
 
-## Subfolders
 
 
 
-## Maps
+**Geometry validation (the lower, the better)**
 
-
-
-## Data Summary
-
-
-
-## HARUSPEX results
-
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|----------------:|
+||--|--|0.0 %|0.00 %|
 
 
 ## Other relevant links 

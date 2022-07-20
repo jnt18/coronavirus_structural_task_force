@@ -1,0 +1,286 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RIW      RIW '.                                   ' .                  31  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RIW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RIW           O20    O    O         0.000    -43.798  -32.109    2.902
+ RIW           C19    C    C         0.000    -43.423  -31.165    2.290
+ RIW           C18    C    C1        0.000    -42.231  -31.098    1.462
+ RIW           H18    H    H         0.000    -41.431  -31.818    1.432
+ RIW           N15    N    N         0.000    -44.093  -29.825    2.217
+ RIW           C16    C    CH2       0.000    -43.343  -28.935    1.393
+ RIW           H161   H    H         0.000    -42.810  -28.192    1.990
+ RIW           H162   H    H         0.000    -43.983  -28.427    0.669
+ RIW           C17    C    CH2       0.000    -42.327  -29.824    0.649
+ RIW           H172   H    H         0.000    -41.345  -29.349    0.597
+ RIW           H171   H    H         0.000    -42.669  -30.060   -0.361
+ RIW           N14    N    NH1       0.000    -45.262  -29.497    2.884
+ RIW           HN14   H    H         0.000    -46.121  -29.312    2.386
+ RIW           C13    C    CR6       0.000    -45.195  -29.433    4.301
+ RIW           N12    N    NRD6      0.000    -44.030  -29.501    4.937
+ RIW           C11    C    CR16      0.000    -43.981  -29.444    6.258
+ RIW           H11    H    H         0.000    -43.024  -29.498    6.762
+ RIW           N10    N    NRD6      0.000    -45.077  -29.323    6.960
+ RIW           C09    C    CR56      0.000    -46.287  -29.242    6.367
+ RIW           C21    C    CR56      0.000    -46.392  -29.294    5.010
+ RIW           C05    C    CR56      0.000    -47.806  -29.189    4.689
+ RIW           C04    C    CR16      0.000    -48.550  -29.177    3.483
+ RIW           H04    H    H         0.000    -48.053  -29.265    2.525
+ RIW           C03    C    CR16      0.000    -49.934  -29.050    3.559
+ RIW           H03    H    H         0.000    -50.522  -29.028    2.650
+ RIW           N08    N    NRD5      0.000    -47.516  -29.122    6.895
+ RIW           C06    C    CR56      0.000    -48.441  -29.077    5.906
+ RIW           C07    C    CR16      0.000    -49.835  -28.965    5.970
+ RIW           H07    H    H         0.000    -50.333  -28.890    6.929
+ RIW           C02    C    CR6       0.000    -50.570  -28.951    4.800
+ RIW           F01    F    F         0.000    -51.921  -28.851    4.870
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RIW      O20    n/a    C19    START
+ RIW      C19    O20    N15    .
+ RIW      C18    C19    H18    .
+ RIW      H18    C18    .      .
+ RIW      N15    C19    N14    .
+ RIW      C16    N15    C17    .
+ RIW      H161   C16    .      .
+ RIW      H162   C16    .      .
+ RIW      C17    C16    H171   .
+ RIW      H172   C17    .      .
+ RIW      H171   C17    .      .
+ RIW      N14    N15    C13    .
+ RIW      HN14   N14    .      .
+ RIW      C13    N14    N12    .
+ RIW      N12    C13    C11    .
+ RIW      C11    N12    N10    .
+ RIW      H11    C11    .      .
+ RIW      N10    C11    C09    .
+ RIW      C09    N10    N08    .
+ RIW      C21    C09    C05    .
+ RIW      C05    C21    C04    .
+ RIW      C04    C05    C03    .
+ RIW      H04    C04    .      .
+ RIW      C03    C04    H03    .
+ RIW      H03    C03    .      .
+ RIW      N08    C09    C06    .
+ RIW      C06    N08    C07    .
+ RIW      C07    C06    C02    .
+ RIW      H07    C07    .      .
+ RIW      C02    C07    F01    .
+ RIW      F01    C02    .      END
+ RIW      C18    C17    .    ADD
+ RIW      C13    C21    .    ADD
+ RIW      C02    C03    .    ADD
+ RIW      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RIW      C18    C17       single      1.510    0.020
+ RIW      C18    C19       aromatic    1.340    0.020
+ RIW      C17    C16       single      1.524    0.020
+ RIW      C16    N15       single      1.455    0.020
+ RIW      C13    C21       aromatic    1.390    0.020
+ RIW      N12    C13       aromat      1.350    0.020
+ RIW      C13    N14       single      1.350    0.020
+ RIW      N10    C11       aromatic    1.337    0.020
+ RIW      C11    N12       deloc       1.337    0.020
+ RIW      N15    C19       single      1.330    0.020
+ RIW      C19    O20       double      1.220    0.020
+ RIW      C02    C03       aromatic    1.390    0.020
+ RIW      C02    C07       aromatic    1.390    0.020
+ RIW      F01    C02       single      1.345    0.020
+ RIW      C03    C04       aromatic    1.390    0.020
+ RIW      C04    C05       aromatic    1.390    0.020
+ RIW      C05    C06       aromatic    1.390    0.020
+ RIW      C05    C21       aromatic    1.390    0.020
+ RIW      C07    C06       aromatic    1.390    0.020
+ RIW      C06    N08       aromatic    1.350    0.020
+ RIW      C21    C09       aromatic    1.390    0.020
+ RIW      N08    C09       aromatic    1.350    0.020
+ RIW      C09    N10       deloc       1.355    0.020
+ RIW      N14    N15       single      1.320    0.020
+ RIW      H18    C18       single      1.077    0.020
+ RIW      H161   C16       single      1.092    0.020
+ RIW      H162   C16       single      1.092    0.020
+ RIW      H171   C17       single      1.092    0.020
+ RIW      H172   C17       single      1.092    0.020
+ RIW      H11    C11       single      1.083    0.020
+ RIW      H03    C03       single      1.083    0.020
+ RIW      H04    C04       single      1.083    0.020
+ RIW      H07    C07       single      1.083    0.020
+ RIW      HN14   N14       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RIW      O20    C19    C18     120.500    3.000
+ RIW      O20    C19    N15     123.000    3.000
+ RIW      C18    C19    N15     116.500    3.000
+ RIW      C19    C18    H18     120.000    3.000
+ RIW      C19    C18    C17     120.500    3.000
+ RIW      H18    C18    C17     120.000    3.000
+ RIW      C19    N15    C16     127.000    3.000
+ RIW      C19    N15    N14     120.000    3.000
+ RIW      C16    N15    N14     120.000    3.000
+ RIW      N15    C16    H161    109.470    3.000
+ RIW      N15    C16    H162    109.470    3.000
+ RIW      N15    C16    C17     105.000    3.000
+ RIW      H161   C16    H162    107.900    3.000
+ RIW      H161   C16    C17     109.470    3.000
+ RIW      H162   C16    C17     109.470    3.000
+ RIW      C16    C17    H172    109.470    3.000
+ RIW      C16    C17    H171    109.470    3.000
+ RIW      C16    C17    C18     109.470    3.000
+ RIW      H172   C17    H171    107.900    3.000
+ RIW      H172   C17    C18     109.470    3.000
+ RIW      H171   C17    C18     109.470    3.000
+ RIW      N15    N14    HN14    120.000    3.000
+ RIW      N15    N14    C13     120.000    3.000
+ RIW      HN14   N14    C13     120.000    3.000
+ RIW      N14    C13    N12     120.000    3.000
+ RIW      N14    C13    C21     120.000    3.000
+ RIW      N12    C13    C21     120.000    3.000
+ RIW      C13    N12    C11     120.000    3.000
+ RIW      N12    C11    H11     120.000    3.000
+ RIW      N12    C11    N10     120.000    3.000
+ RIW      H11    C11    N10     120.000    3.000
+ RIW      C11    N10    C09     120.000    3.000
+ RIW      N10    C09    C21     120.000    3.000
+ RIW      N10    C09    N08     120.000    3.000
+ RIW      C21    C09    N08     108.000    3.000
+ RIW      C09    C21    C05     120.000    3.000
+ RIW      C09    C21    C13     120.000    3.000
+ RIW      C05    C21    C13     120.000    3.000
+ RIW      C21    C05    C04     120.000    3.000
+ RIW      C21    C05    C06     120.000    3.000
+ RIW      C04    C05    C06     120.000    3.000
+ RIW      C05    C04    H04     120.000    3.000
+ RIW      C05    C04    C03     120.000    3.000
+ RIW      H04    C04    C03     120.000    3.000
+ RIW      C04    C03    H03     120.000    3.000
+ RIW      C04    C03    C02     120.000    3.000
+ RIW      H03    C03    C02     120.000    3.000
+ RIW      C09    N08    C06     108.000    3.000
+ RIW      N08    C06    C07     132.000    3.000
+ RIW      N08    C06    C05     108.000    3.000
+ RIW      C07    C06    C05     120.000    3.000
+ RIW      C06    C07    H07     120.000    3.000
+ RIW      C06    C07    C02     120.000    3.000
+ RIW      H07    C07    C02     120.000    3.000
+ RIW      C07    C02    F01     120.000    3.000
+ RIW      C07    C02    C03     120.000    3.000
+ RIW      F01    C02    C03     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RIW      var_1            O20    C19    C18    C17              167.622           20.000   3
+ RIW      var_2            C19    C18    C17    C16               19.645           20.000   3
+ RIW      var_3            O20    C19    N15    N14              180.000           20.000   2
+ RIW      var_4            C19    N15    C16    C17               13.106           20.000   3
+ RIW      var_5            N15    C16    C17    C18              180.000           20.000   3
+ RIW      var_6            C19    N15    N14    C13               67.279           20.000   3
+ RIW      var_7            N15    N14    C13    N12                9.058           20.000   3
+ RIW      CONST_1          N14    C13    C21    C09              180.000            0.000   0
+ RIW      CONST_2          N14    C13    N12    C11                0.000            0.000   0
+ RIW      CONST_3          C13    N12    C11    N10                0.000            0.000   0
+ RIW      CONST_4          N12    C11    N10    C09                0.000            0.000   0
+ RIW      CONST_5          C11    N10    C09    N08              180.000            0.000   0
+ RIW      CONST_6          N10    C09    C21    C05              180.000            0.000   0
+ RIW      CONST_7          C09    C21    C05    C04              180.000            0.000   0
+ RIW      CONST_8          C21    C05    C06    N08              180.000            0.000   0
+ RIW      CONST_9          C21    C05    C04    C03              180.000            0.000   0
+ RIW      CONST_10         C05    C04    C03    C02                0.000            0.000   0
+ RIW      CONST_11         N10    C09    N08    C06              180.000            0.000   0
+ RIW      CONST_12         C09    N08    C06    C07              180.000            0.000   0
+ RIW      CONST_13         N08    C06    C07    C02              180.000            0.000   0
+ RIW      CONST_14         C06    C07    C02    F01                0.000            0.000   0
+ RIW      CONST_15         C07    C02    C03    C04                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RIW      plan-1            C18       0.020
+ RIW      plan-1            C17       0.020
+ RIW      plan-1            C19       0.020
+ RIW      plan-1            H18       0.020
+ RIW      plan-2            C13       0.020
+ RIW      plan-2            C21       0.020
+ RIW      plan-2            N12       0.020
+ RIW      plan-2            N14       0.020
+ RIW      plan-2            C11       0.020
+ RIW      plan-2            N10       0.020
+ RIW      plan-2            H11       0.020
+ RIW      plan-2            C05       0.020
+ RIW      plan-2            C09       0.020
+ RIW      plan-2            C06       0.020
+ RIW      plan-2            N08       0.020
+ RIW      plan-2            C02       0.020
+ RIW      plan-2            C03       0.020
+ RIW      plan-2            C07       0.020
+ RIW      plan-2            F01       0.020
+ RIW      plan-2            C04       0.020
+ RIW      plan-2            H03       0.020
+ RIW      plan-2            H04       0.020
+ RIW      plan-2            H07       0.020
+ RIW      plan-2            HN14      0.020
+ RIW      plan-3            C19       0.020
+ RIW      plan-3            C18       0.020
+ RIW      plan-3            N15       0.020
+ RIW      plan-3            O20       0.020
+ RIW      plan-3            H18       0.020
+ RIW      plan-4            N14       0.020
+ RIW      plan-4            C13       0.020
+ RIW      plan-4            N15       0.020
+ RIW      plan-4            HN14      0.020
+ RIW      plan-5            N15       0.020
+ RIW      plan-5            C16       0.020
+ RIW      plan-5            C19       0.020
+ RIW      plan-5            N14       0.020
+ RIW      plan-5            HN14      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

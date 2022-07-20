@@ -1,0 +1,358 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+R8R      R8R '.                                   ' .                  43  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_R8R
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ R8R           F1     F    F         0.000    -51.883  -28.854    4.838
+ R8R           C9     C    CR6       0.000    -50.520  -28.913    4.805
+ R8R           C10    C    CR16      0.000    -49.896  -28.963    3.566
+ R8R           H10    H    H         0.000    -50.484  -28.952    2.656
+ R8R           C8     C    CR16      0.000    -49.825  -28.908    5.990
+ R8R           H8     H    H         0.000    -50.343  -28.859    6.940
+ R8R           C7     C    CR56      0.000    -48.439  -28.968    5.934
+ R8R           N2     N    NRD5      0.000    -47.481  -28.981    6.945
+ R8R           C12    C    CR56      0.000    -46.236  -29.047    6.386
+ R8R           N3     N    NRD6      0.000    -45.049  -29.082    7.013
+ R8R           C6     C    CR56      0.000    -47.784  -29.034    4.692
+ R8R           C11    C    CR16      0.000    -48.521  -29.027    3.506
+ R8R           H11    H    H         0.000    -48.017  -29.071    2.549
+ R8R           C5     C    CR56      0.000    -46.380  -29.082    4.993
+ R8R           C4     C    CR6       0.000    -45.225  -29.102    4.236
+ R8R           N4     N    NRD6      0.000    -44.035  -29.185    4.842
+ R8R           C13    C    CR16      0.000    -44.005  -29.151    6.185
+ R8R           H13    H    H         0.000    -43.026  -29.183    6.646
+ R8R           N1     N    N         0.000    -45.356  -29.238    2.898
+ R8R           C14    C    CH2       0.000    -45.027  -28.272    1.851
+ R8R           H141   H    H         0.000    -44.256  -27.586    2.208
+ R8R           H142   H    H         0.000    -45.918  -27.704    1.576
+ R8R           C15    C    CH2       0.000    -44.512  -29.030    0.636
+ R8R           H152   H    H         0.000    -43.868  -28.380    0.039
+ R8R           H151   H    H         0.000    -45.353  -29.367    0.026
+ R8R           C3     C    CH2       0.000    -45.829  -30.502    2.350
+ R8R           H31    H    H         0.000    -46.508  -30.332    1.512
+ R8R           H32    H    H         0.000    -46.338  -31.091    3.116
+ R8R           C2     C    CH1       0.000    -44.597  -31.256    1.863
+ R8R           H2     H    H         0.000    -44.936  -32.000    1.128
+ R8R           C1     C    C         0.000    -43.905  -32.015    2.996
+ R8R           O1     O    OC       -1.000    -43.926  -33.220    2.918
+ R8R           O2     O    OC        0.000    -43.388  -31.438    3.915
+ R8R           C16    C    CT        0.000    -43.710  -30.243    1.118
+ R8R           C17    C    CH2       0.000    -42.398  -29.745    1.809
+ R8R           H172   H    H         0.000    -42.256  -29.984    2.865
+ R8R           H171   H    H         0.000    -42.084  -28.715    1.625
+ R8R           C19    C    CH2       0.000    -42.787  -30.962    0.071
+ R8R           H191   H    H         0.000    -42.648  -30.485   -0.902
+ R8R           H192   H    H         0.000    -42.910  -32.038   -0.067
+ R8R           C18    C    CH2       0.000    -41.562  -30.695    0.953
+ R8R           H182   H    H         0.000    -40.721  -30.151    0.519
+ R8R           H181   H    H         0.000    -41.185  -31.510    1.574
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ R8R      F1     n/a    C9     START
+ R8R      C9     F1     C8     .
+ R8R      C10    C9     H10    .
+ R8R      H10    C10    .      .
+ R8R      C8     C9     C7     .
+ R8R      H8     C8     .      .
+ R8R      C7     C8     C6     .
+ R8R      N2     C7     C12    .
+ R8R      C12    N2     N3     .
+ R8R      N3     C12    .      .
+ R8R      C6     C7     C5     .
+ R8R      C11    C6     H11    .
+ R8R      H11    C11    .      .
+ R8R      C5     C6     C4     .
+ R8R      C4     C5     N1     .
+ R8R      N4     C4     C13    .
+ R8R      C13    N4     H13    .
+ R8R      H13    C13    .      .
+ R8R      N1     C4     C3     .
+ R8R      C14    N1     C15    .
+ R8R      H141   C14    .      .
+ R8R      H142   C14    .      .
+ R8R      C15    C14    H151   .
+ R8R      H152   C15    .      .
+ R8R      H151   C15    .      .
+ R8R      C3     N1     C2     .
+ R8R      H31    C3     .      .
+ R8R      H32    C3     .      .
+ R8R      C2     C3     C16    .
+ R8R      H2     C2     .      .
+ R8R      C1     C2     O2     .
+ R8R      O1     C1     .      .
+ R8R      O2     C1     .      .
+ R8R      C16    C2     C19    .
+ R8R      C17    C16    H171   .
+ R8R      H172   C17    .      .
+ R8R      H171   C17    .      .
+ R8R      C19    C16    C18    .
+ R8R      H191   C19    .      .
+ R8R      H192   C19    .      .
+ R8R      C18    C19    H181   .
+ R8R      H182   C18    .      .
+ R8R      H181   C18    .      END
+ R8R      C18    C17    .    ADD
+ R8R      C16    C15    .    ADD
+ R8R      C13    N3     .    ADD
+ R8R      C12    C5     .    ADD
+ R8R      C11    C10    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ R8R      C18    C17       single      1.524    0.020
+ R8R      C18    C19       single      1.524    0.020
+ R8R      C14    N1        single      1.455    0.020
+ R8R      N1     C4        single      1.400    0.020
+ R8R      C3     N1        single      1.455    0.020
+ R8R      C17    C16       single      1.524    0.020
+ R8R      C16    C15       single      1.524    0.020
+ R8R      C19    C16       single      1.524    0.020
+ R8R      C16    C2        single      1.524    0.020
+ R8R      C15    C14       single      1.524    0.020
+ R8R      C13    N3        aromatic    1.337    0.020
+ R8R      C13    N4        aromatic    1.337    0.020
+ R8R      O2     C1        deloc       1.250    0.020
+ R8R      C12    C5        aromatic    1.390    0.020
+ R8R      C12    N2        aromatic    1.350    0.020
+ R8R      N3     C12       aromatic    1.355    0.020
+ R8R      C11    C10       aromatic    1.390    0.020
+ R8R      C11    C6        aromatic    1.390    0.020
+ R8R      C10    C9        aromatic    1.390    0.020
+ R8R      C8     C9        aromatic    1.390    0.020
+ R8R      C9     F1        single      1.345    0.020
+ R8R      C7     C8        aromatic    1.390    0.020
+ R8R      C6     C7        aromatic    1.390    0.020
+ R8R      N2     C7        aromatic    1.350    0.020
+ R8R      C5     C6        aromatic    1.390    0.020
+ R8R      C4     C5        aromatic    1.390    0.020
+ R8R      N4     C4        aromatic    1.350    0.020
+ R8R      C2     C3        single      1.524    0.020
+ R8R      C1     C2        single      1.500    0.020
+ R8R      O1     C1        deloc       1.250    0.020
+ R8R      H181   C18       single      1.092    0.020
+ R8R      H182   C18       single      1.092    0.020
+ R8R      H171   C17       single      1.092    0.020
+ R8R      H172   C17       single      1.092    0.020
+ R8R      H151   C15       single      1.092    0.020
+ R8R      H152   C15       single      1.092    0.020
+ R8R      H141   C14       single      1.092    0.020
+ R8R      H142   C14       single      1.092    0.020
+ R8R      H13    C13       single      1.083    0.020
+ R8R      H11    C11       single      1.083    0.020
+ R8R      H10    C10       single      1.083    0.020
+ R8R      H8     C8        single      1.083    0.020
+ R8R      H31    C3        single      1.092    0.020
+ R8R      H32    C3        single      1.092    0.020
+ R8R      H191   C19       single      1.092    0.020
+ R8R      H192   C19       single      1.092    0.020
+ R8R      H2     C2        single      1.099    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ R8R      F1     C9     C10     120.000    3.000
+ R8R      F1     C9     C8      120.000    3.000
+ R8R      C10    C9     C8      120.000    3.000
+ R8R      C9     C10    H10     120.000    3.000
+ R8R      C9     C10    C11     120.000    3.000
+ R8R      H10    C10    C11     120.000    3.000
+ R8R      C9     C8     H8      120.000    3.000
+ R8R      C9     C8     C7      120.000    3.000
+ R8R      H8     C8     C7      120.000    3.000
+ R8R      C8     C7     N2      132.000    3.000
+ R8R      C8     C7     C6      120.000    3.000
+ R8R      N2     C7     C6      108.000    3.000
+ R8R      C7     N2     C12     108.000    3.000
+ R8R      N2     C12    N3      120.000    3.000
+ R8R      N2     C12    C5      108.000    3.000
+ R8R      N3     C12    C5      120.000    3.000
+ R8R      C12    N3     C13     120.000    3.000
+ R8R      C7     C6     C11     120.000    3.000
+ R8R      C7     C6     C5      120.000    3.000
+ R8R      C11    C6     C5      120.000    3.000
+ R8R      C6     C11    H11     120.000    3.000
+ R8R      C6     C11    C10     120.000    3.000
+ R8R      H11    C11    C10     120.000    3.000
+ R8R      C6     C5     C4      120.000    3.000
+ R8R      C6     C5     C12     120.000    3.000
+ R8R      C4     C5     C12     120.000    3.000
+ R8R      C5     C4     N4      120.000    3.000
+ R8R      C5     C4     N1      120.000    3.000
+ R8R      N4     C4     N1      120.000    3.000
+ R8R      C4     N4     C13     120.000    3.000
+ R8R      N4     C13    H13     120.000    3.000
+ R8R      N4     C13    N3      120.000    3.000
+ R8R      H13    C13    N3      120.000    3.000
+ R8R      C4     N1     C14     120.000    3.000
+ R8R      C4     N1     C3      120.000    3.000
+ R8R      C14    N1     C3      120.000    3.000
+ R8R      N1     C14    H141    109.470    3.000
+ R8R      N1     C14    H142    109.470    3.000
+ R8R      N1     C14    C15     105.000    3.000
+ R8R      H141   C14    H142    107.900    3.000
+ R8R      H141   C14    C15     109.470    3.000
+ R8R      H142   C14    C15     109.470    3.000
+ R8R      C14    C15    H152    109.470    3.000
+ R8R      C14    C15    H151    109.470    3.000
+ R8R      C14    C15    C16     111.000    3.000
+ R8R      H152   C15    H151    107.900    3.000
+ R8R      H152   C15    C16     109.470    3.000
+ R8R      H151   C15    C16     109.470    3.000
+ R8R      N1     C3     H31     109.470    3.000
+ R8R      N1     C3     H32     109.470    3.000
+ R8R      N1     C3     C2      105.000    3.000
+ R8R      H31    C3     H32     107.900    3.000
+ R8R      H31    C3     C2      109.470    3.000
+ R8R      H32    C3     C2      109.470    3.000
+ R8R      C3     C2     H2      108.340    3.000
+ R8R      C3     C2     C1      109.470    3.000
+ R8R      C3     C2     C16     111.000    3.000
+ R8R      H2     C2     C1      108.810    3.000
+ R8R      H2     C2     C16     108.340    3.000
+ R8R      C1     C2     C16     109.470    3.000
+ R8R      C2     C1     O1      118.500    3.000
+ R8R      C2     C1     O2      118.500    3.000
+ R8R      O1     C1     O2      123.000    3.000
+ R8R      C2     C16    C17     111.000    3.000
+ R8R      C2     C16    C19     111.000    3.000
+ R8R      C2     C16    C15     111.000    3.000
+ R8R      C17    C16    C19     111.000    3.000
+ R8R      C17    C16    C15     111.000    3.000
+ R8R      C19    C16    C15     111.000    3.000
+ R8R      C16    C17    H172    109.470    3.000
+ R8R      C16    C17    H171    109.470    3.000
+ R8R      C16    C17    C18     111.000    3.000
+ R8R      H172   C17    H171    107.900    3.000
+ R8R      H172   C17    C18     109.470    3.000
+ R8R      H171   C17    C18     109.470    3.000
+ R8R      C16    C19    H191    109.470    3.000
+ R8R      C16    C19    H192    109.470    3.000
+ R8R      C16    C19    C18     111.000    3.000
+ R8R      H191   C19    H192    107.900    3.000
+ R8R      H191   C19    C18     109.470    3.000
+ R8R      H192   C19    C18     109.470    3.000
+ R8R      C19    C18    H182    109.470    3.000
+ R8R      C19    C18    H181    109.470    3.000
+ R8R      C19    C18    C17     111.000    3.000
+ R8R      H182   C18    H181    107.900    3.000
+ R8R      H182   C18    C17     109.470    3.000
+ R8R      H181   C18    C17     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ R8R      CONST_1          F1     C9     C10    C11                0.000            0.000   0
+ R8R      CONST_2          F1     C9     C8     C7                 0.000            0.000   0
+ R8R      CONST_3          C9     C8     C7     C6               180.000            0.000   0
+ R8R      CONST_4          C8     C7     N2     C12              180.000            0.000   0
+ R8R      CONST_5          C7     N2     C12    N3               180.000            0.000   0
+ R8R      CONST_6          N2     C12    C5     C6               180.000            0.000   0
+ R8R      CONST_7          N2     C12    N3     C13              180.000            0.000   0
+ R8R      CONST_8          C8     C7     C6     C5               180.000            0.000   0
+ R8R      CONST_9          C7     C6     C11    C10              180.000            0.000   0
+ R8R      CONST_10         C6     C11    C10    C9                 0.000            0.000   0
+ R8R      CONST_11         C7     C6     C5     C4               180.000            0.000   0
+ R8R      CONST_12         C6     C5     C4     N1               180.000            0.000   0
+ R8R      CONST_13         C5     C4     N4     C13                0.000            0.000   0
+ R8R      CONST_14         C4     N4     C13    N3                 0.000            0.000   0
+ R8R      CONST_15         N4     C13    N3     C12                0.000            0.000   0
+ R8R      var_1            C5     C4     N1     C3               -68.705           20.000   3
+ R8R      var_2            C4     N1     C14    C15              145.171           20.000   3
+ R8R      var_3            N1     C14    C15    C16              180.000           20.000   3
+ R8R      var_4            C4     N1     C3     C2              -100.133           20.000   3
+ R8R      var_5            N1     C3     C2     C16              180.000           20.000   3
+ R8R      var_6            C3     C2     C1     O2               180.000           20.000   3
+ R8R      var_7            C3     C2     C16    C19             -155.095           20.000   3
+ R8R      var_8            C2     C16    C15    C14               64.917           20.000   3
+ R8R      var_9            C2     C16    C17    C18              101.226           20.000   3
+ R8R      var_10           C2     C16    C19    C18             -108.400           20.000   3
+ R8R      var_11           C16    C19    C18    C17              180.000           20.000   3
+ R8R      var_12           C19    C18    C17    C16              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ R8R      chir_01          C16    C17    C15    C19       negativ
+ R8R      chir_02          C2     C16    C3     C1        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ R8R      plan-1            N1        0.020
+ R8R      plan-1            C14       0.020
+ R8R      plan-1            C4        0.020
+ R8R      plan-1            C3        0.020
+ R8R      plan-2            C13       0.020
+ R8R      plan-2            N3        0.020
+ R8R      plan-2            N4        0.020
+ R8R      plan-2            H13       0.020
+ R8R      plan-2            C4        0.020
+ R8R      plan-2            N1        0.020
+ R8R      plan-2            C5        0.020
+ R8R      plan-2            C12       0.020
+ R8R      plan-2            C7        0.020
+ R8R      plan-2            C6        0.020
+ R8R      plan-2            N2        0.020
+ R8R      plan-2            C11       0.020
+ R8R      plan-2            C10       0.020
+ R8R      plan-2            C9        0.020
+ R8R      plan-2            C8        0.020
+ R8R      plan-2            H11       0.020
+ R8R      plan-2            H10       0.020
+ R8R      plan-2            F1        0.020
+ R8R      plan-2            H8        0.020
+ R8R      plan-3            C1        0.020
+ R8R      plan-3            O2        0.020
+ R8R      plan-3            C2        0.020
+ R8R      plan-3            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

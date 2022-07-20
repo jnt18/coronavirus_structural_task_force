@@ -1,0 +1,401 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QM6      QM6 '.                                   ' .                  49  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QM6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QM6           O23    O    O         0.000    -51.145  -29.077    4.289
+ QM6           C22    C    C         0.000    -50.602  -29.168    5.342
+ QM6           N24    N    NH1       0.000    -51.331  -29.326    6.591
+ QM6           HN24   H    H         0.000    -50.811  -29.436    7.450
+ QM6           C25    C    CH1       0.000    -52.789  -29.331    6.643
+ QM6           H25    H    H         0.000    -53.306  -28.396    6.387
+ QM6           C27    C    CH2       0.000    -53.309  -30.113    7.844
+ QM6           H271   H    H         0.000    -54.271  -29.947    8.334
+ QM6           H272   H    H         0.000    -52.737  -30.852    8.409
+ QM6           C26    C    CH2       0.000    -53.542  -30.626    6.419
+ QM6           H262   H    H         0.000    -54.433  -30.431    5.819
+ QM6           H261   H    H         0.000    -52.900  -31.336    5.894
+ QM6           N21    N    NH1       0.000    -49.162  -29.140    5.501
+ QM6           HN21   H    H         0.000    -48.793  -29.227    6.437
+ QM6           C20    C    CR6       0.000    -48.211  -28.996    4.416
+ QM6           C19    C    CR16      0.000    -48.570  -28.673    3.126
+ QM6           H19    H    H         0.000    -49.612  -28.511    2.880
+ QM6           C18    C    CR16      0.000    -47.600  -28.554    2.140
+ QM6           H18    H    H         0.000    -47.879  -28.317    1.121
+ QM6           C28    C    CR16      0.000    -46.891  -29.158    4.755
+ QM6           H28    H    H         0.000    -46.612  -29.389    5.776
+ QM6           C29    C    CR16      0.000    -45.924  -29.023    3.782
+ QM6           H29    H    H         0.000    -44.880  -29.139    4.044
+ QM6           C17    C    CR6       0.000    -46.274  -28.742    2.478
+ QM6           C15    C    C         0.000    -45.122  -28.564    1.487
+ QM6           O16    O    O         0.000    -45.231  -27.816    0.559
+ QM6           N14    N    NH1       0.000    -43.865  -29.248    1.796
+ QM6           HN14   H    H         0.000    -43.785  -29.853    2.601
+ QM6           C13    C    CH2       0.000    -42.729  -29.028    0.903
+ QM6           H131   H    H         0.000    -42.004  -28.458    1.488
+ QM6           H132   H    H         0.000    -43.112  -28.404    0.092
+ QM6           C12    C    CR5       0.000    -42.045  -30.281    0.312
+ QM6           C04    C    CR5       0.000    -42.069  -31.627    0.714
+ QM6           C02    C    CH1       0.000    -42.797  -32.239    1.920
+ QM6           H02    H    H         0.000    -43.772  -31.957    1.499
+ QM6           O03    O    OH1       0.000    -43.117  -33.468    1.894
+ QM6           HO03   H    H         0.000    -43.556  -33.667    2.719
+ QM6           O01    O    O        -1.000    -43.008  -31.526    2.944
+ QM6           O05    O    O2        0.000    -41.322  -32.323   -0.106
+ QM6           C06    C    CR56      0.000    -40.791  -31.554   -1.051
+ QM6           C11    C    CR56      0.000    -41.195  -30.241   -0.867
+ QM6           C07    C    CR16      0.000    -39.943  -31.869   -2.123
+ QM6           H07    H    H         0.000    -39.625  -32.894   -2.272
+ QM6           C08    C    CR16      0.000    -39.505  -30.877   -2.998
+ QM6           H08    H    H         0.000    -38.850  -31.131   -3.822
+ QM6           C09    C    CR16      0.000    -39.913  -29.553   -2.809
+ QM6           H09    H    H         0.000    -39.575  -28.780   -3.488
+ QM6           C10    C    CR16      0.000    -40.758  -29.227   -1.742
+ QM6           H10    H    H         0.000    -41.074  -28.202   -1.590
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QM6      O23    n/a    C22    START
+ QM6      C22    O23    N21    .
+ QM6      N24    C22    C25    .
+ QM6      HN24   N24    .      .
+ QM6      C25    N24    C27    .
+ QM6      H25    C25    .      .
+ QM6      C27    C25    C26    .
+ QM6      H271   C27    .      .
+ QM6      H272   C27    .      .
+ QM6      C26    C27    H261   .
+ QM6      H262   C26    .      .
+ QM6      H261   C26    .      .
+ QM6      N21    C22    C20    .
+ QM6      HN21   N21    .      .
+ QM6      C20    N21    C28    .
+ QM6      C19    C20    C18    .
+ QM6      H19    C19    .      .
+ QM6      C18    C19    H18    .
+ QM6      H18    C18    .      .
+ QM6      C28    C20    C29    .
+ QM6      H28    C28    .      .
+ QM6      C29    C28    C17    .
+ QM6      H29    C29    .      .
+ QM6      C17    C29    C15    .
+ QM6      C15    C17    N14    .
+ QM6      O16    C15    .      .
+ QM6      N14    C15    C13    .
+ QM6      HN14   N14    .      .
+ QM6      C13    N14    C12    .
+ QM6      H131   C13    .      .
+ QM6      H132   C13    .      .
+ QM6      C12    C13    C04    .
+ QM6      C04    C12    O05    .
+ QM6      C02    C04    O01    .
+ QM6      H02    C02    .      .
+ QM6      O03    C02    HO03   .
+ QM6      HO03   O03    .      .
+ QM6      O01    C02    .      .
+ QM6      O05    C04    C06    .
+ QM6      C06    O05    C07    .
+ QM6      C11    C06    .      .
+ QM6      C07    C06    C08    .
+ QM6      H07    C07    .      .
+ QM6      C08    C07    C09    .
+ QM6      H08    C08    .      .
+ QM6      C09    C08    C10    .
+ QM6      H09    C09    .      .
+ QM6      C10    C09    H10    .
+ QM6      H10    C10    .      END
+ QM6      C18    C17    .    ADD
+ QM6      C12    C11    .    ADD
+ QM6      C11    C10    .    ADD
+ QM6      C25    C26    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QM6      C18    C17       aromatic    1.390    0.020
+ QM6      C18    C19       aromatic    1.390    0.020
+ QM6      C15    C17       single      1.500    0.020
+ QM6      C17    C29       aromatic    1.390    0.020
+ QM6      N14    C15       single      1.330    0.020
+ QM6      O16    C15       double      1.220    0.020
+ QM6      C12    C13       single      1.510    0.020
+ QM6      C13    N14       single      1.450    0.020
+ QM6      C12    C11       aromatic    1.390    0.020
+ QM6      C04    C12       aromatic    1.390    0.020
+ QM6      C11    C10       aromatic    1.390    0.020
+ QM6      C11    C06       aromatic    1.390    0.020
+ QM6      C10    C09       aromatic    1.390    0.020
+ QM6      C19    C20       aromatic    1.390    0.020
+ QM6      C28    C20       aromatic    1.390    0.020
+ QM6      C20    N21       single      1.350    0.020
+ QM6      C02    C04       single      1.480    0.020
+ QM6      O01    C02       single      1.420    0.020
+ QM6      O03    C02       single      1.432    0.020
+ QM6      O05    C04       single      1.370    0.020
+ QM6      C07    C06       aromatic    1.390    0.020
+ QM6      C06    O05       single      1.329    0.020
+ QM6      C08    C07       aromatic    1.390    0.020
+ QM6      C09    C08       aromatic    1.390    0.020
+ QM6      N21    C22       single      1.330    0.020
+ QM6      N24    C22       single      1.330    0.020
+ QM6      C22    O23       double      1.220    0.020
+ QM6      C25    C26       single      1.524    0.020
+ QM6      C27    C25       single      1.524    0.020
+ QM6      C25    N24       single      1.450    0.020
+ QM6      C26    C27       single      1.524    0.020
+ QM6      C29    C28       aromatic    1.390    0.020
+ QM6      H18    C18       single      1.083    0.020
+ QM6      H131   C13       single      1.092    0.020
+ QM6      H132   C13       single      1.092    0.020
+ QM6      H10    C10       single      1.083    0.020
+ QM6      H19    C19       single      1.083    0.020
+ QM6      H02    C02       single      1.099    0.020
+ QM6      H07    C07       single      1.083    0.020
+ QM6      H08    C08       single      1.083    0.020
+ QM6      H09    C09       single      1.083    0.020
+ QM6      H25    C25       single      1.099    0.020
+ QM6      H261   C26       single      1.092    0.020
+ QM6      H262   C26       single      1.092    0.020
+ QM6      H271   C27       single      1.092    0.020
+ QM6      H272   C27       single      1.092    0.020
+ QM6      H28    C28       single      1.083    0.020
+ QM6      H29    C29       single      1.083    0.020
+ QM6      HN14   N14       single      1.010    0.020
+ QM6      HN21   N21       single      1.010    0.020
+ QM6      HN24   N24       single      1.010    0.020
+ QM6      HO03   O03       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QM6      O23    C22    N24     123.000    3.000
+ QM6      O23    C22    N21     123.000    3.000
+ QM6      N24    C22    N21     120.000    3.000
+ QM6      C22    N24    HN24    120.000    3.000
+ QM6      C22    N24    C25     121.500    3.000
+ QM6      HN24   N24    C25     118.500    3.000
+ QM6      N24    C25    H25     108.550    3.000
+ QM6      N24    C25    C27     110.000    3.000
+ QM6      N24    C25    C26     110.000    3.000
+ QM6      H25    C25    C27     108.340    3.000
+ QM6      H25    C25    C26     108.340    3.000
+ QM6      C27    C25    C26      60.000    3.000
+ QM6      C25    C27    H271    109.470    3.000
+ QM6      C25    C27    H272    109.470    3.000
+ QM6      C25    C27    C26      60.000    3.000
+ QM6      H271   C27    H272    107.900    3.000
+ QM6      H271   C27    C26     109.470    3.000
+ QM6      H272   C27    C26     109.470    3.000
+ QM6      C27    C26    H262    109.470    3.000
+ QM6      C27    C26    H261    109.470    3.000
+ QM6      C27    C26    C25      60.000    3.000
+ QM6      H262   C26    H261    107.900    3.000
+ QM6      H262   C26    C25     109.470    3.000
+ QM6      H261   C26    C25     109.470    3.000
+ QM6      C22    N21    HN21    120.000    3.000
+ QM6      C22    N21    C20     120.000    3.000
+ QM6      HN21   N21    C20     120.000    3.000
+ QM6      N21    C20    C19     120.000    3.000
+ QM6      N21    C20    C28     120.000    3.000
+ QM6      C19    C20    C28     120.000    3.000
+ QM6      C20    C19    H19     120.000    3.000
+ QM6      C20    C19    C18     120.000    3.000
+ QM6      H19    C19    C18     120.000    3.000
+ QM6      C19    C18    H18     120.000    3.000
+ QM6      C19    C18    C17     120.000    3.000
+ QM6      H18    C18    C17     120.000    3.000
+ QM6      C20    C28    H28     120.000    3.000
+ QM6      C20    C28    C29     120.000    3.000
+ QM6      H28    C28    C29     120.000    3.000
+ QM6      C28    C29    H29     120.000    3.000
+ QM6      C28    C29    C17     120.000    3.000
+ QM6      H29    C29    C17     120.000    3.000
+ QM6      C29    C17    C15     120.000    3.000
+ QM6      C29    C17    C18     120.000    3.000
+ QM6      C15    C17    C18     120.000    3.000
+ QM6      C17    C15    O16     120.500    3.000
+ QM6      C17    C15    N14     120.000    3.000
+ QM6      O16    C15    N14     123.000    3.000
+ QM6      C15    N14    HN14    120.000    3.000
+ QM6      C15    N14    C13     121.500    3.000
+ QM6      HN14   N14    C13     118.500    3.000
+ QM6      N14    C13    H131    109.470    3.000
+ QM6      N14    C13    H132    109.470    3.000
+ QM6      N14    C13    C12     109.500    3.000
+ QM6      H131   C13    H132    107.900    3.000
+ QM6      H131   C13    C12     109.470    3.000
+ QM6      H132   C13    C12     109.470    3.000
+ QM6      C13    C12    C04     126.000    3.000
+ QM6      C13    C12    C11     126.000    3.000
+ QM6      C04    C12    C11     108.000    3.000
+ QM6      C12    C04    C02     126.000    3.000
+ QM6      C12    C04    O05     108.000    3.000
+ QM6      C02    C04    O05     108.000    3.000
+ QM6      C04    C02    H02     109.470    3.000
+ QM6      C04    C02    O03     109.500    3.000
+ QM6      C04    C02    O01     109.500    3.000
+ QM6      H02    C02    O03     109.470    3.000
+ QM6      H02    C02    O01     109.470    3.000
+ QM6      O03    C02    O01     109.470    3.000
+ QM6      C02    O03    HO03    109.470    3.000
+ QM6      C04    O05    C06     120.000    3.000
+ QM6      O05    C06    C11     120.000    3.000
+ QM6      O05    C06    C07     120.000    3.000
+ QM6      C11    C06    C07     120.000    3.000
+ QM6      C06    C11    C12     108.000    3.000
+ QM6      C06    C11    C10     120.000    3.000
+ QM6      C12    C11    C10     126.000    3.000
+ QM6      C06    C07    H07     120.000    3.000
+ QM6      C06    C07    C08     120.000    3.000
+ QM6      H07    C07    C08     120.000    3.000
+ QM6      C07    C08    H08     120.000    3.000
+ QM6      C07    C08    C09     120.000    3.000
+ QM6      H08    C08    C09     120.000    3.000
+ QM6      C08    C09    H09     120.000    3.000
+ QM6      C08    C09    C10     120.000    3.000
+ QM6      H09    C09    C10     120.000    3.000
+ QM6      C09    C10    H10     120.000    3.000
+ QM6      C09    C10    C11     120.000    3.000
+ QM6      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QM6      var_1            O23    C22    N24    C25              180.000           20.000   2
+ QM6      var_2            C22    N24    C25    C27                0.000           20.000   3
+ QM6      var_3            N24    C25    C26    C27              180.000           20.000   3
+ QM6      var_4            N24    C25    C27    C26              180.000           20.000   3
+ QM6      var_5            O23    C22    N21    C20              180.000           20.000   2
+ QM6      var_6            C22    N21    C20    C28             -172.270           20.000   3
+ QM6      CONST_1          N21    C20    C19    C18                0.000            0.000   0
+ QM6      CONST_2          C20    C19    C18    C17                0.000            0.000   0
+ QM6      CONST_3          C19    C18    C17    C29                0.000            0.000   0
+ QM6      CONST_4          N21    C20    C28    C29                0.000            0.000   0
+ QM6      CONST_5          C20    C28    C29    C17                0.000            0.000   0
+ QM6      CONST_6          C28    C29    C17    C15                0.000            0.000   0
+ QM6      var_7            C29    C17    C15    N14               26.197           20.000   3
+ QM6      var_8            C17    C15    N14    C13              180.000           20.000   2
+ QM6      var_9            C15    N14    C13    C12                0.000           20.000   3
+ QM6      var_10           N14    C13    C12    C04                0.000           20.000   2
+ QM6      CONST_7          C13    C12    C11    C06              180.000            0.000   0
+ QM6      CONST_8          C13    C12    C04    O05                0.000            0.000   0
+ QM6      var_11           C12    C04    C02    O01              -28.141           20.000   3
+ QM6      var_12           C04    C02    O03    HO03             180.000           20.000   3
+ QM6      CONST_9          C12    C04    O05    C06               -0.413            0.000   0
+ QM6      CONST_10         C04    O05    C06    C07             -179.845            0.000   0
+ QM6      CONST_11         O05    C06    C11    C12              180.000            0.000   0
+ QM6      CONST_12         C06    C11    C10    C09              180.000            0.000   0
+ QM6      CONST_13         O05    C06    C07    C08              180.000            0.000   0
+ QM6      CONST_14         C06    C07    C08    C09                0.000            0.000   0
+ QM6      CONST_15         C07    C08    C09    C10                0.000            0.000   0
+ QM6      CONST_16         C08    C09    C10    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QM6      chir_01          C02    C04    O01    O03       positiv
+ QM6      chir_02          C25    C26    C27    N24       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QM6      plan-1            C18       0.020
+ QM6      plan-1            C17       0.020
+ QM6      plan-1            C19       0.020
+ QM6      plan-1            H18       0.020
+ QM6      plan-1            C20       0.020
+ QM6      plan-1            C28       0.020
+ QM6      plan-1            C29       0.020
+ QM6      plan-1            C15       0.020
+ QM6      plan-1            N21       0.020
+ QM6      plan-1            H19       0.020
+ QM6      plan-1            H28       0.020
+ QM6      plan-1            H29       0.020
+ QM6      plan-1            HN21      0.020
+ QM6      plan-2            C15       0.020
+ QM6      plan-2            C17       0.020
+ QM6      plan-2            N14       0.020
+ QM6      plan-2            O16       0.020
+ QM6      plan-2            HN14      0.020
+ QM6      plan-3            C12       0.020
+ QM6      plan-3            C13       0.020
+ QM6      plan-3            C11       0.020
+ QM6      plan-3            C04       0.020
+ QM6      plan-3            O05       0.020
+ QM6      plan-3            C10       0.020
+ QM6      plan-3            C06       0.020
+ QM6      plan-3            C07       0.020
+ QM6      plan-3            C08       0.020
+ QM6      plan-3            C09       0.020
+ QM6      plan-3            H10       0.020
+ QM6      plan-3            C02       0.020
+ QM6      plan-3            H07       0.020
+ QM6      plan-3            H08       0.020
+ QM6      plan-3            H09       0.020
+ QM6      plan-4            C22       0.020
+ QM6      plan-4            N21       0.020
+ QM6      plan-4            N24       0.020
+ QM6      plan-4            O23       0.020
+ QM6      plan-4            HN21      0.020
+ QM6      plan-4            HN24      0.020
+ QM6      plan-5            N14       0.020
+ QM6      plan-5            C15       0.020
+ QM6      plan-5            C13       0.020
+ QM6      plan-5            HN14      0.020
+ QM6      plan-6            N21       0.020
+ QM6      plan-6            C20       0.020
+ QM6      plan-6            C22       0.020
+ QM6      plan-6            HN21      0.020
+ QM6      plan-7            N24       0.020
+ QM6      plan-7            C22       0.020
+ QM6      plan-7            C25       0.020
+ QM6      plan-7            HN24      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

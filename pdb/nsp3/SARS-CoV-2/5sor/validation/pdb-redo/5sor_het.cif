@@ -1,0 +1,281 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WWP      WWP '.                                   ' .                  31  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WWP
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WWP           F16    F    F         0.000    -42.146  -34.076    1.424
+ WWP           C13    C    CT        0.000    -42.094  -32.916    0.726
+ WWP           F14    F    F         0.000    -41.182  -32.110    1.312
+ WWP           F15    F    F         0.000    -41.691  -33.207   -0.544
+ WWP           C12    C    CR6       0.000    -43.468  -32.259    0.722
+ WWP           C11    C    CR16      0.000    -43.659  -30.986    1.227
+ WWP           H11    H    H         0.000    -42.826  -30.425    1.632
+ WWP           C10    C    CR6       0.000    -44.933  -30.438    1.208
+ WWP           C19    C    CR16      0.000    -45.973  -31.172    0.676
+ WWP           H19    H    H         0.000    -46.968  -30.745    0.649
+ WWP           C18    C    CR16      0.000    -45.765  -32.444    0.177
+ WWP           H18    H    H         0.000    -46.594  -33.008   -0.232
+ WWP           C17    C    CR16      0.000    -44.502  -32.995    0.200
+ WWP           H17    H    H         0.000    -44.329  -33.991   -0.187
+ WWP           C09    C    CH2       0.000    -45.199  -29.036    1.735
+ WWP           H091   H    H         0.000    -45.684  -28.481    0.929
+ WWP           H092   H    H         0.000    -44.227  -28.588    1.950
+ WWP           N08    N    NR6       0.000    -46.033  -28.989    2.930
+ WWP           C07    C    CR56      0.000    -45.498  -29.146    4.160
+ WWP           N06    N    NRD5      0.000    -44.225  -29.380    4.536
+ WWP           C05    C    CR15      0.000    -44.239  -29.459    5.867
+ WWP           H05    H    H         0.000    -43.364  -29.637    6.480
+ WWP           N04    N    NRD5      0.000    -45.475  -29.289    6.343
+ WWP           C03    C    CR56      0.000    -46.267  -29.076    5.259
+ WWP           C02    C    CR6       0.000    -47.633  -28.823    5.110
+ WWP           N01    N    NH2       0.000    -48.494  -28.702    6.250
+ WWP           H012   H    H         0.000    -48.133  -28.797    7.205
+ WWP           H011   H    H         0.000    -49.497  -28.516    6.145
+ WWP           N21    N    NRD6      0.000    -48.146  -28.664    3.905
+ WWP           C20    C    CR16      0.000    -47.345  -28.742    2.815
+ WWP           H20    H    H         0.000    -47.774  -28.602    1.831
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WWP      F16    n/a    C13    START
+ WWP      C13    F16    C12    .
+ WWP      F14    C13    .      .
+ WWP      F15    C13    .      .
+ WWP      C12    C13    C11    .
+ WWP      C11    C12    C10    .
+ WWP      H11    C11    .      .
+ WWP      C10    C11    C09    .
+ WWP      C19    C10    C18    .
+ WWP      H19    C19    .      .
+ WWP      C18    C19    C17    .
+ WWP      H18    C18    .      .
+ WWP      C17    C18    H17    .
+ WWP      H17    C17    .      .
+ WWP      C09    C10    N08    .
+ WWP      H091   C09    .      .
+ WWP      H092   C09    .      .
+ WWP      N08    C09    C07    .
+ WWP      C07    N08    N06    .
+ WWP      N06    C07    C05    .
+ WWP      C05    N06    N04    .
+ WWP      H05    C05    .      .
+ WWP      N04    C05    C03    .
+ WWP      C03    N04    C02    .
+ WWP      C02    C03    N21    .
+ WWP      N01    C02    H011   .
+ WWP      H012   N01    .      .
+ WWP      H011   N01    .      .
+ WWP      N21    C02    C20    .
+ WWP      C20    N21    H20    .
+ WWP      H20    C20    .      END
+ WWP      C17    C12    .    ADD
+ WWP      C20    N08    .    ADD
+ WWP      C03    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WWP      C09    C10       single      1.511    0.020
+ WWP      C10    C11       aromatic    1.390    0.020
+ WWP      C19    C10       aromatic    1.390    0.020
+ WWP      C12    C13       single      1.500    0.020
+ WWP      F14    C13       single      1.320    0.020
+ WWP      F15    C13       single      1.320    0.020
+ WWP      C13    F16       single      1.320    0.020
+ WWP      C17    C12       aromatic    1.390    0.020
+ WWP      C17    C18       aromatic    1.390    0.020
+ WWP      C20    N08       single      1.337    0.020
+ WWP      C20    N21       aromatic    1.337    0.020
+ WWP      C02    C03       aromatic    1.390    0.020
+ WWP      N01    C02       single      1.355    0.020
+ WWP      N21    C02       deloc       1.350    0.020
+ WWP      C03    C07       double      1.490    0.020
+ WWP      C03    N04       aromatic    1.350    0.020
+ WWP      N04    C05       aromatic    1.350    0.020
+ WWP      C05    N06       aromatic    1.350    0.020
+ WWP      N06    C07       deloc       1.350    0.020
+ WWP      C07    N08       single      1.337    0.020
+ WWP      N08    C09       single      1.465    0.020
+ WWP      C11    C12       aromatic    1.390    0.020
+ WWP      C18    C19       aromatic    1.390    0.020
+ WWP      H17    C17       single      1.083    0.020
+ WWP      H20    C20       single      1.083    0.020
+ WWP      H05    C05       single      1.083    0.020
+ WWP      H091   C09       single      1.092    0.020
+ WWP      H092   C09       single      1.092    0.020
+ WWP      H11    C11       single      1.083    0.020
+ WWP      H18    C18       single      1.083    0.020
+ WWP      H19    C19       single      1.083    0.020
+ WWP      H011   N01       single      1.010    0.020
+ WWP      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WWP      F16    C13    F14     109.470    3.000
+ WWP      F16    C13    F15     109.470    3.000
+ WWP      F16    C13    C12     109.470    3.000
+ WWP      F14    C13    F15     109.470    3.000
+ WWP      F14    C13    C12     109.470    3.000
+ WWP      F15    C13    C12     109.470    3.000
+ WWP      C13    C12    C11     120.000    3.000
+ WWP      C13    C12    C17     120.000    3.000
+ WWP      C11    C12    C17     120.000    3.000
+ WWP      C12    C11    H11     120.000    3.000
+ WWP      C12    C11    C10     120.000    3.000
+ WWP      H11    C11    C10     120.000    3.000
+ WWP      C11    C10    C19     120.000    3.000
+ WWP      C11    C10    C09     120.000    3.000
+ WWP      C19    C10    C09     120.000    3.000
+ WWP      C10    C19    H19     120.000    3.000
+ WWP      C10    C19    C18     120.000    3.000
+ WWP      H19    C19    C18     120.000    3.000
+ WWP      C19    C18    H18     120.000    3.000
+ WWP      C19    C18    C17     120.000    3.000
+ WWP      H18    C18    C17     120.000    3.000
+ WWP      C18    C17    H17     120.000    3.000
+ WWP      C18    C17    C12     120.000    3.000
+ WWP      H17    C17    C12     120.000    3.000
+ WWP      C10    C09    H091    109.470    3.000
+ WWP      C10    C09    H092    109.470    3.000
+ WWP      C10    C09    N08     109.500    3.000
+ WWP      H091   C09    H092    107.900    3.000
+ WWP      H091   C09    N08     109.470    3.000
+ WWP      H092   C09    N08     109.470    3.000
+ WWP      C09    N08    C07     120.000    3.000
+ WWP      C09    N08    C20     120.000    3.000
+ WWP      C07    N08    C20     120.000    3.000
+ WWP      N08    C07    N06     120.000    3.000
+ WWP      N08    C07    C03     120.000    3.000
+ WWP      N06    C07    C03     108.000    3.000
+ WWP      C07    N06    C05     108.000    3.000
+ WWP      N06    C05    H05     126.000    3.000
+ WWP      N06    C05    N04     108.000    3.000
+ WWP      H05    C05    N04     126.000    3.000
+ WWP      C05    N04    C03     108.000    3.000
+ WWP      N04    C03    C02     132.000    3.000
+ WWP      N04    C03    C07     108.000    3.000
+ WWP      C02    C03    C07     120.000    3.000
+ WWP      C03    C02    N01     120.000    3.000
+ WWP      C03    C02    N21     120.000    3.000
+ WWP      N01    C02    N21     120.000    3.000
+ WWP      C02    N01    H012    120.000    3.000
+ WWP      C02    N01    H011    120.000    3.000
+ WWP      H012   N01    H011    120.000    3.000
+ WWP      C02    N21    C20     120.000    3.000
+ WWP      N21    C20    H20     120.000    3.000
+ WWP      N21    C20    N08     120.000    3.000
+ WWP      H20    C20    N08     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WWP      var_1            F16    C13    C12    C11              121.471           20.000   3
+ WWP      CONST_1          C13    C12    C11    C10                0.000            0.000   0
+ WWP      CONST_2          C12    C11    C10    C09                0.000            0.000   0
+ WWP      CONST_3          C11    C10    C19    C18                0.000            0.000   0
+ WWP      CONST_4          C10    C19    C18    C17                0.000            0.000   0
+ WWP      CONST_5          C19    C18    C17    C12                0.000            0.000   0
+ WWP      CONST_6          C18    C17    C12    C13                0.000            0.000   0
+ WWP      var_2            C11    C10    C09    N08                0.000           20.000   2
+ WWP      var_3            C10    C09    N08    C07               84.525           20.000   3
+ WWP      CONST_7          C09    N08    C07    N06              180.000            0.000   0
+ WWP      CONST_8          N08    C07    N06    C05              180.000            0.000   0
+ WWP      CONST_9          C07    N06    C05    N04                0.000            0.000   0
+ WWP      CONST_10         N06    C05    N04    C03                0.000            0.000   0
+ WWP      CONST_11         C05    N04    C03    C02              180.000            0.000   0
+ WWP      CONST_12         N04    C03    C07    N08              180.000            0.000   0
+ WWP      CONST_13         N04    C03    C02    N21              180.000            0.000   0
+ WWP      CONST_14         C03    C02    N01    H011             180.000            0.000   0
+ WWP      CONST_15         C03    C02    N21    C20                0.000            0.000   0
+ WWP      CONST_16         C02    N21    C20    N08                0.000            0.000   0
+ WWP      CONST_17         N21    C20    N08    C09                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WWP      chir_01          C13    C12    F14    F15       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WWP      plan-1            C10       0.020
+ WWP      plan-1            C09       0.020
+ WWP      plan-1            C11       0.020
+ WWP      plan-1            C19       0.020
+ WWP      plan-1            C17       0.020
+ WWP      plan-1            C12       0.020
+ WWP      plan-1            C18       0.020
+ WWP      plan-1            H17       0.020
+ WWP      plan-1            H11       0.020
+ WWP      plan-1            C13       0.020
+ WWP      plan-1            H18       0.020
+ WWP      plan-1            H19       0.020
+ WWP      plan-2            C20       0.020
+ WWP      plan-2            N08       0.020
+ WWP      plan-2            N21       0.020
+ WWP      plan-2            H20       0.020
+ WWP      plan-2            C02       0.020
+ WWP      plan-2            C03       0.020
+ WWP      plan-2            N01       0.020
+ WWP      plan-2            C07       0.020
+ WWP      plan-2            N04       0.020
+ WWP      plan-2            C05       0.020
+ WWP      plan-2            N06       0.020
+ WWP      plan-2            H05       0.020
+ WWP      plan-2            C09       0.020
+ WWP      plan-2            H012      0.020
+ WWP      plan-2            H011      0.020
+ WWP      plan-3            N01       0.020
+ WWP      plan-3            C02       0.020
+ WWP      plan-3            H011      0.020
+ WWP      plan-3            H012      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,254 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QVL      QVL '.                                   ' .                  28  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QVL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QVL           O04    O    O         0.000    -42.627  -28.830    4.060
+ QVL           C03    C    C         0.000    -43.415  -29.696    3.889
+ QVL           N02    N    N         0.000    -42.919  -30.812    3.094
+ QVL           C01    C    CH3       0.000    -41.559  -30.686    2.575
+ QVL           H013   H    H         0.000    -41.496  -29.834    1.949
+ QVL           H012   H    H         0.000    -40.880  -30.581    3.382
+ QVL           H011   H    H         0.000    -41.311  -31.552    2.017
+ QVL           C15    C    CR5       0.000    -43.739  -31.973    2.778
+ QVL           N19    N    NRD5      0.000    -44.141  -32.394    1.592
+ QVL           N18    N    NRD5      0.000    -44.899  -33.486    1.587
+ QVL           N17    N    NRD5      0.000    -44.987  -33.746    2.852
+ QVL           N16    N    NRD5      0.000    -44.259  -32.860    3.573
+ QVL           C05    C    CR6       0.000    -44.770  -29.521    4.611
+ QVL           C14    C    CR16      0.000    -46.066  -29.309    4.084
+ QVL           H14    H    H         0.000    -46.231  -29.279    3.014
+ QVL           C06    C    CR16      0.000    -44.615  -29.520    5.989
+ QVL           H06    H    H         0.000    -43.625  -29.652    6.406
+ QVL           N07    N    NRD6      0.000    -45.629  -29.364    6.799
+ QVL           C08    C    CR56      0.000    -46.878  -29.174    6.344
+ QVL           C13    C    CR56      0.000    -47.158  -29.135    5.002
+ QVL           N09    N    NRD5      0.000    -48.018  -28.994    7.072
+ QVL           C10    C    CR15      0.000    -49.041  -28.842    6.248
+ QVL           H10    H    H         0.000    -50.072  -28.684    6.541
+ QVL           C11    C    CR5       0.000    -48.571  -28.919    4.942
+ QVL           C12    C    CH3       0.000    -49.462  -28.787    3.702
+ QVL           H123   H    H         0.000    -50.201  -29.548    3.708
+ QVL           H122   H    H         0.000    -49.939  -27.839    3.702
+ QVL           H121   H    H         0.000    -48.873  -28.881    2.825
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QVL      O04    n/a    C03    START
+ QVL      C03    O04    C05    .
+ QVL      N02    C03    C15    .
+ QVL      C01    N02    H011   .
+ QVL      H013   C01    .      .
+ QVL      H012   C01    .      .
+ QVL      H011   C01    .      .
+ QVL      C15    N02    N19    .
+ QVL      N19    C15    N18    .
+ QVL      N18    N19    N17    .
+ QVL      N17    N18    N16    .
+ QVL      N16    N17    .      .
+ QVL      C05    C03    C06    .
+ QVL      C14    C05    H14    .
+ QVL      H14    C14    .      .
+ QVL      C06    C05    N07    .
+ QVL      H06    C06    .      .
+ QVL      N07    C06    C08    .
+ QVL      C08    N07    N09    .
+ QVL      C13    C08    .      .
+ QVL      N09    C08    C10    .
+ QVL      C10    N09    C11    .
+ QVL      H10    C10    .      .
+ QVL      C11    C10    C12    .
+ QVL      C12    C11    H121   .
+ QVL      H123   C12    .      .
+ QVL      H122   C12    .      .
+ QVL      H121   C12    .      END
+ QVL      C15    N16    .    ADD
+ QVL      C14    C13    .    ADD
+ QVL      C13    C11    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QVL      C15    N02       single      1.365    0.020
+ QVL      C15    N16       aromatic    1.350    0.020
+ QVL      N19    C15       aromatic    1.350    0.020
+ QVL      C14    C13       aromatic    1.390    0.020
+ QVL      C14    C05       aromatic    1.390    0.020
+ QVL      C13    C11       aromatic    1.390    0.020
+ QVL      C13    C08       aromatic    1.390    0.020
+ QVL      C12    C11       single      1.506    0.020
+ QVL      C11    C10       aromatic    1.387    0.020
+ QVL      C10    N09       aromatic    1.350    0.020
+ QVL      C01    N02       single      1.455    0.020
+ QVL      C05    C03       single      1.500    0.020
+ QVL      N02    C03       single      1.330    0.020
+ QVL      C03    O04       double      1.220    0.020
+ QVL      C06    C05       aromatic    1.390    0.020
+ QVL      N07    C06       aromatic    1.337    0.020
+ QVL      C08    N07       aromatic    1.355    0.020
+ QVL      N09    C08       aromatic    1.350    0.020
+ QVL      N16    N17       aromatic    1.404    0.020
+ QVL      N17    N18       aromatic    1.404    0.020
+ QVL      N18    N19       aromatic    1.404    0.020
+ QVL      H14    C14       single      1.083    0.020
+ QVL      H121   C12       single      1.059    0.020
+ QVL      H122   C12       single      1.059    0.020
+ QVL      H123   C12       single      1.059    0.020
+ QVL      H10    C10       single      1.083    0.020
+ QVL      H011   C01       single      1.059    0.020
+ QVL      H012   C01       single      1.059    0.020
+ QVL      H013   C01       single      1.059    0.020
+ QVL      H06    C06       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QVL      O04    C03    N02     123.000    3.000
+ QVL      O04    C03    C05     120.500    3.000
+ QVL      N02    C03    C05     120.000    3.000
+ QVL      C03    N02    C01     127.000    3.000
+ QVL      C03    N02    C15     120.000    3.000
+ QVL      C01    N02    C15     120.000    3.000
+ QVL      N02    C01    H013    109.470    3.000
+ QVL      N02    C01    H012    109.470    3.000
+ QVL      N02    C01    H011    109.470    3.000
+ QVL      H013   C01    H012    109.470    3.000
+ QVL      H013   C01    H011    109.470    3.000
+ QVL      H012   C01    H011    109.470    3.000
+ QVL      N02    C15    N19     108.000    3.000
+ QVL      N02    C15    N16     108.000    3.000
+ QVL      N19    C15    N16     108.000    3.000
+ QVL      C15    N19    N18     108.000    3.000
+ QVL      N19    N18    N17     108.000    3.000
+ QVL      N18    N17    N16     108.000    3.000
+ QVL      N17    N16    C15     108.000    3.000
+ QVL      C03    C05    C14     120.000    3.000
+ QVL      C03    C05    C06     120.000    3.000
+ QVL      C14    C05    C06     120.000    3.000
+ QVL      C05    C14    H14     120.000    3.000
+ QVL      C05    C14    C13     120.000    3.000
+ QVL      H14    C14    C13     120.000    3.000
+ QVL      C05    C06    H06     120.000    3.000
+ QVL      C05    C06    N07     120.000    3.000
+ QVL      H06    C06    N07     120.000    3.000
+ QVL      C06    N07    C08     120.000    3.000
+ QVL      N07    C08    C13     120.000    3.000
+ QVL      N07    C08    N09     120.000    3.000
+ QVL      C13    C08    N09     108.000    3.000
+ QVL      C08    C13    C14     120.000    3.000
+ QVL      C08    C13    C11     108.000    3.000
+ QVL      C14    C13    C11     126.000    3.000
+ QVL      C08    N09    C10     108.000    3.000
+ QVL      N09    C10    H10     126.000    3.000
+ QVL      N09    C10    C11     108.000    3.000
+ QVL      H10    C10    C11     126.000    3.000
+ QVL      C10    C11    C12     108.000    3.000
+ QVL      C10    C11    C13     108.000    3.000
+ QVL      C12    C11    C13     108.000    3.000
+ QVL      C11    C12    H123    109.470    3.000
+ QVL      C11    C12    H122    109.470    3.000
+ QVL      C11    C12    H121    109.470    3.000
+ QVL      H123   C12    H122    109.470    3.000
+ QVL      H123   C12    H121    109.470    3.000
+ QVL      H122   C12    H121    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QVL      var_1            O04    C03    N02    C15              180.000           20.000   2
+ QVL      var_2            C03    N02    C01    H011             180.000           20.000   3
+ QVL      var_3            C03    N02    C15    N19              116.670           20.000   3
+ QVL      CONST_1          N02    C15    N16    N17                0.000            0.000   0
+ QVL      CONST_2          N02    C15    N19    N18                0.000            0.000   0
+ QVL      CONST_3          C15    N19    N18    N17                0.922            0.000   0
+ QVL      CONST_4          N19    N18    N17    N16               -2.248            0.000   0
+ QVL      CONST_5          N18    N17    N16    C15                2.978            0.000   0
+ QVL      var_4            O04    C03    C05    C06              -63.249           20.000   3
+ QVL      CONST_6          C03    C05    C14    C13                0.000            0.000   0
+ QVL      CONST_7          C05    C14    C13    C08              180.000            0.000   0
+ QVL      CONST_8          C03    C05    C06    N07                0.000            0.000   0
+ QVL      CONST_9          C05    C06    N07    C08                0.000            0.000   0
+ QVL      CONST_10         C06    N07    C08    N09              180.000            0.000   0
+ QVL      CONST_11         N07    C08    C13    C14              180.000            0.000   0
+ QVL      CONST_12         C08    C13    C11    C10              180.000            0.000   0
+ QVL      CONST_13         N07    C08    N09    C10              180.000            0.000   0
+ QVL      CONST_14         C08    N09    C10    C11                0.000            0.000   0
+ QVL      CONST_15         N09    C10    C11    C12                0.000            0.000   0
+ QVL      var_5            C10    C11    C12    H121             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QVL      plan-1            C15       0.020
+ QVL      plan-1            N02       0.020
+ QVL      plan-1            N16       0.020
+ QVL      plan-1            N19       0.020
+ QVL      plan-1            N17       0.020
+ QVL      plan-1            N18       0.020
+ QVL      plan-2            C14       0.020
+ QVL      plan-2            C13       0.020
+ QVL      plan-2            C05       0.020
+ QVL      plan-2            H14       0.020
+ QVL      plan-2            C06       0.020
+ QVL      plan-2            N07       0.020
+ QVL      plan-2            C11       0.020
+ QVL      plan-2            C08       0.020
+ QVL      plan-2            C10       0.020
+ QVL      plan-2            N09       0.020
+ QVL      plan-2            C12       0.020
+ QVL      plan-2            H10       0.020
+ QVL      plan-2            C03       0.020
+ QVL      plan-2            H06       0.020
+ QVL      plan-3            C03       0.020
+ QVL      plan-3            C05       0.020
+ QVL      plan-3            N02       0.020
+ QVL      plan-3            O04       0.020
+ QVL      plan-4            N02       0.020
+ QVL      plan-4            C15       0.020
+ QVL      plan-4            C01       0.020
+ QVL      plan-4            C03       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

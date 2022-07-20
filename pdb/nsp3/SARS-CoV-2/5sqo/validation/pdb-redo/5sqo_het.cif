@@ -1,0 +1,348 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QTF      QTF '.                                   ' .                  41  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QTF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QTF           O26    O    OC        0.000    -47.487  -26.640   -0.176
+ QTF           C02    C    C         0.000    -46.605  -27.376   -0.658
+ QTF           O01    O    OC       -1.000    -46.243  -27.460   -1.845
+ QTF           C03    C    CT        0.000    -45.805  -28.331    0.353
+ QTF           F25    F    F         0.000    -45.540  -29.475   -0.225
+ QTF           C21    C    CT        0.000    -44.494  -27.625    0.742
+ QTF           C24    C    CH2       0.000    -43.449  -27.537   -0.414
+ QTF           H241   H    H         0.000    -43.805  -27.587   -1.445
+ QTF           H242   H    H         0.000    -42.521  -28.105   -0.323
+ QTF           C23    C    CH2       0.000    -43.195  -26.071   -0.028
+ QTF           H231   H    H         0.000    -43.296  -25.309   -0.804
+ QTF           H232   H    H         0.000    -42.325  -25.845    0.591
+ QTF           C22    C    CH2       0.000    -44.458  -26.085    0.846
+ QTF           H222   H    H         0.000    -45.379  -25.669    0.432
+ QTF           H221   H    H         0.000    -44.366  -25.792    1.894
+ QTF           C04    C    CH2       0.000    -46.482  -28.548    1.760
+ QTF           H041   H    H         0.000    -47.159  -29.404    1.741
+ QTF           H042   H    H         0.000    -47.032  -27.657    2.071
+ QTF           N05    N    N         0.000    -45.364  -28.813    2.729
+ QTF           C20    C    CH2       0.000    -44.090  -28.314    2.069
+ QTF           H202   H    H         0.000    -43.418  -29.148    1.858
+ QTF           H201   H    H         0.000    -43.583  -27.594    2.715
+ QTF           C06    C    CR6       0.000    -45.544  -28.941    4.196
+ QTF           N19    N    NRD6      0.000    -44.357  -29.047    4.873
+ QTF           C18    C    CR16      0.000    -44.351  -29.200    6.235
+ QTF           H18    H    H         0.000    -43.385  -29.262    6.721
+ QTF           C07    C    CR56      0.000    -46.792  -29.025    4.910
+ QTF           C08    C    CR56      0.000    -48.251  -28.978    4.708
+ QTF           C13    C    CR16      0.000    -49.120  -28.848    3.614
+ QTF           H13    H    H         0.000    -48.698  -28.741    2.622
+ QTF           C09    C    CR56      0.000    -48.882  -29.114    5.988
+ QTF           N15    N    NR15      0.000    -47.887  -29.246    6.977
+ QTF           HN15   H    H         0.000    -48.049  -29.368    7.997
+ QTF           C16    C    CR56      0.000    -46.632  -29.183    6.335
+ QTF           N17    N    NRD6      0.000    -45.449  -29.281    7.027
+ QTF           C10    C    CR16      0.000    -50.271  -29.134    6.180
+ QTF           H10    H    H         0.000    -50.706  -29.250    7.165
+ QTF           C11    C    CR6       0.000    -51.067  -28.997    5.039
+ QTF           F14    F    F         0.000    -52.378  -28.997    5.166
+ QTF           C12    C    CR16      0.000    -50.502  -28.852    3.757
+ QTF           H12    H    H         0.000    -51.140  -28.744    2.889
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QTF      O26    n/a    C02    START
+ QTF      C02    O26    C03    .
+ QTF      O01    C02    .      .
+ QTF      C03    C02    C04    .
+ QTF      F25    C03    .      .
+ QTF      C21    C03    C24    .
+ QTF      C24    C21    C23    .
+ QTF      H241   C24    .      .
+ QTF      H242   C24    .      .
+ QTF      C23    C24    C22    .
+ QTF      H231   C23    .      .
+ QTF      H232   C23    .      .
+ QTF      C22    C23    H221   .
+ QTF      H222   C22    .      .
+ QTF      H221   C22    .      .
+ QTF      C04    C03    N05    .
+ QTF      H041   C04    .      .
+ QTF      H042   C04    .      .
+ QTF      N05    C04    C06    .
+ QTF      C20    N05    H201   .
+ QTF      H202   C20    .      .
+ QTF      H201   C20    .      .
+ QTF      C06    N05    C07    .
+ QTF      N19    C06    C18    .
+ QTF      C18    N19    H18    .
+ QTF      H18    C18    .      .
+ QTF      C07    C06    C08    .
+ QTF      C08    C07    C09    .
+ QTF      C13    C08    H13    .
+ QTF      H13    C13    .      .
+ QTF      C09    C08    C10    .
+ QTF      N15    C09    C16    .
+ QTF      HN15   N15    .      .
+ QTF      C16    N15    N17    .
+ QTF      N17    C16    .      .
+ QTF      C10    C09    C11    .
+ QTF      H10    C10    .      .
+ QTF      C11    C10    C12    .
+ QTF      F14    C11    .      .
+ QTF      C12    C11    H12    .
+ QTF      H12    C12    .      END
+ QTF      C18    N17    .    ADD
+ QTF      C16    C07    .    ADD
+ QTF      C13    C12    .    ADD
+ QTF      C20    C21    .    ADD
+ QTF      C21    C22    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QTF      C18    N17       aromatic    1.337    0.020
+ QTF      C18    N19       aromatic    1.337    0.020
+ QTF      C16    C07       aromatic    1.390    0.020
+ QTF      C16    N15       single      1.340    0.020
+ QTF      N17    C16       aromatic    1.355    0.020
+ QTF      C13    C12       aromatic    1.390    0.020
+ QTF      C13    C08       aromatic    1.390    0.020
+ QTF      C12    C11       aromatic    1.390    0.020
+ QTF      C11    C10       aromatic    1.390    0.020
+ QTF      F14    C11       single      1.345    0.020
+ QTF      C10    C09       aromatic    1.390    0.020
+ QTF      C20    C21       single      1.524    0.020
+ QTF      C20    N05       single      1.455    0.020
+ QTF      C03    C02       single      1.507    0.020
+ QTF      O01    C02       deloc       1.250    0.020
+ QTF      C02    O26       deloc       1.250    0.020
+ QTF      C04    C03       single      1.524    0.020
+ QTF      C21    C03       single      1.524    0.020
+ QTF      F25    C03       single      1.320    0.020
+ QTF      N05    C04       single      1.455    0.020
+ QTF      C07    C06       aromatic    1.390    0.020
+ QTF      C06    N05       single      1.400    0.020
+ QTF      N19    C06       aromatic    1.350    0.020
+ QTF      C08    C07       single      1.490    0.020
+ QTF      C09    C08       aromatic    1.390    0.020
+ QTF      N15    C09       single      1.340    0.020
+ QTF      C21    C22       single      1.524    0.020
+ QTF      C24    C21       single      1.524    0.020
+ QTF      C22    C23       single      1.524    0.020
+ QTF      C23    C24       single      1.524    0.020
+ QTF      H18    C18       single      1.083    0.020
+ QTF      H13    C13       single      1.083    0.020
+ QTF      H12    C12       single      1.083    0.020
+ QTF      H10    C10       single      1.083    0.020
+ QTF      H201   C20       single      1.092    0.020
+ QTF      H202   C20       single      1.092    0.020
+ QTF      H041   C04       single      1.092    0.020
+ QTF      H042   C04       single      1.092    0.020
+ QTF      H221   C22       single      1.092    0.020
+ QTF      H222   C22       single      1.092    0.020
+ QTF      H231   C23       single      1.092    0.020
+ QTF      H232   C23       single      1.092    0.020
+ QTF      H241   C24       single      1.092    0.020
+ QTF      H242   C24       single      1.092    0.020
+ QTF      HN15   N15       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QTF      O26    C02    O01     123.000    3.000
+ QTF      O26    C02    C03     118.500    3.000
+ QTF      O01    C02    C03     118.500    3.000
+ QTF      C02    C03    F25     109.470    3.000
+ QTF      C02    C03    C21     111.000    3.000
+ QTF      C02    C03    C04     109.470    3.000
+ QTF      F25    C03    C21     109.470    3.000
+ QTF      F25    C03    C04     109.470    3.000
+ QTF      C21    C03    C04     111.000    3.000
+ QTF      C03    C21    C24     111.000    3.000
+ QTF      C03    C21    C20     111.000    3.000
+ QTF      C03    C21    C22     111.000    3.000
+ QTF      C20    C21    C22     111.000    3.000
+ QTF      C24    C21    C20     111.000    3.000
+ QTF      C24    C21    C22     111.000    3.000
+ QTF      C21    C24    H241    109.470    3.000
+ QTF      C21    C24    H242    109.470    3.000
+ QTF      C21    C24    C23     111.000    3.000
+ QTF      H241   C24    H242    107.900    3.000
+ QTF      H241   C24    C23     109.470    3.000
+ QTF      H242   C24    C23     109.470    3.000
+ QTF      C24    C23    H231    109.470    3.000
+ QTF      C24    C23    H232    109.470    3.000
+ QTF      C24    C23    C22     111.000    3.000
+ QTF      H231   C23    H232    107.900    3.000
+ QTF      H231   C23    C22     109.470    3.000
+ QTF      H232   C23    C22     109.470    3.000
+ QTF      C23    C22    H222    109.470    3.000
+ QTF      C23    C22    H221    109.470    3.000
+ QTF      C23    C22    C21     111.000    3.000
+ QTF      H222   C22    H221    107.900    3.000
+ QTF      H222   C22    C21     109.470    3.000
+ QTF      H221   C22    C21     109.470    3.000
+ QTF      C03    C04    H041    109.470    3.000
+ QTF      C03    C04    H042    109.470    3.000
+ QTF      C03    C04    N05     109.500    3.000
+ QTF      H041   C04    H042    107.900    3.000
+ QTF      H041   C04    N05     109.470    3.000
+ QTF      H042   C04    N05     109.470    3.000
+ QTF      C04    N05    C20     120.000    3.000
+ QTF      C04    N05    C06     120.000    3.000
+ QTF      C20    N05    C06     120.000    3.000
+ QTF      N05    C20    H202    109.470    3.000
+ QTF      N05    C20    H201    109.470    3.000
+ QTF      N05    C20    C21     109.500    3.000
+ QTF      H202   C20    H201    107.900    3.000
+ QTF      H202   C20    C21     109.470    3.000
+ QTF      H201   C20    C21     109.470    3.000
+ QTF      N05    C06    N19     120.000    3.000
+ QTF      N05    C06    C07     120.000    3.000
+ QTF      N19    C06    C07     120.000    3.000
+ QTF      C06    N19    C18     120.000    3.000
+ QTF      N19    C18    H18     120.000    3.000
+ QTF      N19    C18    N17     120.000    3.000
+ QTF      H18    C18    N17     120.000    3.000
+ QTF      C06    C07    C08     120.000    3.000
+ QTF      C06    C07    C16     120.000    3.000
+ QTF      C08    C07    C16     120.000    3.000
+ QTF      C07    C08    C13     120.000    3.000
+ QTF      C07    C08    C09     120.000    3.000
+ QTF      C13    C08    C09     120.000    3.000
+ QTF      C08    C13    H13     120.000    3.000
+ QTF      C08    C13    C12     120.000    3.000
+ QTF      H13    C13    C12     120.000    3.000
+ QTF      C08    C09    N15     108.000    3.000
+ QTF      C08    C09    C10     120.000    3.000
+ QTF      N15    C09    C10     132.000    3.000
+ QTF      C09    N15    HN15    126.000    3.000
+ QTF      C09    N15    C16     108.000    3.000
+ QTF      HN15   N15    C16     126.000    3.000
+ QTF      N15    C16    N17     132.000    3.000
+ QTF      N15    C16    C07     108.000    3.000
+ QTF      N17    C16    C07     120.000    3.000
+ QTF      C16    N17    C18     120.000    3.000
+ QTF      C09    C10    H10     120.000    3.000
+ QTF      C09    C10    C11     120.000    3.000
+ QTF      H10    C10    C11     120.000    3.000
+ QTF      C10    C11    F14     120.000    3.000
+ QTF      C10    C11    C12     120.000    3.000
+ QTF      F14    C11    C12     120.000    3.000
+ QTF      C11    C12    H12     120.000    3.000
+ QTF      C11    C12    C13     120.000    3.000
+ QTF      H12    C12    C13     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QTF      var_1            O26    C02    C03    C04               16.949           20.000   3
+ QTF      var_2            C02    C03    C21    C24              -70.212           20.000   3
+ QTF      var_3            C03    C21    C22    C23             -130.615           20.000   3
+ QTF      var_4            C03    C21    C24    C23              135.489           20.000   3
+ QTF      var_5            C21    C24    C23    C22              180.000           20.000   3
+ QTF      var_6            C24    C23    C22    C21              180.000           20.000   3
+ QTF      var_7            C02    C03    C04    N05             -151.497           20.000   3
+ QTF      var_8            C03    C04    N05    C06              173.734           20.000   3
+ QTF      var_9            C04    N05    C20    C21                5.241           20.000   3
+ QTF      var_10           N05    C20    C21    C03              -27.099           20.000   3
+ QTF      var_11           C04    N05    C06    C07                9.393           20.000   3
+ QTF      CONST_1          N05    C06    N19    C18                0.000            0.000   0
+ QTF      CONST_2          C06    N19    C18    N17                0.000            0.000   0
+ QTF      CONST_3          N19    C18    N17    C16                0.000            0.000   0
+ QTF      CONST_4          N05    C06    C07    C08              180.000            0.000   0
+ QTF      CONST_5          C06    C07    C08    C09              180.000            0.000   0
+ QTF      CONST_6          C07    C08    C13    C12              180.000            0.000   0
+ QTF      CONST_7          C08    C13    C12    C11                0.000            0.000   0
+ QTF      CONST_8          C07    C08    C09    C10              180.000            0.000   0
+ QTF      CONST_9          C08    C09    N15    C16              180.000            0.000   0
+ QTF      CONST_10         C09    N15    C16    N17              180.000            0.000   0
+ QTF      CONST_11         N15    C16    C07    C06              180.000            0.000   0
+ QTF      CONST_12         N15    C16    N17    C18              180.000            0.000   0
+ QTF      CONST_13         C08    C09    C10    C11              180.000            0.000   0
+ QTF      CONST_14         C09    C10    C11    C12                0.000            0.000   0
+ QTF      CONST_15         C10    C11    C12    C13                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QTF      chir_01          C03    C02    C04    C21       positiv
+ QTF      chir_02          C21    C20    C03    C22       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QTF      plan-1            C18       0.020
+ QTF      plan-1            N17       0.020
+ QTF      plan-1            N19       0.020
+ QTF      plan-1            H18       0.020
+ QTF      plan-1            C06       0.020
+ QTF      plan-1            C07       0.020
+ QTF      plan-1            N05       0.020
+ QTF      plan-1            C16       0.020
+ QTF      plan-1            C08       0.020
+ QTF      plan-1            C13       0.020
+ QTF      plan-1            C09       0.020
+ QTF      plan-1            C10       0.020
+ QTF      plan-1            N15       0.020
+ QTF      plan-1            HN15      0.020
+ QTF      plan-1            C12       0.020
+ QTF      plan-1            C11       0.020
+ QTF      plan-1            H13       0.020
+ QTF      plan-1            H12       0.020
+ QTF      plan-1            F14       0.020
+ QTF      plan-1            H10       0.020
+ QTF      plan-2            C02       0.020
+ QTF      plan-2            C03       0.020
+ QTF      plan-2            O01       0.020
+ QTF      plan-2            O26       0.020
+ QTF      plan-3            N05       0.020
+ QTF      plan-3            C20       0.020
+ QTF      plan-3            C04       0.020
+ QTF      plan-3            C06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,319 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RVF      RVF '.                                   ' .                  37  26 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RVF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RVF           O16    O    O         0.000    -48.323  -29.110    2.256
+ RVF           C15    C    C         0.000    -47.718  -29.482    3.200
+ RVF           C17    C    CR6       0.000    -48.370  -29.465    4.574
+ RVF           C26    C    CR16      0.000    -49.677  -29.911    4.685
+ RVF           H26    H    H         0.000    -50.207  -30.255    3.805
+ RVF           C25    C    CR56      0.000    -50.313  -29.918    5.929
+ RVF           N24    N    NRD5      0.000    -51.538  -30.275    6.342
+ RVF           C22    C    CR5       0.000    -51.612  -30.075    7.644
+ RVF           O23    O    OH1       0.000    -52.739  -30.336    8.431
+ RVF           HO23   H    H         0.000    -52.694  -30.158    9.367
+ RVF           N21    N    NRD5      0.000    -50.464  -29.596    8.091
+ RVF           C20    C    CR56      0.000    -49.632  -29.487    7.045
+ RVF           C19    C    CR16      0.000    -48.305  -29.040    6.936
+ RVF           H19    H    H         0.000    -47.773  -28.701    7.816
+ RVF           C18    C    CR16      0.000    -47.677  -29.034    5.698
+ RVF           H18    H    H         0.000    -46.652  -28.695    5.609
+ RVF           N14    N    NH1       0.000    -46.366  -29.973    3.053
+ RVF           HN14   H    H         0.000    -45.854  -30.289    3.864
+ RVF           C13    C    CH2       0.000    -45.746  -30.013    1.747
+ RVF           H131   H    H         0.000    -46.524  -29.906    0.989
+ RVF           H132   H    H         0.000    -45.251  -30.979    1.626
+ RVF           C12    C    CR5       0.000    -44.728  -28.898    1.590
+ RVF           C04    C    CR5       0.000    -43.474  -28.812    2.180
+ RVF           C02    C    C         0.000    -42.853  -29.833    3.130
+ RVF           O03    O    OC        0.000    -41.606  -29.864    3.297
+ RVF           O01    O    OC       -1.000    -43.590  -30.642    3.752
+ RVF           N05    N    NRD5      0.000    -42.910  -27.690    1.778
+ RVF           C06    C    CR56      0.000    -43.726  -27.028    0.950
+ RVF           C11    C    CR56      0.000    -44.886  -27.753    0.799
+ RVF           C07    C    CR16      0.000    -43.574  -25.809    0.277
+ RVF           H07    H    H         0.000    -42.664  -25.234    0.392
+ RVF           C08    C    CR16      0.000    -44.594  -25.342   -0.537
+ RVF           H08    H    H         0.000    -44.477  -24.401   -1.060
+ RVF           C09    C    CR16      0.000    -45.766  -26.075   -0.686
+ RVF           H09    H    H         0.000    -46.560  -25.703   -1.322
+ RVF           C10    C    CR16      0.000    -45.919  -27.282   -0.021
+ RVF           H10    H    H         0.000    -46.830  -27.856   -0.135
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RVF      O16    n/a    C15    START
+ RVF      C15    O16    N14    .
+ RVF      C17    C15    C26    .
+ RVF      C26    C17    C25    .
+ RVF      H26    C26    .      .
+ RVF      C25    C26    N24    .
+ RVF      N24    C25    C22    .
+ RVF      C22    N24    N21    .
+ RVF      O23    C22    HO23   .
+ RVF      HO23   O23    .      .
+ RVF      N21    C22    C20    .
+ RVF      C20    N21    C19    .
+ RVF      C19    C20    C18    .
+ RVF      H19    C19    .      .
+ RVF      C18    C19    H18    .
+ RVF      H18    C18    .      .
+ RVF      N14    C15    C13    .
+ RVF      HN14   N14    .      .
+ RVF      C13    N14    C12    .
+ RVF      H131   C13    .      .
+ RVF      H132   C13    .      .
+ RVF      C12    C13    C04    .
+ RVF      C04    C12    N05    .
+ RVF      C02    C04    O01    .
+ RVF      O03    C02    .      .
+ RVF      O01    C02    .      .
+ RVF      N05    C04    C06    .
+ RVF      C06    N05    C07    .
+ RVF      C11    C06    .      .
+ RVF      C07    C06    C08    .
+ RVF      H07    C07    .      .
+ RVF      C08    C07    C09    .
+ RVF      H08    C08    .      .
+ RVF      C09    C08    C10    .
+ RVF      H09    C09    .      .
+ RVF      C10    C09    H10    .
+ RVF      H10    C10    .      END
+ RVF      C18    C17    .    ADD
+ RVF      C12    C11    .    ADD
+ RVF      C11    C10    .    ADD
+ RVF      C20    C25    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RVF      C18    C17       aromatic    1.390    0.020
+ RVF      C18    C19       aromatic    1.390    0.020
+ RVF      C17    C15       single      1.500    0.020
+ RVF      C26    C17       aromatic    1.390    0.020
+ RVF      N14    C15       single      1.330    0.020
+ RVF      C15    O16       double      1.220    0.020
+ RVF      C12    C13       single      1.510    0.020
+ RVF      C13    N14       single      1.450    0.020
+ RVF      C12    C11       aromatic    1.390    0.020
+ RVF      C04    C12       aromatic    1.390    0.020
+ RVF      C11    C10       aromatic    1.390    0.020
+ RVF      C11    C06       aromatic    1.390    0.020
+ RVF      C10    C09       aromatic    1.390    0.020
+ RVF      C19    C20       aromatic    1.390    0.020
+ RVF      C20    C25       aromatic    1.390    0.020
+ RVF      C20    N21       aromatic    1.350    0.020
+ RVF      C02    C04       single      1.490    0.020
+ RVF      O01    C02       deloc       1.250    0.020
+ RVF      O03    C02       deloc       1.250    0.020
+ RVF      N05    C04       aromatic    1.350    0.020
+ RVF      C07    C06       aromatic    1.390    0.020
+ RVF      C06    N05       aromatic    1.350    0.020
+ RVF      C08    C07       aromatic    1.390    0.020
+ RVF      C09    C08       aromatic    1.390    0.020
+ RVF      N21    C22       aromatic    1.350    0.020
+ RVF      C22    N24       aromatic    1.350    0.020
+ RVF      O23    C22       single      1.480    0.020
+ RVF      C25    C26       aromatic    1.390    0.020
+ RVF      N24    C25       aromatic    1.350    0.020
+ RVF      H18    C18       single      1.083    0.020
+ RVF      H131   C13       single      1.092    0.020
+ RVF      H132   C13       single      1.092    0.020
+ RVF      H10    C10       single      1.083    0.020
+ RVF      H19    C19       single      1.083    0.020
+ RVF      H07    C07       single      1.083    0.020
+ RVF      H08    C08       single      1.083    0.020
+ RVF      H09    C09       single      1.083    0.020
+ RVF      H26    C26       single      1.083    0.020
+ RVF      HN14   N14       single      1.010    0.020
+ RVF      HO23   O23       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RVF      O16    C15    C17     120.500    3.000
+ RVF      O16    C15    N14     123.000    3.000
+ RVF      C17    C15    N14     120.000    3.000
+ RVF      C15    C17    C26     120.000    3.000
+ RVF      C15    C17    C18     120.000    3.000
+ RVF      C26    C17    C18     120.000    3.000
+ RVF      C17    C26    H26     120.000    3.000
+ RVF      C17    C26    C25     120.000    3.000
+ RVF      H26    C26    C25     120.000    3.000
+ RVF      C26    C25    N24     132.000    3.000
+ RVF      C26    C25    C20     120.000    3.000
+ RVF      N24    C25    C20     108.000    3.000
+ RVF      C25    N24    C22     108.000    3.000
+ RVF      N24    C22    O23     108.000    3.000
+ RVF      N24    C22    N21     108.000    3.000
+ RVF      O23    C22    N21     108.000    3.000
+ RVF      C22    O23    HO23    120.000    3.000
+ RVF      C22    N21    C20     108.000    3.000
+ RVF      N21    C20    C19     132.000    3.000
+ RVF      N21    C20    C25     108.000    3.000
+ RVF      C19    C20    C25     120.000    3.000
+ RVF      C20    C19    H19     120.000    3.000
+ RVF      C20    C19    C18     120.000    3.000
+ RVF      H19    C19    C18     120.000    3.000
+ RVF      C19    C18    H18     120.000    3.000
+ RVF      C19    C18    C17     120.000    3.000
+ RVF      H18    C18    C17     120.000    3.000
+ RVF      C15    N14    HN14    120.000    3.000
+ RVF      C15    N14    C13     121.500    3.000
+ RVF      HN14   N14    C13     118.500    3.000
+ RVF      N14    C13    H131    109.470    3.000
+ RVF      N14    C13    H132    109.470    3.000
+ RVF      N14    C13    C12     109.500    3.000
+ RVF      H131   C13    H132    107.900    3.000
+ RVF      H131   C13    C12     109.470    3.000
+ RVF      H132   C13    C12     109.470    3.000
+ RVF      C13    C12    C04     126.000    3.000
+ RVF      C13    C12    C11     126.000    3.000
+ RVF      C04    C12    C11     108.000    3.000
+ RVF      C12    C04    C02     117.000    3.000
+ RVF      C12    C04    N05     108.000    3.000
+ RVF      C02    C04    N05     126.000    3.000
+ RVF      C04    C02    O03     120.000    3.000
+ RVF      C04    C02    O01     120.000    3.000
+ RVF      O03    C02    O01     123.000    3.000
+ RVF      C04    N05    C06     108.000    3.000
+ RVF      N05    C06    C11     108.000    3.000
+ RVF      N05    C06    C07     132.000    3.000
+ RVF      C11    C06    C07     120.000    3.000
+ RVF      C06    C11    C12     108.000    3.000
+ RVF      C06    C11    C10     120.000    3.000
+ RVF      C12    C11    C10     126.000    3.000
+ RVF      C06    C07    H07     120.000    3.000
+ RVF      C06    C07    C08     120.000    3.000
+ RVF      H07    C07    C08     120.000    3.000
+ RVF      C07    C08    H08     120.000    3.000
+ RVF      C07    C08    C09     120.000    3.000
+ RVF      H08    C08    C09     120.000    3.000
+ RVF      C08    C09    H09     120.000    3.000
+ RVF      C08    C09    C10     120.000    3.000
+ RVF      H09    C09    C10     120.000    3.000
+ RVF      C09    C10    H10     120.000    3.000
+ RVF      C09    C10    C11     120.000    3.000
+ RVF      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RVF      var_1            O16    C15    C17    C26               43.506           20.000   3
+ RVF      CONST_1          C15    C17    C26    C25                0.000            0.000   0
+ RVF      CONST_2          C17    C26    C25    N24              180.000            0.000   0
+ RVF      CONST_3          C26    C25    N24    C22              180.000            0.000   0
+ RVF      CONST_4          C25    N24    C22    N21                0.000            0.000   0
+ RVF      var_2            N24    C22    O23    HO23             180.000           20.000   3
+ RVF      CONST_5          N24    C22    N21    C20                0.000            0.000   0
+ RVF      CONST_6          C22    N21    C20    C19              180.000            0.000   0
+ RVF      CONST_7          N21    C20    C25    C26              180.000            0.000   0
+ RVF      CONST_8          N21    C20    C19    C18              180.000            0.000   0
+ RVF      CONST_9          C20    C19    C18    C17                0.000            0.000   0
+ RVF      CONST_10         C19    C18    C17    C15                0.000            0.000   0
+ RVF      var_3            O16    C15    N14    C13              180.000           20.000   2
+ RVF      var_4            C15    N14    C13    C12                0.000           20.000   3
+ RVF      var_5            N14    C13    C12    C04                0.000           20.000   2
+ RVF      CONST_11         C13    C12    C11    C06              180.000            0.000   0
+ RVF      CONST_12         C13    C12    C04    N05                0.000            0.000   0
+ RVF      var_6            C12    C04    C02    O01              -20.922           20.000   3
+ RVF      CONST_13         C12    C04    N05    C06                0.000            0.000   0
+ RVF      CONST_14         C04    N05    C06    C07              180.000            0.000   0
+ RVF      CONST_15         N05    C06    C11    C12              180.000            0.000   0
+ RVF      CONST_16         C06    C11    C10    C09              180.000            0.000   0
+ RVF      CONST_17         N05    C06    C07    C08              180.000            0.000   0
+ RVF      CONST_18         C06    C07    C08    C09                0.000            0.000   0
+ RVF      CONST_19         C07    C08    C09    C10                0.000            0.000   0
+ RVF      CONST_20         C08    C09    C10    C11                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RVF      plan-1            C18       0.020
+ RVF      plan-1            C17       0.020
+ RVF      plan-1            C19       0.020
+ RVF      plan-1            H18       0.020
+ RVF      plan-1            C26       0.020
+ RVF      plan-1            C15       0.020
+ RVF      plan-1            C20       0.020
+ RVF      plan-1            H19       0.020
+ RVF      plan-1            C25       0.020
+ RVF      plan-1            H26       0.020
+ RVF      plan-1            C22       0.020
+ RVF      plan-1            N21       0.020
+ RVF      plan-1            N24       0.020
+ RVF      plan-1            O23       0.020
+ RVF      plan-2            C15       0.020
+ RVF      plan-2            C17       0.020
+ RVF      plan-2            N14       0.020
+ RVF      plan-2            O16       0.020
+ RVF      plan-2            HN14      0.020
+ RVF      plan-3            C12       0.020
+ RVF      plan-3            C13       0.020
+ RVF      plan-3            C11       0.020
+ RVF      plan-3            C04       0.020
+ RVF      plan-3            N05       0.020
+ RVF      plan-3            C10       0.020
+ RVF      plan-3            C06       0.020
+ RVF      plan-3            C07       0.020
+ RVF      plan-3            C08       0.020
+ RVF      plan-3            C09       0.020
+ RVF      plan-3            H10       0.020
+ RVF      plan-3            C02       0.020
+ RVF      plan-3            H07       0.020
+ RVF      plan-3            H08       0.020
+ RVF      plan-3            H09       0.020
+ RVF      plan-4            C02       0.020
+ RVF      plan-4            C04       0.020
+ RVF      plan-4            O01       0.020
+ RVF      plan-4            O03       0.020
+ RVF      plan-5            N14       0.020
+ RVF      plan-5            C15       0.020
+ RVF      plan-5            C13       0.020
+ RVF      plan-5            HN14      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

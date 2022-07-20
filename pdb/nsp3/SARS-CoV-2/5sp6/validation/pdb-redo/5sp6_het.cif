@@ -1,0 +1,315 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RXX      RXX '.                                   ' .                  36  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RXX
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RXX           N19    N    NH2       0.000    -43.652  -29.822    6.633
+ RXX           H191   H    H         0.000    -42.716  -29.903    6.225
+ RXX           H192   H    H         0.000    -43.734  -29.936    7.647
+ RXX           C18    C    CR6       0.000    -44.797  -29.560    5.819
+ RXX           N20    N    NRD6      0.000    -44.627  -29.424    4.528
+ RXX           C21    C    CR56      0.000    -45.706  -29.204    3.745
+ RXX           N11    N    NR5       0.000    -45.835  -29.025    2.421
+ RXX           C12    C    CR15      0.000    -47.130  -28.838    2.156
+ RXX           H12    H    H         0.000    -47.549  -28.661    1.173
+ RXX           N13    N    NRD5      0.000    -47.829  -28.903    3.295
+ RXX           C14    C    CR56      0.000    -46.953  -29.135    4.295
+ RXX           C15    C    CR6       0.000    -47.054  -29.299    5.690
+ RXX           N17    N    NRD6      0.000    -45.975  -29.518    6.411
+ RXX           N16    N    NH2       0.000    -48.334  -29.257    6.333
+ RXX           H162   H    H         0.000    -49.196  -29.108    5.798
+ RXX           H161   H    H         0.000    -48.426  -29.374    7.347
+ RXX           C10    C    CH2       0.000    -44.762  -29.019    1.433
+ RXX           H101   H    H         0.000    -43.844  -29.360    1.917
+ RXX           H102   H    H         0.000    -44.626  -27.996    1.077
+ RXX           C09    C    CR5       0.000    -45.090  -29.942    0.240
+ RXX           N08    N    NRD5      0.000    -44.908  -31.396    0.172
+ RXX           C22    C    CR15      0.000    -45.587  -29.467   -1.004
+ RXX           H22    H    H         0.000    -45.789  -28.424   -1.216
+ RXX           S23    S    S2        0.000    -45.814  -30.654   -2.056
+ RXX           C07    C    CR5       0.000    -45.318  -31.861   -1.071
+ RXX           C05    C    CR5       0.000    -45.255  -33.298   -1.556
+ RXX           C04    C    CR15      0.000    -45.681  -34.515   -1.024
+ RXX           H04    H    H         0.000    -46.195  -34.662   -0.082
+ RXX           C03    C    CR15      0.000    -45.321  -35.502   -1.932
+ RXX           H03    H    H         0.000    -45.501  -36.565   -1.835
+ RXX           O06    O    O2        0.000    -44.671  -33.554   -2.726
+ RXX           C02    C    CR5       0.000    -44.686  -34.864   -2.988
+ RXX           C01    C    CH3       0.000    -44.091  -35.496   -4.238
+ RXX           H013   H    H         0.000    -44.569  -35.103   -5.099
+ RXX           H012   H    H         0.000    -43.054  -35.283   -4.286
+ RXX           H011   H    H         0.000    -44.232  -36.546   -4.208
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RXX      N19    n/a    C18    START
+ RXX      H191   N19    .      .
+ RXX      H192   N19    .      .
+ RXX      C18    N19    N20    .
+ RXX      N20    C18    C21    .
+ RXX      C21    N20    N11    .
+ RXX      N11    C21    C10    .
+ RXX      C12    N11    N13    .
+ RXX      H12    C12    .      .
+ RXX      N13    C12    C14    .
+ RXX      C14    N13    C15    .
+ RXX      C15    C14    N16    .
+ RXX      N17    C15    .      .
+ RXX      N16    C15    H161   .
+ RXX      H162   N16    .      .
+ RXX      H161   N16    .      .
+ RXX      C10    N11    C09    .
+ RXX      H101   C10    .      .
+ RXX      H102   C10    .      .
+ RXX      C09    C10    C22    .
+ RXX      N08    C09    .      .
+ RXX      C22    C09    S23    .
+ RXX      H22    C22    .      .
+ RXX      S23    C22    C07    .
+ RXX      C07    S23    C05    .
+ RXX      C05    C07    O06    .
+ RXX      C04    C05    C03    .
+ RXX      H04    C04    .      .
+ RXX      C03    C04    H03    .
+ RXX      H03    C03    .      .
+ RXX      O06    C05    C02    .
+ RXX      C02    O06    C01    .
+ RXX      C01    C02    H011   .
+ RXX      H013   C01    .      .
+ RXX      H012   C01    .      .
+ RXX      H011   C01    .      END
+ RXX      C18    N17    .    ADD
+ RXX      C14    C21    .    ADD
+ RXX      C02    C03    .    ADD
+ RXX      C07    N08    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RXX      C18    N17       aromatic    1.350    0.020
+ RXX      C18    N19       single      1.355    0.020
+ RXX      N20    C18       aromatic    1.350    0.020
+ RXX      C15    C14       aromatic    1.390    0.020
+ RXX      N16    C15       single      1.355    0.020
+ RXX      N17    C15       aromatic    1.350    0.020
+ RXX      C14    C21       aromatic    1.390    0.020
+ RXX      C14    N13       aromatic    1.350    0.020
+ RXX      C12    N11       single      1.337    0.020
+ RXX      N13    C12       aromatic    1.350    0.020
+ RXX      C09    C10       single      1.510    0.020
+ RXX      C10    N11       single      1.462    0.020
+ RXX      C01    C02       single      1.506    0.020
+ RXX      C02    C03       aromatic    1.387    0.020
+ RXX      C02    O06       single      1.370    0.020
+ RXX      C03    C04       aromatic    1.380    0.020
+ RXX      C04    C05       aromatic    1.387    0.020
+ RXX      C05    C07       single      1.490    0.020
+ RXX      O06    C05       single      1.370    0.020
+ RXX      C07    N08       aromatic    1.350    0.020
+ RXX      C07    S23       single      1.745    0.020
+ RXX      C22    C09       aromatic    1.387    0.020
+ RXX      N08    C09       single      1.350    0.020
+ RXX      N11    C21       single      1.337    0.020
+ RXX      C21    N20       deloc       1.355    0.020
+ RXX      S23    C22       single      1.745    0.020
+ RXX      H12    C12       single      1.083    0.020
+ RXX      H101   C10       single      1.092    0.020
+ RXX      H102   C10       single      1.092    0.020
+ RXX      H011   C01       single      1.059    0.020
+ RXX      H012   C01       single      1.059    0.020
+ RXX      H013   C01       single      1.059    0.020
+ RXX      H03    C03       single      1.083    0.020
+ RXX      H04    C04       single      1.083    0.020
+ RXX      H22    C22       single      1.083    0.020
+ RXX      H161   N16       single      1.010    0.020
+ RXX      H162   N16       single      1.010    0.020
+ RXX      H191   N19       single      1.010    0.020
+ RXX      H192   N19       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RXX      H191   N19    H192    120.000    3.000
+ RXX      H191   N19    C18     120.000    3.000
+ RXX      H192   N19    C18     120.000    3.000
+ RXX      N19    C18    N20     120.000    3.000
+ RXX      N19    C18    N17     120.000    3.000
+ RXX      N20    C18    N17     120.000    3.000
+ RXX      C18    N20    C21     120.000    3.000
+ RXX      N20    C21    N11     132.000    3.000
+ RXX      N20    C21    C14     120.000    3.000
+ RXX      N11    C21    C14     108.000    3.000
+ RXX      C21    N11    C12     108.000    3.000
+ RXX      C21    N11    C10     126.000    3.000
+ RXX      C12    N11    C10     126.000    3.000
+ RXX      N11    C12    H12     126.000    3.000
+ RXX      N11    C12    N13     108.000    3.000
+ RXX      H12    C12    N13     126.000    3.000
+ RXX      C12    N13    C14     108.000    3.000
+ RXX      N13    C14    C15     132.000    3.000
+ RXX      N13    C14    C21     108.000    3.000
+ RXX      C15    C14    C21     120.000    3.000
+ RXX      C14    C15    N17     120.000    3.000
+ RXX      C14    C15    N16     120.000    3.000
+ RXX      N17    C15    N16     120.000    3.000
+ RXX      C15    N17    C18     120.000    3.000
+ RXX      C15    N16    H162    120.000    3.000
+ RXX      C15    N16    H161    120.000    3.000
+ RXX      H162   N16    H161    120.000    3.000
+ RXX      N11    C10    H101    109.500    3.000
+ RXX      N11    C10    H102    109.500    3.000
+ RXX      N11    C10    C09     109.500    3.000
+ RXX      H101   C10    H102    107.900    3.000
+ RXX      H101   C10    C09     109.470    3.000
+ RXX      H102   C10    C09     109.470    3.000
+ RXX      C10    C09    N08     126.000    3.000
+ RXX      C10    C09    C22     126.000    3.000
+ RXX      N08    C09    C22     108.000    3.000
+ RXX      C09    N08    C07     108.000    3.000
+ RXX      C09    C22    H22     126.000    3.000
+ RXX      C09    C22    S23     108.000    3.000
+ RXX      H22    C22    S23     108.000    3.000
+ RXX      C22    S23    C07      96.222    3.000
+ RXX      S23    C07    C05     108.000    3.000
+ RXX      S23    C07    N08     108.000    3.000
+ RXX      C05    C07    N08     108.000    3.000
+ RXX      C07    C05    C04     108.000    3.000
+ RXX      C07    C05    O06     108.000    3.000
+ RXX      C04    C05    O06     108.000    3.000
+ RXX      C05    C04    H04     126.000    3.000
+ RXX      C05    C04    C03     108.000    3.000
+ RXX      H04    C04    C03     126.000    3.000
+ RXX      C04    C03    H03     126.000    3.000
+ RXX      C04    C03    C02     108.000    3.000
+ RXX      H03    C03    C02     126.000    3.000
+ RXX      C05    O06    C02     108.000    3.000
+ RXX      O06    C02    C01     108.000    3.000
+ RXX      O06    C02    C03     108.000    3.000
+ RXX      C01    C02    C03     108.000    3.000
+ RXX      C02    C01    H013    109.470    3.000
+ RXX      C02    C01    H012    109.470    3.000
+ RXX      C02    C01    H011    109.470    3.000
+ RXX      H013   C01    H012    109.470    3.000
+ RXX      H013   C01    H011    109.470    3.000
+ RXX      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RXX      CONST_1          H192   N19    C18    N20              180.000            0.000   0
+ RXX      CONST_2          N19    C18    N17    C15                0.000            0.000   0
+ RXX      CONST_3          N19    C18    N20    C21                0.000            0.000   0
+ RXX      CONST_4          C18    N20    C21    N11              180.000            0.000   0
+ RXX      CONST_5          N20    C21    N11    C10              180.000            0.000   0
+ RXX      CONST_6          C21    N11    C12    N13              180.000            0.000   0
+ RXX      CONST_7          N11    C12    N13    C14                0.000            0.000   0
+ RXX      CONST_8          C12    N13    C14    C15              180.000            0.000   0
+ RXX      CONST_9          N13    C14    C21    N20              180.000            0.000   0
+ RXX      CONST_10         N13    C14    C15    N16              180.000            0.000   0
+ RXX      CONST_11         C14    C15    N17    C18                0.000            0.000   0
+ RXX      CONST_12         C14    C15    N16    H161             180.000            0.000   0
+ RXX      var_1            C21    N11    C10    C09              130.525           20.000   3
+ RXX      var_2            N11    C10    C09    C22                0.000           20.000   2
+ RXX      CONST_13         C10    C09    N08    C07                0.000            0.000   0
+ RXX      CONST_14         C10    C09    C22    S23                0.000            0.000   0
+ RXX      CONST_15         C09    C22    S23    C07               -0.048            0.000   0
+ RXX      CONST_16         C22    S23    C07    C05             -177.565            0.000   0
+ RXX      CONST_17         S23    C07    N08    C09                0.000            0.000   0
+ RXX      var_3            S23    C07    C05    O06                0.000           20.000   2
+ RXX      CONST_18         C07    C05    C04    C03                0.000            0.000   0
+ RXX      CONST_19         C05    C04    C03    C02                0.091            0.000   0
+ RXX      CONST_20         C07    C05    O06    C02              179.082            0.000   0
+ RXX      CONST_21         C05    O06    C02    C01             -179.488            0.000   0
+ RXX      CONST_22         O06    C02    C03    C04                0.000            0.000   0
+ RXX      var_4            O06    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ RXX      plan-1            C18       0.020
+ RXX      plan-1            N17       0.020
+ RXX      plan-1            N19       0.020
+ RXX      plan-1            N20       0.020
+ RXX      plan-1            C15       0.020
+ RXX      plan-1            C14       0.020
+ RXX      plan-1            N16       0.020
+ RXX      plan-1            C21       0.020
+ RXX      plan-1            N13       0.020
+ RXX      plan-1            C12       0.020
+ RXX      plan-1            N11       0.020
+ RXX      plan-1            H12       0.020
+ RXX      plan-1            C10       0.020
+ RXX      plan-1            H191      0.020
+ RXX      plan-1            H192      0.020
+ RXX      plan-1            H162      0.020
+ RXX      plan-1            H161      0.020
+ RXX      plan-2            C02       0.020
+ RXX      plan-2            C01       0.020
+ RXX      plan-2            C03       0.020
+ RXX      plan-2            O06       0.020
+ RXX      plan-2            C04       0.020
+ RXX      plan-2            C05       0.020
+ RXX      plan-2            H03       0.020
+ RXX      plan-2            H04       0.020
+ RXX      plan-2            C07       0.020
+ RXX      plan-3            C07       0.020
+ RXX      plan-3            C05       0.020
+ RXX      plan-3            N08       0.020
+ RXX      plan-3            S23       0.020
+ RXX      plan-3            C09       0.020
+ RXX      plan-3            C22       0.020
+ RXX      plan-3            C10       0.020
+ RXX      plan-3            H22       0.020
+ RXX      plan-4            N16       0.020
+ RXX      plan-4            C15       0.020
+ RXX      plan-4            H161      0.020
+ RXX      plan-4            H162      0.020
+ RXX      plan-5            N19       0.020
+ RXX      plan-5            C18       0.020
+ RXX      plan-5            H191      0.020
+ RXX      plan-5            H192      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

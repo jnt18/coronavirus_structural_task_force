@@ -1,0 +1,291 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S3R      S3R '.                                   ' .                  33  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S3R
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S3R           CL15   CL   CL        0.000    -48.683  -28.616    4.805
+ S3R           C14    C    CR6       0.000    -47.110  -28.912    5.594
+ S3R           C16    C    CR16      0.000    -47.059  -29.195    6.952
+ S3R           H16    H    H         0.000    -47.970  -29.226    7.537
+ S3R           N17    N    NRD6      0.000    -45.895  -29.425    7.524
+ S3R           C18    C    CR6       0.000    -44.760  -29.382    6.855
+ S3R           N19    N    NH2       0.000    -43.479  -29.628    7.535
+ S3R           H192   H    H         0.000    -43.426  -29.840    8.544
+ S3R           H191   H    H         0.000    -42.577  -29.600    7.033
+ S3R           N13    N    NRD6      0.000    -45.981  -28.871    4.896
+ S3R           C12    C    CR6       0.000    -44.817  -29.095    5.498
+ S3R           N11    N    NH1       0.000    -43.580  -29.050    4.725
+ S3R           HN11   H    H         0.000    -42.681  -28.988    5.180
+ S3R           C10    C    CH2       0.000    -43.690  -29.098    3.262
+ S3R           H101   H    H         0.000    -42.767  -28.731    2.809
+ S3R           H102   H    H         0.000    -44.527  -28.478    2.933
+ S3R           C05    C    CR5       0.000    -43.930  -30.559    2.832
+ S3R           N04    N    NRD5      0.000    -43.625  -31.598    3.573
+ S3R           N03    N    NRD5      0.000    -43.967  -32.719    2.915
+ S3R           N06    N    NR5       0.000    -44.472  -31.012    1.675
+ S3R           C02    C    CR5       0.000    -44.485  -32.365    1.757
+ S3R           C01    C    CH3       0.000    -45.005  -33.354    0.699
+ S3R           H013   H    H         0.000    -46.035  -33.174    0.513
+ S3R           H012   H    H         0.000    -44.462  -33.233   -0.205
+ S3R           H011   H    H         0.000    -44.884  -34.350    1.046
+ S3R           C07    C    CH1       0.000    -44.954  -30.191    0.551
+ S3R           H07    H    H         0.000    -44.103  -29.896   -0.079
+ S3R           C09    C    CH2       0.000    -46.202  -30.363   -0.322
+ S3R           H091   H    H         0.000    -47.116  -30.876   -0.017
+ S3R           H092   H    H         0.000    -46.270  -30.098   -1.379
+ S3R           C08    C    CH2       0.000    -46.024  -29.095    0.512
+ S3R           H082   H    H         0.000    -46.426  -28.942    1.515
+ S3R           H081   H    H         0.000    -45.580  -28.164    0.153
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S3R      CL15   n/a    C14    START
+ S3R      C14    CL15   N13    .
+ S3R      C16    C14    N17    .
+ S3R      H16    C16    .      .
+ S3R      N17    C16    C18    .
+ S3R      C18    N17    N19    .
+ S3R      N19    C18    H191   .
+ S3R      H192   N19    .      .
+ S3R      H191   N19    .      .
+ S3R      N13    C14    C12    .
+ S3R      C12    N13    N11    .
+ S3R      N11    C12    C10    .
+ S3R      HN11   N11    .      .
+ S3R      C10    N11    C05    .
+ S3R      H101   C10    .      .
+ S3R      H102   C10    .      .
+ S3R      C05    C10    N06    .
+ S3R      N04    C05    N03    .
+ S3R      N03    N04    .      .
+ S3R      N06    C05    C07    .
+ S3R      C02    N06    C01    .
+ S3R      C01    C02    H011   .
+ S3R      H013   C01    .      .
+ S3R      H012   C01    .      .
+ S3R      H011   C01    .      .
+ S3R      C07    N06    C09    .
+ S3R      H07    C07    .      .
+ S3R      C09    C07    C08    .
+ S3R      H091   C09    .      .
+ S3R      H092   C09    .      .
+ S3R      C08    C09    H081   .
+ S3R      H082   C08    .      .
+ S3R      H081   C08    .      END
+ S3R      C18    C12    .    ADD
+ S3R      C02    N03    .    ADD
+ S3R      C07    C08    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S3R      C18    C12       aromatic    1.384    0.020
+ S3R      C18    N17       aromatic    1.350    0.020
+ S3R      N19    C18       single      1.355    0.020
+ S3R      C16    C14       aromatic    1.390    0.020
+ S3R      N17    C16       aromatic    1.337    0.020
+ S3R      N13    C14       aromatic    1.350    0.020
+ S3R      C14    CL15      single      1.795    0.020
+ S3R      N11    C12       single      1.350    0.020
+ S3R      C12    N13       aromat      1.350    0.020
+ S3R      C05    C10       single      1.510    0.020
+ S3R      C10    N11       single      1.450    0.020
+ S3R      C01    C02       single      1.506    0.020
+ S3R      C02    N03       aromatic    1.350    0.020
+ S3R      C02    N06       single      1.337    0.020
+ S3R      N04    C05       aromatic    1.350    0.020
+ S3R      N06    C05       single      1.337    0.020
+ S3R      C07    C08       single      1.524    0.020
+ S3R      C09    C07       single      1.524    0.020
+ S3R      C07    N06       single      1.485    0.020
+ S3R      C08    C09       single      1.524    0.020
+ S3R      N03    N04       aromatic    1.404    0.020
+ S3R      H16    C16       single      1.083    0.020
+ S3R      H101   C10       single      1.092    0.020
+ S3R      H102   C10       single      1.092    0.020
+ S3R      H011   C01       single      1.059    0.020
+ S3R      H012   C01       single      1.059    0.020
+ S3R      H013   C01       single      1.059    0.020
+ S3R      H07    C07       single      1.099    0.020
+ S3R      H081   C08       single      1.092    0.020
+ S3R      H082   C08       single      1.092    0.020
+ S3R      H091   C09       single      1.092    0.020
+ S3R      H092   C09       single      1.092    0.020
+ S3R      HN11   N11       single      1.010    0.020
+ S3R      H191   N19       single      1.010    0.020
+ S3R      H192   N19       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S3R      CL15   C14    C16     120.000    3.000
+ S3R      CL15   C14    N13     120.000    3.000
+ S3R      C16    C14    N13     120.000    3.000
+ S3R      C14    C16    H16     120.000    3.000
+ S3R      C14    C16    N17     120.000    3.000
+ S3R      H16    C16    N17     120.000    3.000
+ S3R      C16    N17    C18     120.000    3.000
+ S3R      N17    C18    N19     120.000    3.000
+ S3R      N17    C18    C12     120.000    3.000
+ S3R      N19    C18    C12     120.000    3.000
+ S3R      C18    N19    H192    120.000    3.000
+ S3R      C18    N19    H191    120.000    3.000
+ S3R      H192   N19    H191    120.000    3.000
+ S3R      C14    N13    C12     120.000    3.000
+ S3R      N13    C12    N11     120.000    3.000
+ S3R      N13    C12    C18     120.000    3.000
+ S3R      N11    C12    C18     120.000    3.000
+ S3R      C12    N11    HN11    120.000    3.000
+ S3R      C12    N11    C10     120.000    3.000
+ S3R      HN11   N11    C10     118.500    3.000
+ S3R      N11    C10    H101    109.470    3.000
+ S3R      N11    C10    H102    109.470    3.000
+ S3R      N11    C10    C05     109.500    3.000
+ S3R      H101   C10    H102    107.900    3.000
+ S3R      H101   C10    C05     109.470    3.000
+ S3R      H102   C10    C05     109.470    3.000
+ S3R      C10    C05    N04     126.000    3.000
+ S3R      C10    C05    N06     126.000    3.000
+ S3R      N04    C05    N06     108.000    3.000
+ S3R      C05    N04    N03     108.000    3.000
+ S3R      N04    N03    C02     108.000    3.000
+ S3R      C05    N06    C02     108.000    3.000
+ S3R      C05    N06    C07     126.000    3.000
+ S3R      C02    N06    C07     126.000    3.000
+ S3R      N06    C02    C01     126.000    3.000
+ S3R      N06    C02    N03     108.000    3.000
+ S3R      C01    C02    N03     126.000    3.000
+ S3R      C02    C01    H013    109.470    3.000
+ S3R      C02    C01    H012    109.470    3.000
+ S3R      C02    C01    H011    109.470    3.000
+ S3R      H013   C01    H012    109.470    3.000
+ S3R      H013   C01    H011    109.470    3.000
+ S3R      H012   C01    H011    109.470    3.000
+ S3R      N06    C07    H07     109.470    3.000
+ S3R      N06    C07    C09     109.470    3.000
+ S3R      N06    C07    C08     109.470    3.000
+ S3R      H07    C07    C09     108.340    3.000
+ S3R      H07    C07    C08     108.340    3.000
+ S3R      C09    C07    C08      60.000    3.000
+ S3R      C07    C09    H091    109.470    3.000
+ S3R      C07    C09    H092    109.470    3.000
+ S3R      C07    C09    C08      60.000    3.000
+ S3R      H091   C09    H092    107.900    3.000
+ S3R      H091   C09    C08     109.470    3.000
+ S3R      H092   C09    C08     109.470    3.000
+ S3R      C09    C08    H082    109.470    3.000
+ S3R      C09    C08    H081    109.470    3.000
+ S3R      C09    C08    C07      60.000    3.000
+ S3R      H082   C08    H081    107.900    3.000
+ S3R      H082   C08    C07     109.470    3.000
+ S3R      H081   C08    C07     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S3R      CONST_1          CL15   C14    C16    N17                0.000            0.000   0
+ S3R      CONST_2          C14    C16    N17    C18                0.000            0.000   0
+ S3R      CONST_3          C16    N17    C18    N19                0.000            0.000   0
+ S3R      CONST_4          N17    C18    C12    N13                0.000            0.000   0
+ S3R      CONST_5          N17    C18    N19    H191             180.000            0.000   0
+ S3R      CONST_6          CL15   C14    N13    C12                0.000            0.000   0
+ S3R      CONST_7          C14    N13    C12    N11                0.000            0.000   0
+ S3R      var_1            N13    C12    N11    C10              -15.277           20.000   3
+ S3R      var_2            C12    N11    C10    C05                0.000           20.000   3
+ S3R      var_3            N11    C10    C05    N06                0.000           20.000   2
+ S3R      CONST_8          C10    C05    N04    N03                0.000            0.000   0
+ S3R      CONST_9          C05    N04    N03    C02                0.115            0.000   0
+ S3R      CONST_10         C10    C05    N06    C07                0.303            0.000   0
+ S3R      CONST_11         C05    N06    C02    C01              179.869            0.000   0
+ S3R      CONST_12         N06    C02    N03    N04                0.000            0.000   0
+ S3R      var_4            N06    C02    C01    H011             180.000           20.000   3
+ S3R      var_5            C05    N06    C07    C09             -139.321           20.000   3
+ S3R      var_6            N06    C07    C08    C09              180.000           20.000   3
+ S3R      var_7            N06    C07    C09    C08              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S3R      chir_01          C07    C08    C09    N06       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S3R      plan-1            C18       0.020
+ S3R      plan-1            C12       0.020
+ S3R      plan-1            N17       0.020
+ S3R      plan-1            N19       0.020
+ S3R      plan-1            C16       0.020
+ S3R      plan-1            C14       0.020
+ S3R      plan-1            N13       0.020
+ S3R      plan-1            H16       0.020
+ S3R      plan-1            CL15      0.020
+ S3R      plan-1            N11       0.020
+ S3R      plan-1            H192      0.020
+ S3R      plan-1            H191      0.020
+ S3R      plan-1            HN11      0.020
+ S3R      plan-2            C02       0.020
+ S3R      plan-2            C01       0.020
+ S3R      plan-2            N03       0.020
+ S3R      plan-2            N06       0.020
+ S3R      plan-2            C05       0.020
+ S3R      plan-2            N04       0.020
+ S3R      plan-2            C10       0.020
+ S3R      plan-2            C07       0.020
+ S3R      plan-3            N11       0.020
+ S3R      plan-3            C12       0.020
+ S3R      plan-3            C10       0.020
+ S3R      plan-3            HN11      0.020
+ S3R      plan-4            N19       0.020
+ S3R      plan-4            C18       0.020
+ S3R      plan-4            H191      0.020
+ S3R      plan-4            H192      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,412 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QR6      QR6 '.                                   ' .                  51  30 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QR6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QR6           CL17   CL   CL        0.000    -50.778  -28.745    3.055
+ QR6           C16    C    CR6       0.000    -49.758  -28.916    4.499
+ QR6           C15    C    CR6       0.000    -48.391  -29.074    4.398
+ QR6           C28    C    CR16      0.000    -47.601  -29.215    5.521
+ QR6           H28    H    H         0.000    -46.531  -29.350    5.426
+ QR6           C27    C    CR16      0.000    -48.194  -29.182    6.764
+ QR6           H27    H    H         0.000    -47.593  -29.297    7.658
+ QR6           C19    C    CR6       0.000    -49.561  -29.001    6.863
+ QR6           N20    N    NH1       0.000    -50.112  -29.025    8.201
+ QR6           HN20   H    H         0.000    -49.476  -29.000    8.985
+ QR6           C21    C    C         0.000    -51.538  -29.084    8.467
+ QR6           O26    O    O         0.000    -52.382  -29.048    7.630
+ QR6           N22    N    NH1       0.000    -51.877  -29.145    9.871
+ QR6           HN22   H    H         0.000    -51.143  -29.148   10.565
+ QR6           C23    C    CH1       0.000    -53.266  -29.202   10.288
+ QR6           H23    H    H         0.000    -53.898  -28.319   10.122
+ QR6           C25    C    CH2       0.000    -53.901  -30.590   10.148
+ QR6           H251   H    H         0.000    -53.354  -31.514    9.951
+ QR6           H252   H    H         0.000    -54.974  -30.790   10.117
+ QR6           C24    C    CH2       0.000    -53.520  -30.054   11.530
+ QR6           H242   H    H         0.000    -52.574  -30.248   12.040
+ QR6           H241   H    H         0.000    -54.194  -29.523   12.205
+ QR6           C18    C    CR16      0.000    -50.358  -28.896    5.737
+ QR6           H18    H    H         0.000    -51.433  -28.800    5.828
+ QR6           C14    C    C         0.000    -47.685  -29.131    3.045
+ QR6           O29    O    O         0.000    -48.059  -28.521    2.097
+ QR6           N13    N    NH1       0.000    -46.527  -30.021    2.975
+ QR6           HN13   H    H         0.000    -46.221  -30.570    3.766
+ QR6           C12    C    CH1       0.000    -45.861  -30.062    1.720
+ QR6           H12    H    H         0.000    -46.411  -29.405    1.032
+ QR6           C03    C    CH1       0.000    -44.477  -29.493    1.881
+ QR6           H03    H    H         0.000    -44.512  -28.400    1.769
+ QR6           C02    C    CH1       0.000    -43.814  -29.851    3.207
+ QR6           H02    H    H         0.000    -44.734  -29.576    3.742
+ QR6           O30    O    OH1       0.000    -43.180  -28.954    3.833
+ QR6           HO30   H    H         0.000    -42.836  -29.352    4.630
+ QR6           O01    O    O        -1.000    -43.892  -31.024    3.672
+ QR6           C04    C    CH2       0.000    -43.742  -30.095    0.720
+ QR6           H041   H    H         0.000    -42.701  -30.307    0.972
+ QR6           H042   H    H         0.000    -43.778  -29.445   -0.157
+ QR6           C05    C    CR6       0.000    -44.476  -31.413    0.415
+ QR6           C11    C    CR6       0.000    -45.712  -31.429    1.036
+ QR6           C06    C    CR6       0.000    -44.039  -32.506   -0.330
+ QR6           O07    O    OH1       0.000    -42.775  -32.460   -0.944
+ QR6           HO07   H    H         0.000    -42.608  -33.286   -1.425
+ QR6           C08    C    CR16      0.000    -44.874  -33.609   -0.464
+ QR6           H08    H    H         0.000    -44.547  -34.462   -1.046
+ QR6           C09    C    CR16      0.000    -46.130  -33.627    0.145
+ QR6           H09    H    H         0.000    -46.771  -34.493    0.036
+ QR6           C10    C    CR16      0.000    -46.561  -32.534    0.892
+ QR6           H10    H    H         0.000    -47.540  -32.538    1.356
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QR6      CL17   n/a    C16    START
+ QR6      C16    CL17   C15    .
+ QR6      C15    C16    C14    .
+ QR6      C28    C15    C27    .
+ QR6      H28    C28    .      .
+ QR6      C27    C28    C19    .
+ QR6      H27    C27    .      .
+ QR6      C19    C27    C18    .
+ QR6      N20    C19    C21    .
+ QR6      HN20   N20    .      .
+ QR6      C21    N20    N22    .
+ QR6      O26    C21    .      .
+ QR6      N22    C21    C23    .
+ QR6      HN22   N22    .      .
+ QR6      C23    N22    C25    .
+ QR6      H23    C23    .      .
+ QR6      C25    C23    C24    .
+ QR6      H251   C25    .      .
+ QR6      H252   C25    .      .
+ QR6      C24    C25    H241   .
+ QR6      H242   C24    .      .
+ QR6      H241   C24    .      .
+ QR6      C18    C19    H18    .
+ QR6      H18    C18    .      .
+ QR6      C14    C15    N13    .
+ QR6      O29    C14    .      .
+ QR6      N13    C14    C12    .
+ QR6      HN13   N13    .      .
+ QR6      C12    N13    C03    .
+ QR6      H12    C12    .      .
+ QR6      C03    C12    C04    .
+ QR6      H03    C03    .      .
+ QR6      C02    C03    O01    .
+ QR6      H02    C02    .      .
+ QR6      O30    C02    HO30   .
+ QR6      HO30   O30    .      .
+ QR6      O01    C02    .      .
+ QR6      C04    C03    C05    .
+ QR6      H041   C04    .      .
+ QR6      H042   C04    .      .
+ QR6      C05    C04    C06    .
+ QR6      C11    C05    .      .
+ QR6      C06    C05    C08    .
+ QR6      O07    C06    HO07   .
+ QR6      HO07   O07    .      .
+ QR6      C08    C06    C09    .
+ QR6      H08    C08    .      .
+ QR6      C09    C08    C10    .
+ QR6      H09    C09    .      .
+ QR6      C10    C09    H10    .
+ QR6      H10    C10    .      END
+ QR6      C18    C16    .    ADD
+ QR6      C12    C11    .    ADD
+ QR6      C11    C10    .    ADD
+ QR6      C23    C24    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QR6      C18    C16       aromatic    1.390    0.020
+ QR6      C18    C19       aromatic    1.390    0.020
+ QR6      C15    C16       aromatic    1.384    0.020
+ QR6      C16    CL17      single      1.795    0.020
+ QR6      C14    C15       single      1.500    0.020
+ QR6      C28    C15       aromatic    1.390    0.020
+ QR6      N13    C14       single      1.330    0.020
+ QR6      O29    C14       double      1.220    0.020
+ QR6      C12    C11       single      1.480    0.020
+ QR6      C03    C12       single      1.524    0.020
+ QR6      C12    N13       single      1.450    0.020
+ QR6      C11    C10       aromatic    1.390    0.020
+ QR6      C11    C05       aromatic    1.384    0.020
+ QR6      C10    C09       aromatic    1.390    0.020
+ QR6      C19    C27       aromatic    1.390    0.020
+ QR6      N20    C19       single      1.350    0.020
+ QR6      C02    C03       single      1.524    0.020
+ QR6      O01    C02       single      1.420    0.020
+ QR6      O30    C02       single      1.432    0.020
+ QR6      C04    C03       single      1.524    0.020
+ QR6      C05    C04       single      1.511    0.020
+ QR6      C06    C05       aromatic    1.384    0.020
+ QR6      C08    C06       aromatic    1.390    0.020
+ QR6      O07    C06       single      1.362    0.020
+ QR6      C09    C08       aromatic    1.390    0.020
+ QR6      C21    N20       single      1.330    0.020
+ QR6      N22    C21       single      1.330    0.020
+ QR6      O26    C21       double      1.220    0.020
+ QR6      C23    C24       single      1.524    0.020
+ QR6      C25    C23       single      1.524    0.020
+ QR6      C23    N22       single      1.450    0.020
+ QR6      C24    C25       single      1.524    0.020
+ QR6      C27    C28       aromatic    1.390    0.020
+ QR6      H18    C18       single      1.083    0.020
+ QR6      H12    C12       single      1.099    0.020
+ QR6      H10    C10       single      1.083    0.020
+ QR6      H02    C02       single      1.099    0.020
+ QR6      H03    C03       single      1.099    0.020
+ QR6      H041   C04       single      1.092    0.020
+ QR6      H042   C04       single      1.092    0.020
+ QR6      H08    C08       single      1.083    0.020
+ QR6      H09    C09       single      1.083    0.020
+ QR6      H23    C23       single      1.099    0.020
+ QR6      H241   C24       single      1.092    0.020
+ QR6      H242   C24       single      1.092    0.020
+ QR6      H251   C25       single      1.092    0.020
+ QR6      H252   C25       single      1.092    0.020
+ QR6      H27    C27       single      1.083    0.020
+ QR6      H28    C28       single      1.083    0.020
+ QR6      HN13   N13       single      1.010    0.020
+ QR6      HN20   N20       single      1.010    0.020
+ QR6      HN22   N22       single      1.010    0.020
+ QR6      HO07   O07       single      0.967    0.020
+ QR6      HO30   O30       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QR6      CL17   C16    C15     120.000    3.000
+ QR6      CL17   C16    C18     120.000    3.000
+ QR6      C15    C16    C18     120.000    3.000
+ QR6      C16    C15    C28     120.000    3.000
+ QR6      C16    C15    C14     120.000    3.000
+ QR6      C28    C15    C14     120.000    3.000
+ QR6      C15    C28    H28     120.000    3.000
+ QR6      C15    C28    C27     120.000    3.000
+ QR6      H28    C28    C27     120.000    3.000
+ QR6      C28    C27    H27     120.000    3.000
+ QR6      C28    C27    C19     120.000    3.000
+ QR6      H27    C27    C19     120.000    3.000
+ QR6      C27    C19    N20     120.000    3.000
+ QR6      C27    C19    C18     120.000    3.000
+ QR6      N20    C19    C18     120.000    3.000
+ QR6      C19    N20    HN20    120.000    3.000
+ QR6      C19    N20    C21     120.000    3.000
+ QR6      HN20   N20    C21     120.000    3.000
+ QR6      N20    C21    O26     123.000    3.000
+ QR6      N20    C21    N22     120.000    3.000
+ QR6      O26    C21    N22     123.000    3.000
+ QR6      C21    N22    HN22    120.000    3.000
+ QR6      C21    N22    C23     121.500    3.000
+ QR6      HN22   N22    C23     118.500    3.000
+ QR6      N22    C23    H23     108.550    3.000
+ QR6      N22    C23    C25     110.000    3.000
+ QR6      N22    C23    C24     110.000    3.000
+ QR6      H23    C23    C25     108.340    3.000
+ QR6      H23    C23    C24     108.340    3.000
+ QR6      C25    C23    C24      60.000    3.000
+ QR6      C23    C25    H251    109.470    3.000
+ QR6      C23    C25    H252    109.470    3.000
+ QR6      C23    C25    C24      60.000    3.000
+ QR6      H251   C25    H252    107.900    3.000
+ QR6      H251   C25    C24     109.470    3.000
+ QR6      H252   C25    C24     109.470    3.000
+ QR6      C25    C24    H242    109.470    3.000
+ QR6      C25    C24    H241    109.470    3.000
+ QR6      C25    C24    C23      60.000    3.000
+ QR6      H242   C24    H241    107.900    3.000
+ QR6      H242   C24    C23     109.470    3.000
+ QR6      H241   C24    C23     109.470    3.000
+ QR6      C19    C18    H18     120.000    3.000
+ QR6      C19    C18    C16     120.000    3.000
+ QR6      H18    C18    C16     120.000    3.000
+ QR6      C15    C14    O29     120.500    3.000
+ QR6      C15    C14    N13     120.000    3.000
+ QR6      O29    C14    N13     123.000    3.000
+ QR6      C14    N13    HN13    120.000    3.000
+ QR6      C14    N13    C12     121.500    3.000
+ QR6      HN13   N13    C12     118.500    3.000
+ QR6      N13    C12    H12     108.550    3.000
+ QR6      N13    C12    C03     110.000    3.000
+ QR6      N13    C12    C11     109.470    3.000
+ QR6      H12    C12    C03     108.340    3.000
+ QR6      H12    C12    C11     109.470    3.000
+ QR6      C03    C12    C11     109.470    3.000
+ QR6      C12    C03    H03     108.340    3.000
+ QR6      C12    C03    C02     111.000    3.000
+ QR6      C12    C03    C04     111.000    3.000
+ QR6      H03    C03    C02     108.340    3.000
+ QR6      H03    C03    C04     108.340    3.000
+ QR6      C02    C03    C04     111.000    3.000
+ QR6      C03    C02    H02     108.340    3.000
+ QR6      C03    C02    O30     109.470    3.000
+ QR6      C03    C02    O01     109.470    3.000
+ QR6      H02    C02    O30     109.470    3.000
+ QR6      H02    C02    O01     109.470    3.000
+ QR6      O30    C02    O01     109.470    3.000
+ QR6      C02    O30    HO30    109.470    3.000
+ QR6      C03    C04    H041    109.470    3.000
+ QR6      C03    C04    H042    109.470    3.000
+ QR6      C03    C04    C05     109.470    3.000
+ QR6      H041   C04    H042    107.900    3.000
+ QR6      H041   C04    C05     109.470    3.000
+ QR6      H042   C04    C05     109.470    3.000
+ QR6      C04    C05    C11     120.000    3.000
+ QR6      C04    C05    C06     120.000    3.000
+ QR6      C11    C05    C06     120.000    3.000
+ QR6      C05    C11    C12     120.000    3.000
+ QR6      C05    C11    C10     120.000    3.000
+ QR6      C12    C11    C10     120.000    3.000
+ QR6      C05    C06    O07     120.000    3.000
+ QR6      C05    C06    C08     120.000    3.000
+ QR6      O07    C06    C08     120.000    3.000
+ QR6      C06    O07    HO07    109.470    3.000
+ QR6      C06    C08    H08     120.000    3.000
+ QR6      C06    C08    C09     120.000    3.000
+ QR6      H08    C08    C09     120.000    3.000
+ QR6      C08    C09    H09     120.000    3.000
+ QR6      C08    C09    C10     120.000    3.000
+ QR6      H09    C09    C10     120.000    3.000
+ QR6      C09    C10    H10     120.000    3.000
+ QR6      C09    C10    C11     120.000    3.000
+ QR6      H10    C10    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QR6      CONST_1          CL17   C16    C15    C14                0.000            0.000   0
+ QR6      CONST_2          C16    C15    C28    C27                0.000            0.000   0
+ QR6      CONST_3          C15    C28    C27    C19                0.000            0.000   0
+ QR6      CONST_4          C28    C27    C19    C18                0.000            0.000   0
+ QR6      var_1            C27    C19    N20    C21             -168.981           20.000   3
+ QR6      var_2            C19    N20    C21    N22              180.000           20.000   2
+ QR6      var_3            N20    C21    N22    C23              180.000           20.000   2
+ QR6      var_4            C21    N22    C23    C25                0.000           20.000   3
+ QR6      var_5            N22    C23    C24    C25              180.000           20.000   3
+ QR6      var_6            N22    C23    C25    C24              180.000           20.000   3
+ QR6      CONST_5          C27    C19    C18    C16                0.000            0.000   0
+ QR6      CONST_6          C19    C18    C16    CL17               0.000            0.000   0
+ QR6      var_7            C16    C15    C14    N13             -145.321           20.000   3
+ QR6      var_8            C15    C14    N13    C12              180.000           20.000   2
+ QR6      var_9            C14    N13    C12    C03                0.000           20.000   3
+ QR6      var_10           N13    C12    C11    C05             -143.747           20.000   3
+ QR6      var_11           N13    C12    C03    C04              180.000           20.000   3
+ QR6      var_12           C12    C03    C02    O01              180.000           20.000   3
+ QR6      var_13           C03    C02    O30    HO30             180.000           20.000   3
+ QR6      var_14           C12    C03    C04    C05              180.000           20.000   3
+ QR6      var_15           C03    C04    C05    C06                0.000           20.000   2
+ QR6      CONST_7          C04    C05    C11    C12                0.000            0.000   0
+ QR6      CONST_8          C05    C11    C10    C09                0.000            0.000   0
+ QR6      CONST_9          C04    C05    C06    C08                0.000            0.000   0
+ QR6      var_16           C05    C06    O07    HO07             180.000           20.000   3
+ QR6      CONST_10         C05    C06    C08    C09                0.000            0.000   0
+ QR6      CONST_11         C06    C08    C09    C10                0.000            0.000   0
+ QR6      CONST_12         C08    C09    C10    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QR6      chir_01          C12    C11    C03    N13       positiv
+ QR6      chir_02          C02    C03    O01    O30       negativ
+ QR6      chir_03          C03    C12    C02    C04       negativ
+ QR6      chir_04          C23    C24    C25    N22       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QR6      plan-1            C18       0.020
+ QR6      plan-1            C16       0.020
+ QR6      plan-1            C19       0.020
+ QR6      plan-1            H18       0.020
+ QR6      plan-1            C15       0.020
+ QR6      plan-1            C27       0.020
+ QR6      plan-1            C28       0.020
+ QR6      plan-1            CL17      0.020
+ QR6      plan-1            C14       0.020
+ QR6      plan-1            N20       0.020
+ QR6      plan-1            H27       0.020
+ QR6      plan-1            H28       0.020
+ QR6      plan-1            HN20      0.020
+ QR6      plan-2            C14       0.020
+ QR6      plan-2            C15       0.020
+ QR6      plan-2            N13       0.020
+ QR6      plan-2            O29       0.020
+ QR6      plan-2            HN13      0.020
+ QR6      plan-3            C11       0.020
+ QR6      plan-3            C12       0.020
+ QR6      plan-3            C10       0.020
+ QR6      plan-3            C05       0.020
+ QR6      plan-3            C06       0.020
+ QR6      plan-3            C08       0.020
+ QR6      plan-3            C09       0.020
+ QR6      plan-3            H10       0.020
+ QR6      plan-3            C04       0.020
+ QR6      plan-3            O07       0.020
+ QR6      plan-3            H08       0.020
+ QR6      plan-3            H09       0.020
+ QR6      plan-4            C21       0.020
+ QR6      plan-4            N20       0.020
+ QR6      plan-4            N22       0.020
+ QR6      plan-4            O26       0.020
+ QR6      plan-4            HN20      0.020
+ QR6      plan-4            HN22      0.020
+ QR6      plan-5            N13       0.020
+ QR6      plan-5            C14       0.020
+ QR6      plan-5            C12       0.020
+ QR6      plan-5            HN13      0.020
+ QR6      plan-6            N20       0.020
+ QR6      plan-6            C19       0.020
+ QR6      plan-6            C21       0.020
+ QR6      plan-6            HN20      0.020
+ QR6      plan-7            N22       0.020
+ QR6      plan-7            C21       0.020
+ QR6      plan-7            C23       0.020
+ QR6      plan-7            HN22      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

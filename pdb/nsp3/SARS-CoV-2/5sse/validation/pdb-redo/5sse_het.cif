@@ -1,0 +1,310 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+ROO      ROO '.                                   ' .                  36  24 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_ROO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ ROO           O24    O    OC       -1.000    -44.357  -33.747    2.659
+ ROO           C22    C    C         0.000    -43.750  -32.763    2.161
+ ROO           O23    O    OC        0.000    -43.223  -31.900    2.917
+ ROO           C21    C    CR5       0.000    -43.643  -32.636    0.640
+ ROO           C20    C    CR15      0.000    -44.523  -33.166   -0.362
+ ROO           H20    H    H         0.000    -45.431  -33.735   -0.204
+ ROO           C02    C    CR5       0.000    -42.641  -31.979   -0.072
+ ROO           C01    C    CH3       0.000    -41.457  -31.243    0.559
+ ROO           H013   H    H         0.000    -41.812  -30.461    1.182
+ ROO           H012   H    H         0.000    -40.884  -31.919    1.142
+ ROO           H011   H    H         0.000    -40.843  -30.832   -0.202
+ ROO           O03    O    O2        0.000    -42.883  -32.090   -1.351
+ ROO           C04    C    CR5       0.000    -43.959  -32.792   -1.585
+ ROO           C05    C    CH2       0.000    -44.573  -33.100   -2.962
+ ROO           H051   H    H         0.000    -45.109  -32.205   -3.286
+ ROO           H052   H    H         0.000    -45.283  -33.918   -2.825
+ ROO           N06    N    NH1       0.000    -43.590  -33.471   -3.970
+ ROO           HN06   H    H         0.000    -43.287  -32.793   -4.655
+ ROO           C07    C    CR6       0.000    -43.046  -34.816   -3.990
+ ROO           C19    C    CR56      0.000    -42.186  -35.259   -5.017
+ ROO           C18    C    CR56      0.000    -41.604  -34.721   -6.212
+ ROO           C17    C    CR16      0.000    -41.665  -33.481   -6.865
+ ROO           H17    H    H         0.000    -42.263  -32.681   -6.445
+ ROO           N08    N    NRD6      0.000    -43.377  -35.633   -3.004
+ ROO           C09    C    CR16      0.000    -42.911  -36.868   -2.963
+ ROO           H09    H    H         0.000    -43.196  -37.517   -2.144
+ ROO           N10    N    NRD6      0.000    -42.106  -37.324   -3.899
+ ROO           C11    C    CR56      0.000    -41.724  -36.560   -4.930
+ ROO           N12    N    NRD5      0.000    -40.929  -36.806   -5.975
+ ROO           C13    C    CR56      0.000    -40.835  -35.729   -6.760
+ ROO           C14    C    CR16      0.000    -40.126  -35.521   -7.951
+ ROO           H14    H    H         0.000    -39.529  -36.320   -8.372
+ ROO           C15    C    CR16      0.000    -40.189  -34.294   -8.590
+ ROO           H15    H    H         0.000    -39.638  -34.131   -9.508
+ ROO           C16    C    CR16      0.000    -40.963  -33.271   -8.048
+ ROO           H16    H    H         0.000    -41.019  -32.312   -8.547
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ ROO      O24    n/a    C22    START
+ ROO      C22    O24    C21    .
+ ROO      O23    C22    .      .
+ ROO      C21    C22    C02    .
+ ROO      C20    C21    H20    .
+ ROO      H20    C20    .      .
+ ROO      C02    C21    O03    .
+ ROO      C01    C02    H011   .
+ ROO      H013   C01    .      .
+ ROO      H012   C01    .      .
+ ROO      H011   C01    .      .
+ ROO      O03    C02    C04    .
+ ROO      C04    O03    C05    .
+ ROO      C05    C04    N06    .
+ ROO      H051   C05    .      .
+ ROO      H052   C05    .      .
+ ROO      N06    C05    C07    .
+ ROO      HN06   N06    .      .
+ ROO      C07    N06    N08    .
+ ROO      C19    C07    C18    .
+ ROO      C18    C19    C17    .
+ ROO      C17    C18    H17    .
+ ROO      H17    C17    .      .
+ ROO      N08    C07    C09    .
+ ROO      C09    N08    N10    .
+ ROO      H09    C09    .      .
+ ROO      N10    C09    C11    .
+ ROO      C11    N10    N12    .
+ ROO      N12    C11    C13    .
+ ROO      C13    N12    C14    .
+ ROO      C14    C13    C15    .
+ ROO      H14    C14    .      .
+ ROO      C15    C14    C16    .
+ ROO      H15    C15    .      .
+ ROO      C16    C15    H16    .
+ ROO      H16    C16    .      END
+ ROO      C18    C13    .    ADD
+ ROO      C16    C17    .    ADD
+ ROO      C11    C19    .    ADD
+ ROO      C20    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ ROO      C17    C18       aromatic    1.390    0.020
+ ROO      C18    C13       aromatic    1.390    0.020
+ ROO      C18    C19       aromatic    1.390    0.020
+ ROO      C16    C17       aromatic    1.390    0.020
+ ROO      C16    C15       aromatic    1.390    0.020
+ ROO      C15    C14       aromatic    1.390    0.020
+ ROO      C14    C13       aromatic    1.390    0.020
+ ROO      C13    N12       aromatic    1.350    0.020
+ ROO      C11    C19       aromatic    1.390    0.020
+ ROO      C11    N10       aromatic    1.355    0.020
+ ROO      N12    C11       deloc       1.350    0.020
+ ROO      C20    C04       aromatic    1.387    0.020
+ ROO      C20    C21       aromatic    1.387    0.020
+ ROO      C19    C07       aromatic    1.390    0.020
+ ROO      C01    C02       single      1.506    0.020
+ ROO      C02    C21       aromatic    1.390    0.020
+ ROO      O03    C02       single      1.370    0.020
+ ROO      C05    C04       single      1.510    0.020
+ ROO      C04    O03       single      1.370    0.020
+ ROO      N06    C05       single      1.450    0.020
+ ROO      C07    N06       single      1.350    0.020
+ ROO      N08    C07       aromatic    1.350    0.020
+ ROO      C09    N08       aromatic    1.337    0.020
+ ROO      N10    C09       aromatic    1.337    0.020
+ ROO      C21    C22       single      1.490    0.020
+ ROO      O23    C22       deloc       1.250    0.020
+ ROO      C22    O24       deloc       1.250    0.020
+ ROO      H16    C16       single      1.083    0.020
+ ROO      H17    C17       single      1.083    0.020
+ ROO      H15    C15       single      1.083    0.020
+ ROO      H14    C14       single      1.083    0.020
+ ROO      H20    C20       single      1.083    0.020
+ ROO      H011   C01       single      1.059    0.020
+ ROO      H012   C01       single      1.059    0.020
+ ROO      H013   C01       single      1.059    0.020
+ ROO      H051   C05       single      1.092    0.020
+ ROO      H052   C05       single      1.092    0.020
+ ROO      H09    C09       single      1.083    0.020
+ ROO      HN06   N06       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ ROO      O24    C22    O23     123.000    3.000
+ ROO      O24    C22    C21     120.000    3.000
+ ROO      O23    C22    C21     120.000    3.000
+ ROO      C22    C21    C20     126.000    3.000
+ ROO      C22    C21    C02     117.000    3.000
+ ROO      C20    C21    C02     108.000    3.000
+ ROO      C21    C20    H20     126.000    3.000
+ ROO      C21    C20    C04     108.000    3.000
+ ROO      H20    C20    C04     126.000    3.000
+ ROO      C21    C02    C01     126.000    3.000
+ ROO      C21    C02    O03     108.000    3.000
+ ROO      C01    C02    O03     108.000    3.000
+ ROO      C02    C01    H013    109.470    3.000
+ ROO      C02    C01    H012    109.470    3.000
+ ROO      C02    C01    H011    109.470    3.000
+ ROO      H013   C01    H012    109.470    3.000
+ ROO      H013   C01    H011    109.470    3.000
+ ROO      H012   C01    H011    109.470    3.000
+ ROO      C02    O03    C04     108.000    3.000
+ ROO      O03    C04    C05     126.000    3.000
+ ROO      O03    C04    C20     108.000    3.000
+ ROO      C05    C04    C20     126.000    3.000
+ ROO      C04    C05    H051    109.470    3.000
+ ROO      C04    C05    H052    109.470    3.000
+ ROO      C04    C05    N06     109.500    3.000
+ ROO      H051   C05    H052    107.900    3.000
+ ROO      H051   C05    N06     109.470    3.000
+ ROO      H052   C05    N06     109.470    3.000
+ ROO      C05    N06    HN06    118.500    3.000
+ ROO      C05    N06    C07     120.000    3.000
+ ROO      HN06   N06    C07     120.000    3.000
+ ROO      N06    C07    C19     120.000    3.000
+ ROO      N06    C07    N08     120.000    3.000
+ ROO      C19    C07    N08     120.000    3.000
+ ROO      C07    C19    C18     120.000    3.000
+ ROO      C07    C19    C11     120.000    3.000
+ ROO      C18    C19    C11     120.000    3.000
+ ROO      C19    C18    C17     120.000    3.000
+ ROO      C19    C18    C13     120.000    3.000
+ ROO      C17    C18    C13     120.000    3.000
+ ROO      C18    C17    H17     120.000    3.000
+ ROO      C18    C17    C16     120.000    3.000
+ ROO      H17    C17    C16     120.000    3.000
+ ROO      C07    N08    C09     120.000    3.000
+ ROO      N08    C09    H09     120.000    3.000
+ ROO      N08    C09    N10     120.000    3.000
+ ROO      H09    C09    N10     120.000    3.000
+ ROO      C09    N10    C11     120.000    3.000
+ ROO      N10    C11    N12     120.000    3.000
+ ROO      N10    C11    C19     120.000    3.000
+ ROO      N12    C11    C19     108.000    3.000
+ ROO      C11    N12    C13     108.000    3.000
+ ROO      N12    C13    C14     132.000    3.000
+ ROO      N12    C13    C18     108.000    3.000
+ ROO      C14    C13    C18     120.000    3.000
+ ROO      C13    C14    H14     120.000    3.000
+ ROO      C13    C14    C15     120.000    3.000
+ ROO      H14    C14    C15     120.000    3.000
+ ROO      C14    C15    H15     120.000    3.000
+ ROO      C14    C15    C16     120.000    3.000
+ ROO      H15    C15    C16     120.000    3.000
+ ROO      C15    C16    H16     120.000    3.000
+ ROO      C15    C16    C17     120.000    3.000
+ ROO      H16    C16    C17     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ ROO      var_1            O24    C22    C21    C02             -153.222           20.000   3
+ ROO      CONST_1          C22    C21    C20    C04                0.000            0.000   0
+ ROO      CONST_2          C21    C20    C04    O03                0.000            0.000   0
+ ROO      CONST_3          C22    C21    C02    O03                0.000            0.000   0
+ ROO      var_2            C21    C02    C01    H011             180.000           20.000   3
+ ROO      CONST_4          C21    C02    O03    C04               -1.171            0.000   0
+ ROO      CONST_5          C02    O03    C04    C05              178.257            0.000   0
+ ROO      var_3            O03    C04    C05    N06                0.000           20.000   2
+ ROO      var_4            C04    C05    N06    C07                0.000           20.000   3
+ ROO      var_5            C05    N06    C07    N08               -6.074           20.000   3
+ ROO      CONST_6          N06    C07    C19    C18              180.000            0.000   0
+ ROO      CONST_7          C07    C19    C18    C17              180.000            0.000   0
+ ROO      CONST_8          C19    C18    C13    N12              180.000            0.000   0
+ ROO      CONST_9          C19    C18    C17    C16              180.000            0.000   0
+ ROO      CONST_10         N06    C07    N08    C09                0.000            0.000   0
+ ROO      CONST_11         C07    N08    C09    N10                0.000            0.000   0
+ ROO      CONST_12         N08    C09    N10    C11                0.000            0.000   0
+ ROO      CONST_13         C09    N10    C11    N12              180.000            0.000   0
+ ROO      CONST_14         N10    C11    C19    C07              180.000            0.000   0
+ ROO      CONST_15         N10    C11    N12    C13              180.000            0.000   0
+ ROO      CONST_16         C11    N12    C13    C14              180.000            0.000   0
+ ROO      CONST_17         N12    C13    C14    C15              180.000            0.000   0
+ ROO      CONST_18         C13    C14    C15    C16                0.000            0.000   0
+ ROO      CONST_19         C14    C15    C16    C17                0.000            0.000   0
+ ROO      CONST_20         C15    C16    C17    C18                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ ROO      plan-1            C18       0.020
+ ROO      plan-1            C17       0.020
+ ROO      plan-1            C13       0.020
+ ROO      plan-1            C19       0.020
+ ROO      plan-1            N12       0.020
+ ROO      plan-1            C16       0.020
+ ROO      plan-1            H17       0.020
+ ROO      plan-1            C14       0.020
+ ROO      plan-1            C11       0.020
+ ROO      plan-1            C07       0.020
+ ROO      plan-1            N06       0.020
+ ROO      plan-1            N08       0.020
+ ROO      plan-1            C09       0.020
+ ROO      plan-1            C15       0.020
+ ROO      plan-1            N10       0.020
+ ROO      plan-1            H16       0.020
+ ROO      plan-1            H15       0.020
+ ROO      plan-1            H14       0.020
+ ROO      plan-1            H09       0.020
+ ROO      plan-1            HN06      0.020
+ ROO      plan-2            C20       0.020
+ ROO      plan-2            C04       0.020
+ ROO      plan-2            C21       0.020
+ ROO      plan-2            H20       0.020
+ ROO      plan-2            C02       0.020
+ ROO      plan-2            O03       0.020
+ ROO      plan-2            C01       0.020
+ ROO      plan-2            C05       0.020
+ ROO      plan-2            C22       0.020
+ ROO      plan-3            C22       0.020
+ ROO      plan-3            C21       0.020
+ ROO      plan-3            O23       0.020
+ ROO      plan-3            O24       0.020
+ ROO      plan-4            N06       0.020
+ ROO      plan-4            C05       0.020
+ ROO      plan-4            C07       0.020
+ ROO      plan-4            HN06      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

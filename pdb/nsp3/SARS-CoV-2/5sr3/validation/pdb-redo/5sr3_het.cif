@@ -1,0 +1,412 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+QYJ      QYJ '.                                   ' .                  51  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_QYJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ QYJ           O28    O    O         0.000    -48.193  -28.703    1.965
+ QYJ           C14    C    C         0.000    -47.746  -29.216    2.933
+ QYJ           N13    N    NH1       0.000    -46.592  -30.105    2.885
+ QYJ           HN13   H    H         0.000    -46.267  -30.606    3.700
+ QYJ           C12    C    CH1       0.000    -45.957  -30.224    1.634
+ QYJ           H12    H    H         0.000    -46.517  -29.603    0.921
+ QYJ           C03    C    CH1       0.000    -44.596  -29.610    1.792
+ QYJ           H03    H    H         0.000    -44.686  -28.523    1.660
+ QYJ           C02    C    CH1       0.000    -43.901  -29.882    3.123
+ QYJ           H02    H    H         0.000    -44.777  -29.495    3.662
+ QYJ           O29    O    OH1       0.000    -44.016  -30.994    3.731
+ QYJ           HO29   H    H         0.000    -43.500  -30.936    4.533
+ QYJ           O01    O    O        -1.000    -43.199  -28.926    3.572
+ QYJ           C04    C    CH2       0.000    -43.849  -30.168    0.630
+ QYJ           H041   H    H         0.000    -42.795  -30.336    0.860
+ QYJ           H042   H    H         0.000    -43.930  -29.534   -0.255
+ QYJ           C05    C    CR6       0.000    -44.534  -31.507    0.364
+ QYJ           C06    C    CR6       0.000    -44.030  -32.556   -0.367
+ QYJ           O07    O    OH1       0.000    -42.766  -32.370   -0.963
+ QYJ           HO07   H    H         0.000    -42.507  -33.168   -1.452
+ QYJ           C08    C    CR16      0.000    -44.792  -33.719   -0.484
+ QYJ           H08    H    H         0.000    -44.400  -34.549   -1.058
+ QYJ           C09    C    CR16      0.000    -46.050  -33.844    0.120
+ QYJ           H09    H    H         0.000    -46.622  -34.757    0.012
+ QYJ           C10    C    CR16      0.000    -46.557  -32.774    0.864
+ QYJ           H10    H    H         0.000    -47.531  -32.838    1.333
+ QYJ           C11    C    CR6       0.000    -45.771  -31.611    0.990
+ QYJ           C15    C    CR6       0.000    -48.409  -29.117    4.290
+ QYJ           C16    C    CR16      0.000    -49.786  -29.031    4.305
+ QYJ           H16    H    H         0.000    -50.347  -29.003    3.379
+ QYJ           C27    C    CR16      0.000    -47.635  -29.172    5.438
+ QYJ           H27    H    H         0.000    -46.556  -29.254    5.385
+ QYJ           C26    C    CR16      0.000    -48.290  -29.118    6.651
+ QYJ           H26    H    H         0.000    -47.731  -29.185    7.576
+ QYJ           C18    C    CR6       0.000    -49.668  -28.978    6.678
+ QYJ           C17    C    CR16      0.000    -50.435  -28.981    5.519
+ QYJ           H17    H    H         0.000    -51.516  -28.945    5.569
+ QYJ           N19    N    NH1       0.000    -50.241  -29.017    7.994
+ QYJ           HN19   H    H         0.000    -49.610  -29.007    8.783
+ QYJ           C20    C    C         0.000    -51.655  -29.069    8.266
+ QYJ           O25    O    O         0.000    -52.499  -28.941    7.444
+ QYJ           N21    N    NH1       0.000    -51.923  -29.207    9.677
+ QYJ           HN21   H    H         0.000    -51.149  -29.256   10.325
+ QYJ           C22    C    CH1       0.000    -53.279  -29.277   10.185
+ QYJ           H22    H    H         0.000    -54.081  -28.769    9.632
+ QYJ           C24    C    CH2       0.000    -53.547  -30.676   10.771
+ QYJ           H241   H    H         0.000    -52.778  -31.408   11.027
+ QYJ           H242   H    H         0.000    -54.533  -31.128   10.892
+ QYJ           C23    C    CH2       0.000    -53.425  -29.464   11.691
+ QYJ           H232   H    H         0.000    -52.507  -29.144   12.189
+ QYJ           H231   H    H         0.000    -54.263  -28.865   12.054
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ QYJ      O28    n/a    C14    START
+ QYJ      C14    O28    C15    .
+ QYJ      N13    C14    C12    .
+ QYJ      HN13   N13    .      .
+ QYJ      C12    N13    C03    .
+ QYJ      H12    C12    .      .
+ QYJ      C03    C12    C04    .
+ QYJ      H03    C03    .      .
+ QYJ      C02    C03    O01    .
+ QYJ      H02    C02    .      .
+ QYJ      O29    C02    HO29   .
+ QYJ      HO29   O29    .      .
+ QYJ      O01    C02    .      .
+ QYJ      C04    C03    C05    .
+ QYJ      H041   C04    .      .
+ QYJ      H042   C04    .      .
+ QYJ      C05    C04    C11    .
+ QYJ      C06    C05    C08    .
+ QYJ      O07    C06    HO07   .
+ QYJ      HO07   O07    .      .
+ QYJ      C08    C06    C09    .
+ QYJ      H08    C08    .      .
+ QYJ      C09    C08    C10    .
+ QYJ      H09    C09    .      .
+ QYJ      C10    C09    H10    .
+ QYJ      H10    C10    .      .
+ QYJ      C11    C05    .      .
+ QYJ      C15    C14    C27    .
+ QYJ      C16    C15    H16    .
+ QYJ      H16    C16    .      .
+ QYJ      C27    C15    C26    .
+ QYJ      H27    C27    .      .
+ QYJ      C26    C27    C18    .
+ QYJ      H26    C26    .      .
+ QYJ      C18    C26    N19    .
+ QYJ      C17    C18    H17    .
+ QYJ      H17    C17    .      .
+ QYJ      N19    C18    C20    .
+ QYJ      HN19   N19    .      .
+ QYJ      C20    N19    N21    .
+ QYJ      O25    C20    .      .
+ QYJ      N21    C20    C22    .
+ QYJ      HN21   N21    .      .
+ QYJ      C22    N21    C24    .
+ QYJ      H22    C22    .      .
+ QYJ      C24    C22    C23    .
+ QYJ      H241   C24    .      .
+ QYJ      H242   C24    .      .
+ QYJ      C23    C24    H231   .
+ QYJ      H232   C23    .      .
+ QYJ      H231   C23    .      END
+ QYJ      C16    C17    .    ADD
+ QYJ      C12    C11    .    ADD
+ QYJ      C11    C10    .    ADD
+ QYJ      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ QYJ      C17    C18       aromatic    1.390    0.020
+ QYJ      C18    C26       aromatic    1.390    0.020
+ QYJ      N19    C18       single      1.350    0.020
+ QYJ      C16    C17       aromatic    1.390    0.020
+ QYJ      C16    C15       aromatic    1.390    0.020
+ QYJ      C15    C14       single      1.500    0.020
+ QYJ      C27    C15       aromatic    1.390    0.020
+ QYJ      N13    C14       single      1.330    0.020
+ QYJ      C14    O28       double      1.220    0.020
+ QYJ      C12    C11       single      1.480    0.020
+ QYJ      C03    C12       single      1.524    0.020
+ QYJ      C12    N13       single      1.450    0.020
+ QYJ      C11    C10       aromatic    1.390    0.020
+ QYJ      C11    C05       aromatic    1.384    0.020
+ QYJ      C10    C09       aromatic    1.390    0.020
+ QYJ      C20    N19       single      1.330    0.020
+ QYJ      N21    C20       single      1.330    0.020
+ QYJ      O25    C20       double      1.220    0.020
+ QYJ      C02    C03       single      1.524    0.020
+ QYJ      O01    C02       single      1.420    0.020
+ QYJ      O29    C02       single      1.432    0.020
+ QYJ      C04    C03       single      1.524    0.020
+ QYJ      C05    C04       single      1.511    0.020
+ QYJ      C06    C05       aromatic    1.384    0.020
+ QYJ      C08    C06       aromatic    1.390    0.020
+ QYJ      O07    C06       single      1.362    0.020
+ QYJ      C09    C08       aromatic    1.390    0.020
+ QYJ      C22    C23       single      1.524    0.020
+ QYJ      C24    C22       single      1.524    0.020
+ QYJ      C22    N21       single      1.450    0.020
+ QYJ      C23    C24       single      1.524    0.020
+ QYJ      C26    C27       aromatic    1.390    0.020
+ QYJ      H16    C16       single      1.083    0.020
+ QYJ      H17    C17       single      1.083    0.020
+ QYJ      H12    C12       single      1.099    0.020
+ QYJ      H10    C10       single      1.083    0.020
+ QYJ      H02    C02       single      1.099    0.020
+ QYJ      H03    C03       single      1.099    0.020
+ QYJ      H041   C04       single      1.092    0.020
+ QYJ      H042   C04       single      1.092    0.020
+ QYJ      H08    C08       single      1.083    0.020
+ QYJ      H09    C09       single      1.083    0.020
+ QYJ      H22    C22       single      1.099    0.020
+ QYJ      H231   C23       single      1.092    0.020
+ QYJ      H232   C23       single      1.092    0.020
+ QYJ      H241   C24       single      1.092    0.020
+ QYJ      H242   C24       single      1.092    0.020
+ QYJ      H26    C26       single      1.083    0.020
+ QYJ      H27    C27       single      1.083    0.020
+ QYJ      HN13   N13       single      1.010    0.020
+ QYJ      HN19   N19       single      1.010    0.020
+ QYJ      HN21   N21       single      1.010    0.020
+ QYJ      HO07   O07       single      0.967    0.020
+ QYJ      HO29   O29       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ QYJ      O28    C14    N13     123.000    3.000
+ QYJ      O28    C14    C15     120.500    3.000
+ QYJ      N13    C14    C15     120.000    3.000
+ QYJ      C14    N13    HN13    120.000    3.000
+ QYJ      C14    N13    C12     121.500    3.000
+ QYJ      HN13   N13    C12     118.500    3.000
+ QYJ      N13    C12    H12     108.550    3.000
+ QYJ      N13    C12    C03     110.000    3.000
+ QYJ      N13    C12    C11     109.470    3.000
+ QYJ      H12    C12    C03     108.340    3.000
+ QYJ      H12    C12    C11     109.470    3.000
+ QYJ      C03    C12    C11     109.470    3.000
+ QYJ      C12    C03    H03     108.340    3.000
+ QYJ      C12    C03    C02     111.000    3.000
+ QYJ      C12    C03    C04     111.000    3.000
+ QYJ      H03    C03    C02     108.340    3.000
+ QYJ      H03    C03    C04     108.340    3.000
+ QYJ      C02    C03    C04     111.000    3.000
+ QYJ      C03    C02    H02     108.340    3.000
+ QYJ      C03    C02    O29     109.470    3.000
+ QYJ      C03    C02    O01     109.470    3.000
+ QYJ      H02    C02    O29     109.470    3.000
+ QYJ      H02    C02    O01     109.470    3.000
+ QYJ      O29    C02    O01     109.470    3.000
+ QYJ      C02    O29    HO29    109.470    3.000
+ QYJ      C03    C04    H041    109.470    3.000
+ QYJ      C03    C04    H042    109.470    3.000
+ QYJ      C03    C04    C05     109.470    3.000
+ QYJ      H041   C04    H042    107.900    3.000
+ QYJ      H041   C04    C05     109.470    3.000
+ QYJ      H042   C04    C05     109.470    3.000
+ QYJ      C04    C05    C06     120.000    3.000
+ QYJ      C04    C05    C11     120.000    3.000
+ QYJ      C06    C05    C11     120.000    3.000
+ QYJ      C05    C06    O07     120.000    3.000
+ QYJ      C05    C06    C08     120.000    3.000
+ QYJ      O07    C06    C08     120.000    3.000
+ QYJ      C06    O07    HO07    109.470    3.000
+ QYJ      C06    C08    H08     120.000    3.000
+ QYJ      C06    C08    C09     120.000    3.000
+ QYJ      H08    C08    C09     120.000    3.000
+ QYJ      C08    C09    H09     120.000    3.000
+ QYJ      C08    C09    C10     120.000    3.000
+ QYJ      H09    C09    C10     120.000    3.000
+ QYJ      C09    C10    H10     120.000    3.000
+ QYJ      C09    C10    C11     120.000    3.000
+ QYJ      H10    C10    C11     120.000    3.000
+ QYJ      C05    C11    C12     120.000    3.000
+ QYJ      C05    C11    C10     120.000    3.000
+ QYJ      C12    C11    C10     120.000    3.000
+ QYJ      C14    C15    C16     120.000    3.000
+ QYJ      C14    C15    C27     120.000    3.000
+ QYJ      C16    C15    C27     120.000    3.000
+ QYJ      C15    C16    H16     120.000    3.000
+ QYJ      C15    C16    C17     120.000    3.000
+ QYJ      H16    C16    C17     120.000    3.000
+ QYJ      C15    C27    H27     120.000    3.000
+ QYJ      C15    C27    C26     120.000    3.000
+ QYJ      H27    C27    C26     120.000    3.000
+ QYJ      C27    C26    H26     120.000    3.000
+ QYJ      C27    C26    C18     120.000    3.000
+ QYJ      H26    C26    C18     120.000    3.000
+ QYJ      C26    C18    C17     120.000    3.000
+ QYJ      C26    C18    N19     120.000    3.000
+ QYJ      C17    C18    N19     120.000    3.000
+ QYJ      C18    C17    H17     120.000    3.000
+ QYJ      C18    C17    C16     120.000    3.000
+ QYJ      H17    C17    C16     120.000    3.000
+ QYJ      C18    N19    HN19    120.000    3.000
+ QYJ      C18    N19    C20     120.000    3.000
+ QYJ      HN19   N19    C20     120.000    3.000
+ QYJ      N19    C20    O25     123.000    3.000
+ QYJ      N19    C20    N21     120.000    3.000
+ QYJ      O25    C20    N21     123.000    3.000
+ QYJ      C20    N21    HN21    120.000    3.000
+ QYJ      C20    N21    C22     121.500    3.000
+ QYJ      HN21   N21    C22     118.500    3.000
+ QYJ      N21    C22    H22     108.550    3.000
+ QYJ      N21    C22    C24     110.000    3.000
+ QYJ      N21    C22    C23     110.000    3.000
+ QYJ      H22    C22    C24     108.340    3.000
+ QYJ      H22    C22    C23     108.340    3.000
+ QYJ      C24    C22    C23      60.000    3.000
+ QYJ      C22    C24    H241    109.470    3.000
+ QYJ      C22    C24    H242    109.470    3.000
+ QYJ      C22    C24    C23      60.000    3.000
+ QYJ      H241   C24    H242    107.900    3.000
+ QYJ      H241   C24    C23     109.470    3.000
+ QYJ      H242   C24    C23     109.470    3.000
+ QYJ      C24    C23    H232    109.470    3.000
+ QYJ      C24    C23    H231    109.470    3.000
+ QYJ      C24    C23    C22      60.000    3.000
+ QYJ      H232   C23    H231    107.900    3.000
+ QYJ      H232   C23    C22     109.470    3.000
+ QYJ      H231   C23    C22     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ QYJ      var_1            O28    C14    N13    C12              180.000           20.000   2
+ QYJ      var_2            C14    N13    C12    C03                0.000           20.000   3
+ QYJ      var_3            N13    C12    C11    C05             -143.908           20.000   3
+ QYJ      var_4            N13    C12    C03    C04              180.000           20.000   3
+ QYJ      var_5            C12    C03    C02    O01              180.000           20.000   3
+ QYJ      var_6            C03    C02    O29    HO29             180.000           20.000   3
+ QYJ      var_7            C12    C03    C04    C05              180.000           20.000   3
+ QYJ      var_8            C03    C04    C05    C11                0.000           20.000   2
+ QYJ      CONST_1          C04    C05    C06    C08                0.000            0.000   0
+ QYJ      var_9            C05    C06    O07    HO07             180.000           20.000   3
+ QYJ      CONST_2          C05    C06    C08    C09                0.000            0.000   0
+ QYJ      CONST_3          C06    C08    C09    C10                0.000            0.000   0
+ QYJ      CONST_4          C08    C09    C10    C11                0.000            0.000   0
+ QYJ      CONST_5          C04    C05    C11    C12                0.000            0.000   0
+ QYJ      CONST_6          C05    C11    C10    C09                0.000            0.000   0
+ QYJ      var_10           O28    C14    C15    C27             -150.847           20.000   3
+ QYJ      CONST_7          C14    C15    C16    C17                0.000            0.000   0
+ QYJ      CONST_8          C15    C16    C17    C18                0.000            0.000   0
+ QYJ      CONST_9          C14    C15    C27    C26                0.000            0.000   0
+ QYJ      CONST_10         C15    C27    C26    C18                0.000            0.000   0
+ QYJ      CONST_11         C27    C26    C18    N19                0.000            0.000   0
+ QYJ      CONST_12         C26    C18    C17    C16                0.000            0.000   0
+ QYJ      var_11           C26    C18    N19    C20             -171.480           20.000   3
+ QYJ      var_12           C18    N19    C20    N21              180.000           20.000   2
+ QYJ      var_13           N19    C20    N21    C22              180.000           20.000   2
+ QYJ      var_14           C20    N21    C22    C24                0.000           20.000   3
+ QYJ      var_15           N21    C22    C23    C24              180.000           20.000   3
+ QYJ      var_16           N21    C22    C24    C23              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ QYJ      chir_01          C12    C11    C03    N13       positiv
+ QYJ      chir_02          C02    C03    O01    O29       positiv
+ QYJ      chir_03          C03    C12    C02    C04       negativ
+ QYJ      chir_04          C22    C23    C24    N21       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ QYJ      plan-1            C18       0.020
+ QYJ      plan-1            C17       0.020
+ QYJ      plan-1            C26       0.020
+ QYJ      plan-1            N19       0.020
+ QYJ      plan-1            C16       0.020
+ QYJ      plan-1            C15       0.020
+ QYJ      plan-1            C27       0.020
+ QYJ      plan-1            H16       0.020
+ QYJ      plan-1            H17       0.020
+ QYJ      plan-1            C14       0.020
+ QYJ      plan-1            H26       0.020
+ QYJ      plan-1            H27       0.020
+ QYJ      plan-1            HN19      0.020
+ QYJ      plan-2            C14       0.020
+ QYJ      plan-2            C15       0.020
+ QYJ      plan-2            N13       0.020
+ QYJ      plan-2            O28       0.020
+ QYJ      plan-2            HN13      0.020
+ QYJ      plan-3            C11       0.020
+ QYJ      plan-3            C12       0.020
+ QYJ      plan-3            C10       0.020
+ QYJ      plan-3            C05       0.020
+ QYJ      plan-3            C06       0.020
+ QYJ      plan-3            C08       0.020
+ QYJ      plan-3            C09       0.020
+ QYJ      plan-3            H10       0.020
+ QYJ      plan-3            C04       0.020
+ QYJ      plan-3            O07       0.020
+ QYJ      plan-3            H08       0.020
+ QYJ      plan-3            H09       0.020
+ QYJ      plan-4            C20       0.020
+ QYJ      plan-4            N19       0.020
+ QYJ      plan-4            N21       0.020
+ QYJ      plan-4            O25       0.020
+ QYJ      plan-4            HN19      0.020
+ QYJ      plan-4            HN21      0.020
+ QYJ      plan-5            N13       0.020
+ QYJ      plan-5            C14       0.020
+ QYJ      plan-5            C12       0.020
+ QYJ      plan-5            HN13      0.020
+ QYJ      plan-6            N19       0.020
+ QYJ      plan-6            C18       0.020
+ QYJ      plan-6            C20       0.020
+ QYJ      plan-6            HN19      0.020
+ QYJ      plan-7            N21       0.020
+ QYJ      plan-7            C20       0.020
+ QYJ      plan-7            C22       0.020
+ QYJ      plan-7            HN21      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
