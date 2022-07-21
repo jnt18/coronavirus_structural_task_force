@@ -110,7 +110,7 @@ def get_id(taxonomy_id, negate_taxonomy_id = "6645"):
         """
         query = json.dumps(query)
         pdb_list = []
-        url = 'https://search.rcsb.org/rcsbsearch/v1/query'
+        url = 'https://search.rcsb.org/rcsbsearch/v2/query'
         response = requests.post(url, data=query)
         if response.status_code == 200:
             result = response.json()
@@ -173,7 +173,7 @@ def assign_protein(c_new_pdb_lst, taxo):
         }
         query = json.dumps(seq_query)
         blast_ids = []
-        url = 'https://search.rcsb.org/rcsbsearch/v1/query'
+        url = 'https://search.rcsb.org/rcsbsearch/v2/query'
         response = requests.post(url, data=query)
 
         if response.status_code == 200:
