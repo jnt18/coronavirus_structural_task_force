@@ -2,30 +2,39 @@ HEADER    VIRAL PROTEIN                           07-DEC-21   7QG7
 TITLE     SARS-COV-2 MACRODOMAIN NSP3B BOUND TO THE REMDESIVIR NUCLEOSIDE GS-   
 TITLE    2 441524                                                               
 COMPND    MOL_ID: 1;                                                            
-COMPND   2 MOLECULE: ORF1A POLYPROTEIN;                                         
+COMPND   2 MOLECULE: PAPAIN-LIKE PROTEASE NSP3;                                 
 COMPND   3 CHAIN: A, B;                                                         
-COMPND   4 ENGINEERED: YES                                                      
+COMPND   4 SYNONYM: NON-STRUCTURAL PROTEIN 3,NSP3,PL2-PRO,PAPAIN-LIKE           
+COMPND   5 PROTEINASE,PL-PRO;                                                   
+COMPND   6 EC: 3.4.19.12,3.4.22.-;                                              
+COMPND   7 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
 SOURCE   3 2;                                                                   
-SOURCE   4 ORGANISM_COMMON: 2019-NCOV, SARS-COV-2;                              
-SOURCE   5 ORGANISM_TAXID: 2697049;                                             
-SOURCE   6 GENE: ORF1AB;                                                        
-SOURCE   7 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
-SOURCE   8 EXPRESSION_SYSTEM_TAXID: 562;                                        
-SOURCE   9 EXPRESSION_SYSTEM_VARIANT: T7 EXPRESS;                               
-SOURCE  10 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
-SOURCE  11 EXPRESSION_SYSTEM_PLASMID: PET28A(+)                                 
+SOURCE   4 ORGANISM_TAXID: 2697049;                                             
+SOURCE   5 GENE: REP, 1A-1B;                                                    
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 562;                                        
+SOURCE   8 EXPRESSION_SYSTEM_VARIANT: T7 EXPRESS;                               
+SOURCE   9 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  10 EXPRESSION_SYSTEM_PLASMID: PET28A(+)                                 
 KEYWDS    NSP3, MACRODOMAIN, SARS-COV-2, REMDESIVIR, GS-441524, COVID-19, VIRAL 
 KEYWDS   2 PROTEIN, DRUG DISCOVERY                                              
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    J.WOLLENHAUPT,V.LINHARD,S.SREERAMULU,M.S.WEISS,H.SCHWALBE             
+REVDAT   2   27-JUL-22 7QG7    1       COMPND SOURCE JRNL   DBREF               
+REVDAT   2 2                   1       SEQADV HETSYN                            
 REVDAT   1   15-DEC-21 7QG7    0                                                
-JRNL        AUTH   T.B.A.LATER                                                  
-JRNL        TITL   SARS-COV-2 MACRODOMAIN NSP3B BOUND TO THE REMDESIVIR         
-JRNL        TITL 2 NUCLEOSIDE GS-441524                                         
-JRNL        REF    TO BE PUBLISHED                                              
-JRNL        REFN                                                                
+JRNL        AUTH   A.C.TSIKA,A.GALLO,N.K.FOURKIOTIS,A.I.ARGYRIOU,S.SREERAMULU,  
+JRNL        AUTH 2 F.LOHR,V.V.ROGOV,C.RICHTER,V.LINHARD,S.L.GANDE,N.ALTINCEKIC, 
+JRNL        AUTH 3 R.KRISHNATHAS,I.ELAMRI,H.SCHWALBE,J.WOLLENHAUPT,M.S.WEISS,   
+JRNL        AUTH 4 G.A.SPYROULIAS                                               
+JRNL        TITL   BINDING ADAPTATION OF GS-441524 DIVERSIFIES MACRO DOMAINS    
+JRNL        TITL 2 AND DOWNREGULATE SARS-COV-2 DE-MARYLATION CAPACITY.          
+JRNL        REF    J.MOL.BIOL.                          67720 2022              
+JRNL        REFN                   ESSN 1089-8638                               
+JRNL        PMID   35839840                                                     
+JRNL        DOI    10.1016/J.JMB.2022.167720                                    
 REMARK   2                                                                      
 REMARK   2 RESOLUTION.    1.72 ANGSTROMS.                                       
 REMARK   3                                                                      
@@ -507,16 +516,14 @@ REMARK 500    HIS A  86     -127.03     56.79
 REMARK 500    HIS B  86     -128.43     51.65                                   
 REMARK 500                                                                      
 REMARK 500 REMARK: NULL                                                         
-DBREF1 7QG7 A    3   172  UNP                  A0A8B1R620_SARS2                 
-DBREF2 7QG7 A     A0A8B1R620                       1025        1194             
-DBREF1 7QG7 B    3   172  UNP                  A0A8B1R620_SARS2                 
-DBREF2 7QG7 B     A0A8B1R620                       1025        1194             
-SEQADV 7QG7 GLY A    0  UNP  A0A8B1R62           EXPRESSION TAG                 
-SEQADV 7QG7 HIS A    1  UNP  A0A8B1R62           EXPRESSION TAG                 
-SEQADV 7QG7 MET A    2  UNP  A0A8B1R62           EXPRESSION TAG                 
-SEQADV 7QG7 GLY B    0  UNP  A0A8B1R62           EXPRESSION TAG                 
-SEQADV 7QG7 HIS B    1  UNP  A0A8B1R62           EXPRESSION TAG                 
-SEQADV 7QG7 MET B    2  UNP  A0A8B1R62           EXPRESSION TAG                 
+DBREF  7QG7 A    3   172  UNP    P0DTD1   R1AB_SARS2    1025   1194             
+DBREF  7QG7 B    3   172  UNP    P0DTD1   R1AB_SARS2    1025   1194             
+SEQADV 7QG7 GLY A    0  UNP  P0DTD1              EXPRESSION TAG                 
+SEQADV 7QG7 HIS A    1  UNP  P0DTD1              EXPRESSION TAG                 
+SEQADV 7QG7 MET A    2  UNP  P0DTD1              EXPRESSION TAG                 
+SEQADV 7QG7 GLY B    0  UNP  P0DTD1              EXPRESSION TAG                 
+SEQADV 7QG7 HIS B    1  UNP  P0DTD1              EXPRESSION TAG                 
+SEQADV 7QG7 MET B    2  UNP  P0DTD1              EXPRESSION TAG                 
 SEQRES   1 A  173  GLY HIS MET VAL ASN SER PHE SER GLY TYR LEU LYS LEU          
 SEQRES   2 A  173  THR ASP ASN VAL TYR ILE LYS ASN ALA ASP ILE VAL GLU          
 SEQRES   3 A  173  GLU ALA LYS LYS VAL LYS PRO THR VAL VAL VAL ASN ALA          
@@ -556,6 +563,7 @@ HETNAM     U08 (2~{R},3~{R},4~{S},5~{R})-2-(4-AZANYLPYRROLO[2,1-F][1,
 HETNAM   2 U08  2,4]TRIAZIN-7-YL)-5-(HYDROXYMETHYL)-3,4-BIS(OXIDANYL)           
 HETNAM   3 U08  OXOLANE-2-CARBONITRILE                                          
 HETNAM     EDO 1,2-ETHANEDIOL                                                   
+HETSYN     U08 REMDESIVIR, REACTED FORM                                         
 HETSYN     EDO ETHYLENE GLYCOL                                                  
 FORMUL   3  U08    2(C12 H13 N5 O4)                                             
 FORMUL   4  EDO    5(C2 H6 O2)                                                  

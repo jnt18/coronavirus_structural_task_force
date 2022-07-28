@@ -3,14 +3,16 @@ data_7BF6
 _entry.id   7BF6 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.345 
+_audit_conform.dict_version    5.360 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7BF6         
-WWPDB D_1292113250 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7BF6         pdb_00007bf6 10.2210/pdb7bf6/pdb 
+WWPDB D_1292113250 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -129,17 +131,15 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'NSP3 macrodomain' 18676.373 3   
-3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.- ? ? ? 
+1 polymer     man 'Papain-like protease nsp3' 18676.373 3   3.4.19.12,3.4.22.- ? ? ? 
 2 non-polymer syn 
 '(2~{R},3~{R},4~{S},5~{R})-2-(4-azanylpyrrolo[2,1-f][1,2,4]triazin-7-yl)-5-(hydroxymethyl)-3,4-bis(oxidanyl)oxolane-2-carbonitrile' 
-291.263   3   ?                                                                                ? ? ? 
-3 non-polymer syn 1,2-ETHANEDIOL 62.068    5   ?                                                                                ? 
-? ? 
-4 water       nat water 18.015    148 ?                                                                                ? ? ? 
+291.263   3   ?                  ? ? ? 
+3 non-polymer syn 1,2-ETHANEDIOL 62.068    5   ?                  ? ? ? 
+4 water       nat water 18.015    148 ?                  ? ? ? 
 # 
 _entity_name_com.entity_id   1 
-_entity_name_com.name        'pp1ab,ORF1ab polyprotein' 
+_entity_name_com.name        'Non-structural protein 3,nsp3,PL2-PRO,Papain-like proteinase,PL-PRO' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -343,7 +343,7 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   173 
-_entity_src_gen.gene_src_common_name               2019-nCoV 
+_entity_src_gen.gene_src_common_name               ? 
 _entity_src_gen.gene_src_genus                     ? 
 _entity_src_gen.pdbx_gene_src_gene                 'rep, 1a-1b' 
 _entity_src_gen.gene_src_species                   ? 
@@ -451,30 +451,30 @@ _chem_comp.name
 _chem_comp.pdbx_synonyms 
 _chem_comp.formula 
 _chem_comp.formula_weight 
-ALA 'L-peptide linking' y ALANINE ?                 'C3 H7 N O2'     89.093  
-ARG 'L-peptide linking' y ARGININE ?                 'C6 H15 N4 O2 1' 175.209 
-ASN 'L-peptide linking' y ASPARAGINE ?                 'C4 H8 N2 O3'    132.118 
-ASP 'L-peptide linking' y 'ASPARTIC ACID' ?                 'C4 H7 N O4'     133.103 
-CYS 'L-peptide linking' y CYSTEINE ?                 'C3 H7 N O2 S'   121.158 
-EDO non-polymer         . 1,2-ETHANEDIOL 'ETHYLENE GLYCOL' 'C2 H6 O2'       62.068  
-GLN 'L-peptide linking' y GLUTAMINE ?                 'C5 H10 N2 O3'   146.144 
-GLU 'L-peptide linking' y 'GLUTAMIC ACID' ?                 'C5 H9 N O4'     147.129 
-GLY 'peptide linking'   y GLYCINE ?                 'C2 H5 N O2'     75.067  
-HIS 'L-peptide linking' y HISTIDINE ?                 'C6 H10 N3 O2 1' 156.162 
-HOH non-polymer         . WATER ?                 'H2 O'           18.015  
-ILE 'L-peptide linking' y ISOLEUCINE ?                 'C6 H13 N O2'    131.173 
-LEU 'L-peptide linking' y LEUCINE ?                 'C6 H13 N O2'    131.173 
-LYS 'L-peptide linking' y LYSINE ?                 'C6 H15 N2 O2 1' 147.195 
-MET 'L-peptide linking' y METHIONINE ?                 'C5 H11 N O2 S'  149.211 
-PHE 'L-peptide linking' y PHENYLALANINE ?                 'C9 H11 N O2'    165.189 
-PRO 'L-peptide linking' y PROLINE ?                 'C5 H9 N O2'     115.130 
-SER 'L-peptide linking' y SERINE ?                 'C3 H7 N O3'     105.093 
-THR 'L-peptide linking' y THREONINE ?                 'C4 H9 N O3'     119.119 
-TYR 'L-peptide linking' y TYROSINE ?                 'C9 H11 N O3'    181.189 
+ALA 'L-peptide linking' y ALANINE ?                          'C3 H7 N O2'     89.093  
+ARG 'L-peptide linking' y ARGININE ?                          'C6 H15 N4 O2 1' 175.209 
+ASN 'L-peptide linking' y ASPARAGINE ?                          'C4 H8 N2 O3'    132.118 
+ASP 'L-peptide linking' y 'ASPARTIC ACID' ?                          'C4 H7 N O4'     133.103 
+CYS 'L-peptide linking' y CYSTEINE ?                          'C3 H7 N O2 S'   121.158 
+EDO non-polymer         . 1,2-ETHANEDIOL 'ETHYLENE GLYCOL'          'C2 H6 O2'       62.068  
+GLN 'L-peptide linking' y GLUTAMINE ?                          'C5 H10 N2 O3'   146.144 
+GLU 'L-peptide linking' y 'GLUTAMIC ACID' ?                          'C5 H9 N O4'     147.129 
+GLY 'peptide linking'   y GLYCINE ?                          'C2 H5 N O2'     75.067  
+HIS 'L-peptide linking' y HISTIDINE ?                          'C6 H10 N3 O2 1' 156.162 
+HOH non-polymer         . WATER ?                          'H2 O'           18.015  
+ILE 'L-peptide linking' y ISOLEUCINE ?                          'C6 H13 N O2'    131.173 
+LEU 'L-peptide linking' y LEUCINE ?                          'C6 H13 N O2'    131.173 
+LYS 'L-peptide linking' y LYSINE ?                          'C6 H15 N2 O2 1' 147.195 
+MET 'L-peptide linking' y METHIONINE ?                          'C5 H11 N O2 S'  149.211 
+PHE 'L-peptide linking' y PHENYLALANINE ?                          'C9 H11 N O2'    165.189 
+PRO 'L-peptide linking' y PROLINE ?                          'C5 H9 N O2'     115.130 
+SER 'L-peptide linking' y SERINE ?                          'C3 H7 N O3'     105.093 
+THR 'L-peptide linking' y THREONINE ?                          'C4 H9 N O3'     119.119 
+TYR 'L-peptide linking' y TYROSINE ?                          'C9 H11 N O3'    181.189 
 U08 non-polymer         . 
 '(2~{R},3~{R},4~{S},5~{R})-2-(4-azanylpyrrolo[2,1-f][1,2,4]triazin-7-yl)-5-(hydroxymethyl)-3,4-bis(oxidanyl)oxolane-2-carbonitrile' 
-?                 'C12 H13 N5 O4'  291.263 
-VAL 'L-peptide linking' y VALINE ?                 'C5 H11 N O2'    117.146 
+'Remdesivir, reacted form' 'C12 H13 N5 O4'  291.263 
+VAL 'L-peptide linking' y VALINE ?                          'C5 H11 N O2'    117.146 
 # 
 _exptl.absorpt_coefficient_mu     ? 
 _exptl.absorpt_correction_T_max   ? 
@@ -9989,6 +9989,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2021-01-13 
 2 'Structure model' 2 0 2021-01-27 
 3 'Structure model' 2 1 2021-07-07 
+4 'Structure model' 2 2 2022-07-27 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -10003,14 +10004,17 @@ _pdbx_audit_revision_group.ordinal
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' Advisory                     
-2 2 'Structure model' 'Atomic model'               
-3 2 'Structure model' 'Author supporting evidence' 
-4 2 'Structure model' 'Data collection'            
-5 2 'Structure model' 'Derived calculations'       
-6 2 'Structure model' 'Non-polymer description'    
-7 2 'Structure model' 'Structure summary'          
-8 3 'Structure model' 'Database references'        
+1  2 'Structure model' Advisory                     
+2  2 'Structure model' 'Atomic model'               
+3  2 'Structure model' 'Author supporting evidence' 
+4  2 'Structure model' 'Data collection'            
+5  2 'Structure model' 'Derived calculations'       
+6  2 'Structure model' 'Non-polymer description'    
+7  2 'Structure model' 'Structure summary'          
+8  3 'Structure model' 'Database references'        
+9  4 'Structure model' 'Database references'        
+10 4 'Structure model' 'Source and taxonomy'        
+11 4 'Structure model' 'Structure summary'          
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -10028,6 +10032,11 @@ _pdbx_audit_revision_category.category
 9  2 'Structure model' struct_site_gen              
 10 3 'Structure model' citation                     
 11 3 'Structure model' citation_author              
+12 4 'Structure model' chem_comp                    
+13 4 'Structure model' database_2                   
+14 4 'Structure model' entity                       
+15 4 'Structure model' entity_name_com              
+16 4 'Structure model' entity_src_gen               
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -10066,6 +10075,13 @@ _pdbx_audit_revision_item.item
 30 3 'Structure model' '_citation.pdbx_database_id_PubMed'          
 31 3 'Structure model' '_citation.title'                            
 32 3 'Structure model' '_citation.year'                             
+33 4 'Structure model' '_chem_comp.pdbx_synonyms'                   
+34 4 'Structure model' '_database_2.pdbx_DOI'                       
+35 4 'Structure model' '_database_2.pdbx_database_accession'        
+36 4 'Structure model' '_entity.pdbx_description'                   
+37 4 'Structure model' '_entity.pdbx_ec'                            
+38 4 'Structure model' '_entity_name_com.name'                      
+39 4 'Structure model' '_entity_src_gen.gene_src_common_name'       
 # 
 loop_
 _pdbx_refine_tls.id 
