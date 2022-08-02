@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: not assigned
+**Protein name**: surface glycoprotein
 
 **Organism**: SARS-CoV-2
 
@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/not_assigned/SARS-CoV-2/7v61/validation/molprobity)    
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7v61/validation/molprobity)    
 
 
 
@@ -33,13 +33,13 @@ Primary map emd_31732.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 
 |   | Reported Resolution | Imposed Symmetry | Number of Particles |
 |---|-------------:|----------------:|--------------:|
-|   |2.57 Å|n/a|95845|
+|   |4.3 Å|C1|344920|
 
 **Experiments**
 
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
-|   |1.069 Å|68.0 e<sup>-</sup>/Å<sup>2</sup>|
+|   |0.825 Å|56.5 e<sup>-</sup>/Å<sup>2</sup>|
 
 **Geometry validation (the lower, the better)**
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
