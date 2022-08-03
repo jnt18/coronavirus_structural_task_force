@@ -38,9 +38,10 @@ KEYWDS   3 STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE, SSGCID
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    M.A.TORTORICI,D.VEESLER,SEATTLE STRUCTURAL GENOMICS CENTER FOR        
 AUTHOR   2 INFECTIOUS DISEASE (SSGCID)                                          
+REVDAT   3   03-AUG-22 7SKZ    1       COMPND JRNL   REMARK ATOM                
 REVDAT   2   27-JUL-22 7SKZ    1       SOURCE                                   
 REVDAT   1   20-JUL-22 7SKZ    0                                                
-JRNL        AUTH   J.S.LOW,J.JERAK,A.M.TORTORICI,M.MCCALLUM,D.PINTO,A.CASSOTTA, 
+JRNL        AUTH   J.S.LOW,J.JERAK,M.A.TORTORICI,M.MCCALLUM,D.PINTO,A.CASSOTTA, 
 JRNL        AUTH 2 M.FOGLIERINI,F.MELE,R.ABDELNABI,B.WEYNAND,J.NOACK,           
 JRNL        AUTH 3 M.MONTIEL-RUIZ,S.BIANCHI,F.BENIGNI,N.SPRUGASCI,A.JOSHI,      
 JRNL        AUTH 4 J.E.BOWEN,C.STEWART,M.REXHEPAJ,A.C.WALLS,D.JARROSSAY,        
@@ -48,9 +49,10 @@ JRNL        AUTH 5 D.MORONE,P.PAPARODITIS,C.GARZONI,P.FERRARI,A.CESCHI,J.NEYTS,
 JRNL        AUTH 6 L.A.PURCELL,G.SNELL,D.CORTI,A.LANZAVECCHIA,D.VEESLER,        
 JRNL        AUTH 7 F.SALLUSTO                                                   
 JRNL        TITL   ACE2-BINDING EXPOSES THE SARS-COV-2 FUSION PEPTIDE TO        
-JRNL        TITL 2 BROADLY NEUTRALIZING CORONAVIRUS ANTIBODIES                  
-JRNL        REF    SCIENCE                                    2022              
+JRNL        TITL 2 BROADLY NEUTRALIZING CORONAVIRUS ANTIBODIES.                 
+JRNL        REF    SCIENCE                              Q2679 2022              
 JRNL        REFN                   ESSN 1095-9203                               
+JRNL        PMID   35857703                                                     
 JRNL        DOI    10.1126/SCIENCE.ABQ2679                                      
 REMARK   2                                                                      
 REMARK   2 RESOLUTION.    1.86 ANGSTROMS.                                       
@@ -236,7 +238,7 @@ REMARK 200  RADIATION SOURCE               : ALS
 REMARK 200  BEAMLINE                       : 5.0.1                              
 REMARK 200  X-RAY GENERATOR MODEL          : NULL                               
 REMARK 200  MONOCHROMATIC OR LAUE    (M/L) : M                                  
-REMARK 200  WAVELENGTH OR RANGE        (A) : 0.988                              
+REMARK 200  WAVELENGTH OR RANGE        (A) : 0.9774                             
 REMARK 200  MONOCHROMATOR                  : NULL                               
 REMARK 200  OPTICS                         : NULL                               
 REMARK 200                                                                      
@@ -245,7 +247,7 @@ REMARK 200  DETECTOR MANUFACTURER          : DECTRIS PILATUS 6M
 REMARK 200  INTENSITY-INTEGRATION SOFTWARE : XDS                                
 REMARK 200  DATA SCALING SOFTWARE          : AIMLESS                            
 REMARK 200                                                                      
-REMARK 200  NUMBER OF UNIQUE REFLECTIONS   : 157062                             
+REMARK 200  NUMBER OF UNIQUE REFLECTIONS   : 46943                              
 REMARK 200  RESOLUTION RANGE HIGH      (A) : 1.860                              
 REMARK 200  RESOLUTION RANGE LOW       (A) : 46.240                             
 REMARK 200  REJECTION CRITERIA  (SIGMA(I)) : NULL                               
@@ -438,19 +440,6 @@ REMARK 500    ALA L  84      173.15    179.74
 REMARK 500    ASN L 139       66.33     61.94                                   
 REMARK 500                                                                      
 REMARK 500 REMARK: NULL                                                         
-REMARK 525                                                                      
-REMARK 525 SOLVENT                                                              
-REMARK 525                                                                      
-REMARK 525 THE SOLVENT MOLECULES HAVE CHAIN IDENTIFIERS THAT                    
-REMARK 525 INDICATE THE POLYMER CHAIN WITH WHICH THEY ARE MOST                  
-REMARK 525 CLOSELY ASSOCIATED. THE REMARK LISTS ALL THE SOLVENT                 
-REMARK 525 MOLECULES WHICH ARE MORE THAN 5A AWAY FROM THE                       
-REMARK 525 NEAREST POLYMER CHAIN (M = MODEL NUMBER;                             
-REMARK 525 RES=RESIDUE NAME; C=CHAIN IDENTIFIER; SSEQ=SEQUENCE                  
-REMARK 525 NUMBER; I=INSERTION CODE):                                           
-REMARK 525                                                                      
-REMARK 525  M RES CSSEQI                                                        
-REMARK 525    HOH L 475        DISTANCE =  7.73 ANGSTROMS                       
 DBREF  7SKZ A  812   824  PDB    7SKZ     7SKZ           812    824             
 DBREF  7SKZ H    1   226  PDB    7SKZ     7SKZ             1    226             
 DBREF  7SKZ L    1   215  PDB    7SKZ     7SKZ             1    215             
@@ -490,7 +479,7 @@ SEQRES  14 L  215  LYS ASP SER THR TYR SER LEU SER SER THR LEU THR LEU
 SEQRES  15 L  215  SER LYS ALA ASP TYR GLU LYS HIS LYS VAL TYR ALA CYS          
 SEQRES  16 L  215  GLU VAL THR HIS GLN GLY LEU SER SER PRO VAL THR LYS          
 SEQRES  17 L  215  SER PHE ASN ARG GLY GLU CYS                                  
-FORMUL   4  HOH   *348(H2 O)                                                    
+FORMUL   4  HOH   *347(H2 O)                                                    
 HELIX    1 AA1 SER A  813  ASN A  824  1                                  12    
 HELIX    2 AA2 THR H   28  PHE H   32  5                                   5    
 HELIX    3 AA3 ARG H   87  THR H   91  5                                   5    
@@ -7437,8 +7426,8 @@ HETATM 3467  O   HOH H 361      16.092 -19.738  11.555  1.00 41.12           O
 HETATM 3468  O   HOH H 362       5.964   2.232  24.719  1.00 58.20           O  
 HETATM 3469  O   HOH H 363      13.169 -19.707  33.762  1.00 62.21           O  
 HETATM 3470  O   HOH H 364      14.234 -19.345  15.003  1.00 32.16           O  
-HETATM 3471  O   HOH H 365      32.477   2.494   4.114  1.00 48.33           O  
-HETATM 3472  O   HOH H 366      51.210  18.666   0.276  1.00 42.83           O  
+HETATM 3471  O   HOH H 365      51.210  18.666   0.276  1.00 42.83           O  
+HETATM 3472  O   HOH H 366      32.477   2.494   4.114  1.00 48.33           O  
 HETATM 3473  O   HOH H 367      11.434 -17.472  35.045  1.00 59.23           O  
 HETATM 3474  O   HOH H 368      53.156  -3.207   9.718  1.00 59.31           O  
 HETATM 3475  O   HOH H 369      43.485  13.761   4.524  1.00 36.17           O  
@@ -7717,7 +7706,6 @@ HETATM 3747  O   HOH L 471       9.717   7.679   5.050  1.00 64.31           O
 HETATM 3748  O   HOH L 472       1.513 -29.330  12.452  1.00 63.07           O  
 HETATM 3749  O   HOH L 473       5.784  -2.607 -11.210  1.00 60.63           O  
 HETATM 3750  O   HOH L 474      55.939 -10.632 -19.661  1.00 64.42           O  
-HETATM 3751  O   HOH L 475      68.078  -5.875 -14.090  1.00 74.47           O  
 CONECT  240  805                                                                
 CONECT  805  240                                                                
 CONECT 1199 1627                                                                
@@ -7728,5 +7716,5 @@ CONECT 2415 1939
 CONECT 2775 3251                                                                
 CONECT 3251 2775                                                                
 CONECT 3402 1777                                                                
-MASTER      399    0    0   11   47    0    0    6 3726    3   10   36          
+MASTER      386    0    0   11   47    0    0    6 3725    3   10   36          
 END                                                                             
