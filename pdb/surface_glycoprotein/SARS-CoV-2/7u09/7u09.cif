@@ -700,10 +700,10 @@ _entity_src_gen.expression_system_id
 _entity_src_gen.plasmid_name 
 _entity_src_gen.plasmid_details 
 _entity_src_gen.pdbx_description 
-1 1 sample 'Biological sequence' 1 229 ? ? ? ? ? ? ? ? ? 'mammal environmental sample' 1092587 ? ? ? ? ? ? ? ? 
-'mammal environmental sample' 1092587 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-2 1 sample 'Biological sequence' 1 213 ? ? ? ? ? ? ? ? ? 'mammal environmental sample' 1092587 ? ? ? ? ? ? ? ? 
-'mammal environmental sample' 1092587 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+1 1 sample 'Biological sequence' 1 229 human ? ? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? human 'Homo sapiens' 9606 ? ? ? ? ? 
+? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+2 1 sample 'Biological sequence' 1 213 human ? ? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? human 'Homo sapiens' 9606 ? ? ? ? ? 
+? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
 # 
 _pdbx_entity_src_syn.entity_id              3 
 _pdbx_entity_src_syn.pdbx_src_id            1 
@@ -1223,14 +1223,13 @@ _refine_ls_shell.pdbx_fsc_free
 'X-RAY DIFFRACTION' 3.5900 4.5200  2745 . 137 2608 99.0000 . . . 0.2012 0.0000 0.1476 . . . . . . . 10 . . . 
 'X-RAY DIFFRACTION' 4.5200 41.5900 2909 . 144 2765 99.0000 . . . 0.2103 0.0000 0.1918 . . . . . . . 10 . . . 
 # 
-_struct.entry_id                                   7U09 
-_struct.title                                      'Crystal Structure of C13B8 Fab in complex with SARS-CoV-2 S fusion peptide' 
-_struct.pdbx_structure_determination_methodology   ? 
-_struct.pdbx_model_details                         ? 
-_struct.pdbx_formula_weight                        ? 
-_struct.pdbx_formula_weight_method                 ? 
-_struct.pdbx_model_type_details                    ? 
-_struct.pdbx_CASP_flag                             N 
+_struct.entry_id                     7U09 
+_struct.title                        'Crystal Structure of C13B8 Fab in complex with SARS-CoV-2 S fusion peptide' 
+_struct.pdbx_model_details           ? 
+_struct.pdbx_formula_weight          ? 
+_struct.pdbx_formula_weight_method   ? 
+_struct.pdbx_model_type_details      ? 
+_struct.pdbx_CASP_flag               N 
 # 
 _struct_keywords.entry_id        7U09 
 _struct_keywords.text            
@@ -9325,11 +9324,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-08-03 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-08-03 
+2 'Structure model' 1 1 2022-08-10 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -9338,6 +9340,28 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Source and taxonomy' 
+# 
+_pdbx_audit_revision_category.ordinal             1 
+_pdbx_audit_revision_category.revision_ordinal    2 
+_pdbx_audit_revision_category.data_content_type   'Structure model' 
+_pdbx_audit_revision_category.category            entity_src_gen 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_entity_src_gen.gene_src_common_name'           
+2 2 'Structure model' '_entity_src_gen.host_org_common_name'           
+3 2 'Structure model' '_entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id' 
+4 2 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name'  
+5 2 'Structure model' '_entity_src_gen.pdbx_host_org_ncbi_taxonomy_id' 
+6 2 'Structure model' '_entity_src_gen.pdbx_host_org_scientific_name'  
 # 
 loop_
 _pdbx_refine_tls.id 
