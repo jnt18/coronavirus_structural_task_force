@@ -1,0 +1,406 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5IL      5IL '.                                   ' .                  52  29 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_5IL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 5IL           O13    O    OS        0.000    115.462  -15.061   69.989
+ 5IL           S11    S    ST        0.000    115.411  -16.651   69.680
+ 5IL           O12    O    OS        0.000    116.958  -17.206   69.317
+ 5IL           N29    N    NT2       0.000    114.855  -17.473   71.086
+ 5IL           H292   H    H         0.000    114.661  -16.798   71.855
+ 5IL           H291   H    H         0.000    114.810  -18.500   70.920
+ 5IL           C3     C    CR6       0.000    114.243  -16.995   68.289
+ 5IL           C2     C    CR16      0.000    113.092  -17.788   68.576
+ 5IL           H2     H    H         0.000    112.935  -18.161   69.580
+ 5IL           C4     C    CR66      0.000    114.456  -16.487   66.917
+ 5IL           C7     C    CH1       0.000    115.617  -15.674   66.570
+ 5IL           H7     H    H         0.000    115.053  -14.765   66.822
+ 5IL           O28    O    OH1       0.000    116.567  -15.354   67.552
+ 5IL           HO28   H    H         0.000    117.262  -14.816   67.155
+ 5IL           C8     C    CR6       0.000    115.786  -15.187   65.206
+ 5IL           C9     C    CR16      0.000    114.831  -15.513   64.222
+ 5IL           H9     H    H         0.000    114.960  -15.158   63.207
+ 5IL           C10    C    CR6       0.000    113.708  -16.299   64.552
+ 5IL           O14    O    OH1       0.000    112.771  -16.613   63.590
+ 5IL           HO14   H    H         0.000    112.070  -17.155   63.981
+ 5IL           C5     C    CR66      0.000    113.531  -16.794   65.945
+ 5IL           C6     C    CR16      0.000    112.370  -17.596   66.248
+ 5IL           H6     H    H         0.000    111.652  -17.825   65.470
+ 5IL           C1     C    CR16      0.000    112.168  -18.088   67.577
+ 5IL           H1     H    H         0.000    111.298  -18.692   67.805
+ 5IL           N15    N    NH1       0.000    116.946  -14.358   64.795
+ 5IL           HN15   H    H         0.000    117.319  -14.512   63.869
+ 5IL           C16    C    CR6       0.000    117.592  -13.341   65.614
+ 5IL           C21    C    CR6       0.000    116.881  -12.510   66.509
+ 5IL           C20    C    CR16      0.000    117.566  -11.538   67.271
+ 5IL           H20    H    H         0.000    117.016  -10.907   67.958
+ 5IL           C19    C    CR16      0.000    118.965  -11.384   67.141
+ 5IL           H19    H    H         0.000    119.486  -10.637   67.727
+ 5IL           C18    C    CR16      0.000    119.685  -12.212   66.239
+ 5IL           H18    H    H         0.000    120.756  -12.096   66.133
+ 5IL           C17    C    CR16      0.000    119.008  -13.178   65.487
+ 5IL           H17    H    H         0.000    119.561  -13.809   64.801
+ 5IL           N22    N    N         0.000    115.451  -12.616   66.682
+ 5IL           C23    C    CH2       0.000    114.570  -11.752   65.838
+ 5IL           H232   H    H         0.000    114.878  -11.880   64.798
+ 5IL           H231   H    H         0.000    114.735  -10.716   66.139
+ 5IL           C27    C    CH2       0.000    114.911  -12.574   68.099
+ 5IL           H271   H    H         0.000    115.085  -11.568   68.486
+ 5IL           H272   H    H         0.000    115.482  -13.294   68.689
+ 5IL           C26    C    CH2       0.000    113.427  -12.905   68.189
+ 5IL           H261   H    H         0.000    113.112  -12.771   69.226
+ 5IL           H262   H    H         0.000    113.294  -13.950   67.901
+ 5IL           N25    N    NT1       0.000    112.643  -12.078   67.345
+ 5IL           HN25   H    H         0.000    111.838  -11.522   67.677
+ 5IL           C24    C    CH2       0.000    113.088  -12.095   65.978
+ 5IL           H242   H    H         0.000    112.491  -11.368   65.422
+ 5IL           H241   H    H         0.000    112.905  -13.095   65.579
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 5IL      O13    n/a    S11    START
+ 5IL      S11    O13    C3     .
+ 5IL      O12    S11    .      .
+ 5IL      N29    S11    H291   .
+ 5IL      H292   N29    .      .
+ 5IL      H291   N29    .      .
+ 5IL      C3     S11    C4     .
+ 5IL      C2     C3     H2     .
+ 5IL      H2     C2     .      .
+ 5IL      C4     C3     C7     .
+ 5IL      C7     C4     C8     .
+ 5IL      H7     C7     .      .
+ 5IL      O28    C7     HO28   .
+ 5IL      HO28   O28    .      .
+ 5IL      C8     C7     N15    .
+ 5IL      C9     C8     C10    .
+ 5IL      H9     C9     .      .
+ 5IL      C10    C9     C5     .
+ 5IL      O14    C10    HO14   .
+ 5IL      HO14   O14    .      .
+ 5IL      C5     C10    C6     .
+ 5IL      C6     C5     C1     .
+ 5IL      H6     C6     .      .
+ 5IL      C1     C6     H1     .
+ 5IL      H1     C1     .      .
+ 5IL      N15    C8     C16    .
+ 5IL      HN15   N15    .      .
+ 5IL      C16    N15    C21    .
+ 5IL      C21    C16    N22    .
+ 5IL      C20    C21    C19    .
+ 5IL      H20    C20    .      .
+ 5IL      C19    C20    C18    .
+ 5IL      H19    C19    .      .
+ 5IL      C18    C19    C17    .
+ 5IL      H18    C18    .      .
+ 5IL      C17    C18    H17    .
+ 5IL      H17    C17    .      .
+ 5IL      N22    C21    C27    .
+ 5IL      C23    N22    H231   .
+ 5IL      H232   C23    .      .
+ 5IL      H231   C23    .      .
+ 5IL      C27    N22    C26    .
+ 5IL      H271   C27    .      .
+ 5IL      H272   C27    .      .
+ 5IL      C26    C27    N25    .
+ 5IL      H261   C26    .      .
+ 5IL      H262   C26    .      .
+ 5IL      N25    C26    C24    .
+ 5IL      HN25   N25    .      .
+ 5IL      C24    N25    H241   .
+ 5IL      H242   C24    .      .
+ 5IL      H241   C24    .      END
+ 5IL      C1     C2     .    ADD
+ 5IL      C4     C5     .    ADD
+ 5IL      C16    C17    .    ADD
+ 5IL      C23    C24    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 5IL      C1     C2        aromatic    1.390    0.020
+ 5IL      C1     C6        aromatic    1.390    0.020
+ 5IL      C2     C3        aromatic    1.390    0.020
+ 5IL      C4     C3        single      1.490    0.020
+ 5IL      C3     S11       single      1.595    0.020
+ 5IL      C4     C5        aromatic    1.390    0.020
+ 5IL      C7     C4        single      1.460    0.020
+ 5IL      C6     C5        aromatic    1.390    0.020
+ 5IL      C5     C10       single      1.490    0.020
+ 5IL      C8     C7        single      1.480    0.020
+ 5IL      O28    C7        single      1.432    0.020
+ 5IL      C9     C8        aromatic    1.390    0.020
+ 5IL      N15    C8        single      1.350    0.020
+ 5IL      C10    C9        aromatic    1.390    0.020
+ 5IL      O14    C10       single      1.362    0.020
+ 5IL      C16    C17       aromatic    1.390    0.020
+ 5IL      C21    C16       aromatic    1.384    0.020
+ 5IL      C16    N15       single      1.350    0.020
+ 5IL      C17    C18       aromatic    1.390    0.020
+ 5IL      C18    C19       aromatic    1.390    0.020
+ 5IL      C19    C20       aromatic    1.390    0.020
+ 5IL      C20    C21       aromatic    1.390    0.020
+ 5IL      N22    C21       single      1.400    0.020
+ 5IL      C23    C24       single      1.524    0.020
+ 5IL      C23    N22       single      1.455    0.020
+ 5IL      C24    N25       single      1.472    0.020
+ 5IL      C26    C27       single      1.524    0.020
+ 5IL      N25    C26       single      1.472    0.020
+ 5IL      C27    N22       single      1.455    0.020
+ 5IL      N29    S11       single      1.610    0.020
+ 5IL      O12    S11       double      1.436    0.020
+ 5IL      S11    O13       double      1.436    0.020
+ 5IL      H1     C1        single      1.083    0.020
+ 5IL      H2     C2        single      1.083    0.020
+ 5IL      H6     C6        single      1.083    0.020
+ 5IL      H7     C7        single      1.099    0.020
+ 5IL      H17    C17       single      1.083    0.020
+ 5IL      H18    C18       single      1.083    0.020
+ 5IL      H19    C19       single      1.083    0.020
+ 5IL      H20    C20       single      1.083    0.020
+ 5IL      H231   C23       single      1.092    0.020
+ 5IL      H232   C23       single      1.092    0.020
+ 5IL      H241   C24       single      1.092    0.020
+ 5IL      H242   C24       single      1.092    0.020
+ 5IL      H261   C26       single      1.092    0.020
+ 5IL      H262   C26       single      1.092    0.020
+ 5IL      H271   C27       single      1.092    0.020
+ 5IL      H272   C27       single      1.092    0.020
+ 5IL      H9     C9        single      1.083    0.020
+ 5IL      HN15   N15       single      1.010    0.020
+ 5IL      HN25   N25       single      1.033    0.020
+ 5IL      H291   N29       single      1.033    0.020
+ 5IL      H292   N29       single      1.033    0.020
+ 5IL      HO14   O14       single      0.967    0.020
+ 5IL      HO28   O28       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 5IL      O13    S11    O12     109.500    3.000
+ 5IL      O13    S11    N29     109.500    3.000
+ 5IL      O13    S11    C3      109.500    3.000
+ 5IL      O12    S11    N29     109.500    3.000
+ 5IL      O12    S11    C3      109.500    3.000
+ 5IL      N29    S11    C3      109.500    3.000
+ 5IL      S11    N29    H292    109.500    3.000
+ 5IL      S11    N29    H291    109.500    3.000
+ 5IL      H292   N29    H291    109.500    3.000
+ 5IL      S11    C3     C2      120.000    3.000
+ 5IL      S11    C3     C4      120.000    3.000
+ 5IL      C2     C3     C4      120.000    3.000
+ 5IL      C3     C2     H2      120.000    3.000
+ 5IL      C3     C2     C1      120.000    3.000
+ 5IL      H2     C2     C1      120.000    3.000
+ 5IL      C3     C4     C7      120.000    3.000
+ 5IL      C3     C4     C5      120.000    3.000
+ 5IL      C7     C4     C5      120.000    3.000
+ 5IL      C4     C7     H7      109.500    3.000
+ 5IL      C4     C7     O28     109.500    3.000
+ 5IL      C4     C7     C8      109.500    3.000
+ 5IL      H7     C7     O28     109.470    3.000
+ 5IL      H7     C7     C8      109.470    3.000
+ 5IL      O28    C7     C8      109.470    3.000
+ 5IL      C7     O28    HO28    109.470    3.000
+ 5IL      C7     C8     C9      120.000    3.000
+ 5IL      C7     C8     N15     120.000    3.000
+ 5IL      C9     C8     N15     120.000    3.000
+ 5IL      C8     C9     H9      120.000    3.000
+ 5IL      C8     C9     C10     120.000    3.000
+ 5IL      H9     C9     C10     120.000    3.000
+ 5IL      C9     C10    O14     120.000    3.000
+ 5IL      C9     C10    C5      120.000    3.000
+ 5IL      O14    C10    C5      120.000    3.000
+ 5IL      C10    O14    HO14    109.470    3.000
+ 5IL      C10    C5     C6      120.000    3.000
+ 5IL      C10    C5     C4      120.000    3.000
+ 5IL      C6     C5     C4      120.000    3.000
+ 5IL      C5     C6     H6      120.000    3.000
+ 5IL      C5     C6     C1      120.000    3.000
+ 5IL      H6     C6     C1      120.000    3.000
+ 5IL      C6     C1     H1      120.000    3.000
+ 5IL      C6     C1     C2      120.000    3.000
+ 5IL      H1     C1     C2      120.000    3.000
+ 5IL      C8     N15    HN15    120.000    3.000
+ 5IL      C8     N15    C16     120.000    3.000
+ 5IL      HN15   N15    C16     120.000    3.000
+ 5IL      N15    C16    C21     120.000    3.000
+ 5IL      N15    C16    C17     120.000    3.000
+ 5IL      C21    C16    C17     120.000    3.000
+ 5IL      C16    C21    C20     120.000    3.000
+ 5IL      C16    C21    N22     120.000    3.000
+ 5IL      C20    C21    N22     120.000    3.000
+ 5IL      C21    C20    H20     120.000    3.000
+ 5IL      C21    C20    C19     120.000    3.000
+ 5IL      H20    C20    C19     120.000    3.000
+ 5IL      C20    C19    H19     120.000    3.000
+ 5IL      C20    C19    C18     120.000    3.000
+ 5IL      H19    C19    C18     120.000    3.000
+ 5IL      C19    C18    H18     120.000    3.000
+ 5IL      C19    C18    C17     120.000    3.000
+ 5IL      H18    C18    C17     120.000    3.000
+ 5IL      C18    C17    H17     120.000    3.000
+ 5IL      C18    C17    C16     120.000    3.000
+ 5IL      H17    C17    C16     120.000    3.000
+ 5IL      C21    N22    C23     120.000    3.000
+ 5IL      C21    N22    C27     120.000    3.000
+ 5IL      C23    N22    C27     120.000    3.000
+ 5IL      N22    C23    H232    109.470    3.000
+ 5IL      N22    C23    H231    109.470    3.000
+ 5IL      N22    C23    C24     105.000    3.000
+ 5IL      H232   C23    H231    107.900    3.000
+ 5IL      H232   C23    C24     109.470    3.000
+ 5IL      H231   C23    C24     109.470    3.000
+ 5IL      N22    C27    H271    109.470    3.000
+ 5IL      N22    C27    H272    109.470    3.000
+ 5IL      N22    C27    C26     105.000    3.000
+ 5IL      H271   C27    H272    107.900    3.000
+ 5IL      H271   C27    C26     109.470    3.000
+ 5IL      H272   C27    C26     109.470    3.000
+ 5IL      C27    C26    H261    109.470    3.000
+ 5IL      C27    C26    H262    109.470    3.000
+ 5IL      C27    C26    N25     109.500    3.000
+ 5IL      H261   C26    H262    107.900    3.000
+ 5IL      H261   C26    N25     109.500    3.000
+ 5IL      H262   C26    N25     109.500    3.000
+ 5IL      C26    N25    HN25    109.500    3.000
+ 5IL      C26    N25    C24     109.500    3.000
+ 5IL      HN25   N25    C24     109.500    3.000
+ 5IL      N25    C24    H242    109.500    3.000
+ 5IL      N25    C24    H241    109.500    3.000
+ 5IL      N25    C24    C23     109.500    3.000
+ 5IL      H242   C24    H241    107.900    3.000
+ 5IL      H242   C24    C23     109.470    3.000
+ 5IL      H241   C24    C23     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 5IL      var_1            O13    S11    N29    H291             180.000           20.000   3
+ 5IL      var_2            O13    S11    C3     C4                63.402           20.000   3
+ 5IL      CONST_1          S11    C3     C2     C1                 0.000            0.000   0
+ 5IL      CONST_2          S11    C3     C4     C7               180.000            0.000   0
+ 5IL      CONST_3          C3     C4     C5     C10              179.870            0.000   0
+ 5IL      CONST_4          C3     C4     C7     C8              -179.684            0.000   0
+ 5IL      var_3            C4     C7     O28    HO28             180.000           20.000   3
+ 5IL      CONST_5          C4     C7     C8     N15             -179.948            0.000   0
+ 5IL      CONST_6          C7     C8     C9     C10                0.000            0.000   0
+ 5IL      CONST_7          C8     C9     C10    C5                 0.000            0.000   0
+ 5IL      var_4            C9     C10    O14    HO14             180.000           20.000   3
+ 5IL      CONST_8          C9     C10    C5     C6               180.000            0.000   0
+ 5IL      CONST_9          C10    C5     C6     C1               180.000            0.000   0
+ 5IL      CONST_10         C5     C6     C1     C2                 0.000            0.000   0
+ 5IL      CONST_11         C6     C1     C2     C3                 0.000            0.000   0
+ 5IL      var_5            C7     C8     N15    C16              -36.409           20.000   3
+ 5IL      var_6            C8     N15    C16    C21              -35.547           20.000   3
+ 5IL      CONST_12         N15    C16    C17    C18                0.000            0.000   0
+ 5IL      CONST_13         N15    C16    C21    N22                0.000            0.000   0
+ 5IL      CONST_14         C16    C21    C20    C19                0.000            0.000   0
+ 5IL      CONST_15         C21    C20    C19    C18                0.000            0.000   0
+ 5IL      CONST_16         C20    C19    C18    C17                0.000            0.000   0
+ 5IL      CONST_17         C19    C18    C17    C16                0.000            0.000   0
+ 5IL      var_7            C16    C21    N22    C27              136.107           20.000   3
+ 5IL      var_8            C21    N22    C23    C24              172.068           20.000   3
+ 5IL      var_9            N22    C23    C24    N25              180.000           20.000   3
+ 5IL      var_10           C21    N22    C27    C26             -171.180           20.000   3
+ 5IL      var_11           N22    C27    C26    N25              180.000           20.000   3
+ 5IL      var_12           C27    C26    N25    C24               54.042           20.000   3
+ 5IL      var_13           C26    N25    C24    C23              -53.996           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 5IL      chir_01          C7     C4     C8     O28       negativ
+ 5IL      chir_02          S11    C3     N29    O12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 5IL      plan-1            C1        0.020
+ 5IL      plan-1            C2        0.020
+ 5IL      plan-1            C6        0.020
+ 5IL      plan-1            H1        0.020
+ 5IL      plan-1            C3        0.020
+ 5IL      plan-1            H2        0.020
+ 5IL      plan-1            C4        0.020
+ 5IL      plan-1            S11       0.020
+ 5IL      plan-1            C5        0.020
+ 5IL      plan-1            C7        0.020
+ 5IL      plan-1            C8        0.020
+ 5IL      plan-1            C10       0.020
+ 5IL      plan-1            C9        0.020
+ 5IL      plan-1            H6        0.020
+ 5IL      plan-1            N15       0.020
+ 5IL      plan-1            O14       0.020
+ 5IL      plan-1            H9        0.020
+ 5IL      plan-1            HN15      0.020
+ 5IL      plan-2            C16       0.020
+ 5IL      plan-2            C17       0.020
+ 5IL      plan-2            C21       0.020
+ 5IL      plan-2            N15       0.020
+ 5IL      plan-2            C18       0.020
+ 5IL      plan-2            C19       0.020
+ 5IL      plan-2            C20       0.020
+ 5IL      plan-2            H17       0.020
+ 5IL      plan-2            H18       0.020
+ 5IL      plan-2            H19       0.020
+ 5IL      plan-2            H20       0.020
+ 5IL      plan-2            N22       0.020
+ 5IL      plan-2            HN15      0.020
+ 5IL      plan-3            N15       0.020
+ 5IL      plan-3            C8        0.020
+ 5IL      plan-3            C16       0.020
+ 5IL      plan-3            HN15      0.020
+ 5IL      plan-4            N22       0.020
+ 5IL      plan-4            C21       0.020
+ 5IL      plan-4            C23       0.020
+ 5IL      plan-4            C27       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
