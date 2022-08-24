@@ -3,14 +3,16 @@ data_7AGA
 _entry.id   7AGA 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.342 
+_audit_conform.dict_version    5.360 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7AGA         
-WWPDB D_1292111313 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7AGA         pdb_00007aga 10.2210/pdb7aga/pdb 
+WWPDB D_1292111313 ?            ?                   
 # 
 loop_
 _pdbx_database_related.db_name 
@@ -1313,8 +1315,6 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     7AGA 
 _struct.title                        'Structure of SARS-CoV-2 Main Protease bound to AT7519' 
-_struct.pdbx_descriptor              
-'Main Protease (E.C.3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.-)' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -10101,6 +10101,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2020-12-09 
 3 'Structure model' 2 0 2021-04-14 
 4 'Structure model' 2 1 2021-05-19 
+5 'Structure model' 2 2 2022-08-24 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -10115,15 +10116,16 @@ _pdbx_audit_revision_group.ordinal
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' 'Database references'    
-2 3 'Structure model' 'Atomic model'           
-3 3 'Structure model' 'Data collection'        
-4 3 'Structure model' 'Database references'    
-5 3 'Structure model' 'Derived calculations'   
-6 3 'Structure model' 'Refinement description' 
-7 3 'Structure model' 'Source and taxonomy'    
-8 3 'Structure model' 'Structure summary'      
-9 4 'Structure model' 'Database references'    
+1  2 'Structure model' 'Database references'    
+2  3 'Structure model' 'Atomic model'           
+3  3 'Structure model' 'Data collection'        
+4  3 'Structure model' 'Database references'    
+5  3 'Structure model' 'Derived calculations'   
+6  3 'Structure model' 'Refinement description' 
+7  3 'Structure model' 'Source and taxonomy'    
+8  3 'Structure model' 'Structure summary'      
+9  4 'Structure model' 'Database references'    
+10 5 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -10143,6 +10145,7 @@ _pdbx_audit_revision_category.category
 11 3 'Structure model' struct_site_gen       
 12 4 'Structure model' citation              
 13 4 'Structure model' citation_author       
+14 5 'Structure model' database_2            
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -10163,6 +10166,16 @@ _pdbx_audit_revision_item.item
 12 4 'Structure model' '_citation.page_first'                     
 13 4 'Structure model' '_citation.page_last'                      
 14 4 'Structure model' '_citation_author.name'                    
+15 5 'Structure model' '_database_2.pdbx_DOI'                     
+16 5 'Structure model' '_database_2.pdbx_database_accession'      
+# 
+loop_
+_space_group_symop.id 
+_space_group_symop.operation_xyz 
+1 x,y,z           
+2 -x,y,-z         
+3 x+1/2,y+1/2,z   
+4 -x+1/2,y+1/2,-z 
 # 
 loop_
 _pdbx_refine_tls.id 
@@ -10369,12 +10382,4 @@ _space_group.name_Hall        'C 2y'
 _space_group.IT_number        5 
 _space_group.crystal_system   monoclinic 
 _space_group.id               1 
-# 
-loop_
-_space_group_symop.id 
-_space_group_symop.operation_xyz 
-1 x,y,z           
-2 -x,y,-z         
-3 x+1/2,y+1/2,z   
-4 -x+1/2,y+1/2,-z 
 # 
