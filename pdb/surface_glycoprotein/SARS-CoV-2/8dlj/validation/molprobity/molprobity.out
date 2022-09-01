@@ -1,0 +1,130 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 28498  (anisotropic = 0)
+    B_iso: mean = 167.8  max = 446.0  min =  60.0
+  Macromolecules:
+    Number of atoms = 27602  (anisotropic = 0)
+    B_iso: mean = 168.0  max = 446.0  min =  60.0
+  Ligands:
+    Number of atoms = 896  (anisotropic = 0)
+    B_iso: mean = 163.1  max = 359.0  min =  87.8
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.067 (Z=  5.475)
+  Mean delta:    0.004 (Z=  0.280)
+
+                        ----------Bond angles----------                        
+
+  Using conformation-dependent library for mainchain bond angle targets
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 986  PRO  N      
+   A 986  PRO  CA     
+   A 986  PRO  C         110.70   116.27    -5.57  1.22e+00  2.08e+01   4.6*sigma
+   C 986  PRO  N      
+   C 986  PRO  CA     
+   C 986  PRO  C         110.70   116.21    -5.51  1.22e+00  2.04e+01   4.5*sigma
+   B 359  SER  C      
+   B 360  ASN  N      
+   B 360  ASN  CA        122.36   128.56    -6.20  1.42e+00  1.91e+01   4.4*sigma
+   B 986  PRO  N      
+   B 986  PRO  CA     
+   B 986  PRO  C         110.70   115.99    -5.29  1.22e+00  1.88e+01   4.3*sigma
+   C 570  ASP  C      
+   C 571  ASP  N      
+   C 571  ASP  CA        124.82   132.01    -7.19  1.78e+00  1.63e+01   4.0*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    9.443 (Z=  4.563)
+  Mean delta:    0.822 (Z=  0.476)
+
+                      ----------Dihedral angles----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.002
+  Max. delta:   89.281
+  Mean delta:   13.203
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.398
+  Mean delta:    0.056
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.069
+  Mean delta:    0.006
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.067  29152
+    Angle     :  0.822   9.443  39666
+    Chirality :  0.056   0.398   4646
+    Planarity :  0.006   0.069   5053
+    Dihedral  : 13.203  89.281  10537
+    Min Nonbonded Distance : 2.282
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 3.47
+    Ramachandran Plot:
+      Outliers :  0.03 %
+      Allowed  :  1.71 %
+      Favored  : 98.26 %
+    Rotamer Outliers :  0.13 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole:  0.38 (0.13), residues: 3456
+    helix:  1.45 (0.14), residues: 1009
+    sheet:  0.97 (0.19), residues: 640
+    loop : -0.72 (0.13), residues: 1807
+
+                     ----------Asn/Gln/His flips----------                     
+
+   C 955  ASN
+   C1011  GLN
+   C 394  ASN
+   A1118  HIS
+   B 955  ASN
+   A 314  GLN
+   A 317  ASN
+   A 913  GLN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.03 %
+                favored =  98.26 %
+  Rotamer outliers      =   0.13 %
+  C-beta deviations     =     0
+  Clashscore            =   3.47
+  RMS(bonds)            =   0.0042
+  RMS(angles)           =   0.82
+  MolProbity score      =   1.14
+  Refinement program    = phenix.real_space_refine

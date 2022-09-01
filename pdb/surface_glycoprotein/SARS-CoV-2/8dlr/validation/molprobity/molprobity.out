@@ -1,0 +1,139 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 4027  (anisotropic = 0)
+    B_iso: mean =  78.9  max = 112.0  min =  49.5
+  Macromolecules:
+    Number of atoms = 3943  (anisotropic = 0)
+    B_iso: mean =  78.7  max = 112.0  min =  49.5
+  Ligands:
+    Number of atoms = 84  (anisotropic = 0)
+    B_iso: mean =  89.6  max = 106.8  min =  77.6
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.044 (Z=  3.348)
+  Mean delta:    0.006 (Z=  0.398)
+
+                        ----------Bond angles----------                        
+
+  Using conformation-dependent library for mainchain bond angle targets
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   L  69  GLN  C      
+   L  70  ASP  N      
+   L  70  ASP  CA        121.54   130.40    -8.86  1.91e+00  2.15e+01   4.6*sigma
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    8.983 (Z=  4.640)
+  Mean delta:    0.794 (Z=  0.441)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   A 215  ASP  CA     
+   A 215  ASP  CB     
+   A 215  ASP  CG     
+   A 215  ASP  OD1         0.00  -156.23   126.23  2.00e+01  3.82e+01   6.3*sigma
+   A 111  ASP  CA     
+   A 111  ASP  CB     
+   A 111  ASP  CG     
+   A 111  ASP  OD1         0.00  -153.12   123.12  2.00e+01  3.71e+01   6.2*sigma
+   H 122  ASP  CA     
+   H 122  ASP  CB     
+   H 122  ASP  CG     
+   H 122  ASP  OD1         0.00  -169.64  -120.36  2.00e+01  3.61e+01   6.0*sigma
+   A 294  ASP  CA     
+   A 294  ASP  CB     
+   A 294  ASP  CG     
+   A 294  ASP  OD1         0.00   177.86  -107.86  2.00e+01  3.14e+01   5.4*sigma
+   A  40  ASP  CA     
+   A  40  ASP  CB     
+   A  40  ASP  CG     
+   A  40  ASP  OD1         0.00   174.30  -104.30  2.00e+01  2.99e+01   5.2*sigma
+   A 154  GLU  CB     
+   A 154  GLU  CG     
+   A 154  GLU  CD     
+   A 154  GLU  OE1         0.00  -148.68   148.68  3.00e+01  1.98e+01   5.0*sigma
+   A 156  GLU  CB     
+   A 156  GLU  CG     
+   A 156  GLU  CD     
+   A 156  GLU  OE1         0.00  -145.41   145.41  3.00e+01  1.94e+01   4.8*sigma
+
+  Min. delta:    0.001
+  Max. delta:  148.677
+  Mean delta:   15.212
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.271
+  Mean delta:    0.056
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.070
+  Mean delta:    0.007
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.006   0.044   4125
+    Angle     :  0.794   8.983   5609
+    Chirality :  0.056   0.271    641
+    Planarity :  0.007   0.070    705
+    Dihedral  : 15.212 148.677   1461
+    Min Nonbonded Distance : 2.291
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 3.79
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  2.63 %
+      Favored  : 97.37 %
+    Rotamer Outliers :  0.00 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -0.80 (0.36), residues: 495
+    helix: -0.46 (1.50), residues: 11
+    sheet: -0.36 (0.33), residues: 221
+    loop : -0.59 (0.37), residues: 263
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A  14  GLN
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  97.37 %
+  Rotamer outliers      =   0.00 %
+  C-beta deviations     =     0
+  Clashscore            =   3.79
+  RMS(bonds)            =   0.0059
+  RMS(angles)           =   0.79
+  MolProbity score      =   1.29
+  Refinement program    = phenix.real_space_refine
