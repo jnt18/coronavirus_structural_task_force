@@ -34,11 +34,11 @@ Download all data in the methyltransferase subdirectory: ```python git_fetch.py 
 
 ## Total number of COVID structures by experimental methods
 
-X-ray Crystallography: 1850
+X-ray Crystallography: 1896
 <br>
-3D Electron Microscopy: 884
+3D Electron Microscopy: 954
 <br>
-Solution NMR: 38
+Solution NMR: 41
 <br>
 Solid-State NMR: 2
 <br>
