@@ -3,14 +3,16 @@ data_5RMM
 _entry.id   5RMM 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.337 
+_audit_conform.dict_version    5.361 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   5RMM         
-WWPDB D_1001403406 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   5RMM         pdb_00005rmm 10.2210/pdb5rmm/pdb 
+WWPDB D_1001403406 ?            ?                   
 # 
 _pdbx_database_status.entry_id                        5RMM 
 _pdbx_database_status.status_code                     REL 
@@ -49,43 +51,39 @@ _audit_author.identifier_ORCID
 'Gileadi, O.'      18 ? 
 # 
 _citation.id                        primary 
-_citation.title                     'PanDDA analysis group deposition' 
-_citation.journal_abbrev            'To Be Published' 
-_citation.journal_volume            ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.year                      ? 
+_citation.title                     
+'Structure, mechanism and crystallographic fragment screening of the SARS-CoV-2 NSP13 helicase.' 
+_citation.journal_abbrev            'Nat Commun' 
+_citation.journal_volume            12 
+_citation.page_first                4848 
+_citation.page_last                 4848 
+_citation.year                      2021 
 _citation.journal_id_ASTM           ? 
-_citation.country                   ? 
-_citation.journal_id_ISSN           ? 
-_citation.journal_id_CSD            0353 
+_citation.country                   UK 
+_citation.journal_id_ISSN           2041-1723 
+_citation.journal_id_CSD            ? 
 _citation.book_publisher            ? 
-_citation.pdbx_database_id_PubMed   ? 
-_citation.pdbx_database_id_DOI      ? 
+_citation.pdbx_database_id_PubMed   34381037 
+_citation.pdbx_database_id_DOI      10.1038/s41467-021-25166-6 
 # 
 loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.identifier_ORCID 
 _citation_author.ordinal 
-primary 'Newman, J.A.'     ? 1  
-primary 'Yosaatmadja, Y.'  ? 2  
-primary 'Douangamath, A.'  ? 3  
-primary 'Aimon, A.'        ? 4  
-primary 'Powell, A.J.'     ? 5  
-primary 'Dias, A.'         ? 6  
-primary 'Fearon, D.'       ? 7  
-primary 'Dunnett, L.'      ? 8  
-primary 'Brandao-Neto, J.' ? 9  
-primary 'Krojer, T.'       ? 10 
-primary 'Skyner, R.'       ? 11 
-primary 'Gorrie-Stone, T.' ? 12 
-primary 'Thompson, W.'     ? 13 
-primary 'von Delft, F.'    ? 14 
-primary 'Arrowsmith, C.H.' ? 15 
-primary 'Edwards, A.'      ? 16 
-primary 'Bountra, C.'      ? 17 
-primary 'Gileadi, O.'      ? 18 
+primary 'Newman, J.A.'     0000-0003-4488-0516 1  
+primary 'Douangamath, A.'  0000-0002-9196-8644 2  
+primary 'Yadzani, S.'      0000-0002-9205-4318 3  
+primary 'Yosaatmadja, Y.'  0000-0003-2875-5993 4  
+primary 'Aimon, A.'        0000-0002-9135-129X 5  
+primary 'Brandao-Neto, J.' ?                   6  
+primary 'Dunnett, L.'      ?                   7  
+primary 'Gorrie-Stone, T.' ?                   8  
+primary 'Skyner, R.'       0000-0003-3614-6661 9  
+primary 'Fearon, D.'       0000-0003-3529-7863 10 
+primary 'Schapira, M.'     0000-0002-1047-3309 11 
+primary 'von Delft, F.'    ?                   12 
+primary 'Gileadi, O.'      ?                   13 
 # 
 _cell.entry_id           5RMM 
 _cell.length_a           59.009 
@@ -1117,7 +1115,6 @@ _refine_ls_shell.pdbx_refine_id                   'X-RAY DIFFRACTION'
 _struct.entry_id                  5RMM 
 _struct.title                     
 'PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 helicase in complex with POB0066' 
-_struct.pdbx_descriptor           'Helicase (E.C.3.6.4.12,3.6.4.13)' 
 _struct.pdbx_model_details        ? 
 _struct.pdbx_CASP_flag            ? 
 _struct.pdbx_model_type_details   ? 
@@ -12789,6 +12786,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-09-30 
 2 'Structure model' 2 0 2021-01-27 
+3 'Structure model' 2 1 2022-09-07 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -12810,6 +12808,7 @@ _pdbx_audit_revision_group.group
 5 2 'Structure model' Other                    
 6 2 'Structure model' 'Refinement description' 
 7 2 'Structure model' 'Structure summary'      
+8 3 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -12844,6 +12843,9 @@ _pdbx_audit_revision_category.category
 26 2 'Structure model' struct_sheet                
 27 2 'Structure model' struct_sheet_order          
 28 2 'Structure model' struct_sheet_range          
+29 3 'Structure model' citation                    
+30 3 'Structure model' citation_author             
+31 3 'Structure model' database_2                  
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -12927,6 +12929,19 @@ _pdbx_audit_revision_item.item
 75 2 'Structure model' '_software.name'                                  
 76 2 'Structure model' '_software.version'                               
 77 2 'Structure model' '_struct_conn.pdbx_dist_value'                    
+78 3 'Structure model' '_citation.country'                               
+79 3 'Structure model' '_citation.journal_abbrev'                        
+80 3 'Structure model' '_citation.journal_id_CSD'                        
+81 3 'Structure model' '_citation.journal_id_ISSN'                       
+82 3 'Structure model' '_citation.journal_volume'                        
+83 3 'Structure model' '_citation.page_first'                            
+84 3 'Structure model' '_citation.page_last'                             
+85 3 'Structure model' '_citation.pdbx_database_id_DOI'                  
+86 3 'Structure model' '_citation.pdbx_database_id_PubMed'               
+87 3 'Structure model' '_citation.title'                                 
+88 3 'Structure model' '_citation.year'                                  
+89 3 'Structure model' '_database_2.pdbx_DOI'                            
+90 3 'Structure model' '_database_2.pdbx_database_accession'             
 # 
 _phasing.method   MR 
 # 
