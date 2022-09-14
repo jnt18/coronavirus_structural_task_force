@@ -3,14 +3,16 @@ data_6M03
 _entry.id   6M03 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.336 
+_audit_conform.dict_version    5.360 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   6M03         
-WWPDB D_1300015794 
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   6M03         pdb_00006m03 10.2210/pdb6m03/pdb 
+WWPDB D_1300015794 ?            ?                   
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -43,25 +45,26 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   US 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To be published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_abbrev            Proc.Natl.Acad.Sci.USA 
+_citation.journal_id_ASTM           PNASA6 
+_citation.journal_id_CSD            0040 
+_citation.journal_id_ISSN           1091-6490 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            119 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'The crystal structure of COVID-19 main protease in apo form' 
-_citation.year                      ? 
+_citation.page_first                e2117142119 
+_citation.page_last                 e2117142119 
+_citation.title                     
+'Structural basis for replicase polyprotein cleavage and substrate specificity of main protease from SARS-CoV-2.' 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1073/pnas.2117142119 
+_citation.pdbx_database_id_PubMed   35380892 
 _citation.unpublished_flag          ? 
 # 
 loop_
@@ -69,12 +72,25 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Zhang, B.' 1 ? 
-primary 'Zhao, Y.'  2 ? 
-primary 'Jin, Z.'   3 ? 
-primary 'Liu, X.'   4 ? 
-primary 'Yang, H.'  5 ? 
-primary 'Rao, Z.'   6 ? 
+primary 'Zhao, Y.'     1  0000-0002-2932-2164 
+primary 'Zhu, Y.'      2  0000-0002-7045-4847 
+primary 'Liu, X.'      3  0000-0001-5498-6942 
+primary 'Jin, Z.'      4  0000-0001-6448-820X 
+primary 'Duan, Y.'     5  ?                   
+primary 'Zhang, Q.'    6  0000-0002-6271-9163 
+primary 'Wu, C.'       7  0000-0001-9178-7467 
+primary 'Feng, L.'     8  0000-0003-1060-6391 
+primary 'Du, X.'       9  ?                   
+primary 'Zhao, J.'     10 0000-0002-5119-359X 
+primary 'Shao, M.'     11 0000-0002-9762-8608 
+primary 'Zhang, B.'    12 0000-0001-8556-8049 
+primary 'Yang, X.'     13 0000-0003-3443-9815 
+primary 'Wu, L.'       14 0000-0002-2253-0497 
+primary 'Ji, X.'       15 0000-0002-0801-8825 
+primary 'Guddat, L.W.' 16 0000-0002-8204-8408 
+primary 'Yang, K.'     17 ?                   
+primary 'Rao, Z.'      18 0000-0001-9866-2384 
+primary 'Yang, H.'     19 0000-0002-1875-3268 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1028,7 +1044,6 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     6M03 
 _struct.title                        'The crystal structure of COVID-19 main protease in apo form' 
-_struct.pdbx_descriptor              'viral protease' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -6651,6 +6666,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2020-05-06 
 3 'Structure model' 1 2 2020-06-10 
 4 'Structure model' 1 3 2021-03-10 
+5 'Structure model' 1 4 2022-09-14 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -6671,6 +6687,7 @@ _pdbx_audit_revision_group.group
 4 3 'Structure model' 'Database references' 
 5 3 'Structure model' 'Structure summary'   
 6 4 'Structure model' 'Structure summary'   
+7 5 'Structure model' 'Database references' 
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -6687,6 +6704,9 @@ _pdbx_audit_revision_category.category
 8  3 'Structure model' struct_ref_seq  
 9  4 'Structure model' entity          
 10 4 'Structure model' entity_name_com 
+11 5 'Structure model' citation        
+12 5 'Structure model' citation_author 
+13 5 'Structure model' database_2      
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -6709,6 +6729,20 @@ _pdbx_audit_revision_item.item
 14 3 'Structure model' '_struct_ref_seq.pdbx_db_accession'    
 15 4 'Structure model' '_entity.pdbx_description'             
 16 4 'Structure model' '_entity_name_com.name'                
+17 5 'Structure model' '_citation.country'                    
+18 5 'Structure model' '_citation.journal_abbrev'             
+19 5 'Structure model' '_citation.journal_id_ASTM'            
+20 5 'Structure model' '_citation.journal_id_CSD'             
+21 5 'Structure model' '_citation.journal_id_ISSN'            
+22 5 'Structure model' '_citation.journal_volume'             
+23 5 'Structure model' '_citation.page_first'                 
+24 5 'Structure model' '_citation.page_last'                  
+25 5 'Structure model' '_citation.pdbx_database_id_DOI'       
+26 5 'Structure model' '_citation.pdbx_database_id_PubMed'    
+27 5 'Structure model' '_citation.title'                      
+28 5 'Structure model' '_citation.year'                       
+29 5 'Structure model' '_database_2.pdbx_DOI'                 
+30 5 'Structure model' '_database_2.pdbx_database_accession'  
 # 
 _pdbx_refine_tls.id               1 
 _pdbx_refine_tls.pdbx_refine_id   'X-RAY DIFFRACTION' 
