@@ -1,0 +1,987 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+UO9      UO9 '.                                   ' .                  69  34 .
+URR      URR '.                                   ' .                  69  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-UO9  CYS      .        .        UO9      .        .
+ bond_CYS-SG_=_UO9-C14
+CYS-URR  CYS      .        .        URR      .        .
+ bond_CYS-SG_=_URR-C14
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_UO9
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UO9           O6     O    O         0.000     10.065   27.682   27.320
+ UO9           S1     S    ST        0.000      9.571   28.366   26.079
+ UO9           HS1    H    H         0.000      8.356   28.577   26.074
+ UO9           C19    C    CR6       0.000     10.569   29.847   25.886
+ UO9           C24    C    CR16      0.000     11.860   29.875   26.380
+ UO9           H24    H    H         0.000     12.266   29.010   26.889
+ UO9           C23    C    CR16      0.000     12.633   31.015   26.221
+ UO9           H23    H    H         0.000     13.644   31.041   26.609
+ UO9           C22    C    CR16      0.000     12.119   32.115   25.570
+ UO9           H22    H    H         0.000     12.724   33.005   25.447
+ UO9           C21    C    CR16      0.000     10.834   32.081   25.075
+ UO9           H21    H    H         0.000     10.431   32.947   24.564
+ UO9           C20    C    CR16      0.000     10.054   30.945   25.227
+ UO9           H20    H    H         0.000      9.047   30.919   24.831
+ UO9           C16    C    CT        0.000     10.162   27.334   24.652
+ UO9           C17    C    CH3       0.000      9.385   27.764   23.404
+ UO9           H173   H    H         0.000      8.348   27.611   23.561
+ UO9           H172   H    H         0.000      9.563   28.791   23.211
+ UO9           H171   H    H         0.000      9.703   27.190   22.572
+ UO9           C18    C    CH3       0.000     11.676   27.437   24.438
+ UO9           H183   H    H         0.000     11.939   28.444   24.240
+ UO9           H182   H    H         0.000     12.181   27.106   25.309
+ UO9           H181   H    H         0.000     11.960   26.832   23.615
+ UO9           C15    C    CH2       0.000      9.812   25.883   24.982
+ UO9           H151   H    H         0.000      9.784   25.297   24.061
+ UO9           H152   H    H         0.000      8.834   25.845   25.465
+ UO9           O5     O    O2        0.000     10.817   25.336   25.876
+ UO9           C1     C    C         0.000     10.963   24.004   25.793
+ UO9           O1     O    O         0.000     10.430   23.310   24.957
+ UO9           N1     N    N         0.000     11.743   23.542   26.785
+ UO9           C2     C    CH1       0.000     11.764   22.119   27.097
+ UO9           H2     H    H         0.000     12.007   21.571   26.175
+ UO9           C3     C    CH2       0.000     12.843   21.807   28.132
+ UO9           H31    H    H         0.000     12.802   20.730   28.304
+ UO9           H32    H    H         0.000     12.555   22.332   29.045
+ UO9           C4     C    CH1       0.000     14.265   22.207   27.740
+ UO9           H4     H    H         0.000     14.254   23.267   27.451
+ UO9           C6     C    CH3       0.000     14.754   21.399   26.550
+ UO9           H63    H    H         0.000     14.748   20.370   26.797
+ UO9           H62    H    H         0.000     14.115   21.568   25.723
+ UO9           H61    H    H         0.000     15.739   21.698   26.302
+ UO9           C5     C    CH3       0.000     15.216   22.049   28.928
+ UO9           H53    H    H         0.000     14.893   22.668   29.724
+ UO9           H52    H    H         0.000     15.219   21.039   29.247
+ UO9           H51    H    H         0.000     16.195   22.330   28.638
+ UO9           C7     C    C         0.000     10.408   21.622   27.602
+ UO9           O4     O    O         0.000      9.696   22.351   28.295
+ UO9           N2     N    N         0.000     10.052   20.382   27.251
+ UO9           C8     C    CH1       0.000      8.768   19.791   27.629
+ UO9           H8     H    H         0.000      8.304   20.441   28.383
+ UO9           C14    C    CH2       0.000      8.989   18.432   28.255
+ UO9           H141   H    H         0.000      9.537   17.808   27.546
+ UO9           H142   H    H         0.000      8.016   17.981   28.459
+ UO9           O3     O    OH1       0.000      9.725   18.537   29.459
+ UO9           HO3    H    H         0.000      9.849   17.656   29.834
+ UO9           C9     C    CH2       0.000      7.818   19.698   26.436
+ UO9           H91    H    H         0.000      6.965   19.090   26.745
+ UO9           H92    H    H         0.000      8.354   19.189   25.631
+ UO9           C10    C    CH1       0.000      7.325   21.057   25.942
+ UO9           H10    H    H         0.000      8.200   21.655   25.653
+ UO9           C11    C    C         0.000      6.406   20.948   24.738
+ UO9           O2     O    O         0.000      6.614   20.243   23.736
+ UO9           N3     N    N         0.000      5.366   21.751   24.910
+ UO9           C12    C    CH2       0.000      5.433   22.557   26.125
+ UO9           H121   H    H         0.000      4.491   22.556   26.677
+ UO9           H122   H    H         0.000      5.736   23.587   25.924
+ UO9           C13    C    CH2       0.000      6.511   21.860   26.953
+ UO9           H132   H    H         0.000      6.078   21.184   27.692
+ UO9           H131   H    H         0.000      7.161   22.579   27.456
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UO9      O6     n/a    S1     START
+ UO9      S1     O6     C16    .
+ UO9      HS1    S1     .      .
+ UO9      C19    S1     C24    .
+ UO9      C24    C19    C23    .
+ UO9      H24    C24    .      .
+ UO9      C23    C24    C22    .
+ UO9      H23    C23    .      .
+ UO9      C22    C23    C21    .
+ UO9      H22    C22    .      .
+ UO9      C21    C22    C20    .
+ UO9      H21    C21    .      .
+ UO9      C20    C21    H20    .
+ UO9      H20    C20    .      .
+ UO9      C16    S1     C15    .
+ UO9      C17    C16    H171   .
+ UO9      H173   C17    .      .
+ UO9      H172   C17    .      .
+ UO9      H171   C17    .      .
+ UO9      C18    C16    H181   .
+ UO9      H183   C18    .      .
+ UO9      H182   C18    .      .
+ UO9      H181   C18    .      .
+ UO9      C15    C16    O5     .
+ UO9      H151   C15    .      .
+ UO9      H152   C15    .      .
+ UO9      O5     C15    C1     .
+ UO9      C1     O5     N1     .
+ UO9      O1     C1     .      .
+ UO9      N1     C1     C2     .
+ UO9      C2     N1     C7     .
+ UO9      H2     C2     .      .
+ UO9      C3     C2     C4     .
+ UO9      H31    C3     .      .
+ UO9      H32    C3     .      .
+ UO9      C4     C3     C5     .
+ UO9      H4     C4     .      .
+ UO9      C6     C4     H61    .
+ UO9      H63    C6     .      .
+ UO9      H62    C6     .      .
+ UO9      H61    C6     .      .
+ UO9      C5     C4     H51    .
+ UO9      H53    C5     .      .
+ UO9      H52    C5     .      .
+ UO9      H51    C5     .      .
+ UO9      C7     C2     N2     .
+ UO9      O4     C7     .      .
+ UO9      N2     C7     C8     .
+ UO9      C8     N2     C9     .
+ UO9      H8     C8     .      .
+ UO9      C14    C8     O3     .
+ UO9      H141   C14    .      .
+ UO9      H142   C14    .      .
+ UO9      O3     C14    HO3    .
+ UO9      HO3    O3     .      .
+ UO9      C9     C8     C10    .
+ UO9      H91    C9     .      .
+ UO9      H92    C9     .      .
+ UO9      C10    C9     C11    .
+ UO9      H10    C10    .      .
+ UO9      C11    C10    N3     .
+ UO9      O2     C11    .      .
+ UO9      N3     C11    C12    .
+ UO9      C12    N3     C13    .
+ UO9      H121   C12    .      .
+ UO9      H122   C12    .      .
+ UO9      C13    C12    H131   .
+ UO9      H132   C13    .      .
+ UO9      H131   C13    .      END
+ UO9      C10    C13    .    ADD
+ UO9      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UO9      C5     C4        single      1.524    0.020
+ UO9      C10    C13       single      1.524    0.020
+ UO9      C11    C10       single      1.500    0.020
+ UO9      C10    C9        single      1.524    0.020
+ UO9      O1     C1        double      1.220    0.020
+ UO9      N1     C1        deloc       1.330    0.020
+ UO9      C1     O5        single      1.454    0.020
+ UO9      C3     C2        single      1.524    0.020
+ UO9      C7     C2        single      1.500    0.020
+ UO9      C2     N1        single      1.455    0.020
+ UO9      C4     C3        single      1.524    0.020
+ UO9      C6     C4        single      1.524    0.020
+ UO9      N2     C7        deloc       1.330    0.020
+ UO9      O4     C7        double      1.220    0.020
+ UO9      C14    C8        single      1.524    0.020
+ UO9      C9     C8        single      1.524    0.020
+ UO9      C8     N2        single      1.455    0.020
+ UO9      O3     C14       single      1.432    0.020
+ UO9      C13    C12       single      1.524    0.020
+ UO9      C12    N3        single      1.455    0.020
+ UO9      N3     C11       deloc       1.330    0.020
+ UO9      O2     C11       aromatic    1.220    0.020
+ UO9      C15    C16       single      1.524    0.020
+ UO9      O5     C15       single      1.426    0.020
+ UO9      C17    C16       single      1.524    0.020
+ UO9      C18    C16       single      1.524    0.020
+ UO9      C16    S1        single      1.662    0.020
+ UO9      C19    C20       aromatic    1.390    0.020
+ UO9      C24    C19       aromatic    1.390    0.020
+ UO9      C19    S1        double      1.595    0.020
+ UO9      C20    C21       aromatic    1.390    0.020
+ UO9      C21    C22       aromatic    1.390    0.020
+ UO9      C22    C23       aromatic    1.390    0.020
+ UO9      C23    C24       aromatic    1.390    0.020
+ UO9      S1     O6        double      1.436    0.020
+ UO9      H51    C5        single      1.059    0.020
+ UO9      H52    C5        single      1.059    0.020
+ UO9      H53    C5        single      1.059    0.020
+ UO9      H10    C10       single      1.099    0.020
+ UO9      H2     C2        single      1.099    0.020
+ UO9      H31    C3        single      1.092    0.020
+ UO9      H32    C3        single      1.092    0.020
+ UO9      H4     C4        single      1.099    0.020
+ UO9      H61    C6        single      1.059    0.020
+ UO9      H62    C6        single      1.059    0.020
+ UO9      H63    C6        single      1.059    0.020
+ UO9      H8     C8        single      1.099    0.020
+ UO9      H141   C14       single      1.092    0.020
+ UO9      H142   C14       single      1.092    0.020
+ UO9      H131   C13       single      1.092    0.020
+ UO9      H132   C13       single      1.092    0.020
+ UO9      H121   C12       single      1.092    0.020
+ UO9      H122   C12       single      1.092    0.020
+ UO9      H91    C9        single      1.092    0.020
+ UO9      H92    C9        single      1.092    0.020
+ UO9      H151   C15       single      1.092    0.020
+ UO9      H152   C15       single      1.092    0.020
+ UO9      H171   C17       single      1.059    0.020
+ UO9      H172   C17       single      1.059    0.020
+ UO9      H173   C17       single      1.059    0.020
+ UO9      HO3    O3        single      0.967    0.020
+ UO9      H20    C20       single      1.083    0.020
+ UO9      H22    C22       single      1.083    0.020
+ UO9      H181   C18       single      1.059    0.020
+ UO9      H182   C18       single      1.059    0.020
+ UO9      H183   C18       single      1.059    0.020
+ UO9      H21    C21       single      1.083    0.020
+ UO9      H23    C23       single      1.083    0.020
+ UO9      H24    C24       single      1.083    0.020
+ UO9      HS1    S1        single      1.234    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UO9      O6     S1     HS1     109.500    3.000
+ UO9      O6     S1     C19     109.500    3.000
+ UO9      O6     S1     C16     109.500    3.000
+ UO9      HS1    S1     C19     109.500    3.000
+ UO9      HS1    S1     C16     109.500    3.000
+ UO9      C19    S1     C16     109.500    3.000
+ UO9      S1     C19    C24     120.000    3.000
+ UO9      S1     C19    C20     120.000    3.000
+ UO9      C24    C19    C20     120.000    3.000
+ UO9      C19    C24    H24     120.000    3.000
+ UO9      C19    C24    C23     120.000    3.000
+ UO9      H24    C24    C23     120.000    3.000
+ UO9      C24    C23    H23     120.000    3.000
+ UO9      C24    C23    C22     120.000    3.000
+ UO9      H23    C23    C22     120.000    3.000
+ UO9      C23    C22    H22     120.000    3.000
+ UO9      C23    C22    C21     120.000    3.000
+ UO9      H22    C22    C21     120.000    3.000
+ UO9      C22    C21    H21     120.000    3.000
+ UO9      C22    C21    C20     120.000    3.000
+ UO9      H21    C21    C20     120.000    3.000
+ UO9      C21    C20    H20     120.000    3.000
+ UO9      C21    C20    C19     120.000    3.000
+ UO9      H20    C20    C19     120.000    3.000
+ UO9      S1     C16    C17     109.500    3.000
+ UO9      S1     C16    C18     109.500    3.000
+ UO9      S1     C16    C15     109.500    3.000
+ UO9      C17    C16    C18     111.000    3.000
+ UO9      C17    C16    C15     111.000    3.000
+ UO9      C18    C16    C15     111.000    3.000
+ UO9      C16    C17    H173    109.470    3.000
+ UO9      C16    C17    H172    109.470    3.000
+ UO9      C16    C17    H171    109.470    3.000
+ UO9      H173   C17    H172    109.470    3.000
+ UO9      H173   C17    H171    109.470    3.000
+ UO9      H172   C17    H171    109.470    3.000
+ UO9      C16    C18    H183    109.470    3.000
+ UO9      C16    C18    H182    109.470    3.000
+ UO9      C16    C18    H181    109.470    3.000
+ UO9      H183   C18    H182    109.470    3.000
+ UO9      H183   C18    H181    109.470    3.000
+ UO9      H182   C18    H181    109.470    3.000
+ UO9      C16    C15    H151    109.470    3.000
+ UO9      C16    C15    H152    109.470    3.000
+ UO9      C16    C15    O5      109.500    3.000
+ UO9      H151   C15    H152    107.900    3.000
+ UO9      H151   C15    O5      109.470    3.000
+ UO9      H152   C15    O5      109.470    3.000
+ UO9      C15    O5     C1      120.000    3.000
+ UO9      O5     C1     O1      119.000    3.000
+ UO9      O5     C1     N1      120.000    3.000
+ UO9      O1     C1     N1      123.000    3.000
+ UO9      C1     N1     C2      121.000    3.000
+ UO9      N1     C2     H2      109.470    3.000
+ UO9      N1     C2     C3      105.000    3.000
+ UO9      N1     C2     C7      111.600    3.000
+ UO9      H2     C2     C3      108.340    3.000
+ UO9      H2     C2     C7      108.810    3.000
+ UO9      C3     C2     C7      109.470    3.000
+ UO9      C2     C3     H31     109.470    3.000
+ UO9      C2     C3     H32     109.470    3.000
+ UO9      C2     C3     C4      111.000    3.000
+ UO9      H31    C3     H32     107.900    3.000
+ UO9      H31    C3     C4      109.470    3.000
+ UO9      H32    C3     C4      109.470    3.000
+ UO9      C3     C4     H4      108.340    3.000
+ UO9      C3     C4     C6      111.000    3.000
+ UO9      C3     C4     C5      111.000    3.000
+ UO9      H4     C4     C6      108.340    3.000
+ UO9      H4     C4     C5      108.340    3.000
+ UO9      C6     C4     C5      111.000    3.000
+ UO9      C4     C6     H63     109.470    3.000
+ UO9      C4     C6     H62     109.470    3.000
+ UO9      C4     C6     H61     109.470    3.000
+ UO9      H63    C6     H62     109.470    3.000
+ UO9      H63    C6     H61     109.470    3.000
+ UO9      H62    C6     H61     109.470    3.000
+ UO9      C4     C5     H53     109.470    3.000
+ UO9      C4     C5     H52     109.470    3.000
+ UO9      C4     C5     H51     109.470    3.000
+ UO9      H53    C5     H52     109.470    3.000
+ UO9      H53    C5     H51     109.470    3.000
+ UO9      H52    C5     H51     109.470    3.000
+ UO9      C2     C7     O4      120.500    3.000
+ UO9      C2     C7     N2      116.500    3.000
+ UO9      O4     C7     N2      123.000    3.000
+ UO9      C7     N2     C8      121.000    3.000
+ UO9      N2     C8     H8      109.470    3.000
+ UO9      N2     C8     C14     105.000    3.000
+ UO9      N2     C8     C9      105.000    3.000
+ UO9      H8     C8     C14     108.340    3.000
+ UO9      H8     C8     C9      108.340    3.000
+ UO9      C14    C8     C9      109.470    3.000
+ UO9      C8     C14    H141    109.470    3.000
+ UO9      C8     C14    H142    109.470    3.000
+ UO9      C8     C14    O3      109.470    3.000
+ UO9      H141   C14    H142    107.900    3.000
+ UO9      H141   C14    O3      109.470    3.000
+ UO9      H142   C14    O3      109.470    3.000
+ UO9      C14    O3     HO3     109.470    3.000
+ UO9      C8     C9     H91     109.470    3.000
+ UO9      C8     C9     H92     109.470    3.000
+ UO9      C8     C9     C10     111.000    3.000
+ UO9      H91    C9     H92     107.900    3.000
+ UO9      H91    C9     C10     109.470    3.000
+ UO9      H92    C9     C10     109.470    3.000
+ UO9      C9     C10    H10     108.340    3.000
+ UO9      C9     C10    C11     109.470    3.000
+ UO9      C9     C10    C13     109.470    3.000
+ UO9      H10    C10    C11     108.810    3.000
+ UO9      H10    C10    C13     108.340    3.000
+ UO9      C11    C10    C13     109.470    3.000
+ UO9      C10    C11    O2      120.500    3.000
+ UO9      C10    C11    N3      116.500    3.000
+ UO9      O2     C11    N3      123.000    3.000
+ UO9      C11    N3     C12     127.000    3.000
+ UO9      N3     C12    H121    109.470    3.000
+ UO9      N3     C12    H122    109.470    3.000
+ UO9      N3     C12    C13     105.000    3.000
+ UO9      H121   C12    H122    107.900    3.000
+ UO9      H121   C12    C13     109.470    3.000
+ UO9      H122   C12    C13     109.470    3.000
+ UO9      C12    C13    H132    109.470    3.000
+ UO9      C12    C13    H131    109.470    3.000
+ UO9      C12    C13    C10     111.000    3.000
+ UO9      H132   C13    H131    107.900    3.000
+ UO9      H132   C13    C10     109.470    3.000
+ UO9      H131   C13    C10     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UO9      var_1            O6     S1     C19    C24               28.201           20.000   3
+ UO9      CONST_1          S1     C19    C20    C21                0.000            0.000   0
+ UO9      CONST_2          S1     C19    C24    C23                0.000            0.000   0
+ UO9      CONST_3          C19    C24    C23    C22                0.000            0.000   0
+ UO9      CONST_4          C24    C23    C22    C21                0.000            0.000   0
+ UO9      CONST_5          C23    C22    C21    C20                0.000            0.000   0
+ UO9      CONST_6          C22    C21    C20    C19                0.000            0.000   0
+ UO9      var_2            O6     S1     C16    C15               47.973           20.000   3
+ UO9      var_3            S1     C16    C17    H171             180.000           20.000   3
+ UO9      var_4            S1     C16    C18    H181             180.000           20.000   3
+ UO9      var_5            S1     C16    C15    O5               -81.122           20.000   3
+ UO9      var_6            C16    C15    O5     C1              -153.124           20.000   3
+ UO9      var_7            C15    O5     C1     N1              -170.101           20.000   3
+ UO9      CONST_7          O5     C1     N1     C2               180.000            0.000   0
+ UO9      var_8            C1     N1     C2     C7                 0.000           20.000   3
+ UO9      var_9            N1     C2     C3     C4               180.000           20.000   3
+ UO9      var_10           C2     C3     C4     C5               180.000           20.000   3
+ UO9      var_11           C3     C4     C6     H61              180.000           20.000   3
+ UO9      var_12           C3     C4     C5     H51              180.000           20.000   3
+ UO9      var_13           N1     C2     C7     N2               180.000           20.000   3
+ UO9      CONST_8          C2     C7     N2     C8               180.000            0.000   0
+ UO9      var_14           C7     N2     C8     C9                 0.000           20.000   3
+ UO9      var_15           N2     C8     C14    O3               180.000           20.000   3
+ UO9      var_16           C8     C14    O3     HO3              180.000           20.000   3
+ UO9      var_17           N2     C8     C9     C10              180.000           20.000   3
+ UO9      var_18           C8     C9     C10    C11              180.000           20.000   3
+ UO9      var_19           C9     C10    C13    C12              180.000           20.000   3
+ UO9      var_20           C9     C10    C11    N3               180.000           20.000   3
+ UO9      var_21           C10    C11    N3     C12              180.000           20.000   2
+ UO9      var_22           C11    N3     C12    C13              -16.029           20.000   3
+ UO9      var_23           N3     C12    C13    C10              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ UO9      chir_01          C10    C13    C11    C9        positiv
+ UO9      chir_02          C2     C3     C7     N1        negativ
+ UO9      chir_03          C4     C5     C3     C6        positiv
+ UO9      chir_04          C8     C14    C9     N2        positiv
+ UO9      chir_05          C16    C15    C17    C18       positiv
+ UO9      chir_06          S1     C16    C19    O6        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ UO9      plan-1            C1        0.020
+ UO9      plan-1            O1        0.020
+ UO9      plan-1            N1        0.020
+ UO9      plan-1            O5        0.020
+ UO9      plan-1            C2        0.020
+ UO9      plan-2            C7        0.020
+ UO9      plan-2            C2        0.020
+ UO9      plan-2            N2        0.020
+ UO9      plan-2            O4        0.020
+ UO9      plan-2            C8        0.020
+ UO9      plan-3            C11       0.020
+ UO9      plan-3            C10       0.020
+ UO9      plan-3            N3        0.020
+ UO9      plan-3            O2        0.020
+ UO9      plan-4            C19       0.020
+ UO9      plan-4            C20       0.020
+ UO9      plan-4            C24       0.020
+ UO9      plan-4            S1        0.020
+ UO9      plan-4            C22       0.020
+ UO9      plan-4            C21       0.020
+ UO9      plan-4            C23       0.020
+ UO9      plan-4            H20       0.020
+ UO9      plan-4            H22       0.020
+ UO9      plan-4            H21       0.020
+ UO9      plan-4            H23       0.020
+ UO9      plan-4            H24       0.020
+ UO9      plan-5            N3        0.020
+ UO9      plan-5            C12       0.020
+ UO9      plan-5            C11       0.020
+#
+data_comp_URR
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ URR           O6     O    O         0.000     10.242   27.576   27.418
+ URR           S1     S    ST        0.000      9.667   28.237   26.200
+ URR           HS1    H    H         0.000      8.448   28.415   26.255
+ URR           C19    C    CR6       0.000     10.613   29.744   25.949
+ URR           C24    C    CR16      0.000     11.914   29.819   26.409
+ URR           H24    H    H         0.000     12.358   28.976   26.923
+ URR           C23    C    CR16      0.000     12.649   30.977   26.210
+ URR           H23    H    H         0.000     13.668   31.039   26.572
+ URR           C22    C    CR16      0.000     12.087   32.050   25.553
+ URR           H22    H    H         0.000     12.663   32.954   25.399
+ URR           C21    C    CR16      0.000     10.790   31.970   25.092
+ URR           H21    H    H         0.000     10.349   32.814   24.576
+ URR           C20    C    CR16      0.000     10.048   30.815   25.286
+ URR           H20    H    H         0.000      9.031   30.753   24.919
+ URR           C16    C    CT        0.000     10.214   27.209   24.752
+ URR           C17    C    CH3       0.000      9.441   27.668   23.511
+ URR           H173   H    H         0.000      8.402   27.540   23.672
+ URR           H172   H    H         0.000      9.644   28.691   23.324
+ URR           H171   H    H         0.000      9.740   27.092   22.673
+ URR           C18    C    CH3       0.000     11.728   27.299   24.536
+ URR           H183   H    H         0.000     12.001   28.306   24.352
+ URR           H182   H    H         0.000     12.231   26.951   25.401
+ URR           H181   H    H         0.000     12.004   26.702   23.705
+ URR           C15    C    CH2       0.000      9.846   25.759   25.067
+ URR           H151   H    H         0.000      9.884   25.167   24.150
+ URR           H152   H    H         0.000      8.837   25.722   25.481
+ URR           O5     O    O2        0.000     10.787   25.220   26.032
+ URR           C1     C    C         0.000     10.793   23.879   26.112
+ URR           O1     O    O         0.000     10.049   23.149   25.501
+ URR           N1     N    N         0.000     11.746   23.451   26.955
+ URR           C2     C    CH1       0.000     11.871   22.029   27.245
+ URR           H2     H    H         0.000     12.065   21.503   26.299
+ URR           C3     C    CH2       0.000     13.046   21.767   28.182
+ URR           H31    H    H         0.000     13.083   20.686   28.334
+ URR           H32    H    H         0.000     12.803   22.259   29.126
+ URR           C4     C    CH1       0.000     14.403   22.259   27.686
+ URR           H4     H    H         0.000     14.303   23.318   27.409
+ URR           C6     C    CH3       0.000     14.848   21.488   26.455
+ URR           H63    H    H         0.000     14.927   20.460   26.693
+ URR           H62    H    H         0.000     14.137   21.619   25.682
+ URR           H61    H    H         0.000     15.790   21.850   26.134
+ URR           C5     C    CH3       0.000     15.445   22.155   28.798
+ URR           H53    H    H         0.000     15.142   22.748   29.622
+ URR           H52    H    H         0.000     15.535   21.145   29.105
+ URR           H51    H    H         0.000     16.380   22.499   28.440
+ URR           C7     C    C         0.000     10.600   21.446   27.861
+ URR           O4     O    O         0.000     10.127   21.935   28.889
+ URR           N2     N    N         0.000     10.055   20.400   27.231
+ URR           C8     C    CH1       0.000      8.785   19.809   27.643
+ URR           H8     H    H         0.000      8.334   20.466   28.399
+ URR           C14    C    CH2       0.000      9.044   18.466   28.286
+ URR           H141   H    H         0.000      9.757   18.601   29.102
+ URR           H142   H    H         0.000      9.473   17.796   27.537
+ URR           O3     O    OH1       0.000      7.841   17.904   28.794
+ URR           HO3    H    H         0.000      8.033   17.048   29.199
+ URR           C9     C    CH2       0.000      7.807   19.695   26.472
+ URR           H91    H    H         0.000      6.960   19.099   26.818
+ URR           H92    H    H         0.000      8.325   19.161   25.672
+ URR           C10    C    CH1       0.000      7.305   21.040   25.947
+ URR           H10    H    H         0.000      8.176   21.632   25.631
+ URR           C13    C    CH2       0.000      6.501   21.870   26.943
+ URR           H131   H    H         0.000      7.123   22.617   27.441
+ URR           H132   H    H         0.000      6.017   21.242   27.693
+ URR           C12    C    CH2       0.000      5.438   22.571   26.100
+ URR           H121   H    H         0.000      5.732   23.584   25.817
+ URR           H122   H    H         0.000      4.466   22.601   26.596
+ URR           N3     N    N         0.000      5.351   21.737   24.906
+ URR           C11    C    C         0.000      6.370   20.901   24.758
+ URR           O2     O    O         0.000      6.549   20.148   23.785
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ URR      O6     n/a    S1     START
+ URR      S1     O6     C16    .
+ URR      HS1    S1     .      .
+ URR      C19    S1     C24    .
+ URR      C24    C19    C23    .
+ URR      H24    C24    .      .
+ URR      C23    C24    C22    .
+ URR      H23    C23    .      .
+ URR      C22    C23    C21    .
+ URR      H22    C22    .      .
+ URR      C21    C22    C20    .
+ URR      H21    C21    .      .
+ URR      C20    C21    H20    .
+ URR      H20    C20    .      .
+ URR      C16    S1     C15    .
+ URR      C17    C16    H171   .
+ URR      H173   C17    .      .
+ URR      H172   C17    .      .
+ URR      H171   C17    .      .
+ URR      C18    C16    H181   .
+ URR      H183   C18    .      .
+ URR      H182   C18    .      .
+ URR      H181   C18    .      .
+ URR      C15    C16    O5     .
+ URR      H151   C15    .      .
+ URR      H152   C15    .      .
+ URR      O5     C15    C1     .
+ URR      C1     O5     N1     .
+ URR      O1     C1     .      .
+ URR      N1     C1     C2     .
+ URR      C2     N1     C7     .
+ URR      H2     C2     .      .
+ URR      C3     C2     C4     .
+ URR      H31    C3     .      .
+ URR      H32    C3     .      .
+ URR      C4     C3     C5     .
+ URR      H4     C4     .      .
+ URR      C6     C4     H61    .
+ URR      H63    C6     .      .
+ URR      H62    C6     .      .
+ URR      H61    C6     .      .
+ URR      C5     C4     H51    .
+ URR      H53    C5     .      .
+ URR      H52    C5     .      .
+ URR      H51    C5     .      .
+ URR      C7     C2     N2     .
+ URR      O4     C7     .      .
+ URR      N2     C7     C8     .
+ URR      C8     N2     C9     .
+ URR      H8     C8     .      .
+ URR      C14    C8     O3     .
+ URR      H141   C14    .      .
+ URR      H142   C14    .      .
+ URR      O3     C14    HO3    .
+ URR      HO3    O3     .      .
+ URR      C9     C8     C10    .
+ URR      H91    C9     .      .
+ URR      H92    C9     .      .
+ URR      C10    C9     C13    .
+ URR      H10    C10    .      .
+ URR      C13    C10    C12    .
+ URR      H131   C13    .      .
+ URR      H132   C13    .      .
+ URR      C12    C13    N3     .
+ URR      H121   C12    .      .
+ URR      H122   C12    .      .
+ URR      N3     C12    C11    .
+ URR      C11    N3     O2     .
+ URR      O2     C11    .      END
+ URR      C11    C10    .    ADD
+ URR      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ URR      C11    C10       single      1.500    0.020
+ URR      C11    N3        aromatic    1.330    0.020
+ URR      O2     C11       aromatic    1.220    0.020
+ URR      C12    C13       single      1.524    0.020
+ URR      N3     C12       single      1.455    0.020
+ URR      C13    C10       single      1.524    0.020
+ URR      C5     C4        single      1.524    0.020
+ URR      C10    C9        single      1.524    0.020
+ URR      O1     C1        double      1.220    0.020
+ URR      N1     C1        deloc       1.330    0.020
+ URR      C1     O5        single      1.454    0.020
+ URR      C3     C2        single      1.524    0.020
+ URR      C7     C2        single      1.500    0.020
+ URR      C2     N1        single      1.455    0.020
+ URR      C4     C3        single      1.524    0.020
+ URR      C6     C4        single      1.524    0.020
+ URR      N2     C7        deloc       1.330    0.020
+ URR      O4     C7        double      1.220    0.020
+ URR      C14    C8        single      1.524    0.020
+ URR      C9     C8        single      1.524    0.020
+ URR      C8     N2        single      1.455    0.020
+ URR      O3     C14       single      1.432    0.020
+ URR      C15    C16       single      1.524    0.020
+ URR      O5     C15       single      1.426    0.020
+ URR      C17    C16       single      1.524    0.020
+ URR      C18    C16       single      1.524    0.020
+ URR      C16    S1        single      1.662    0.020
+ URR      C19    S1        double      1.595    0.020
+ URR      S1     O6        double      1.436    0.020
+ URR      C19    C20       aromatic    1.390    0.020
+ URR      C24    C19       aromatic    1.390    0.020
+ URR      C20    C21       aromatic    1.390    0.020
+ URR      C21    C22       aromatic    1.390    0.020
+ URR      C22    C23       aromatic    1.390    0.020
+ URR      C23    C24       aromatic    1.390    0.020
+ URR      H121   C12       single      1.092    0.020
+ URR      H122   C12       single      1.092    0.020
+ URR      H131   C13       single      1.092    0.020
+ URR      H132   C13       single      1.092    0.020
+ URR      H51    C5        single      1.059    0.020
+ URR      H52    C5        single      1.059    0.020
+ URR      H53    C5        single      1.059    0.020
+ URR      H10    C10       single      1.099    0.020
+ URR      H2     C2        single      1.099    0.020
+ URR      H31    C3        single      1.092    0.020
+ URR      H32    C3        single      1.092    0.020
+ URR      H4     C4        single      1.099    0.020
+ URR      H61    C6        single      1.059    0.020
+ URR      H62    C6        single      1.059    0.020
+ URR      H63    C6        single      1.059    0.020
+ URR      H8     C8        single      1.099    0.020
+ URR      H141   C14       single      1.092    0.020
+ URR      H142   C14       single      1.092    0.020
+ URR      H91    C9        single      1.092    0.020
+ URR      H92    C9        single      1.092    0.020
+ URR      H151   C15       single      1.092    0.020
+ URR      H152   C15       single      1.092    0.020
+ URR      HO3    O3        single      0.967    0.020
+ URR      H171   C17       single      1.059    0.020
+ URR      H172   C17       single      1.059    0.020
+ URR      H173   C17       single      1.059    0.020
+ URR      H181   C18       single      1.059    0.020
+ URR      H182   C18       single      1.059    0.020
+ URR      H183   C18       single      1.059    0.020
+ URR      HS1    S1        single      1.234    0.020
+ URR      H20    C20       single      1.083    0.020
+ URR      H21    C21       single      1.083    0.020
+ URR      H22    C22       single      1.083    0.020
+ URR      H23    C23       single      1.083    0.020
+ URR      H24    C24       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ URR      O6     S1     HS1     109.500    3.000
+ URR      O6     S1     C19     109.500    3.000
+ URR      O6     S1     C16     109.500    3.000
+ URR      HS1    S1     C19     109.500    3.000
+ URR      HS1    S1     C16     109.500    3.000
+ URR      C19    S1     C16     109.500    3.000
+ URR      S1     C19    C24     120.000    3.000
+ URR      S1     C19    C20     120.000    3.000
+ URR      C24    C19    C20     120.000    3.000
+ URR      C19    C24    H24     120.000    3.000
+ URR      C19    C24    C23     120.000    3.000
+ URR      H24    C24    C23     120.000    3.000
+ URR      C24    C23    H23     120.000    3.000
+ URR      C24    C23    C22     120.000    3.000
+ URR      H23    C23    C22     120.000    3.000
+ URR      C23    C22    H22     120.000    3.000
+ URR      C23    C22    C21     120.000    3.000
+ URR      H22    C22    C21     120.000    3.000
+ URR      C22    C21    H21     120.000    3.000
+ URR      C22    C21    C20     120.000    3.000
+ URR      H21    C21    C20     120.000    3.000
+ URR      C21    C20    H20     120.000    3.000
+ URR      C21    C20    C19     120.000    3.000
+ URR      H20    C20    C19     120.000    3.000
+ URR      S1     C16    C17     109.500    3.000
+ URR      S1     C16    C18     109.500    3.000
+ URR      S1     C16    C15     109.500    3.000
+ URR      C17    C16    C18     111.000    3.000
+ URR      C17    C16    C15     111.000    3.000
+ URR      C18    C16    C15     111.000    3.000
+ URR      C16    C17    H173    109.470    3.000
+ URR      C16    C17    H172    109.470    3.000
+ URR      C16    C17    H171    109.470    3.000
+ URR      H173   C17    H172    109.470    3.000
+ URR      H173   C17    H171    109.470    3.000
+ URR      H172   C17    H171    109.470    3.000
+ URR      C16    C18    H183    109.470    3.000
+ URR      C16    C18    H182    109.470    3.000
+ URR      C16    C18    H181    109.470    3.000
+ URR      H183   C18    H182    109.470    3.000
+ URR      H183   C18    H181    109.470    3.000
+ URR      H182   C18    H181    109.470    3.000
+ URR      C16    C15    H151    109.470    3.000
+ URR      C16    C15    H152    109.470    3.000
+ URR      C16    C15    O5      109.500    3.000
+ URR      H151   C15    H152    107.900    3.000
+ URR      H151   C15    O5      109.470    3.000
+ URR      H152   C15    O5      109.470    3.000
+ URR      C15    O5     C1      120.000    3.000
+ URR      O5     C1     O1      119.000    3.000
+ URR      O5     C1     N1      120.000    3.000
+ URR      O1     C1     N1      123.000    3.000
+ URR      C1     N1     C2      121.000    3.000
+ URR      N1     C2     H2      109.470    3.000
+ URR      N1     C2     C3      105.000    3.000
+ URR      N1     C2     C7      111.600    3.000
+ URR      H2     C2     C3      108.340    3.000
+ URR      H2     C2     C7      108.810    3.000
+ URR      C3     C2     C7      109.470    3.000
+ URR      C2     C3     H31     109.470    3.000
+ URR      C2     C3     H32     109.470    3.000
+ URR      C2     C3     C4      111.000    3.000
+ URR      H31    C3     H32     107.900    3.000
+ URR      H31    C3     C4      109.470    3.000
+ URR      H32    C3     C4      109.470    3.000
+ URR      C3     C4     H4      108.340    3.000
+ URR      C3     C4     C6      111.000    3.000
+ URR      C3     C4     C5      111.000    3.000
+ URR      H4     C4     C6      108.340    3.000
+ URR      H4     C4     C5      108.340    3.000
+ URR      C6     C4     C5      111.000    3.000
+ URR      C4     C6     H63     109.470    3.000
+ URR      C4     C6     H62     109.470    3.000
+ URR      C4     C6     H61     109.470    3.000
+ URR      H63    C6     H62     109.470    3.000
+ URR      H63    C6     H61     109.470    3.000
+ URR      H62    C6     H61     109.470    3.000
+ URR      C4     C5     H53     109.470    3.000
+ URR      C4     C5     H52     109.470    3.000
+ URR      C4     C5     H51     109.470    3.000
+ URR      H53    C5     H52     109.470    3.000
+ URR      H53    C5     H51     109.470    3.000
+ URR      H52    C5     H51     109.470    3.000
+ URR      C2     C7     O4      120.500    3.000
+ URR      C2     C7     N2      116.500    3.000
+ URR      O4     C7     N2      123.000    3.000
+ URR      C7     N2     C8      121.000    3.000
+ URR      N2     C8     H8      109.470    3.000
+ URR      N2     C8     C14     105.000    3.000
+ URR      N2     C8     C9      105.000    3.000
+ URR      H8     C8     C14     108.340    3.000
+ URR      H8     C8     C9      108.340    3.000
+ URR      C14    C8     C9      109.470    3.000
+ URR      C8     C14    H141    109.470    3.000
+ URR      C8     C14    H142    109.470    3.000
+ URR      C8     C14    O3      109.470    3.000
+ URR      H141   C14    H142    107.900    3.000
+ URR      H141   C14    O3      109.470    3.000
+ URR      H142   C14    O3      109.470    3.000
+ URR      C14    O3     HO3     109.470    3.000
+ URR      C8     C9     H91     109.470    3.000
+ URR      C8     C9     H92     109.470    3.000
+ URR      C8     C9     C10     111.000    3.000
+ URR      H91    C9     H92     107.900    3.000
+ URR      H91    C9     C10     109.470    3.000
+ URR      H92    C9     C10     109.470    3.000
+ URR      C9     C10    H10     108.340    3.000
+ URR      C9     C10    C13     109.470    3.000
+ URR      C9     C10    C11     109.470    3.000
+ URR      H10    C10    C13     108.340    3.000
+ URR      H10    C10    C11     108.810    3.000
+ URR      C13    C10    C11     109.470    3.000
+ URR      C10    C13    H131    109.470    3.000
+ URR      C10    C13    H132    109.470    3.000
+ URR      C10    C13    C12     111.000    3.000
+ URR      H131   C13    H132    107.900    3.000
+ URR      H131   C13    C12     109.470    3.000
+ URR      H132   C13    C12     109.470    3.000
+ URR      C13    C12    H121    109.470    3.000
+ URR      C13    C12    H122    109.470    3.000
+ URR      C13    C12    N3      105.000    3.000
+ URR      H121   C12    H122    107.900    3.000
+ URR      H121   C12    N3      109.470    3.000
+ URR      H122   C12    N3      109.470    3.000
+ URR      C12    N3     C11     127.000    3.000
+ URR      N3     C11    O2      123.000    3.000
+ URR      N3     C11    C10     116.500    3.000
+ URR      O2     C11    C10     120.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ URR      var_1            O6     S1     C19    C24               26.542           20.000   3
+ URR      CONST_1          S1     C19    C20    C21                0.000            0.000   0
+ URR      CONST_2          S1     C19    C24    C23                0.000            0.000   0
+ URR      CONST_3          C19    C24    C23    C22                0.000            0.000   0
+ URR      CONST_4          C24    C23    C22    C21                0.000            0.000   0
+ URR      CONST_5          C23    C22    C21    C20                0.000            0.000   0
+ URR      CONST_6          C22    C21    C20    C19                0.000            0.000   0
+ URR      var_2            O6     S1     C16    C15               51.353           20.000   3
+ URR      var_3            S1     C16    C17    H171             180.000           20.000   3
+ URR      var_4            S1     C16    C18    H181             180.000           20.000   3
+ URR      var_5            S1     C16    C15    O5               -75.904           20.000   3
+ URR      var_6            C16    C15    O5     C1              -162.822           20.000   3
+ URR      var_7            C15    O5     C1     N1               175.855           20.000   3
+ URR      CONST_7          O5     C1     N1     C2               180.000            0.000   0
+ URR      var_8            C1     N1     C2     C7                 0.000           20.000   3
+ URR      var_9            N1     C2     C3     C4               180.000           20.000   3
+ URR      var_10           C2     C3     C4     C5               180.000           20.000   3
+ URR      var_11           C3     C4     C6     H61              180.000           20.000   3
+ URR      var_12           C3     C4     C5     H51              180.000           20.000   3
+ URR      var_13           N1     C2     C7     N2               180.000           20.000   3
+ URR      CONST_8          C2     C7     N2     C8               180.000            0.000   0
+ URR      var_14           C7     N2     C8     C9                 0.000           20.000   3
+ URR      var_15           N2     C8     C14    O3               180.000           20.000   3
+ URR      var_16           C8     C14    O3     HO3              180.000           20.000   3
+ URR      var_17           N2     C8     C9     C10              180.000           20.000   3
+ URR      var_18           C8     C9     C10    C13              180.000           20.000   3
+ URR      var_19           C9     C10    C13    C12              180.000           20.000   3
+ URR      var_20           C10    C13    C12    N3               180.000           20.000   3
+ URR      var_21           C13    C12    N3     C11              -15.669           20.000   3
+ URR      var_22           C12    N3     C11    O2               180.000           20.000   2
+ URR      var_23           N3     C11    C10    C9               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ URR      chir_01          C10    C11    C13    C9        negativ
+ URR      chir_02          C2     C3     C7     N1        negativ
+ URR      chir_03          C4     C5     C3     C6        positiv
+ URR      chir_04          C8     C14    C9     N2        positiv
+ URR      chir_05          C16    C15    C17    C18       positiv
+ URR      chir_06          S1     C16    C19    O6        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ URR      plan-1            C11       0.020
+ URR      plan-1            C10       0.020
+ URR      plan-1            N3        0.020
+ URR      plan-1            O2        0.020
+ URR      plan-2            C1        0.020
+ URR      plan-2            O1        0.020
+ URR      plan-2            N1        0.020
+ URR      plan-2            O5        0.020
+ URR      plan-2            C2        0.020
+ URR      plan-3            C7        0.020
+ URR      plan-3            C2        0.020
+ URR      plan-3            N2        0.020
+ URR      plan-3            O4        0.020
+ URR      plan-3            C8        0.020
+ URR      plan-4            N3        0.020
+ URR      plan-4            C11       0.020
+ URR      plan-4            C12       0.020
+ URR      plan-5            C19       0.020
+ URR      plan-5            S1        0.020
+ URR      plan-5            C20       0.020
+ URR      plan-5            C24       0.020
+ URR      plan-5            C21       0.020
+ URR      plan-5            C22       0.020
+ URR      plan-5            C23       0.020
+ URR      plan-5            H20       0.020
+ URR      plan-5            H21       0.020
+ URR      plan-5            H22       0.020
+ URR      plan-5            H23       0.020
+ URR      plan-5            H24       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-UO9
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-UO9  1 SG      2 C14       .           1.810    0.020
+#
+data_link_CYS-URR
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-URR  1 SG      2 C14       .           1.830    0.020
+# ------------------------------------------------------

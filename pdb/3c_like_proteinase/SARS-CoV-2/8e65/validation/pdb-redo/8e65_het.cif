@@ -1,0 +1,507 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WF5      WF5 '.                                   ' .                  67  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-WF5  CYS      .        .        WF5      .        .
+ bond_CYS-SG_=_WF5-C31
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WF5
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WF5           CL01   CL   CL        0.000      3.575    5.863   26.057
+ WF5           C02    C    CR6       0.000      4.764    6.675   25.001
+ WF5           C03    C    CR16      0.000      4.345    7.702   24.097
+ WF5           H03    H    H         0.000      3.301    7.987   24.052
+ WF5           C04    C    CR16      0.000      5.286    8.347   23.262
+ WF5           H04    H    H         0.000      4.968    9.119   22.573
+ WF5           C07    C    CR6       0.000      6.640    7.974   23.337
+ WF5           C06    C    CR16      0.000      7.060    6.932   24.220
+ WF5           H06    H    H         0.000      8.101    6.633   24.250
+ WF5           C05    C    CR16      0.000      6.116    6.291   25.055
+ WF5           H05    H    H         0.000      6.433    5.508   25.733
+ WF5           O08    O    O2        0.000      7.599    8.634   22.455
+ WF5           C09    C    CT        0.000      8.297    9.845   22.920
+ WF5           C10    C    CH3       0.000      8.436    9.890   24.471
+ WF5           H103   H    H         0.000      7.474    9.877   24.920
+ WF5           H102   H    H         0.000      8.987    9.048   24.808
+ WF5           H101   H    H         0.000      8.943   10.776   24.762
+ WF5           C11    C    CH3       0.000      7.628   11.121   22.424
+ WF5           H113   H    H         0.000      7.625   11.129   21.365
+ WF5           H112   H    H         0.000      6.631   11.158   22.780
+ WF5           H111   H    H         0.000      8.163   11.962   22.782
+ WF5           C12    C    CH2       0.000      9.758    9.705   22.291
+ WF5           H121   H    H         0.000     10.400   10.551   22.543
+ WF5           H122   H    H         0.000      9.732    9.580   21.207
+ WF5           O13    O    O2        0.000     10.266    8.533   22.889
+ WF5           C14    C    C         0.000     10.322    7.322   22.081
+ WF5           O34    O    O         0.000     10.085    7.353   20.908
+ WF5           N15    N    NH1       0.000     10.676    6.101   22.808
+ WF5           HN15   H    H         0.000     10.821    6.113   23.807
+ WF5           C16    C    CH1       0.000     10.811    4.882   22.051
+ WF5           H16    H    H         0.000     11.376    5.077   21.129
+ WF5           C17    C    CH2       0.000     11.486    3.822   22.840
+ WF5           H171   H    H         0.000     11.576    2.935   22.210
+ WF5           H172   H    H         0.000     10.860    3.591   23.704
+ WF5           C18    C    CH1       0.000     12.918    4.269   23.330
+ WF5           H18    H    H         0.000     12.817    5.184   23.931
+ WF5           C20    C    CH3       0.000     13.781    4.576   22.106
+ WF5           H203   H    H         0.000     13.862    3.709   21.503
+ WF5           H202   H    H         0.000     13.334    5.355   21.544
+ WF5           H201   H    H         0.000     14.747    4.878   22.420
+ WF5           C19    C    CH3       0.000     13.569    3.171   24.201
+ WF5           H193   H    H         0.000     12.963    2.982   25.051
+ WF5           H192   H    H         0.000     13.667    2.278   23.637
+ WF5           H191   H    H         0.000     14.529    3.490   24.520
+ WF5           C21    C    C         0.000      9.386    4.447   21.703
+ WF5           O33    O    O         0.000      8.481    4.537   22.487
+ WF5           N22    N    NH1       0.000      9.147    3.903   20.353
+ WF5           HN22   H    H         0.000      9.910    3.822   19.696
+ WF5           C23    C    CH1       0.000      7.825    3.489   19.976
+ WF5           H23    H    H         0.000      7.141    3.621   20.826
+ WF5           C31    C    CH2       0.000      7.952    1.974   19.638
+ WF5           H311   H    H         0.000      8.399    1.486   20.507
+ WF5           H312   H    H         0.000      8.630    1.889   18.786
+ WF5           O32    O    OH1       0.000      6.694    1.338   19.320
+ WF5           HO32   H    H         0.000      6.844    0.403   19.121
+ WF5           C24    C    CH2       0.000      7.386    4.440   18.788
+ WF5           H241   H    H         0.000      6.457    4.008   18.410
+ WF5           H242   H    H         0.000      8.170    4.331   18.036
+ WF5           C25    C    CR5       0.000      7.169    5.950   19.098
+ WF5           C29    C    CR15      0.000      5.930    6.109   20.190
+ WF5           H29    H    H         0.000      5.611    5.380   20.925
+ WF5           C28    C    CR15      0.000      5.407    7.315   19.980
+ WF5           H28    H    H         0.000      4.945    7.969   20.709
+ WF5           N27    N    NR15      0.000      5.605    7.584   18.441
+ WF5           HN27   H    H         0.000      5.073    8.246   17.841
+ WF5           C26    C    CR5       0.000      6.793    6.626   18.003
+ WF5           O30    O    O         0.000      7.233    6.547   16.866
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WF5      CL01   n/a    C02    START
+ WF5      C02    CL01   C03    .
+ WF5      C03    C02    C04    .
+ WF5      H03    C03    .      .
+ WF5      C04    C03    C07    .
+ WF5      H04    C04    .      .
+ WF5      C07    C04    O08    .
+ WF5      C06    C07    C05    .
+ WF5      H06    C06    .      .
+ WF5      C05    C06    H05    .
+ WF5      H05    C05    .      .
+ WF5      O08    C07    C09    .
+ WF5      C09    O08    C12    .
+ WF5      C10    C09    H101   .
+ WF5      H103   C10    .      .
+ WF5      H102   C10    .      .
+ WF5      H101   C10    .      .
+ WF5      C11    C09    H111   .
+ WF5      H113   C11    .      .
+ WF5      H112   C11    .      .
+ WF5      H111   C11    .      .
+ WF5      C12    C09    O13    .
+ WF5      H121   C12    .      .
+ WF5      H122   C12    .      .
+ WF5      O13    C12    C14    .
+ WF5      C14    O13    N15    .
+ WF5      O34    C14    .      .
+ WF5      N15    C14    C16    .
+ WF5      HN15   N15    .      .
+ WF5      C16    N15    C21    .
+ WF5      H16    C16    .      .
+ WF5      C17    C16    C18    .
+ WF5      H171   C17    .      .
+ WF5      H172   C17    .      .
+ WF5      C18    C17    C19    .
+ WF5      H18    C18    .      .
+ WF5      C20    C18    H201   .
+ WF5      H203   C20    .      .
+ WF5      H202   C20    .      .
+ WF5      H201   C20    .      .
+ WF5      C19    C18    H191   .
+ WF5      H193   C19    .      .
+ WF5      H192   C19    .      .
+ WF5      H191   C19    .      .
+ WF5      C21    C16    N22    .
+ WF5      O33    C21    .      .
+ WF5      N22    C21    C23    .
+ WF5      HN22   N22    .      .
+ WF5      C23    N22    C24    .
+ WF5      H23    C23    .      .
+ WF5      C31    C23    O32    .
+ WF5      H311   C31    .      .
+ WF5      H312   C31    .      .
+ WF5      O32    C31    HO32   .
+ WF5      HO32   O32    .      .
+ WF5      C24    C23    C25    .
+ WF5      H241   C24    .      .
+ WF5      H242   C24    .      .
+ WF5      C25    C24    C29    .
+ WF5      C29    C25    C28    .
+ WF5      H29    C29    .      .
+ WF5      C28    C29    N27    .
+ WF5      H28    C28    .      .
+ WF5      N27    C28    C26    .
+ WF5      HN27   N27    .      .
+ WF5      C26    N27    O30    .
+ WF5      O30    C26    .      END
+ WF5      C02    C05    .    ADD
+ WF5      C26    C25    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WF5      C02    C05       aromatic    1.390    0.020
+ WF5      C03    C02       aromatic    1.390    0.020
+ WF5      C02    CL01      single      1.795    0.020
+ WF5      C07    C04       aromatic    1.390    0.020
+ WF5      C04    C03       aromatic    1.390    0.020
+ WF5      C05    C06       aromatic    1.390    0.020
+ WF5      C06    C07       aromatic    1.390    0.020
+ WF5      O08    C07       single      1.370    0.020
+ WF5      C10    C09       single      1.524    0.020
+ WF5      C11    C09       single      1.524    0.020
+ WF5      C12    C09       single      1.524    0.020
+ WF5      O13    C12       single      1.426    0.020
+ WF5      O34    C14       double      1.220    0.020
+ WF5      N15    C14       single      1.330    0.020
+ WF5      C14    O13       single      1.454    0.020
+ WF5      C17    C16       single      1.524    0.020
+ WF5      C21    C16       single      1.500    0.020
+ WF5      C16    N15       single      1.450    0.020
+ WF5      C19    C18       single      1.524    0.020
+ WF5      C20    C18       single      1.524    0.020
+ WF5      C18    C17       single      1.524    0.020
+ WF5      C24    C23       single      1.524    0.020
+ WF5      C31    C23       single      1.524    0.020
+ WF5      C23    N22       single      1.450    0.020
+ WF5      C25    C24       single      1.510    0.020
+ WF5      C26    C25       double      1.490    0.020
+ WF5      C26    N27       single      1.340    0.020
+ WF5      O30    C26       double      1.350    0.020
+ WF5      C29    C25       single      1.387    0.020
+ WF5      C28    C29       double      1.380    0.020
+ WF5      O32    C31       single      1.432    0.020
+ WF5      O33    C21       double      1.220    0.020
+ WF5      C09    O08       single      1.426    0.020
+ WF5      N22    C21       single      1.330    0.020
+ WF5      N27    C28       single      1.350    0.020
+ WF5      H04    C04       single      1.083    0.020
+ WF5      H05    C05       single      1.083    0.020
+ WF5      H06    C06       single      1.083    0.020
+ WF5      H101   C10       single      1.059    0.020
+ WF5      H102   C10       single      1.059    0.020
+ WF5      H103   C10       single      1.059    0.020
+ WF5      H111   C11       single      1.059    0.020
+ WF5      H112   C11       single      1.059    0.020
+ WF5      H113   C11       single      1.059    0.020
+ WF5      H121   C12       single      1.092    0.020
+ WF5      H122   C12       single      1.092    0.020
+ WF5      H16    C16       single      1.099    0.020
+ WF5      H18    C18       single      1.099    0.020
+ WF5      H191   C19       single      1.059    0.020
+ WF5      H192   C19       single      1.059    0.020
+ WF5      H193   C19       single      1.059    0.020
+ WF5      H201   C20       single      1.059    0.020
+ WF5      H202   C20       single      1.059    0.020
+ WF5      H203   C20       single      1.059    0.020
+ WF5      H23    C23       single      1.099    0.020
+ WF5      H241   C24       single      1.092    0.020
+ WF5      H242   C24       single      1.092    0.020
+ WF5      H29    C29       single      1.083    0.020
+ WF5      H311   C31       single      1.092    0.020
+ WF5      H312   C31       single      1.092    0.020
+ WF5      H03    C03       single      1.083    0.020
+ WF5      H171   C17       single      1.092    0.020
+ WF5      H172   C17       single      1.092    0.020
+ WF5      H28    C28       single      1.083    0.020
+ WF5      HN15   N15       single      1.010    0.020
+ WF5      HN22   N22       single      1.010    0.020
+ WF5      HN27   N27       single      1.040    0.020
+ WF5      HO32   O32       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WF5      CL01   C02    C03     120.000    3.000
+ WF5      CL01   C02    C05     120.000    3.000
+ WF5      C03    C02    C05     120.000    3.000
+ WF5      C02    C03    H03     120.000    3.000
+ WF5      C02    C03    C04     120.000    3.000
+ WF5      H03    C03    C04     120.000    3.000
+ WF5      C03    C04    H04     120.000    3.000
+ WF5      C03    C04    C07     120.000    3.000
+ WF5      H04    C04    C07     120.000    3.000
+ WF5      C04    C07    C06     120.000    3.000
+ WF5      C04    C07    O08     120.000    3.000
+ WF5      C06    C07    O08     120.000    3.000
+ WF5      C07    C06    H06     120.000    3.000
+ WF5      C07    C06    C05     120.000    3.000
+ WF5      H06    C06    C05     120.000    3.000
+ WF5      C06    C05    H05     120.000    3.000
+ WF5      C06    C05    C02     120.000    3.000
+ WF5      H05    C05    C02     120.000    3.000
+ WF5      C07    O08    C09     120.000    3.000
+ WF5      O08    C09    C10     109.470    3.000
+ WF5      O08    C09    C11     109.470    3.000
+ WF5      O08    C09    C12     109.470    3.000
+ WF5      C10    C09    C11     111.000    3.000
+ WF5      C10    C09    C12     111.000    3.000
+ WF5      C11    C09    C12     111.000    3.000
+ WF5      C09    C10    H103    109.470    3.000
+ WF5      C09    C10    H102    109.470    3.000
+ WF5      C09    C10    H101    109.470    3.000
+ WF5      H103   C10    H102    109.470    3.000
+ WF5      H103   C10    H101    109.470    3.000
+ WF5      H102   C10    H101    109.470    3.000
+ WF5      C09    C11    H113    109.470    3.000
+ WF5      C09    C11    H112    109.470    3.000
+ WF5      C09    C11    H111    109.470    3.000
+ WF5      H113   C11    H112    109.470    3.000
+ WF5      H113   C11    H111    109.470    3.000
+ WF5      H112   C11    H111    109.470    3.000
+ WF5      C09    C12    H121    109.470    3.000
+ WF5      C09    C12    H122    109.470    3.000
+ WF5      C09    C12    O13     109.500    3.000
+ WF5      H121   C12    H122    107.900    3.000
+ WF5      H121   C12    O13     109.470    3.000
+ WF5      H122   C12    O13     109.470    3.000
+ WF5      C12    O13    C14     120.000    3.000
+ WF5      O13    C14    O34     119.000    3.000
+ WF5      O13    C14    N15     118.000    3.000
+ WF5      O34    C14    N15     123.000    3.000
+ WF5      C14    N15    HN15    120.000    3.000
+ WF5      C14    N15    C16     121.500    3.000
+ WF5      HN15   N15    C16     118.500    3.000
+ WF5      N15    C16    H16     108.550    3.000
+ WF5      N15    C16    C17     110.000    3.000
+ WF5      N15    C16    C21     111.600    3.000
+ WF5      H16    C16    C17     108.340    3.000
+ WF5      H16    C16    C21     108.810    3.000
+ WF5      C17    C16    C21     109.470    3.000
+ WF5      C16    C17    H171    109.470    3.000
+ WF5      C16    C17    H172    109.470    3.000
+ WF5      C16    C17    C18     111.000    3.000
+ WF5      H171   C17    H172    107.900    3.000
+ WF5      H171   C17    C18     109.470    3.000
+ WF5      H172   C17    C18     109.470    3.000
+ WF5      C17    C18    H18     108.340    3.000
+ WF5      C17    C18    C20     111.000    3.000
+ WF5      C17    C18    C19     111.000    3.000
+ WF5      H18    C18    C20     108.340    3.000
+ WF5      H18    C18    C19     108.340    3.000
+ WF5      C20    C18    C19     111.000    3.000
+ WF5      C18    C20    H203    109.470    3.000
+ WF5      C18    C20    H202    109.470    3.000
+ WF5      C18    C20    H201    109.470    3.000
+ WF5      H203   C20    H202    109.470    3.000
+ WF5      H203   C20    H201    109.470    3.000
+ WF5      H202   C20    H201    109.470    3.000
+ WF5      C18    C19    H193    109.470    3.000
+ WF5      C18    C19    H192    109.470    3.000
+ WF5      C18    C19    H191    109.470    3.000
+ WF5      H193   C19    H192    109.470    3.000
+ WF5      H193   C19    H191    109.470    3.000
+ WF5      H192   C19    H191    109.470    3.000
+ WF5      C16    C21    O33     120.500    3.000
+ WF5      C16    C21    N22     116.500    3.000
+ WF5      O33    C21    N22     123.000    3.000
+ WF5      C21    N22    HN22    120.000    3.000
+ WF5      C21    N22    C23     121.500    3.000
+ WF5      HN22   N22    C23     118.500    3.000
+ WF5      N22    C23    H23     108.550    3.000
+ WF5      N22    C23    C31     110.000    3.000
+ WF5      N22    C23    C24     110.000    3.000
+ WF5      H23    C23    C31     108.340    3.000
+ WF5      H23    C23    C24     108.340    3.000
+ WF5      C31    C23    C24     109.470    3.000
+ WF5      C23    C31    H311    109.470    3.000
+ WF5      C23    C31    H312    109.470    3.000
+ WF5      C23    C31    O32     109.470    3.000
+ WF5      H311   C31    H312    107.900    3.000
+ WF5      H311   C31    O32     109.470    3.000
+ WF5      H312   C31    O32     109.470    3.000
+ WF5      C31    O32    HO32    109.470    3.000
+ WF5      C23    C24    H241    109.470    3.000
+ WF5      C23    C24    H242    109.470    3.000
+ WF5      C23    C24    C25     109.470    3.000
+ WF5      H241   C24    H242    107.900    3.000
+ WF5      H241   C24    C25     109.470    3.000
+ WF5      H242   C24    C25     109.470    3.000
+ WF5      C24    C25    C29     126.000    3.000
+ WF5      C24    C25    C26     126.000    3.000
+ WF5      C29    C25    C26     108.000    3.000
+ WF5      C25    C29    H29     126.000    3.000
+ WF5      C25    C29    C28     108.000    3.000
+ WF5      H29    C29    C28     126.000    3.000
+ WF5      C29    C28    H28     126.000    3.000
+ WF5      C29    C28    N27     108.000    3.000
+ WF5      H28    C28    N27     126.000    3.000
+ WF5      C28    N27    HN27    126.000    3.000
+ WF5      C28    N27    C26     108.000    3.000
+ WF5      HN27   N27    C26     126.000    3.000
+ WF5      N27    C26    O30     108.000    3.000
+ WF5      N27    C26    C25     108.000    3.000
+ WF5      O30    C26    C25     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WF5      CONST_1          CL01   C02    C05    C06                0.000            0.000   0
+ WF5      CONST_2          CL01   C02    C03    C04                0.000            0.000   0
+ WF5      CONST_3          C02    C03    C04    C07                0.000            0.000   0
+ WF5      CONST_4          C03    C04    C07    O08                0.000            0.000   0
+ WF5      CONST_5          C04    C07    C06    C05                0.000            0.000   0
+ WF5      CONST_6          C07    C06    C05    C02                0.000            0.000   0
+ WF5      var_1            C04    C07    O08    C09               91.410           20.000   3
+ WF5      var_2            C07    O08    C09    C12              143.783           20.000   3
+ WF5      var_3            O08    C09    C10    H101             180.000           20.000   3
+ WF5      var_4            O08    C09    C11    H111             180.000           20.000   3
+ WF5      var_5            O08    C09    C12    O13              -62.605           20.000   3
+ WF5      var_6            C09    C12    O13    C14              104.579           20.000   3
+ WF5      var_7            C12    O13    C14    N15             -171.624           20.000   3
+ WF5      var_8            O13    C14    N15    C16              180.000           20.000   2
+ WF5      var_9            C14    N15    C16    C21                0.000           20.000   3
+ WF5      var_10           N15    C16    C17    C18              180.000           20.000   3
+ WF5      var_11           C16    C17    C18    C19              180.000           20.000   3
+ WF5      var_12           C17    C18    C20    H201             180.000           20.000   3
+ WF5      var_13           C17    C18    C19    H191             180.000           20.000   3
+ WF5      var_14           N15    C16    C21    N22              180.000           20.000   3
+ WF5      var_15           C16    C21    N22    C23              180.000           20.000   2
+ WF5      var_16           C21    N22    C23    C24                0.000           20.000   3
+ WF5      var_17           N22    C23    C31    O32              180.000           20.000   3
+ WF5      var_18           C23    C31    O32    HO32             180.000           20.000   3
+ WF5      var_19           N22    C23    C24    C25              180.000           20.000   3
+ WF5      var_20           C23    C24    C25    C29                0.000           20.000   2
+ WF5      CONST_7          C24    C25    C29    C28                0.000            0.000   0
+ WF5      CONST_8          C25    C29    C28    N27               31.373            0.000   0
+ WF5      CONST_9          C29    C28    N27    C26                0.000            0.000   0
+ WF5      CONST_10         C28    N27    C26    O30                0.000            0.000   0
+ WF5      CONST_11         N27    C26    C25    C24                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WF5      chir_01          C16    C17    C21    N15       negativ
+ WF5      chir_02          C18    C19    C20    C17       negativ
+ WF5      chir_03          C23    C24    C31    N22       negativ
+ WF5      chir_04          C09    C10    C11    C12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WF5      plan-1            C02       0.020
+ WF5      plan-1            C05       0.020
+ WF5      plan-1            C03       0.020
+ WF5      plan-1            CL01      0.020
+ WF5      plan-1            C04       0.020
+ WF5      plan-1            C06       0.020
+ WF5      plan-1            C07       0.020
+ WF5      plan-1            H04       0.020
+ WF5      plan-1            H05       0.020
+ WF5      plan-1            H06       0.020
+ WF5      plan-1            O08       0.020
+ WF5      plan-1            H03       0.020
+ WF5      plan-2            C14       0.020
+ WF5      plan-2            O34       0.020
+ WF5      plan-2            N15       0.020
+ WF5      plan-2            O13       0.020
+ WF5      plan-2            HN15      0.020
+ WF5      plan-3            C26       0.020
+ WF5      plan-3            C25       0.020
+ WF5      plan-3            N27       0.020
+ WF5      plan-3            O30       0.020
+ WF5      plan-3            C29       0.020
+ WF5      plan-3            C28       0.020
+ WF5      plan-3            H29       0.020
+ WF5      plan-3            C24       0.020
+ WF5      plan-3            H28       0.020
+ WF5      plan-3            HN27      0.020
+ WF5      plan-4            C21       0.020
+ WF5      plan-4            C16       0.020
+ WF5      plan-4            O33       0.020
+ WF5      plan-4            N22       0.020
+ WF5      plan-4            HN22      0.020
+ WF5      plan-5            N15       0.020
+ WF5      plan-5            C14       0.020
+ WF5      plan-5            C16       0.020
+ WF5      plan-5            HN15      0.020
+ WF5      plan-6            N22       0.020
+ WF5      plan-6            C23       0.020
+ WF5      plan-6            C21       0.020
+ WF5      plan-6            HN22      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-WF5
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-WF5  1 SG      2 C31       .           1.810    0.020
+# ------------------------------------------------------

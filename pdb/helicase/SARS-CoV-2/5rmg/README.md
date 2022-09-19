@@ -24,7 +24,7 @@ Part of PanDDA analysis group deposition. SARS-Cov-2 helicase NSP13 screened aga
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmg/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmg/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmg/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/helicase/SARS-CoV-2/5rmg/validation/Xtriage_output.log)   
 

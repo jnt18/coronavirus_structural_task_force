@@ -24,7 +24,7 @@ Crystal Structure of the SARS-CoV-2 helicase in complex with Z1273312153. Its li
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmk/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmk/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase/SARS-CoV-2/5rmk/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/helicase/SARS-CoV-2/5rmk/validation/Xtriage_output.log)   
 

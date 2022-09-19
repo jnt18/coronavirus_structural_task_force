@@ -1,0 +1,963 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WGO      WGO '.                                   ' .                  67  34 .
+WGU      WGU '.                                   ' .                  67  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-WGO  CYS      .        .        WGO      .        .
+ bond_CYS-SG_=_WGO-C31
+CYS-WGU  CYS      .        .        WGU      .        .
+ bond_CYS-SG_=_WGU-C31
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WGO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WGO           O34    O    O         0.000      9.981   23.329   25.492
+ WGO           C14    C    C         0.000     10.706   24.067   26.173
+ WGO           O13    O    O2        0.000     10.456   25.413   26.157
+ WGO           C12    C    CH2       0.000      9.282   25.906   25.521
+ WGO           H121   H    H         0.000      8.457   25.819   26.231
+ WGO           H122   H    H         0.000      9.082   25.273   24.654
+ WGO           C09    C    CT        0.000      9.423   27.420   25.053
+ WGO           O08    O    O2        0.000      9.621   28.303   26.187
+ WGO           C07    C    CR6       0.000     10.568   29.344   26.207
+ WGO           C04    C    CR16      0.000     11.785   29.199   26.898
+ WGO           H04    H    H         0.000     11.979   28.273   27.424
+ WGO           C03    C    CR16      0.000     12.751   30.208   26.929
+ WGO           H03    H    H         0.000     13.676   30.075   27.475
+ WGO           C02    C    CR6       0.000     12.491   31.389   26.239
+ WGO           F01    F    F         0.000     13.418   32.375   26.260
+ WGO           C05    C    CR16      0.000     11.307   31.584   25.535
+ WGO           H05    H    H         0.000     11.123   32.510   25.005
+ WGO           C06    C    CR16      0.000     10.360   30.556   25.528
+ WGO           H06    H    H         0.000      9.436   30.699   24.981
+ WGO           C10    C    CH3       0.000      8.158   27.722   24.277
+ WGO           H103   H    H         0.000      8.088   27.065   23.450
+ WGO           H102   H    H         0.000      7.319   27.588   24.908
+ WGO           H101   H    H         0.000      8.187   28.723   23.934
+ WGO           C11    C    CH3       0.000     10.681   27.535   24.158
+ WGO           H113   H    H         0.000     11.540   27.245   24.708
+ WGO           H112   H    H         0.000     10.578   26.903   23.312
+ WGO           H111   H    H         0.000     10.798   28.538   23.831
+ WGO           N15    N    N         0.000     11.732   23.569   26.940
+ WGO           C16    C    CH1       0.000     11.829   22.118   27.291
+ WGO           H16    H    H         0.000     12.105   21.554   26.389
+ WGO           C17    C    CH2       0.000     12.899   21.880   28.373
+ WGO           H171   H    H         0.000     12.850   20.819   28.625
+ WGO           H172   H    H         0.000     12.597   22.473   29.239
+ WGO           C18    C    CH1       0.000     14.337   22.248   27.973
+ WGO           H18    H    H         0.000     14.363   23.333   27.802
+ WGO           C20    C    CH3       0.000     14.733   21.570   26.667
+ WGO           H203   H    H         0.000     14.671   20.519   26.782
+ WGO           H202   H    H         0.000     14.076   21.880   25.895
+ WGO           H201   H    H         0.000     15.725   21.840   26.416
+ WGO           C19    C    CH3       0.000     15.377   21.926   29.080
+ WGO           H193   H    H         0.000     15.144   22.468   29.962
+ WGO           H192   H    H         0.000     15.363   20.887   29.296
+ WGO           H191   H    H         0.000     16.349   22.199   28.751
+ WGO           C21    C    C         0.000     10.457   21.590   27.813
+ WGO           O33    O    O         0.000      9.739   22.367   28.483
+ WGO           N22    N    N         0.000     10.032   20.301   27.570
+ WGO           C23    C    CH1       0.000      8.742   19.713   28.002
+ WGO           H23    H    H         0.000      8.308   20.339   28.794
+ WGO           C31    C    CH2       0.000      8.968   18.300   28.546
+ WGO           H311   H    H         0.000      9.430   17.663   27.789
+ WGO           H312   H    H         0.000      8.024   17.854   28.868
+ WGO           O32    O    OH1       0.000      9.847   18.425   29.671
+ WGO           HO32   H    H         0.000     10.017   17.550   30.047
+ WGO           C24    C    CH2       0.000      7.760   19.697   26.758
+ WGO           H241   H    H         0.000      6.844   19.193   27.076
+ WGO           H242   H    H         0.000      8.243   19.111   25.973
+ WGO           C25    C    CH1       0.000      7.418   21.088   26.221
+ WGO           H25    H    H         0.000      8.335   21.643   25.981
+ WGO           C29    C    CH2       0.000      6.548   21.890   27.208
+ WGO           H291   H    H         0.000      7.130   22.688   27.673
+ WGO           H292   H    H         0.000      6.143   21.236   27.983
+ WGO           C28    C    CH2       0.000      5.396   22.500   26.399
+ WGO           H281   H    H         0.000      5.552   23.566   26.222
+ WGO           H282   H    H         0.000      4.435   22.352   26.897
+ WGO           N27    N    N         0.000      5.400   21.783   25.116
+ WGO           C26    C    C         0.000      6.529   20.988   25.004
+ WGO           O30    O    O         0.000      6.755   20.290   24.005
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WGO      O34    n/a    C14    START
+ WGO      C14    O34    N15    .
+ WGO      O13    C14    C12    .
+ WGO      C12    O13    C09    .
+ WGO      H121   C12    .      .
+ WGO      H122   C12    .      .
+ WGO      C09    C12    C11    .
+ WGO      O08    C09    C07    .
+ WGO      C07    O08    C04    .
+ WGO      C04    C07    C03    .
+ WGO      H04    C04    .      .
+ WGO      C03    C04    C02    .
+ WGO      H03    C03    .      .
+ WGO      C02    C03    C05    .
+ WGO      F01    C02    .      .
+ WGO      C05    C02    C06    .
+ WGO      H05    C05    .      .
+ WGO      C06    C05    H06    .
+ WGO      H06    C06    .      .
+ WGO      C10    C09    H101   .
+ WGO      H103   C10    .      .
+ WGO      H102   C10    .      .
+ WGO      H101   C10    .      .
+ WGO      C11    C09    H111   .
+ WGO      H113   C11    .      .
+ WGO      H112   C11    .      .
+ WGO      H111   C11    .      .
+ WGO      N15    C14    C16    .
+ WGO      C16    N15    C21    .
+ WGO      H16    C16    .      .
+ WGO      C17    C16    C18    .
+ WGO      H171   C17    .      .
+ WGO      H172   C17    .      .
+ WGO      C18    C17    C19    .
+ WGO      H18    C18    .      .
+ WGO      C20    C18    H201   .
+ WGO      H203   C20    .      .
+ WGO      H202   C20    .      .
+ WGO      H201   C20    .      .
+ WGO      C19    C18    H191   .
+ WGO      H193   C19    .      .
+ WGO      H192   C19    .      .
+ WGO      H191   C19    .      .
+ WGO      C21    C16    N22    .
+ WGO      O33    C21    .      .
+ WGO      N22    C21    C23    .
+ WGO      C23    N22    C24    .
+ WGO      H23    C23    .      .
+ WGO      C31    C23    O32    .
+ WGO      H311   C31    .      .
+ WGO      H312   C31    .      .
+ WGO      O32    C31    HO32   .
+ WGO      HO32   O32    .      .
+ WGO      C24    C23    C25    .
+ WGO      H241   C24    .      .
+ WGO      H242   C24    .      .
+ WGO      C25    C24    C29    .
+ WGO      H25    C25    .      .
+ WGO      C29    C25    C28    .
+ WGO      H291   C29    .      .
+ WGO      H292   C29    .      .
+ WGO      C28    C29    N27    .
+ WGO      H281   C28    .      .
+ WGO      H282   C28    .      .
+ WGO      N27    C28    C26    .
+ WGO      C26    N27    O30    .
+ WGO      O30    C26    .      END
+ WGO      C25    C26    .    ADD
+ WGO      C07    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WGO      C24    C23       single      1.524    0.020
+ WGO      C31    C23       single      1.524    0.020
+ WGO      C23    N22       single      1.455    0.020
+ WGO      C25    C24       single      1.524    0.020
+ WGO      C25    C26       single      1.500    0.020
+ WGO      C29    C25       single      1.524    0.020
+ WGO      C26    N27       aromatic    1.330    0.020
+ WGO      O30    C26       aromatic    1.220    0.020
+ WGO      C21    C16       single      1.500    0.020
+ WGO      N22    C21       deloc       1.330    0.020
+ WGO      O33    C21       deloc       1.220    0.020
+ WGO      N15    C14       deloc       1.330    0.020
+ WGO      O13    C14       single      1.454    0.020
+ WGO      C14    O34       deloc       1.220    0.020
+ WGO      C11    C09       single      1.524    0.020
+ WGO      C07    C06       aromatic    1.390    0.020
+ WGO      C04    C07       aromatic    1.390    0.020
+ WGO      C07    O08       single      1.370    0.020
+ WGO      C06    C05       aromatic    1.390    0.020
+ WGO      C10    C09       single      1.524    0.020
+ WGO      C09    C12       single      1.524    0.020
+ WGO      O08    C09       single      1.426    0.020
+ WGO      C05    C02       aromatic    1.390    0.020
+ WGO      C03    C04       aromatic    1.390    0.020
+ WGO      C02    C03       aromatic    1.390    0.020
+ WGO      F01    C02       single      1.345    0.020
+ WGO      C12    O13       single      1.426    0.020
+ WGO      C17    C16       single      1.524    0.020
+ WGO      C16    N15       single      1.455    0.020
+ WGO      C18    C17       single      1.524    0.020
+ WGO      C19    C18       single      1.524    0.020
+ WGO      C20    C18       single      1.524    0.020
+ WGO      C28    C29       single      1.524    0.020
+ WGO      N27    C28       single      1.455    0.020
+ WGO      O32    C31       single      1.432    0.020
+ WGO      H23    C23       single      1.099    0.020
+ WGO      H241   C24       single      1.092    0.020
+ WGO      H242   C24       single      1.092    0.020
+ WGO      H25    C25       single      1.099    0.020
+ WGO      H111   C11       single      1.059    0.020
+ WGO      H112   C11       single      1.059    0.020
+ WGO      H113   C11       single      1.059    0.020
+ WGO      H06    C06       single      1.083    0.020
+ WGO      H101   C10       single      1.059    0.020
+ WGO      H102   C10       single      1.059    0.020
+ WGO      H103   C10       single      1.059    0.020
+ WGO      H05    C05       single      1.083    0.020
+ WGO      H04    C04       single      1.083    0.020
+ WGO      H03    C03       single      1.083    0.020
+ WGO      H121   C12       single      1.092    0.020
+ WGO      H122   C12       single      1.092    0.020
+ WGO      H16    C16       single      1.099    0.020
+ WGO      H171   C17       single      1.092    0.020
+ WGO      H172   C17       single      1.092    0.020
+ WGO      H18    C18       single      1.099    0.020
+ WGO      H191   C19       single      1.059    0.020
+ WGO      H192   C19       single      1.059    0.020
+ WGO      H193   C19       single      1.059    0.020
+ WGO      H201   C20       single      1.059    0.020
+ WGO      H202   C20       single      1.059    0.020
+ WGO      H203   C20       single      1.059    0.020
+ WGO      H281   C28       single      1.092    0.020
+ WGO      H282   C28       single      1.092    0.020
+ WGO      H291   C29       single      1.092    0.020
+ WGO      H292   C29       single      1.092    0.020
+ WGO      H311   C31       single      1.092    0.020
+ WGO      H312   C31       single      1.092    0.020
+ WGO      HO32   O32       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WGO      O34    C14    O13     119.000    3.000
+ WGO      O34    C14    N15     123.000    3.000
+ WGO      O13    C14    N15     120.000    3.000
+ WGO      C14    O13    C12     120.000    3.000
+ WGO      O13    C12    H121    109.470    3.000
+ WGO      O13    C12    H122    109.470    3.000
+ WGO      O13    C12    C09     109.500    3.000
+ WGO      H121   C12    H122    107.900    3.000
+ WGO      H121   C12    C09     109.470    3.000
+ WGO      H122   C12    C09     109.470    3.000
+ WGO      C12    C09    O08     109.470    3.000
+ WGO      C12    C09    C10     111.000    3.000
+ WGO      C12    C09    C11     111.000    3.000
+ WGO      O08    C09    C10     109.470    3.000
+ WGO      O08    C09    C11     109.470    3.000
+ WGO      C10    C09    C11     111.000    3.000
+ WGO      C09    O08    C07     120.000    3.000
+ WGO      O08    C07    C04     120.000    3.000
+ WGO      O08    C07    C06     120.000    3.000
+ WGO      C04    C07    C06     120.000    3.000
+ WGO      C07    C04    H04     120.000    3.000
+ WGO      C07    C04    C03     120.000    3.000
+ WGO      H04    C04    C03     120.000    3.000
+ WGO      C04    C03    H03     120.000    3.000
+ WGO      C04    C03    C02     120.000    3.000
+ WGO      H03    C03    C02     120.000    3.000
+ WGO      C03    C02    F01     120.000    3.000
+ WGO      C03    C02    C05     120.000    3.000
+ WGO      F01    C02    C05     120.000    3.000
+ WGO      C02    C05    H05     120.000    3.000
+ WGO      C02    C05    C06     120.000    3.000
+ WGO      H05    C05    C06     120.000    3.000
+ WGO      C05    C06    H06     120.000    3.000
+ WGO      C05    C06    C07     120.000    3.000
+ WGO      H06    C06    C07     120.000    3.000
+ WGO      C09    C10    H103    109.470    3.000
+ WGO      C09    C10    H102    109.470    3.000
+ WGO      C09    C10    H101    109.470    3.000
+ WGO      H103   C10    H102    109.470    3.000
+ WGO      H103   C10    H101    109.470    3.000
+ WGO      H102   C10    H101    109.470    3.000
+ WGO      C09    C11    H113    109.470    3.000
+ WGO      C09    C11    H112    109.470    3.000
+ WGO      C09    C11    H111    109.470    3.000
+ WGO      H113   C11    H112    109.470    3.000
+ WGO      H113   C11    H111    109.470    3.000
+ WGO      H112   C11    H111    109.470    3.000
+ WGO      C14    N15    C16     121.000    3.000
+ WGO      N15    C16    H16     109.470    3.000
+ WGO      N15    C16    C17     105.000    3.000
+ WGO      N15    C16    C21     111.600    3.000
+ WGO      H16    C16    C17     108.340    3.000
+ WGO      H16    C16    C21     108.810    3.000
+ WGO      C17    C16    C21     109.470    3.000
+ WGO      C16    C17    H171    109.470    3.000
+ WGO      C16    C17    H172    109.470    3.000
+ WGO      C16    C17    C18     111.000    3.000
+ WGO      H171   C17    H172    107.900    3.000
+ WGO      H171   C17    C18     109.470    3.000
+ WGO      H172   C17    C18     109.470    3.000
+ WGO      C17    C18    H18     108.340    3.000
+ WGO      C17    C18    C20     111.000    3.000
+ WGO      C17    C18    C19     111.000    3.000
+ WGO      H18    C18    C20     108.340    3.000
+ WGO      H18    C18    C19     108.340    3.000
+ WGO      C20    C18    C19     111.000    3.000
+ WGO      C18    C20    H203    109.470    3.000
+ WGO      C18    C20    H202    109.470    3.000
+ WGO      C18    C20    H201    109.470    3.000
+ WGO      H203   C20    H202    109.470    3.000
+ WGO      H203   C20    H201    109.470    3.000
+ WGO      H202   C20    H201    109.470    3.000
+ WGO      C18    C19    H193    109.470    3.000
+ WGO      C18    C19    H192    109.470    3.000
+ WGO      C18    C19    H191    109.470    3.000
+ WGO      H193   C19    H192    109.470    3.000
+ WGO      H193   C19    H191    109.470    3.000
+ WGO      H192   C19    H191    109.470    3.000
+ WGO      C16    C21    O33     120.500    3.000
+ WGO      C16    C21    N22     116.500    3.000
+ WGO      O33    C21    N22     123.000    3.000
+ WGO      C21    N22    C23     121.000    3.000
+ WGO      N22    C23    H23     109.470    3.000
+ WGO      N22    C23    C31     105.000    3.000
+ WGO      N22    C23    C24     105.000    3.000
+ WGO      H23    C23    C31     108.340    3.000
+ WGO      H23    C23    C24     108.340    3.000
+ WGO      C31    C23    C24     109.470    3.000
+ WGO      C23    C31    H311    109.470    3.000
+ WGO      C23    C31    H312    109.470    3.000
+ WGO      C23    C31    O32     109.470    3.000
+ WGO      H311   C31    H312    107.900    3.000
+ WGO      H311   C31    O32     109.470    3.000
+ WGO      H312   C31    O32     109.470    3.000
+ WGO      C31    O32    HO32    109.470    3.000
+ WGO      C23    C24    H241    109.470    3.000
+ WGO      C23    C24    H242    109.470    3.000
+ WGO      C23    C24    C25     111.000    3.000
+ WGO      H241   C24    H242    107.900    3.000
+ WGO      H241   C24    C25     109.470    3.000
+ WGO      H242   C24    C25     109.470    3.000
+ WGO      C24    C25    H25     108.340    3.000
+ WGO      C24    C25    C29     109.470    3.000
+ WGO      C24    C25    C26     109.470    3.000
+ WGO      H25    C25    C29     108.340    3.000
+ WGO      H25    C25    C26     108.810    3.000
+ WGO      C29    C25    C26     109.470    3.000
+ WGO      C25    C29    H291    109.470    3.000
+ WGO      C25    C29    H292    109.470    3.000
+ WGO      C25    C29    C28     111.000    3.000
+ WGO      H291   C29    H292    107.900    3.000
+ WGO      H291   C29    C28     109.470    3.000
+ WGO      H292   C29    C28     109.470    3.000
+ WGO      C29    C28    H281    109.470    3.000
+ WGO      C29    C28    H282    109.470    3.000
+ WGO      C29    C28    N27     105.000    3.000
+ WGO      H281   C28    H282    107.900    3.000
+ WGO      H281   C28    N27     109.470    3.000
+ WGO      H282   C28    N27     109.470    3.000
+ WGO      C28    N27    C26     127.000    3.000
+ WGO      N27    C26    O30     123.000    3.000
+ WGO      N27    C26    C25     116.500    3.000
+ WGO      O30    C26    C25     120.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WGO      var_1            O34    C14    O13    C12                8.526           20.000   3
+ WGO      var_2            C14    O13    C12    C09             -155.878           20.000   3
+ WGO      var_3            O13    C12    C09    C11               54.567           20.000   3
+ WGO      var_4            C12    C09    O08    C07              136.070           20.000   3
+ WGO      var_5            C09    O08    C07    C04             -102.564           20.000   3
+ WGO      CONST_1          O08    C07    C06    C05                0.000            0.000   0
+ WGO      CONST_2          O08    C07    C04    C03                0.000            0.000   0
+ WGO      CONST_3          C07    C04    C03    C02                0.000            0.000   0
+ WGO      CONST_4          C04    C03    C02    C05                0.000            0.000   0
+ WGO      CONST_5          C03    C02    C05    C06                0.000            0.000   0
+ WGO      CONST_6          C02    C05    C06    C07                0.000            0.000   0
+ WGO      var_6            C12    C09    C10    H101             180.000           20.000   3
+ WGO      var_7            C12    C09    C11    H111             180.000           20.000   3
+ WGO      CONST_7          O34    C14    N15    C16              180.000            0.000   0
+ WGO      var_8            C14    N15    C16    C21                0.000           20.000   3
+ WGO      var_9            N15    C16    C17    C18              180.000           20.000   3
+ WGO      var_10           C16    C17    C18    C19              180.000           20.000   3
+ WGO      var_11           C17    C18    C20    H201             180.000           20.000   3
+ WGO      var_12           C17    C18    C19    H191             180.000           20.000   3
+ WGO      var_13           N15    C16    C21    N22              180.000           20.000   3
+ WGO      CONST_8          C16    C21    N22    C23              180.000            0.000   0
+ WGO      var_14           C21    N22    C23    C24                0.000           20.000   3
+ WGO      var_15           N22    C23    C31    O32              180.000           20.000   3
+ WGO      var_16           C23    C31    O32    HO32             180.000           20.000   3
+ WGO      var_17           N22    C23    C24    C25              180.000           20.000   3
+ WGO      var_18           C23    C24    C25    C29              180.000           20.000   3
+ WGO      var_19           C24    C25    C26    N27              180.000           20.000   3
+ WGO      var_20           C24    C25    C29    C28              180.000           20.000   3
+ WGO      var_21           C25    C29    C28    N27              180.000           20.000   3
+ WGO      var_22           C29    C28    N27    C26               -9.249           20.000   3
+ WGO      var_23           C28    N27    C26    O30              180.000           20.000   2
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WGO      chir_01          C23    C24    C31    N22       negativ
+ WGO      chir_02          C25    C24    C26    C29       negativ
+ WGO      chir_03          C09    C11    C10    C12       negativ
+ WGO      chir_04          C16    C21    C17    N15       positiv
+ WGO      chir_05          C18    C17    C19    C20       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WGO      plan-1            C26       0.020
+ WGO      plan-1            C25       0.020
+ WGO      plan-1            N27       0.020
+ WGO      plan-1            O30       0.020
+ WGO      plan-2            C21       0.020
+ WGO      plan-2            C16       0.020
+ WGO      plan-2            N22       0.020
+ WGO      plan-2            O33       0.020
+ WGO      plan-2            C23       0.020
+ WGO      plan-3            C14       0.020
+ WGO      plan-3            N15       0.020
+ WGO      plan-3            O13       0.020
+ WGO      plan-3            O34       0.020
+ WGO      plan-3            C16       0.020
+ WGO      plan-4            C07       0.020
+ WGO      plan-4            C06       0.020
+ WGO      plan-4            C04       0.020
+ WGO      plan-4            O08       0.020
+ WGO      plan-4            C05       0.020
+ WGO      plan-4            C03       0.020
+ WGO      plan-4            C02       0.020
+ WGO      plan-4            H06       0.020
+ WGO      plan-4            H05       0.020
+ WGO      plan-4            H04       0.020
+ WGO      plan-4            H03       0.020
+ WGO      plan-4            F01       0.020
+ WGO      plan-5            N27       0.020
+ WGO      plan-5            C26       0.020
+ WGO      plan-5            C28       0.020
+#
+data_comp_WGU
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WGU           O34    O    O         0.000     10.503   23.260   25.489
+ WGU           C14    C    C         0.000     10.972   24.031   26.331
+ WGU           O13    O    O2        0.000     10.675   25.374   26.218
+ WGU           C12    C    CH2       0.000      9.463   25.800   25.553
+ WGU           H121   H    H         0.000      8.636   25.656   26.252
+ WGU           H122   H    H         0.000      9.320   25.153   24.684
+ WGU           C09    C    CT        0.000      9.505   27.329   25.081
+ WGU           C10    C    CH3       0.000      8.204   27.593   24.337
+ WGU           H103   H    H         0.000      8.136   26.943   23.504
+ WGU           H102   H    H         0.000      7.385   27.421   24.986
+ WGU           H101   H    H         0.000      8.186   28.598   24.004
+ WGU           C11    C    CH3       0.000     10.729   27.504   24.154
+ WGU           H113   H    H         0.000     11.615   27.260   24.682
+ WGU           H112   H    H         0.000     10.635   26.864   23.313
+ WGU           H111   H    H         0.000     10.786   28.510   23.822
+ WGU           O08    O    O2        0.000      9.692   28.217   26.215
+ WGU           C07    C    CR6       0.000     10.606   29.286   26.220
+ WGU           C04    C    CR16      0.000     11.832   29.178   26.899
+ WGU           H04    H    H         0.000     12.057   28.260   27.427
+ WGU           C03    C    CR16      0.000     12.770   30.212   26.917
+ WGU           H03    H    H         0.000     13.704   30.106   27.454
+ WGU           C02    C    CR6       0.000     12.471   31.383   26.226
+ WGU           F01    F    F         0.000     13.372   32.395   26.234
+ WGU           C05    C    CR16      0.000     11.276   31.545   25.532
+ WGU           H05    H    H         0.000     11.062   32.465   25.001
+ WGU           C06    C    CR16      0.000     10.358   30.490   25.537
+ WGU           H06    H    H         0.000      9.425   30.604   24.997
+ WGU           N15    N    N         0.000     11.749   23.548   27.363
+ WGU           C16    C    CH1       0.000     11.939   22.079   27.571
+ WGU           H16    H    H         0.000     12.185   21.619   26.604
+ WGU           C17    C    CH2       0.000     13.088   21.803   28.547
+ WGU           H171   H    H         0.000     13.078   20.730   28.750
+ WGU           H172   H    H         0.000     12.859   22.348   29.465
+ WGU           C18    C    CH1       0.000     14.478   22.217   28.036
+ WGU           H18    H    H         0.000     14.463   23.306   27.885
+ WGU           C20    C    CH3       0.000     14.777   21.571   26.683
+ WGU           H203   H    H         0.000     14.751   20.516   26.780
+ WGU           H202   H    H         0.000     14.049   21.877   25.976
+ WGU           H201   H    H         0.000     15.737   21.870   26.352
+ WGU           C19    C    CH3       0.000     15.611   21.903   29.040
+ WGU           H193   H    H         0.000     15.439   22.421   29.949
+ WGU           H192   H    H         0.000     15.641   20.860   29.233
+ WGU           H191   H    H         0.000     16.543   22.209   28.635
+ WGU           C21    C    C         0.000     10.631   21.448   28.095
+ WGU           O33    O    O         0.000     10.165   21.867   29.166
+ WGU           N22    N    N         0.000      9.949   20.472   27.414
+ WGU           C23    C    CH1       0.000      8.700   19.833   27.864
+ WGU           H23    H    H         0.000      8.246   20.467   28.638
+ WGU           C31    C    CH2       0.000      9.028   18.459   28.491
+ WGU           H311   H    H         0.000      9.792   18.582   29.261
+ WGU           H312   H    H         0.000      9.397   17.783   27.717
+ WGU           O32    O    OH1       0.000      7.850   17.917   29.072
+ WGU           HO32   H    H         0.000      8.054   17.058   29.464
+ WGU           C24    C    CH2       0.000      7.701   19.722   26.675
+ WGU           H241   H    H         0.000      6.814   19.187   27.022
+ WGU           H242   H    H         0.000      8.180   19.150   25.878
+ WGU           C25    C    CH1       0.000      7.294   21.093   26.145
+ WGU           H25    H    H         0.000      8.175   21.641   25.783
+ WGU           C29    C    CH2       0.000      6.523   21.938   27.182
+ WGU           H291   H    H         0.000      7.176   22.677   27.650
+ WGU           H292   H    H         0.000      6.080   21.305   27.954
+ WGU           C28    C    CH2       0.000      5.411   22.654   26.406
+ WGU           H281   H    H         0.000      5.702   23.666   26.118
+ WGU           H282   H    H         0.000      4.478   22.692   26.972
+ WGU           N27    N    N         0.000      5.221   21.837   25.202
+ WGU           C26    C    C         0.000      6.275   20.956   25.047
+ WGU           O30    O    O         0.000      6.338   20.161   24.101
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WGU      O34    n/a    C14    START
+ WGU      C14    O34    N15    .
+ WGU      O13    C14    C12    .
+ WGU      C12    O13    C09    .
+ WGU      H121   C12    .      .
+ WGU      H122   C12    .      .
+ WGU      C09    C12    O08    .
+ WGU      C10    C09    H101   .
+ WGU      H103   C10    .      .
+ WGU      H102   C10    .      .
+ WGU      H101   C10    .      .
+ WGU      C11    C09    H111   .
+ WGU      H113   C11    .      .
+ WGU      H112   C11    .      .
+ WGU      H111   C11    .      .
+ WGU      O08    C09    C07    .
+ WGU      C07    O08    C04    .
+ WGU      C04    C07    C03    .
+ WGU      H04    C04    .      .
+ WGU      C03    C04    C02    .
+ WGU      H03    C03    .      .
+ WGU      C02    C03    C05    .
+ WGU      F01    C02    .      .
+ WGU      C05    C02    C06    .
+ WGU      H05    C05    .      .
+ WGU      C06    C05    H06    .
+ WGU      H06    C06    .      .
+ WGU      N15    C14    C16    .
+ WGU      C16    N15    C21    .
+ WGU      H16    C16    .      .
+ WGU      C17    C16    C18    .
+ WGU      H171   C17    .      .
+ WGU      H172   C17    .      .
+ WGU      C18    C17    C19    .
+ WGU      H18    C18    .      .
+ WGU      C20    C18    H201   .
+ WGU      H203   C20    .      .
+ WGU      H202   C20    .      .
+ WGU      H201   C20    .      .
+ WGU      C19    C18    H191   .
+ WGU      H193   C19    .      .
+ WGU      H192   C19    .      .
+ WGU      H191   C19    .      .
+ WGU      C21    C16    N22    .
+ WGU      O33    C21    .      .
+ WGU      N22    C21    C23    .
+ WGU      C23    N22    C24    .
+ WGU      H23    C23    .      .
+ WGU      C31    C23    O32    .
+ WGU      H311   C31    .      .
+ WGU      H312   C31    .      .
+ WGU      O32    C31    HO32   .
+ WGU      HO32   O32    .      .
+ WGU      C24    C23    C25    .
+ WGU      H241   C24    .      .
+ WGU      H242   C24    .      .
+ WGU      C25    C24    C29    .
+ WGU      H25    C25    .      .
+ WGU      C29    C25    C28    .
+ WGU      H291   C29    .      .
+ WGU      H292   C29    .      .
+ WGU      C28    C29    N27    .
+ WGU      H281   C28    .      .
+ WGU      H282   C28    .      .
+ WGU      N27    C28    C26    .
+ WGU      C26    N27    O30    .
+ WGU      O30    C26    .      END
+ WGU      C07    C06    .    ADD
+ WGU      C25    C26    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WGU      C07    C06       aromatic    1.390    0.020
+ WGU      C04    C07       aromatic    1.390    0.020
+ WGU      C07    O08       single      1.370    0.020
+ WGU      C10    C09       single      1.524    0.020
+ WGU      C11    C09       single      1.524    0.020
+ WGU      C09    C12       single      1.524    0.020
+ WGU      O08    C09       single      1.426    0.020
+ WGU      C12    O13       single      1.426    0.020
+ WGU      N15    C14       deloc       1.330    0.020
+ WGU      O13    C14       single      1.454    0.020
+ WGU      C14    O34       double      1.220    0.020
+ WGU      C17    C16       single      1.524    0.020
+ WGU      C21    C16       single      1.500    0.020
+ WGU      C16    N15       single      1.455    0.020
+ WGU      C18    C17       single      1.524    0.020
+ WGU      C19    C18       single      1.524    0.020
+ WGU      C20    C18       single      1.524    0.020
+ WGU      N22    C21       deloc       1.330    0.020
+ WGU      O33    C21       deloc       1.220    0.020
+ WGU      C24    C23       single      1.524    0.020
+ WGU      C31    C23       single      1.524    0.020
+ WGU      C23    N22       single      1.455    0.020
+ WGU      C25    C24       single      1.524    0.020
+ WGU      C25    C26       single      1.500    0.020
+ WGU      C29    C25       single      1.524    0.020
+ WGU      C26    N27       aromatic    1.330    0.020
+ WGU      O30    C26       aromatic    1.220    0.020
+ WGU      C06    C05       aromatic    1.390    0.020
+ WGU      C05    C02       aromatic    1.390    0.020
+ WGU      C03    C04       aromatic    1.390    0.020
+ WGU      C02    C03       aromatic    1.390    0.020
+ WGU      F01    C02       single      1.345    0.020
+ WGU      C28    C29       single      1.524    0.020
+ WGU      N27    C28       single      1.455    0.020
+ WGU      O32    C31       single      1.432    0.020
+ WGU      H101   C10       single      1.059    0.020
+ WGU      H102   C10       single      1.059    0.020
+ WGU      H103   C10       single      1.059    0.020
+ WGU      H111   C11       single      1.059    0.020
+ WGU      H112   C11       single      1.059    0.020
+ WGU      H113   C11       single      1.059    0.020
+ WGU      H121   C12       single      1.092    0.020
+ WGU      H122   C12       single      1.092    0.020
+ WGU      H16    C16       single      1.099    0.020
+ WGU      H171   C17       single      1.092    0.020
+ WGU      H172   C17       single      1.092    0.020
+ WGU      H18    C18       single      1.099    0.020
+ WGU      H191   C19       single      1.059    0.020
+ WGU      H192   C19       single      1.059    0.020
+ WGU      H193   C19       single      1.059    0.020
+ WGU      H201   C20       single      1.059    0.020
+ WGU      H202   C20       single      1.059    0.020
+ WGU      H203   C20       single      1.059    0.020
+ WGU      H23    C23       single      1.099    0.020
+ WGU      H241   C24       single      1.092    0.020
+ WGU      H242   C24       single      1.092    0.020
+ WGU      H25    C25       single      1.099    0.020
+ WGU      H06    C06       single      1.083    0.020
+ WGU      H05    C05       single      1.083    0.020
+ WGU      H04    C04       single      1.083    0.020
+ WGU      H03    C03       single      1.083    0.020
+ WGU      H281   C28       single      1.092    0.020
+ WGU      H282   C28       single      1.092    0.020
+ WGU      H291   C29       single      1.092    0.020
+ WGU      H292   C29       single      1.092    0.020
+ WGU      H311   C31       single      1.092    0.020
+ WGU      H312   C31       single      1.092    0.020
+ WGU      HO32   O32       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WGU      O34    C14    O13     119.000    3.000
+ WGU      O34    C14    N15     123.000    3.000
+ WGU      O13    C14    N15     120.000    3.000
+ WGU      C14    O13    C12     120.000    3.000
+ WGU      O13    C12    H121    109.470    3.000
+ WGU      O13    C12    H122    109.470    3.000
+ WGU      O13    C12    C09     109.500    3.000
+ WGU      H121   C12    H122    107.900    3.000
+ WGU      H121   C12    C09     109.470    3.000
+ WGU      H122   C12    C09     109.470    3.000
+ WGU      C12    C09    C10     111.000    3.000
+ WGU      C12    C09    C11     111.000    3.000
+ WGU      C12    C09    O08     109.470    3.000
+ WGU      C10    C09    C11     111.000    3.000
+ WGU      C10    C09    O08     109.470    3.000
+ WGU      C11    C09    O08     109.470    3.000
+ WGU      C09    C10    H103    109.470    3.000
+ WGU      C09    C10    H102    109.470    3.000
+ WGU      C09    C10    H101    109.470    3.000
+ WGU      H103   C10    H102    109.470    3.000
+ WGU      H103   C10    H101    109.470    3.000
+ WGU      H102   C10    H101    109.470    3.000
+ WGU      C09    C11    H113    109.470    3.000
+ WGU      C09    C11    H112    109.470    3.000
+ WGU      C09    C11    H111    109.470    3.000
+ WGU      H113   C11    H112    109.470    3.000
+ WGU      H113   C11    H111    109.470    3.000
+ WGU      H112   C11    H111    109.470    3.000
+ WGU      C09    O08    C07     120.000    3.000
+ WGU      O08    C07    C04     120.000    3.000
+ WGU      O08    C07    C06     120.000    3.000
+ WGU      C04    C07    C06     120.000    3.000
+ WGU      C07    C04    H04     120.000    3.000
+ WGU      C07    C04    C03     120.000    3.000
+ WGU      H04    C04    C03     120.000    3.000
+ WGU      C04    C03    H03     120.000    3.000
+ WGU      C04    C03    C02     120.000    3.000
+ WGU      H03    C03    C02     120.000    3.000
+ WGU      C03    C02    F01     120.000    3.000
+ WGU      C03    C02    C05     120.000    3.000
+ WGU      F01    C02    C05     120.000    3.000
+ WGU      C02    C05    H05     120.000    3.000
+ WGU      C02    C05    C06     120.000    3.000
+ WGU      H05    C05    C06     120.000    3.000
+ WGU      C05    C06    H06     120.000    3.000
+ WGU      C05    C06    C07     120.000    3.000
+ WGU      H06    C06    C07     120.000    3.000
+ WGU      C14    N15    C16     121.000    3.000
+ WGU      N15    C16    H16     109.470    3.000
+ WGU      N15    C16    C17     105.000    3.000
+ WGU      N15    C16    C21     111.600    3.000
+ WGU      H16    C16    C17     108.340    3.000
+ WGU      H16    C16    C21     108.810    3.000
+ WGU      C17    C16    C21     109.470    3.000
+ WGU      C16    C17    H171    109.470    3.000
+ WGU      C16    C17    H172    109.470    3.000
+ WGU      C16    C17    C18     111.000    3.000
+ WGU      H171   C17    H172    107.900    3.000
+ WGU      H171   C17    C18     109.470    3.000
+ WGU      H172   C17    C18     109.470    3.000
+ WGU      C17    C18    H18     108.340    3.000
+ WGU      C17    C18    C20     111.000    3.000
+ WGU      C17    C18    C19     111.000    3.000
+ WGU      H18    C18    C20     108.340    3.000
+ WGU      H18    C18    C19     108.340    3.000
+ WGU      C20    C18    C19     111.000    3.000
+ WGU      C18    C20    H203    109.470    3.000
+ WGU      C18    C20    H202    109.470    3.000
+ WGU      C18    C20    H201    109.470    3.000
+ WGU      H203   C20    H202    109.470    3.000
+ WGU      H203   C20    H201    109.470    3.000
+ WGU      H202   C20    H201    109.470    3.000
+ WGU      C18    C19    H193    109.470    3.000
+ WGU      C18    C19    H192    109.470    3.000
+ WGU      C18    C19    H191    109.470    3.000
+ WGU      H193   C19    H192    109.470    3.000
+ WGU      H193   C19    H191    109.470    3.000
+ WGU      H192   C19    H191    109.470    3.000
+ WGU      C16    C21    O33     120.500    3.000
+ WGU      C16    C21    N22     116.500    3.000
+ WGU      O33    C21    N22     123.000    3.000
+ WGU      C21    N22    C23     121.000    3.000
+ WGU      N22    C23    H23     109.470    3.000
+ WGU      N22    C23    C31     105.000    3.000
+ WGU      N22    C23    C24     105.000    3.000
+ WGU      H23    C23    C31     108.340    3.000
+ WGU      H23    C23    C24     108.340    3.000
+ WGU      C31    C23    C24     109.470    3.000
+ WGU      C23    C31    H311    109.470    3.000
+ WGU      C23    C31    H312    109.470    3.000
+ WGU      C23    C31    O32     109.470    3.000
+ WGU      H311   C31    H312    107.900    3.000
+ WGU      H311   C31    O32     109.470    3.000
+ WGU      H312   C31    O32     109.470    3.000
+ WGU      C31    O32    HO32    109.470    3.000
+ WGU      C23    C24    H241    109.470    3.000
+ WGU      C23    C24    H242    109.470    3.000
+ WGU      C23    C24    C25     111.000    3.000
+ WGU      H241   C24    H242    107.900    3.000
+ WGU      H241   C24    C25     109.470    3.000
+ WGU      H242   C24    C25     109.470    3.000
+ WGU      C24    C25    H25     108.340    3.000
+ WGU      C24    C25    C29     109.470    3.000
+ WGU      C24    C25    C26     109.470    3.000
+ WGU      H25    C25    C29     108.340    3.000
+ WGU      H25    C25    C26     108.810    3.000
+ WGU      C29    C25    C26     109.470    3.000
+ WGU      C25    C29    H291    109.470    3.000
+ WGU      C25    C29    H292    109.470    3.000
+ WGU      C25    C29    C28     111.000    3.000
+ WGU      H291   C29    H292    107.900    3.000
+ WGU      H291   C29    C28     109.470    3.000
+ WGU      H292   C29    C28     109.470    3.000
+ WGU      C29    C28    H281    109.470    3.000
+ WGU      C29    C28    H282    109.470    3.000
+ WGU      C29    C28    N27     105.000    3.000
+ WGU      H281   C28    H282    107.900    3.000
+ WGU      H281   C28    N27     109.470    3.000
+ WGU      H282   C28    N27     109.470    3.000
+ WGU      C28    N27    C26     127.000    3.000
+ WGU      N27    C26    O30     123.000    3.000
+ WGU      N27    C26    C25     116.500    3.000
+ WGU      O30    C26    C25     120.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WGU      var_1            O34    C14    O13    C12               25.931           20.000   3
+ WGU      var_2            C14    O13    C12    C09             -160.729           20.000   3
+ WGU      var_3            O13    C12    C09    O08              -60.102           20.000   3
+ WGU      var_4            C12    C09    C10    H101             180.000           20.000   3
+ WGU      var_5            C12    C09    C11    H111             180.000           20.000   3
+ WGU      var_6            C12    C09    O08    C07              134.384           20.000   3
+ WGU      var_7            C09    O08    C07    C04             -102.990           20.000   3
+ WGU      CONST_1          O08    C07    C06    C05                0.000            0.000   0
+ WGU      CONST_2          O08    C07    C04    C03                0.000            0.000   0
+ WGU      CONST_3          C07    C04    C03    C02                0.000            0.000   0
+ WGU      CONST_4          C04    C03    C02    C05                0.000            0.000   0
+ WGU      CONST_5          C03    C02    C05    C06                0.000            0.000   0
+ WGU      CONST_6          C02    C05    C06    C07                0.000            0.000   0
+ WGU      CONST_7          O34    C14    N15    C16              180.000            0.000   0
+ WGU      var_8            C14    N15    C16    C21                0.000           20.000   3
+ WGU      var_9            N15    C16    C17    C18              180.000           20.000   3
+ WGU      var_10           C16    C17    C18    C19              180.000           20.000   3
+ WGU      var_11           C17    C18    C20    H201             180.000           20.000   3
+ WGU      var_12           C17    C18    C19    H191             180.000           20.000   3
+ WGU      var_13           N15    C16    C21    N22              180.000           20.000   3
+ WGU      CONST_8          C16    C21    N22    C23              180.000            0.000   0
+ WGU      var_14           C21    N22    C23    C24                0.000           20.000   3
+ WGU      var_15           N22    C23    C31    O32              180.000           20.000   3
+ WGU      var_16           C23    C31    O32    HO32             180.000           20.000   3
+ WGU      var_17           N22    C23    C24    C25              180.000           20.000   3
+ WGU      var_18           C23    C24    C25    C29              180.000           20.000   3
+ WGU      var_19           C24    C25    C26    N27              180.000           20.000   3
+ WGU      var_20           C24    C25    C29    C28              180.000           20.000   3
+ WGU      var_21           C25    C29    C28    N27              180.000           20.000   3
+ WGU      var_22           C29    C28    N27    C26              -14.124           20.000   3
+ WGU      var_23           C28    N27    C26    O30              180.000           20.000   2
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WGU      chir_01          C09    C10    C11    C12       positiv
+ WGU      chir_02          C16    C17    C21    N15       negativ
+ WGU      chir_03          C18    C17    C19    C20       negativ
+ WGU      chir_04          C23    C24    C31    N22       negativ
+ WGU      chir_05          C25    C24    C26    C29       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WGU      plan-1            C07       0.020
+ WGU      plan-1            C06       0.020
+ WGU      plan-1            C04       0.020
+ WGU      plan-1            O08       0.020
+ WGU      plan-1            C05       0.020
+ WGU      plan-1            C03       0.020
+ WGU      plan-1            C02       0.020
+ WGU      plan-1            H06       0.020
+ WGU      plan-1            H05       0.020
+ WGU      plan-1            H04       0.020
+ WGU      plan-1            H03       0.020
+ WGU      plan-1            F01       0.020
+ WGU      plan-2            C14       0.020
+ WGU      plan-2            N15       0.020
+ WGU      plan-2            O13       0.020
+ WGU      plan-2            O34       0.020
+ WGU      plan-2            C16       0.020
+ WGU      plan-3            C21       0.020
+ WGU      plan-3            C16       0.020
+ WGU      plan-3            N22       0.020
+ WGU      plan-3            O33       0.020
+ WGU      plan-3            C23       0.020
+ WGU      plan-4            C26       0.020
+ WGU      plan-4            C25       0.020
+ WGU      plan-4            N27       0.020
+ WGU      plan-4            O30       0.020
+ WGU      plan-5            N27       0.020
+ WGU      plan-5            C26       0.020
+ WGU      plan-5            C28       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-WGO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-WGO  1 SG      2 C31       .           1.800    0.020
+#
+data_link_CYS-WGU
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-WGU  1 SG      2 C31       .           1.820    0.020
+# ------------------------------------------------------

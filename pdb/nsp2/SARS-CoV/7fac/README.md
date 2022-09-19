@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br> [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp2/SARS-CoV/7fac/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp2/SARS-CoV/7fac/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp2/SARS-CoV/7fac/validation/Xtriage_output.log)   
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp2/SARS-CoV/7fac/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp2/SARS-CoV/7fac/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp2/SARS-CoV/7fac/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp2/SARS-CoV/7fac/validation/Xtriage_output.log)   
 
 
 

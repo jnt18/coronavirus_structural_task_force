@@ -22,7 +22,7 @@
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/protein_e/SARS-CoV-2/7tuq/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/protein_e/SARS-CoV-2/7tuq/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/protein_e/SARS-CoV-2/7tuq/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/protein_e/SARS-CoV-2/7tuq/validation/Xtriage_output.log)   
 
