@@ -3,7 +3,7 @@ data_7TW7
 _entry.id   7TW7 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.360 
+_audit_conform.dict_version    5.361 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -56,11 +56,11 @@ _citation.language                  ?
 _citation.page_first                ? 
 _citation.page_last                 ? 
 _citation.title                     
-'High-resolution structures of the SARS-CoV-2 N7-methyltransferase inform therapeutic development' 
+'High-resolution structures of the SARS-CoV-2 N7-methyltransferase inform therapeutic development.' 
 _citation.year                      2022 
 _citation.database_id_CSD           ? 
 _citation.pdbx_database_id_DOI      10.1038/s41594-022-00828-1 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_PubMed   36075969 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -69,8 +69,11 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Kottur, J.'     1 ? 
-primary 'Aggarwal, A.K.' 2 ? 
+primary 'Kottur, J.'             1 0000-0002-8075-3883 
+primary 'Rechkoblit, O.'         2 0000-0003-4270-7242 
+primary 'Quintana-Feliciano, R.' 3 0000-0002-5835-4683 
+primary 'Sciaky, D.'             4 ?                   
+primary 'Aggarwal, A.K.'         5 0000-0003-4389-0173 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -8848,11 +8851,14 @@ _pdbx_struct_conn_angle.value_esd
 5 SG ? A CYS 259 ? A CYS 477 ? 1_555 ZN ? B ZN . ? A ZN 601 ? 1_555 ND1 ? A HIS 269 ? A HIS 487 ? 1_555 110.9 ? 
 6 SG ? A CYS 266 ? A CYS 484 ? 1_555 ZN ? B ZN . ? A ZN 601 ? 1_555 ND1 ? A HIS 269 ? A HIS 487 ? 1_555 95.3  ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-09-07 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-09-07 
+2 'Structure model' 1 1 2022-09-21 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -8861,6 +8867,27 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
+2 2 'Structure model' '_citation.title'                   
 # 
 loop_
 _space_group_symop.id 
