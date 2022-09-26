@@ -1,0 +1,509 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WIO      WIO '.                                   ' .                  68  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-WIO  CYS      .        .        WIO      .        .
+ bond_CYS-SG_=_WIO-C22
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WIO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WIO           O25    O    O         0.000    -12.713   -0.058   42.158
+ WIO           C05    C    C         0.000    -13.864   -0.126   42.548
+ WIO           O04    O    O2        0.000    -14.583    0.982   42.374
+ WIO           C03    C    CH2       0.000    -14.078    2.159   41.791
+ WIO           H031   H    H         0.000    -14.026    2.001   40.712
+ WIO           H032   H    H         0.000    -13.072    2.320   42.183
+ WIO           C02    C    CT        0.000    -14.976    3.429   42.098
+ WIO           O27    O    O2        0.000    -15.351    3.450   43.458
+ WIO           C28    C    CR6       0.000    -14.367    3.443   44.440
+ WIO           C34    C    CR16      0.000    -13.710    4.628   44.862
+ WIO           H34    H    H         0.000    -13.963    5.586   44.424
+ WIO           C32    C    CR6       0.000    -12.725    4.533   45.859
+ WIO           F33    F    F         0.000    -12.073    5.666   46.277
+ WIO           C31    C    CR16      0.000    -12.351    3.344   46.481
+ WIO           H31    H    H         0.000    -11.590    3.317   47.251
+ WIO           C30    C    CR16      0.000    -13.015    2.182   46.055
+ WIO           H30    H    H         0.000    -12.759    1.232   46.507
+ WIO           C29    C    CR16      0.000    -14.003    2.222   45.057
+ WIO           H29    H    H         0.000    -14.494    1.305   44.755
+ WIO           C26    C    CH3       0.000    -16.242    3.314   41.268
+ WIO           H263   H    H         0.000    -15.988    3.283   40.241
+ WIO           H262   H    H         0.000    -16.756    2.427   41.532
+ WIO           H261   H    H         0.000    -16.862    4.152   41.454
+ WIO           C01    C    CH3       0.000    -14.122    4.670   41.807
+ WIO           H013   H    H         0.000    -13.263    4.664   42.427
+ WIO           H012   H    H         0.000    -13.821    4.664   40.791
+ WIO           H011   H    H         0.000    -14.688    5.545   42.001
+ WIO           N06    N    N         0.000    -14.375   -1.273   43.120
+ WIO           C07    C    CH1       0.000    -13.650   -2.472   43.112
+ WIO           H07    H    H         0.000    -12.643   -2.238   43.485
+ WIO           C08    C    CH2       0.000    -14.239   -3.552   44.057
+ WIO           H081   H    H         0.000    -13.532   -4.384   44.082
+ WIO           H082   H    H         0.000    -15.181   -3.889   43.619
+ WIO           C09    C    CH1       0.000    -14.490   -3.044   45.494
+ WIO           H09    H    H         0.000    -15.340   -2.349   45.457
+ WIO           C11    C    CH3       0.000    -13.273   -2.265   46.048
+ WIO           H113   H    H         0.000    -12.421   -2.896   46.065
+ WIO           H112   H    H         0.000    -13.073   -1.426   45.431
+ WIO           H111   H    H         0.000    -13.479   -1.932   47.034
+ WIO           C10    C    CH3       0.000    -14.863   -4.182   46.457
+ WIO           H103   H    H         0.000    -15.748   -4.658   46.119
+ WIO           H102   H    H         0.000    -14.075   -4.890   46.493
+ WIO           H101   H    H         0.000    -15.025   -3.788   47.428
+ WIO           C12    C    C         0.000    -13.482   -2.957   41.600
+ WIO           O24    O    O         0.000    -14.520   -3.084   40.956
+ WIO           N13    N    NH1       0.000    -12.238   -3.240   41.011
+ WIO           HN13   H    H         0.000    -11.423   -3.134   41.598
+ WIO           C14    C    CH1       0.000    -11.996   -3.686   39.590
+ WIO           H14    H    H         0.000    -12.968   -3.741   39.079
+ WIO           C22    C    CH2       0.000    -11.279   -5.079   39.428
+ WIO           H221   H    H         0.000    -10.954   -5.434   40.408
+ WIO           H222   H    H         0.000    -10.410   -4.964   38.777
+ WIO           O23    O    OH1       0.000    -12.147   -5.985   38.878
+ WIO           HO23   H    H         0.000    -11.694   -6.829   38.786
+ WIO           C15    C    CH2       0.000    -11.110   -2.701   38.822
+ WIO           H151   H    H         0.000    -11.038   -3.103   37.809
+ WIO           H152   H    H         0.000    -10.131   -2.754   39.304
+ WIO           C16    C    CH1       0.000    -11.573   -1.244   38.762
+ WIO           H16    H    H         0.000    -11.732   -0.841   39.772
+ WIO           C20    C    CH2       0.000    -12.802   -1.038   37.897
+ WIO           H202   H    H         0.000    -13.703   -0.942   38.507
+ WIO           H201   H    H         0.000    -12.929   -1.860   37.189
+ WIO           C17    C    C         0.000    -10.518   -0.448   38.021
+ WIO           O21    O    O         0.000     -9.315   -0.510   38.183
+ WIO           N18    N    N         0.000    -11.096    0.390   37.083
+ WIO           C19    C    CH2       0.000    -12.562    0.259   37.134
+ WIO           H192   H    H         0.000    -12.999    0.182   36.136
+ WIO           H191   H    H         0.000    -13.026    1.089   37.670
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WIO      O25    n/a    C05    START
+ WIO      C05    O25    N06    .
+ WIO      O04    C05    C03    .
+ WIO      C03    O04    C02    .
+ WIO      H031   C03    .      .
+ WIO      H032   C03    .      .
+ WIO      C02    C03    C01    .
+ WIO      O27    C02    C28    .
+ WIO      C28    O27    C34    .
+ WIO      C34    C28    C32    .
+ WIO      H34    C34    .      .
+ WIO      C32    C34    C31    .
+ WIO      F33    C32    .      .
+ WIO      C31    C32    C30    .
+ WIO      H31    C31    .      .
+ WIO      C30    C31    C29    .
+ WIO      H30    C30    .      .
+ WIO      C29    C30    H29    .
+ WIO      H29    C29    .      .
+ WIO      C26    C02    H261   .
+ WIO      H263   C26    .      .
+ WIO      H262   C26    .      .
+ WIO      H261   C26    .      .
+ WIO      C01    C02    H011   .
+ WIO      H013   C01    .      .
+ WIO      H012   C01    .      .
+ WIO      H011   C01    .      .
+ WIO      N06    C05    C07    .
+ WIO      C07    N06    C12    .
+ WIO      H07    C07    .      .
+ WIO      C08    C07    C09    .
+ WIO      H081   C08    .      .
+ WIO      H082   C08    .      .
+ WIO      C09    C08    C10    .
+ WIO      H09    C09    .      .
+ WIO      C11    C09    H111   .
+ WIO      H113   C11    .      .
+ WIO      H112   C11    .      .
+ WIO      H111   C11    .      .
+ WIO      C10    C09    H101   .
+ WIO      H103   C10    .      .
+ WIO      H102   C10    .      .
+ WIO      H101   C10    .      .
+ WIO      C12    C07    N13    .
+ WIO      O24    C12    .      .
+ WIO      N13    C12    C14    .
+ WIO      HN13   N13    .      .
+ WIO      C14    N13    C15    .
+ WIO      H14    C14    .      .
+ WIO      C22    C14    O23    .
+ WIO      H221   C22    .      .
+ WIO      H222   C22    .      .
+ WIO      O23    C22    HO23   .
+ WIO      HO23   O23    .      .
+ WIO      C15    C14    C16    .
+ WIO      H151   C15    .      .
+ WIO      H152   C15    .      .
+ WIO      C16    C15    C17    .
+ WIO      H16    C16    .      .
+ WIO      C20    C16    H201   .
+ WIO      H202   C20    .      .
+ WIO      H201   C20    .      .
+ WIO      C17    C16    N18    .
+ WIO      O21    C17    .      .
+ WIO      N18    C17    C19    .
+ WIO      C19    N18    H191   .
+ WIO      H192   C19    .      .
+ WIO      H191   C19    .      END
+ WIO      C19    C20    .    ADD
+ WIO      C28    C29    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WIO      C08    C07       single      1.524    0.020
+ WIO      C12    C07       single      1.500    0.020
+ WIO      C07    N06       single      1.455    0.020
+ WIO      C09    C08       single      1.524    0.020
+ WIO      C10    C09       single      1.524    0.020
+ WIO      C11    C09       single      1.524    0.020
+ WIO      N13    C12       single      1.330    0.020
+ WIO      O24    C12       double      1.220    0.020
+ WIO      C15    C14       single      1.524    0.020
+ WIO      C22    C14       single      1.524    0.020
+ WIO      C14    N13       single      1.450    0.020
+ WIO      C16    C15       single      1.524    0.020
+ WIO      C20    C16       single      1.524    0.020
+ WIO      C17    C16       single      1.500    0.020
+ WIO      C19    C20       single      1.524    0.020
+ WIO      C19    N18       single      1.455    0.020
+ WIO      O21    C17       double      1.220    0.020
+ WIO      O23    C22       single      1.432    0.020
+ WIO      N06    C05       deloc       1.330    0.020
+ WIO      O04    C05       single      1.454    0.020
+ WIO      C05    O25       double      1.220    0.020
+ WIO      C02    C03       single      1.524    0.020
+ WIO      C03    O04       single      1.426    0.020
+ WIO      C01    C02       single      1.524    0.020
+ WIO      C26    C02       single      1.524    0.020
+ WIO      O27    C02       single      1.426    0.020
+ WIO      N18    C17       aromatic    1.330    0.020
+ WIO      C28    C29       aromatic    1.390    0.020
+ WIO      C34    C28       aromatic    1.390    0.020
+ WIO      C28    O27       single      1.370    0.020
+ WIO      C29    C30       aromatic    1.390    0.020
+ WIO      C30    C31       aromatic    1.390    0.020
+ WIO      C31    C32       aromatic    1.390    0.020
+ WIO      C32    C34       aromatic    1.390    0.020
+ WIO      F33    C32       single      1.345    0.020
+ WIO      H07    C07       single      1.099    0.020
+ WIO      H081   C08       single      1.092    0.020
+ WIO      H082   C08       single      1.092    0.020
+ WIO      H09    C09       single      1.099    0.020
+ WIO      H101   C10       single      1.059    0.020
+ WIO      H102   C10       single      1.059    0.020
+ WIO      H103   C10       single      1.059    0.020
+ WIO      H111   C11       single      1.059    0.020
+ WIO      H112   C11       single      1.059    0.020
+ WIO      H113   C11       single      1.059    0.020
+ WIO      H14    C14       single      1.099    0.020
+ WIO      H151   C15       single      1.092    0.020
+ WIO      H152   C15       single      1.092    0.020
+ WIO      H16    C16       single      1.099    0.020
+ WIO      H191   C19       single      1.092    0.020
+ WIO      H192   C19       single      1.092    0.020
+ WIO      H201   C20       single      1.092    0.020
+ WIO      H202   C20       single      1.092    0.020
+ WIO      H221   C22       single      1.092    0.020
+ WIO      H222   C22       single      1.092    0.020
+ WIO      HO23   O23       single      0.967    0.020
+ WIO      H031   C03       single      1.092    0.020
+ WIO      H032   C03       single      1.092    0.020
+ WIO      H011   C01       single      1.059    0.020
+ WIO      H012   C01       single      1.059    0.020
+ WIO      H013   C01       single      1.059    0.020
+ WIO      H261   C26       single      1.059    0.020
+ WIO      H262   C26       single      1.059    0.020
+ WIO      H263   C26       single      1.059    0.020
+ WIO      H29    C29       single      1.083    0.020
+ WIO      H30    C30       single      1.083    0.020
+ WIO      H31    C31       single      1.083    0.020
+ WIO      H34    C34       single      1.083    0.020
+ WIO      HN13   N13       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WIO      O25    C05    O04     119.000    3.000
+ WIO      O25    C05    N06     123.000    3.000
+ WIO      O04    C05    N06     120.000    3.000
+ WIO      C05    O04    C03     120.000    3.000
+ WIO      O04    C03    H031    109.470    3.000
+ WIO      O04    C03    H032    109.470    3.000
+ WIO      O04    C03    C02     109.500    3.000
+ WIO      H031   C03    H032    107.900    3.000
+ WIO      H031   C03    C02     109.470    3.000
+ WIO      H032   C03    C02     109.470    3.000
+ WIO      C03    C02    O27     109.470    3.000
+ WIO      C03    C02    C26     111.000    3.000
+ WIO      C03    C02    C01     111.000    3.000
+ WIO      O27    C02    C26     109.470    3.000
+ WIO      O27    C02    C01     109.470    3.000
+ WIO      C26    C02    C01     111.000    3.000
+ WIO      C02    O27    C28     120.000    3.000
+ WIO      O27    C28    C34     120.000    3.000
+ WIO      O27    C28    C29     120.000    3.000
+ WIO      C34    C28    C29     120.000    3.000
+ WIO      C28    C34    H34     120.000    3.000
+ WIO      C28    C34    C32     120.000    3.000
+ WIO      H34    C34    C32     120.000    3.000
+ WIO      C34    C32    F33     120.000    3.000
+ WIO      C34    C32    C31     120.000    3.000
+ WIO      F33    C32    C31     120.000    3.000
+ WIO      C32    C31    H31     120.000    3.000
+ WIO      C32    C31    C30     120.000    3.000
+ WIO      H31    C31    C30     120.000    3.000
+ WIO      C31    C30    H30     120.000    3.000
+ WIO      C31    C30    C29     120.000    3.000
+ WIO      H30    C30    C29     120.000    3.000
+ WIO      C30    C29    H29     120.000    3.000
+ WIO      C30    C29    C28     120.000    3.000
+ WIO      H29    C29    C28     120.000    3.000
+ WIO      C02    C26    H263    109.470    3.000
+ WIO      C02    C26    H262    109.470    3.000
+ WIO      C02    C26    H261    109.470    3.000
+ WIO      H263   C26    H262    109.470    3.000
+ WIO      H263   C26    H261    109.470    3.000
+ WIO      H262   C26    H261    109.470    3.000
+ WIO      C02    C01    H013    109.470    3.000
+ WIO      C02    C01    H012    109.470    3.000
+ WIO      C02    C01    H011    109.470    3.000
+ WIO      H013   C01    H012    109.470    3.000
+ WIO      H013   C01    H011    109.470    3.000
+ WIO      H012   C01    H011    109.470    3.000
+ WIO      C05    N06    C07     121.000    3.000
+ WIO      N06    C07    H07     109.470    3.000
+ WIO      N06    C07    C08     105.000    3.000
+ WIO      N06    C07    C12     111.600    3.000
+ WIO      H07    C07    C08     108.340    3.000
+ WIO      H07    C07    C12     108.810    3.000
+ WIO      C08    C07    C12     109.470    3.000
+ WIO      C07    C08    H081    109.470    3.000
+ WIO      C07    C08    H082    109.470    3.000
+ WIO      C07    C08    C09     111.000    3.000
+ WIO      H081   C08    H082    107.900    3.000
+ WIO      H081   C08    C09     109.470    3.000
+ WIO      H082   C08    C09     109.470    3.000
+ WIO      C08    C09    H09     108.340    3.000
+ WIO      C08    C09    C11     111.000    3.000
+ WIO      C08    C09    C10     111.000    3.000
+ WIO      H09    C09    C11     108.340    3.000
+ WIO      H09    C09    C10     108.340    3.000
+ WIO      C11    C09    C10     111.000    3.000
+ WIO      C09    C11    H113    109.470    3.000
+ WIO      C09    C11    H112    109.470    3.000
+ WIO      C09    C11    H111    109.470    3.000
+ WIO      H113   C11    H112    109.470    3.000
+ WIO      H113   C11    H111    109.470    3.000
+ WIO      H112   C11    H111    109.470    3.000
+ WIO      C09    C10    H103    109.470    3.000
+ WIO      C09    C10    H102    109.470    3.000
+ WIO      C09    C10    H101    109.470    3.000
+ WIO      H103   C10    H102    109.470    3.000
+ WIO      H103   C10    H101    109.470    3.000
+ WIO      H102   C10    H101    109.470    3.000
+ WIO      C07    C12    O24     120.500    3.000
+ WIO      C07    C12    N13     116.500    3.000
+ WIO      O24    C12    N13     123.000    3.000
+ WIO      C12    N13    HN13    120.000    3.000
+ WIO      C12    N13    C14     121.500    3.000
+ WIO      HN13   N13    C14     118.500    3.000
+ WIO      N13    C14    H14     108.550    3.000
+ WIO      N13    C14    C22     110.000    3.000
+ WIO      N13    C14    C15     110.000    3.000
+ WIO      H14    C14    C22     108.340    3.000
+ WIO      H14    C14    C15     108.340    3.000
+ WIO      C22    C14    C15     109.470    3.000
+ WIO      C14    C22    H221    109.470    3.000
+ WIO      C14    C22    H222    109.470    3.000
+ WIO      C14    C22    O23     109.470    3.000
+ WIO      H221   C22    H222    107.900    3.000
+ WIO      H221   C22    O23     109.470    3.000
+ WIO      H222   C22    O23     109.470    3.000
+ WIO      C22    O23    HO23    109.470    3.000
+ WIO      C14    C15    H151    109.470    3.000
+ WIO      C14    C15    H152    109.470    3.000
+ WIO      C14    C15    C16     111.000    3.000
+ WIO      H151   C15    H152    107.900    3.000
+ WIO      H151   C15    C16     109.470    3.000
+ WIO      H152   C15    C16     109.470    3.000
+ WIO      C15    C16    H16     108.340    3.000
+ WIO      C15    C16    C20     109.470    3.000
+ WIO      C15    C16    C17     109.470    3.000
+ WIO      H16    C16    C20     108.340    3.000
+ WIO      H16    C16    C17     108.810    3.000
+ WIO      C20    C16    C17     109.470    3.000
+ WIO      C16    C20    H202    109.470    3.000
+ WIO      C16    C20    H201    109.470    3.000
+ WIO      C16    C20    C19     111.000    3.000
+ WIO      H202   C20    H201    107.900    3.000
+ WIO      H202   C20    C19     109.470    3.000
+ WIO      H201   C20    C19     109.470    3.000
+ WIO      C16    C17    O21     120.500    3.000
+ WIO      C16    C17    N18     116.500    3.000
+ WIO      O21    C17    N18     123.000    3.000
+ WIO      C17    N18    C19     127.000    3.000
+ WIO      N18    C19    H192    109.470    3.000
+ WIO      N18    C19    H191    109.470    3.000
+ WIO      N18    C19    C20     105.000    3.000
+ WIO      H192   C19    H191    107.900    3.000
+ WIO      H192   C19    C20     109.470    3.000
+ WIO      H191   C19    C20     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WIO      var_1            O25    C05    O04    C03               -0.199           20.000   3
+ WIO      var_2            C05    O04    C03    C02             -162.652           20.000   3
+ WIO      var_3            O04    C03    C02    C01              162.556           20.000   3
+ WIO      var_4            C03    C02    O27    C28               57.331           20.000   3
+ WIO      var_5            C02    O27    C28    C34               83.223           20.000   3
+ WIO      CONST_1          O27    C28    C29    C30                0.000            0.000   0
+ WIO      CONST_2          O27    C28    C34    C32                0.000            0.000   0
+ WIO      CONST_3          C28    C34    C32    C31                0.000            0.000   0
+ WIO      CONST_4          C34    C32    C31    C30                0.000            0.000   0
+ WIO      CONST_5          C32    C31    C30    C29                0.000            0.000   0
+ WIO      CONST_6          C31    C30    C29    C28                0.000            0.000   0
+ WIO      var_6            C03    C02    C26    H261             180.000           20.000   3
+ WIO      var_7            C03    C02    C01    H011             180.000           20.000   3
+ WIO      CONST_7          O25    C05    N06    C07              180.000            0.000   0
+ WIO      var_8            C05    N06    C07    C12                0.000           20.000   3
+ WIO      var_9            N06    C07    C08    C09              180.000           20.000   3
+ WIO      var_10           C07    C08    C09    C10              180.000           20.000   3
+ WIO      var_11           C08    C09    C11    H111             180.000           20.000   3
+ WIO      var_12           C08    C09    C10    H101             180.000           20.000   3
+ WIO      var_13           N06    C07    C12    N13              180.000           20.000   3
+ WIO      var_14           C07    C12    N13    C14              180.000           20.000   2
+ WIO      var_15           C12    N13    C14    C15                0.000           20.000   3
+ WIO      var_16           N13    C14    C22    O23              180.000           20.000   3
+ WIO      var_17           C14    C22    O23    HO23             180.000           20.000   3
+ WIO      var_18           N13    C14    C15    C16              180.000           20.000   3
+ WIO      var_19           C14    C15    C16    C17              180.000           20.000   3
+ WIO      var_20           C15    C16    C20    C19              180.000           20.000   3
+ WIO      var_21           C15    C16    C17    N18              180.000           20.000   3
+ WIO      var_22           C16    C17    N18    C19              180.000           20.000   2
+ WIO      var_23           C17    N18    C19    C20              -16.573           20.000   3
+ WIO      var_24           N18    C19    C20    C16              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WIO      chir_01          C07    C08    C12    N06       negativ
+ WIO      chir_02          C09    C08    C10    C11       negativ
+ WIO      chir_03          C14    C15    C22    N13       negativ
+ WIO      chir_04          C16    C15    C20    C17       positiv
+ WIO      chir_05          C02    C03    C01    C26       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WIO      plan-1            C12       0.020
+ WIO      plan-1            C07       0.020
+ WIO      plan-1            N13       0.020
+ WIO      plan-1            O24       0.020
+ WIO      plan-1            HN13      0.020
+ WIO      plan-2            C05       0.020
+ WIO      plan-2            N06       0.020
+ WIO      plan-2            O04       0.020
+ WIO      plan-2            O25       0.020
+ WIO      plan-2            C07       0.020
+ WIO      plan-3            C17       0.020
+ WIO      plan-3            C16       0.020
+ WIO      plan-3            O21       0.020
+ WIO      plan-3            N18       0.020
+ WIO      plan-4            C28       0.020
+ WIO      plan-4            C29       0.020
+ WIO      plan-4            C34       0.020
+ WIO      plan-4            O27       0.020
+ WIO      plan-4            C30       0.020
+ WIO      plan-4            C31       0.020
+ WIO      plan-4            C32       0.020
+ WIO      plan-4            H29       0.020
+ WIO      plan-4            H30       0.020
+ WIO      plan-4            H31       0.020
+ WIO      plan-4            F33       0.020
+ WIO      plan-4            H34       0.020
+ WIO      plan-5            N13       0.020
+ WIO      plan-5            C12       0.020
+ WIO      plan-5            C14       0.020
+ WIO      plan-5            HN13      0.020
+ WIO      plan-6            N18       0.020
+ WIO      plan-6            C19       0.020
+ WIO      plan-6            C17       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-WIO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-WIO  1 SG      2 C22       .           1.790    0.020
+# ------------------------------------------------------

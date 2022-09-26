@@ -1,0 +1,579 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T2L      T2L '.                                   ' .                  73  45 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T2L  CYS      .        .        T2L      .        .
+ bond_CYS-SG_=_T2L-C
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T2L
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T2L           FAY    F    F         0.000     12.541    6.792   21.696
+ T2L           CAV    C    CT        0.000     13.129    5.593   21.660
+ T2L           FAW    F    F         0.000     13.167    5.214   20.570
+ T2L           FAX    F    F         0.000     14.397    5.595   22.053
+ T2L           CAU    C    C         0.000     12.301    4.626   22.594
+ T2L           OAZ    O    O         0.000     12.664    4.375   23.750
+ T2L           NAT    N    N         0.000     11.187    4.192   22.063
+ T2L           CAS    C    CH1       0.000     10.342    3.276   22.760
+ T2L           HAS    H    H         0.000     10.795    3.074   23.741
+ T2L           CBA    C    CT        0.000      8.934    3.809   22.991
+ T2L           CBB    C    CH3       0.000      8.145    2.748   23.721
+ T2L           HBB3   H    H         0.000      8.112    1.870   23.132
+ T2L           HBB2   H    H         0.000      8.613    2.538   24.646
+ T2L           HBB1   H    H         0.000      7.162    3.099   23.892
+ T2L           CBD    C    CH3       0.000      8.998    5.108   23.843
+ T2L           HBD3   H    H         0.000      9.451    4.902   24.781
+ T2L           HBD2   H    H         0.000      9.570    5.844   23.335
+ T2L           HBD1   H    H         0.000      8.018    5.481   24.005
+ T2L           CBC    C    CH3       0.000      8.145    4.120   21.720
+ T2L           HBC3   H    H         0.000      8.658    4.855   21.156
+ T2L           HBC2   H    H         0.000      8.044    3.238   21.141
+ T2L           HBC1   H    H         0.000      7.184    4.483   21.980
+ T2L           CAR    C    C         0.000     10.359    1.952   21.938
+ T2L           OBE    O    O         0.000      9.954    1.927   20.791
+ T2L           NAN    N    N         0.000     10.730    0.852   22.559
+ T2L           CAO    C    CH2       0.000     11.225    0.755   23.938
+ T2L           HAO1   H    H         0.000     10.429    0.868   24.677
+ T2L           HAO2   H    H         0.000     12.019    1.474   24.148
+ T2L           CAP    C    CH1       0.000     11.766   -0.607   24.004
+ T2L           HAP    H    H         0.000     11.665   -1.143   24.958
+ T2L           CBF    C    CT        0.000     12.811   -1.144   22.998
+ T2L           CBH    C    CH3       0.000     13.556   -2.412   23.459
+ T2L           HBH3   H    H         0.000     14.076   -2.212   24.361
+ T2L           HBH2   H    H         0.000     12.860   -3.195   23.623
+ T2L           HBH1   H    H         0.000     14.249   -2.710   22.714
+ T2L           CBG    C    CH3       0.000     13.717   -0.120   22.224
+ T2L           HBG3   H    H         0.000     13.113    0.537   21.647
+ T2L           HBG2   H    H         0.000     14.288    0.453   22.913
+ T2L           HBG1   H    H         0.000     14.379   -0.639   21.575
+ T2L           CAQ    C    C         0.000     11.315   -1.341   22.736
+ T2L           CAM    C    C         0.000     10.644   -0.425   21.856
+ T2L           CAJ    C    C         0.000      9.261   -0.842   21.669
+ T2L           OAK    O    O         0.000      8.410   -0.695   22.555
+ T2L           N      N    N         0.000      8.967   -1.397   20.478
+ T2L           CA     C    CH1       0.000      7.611   -1.857   20.128
+ T2L           HA     H    H         0.000      6.943   -1.640   20.973
+ T2L           CB     C    CH2       0.000      7.088   -1.082   18.875
+ T2L           HB1    H    H         0.000      6.124   -1.502   18.579
+ T2L           HB2    H    H         0.000      7.804   -1.208   18.060
+ T2L           CG     C    C         0.000      6.922    0.418   19.188
+ T2L           CD1    C    C         0.000      6.429    1.133   18.039
+ T2L           OAL    O    O         0.000      6.884    0.982   16.901
+ T2L           NAE    N    N         0.000      5.451    2.014   18.305
+ T2L           CAD    C    CH2       0.000      5.187    2.006   19.804
+ T2L           HAD1   H    H         0.000      4.122    1.991   20.045
+ T2L           HAD2   H    H         0.000      5.664    2.841   20.321
+ T2L           CD2    C    CH2       0.000      5.833    0.688   20.251
+ T2L           HD22   H    H         0.000      5.117   -0.136   20.258
+ T2L           HD21   H    H         0.000      6.297    0.774   21.236
+ T2L           C      C    C         0.000      7.614   -3.415   19.883
+ T2L           O      O    O         0.000      6.551   -3.871   19.380
+ T2L           CBI    C    CR5       0.000      8.134   -4.045   20.982
+ T2L           NBJ    N    NRD5      0.000      7.393   -4.163   22.100
+ T2L           SBM    S    S2        0.000      9.785   -4.764   21.362
+ T2L           CBL    C    CR56      0.000      9.238   -5.187   22.994
+ T2L           CBK    C    CR56      0.000      7.954   -4.780   23.174
+ T2L           CBQ    C    CSP       0.000      9.938   -5.804   23.968
+ T2L           CBP    C    CR16      0.000      9.363   -6.031   25.220
+ T2L           HBP    H    H         0.000      9.926   -6.521   26.005
+ T2L           CBO    C    CR16      0.000      8.051   -5.615   25.441
+ T2L           HBO    H    H         0.000      7.572   -5.771   26.400
+ T2L           CBN    C    CR6       0.000      7.369   -4.990   24.389
+ T2L           FBS    F    F         0.000      6.058   -4.602   24.633
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T2L      FAY    n/a    CAV    START
+ T2L      CAV    FAY    CAU    .
+ T2L      FAW    CAV    FAX    .
+ T2L      FAX    FAW    .      .
+ T2L      CAU    CAV    NAT    .
+ T2L      OAZ    CAU    .      .
+ T2L      NAT    CAU    CAS    .
+ T2L      CAS    NAT    CAR    .
+ T2L      HAS    CAS    .      .
+ T2L      CBA    CAS    CBC    .
+ T2L      CBB    CBA    HBB1   .
+ T2L      HBB3   CBB    .      .
+ T2L      HBB2   CBB    .      .
+ T2L      HBB1   CBB    .      .
+ T2L      CBD    CBA    HBD1   .
+ T2L      HBD3   CBD    .      .
+ T2L      HBD2   CBD    .      .
+ T2L      HBD1   CBD    .      .
+ T2L      CBC    CBA    HBC1   .
+ T2L      HBC3   CBC    .      .
+ T2L      HBC2   CBC    .      .
+ T2L      HBC1   CBC    .      .
+ T2L      CAR    CAS    NAN    .
+ T2L      OBE    CAR    .      .
+ T2L      NAN    CAR    CAM    .
+ T2L      CAO    NAN    CAP    .
+ T2L      HAO1   CAO    .      .
+ T2L      HAO2   CAO    .      .
+ T2L      CAP    CAO    CAQ    .
+ T2L      HAP    CAP    .      .
+ T2L      CBF    CAP    CBG    .
+ T2L      CBH    CBF    HBH1   .
+ T2L      HBH3   CBH    .      .
+ T2L      HBH2   CBH    .      .
+ T2L      HBH1   CBH    .      .
+ T2L      CBG    CBF    HBG1   .
+ T2L      HBG3   CBG    .      .
+ T2L      HBG2   CBG    .      .
+ T2L      HBG1   CBG    .      .
+ T2L      CAQ    CAP    .      .
+ T2L      CAM    NAN    CAJ    .
+ T2L      CAJ    CAM    N      .
+ T2L      OAK    CAJ    .      .
+ T2L      N      CAJ    CA     .
+ T2L      CA     N      C      .
+ T2L      HA     CA     .      .
+ T2L      CB     CA     CG     .
+ T2L      HB1    CB     .      .
+ T2L      HB2    CB     .      .
+ T2L      CG     CB     CD1    .
+ T2L      CD1    CG     NAE    .
+ T2L      OAL    CD1    .      .
+ T2L      NAE    CD1    CAD    .
+ T2L      CAD    NAE    CD2    .
+ T2L      HAD1   CAD    .      .
+ T2L      HAD2   CAD    .      .
+ T2L      CD2    CAD    HD21   .
+ T2L      HD22   CD2    .      .
+ T2L      HD21   CD2    .      .
+ T2L      C      CA     CBI    .
+ T2L      O      C      .      .
+ T2L      CBI    C      SBM    .
+ T2L      NBJ    CBI    .      .
+ T2L      SBM    CBI    CBL    .
+ T2L      CBL    SBM    CBQ    .
+ T2L      CBK    CBL    .      .
+ T2L      CBQ    CBL    CBP    .
+ T2L      CBP    CBQ    CBO    .
+ T2L      HBP    CBP    .      .
+ T2L      CBO    CBP    CBN    .
+ T2L      HBO    CBO    .      .
+ T2L      CBN    CBO    FBS    .
+ T2L      FBS    CBN    .      END
+ T2L      NBJ    CBK    .    ADD
+ T2L      CBK    CBN    .    ADD
+ T2L      CG     CD2    .    ADD
+ T2L      CAM    CAQ    .    ADD
+ T2L      CAQ    CBF    .    ADD
+ T2L      CAV    FAX    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T2L      NBJ    CBK       aromatic    1.350    0.020
+ T2L      NBJ    CBI       aromatic    1.350    0.020
+ T2L      CBK    CBN       aromatic    1.390    0.020
+ T2L      CBK    CBL       double      1.490    0.020
+ T2L      FBS    CBN       single      1.345    0.020
+ T2L      CBN    CBO       aromatic    1.390    0.020
+ T2L      CBO    CBP       aromatic    1.390    0.020
+ T2L      CBP    CBQ       aromatic    1.285    0.020
+ T2L      CBQ    CBL       double      1.285    0.020
+ T2L      CBL    SBM       single      1.695    0.020
+ T2L      SBM    CBI       single      1.745    0.020
+ T2L      CBI    C         deloc       1.490    0.020
+ T2L      O      C         deloc       1.220    0.020
+ T2L      C      CA        single      1.500    0.020
+ T2L      CB     CA        single      1.524    0.020
+ T2L      CA     N         single      1.455    0.020
+ T2L      CG     CB        single      1.510    0.020
+ T2L      CG     CD2       single      1.510    0.020
+ T2L      CD1    CG        aromatic    1.330    0.020
+ T2L      CD2    CAD       single      1.524    0.020
+ T2L      CAD    NAE       single      1.455    0.020
+ T2L      NAE    CD1       aromatic    1.330    0.020
+ T2L      OAL    CD1       double      1.220    0.020
+ T2L      N      CAJ       deloc       1.330    0.020
+ T2L      OAK    CAJ       deloc       1.220    0.020
+ T2L      CAJ    CAM       deloc       1.330    0.020
+ T2L      CAM    CAQ       aromatic    1.330    0.020
+ T2L      CAM    NAN       single      1.330    0.020
+ T2L      CAQ    CBF       single      1.507    0.020
+ T2L      CAQ    CAP       single      1.500    0.020
+ T2L      CBG    CBF       single      1.524    0.020
+ T2L      CBH    CBF       single      1.524    0.020
+ T2L      CBF    CAP       single      1.524    0.020
+ T2L      CAP    CAO       single      1.524    0.020
+ T2L      CAO    NAN       single      1.455    0.020
+ T2L      NAN    CAR       single      1.330    0.020
+ T2L      OBE    CAR       double      1.220    0.020
+ T2L      CAR    CAS       single      1.500    0.020
+ T2L      CBA    CAS       single      1.524    0.020
+ T2L      CAS    NAT       single      1.455    0.020
+ T2L      CBC    CBA       single      1.524    0.020
+ T2L      CBD    CBA       single      1.524    0.020
+ T2L      CBB    CBA       single      1.524    0.020
+ T2L      NAT    CAU       deloc       1.330    0.020
+ T2L      OAZ    CAU       deloc       1.220    0.020
+ T2L      CAU    CAV       single      1.507    0.020
+ T2L      CAV    FAX       single      1.320    0.020
+ T2L      CAV    FAY       single      1.320    0.020
+ T2L      FAW    CAV       single      1.320    0.020
+ T2L      FAX    FAW       single      1.300    0.020
+ T2L      HBO    CBO       single      1.083    0.020
+ T2L      HBP    CBP       single      1.083    0.020
+ T2L      HA     CA        single      1.099    0.020
+ T2L      HB1    CB        single      1.092    0.020
+ T2L      HB2    CB        single      1.092    0.020
+ T2L      HD21   CD2       single      1.092    0.020
+ T2L      HD22   CD2       single      1.092    0.020
+ T2L      HAD1   CAD       single      1.092    0.020
+ T2L      HAD2   CAD       single      1.092    0.020
+ T2L      HBG1   CBG       single      1.059    0.020
+ T2L      HBG2   CBG       single      1.059    0.020
+ T2L      HBG3   CBG       single      1.059    0.020
+ T2L      HBH1   CBH       single      1.059    0.020
+ T2L      HBH2   CBH       single      1.059    0.020
+ T2L      HBH3   CBH       single      1.059    0.020
+ T2L      HAP    CAP       single      1.099    0.020
+ T2L      HAO1   CAO       single      1.092    0.020
+ T2L      HAO2   CAO       single      1.092    0.020
+ T2L      HAS    CAS       single      1.099    0.020
+ T2L      HBC1   CBC       single      1.059    0.020
+ T2L      HBC2   CBC       single      1.059    0.020
+ T2L      HBC3   CBC       single      1.059    0.020
+ T2L      HBD1   CBD       single      1.059    0.020
+ T2L      HBD2   CBD       single      1.059    0.020
+ T2L      HBD3   CBD       single      1.059    0.020
+ T2L      HBB1   CBB       single      1.059    0.020
+ T2L      HBB2   CBB       single      1.059    0.020
+ T2L      HBB3   CBB       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T2L      FAY    CAV    FAW     109.470    3.000
+ T2L      FAY    CAV    CAU     109.470    3.000
+ T2L      FAY    CAV    FAX     109.470    3.000
+ T2L      FAW    CAV    CAU     109.470    3.000
+ T2L      FAW    CAV    FAX      59.000    3.000
+ T2L      CAU    CAV    FAX     109.470    3.000
+ T2L      CAV    FAW    FAX      60.500    3.000
+ T2L      FAW    FAX    CAV      60.500    3.000
+ T2L      CAV    CAU    OAZ     120.500    3.000
+ T2L      CAV    CAU    NAT     116.500    3.000
+ T2L      OAZ    CAU    NAT     123.000    3.000
+ T2L      CAU    NAT    CAS     121.000    3.000
+ T2L      NAT    CAS    HAS     109.470    3.000
+ T2L      NAT    CAS    CBA     109.500    3.000
+ T2L      NAT    CAS    CAR     111.600    3.000
+ T2L      HAS    CAS    CBA     108.340    3.000
+ T2L      HAS    CAS    CAR     108.810    3.000
+ T2L      CBA    CAS    CAR     109.470    3.000
+ T2L      CAS    CBA    CBB     111.000    3.000
+ T2L      CAS    CBA    CBD     111.000    3.000
+ T2L      CAS    CBA    CBC     111.000    3.000
+ T2L      CBB    CBA    CBD     111.000    3.000
+ T2L      CBB    CBA    CBC     111.000    3.000
+ T2L      CBD    CBA    CBC     111.000    3.000
+ T2L      CBA    CBB    HBB3    109.470    3.000
+ T2L      CBA    CBB    HBB2    109.470    3.000
+ T2L      CBA    CBB    HBB1    109.470    3.000
+ T2L      HBB3   CBB    HBB2    109.470    3.000
+ T2L      HBB3   CBB    HBB1    109.470    3.000
+ T2L      HBB2   CBB    HBB1    109.470    3.000
+ T2L      CBA    CBD    HBD3    109.470    3.000
+ T2L      CBA    CBD    HBD2    109.470    3.000
+ T2L      CBA    CBD    HBD1    109.470    3.000
+ T2L      HBD3   CBD    HBD2    109.470    3.000
+ T2L      HBD3   CBD    HBD1    109.470    3.000
+ T2L      HBD2   CBD    HBD1    109.470    3.000
+ T2L      CBA    CBC    HBC3    109.470    3.000
+ T2L      CBA    CBC    HBC2    109.470    3.000
+ T2L      CBA    CBC    HBC1    109.470    3.000
+ T2L      HBC3   CBC    HBC2    109.470    3.000
+ T2L      HBC3   CBC    HBC1    109.470    3.000
+ T2L      HBC2   CBC    HBC1    109.470    3.000
+ T2L      CAS    CAR    OBE     120.500    3.000
+ T2L      CAS    CAR    NAN     116.500    3.000
+ T2L      OBE    CAR    NAN     123.000    3.000
+ T2L      CAR    NAN    CAO     127.000    3.000
+ T2L      CAR    NAN    CAM     120.000    3.000
+ T2L      CAO    NAN    CAM     127.000    3.000
+ T2L      NAN    CAO    HAO1    109.470    3.000
+ T2L      NAN    CAO    HAO2    109.470    3.000
+ T2L      NAN    CAO    CAP     105.000    3.000
+ T2L      HAO1   CAO    HAO2    107.900    3.000
+ T2L      HAO1   CAO    CAP     109.470    3.000
+ T2L      HAO2   CAO    CAP     109.470    3.000
+ T2L      CAO    CAP    HAP     108.340    3.000
+ T2L      CAO    CAP    CBF     111.000    3.000
+ T2L      CAO    CAP    CAQ     109.470    3.000
+ T2L      HAP    CAP    CBF     108.340    3.000
+ T2L      HAP    CAP    CAQ     108.810    3.000
+ T2L      CBF    CAP    CAQ      59.775    3.000
+ T2L      CAP    CBF    CBH     111.000    3.000
+ T2L      CAP    CBF    CBG     111.000    3.000
+ T2L      CAP    CBF    CAQ      59.321    3.000
+ T2L      CBH    CBF    CBG     111.000    3.000
+ T2L      CBH    CBF    CAQ     109.470    3.000
+ T2L      CBG    CBF    CAQ     109.470    3.000
+ T2L      CBF    CBH    HBH3    109.470    3.000
+ T2L      CBF    CBH    HBH2    109.470    3.000
+ T2L      CBF    CBH    HBH1    109.470    3.000
+ T2L      HBH3   CBH    HBH2    109.470    3.000
+ T2L      HBH3   CBH    HBH1    109.470    3.000
+ T2L      HBH2   CBH    HBH1    109.470    3.000
+ T2L      CBF    CBG    HBG3    109.470    3.000
+ T2L      CBF    CBG    HBG2    109.470    3.000
+ T2L      CBF    CBG    HBG1    109.470    3.000
+ T2L      HBG3   CBG    HBG2    109.470    3.000
+ T2L      HBG3   CBG    HBG1    109.470    3.000
+ T2L      HBG2   CBG    HBG1    109.470    3.000
+ T2L      CAP    CAQ    CAM     120.000    3.000
+ T2L      CAP    CAQ    CBF      60.904    3.000
+ T2L      CAM    CAQ    CBF     120.000    3.000
+ T2L      NAN    CAM    CAJ     116.500    3.000
+ T2L      NAN    CAM    CAQ     116.500    3.000
+ T2L      CAJ    CAM    CAQ     120.000    3.000
+ T2L      CAM    CAJ    OAK     120.500    3.000
+ T2L      CAM    CAJ    N       116.500    3.000
+ T2L      OAK    CAJ    N       123.000    3.000
+ T2L      CAJ    N      CA      121.000    3.000
+ T2L      N      CA     HA      109.470    3.000
+ T2L      N      CA     CB      105.000    3.000
+ T2L      N      CA     C       111.600    3.000
+ T2L      HA     CA     CB      108.340    3.000
+ T2L      HA     CA     C       108.810    3.000
+ T2L      CB     CA     C       109.470    3.000
+ T2L      CA     CB     HB1     109.470    3.000
+ T2L      CA     CB     HB2     109.470    3.000
+ T2L      CA     CB     CG      109.470    3.000
+ T2L      HB1    CB     HB2     107.900    3.000
+ T2L      HB1    CB     CG      109.470    3.000
+ T2L      HB2    CB     CG      109.470    3.000
+ T2L      CB     CG     CD1     120.000    3.000
+ T2L      CB     CG     CD2     120.000    3.000
+ T2L      CD1    CG     CD2     120.000    3.000
+ T2L      CG     CD1    OAL     120.500    3.000
+ T2L      CG     CD1    NAE     116.500    3.000
+ T2L      OAL    CD1    NAE     123.000    3.000
+ T2L      CD1    NAE    CAD     127.000    3.000
+ T2L      NAE    CAD    HAD1    109.470    3.000
+ T2L      NAE    CAD    HAD2    109.470    3.000
+ T2L      NAE    CAD    CD2     105.000    3.000
+ T2L      HAD1   CAD    HAD2    107.900    3.000
+ T2L      HAD1   CAD    CD2     109.470    3.000
+ T2L      HAD2   CAD    CD2     109.470    3.000
+ T2L      CAD    CD2    HD22    109.470    3.000
+ T2L      CAD    CD2    HD21    109.470    3.000
+ T2L      CAD    CD2    CG      109.470    3.000
+ T2L      HD22   CD2    HD21    107.900    3.000
+ T2L      HD22   CD2    CG      109.470    3.000
+ T2L      HD21   CD2    CG      109.470    3.000
+ T2L      CA     C      O       120.500    3.000
+ T2L      CA     C      CBI     120.000    3.000
+ T2L      O      C      CBI     120.500    3.000
+ T2L      C      CBI    NBJ     126.000    3.000
+ T2L      C      CBI    SBM     108.000    3.000
+ T2L      NBJ    CBI    SBM     108.000    3.000
+ T2L      CBI    NBJ    CBK     108.000    3.000
+ T2L      CBI    SBM    CBL      90.372    3.000
+ T2L      SBM    CBL    CBK     120.000    3.000
+ T2L      SBM    CBL    CBQ     120.000    3.000
+ T2L      CBK    CBL    CBQ     120.000    3.000
+ T2L      CBL    CBK    NBJ     108.000    3.000
+ T2L      CBL    CBK    CBN     120.000    3.000
+ T2L      NBJ    CBK    CBN     132.000    3.000
+ T2L      CBL    CBQ    CBP     180.000    3.000
+ T2L      CBQ    CBP    HBP     120.000    3.000
+ T2L      CBQ    CBP    CBO     120.000    3.000
+ T2L      HBP    CBP    CBO     120.000    3.000
+ T2L      CBP    CBO    HBO     120.000    3.000
+ T2L      CBP    CBO    CBN     120.000    3.000
+ T2L      HBO    CBO    CBN     120.000    3.000
+ T2L      CBO    CBN    FBS     120.000    3.000
+ T2L      CBO    CBN    CBK     120.000    3.000
+ T2L      FBS    CBN    CBK     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T2L      var_1            FAY    CAV    FAX    FAW             -119.641           20.000   3
+ T2L      var_2            FAY    CAV    FAW    FAX              122.781           20.000   3
+ T2L      var_3            FAY    CAV    CAU    NAT               77.363           20.000   3
+ T2L      CONST_1          CAV    CAU    NAT    CAS              180.000            0.000   0
+ T2L      var_4            CAU    NAT    CAS    CAR                0.000           20.000   3
+ T2L      var_5            NAT    CAS    CBA    CBC               61.380           20.000   3
+ T2L      var_6            CAS    CBA    CBB    HBB1             180.000           20.000   3
+ T2L      var_7            CAS    CBA    CBD    HBD1             180.000           20.000   3
+ T2L      var_8            CAS    CBA    CBC    HBC1             180.000           20.000   3
+ T2L      var_9            NAT    CAS    CAR    NAN              180.000           20.000   3
+ T2L      var_10           CAS    CAR    NAN    CAM              180.000           20.000   2
+ T2L      var_11           CAR    NAN    CAO    CAP             -167.627           20.000   3
+ T2L      var_12           NAN    CAO    CAP    CAQ              180.000           20.000   3
+ T2L      var_13           CAO    CAP    CBF    CBG               23.006           20.000   3
+ T2L      var_14           CAP    CBF    CBH    HBH1             180.000           20.000   3
+ T2L      var_15           CAP    CBF    CBG    HBG1             180.000           20.000   3
+ T2L      var_16           CAO    CAP    CAQ    CAM              180.000           20.000   3
+ T2L      var_17           CAR    NAN    CAM    CAJ              180.000           20.000   2
+ T2L      var_18           NAN    CAM    CAQ    CAP                1.919           20.000   3
+ T2L      CONST_2          NAN    CAM    CAJ    N                139.747            0.000   0
+ T2L      CONST_3          CAM    CAJ    N      CA               180.000            0.000   0
+ T2L      var_19           CAJ    N      CA     C                  0.000           20.000   3
+ T2L      var_20           N      CA     CB     CG               180.000           20.000   3
+ T2L      var_21           CA     CB     CG     CD1              180.000           20.000   3
+ T2L      var_22           CB     CG     CD2    CAD              180.000           20.000   3
+ T2L      var_23           CB     CG     CD1    NAE              135.745           20.000   3
+ T2L      var_24           CG     CD1    NAE    CAD              180.000           20.000   2
+ T2L      var_25           CD1    NAE    CAD    CD2              -17.606           20.000   3
+ T2L      var_26           NAE    CAD    CD2    CG               180.000           20.000   3
+ T2L      var_27           N      CA     C      CBI              180.000           20.000   3
+ T2L      CONST_4          CA     C      CBI    SBM             -100.810            0.000   0
+ T2L      CONST_5          C      CBI    NBJ    CBK                0.000            0.000   0
+ T2L      CONST_6          CBI    NBJ    CBK    CBL              180.000            0.000   0
+ T2L      CONST_7          C      CBI    SBM    CBL              178.199            0.000   0
+ T2L      CONST_8          CBI    SBM    CBL    CBQ              179.694            0.000   0
+ T2L      CONST_9          SBM    CBL    CBK    NBJ              180.000            0.000   0
+ T2L      CONST_10         CBL    CBK    CBN    CBO              180.000            0.000   0
+ T2L      CONST_11         SBM    CBL    CBQ    CBP              178.210            0.000   0
+ T2L      CONST_12         CBL    CBQ    CBP    CBO                0.357            0.000   0
+ T2L      CONST_13         CBQ    CBP    CBO    CBN                0.000            0.000   0
+ T2L      CONST_14         CBP    CBO    CBN    FBS                0.000            0.000   0
+ T2L      CONST_1          CAM    CAQ    CBF    CAP               97.802            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T2L      chir_01          CA     C      CB     N         positiv
+ T2L      chir_02          CBF    CAQ    CBG    CBH       positiv
+ T2L      chir_03          CAP    CAQ    CBF    CAO       negativ
+ T2L      chir_04          CAS    CAR    CBA    NAT       positiv
+ T2L      chir_05          CBA    CAS    CBC    CBD       positiv
+ T2L      chir_06          CAV    CAU    FAX    FAY       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T2L      plan-1            NBJ       0.020
+ T2L      plan-1            CBK       0.020
+ T2L      plan-1            CBI       0.020
+ T2L      plan-1            SBM       0.020
+ T2L      plan-1            CBN       0.020
+ T2L      plan-1            CBL       0.020
+ T2L      plan-1            CBO       0.020
+ T2L      plan-1            CBP       0.020
+ T2L      plan-1            CBQ       0.020
+ T2L      plan-1            FBS       0.020
+ T2L      plan-1            HBO       0.020
+ T2L      plan-1            HBP       0.020
+ T2L      plan-1            C         0.020
+ T2L      plan-1            O         0.020
+ T2L      plan-1            CA        0.020
+ T2L      plan-2            CG        0.020
+ T2L      plan-2            CB        0.020
+ T2L      plan-2            CD2       0.020
+ T2L      plan-2            CD1       0.020
+ T2L      plan-3            NAE       0.020
+ T2L      plan-3            CAD       0.020
+ T2L      plan-3            CD1       0.020
+ T2L      plan-4            CD1       0.020
+ T2L      plan-4            CG        0.020
+ T2L      plan-4            NAE       0.020
+ T2L      plan-4            OAL       0.020
+ T2L      plan-5            N         0.020
+ T2L      plan-5            CA        0.020
+ T2L      plan-5            CAJ       0.020
+ T2L      plan-5            OAK       0.020
+ T2L      plan-5            CAM       0.020
+ T2L      plan-5            CAQ       0.020
+ T2L      plan-5            NAN       0.020
+ T2L      plan-6            CAQ       0.020
+ T2L      plan-6            CAM       0.020
+ T2L      plan-6            CBF       0.020
+ T2L      plan-6            CAP       0.020
+ T2L      plan-7            NAN       0.020
+ T2L      plan-7            CAM       0.020
+ T2L      plan-7            CAO       0.020
+ T2L      plan-7            CAR       0.020
+ T2L      plan-8            CAR       0.020
+ T2L      plan-8            NAN       0.020
+ T2L      plan-8            OBE       0.020
+ T2L      plan-8            CAS       0.020
+ T2L      plan-9            NAT       0.020
+ T2L      plan-9            CAS       0.020
+ T2L      plan-9            CAU       0.020
+ T2L      plan-9            OAZ       0.020
+ T2L      plan-9            CAV       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T2L
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T2L  1 SG      2 C         .           1.780    0.020
+# ------------------------------------------------------
