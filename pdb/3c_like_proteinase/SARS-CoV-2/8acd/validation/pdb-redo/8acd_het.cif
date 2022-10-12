@@ -1,0 +1,391 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LQ6      LQ6 '.                                   ' .                  47  33 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LQ6
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LQ6           CL1    CL   CL        0.000      7.622    2.867   27.308
+ LQ6           C1     C    CR6       0.000      8.475    2.569   25.829
+ LQ6           C      C    CR6       0.000      7.821    2.039   24.728
+ LQ6           CL     CL   CL        0.000      6.105    1.754   24.763
+ LQ6           C20    C    CR16      0.000      8.529    1.755   23.571
+ LQ6           H20    H    H         0.000      8.019    1.334   22.713
+ LQ6           C2     C    CR16      0.000      9.829    2.838   25.771
+ LQ6           H2     H    H         0.000     10.332    3.264   26.630
+ LQ6           C3     C    CR16      0.000     10.542    2.564   24.618
+ LQ6           H3     H    H         0.000     11.602    2.779   24.577
+ LQ6           C4     C    CR6       0.000      9.906    2.014   23.512
+ LQ6           N      N    N         0.000     10.650    1.736   22.347
+ LQ6           C5     C    CH2       0.000     11.142    2.914   21.613
+ LQ6           H51    H    H         0.000     11.630    3.584   22.323
+ LQ6           H52    H    H         0.000     10.286    3.423   21.163
+ LQ6           C6     C    CH2       0.000     12.120    2.522   20.534
+ LQ6           H62    H    H         0.000     13.001    2.072   20.995
+ LQ6           H61    H    H         0.000     12.417    3.414   19.978
+ LQ6           C8     C    CH1       0.000     10.082    0.728   21.443
+ LQ6           H8     H    H         0.000      9.175    1.146   20.983
+ LQ6           C9     C    C         0.000      9.720   -0.604   22.101
+ LQ6           O      O    O         0.000      8.790   -1.276   21.657
+ LQ6           N2     N    N         0.000     10.492   -0.999   23.121
+ LQ6           C10    C    CH2       0.000     10.113   -2.100   23.982
+ LQ6           H101   H    H         0.000     11.010   -2.611   24.337
+ LQ6           H102   H    H         0.000      9.492   -2.803   23.422
+ LQ6           C11    C    C         0.000      9.343   -1.573   25.149
+ LQ6           C12    C    C1        0.000      9.834   -1.034   26.366
+ LQ6           H12    H    H         0.000     10.877   -0.927   26.609
+ LQ6           S      S    S2        0.000      7.642   -1.581   25.112
+ LQ6           C14    C    C1        0.000      7.548   -0.893   26.672
+ LQ6           H14    H    H         0.000      6.617   -0.672   27.166
+ LQ6           C13    C    CSP       0.000      8.760   -0.653   27.226
+ LQ6           C7     C    CH2       0.000     11.062    0.363   20.331
+ LQ6           H71    H    H         0.000     10.567   -0.312   19.629
+ LQ6           H72    H    H         0.000     11.925   -0.140   20.770
+ LQ6           N1     N    N         0.000     11.503    1.564   19.625
+ LQ6           C15    C    C         0.000     11.373    1.796   18.313
+ LQ6           O3     O    O         0.000     11.661    2.877   17.815
+ LQ6           C16    C    CR6       0.000     10.872    0.720   17.441
+ LQ6           N3     N    NRD6      0.000     11.803   -0.184   16.994
+ LQ6           C18    C    CSP       0.000      9.563    0.605   17.101
+ LQ6           C19    C    CR6       0.000      9.146   -0.460   16.258
+ LQ6           O2     O    O         0.000      7.986   -0.674   15.906
+ LQ6           N4     N    NRD6      0.000     10.147   -1.320   15.838
+ LQ6           C17    C    CR6       0.000     11.469   -1.234   16.184
+ LQ6           O1     O    O         0.000     12.295   -2.067   15.822
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LQ6      CL1    n/a    C1     START
+ LQ6      C1     CL1    C2     .
+ LQ6      C      C1     C20    .
+ LQ6      CL     C      .      .
+ LQ6      C20    C      H20    .
+ LQ6      H20    C20    .      .
+ LQ6      C2     C1     C3     .
+ LQ6      H2     C2     .      .
+ LQ6      C3     C2     C4     .
+ LQ6      H3     C3     .      .
+ LQ6      C4     C3     N      .
+ LQ6      N      C4     C8     .
+ LQ6      C5     N      C6     .
+ LQ6      H51    C5     .      .
+ LQ6      H52    C5     .      .
+ LQ6      C6     C5     H61    .
+ LQ6      H62    C6     .      .
+ LQ6      H61    C6     .      .
+ LQ6      C8     N      C7     .
+ LQ6      H8     C8     .      .
+ LQ6      C9     C8     N2     .
+ LQ6      O      C9     .      .
+ LQ6      N2     C9     C10    .
+ LQ6      C10    N2     C11    .
+ LQ6      H101   C10    .      .
+ LQ6      H102   C10    .      .
+ LQ6      C11    C10    S      .
+ LQ6      C12    C11    H12    .
+ LQ6      H12    C12    .      .
+ LQ6      S      C11    C14    .
+ LQ6      C14    S      C13    .
+ LQ6      H14    C14    .      .
+ LQ6      C13    C14    .      .
+ LQ6      C7     C8     N1     .
+ LQ6      H71    C7     .      .
+ LQ6      H72    C7     .      .
+ LQ6      N1     C7     C15    .
+ LQ6      C15    N1     C16    .
+ LQ6      O3     C15    .      .
+ LQ6      C16    C15    C18    .
+ LQ6      N3     C16    .      .
+ LQ6      C18    C16    C19    .
+ LQ6      C19    C18    N4     .
+ LQ6      O2     C19    .      .
+ LQ6      N4     C19    C17    .
+ LQ6      C17    N4     O1     .
+ LQ6      O1     C17    .      END
+ LQ6      N1     C6     .    ADD
+ LQ6      N3     C17    .    ADD
+ LQ6      C4     C20    .    ADD
+ LQ6      C13    C12    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LQ6      N1     C6        single      1.455    0.020
+ LQ6      N1     C7        single      1.455    0.020
+ LQ6      C15    N1        single      1.330    0.020
+ LQ6      N3     C17       aromatic    1.350    0.020
+ LQ6      N3     C16       aromatic    1.350    0.020
+ LQ6      C4     C20       aromatic    1.390    0.020
+ LQ6      N      C4        single      1.400    0.020
+ LQ6      C4     C3        aromatic    1.390    0.020
+ LQ6      C6     C5        single      1.524    0.020
+ LQ6      C5     N         single      1.455    0.020
+ LQ6      C7     C8        single      1.524    0.020
+ LQ6      C8     N         single      1.455    0.020
+ LQ6      C9     C8        single      1.500    0.020
+ LQ6      C11    C10       single      1.510    0.020
+ LQ6      C10    N2        single      1.455    0.020
+ LQ6      C13    C12       aromatic    1.255    0.020
+ LQ6      C13    C14       double      1.255    0.020
+ LQ6      C16    C15       single      1.500    0.020
+ LQ6      O3     C15       double      1.220    0.020
+ LQ6      C17    N4        aromatic    1.350    0.020
+ LQ6      O1     C17       double      1.250    0.020
+ LQ6      C20    C         aromatic    1.390    0.020
+ LQ6      C      C1        aromatic    1.384    0.020
+ LQ6      CL     C         single      1.795    0.020
+ LQ6      O      C9        double      1.220    0.020
+ LQ6      C2     C1        aromatic    1.390    0.020
+ LQ6      C1     CL1       single      1.795    0.020
+ LQ6      C12    C11       aromatic    1.340    0.020
+ LQ6      S      C11       single      1.665    0.020
+ LQ6      C14    S         single      1.665    0.020
+ LQ6      C18    C16       double      1.285    0.020
+ LQ6      C19    C18       aromatic    1.285    0.020
+ LQ6      N4     C19       aromatic    1.350    0.020
+ LQ6      O2     C19       double      1.250    0.020
+ LQ6      C3     C2        aromatic    1.390    0.020
+ LQ6      N2     C9        deloc       1.330    0.020
+ LQ6      H51    C5        single      1.092    0.020
+ LQ6      H52    C5        single      1.092    0.020
+ LQ6      H61    C6        single      1.092    0.020
+ LQ6      H62    C6        single      1.092    0.020
+ LQ6      H71    C7        single      1.092    0.020
+ LQ6      H72    C7        single      1.092    0.020
+ LQ6      H8     C8        single      1.099    0.020
+ LQ6      H101   C10       single      1.092    0.020
+ LQ6      H102   C10       single      1.092    0.020
+ LQ6      H20    C20       single      1.083    0.020
+ LQ6      H12    C12       single      1.077    0.020
+ LQ6      H14    C14       single      1.077    0.020
+ LQ6      H2     C2        single      1.083    0.020
+ LQ6      H3     C3        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LQ6      CL1    C1     C       120.000    3.000
+ LQ6      CL1    C1     C2      120.000    3.000
+ LQ6      C      C1     C2      120.000    3.000
+ LQ6      C1     C      CL      120.000    3.000
+ LQ6      C1     C      C20     120.000    3.000
+ LQ6      CL     C      C20     120.000    3.000
+ LQ6      C      C20    H20     120.000    3.000
+ LQ6      C      C20    C4      120.000    3.000
+ LQ6      H20    C20    C4      120.000    3.000
+ LQ6      C1     C2     H2      120.000    3.000
+ LQ6      C1     C2     C3      120.000    3.000
+ LQ6      H2     C2     C3      120.000    3.000
+ LQ6      C2     C3     H3      120.000    3.000
+ LQ6      C2     C3     C4      120.000    3.000
+ LQ6      H3     C3     C4      120.000    3.000
+ LQ6      C3     C4     N       120.000    3.000
+ LQ6      C3     C4     C20     120.000    3.000
+ LQ6      N      C4     C20     120.000    3.000
+ LQ6      C4     N      C5      120.000    3.000
+ LQ6      C4     N      C8      120.000    3.000
+ LQ6      C5     N      C8      112.000    3.000
+ LQ6      N      C5     H51     109.470    3.000
+ LQ6      N      C5     H52     109.470    3.000
+ LQ6      N      C5     C6      105.000    3.000
+ LQ6      H51    C5     H52     107.900    3.000
+ LQ6      H51    C5     C6      109.470    3.000
+ LQ6      H52    C5     C6      109.470    3.000
+ LQ6      C5     C6     H62     109.470    3.000
+ LQ6      C5     C6     H61     109.470    3.000
+ LQ6      C5     C6     N1      105.000    3.000
+ LQ6      H62    C6     H61     107.900    3.000
+ LQ6      H62    C6     N1      109.470    3.000
+ LQ6      H61    C6     N1      109.470    3.000
+ LQ6      N      C8     H8      109.470    3.000
+ LQ6      N      C8     C9      111.600    3.000
+ LQ6      N      C8     C7      105.000    3.000
+ LQ6      H8     C8     C9      108.810    3.000
+ LQ6      H8     C8     C7      108.340    3.000
+ LQ6      C9     C8     C7      109.470    3.000
+ LQ6      C8     C9     O       120.500    3.000
+ LQ6      C8     C9     N2      116.500    3.000
+ LQ6      O      C9     N2      123.000    3.000
+ LQ6      C9     N2     C10     127.000    3.000
+ LQ6      N2     C10    H101    109.470    3.000
+ LQ6      N2     C10    H102    109.470    3.000
+ LQ6      N2     C10    C11     109.500    3.000
+ LQ6      H101   C10    H102    107.900    3.000
+ LQ6      H101   C10    C11     109.470    3.000
+ LQ6      H102   C10    C11     109.470    3.000
+ LQ6      C10    C11    C12     120.000    3.000
+ LQ6      C10    C11    S       120.000    3.000
+ LQ6      C12    C11    S       120.000    3.000
+ LQ6      C11    C12    H12     120.000    3.000
+ LQ6      C11    C12    C13     120.000    3.000
+ LQ6      H12    C12    C13     120.000    3.000
+ LQ6      C11    S      C14      91.908    3.000
+ LQ6      S      C14    H14     120.000    3.000
+ LQ6      S      C14    C13     120.000    3.000
+ LQ6      H14    C14    C13     120.000    3.000
+ LQ6      C14    C13    C12     180.000    3.000
+ LQ6      C8     C7     H71     109.470    3.000
+ LQ6      C8     C7     H72     109.470    3.000
+ LQ6      C8     C7     N1      105.000    3.000
+ LQ6      H71    C7     H72     107.900    3.000
+ LQ6      H71    C7     N1      109.470    3.000
+ LQ6      H72    C7     N1      109.470    3.000
+ LQ6      C7     N1     C15     127.000    3.000
+ LQ6      C7     N1     C6      120.000    3.000
+ LQ6      C15    N1     C6      127.000    3.000
+ LQ6      N1     C15    O3      123.000    3.000
+ LQ6      N1     C15    C16     120.000    3.000
+ LQ6      O3     C15    C16     120.500    3.000
+ LQ6      C15    C16    N3      120.000    3.000
+ LQ6      C15    C16    C18     120.000    3.000
+ LQ6      N3     C16    C18     120.000    3.000
+ LQ6      C16    N3     C17     120.000    3.000
+ LQ6      C16    C18    C19     180.000    3.000
+ LQ6      C18    C19    O2      120.000    3.000
+ LQ6      C18    C19    N4      120.000    3.000
+ LQ6      O2     C19    N4      120.000    3.000
+ LQ6      C19    N4     C17     120.000    3.000
+ LQ6      N4     C17    O1      120.000    3.000
+ LQ6      N4     C17    N3      120.000    3.000
+ LQ6      O1     C17    N3      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LQ6      CONST_1          CL1    C1     C      C20                0.000            0.000   0
+ LQ6      CONST_2          C1     C      C20    C4                 0.000            0.000   0
+ LQ6      CONST_3          CL1    C1     C2     C3                 0.000            0.000   0
+ LQ6      CONST_4          C1     C2     C3     C4                 0.000            0.000   0
+ LQ6      CONST_5          C2     C3     C4     N                  0.000            0.000   0
+ LQ6      CONST_6          C3     C4     C20    C                  0.000            0.000   0
+ LQ6      var_1            C3     C4     N      C8               157.556           20.000   3
+ LQ6      var_2            C4     N      C5     C6               169.951           20.000   3
+ LQ6      var_3            N      C5     C6     N1               180.000           20.000   3
+ LQ6      var_4            C4     N      C8     C7                 0.000           20.000   3
+ LQ6      var_5            N      C8     C9     N2               180.000           20.000   3
+ LQ6      CONST_7          C8     C9     N2     C10              180.000            0.000   0
+ LQ6      var_6            C9     N2     C10    C11              -91.396           20.000   3
+ LQ6      var_7            N2     C10    C11    S                180.000           20.000   3
+ LQ6      var_8            C10    C11    C12    C13             -179.548           20.000   3
+ LQ6      var_9            C10    C11    S      C14              179.640           20.000   3
+ LQ6      var_10           C11    S      C14    C13                0.071           20.000   3
+ LQ6      var_11           S      C14    C13    C12                0.077           20.000   3
+ LQ6      var_12           C14    C13    C12    C11               -0.220           20.000   3
+ LQ6      var_13           N      C8     C7     N1               180.000           20.000   3
+ LQ6      var_14           C8     C7     N1     C15             -122.284           20.000   3
+ LQ6      var_15           C7     N1     C6     C5               -58.761           20.000   3
+ LQ6      var_16           C7     N1     C15    C16              180.000           20.000   2
+ LQ6      var_17           N1     C15    C16    C18               94.869           20.000   3
+ LQ6      CONST_8          C15    C16    N3     C17                0.000            0.000   0
+ LQ6      CONST_9          C16    N3     C17    N4                 0.000            0.000   0
+ LQ6      CONST_10         C15    C16    C18    C19             -179.830            0.000   0
+ LQ6      CONST_11         C16    C18    C19    N4                -0.101            0.000   0
+ LQ6      CONST_12         C18    C19    N4     C17                0.000            0.000   0
+ LQ6      CONST_13         C19    N4     C17    O1                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ LQ6      chir_01          C8     C7     N      C9        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LQ6      plan-1            N1        0.020
+ LQ6      plan-1            C6        0.020
+ LQ6      plan-1            C7        0.020
+ LQ6      plan-1            C15       0.020
+ LQ6      plan-2            N3        0.020
+ LQ6      plan-2            C17       0.020
+ LQ6      plan-2            C16       0.020
+ LQ6      plan-2            C18       0.020
+ LQ6      plan-2            C19       0.020
+ LQ6      plan-2            N4        0.020
+ LQ6      plan-2            O1        0.020
+ LQ6      plan-2            C15       0.020
+ LQ6      plan-2            O2        0.020
+ LQ6      plan-3            C4        0.020
+ LQ6      plan-3            C20       0.020
+ LQ6      plan-3            N         0.020
+ LQ6      plan-3            C3        0.020
+ LQ6      plan-3            C         0.020
+ LQ6      plan-3            C1        0.020
+ LQ6      plan-3            C2        0.020
+ LQ6      plan-3            H20       0.020
+ LQ6      plan-3            CL        0.020
+ LQ6      plan-3            CL1       0.020
+ LQ6      plan-3            H2        0.020
+ LQ6      plan-3            H3        0.020
+ LQ6      plan-4            C15       0.020
+ LQ6      plan-4            N1        0.020
+ LQ6      plan-4            C16       0.020
+ LQ6      plan-4            O3        0.020
+ LQ6      plan-5            N         0.020
+ LQ6      plan-5            C4        0.020
+ LQ6      plan-5            C5        0.020
+ LQ6      plan-5            C8        0.020
+ LQ6      plan-6            C11       0.020
+ LQ6      plan-6            C10       0.020
+ LQ6      plan-6            C12       0.020
+ LQ6      plan-6            S         0.020
+ LQ6      plan-6            H12       0.020
+ LQ6      plan-7            C12       0.020
+ LQ6      plan-7            C13       0.020
+ LQ6      plan-7            C11       0.020
+ LQ6      plan-7            H12       0.020
+ LQ6      plan-8            C14       0.020
+ LQ6      plan-8            C13       0.020
+ LQ6      plan-8            S         0.020
+ LQ6      plan-8            H14       0.020
+ LQ6      plan-9            C9        0.020
+ LQ6      plan-9            C8        0.020
+ LQ6      plan-9            O         0.020
+ LQ6      plan-9            N2        0.020
+ LQ6      plan-9            C10       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
