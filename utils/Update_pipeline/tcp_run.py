@@ -1,5 +1,6 @@
 import tcp_main
 import analyze_and_fix_dataframe
+import sys
 import os
 import RMSD
 import mk_Alignment_strc_vs_seq as align
@@ -103,6 +104,7 @@ if report_content != "":
 
 # if database flag given, update database
 if args.database:
-    os.chdir("..")
-    os.chdir("database")
-    os.system("populate_database2.py")
+    # adding database folder to the system path
+    sys.path.insert(0, os.path.join("..", "database"))
+    # import module and automatically execute its main function
+    import populate_database2.py
