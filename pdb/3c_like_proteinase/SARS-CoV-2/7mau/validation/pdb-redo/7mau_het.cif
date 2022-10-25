@@ -1,0 +1,623 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+YVP      YVP '.                                   ' .                  86  42 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-YVP  CYS      .        .        YVP      .        .
+ bond_CYS-SG_=_YVP-C29
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_YVP
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ YVP           O14    O    O         0.000     28.623   -8.454    5.185
+ YVP           C06    C    C         0.000     29.845   -8.370    5.130
+ YVP           C04    C    CH1       0.000     30.493   -6.992    5.351
+ YVP           H04    H    H         0.000     31.567   -7.067    5.572
+ YVP           C07    C    CH2       0.000     30.224   -6.397    3.957
+ YVP           H071   H    H         0.000     29.238   -5.941    4.065
+ YVP           H072   H    H         0.000     30.147   -7.279    3.318
+ YVP           C40    C    CR6       0.000     31.176   -5.402    3.333
+ YVP           C41    C    CR16      0.000     32.144   -4.778    4.085
+ YVP           H41    H    H         0.000     32.243   -4.994    5.142
+ YVP           C42    C    CR16      0.000     32.991   -3.869    3.471
+ YVP           H42    H    H         0.000     33.759   -3.372    4.052
+ YVP           C37    C    CR16      0.000     32.863   -3.591    2.119
+ YVP           H37    H    H         0.000     33.531   -2.881    1.648
+ YVP           C38    C    CR16      0.000     31.881   -4.220    1.367
+ YVP           H38    H    H         0.000     31.777   -4.003    0.311
+ YVP           C39    C    CR16      0.000     31.036   -5.128    1.983
+ YVP           H39    H    H         0.000     30.264   -5.625    1.408
+ YVP           N02    N    NH1       0.000     29.791   -6.240    6.333
+ YVP           HN02   H    H         0.000     28.997   -5.661    6.099
+ YVP           C01    C    C         0.000     30.286   -6.356    7.688
+ YVP           O03    O    O         0.000     31.207   -7.057    7.955
+ YVP           C05    C    CH2       0.000     29.593   -5.565    8.793
+ YVP           H051   H    H         0.000     29.784   -6.039    9.758
+ YVP           H052   H    H         0.000     28.517   -5.541    8.607
+ YVP           C08    C    CH2       0.000     30.144   -4.132    8.806
+ YVP           H081   H    H         0.000     31.231   -4.161    8.912
+ YVP           H082   H    H         0.000     29.712   -3.584    9.646
+ YVP           O09    O    O2        0.000     29.808   -3.494    7.608
+ YVP           C10    C    CH2       0.000     30.592   -2.380    7.274
+ YVP           H101   H    H         0.000     30.498   -1.594    8.026
+ YVP           H102   H    H         0.000     30.313   -1.982    6.296
+ YVP           C11    C    CSP       0.000     32.025   -2.871    7.231
+ YVP           C12    C    CSP1      0.000     33.084   -3.362    7.281
+ YVP           H12    H    H         0.000     33.773   -2.624    7.206
+ YVP           N13    N    NH1       0.000     30.652   -9.542    4.798
+ YVP           HN13   H    H         0.000     31.660   -9.478    4.775
+ YVP           C15    C    CH1       0.000     29.996  -10.791    4.503
+ YVP           H15    H    H         0.000     28.943  -10.561    4.288
+ YVP           C17    C    CH2       0.000     30.644  -11.294    3.161
+ YVP           H171   H    H         0.000     30.063  -12.149    2.808
+ YVP           H172   H    H         0.000     31.664  -11.615    3.381
+ YVP           C24    C    CR6       0.000     30.670  -10.206    2.074
+ YVP           C25    C    CR16      0.000     31.779   -9.403    1.830
+ YVP           H25    H    H         0.000     32.689   -9.553    2.398
+ YVP           C26    C    CR16      0.000     31.725   -8.410    0.861
+ YVP           H26    H    H         0.000     32.584   -7.775    0.682
+ YVP           C21    C    CR16      0.000     30.557   -8.237    0.121
+ YVP           H21    H    H         0.000     30.509   -7.471   -0.643
+ YVP           C22    C    CR16      0.000     29.453   -9.047    0.362
+ YVP           H22    H    H         0.000     28.546   -8.913   -0.214
+ YVP           C23    C    CR16      0.000     29.514  -10.025    1.339
+ YVP           H23    H    H         0.000     28.651  -10.652    1.529
+ YVP           C16    C    CH1       0.000     30.010  -11.894    5.517
+ YVP           H16    H    H         0.000     30.935  -12.297    5.082
+ YVP           O19    O    OH1       0.000     30.535  -11.763    6.540
+ YVP           HO19   H    H         0.000     30.412  -12.581    7.003
+ YVP           N18    N    NT1       0.000     29.280  -13.072    5.094
+ YVP           HN18   H    H         0.000     28.857  -13.070    4.152
+ YVP           C20    C    CH1       0.000     29.109  -14.258    5.920
+ YVP           H20    H    H         0.000     28.921  -15.112    5.255
+ YVP           C27    C    CH1       0.000     27.821  -14.009    6.764
+ YVP           H27    H    H         0.000     28.366  -13.287    7.388
+ YVP           C29    C    CH3       0.000     26.803  -12.918    6.383
+ YVP           H293   H    H         0.000     27.278  -11.970    6.388
+ YVP           H292   H    H         0.000     26.419  -13.112    5.414
+ YVP           H291   H    H         0.000     26.006  -12.914    7.082
+ YVP           O30    O    OH1       0.000     27.581  -14.656    7.716
+ YVP           HO30   H    H         0.000     26.759  -14.327    8.059
+ YVP           C28    C    CH2       0.000     30.303  -14.597    6.797
+ YVP           H281   H    H         0.000     30.236  -14.108    7.771
+ YVP           H282   H    H         0.000     31.244  -14.320    6.317
+ YVP           C31    C    CH2       0.000     30.250  -16.121    6.982
+ YVP           H311   H    H         0.000     30.169  -16.585    5.997
+ YVP           H312   H    H         0.000     29.364  -16.365    7.572
+ YVP           C32    C    CH2       0.000     31.498  -16.645    7.693
+ YVP           H321   H    H         0.000     32.364  -16.477    7.049
+ YVP           H322   H    H         0.000     31.378  -17.716    7.868
+ YVP           N33    N    NH1       0.000     31.696  -15.966    8.960
+ YVP           HN33   H    H         0.000     32.366  -15.212    9.013
+ YVP           C34    C    C         0.000     30.956  -16.342   10.157
+ YVP           N36    N    N         0.000     30.112  -17.274   10.157
+ YVP           HN36   H    H         0.000     29.646  -17.494   10.959
+ YVP           N35    N    NH2       0.000     31.207  -15.609   11.388
+ YVP           H352   H    H         0.000     31.890  -14.834   11.439
+ YVP           H351   H    H         0.000     30.714  -15.828   12.270
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ YVP      O14    n/a    C06    START
+ YVP      C06    O14    N13    .
+ YVP      C04    C06    N02    .
+ YVP      H04    C04    .      .
+ YVP      C07    C04    C40    .
+ YVP      H071   C07    .      .
+ YVP      H072   C07    .      .
+ YVP      C40    C07    C41    .
+ YVP      C41    C40    C42    .
+ YVP      H41    C41    .      .
+ YVP      C42    C41    C37    .
+ YVP      H42    C42    .      .
+ YVP      C37    C42    C38    .
+ YVP      H37    C37    .      .
+ YVP      C38    C37    C39    .
+ YVP      H38    C38    .      .
+ YVP      C39    C38    H39    .
+ YVP      H39    C39    .      .
+ YVP      N02    C04    C01    .
+ YVP      HN02   N02    .      .
+ YVP      C01    N02    C05    .
+ YVP      O03    C01    .      .
+ YVP      C05    C01    C08    .
+ YVP      H051   C05    .      .
+ YVP      H052   C05    .      .
+ YVP      C08    C05    O09    .
+ YVP      H081   C08    .      .
+ YVP      H082   C08    .      .
+ YVP      O09    C08    C10    .
+ YVP      C10    O09    C11    .
+ YVP      H101   C10    .      .
+ YVP      H102   C10    .      .
+ YVP      C11    C10    C12    .
+ YVP      C12    C11    H12    .
+ YVP      H12    C12    .      .
+ YVP      N13    C06    C15    .
+ YVP      HN13   N13    .      .
+ YVP      C15    N13    C16    .
+ YVP      H15    C15    .      .
+ YVP      C17    C15    C24    .
+ YVP      H171   C17    .      .
+ YVP      H172   C17    .      .
+ YVP      C24    C17    C25    .
+ YVP      C25    C24    C26    .
+ YVP      H25    C25    .      .
+ YVP      C26    C25    C21    .
+ YVP      H26    C26    .      .
+ YVP      C21    C26    C22    .
+ YVP      H21    C21    .      .
+ YVP      C22    C21    C23    .
+ YVP      H22    C22    .      .
+ YVP      C23    C22    H23    .
+ YVP      H23    C23    .      .
+ YVP      C16    C15    N18    .
+ YVP      H16    C16    .      .
+ YVP      O19    C16    HO19   .
+ YVP      HO19   O19    .      .
+ YVP      N18    C16    C20    .
+ YVP      HN18   N18    .      .
+ YVP      C20    N18    C28    .
+ YVP      H20    C20    .      .
+ YVP      C27    C20    O30    .
+ YVP      H27    C27    .      .
+ YVP      C29    C27    H291   .
+ YVP      H293   C29    .      .
+ YVP      H292   C29    .      .
+ YVP      H291   C29    .      .
+ YVP      O30    C27    HO30   .
+ YVP      HO30   O30    .      .
+ YVP      C28    C20    C31    .
+ YVP      H281   C28    .      .
+ YVP      H282   C28    .      .
+ YVP      C31    C28    C32    .
+ YVP      H311   C31    .      .
+ YVP      H312   C31    .      .
+ YVP      C32    C31    N33    .
+ YVP      H321   C32    .      .
+ YVP      H322   C32    .      .
+ YVP      N33    C32    C34    .
+ YVP      HN33   N33    .      .
+ YVP      C34    N33    N35    .
+ YVP      N36    C34    HN36   .
+ YVP      HN36   N36    .      .
+ YVP      N35    C34    H351   .
+ YVP      H352   N35    .      .
+ YVP      H351   N35    .      END
+ YVP      C40    C39    .    ADD
+ YVP      C24    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ YVP      C11    C10       single      1.470    0.020
+ YVP      C10    O09       single      1.426    0.020
+ YVP      C05    C01       single      1.510    0.020
+ YVP      O03    C01       double      1.220    0.020
+ YVP      C01    N02       single      1.330    0.020
+ YVP      C08    C05       single      1.524    0.020
+ YVP      O09    C08       single      1.426    0.020
+ YVP      C12    C11       triple      1.278    0.020
+ YVP      N02    C04       single      1.450    0.020
+ YVP      C04    C06       single      1.500    0.020
+ YVP      C07    C04       single      1.524    0.020
+ YVP      C06    O14       double      1.220    0.020
+ YVP      N13    C06       single      1.330    0.020
+ YVP      C40    C07       single      1.511    0.020
+ YVP      C40    C39       aromatic    1.390    0.020
+ YVP      C41    C40       aromatic    1.390    0.020
+ YVP      C39    C38       aromatic    1.390    0.020
+ YVP      C42    C41       aromatic    1.390    0.020
+ YVP      C38    C37       aromatic    1.390    0.020
+ YVP      C37    C42       aromatic    1.390    0.020
+ YVP      C15    N13       single      1.450    0.020
+ YVP      C16    C15       single      1.524    0.020
+ YVP      C17    C15       single      1.524    0.020
+ YVP      O19    C16       single      1.432    0.020
+ YVP      N18    C16       single      1.475    0.020
+ YVP      C24    C17       single      1.511    0.020
+ YVP      C24    C23       aromatic    1.390    0.020
+ YVP      C25    C24       aromatic    1.390    0.020
+ YVP      C23    C22       aromatic    1.390    0.020
+ YVP      C26    C25       aromatic    1.390    0.020
+ YVP      C22    C21       aromatic    1.390    0.020
+ YVP      C21    C26       aromatic    1.390    0.020
+ YVP      C20    N18       single      1.475    0.020
+ YVP      C28    C20       single      1.524    0.020
+ YVP      C27    C20       single      1.524    0.020
+ YVP      C31    C28       single      1.524    0.020
+ YVP      C32    C31       single      1.524    0.020
+ YVP      N33    C32       single      1.450    0.020
+ YVP      C34    N33       single      1.330    0.020
+ YVP      N35    C34       single      1.332    0.020
+ YVP      N36    C34       double      1.260    0.020
+ YVP      O30    C27       single      1.432    0.020
+ YVP      C29    C27       single      1.524    0.020
+ YVP      H101   C10       single      1.092    0.020
+ YVP      H102   C10       single      1.092    0.020
+ YVP      H051   C05       single      1.092    0.020
+ YVP      H052   C05       single      1.092    0.020
+ YVP      H081   C08       single      1.092    0.020
+ YVP      H082   C08       single      1.092    0.020
+ YVP      H12    C12       single      1.022    0.020
+ YVP      HN02   N02       single      1.010    0.020
+ YVP      H04    C04       single      1.099    0.020
+ YVP      H071   C07       single      1.092    0.020
+ YVP      H072   C07       single      1.092    0.020
+ YVP      H39    C39       single      1.083    0.020
+ YVP      H41    C41       single      1.083    0.020
+ YVP      H38    C38       single      1.083    0.020
+ YVP      H42    C42       single      1.083    0.020
+ YVP      H37    C37       single      1.083    0.020
+ YVP      HN13   N13       single      1.010    0.020
+ YVP      H15    C15       single      1.099    0.020
+ YVP      H16    C16       single      1.099    0.020
+ YVP      HO19   O19       single      0.967    0.020
+ YVP      H171   C17       single      1.092    0.020
+ YVP      H172   C17       single      1.092    0.020
+ YVP      H23    C23       single      1.083    0.020
+ YVP      H25    C25       single      1.083    0.020
+ YVP      H22    C22       single      1.083    0.020
+ YVP      H26    C26       single      1.083    0.020
+ YVP      H21    C21       single      1.083    0.020
+ YVP      HN18   N18       single      1.033    0.020
+ YVP      H20    C20       single      1.099    0.020
+ YVP      H281   C28       single      1.092    0.020
+ YVP      H282   C28       single      1.092    0.020
+ YVP      H311   C31       single      1.092    0.020
+ YVP      H312   C31       single      1.092    0.020
+ YVP      H321   C32       single      1.092    0.020
+ YVP      H322   C32       single      1.092    0.020
+ YVP      HN33   N33       single      1.010    0.020
+ YVP      H351   N35       single      1.010    0.020
+ YVP      H352   N35       single      1.010    0.020
+ YVP      HN36   N36       single      0.954    0.020
+ YVP      H27    C27       single      1.099    0.020
+ YVP      HO30   O30       single      0.967    0.020
+ YVP      H291   C29       single      1.059    0.020
+ YVP      H292   C29       single      1.059    0.020
+ YVP      H293   C29       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ YVP      O14    C06    C04     120.500    3.000
+ YVP      O14    C06    N13     123.000    3.000
+ YVP      C04    C06    N13     116.500    3.000
+ YVP      C06    C04    H04     108.810    3.000
+ YVP      C06    C04    C07     109.470    3.000
+ YVP      C06    C04    N02     111.600    3.000
+ YVP      H04    C04    C07     108.340    3.000
+ YVP      H04    C04    N02     108.550    3.000
+ YVP      C07    C04    N02     110.000    3.000
+ YVP      C04    C07    H071    109.470    3.000
+ YVP      C04    C07    H072    109.470    3.000
+ YVP      C04    C07    C40     109.470    3.000
+ YVP      H071   C07    H072    107.900    3.000
+ YVP      H071   C07    C40     109.470    3.000
+ YVP      H072   C07    C40     109.470    3.000
+ YVP      C07    C40    C41     120.000    3.000
+ YVP      C07    C40    C39     120.000    3.000
+ YVP      C41    C40    C39     120.000    3.000
+ YVP      C40    C41    H41     120.000    3.000
+ YVP      C40    C41    C42     120.000    3.000
+ YVP      H41    C41    C42     120.000    3.000
+ YVP      C41    C42    H42     120.000    3.000
+ YVP      C41    C42    C37     120.000    3.000
+ YVP      H42    C42    C37     120.000    3.000
+ YVP      C42    C37    H37     120.000    3.000
+ YVP      C42    C37    C38     120.000    3.000
+ YVP      H37    C37    C38     120.000    3.000
+ YVP      C37    C38    H38     120.000    3.000
+ YVP      C37    C38    C39     120.000    3.000
+ YVP      H38    C38    C39     120.000    3.000
+ YVP      C38    C39    H39     120.000    3.000
+ YVP      C38    C39    C40     120.000    3.000
+ YVP      H39    C39    C40     120.000    3.000
+ YVP      C04    N02    HN02    118.500    3.000
+ YVP      C04    N02    C01     121.500    3.000
+ YVP      HN02   N02    C01     120.000    3.000
+ YVP      N02    C01    O03     123.000    3.000
+ YVP      N02    C01    C05     116.500    3.000
+ YVP      O03    C01    C05     120.500    3.000
+ YVP      C01    C05    H051    109.470    3.000
+ YVP      C01    C05    H052    109.470    3.000
+ YVP      C01    C05    C08     109.470    3.000
+ YVP      H051   C05    H052    107.900    3.000
+ YVP      H051   C05    C08     109.470    3.000
+ YVP      H052   C05    C08     109.470    3.000
+ YVP      C05    C08    H081    109.470    3.000
+ YVP      C05    C08    H082    109.470    3.000
+ YVP      C05    C08    O09     109.470    3.000
+ YVP      H081   C08    H082    107.900    3.000
+ YVP      H081   C08    O09     109.470    3.000
+ YVP      H082   C08    O09     109.470    3.000
+ YVP      C08    O09    C10     111.800    3.000
+ YVP      O09    C10    H101    109.470    3.000
+ YVP      O09    C10    H102    109.470    3.000
+ YVP      O09    C10    C11     109.500    3.000
+ YVP      H101   C10    H102    107.900    3.000
+ YVP      H101   C10    C11     109.500    3.000
+ YVP      H102   C10    C11     109.500    3.000
+ YVP      C10    C11    C12     180.000    3.000
+ YVP      C11    C12    H12     109.470    3.000
+ YVP      C06    N13    HN13    120.000    3.000
+ YVP      C06    N13    C15     121.500    3.000
+ YVP      HN13   N13    C15     118.500    3.000
+ YVP      N13    C15    H15     108.550    3.000
+ YVP      N13    C15    C17     110.000    3.000
+ YVP      N13    C15    C16     110.000    3.000
+ YVP      H15    C15    C17     108.340    3.000
+ YVP      H15    C15    C16     108.340    3.000
+ YVP      C17    C15    C16     111.000    3.000
+ YVP      C15    C17    H171    109.470    3.000
+ YVP      C15    C17    H172    109.470    3.000
+ YVP      C15    C17    C24     109.470    3.000
+ YVP      H171   C17    H172    107.900    3.000
+ YVP      H171   C17    C24     109.470    3.000
+ YVP      H172   C17    C24     109.470    3.000
+ YVP      C17    C24    C25     120.000    3.000
+ YVP      C17    C24    C23     120.000    3.000
+ YVP      C25    C24    C23     120.000    3.000
+ YVP      C24    C25    H25     120.000    3.000
+ YVP      C24    C25    C26     120.000    3.000
+ YVP      H25    C25    C26     120.000    3.000
+ YVP      C25    C26    H26     120.000    3.000
+ YVP      C25    C26    C21     120.000    3.000
+ YVP      H26    C26    C21     120.000    3.000
+ YVP      C26    C21    H21     120.000    3.000
+ YVP      C26    C21    C22     120.000    3.000
+ YVP      H21    C21    C22     120.000    3.000
+ YVP      C21    C22    H22     120.000    3.000
+ YVP      C21    C22    C23     120.000    3.000
+ YVP      H22    C22    C23     120.000    3.000
+ YVP      C22    C23    H23     120.000    3.000
+ YVP      C22    C23    C24     120.000    3.000
+ YVP      H23    C23    C24     120.000    3.000
+ YVP      C15    C16    H16     108.340    3.000
+ YVP      C15    C16    O19     109.470    3.000
+ YVP      C15    C16    N18     109.500    3.000
+ YVP      H16    C16    O19     109.470    3.000
+ YVP      H16    C16    N18     109.500    3.000
+ YVP      O19    C16    N18     109.500    3.000
+ YVP      C16    O19    HO19    109.470    3.000
+ YVP      C16    N18    HN18    109.500    3.000
+ YVP      C16    N18    C20     109.500    3.000
+ YVP      HN18   N18    C20     109.500    3.000
+ YVP      N18    C20    H20     109.500    3.000
+ YVP      N18    C20    C27     109.500    3.000
+ YVP      N18    C20    C28     109.500    3.000
+ YVP      H20    C20    C27     108.340    3.000
+ YVP      H20    C20    C28     108.340    3.000
+ YVP      C27    C20    C28     111.000    3.000
+ YVP      C20    C27    H27     108.340    3.000
+ YVP      C20    C27    C29     111.000    3.000
+ YVP      C20    C27    O30     109.470    3.000
+ YVP      H27    C27    C29     108.340    3.000
+ YVP      H27    C27    O30     109.470    3.000
+ YVP      C29    C27    O30     109.470    3.000
+ YVP      C27    C29    H293    109.470    3.000
+ YVP      C27    C29    H292    109.470    3.000
+ YVP      C27    C29    H291    109.470    3.000
+ YVP      H293   C29    H292    109.470    3.000
+ YVP      H293   C29    H291    109.470    3.000
+ YVP      H292   C29    H291    109.470    3.000
+ YVP      C27    O30    HO30    109.470    3.000
+ YVP      C20    C28    H281    109.470    3.000
+ YVP      C20    C28    H282    109.470    3.000
+ YVP      C20    C28    C31     111.000    3.000
+ YVP      H281   C28    H282    107.900    3.000
+ YVP      H281   C28    C31     109.470    3.000
+ YVP      H282   C28    C31     109.470    3.000
+ YVP      C28    C31    H311    109.470    3.000
+ YVP      C28    C31    H312    109.470    3.000
+ YVP      C28    C31    C32     111.000    3.000
+ YVP      H311   C31    H312    107.900    3.000
+ YVP      H311   C31    C32     109.470    3.000
+ YVP      H312   C31    C32     109.470    3.000
+ YVP      C31    C32    H321    109.470    3.000
+ YVP      C31    C32    H322    109.470    3.000
+ YVP      C31    C32    N33     112.000    3.000
+ YVP      H321   C32    H322    107.900    3.000
+ YVP      H321   C32    N33     109.470    3.000
+ YVP      H322   C32    N33     109.470    3.000
+ YVP      C32    N33    HN33    118.500    3.000
+ YVP      C32    N33    C34     121.500    3.000
+ YVP      HN33   N33    C34     120.000    3.000
+ YVP      N33    C34    N36     120.000    3.000
+ YVP      N33    C34    N35     120.000    3.000
+ YVP      N36    C34    N35     120.000    3.000
+ YVP      C34    N36    HN36    120.000    3.000
+ YVP      C34    N35    H352    120.000    3.000
+ YVP      C34    N35    H351    120.000    3.000
+ YVP      H352   N35    H351    120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ YVP      var_1            O14    C06    C04    N02              180.000           20.000   3
+ YVP      var_2            C06    C04    C07    C40              180.000           20.000   3
+ YVP      var_3            C04    C07    C40    C41                0.000           20.000   2
+ YVP      CONST_1          C07    C40    C39    C38                0.000            0.000   0
+ YVP      CONST_2          C07    C40    C41    C42                0.000            0.000   0
+ YVP      CONST_3          C40    C41    C42    C37                0.000            0.000   0
+ YVP      CONST_4          C41    C42    C37    C38                0.000            0.000   0
+ YVP      CONST_5          C42    C37    C38    C39                0.000            0.000   0
+ YVP      CONST_6          C37    C38    C39    C40                0.000            0.000   0
+ YVP      var_4            C06    C04    N02    C01                0.000           20.000   3
+ YVP      var_5            C04    N02    C01    C05              180.000           20.000   2
+ YVP      var_6            N02    C01    C05    C08              180.000           20.000   3
+ YVP      var_7            C01    C05    C08    O09              180.000           20.000   3
+ YVP      var_8            C05    C08    O09    C10             -159.422           20.000   3
+ YVP      var_9            C08    O09    C10    C11               57.073           20.000   3
+ YVP      var_10           O09    C10    C11    C12              -20.499           20.000   3
+ YVP      var_11           C10    C11    C12    H12              180.000           20.000   3
+ YVP      var_12           O14    C06    N13    C15              180.000           20.000   2
+ YVP      var_13           C06    N13    C15    C16                0.000           20.000   3
+ YVP      var_14           N13    C15    C17    C24              180.000           20.000   3
+ YVP      var_15           C15    C17    C24    C25                0.000           20.000   2
+ YVP      CONST_7          C17    C24    C23    C22                0.000            0.000   0
+ YVP      CONST_8          C17    C24    C25    C26                0.000            0.000   0
+ YVP      CONST_9          C24    C25    C26    C21                0.000            0.000   0
+ YVP      CONST_10         C25    C26    C21    C22                0.000            0.000   0
+ YVP      CONST_11         C26    C21    C22    C23                0.000            0.000   0
+ YVP      CONST_12         C21    C22    C23    C24                0.000            0.000   0
+ YVP      var_16           N13    C15    C16    N18              180.000           20.000   3
+ YVP      var_17           C15    C16    O19    HO19             180.000           20.000   3
+ YVP      var_18           C15    C16    N18    C20             -177.816           20.000   3
+ YVP      var_19           C16    N18    C20    C28              -35.533           20.000   3
+ YVP      var_20           N18    C20    C27    O30              180.000           20.000   3
+ YVP      var_21           C20    C27    C29    H291             180.000           20.000   3
+ YVP      var_22           C20    C27    O30    HO30             180.000           20.000   3
+ YVP      var_23           N18    C20    C28    C31              180.000           20.000   3
+ YVP      var_24           C20    C28    C31    C32              180.000           20.000   3
+ YVP      var_25           C28    C31    C32    N33              180.000           20.000   3
+ YVP      var_26           C31    C32    N33    C34                0.000           20.000   3
+ YVP      var_27           C32    N33    C34    N35              180.000           20.000   2
+ YVP      CONST_13         N33    C34    N36    HN36             180.000            0.000   0
+ YVP      CONST_14         N33    C34    N35    H351             180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ YVP      chir_01          C04    N02    C06    C07       negativ
+ YVP      chir_02          C15    N13    C16    C17       positiv
+ YVP      chir_03          C16    C15    O19    N18       negativ
+ YVP      chir_04          C20    N18    C28    C27       negativ
+ YVP      chir_05          C27    C20    O30    C29       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ YVP      plan-1            C01       0.020
+ YVP      plan-1            C05       0.020
+ YVP      plan-1            O03       0.020
+ YVP      plan-1            N02       0.020
+ YVP      plan-1            HN02      0.020
+ YVP      plan-2            N02       0.020
+ YVP      plan-2            C01       0.020
+ YVP      plan-2            C04       0.020
+ YVP      plan-2            HN02      0.020
+ YVP      plan-3            C06       0.020
+ YVP      plan-3            C04       0.020
+ YVP      plan-3            O14       0.020
+ YVP      plan-3            N13       0.020
+ YVP      plan-3            HN13      0.020
+ YVP      plan-4            C40       0.020
+ YVP      plan-4            C07       0.020
+ YVP      plan-4            C39       0.020
+ YVP      plan-4            C41       0.020
+ YVP      plan-4            C38       0.020
+ YVP      plan-4            C42       0.020
+ YVP      plan-4            C37       0.020
+ YVP      plan-4            H39       0.020
+ YVP      plan-4            H41       0.020
+ YVP      plan-4            H38       0.020
+ YVP      plan-4            H42       0.020
+ YVP      plan-4            H37       0.020
+ YVP      plan-5            N13       0.020
+ YVP      plan-5            C06       0.020
+ YVP      plan-5            C15       0.020
+ YVP      plan-5            HN13      0.020
+ YVP      plan-6            C24       0.020
+ YVP      plan-6            C17       0.020
+ YVP      plan-6            C23       0.020
+ YVP      plan-6            C25       0.020
+ YVP      plan-6            C22       0.020
+ YVP      plan-6            C26       0.020
+ YVP      plan-6            C21       0.020
+ YVP      plan-6            H23       0.020
+ YVP      plan-6            H25       0.020
+ YVP      plan-6            H22       0.020
+ YVP      plan-6            H26       0.020
+ YVP      plan-6            H21       0.020
+ YVP      plan-7            N33       0.020
+ YVP      plan-7            C32       0.020
+ YVP      plan-7            C34       0.020
+ YVP      plan-7            HN33      0.020
+ YVP      plan-8            C34       0.020
+ YVP      plan-8            N33       0.020
+ YVP      plan-8            N35       0.020
+ YVP      plan-8            N36       0.020
+ YVP      plan-8            HN36      0.020
+ YVP      plan-8            HN33      0.020
+ YVP      plan-8            H352      0.020
+ YVP      plan-8            H351      0.020
+ YVP      plan-9            N35       0.020
+ YVP      plan-9            C34       0.020
+ YVP      plan-9            H351      0.020
+ YVP      plan-9            H352      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-YVP
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-YVP  1 SG      2 C29       .           1.760    0.020
+# ------------------------------------------------------

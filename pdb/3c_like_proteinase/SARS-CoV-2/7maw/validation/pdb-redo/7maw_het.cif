@@ -1,0 +1,574 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+YVA      YVA '.                                   ' .                  79  36 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-YVA  CYS      .        .        YVA      .        .
+ bond_CYS-SG_=_YVA-C13
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_YVA
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ YVA           O17    O    O         0.000    -11.902  -16.748   38.842
+ YVA           C15    C    C         0.000    -12.625  -16.332   39.699
+ YVA           O16    O    O2        0.000    -13.560  -17.140   40.344
+ YVA           C20    C    CH2       0.000    -14.863  -16.835   39.910
+ YVA           H201   H    H         0.000    -14.938  -15.788   39.610
+ YVA           H202   H    H         0.000    -15.593  -17.041   40.696
+ YVA           C21    C    CH3       0.000    -15.145  -17.742   38.693
+ YVA           H213   H    H         0.000    -14.438  -17.546   37.926
+ YVA           H212   H    H         0.000    -15.073  -18.762   38.979
+ YVA           H211   H    H         0.000    -16.121  -17.553   38.322
+ YVA           C14    C    CH2       0.000    -12.598  -14.890   40.150
+ YVA           H141   H    H         0.000    -12.996  -14.869   41.167
+ YVA           H142   H    H         0.000    -13.268  -14.339   39.487
+ YVA           C13    C    CH2       0.000    -11.213  -14.243   40.130
+ YVA           H131   H    H         0.000    -10.620  -14.562   39.271
+ YVA           H132   H    H         0.000    -10.654  -14.435   41.048
+ YVA           C07    C    CH1       0.000    -11.518  -12.726   40.015
+ YVA           H07    H    H         0.000    -12.470  -12.590   39.483
+ YVA           C08    C    CH2       0.000    -10.442  -11.946   39.307
+ YVA           H081   H    H         0.000    -10.193  -12.405   38.348
+ YVA           H082   H    H         0.000     -9.541  -11.877   39.921
+ YVA           C09    C    CH1       0.000    -11.015  -10.529   39.069
+ YVA           H09    H    H         0.000    -11.327  -10.090   40.027
+ YVA           C23    C    CH2       0.000    -12.199  -10.542   38.095
+ YVA           H231   H    H         0.000    -13.157  -10.638   38.610
+ YVA           H232   H    H         0.000    -12.109  -11.332   37.346
+ YVA           C22    C    CH2       0.000    -12.120   -9.163   37.403
+ YVA           H221   H    H         0.000    -12.680   -8.400   37.948
+ YVA           H222   H    H         0.000    -12.474   -9.204   36.371
+ YVA           N11    N    NH1       0.000    -10.710   -8.833   37.419
+ YVA           HN11   H    H         0.000    -10.268   -8.140   36.832
+ YVA           C10    C    C         0.000    -10.003   -9.682   38.445
+ YVA           O12    O    O         0.000     -8.836   -9.664   38.682
+ YVA           N06    N    NT1       0.000    -11.699  -12.353   41.431
+ YVA           HN06   H    H         0.000    -10.967  -12.623   42.108
+ YVA           C18    C    CH1       0.000    -12.853  -11.627   41.919
+ YVA           H18    H    H         0.000    -13.375  -12.576   42.105
+ YVA           O19    O    OH1       0.000    -13.698  -11.307   41.168
+ YVA           HO19   H    H         0.000    -14.351  -10.850   41.684
+ YVA           C04    C    CH1       0.000    -12.882  -11.318   43.396
+ YVA           H04    H    H         0.000    -11.867  -11.168   43.789
+ YVA           C05    C    CH2       0.000    -13.601  -12.433   44.144
+ YVA           H051   H    H         0.000    -13.073  -13.384   44.042
+ YVA           H052   H    H         0.000    -14.628  -12.549   43.792
+ YVA           C24    C    CH1       0.000    -13.609  -12.005   45.621
+ YVA           H24    H    H         0.000    -14.082  -11.047   45.878
+ YVA           C25    C    CH2       0.000    -12.288  -12.357   46.301
+ YVA           H251   H    H         0.000    -11.878  -11.851   47.177
+ YVA           H252   H    H         0.000    -11.556  -13.072   45.920
+ YVA           C26    C    CH2       0.000    -13.574  -13.097   46.691
+ YVA           H262   H    H         0.000    -14.232  -12.820   47.517
+ YVA           H261   H    H         0.000    -13.911  -14.042   46.260
+ YVA           N02    N    NH1       0.000    -13.663  -10.110   43.497
+ YVA           HN02   H    H         0.000    -14.541  -10.094   43.996
+ YVA           C01    C    C         0.000    -13.142   -8.921   42.857
+ YVA           O03    O    O         0.000    -12.086   -8.945   42.286
+ YVA           C27    C    C1        0.000    -13.969   -7.636   42.944
+ YVA           H27    H    H         0.000    -14.988   -7.595   42.598
+ YVA           C28    C    C1        0.000    -13.375   -6.590   43.460
+ YVA           H28    H    H         0.000    -12.362   -6.680   43.815
+ YVA           C32    C    CH1       0.000    -14.092   -5.239   43.569
+ YVA           H32    H    H         0.000    -13.322   -4.885   44.268
+ YVA           C31    C    CH2       0.000    -13.713   -4.130   42.587
+ YVA           H311   H    H         0.000    -13.906   -4.567   41.605
+ YVA           H312   H    H         0.000    -12.636   -4.009   42.725
+ YVA           C30    C    CH2       0.000    -14.396   -2.768   42.683
+ YVA           H302   H    H         0.000    -14.842   -2.621   41.697
+ YVA           H301   H    H         0.000    -13.573   -2.063   42.817
+ YVA           C33    C    CH2       0.000    -15.158   -5.019   44.629
+ YVA           H331   H    H         0.000    -14.657   -5.245   45.573
+ YVA           H332   H    H         0.000    -15.910   -5.785   44.425
+ YVA           C34    C    CH2       0.000    -15.833   -3.653   44.723
+ YVA           H341   H    H         0.000    -15.634   -3.338   45.750
+ YVA           H342   H    H         0.000    -16.895   -3.883   44.613
+ YVA           C29    C    CH1       0.000    -15.452   -2.532   43.763
+ YVA           H29    H    H         0.000    -14.676   -2.186   44.460
+ YVA           C35    C    CSP       0.000    -16.162   -1.169   43.855
+ YVA           C36    C    CSP1      0.000    -16.692   -0.106   43.921
+ YVA           H36    H    H         0.000    -15.971    0.606   43.965
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ YVA      O17    n/a    C15    START
+ YVA      C15    O17    C14    .
+ YVA      O16    C15    C20    .
+ YVA      C20    O16    C21    .
+ YVA      H201   C20    .      .
+ YVA      H202   C20    .      .
+ YVA      C21    C20    H211   .
+ YVA      H213   C21    .      .
+ YVA      H212   C21    .      .
+ YVA      H211   C21    .      .
+ YVA      C14    C15    C13    .
+ YVA      H141   C14    .      .
+ YVA      H142   C14    .      .
+ YVA      C13    C14    C07    .
+ YVA      H131   C13    .      .
+ YVA      H132   C13    .      .
+ YVA      C07    C13    N06    .
+ YVA      H07    C07    .      .
+ YVA      C08    C07    C09    .
+ YVA      H081   C08    .      .
+ YVA      H082   C08    .      .
+ YVA      C09    C08    C23    .
+ YVA      H09    C09    .      .
+ YVA      C23    C09    C22    .
+ YVA      H231   C23    .      .
+ YVA      H232   C23    .      .
+ YVA      C22    C23    N11    .
+ YVA      H221   C22    .      .
+ YVA      H222   C22    .      .
+ YVA      N11    C22    C10    .
+ YVA      HN11   N11    .      .
+ YVA      C10    N11    O12    .
+ YVA      O12    C10    .      .
+ YVA      N06    C07    C18    .
+ YVA      HN06   N06    .      .
+ YVA      C18    N06    C04    .
+ YVA      H18    C18    .      .
+ YVA      O19    C18    HO19   .
+ YVA      HO19   O19    .      .
+ YVA      C04    C18    N02    .
+ YVA      H04    C04    .      .
+ YVA      C05    C04    C24    .
+ YVA      H051   C05    .      .
+ YVA      H052   C05    .      .
+ YVA      C24    C05    C25    .
+ YVA      H24    C24    .      .
+ YVA      C25    C24    C26    .
+ YVA      H251   C25    .      .
+ YVA      H252   C25    .      .
+ YVA      C26    C25    H261   .
+ YVA      H262   C26    .      .
+ YVA      H261   C26    .      .
+ YVA      N02    C04    C01    .
+ YVA      HN02   N02    .      .
+ YVA      C01    N02    C27    .
+ YVA      O03    C01    .      .
+ YVA      C27    C01    C28    .
+ YVA      H27    C27    .      .
+ YVA      C28    C27    C32    .
+ YVA      H28    C28    .      .
+ YVA      C32    C28    C33    .
+ YVA      H32    C32    .      .
+ YVA      C31    C32    C30    .
+ YVA      H311   C31    .      .
+ YVA      H312   C31    .      .
+ YVA      C30    C31    H301   .
+ YVA      H302   C30    .      .
+ YVA      H301   C30    .      .
+ YVA      C33    C32    C34    .
+ YVA      H331   C33    .      .
+ YVA      H332   C33    .      .
+ YVA      C34    C33    C29    .
+ YVA      H341   C34    .      .
+ YVA      H342   C34    .      .
+ YVA      C29    C34    C35    .
+ YVA      H29    C29    .      .
+ YVA      C35    C29    C36    .
+ YVA      C36    C35    H36    .
+ YVA      H36    C36    .      END
+ YVA      C10    C09    .    ADD
+ YVA      C24    C26    .    ADD
+ YVA      C29    C30    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ YVA      C10    C09       single      1.500    0.020
+ YVA      C10    N11       single      1.330    0.020
+ YVA      O12    C10       double      1.220    0.020
+ YVA      C07    C13       single      1.524    0.020
+ YVA      C13    C14       single      1.524    0.020
+ YVA      C14    C15       single      1.510    0.020
+ YVA      O16    C15       single      1.454    0.020
+ YVA      C15    O17       double      1.220    0.020
+ YVA      C21    C20       single      1.513    0.020
+ YVA      C20    O16       single      1.426    0.020
+ YVA      C22    C23       single      1.524    0.020
+ YVA      N11    C22       single      1.450    0.020
+ YVA      C24    C26       single      1.524    0.020
+ YVA      C24    C05       single      1.524    0.020
+ YVA      C25    C24       single      1.524    0.020
+ YVA      C26    C25       single      1.524    0.020
+ YVA      C28    C27       double      1.330    0.020
+ YVA      C32    C28       single      1.510    0.020
+ YVA      C27    C01       single      1.475    0.020
+ YVA      C01    N02       single      1.330    0.020
+ YVA      O03    C01       double      1.220    0.020
+ YVA      C05    C04       single      1.524    0.020
+ YVA      C04    C18       single      1.524    0.020
+ YVA      N02    C04       single      1.450    0.020
+ YVA      C08    C07       single      1.524    0.020
+ YVA      N06    C07       single      1.475    0.020
+ YVA      C09    C08       single      1.524    0.020
+ YVA      C23    C09       single      1.524    0.020
+ YVA      C18    N06       single      1.475    0.020
+ YVA      O19    C18       single      1.432    0.020
+ YVA      C29    C30       single      1.524    0.020
+ YVA      C29    C34       single      1.524    0.020
+ YVA      C35    C29       single      1.470    0.020
+ YVA      C30    C31       single      1.524    0.020
+ YVA      C31    C32       single      1.524    0.020
+ YVA      C33    C32       single      1.524    0.020
+ YVA      C34    C33       single      1.524    0.020
+ YVA      C36    C35       triple      1.278    0.020
+ YVA      H131   C13       single      1.092    0.020
+ YVA      H132   C13       single      1.092    0.020
+ YVA      H201   C20       single      1.092    0.020
+ YVA      H202   C20       single      1.092    0.020
+ YVA      H211   C21       single      1.059    0.020
+ YVA      H212   C21       single      1.059    0.020
+ YVA      H213   C21       single      1.059    0.020
+ YVA      H221   C22       single      1.092    0.020
+ YVA      H222   C22       single      1.092    0.020
+ YVA      H24    C24       single      1.099    0.020
+ YVA      H261   C26       single      1.092    0.020
+ YVA      H262   C26       single      1.092    0.020
+ YVA      H28    C28       single      1.077    0.020
+ YVA      H04    C04       single      1.099    0.020
+ YVA      H051   C05       single      1.092    0.020
+ YVA      H052   C05       single      1.092    0.020
+ YVA      H07    C07       single      1.099    0.020
+ YVA      H081   C08       single      1.092    0.020
+ YVA      H082   C08       single      1.092    0.020
+ YVA      H09    C09       single      1.099    0.020
+ YVA      H141   C14       single      1.092    0.020
+ YVA      H142   C14       single      1.092    0.020
+ YVA      H18    C18       single      1.099    0.020
+ YVA      H231   C23       single      1.092    0.020
+ YVA      H232   C23       single      1.092    0.020
+ YVA      H251   C25       single      1.092    0.020
+ YVA      H252   C25       single      1.092    0.020
+ YVA      H27    C27       single      1.077    0.020
+ YVA      H29    C29       single      1.099    0.020
+ YVA      H301   C30       single      1.092    0.020
+ YVA      H302   C30       single      1.092    0.020
+ YVA      H311   C31       single      1.092    0.020
+ YVA      H312   C31       single      1.092    0.020
+ YVA      H32    C32       single      1.099    0.020
+ YVA      H331   C33       single      1.092    0.020
+ YVA      H332   C33       single      1.092    0.020
+ YVA      H341   C34       single      1.092    0.020
+ YVA      H342   C34       single      1.092    0.020
+ YVA      H36    C36       single      1.022    0.020
+ YVA      HN02   N02       single      1.010    0.020
+ YVA      HN06   N06       single      1.033    0.020
+ YVA      HN11   N11       single      1.010    0.020
+ YVA      HO19   O19       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ YVA      O17    C15    O16     119.000    3.000
+ YVA      O17    C15    C14     120.500    3.000
+ YVA      O16    C15    C14     120.000    3.000
+ YVA      C15    O16    C20     120.000    3.000
+ YVA      O16    C20    H201    109.470    3.000
+ YVA      O16    C20    H202    109.470    3.000
+ YVA      O16    C20    C21     109.470    3.000
+ YVA      H201   C20    H202    107.900    3.000
+ YVA      H201   C20    C21     109.470    3.000
+ YVA      H202   C20    C21     109.470    3.000
+ YVA      C20    C21    H213    109.470    3.000
+ YVA      C20    C21    H212    109.470    3.000
+ YVA      C20    C21    H211    109.470    3.000
+ YVA      H213   C21    H212    109.470    3.000
+ YVA      H213   C21    H211    109.470    3.000
+ YVA      H212   C21    H211    109.470    3.000
+ YVA      C15    C14    H141    109.470    3.000
+ YVA      C15    C14    H142    109.470    3.000
+ YVA      C15    C14    C13     109.470    3.000
+ YVA      H141   C14    H142    107.900    3.000
+ YVA      H141   C14    C13     109.470    3.000
+ YVA      H142   C14    C13     109.470    3.000
+ YVA      C14    C13    H131    109.470    3.000
+ YVA      C14    C13    H132    109.470    3.000
+ YVA      C14    C13    C07     111.000    3.000
+ YVA      H131   C13    H132    107.900    3.000
+ YVA      H131   C13    C07     109.470    3.000
+ YVA      H132   C13    C07     109.470    3.000
+ YVA      C13    C07    H07     108.340    3.000
+ YVA      C13    C07    C08     109.470    3.000
+ YVA      C13    C07    N06     109.500    3.000
+ YVA      H07    C07    C08     108.340    3.000
+ YVA      H07    C07    N06     109.500    3.000
+ YVA      C08    C07    N06     109.500    3.000
+ YVA      C07    C08    H081    109.470    3.000
+ YVA      C07    C08    H082    109.470    3.000
+ YVA      C07    C08    C09     111.000    3.000
+ YVA      H081   C08    H082    107.900    3.000
+ YVA      H081   C08    C09     109.470    3.000
+ YVA      H082   C08    C09     109.470    3.000
+ YVA      C08    C09    H09     108.340    3.000
+ YVA      C08    C09    C23     109.470    3.000
+ YVA      C08    C09    C10     109.470    3.000
+ YVA      H09    C09    C23     108.340    3.000
+ YVA      H09    C09    C10     108.810    3.000
+ YVA      C23    C09    C10     109.470    3.000
+ YVA      C09    C23    H231    109.470    3.000
+ YVA      C09    C23    H232    109.470    3.000
+ YVA      C09    C23    C22     111.000    3.000
+ YVA      H231   C23    H232    107.900    3.000
+ YVA      H231   C23    C22     109.470    3.000
+ YVA      H232   C23    C22     109.470    3.000
+ YVA      C23    C22    H221    109.470    3.000
+ YVA      C23    C22    H222    109.470    3.000
+ YVA      C23    C22    N11     112.000    3.000
+ YVA      H221   C22    H222    107.900    3.000
+ YVA      H221   C22    N11     109.470    3.000
+ YVA      H222   C22    N11     109.470    3.000
+ YVA      C22    N11    HN11    118.500    3.000
+ YVA      C22    N11    C10     121.500    3.000
+ YVA      HN11   N11    C10     120.000    3.000
+ YVA      N11    C10    O12     123.000    3.000
+ YVA      N11    C10    C09     116.500    3.000
+ YVA      O12    C10    C09     120.500    3.000
+ YVA      C07    N06    HN06    109.500    3.000
+ YVA      C07    N06    C18     109.500    3.000
+ YVA      HN06   N06    C18     109.500    3.000
+ YVA      N06    C18    H18     109.500    3.000
+ YVA      N06    C18    O19     109.500    3.000
+ YVA      N06    C18    C04     109.500    3.000
+ YVA      H18    C18    O19     109.470    3.000
+ YVA      H18    C18    C04     108.340    3.000
+ YVA      O19    C18    C04     109.470    3.000
+ YVA      C18    O19    HO19    109.470    3.000
+ YVA      C18    C04    H04     108.340    3.000
+ YVA      C18    C04    C05     111.000    3.000
+ YVA      C18    C04    N02     110.000    3.000
+ YVA      H04    C04    C05     108.340    3.000
+ YVA      H04    C04    N02     108.550    3.000
+ YVA      C05    C04    N02     110.000    3.000
+ YVA      C04    C05    H051    109.470    3.000
+ YVA      C04    C05    H052    109.470    3.000
+ YVA      C04    C05    C24     111.000    3.000
+ YVA      H051   C05    H052    107.900    3.000
+ YVA      H051   C05    C24     109.470    3.000
+ YVA      H052   C05    C24     109.470    3.000
+ YVA      C05    C24    H24     108.340    3.000
+ YVA      C05    C24    C25     109.470    3.000
+ YVA      C05    C24    C26     109.470    3.000
+ YVA      H24    C24    C25     108.340    3.000
+ YVA      H24    C24    C26     108.340    3.000
+ YVA      C25    C24    C26      60.000    3.000
+ YVA      C24    C25    H251    109.470    3.000
+ YVA      C24    C25    H252    109.470    3.000
+ YVA      C24    C25    C26      60.000    3.000
+ YVA      H251   C25    H252    107.900    3.000
+ YVA      H251   C25    C26     109.470    3.000
+ YVA      H252   C25    C26     109.470    3.000
+ YVA      C25    C26    H262    109.470    3.000
+ YVA      C25    C26    H261    109.470    3.000
+ YVA      C25    C26    C24      60.000    3.000
+ YVA      H262   C26    H261    107.900    3.000
+ YVA      H262   C26    C24     109.470    3.000
+ YVA      H261   C26    C24     109.470    3.000
+ YVA      C04    N02    HN02    118.500    3.000
+ YVA      C04    N02    C01     121.500    3.000
+ YVA      HN02   N02    C01     120.000    3.000
+ YVA      N02    C01    O03     123.000    3.000
+ YVA      N02    C01    C27     120.000    3.000
+ YVA      O03    C01    C27     120.500    3.000
+ YVA      C01    C27    H27     120.000    3.000
+ YVA      C01    C27    C28     120.000    3.000
+ YVA      H27    C27    C28     120.000    3.000
+ YVA      C27    C28    H28     120.000    3.000
+ YVA      C27    C28    C32     120.000    3.000
+ YVA      H28    C28    C32     120.000    3.000
+ YVA      C28    C32    H32     108.810    3.000
+ YVA      C28    C32    C31     109.470    3.000
+ YVA      C28    C32    C33     109.470    3.000
+ YVA      H32    C32    C31     108.340    3.000
+ YVA      H32    C32    C33     108.340    3.000
+ YVA      C31    C32    C33     109.470    3.000
+ YVA      C32    C31    H311    109.470    3.000
+ YVA      C32    C31    H312    109.470    3.000
+ YVA      C32    C31    C30     111.000    3.000
+ YVA      H311   C31    H312    107.900    3.000
+ YVA      H311   C31    C30     109.470    3.000
+ YVA      H312   C31    C30     109.470    3.000
+ YVA      C31    C30    H302    109.470    3.000
+ YVA      C31    C30    H301    109.470    3.000
+ YVA      C31    C30    C29     111.000    3.000
+ YVA      H302   C30    H301    107.900    3.000
+ YVA      H302   C30    C29     109.470    3.000
+ YVA      H301   C30    C29     109.470    3.000
+ YVA      C32    C33    H331    109.470    3.000
+ YVA      C32    C33    H332    109.470    3.000
+ YVA      C32    C33    C34     111.000    3.000
+ YVA      H331   C33    H332    107.900    3.000
+ YVA      H331   C33    C34     109.470    3.000
+ YVA      H332   C33    C34     109.470    3.000
+ YVA      C33    C34    H341    109.470    3.000
+ YVA      C33    C34    H342    109.470    3.000
+ YVA      C33    C34    C29     111.000    3.000
+ YVA      H341   C34    H342    107.900    3.000
+ YVA      H341   C34    C29     109.470    3.000
+ YVA      H342   C34    C29     109.470    3.000
+ YVA      C34    C29    H29     108.340    3.000
+ YVA      C34    C29    C35     109.500    3.000
+ YVA      C34    C29    C30     109.470    3.000
+ YVA      H29    C29    C35     109.500    3.000
+ YVA      H29    C29    C30     108.340    3.000
+ YVA      C35    C29    C30     109.500    3.000
+ YVA      C29    C35    C36     180.000    3.000
+ YVA      C35    C36    H36     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ YVA      var_1            O17    C15    O16    C20             -106.569           20.000   3
+ YVA      var_2            C15    O16    C20    C21               89.856           20.000   3
+ YVA      var_3            O16    C20    C21    H211             180.000           20.000   3
+ YVA      var_4            O17    C15    C14    C13              180.000           20.000   3
+ YVA      var_5            C15    C14    C13    C07              180.000           20.000   3
+ YVA      var_6            C14    C13    C07    N06              180.000           20.000   3
+ YVA      var_7            C13    C07    C08    C09              180.000           20.000   3
+ YVA      var_8            C07    C08    C09    C23              180.000           20.000   3
+ YVA      var_9            C08    C09    C23    C22              180.000           20.000   3
+ YVA      var_10           C09    C23    C22    N11              180.000           20.000   3
+ YVA      var_11           C23    C22    N11    C10                0.000           20.000   3
+ YVA      var_12           C22    N11    C10    O12              180.000           20.000   2
+ YVA      var_13           N11    C10    C09    C08              180.000           20.000   3
+ YVA      var_14           C13    C07    N06    C18             -128.675           20.000   3
+ YVA      var_15           C07    N06    C18    C04             -179.729           20.000   3
+ YVA      var_16           N06    C18    O19    HO19             180.000           20.000   3
+ YVA      var_17           N06    C18    C04    N02              180.000           20.000   3
+ YVA      var_18           C18    C04    C05    C24              180.000           20.000   3
+ YVA      var_19           C04    C05    C24    C25              180.000           20.000   3
+ YVA      var_20           C05    C24    C26    C25              180.000           20.000   3
+ YVA      var_21           C05    C24    C25    C26              180.000           20.000   3
+ YVA      var_22           C18    C04    N02    C01                0.000           20.000   3
+ YVA      var_23           C04    N02    C01    C27              180.000           20.000   2
+ YVA      var_24           N02    C01    C27    C28              123.447           20.000   3
+ YVA      CONST_1          C01    C27    C28    C32              178.567            0.000   0
+ YVA      var_25           C27    C28    C32    C33               75.036           20.000   3
+ YVA      var_26           C28    C32    C31    C30              180.000           20.000   3
+ YVA      var_27           C32    C31    C30    C29              180.000           20.000   3
+ YVA      var_28           C28    C32    C33    C34              180.000           20.000   3
+ YVA      var_29           C32    C33    C34    C29              180.000           20.000   3
+ YVA      var_30           C33    C34    C29    C35              180.000           20.000   3
+ YVA      var_31           C34    C29    C30    C31              180.000           20.000   3
+ YVA      var_32           C34    C29    C35    C36              143.914           20.000   3
+ YVA      var_33           C29    C35    C36    H36              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ YVA      chir_01          C24    C26    C05    C25       positiv
+ YVA      chir_02          C04    C05    C18    N02       negativ
+ YVA      chir_03          C07    C13    C08    N06       positiv
+ YVA      chir_04          C09    C10    C08    C23       positiv
+ YVA      chir_05          C18    C04    N06    O19       positiv
+ YVA      chir_06          C29    C30    C34    C35       positiv
+ YVA      chir_07          C32    C28    C31    C33       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ YVA      plan-1            C10       0.020
+ YVA      plan-1            C09       0.020
+ YVA      plan-1            N11       0.020
+ YVA      plan-1            O12       0.020
+ YVA      plan-1            HN11      0.020
+ YVA      plan-2            C15       0.020
+ YVA      plan-2            C14       0.020
+ YVA      plan-2            O16       0.020
+ YVA      plan-2            O17       0.020
+ YVA      plan-3            C28       0.020
+ YVA      plan-3            C27       0.020
+ YVA      plan-3            C32       0.020
+ YVA      plan-3            H28       0.020
+ YVA      plan-3            C01       0.020
+ YVA      plan-3            H27       0.020
+ YVA      plan-4            C01       0.020
+ YVA      plan-4            C27       0.020
+ YVA      plan-4            N02       0.020
+ YVA      plan-4            O03       0.020
+ YVA      plan-4            H27       0.020
+ YVA      plan-4            HN02      0.020
+ YVA      plan-5            N02       0.020
+ YVA      plan-5            C01       0.020
+ YVA      plan-5            C04       0.020
+ YVA      plan-5            HN02      0.020
+ YVA      plan-6            N11       0.020
+ YVA      plan-6            C10       0.020
+ YVA      plan-6            C22       0.020
+ YVA      plan-6            HN11      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-YVA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-YVA  1 SG      2 C13       .           1.760    0.020
+# ------------------------------------------------------
