@@ -3,7 +3,7 @@ data_8CTK
 _entry.id   8CTK 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.359 
+_audit_conform.dict_version    5.361 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -69,21 +69,23 @@ _citation.pdbx_database_id_DOI
 _citation.pdbx_database_id_PubMed 
 _citation.pdbx_database_id_patent 
 _citation.unpublished_flag 
-? ? ? ? ? ? ? ?  ? ? primary 'To Be Published'                                ?      0353 ?         ? ? ?  ? ?   ?   
-'Cryo-EM structure of SARS-CoV-2 M protein in lipid nanodiscs'    ?    ? ? ? ? ? 
+? ? ? ? ? ? ? US ? ? primary Elife                                            ?      ?    2050-084X ? ? 11 ? ?   ?   
+'Structure of SARS-CoV-2 M protein in lipid nanodiscs.'           2022 ? 10.7554/eLife.81702 36264056 ? ? 
 ? ? ? ? ? ? ? DK ? ? 1       'Acta Crystallogr., Sect. D: Biol. Crystallogr.' ABCRE6 0766 0907-4449 ? ? 74 ? 531 544 
-'Real-space refinement in PHENIX for cryo-EM and crystallography' 2018 ? ? ? ? ? 
+'Real-space refinement in PHENIX for cryo-EM and crystallography' 2018 ? ?                   ?        ? ? 
 # 
 loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Dolan, K.A.'   1 0000-0002-9335-7791 
-primary 'Kern, D.M.'    2 0000-0001-8529-9045 
-primary 'Kotecha, A.'   3 0000-0002-4480-5439 
-primary 'Brohawn, S.G.' 4 0000-0001-6768-3406 
-1       'Afonine, P.V.' 5 ?                   
+primary 'Dolan, K.A.'   1 ?                   
+primary 'Dutta, M.'     2 ?                   
+primary 'Kern, D.M.'    3 ?                   
+primary 'Kotecha, A.'   4 ?                   
+primary 'Voth, G.A.'    5 0000-0002-3267-6748 
+primary 'Brohawn, S.G.' 6 0000-0001-6768-3406 
+1       'Afonine, P.V.' 7 ?                   
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -759,14 +761,13 @@ _struct_ncs_ens_gen.dom_id_1   d_2
 _struct_ncs_ens_gen.dom_id_2   d_1 
 _struct_ncs_ens_gen.oper_id    1 
 # 
-_struct.entry_id                                   8CTK 
-_struct.title                                      'Cryo-EM structure of SARS-CoV-2 M protein in a lipid nanodisc' 
-_struct.pdbx_structure_determination_methodology   ? 
-_struct.pdbx_model_details                         ? 
-_struct.pdbx_formula_weight                        ? 
-_struct.pdbx_formula_weight_method                 ? 
-_struct.pdbx_model_type_details                    ? 
-_struct.pdbx_CASP_flag                             N 
+_struct.entry_id                     8CTK 
+_struct.title                        'Cryo-EM structure of SARS-CoV-2 M protein in a lipid nanodisc' 
+_struct.pdbx_model_details           ? 
+_struct.pdbx_formula_weight          ? 
+_struct.pdbx_formula_weight_method   ? 
+_struct.pdbx_model_type_details      ? 
+_struct.pdbx_CASP_flag               N 
 # 
 _struct_keywords.entry_id        8CTK 
 _struct_keywords.text            'SARS-COV-2, CORONAVIRUS, VIRAL PROTEIN, CAPSID PROTEIN, MEMBRANE PROTEIN' 
@@ -4530,11 +4531,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-06-22 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-06-22 
+2 'Structure model' 1 1 2022-11-02 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -4543,6 +4547,34 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Database references' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation        
+2 2 'Structure model' citation_author 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_citation.country'                 
+2 2 'Structure model' '_citation.journal_abbrev'          
+3 2 'Structure model' '_citation.journal_id_CSD'          
+4 2 'Structure model' '_citation.journal_id_ISSN'         
+5 2 'Structure model' '_citation.journal_volume'          
+6 2 'Structure model' '_citation.pdbx_database_id_DOI'    
+7 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
+8 2 'Structure model' '_citation.title'                   
+9 2 'Structure model' '_citation.year'                    
 # 
 _space_group_symop.id              1 
 _space_group_symop.operation_xyz   x,y,z 
