@@ -1,0 +1,524 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+BOV      BOV '.                                   ' .                  56  33 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-BOV  CYS      .        .        BOV      .        .
+ bond_CYS-SG_=_BOV-C32
+SER-NI   SER      .        .        NI       .        .
+ bond_SER-N_=_NI-NI
+SER-NI0  SER      .        .        NI       .        .
+ bond_SER-OG_=_NI-NI
+HIS-NI   HIS      .        .        NI       .        .
+ bond_HIS-NE2_=_NI-NI
+NI-HOH   NI       .        .        HOH      .        .
+ bond_NI-NI_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_BOV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ BOV           F33    F    F         0.000     30.690  -10.385   22.682
+ BOV           C32    C    CH2       0.000     30.252   -9.981   23.909
+ BOV           H321   H    H         0.000     29.512   -9.186   23.798
+ BOV           H322   H    H         0.000     31.092   -9.615   24.504
+ BOV           C30    C    C         0.000     29.613  -11.181   24.610
+ BOV           O31    O    O         0.000     29.282  -12.212   24.064
+ BOV           N22    N    N         0.000     29.420  -11.032   26.012
+ BOV           C23    C    CH2       0.000     28.612  -12.003   26.724
+ BOV           H231   H    H         0.000     28.552  -12.889   26.088
+ BOV           H232   H    H         0.000     27.618  -11.565   26.832
+ BOV           C24    C    CH1       0.000     29.137  -12.388   28.067
+ BOV           H24    H    H         0.000     29.421  -11.517   28.674
+ BOV           C25    C    CR15      0.000     30.297  -13.383   27.884
+ BOV           H25    H    H         0.000     31.049  -13.384   27.104
+ BOV           C26    C    CR15      0.000     30.170  -14.274   28.931
+ BOV           H26    H    H         0.000     30.967  -14.803   29.438
+ BOV           N27    N    NRD5      0.000     28.627  -14.362   29.236
+ BOV           C28    C    CR5       0.000     28.000  -13.260   28.748
+ BOV           O29    O    O         0.000     26.833  -13.018   28.840
+ BOV           N21    N    NH1       0.000     29.762   -9.810   26.603
+ BOV           HN21   H    H         0.000     29.104   -9.044   26.594
+ BOV           C19    C    C         0.000     31.035   -9.646   27.217
+ BOV           O20    O    O         0.000     31.853  -10.534   27.273
+ BOV           C05    C    CH1       0.000     31.223   -8.257   27.814
+ BOV           H05    H    H         0.000     30.237   -7.786   27.935
+ BOV           C04    C    CH2       0.000     32.055   -7.418   26.848
+ BOV           H041   H    H         0.000     31.708   -7.595   25.828
+ BOV           H042   H    H         0.000     33.104   -7.710   26.930
+ BOV           C02    C    CH1       0.000     31.909   -5.941   27.187
+ BOV           H02    H    H         0.000     31.691   -5.916   28.264
+ BOV           C03    C    CH3       0.000     30.704   -5.300   26.527
+ BOV           H033   H    H         0.000     30.794   -5.383   25.476
+ BOV           H032   H    H         0.000     29.824   -5.793   26.847
+ BOV           H031   H    H         0.000     30.657   -4.278   26.799
+ BOV           C01    C    CH3       0.000     33.204   -5.154   27.027
+ BOV           H013   H    H         0.000     33.943   -5.557   27.669
+ BOV           H012   H    H         0.000     33.535   -5.219   26.023
+ BOV           H011   H    H         0.000     33.034   -4.139   27.277
+ BOV           N06    N    NH1       0.000     31.892   -8.280   29.099
+ BOV           HN06   H    H         0.000     32.825   -7.911   29.216
+ BOV           C07    C    C         0.000     31.179   -8.843   30.182
+ BOV           O08    O    O         0.000     30.055   -9.307   30.066
+ BOV           C09    C    CR5       0.000     31.904   -8.784   31.498
+ BOV           N18    N    NRD5      0.000     31.361   -9.294   32.595
+ BOV           C17    C    CR56      0.000     32.146   -9.091   33.645
+ BOV           C16    C    CR16      0.000     31.975   -9.443   35.015
+ BOV           H16    H    H         0.000     31.065   -9.923   35.354
+ BOV           C15    C    CR16      0.000     32.999   -9.157   35.903
+ BOV           H15    H    H         0.000     32.909   -9.442   36.944
+ BOV           C11    C    CR56      0.000     33.297   -8.452   33.185
+ BOV           C10    C    CR15      0.000     33.136   -8.244   31.788
+ BOV           H10    H    H         0.000     33.828   -7.767   31.105
+ BOV           C12    C    CR6       0.000     34.321   -8.154   34.120
+ BOV           F13    F    F         0.000     35.435   -7.498   33.671
+ BOV           C14    C    CR16      0.000     34.151   -8.500   35.456
+ BOV           H14    H    H         0.000     34.929   -8.255   36.168
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ BOV      F33    n/a    C32    START
+ BOV      C32    F33    C30    .
+ BOV      H321   C32    .      .
+ BOV      H322   C32    .      .
+ BOV      C30    C32    N22    .
+ BOV      O31    C30    .      .
+ BOV      N22    C30    N21    .
+ BOV      C23    N22    C24    .
+ BOV      H231   C23    .      .
+ BOV      H232   C23    .      .
+ BOV      C24    C23    C25    .
+ BOV      H24    C24    .      .
+ BOV      C25    C24    C26    .
+ BOV      H25    C25    .      .
+ BOV      C26    C25    N27    .
+ BOV      H26    C26    .      .
+ BOV      N27    C26    C28    .
+ BOV      C28    N27    O29    .
+ BOV      O29    C28    .      .
+ BOV      N21    N22    C19    .
+ BOV      HN21   N21    .      .
+ BOV      C19    N21    C05    .
+ BOV      O20    C19    .      .
+ BOV      C05    C19    N06    .
+ BOV      H05    C05    .      .
+ BOV      C04    C05    C02    .
+ BOV      H041   C04    .      .
+ BOV      H042   C04    .      .
+ BOV      C02    C04    C01    .
+ BOV      H02    C02    .      .
+ BOV      C03    C02    H031   .
+ BOV      H033   C03    .      .
+ BOV      H032   C03    .      .
+ BOV      H031   C03    .      .
+ BOV      C01    C02    H011   .
+ BOV      H013   C01    .      .
+ BOV      H012   C01    .      .
+ BOV      H011   C01    .      .
+ BOV      N06    C05    C07    .
+ BOV      HN06   N06    .      .
+ BOV      C07    N06    C09    .
+ BOV      O08    C07    .      .
+ BOV      C09    C07    N18    .
+ BOV      N18    C09    C17    .
+ BOV      C17    N18    C11    .
+ BOV      C16    C17    C15    .
+ BOV      H16    C16    .      .
+ BOV      C15    C16    H15    .
+ BOV      H15    C15    .      .
+ BOV      C11    C17    C12    .
+ BOV      C10    C11    H10    .
+ BOV      H10    C10    .      .
+ BOV      C12    C11    C14    .
+ BOV      F13    C12    .      .
+ BOV      C14    C12    H14    .
+ BOV      H14    C14    .      END
+ BOV      C10    C09    .    ADD
+ BOV      C15    C14    .    ADD
+ BOV      C24    C28    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ BOV      C10    C09       aromatic    1.387    0.020
+ BOV      C10    C11       aromatic    1.440    0.020
+ BOV      C15    C14       aromatic    1.390    0.020
+ BOV      C15    C16       aromatic    1.390    0.020
+ BOV      C11    C17       aromatic    1.390    0.020
+ BOV      C16    C17       aromatic    1.390    0.020
+ BOV      C17    N18       aromatic    1.350    0.020
+ BOV      C24    C28       single      1.480    0.020
+ BOV      C24    C23       single      1.524    0.020
+ BOV      C25    C24       single      1.510    0.020
+ BOV      C26    C25       aromatic    1.380    0.020
+ BOV      N27    C26       single      1.350    0.020
+ BOV      C28    N27       aromatic    1.350    0.020
+ BOV      O29    C28       double      1.350    0.020
+ BOV      C01    C02       single      1.524    0.020
+ BOV      C03    C02       single      1.524    0.020
+ BOV      C02    C04       single      1.524    0.020
+ BOV      C04    C05       single      1.524    0.020
+ BOV      N06    C05       single      1.450    0.020
+ BOV      C05    C19       single      1.500    0.020
+ BOV      C07    N06       single      1.330    0.020
+ BOV      O08    C07       double      1.220    0.020
+ BOV      C09    C07       single      1.490    0.020
+ BOV      N18    C09       deloc       1.350    0.020
+ BOV      C12    C11       aromatic    1.390    0.020
+ BOV      F13    C12       single      1.345    0.020
+ BOV      C14    C12       aromatic    1.390    0.020
+ BOV      O20    C19       double      1.220    0.020
+ BOV      C19    N21       single      1.330    0.020
+ BOV      N21    N22       single      1.320    0.020
+ BOV      C23    N22       single      1.455    0.020
+ BOV      N22    C30       single      1.330    0.020
+ BOV      O31    C30       double      1.220    0.020
+ BOV      C30    C32       single      1.510    0.020
+ BOV      C32    F33       single      1.370    0.020
+ BOV      H10    C10       single      1.083    0.020
+ BOV      H15    C15       single      1.083    0.020
+ BOV      H24    C24       single      1.099    0.020
+ BOV      H26    C26       single      1.083    0.020
+ BOV      H011   C01       single      1.059    0.020
+ BOV      H012   C01       single      1.059    0.020
+ BOV      H013   C01       single      1.059    0.020
+ BOV      H02    C02       single      1.099    0.020
+ BOV      H031   C03       single      1.059    0.020
+ BOV      H032   C03       single      1.059    0.020
+ BOV      H033   C03       single      1.059    0.020
+ BOV      H041   C04       single      1.092    0.020
+ BOV      H042   C04       single      1.092    0.020
+ BOV      H05    C05       single      1.099    0.020
+ BOV      HN06   N06       single      1.010    0.020
+ BOV      H14    C14       single      1.083    0.020
+ BOV      H16    C16       single      1.083    0.020
+ BOV      HN21   N21       single      1.010    0.020
+ BOV      H231   C23       single      1.092    0.020
+ BOV      H232   C23       single      1.092    0.020
+ BOV      H25    C25       single      1.083    0.020
+ BOV      H321   C32       single      1.092    0.020
+ BOV      H322   C32       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ BOV      F33    C32    H321    109.500    3.000
+ BOV      F33    C32    H322    109.500    3.000
+ BOV      F33    C32    C30     109.500    3.000
+ BOV      H321   C32    H322    107.900    3.000
+ BOV      H321   C32    C30     109.470    3.000
+ BOV      H322   C32    C30     109.470    3.000
+ BOV      C32    C30    O31     120.500    3.000
+ BOV      C32    C30    N22     116.500    3.000
+ BOV      O31    C30    N22     123.000    3.000
+ BOV      C30    N22    C23     127.000    3.000
+ BOV      C30    N22    N21     120.000    3.000
+ BOV      C23    N22    N21     120.000    3.000
+ BOV      N22    C23    H231    109.470    3.000
+ BOV      N22    C23    H232    109.470    3.000
+ BOV      N22    C23    C24     105.000    3.000
+ BOV      H231   C23    H232    107.900    3.000
+ BOV      H231   C23    C24     109.470    3.000
+ BOV      H232   C23    C24     109.470    3.000
+ BOV      C23    C24    H24     108.340    3.000
+ BOV      C23    C24    C25     109.500    3.000
+ BOV      C23    C24    C28     109.470    3.000
+ BOV      H24    C24    C25     109.500    3.000
+ BOV      H24    C24    C28     109.470    3.000
+ BOV      C25    C24    C28     109.500    3.000
+ BOV      C24    C25    H25     108.000    3.000
+ BOV      C24    C25    C26     108.000    3.000
+ BOV      H25    C25    C26     126.000    3.000
+ BOV      C25    C26    H26     126.000    3.000
+ BOV      C25    C26    N27     108.000    3.000
+ BOV      H26    C26    N27     126.000    3.000
+ BOV      C26    N27    C28     108.000    3.000
+ BOV      N27    C28    O29     108.000    3.000
+ BOV      N27    C28    C24     126.000    3.000
+ BOV      O29    C28    C24     108.000    3.000
+ BOV      N22    N21    HN21    120.000    3.000
+ BOV      N22    N21    C19     120.000    3.000
+ BOV      HN21   N21    C19     120.000    3.000
+ BOV      N21    C19    O20     123.000    3.000
+ BOV      N21    C19    C05     116.500    3.000
+ BOV      O20    C19    C05     120.500    3.000
+ BOV      C19    C05    H05     108.810    3.000
+ BOV      C19    C05    C04     109.470    3.000
+ BOV      C19    C05    N06     111.600    3.000
+ BOV      H05    C05    C04     108.340    3.000
+ BOV      H05    C05    N06     108.550    3.000
+ BOV      C04    C05    N06     110.000    3.000
+ BOV      C05    C04    H041    109.470    3.000
+ BOV      C05    C04    H042    109.470    3.000
+ BOV      C05    C04    C02     111.000    3.000
+ BOV      H041   C04    H042    107.900    3.000
+ BOV      H041   C04    C02     109.470    3.000
+ BOV      H042   C04    C02     109.470    3.000
+ BOV      C04    C02    H02     108.340    3.000
+ BOV      C04    C02    C03     111.000    3.000
+ BOV      C04    C02    C01     111.000    3.000
+ BOV      H02    C02    C03     108.340    3.000
+ BOV      H02    C02    C01     108.340    3.000
+ BOV      C03    C02    C01     111.000    3.000
+ BOV      C02    C03    H033    109.470    3.000
+ BOV      C02    C03    H032    109.470    3.000
+ BOV      C02    C03    H031    109.470    3.000
+ BOV      H033   C03    H032    109.470    3.000
+ BOV      H033   C03    H031    109.470    3.000
+ BOV      H032   C03    H031    109.470    3.000
+ BOV      C02    C01    H013    109.470    3.000
+ BOV      C02    C01    H012    109.470    3.000
+ BOV      C02    C01    H011    109.470    3.000
+ BOV      H013   C01    H012    109.470    3.000
+ BOV      H013   C01    H011    109.470    3.000
+ BOV      H012   C01    H011    109.470    3.000
+ BOV      C05    N06    HN06    118.500    3.000
+ BOV      C05    N06    C07     121.500    3.000
+ BOV      HN06   N06    C07     120.000    3.000
+ BOV      N06    C07    O08     123.000    3.000
+ BOV      N06    C07    C09     120.000    3.000
+ BOV      O08    C07    C09     120.500    3.000
+ BOV      C07    C09    N18     126.000    3.000
+ BOV      C07    C09    C10     126.000    3.000
+ BOV      N18    C09    C10     108.000    3.000
+ BOV      C09    N18    C17     108.000    3.000
+ BOV      N18    C17    C16     132.000    3.000
+ BOV      N18    C17    C11     108.000    3.000
+ BOV      C16    C17    C11     120.000    3.000
+ BOV      C17    C16    H16     120.000    3.000
+ BOV      C17    C16    C15     120.000    3.000
+ BOV      H16    C16    C15     120.000    3.000
+ BOV      C16    C15    H15     120.000    3.000
+ BOV      C16    C15    C14     120.000    3.000
+ BOV      H15    C15    C14     120.000    3.000
+ BOV      C17    C11    C10     120.000    3.000
+ BOV      C17    C11    C12     120.000    3.000
+ BOV      C10    C11    C12     132.000    3.000
+ BOV      C11    C10    H10     108.000    3.000
+ BOV      C11    C10    C09     108.000    3.000
+ BOV      H10    C10    C09     126.000    3.000
+ BOV      C11    C12    F13     120.000    3.000
+ BOV      C11    C12    C14     120.000    3.000
+ BOV      F13    C12    C14     120.000    3.000
+ BOV      C12    C14    H14     120.000    3.000
+ BOV      C12    C14    C15     120.000    3.000
+ BOV      H14    C14    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ BOV      var_1            F33    C32    C30    N22              180.000           20.000   3
+ BOV      var_2            C32    C30    N22    N21              180.000           20.000   2
+ BOV      var_3            C30    N22    C23    C24              140.030           20.000   3
+ BOV      var_4            N22    C23    C24    C25              180.000           20.000   3
+ BOV      CONST_1          C23    C24    C28    N27                0.000            0.000   0
+ BOV      CONST_2          C23    C24    C25    C26                0.000            0.000   0
+ BOV      CONST_3          C24    C25    C26    N27               31.158            0.000   0
+ BOV      CONST_4          C25    C26    N27    C28                0.000            0.000   0
+ BOV      CONST_5          C26    N27    C28    O29                0.000            0.000   0
+ BOV      var_5            C30    N22    N21    C19              -95.882           20.000   3
+ BOV      var_6            N22    N21    C19    C05              180.000           20.000   2
+ BOV      var_7            N21    C19    C05    N06              180.000           20.000   3
+ BOV      var_8            C19    C05    C04    C02              180.000           20.000   3
+ BOV      var_9            C05    C04    C02    C01              180.000           20.000   3
+ BOV      var_10           C04    C02    C03    H031             180.000           20.000   3
+ BOV      var_11           C04    C02    C01    H011             180.000           20.000   3
+ BOV      var_12           C19    C05    N06    C07                0.000           20.000   3
+ BOV      var_13           C05    N06    C07    C09              180.000           20.000   2
+ BOV      var_14           N06    C07    C09    N18             -178.952           20.000   3
+ BOV      CONST_6          C07    C09    N18    C17                0.000            0.000   0
+ BOV      CONST_7          C09    N18    C17    C11              180.000            0.000   0
+ BOV      CONST_8          N18    C17    C16    C15              180.000            0.000   0
+ BOV      CONST_9          C17    C16    C15    C14                0.000            0.000   0
+ BOV      CONST_10         C16    C15    C14    C12                0.000            0.000   0
+ BOV      CONST_11         N18    C17    C11    C12              180.000            0.000   0
+ BOV      CONST_12         C17    C11    C10    C09               -0.582            0.000   0
+ BOV      CONST_13         C11    C10    C09    C07                0.000            0.000   0
+ BOV      CONST_14         C17    C11    C12    C14              180.000            0.000   0
+ BOV      CONST_15         C11    C12    C14    C15                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ BOV      chir_01          C24    C28    C23    C25       positiv
+ BOV      chir_02          C02    C01    C03    C04       negativ
+ BOV      chir_03          C05    C04    N06    C19       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ BOV      plan-1            C10       0.020
+ BOV      plan-1            C09       0.020
+ BOV      plan-1            C11       0.020
+ BOV      plan-1            H10       0.020
+ BOV      plan-1            N18       0.020
+ BOV      plan-1            C07       0.020
+ BOV      plan-1            C17       0.020
+ BOV      plan-1            C12       0.020
+ BOV      plan-1            F13       0.020
+ BOV      plan-1            C14       0.020
+ BOV      plan-1            C15       0.020
+ BOV      plan-1            H14       0.020
+ BOV      plan-1            C16       0.020
+ BOV      plan-1            H15       0.020
+ BOV      plan-1            H16       0.020
+ BOV      plan-2            C26       0.020
+ BOV      plan-2            C25       0.020
+ BOV      plan-2            N27       0.020
+ BOV      plan-2            H26       0.020
+ BOV      plan-2            C24       0.020
+ BOV      plan-2            C28       0.020
+ BOV      plan-2            O29       0.020
+ BOV      plan-2            H25       0.020
+ BOV      plan-3            N06       0.020
+ BOV      plan-3            C05       0.020
+ BOV      plan-3            C07       0.020
+ BOV      plan-3            HN06      0.020
+ BOV      plan-4            C07       0.020
+ BOV      plan-4            N06       0.020
+ BOV      plan-4            O08       0.020
+ BOV      plan-4            C09       0.020
+ BOV      plan-4            HN06      0.020
+ BOV      plan-5            C19       0.020
+ BOV      plan-5            C05       0.020
+ BOV      plan-5            O20       0.020
+ BOV      plan-5            N21       0.020
+ BOV      plan-5            HN21      0.020
+ BOV      plan-6            N21       0.020
+ BOV      plan-6            C19       0.020
+ BOV      plan-6            N22       0.020
+ BOV      plan-6            HN21      0.020
+ BOV      plan-7            N22       0.020
+ BOV      plan-7            N21       0.020
+ BOV      plan-7            C23       0.020
+ BOV      plan-7            C30       0.020
+ BOV      plan-7            HN21      0.020
+ BOV      plan-8            C30       0.020
+ BOV      plan-8            N22       0.020
+ BOV      plan-8            O31       0.020
+ BOV      plan-8            C32       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-BOV
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-BOV  1 SG      2 C32       .           1.830    0.020
+#
+data_link_SER-NI
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ SER-NI   1 N       2 NI        .           2.120    0.020
+#
+data_link_SER-NI0
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ SER-NI0  1 OG      2 NI        .           1.940    0.020
+#
+data_link_HIS-NI
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ HIS-NI   1 NE2     2 NI        .           2.170    0.020
+#
+data_link_NI-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ NI-HOH   1 NI      2 O         .           1.980    0.020
+# ------------------------------------------------------

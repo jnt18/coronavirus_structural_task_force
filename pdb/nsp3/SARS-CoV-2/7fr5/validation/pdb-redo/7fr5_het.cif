@@ -1,0 +1,237 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WWT      WWT '.                                   ' .                  27  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WWT
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WWT           O06    O    O         0.000    -46.836  -28.978    2.052
+ WWT           C05    C    C         0.000    -45.929  -29.523    2.584
+ WWT           N04    N    NH1       0.000    -45.021  -30.384    1.855
+ WWT           HN04   H    H         0.000    -44.276  -30.859    2.344
+ WWT           C03    C    CH2       0.000    -45.179  -30.565    0.430
+ WWT           H031   H    H         0.000    -44.298  -30.172   -0.081
+ WWT           H032   H    H         0.000    -46.065  -30.022    0.096
+ WWT           C02    C    CH2       0.000    -45.337  -32.045    0.107
+ WWT           H021   H    H         0.000    -44.372  -32.415   -0.246
+ WWT           H022   H    H         0.000    -46.075  -32.135   -0.693
+ WWT           C01    C    CH3       0.000    -45.788  -32.864    1.311
+ WWT           H013   H    H         0.000    -45.073  -32.777    2.088
+ WWT           H012   H    H         0.000    -46.725  -32.506    1.654
+ WWT           H011   H    H         0.000    -45.882  -33.882    1.033
+ WWT           C07    C    CR6       0.000    -45.707  -29.413    4.081
+ WWT           C16    C    CR56      0.000    -46.805  -29.266    4.945
+ WWT           N15    N    NRD5      0.000    -48.124  -29.161    4.685
+ WWT           C13    C    CR5       0.000    -48.751  -29.022    5.851
+ WWT           O14    O    OH1       0.000    -50.125  -28.906    5.996
+ WWT           HO14   H    H         0.000    -50.482  -28.810    6.874
+ WWT           C08    C    CR16      0.000    -44.458  -29.493    4.667
+ WWT           H08    H    H         0.000    -43.575  -29.619    4.053
+ WWT           C09    C    CR16      0.000    -44.342  -29.411    6.051
+ WWT           H09    H    H         0.000    -43.360  -29.466    6.504
+ WWT           N10    N    NRD6      0.000    -45.397  -29.268    6.820
+ WWT           C11    C    CR56      0.000    -46.630  -29.190    6.286
+ WWT           N12    N    NRD5      0.000    -47.855  -29.044    6.837
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WWT      O06    n/a    C05    START
+ WWT      C05    O06    C07    .
+ WWT      N04    C05    C03    .
+ WWT      HN04   N04    .      .
+ WWT      C03    N04    C02    .
+ WWT      H031   C03    .      .
+ WWT      H032   C03    .      .
+ WWT      C02    C03    C01    .
+ WWT      H021   C02    .      .
+ WWT      H022   C02    .      .
+ WWT      C01    C02    H011   .
+ WWT      H013   C01    .      .
+ WWT      H012   C01    .      .
+ WWT      H011   C01    .      .
+ WWT      C07    C05    C08    .
+ WWT      C16    C07    N15    .
+ WWT      N15    C16    C13    .
+ WWT      C13    N15    O14    .
+ WWT      O14    C13    HO14   .
+ WWT      HO14   O14    .      .
+ WWT      C08    C07    C09    .
+ WWT      H08    C08    .      .
+ WWT      C09    C08    N10    .
+ WWT      H09    C09    .      .
+ WWT      N10    C09    C11    .
+ WWT      C11    N10    N12    .
+ WWT      N12    C11    .      END
+ WWT      C16    C11    .    ADD
+ WWT      C13    N12    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WWT      C16    C11       double      1.490    0.020
+ WWT      C16    C07       aromatic    1.390    0.020
+ WWT      N15    C16       aromatic    1.350    0.020
+ WWT      C13    N12       aromatic    1.350    0.020
+ WWT      C13    N15       deloc       1.350    0.020
+ WWT      O14    C13       single      1.480    0.020
+ WWT      C11    N10       aromatic    1.355    0.020
+ WWT      N12    C11       deloc       1.350    0.020
+ WWT      C01    C02       single      1.513    0.020
+ WWT      C02    C03       single      1.524    0.020
+ WWT      C03    N04       single      1.450    0.020
+ WWT      C07    C05       single      1.500    0.020
+ WWT      N04    C05       single      1.330    0.020
+ WWT      C05    O06       double      1.220    0.020
+ WWT      C08    C07       aromatic    1.390    0.020
+ WWT      C09    C08       aromatic    1.390    0.020
+ WWT      N10    C09       aromatic    1.337    0.020
+ WWT      H011   C01       single      1.059    0.020
+ WWT      H012   C01       single      1.059    0.020
+ WWT      H013   C01       single      1.059    0.020
+ WWT      H021   C02       single      1.092    0.020
+ WWT      H022   C02       single      1.092    0.020
+ WWT      H031   C03       single      1.092    0.020
+ WWT      H032   C03       single      1.092    0.020
+ WWT      H08    C08       single      1.083    0.020
+ WWT      H09    C09       single      1.083    0.020
+ WWT      HN04   N04       single      1.010    0.020
+ WWT      HO14   O14       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WWT      O06    C05    N04     123.000    3.000
+ WWT      O06    C05    C07     120.500    3.000
+ WWT      N04    C05    C07     120.000    3.000
+ WWT      C05    N04    HN04    120.000    3.000
+ WWT      C05    N04    C03     121.500    3.000
+ WWT      HN04   N04    C03     118.500    3.000
+ WWT      N04    C03    H031    109.470    3.000
+ WWT      N04    C03    H032    109.470    3.000
+ WWT      N04    C03    C02     112.000    3.000
+ WWT      H031   C03    H032    107.900    3.000
+ WWT      H031   C03    C02     109.470    3.000
+ WWT      H032   C03    C02     109.470    3.000
+ WWT      C03    C02    H021    109.470    3.000
+ WWT      C03    C02    H022    109.470    3.000
+ WWT      C03    C02    C01     111.000    3.000
+ WWT      H021   C02    H022    107.900    3.000
+ WWT      H021   C02    C01     109.470    3.000
+ WWT      H022   C02    C01     109.470    3.000
+ WWT      C02    C01    H013    109.470    3.000
+ WWT      C02    C01    H012    109.470    3.000
+ WWT      C02    C01    H011    109.470    3.000
+ WWT      H013   C01    H012    109.470    3.000
+ WWT      H013   C01    H011    109.470    3.000
+ WWT      H012   C01    H011    109.470    3.000
+ WWT      C05    C07    C16     120.000    3.000
+ WWT      C05    C07    C08     120.000    3.000
+ WWT      C16    C07    C08     120.000    3.000
+ WWT      C07    C16    N15     132.000    3.000
+ WWT      C07    C16    C11     120.000    3.000
+ WWT      N15    C16    C11     108.000    3.000
+ WWT      C16    N15    C13     108.000    3.000
+ WWT      N15    C13    O14     108.000    3.000
+ WWT      N15    C13    N12     108.000    3.000
+ WWT      O14    C13    N12     108.000    3.000
+ WWT      C13    O14    HO14    120.000    3.000
+ WWT      C07    C08    H08     120.000    3.000
+ WWT      C07    C08    C09     120.000    3.000
+ WWT      H08    C08    C09     120.000    3.000
+ WWT      C08    C09    H09     120.000    3.000
+ WWT      C08    C09    N10     120.000    3.000
+ WWT      H09    C09    N10     120.000    3.000
+ WWT      C09    N10    C11     120.000    3.000
+ WWT      N10    C11    N12     120.000    3.000
+ WWT      N10    C11    C16     120.000    3.000
+ WWT      N12    C11    C16     108.000    3.000
+ WWT      C11    N12    C13     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WWT      var_1            O06    C05    N04    C03              180.000           20.000   2
+ WWT      var_2            C05    N04    C03    C02                0.000           20.000   3
+ WWT      var_3            N04    C03    C02    C01              180.000           20.000   3
+ WWT      var_4            C03    C02    C01    H011             180.000           20.000   3
+ WWT      var_5            O06    C05    C07    C08             -150.876           20.000   3
+ WWT      CONST_1          C05    C07    C16    N15              180.000            0.000   0
+ WWT      CONST_2          C07    C16    C11    N10              180.000            0.000   0
+ WWT      CONST_3          C07    C16    N15    C13              180.000            0.000   0
+ WWT      CONST_4          C16    N15    C13    O14                0.000            0.000   0
+ WWT      CONST_5          N15    C13    N12    C11                0.000            0.000   0
+ WWT      var_6            N15    C13    O14    HO14             180.000           20.000   3
+ WWT      CONST_6          C05    C07    C08    C09                0.000            0.000   0
+ WWT      CONST_7          C07    C08    C09    N10                0.000            0.000   0
+ WWT      CONST_8          C08    C09    N10    C11                0.000            0.000   0
+ WWT      CONST_9          C09    N10    C11    N12              180.000            0.000   0
+ WWT      CONST_10         N10    C11    N12    C13              180.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WWT      plan-1            C16       0.020
+ WWT      plan-1            C11       0.020
+ WWT      plan-1            C07       0.020
+ WWT      plan-1            N15       0.020
+ WWT      plan-1            C13       0.020
+ WWT      plan-1            N12       0.020
+ WWT      plan-1            O14       0.020
+ WWT      plan-1            N10       0.020
+ WWT      plan-1            C05       0.020
+ WWT      plan-1            C08       0.020
+ WWT      plan-1            C09       0.020
+ WWT      plan-1            H08       0.020
+ WWT      plan-1            H09       0.020
+ WWT      plan-2            C05       0.020
+ WWT      plan-2            C07       0.020
+ WWT      plan-2            N04       0.020
+ WWT      plan-2            O06       0.020
+ WWT      plan-2            HN04      0.020
+ WWT      plan-3            N04       0.020
+ WWT      plan-3            C03       0.020
+ WWT      plan-3            C05       0.020
+ WWT      plan-3            HN04      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

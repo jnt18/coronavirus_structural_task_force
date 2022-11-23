@@ -1,0 +1,264 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WWC      WWC '.                                   ' .                  28  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WWC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WWC           O06    O    O         0.000    -51.446  -29.661    4.881
+ WWC           C05    C    C         0.000    -50.765  -29.762    5.850
+ WWC           C02    C    CT        0.000    -49.382  -29.115    5.947
+ WWC           C04    C    CH2       0.000    -49.065  -28.037    4.912
+ WWC           H041   H    H         0.000    -48.321  -27.247    5.035
+ WWC           H042   H    H         0.000    -49.624  -27.868    3.989
+ WWC           C03    C    CH2       0.000    -48.364  -29.395    4.845
+ WWC           H032   H    H         0.000    -47.395  -29.625    5.293
+ WWC           H031   H    H         0.000    -48.698  -30.245    4.247
+ WWC           C01    C    CH3       0.000    -48.746  -29.023    7.334
+ WWC           H013   H    H         0.000    -49.369  -28.451    7.972
+ WWC           H012   H    H         0.000    -48.630  -29.996    7.735
+ WWC           H011   H    H         0.000    -47.797  -28.557    7.258
+ WWC           N07    N    NH1       0.000    -51.205  -30.493    7.027
+ WWC           HN07   H    H         0.000    -50.602  -30.558    7.835
+ WWC           N08    N    NH1       0.000    -52.470  -31.110    7.043
+ WWC           HN08   H    H         0.000    -52.578  -32.068    6.741
+ WWC           C09    C    CR6       0.000    -53.618  -30.347    7.501
+ WWC           C17    C    CR56      0.000    -54.892  -30.977    7.583
+ WWC           N16    N    NRD5      0.000    -55.331  -32.231    7.310
+ WWC           C15    C    CR15      0.000    -56.645  -32.268    7.575
+ WWC           H15    H    H         0.000    -57.284  -33.135    7.462
+ WWC           N10    N    NRD6      0.000    -53.493  -29.072    7.846
+ WWC           C11    C    CR16      0.000    -54.558  -28.394    8.262
+ WWC           H11    H    H         0.000    -54.434  -27.354    8.538
+ WWC           N12    N    NRD6      0.000    -55.763  -28.934    8.354
+ WWC           C13    C    CR56      0.000    -55.957  -30.242    8.016
+ WWC           N14    N    NRD5      0.000    -57.040  -31.064    8.001
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WWC      O06    n/a    C05    START
+ WWC      C05    O06    N07    .
+ WWC      C02    C05    C01    .
+ WWC      C04    C02    C03    .
+ WWC      H041   C04    .      .
+ WWC      H042   C04    .      .
+ WWC      C03    C04    H031   .
+ WWC      H032   C03    .      .
+ WWC      H031   C03    .      .
+ WWC      C01    C02    H011   .
+ WWC      H013   C01    .      .
+ WWC      H012   C01    .      .
+ WWC      H011   C01    .      .
+ WWC      N07    C05    N08    .
+ WWC      HN07   N07    .      .
+ WWC      N08    N07    C09    .
+ WWC      HN08   N08    .      .
+ WWC      C09    N08    N10    .
+ WWC      C17    C09    N16    .
+ WWC      N16    C17    C15    .
+ WWC      C15    N16    H15    .
+ WWC      H15    C15    .      .
+ WWC      N10    C09    C11    .
+ WWC      C11    N10    N12    .
+ WWC      H11    C11    .      .
+ WWC      N12    C11    C13    .
+ WWC      C13    N12    N14    .
+ WWC      N14    C13    .      END
+ WWC      C17    C13    .    ADD
+ WWC      C15    N14    .    ADD
+ WWC      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WWC      C17    C13       aromatic    1.390    0.020
+ WWC      C17    C09       aromatic    1.390    0.020
+ WWC      N16    C17       aromatic    1.350    0.020
+ WWC      C15    N14       aromatic    1.350    0.020
+ WWC      C15    N16       aromatic    1.350    0.020
+ WWC      C13    N12       aromatic    1.355    0.020
+ WWC      N14    C13       aromatic    1.350    0.020
+ WWC      C11    N10       aromat      1.337    0.020
+ WWC      N12    C11       deloc       1.337    0.020
+ WWC      C01    C02       single      1.524    0.020
+ WWC      C02    C03       single      1.524    0.020
+ WWC      C04    C02       single      1.524    0.020
+ WWC      C02    C05       single      1.507    0.020
+ WWC      C03    C04       single      1.524    0.020
+ WWC      N07    C05       single      1.330    0.020
+ WWC      C05    O06       double      1.220    0.020
+ WWC      C09    N08       single      1.350    0.020
+ WWC      N10    C09       deloc       1.350    0.020
+ WWC      N08    N07       single      1.400    0.020
+ WWC      H15    C15       single      1.083    0.020
+ WWC      H11    C11       single      1.083    0.020
+ WWC      H011   C01       single      1.059    0.020
+ WWC      H012   C01       single      1.059    0.020
+ WWC      H013   C01       single      1.059    0.020
+ WWC      H031   C03       single      1.092    0.020
+ WWC      H032   C03       single      1.092    0.020
+ WWC      H041   C04       single      1.092    0.020
+ WWC      H042   C04       single      1.092    0.020
+ WWC      HN07   N07       single      1.010    0.020
+ WWC      HN08   N08       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WWC      O06    C05    C02     120.500    3.000
+ WWC      O06    C05    N07     123.000    3.000
+ WWC      C02    C05    N07     116.500    3.000
+ WWC      C05    C02    C04     109.470    3.000
+ WWC      C05    C02    C01     109.470    3.000
+ WWC      C05    C02    C03     109.470    3.000
+ WWC      C04    C02    C01     111.000    3.000
+ WWC      C04    C02    C03      60.000    3.000
+ WWC      C01    C02    C03     111.000    3.000
+ WWC      C02    C04    H041    109.470    3.000
+ WWC      C02    C04    H042    109.470    3.000
+ WWC      C02    C04    C03      60.000    3.000
+ WWC      H041   C04    H042    107.900    3.000
+ WWC      H041   C04    C03     109.470    3.000
+ WWC      H042   C04    C03     109.470    3.000
+ WWC      C04    C03    H032    109.470    3.000
+ WWC      C04    C03    H031    109.470    3.000
+ WWC      C04    C03    C02      60.000    3.000
+ WWC      H032   C03    H031    107.900    3.000
+ WWC      H032   C03    C02     109.470    3.000
+ WWC      H031   C03    C02     109.470    3.000
+ WWC      C02    C01    H013    109.470    3.000
+ WWC      C02    C01    H012    109.470    3.000
+ WWC      C02    C01    H011    109.470    3.000
+ WWC      H013   C01    H012    109.470    3.000
+ WWC      H013   C01    H011    109.470    3.000
+ WWC      H012   C01    H011    109.470    3.000
+ WWC      C05    N07    HN07    120.000    3.000
+ WWC      C05    N07    N08     120.000    3.000
+ WWC      HN07   N07    N08     120.000    3.000
+ WWC      N07    N08    HN08    120.000    3.000
+ WWC      N07    N08    C09     120.000    3.000
+ WWC      HN08   N08    C09     120.000    3.000
+ WWC      N08    C09    C17     120.000    3.000
+ WWC      N08    C09    N10     120.000    3.000
+ WWC      C17    C09    N10     120.000    3.000
+ WWC      C09    C17    N16     132.000    3.000
+ WWC      C09    C17    C13     120.000    3.000
+ WWC      N16    C17    C13     108.000    3.000
+ WWC      C17    N16    C15     108.000    3.000
+ WWC      N16    C15    H15     126.000    3.000
+ WWC      N16    C15    N14     108.000    3.000
+ WWC      H15    C15    N14     126.000    3.000
+ WWC      C09    N10    C11     120.000    3.000
+ WWC      N10    C11    H11     120.000    3.000
+ WWC      N10    C11    N12     120.000    3.000
+ WWC      H11    C11    N12     120.000    3.000
+ WWC      C11    N12    C13     120.000    3.000
+ WWC      N12    C13    N14     120.000    3.000
+ WWC      N12    C13    C17     120.000    3.000
+ WWC      N14    C13    C17     108.000    3.000
+ WWC      C13    N14    C15     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WWC      var_1            O06    C05    C02    C01              165.666           20.000   3
+ WWC      var_2            C05    C02    C03    C04              105.562           20.000   3
+ WWC      var_3            C05    C02    C04    C03             -109.455           20.000   3
+ WWC      var_4            C05    C02    C01    H011             180.000           20.000   3
+ WWC      var_5            O06    C05    N07    N08              180.000           20.000   2
+ WWC      var_6            C05    N07    N08    C09              -89.073           20.000   3
+ WWC      var_7            N07    N08    C09    N10                2.841           20.000   3
+ WWC      CONST_1          N08    C09    C17    N16              180.000            0.000   0
+ WWC      CONST_2          C09    C17    C13    N12              180.000            0.000   0
+ WWC      CONST_3          C09    C17    N16    C15              180.000            0.000   0
+ WWC      CONST_4          C17    N16    C15    N14                0.000            0.000   0
+ WWC      CONST_5          N16    C15    N14    C13                0.000            0.000   0
+ WWC      CONST_6          N08    C09    N10    C11                0.000            0.000   0
+ WWC      CONST_7          C09    N10    C11    N12                0.000            0.000   0
+ WWC      CONST_8          N10    C11    N12    C13                0.000            0.000   0
+ WWC      CONST_9          C11    N12    C13    N14              180.000            0.000   0
+ WWC      CONST_10         N12    C13    N14    C15              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WWC      chir_01          C02    C01    C03    C04       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WWC      plan-1            C17       0.020
+ WWC      plan-1            C13       0.020
+ WWC      plan-1            C09       0.020
+ WWC      plan-1            N16       0.020
+ WWC      plan-1            C15       0.020
+ WWC      plan-1            N14       0.020
+ WWC      plan-1            H15       0.020
+ WWC      plan-1            N12       0.020
+ WWC      plan-1            N08       0.020
+ WWC      plan-1            N10       0.020
+ WWC      plan-1            C11       0.020
+ WWC      plan-1            H11       0.020
+ WWC      plan-1            HN08      0.020
+ WWC      plan-2            C05       0.020
+ WWC      plan-2            C02       0.020
+ WWC      plan-2            N07       0.020
+ WWC      plan-2            O06       0.020
+ WWC      plan-2            HN07      0.020
+ WWC      plan-3            N07       0.020
+ WWC      plan-3            C05       0.020
+ WWC      plan-3            N08       0.020
+ WWC      plan-3            HN07      0.020
+ WWC      plan-3            HN08      0.020
+ WWC      plan-4            N08       0.020
+ WWC      plan-4            C09       0.020
+ WWC      plan-4            N07       0.020
+ WWC      plan-4            HN08      0.020
+ WWC      plan-4            HN07      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

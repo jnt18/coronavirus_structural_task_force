@@ -1,0 +1,300 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WXB      WXB '.                                   ' .                  37  21 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WXB
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WXB           O19    O    O         0.000    -55.122  -33.347    7.777
+ WXB           C18    C    CR6       0.000    -55.705  -32.321    7.876
+ WXB           N17    N    NR16      0.000    -57.003  -32.281    8.482
+ WXB           HN17   H    H         0.000    -57.427  -33.163    8.832
+ WXB           C15    C    CR6       0.000    -57.728  -31.057    8.616
+ WXB           O16    O    O         0.000    -58.800  -31.037    9.119
+ WXB           N14    N    NR16      0.000    -57.131  -29.838    8.121
+ WXB           HN14   H    H         0.000    -57.650  -28.941    8.209
+ WXB           C13    C    CR66      0.000    -55.772  -29.845    7.481
+ WXB           N12    N    NRD6      0.000    -55.244  -28.680    7.030
+ WXB           C11    C    CR16      0.000    -54.060  -28.596    6.458
+ WXB           H11    H    H         0.000    -53.687  -27.641    6.110
+ WXB           C10    C    CR6       0.000    -53.292  -29.751    6.306
+ WXB           C21    C    CR16      0.000    -53.807  -30.988    6.741
+ WXB           H21    H    H         0.000    -53.237  -31.899    6.606
+ WXB           C20    C    CR66      0.000    -55.081  -31.022    7.357
+ WXB           C02    C    C         0.000    -51.937  -29.669    5.601
+ WXB           O01    O    O         0.000    -51.940  -29.165    4.528
+ WXB           N03    N    N         0.000    -50.682  -30.194    6.101
+ WXB           C04    C    CH2       0.000    -49.550  -30.026    5.200
+ WXB           H042   H    H         0.000    -49.933  -30.008    4.178
+ WXB           H041   H    H         0.000    -48.889  -30.887    5.325
+ WXB           C09    C    CH2       0.000    -50.712  -30.826    7.404
+ WXB           H091   H    H         0.000    -50.643  -31.900    7.220
+ WXB           H092   H    H         0.000    -51.690  -30.593    7.830
+ WXB           C08    C    CH2       0.000    -49.619  -30.405    8.378
+ WXB           H081   H    H         0.000    -49.340  -31.301    8.936
+ WXB           H082   H    H         0.000    -50.073  -29.681    9.058
+ WXB           C07    C    CH2       0.000    -48.380  -29.796    7.740
+ WXB           H071   H    H         0.000    -47.966  -30.543    7.059
+ WXB           H072   H    H         0.000    -47.665  -29.601    8.542
+ WXB           C06    C    CH2       0.000    -48.653  -28.505    6.976
+ WXB           H061   H    H         0.000    -47.830  -27.814    7.170
+ WXB           H062   H    H         0.000    -49.583  -28.076    7.354
+ WXB           C05    C    CH2       0.000    -48.775  -28.745    5.476
+ WXB           H052   H    H         0.000    -47.773  -28.825    5.048
+ WXB           H051   H    H         0.000    -49.296  -27.898    5.024
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WXB      O19    n/a    C18    START
+ WXB      C18    O19    N17    .
+ WXB      N17    C18    C15    .
+ WXB      HN17   N17    .      .
+ WXB      C15    N17    N14    .
+ WXB      O16    C15    .      .
+ WXB      N14    C15    C13    .
+ WXB      HN14   N14    .      .
+ WXB      C13    N14    N12    .
+ WXB      N12    C13    C11    .
+ WXB      C11    N12    C10    .
+ WXB      H11    C11    .      .
+ WXB      C10    C11    C02    .
+ WXB      C21    C10    C20    .
+ WXB      H21    C21    .      .
+ WXB      C20    C21    .      .
+ WXB      C02    C10    N03    .
+ WXB      O01    C02    .      .
+ WXB      N03    C02    C09    .
+ WXB      C04    N03    H041   .
+ WXB      H042   C04    .      .
+ WXB      H041   C04    .      .
+ WXB      C09    N03    C08    .
+ WXB      H091   C09    .      .
+ WXB      H092   C09    .      .
+ WXB      C08    C09    C07    .
+ WXB      H081   C08    .      .
+ WXB      H082   C08    .      .
+ WXB      C07    C08    C06    .
+ WXB      H071   C07    .      .
+ WXB      H072   C07    .      .
+ WXB      C06    C07    C05    .
+ WXB      H061   C06    .      .
+ WXB      H062   C06    .      .
+ WXB      C05    C06    H051   .
+ WXB      H052   C05    .      .
+ WXB      H051   C05    .      END
+ WXB      C18    C20    .    ADD
+ WXB      C13    C20    .    ADD
+ WXB      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WXB      C18    C20       single      1.490    0.020
+ WXB      N17    C18       single      1.337    0.020
+ WXB      C18    O19       double      1.250    0.020
+ WXB      N14    C15       single      1.337    0.020
+ WXB      C15    N17       single      1.337    0.020
+ WXB      O16    C15       double      1.250    0.020
+ WXB      C13    C20       aromatic    1.390    0.020
+ WXB      N12    C13       aromatic    1.350    0.020
+ WXB      C13    N14       single      1.337    0.020
+ WXB      C10    C11       aromatic    1.390    0.020
+ WXB      C11    N12       aromatic    1.337    0.020
+ WXB      C02    C10       single      1.500    0.020
+ WXB      C21    C10       aromatic    1.390    0.020
+ WXB      C20    C21       aromatic    1.390    0.020
+ WXB      N03    C02       single      1.330    0.020
+ WXB      O01    C02       double      1.220    0.020
+ WXB      C04    C05       single      1.524    0.020
+ WXB      C04    N03       single      1.455    0.020
+ WXB      C05    C06       single      1.524    0.020
+ WXB      C06    C07       single      1.524    0.020
+ WXB      C07    C08       single      1.524    0.020
+ WXB      C08    C09       single      1.524    0.020
+ WXB      C09    N03       single      1.455    0.020
+ WXB      H11    C11       single      1.083    0.020
+ WXB      H041   C04       single      1.092    0.020
+ WXB      H042   C04       single      1.092    0.020
+ WXB      H051   C05       single      1.092    0.020
+ WXB      H052   C05       single      1.092    0.020
+ WXB      H061   C06       single      1.092    0.020
+ WXB      H062   C06       single      1.092    0.020
+ WXB      H071   C07       single      1.092    0.020
+ WXB      H072   C07       single      1.092    0.020
+ WXB      H081   C08       single      1.092    0.020
+ WXB      H082   C08       single      1.092    0.020
+ WXB      H091   C09       single      1.092    0.020
+ WXB      H092   C09       single      1.092    0.020
+ WXB      H21    C21       single      1.083    0.020
+ WXB      HN14   N14       single      1.040    0.020
+ WXB      HN17   N17       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WXB      O19    C18    N17     120.000    3.000
+ WXB      O19    C18    C20     120.000    3.000
+ WXB      N17    C18    C20     120.000    3.000
+ WXB      C18    N17    HN17    120.000    3.000
+ WXB      C18    N17    C15     120.000    3.000
+ WXB      HN17   N17    C15     120.000    3.000
+ WXB      N17    C15    O16     120.000    3.000
+ WXB      N17    C15    N14     120.000    3.000
+ WXB      O16    C15    N14     120.000    3.000
+ WXB      C15    N14    HN14    120.000    3.000
+ WXB      C15    N14    C13     120.000    3.000
+ WXB      HN14   N14    C13     120.000    3.000
+ WXB      N14    C13    N12     120.000    3.000
+ WXB      N14    C13    C20     120.000    3.000
+ WXB      N12    C13    C20     120.000    3.000
+ WXB      C13    N12    C11     120.000    3.000
+ WXB      N12    C11    H11     120.000    3.000
+ WXB      N12    C11    C10     120.000    3.000
+ WXB      H11    C11    C10     120.000    3.000
+ WXB      C11    C10    C21     120.000    3.000
+ WXB      C11    C10    C02     120.000    3.000
+ WXB      C21    C10    C02     120.000    3.000
+ WXB      C10    C21    H21     120.000    3.000
+ WXB      C10    C21    C20     120.000    3.000
+ WXB      H21    C21    C20     120.000    3.000
+ WXB      C21    C20    C18     120.000    3.000
+ WXB      C21    C20    C13     120.000    3.000
+ WXB      C18    C20    C13     120.000    3.000
+ WXB      C10    C02    O01     120.500    3.000
+ WXB      C10    C02    N03     120.000    3.000
+ WXB      O01    C02    N03     123.000    3.000
+ WXB      C02    N03    C04     127.000    3.000
+ WXB      C02    N03    C09     127.000    3.000
+ WXB      C04    N03    C09     120.000    3.000
+ WXB      N03    C04    H042    109.470    3.000
+ WXB      N03    C04    H041    109.470    3.000
+ WXB      N03    C04    C05     105.000    3.000
+ WXB      H042   C04    H041    107.900    3.000
+ WXB      H042   C04    C05     109.470    3.000
+ WXB      H041   C04    C05     109.470    3.000
+ WXB      N03    C09    H091    109.470    3.000
+ WXB      N03    C09    H092    109.470    3.000
+ WXB      N03    C09    C08     105.000    3.000
+ WXB      H091   C09    H092    107.900    3.000
+ WXB      H091   C09    C08     109.470    3.000
+ WXB      H092   C09    C08     109.470    3.000
+ WXB      C09    C08    H081    109.470    3.000
+ WXB      C09    C08    H082    109.470    3.000
+ WXB      C09    C08    C07     111.000    3.000
+ WXB      H081   C08    H082    107.900    3.000
+ WXB      H081   C08    C07     109.470    3.000
+ WXB      H082   C08    C07     109.470    3.000
+ WXB      C08    C07    H071    109.470    3.000
+ WXB      C08    C07    H072    109.470    3.000
+ WXB      C08    C07    C06     111.000    3.000
+ WXB      H071   C07    H072    107.900    3.000
+ WXB      H071   C07    C06     109.470    3.000
+ WXB      H072   C07    C06     109.470    3.000
+ WXB      C07    C06    H061    109.470    3.000
+ WXB      C07    C06    H062    109.470    3.000
+ WXB      C07    C06    C05     111.000    3.000
+ WXB      H061   C06    H062    107.900    3.000
+ WXB      H061   C06    C05     109.470    3.000
+ WXB      H062   C06    C05     109.470    3.000
+ WXB      C06    C05    H052    109.470    3.000
+ WXB      C06    C05    H051    109.470    3.000
+ WXB      C06    C05    C04     111.000    3.000
+ WXB      H052   C05    H051    107.900    3.000
+ WXB      H052   C05    C04     109.470    3.000
+ WXB      H051   C05    C04     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WXB      CONST_1          O19    C18    C20    C21              180.000            0.000   0
+ WXB      CONST_2          O19    C18    N17    C15                0.000            0.000   0
+ WXB      CONST_3          C18    N17    C15    N14                0.000            0.000   0
+ WXB      CONST_4          N17    C15    N14    C13                0.000            0.000   0
+ WXB      CONST_5          C15    N14    C13    N12              180.000            0.000   0
+ WXB      CONST_6          N14    C13    C20    C21              179.627            0.000   0
+ WXB      CONST_7          N14    C13    N12    C11              180.000            0.000   0
+ WXB      CONST_8          C13    N12    C11    C10                0.000            0.000   0
+ WXB      CONST_9          N12    C11    C10    C02                0.000            0.000   0
+ WXB      CONST_10         C11    C10    C21    C20                0.000            0.000   0
+ WXB      CONST_11         C10    C21    C20    C18              180.000            0.000   0
+ WXB      var_1            C11    C10    C02    N03              129.623           20.000   3
+ WXB      var_2            C10    C02    N03    C09              180.000           20.000   2
+ WXB      var_3            C02    N03    C04    C05               92.699           20.000   3
+ WXB      var_4            N03    C04    C05    C06              180.000           20.000   3
+ WXB      var_5            C02    N03    C09    C08             -132.690           20.000   3
+ WXB      var_6            N03    C09    C08    C07              180.000           20.000   3
+ WXB      var_7            C09    C08    C07    C06              180.000           20.000   3
+ WXB      var_8            C08    C07    C06    C05              180.000           20.000   3
+ WXB      var_9            C07    C06    C05    C04              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WXB      plan-1            C18       0.020
+ WXB      plan-1            C20       0.020
+ WXB      plan-1            N17       0.020
+ WXB      plan-1            O19       0.020
+ WXB      plan-1            C15       0.020
+ WXB      plan-1            N14       0.020
+ WXB      plan-1            O16       0.020
+ WXB      plan-1            C13       0.020
+ WXB      plan-1            C21       0.020
+ WXB      plan-1            C10       0.020
+ WXB      plan-1            H21       0.020
+ WXB      plan-1            HN14      0.020
+ WXB      plan-1            HN17      0.020
+ WXB      plan-1            C11       0.020
+ WXB      plan-1            N12       0.020
+ WXB      plan-1            H11       0.020
+ WXB      plan-1            C02       0.020
+ WXB      plan-2            C02       0.020
+ WXB      plan-2            C10       0.020
+ WXB      plan-2            N03       0.020
+ WXB      plan-2            O01       0.020
+ WXB      plan-3            N03       0.020
+ WXB      plan-3            C02       0.020
+ WXB      plan-3            C04       0.020
+ WXB      plan-3            C09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
