@@ -1,0 +1,275 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WXK      WXK '.                                   ' .                  32  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WXK
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WXK           O18    O    O         0.000    -46.054  -29.717    7.049
+ WXK           C17    C    CR6       0.000    -47.104  -29.531    6.523
+ WXK           N16    N    NR16      0.000    -48.303  -29.443    7.303
+ WXK           HN16   H    H         0.000    -48.254  -29.547    8.337
+ WXK           C14    C    CR6       0.000    -49.583  -29.210    6.664
+ WXK           O15    O    O         0.000    -50.575  -29.139    7.314
+ WXK           N13    N    NR16      0.000    -49.652  -29.076    5.209
+ WXK           HN13   H    H         0.000    -50.570  -28.919    4.746
+ WXK           C12    C    CR66      0.000    -48.414  -29.164    4.391
+ WXK           N11    N    NRD6      0.000    -48.542  -29.031    3.050
+ WXK           C10    C    CR16      0.000    -47.472  -29.103    2.274
+ WXK           H10    H    H         0.000    -47.586  -28.995    1.202
+ WXK           C09    C    CR6       0.000    -46.195  -29.316    2.809
+ WXK           C20    C    CR16      0.000    -46.024  -29.467    4.196
+ WXK           H20    H    H         0.000    -45.047  -29.638    4.631
+ WXK           C19    C    CR66      0.000    -47.191  -29.385    5.001
+ WXK           S06    S    ST        0.000    -44.770  -29.410    1.679
+ WXK           O07    O    OS        0.000    -44.853  -28.454    0.570
+ WXK           O08    O    OS        0.000    -43.540  -29.022    2.373
+ WXK           N05    N    NT1       0.000    -44.695  -31.026    1.123
+ WXK           HN05   H    H         0.000    -45.357  -31.380    0.414
+ WXK           C02    C    CT        0.000    -43.662  -31.883    1.687
+ WXK           C01    C    CH3       0.000    -42.358  -32.080    0.897
+ WXK           H013   H    H         0.000    -42.575  -32.508   -0.048
+ WXK           H012   H    H         0.000    -41.882  -31.143    0.756
+ WXK           H011   H    H         0.000    -41.710  -32.725    1.434
+ WXK           C04    C    CH2       0.000    -43.573  -31.929    3.218
+ WXK           H041   H    H         0.000    -44.300  -31.488    3.903
+ WXK           H042   H    H         0.000    -42.720  -32.305    3.787
+ WXK           C03    C    CH2       0.000    -44.225  -33.082    2.452
+ WXK           H032   H    H         0.000    -45.294  -33.176    2.249
+ WXK           H031   H    H         0.000    -43.713  -33.992    2.132
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WXK      O18    n/a    C17    START
+ WXK      C17    O18    N16    .
+ WXK      N16    C17    C14    .
+ WXK      HN16   N16    .      .
+ WXK      C14    N16    N13    .
+ WXK      O15    C14    .      .
+ WXK      N13    C14    C12    .
+ WXK      HN13   N13    .      .
+ WXK      C12    N13    N11    .
+ WXK      N11    C12    C10    .
+ WXK      C10    N11    C09    .
+ WXK      H10    C10    .      .
+ WXK      C09    C10    S06    .
+ WXK      C20    C09    C19    .
+ WXK      H20    C20    .      .
+ WXK      C19    C20    .      .
+ WXK      S06    C09    N05    .
+ WXK      O07    S06    .      .
+ WXK      O08    S06    .      .
+ WXK      N05    S06    C02    .
+ WXK      HN05   N05    .      .
+ WXK      C02    N05    C04    .
+ WXK      C01    C02    H011   .
+ WXK      H013   C01    .      .
+ WXK      H012   C01    .      .
+ WXK      H011   C01    .      .
+ WXK      C04    C02    C03    .
+ WXK      H041   C04    .      .
+ WXK      H042   C04    .      .
+ WXK      C03    C04    H031   .
+ WXK      H032   C03    .      .
+ WXK      H031   C03    .      END
+ WXK      C17    C19    .    ADD
+ WXK      C12    C19    .    ADD
+ WXK      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WXK      C17    C19       single      1.490    0.020
+ WXK      N16    C17       single      1.337    0.020
+ WXK      C17    O18       double      1.250    0.020
+ WXK      N13    C14       single      1.337    0.020
+ WXK      C14    N16       single      1.337    0.020
+ WXK      O15    C14       double      1.250    0.020
+ WXK      C12    C19       aromatic    1.390    0.020
+ WXK      N11    C12       aromatic    1.350    0.020
+ WXK      C12    N13       single      1.337    0.020
+ WXK      C09    C10       aromatic    1.390    0.020
+ WXK      C10    N11       deloc       1.337    0.020
+ WXK      C19    C20       aromatic    1.390    0.020
+ WXK      C20    C09       aromatic    1.390    0.020
+ WXK      C01    C02       single      1.524    0.020
+ WXK      C02    C03       single      1.524    0.020
+ WXK      C04    C02       single      1.524    0.020
+ WXK      C02    N05       single      1.472    0.020
+ WXK      C03    C04       single      1.524    0.020
+ WXK      S06    C09       single      1.595    0.020
+ WXK      N05    S06       single      1.610    0.020
+ WXK      O07    S06       double      1.436    0.020
+ WXK      O08    S06       double      1.436    0.020
+ WXK      H10    C10       single      1.083    0.020
+ WXK      H20    C20       single      1.083    0.020
+ WXK      H011   C01       single      1.059    0.020
+ WXK      H012   C01       single      1.059    0.020
+ WXK      H013   C01       single      1.059    0.020
+ WXK      H031   C03       single      1.092    0.020
+ WXK      H032   C03       single      1.092    0.020
+ WXK      H041   C04       single      1.092    0.020
+ WXK      H042   C04       single      1.092    0.020
+ WXK      HN05   N05       single      1.033    0.020
+ WXK      HN13   N13       single      1.040    0.020
+ WXK      HN16   N16       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WXK      O18    C17    N16     120.000    3.000
+ WXK      O18    C17    C19     120.000    3.000
+ WXK      N16    C17    C19     120.000    3.000
+ WXK      C17    N16    HN16    120.000    3.000
+ WXK      C17    N16    C14     120.000    3.000
+ WXK      HN16   N16    C14     120.000    3.000
+ WXK      N16    C14    O15     120.000    3.000
+ WXK      N16    C14    N13     120.000    3.000
+ WXK      O15    C14    N13     120.000    3.000
+ WXK      C14    N13    HN13    120.000    3.000
+ WXK      C14    N13    C12     120.000    3.000
+ WXK      HN13   N13    C12     120.000    3.000
+ WXK      N13    C12    N11     120.000    3.000
+ WXK      N13    C12    C19     120.000    3.000
+ WXK      N11    C12    C19     120.000    3.000
+ WXK      C12    N11    C10     120.000    3.000
+ WXK      N11    C10    H10     120.000    3.000
+ WXK      N11    C10    C09     120.000    3.000
+ WXK      H10    C10    C09     120.000    3.000
+ WXK      C10    C09    C20     120.000    3.000
+ WXK      C10    C09    S06     120.000    3.000
+ WXK      C20    C09    S06     120.000    3.000
+ WXK      C09    C20    H20     120.000    3.000
+ WXK      C09    C20    C19     120.000    3.000
+ WXK      H20    C20    C19     120.000    3.000
+ WXK      C20    C19    C17     120.000    3.000
+ WXK      C20    C19    C12     120.000    3.000
+ WXK      C17    C19    C12     120.000    3.000
+ WXK      C09    S06    O07     109.500    3.000
+ WXK      C09    S06    O08     109.500    3.000
+ WXK      C09    S06    N05     109.500    3.000
+ WXK      O07    S06    O08     109.500    3.000
+ WXK      O07    S06    N05     109.500    3.000
+ WXK      O08    S06    N05     109.500    3.000
+ WXK      S06    N05    HN05    109.500    3.000
+ WXK      S06    N05    C02     109.500    3.000
+ WXK      HN05   N05    C02     109.500    3.000
+ WXK      N05    C02    C01     109.500    3.000
+ WXK      N05    C02    C04     109.500    3.000
+ WXK      N05    C02    C03     109.500    3.000
+ WXK      C01    C02    C04     111.000    3.000
+ WXK      C01    C02    C03     111.000    3.000
+ WXK      C04    C02    C03      60.000    3.000
+ WXK      C02    C01    H013    109.470    3.000
+ WXK      C02    C01    H012    109.470    3.000
+ WXK      C02    C01    H011    109.470    3.000
+ WXK      H013   C01    H012    109.470    3.000
+ WXK      H013   C01    H011    109.470    3.000
+ WXK      H012   C01    H011    109.470    3.000
+ WXK      C02    C04    H041    109.470    3.000
+ WXK      C02    C04    H042    109.470    3.000
+ WXK      C02    C04    C03      60.000    3.000
+ WXK      H041   C04    H042    107.900    3.000
+ WXK      H041   C04    C03     109.470    3.000
+ WXK      H042   C04    C03     109.470    3.000
+ WXK      C04    C03    H032    109.470    3.000
+ WXK      C04    C03    H031    109.470    3.000
+ WXK      C04    C03    C02      60.000    3.000
+ WXK      H032   C03    H031    107.900    3.000
+ WXK      H032   C03    C02     109.470    3.000
+ WXK      H031   C03    C02     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WXK      CONST_1          O18    C17    C19    C20              180.000            0.000   0
+ WXK      CONST_2          O18    C17    N16    C14                0.000            0.000   0
+ WXK      CONST_3          C17    N16    C14    N13                0.000            0.000   0
+ WXK      CONST_4          N16    C14    N13    C12                0.000            0.000   0
+ WXK      CONST_5          C14    N13    C12    N11              180.000            0.000   0
+ WXK      CONST_6          N13    C12    C19    C20              179.901            0.000   0
+ WXK      CONST_7          N13    C12    N11    C10              180.000            0.000   0
+ WXK      CONST_8          C12    N11    C10    C09                0.000            0.000   0
+ WXK      CONST_9          N11    C10    C09    S06                0.000            0.000   0
+ WXK      CONST_10         C10    C09    C20    C19                0.000            0.000   0
+ WXK      CONST_11         C09    C20    C19    C17              180.000            0.000   0
+ WXK      var_1            C10    C09    S06    N05              -84.637           20.000   3
+ WXK      var_2            C09    S06    N05    C02             -104.563           20.000   3
+ WXK      var_3            S06    N05    C02    C04               51.095           20.000   3
+ WXK      var_4            N05    C02    C03    C04             -108.161           20.000   3
+ WXK      var_5            N05    C02    C01    H011             180.000           20.000   3
+ WXK      var_6            N05    C02    C04    C03              102.734           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WXK      chir_01          C02    C01    C03    C04       negativ
+ WXK      chir_02          S06    C09    N05    O07       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WXK      plan-1            C17       0.020
+ WXK      plan-1            C19       0.020
+ WXK      plan-1            N16       0.020
+ WXK      plan-1            O18       0.020
+ WXK      plan-1            C14       0.020
+ WXK      plan-1            N13       0.020
+ WXK      plan-1            O15       0.020
+ WXK      plan-1            C12       0.020
+ WXK      plan-1            C20       0.020
+ WXK      plan-1            HN13      0.020
+ WXK      plan-1            HN16      0.020
+ WXK      plan-1            C10       0.020
+ WXK      plan-1            C09       0.020
+ WXK      plan-1            N11       0.020
+ WXK      plan-1            H10       0.020
+ WXK      plan-1            H20       0.020
+ WXK      plan-1            S06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

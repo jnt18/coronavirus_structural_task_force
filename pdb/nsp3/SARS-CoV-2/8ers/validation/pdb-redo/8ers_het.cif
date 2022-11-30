@@ -1,0 +1,320 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WQO      WQO '.                                   ' .                  37  23 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WQO
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WQO           O21    O    O         0.000    -48.353  -28.831    1.516
+ WQO           C07    C    C         0.000    -47.818  -28.737    2.569
+ WQO           C06    C    CR6       0.000    -48.538  -28.776    3.897
+ WQO           C04    C    CR6       0.000    -49.910  -28.909    3.921
+ WQO           O05    O    OH1       0.000    -50.646  -28.953    2.750
+ WQO           HO05   H    H         0.000    -51.587  -29.049    2.958
+ WQO           C03    C    CR16      0.000    -50.605  -28.984    5.103
+ WQO           H03    H    H         0.000    -51.684  -29.079    5.110
+ WQO           C22    C    CR16      0.000    -47.831  -28.735    5.082
+ WQO           H22    H    H         0.000    -46.752  -28.647    5.071
+ WQO           C23    C    CR16      0.000    -48.513  -28.807    6.283
+ WQO           H23    H    H         0.000    -47.971  -28.763    7.220
+ WQO           C02    C    CR6       0.000    -49.889  -28.935    6.282
+ WQO           N01    N    NH2       0.000    -50.596  -29.031    7.522
+ WQO           H012   H    H         0.000    -50.103  -29.007    8.420
+ WQO           H011   H    H         0.000    -51.616  -29.127    7.548
+ WQO           O08    O    O2        0.000    -46.444  -28.642    2.671
+ WQO           C09    C    CH1       0.000    -45.625  -28.932    1.567
+ WQO           H09    H    H         0.000    -46.004  -29.794    1.000
+ WQO           C16    C    CR6       0.000    -45.396  -27.717    0.657
+ WQO           C17    C    CR16      0.000    -46.305  -26.820    0.112
+ WQO           H17    H    H         0.000    -47.365  -26.922    0.308
+ WQO           C10    C    CH1       0.000    -44.269  -29.203    2.131
+ WQO           H10    H    H         0.000    -44.146  -28.606    3.046
+ WQO           C11    C    C         0.000    -44.079  -30.673    2.483
+ WQO           O13    O    OC        0.000    -44.635  -31.564    1.803
+ WQO           O12    O    OC       -1.000    -43.376  -30.971    3.474
+ WQO           C14    C    CH2       0.000    -43.267  -28.718    1.102
+ WQO           H141   H    H         0.000    -43.003  -29.488    0.374
+ WQO           H142   H    H         0.000    -42.356  -28.320    1.555
+ WQO           C15    C    CR6       0.000    -44.030  -27.582    0.396
+ WQO           C20    C    CR16      0.000    -43.571  -26.556   -0.406
+ WQO           H20    H    H         0.000    -42.514  -26.447   -0.614
+ WQO           C19    C    CR16      0.000    -44.489  -25.673   -0.937
+ WQO           H19    H    H         0.000    -44.142  -24.864   -1.568
+ WQO           C18    C    CR16      0.000    -45.834  -25.798   -0.683
+ WQO           H18    H    H         0.000    -46.530  -25.087   -1.111
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WQO      O21    n/a    C07    START
+ WQO      C07    O21    O08    .
+ WQO      C06    C07    C22    .
+ WQO      C04    C06    C03    .
+ WQO      O05    C04    HO05   .
+ WQO      HO05   O05    .      .
+ WQO      C03    C04    H03    .
+ WQO      H03    C03    .      .
+ WQO      C22    C06    C23    .
+ WQO      H22    C22    .      .
+ WQO      C23    C22    C02    .
+ WQO      H23    C23    .      .
+ WQO      C02    C23    N01    .
+ WQO      N01    C02    H011   .
+ WQO      H012   N01    .      .
+ WQO      H011   N01    .      .
+ WQO      O08    C07    C09    .
+ WQO      C09    O08    C10    .
+ WQO      H09    C09    .      .
+ WQO      C16    C09    C17    .
+ WQO      C17    C16    H17    .
+ WQO      H17    C17    .      .
+ WQO      C10    C09    C14    .
+ WQO      H10    C10    .      .
+ WQO      C11    C10    O12    .
+ WQO      O13    C11    .      .
+ WQO      O12    C11    .      .
+ WQO      C14    C10    C15    .
+ WQO      H141   C14    .      .
+ WQO      H142   C14    .      .
+ WQO      C15    C14    C20    .
+ WQO      C20    C15    C19    .
+ WQO      H20    C20    .      .
+ WQO      C19    C20    C18    .
+ WQO      H19    C19    .      .
+ WQO      C18    C19    H18    .
+ WQO      H18    C18    .      END
+ WQO      C18    C17    .    ADD
+ WQO      C16    C15    .    ADD
+ WQO      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WQO      C18    C17       aromatic    1.390    0.020
+ WQO      C18    C19       aromatic    1.390    0.020
+ WQO      C17    C16       aromatic    1.390    0.020
+ WQO      C16    C15       aromatic    1.384    0.020
+ WQO      C16    C09       single      1.480    0.020
+ WQO      C15    C14       single      1.511    0.020
+ WQO      C20    C15       aromatic    1.390    0.020
+ WQO      C14    C10       single      1.524    0.020
+ WQO      C11    C10       single      1.500    0.020
+ WQO      O12    C11       deloc       1.250    0.020
+ WQO      O13    C11       deloc       1.250    0.020
+ WQO      C10    C09       single      1.524    0.020
+ WQO      C19    C20       aromatic    1.390    0.020
+ WQO      C02    C03       aromatic    1.390    0.020
+ WQO      C02    C23       aromatic    1.390    0.020
+ WQO      N01    C02       single      1.355    0.020
+ WQO      C03    C04       aromatic    1.390    0.020
+ WQO      C04    C06       aromatic    1.384    0.020
+ WQO      O05    C04       single      1.362    0.020
+ WQO      C06    C07       single      1.500    0.020
+ WQO      C22    C06       aromatic    1.390    0.020
+ WQO      O08    C07       single      1.454    0.020
+ WQO      C07    O21       double      1.220    0.020
+ WQO      C09    O08       single      1.426    0.020
+ WQO      C23    C22       aromatic    1.390    0.020
+ WQO      H18    C18       single      1.083    0.020
+ WQO      H17    C17       single      1.083    0.020
+ WQO      H141   C14       single      1.092    0.020
+ WQO      H142   C14       single      1.092    0.020
+ WQO      H10    C10       single      1.099    0.020
+ WQO      H20    C20       single      1.083    0.020
+ WQO      H19    C19       single      1.083    0.020
+ WQO      H03    C03       single      1.083    0.020
+ WQO      H09    C09       single      1.099    0.020
+ WQO      H22    C22       single      1.083    0.020
+ WQO      H23    C23       single      1.083    0.020
+ WQO      H011   N01       single      1.010    0.020
+ WQO      H012   N01       single      1.010    0.020
+ WQO      HO05   O05       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WQO      O21    C07    C06     120.500    3.000
+ WQO      O21    C07    O08     119.000    3.000
+ WQO      C06    C07    O08     120.000    3.000
+ WQO      C07    C06    C04     120.000    3.000
+ WQO      C07    C06    C22     120.000    3.000
+ WQO      C04    C06    C22     120.000    3.000
+ WQO      C06    C04    O05     120.000    3.000
+ WQO      C06    C04    C03     120.000    3.000
+ WQO      O05    C04    C03     120.000    3.000
+ WQO      C04    O05    HO05    109.470    3.000
+ WQO      C04    C03    H03     120.000    3.000
+ WQO      C04    C03    C02     120.000    3.000
+ WQO      H03    C03    C02     120.000    3.000
+ WQO      C06    C22    H22     120.000    3.000
+ WQO      C06    C22    C23     120.000    3.000
+ WQO      H22    C22    C23     120.000    3.000
+ WQO      C22    C23    H23     120.000    3.000
+ WQO      C22    C23    C02     120.000    3.000
+ WQO      H23    C23    C02     120.000    3.000
+ WQO      C23    C02    N01     120.000    3.000
+ WQO      C23    C02    C03     120.000    3.000
+ WQO      N01    C02    C03     120.000    3.000
+ WQO      C02    N01    H012    120.000    3.000
+ WQO      C02    N01    H011    120.000    3.000
+ WQO      H012   N01    H011    120.000    3.000
+ WQO      C07    O08    C09     111.800    3.000
+ WQO      O08    C09    H09     109.470    3.000
+ WQO      O08    C09    C16     109.470    3.000
+ WQO      O08    C09    C10     109.470    3.000
+ WQO      H09    C09    C16     109.470    3.000
+ WQO      H09    C09    C10     108.340    3.000
+ WQO      C16    C09    C10     109.470    3.000
+ WQO      C09    C16    C17     120.000    3.000
+ WQO      C09    C16    C15     120.000    3.000
+ WQO      C17    C16    C15     120.000    3.000
+ WQO      C16    C17    H17     120.000    3.000
+ WQO      C16    C17    C18     120.000    3.000
+ WQO      H17    C17    C18     120.000    3.000
+ WQO      C09    C10    H10     108.340    3.000
+ WQO      C09    C10    C11     109.470    3.000
+ WQO      C09    C10    C14     111.000    3.000
+ WQO      H10    C10    C11     108.810    3.000
+ WQO      H10    C10    C14     108.340    3.000
+ WQO      C11    C10    C14     109.470    3.000
+ WQO      C10    C11    O13     118.500    3.000
+ WQO      C10    C11    O12     118.500    3.000
+ WQO      O13    C11    O12     123.000    3.000
+ WQO      C10    C14    H141    109.470    3.000
+ WQO      C10    C14    H142    109.470    3.000
+ WQO      C10    C14    C15     109.470    3.000
+ WQO      H141   C14    H142    107.900    3.000
+ WQO      H141   C14    C15     109.470    3.000
+ WQO      H142   C14    C15     109.470    3.000
+ WQO      C14    C15    C20     120.000    3.000
+ WQO      C14    C15    C16     120.000    3.000
+ WQO      C20    C15    C16     120.000    3.000
+ WQO      C15    C20    H20     120.000    3.000
+ WQO      C15    C20    C19     120.000    3.000
+ WQO      H20    C20    C19     120.000    3.000
+ WQO      C20    C19    H19     120.000    3.000
+ WQO      C20    C19    C18     120.000    3.000
+ WQO      H19    C19    C18     120.000    3.000
+ WQO      C19    C18    H18     120.000    3.000
+ WQO      C19    C18    C17     120.000    3.000
+ WQO      H18    C18    C17     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WQO      var_1            O21    C07    C06    C22              176.326           20.000   3
+ WQO      CONST_1          C07    C06    C04    C03                0.000            0.000   0
+ WQO      var_2            C06    C04    O05    HO05             180.000           20.000   3
+ WQO      CONST_2          C06    C04    C03    C02                0.000            0.000   0
+ WQO      CONST_3          C07    C06    C22    C23                0.000            0.000   0
+ WQO      CONST_4          C06    C22    C23    C02                0.000            0.000   0
+ WQO      CONST_5          C22    C23    C02    N01                0.000            0.000   0
+ WQO      CONST_6          C23    C02    C03    C04                0.000            0.000   0
+ WQO      CONST_7          C23    C02    N01    H011             180.000            0.000   0
+ WQO      var_3            O21    C07    O08    C09              -13.380           20.000   3
+ WQO      var_4            C07    O08    C09    C10             -160.446           20.000   3
+ WQO      var_5            O08    C09    C16    C17              -49.311           20.000   3
+ WQO      CONST_8          C09    C16    C15    C14                0.000            0.000   0
+ WQO      CONST_9          C09    C16    C17    C18                0.000            0.000   0
+ WQO      var_6            O08    C09    C10    C14              180.000           20.000   3
+ WQO      var_7            C09    C10    C11    O12              180.000           20.000   3
+ WQO      var_8            C09    C10    C14    C15              180.000           20.000   3
+ WQO      var_9            C10    C14    C15    C20                0.000           20.000   2
+ WQO      CONST_10         C14    C15    C20    C19                0.000            0.000   0
+ WQO      CONST_11         C15    C20    C19    C18                0.000            0.000   0
+ WQO      CONST_12         C20    C19    C18    C17                0.000            0.000   0
+ WQO      CONST_13         C19    C18    C17    C16                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WQO      chir_01          C10    C14    C11    C09       positiv
+ WQO      chir_02          C09    C16    C10    O08       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WQO      plan-1            C18       0.020
+ WQO      plan-1            C17       0.020
+ WQO      plan-1            C19       0.020
+ WQO      plan-1            H18       0.020
+ WQO      plan-1            C16       0.020
+ WQO      plan-1            C15       0.020
+ WQO      plan-1            C20       0.020
+ WQO      plan-1            C09       0.020
+ WQO      plan-1            H17       0.020
+ WQO      plan-1            C14       0.020
+ WQO      plan-1            H20       0.020
+ WQO      plan-1            H19       0.020
+ WQO      plan-2            C11       0.020
+ WQO      plan-2            C10       0.020
+ WQO      plan-2            O12       0.020
+ WQO      plan-2            O13       0.020
+ WQO      plan-3            C02       0.020
+ WQO      plan-3            C03       0.020
+ WQO      plan-3            C23       0.020
+ WQO      plan-3            N01       0.020
+ WQO      plan-3            C04       0.020
+ WQO      plan-3            C06       0.020
+ WQO      plan-3            C22       0.020
+ WQO      plan-3            H03       0.020
+ WQO      plan-3            O05       0.020
+ WQO      plan-3            C07       0.020
+ WQO      plan-3            H22       0.020
+ WQO      plan-3            H23       0.020
+ WQO      plan-3            H012      0.020
+ WQO      plan-3            H011      0.020
+ WQO      plan-4            C07       0.020
+ WQO      plan-4            C06       0.020
+ WQO      plan-4            O08       0.020
+ WQO      plan-4            O21       0.020
+ WQO      plan-5            N01       0.020
+ WQO      plan-5            C02       0.020
+ WQO      plan-5            H011      0.020
+ WQO      plan-5            H012      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

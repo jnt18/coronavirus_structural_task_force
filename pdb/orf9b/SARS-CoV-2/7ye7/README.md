@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nucleocapsid protein
+**Protein name**: orf9b
 
 **Organism**: SARS-CoV-2
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ye7/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ye7/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ye7/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/7ye7/validation/Xtriage_output.log)   
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7ye7/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7ye7/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7ye7/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/orf9b/SARS-CoV-2/7ye7/validation/Xtriage_output.log)   
 
 
 
@@ -60,7 +60,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7ye7
 
-**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/P0DTC9 
+**PDBe-KB**:  
  
 **PDBr**: https://www.rcsb.org/structure/7ye7 
 

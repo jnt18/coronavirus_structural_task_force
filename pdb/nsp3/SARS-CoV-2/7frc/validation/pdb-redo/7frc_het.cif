@@ -1,0 +1,392 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WXX      WXX '.                                   ' .                  52  25 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WXX
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WXX           O15    O    O         0.000    -43.841  -32.947    2.606
+ WXX           C06    C    C         0.000    -43.987  -32.109    1.783
+ WXX           C07    C    CH2       0.000    -45.292  -32.030    0.993
+ WXX           H071   H    H         0.000    -45.056  -31.726   -0.029
+ WXX           H072   H    H         0.000    -45.929  -31.275    1.458
+ WXX           C08    C    CH2       0.000    -46.021  -33.370    0.971
+ WXX           H081   H    H         0.000    -47.076  -33.164    1.162
+ WXX           H082   H    H         0.000    -45.614  -33.969    1.788
+ WXX           C09    C    CH1       0.000    -45.880  -34.137   -0.345
+ WXX           H09    H    H         0.000    -46.214  -35.172   -0.184
+ WXX           C10    C    CH2       0.000    -46.735  -33.518   -1.423
+ WXX           H101   H    H         0.000    -46.693  -32.431   -1.330
+ WXX           H102   H    H         0.000    -47.766  -33.854   -1.296
+ WXX           C11    C    CH2       0.000    -46.222  -33.938   -2.822
+ WXX           H111   H    H         0.000    -45.544  -33.155   -3.170
+ WXX           H112   H    H         0.000    -47.088  -33.989   -3.485
+ WXX           C12    C    CH2       0.000    -45.511  -35.253   -2.826
+ WXX           H121   H    H         0.000    -45.188  -35.466   -3.847
+ WXX           H122   H    H         0.000    -46.212  -36.024   -2.499
+ WXX           C13    C    CH2       0.000    -44.309  -35.239   -1.908
+ WXX           H132   H    H         0.000    -43.416  -35.048   -2.507
+ WXX           H131   H    H         0.000    -44.224  -36.218   -1.432
+ WXX           C14    C    CH2       0.000    -44.445  -34.164   -0.840
+ WXX           H142   H    H         0.000    -43.774  -34.388   -0.008
+ WXX           H141   H    H         0.000    -44.184  -33.192   -1.265
+ WXX           N05    N    NH1       0.000    -42.907  -31.171    1.554
+ WXX           HN05   H    H         0.000    -42.065  -31.266    2.104
+ WXX           C04    C    CH2       0.000    -42.972  -30.101    0.574
+ WXX           H041   H    H         0.000    -43.731  -30.344   -0.173
+ WXX           H042   H    H         0.000    -42.000  -30.002    0.086
+ WXX           C03    C    CH1       0.000    -43.335  -28.784    1.262
+ WXX           H03    H    H         0.000    -42.604  -28.563    2.053
+ WXX           C02    C    CH2       0.000    -43.342  -27.653    0.233
+ WXX           H021   H    H         0.000    -44.230  -27.773   -0.391
+ WXX           H022   H    H         0.000    -42.448  -27.757   -0.385
+ WXX           C01    C    CH3       0.000    -43.357  -26.268    0.883
+ WXX           H013   H    H         0.000    -44.225  -26.165    1.484
+ WXX           H012   H    H         0.000    -42.495  -26.149    1.489
+ WXX           H011   H    H         0.000    -43.361  -25.521    0.131
+ WXX           N16    N    NH1       0.000    -44.665  -28.894    1.838
+ WXX           HN16   H    H         0.000    -45.469  -28.872    1.226
+ WXX           C17    C    CR6       0.000    -44.870  -29.035    3.269
+ WXX           N18    N    NRD6      0.000    -43.826  -29.176    4.074
+ WXX           C19    C    CR16      0.000    -43.991  -29.303    5.387
+ WXX           H19    H    H         0.000    -43.117  -29.420    6.015
+ WXX           N20    N    NRD6      0.000    -45.184  -29.291    5.951
+ WXX           C21    C    CR56      0.000    -46.300  -29.151    5.200
+ WXX           N25    N    NRD5      0.000    -47.618  -29.103    5.481
+ WXX           N24    N    NRD5      0.000    -48.347  -28.946    4.365
+ WXX           C23    C    CR15      0.000    -47.518  -28.889    3.337
+ WXX           H23    H    H         0.000    -47.803  -28.765    2.300
+ WXX           C22    C    CR56      0.000    -46.175  -29.020    3.829
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WXX      O15    n/a    C06    START
+ WXX      C06    O15    N05    .
+ WXX      C07    C06    C08    .
+ WXX      H071   C07    .      .
+ WXX      H072   C07    .      .
+ WXX      C08    C07    C09    .
+ WXX      H081   C08    .      .
+ WXX      H082   C08    .      .
+ WXX      C09    C08    C14    .
+ WXX      H09    C09    .      .
+ WXX      C10    C09    C11    .
+ WXX      H101   C10    .      .
+ WXX      H102   C10    .      .
+ WXX      C11    C10    C12    .
+ WXX      H111   C11    .      .
+ WXX      H112   C11    .      .
+ WXX      C12    C11    C13    .
+ WXX      H121   C12    .      .
+ WXX      H122   C12    .      .
+ WXX      C13    C12    H131   .
+ WXX      H132   C13    .      .
+ WXX      H131   C13    .      .
+ WXX      C14    C09    H141   .
+ WXX      H142   C14    .      .
+ WXX      H141   C14    .      .
+ WXX      N05    C06    C04    .
+ WXX      HN05   N05    .      .
+ WXX      C04    N05    C03    .
+ WXX      H041   C04    .      .
+ WXX      H042   C04    .      .
+ WXX      C03    C04    N16    .
+ WXX      H03    C03    .      .
+ WXX      C02    C03    C01    .
+ WXX      H021   C02    .      .
+ WXX      H022   C02    .      .
+ WXX      C01    C02    H011   .
+ WXX      H013   C01    .      .
+ WXX      H012   C01    .      .
+ WXX      H011   C01    .      .
+ WXX      N16    C03    C17    .
+ WXX      HN16   N16    .      .
+ WXX      C17    N16    N18    .
+ WXX      N18    C17    C19    .
+ WXX      C19    N18    N20    .
+ WXX      H19    C19    .      .
+ WXX      N20    C19    C21    .
+ WXX      C21    N20    N25    .
+ WXX      N25    C21    N24    .
+ WXX      N24    N25    C23    .
+ WXX      C23    N24    C22    .
+ WXX      H23    C23    .      .
+ WXX      C22    C23    .      END
+ WXX      C17    C22    .    ADD
+ WXX      C14    C13    .    ADD
+ WXX      C21    C22    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WXX      C17    C22       aromatic    1.390    0.020
+ WXX      C17    N16       single      1.350    0.020
+ WXX      N18    C17       aromatic    1.350    0.020
+ WXX      C14    C13       single      1.524    0.020
+ WXX      C14    C09       single      1.524    0.020
+ WXX      C13    C12       single      1.524    0.020
+ WXX      C12    C11       single      1.524    0.020
+ WXX      C11    C10       single      1.524    0.020
+ WXX      C10    C09       single      1.524    0.020
+ WXX      C19    N18       aromat      1.337    0.020
+ WXX      N20    C19       aromatic    1.337    0.020
+ WXX      C01    C02       single      1.513    0.020
+ WXX      C02    C03       single      1.524    0.020
+ WXX      C03    C04       single      1.524    0.020
+ WXX      N16    C03       single      1.450    0.020
+ WXX      C04    N05       single      1.450    0.020
+ WXX      C07    C06       single      1.510    0.020
+ WXX      N05    C06       single      1.330    0.020
+ WXX      C06    O15       double      1.220    0.020
+ WXX      C08    C07       single      1.524    0.020
+ WXX      C09    C08       single      1.524    0.020
+ WXX      C21    C22       aromatic    1.390    0.020
+ WXX      C21    N20       deloc       1.355    0.020
+ WXX      N25    C21       aromatic    1.350    0.020
+ WXX      C22    C23       aromatic    1.440    0.020
+ WXX      C23    N24       aromatic    1.350    0.020
+ WXX      N24    N25       aromatic    1.404    0.020
+ WXX      H141   C14       single      1.092    0.020
+ WXX      H142   C14       single      1.092    0.020
+ WXX      H131   C13       single      1.092    0.020
+ WXX      H132   C13       single      1.092    0.020
+ WXX      H121   C12       single      1.092    0.020
+ WXX      H122   C12       single      1.092    0.020
+ WXX      H111   C11       single      1.092    0.020
+ WXX      H112   C11       single      1.092    0.020
+ WXX      H101   C10       single      1.092    0.020
+ WXX      H102   C10       single      1.092    0.020
+ WXX      H19    C19       single      1.083    0.020
+ WXX      H011   C01       single      1.059    0.020
+ WXX      H012   C01       single      1.059    0.020
+ WXX      H013   C01       single      1.059    0.020
+ WXX      H021   C02       single      1.092    0.020
+ WXX      H022   C02       single      1.092    0.020
+ WXX      H03    C03       single      1.099    0.020
+ WXX      H041   C04       single      1.092    0.020
+ WXX      H042   C04       single      1.092    0.020
+ WXX      H071   C07       single      1.092    0.020
+ WXX      H072   C07       single      1.092    0.020
+ WXX      H081   C08       single      1.092    0.020
+ WXX      H082   C08       single      1.092    0.020
+ WXX      H09    C09       single      1.099    0.020
+ WXX      H23    C23       single      1.083    0.020
+ WXX      HN05   N05       single      1.010    0.020
+ WXX      HN16   N16       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WXX      O15    C06    C07     120.500    3.000
+ WXX      O15    C06    N05     123.000    3.000
+ WXX      C07    C06    N05     116.500    3.000
+ WXX      C06    C07    H071    109.470    3.000
+ WXX      C06    C07    H072    109.470    3.000
+ WXX      C06    C07    C08     109.470    3.000
+ WXX      H071   C07    H072    107.900    3.000
+ WXX      H071   C07    C08     109.470    3.000
+ WXX      H072   C07    C08     109.470    3.000
+ WXX      C07    C08    H081    109.470    3.000
+ WXX      C07    C08    H082    109.470    3.000
+ WXX      C07    C08    C09     111.000    3.000
+ WXX      H081   C08    H082    107.900    3.000
+ WXX      H081   C08    C09     109.470    3.000
+ WXX      H082   C08    C09     109.470    3.000
+ WXX      C08    C09    H09     108.340    3.000
+ WXX      C08    C09    C10     109.470    3.000
+ WXX      C08    C09    C14     109.470    3.000
+ WXX      H09    C09    C10     108.340    3.000
+ WXX      H09    C09    C14     108.340    3.000
+ WXX      C10    C09    C14     109.470    3.000
+ WXX      C09    C10    H101    109.470    3.000
+ WXX      C09    C10    H102    109.470    3.000
+ WXX      C09    C10    C11     111.000    3.000
+ WXX      H101   C10    H102    107.900    3.000
+ WXX      H101   C10    C11     109.470    3.000
+ WXX      H102   C10    C11     109.470    3.000
+ WXX      C10    C11    H111    109.470    3.000
+ WXX      C10    C11    H112    109.470    3.000
+ WXX      C10    C11    C12     111.000    3.000
+ WXX      H111   C11    H112    107.900    3.000
+ WXX      H111   C11    C12     109.470    3.000
+ WXX      H112   C11    C12     109.470    3.000
+ WXX      C11    C12    H121    109.470    3.000
+ WXX      C11    C12    H122    109.470    3.000
+ WXX      C11    C12    C13     111.000    3.000
+ WXX      H121   C12    H122    107.900    3.000
+ WXX      H121   C12    C13     109.470    3.000
+ WXX      H122   C12    C13     109.470    3.000
+ WXX      C12    C13    H132    109.470    3.000
+ WXX      C12    C13    H131    109.470    3.000
+ WXX      C12    C13    C14     111.000    3.000
+ WXX      H132   C13    H131    107.900    3.000
+ WXX      H132   C13    C14     109.470    3.000
+ WXX      H131   C13    C14     109.470    3.000
+ WXX      C09    C14    H142    109.470    3.000
+ WXX      C09    C14    H141    109.470    3.000
+ WXX      C09    C14    C13     111.000    3.000
+ WXX      H142   C14    H141    107.900    3.000
+ WXX      H142   C14    C13     109.470    3.000
+ WXX      H141   C14    C13     109.470    3.000
+ WXX      C06    N05    HN05    120.000    3.000
+ WXX      C06    N05    C04     121.500    3.000
+ WXX      HN05   N05    C04     118.500    3.000
+ WXX      N05    C04    H041    109.470    3.000
+ WXX      N05    C04    H042    109.470    3.000
+ WXX      N05    C04    C03     110.000    3.000
+ WXX      H041   C04    H042    107.900    3.000
+ WXX      H041   C04    C03     109.470    3.000
+ WXX      H042   C04    C03     109.470    3.000
+ WXX      C04    C03    H03     108.340    3.000
+ WXX      C04    C03    C02     109.470    3.000
+ WXX      C04    C03    N16     110.000    3.000
+ WXX      H03    C03    C02     108.340    3.000
+ WXX      H03    C03    N16     108.550    3.000
+ WXX      C02    C03    N16     110.000    3.000
+ WXX      C03    C02    H021    109.470    3.000
+ WXX      C03    C02    H022    109.470    3.000
+ WXX      C03    C02    C01     111.000    3.000
+ WXX      H021   C02    H022    107.900    3.000
+ WXX      H021   C02    C01     109.470    3.000
+ WXX      H022   C02    C01     109.470    3.000
+ WXX      C02    C01    H013    109.470    3.000
+ WXX      C02    C01    H012    109.470    3.000
+ WXX      C02    C01    H011    109.470    3.000
+ WXX      H013   C01    H012    109.470    3.000
+ WXX      H013   C01    H011    109.470    3.000
+ WXX      H012   C01    H011    109.470    3.000
+ WXX      C03    N16    HN16    118.500    3.000
+ WXX      C03    N16    C17     120.000    3.000
+ WXX      HN16   N16    C17     120.000    3.000
+ WXX      N16    C17    N18     120.000    3.000
+ WXX      N16    C17    C22     120.000    3.000
+ WXX      N18    C17    C22     120.000    3.000
+ WXX      C17    N18    C19     120.000    3.000
+ WXX      N18    C19    H19     120.000    3.000
+ WXX      N18    C19    N20     120.000    3.000
+ WXX      H19    C19    N20     120.000    3.000
+ WXX      C19    N20    C21     120.000    3.000
+ WXX      N20    C21    N25     120.000    3.000
+ WXX      N20    C21    C22     120.000    3.000
+ WXX      N25    C21    C22     108.000    3.000
+ WXX      C21    N25    N24     108.000    3.000
+ WXX      N25    N24    C23     108.000    3.000
+ WXX      N24    C23    H23     126.000    3.000
+ WXX      N24    C23    C22     108.000    3.000
+ WXX      H23    C23    C22     108.000    3.000
+ WXX      C23    C22    C17     132.000    3.000
+ WXX      C23    C22    C21     120.000    3.000
+ WXX      C17    C22    C21     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WXX      var_1            O15    C06    C07    C08              180.000           20.000   3
+ WXX      var_2            C06    C07    C08    C09              180.000           20.000   3
+ WXX      var_3            C07    C08    C09    C14              180.000           20.000   3
+ WXX      var_4            C08    C09    C10    C11              180.000           20.000   3
+ WXX      var_5            C09    C10    C11    C12              180.000           20.000   3
+ WXX      var_6            C10    C11    C12    C13              180.000           20.000   3
+ WXX      var_7            C11    C12    C13    C14              180.000           20.000   3
+ WXX      var_8            C08    C09    C14    C13              180.000           20.000   3
+ WXX      var_9            C09    C14    C13    C12              180.000           20.000   3
+ WXX      var_10           O15    C06    N05    C04              180.000           20.000   2
+ WXX      var_11           C06    N05    C04    C03                0.000           20.000   3
+ WXX      var_12           N05    C04    C03    N16              180.000           20.000   3
+ WXX      var_13           C04    C03    C02    C01              180.000           20.000   3
+ WXX      var_14           C03    C02    C01    H011             180.000           20.000   3
+ WXX      var_15           C04    C03    N16    C17                0.000           20.000   3
+ WXX      var_16           C03    N16    C17    N18               -5.517           20.000   3
+ WXX      CONST_1          N16    C17    C22    C23              180.000            0.000   0
+ WXX      CONST_2          N16    C17    N18    C19                0.000            0.000   0
+ WXX      CONST_3          C17    N18    C19    N20                0.000            0.000   0
+ WXX      CONST_4          N18    C19    N20    C21                0.000            0.000   0
+ WXX      CONST_5          C19    N20    C21    N25              180.000            0.000   0
+ WXX      CONST_6          N20    C21    C22    C23              180.000            0.000   0
+ WXX      CONST_7          N20    C21    N25    N24              180.000            0.000   0
+ WXX      CONST_8          C21    N25    N24    C23                0.000            0.000   0
+ WXX      CONST_9          N25    N24    C23    C22                0.000            0.000   0
+ WXX      CONST_10         N24    C23    C22    C17             -179.719            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WXX      chir_01          C03    C02    C04    N16       positiv
+ WXX      chir_02          C09    C14    C10    C08       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WXX      plan-1            C17       0.020
+ WXX      plan-1            C22       0.020
+ WXX      plan-1            N16       0.020
+ WXX      plan-1            N18       0.020
+ WXX      plan-1            C19       0.020
+ WXX      plan-1            N20       0.020
+ WXX      plan-1            H19       0.020
+ WXX      plan-1            C21       0.020
+ WXX      plan-1            C23       0.020
+ WXX      plan-1            N24       0.020
+ WXX      plan-1            H23       0.020
+ WXX      plan-1            N25       0.020
+ WXX      plan-1            HN16      0.020
+ WXX      plan-2            C06       0.020
+ WXX      plan-2            C07       0.020
+ WXX      plan-2            N05       0.020
+ WXX      plan-2            O15       0.020
+ WXX      plan-2            HN05      0.020
+ WXX      plan-3            N05       0.020
+ WXX      plan-3            C04       0.020
+ WXX      plan-3            C06       0.020
+ WXX      plan-3            HN05      0.020
+ WXX      plan-4            N16       0.020
+ WXX      plan-4            C17       0.020
+ WXX      plan-4            C03       0.020
+ WXX      plan-4            HN16      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

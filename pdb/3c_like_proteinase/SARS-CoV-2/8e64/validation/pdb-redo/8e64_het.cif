@@ -1,0 +1,534 @@
+global_
+_lib_name         ?
+_lib_version      ?
+_lib_update       ?
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WEQ      WEQ '.                                   ' .                  69  36 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYSWEL   CYS      .        .        WEL      .        .
+ bond_CYS-SG_=_WEL-C17
+CYSWEQ   CYS      .        .        WEQ      .        .
+ bond_CYS-SG_=_WEQ-C17
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WEQ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WEQ           O5     O    O         0.000    -20.383   -3.010    2.361
+ WEQ           C4     C    C         0.000    -20.979   -3.893    1.788
+ WEQ           N1     N    N         0.000    -20.991   -5.184    2.162
+ WEQ           C5     C    CH1       0.000    -20.505   -5.593    3.466
+ WEQ           H5     H    H         0.000    -20.697   -4.777    4.176
+ WEQ           C10    C    C         0.000    -19.009   -5.896    3.480
+ WEQ           O4     O    O         0.000    -18.489   -6.510    2.552
+ WEQ           N2     N    N         0.000    -18.337   -5.485    4.560
+ WEQ           C11    C    CH1       0.000    -16.912   -5.722    4.781
+ WEQ           H110   H    H         0.000    -16.519   -6.292    3.927
+ WEQ           C17    C    CH2       0.000    -16.725   -6.554    6.042
+ WEQ           H171   H    H         0.000    -17.168   -6.020    6.885
+ WEQ           H172   H    H         0.000    -15.656   -6.689    6.219
+ WEQ           O3     O    OH1       0.000    -17.346   -7.820    5.905
+ WEQ           HO3    H    H         0.000    -17.215   -8.329    6.715
+ WEQ           C12    C    CH2       0.000    -16.163   -4.389    4.857
+ WEQ           H121   H    H         0.000    -15.140   -4.611    5.166
+ WEQ           H122   H    H         0.000    -16.653   -3.787    5.625
+ WEQ           C13    C    CH1       0.000    -16.143   -3.617    3.540
+ WEQ           H130   H    H         0.000    -17.178   -3.472    3.201
+ WEQ           C16    C    CH2       0.000    -15.357   -4.301    2.427
+ WEQ           H161   H    H         0.000    -16.007   -4.883    1.771
+ WEQ           H162   H    H         0.000    -14.571   -4.947    2.824
+ WEQ           C15    C    CH2       0.000    -14.730   -3.162    1.641
+ WEQ           H151   H    H         0.000    -15.346   -2.846    0.797
+ WEQ           H152   H    H         0.000    -13.724   -3.400    1.287
+ WEQ           N3     N    N         0.000    -14.660   -2.087    2.624
+ WEQ           C14    C    C         0.000    -15.477   -2.259    3.661
+ WEQ           O2     O    O         0.000    -15.663   -1.439    4.583
+ WEQ           C6     C    CH2       0.000    -21.264   -6.830    3.944
+ WEQ           H61    H    H         0.000    -20.928   -7.021    4.965
+ WEQ           H62    H    H         0.000    -20.948   -7.652    3.298
+ WEQ           C7     C    CH1       0.000    -22.786   -6.718    3.920
+ WEQ           H7     H    H         0.000    -23.102   -6.579    2.876
+ WEQ           C9     C    CH3       0.000    -23.261   -5.519    4.721
+ WEQ           H93    H    H         0.000    -22.945   -5.620    5.726
+ WEQ           H92    H    H         0.000    -22.850   -4.635    4.308
+ WEQ           H91    H    H         0.000    -24.318   -5.469    4.685
+ WEQ           C8     C    CH3       0.000    -23.428   -7.992    4.441
+ WEQ           H83    H    H         0.000    -23.135   -8.808    3.832
+ WEQ           H82    H    H         0.000    -23.113   -8.163    5.437
+ WEQ           H81    H    H         0.000    -24.481   -7.891    4.415
+ WEQ           O1     O    O2        0.000    -21.694   -3.737    0.662
+ WEQ           C3     C    CH2       0.000    -21.909   -2.363    0.237
+ WEQ           H31    H    H         0.000    -21.236   -2.130   -0.591
+ WEQ           H32    H    H         0.000    -21.704   -1.689    1.072
+ WEQ           C2     C    CT        0.000    -23.337   -2.190   -0.211
+ WEQ           C1     C    CH3       0.000    -23.614   -3.233   -1.282
+ WEQ           H13    H    H         0.000    -22.952   -3.087   -2.095
+ WEQ           H12    H    H         0.000    -23.469   -4.201   -0.877
+ WEQ           H11    H    H         0.000    -24.614   -3.136   -1.618
+ WEQ           C18    C    CH3       0.000    -24.261   -2.430    0.973
+ WEQ           H183   H    H         0.000    -24.118   -3.414    1.338
+ WEQ           H182   H    H         0.000    -24.040   -1.733    1.739
+ WEQ           H181   H    H         0.000    -25.267   -2.310    0.665
+ WEQ           S1     S    S2        0.000    -23.667   -0.547   -0.915
+ WEQ           C19    C    CR5       0.000    -22.470   -0.257   -2.150
+ WEQ           N5     N    NRD5      0.000    -21.169   -0.077   -1.816
+ WEQ           C25    C    CR56      0.000    -20.475    0.156   -2.983
+ WEQ           C24    C    CR16      0.000    -19.128    0.379   -3.230
+ WEQ           H24    H    H         0.000    -18.397    0.390   -2.431
+ WEQ           C23    C    CR16      0.000    -18.768    0.585   -4.543
+ WEQ           H23    H    H         0.000    -17.728    0.762   -4.784
+ WEQ           C22    C    CR16      0.000    -19.714    0.571   -5.570
+ WEQ           H22    H    H         0.000    -19.388    0.739   -6.589
+ WEQ           C21    C    CR16      0.000    -21.049    0.349   -5.321
+ WEQ           H21    H    H         0.000    -21.774    0.343   -6.124
+ WEQ           C20    C    CR56      0.000    -21.435    0.133   -4.003
+ WEQ           N4     N    NRD5      0.000    -22.701   -0.090   -3.458
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WEQ      O5     n/a    C4     START
+ WEQ      C4     O5     O1     .
+ WEQ      N1     C4     C5     .
+ WEQ      C5     N1     C6     .
+ WEQ      H5     C5     .      .
+ WEQ      C10    C5     N2     .
+ WEQ      O4     C10    .      .
+ WEQ      N2     C10    C11    .
+ WEQ      C11    N2     C12    .
+ WEQ      H110   C11    .      .
+ WEQ      C17    C11    O3     .
+ WEQ      H171   C17    .      .
+ WEQ      H172   C17    .      .
+ WEQ      O3     C17    HO3    .
+ WEQ      HO3    O3     .      .
+ WEQ      C12    C11    C13    .
+ WEQ      H121   C12    .      .
+ WEQ      H122   C12    .      .
+ WEQ      C13    C12    C16    .
+ WEQ      H130   C13    .      .
+ WEQ      C16    C13    C15    .
+ WEQ      H161   C16    .      .
+ WEQ      H162   C16    .      .
+ WEQ      C15    C16    N3     .
+ WEQ      H151   C15    .      .
+ WEQ      H152   C15    .      .
+ WEQ      N3     C15    C14    .
+ WEQ      C14    N3     O2     .
+ WEQ      O2     C14    .      .
+ WEQ      C6     C5     C7     .
+ WEQ      H61    C6     .      .
+ WEQ      H62    C6     .      .
+ WEQ      C7     C6     C8     .
+ WEQ      H7     C7     .      .
+ WEQ      C9     C7     H91    .
+ WEQ      H93    C9     .      .
+ WEQ      H92    C9     .      .
+ WEQ      H91    C9     .      .
+ WEQ      C8     C7     H81    .
+ WEQ      H83    C8     .      .
+ WEQ      H82    C8     .      .
+ WEQ      H81    C8     .      .
+ WEQ      O1     C4     C3     .
+ WEQ      C3     O1     C2     .
+ WEQ      H31    C3     .      .
+ WEQ      H32    C3     .      .
+ WEQ      C2     C3     S1     .
+ WEQ      C1     C2     H11    .
+ WEQ      H13    C1     .      .
+ WEQ      H12    C1     .      .
+ WEQ      H11    C1     .      .
+ WEQ      C18    C2     H181   .
+ WEQ      H183   C18    .      .
+ WEQ      H182   C18    .      .
+ WEQ      H181   C18    .      .
+ WEQ      S1     C2     C19    .
+ WEQ      C19    S1     N5     .
+ WEQ      N5     C19    C25    .
+ WEQ      C25    N5     C24    .
+ WEQ      C24    C25    C23    .
+ WEQ      H24    C24    .      .
+ WEQ      C23    C24    C22    .
+ WEQ      H23    C23    .      .
+ WEQ      C22    C23    C21    .
+ WEQ      H22    C22    .      .
+ WEQ      C21    C22    C20    .
+ WEQ      H21    C21    .      .
+ WEQ      C20    C21    N4     .
+ WEQ      N4     C20    .      END
+ WEQ      C14    C13    .    ADD
+ WEQ      C19    N4     .    ADD
+ WEQ      C25    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WEQ      C1     C2        single      1.524    0.020
+ WEQ      C2     C3        single      1.524    0.020
+ WEQ      C18    C2        single      1.524    0.020
+ WEQ      S1     C2        single      1.762    0.020
+ WEQ      C3     O1        single      1.426    0.020
+ WEQ      N1     C4        deloc       1.330    0.020
+ WEQ      O1     C4        single      1.454    0.020
+ WEQ      C4     O5        double      1.220    0.020
+ WEQ      C6     C5        single      1.524    0.020
+ WEQ      C10    C5        single      1.500    0.020
+ WEQ      C5     N1        single      1.455    0.020
+ WEQ      C7     C6        single      1.524    0.020
+ WEQ      C12    C11       single      1.524    0.020
+ WEQ      C13    C12       single      1.524    0.020
+ WEQ      C14    C13       single      1.500    0.020
+ WEQ      C14    N3        aromatic    1.330    0.020
+ WEQ      O2     C14       aromatic    1.220    0.020
+ WEQ      C15    C16       single      1.524    0.020
+ WEQ      N3     C15       single      1.455    0.020
+ WEQ      C16    C13       single      1.524    0.020
+ WEQ      C17    C11       single      1.524    0.020
+ WEQ      O3     C17       single      1.432    0.020
+ WEQ      C19    N4        aromatic    1.350    0.020
+ WEQ      N5     C19       aromatic    1.350    0.020
+ WEQ      C19    S1        single      1.745    0.020
+ WEQ      C25    C20       aromatic    1.390    0.020
+ WEQ      C24    C25       aromatic    1.390    0.020
+ WEQ      C25    N5        aromatic    1.350    0.020
+ WEQ      N2     C10       deloc       1.330    0.020
+ WEQ      O4     C10       double      1.220    0.020
+ WEQ      C11    N2        single      1.455    0.020
+ WEQ      C20    C21       aromatic    1.390    0.020
+ WEQ      N4     C20       single      1.350    0.020
+ WEQ      C21    C22       aromatic    1.390    0.020
+ WEQ      C22    C23       aromatic    1.390    0.020
+ WEQ      C23    C24       aromatic    1.390    0.020
+ WEQ      C8     C7        single      1.524    0.020
+ WEQ      C9     C7        single      1.524    0.020
+ WEQ      H11    C1        single      1.059    0.020
+ WEQ      H12    C1        single      1.059    0.020
+ WEQ      H13    C1        single      1.059    0.020
+ WEQ      H31    C3        single      1.092    0.020
+ WEQ      H32    C3        single      1.092    0.020
+ WEQ      H5     C5        single      1.099    0.020
+ WEQ      H61    C6        single      1.092    0.020
+ WEQ      H62    C6        single      1.092    0.020
+ WEQ      H121   C12       single      1.092    0.020
+ WEQ      H122   C12       single      1.092    0.020
+ WEQ      H151   C15       single      1.092    0.020
+ WEQ      H152   C15       single      1.092    0.020
+ WEQ      H161   C16       single      1.092    0.020
+ WEQ      H162   C16       single      1.092    0.020
+ WEQ      H171   C17       single      1.092    0.020
+ WEQ      H172   C17       single      1.092    0.020
+ WEQ      H181   C18       single      1.059    0.020
+ WEQ      H182   C18       single      1.059    0.020
+ WEQ      H183   C18       single      1.059    0.020
+ WEQ      H110   C11       single      1.099    0.020
+ WEQ      H130   C13       single      1.099    0.020
+ WEQ      H21    C21       single      1.083    0.020
+ WEQ      H22    C22       single      1.083    0.020
+ WEQ      H23    C23       single      1.083    0.020
+ WEQ      H24    C24       single      1.083    0.020
+ WEQ      H7     C7        single      1.099    0.020
+ WEQ      H81    C8        single      1.059    0.020
+ WEQ      H82    C8        single      1.059    0.020
+ WEQ      H83    C8        single      1.059    0.020
+ WEQ      H91    C9        single      1.059    0.020
+ WEQ      H92    C9        single      1.059    0.020
+ WEQ      H93    C9        single      1.059    0.020
+ WEQ      HO3    O3        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WEQ      O5     C4     N1      123.000    3.000
+ WEQ      O5     C4     O1      119.000    3.000
+ WEQ      N1     C4     O1      120.000    3.000
+ WEQ      C4     N1     C5      121.000    3.000
+ WEQ      N1     C5     H5      109.470    3.000
+ WEQ      N1     C5     C10     111.600    3.000
+ WEQ      N1     C5     C6      105.000    3.000
+ WEQ      H5     C5     C10     108.810    3.000
+ WEQ      H5     C5     C6      108.340    3.000
+ WEQ      C10    C5     C6      109.470    3.000
+ WEQ      C5     C10    O4      120.500    3.000
+ WEQ      C5     C10    N2      116.500    3.000
+ WEQ      O4     C10    N2      123.000    3.000
+ WEQ      C10    N2     C11     121.000    3.000
+ WEQ      N2     C11    H110    109.470    3.000
+ WEQ      N2     C11    C17     105.000    3.000
+ WEQ      N2     C11    C12     105.000    3.000
+ WEQ      H110   C11    C17     108.340    3.000
+ WEQ      H110   C11    C12     108.340    3.000
+ WEQ      C17    C11    C12     109.470    3.000
+ WEQ      C11    C17    H171    109.470    3.000
+ WEQ      C11    C17    H172    109.470    3.000
+ WEQ      C11    C17    O3      109.470    3.000
+ WEQ      H171   C17    H172    107.900    3.000
+ WEQ      H171   C17    O3      109.470    3.000
+ WEQ      H172   C17    O3      109.470    3.000
+ WEQ      C17    O3     HO3     109.470    3.000
+ WEQ      C11    C12    H121    109.470    3.000
+ WEQ      C11    C12    H122    109.470    3.000
+ WEQ      C11    C12    C13     111.000    3.000
+ WEQ      H121   C12    H122    107.900    3.000
+ WEQ      H121   C12    C13     109.470    3.000
+ WEQ      H122   C12    C13     109.470    3.000
+ WEQ      C12    C13    H130    108.340    3.000
+ WEQ      C12    C13    C16     109.470    3.000
+ WEQ      C12    C13    C14     109.470    3.000
+ WEQ      H130   C13    C16     108.340    3.000
+ WEQ      H130   C13    C14     108.810    3.000
+ WEQ      C16    C13    C14     109.470    3.000
+ WEQ      C13    C16    H161    109.470    3.000
+ WEQ      C13    C16    H162    109.470    3.000
+ WEQ      C13    C16    C15     111.000    3.000
+ WEQ      H161   C16    H162    107.900    3.000
+ WEQ      H161   C16    C15     109.470    3.000
+ WEQ      H162   C16    C15     109.470    3.000
+ WEQ      C16    C15    H151    109.470    3.000
+ WEQ      C16    C15    H152    109.470    3.000
+ WEQ      C16    C15    N3      105.000    3.000
+ WEQ      H151   C15    H152    107.900    3.000
+ WEQ      H151   C15    N3      109.470    3.000
+ WEQ      H152   C15    N3      109.470    3.000
+ WEQ      C15    N3     C14     127.000    3.000
+ WEQ      N3     C14    O2      123.000    3.000
+ WEQ      N3     C14    C13     116.500    3.000
+ WEQ      O2     C14    C13     120.500    3.000
+ WEQ      C5     C6     H61     109.470    3.000
+ WEQ      C5     C6     H62     109.470    3.000
+ WEQ      C5     C6     C7      111.000    3.000
+ WEQ      H61    C6     H62     107.900    3.000
+ WEQ      H61    C6     C7      109.470    3.000
+ WEQ      H62    C6     C7      109.470    3.000
+ WEQ      C6     C7     H7      108.340    3.000
+ WEQ      C6     C7     C9      111.000    3.000
+ WEQ      C6     C7     C8      111.000    3.000
+ WEQ      H7     C7     C9      108.340    3.000
+ WEQ      H7     C7     C8      108.340    3.000
+ WEQ      C9     C7     C8      111.000    3.000
+ WEQ      C7     C9     H93     109.470    3.000
+ WEQ      C7     C9     H92     109.470    3.000
+ WEQ      C7     C9     H91     109.470    3.000
+ WEQ      H93    C9     H92     109.470    3.000
+ WEQ      H93    C9     H91     109.470    3.000
+ WEQ      H92    C9     H91     109.470    3.000
+ WEQ      C7     C8     H83     109.470    3.000
+ WEQ      C7     C8     H82     109.470    3.000
+ WEQ      C7     C8     H81     109.470    3.000
+ WEQ      H83    C8     H82     109.470    3.000
+ WEQ      H83    C8     H81     109.470    3.000
+ WEQ      H82    C8     H81     109.470    3.000
+ WEQ      C4     O1     C3      120.000    3.000
+ WEQ      O1     C3     H31     109.470    3.000
+ WEQ      O1     C3     H32     109.470    3.000
+ WEQ      O1     C3     C2      109.500    3.000
+ WEQ      H31    C3     H32     107.900    3.000
+ WEQ      H31    C3     C2      109.470    3.000
+ WEQ      H32    C3     C2      109.470    3.000
+ WEQ      C3     C2     C1      111.000    3.000
+ WEQ      C3     C2     C18     111.000    3.000
+ WEQ      C3     C2     S1      109.500    3.000
+ WEQ      C1     C2     C18     111.000    3.000
+ WEQ      C1     C2     S1      109.500    3.000
+ WEQ      C18    C2     S1      109.500    3.000
+ WEQ      C2     C1     H13     109.470    3.000
+ WEQ      C2     C1     H12     109.470    3.000
+ WEQ      C2     C1     H11     109.470    3.000
+ WEQ      H13    C1     H12     109.470    3.000
+ WEQ      H13    C1     H11     109.470    3.000
+ WEQ      H12    C1     H11     109.470    3.000
+ WEQ      C2     C18    H183    109.470    3.000
+ WEQ      C2     C18    H182    109.470    3.000
+ WEQ      C2     C18    H181    109.470    3.000
+ WEQ      H183   C18    H182    109.470    3.000
+ WEQ      H183   C18    H181    109.470    3.000
+ WEQ      H182   C18    H181    109.470    3.000
+ WEQ      C2     S1     C19     107.451    3.000
+ WEQ      S1     C19    N5      108.000    3.000
+ WEQ      S1     C19    N4      108.000    3.000
+ WEQ      N5     C19    N4      108.000    3.000
+ WEQ      C19    N5     C25     108.000    3.000
+ WEQ      N5     C25    C24     132.000    3.000
+ WEQ      N5     C25    C20     108.000    3.000
+ WEQ      C24    C25    C20     120.000    3.000
+ WEQ      C25    C24    H24     120.000    3.000
+ WEQ      C25    C24    C23     120.000    3.000
+ WEQ      H24    C24    C23     120.000    3.000
+ WEQ      C24    C23    H23     120.000    3.000
+ WEQ      C24    C23    C22     120.000    3.000
+ WEQ      H23    C23    C22     120.000    3.000
+ WEQ      C23    C22    H22     120.000    3.000
+ WEQ      C23    C22    C21     120.000    3.000
+ WEQ      H22    C22    C21     120.000    3.000
+ WEQ      C22    C21    H21     120.000    3.000
+ WEQ      C22    C21    C20     120.000    3.000
+ WEQ      H21    C21    C20     120.000    3.000
+ WEQ      C21    C20    N4      132.000    3.000
+ WEQ      C21    C20    C25     120.000    3.000
+ WEQ      N4     C20    C25     108.000    3.000
+ WEQ      C20    N4     C19     108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WEQ      CONST_1          O5     C4     N1     C5               180.000            0.000   0
+ WEQ      var_1            C4     N1     C5     C6                 0.000           20.000   3
+ WEQ      var_2            N1     C5     C10    N2               180.000           20.000   3
+ WEQ      CONST_2          C5     C10    N2     C11              180.000            0.000   0
+ WEQ      var_3            C10    N2     C11    C12                0.000           20.000   3
+ WEQ      var_4            N2     C11    C17    O3               180.000           20.000   3
+ WEQ      var_5            C11    C17    O3     HO3              180.000           20.000   3
+ WEQ      var_6            N2     C11    C12    C13              180.000           20.000   3
+ WEQ      var_7            C11    C12    C13    C16              180.000           20.000   3
+ WEQ      var_8            C12    C13    C16    C15              180.000           20.000   3
+ WEQ      var_9            C13    C16    C15    N3               180.000           20.000   3
+ WEQ      var_10           C16    C15    N3     C14              -19.394           20.000   3
+ WEQ      var_11           C15    N3     C14    O2               180.000           20.000   2
+ WEQ      var_12           N3     C14    C13    C12              180.000           20.000   3
+ WEQ      var_13           N1     C5     C6     C7               180.000           20.000   3
+ WEQ      var_14           C5     C6     C7     C8               180.000           20.000   3
+ WEQ      var_15           C6     C7     C9     H91              180.000           20.000   3
+ WEQ      var_16           C6     C7     C8     H81              180.000           20.000   3
+ WEQ      var_17           O5     C4     O1     C3                -9.392           20.000   3
+ WEQ      var_18           C4     O1     C3     C2              -137.105           20.000   3
+ WEQ      var_19           O1     C3     C2     S1              -174.393           20.000   3
+ WEQ      var_20           C3     C2     C1     H11              180.000           20.000   3
+ WEQ      var_21           C3     C2     C18    H181             180.000           20.000   3
+ WEQ      var_22           C3     C2     S1     C19               52.198           20.000   3
+ WEQ      var_23           C2     S1     C19    N5               -68.491           20.000   3
+ WEQ      CONST_3          S1     C19    N4     C20                0.000            0.000   0
+ WEQ      CONST_4          S1     C19    N5     C25                0.000            0.000   0
+ WEQ      CONST_5          C19    N5     C25    C24              180.000            0.000   0
+ WEQ      CONST_6          N5     C25    C20    C21              180.000            0.000   0
+ WEQ      CONST_7          N5     C25    C24    C23              180.000            0.000   0
+ WEQ      CONST_8          C25    C24    C23    C22                0.000            0.000   0
+ WEQ      CONST_9          C24    C23    C22    C21                0.000            0.000   0
+ WEQ      CONST_10         C23    C22    C21    C20                0.000            0.000   0
+ WEQ      CONST_11         C22    C21    C20    N4               180.000            0.000   0
+ WEQ      CONST_12         C21    C20    N4     C19              180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WEQ      chir_01          C2     C1     C3     C18       positiv
+ WEQ      chir_02          C5     C6     C10    N1        negativ
+ WEQ      chir_03          C11    C12    C17    N2        negativ
+ WEQ      chir_04          C13    C12    C14    C16       negativ
+ WEQ      chir_05          C7     C6     C8     C9        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WEQ      plan-1            C4        0.020
+ WEQ      plan-1            N1        0.020
+ WEQ      plan-1            O1        0.020
+ WEQ      plan-1            O5        0.020
+ WEQ      plan-1            C5        0.020
+ WEQ      plan-2            C14       0.020
+ WEQ      plan-2            C13       0.020
+ WEQ      plan-2            N3        0.020
+ WEQ      plan-2            O2        0.020
+ WEQ      plan-3            C19       0.020
+ WEQ      plan-3            N4        0.020
+ WEQ      plan-3            N5        0.020
+ WEQ      plan-3            S1        0.020
+ WEQ      plan-3            C20       0.020
+ WEQ      plan-3            C25       0.020
+ WEQ      plan-3            C21       0.020
+ WEQ      plan-3            C22       0.020
+ WEQ      plan-3            C23       0.020
+ WEQ      plan-3            C24       0.020
+ WEQ      plan-3            H21       0.020
+ WEQ      plan-3            H22       0.020
+ WEQ      plan-3            H23       0.020
+ WEQ      plan-3            H24       0.020
+ WEQ      plan-4            C10       0.020
+ WEQ      plan-4            C5        0.020
+ WEQ      plan-4            N2        0.020
+ WEQ      plan-4            O4        0.020
+ WEQ      plan-4            C11       0.020
+ WEQ      plan-5            N3        0.020
+ WEQ      plan-5            C14       0.020
+ WEQ      plan-5            C15       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYSWEL
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYSWEL   1 SG      2 C17       .           1.790    0.020
+#
+data_link_CYSWEQ
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYSWEQ   1 SG      2 C17       .           1.810    0.020
+# ------------------------------------------------------
