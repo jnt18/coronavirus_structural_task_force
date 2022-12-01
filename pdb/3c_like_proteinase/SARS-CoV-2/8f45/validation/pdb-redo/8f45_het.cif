@@ -1,0 +1,581 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+XF8      XF8 '.                                   ' .                  80  39 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-XF8  CYS      .        .        XF8      .        .
+ bond_CYS-SG_=_XF8-C19
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_XF8
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ XF8           O18    O    O         0.000      6.141   20.201   24.194
+ XF8           C14    C    C         0.000      6.016   21.061   25.094
+ XF8           N15    N    N         0.000      4.944   21.947   25.167
+ XF8           C16    C    CH2       0.000      5.187   22.807   26.346
+ XF8           H161   H    H         0.000      4.288   22.903   26.959
+ XF8           H162   H    H         0.000      5.531   23.800   26.048
+ XF8           C17    C    CH2       0.000      6.296   22.098   27.161
+ XF8           H171   H    H         0.000      5.871   21.465   27.943
+ XF8           H172   H    H         0.000      6.981   22.820   27.611
+ XF8           C13    C    CH1       0.000      7.054   21.230   26.157
+ XF8           H13    H    H         0.000      7.895   21.808   25.748
+ XF8           C12    C    CH2       0.000      7.588   19.925   26.748
+ XF8           H121   H    H         0.000      8.046   19.352   25.939
+ XF8           H122   H    H         0.000      6.741   19.368   27.153
+ XF8           C11    C    CH1       0.000      8.635   20.167   27.870
+ XF8           H11    H    H         0.000      8.232   20.865   28.617
+ XF8           C19    C    CH1       0.000      9.106   18.885   28.552
+ XF8           H19    H    H         0.000      9.372   18.093   27.838
+ XF8           O20    O    OH1       0.000     10.244   19.353   29.329
+ XF8           HO20   H    H         0.000     10.635   18.612   29.816
+ XF8           C21    C    C         0.000      8.115   18.423   29.607
+ XF8           O26    O    OH1       0.000      6.971   18.030   29.234
+ XF8           HO26   H    H         0.000      6.466   17.773   30.012
+ XF8           N22    N    N         0.000      8.399   18.519   30.963
+ XF8           C23    C    CH1       0.000      7.493   18.125   32.033
+ XF8           H23    H    H         0.000      7.076   17.110   31.978
+ XF8           C25    C    CH2       0.000      7.787   18.701   33.490
+ XF8           H251   H    H         0.000      8.468   19.525   33.714
+ XF8           H252   H    H         0.000      7.439   18.254   34.424
+ XF8           C24    C    CH2       0.000      6.581   19.231   32.691
+ XF8           H242   H    H         0.000      6.587   20.128   32.068
+ XF8           H241   H    H         0.000      5.559   18.857   32.778
+ XF8           N10    N    N         0.000      9.842   20.679   27.327
+ XF8           C09    C    C         0.000     10.384   21.858   27.660
+ XF8           O27    O    OH1       0.000      9.757   22.631   28.446
+ XF8           HO27   H    H         0.000     10.282   23.426   28.579
+ XF8           C04    C    CH1       0.000     11.716   22.355   27.127
+ XF8           H04    H    H         0.000     11.924   21.898   26.149
+ XF8           C05    C    CH2       0.000     12.783   21.919   28.150
+ XF8           H051   H    H         0.000     12.636   20.860   28.371
+ XF8           H052   H    H         0.000     12.645   22.503   29.062
+ XF8           C06    C    CH1       0.000     14.203   22.138   27.611
+ XF8           H06    H    H         0.000     14.233   23.134   27.146
+ XF8           C08    C    CH3       0.000     14.494   21.117   26.528
+ XF8           H083   H    H         0.000     14.416   20.143   26.934
+ XF8           H082   H    H         0.000     13.795   21.231   25.741
+ XF8           H081   H    H         0.000     15.473   21.268   26.157
+ XF8           C07    C    CH3       0.000     15.256   22.126   28.780
+ XF8           H073   H    H         0.000     15.037   22.900   29.475
+ XF8           H072   H    H         0.000     15.229   21.191   29.285
+ XF8           H071   H    H         0.000     16.233   22.279   28.392
+ XF8           N03    N    N         0.000     11.686   23.773   27.006
+ XF8           C02    C    C         0.000     11.070   24.373   25.994
+ XF8           O01    O    OH1       0.000     10.433   23.697   25.136
+ XF8           HO01   H    H         0.000     10.059   24.300   24.487
+ XF8           O28    O    O2        0.000     11.102   25.710   25.794
+ XF8           C29    C    CH2       0.000     11.003   26.220   24.475
+ XF8           H291   H    H         0.000     10.106   26.839   24.403
+ XF8           H292   H    H         0.000     10.923   25.382   23.779
+ XF8           C30    C    CT        0.000     12.283   27.094   24.111
+ XF8           C31    C    CH3       0.000     12.658   28.047   25.228
+ XF8           H313   H    H         0.000     11.850   28.705   25.414
+ XF8           H312   H    H         0.000     12.874   27.494   26.104
+ XF8           H311   H    H         0.000     13.511   28.605   24.942
+ XF8           C32    C    CH3       0.000     13.453   26.203   23.602
+ XF8           H323   H    H         0.000     13.728   25.506   24.353
+ XF8           H322   H    H         0.000     13.152   25.675   22.732
+ XF8           H321   H    H         0.000     14.292   26.809   23.367
+ XF8           S33    S    S2        0.000     11.800   28.169   22.638
+ XF8           C34    C    CR6       0.000     10.296   29.262   23.025
+ XF8           C39    C    CR16      0.000     10.478   30.614   23.415
+ XF8           H39    H    H         0.000     11.478   31.022   23.493
+ XF8           C38    C    CR16      0.000      9.353   31.438   23.704
+ XF8           H38    H    H         0.000      9.502   32.469   24.002
+ XF8           C37    C    CR16      0.000      8.039   30.916   23.604
+ XF8           H37    H    H         0.000      7.183   31.544   23.815
+ XF8           C36    C    CR16      0.000      7.858   29.562   23.224
+ XF8           H36    H    H         0.000      6.858   29.153   23.152
+ XF8           C35    C    CR16      0.000      8.980   28.736   22.936
+ XF8           H35    H    H         0.000      8.830   27.703   22.648
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ XF8      O18    n/a    C14    START
+ XF8      C14    O18    N15    .
+ XF8      N15    C14    C16    .
+ XF8      C16    N15    C17    .
+ XF8      H161   C16    .      .
+ XF8      H162   C16    .      .
+ XF8      C17    C16    C13    .
+ XF8      H171   C17    .      .
+ XF8      H172   C17    .      .
+ XF8      C13    C17    C12    .
+ XF8      H13    C13    .      .
+ XF8      C12    C13    C11    .
+ XF8      H121   C12    .      .
+ XF8      H122   C12    .      .
+ XF8      C11    C12    N10    .
+ XF8      H11    C11    .      .
+ XF8      C19    C11    C21    .
+ XF8      H19    C19    .      .
+ XF8      O20    C19    HO20   .
+ XF8      HO20   O20    .      .
+ XF8      C21    C19    N22    .
+ XF8      O26    C21    HO26   .
+ XF8      HO26   O26    .      .
+ XF8      N22    C21    C23    .
+ XF8      C23    N22    C25    .
+ XF8      H23    C23    .      .
+ XF8      C25    C23    C24    .
+ XF8      H251   C25    .      .
+ XF8      H252   C25    .      .
+ XF8      C24    C25    H241   .
+ XF8      H242   C24    .      .
+ XF8      H241   C24    .      .
+ XF8      N10    C11    C09    .
+ XF8      C09    N10    C04    .
+ XF8      O27    C09    HO27   .
+ XF8      HO27   O27    .      .
+ XF8      C04    C09    N03    .
+ XF8      H04    C04    .      .
+ XF8      C05    C04    C06    .
+ XF8      H051   C05    .      .
+ XF8      H052   C05    .      .
+ XF8      C06    C05    C07    .
+ XF8      H06    C06    .      .
+ XF8      C08    C06    H081   .
+ XF8      H083   C08    .      .
+ XF8      H082   C08    .      .
+ XF8      H081   C08    .      .
+ XF8      C07    C06    H071   .
+ XF8      H073   C07    .      .
+ XF8      H072   C07    .      .
+ XF8      H071   C07    .      .
+ XF8      N03    C04    C02    .
+ XF8      C02    N03    O28    .
+ XF8      O01    C02    HO01   .
+ XF8      HO01   O01    .      .
+ XF8      O28    C02    C29    .
+ XF8      C29    O28    C30    .
+ XF8      H291   C29    .      .
+ XF8      H292   C29    .      .
+ XF8      C30    C29    S33    .
+ XF8      C31    C30    H311   .
+ XF8      H313   C31    .      .
+ XF8      H312   C31    .      .
+ XF8      H311   C31    .      .
+ XF8      C32    C30    H321   .
+ XF8      H323   C32    .      .
+ XF8      H322   C32    .      .
+ XF8      H321   C32    .      .
+ XF8      S33    C30    C34    .
+ XF8      C34    S33    C39    .
+ XF8      C39    C34    C38    .
+ XF8      H39    C39    .      .
+ XF8      C38    C39    C37    .
+ XF8      H38    C38    .      .
+ XF8      C37    C38    C36    .
+ XF8      H37    C37    .      .
+ XF8      C36    C37    C35    .
+ XF8      H36    C36    .      .
+ XF8      C35    C36    H35    .
+ XF8      H35    C35    .      END
+ XF8      C13    C14    .    ADD
+ XF8      C23    C24    .    ADD
+ XF8      C34    C35    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ XF8      C02    N03       deloc       1.330    0.020
+ XF8      O01    C02       single      1.330    0.020
+ XF8      O28    C02       single      1.454    0.020
+ XF8      C05    C04       single      1.524    0.020
+ XF8      C04    C09       single      1.500    0.020
+ XF8      N03    C04       single      1.455    0.020
+ XF8      C06    C05       single      1.524    0.020
+ XF8      C07    C06       single      1.524    0.020
+ XF8      C08    C06       single      1.524    0.020
+ XF8      C09    N10       deloc       1.330    0.020
+ XF8      O27    C09       single      1.330    0.020
+ XF8      C11    C12       single      1.524    0.020
+ XF8      C19    C11       single      1.524    0.020
+ XF8      N10    C11       single      1.455    0.020
+ XF8      C12    C13       single      1.524    0.020
+ XF8      C13    C14       single      1.500    0.020
+ XF8      C13    C17       single      1.524    0.020
+ XF8      N15    C14       aromatic    1.330    0.020
+ XF8      C14    O18       aromatic    1.220    0.020
+ XF8      C17    C16       single      1.524    0.020
+ XF8      C16    N15       single      1.455    0.020
+ XF8      C21    C19       single      1.500    0.020
+ XF8      O20    C19       single      1.432    0.020
+ XF8      N22    C21       deloc       1.330    0.020
+ XF8      O26    C21       single      1.330    0.020
+ XF8      C23    C24       single      1.524    0.020
+ XF8      C25    C23       single      1.524    0.020
+ XF8      C23    N22       single      1.455    0.020
+ XF8      C24    C25       single      1.524    0.020
+ XF8      C30    C29       single      1.524    0.020
+ XF8      C29    O28       single      1.426    0.020
+ XF8      C31    C30       single      1.524    0.020
+ XF8      C32    C30       single      1.524    0.020
+ XF8      S33    C30       single      1.762    0.020
+ XF8      C34    C35       aromatic    1.390    0.020
+ XF8      C39    C34       aromatic    1.390    0.020
+ XF8      C34    S33       single      1.695    0.020
+ XF8      C35    C36       aromatic    1.390    0.020
+ XF8      C36    C37       aromatic    1.390    0.020
+ XF8      C37    C38       aromatic    1.390    0.020
+ XF8      C38    C39       aromatic    1.390    0.020
+ XF8      H04    C04       single      1.099    0.020
+ XF8      H051   C05       single      1.092    0.020
+ XF8      H052   C05       single      1.092    0.020
+ XF8      H06    C06       single      1.099    0.020
+ XF8      H071   C07       single      1.059    0.020
+ XF8      H072   C07       single      1.059    0.020
+ XF8      H073   C07       single      1.059    0.020
+ XF8      H081   C08       single      1.059    0.020
+ XF8      H082   C08       single      1.059    0.020
+ XF8      H083   C08       single      1.059    0.020
+ XF8      H11    C11       single      1.099    0.020
+ XF8      H121   C12       single      1.092    0.020
+ XF8      H122   C12       single      1.092    0.020
+ XF8      H13    C13       single      1.099    0.020
+ XF8      H161   C16       single      1.092    0.020
+ XF8      H162   C16       single      1.092    0.020
+ XF8      H171   C17       single      1.092    0.020
+ XF8      H172   C17       single      1.092    0.020
+ XF8      H19    C19       single      1.099    0.020
+ XF8      H23    C23       single      1.099    0.020
+ XF8      H241   C24       single      1.092    0.020
+ XF8      H242   C24       single      1.092    0.020
+ XF8      H251   C25       single      1.092    0.020
+ XF8      H252   C25       single      1.092    0.020
+ XF8      H291   C29       single      1.092    0.020
+ XF8      H292   C29       single      1.092    0.020
+ XF8      H311   C31       single      1.059    0.020
+ XF8      H312   C31       single      1.059    0.020
+ XF8      H313   C31       single      1.059    0.020
+ XF8      H321   C32       single      1.059    0.020
+ XF8      H322   C32       single      1.059    0.020
+ XF8      H323   C32       single      1.059    0.020
+ XF8      H35    C35       single      1.083    0.020
+ XF8      H36    C36       single      1.083    0.020
+ XF8      H37    C37       single      1.083    0.020
+ XF8      H38    C38       single      1.083    0.020
+ XF8      H39    C39       single      1.083    0.020
+ XF8      HO01   O01       single      0.967    0.020
+ XF8      HO20   O20       single      0.967    0.020
+ XF8      HO26   O26       single      0.967    0.020
+ XF8      HO27   O27       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ XF8      O18    C14    N15     123.000    3.000
+ XF8      O18    C14    C13     120.500    3.000
+ XF8      N15    C14    C13     116.500    3.000
+ XF8      C14    N15    C16     127.000    3.000
+ XF8      N15    C16    H161    109.470    3.000
+ XF8      N15    C16    H162    109.470    3.000
+ XF8      N15    C16    C17     105.000    3.000
+ XF8      H161   C16    H162    107.900    3.000
+ XF8      H161   C16    C17     109.470    3.000
+ XF8      H162   C16    C17     109.470    3.000
+ XF8      C16    C17    H171    109.470    3.000
+ XF8      C16    C17    H172    109.470    3.000
+ XF8      C16    C17    C13     111.000    3.000
+ XF8      H171   C17    H172    107.900    3.000
+ XF8      H171   C17    C13     109.470    3.000
+ XF8      H172   C17    C13     109.470    3.000
+ XF8      C17    C13    H13     108.340    3.000
+ XF8      C17    C13    C12     109.470    3.000
+ XF8      C17    C13    C14     109.470    3.000
+ XF8      H13    C13    C12     108.340    3.000
+ XF8      H13    C13    C14     108.810    3.000
+ XF8      C12    C13    C14     109.470    3.000
+ XF8      C13    C12    H121    109.470    3.000
+ XF8      C13    C12    H122    109.470    3.000
+ XF8      C13    C12    C11     111.000    3.000
+ XF8      H121   C12    H122    107.900    3.000
+ XF8      H121   C12    C11     109.470    3.000
+ XF8      H122   C12    C11     109.470    3.000
+ XF8      C12    C11    H11     108.340    3.000
+ XF8      C12    C11    C19     111.000    3.000
+ XF8      C12    C11    N10     105.000    3.000
+ XF8      H11    C11    C19     108.340    3.000
+ XF8      H11    C11    N10     109.470    3.000
+ XF8      C19    C11    N10     105.000    3.000
+ XF8      C11    C19    H19     108.340    3.000
+ XF8      C11    C19    O20     109.470    3.000
+ XF8      C11    C19    C21     109.470    3.000
+ XF8      H19    C19    O20     109.470    3.000
+ XF8      H19    C19    C21     108.810    3.000
+ XF8      O20    C19    C21     109.470    3.000
+ XF8      C19    O20    HO20    109.470    3.000
+ XF8      C19    C21    O26     120.000    3.000
+ XF8      C19    C21    N22     116.500    3.000
+ XF8      O26    C21    N22     120.000    3.000
+ XF8      C21    O26    HO26    109.470    3.000
+ XF8      C21    N22    C23     121.000    3.000
+ XF8      N22    C23    H23     109.470    3.000
+ XF8      N22    C23    C25     105.000    3.000
+ XF8      N22    C23    C24     105.000    3.000
+ XF8      H23    C23    C25     108.340    3.000
+ XF8      H23    C23    C24     108.340    3.000
+ XF8      C25    C23    C24      60.000    3.000
+ XF8      C23    C25    H251    109.470    3.000
+ XF8      C23    C25    H252    109.470    3.000
+ XF8      C23    C25    C24      60.000    3.000
+ XF8      H251   C25    H252    107.900    3.000
+ XF8      H251   C25    C24     109.470    3.000
+ XF8      H252   C25    C24     109.470    3.000
+ XF8      C25    C24    H242    109.470    3.000
+ XF8      C25    C24    H241    109.470    3.000
+ XF8      C25    C24    C23      60.000    3.000
+ XF8      H242   C24    H241    107.900    3.000
+ XF8      H242   C24    C23     109.470    3.000
+ XF8      H241   C24    C23     109.470    3.000
+ XF8      C11    N10    C09     121.000    3.000
+ XF8      N10    C09    O27     120.000    3.000
+ XF8      N10    C09    C04     116.500    3.000
+ XF8      O27    C09    C04     120.000    3.000
+ XF8      C09    O27    HO27    109.470    3.000
+ XF8      C09    C04    H04     108.810    3.000
+ XF8      C09    C04    C05     109.470    3.000
+ XF8      C09    C04    N03     111.600    3.000
+ XF8      H04    C04    C05     108.340    3.000
+ XF8      H04    C04    N03     109.470    3.000
+ XF8      C05    C04    N03     105.000    3.000
+ XF8      C04    C05    H051    109.470    3.000
+ XF8      C04    C05    H052    109.470    3.000
+ XF8      C04    C05    C06     111.000    3.000
+ XF8      H051   C05    H052    107.900    3.000
+ XF8      H051   C05    C06     109.470    3.000
+ XF8      H052   C05    C06     109.470    3.000
+ XF8      C05    C06    H06     108.340    3.000
+ XF8      C05    C06    C08     111.000    3.000
+ XF8      C05    C06    C07     111.000    3.000
+ XF8      H06    C06    C08     108.340    3.000
+ XF8      H06    C06    C07     108.340    3.000
+ XF8      C08    C06    C07     111.000    3.000
+ XF8      C06    C08    H083    109.470    3.000
+ XF8      C06    C08    H082    109.470    3.000
+ XF8      C06    C08    H081    109.470    3.000
+ XF8      H083   C08    H082    109.470    3.000
+ XF8      H083   C08    H081    109.470    3.000
+ XF8      H082   C08    H081    109.470    3.000
+ XF8      C06    C07    H073    109.470    3.000
+ XF8      C06    C07    H072    109.470    3.000
+ XF8      C06    C07    H071    109.470    3.000
+ XF8      H073   C07    H072    109.470    3.000
+ XF8      H073   C07    H071    109.470    3.000
+ XF8      H072   C07    H071    109.470    3.000
+ XF8      C04    N03    C02     121.000    3.000
+ XF8      N03    C02    O01     120.000    3.000
+ XF8      N03    C02    O28     120.000    3.000
+ XF8      O01    C02    O28     120.000    3.000
+ XF8      C02    O01    HO01    109.470    3.000
+ XF8      C02    O28    C29     120.000    3.000
+ XF8      O28    C29    H291    109.470    3.000
+ XF8      O28    C29    H292    109.470    3.000
+ XF8      O28    C29    C30     109.500    3.000
+ XF8      H291   C29    H292    107.900    3.000
+ XF8      H291   C29    C30     109.470    3.000
+ XF8      H292   C29    C30     109.470    3.000
+ XF8      C29    C30    C31     111.000    3.000
+ XF8      C29    C30    C32     111.000    3.000
+ XF8      C29    C30    S33     109.500    3.000
+ XF8      C31    C30    C32     111.000    3.000
+ XF8      C31    C30    S33     109.500    3.000
+ XF8      C32    C30    S33     109.500    3.000
+ XF8      C30    C31    H313    109.470    3.000
+ XF8      C30    C31    H312    109.470    3.000
+ XF8      C30    C31    H311    109.470    3.000
+ XF8      H313   C31    H312    109.470    3.000
+ XF8      H313   C31    H311    109.470    3.000
+ XF8      H312   C31    H311    109.470    3.000
+ XF8      C30    C32    H323    109.470    3.000
+ XF8      C30    C32    H322    109.470    3.000
+ XF8      C30    C32    H321    109.470    3.000
+ XF8      H323   C32    H322    109.470    3.000
+ XF8      H323   C32    H321    109.470    3.000
+ XF8      H322   C32    H321    109.470    3.000
+ XF8      C30    S33    C34     111.816    3.000
+ XF8      S33    C34    C39     120.000    3.000
+ XF8      S33    C34    C35     120.000    3.000
+ XF8      C39    C34    C35     120.000    3.000
+ XF8      C34    C39    H39     120.000    3.000
+ XF8      C34    C39    C38     120.000    3.000
+ XF8      H39    C39    C38     120.000    3.000
+ XF8      C39    C38    H38     120.000    3.000
+ XF8      C39    C38    C37     120.000    3.000
+ XF8      H38    C38    C37     120.000    3.000
+ XF8      C38    C37    H37     120.000    3.000
+ XF8      C38    C37    C36     120.000    3.000
+ XF8      H37    C37    C36     120.000    3.000
+ XF8      C37    C36    H36     120.000    3.000
+ XF8      C37    C36    C35     120.000    3.000
+ XF8      H36    C36    C35     120.000    3.000
+ XF8      C36    C35    H35     120.000    3.000
+ XF8      C36    C35    C34     120.000    3.000
+ XF8      H35    C35    C34     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ XF8      var_1            O18    C14    N15    C16              180.000           20.000   2
+ XF8      var_2            C14    N15    C16    C17              -14.698           20.000   3
+ XF8      var_3            N15    C16    C17    C13              180.000           20.000   3
+ XF8      var_4            C16    C17    C13    C12              180.000           20.000   3
+ XF8      var_5            C17    C13    C14    O18              180.000           20.000   3
+ XF8      var_6            C17    C13    C12    C11              180.000           20.000   3
+ XF8      var_7            C13    C12    C11    N10              180.000           20.000   3
+ XF8      var_8            C12    C11    C19    C21              180.000           20.000   3
+ XF8      var_9            C11    C19    O20    HO20             180.000           20.000   3
+ XF8      var_10           C11    C19    C21    N22              180.000           20.000   3
+ XF8      var_11           C19    C21    O26    HO26             180.000           20.000   3
+ XF8      CONST_1          C19    C21    N22    C23              180.000            0.000   0
+ XF8      var_12           C21    N22    C23    C25                0.000           20.000   3
+ XF8      var_13           N22    C23    C24    C25              180.000           20.000   3
+ XF8      var_14           N22    C23    C25    C24              180.000           20.000   3
+ XF8      var_15           C12    C11    N10    C09                0.000           20.000   3
+ XF8      CONST_2          C11    N10    C09    C04              180.000            0.000   0
+ XF8      var_16           N10    C09    O27    HO27             180.000           20.000   3
+ XF8      var_17           N10    C09    C04    N03              180.000           20.000   3
+ XF8      var_18           C09    C04    C05    C06              180.000           20.000   3
+ XF8      var_19           C04    C05    C06    C07              180.000           20.000   3
+ XF8      var_20           C05    C06    C08    H081             180.000           20.000   3
+ XF8      var_21           C05    C06    C07    H071             180.000           20.000   3
+ XF8      var_22           C09    C04    N03    C02                0.000           20.000   3
+ XF8      CONST_3          C04    N03    C02    O28              180.000            0.000   0
+ XF8      var_23           N03    C02    O01    HO01             180.000           20.000   3
+ XF8      var_24           N03    C02    O28    C29              150.592           20.000   3
+ XF8      var_25           C02    O28    C29    C30             -121.171           20.000   3
+ XF8      var_26           O28    C29    C30    S33             -161.169           20.000   3
+ XF8      var_27           C29    C30    C31    H311             180.000           20.000   3
+ XF8      var_28           C29    C30    C32    H321             180.000           20.000   3
+ XF8      var_29           C29    C30    S33    C34               57.850           20.000   3
+ XF8      var_30           C30    S33    C34    C39               97.782           20.000   3
+ XF8      CONST_4          S33    C34    C35    C36                0.000            0.000   0
+ XF8      CONST_5          S33    C34    C39    C38                0.000            0.000   0
+ XF8      CONST_6          C34    C39    C38    C37                0.000            0.000   0
+ XF8      CONST_7          C39    C38    C37    C36                0.000            0.000   0
+ XF8      CONST_8          C38    C37    C36    C35                0.000            0.000   0
+ XF8      CONST_9          C37    C36    C35    C34                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ XF8      chir_01          C04    C05    C09    N03       negativ
+ XF8      chir_02          C06    C05    C07    C08       negativ
+ XF8      chir_03          C11    C12    C19    N10       negativ
+ XF8      chir_04          C13    C12    C14    C17       negativ
+ XF8      chir_05          C19    C11    C21    O20       positiv
+ XF8      chir_06          C23    C24    C25    N22       positiv
+ XF8      chir_07          C30    C29    C31    C32       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ XF8      plan-1            C02       0.020
+ XF8      plan-1            N03       0.020
+ XF8      plan-1            O01       0.020
+ XF8      plan-1            O28       0.020
+ XF8      plan-1            C04       0.020
+ XF8      plan-2            C09       0.020
+ XF8      plan-2            C04       0.020
+ XF8      plan-2            N10       0.020
+ XF8      plan-2            O27       0.020
+ XF8      plan-2            C11       0.020
+ XF8      plan-3            C14       0.020
+ XF8      plan-3            C13       0.020
+ XF8      plan-3            N15       0.020
+ XF8      plan-3            O18       0.020
+ XF8      plan-4            C21       0.020
+ XF8      plan-4            C19       0.020
+ XF8      plan-4            N22       0.020
+ XF8      plan-4            O26       0.020
+ XF8      plan-4            C23       0.020
+ XF8      plan-5            C34       0.020
+ XF8      plan-5            C35       0.020
+ XF8      plan-5            C39       0.020
+ XF8      plan-5            S33       0.020
+ XF8      plan-5            C36       0.020
+ XF8      plan-5            C37       0.020
+ XF8      plan-5            C38       0.020
+ XF8      plan-5            H35       0.020
+ XF8      plan-5            H36       0.020
+ XF8      plan-5            H37       0.020
+ XF8      plan-5            H38       0.020
+ XF8      plan-5            H39       0.020
+ XF8      plan-6            N15       0.020
+ XF8      plan-6            C14       0.020
+ XF8      plan-6            C16       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-XF8
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-XF8  1 SG      2 C19       .           1.800    0.020
+# ------------------------------------------------------

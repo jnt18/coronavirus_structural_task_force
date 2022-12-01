@@ -1,0 +1,205 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+OEI      OEI '.                                   ' .                  24  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_OEI
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ OEI           O01    O    OH1       0.000     19.655  -21.413   16.947
+ OEI           HO01   H    H         0.000     19.663  -20.472   17.161
+ OEI           C02    C    CH2       0.000     19.207  -21.580   15.628
+ OEI           H021   H    H         0.000     19.875  -21.063   14.936
+ OEI           H022   H    H         0.000     18.196  -21.182   15.522
+ OEI           C03    C    CH2       0.000     19.204  -23.077   15.313
+ OEI           H031   H    H         0.000     19.444  -23.628   16.225
+ OEI           H032   H    H         0.000     19.965  -23.278   14.556
+ OEI           N04    N    NT1       0.000     17.903  -23.499   14.818
+ OEI           HN04   H    H         0.000     17.416  -23.079   14.010
+ OEI           C05    C    CH2       0.000     17.382  -24.602   15.625
+ OEI           H051   H    H         0.000     17.177  -24.242   16.635
+ OEI           H052   H    H         0.000     18.128  -25.398   15.668
+ OEI           C06    C    CR6       0.000     16.090  -25.143   15.002
+ OEI           C11    C    CR16      0.000     14.850  -24.595   15.321
+ OEI           H11    H    H         0.000     14.794  -23.780   16.032
+ OEI           C10    C    CR16      0.000     13.680  -25.080   14.739
+ OEI           H10    H    H         0.000     12.722  -24.640   14.988
+ OEI           C07    C    CR16      0.000     16.155  -26.199   14.113
+ OEI           H07    H    H         0.000     17.114  -26.640   13.869
+ OEI           C08    C    CR16      0.000     14.989  -26.702   13.526
+ OEI           H08    H    H         0.000     15.047  -27.531   12.832
+ OEI           C09    C    CR16      0.000     13.756  -26.139   13.832
+ OEI           H09    H    H         0.000     12.855  -26.521   13.368
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ OEI      O01    n/a    C02    START
+ OEI      HO01   O01    .      .
+ OEI      C02    O01    C03    .
+ OEI      H021   C02    .      .
+ OEI      H022   C02    .      .
+ OEI      C03    C02    N04    .
+ OEI      H031   C03    .      .
+ OEI      H032   C03    .      .
+ OEI      N04    C03    C05    .
+ OEI      HN04   N04    .      .
+ OEI      C05    N04    C06    .
+ OEI      H051   C05    .      .
+ OEI      H052   C05    .      .
+ OEI      C06    C05    C07    .
+ OEI      C11    C06    C10    .
+ OEI      H11    C11    .      .
+ OEI      C10    C11    H10    .
+ OEI      H10    C10    .      .
+ OEI      C07    C06    C08    .
+ OEI      H07    C07    .      .
+ OEI      C08    C07    C09    .
+ OEI      H08    C08    .      .
+ OEI      C09    C08    H09    .
+ OEI      H09    C09    .      END
+ OEI      C10    C09    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ OEI      C10    C09       aromatic    1.390    0.020
+ OEI      C10    C11       aromatic    1.390    0.020
+ OEI      C03    C02       single      1.524    0.020
+ OEI      C02    O01       single      1.432    0.020
+ OEI      N04    C03       single      1.472    0.020
+ OEI      C06    C05       single      1.511    0.020
+ OEI      C05    N04       single      1.472    0.020
+ OEI      C07    C06       aromatic    1.390    0.020
+ OEI      C11    C06       aromatic    1.390    0.020
+ OEI      C08    C07       aromatic    1.390    0.020
+ OEI      C09    C08       aromatic    1.390    0.020
+ OEI      H10    C10       single      1.083    0.020
+ OEI      H021   C02       single      1.092    0.020
+ OEI      H022   C02       single      1.092    0.020
+ OEI      H031   C03       single      1.092    0.020
+ OEI      H032   C03       single      1.092    0.020
+ OEI      H051   C05       single      1.092    0.020
+ OEI      H052   C05       single      1.092    0.020
+ OEI      H07    C07       single      1.083    0.020
+ OEI      H08    C08       single      1.083    0.020
+ OEI      H09    C09       single      1.083    0.020
+ OEI      H11    C11       single      1.083    0.020
+ OEI      HN04   N04       single      1.033    0.020
+ OEI      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ OEI      HO01   O01    C02     109.470    3.000
+ OEI      O01    C02    H021    109.470    3.000
+ OEI      O01    C02    H022    109.470    3.000
+ OEI      O01    C02    C03     109.470    3.000
+ OEI      H021   C02    H022    107.900    3.000
+ OEI      H021   C02    C03     109.470    3.000
+ OEI      H022   C02    C03     109.470    3.000
+ OEI      C02    C03    H031    109.470    3.000
+ OEI      C02    C03    H032    109.470    3.000
+ OEI      C02    C03    N04     109.500    3.000
+ OEI      H031   C03    H032    107.900    3.000
+ OEI      H031   C03    N04     109.500    3.000
+ OEI      H032   C03    N04     109.500    3.000
+ OEI      C03    N04    HN04    109.500    3.000
+ OEI      C03    N04    C05     109.500    3.000
+ OEI      HN04   N04    C05     109.500    3.000
+ OEI      N04    C05    H051    109.500    3.000
+ OEI      N04    C05    H052    109.500    3.000
+ OEI      N04    C05    C06     109.500    3.000
+ OEI      H051   C05    H052    107.900    3.000
+ OEI      H051   C05    C06     109.470    3.000
+ OEI      H052   C05    C06     109.470    3.000
+ OEI      C05    C06    C11     120.000    3.000
+ OEI      C05    C06    C07     120.000    3.000
+ OEI      C11    C06    C07     120.000    3.000
+ OEI      C06    C11    H11     120.000    3.000
+ OEI      C06    C11    C10     120.000    3.000
+ OEI      H11    C11    C10     120.000    3.000
+ OEI      C11    C10    H10     120.000    3.000
+ OEI      C11    C10    C09     120.000    3.000
+ OEI      H10    C10    C09     120.000    3.000
+ OEI      C06    C07    H07     120.000    3.000
+ OEI      C06    C07    C08     120.000    3.000
+ OEI      H07    C07    C08     120.000    3.000
+ OEI      C07    C08    H08     120.000    3.000
+ OEI      C07    C08    C09     120.000    3.000
+ OEI      H08    C08    C09     120.000    3.000
+ OEI      C08    C09    H09     120.000    3.000
+ OEI      C08    C09    C10     120.000    3.000
+ OEI      H09    C09    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ OEI      var_1            HO01   O01    C02    C03              180.000           20.000   3
+ OEI      var_2            O01    C02    C03    N04              180.000           20.000   3
+ OEI      var_3            C02    C03    N04    C05             -124.876           20.000   3
+ OEI      var_4            C03    N04    C05    C06             -173.618           20.000   3
+ OEI      var_5            N04    C05    C06    C07                0.000           20.000   2
+ OEI      CONST_1          C05    C06    C11    C10                0.000            0.000   0
+ OEI      CONST_2          C06    C11    C10    C09                0.000            0.000   0
+ OEI      CONST_3          C11    C10    C09    C08                0.000            0.000   0
+ OEI      CONST_4          C05    C06    C07    C08                0.000            0.000   0
+ OEI      CONST_5          C06    C07    C08    C09                0.000            0.000   0
+ OEI      CONST_6          C07    C08    C09    C10                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ OEI      plan-1            C10       0.020
+ OEI      plan-1            C09       0.020
+ OEI      plan-1            C11       0.020
+ OEI      plan-1            H10       0.020
+ OEI      plan-1            C06       0.020
+ OEI      plan-1            C07       0.020
+ OEI      plan-1            C08       0.020
+ OEI      plan-1            C05       0.020
+ OEI      plan-1            H07       0.020
+ OEI      plan-1            H08       0.020
+ OEI      plan-1            H09       0.020
+ OEI      plan-1            H11       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

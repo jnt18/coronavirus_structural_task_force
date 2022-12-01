@@ -1,0 +1,193 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+OG3      OG3 '.                                   ' .                  20  10 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_OG3
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ OG3           CL08   CL   CL        0.000     18.293  -27.994   13.440
+ OG3           C07    C    CR6       0.000     16.873  -26.971   13.848
+ OG3           C06    C    CR16      0.000     17.003  -25.923   14.751
+ OG3           H06    H    H         0.000     17.966  -25.722   15.204
+ OG3           C05    C    CR16      0.000     15.910  -25.131   15.078
+ OG3           H05    H    H         0.000     16.024  -24.319   15.785
+ OG3           C09    C    CR16      0.000     15.631  -27.221   13.279
+ OG3           H09    H    H         0.000     15.514  -28.037   12.576
+ OG3           C10    C    CR16      0.000     14.540  -26.429   13.608
+ OG3           H10    H    H         0.000     13.574  -26.634   13.163
+ OG3           C04    C    CR6       0.000     14.675  -25.376   14.503
+ OG3           C02    C    CH1       0.000     13.444  -24.536   14.841
+ OG3           H02    H    H         0.000     12.556  -25.141   14.609
+ OG3           N03    N    NT2       0.000     13.362  -23.326   14.058
+ OG3           H032   H    H         0.000     14.170  -23.281   13.420
+ OG3           H031   H    H         0.000     12.516  -22.805   14.330
+ OG3           C01    C    CH3       0.000     13.307  -24.053   16.273
+ OG3           H013   H    H         0.000     13.268  -24.887   16.923
+ OG3           H012   H    H         0.000     14.140  -23.449   16.521
+ OG3           H011   H    H         0.000     12.418  -23.487   16.370
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ OG3      CL08   n/a    C07    START
+ OG3      C07    CL08   C09    .
+ OG3      C06    C07    C05    .
+ OG3      H06    C06    .      .
+ OG3      C05    C06    H05    .
+ OG3      H05    C05    .      .
+ OG3      C09    C07    C10    .
+ OG3      H09    C09    .      .
+ OG3      C10    C09    C04    .
+ OG3      H10    C10    .      .
+ OG3      C04    C10    C02    .
+ OG3      C02    C04    C01    .
+ OG3      H02    C02    .      .
+ OG3      N03    C02    H031   .
+ OG3      H032   N03    .      .
+ OG3      H031   N03    .      .
+ OG3      C01    C02    H011   .
+ OG3      H013   C01    .      .
+ OG3      H012   C01    .      .
+ OG3      H011   C01    .      END
+ OG3      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ OG3      C01    C02       single      1.524    0.020
+ OG3      C02    C04       single      1.480    0.020
+ OG3      N03    C02       single      1.475    0.020
+ OG3      C04    C05       aromatic    1.390    0.020
+ OG3      C04    C10       aromatic    1.390    0.020
+ OG3      C05    C06       aromatic    1.390    0.020
+ OG3      C06    C07       aromatic    1.390    0.020
+ OG3      C09    C07       aromatic    1.390    0.020
+ OG3      C07    CL08      single      1.795    0.020
+ OG3      C10    C09       aromatic    1.390    0.020
+ OG3      H011   C01       single      1.059    0.020
+ OG3      H012   C01       single      1.059    0.020
+ OG3      H013   C01       single      1.059    0.020
+ OG3      H02    C02       single      1.099    0.020
+ OG3      H05    C05       single      1.083    0.020
+ OG3      H06    C06       single      1.083    0.020
+ OG3      H09    C09       single      1.083    0.020
+ OG3      H10    C10       single      1.083    0.020
+ OG3      H031   N03       single      1.033    0.020
+ OG3      H032   N03       single      1.033    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ OG3      CL08   C07    C06     120.000    3.000
+ OG3      CL08   C07    C09     120.000    3.000
+ OG3      C06    C07    C09     120.000    3.000
+ OG3      C07    C06    H06     120.000    3.000
+ OG3      C07    C06    C05     120.000    3.000
+ OG3      H06    C06    C05     120.000    3.000
+ OG3      C06    C05    H05     120.000    3.000
+ OG3      C06    C05    C04     120.000    3.000
+ OG3      H05    C05    C04     120.000    3.000
+ OG3      C07    C09    H09     120.000    3.000
+ OG3      C07    C09    C10     120.000    3.000
+ OG3      H09    C09    C10     120.000    3.000
+ OG3      C09    C10    H10     120.000    3.000
+ OG3      C09    C10    C04     120.000    3.000
+ OG3      H10    C10    C04     120.000    3.000
+ OG3      C10    C04    C02     120.000    3.000
+ OG3      C10    C04    C05     120.000    3.000
+ OG3      C02    C04    C05     120.000    3.000
+ OG3      C04    C02    H02     109.470    3.000
+ OG3      C04    C02    N03     109.500    3.000
+ OG3      C04    C02    C01     109.470    3.000
+ OG3      H02    C02    N03     109.500    3.000
+ OG3      H02    C02    C01     108.340    3.000
+ OG3      N03    C02    C01     109.500    3.000
+ OG3      C02    N03    H032    109.500    3.000
+ OG3      C02    N03    H031    109.500    3.000
+ OG3      H032   N03    H031    109.500    3.000
+ OG3      C02    C01    H013    109.470    3.000
+ OG3      C02    C01    H012    109.470    3.000
+ OG3      C02    C01    H011    109.470    3.000
+ OG3      H013   C01    H012    109.470    3.000
+ OG3      H013   C01    H011    109.470    3.000
+ OG3      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ OG3      CONST_1          CL08   C07    C06    C05                0.000            0.000   0
+ OG3      CONST_2          C07    C06    C05    C04                0.000            0.000   0
+ OG3      CONST_3          CL08   C07    C09    C10                0.000            0.000   0
+ OG3      CONST_4          C07    C09    C10    C04                0.000            0.000   0
+ OG3      CONST_5          C09    C10    C04    C02                0.000            0.000   0
+ OG3      CONST_6          C10    C04    C05    C06                0.000            0.000   0
+ OG3      var_1            C10    C04    C02    C01              142.795           20.000   3
+ OG3      var_2            C04    C02    N03    H031             180.000           20.000   3
+ OG3      var_3            C04    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ OG3      chir_01          C02    C01    C04    N03       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ OG3      plan-1            C04       0.020
+ OG3      plan-1            C02       0.020
+ OG3      plan-1            C05       0.020
+ OG3      plan-1            C10       0.020
+ OG3      plan-1            C06       0.020
+ OG3      plan-1            C07       0.020
+ OG3      plan-1            C09       0.020
+ OG3      plan-1            H05       0.020
+ OG3      plan-1            H06       0.020
+ OG3      plan-1            CL08      0.020
+ OG3      plan-1            H09       0.020
+ OG3      plan-1            H10       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

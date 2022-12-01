@@ -1,0 +1,995 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+XFF      XFF '.                                   ' .                  68  33 .
+XFR      XFR '.                                   ' .                  70  33 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-XFF  CYS      .        .        XFF      .        .
+ bond_CYS-SG_=_XFF-C14
+CYS-XFR  CYS      .        .        XFR      .        .
+ bond_CYS-SG_=_XFR-C14
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_XFF
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ XFF           O4     O    O         0.000      9.599   22.529   28.461
+ XFF           C7     C    C         0.000     10.367   21.767   27.831
+ XFF           N2     N    N         0.000      9.932   20.488   27.509
+ XFF           C8     C    CH1       0.000      8.637   19.943   27.898
+ XFF           H8     H    H         0.000      8.180   20.590   28.660
+ XFF           C14    C    CH2       0.000      8.928   18.569   28.501
+ XFF           H141   H    H         0.000      9.670   18.669   29.296
+ XFF           H142   H    H         0.000      9.316   17.905   27.725
+ XFF           O3     O    OH1       0.000      7.718   18.021   29.041
+ XFF           HO3    H    H         0.000      7.899   17.151   29.423
+ XFF           C9     C    CH2       0.000      7.694   19.861   26.643
+ XFF           H91    H    H         0.000      6.797   19.305   26.924
+ XFF           H92    H    H         0.000      8.222   19.322   25.853
+ XFF           C10    C    CH1       0.000      7.300   21.244   26.141
+ XFF           H10    H    H         0.000      8.187   21.835   25.872
+ XFF           C11    C    C         0.000      6.363   21.084   24.946
+ XFF           O2     O    O         0.000      6.526   20.352   23.968
+ XFF           N3     N    NH1       0.000      5.233   21.905   25.069
+ XFF           HN3    H    H         0.000      4.470   21.971   24.411
+ XFF           C12    C    CH2       0.000      5.359   22.654   26.330
+ XFF           H121   H    H         0.000      4.409   22.641   26.867
+ XFF           H122   H    H         0.000      5.645   23.687   26.122
+ XFF           C13    C    CH2       0.000      6.412   22.003   27.163
+ XFF           H132   H    H         0.000      5.987   21.293   27.875
+ XFF           H131   H    H         0.000      7.018   22.736   27.699
+ XFF           C2     C    CH1       0.000     11.709   22.312   27.405
+ XFF           H2     H    H         0.000     12.005   21.852   26.452
+ XFF           C3     C    CH2       0.000     12.775   21.972   28.502
+ XFF           H31    H    H         0.000     12.762   20.896   28.689
+ XFF           H32    H    H         0.000     12.521   22.504   29.421
+ XFF           C4     C    CH1       0.000     14.188   22.398   28.031
+ XFF           H4     H    H         0.000     14.133   23.456   27.739
+ XFF           C6     C    CH3       0.000     15.241   22.283   29.176
+ XFF           H63    H    H         0.000     14.961   22.909   29.987
+ XFF           H62    H    H         0.000     15.296   21.279   29.516
+ XFF           H61    H    H         0.000     16.195   22.582   28.820
+ XFF           C5     C    CH3       0.000     14.630   21.605   26.799
+ XFF           H53    H    H         0.000     14.652   20.572   27.031
+ XFF           H52    H    H         0.000     13.948   21.773   26.006
+ XFF           H51    H    H         0.000     15.598   21.920   26.503
+ XFF           N1     N    N         0.000     11.588   23.746   27.232
+ XFF           C1     C    C         0.000     10.897   24.266   26.183
+ XFF           O1     O    O         0.000     10.398   23.556   25.295
+ XFF           O5     O    O2        0.000     10.758   25.623   26.117
+ XFF           C15    C    CH2       0.000     10.718   26.221   24.846
+ XFF           H151   H    H         0.000      9.739   26.061   24.390
+ XFF           H152   H    H         0.000     11.491   25.789   24.207
+ XFF           C16    C    CT        0.000     10.973   27.754   25.011
+ XFF           C17    C    CH3       0.000      9.954   28.374   26.023
+ XFF           H173   H    H         0.000      8.962   28.230   25.672
+ XFF           H172   H    H         0.000     10.057   27.908   26.972
+ XFF           H171   H    H         0.000     10.136   29.415   26.128
+ XFF           C18    C    CH3       0.000     12.445   27.965   25.504
+ XFF           H183   H    H         0.000     12.589   27.476   26.436
+ XFF           H182   H    H         0.000     13.127   27.563   24.794
+ XFF           H181   H    H         0.000     12.643   29.002   25.624
+ XFF           S1     S    S2        0.000     10.783   28.588   23.345
+ XFF           C19    C    CR6       0.000      9.550   29.924   23.426
+ XFF           C24    C    CR16      0.000      9.939   31.241   23.741
+ XFF           H24    H    H         0.000     10.981   31.468   23.931
+ XFF           C23    C    CR16      0.000      8.965   32.269   23.808
+ XFF           H23    H    H         0.000      9.263   33.283   24.043
+ XFF           C22    C    CR16      0.000      7.598   31.969   23.566
+ XFF           H22    H    H         0.000      6.850   32.750   23.615
+ XFF           C21    C    CR16      0.000      7.224   30.639   23.260
+ XFF           H21    H    H         0.000      6.184   30.401   23.072
+ XFF           C20    C    CR16      0.000      8.198   29.623   23.198
+ XFF           H20    H    H         0.000      7.902   28.606   22.973
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ XFF      O4     n/a    C7     START
+ XFF      C7     O4     C2     .
+ XFF      N2     C7     C8     .
+ XFF      C8     N2     C9     .
+ XFF      H8     C8     .      .
+ XFF      C14    C8     O3     .
+ XFF      H141   C14    .      .
+ XFF      H142   C14    .      .
+ XFF      O3     C14    HO3    .
+ XFF      HO3    O3     .      .
+ XFF      C9     C8     C10    .
+ XFF      H91    C9     .      .
+ XFF      H92    C9     .      .
+ XFF      C10    C9     C11    .
+ XFF      H10    C10    .      .
+ XFF      C11    C10    N3     .
+ XFF      O2     C11    .      .
+ XFF      N3     C11    C12    .
+ XFF      HN3    N3     .      .
+ XFF      C12    N3     C13    .
+ XFF      H121   C12    .      .
+ XFF      H122   C12    .      .
+ XFF      C13    C12    H131   .
+ XFF      H132   C13    .      .
+ XFF      H131   C13    .      .
+ XFF      C2     C7     N1     .
+ XFF      H2     C2     .      .
+ XFF      C3     C2     C4     .
+ XFF      H31    C3     .      .
+ XFF      H32    C3     .      .
+ XFF      C4     C3     C5     .
+ XFF      H4     C4     .      .
+ XFF      C6     C4     H61    .
+ XFF      H63    C6     .      .
+ XFF      H62    C6     .      .
+ XFF      H61    C6     .      .
+ XFF      C5     C4     H51    .
+ XFF      H53    C5     .      .
+ XFF      H52    C5     .      .
+ XFF      H51    C5     .      .
+ XFF      N1     C2     C1     .
+ XFF      C1     N1     O5     .
+ XFF      O1     C1     .      .
+ XFF      O5     C1     C15    .
+ XFF      C15    O5     C16    .
+ XFF      H151   C15    .      .
+ XFF      H152   C15    .      .
+ XFF      C16    C15    S1     .
+ XFF      C17    C16    H171   .
+ XFF      H173   C17    .      .
+ XFF      H172   C17    .      .
+ XFF      H171   C17    .      .
+ XFF      C18    C16    H181   .
+ XFF      H183   C18    .      .
+ XFF      H182   C18    .      .
+ XFF      H181   C18    .      .
+ XFF      S1     C16    C19    .
+ XFF      C19    S1     C24    .
+ XFF      C24    C19    C23    .
+ XFF      H24    C24    .      .
+ XFF      C23    C24    C22    .
+ XFF      H23    C23    .      .
+ XFF      C22    C23    C21    .
+ XFF      H22    C22    .      .
+ XFF      C21    C22    C20    .
+ XFF      H21    C21    .      .
+ XFF      C20    C21    H20    .
+ XFF      H20    C20    .      END
+ XFF      C10    C13    .    ADD
+ XFF      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ XFF      C5     C4        single      1.524    0.020
+ XFF      C10    C13       single      1.524    0.020
+ XFF      C11    C10       single      1.500    0.020
+ XFF      C10    C9        single      1.524    0.020
+ XFF      O1     C1        deloc       1.220    0.020
+ XFF      C1     N1        deloc       1.330    0.020
+ XFF      O5     C1        single      1.454    0.020
+ XFF      C3     C2        single      1.524    0.020
+ XFF      C2     C7        single      1.500    0.020
+ XFF      N1     C2        single      1.455    0.020
+ XFF      C4     C3        single      1.524    0.020
+ XFF      C6     C4        single      1.524    0.020
+ XFF      N2     C7        deloc       1.330    0.020
+ XFF      C7     O4        deloc       1.220    0.020
+ XFF      C14    C8        single      1.524    0.020
+ XFF      C9     C8        single      1.524    0.020
+ XFF      C8     N2        single      1.455    0.020
+ XFF      O3     C14       single      1.432    0.020
+ XFF      C13    C12       single      1.524    0.020
+ XFF      C12    N3        single      1.450    0.020
+ XFF      N3     C11       single      1.330    0.020
+ XFF      O2     C11       double      1.220    0.020
+ XFF      C16    C15       single      1.524    0.020
+ XFF      C15    O5        single      1.426    0.020
+ XFF      C17    C16       single      1.524    0.020
+ XFF      C18    C16       single      1.524    0.020
+ XFF      S1     C16       single      1.762    0.020
+ XFF      C19    C20       aromatic    1.390    0.020
+ XFF      C24    C19       aromatic    1.390    0.020
+ XFF      C19    S1        single      1.695    0.020
+ XFF      C20    C21       aromatic    1.390    0.020
+ XFF      C21    C22       aromatic    1.390    0.020
+ XFF      C22    C23       aromatic    1.390    0.020
+ XFF      C23    C24       aromatic    1.390    0.020
+ XFF      H51    C5        single      1.059    0.020
+ XFF      H52    C5        single      1.059    0.020
+ XFF      H53    C5        single      1.059    0.020
+ XFF      H10    C10       single      1.099    0.020
+ XFF      H2     C2        single      1.099    0.020
+ XFF      H31    C3        single      1.092    0.020
+ XFF      H32    C3        single      1.092    0.020
+ XFF      H4     C4        single      1.099    0.020
+ XFF      H61    C6        single      1.059    0.020
+ XFF      H62    C6        single      1.059    0.020
+ XFF      H63    C6        single      1.059    0.020
+ XFF      H8     C8        single      1.099    0.020
+ XFF      H141   C14       single      1.092    0.020
+ XFF      H142   C14       single      1.092    0.020
+ XFF      H131   C13       single      1.092    0.020
+ XFF      H132   C13       single      1.092    0.020
+ XFF      H121   C12       single      1.092    0.020
+ XFF      H122   C12       single      1.092    0.020
+ XFF      H91    C9        single      1.092    0.020
+ XFF      H92    C9        single      1.092    0.020
+ XFF      H151   C15       single      1.092    0.020
+ XFF      H152   C15       single      1.092    0.020
+ XFF      H171   C17       single      1.059    0.020
+ XFF      H172   C17       single      1.059    0.020
+ XFF      H173   C17       single      1.059    0.020
+ XFF      HO3    O3        single      0.967    0.020
+ XFF      H20    C20       single      1.083    0.020
+ XFF      H22    C22       single      1.083    0.020
+ XFF      H181   C18       single      1.059    0.020
+ XFF      H182   C18       single      1.059    0.020
+ XFF      H183   C18       single      1.059    0.020
+ XFF      H21    C21       single      1.083    0.020
+ XFF      H23    C23       single      1.083    0.020
+ XFF      H24    C24       single      1.083    0.020
+ XFF      HN3    N3        single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ XFF      O4     C7     N2      123.000    3.000
+ XFF      O4     C7     C2      120.500    3.000
+ XFF      N2     C7     C2      116.500    3.000
+ XFF      C7     N2     C8      121.000    3.000
+ XFF      N2     C8     H8      109.470    3.000
+ XFF      N2     C8     C14     105.000    3.000
+ XFF      N2     C8     C9      105.000    3.000
+ XFF      H8     C8     C14     108.340    3.000
+ XFF      H8     C8     C9      108.340    3.000
+ XFF      C14    C8     C9      109.470    3.000
+ XFF      C8     C14    H141    109.470    3.000
+ XFF      C8     C14    H142    109.470    3.000
+ XFF      C8     C14    O3      109.470    3.000
+ XFF      H141   C14    H142    107.900    3.000
+ XFF      H141   C14    O3      109.470    3.000
+ XFF      H142   C14    O3      109.470    3.000
+ XFF      C14    O3     HO3     109.470    3.000
+ XFF      C8     C9     H91     109.470    3.000
+ XFF      C8     C9     H92     109.470    3.000
+ XFF      C8     C9     C10     111.000    3.000
+ XFF      H91    C9     H92     107.900    3.000
+ XFF      H91    C9     C10     109.470    3.000
+ XFF      H92    C9     C10     109.470    3.000
+ XFF      C9     C10    H10     108.340    3.000
+ XFF      C9     C10    C11     109.470    3.000
+ XFF      C9     C10    C13     109.470    3.000
+ XFF      H10    C10    C11     108.810    3.000
+ XFF      H10    C10    C13     108.340    3.000
+ XFF      C11    C10    C13     109.470    3.000
+ XFF      C10    C11    O2      120.500    3.000
+ XFF      C10    C11    N3      116.500    3.000
+ XFF      O2     C11    N3      123.000    3.000
+ XFF      C11    N3     HN3     120.000    3.000
+ XFF      C11    N3     C12     121.500    3.000
+ XFF      HN3    N3     C12     118.500    3.000
+ XFF      N3     C12    H121    109.470    3.000
+ XFF      N3     C12    H122    109.470    3.000
+ XFF      N3     C12    C13     112.000    3.000
+ XFF      H121   C12    H122    107.900    3.000
+ XFF      H121   C12    C13     109.470    3.000
+ XFF      H122   C12    C13     109.470    3.000
+ XFF      C12    C13    H132    109.470    3.000
+ XFF      C12    C13    H131    109.470    3.000
+ XFF      C12    C13    C10     111.000    3.000
+ XFF      H132   C13    H131    107.900    3.000
+ XFF      H132   C13    C10     109.470    3.000
+ XFF      H131   C13    C10     109.470    3.000
+ XFF      C7     C2     H2      108.810    3.000
+ XFF      C7     C2     C3      109.470    3.000
+ XFF      C7     C2     N1      111.600    3.000
+ XFF      H2     C2     C3      108.340    3.000
+ XFF      H2     C2     N1      109.470    3.000
+ XFF      C3     C2     N1      105.000    3.000
+ XFF      C2     C3     H31     109.470    3.000
+ XFF      C2     C3     H32     109.470    3.000
+ XFF      C2     C3     C4      111.000    3.000
+ XFF      H31    C3     H32     107.900    3.000
+ XFF      H31    C3     C4      109.470    3.000
+ XFF      H32    C3     C4      109.470    3.000
+ XFF      C3     C4     H4      108.340    3.000
+ XFF      C3     C4     C6      111.000    3.000
+ XFF      C3     C4     C5      111.000    3.000
+ XFF      H4     C4     C6      108.340    3.000
+ XFF      H4     C4     C5      108.340    3.000
+ XFF      C6     C4     C5      111.000    3.000
+ XFF      C4     C6     H63     109.470    3.000
+ XFF      C4     C6     H62     109.470    3.000
+ XFF      C4     C6     H61     109.470    3.000
+ XFF      H63    C6     H62     109.470    3.000
+ XFF      H63    C6     H61     109.470    3.000
+ XFF      H62    C6     H61     109.470    3.000
+ XFF      C4     C5     H53     109.470    3.000
+ XFF      C4     C5     H52     109.470    3.000
+ XFF      C4     C5     H51     109.470    3.000
+ XFF      H53    C5     H52     109.470    3.000
+ XFF      H53    C5     H51     109.470    3.000
+ XFF      H52    C5     H51     109.470    3.000
+ XFF      C2     N1     C1      121.000    3.000
+ XFF      N1     C1     O1      123.000    3.000
+ XFF      N1     C1     O5      120.000    3.000
+ XFF      O1     C1     O5      119.000    3.000
+ XFF      C1     O5     C15     120.000    3.000
+ XFF      O5     C15    H151    109.470    3.000
+ XFF      O5     C15    H152    109.470    3.000
+ XFF      O5     C15    C16     109.500    3.000
+ XFF      H151   C15    H152    107.900    3.000
+ XFF      H151   C15    C16     109.470    3.000
+ XFF      H152   C15    C16     109.470    3.000
+ XFF      C15    C16    C17     111.000    3.000
+ XFF      C15    C16    C18     111.000    3.000
+ XFF      C15    C16    S1      109.500    3.000
+ XFF      C17    C16    C18     111.000    3.000
+ XFF      C17    C16    S1      109.500    3.000
+ XFF      C18    C16    S1      109.500    3.000
+ XFF      C16    C17    H173    109.470    3.000
+ XFF      C16    C17    H172    109.470    3.000
+ XFF      C16    C17    H171    109.470    3.000
+ XFF      H173   C17    H172    109.470    3.000
+ XFF      H173   C17    H171    109.470    3.000
+ XFF      H172   C17    H171    109.470    3.000
+ XFF      C16    C18    H183    109.470    3.000
+ XFF      C16    C18    H182    109.470    3.000
+ XFF      C16    C18    H181    109.470    3.000
+ XFF      H183   C18    H182    109.470    3.000
+ XFF      H183   C18    H181    109.470    3.000
+ XFF      H182   C18    H181    109.470    3.000
+ XFF      C16    S1     C19     110.862    3.000
+ XFF      S1     C19    C24     120.000    3.000
+ XFF      S1     C19    C20     120.000    3.000
+ XFF      C24    C19    C20     120.000    3.000
+ XFF      C19    C24    H24     120.000    3.000
+ XFF      C19    C24    C23     120.000    3.000
+ XFF      H24    C24    C23     120.000    3.000
+ XFF      C24    C23    H23     120.000    3.000
+ XFF      C24    C23    C22     120.000    3.000
+ XFF      H23    C23    C22     120.000    3.000
+ XFF      C23    C22    H22     120.000    3.000
+ XFF      C23    C22    C21     120.000    3.000
+ XFF      H22    C22    C21     120.000    3.000
+ XFF      C22    C21    H21     120.000    3.000
+ XFF      C22    C21    C20     120.000    3.000
+ XFF      H21    C21    C20     120.000    3.000
+ XFF      C21    C20    H20     120.000    3.000
+ XFF      C21    C20    C19     120.000    3.000
+ XFF      H20    C20    C19     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ XFF      CONST_1          O4     C7     N2     C8               180.000            0.000   0
+ XFF      var_1            C7     N2     C8     C9                 0.000           20.000   3
+ XFF      var_2            N2     C8     C14    O3               180.000           20.000   3
+ XFF      var_3            C8     C14    O3     HO3              180.000           20.000   3
+ XFF      var_4            N2     C8     C9     C10              180.000           20.000   3
+ XFF      var_5            C8     C9     C10    C11              180.000           20.000   3
+ XFF      var_6            C9     C10    C13    C12              180.000           20.000   3
+ XFF      var_7            C9     C10    C11    N3               180.000           20.000   3
+ XFF      var_8            C10    C11    N3     C12              180.000           20.000   2
+ XFF      var_9            C11    N3     C12    C13                0.000           20.000   3
+ XFF      var_10           N3     C12    C13    C10              180.000           20.000   3
+ XFF      var_11           O4     C7     C2     N1               180.000           20.000   3
+ XFF      var_12           C7     C2     C3     C4               180.000           20.000   3
+ XFF      var_13           C2     C3     C4     C5               180.000           20.000   3
+ XFF      var_14           C3     C4     C6     H61              180.000           20.000   3
+ XFF      var_15           C3     C4     C5     H51              180.000           20.000   3
+ XFF      var_16           C7     C2     N1     C1                 0.000           20.000   3
+ XFF      CONST_2          C2     N1     C1     O5               180.000            0.000   0
+ XFF      var_17           N1     C1     O5     C15              147.129           20.000   3
+ XFF      var_18           C1     O5     C15    C16             -163.784           20.000   3
+ XFF      var_19           O5     C15    C16    S1              -175.371           20.000   3
+ XFF      var_20           C15    C16    C17    H171             180.000           20.000   3
+ XFF      var_21           C15    C16    C18    H181             180.000           20.000   3
+ XFF      var_22           C15    C16    S1     C19              124.325           20.000   3
+ XFF      var_23           C16    S1     C19    C24               90.572           20.000   3
+ XFF      CONST_3          S1     C19    C20    C21                0.000            0.000   0
+ XFF      CONST_4          S1     C19    C24    C23                0.000            0.000   0
+ XFF      CONST_5          C19    C24    C23    C22                0.000            0.000   0
+ XFF      CONST_6          C24    C23    C22    C21                0.000            0.000   0
+ XFF      CONST_7          C23    C22    C21    C20                0.000            0.000   0
+ XFF      CONST_8          C22    C21    C20    C19                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ XFF      chir_01          C10    C13    C11    C9        positiv
+ XFF      chir_02          C2     C3     C7     N1        negativ
+ XFF      chir_03          C4     C5     C3     C6        negativ
+ XFF      chir_04          C8     C14    C9     N2        positiv
+ XFF      chir_05          C16    C15    C17    C18       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ XFF      plan-1            C1        0.020
+ XFF      plan-1            O1        0.020
+ XFF      plan-1            N1        0.020
+ XFF      plan-1            O5        0.020
+ XFF      plan-1            C2        0.020
+ XFF      plan-2            C7        0.020
+ XFF      plan-2            C2        0.020
+ XFF      plan-2            N2        0.020
+ XFF      plan-2            O4        0.020
+ XFF      plan-2            C8        0.020
+ XFF      plan-3            C11       0.020
+ XFF      plan-3            C10       0.020
+ XFF      plan-3            N3        0.020
+ XFF      plan-3            O2        0.020
+ XFF      plan-3            HN3       0.020
+ XFF      plan-4            C19       0.020
+ XFF      plan-4            C20       0.020
+ XFF      plan-4            C24       0.020
+ XFF      plan-4            S1        0.020
+ XFF      plan-4            C22       0.020
+ XFF      plan-4            C21       0.020
+ XFF      plan-4            C23       0.020
+ XFF      plan-4            H20       0.020
+ XFF      plan-4            H22       0.020
+ XFF      plan-4            H21       0.020
+ XFF      plan-4            H23       0.020
+ XFF      plan-4            H24       0.020
+ XFF      plan-5            N3        0.020
+ XFF      plan-5            C12       0.020
+ XFF      plan-5            C11       0.020
+ XFF      plan-5            HN3       0.020
+#
+data_comp_XFR
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ XFR           O4     O    O         0.000     10.041   22.028   29.116
+ XFR           C7     C    C         0.000     10.505   21.552   28.052
+ XFR           N2     N    NH1       0.000      9.813   20.503   27.421
+ XFR           HN2    H    H         0.000     10.201   20.127   26.568
+ XFR           C8     C    CH1       0.000      8.556   19.917   27.926
+ XFR           H8     H    H         0.000      8.164   20.554   28.731
+ XFR           C14    C    CH2       0.000      8.860   18.487   28.508
+ XFR           H141   H    H         0.000      9.373   17.856   27.779
+ XFR           H142   H    H         0.000      7.949   17.987   28.843
+ XFR           O3     O    OH1       0.000      9.726   18.720   29.637
+ XFR           HO3    H    H         0.000      9.956   17.875   30.049
+ XFR           C9     C    CH2       0.000      7.508   19.852   26.777
+ XFR           H91    H    H         0.000      6.625   19.338   27.160
+ XFR           H92    H    H         0.000      7.943   19.269   25.962
+ XFR           C10    C    CH1       0.000      7.108   21.243   26.257
+ XFR           H10    H    H         0.000      7.988   21.792   25.893
+ XFR           C13    C    CH2       0.000      6.341   22.073   27.319
+ XFR           H131   H    H         0.000      6.961   22.884   27.708
+ XFR           H132   H    H         0.000      6.008   21.443   28.146
+ XFR           C12    C    CH2       0.000      5.156   22.643   26.617
+ XFR           H121   H    H         0.000      5.335   23.694   26.382
+ XFR           H122   H    H         0.000      4.272   22.558   27.252
+ XFR           N3     N    NH1       0.000      4.939   21.884   25.362
+ XFR           HN3    H    H         0.000      4.123   21.936   24.768
+ XFR           C11    C    C         0.000      6.074   21.076   25.144
+ XFR           O2     O    O         0.000      6.153   20.333   24.161
+ XFR           C2     C    CH1       0.000     11.837   22.156   27.505
+ XFR           H2     H    H         0.000     12.039   21.726   26.514
+ XFR           C3     C    CH2       0.000     12.993   21.727   28.489
+ XFR           H31    H    H         0.000     12.983   20.637   28.561
+ XFR           H32    H    H         0.000     12.775   22.157   29.468
+ XFR           C4     C    CH1       0.000     14.383   22.200   28.016
+ XFR           H4     H    H         0.000     14.291   23.257   27.730
+ XFR           C6     C    CH3       0.000     14.849   21.428   26.776
+ XFR           H63    H    H         0.000     14.908   20.394   27.002
+ XFR           H62    H    H         0.000     14.159   21.576   25.985
+ XFR           H61    H    H         0.000     15.805   21.777   26.478
+ XFR           C5     C    CH3       0.000     15.438   22.117   29.150
+ XFR           H53    H    H         0.000     15.139   22.730   29.963
+ XFR           H52    H    H         0.000     15.527   21.114   29.485
+ XFR           H51    H    H         0.000     16.379   22.449   28.790
+ XFR           N1     N    NH1       0.000     11.757   23.633   27.378
+ XFR           HN1    H    H         0.000     12.314   24.210   27.992
+ XFR           C1     C    C         0.000     10.925   24.252   26.424
+ XFR           O1     O    O         0.000     10.155   23.613   25.688
+ XFR           O5     O    O2        0.000     10.962   25.633   26.296
+ XFR           C15    C    CH2       0.000     10.865   26.227   24.986
+ XFR           H151   H    H         0.000      9.866   26.055   24.580
+ XFR           H152   H    H         0.000     11.608   25.775   24.325
+ XFR           C16    C    CT        0.000     11.132   27.792   25.096
+ XFR           C17    C    CH3       0.000     10.105   28.448   26.043
+ XFR           H173   H    H         0.000      9.125   28.293   25.670
+ XFR           H172   H    H         0.000     10.184   28.018   27.009
+ XFR           H171   H    H         0.000     10.293   29.490   26.108
+ XFR           C18    C    CH3       0.000     12.580   28.024   25.624
+ XFR           H183   H    H         0.000     12.692   27.577   26.580
+ XFR           H182   H    H         0.000     13.282   27.591   24.955
+ XFR           H181   H    H         0.000     12.773   29.065   25.703
+ XFR           S1     S    S2        0.000     11.012   28.616   23.411
+ XFR           C19    C    CR6       0.000      9.793   29.981   23.401
+ XFR           C24    C    CR16      0.000     10.193   31.314   23.618
+ XFR           H24    H    H         0.000     11.237   31.544   23.792
+ XFR           C23    C    CR16      0.000      9.231   32.355   23.608
+ XFR           H23    H    H         0.000      9.542   33.380   23.771
+ XFR           C22    C    CR16      0.000      7.863   32.058   23.385
+ XFR           H22    H    H         0.000      7.125   32.850   23.377
+ XFR           C21    C    CR16      0.000      7.474   30.716   23.173
+ XFR           H21    H    H         0.000      6.432   30.478   23.001
+ XFR           C20    C    CR16      0.000      8.436   29.685   23.184
+ XFR           H20    H    H         0.000      8.128   28.659   23.024
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ XFR      O4     n/a    C7     START
+ XFR      C7     O4     C2     .
+ XFR      N2     C7     C8     .
+ XFR      HN2    N2     .      .
+ XFR      C8     N2     C9     .
+ XFR      H8     C8     .      .
+ XFR      C14    C8     O3     .
+ XFR      H141   C14    .      .
+ XFR      H142   C14    .      .
+ XFR      O3     C14    HO3    .
+ XFR      HO3    O3     .      .
+ XFR      C9     C8     C10    .
+ XFR      H91    C9     .      .
+ XFR      H92    C9     .      .
+ XFR      C10    C9     C13    .
+ XFR      H10    C10    .      .
+ XFR      C13    C10    C12    .
+ XFR      H131   C13    .      .
+ XFR      H132   C13    .      .
+ XFR      C12    C13    N3     .
+ XFR      H121   C12    .      .
+ XFR      H122   C12    .      .
+ XFR      N3     C12    C11    .
+ XFR      HN3    N3     .      .
+ XFR      C11    N3     O2     .
+ XFR      O2     C11    .      .
+ XFR      C2     C7     N1     .
+ XFR      H2     C2     .      .
+ XFR      C3     C2     C4     .
+ XFR      H31    C3     .      .
+ XFR      H32    C3     .      .
+ XFR      C4     C3     C5     .
+ XFR      H4     C4     .      .
+ XFR      C6     C4     H61    .
+ XFR      H63    C6     .      .
+ XFR      H62    C6     .      .
+ XFR      H61    C6     .      .
+ XFR      C5     C4     H51    .
+ XFR      H53    C5     .      .
+ XFR      H52    C5     .      .
+ XFR      H51    C5     .      .
+ XFR      N1     C2     C1     .
+ XFR      HN1    N1     .      .
+ XFR      C1     N1     O5     .
+ XFR      O1     C1     .      .
+ XFR      O5     C1     C15    .
+ XFR      C15    O5     C16    .
+ XFR      H151   C15    .      .
+ XFR      H152   C15    .      .
+ XFR      C16    C15    S1     .
+ XFR      C17    C16    H171   .
+ XFR      H173   C17    .      .
+ XFR      H172   C17    .      .
+ XFR      H171   C17    .      .
+ XFR      C18    C16    H181   .
+ XFR      H183   C18    .      .
+ XFR      H182   C18    .      .
+ XFR      H181   C18    .      .
+ XFR      S1     C16    C19    .
+ XFR      C19    S1     C24    .
+ XFR      C24    C19    C23    .
+ XFR      H24    C24    .      .
+ XFR      C23    C24    C22    .
+ XFR      H23    C23    .      .
+ XFR      C22    C23    C21    .
+ XFR      H22    C22    .      .
+ XFR      C21    C22    C20    .
+ XFR      H21    C21    .      .
+ XFR      C20    C21    H20    .
+ XFR      H20    C20    .      END
+ XFR      C11    C10    .    ADD
+ XFR      C19    C20    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ XFR      C11    C10       single      1.500    0.020
+ XFR      C11    N3        single      1.330    0.020
+ XFR      O2     C11       double      1.220    0.020
+ XFR      C12    C13       single      1.524    0.020
+ XFR      N3     C12       single      1.450    0.020
+ XFR      C13    C10       single      1.524    0.020
+ XFR      C5     C4        single      1.524    0.020
+ XFR      C10    C9        single      1.524    0.020
+ XFR      O1     C1        deloc       1.220    0.020
+ XFR      C1     N1        single      1.330    0.020
+ XFR      O5     C1        single      1.454    0.020
+ XFR      C3     C2        single      1.524    0.020
+ XFR      C2     C7        single      1.500    0.020
+ XFR      N1     C2        single      1.450    0.020
+ XFR      C4     C3        single      1.524    0.020
+ XFR      C6     C4        single      1.524    0.020
+ XFR      N2     C7        single      1.330    0.020
+ XFR      C7     O4        deloc       1.220    0.020
+ XFR      C14    C8        single      1.524    0.020
+ XFR      C9     C8        single      1.524    0.020
+ XFR      C8     N2        single      1.450    0.020
+ XFR      O3     C14       single      1.432    0.020
+ XFR      C16    C15       single      1.524    0.020
+ XFR      C15    O5        single      1.426    0.020
+ XFR      C17    C16       single      1.524    0.020
+ XFR      C18    C16       single      1.524    0.020
+ XFR      S1     C16       single      1.762    0.020
+ XFR      C19    S1        single      1.695    0.020
+ XFR      C19    C20       aromatic    1.390    0.020
+ XFR      C24    C19       aromatic    1.390    0.020
+ XFR      C20    C21       aromatic    1.390    0.020
+ XFR      C21    C22       aromatic    1.390    0.020
+ XFR      C22    C23       aromatic    1.390    0.020
+ XFR      C23    C24       aromatic    1.390    0.020
+ XFR      H121   C12       single      1.092    0.020
+ XFR      H122   C12       single      1.092    0.020
+ XFR      H131   C13       single      1.092    0.020
+ XFR      H132   C13       single      1.092    0.020
+ XFR      H51    C5        single      1.059    0.020
+ XFR      H52    C5        single      1.059    0.020
+ XFR      H53    C5        single      1.059    0.020
+ XFR      H10    C10       single      1.099    0.020
+ XFR      H2     C2        single      1.099    0.020
+ XFR      H31    C3        single      1.092    0.020
+ XFR      H32    C3        single      1.092    0.020
+ XFR      H4     C4        single      1.099    0.020
+ XFR      H61    C6        single      1.059    0.020
+ XFR      H62    C6        single      1.059    0.020
+ XFR      H63    C6        single      1.059    0.020
+ XFR      H8     C8        single      1.099    0.020
+ XFR      H141   C14       single      1.092    0.020
+ XFR      H142   C14       single      1.092    0.020
+ XFR      H91    C9        single      1.092    0.020
+ XFR      H92    C9        single      1.092    0.020
+ XFR      H151   C15       single      1.092    0.020
+ XFR      H152   C15       single      1.092    0.020
+ XFR      HO3    O3        single      0.967    0.020
+ XFR      HN1    N1        single      1.010    0.020
+ XFR      HN2    N2        single      1.010    0.020
+ XFR      HN3    N3        single      1.010    0.020
+ XFR      H171   C17       single      1.059    0.020
+ XFR      H172   C17       single      1.059    0.020
+ XFR      H173   C17       single      1.059    0.020
+ XFR      H181   C18       single      1.059    0.020
+ XFR      H182   C18       single      1.059    0.020
+ XFR      H183   C18       single      1.059    0.020
+ XFR      H20    C20       single      1.083    0.020
+ XFR      H21    C21       single      1.083    0.020
+ XFR      H22    C22       single      1.083    0.020
+ XFR      H23    C23       single      1.083    0.020
+ XFR      H24    C24       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ XFR      O4     C7     N2      123.000    3.000
+ XFR      O4     C7     C2      120.500    3.000
+ XFR      N2     C7     C2      116.500    3.000
+ XFR      C7     N2     HN2     120.000    3.000
+ XFR      C7     N2     C8      121.500    3.000
+ XFR      HN2    N2     C8      118.500    3.000
+ XFR      N2     C8     H8      108.550    3.000
+ XFR      N2     C8     C14     110.000    3.000
+ XFR      N2     C8     C9      110.000    3.000
+ XFR      H8     C8     C14     108.340    3.000
+ XFR      H8     C8     C9      108.340    3.000
+ XFR      C14    C8     C9      109.470    3.000
+ XFR      C8     C14    H141    109.470    3.000
+ XFR      C8     C14    H142    109.470    3.000
+ XFR      C8     C14    O3      109.470    3.000
+ XFR      H141   C14    H142    107.900    3.000
+ XFR      H141   C14    O3      109.470    3.000
+ XFR      H142   C14    O3      109.470    3.000
+ XFR      C14    O3     HO3     109.470    3.000
+ XFR      C8     C9     H91     109.470    3.000
+ XFR      C8     C9     H92     109.470    3.000
+ XFR      C8     C9     C10     111.000    3.000
+ XFR      H91    C9     H92     107.900    3.000
+ XFR      H91    C9     C10     109.470    3.000
+ XFR      H92    C9     C10     109.470    3.000
+ XFR      C9     C10    H10     108.340    3.000
+ XFR      C9     C10    C13     109.470    3.000
+ XFR      C9     C10    C11     109.470    3.000
+ XFR      H10    C10    C13     108.340    3.000
+ XFR      H10    C10    C11     108.810    3.000
+ XFR      C13    C10    C11     109.470    3.000
+ XFR      C10    C13    H131    109.470    3.000
+ XFR      C10    C13    H132    109.470    3.000
+ XFR      C10    C13    C12     111.000    3.000
+ XFR      H131   C13    H132    107.900    3.000
+ XFR      H131   C13    C12     109.470    3.000
+ XFR      H132   C13    C12     109.470    3.000
+ XFR      C13    C12    H121    109.470    3.000
+ XFR      C13    C12    H122    109.470    3.000
+ XFR      C13    C12    N3      112.000    3.000
+ XFR      H121   C12    H122    107.900    3.000
+ XFR      H121   C12    N3      109.470    3.000
+ XFR      H122   C12    N3      109.470    3.000
+ XFR      C12    N3     HN3     118.500    3.000
+ XFR      C12    N3     C11     121.500    3.000
+ XFR      HN3    N3     C11     120.000    3.000
+ XFR      N3     C11    O2      123.000    3.000
+ XFR      N3     C11    C10     116.500    3.000
+ XFR      O2     C11    C10     120.500    3.000
+ XFR      C7     C2     H2      108.810    3.000
+ XFR      C7     C2     C3      109.470    3.000
+ XFR      C7     C2     N1      111.600    3.000
+ XFR      H2     C2     C3      108.340    3.000
+ XFR      H2     C2     N1      108.550    3.000
+ XFR      C3     C2     N1      110.000    3.000
+ XFR      C2     C3     H31     109.470    3.000
+ XFR      C2     C3     H32     109.470    3.000
+ XFR      C2     C3     C4      111.000    3.000
+ XFR      H31    C3     H32     107.900    3.000
+ XFR      H31    C3     C4      109.470    3.000
+ XFR      H32    C3     C4      109.470    3.000
+ XFR      C3     C4     H4      108.340    3.000
+ XFR      C3     C4     C6      111.000    3.000
+ XFR      C3     C4     C5      111.000    3.000
+ XFR      H4     C4     C6      108.340    3.000
+ XFR      H4     C4     C5      108.340    3.000
+ XFR      C6     C4     C5      111.000    3.000
+ XFR      C4     C6     H63     109.470    3.000
+ XFR      C4     C6     H62     109.470    3.000
+ XFR      C4     C6     H61     109.470    3.000
+ XFR      H63    C6     H62     109.470    3.000
+ XFR      H63    C6     H61     109.470    3.000
+ XFR      H62    C6     H61     109.470    3.000
+ XFR      C4     C5     H53     109.470    3.000
+ XFR      C4     C5     H52     109.470    3.000
+ XFR      C4     C5     H51     109.470    3.000
+ XFR      H53    C5     H52     109.470    3.000
+ XFR      H53    C5     H51     109.470    3.000
+ XFR      H52    C5     H51     109.470    3.000
+ XFR      C2     N1     HN1     118.500    3.000
+ XFR      C2     N1     C1      121.500    3.000
+ XFR      HN1    N1     C1      120.000    3.000
+ XFR      N1     C1     O1      123.000    3.000
+ XFR      N1     C1     O5      118.000    3.000
+ XFR      O1     C1     O5      119.000    3.000
+ XFR      C1     O5     C15     120.000    3.000
+ XFR      O5     C15    H151    109.470    3.000
+ XFR      O5     C15    H152    109.470    3.000
+ XFR      O5     C15    C16     109.500    3.000
+ XFR      H151   C15    H152    107.900    3.000
+ XFR      H151   C15    C16     109.470    3.000
+ XFR      H152   C15    C16     109.470    3.000
+ XFR      C15    C16    C17     111.000    3.000
+ XFR      C15    C16    C18     111.000    3.000
+ XFR      C15    C16    S1      109.500    3.000
+ XFR      C17    C16    C18     111.000    3.000
+ XFR      C17    C16    S1      109.500    3.000
+ XFR      C18    C16    S1      109.500    3.000
+ XFR      C16    C17    H173    109.470    3.000
+ XFR      C16    C17    H172    109.470    3.000
+ XFR      C16    C17    H171    109.470    3.000
+ XFR      H173   C17    H172    109.470    3.000
+ XFR      H173   C17    H171    109.470    3.000
+ XFR      H172   C17    H171    109.470    3.000
+ XFR      C16    C18    H183    109.470    3.000
+ XFR      C16    C18    H182    109.470    3.000
+ XFR      C16    C18    H181    109.470    3.000
+ XFR      H183   C18    H182    109.470    3.000
+ XFR      H183   C18    H181    109.470    3.000
+ XFR      H182   C18    H181    109.470    3.000
+ XFR      C16    S1     C19     111.991    3.000
+ XFR      S1     C19    C24     120.000    3.000
+ XFR      S1     C19    C20     120.000    3.000
+ XFR      C24    C19    C20     120.000    3.000
+ XFR      C19    C24    H24     120.000    3.000
+ XFR      C19    C24    C23     120.000    3.000
+ XFR      H24    C24    C23     120.000    3.000
+ XFR      C24    C23    H23     120.000    3.000
+ XFR      C24    C23    C22     120.000    3.000
+ XFR      H23    C23    C22     120.000    3.000
+ XFR      C23    C22    H22     120.000    3.000
+ XFR      C23    C22    C21     120.000    3.000
+ XFR      H22    C22    C21     120.000    3.000
+ XFR      C22    C21    H21     120.000    3.000
+ XFR      C22    C21    C20     120.000    3.000
+ XFR      H21    C21    C20     120.000    3.000
+ XFR      C21    C20    H20     120.000    3.000
+ XFR      C21    C20    C19     120.000    3.000
+ XFR      H20    C20    C19     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ XFR      var_1            O4     C7     N2     C8               180.000           20.000   2
+ XFR      var_2            C7     N2     C8     C9                 0.000           20.000   3
+ XFR      var_3            N2     C8     C14    O3               180.000           20.000   3
+ XFR      var_4            C8     C14    O3     HO3              180.000           20.000   3
+ XFR      var_5            N2     C8     C9     C10              180.000           20.000   3
+ XFR      var_6            C8     C9     C10    C13              180.000           20.000   3
+ XFR      var_7            C9     C10    C13    C12              180.000           20.000   3
+ XFR      var_8            C10    C13    C12    N3               180.000           20.000   3
+ XFR      var_9            C13    C12    N3     C11                0.000           20.000   3
+ XFR      var_10           C12    N3     C11    O2               180.000           20.000   2
+ XFR      var_11           N3     C11    C10    C9               180.000           20.000   3
+ XFR      var_12           O4     C7     C2     N1               180.000           20.000   3
+ XFR      var_13           C7     C2     C3     C4               180.000           20.000   3
+ XFR      var_14           C2     C3     C4     C5               180.000           20.000   3
+ XFR      var_15           C3     C4     C6     H61              180.000           20.000   3
+ XFR      var_16           C3     C4     C5     H51              180.000           20.000   3
+ XFR      var_17           C7     C2     N1     C1                 0.000           20.000   3
+ XFR      var_18           C2     N1     C1     O5               180.000           20.000   2
+ XFR      var_19           N1     C1     O5     C15              141.695           20.000   3
+ XFR      var_20           C1     O5     C15    C16             -172.301           20.000   3
+ XFR      var_21           O5     C15    C16    S1              -179.847           20.000   3
+ XFR      var_22           C15    C16    C17    H171             180.000           20.000   3
+ XFR      var_23           C15    C16    C18    H181             180.000           20.000   3
+ XFR      var_24           C15    C16    S1     C19              124.245           20.000   3
+ XFR      var_25           C16    S1     C19    C24               94.726           20.000   3
+ XFR      CONST_1          S1     C19    C20    C21                0.000            0.000   0
+ XFR      CONST_2          S1     C19    C24    C23                0.000            0.000   0
+ XFR      CONST_3          C19    C24    C23    C22                0.000            0.000   0
+ XFR      CONST_4          C24    C23    C22    C21                0.000            0.000   0
+ XFR      CONST_5          C23    C22    C21    C20                0.000            0.000   0
+ XFR      CONST_6          C22    C21    C20    C19                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ XFR      chir_01          C10    C11    C13    C9        negativ
+ XFR      chir_02          C2     C3     C7     N1        negativ
+ XFR      chir_03          C4     C5     C3     C6        positiv
+ XFR      chir_04          C8     C14    C9     N2        positiv
+ XFR      chir_05          C16    C15    C17    C18       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ XFR      plan-1            C11       0.020
+ XFR      plan-1            C10       0.020
+ XFR      plan-1            N3        0.020
+ XFR      plan-1            O2        0.020
+ XFR      plan-1            HN3       0.020
+ XFR      plan-2            C1        0.020
+ XFR      plan-2            O1        0.020
+ XFR      plan-2            N1        0.020
+ XFR      plan-2            O5        0.020
+ XFR      plan-2            HN1       0.020
+ XFR      plan-3            C7        0.020
+ XFR      plan-3            C2        0.020
+ XFR      plan-3            N2        0.020
+ XFR      plan-3            O4        0.020
+ XFR      plan-3            HN2       0.020
+ XFR      plan-4            N1        0.020
+ XFR      plan-4            C1        0.020
+ XFR      plan-4            C2        0.020
+ XFR      plan-4            HN1       0.020
+ XFR      plan-5            N2        0.020
+ XFR      plan-5            C7        0.020
+ XFR      plan-5            C8        0.020
+ XFR      plan-5            HN2       0.020
+ XFR      plan-6            N3        0.020
+ XFR      plan-6            C11       0.020
+ XFR      plan-6            C12       0.020
+ XFR      plan-6            HN3       0.020
+ XFR      plan-7            C19       0.020
+ XFR      plan-7            S1        0.020
+ XFR      plan-7            C20       0.020
+ XFR      plan-7            C24       0.020
+ XFR      plan-7            C21       0.020
+ XFR      plan-7            C22       0.020
+ XFR      plan-7            C23       0.020
+ XFR      plan-7            H20       0.020
+ XFR      plan-7            H21       0.020
+ XFR      plan-7            H22       0.020
+ XFR      plan-7            H23       0.020
+ XFR      plan-7            H24       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-XFF
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-XFF  1 SG      2 C14       .           1.810    0.020
+#
+data_link_CYS-XFR
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-XFR  1 SG      2 C14       .           1.810    0.020
+# ------------------------------------------------------

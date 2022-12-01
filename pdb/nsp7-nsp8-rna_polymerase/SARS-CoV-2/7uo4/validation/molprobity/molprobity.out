@@ -1,0 +1,138 @@
+
+=============================== Model properties ==============================
+
+  Overall:
+    Number of atoms = 12470  (anisotropic = 0)
+    B_iso: mean =  34.4  max = 175.2  min =   4.4
+  Macromolecules:
+    Number of atoms = 12343  (anisotropic = 0)
+    B_iso: mean =  34.6  max = 175.2  min =   4.4
+  Ligands:
+    Number of atoms = 36  (anisotropic = 0)
+    B_iso: mean =  16.7  max =  52.4  min =  15.2
+    1 total B-factor or occupancy problem(s) detected
+  Waters:
+    Number of atoms = 91  (anisotropic = 0)
+    B_iso: mean =  13.5  max =  33.5  min =   6.6
+    1 total B-factor or occupancy problem(s) detected
+
+============================= Geometry restraints =============================
+
+
+                        ----------Bond lengths----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    0.033 (Z=  2.325)
+  Mean delta:    0.005 (Z=  0.228)
+
+                        ----------Bond angles----------                        
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000 (Z=  0.000)
+  Max. delta:    7.767 (Z=  3.267)
+  Mean delta:    0.911 (Z=  0.442)
+
+                      ----------Dihedral angles----------                      
+
+  atoms                   ideal    model    delta   sigma  residual   deviation
+   D  60  GLU  CB     
+   D  60  GLU  CG     
+   D  60  GLU  CD     
+   D  60  GLU  OE1         0.00  -142.21   142.21  3.00e+01  1.91e+01   4.7*sigma
+   A 922  GLU  CB     
+   A 922  GLU  CG     
+   A 922  GLU  CD     
+   A 922  GLU  OE1         0.00  -130.99   130.99  3.00e+01  1.77e+01   4.4*sigma
+
+  Min. delta:    0.001
+  Max. delta:  142.206
+  Mean delta:   11.898
+
+                       ----------Chiral volumes----------                      
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.141
+  Mean delta:    0.037
+
+                       ----------Planar groups----------                       
+
+  All restrained atoms within 4.0 sigma of ideal values.
+
+  Min. delta:    0.000
+  Max. delta:    0.035
+  Mean delta:    0.003
+
+============================ Molprobity validation ============================
+
+  
+  Geometry Restraints Library: GeoStd + Monomer Library
+  Deviations from Ideal Values.
+    Bond      :  0.005   0.033  12745
+    Angle     :  0.911   7.767  17615
+    Chirality :  0.037   0.141   2046
+    Planarity :  0.003   0.035   1997
+    Dihedral  : 11.898 142.206   4848
+    Min Nonbonded Distance : 1.163
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 7.28
+    Ramachandran Plot:
+      Outliers :  0.00 %
+      Allowed  :  7.17 %
+      Favored  : 92.83 %
+    Rotamer Outliers :  1.27 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 7.14 %
+      Cis-general     : 0.00 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.00 %
+  
+  Rama-Z (Ramachandran plot Z-score):
+  Interpretation: bad |Rama-Z| > 3; suspicious 2 < |Rama-Z| < 3; good |Rama-Z| < 2.
+  Scores for whole/helix/sheet/loop are scaled independently;
+  therefore, the values are not related in a simple manner.
+    whole: -1.06 (0.23), residues: 1366
+    helix:  0.57 (0.21), residues: 658
+    sheet: -2.50 (0.40), residues: 154
+    loop : -1.67 (0.25), residues: 554
+
+                     ----------Asn/Gln/His flips----------                     
+
+   A 168  ASN
+
+================================ RNA validation ===============================
+
+
+                        ----------Sugar pucker----------                       
+
+  residue                  delta   outlier   epsilon   outlier
+   P  24    C               73.3        no     108.2       yes
+   T 133    C               83.3        no     147.4       yes
+  2/69 pucker outliers present
+
+                  ----------Backbone torsion suites----------                  
+
+  Suite ID                 suite  suiteness  triaged angle
+     C P  25                  !!      0.000  epsilon-1
+     G T 134                  !!      0.000  epsilon-1
+  2 suites triaged and 0 incomplete leaving 68 suites
+  2/70 suite outliers present
+  Average suiteness: 0.802
+
+=================================== Summary ===================================
+
+  Ramachandran outliers =   0.00 %
+                favored =  92.83 %
+  Rotamer outliers      =   1.27 %
+  C-beta deviations     =     0
+  Clashscore            =   7.28
+  RMS(bonds)            =   0.0046
+  RMS(angles)           =   0.91
+  MolProbity score      =   1.93
+  Refinement program    = PHENIX
