@@ -3,7 +3,7 @@ data_7E7B
 _entry.id   7E7B 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.339 
+_audit_conform.dict_version    5.362 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,9 +11,9 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7E7B         ? ? 
-WWPDB D_1300018718 ? ? 
-EMDB  EMD-30998    ? ? 
+PDB   7E7B         pdb_00007e7b 10.2210/pdb7e7b/pdb 
+WWPDB D_1300018718 ?            ?                   
+EMDB  EMD-30998    ?            ?                   
 # 
 _pdbx_database_related.db_name        EMDB 
 _pdbx_database_related.details        
@@ -58,7 +58,7 @@ _citation.journal_id_CSD            0825
 _citation.journal_id_ISSN           1098-5514 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            95 
 _citation.language                  ? 
 _citation.page_first                ? 
 _citation.page_last                 ? 
@@ -75,16 +75,16 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Ma, J.'    1  ?                   
-primary 'Su, D.'    2  ?                   
-primary 'Sun, Y.'   3  ?                   
-primary 'Huang, X.' 4  ?                   
-primary 'Liang, Y.' 5  ?                   
-primary 'Fang, L.'  6  ?                   
-primary 'Ma, Y.'    7  ?                   
-primary 'Li, W.'    8  ?                   
-primary 'Liang, P.' 9  ?                   
-primary 'Zheng, S.' 10 0000-0002-7784-0177 
+primary 'Ma, J.'    1  ? 
+primary 'Su, D.'    2  ? 
+primary 'Sun, Y.'   3  ? 
+primary 'Huang, X.' 4  ? 
+primary 'Liang, Y.' 5  ? 
+primary 'Fang, L.'  6  ? 
+primary 'Ma, Y.'    7  ? 
+primary 'Li, W.'    8  ? 
+primary 'Liang, P.' 9  ? 
+primary 'Zheng, S.' 10 ? 
 # 
 _cell.angle_alpha                  90.00 
 _cell.angle_alpha_esd              ? 
@@ -1998,7 +1998,6 @@ _refine_ls_restr.pdbx_restraint_function
 _struct.entry_id                     7E7B 
 _struct.title                        
 'Cryo-EM structure of the SARS-CoV-2 furin site mutant S-Trimer from a subunit vaccine candidate' 
-_struct.pdbx_descriptor              'Spike glycoprotein,Collagen alpha-1(I) chain' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -35120,11 +35119,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-03-24 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-03-24 
+2 'Structure model' 1 1 2022-12-07 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -35133,6 +35135,34 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references'    
+2 2 'Structure model' 'Refinement description' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' citation                      
+2 2 'Structure model' citation_author               
+3 2 'Structure model' database_2                    
+4 2 'Structure model' pdbx_initial_refinement_model 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_citation.journal_volume'            
+2 2 'Structure model' '_citation_author.identifier_ORCID'   
+3 2 'Structure model' '_database_2.pdbx_DOI'                
+4 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
@@ -36888,6 +36918,11 @@ _pdbx_entity_nonpoly.comp_id
 4 '9-OCTADECENOIC ACID'                                                                                                    ELA 
 5 '2-hydroxyethyl 2-deoxy-3,5-bis-O-(2-hydroxyethyl)-6-O-(2-{[(9E)-octadec-9-enoyl]oxy}ethyl)-alpha-L-xylo-hexofuranoside' VCG 
 6 water                                                                                                                    HOH 
+# 
+_pdbx_initial_refinement_model.id               1 
+_pdbx_initial_refinement_model.type             'experimental model' 
+_pdbx_initial_refinement_model.source_name      PDB 
+_pdbx_initial_refinement_model.accession_code   6VXX 
 # 
 _pdbx_struct_assembly_auth_evidence.id                     1 
 _pdbx_struct_assembly_auth_evidence.assembly_id            1 
