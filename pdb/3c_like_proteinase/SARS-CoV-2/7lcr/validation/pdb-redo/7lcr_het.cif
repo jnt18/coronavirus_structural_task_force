@@ -1,0 +1,464 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+XTM      XTM '.                                   ' .                  58  30 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-XTM  CYS      .        .        XTM      .        .
+ bond_CYS-SG_=_XTM-C12
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_XTM
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ XTM           O30    O    O         0.000    -16.738   -9.735   -4.084
+ XTM           C20    C    C         0.000    -17.655  -10.304   -3.585
+ XTM           O21    O    O2        0.000    -18.923  -10.321   -4.175
+ XTM           C22    C    CH2       0.000    -19.112   -9.497   -5.290
+ XTM           H221   H    H         0.000    -18.432   -8.645   -5.225
+ XTM           H222   H    H         0.000    -20.143   -9.138   -5.300
+ XTM           C23    C    CR6       0.000    -18.830  -10.280   -6.573
+ XTM           C29    C    CR16      0.000    -18.273  -11.703   -6.513
+ XTM           H29    H    H         0.000    -18.075  -12.167   -5.555
+ XTM           C27    C    CR6       0.000    -18.034  -12.366   -7.628
+ XTM           F28    F    F         0.000    -17.535  -13.636   -7.574
+ XTM           C26    C    CR16      0.000    -18.313  -11.715   -8.982
+ XTM           H26    H    H         0.000    -18.116  -12.260   -9.897
+ XTM           C25    C    CR16      0.000    -18.794  -10.489   -9.034
+ XTM           H25    H    H         0.000    -18.993  -10.025   -9.992
+ XTM           C24    C    CR16      0.000    -19.071   -9.722   -7.742
+ XTM           H24    H    H         0.000    -19.467   -8.715   -7.787
+ XTM           N19    N    NH1       0.000    -17.463  -11.008   -2.339
+ XTM           HN19   H    H         0.000    -18.247  -11.405   -1.842
+ XTM           C14    C    CH1       0.000    -16.121  -11.129   -1.822
+ XTM           H14    H    H         0.000    -15.678  -10.130   -1.709
+ XTM           C15    C    CH2       0.000    -16.146  -11.833   -0.472
+ XTM           H151   H    H         0.000    -15.142  -11.778   -0.046
+ XTM           H152   H    H         0.000    -16.410  -12.879   -0.643
+ XTM           C16    C    CH1       0.000    -17.147  -11.205    0.496
+ XTM           H16    H    H         0.000    -18.159  -11.281    0.073
+ XTM           C18    C    CH3       0.000    -16.793   -9.734    0.701
+ XTM           H183   H    H         0.000    -15.816   -9.658    1.102
+ XTM           H182   H    H         0.000    -16.833   -9.228   -0.229
+ XTM           H181   H    H         0.000    -17.485   -9.294    1.372
+ XTM           C17    C    CH3       0.000    -17.103  -11.936    1.840
+ XTM           H173   H    H         0.000    -17.350  -12.956    1.697
+ XTM           H172   H    H         0.000    -16.129  -11.864    2.251
+ XTM           H171   H    H         0.000    -17.799  -11.495    2.506
+ XTM           C02    C    C         0.000    -15.262  -11.968   -2.777
+ XTM           O01    O    O         0.000    -15.760  -12.839   -3.408
+ XTM           N03    N    NH1       0.000    -13.836  -11.704   -2.897
+ XTM           HN03   H    H         0.000    -13.424  -10.964   -2.348
+ XTM           C04    C    CH1       0.000    -12.990  -12.482   -3.790
+ XTM           H04    H    H         0.000    -13.583  -13.283   -4.254
+ XTM           C12    C    C1        0.000    -11.837  -13.094   -2.992
+ XTM           H12    H    H         0.000    -11.577  -12.686   -2.030
+ XTM           O13    O    O         0.000    -11.225  -14.018   -3.426
+ XTM           C05    C    CH2       0.000    -12.424  -11.567   -4.877
+ XTM           H051   H    H         0.000    -11.704  -12.122   -5.482
+ XTM           H052   H    H         0.000    -11.926  -10.713   -4.412
+ XTM           C06    C    CH1       0.000    -13.581  -11.065   -5.779
+ XTM           H06    H    H         0.000    -14.312  -10.523   -5.162
+ XTM           C07    C    CH2       0.000    -14.255  -12.227   -6.433
+ XTM           H071   H    H         0.000    -15.248  -12.385   -6.006
+ XTM           H072   H    H         0.000    -13.659  -13.134   -6.313
+ XTM           C08    C    CH2       0.000    -14.384  -11.896   -7.911
+ XTM           H081   H    H         0.000    -15.430  -11.711   -8.165
+ XTM           H082   H    H         0.000    -14.005  -12.722   -8.516
+ XTM           N09    N    NH1       0.000    -13.574  -10.660   -8.184
+ XTM           HN09   H    H         0.000    -13.399  -10.251   -9.091
+ XTM           C10    C    C         0.000    -13.075  -10.147   -6.878
+ XTM           O11    O    O         0.000    -12.409   -9.183   -6.728
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ XTM      O30    n/a    C20    START
+ XTM      C20    O30    N19    .
+ XTM      O21    C20    C22    .
+ XTM      C22    O21    C23    .
+ XTM      H221   C22    .      .
+ XTM      H222   C22    .      .
+ XTM      C23    C22    C29    .
+ XTM      C29    C23    C27    .
+ XTM      H29    C29    .      .
+ XTM      C27    C29    C26    .
+ XTM      F28    C27    .      .
+ XTM      C26    C27    C25    .
+ XTM      H26    C26    .      .
+ XTM      C25    C26    C24    .
+ XTM      H25    C25    .      .
+ XTM      C24    C25    H24    .
+ XTM      H24    C24    .      .
+ XTM      N19    C20    C14    .
+ XTM      HN19   N19    .      .
+ XTM      C14    N19    C02    .
+ XTM      H14    C14    .      .
+ XTM      C15    C14    C16    .
+ XTM      H151   C15    .      .
+ XTM      H152   C15    .      .
+ XTM      C16    C15    C17    .
+ XTM      H16    C16    .      .
+ XTM      C18    C16    H181   .
+ XTM      H183   C18    .      .
+ XTM      H182   C18    .      .
+ XTM      H181   C18    .      .
+ XTM      C17    C16    H171   .
+ XTM      H173   C17    .      .
+ XTM      H172   C17    .      .
+ XTM      H171   C17    .      .
+ XTM      C02    C14    N03    .
+ XTM      O01    C02    .      .
+ XTM      N03    C02    C04    .
+ XTM      HN03   N03    .      .
+ XTM      C04    N03    C05    .
+ XTM      H04    C04    .      .
+ XTM      C12    C04    O13    .
+ XTM      H12    C12    .      .
+ XTM      O13    C12    .      .
+ XTM      C05    C04    C06    .
+ XTM      H051   C05    .      .
+ XTM      H052   C05    .      .
+ XTM      C06    C05    C07    .
+ XTM      H06    C06    .      .
+ XTM      C07    C06    C08    .
+ XTM      H071   C07    .      .
+ XTM      H072   C07    .      .
+ XTM      C08    C07    N09    .
+ XTM      H081   C08    .      .
+ XTM      H082   C08    .      .
+ XTM      N09    C08    C10    .
+ XTM      HN09   N09    .      .
+ XTM      C10    N09    O11    .
+ XTM      O11    C10    .      END
+ XTM      C10    C06    .    ADD
+ XTM      C24    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ XTM      C10    C06       single      1.500    0.020
+ XTM      C10    N09       single      1.330    0.020
+ XTM      O11    C10       double      1.220    0.020
+ XTM      C15    C14       single      1.524    0.020
+ XTM      C16    C15       single      1.524    0.020
+ XTM      C17    C16       single      1.524    0.020
+ XTM      N19    C20       single      1.330    0.020
+ XTM      O21    C20       single      1.454    0.020
+ XTM      C20    O30       double      1.220    0.020
+ XTM      C23    C22       single      1.511    0.020
+ XTM      C22    O21       single      1.426    0.020
+ XTM      C24    C23       double      1.390    0.020
+ XTM      C24    C25       single      1.390    0.020
+ XTM      C25    C26       double      1.390    0.020
+ XTM      C26    C27       single      1.390    0.020
+ XTM      C02    C14       single      1.500    0.020
+ XTM      N03    C02       single      1.330    0.020
+ XTM      O01    C02       double      1.220    0.020
+ XTM      C05    C04       single      1.524    0.020
+ XTM      C12    C04       single      1.510    0.020
+ XTM      C04    N03       single      1.450    0.020
+ XTM      C06    C05       single      1.524    0.020
+ XTM      C07    C06       single      1.524    0.020
+ XTM      C08    C07       single      1.524    0.020
+ XTM      N09    C08       single      1.450    0.020
+ XTM      O13    C12       double      1.220    0.020
+ XTM      C14    N19       single      1.450    0.020
+ XTM      C18    C16       single      1.524    0.020
+ XTM      C29    C23       single      1.390    0.020
+ XTM      C27    C29       double      1.390    0.020
+ XTM      F28    C27       single      1.345    0.020
+ XTM      H151   C15       single      1.092    0.020
+ XTM      H152   C15       single      1.092    0.020
+ XTM      H171   C17       single      1.059    0.020
+ XTM      H172   C17       single      1.059    0.020
+ XTM      H173   C17       single      1.059    0.020
+ XTM      H221   C22       single      1.092    0.020
+ XTM      H222   C22       single      1.092    0.020
+ XTM      H24    C24       single      1.083    0.020
+ XTM      H26    C26       single      1.083    0.020
+ XTM      H04    C04       single      1.099    0.020
+ XTM      H051   C05       single      1.092    0.020
+ XTM      H052   C05       single      1.092    0.020
+ XTM      H06    C06       single      1.099    0.020
+ XTM      H071   C07       single      1.092    0.020
+ XTM      H072   C07       single      1.092    0.020
+ XTM      H081   C08       single      1.092    0.020
+ XTM      H082   C08       single      1.092    0.020
+ XTM      H12    C12       single      1.077    0.020
+ XTM      H14    C14       single      1.099    0.020
+ XTM      H16    C16       single      1.099    0.020
+ XTM      H181   C18       single      1.059    0.020
+ XTM      H182   C18       single      1.059    0.020
+ XTM      H183   C18       single      1.059    0.020
+ XTM      H25    C25       single      1.083    0.020
+ XTM      H29    C29       single      1.083    0.020
+ XTM      HN03   N03       single      1.010    0.020
+ XTM      HN09   N09       single      1.010    0.020
+ XTM      HN19   N19       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ XTM      O30    C20    O21     119.000    3.000
+ XTM      O30    C20    N19     123.000    3.000
+ XTM      O21    C20    N19     118.000    3.000
+ XTM      C20    O21    C22     120.000    3.000
+ XTM      O21    C22    H221    109.470    3.000
+ XTM      O21    C22    H222    109.470    3.000
+ XTM      O21    C22    C23     109.470    3.000
+ XTM      H221   C22    H222    107.900    3.000
+ XTM      H221   C22    C23     109.470    3.000
+ XTM      H222   C22    C23     109.470    3.000
+ XTM      C22    C23    C29     120.000    3.000
+ XTM      C22    C23    C24     120.000    3.000
+ XTM      C29    C23    C24     120.000    3.000
+ XTM      C23    C29    H29     120.000    3.000
+ XTM      C23    C29    C27     120.000    3.000
+ XTM      H29    C29    C27     120.000    3.000
+ XTM      C29    C27    F28     120.000    3.000
+ XTM      C29    C27    C26     120.000    3.000
+ XTM      F28    C27    C26     120.000    3.000
+ XTM      C27    C26    H26     120.000    3.000
+ XTM      C27    C26    C25     120.000    3.000
+ XTM      H26    C26    C25     120.000    3.000
+ XTM      C26    C25    H25     120.000    3.000
+ XTM      C26    C25    C24     120.000    3.000
+ XTM      H25    C25    C24     120.000    3.000
+ XTM      C25    C24    H24     120.000    3.000
+ XTM      C25    C24    C23     120.000    3.000
+ XTM      H24    C24    C23     120.000    3.000
+ XTM      C20    N19    HN19    120.000    3.000
+ XTM      C20    N19    C14     121.500    3.000
+ XTM      HN19   N19    C14     118.500    3.000
+ XTM      N19    C14    H14     108.550    3.000
+ XTM      N19    C14    C15     110.000    3.000
+ XTM      N19    C14    C02     111.600    3.000
+ XTM      H14    C14    C15     108.340    3.000
+ XTM      H14    C14    C02     108.810    3.000
+ XTM      C15    C14    C02     109.470    3.000
+ XTM      C14    C15    H151    109.470    3.000
+ XTM      C14    C15    H152    109.470    3.000
+ XTM      C14    C15    C16     111.000    3.000
+ XTM      H151   C15    H152    107.900    3.000
+ XTM      H151   C15    C16     109.470    3.000
+ XTM      H152   C15    C16     109.470    3.000
+ XTM      C15    C16    H16     108.340    3.000
+ XTM      C15    C16    C18     111.000    3.000
+ XTM      C15    C16    C17     111.000    3.000
+ XTM      H16    C16    C18     108.340    3.000
+ XTM      H16    C16    C17     108.340    3.000
+ XTM      C18    C16    C17     111.000    3.000
+ XTM      C16    C18    H183    109.470    3.000
+ XTM      C16    C18    H182    109.470    3.000
+ XTM      C16    C18    H181    109.470    3.000
+ XTM      H183   C18    H182    109.470    3.000
+ XTM      H183   C18    H181    109.470    3.000
+ XTM      H182   C18    H181    109.470    3.000
+ XTM      C16    C17    H173    109.470    3.000
+ XTM      C16    C17    H172    109.470    3.000
+ XTM      C16    C17    H171    109.470    3.000
+ XTM      H173   C17    H172    109.470    3.000
+ XTM      H173   C17    H171    109.470    3.000
+ XTM      H172   C17    H171    109.470    3.000
+ XTM      C14    C02    O01     120.500    3.000
+ XTM      C14    C02    N03     116.500    3.000
+ XTM      O01    C02    N03     123.000    3.000
+ XTM      C02    N03    HN03    120.000    3.000
+ XTM      C02    N03    C04     121.500    3.000
+ XTM      HN03   N03    C04     118.500    3.000
+ XTM      N03    C04    H04     108.550    3.000
+ XTM      N03    C04    C12     111.600    3.000
+ XTM      N03    C04    C05     110.000    3.000
+ XTM      H04    C04    C12     108.810    3.000
+ XTM      H04    C04    C05     108.340    3.000
+ XTM      C12    C04    C05     109.470    3.000
+ XTM      C04    C12    H12     120.000    3.000
+ XTM      C04    C12    O13     120.500    3.000
+ XTM      H12    C12    O13     123.000    3.000
+ XTM      C04    C05    H051    109.470    3.000
+ XTM      C04    C05    H052    109.470    3.000
+ XTM      C04    C05    C06     111.000    3.000
+ XTM      H051   C05    H052    107.900    3.000
+ XTM      H051   C05    C06     109.470    3.000
+ XTM      H052   C05    C06     109.470    3.000
+ XTM      C05    C06    H06     108.340    3.000
+ XTM      C05    C06    C07     109.470    3.000
+ XTM      C05    C06    C10     109.470    3.000
+ XTM      H06    C06    C07     108.340    3.000
+ XTM      H06    C06    C10     108.810    3.000
+ XTM      C07    C06    C10     109.470    3.000
+ XTM      C06    C07    H071    109.470    3.000
+ XTM      C06    C07    H072    109.470    3.000
+ XTM      C06    C07    C08     111.000    3.000
+ XTM      H071   C07    H072    107.900    3.000
+ XTM      H071   C07    C08     109.470    3.000
+ XTM      H072   C07    C08     109.470    3.000
+ XTM      C07    C08    H081    109.470    3.000
+ XTM      C07    C08    H082    109.470    3.000
+ XTM      C07    C08    N09     112.000    3.000
+ XTM      H081   C08    H082    107.900    3.000
+ XTM      H081   C08    N09     109.470    3.000
+ XTM      H082   C08    N09     109.470    3.000
+ XTM      C08    N09    HN09    118.500    3.000
+ XTM      C08    N09    C10     121.500    3.000
+ XTM      HN09   N09    C10     120.000    3.000
+ XTM      N09    C10    O11     123.000    3.000
+ XTM      N09    C10    C06     116.500    3.000
+ XTM      O11    C10    C06     120.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ XTM      var_1            O30    C20    O21    C22               -7.992           20.000   3
+ XTM      var_2            C20    O21    C22    C23               92.633           20.000   3
+ XTM      var_3            O21    C22    C23    C29                0.000           20.000   2
+ XTM      CONST_1          C22    C23    C29    C27                0.000            0.000   0
+ XTM      CONST_2          C23    C29    C27    C26                0.000            0.000   0
+ XTM      CONST_3          C29    C27    C26    C25                0.000            0.000   0
+ XTM      CONST_4          C27    C26    C25    C24                0.000            0.000   0
+ XTM      CONST_5          C26    C25    C24    C23                0.000            0.000   0
+ XTM      CONST_6          C25    C24    C23    C22                0.000            0.000   0
+ XTM      var_4            O30    C20    N19    C14              180.000           20.000   2
+ XTM      var_5            C20    N19    C14    C02                0.000           20.000   3
+ XTM      var_6            N19    C14    C15    C16              180.000           20.000   3
+ XTM      var_7            C14    C15    C16    C17              180.000           20.000   3
+ XTM      var_8            C15    C16    C18    H181             180.000           20.000   3
+ XTM      var_9            C15    C16    C17    H171             180.000           20.000   3
+ XTM      var_10           N19    C14    C02    N03              180.000           20.000   3
+ XTM      var_11           C14    C02    N03    C04              180.000           20.000   2
+ XTM      var_12           C02    N03    C04    C05                0.000           20.000   3
+ XTM      var_13           N03    C04    C12    O13              161.143           20.000   3
+ XTM      var_14           N03    C04    C05    C06              180.000           20.000   3
+ XTM      var_15           C04    C05    C06    C07              180.000           20.000   3
+ XTM      var_16           C05    C06    C07    C08              180.000           20.000   3
+ XTM      var_17           C06    C07    C08    N09              180.000           20.000   3
+ XTM      var_18           C07    C08    N09    C10                0.000           20.000   3
+ XTM      var_19           C08    N09    C10    O11              180.000           20.000   2
+ XTM      var_20           N09    C10    C06    C05              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ XTM      chir_01          C04    C05    C12    N03       negativ
+ XTM      chir_02          C06    C10    C05    C07       positiv
+ XTM      chir_03          C14    C15    C02    N19       negativ
+ XTM      chir_04          C16    C15    C17    C18       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ XTM      plan-1            C10       0.020
+ XTM      plan-1            C06       0.020
+ XTM      plan-1            N09       0.020
+ XTM      plan-1            O11       0.020
+ XTM      plan-1            HN09      0.020
+ XTM      plan-2            C20       0.020
+ XTM      plan-2            N19       0.020
+ XTM      plan-2            O21       0.020
+ XTM      plan-2            O30       0.020
+ XTM      plan-2            HN19      0.020
+ XTM      plan-3            C24       0.020
+ XTM      plan-3            C23       0.020
+ XTM      plan-3            C25       0.020
+ XTM      plan-3            H24       0.020
+ XTM      plan-3            C26       0.020
+ XTM      plan-3            C27       0.020
+ XTM      plan-3            C29       0.020
+ XTM      plan-3            H26       0.020
+ XTM      plan-3            C22       0.020
+ XTM      plan-3            H25       0.020
+ XTM      plan-3            F28       0.020
+ XTM      plan-3            H29       0.020
+ XTM      plan-4            C02       0.020
+ XTM      plan-4            C14       0.020
+ XTM      plan-4            N03       0.020
+ XTM      plan-4            O01       0.020
+ XTM      plan-4            HN03      0.020
+ XTM      plan-5            C12       0.020
+ XTM      plan-5            C04       0.020
+ XTM      plan-5            O13       0.020
+ XTM      plan-5            H12       0.020
+ XTM      plan-6            N03       0.020
+ XTM      plan-6            C02       0.020
+ XTM      plan-6            C04       0.020
+ XTM      plan-6            HN03      0.020
+ XTM      plan-7            N09       0.020
+ XTM      plan-7            C10       0.020
+ XTM      plan-7            C08       0.020
+ XTM      plan-7            HN09      0.020
+ XTM      plan-8            N19       0.020
+ XTM      plan-8            C20       0.020
+ XTM      plan-8            C14       0.020
+ XTM      plan-8            HN19      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-XTM
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-XTM  1 SG      2 C12       .           2.040    0.020
+# ------------------------------------------------------
