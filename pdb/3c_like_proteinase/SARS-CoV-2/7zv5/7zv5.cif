@@ -32,7 +32,7 @@ _audit_author.name
 _audit_author.pdbx_ordinal 
 _audit_author.identifier_ORCID 
 'Rahimova, R.'  1 0000-0002-4992-842X 
-'Di micco, S.'  2 0000-0002-4688-1080 
+'Di Micco, S.'  2 0000-0002-4688-1080 
 'Marquez, J.A.' 3 0000-0002-3453-9261 
 # 
 _citation.abstract                  ? 
@@ -42,32 +42,49 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   FR 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_abbrev            Eur.J.Med.Chem. 
+_citation.journal_id_ASTM           EJMCA5 
+_citation.journal_id_CSD            0493 
+_citation.journal_id_ISSN           0223-5234 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            244 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Crystal structure of SARS Cov-2 main protease in complex with an inhibitor TRIP5' 
-_citation.year                      ? 
+_citation.page_first                114857 
+_citation.page_last                 114857 
+_citation.title                     'Rational design of the zonulin inhibitor AT1001 derivatives as potential anti SARS-CoV-2.' 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1016/j.ejmech.2022.114857 
+_citation.pdbx_database_id_PubMed   36332548 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
-_citation_author.citation_id        primary 
-_citation_author.name               'Rahimova, R.' 
-_citation_author.ordinal            1 
-_citation_author.identifier_ORCID   ? 
+loop_
+_citation_author.citation_id 
+_citation_author.name 
+_citation_author.ordinal 
+_citation_author.identifier_ORCID 
+primary 'Di Micco, S.'  1  ? 
+primary 'Rahimova, R.'  2  ? 
+primary 'Sala, M.'      3  ? 
+primary 'Scala, M.C.'   4  ? 
+primary 'Vivenzio, G.'  5  ? 
+primary 'Musella, S.'   6  ? 
+primary 'Andrei, G.'    7  ? 
+primary 'Remans, K.'    8  ? 
+primary 'Mammri, L.'    9  ? 
+primary 'Snoeck, R.'    10 ? 
+primary 'Bifulco, G.'   11 ? 
+primary 'Di Matteo, F.' 12 ? 
+primary 'Vestuto, V.'   13 ? 
+primary 'Campiglia, P.' 14 ? 
+primary 'Marquez, J.A.' 15 ? 
+primary 'Fasano, A.'    16 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -6672,11 +6689,14 @@ _pdbx_struct_oper_list.vector[3]
 2 'crystal symmetry operation' 2_555 -x,y,-z -1.0000000000 0.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000 
 0.0000000000 0.0000000000 0.0000000000 0.0000000000 -1.0000000000 0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-11-30 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-11-30 
+2 'Structure model' 1 1 2022-12-14 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -6685,6 +6705,42 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 2 'Structure model' 'Structure summary'   
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' audit_author    
+2 2 'Structure model' citation        
+3 2 'Structure model' citation_author 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_audit_author.name'                
+2  2 'Structure model' '_citation.country'                 
+3  2 'Structure model' '_citation.journal_abbrev'          
+4  2 'Structure model' '_citation.journal_id_ASTM'         
+5  2 'Structure model' '_citation.journal_id_CSD'          
+6  2 'Structure model' '_citation.journal_id_ISSN'         
+7  2 'Structure model' '_citation.journal_volume'          
+8  2 'Structure model' '_citation.page_first'              
+9  2 'Structure model' '_citation.page_last'               
+10 2 'Structure model' '_citation.pdbx_database_id_DOI'    
+11 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
+12 2 'Structure model' '_citation.title'                   
+13 2 'Structure model' '_citation.year'                    
 # 
 _pdbx_refine_tls.id               1 
 _pdbx_refine_tls.pdbx_refine_id   'X-RAY DIFFRACTION' 

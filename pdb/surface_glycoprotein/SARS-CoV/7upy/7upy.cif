@@ -3,7 +3,7 @@ data_7UPY
 _entry.id   7UPY 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.360 
+_audit_conform.dict_version    5.362 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -2566,7 +2566,7 @@ _refine.ls_abs_structure_Flack                   ?
 _refine.ls_abs_structure_Flack_esd               ? 
 _refine.ls_abs_structure_Rogers                  ? 
 _refine.ls_abs_structure_Rogers_esd              ? 
-_refine.ls_d_res_high                            3.44 
+_refine.ls_d_res_high                            3.1 
 _refine.ls_d_res_low                             396.00 
 _refine.ls_extinction_coef                       ? 
 _refine.ls_extinction_coef_esd                   ? 
@@ -2723,15 +2723,14 @@ _refine_ls_shell.pdbx_fsc_free
 'ELECTRON MICROSCOPY' 6.73 8.48   . . 132 212692 100.00 . . . 0.3094 . 0.3687 . . . . . . . . . . . 
 'ELECTRON MICROSCOPY' 8.49 396.00 . . 146 211210 99.00  . . . 0.3032 . 0.2755 . . . . . . . . . . . 
 # 
-_struct.entry_id                                   7UPY 
-_struct.title                                      
+_struct.entry_id                     7UPY 
+_struct.title                        
 'One RBD-up state of SARS-CoV-2 D614G spike in complex with the SP1-77 neutralizing antibody Fab fragment' 
-_struct.pdbx_structure_determination_methodology   ? 
-_struct.pdbx_model_details                         ? 
-_struct.pdbx_formula_weight                        ? 
-_struct.pdbx_formula_weight_method                 ? 
-_struct.pdbx_model_type_details                    ? 
-_struct.pdbx_CASP_flag                             N 
+_struct.pdbx_model_details           ? 
+_struct.pdbx_formula_weight          ? 
+_struct.pdbx_formula_weight_method   ? 
+_struct.pdbx_model_type_details      ? 
+_struct.pdbx_CASP_flag               N 
 # 
 _struct_keywords.entry_id        7UPY 
 _struct_keywords.text            'VIRAL PROTEIN' 
@@ -47515,11 +47514,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2022-08-10 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2022-08-10 
+2 'Structure model' 1 1 2022-12-14 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -47528,6 +47530,24 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Refinement description' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' pdbx_initial_refinement_model 
+2 2 'Structure model' refine                        
+# 
+_pdbx_audit_revision_item.ordinal             1 
+_pdbx_audit_revision_item.revision_ordinal    2 
+_pdbx_audit_revision_item.data_content_type   'Structure model' 
+_pdbx_audit_revision_item.item                '_refine.ls_d_res_high' 
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
@@ -49602,6 +49622,11 @@ _pdbx_entity_instance_feature.details
 _pdbx_entity_nonpoly.entity_id   7 
 _pdbx_entity_nonpoly.name        2-acetamido-2-deoxy-beta-D-glucopyranose 
 _pdbx_entity_nonpoly.comp_id     NAG 
+# 
+_pdbx_initial_refinement_model.id               1 
+_pdbx_initial_refinement_model.type             'experimental model' 
+_pdbx_initial_refinement_model.source_name      PDB 
+_pdbx_initial_refinement_model.accession_code   7KRR 
 # 
 _pdbx_struct_assembly_auth_evidence.id                     1 
 _pdbx_struct_assembly_auth_evidence.assembly_id            1 
