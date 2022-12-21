@@ -3,15 +3,17 @@ data_7B14
 _entry.id   7B14 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.342 
+_audit_conform.dict_version    5.362 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   7B14         
-WWPDB D_1292112464 
-EMDB  EMD-11978    
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   7B14         pdb_00007b14 10.2210/pdb7b14/pdb 
+WWPDB D_1292112464 ?            ?                   
+EMDB  EMD-11978    ?            ?                   
 # 
 _pdbx_database_related.db_name        EMDB 
 _pdbx_database_related.details        'Nanobody E bound to Spike-RBD in a localized reconstruction.' 
@@ -60,7 +62,7 @@ _citation.language                  ?
 _citation.page_first                ? 
 _citation.page_last                 ? 
 _citation.title                     
-'Structure-guided multivalent nanobodies block SARS-CoV-2 infection and suppress mutational escape.' 
+'Structure-guided multivalent nanobodies block SARS-CoV-2 infection and suppress mutational escape' 
 _citation.year                      2021 
 _citation.database_id_CSD           ? 
 _citation.pdbx_database_id_DOI      10.1126/science.abe6230 
@@ -728,7 +730,6 @@ _refine_ls_restr.pdbx_restraint_function
 # 
 _struct.entry_id                     7B14 
 _struct.title                        'Nanobody E bound to Spike-RBD in a localized reconstruction' 
-_struct.pdbx_descriptor              'Spike glycoprotein, Nanobody against SARS-CoV-2' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -3912,6 +3913,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2021-04-28 
 2 'Structure model' 1 1 2021-05-26 
 3 'Structure model' 2 0 2021-06-02 
+4 'Structure model' 2 1 2022-12-21 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -3934,6 +3936,7 @@ _pdbx_audit_revision_group.group
 6 3 'Structure model' 'Polymer sequence'     
 7 3 'Structure model' 'Source and taxonomy'  
 8 3 'Structure model' 'Structure summary'    
+9 4 'Structure model' 'Database references'  
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -3957,6 +3960,8 @@ _pdbx_audit_revision_category.category
 15 3 'Structure model' struct_ref_seq                  
 16 3 'Structure model' struct_ref_seq_dif              
 17 3 'Structure model' struct_sheet_range              
+18 4 'Structure model' citation                        
+19 4 'Structure model' database_2                      
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -3987,6 +3992,9 @@ _pdbx_audit_revision_item.item
 22 3 'Structure model' '_struct_ref_seq.seq_align_end'                 
 23 3 'Structure model' '_struct_sheet_range.beg_label_seq_id'          
 24 3 'Structure model' '_struct_sheet_range.end_label_seq_id'          
+25 4 'Structure model' '_citation.title'                               
+26 4 'Structure model' '_database_2.pdbx_DOI'                          
+27 4 'Structure model' '_database_2.pdbx_database_accession'           
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
