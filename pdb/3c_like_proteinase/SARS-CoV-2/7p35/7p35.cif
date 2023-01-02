@@ -3,7 +3,7 @@ data_7P35
 _entry.id   7P35 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.346 
+_audit_conform.dict_version    5.364 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -11,8 +11,16 @@ _database_2.database_id
 _database_2.database_code 
 _database_2.pdbx_database_accession 
 _database_2.pdbx_DOI 
-PDB   7P35         ? ? 
-WWPDB D_1292116077 ? ? 
+PDB   7P35         pdb_00007p35 10.2210/pdb7p35/pdb 
+WWPDB D_1292116077 ?            ?                   
+# 
+loop_
+_pdbx_database_related.content_type 
+_pdbx_database_related.db_id 
+_pdbx_database_related.db_name 
+_pdbx_database_related.details 
+unspecified 7ZQV PDB 'Structure of the SARS-CoV-2 main protease in complex with AG7404' 
+unspecified 7ZQW PDB 'Structure of the SARS-CoV-1 main protease in complex with AG7404' 
 # 
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_sf                  REL 
@@ -43,25 +51,26 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   NE 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_abbrev            'Antiviral Res.' 
+_citation.journal_id_ASTM           ARSRDR 
+_citation.journal_id_CSD            1136 
+_citation.journal_id_ISSN           0166-3542 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            208 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Structure of the SARS-CoV-2 3CL protease in complex with rupintrivir' 
-_citation.year                      ? 
+_citation.page_first                105458 
+_citation.page_last                 105458 
+_citation.title                     
+'Structure and inhibition of SARS-CoV-1 and SARS-CoV-2 main proteases by oral antiviral compound AG7404.' 
+_citation.year                      2022 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1016/j.antiviral.2022.105458 
+_citation.pdbx_database_id_PubMed   36336176 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -70,10 +79,15 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Fabrega-Ferrer, M.'  1 0000-0001-9471-0473 
-primary 'Herrera-Morande, A.' 2 ?                   
-primary 'Perez-Saavedra, J.'  3 0000-0003-0829-6056 
-primary 'Coll, M.'            4 0000-0003-4471-8674 
+primary 'Fabrega-Ferrer, M.'  1 ? 
+primary 'Herrera-Morande, A.' 2 ? 
+primary 'Muriel-Goni, S.'     3 ? 
+primary 'Perez-Saavedra, J.'  4 ? 
+primary 'Bueno, P.'           5 ? 
+primary 'Castro, V.'          6 ? 
+primary 'Garaigorta, U.'      7 ? 
+primary 'Gastaminza, P.'      8 ? 
+primary 'Coll, M.'            9 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1365,6 +1379,8 @@ _atom_sites.special_details             ?
 # 
 loop_
 _atom_type.symbol 
+_atom_type.pdbx_scat_Z 
+_atom_type.pdbx_N_electrons 
 _atom_type.scat_Cromer_Mann_a1 
 _atom_type.scat_Cromer_Mann_b1 
 _atom_type.scat_Cromer_Mann_a2 
@@ -1374,12 +1390,12 @@ _atom_type.scat_Cromer_Mann_b3
 _atom_type.scat_Cromer_Mann_a4 
 _atom_type.scat_Cromer_Mann_b4 
 _atom_type.scat_Cromer_Mann_c 
-C 2.310  20.844 1.020 10.208 1.589 0.569  0.865 51.651 0.216   
-F 3.539  10.282 2.641 4.294  1.517 0.262  1.024 26.148 0.304   
-H 0.493  10.511 0.323 26.126 0.140 3.142  0.041 57.800 0.003   
-N 12.222 0.006  3.135 9.893  2.014 28.997 1.167 0.583  -11.538 
-O 3.049  13.277 2.287 5.701  1.546 0.324  0.867 32.909 0.251   
-S 6.905  1.468  5.203 22.215 1.438 0.254  1.586 56.172 1.050   
+C 6  6  2.310  20.844 1.020 10.208 1.589 0.569  0.865 51.651 0.216   
+F 9  9  3.539  10.282 2.641 4.294  1.517 0.262  1.024 26.148 0.304   
+H 1  1  0.493  10.511 0.323 26.126 0.140 3.142  0.041 57.800 0.003   
+N 7  7  12.222 0.006  3.135 9.893  2.014 28.997 1.167 0.583  -11.538 
+O 8  8  3.049  13.277 2.287 5.701  1.546 0.324  0.867 32.909 0.251   
+S 16 16 6.905  1.468  5.203 22.215 1.438 0.254  1.586 56.172 1.050   
 # 
 loop_
 _atom_site.group_PDB 
@@ -6929,11 +6945,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2021-07-21 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2021-07-21 
+2 'Structure model' 1 1 2022-12-28 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -6942,6 +6961,47 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references'  
+2 2 'Structure model' 'Derived calculations' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' atom_type             
+2 2 'Structure model' citation              
+3 2 'Structure model' citation_author       
+4 2 'Structure model' database_2            
+5 2 'Structure model' pdbx_database_related 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_atom_type.pdbx_N_electrons'         
+2  2 'Structure model' '_atom_type.pdbx_scat_Z'              
+3  2 'Structure model' '_citation.country'                   
+4  2 'Structure model' '_citation.journal_abbrev'            
+5  2 'Structure model' '_citation.journal_id_ASTM'           
+6  2 'Structure model' '_citation.journal_id_CSD'            
+7  2 'Structure model' '_citation.journal_id_ISSN'           
+8  2 'Structure model' '_citation.journal_volume'            
+9  2 'Structure model' '_citation.page_first'                
+10 2 'Structure model' '_citation.page_last'                 
+11 2 'Structure model' '_citation.pdbx_database_id_DOI'      
+12 2 'Structure model' '_citation.pdbx_database_id_PubMed'   
+13 2 'Structure model' '_citation.title'                     
+14 2 'Structure model' '_citation.year'                      
+15 2 'Structure model' '_database_2.pdbx_DOI'                
+16 2 'Structure model' '_database_2.pdbx_database_accession' 
 # 
 loop_
 _software.citation_id 
