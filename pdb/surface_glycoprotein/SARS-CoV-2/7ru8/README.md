@@ -33,13 +33,13 @@ Primary map emd_24699.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 
 |   | Reported Resolution | Imposed Symmetry | Number of Particles |
 |---|-------------:|----------------:|--------------:|
-|   |3.16 Å|n/a|116459|
+|   |3.2 Å|n/a|398746|
 
 **Experiments**
 
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
-|   |1.3000 Å|40.0 Å|
+|   |1.0870 Å|50.0 Å|
 
 **Geometry validation (the lower, the better)**
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |

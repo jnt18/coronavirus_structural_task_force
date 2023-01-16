@@ -1,0 +1,519 @@
+global_
+_lib_name         ?
+_lib_version      ?
+_lib_update       ?
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+40I      40I '.                                   ' .                  67  34 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS40I   CYS      .        .        40I      .        .
+ bond_CYS-SG_=_40I-C02
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_40I
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 40I           O11    O    O         0.000     15.339   10.462   27.440
+ 40I           C10    C    CR6       0.000     16.469   10.143   27.580
+ 40I           N09    N    NR16      0.000     16.849    8.989   28.502
+ 40I           HN09   H    H         0.000     16.138    8.431   29.017
+ 40I           C08    C    CH2       0.000     18.339    8.710   28.617
+ 40I           H081   H    H         0.000     18.459    7.639   28.794
+ 40I           H082   H    H         0.000     18.710    9.264   29.482
+ 40I           C07    C    CR16      0.000     19.104    9.101   27.414
+ 40I           H07    H    H         0.000     19.715    8.406   26.851
+ 40I           C05    C    CR6       0.000     17.615   10.927   26.826
+ 40I           C06    C    CR16      0.000     18.962   10.497   27.056
+ 40I           H06    H    H         0.000     19.810   11.165   26.969
+ 40I           C04    C    CH2       0.000     17.291   10.871   25.264
+ 40I           H041   H    H         0.000     16.274   11.248   25.136
+ 40I           H042   H    H         0.000     17.328    9.820   24.968
+ 40I           C03    C    CH1       0.000     18.261   11.690   24.384
+ 40I           H03    H    H         0.000     19.266   11.245   24.406
+ 40I           C02    C    C1        0.000     17.712   11.703   22.948
+ 40I           H02    H    H         0.000     17.321   12.603   22.504
+ 40I           O01    O    O         0.000     17.738   10.671   22.346
+ 40I           N12    N    NH1       0.000     18.306   13.067   24.849
+ 40I           HN12   H    H         0.000     17.461   13.620   24.867
+ 40I           C13    C    C         0.000     19.570   13.654   25.290
+ 40I           O34    O    O         0.000     20.562   13.007   25.281
+ 40I           C14    C    CH1       0.000     19.583   15.099   25.752
+ 40I           H14    H    H         0.000     18.556   15.470   25.877
+ 40I           C15    C    CH2       0.000     20.324   15.922   24.690
+ 40I           H151   H    H         0.000     20.036   15.497   23.726
+ 40I           H152   H    H         0.000     21.388   15.745   24.861
+ 40I           C16    C    CH1       0.000     20.044   17.459   24.688
+ 40I           H16    H    H         0.000     19.056   17.613   24.231
+ 40I           C18    C    CH3       0.000     20.007   18.093   26.088
+ 40I           H183   H    H         0.000     19.242   17.639   26.664
+ 40I           H182   H    H         0.000     20.940   17.949   26.569
+ 40I           H181   H    H         0.000     19.813   19.132   26.003
+ 40I           C17    C    CH3       0.000     21.087   18.201   23.803
+ 40I           H173   H    H         0.000     22.065   18.032   24.180
+ 40I           H172   H    H         0.000     21.033   17.843   22.805
+ 40I           H171   H    H         0.000     20.888   19.244   23.809
+ 40I           N19    N    NH1       0.000     20.316   15.189   27.018
+ 40I           HN19   H    H         0.000     21.264   15.538   27.040
+ 40I           C20    C    C         0.000     19.648   14.763   28.252
+ 40I           O33    O    O         0.000     18.538   14.349   28.235
+ 40I           C21    C    CH1       0.000     20.410   14.879   29.576
+ 40I           H21    H    H         0.000     21.431   15.254   29.421
+ 40I           C22    C    CH1       0.000     20.413   13.520   30.239
+ 40I           H22    H    H         0.000     19.369   13.179   30.288
+ 40I           C23    C    CH3       0.000     20.917   13.643   31.676
+ 40I           H233   H    H         0.000     21.902   14.032   31.673
+ 40I           H232   H    H         0.000     20.282   14.295   32.219
+ 40I           H231   H    H         0.000     20.916   12.688   32.134
+ 40I           C24    C    CH3       0.000     21.180   12.508   29.399
+ 40I           H243   H    H         0.000     20.724   12.422   28.447
+ 40I           H242   H    H         0.000     22.181   12.833   29.283
+ 40I           H241   H    H         0.000     21.168   11.566   29.883
+ 40I           N25    N    NH1       0.000     19.654   15.750   30.435
+ 40I           HN25   H    H         0.000     18.678   15.568   30.619
+ 40I           C26    C    C         0.000     20.321   16.902   31.038
+ 40I           O32    O    O         0.000     21.469   17.095   30.805
+ 40I           C27    C    CR5       0.000     19.507   17.782   31.991
+ 40I           O31    O    O2        0.000     18.159   17.877   32.037
+ 40I           C30    C    CR15      0.000     17.796   18.733   33.026
+ 40I           H30    H    H         0.000     16.781   19.007   33.286
+ 40I           C29    C    CR15      0.000     18.952   19.199   33.651
+ 40I           H29    H    H         0.000     19.002   19.896   34.478
+ 40I           C28    C    CR15      0.000     20.032   18.596   33.007
+ 40I           H28    H    H         0.000     21.080   18.731   33.246
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 40I      O11    n/a    C10    START
+ 40I      C10    O11    C05    .
+ 40I      N09    C10    C08    .
+ 40I      HN09   N09    .      .
+ 40I      C08    N09    C07    .
+ 40I      H081   C08    .      .
+ 40I      H082   C08    .      .
+ 40I      C07    C08    H07    .
+ 40I      H07    C07    .      .
+ 40I      C05    C10    C04    .
+ 40I      C06    C05    H06    .
+ 40I      H06    C06    .      .
+ 40I      C04    C05    C03    .
+ 40I      H041   C04    .      .
+ 40I      H042   C04    .      .
+ 40I      C03    C04    N12    .
+ 40I      H03    C03    .      .
+ 40I      C02    C03    O01    .
+ 40I      H02    C02    .      .
+ 40I      O01    C02    .      .
+ 40I      N12    C03    C13    .
+ 40I      HN12   N12    .      .
+ 40I      C13    N12    C14    .
+ 40I      O34    C13    .      .
+ 40I      C14    C13    N19    .
+ 40I      H14    C14    .      .
+ 40I      C15    C14    C16    .
+ 40I      H151   C15    .      .
+ 40I      H152   C15    .      .
+ 40I      C16    C15    C17    .
+ 40I      H16    C16    .      .
+ 40I      C18    C16    H181   .
+ 40I      H183   C18    .      .
+ 40I      H182   C18    .      .
+ 40I      H181   C18    .      .
+ 40I      C17    C16    H171   .
+ 40I      H173   C17    .      .
+ 40I      H172   C17    .      .
+ 40I      H171   C17    .      .
+ 40I      N19    C14    C20    .
+ 40I      HN19   N19    .      .
+ 40I      C20    N19    C21    .
+ 40I      O33    C20    .      .
+ 40I      C21    C20    N25    .
+ 40I      H21    C21    .      .
+ 40I      C22    C21    C24    .
+ 40I      H22    C22    .      .
+ 40I      C23    C22    H231   .
+ 40I      H233   C23    .      .
+ 40I      H232   C23    .      .
+ 40I      H231   C23    .      .
+ 40I      C24    C22    H241   .
+ 40I      H243   C24    .      .
+ 40I      H242   C24    .      .
+ 40I      H241   C24    .      .
+ 40I      N25    C21    C26    .
+ 40I      HN25   N25    .      .
+ 40I      C26    N25    C27    .
+ 40I      O32    C26    .      .
+ 40I      C27    C26    O31    .
+ 40I      O31    C27    C30    .
+ 40I      C30    O31    C29    .
+ 40I      H30    C30    .      .
+ 40I      C29    C30    C28    .
+ 40I      H29    C29    .      .
+ 40I      C28    C29    H28    .
+ 40I      H28    C28    .      END
+ 40I      C27    C28    .    ADD
+ 40I      C07    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 40I      C27    C26       single      1.490    0.020
+ 40I      O32    C26       double      1.220    0.020
+ 40I      C26    N25       single      1.330    0.020
+ 40I      C27    C28       aromatic    1.387    0.020
+ 40I      O31    C27       single      1.370    0.020
+ 40I      C28    C29       aromatic    1.380    0.020
+ 40I      C29    C30       aromatic    1.380    0.020
+ 40I      C30    O31       single      1.380    0.020
+ 40I      N25    C21       single      1.450    0.020
+ 40I      C21    C20       single      1.500    0.020
+ 40I      C22    C21       single      1.524    0.020
+ 40I      O33    C20       double      1.220    0.020
+ 40I      C20    N19       single      1.330    0.020
+ 40I      C24    C22       single      1.524    0.020
+ 40I      C23    C22       single      1.524    0.020
+ 40I      N19    C14       single      1.450    0.020
+ 40I      C14    C13       single      1.500    0.020
+ 40I      C15    C14       single      1.524    0.020
+ 40I      O34    C13       double      1.220    0.020
+ 40I      C13    N12       single      1.330    0.020
+ 40I      C16    C15       single      1.524    0.020
+ 40I      C17    C16       single      1.524    0.020
+ 40I      C18    C16       single      1.524    0.020
+ 40I      C07    C06       aromatic    1.390    0.020
+ 40I      C07    C08       single      1.457    0.020
+ 40I      C03    C04       single      1.524    0.020
+ 40I      C02    C03       single      1.510    0.020
+ 40I      N12    C03       single      1.450    0.020
+ 40I      C06    C05       aromatic    1.390    0.020
+ 40I      C05    C10       single      1.487    0.020
+ 40I      N09    C10       single      1.337    0.020
+ 40I      C10    O11       double      1.250    0.020
+ 40I      C04    C05       single      1.511    0.020
+ 40I      O01    C02       double      1.220    0.020
+ 40I      C08    N09       single      1.462    0.020
+ 40I      H28    C28       single      1.083    0.020
+ 40I      H29    C29       single      1.083    0.020
+ 40I      H30    C30       single      1.083    0.020
+ 40I      HN25   N25       single      1.010    0.020
+ 40I      H21    C21       single      1.099    0.020
+ 40I      H22    C22       single      1.099    0.020
+ 40I      H241   C24       single      1.059    0.020
+ 40I      H242   C24       single      1.059    0.020
+ 40I      H243   C24       single      1.059    0.020
+ 40I      H231   C23       single      1.059    0.020
+ 40I      H232   C23       single      1.059    0.020
+ 40I      H233   C23       single      1.059    0.020
+ 40I      HN19   N19       single      1.010    0.020
+ 40I      H14    C14       single      1.099    0.020
+ 40I      H151   C15       single      1.092    0.020
+ 40I      H152   C15       single      1.092    0.020
+ 40I      H16    C16       single      1.099    0.020
+ 40I      H171   C17       single      1.059    0.020
+ 40I      H172   C17       single      1.059    0.020
+ 40I      H173   C17       single      1.059    0.020
+ 40I      H181   C18       single      1.059    0.020
+ 40I      H182   C18       single      1.059    0.020
+ 40I      H183   C18       single      1.059    0.020
+ 40I      H07    C07       single      1.083    0.020
+ 40I      H03    C03       single      1.099    0.020
+ 40I      H06    C06       single      1.083    0.020
+ 40I      H041   C04       single      1.092    0.020
+ 40I      H042   C04       single      1.092    0.020
+ 40I      H02    C02       single      1.077    0.020
+ 40I      H081   C08       single      1.092    0.020
+ 40I      H082   C08       single      1.092    0.020
+ 40I      HN12   N12       single      1.010    0.020
+ 40I      HN09   N09       single      1.040    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 40I      O11    C10    N09     120.000    3.000
+ 40I      O11    C10    C05     120.000    3.000
+ 40I      N09    C10    C05     120.000    3.000
+ 40I      C10    N09    HN09    120.000    3.000
+ 40I      C10    N09    C08     120.000    3.000
+ 40I      HN09   N09    C08     120.000    3.000
+ 40I      N09    C08    H081    109.500    3.000
+ 40I      N09    C08    H082    109.500    3.000
+ 40I      N09    C08    C07     109.500    3.000
+ 40I      H081   C08    H082    107.900    3.000
+ 40I      H081   C08    C07     109.470    3.000
+ 40I      H082   C08    C07     109.470    3.000
+ 40I      C08    C07    H07     120.000    3.000
+ 40I      C08    C07    C06     120.000    3.000
+ 40I      H07    C07    C06     120.000    3.000
+ 40I      C10    C05    C06     120.000    3.000
+ 40I      C10    C05    C04     120.000    3.000
+ 40I      C06    C05    C04     120.000    3.000
+ 40I      C05    C06    H06     120.000    3.000
+ 40I      C05    C06    C07     120.000    3.000
+ 40I      H06    C06    C07     120.000    3.000
+ 40I      C05    C04    H041    109.470    3.000
+ 40I      C05    C04    H042    109.470    3.000
+ 40I      C05    C04    C03     109.470    3.000
+ 40I      H041   C04    H042    107.900    3.000
+ 40I      H041   C04    C03     109.470    3.000
+ 40I      H042   C04    C03     109.470    3.000
+ 40I      C04    C03    H03     108.340    3.000
+ 40I      C04    C03    C02     109.470    3.000
+ 40I      C04    C03    N12     110.000    3.000
+ 40I      H03    C03    C02     108.810    3.000
+ 40I      H03    C03    N12     108.550    3.000
+ 40I      C02    C03    N12     111.600    3.000
+ 40I      C03    C02    H02     120.000    3.000
+ 40I      C03    C02    O01     120.500    3.000
+ 40I      H02    C02    O01     123.000    3.000
+ 40I      C03    N12    HN12    118.500    3.000
+ 40I      C03    N12    C13     121.500    3.000
+ 40I      HN12   N12    C13     120.000    3.000
+ 40I      N12    C13    O34     123.000    3.000
+ 40I      N12    C13    C14     116.500    3.000
+ 40I      O34    C13    C14     120.500    3.000
+ 40I      C13    C14    H14     108.810    3.000
+ 40I      C13    C14    C15     109.470    3.000
+ 40I      C13    C14    N19     111.600    3.000
+ 40I      H14    C14    C15     108.340    3.000
+ 40I      H14    C14    N19     108.550    3.000
+ 40I      C15    C14    N19     110.000    3.000
+ 40I      C14    C15    H151    109.470    3.000
+ 40I      C14    C15    H152    109.470    3.000
+ 40I      C14    C15    C16     111.000    3.000
+ 40I      H151   C15    H152    107.900    3.000
+ 40I      H151   C15    C16     109.470    3.000
+ 40I      H152   C15    C16     109.470    3.000
+ 40I      C15    C16    H16     108.340    3.000
+ 40I      C15    C16    C18     111.000    3.000
+ 40I      C15    C16    C17     111.000    3.000
+ 40I      H16    C16    C18     108.340    3.000
+ 40I      H16    C16    C17     108.340    3.000
+ 40I      C18    C16    C17     111.000    3.000
+ 40I      C16    C18    H183    109.470    3.000
+ 40I      C16    C18    H182    109.470    3.000
+ 40I      C16    C18    H181    109.470    3.000
+ 40I      H183   C18    H182    109.470    3.000
+ 40I      H183   C18    H181    109.470    3.000
+ 40I      H182   C18    H181    109.470    3.000
+ 40I      C16    C17    H173    109.470    3.000
+ 40I      C16    C17    H172    109.470    3.000
+ 40I      C16    C17    H171    109.470    3.000
+ 40I      H173   C17    H172    109.470    3.000
+ 40I      H173   C17    H171    109.470    3.000
+ 40I      H172   C17    H171    109.470    3.000
+ 40I      C14    N19    HN19    118.500    3.000
+ 40I      C14    N19    C20     121.500    3.000
+ 40I      HN19   N19    C20     120.000    3.000
+ 40I      N19    C20    O33     123.000    3.000
+ 40I      N19    C20    C21     116.500    3.000
+ 40I      O33    C20    C21     120.500    3.000
+ 40I      C20    C21    H21     108.810    3.000
+ 40I      C20    C21    C22     109.470    3.000
+ 40I      C20    C21    N25     111.600    3.000
+ 40I      H21    C21    C22     108.340    3.000
+ 40I      H21    C21    N25     108.550    3.000
+ 40I      C22    C21    N25     110.000    3.000
+ 40I      C21    C22    H22     108.340    3.000
+ 40I      C21    C22    C23     111.000    3.000
+ 40I      C21    C22    C24     111.000    3.000
+ 40I      H22    C22    C23     108.340    3.000
+ 40I      H22    C22    C24     108.340    3.000
+ 40I      C23    C22    C24     111.000    3.000
+ 40I      C22    C23    H233    109.470    3.000
+ 40I      C22    C23    H232    109.470    3.000
+ 40I      C22    C23    H231    109.470    3.000
+ 40I      H233   C23    H232    109.470    3.000
+ 40I      H233   C23    H231    109.470    3.000
+ 40I      H232   C23    H231    109.470    3.000
+ 40I      C22    C24    H243    109.470    3.000
+ 40I      C22    C24    H242    109.470    3.000
+ 40I      C22    C24    H241    109.470    3.000
+ 40I      H243   C24    H242    109.470    3.000
+ 40I      H243   C24    H241    109.470    3.000
+ 40I      H242   C24    H241    109.470    3.000
+ 40I      C21    N25    HN25    118.500    3.000
+ 40I      C21    N25    C26     121.500    3.000
+ 40I      HN25   N25    C26     120.000    3.000
+ 40I      N25    C26    O32     123.000    3.000
+ 40I      N25    C26    C27     120.000    3.000
+ 40I      O32    C26    C27     120.500    3.000
+ 40I      C26    C27    O31     108.000    3.000
+ 40I      C26    C27    C28     126.000    3.000
+ 40I      O31    C27    C28     108.000    3.000
+ 40I      C27    O31    C30     108.000    3.000
+ 40I      O31    C30    H30     126.000    3.000
+ 40I      O31    C30    C29     108.000    3.000
+ 40I      H30    C30    C29     126.000    3.000
+ 40I      C30    C29    H29     126.000    3.000
+ 40I      C30    C29    C28     108.000    3.000
+ 40I      H29    C29    C28     126.000    3.000
+ 40I      C29    C28    H28     126.000    3.000
+ 40I      C29    C28    C27     108.000    3.000
+ 40I      H28    C28    C27     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 40I      CONST_1          O11    C10    N09    C08                0.000            0.000   0
+ 40I      CONST_2          C10    N09    C08    C07              -27.804            0.000   0
+ 40I      CONST_3          N09    C08    C07    C06               57.344            0.000   0
+ 40I      CONST_4          C08    C07    C06    C05                0.000            0.000   0
+ 40I      CONST_5          O11    C10    C05    C04                0.000            0.000   0
+ 40I      CONST_6          C10    C05    C06    C07                0.000            0.000   0
+ 40I      var_1            C10    C05    C04    C03                0.000           20.000   2
+ 40I      var_2            C05    C04    C03    N12              180.000           20.000   3
+ 40I      var_3            C04    C03    C02    O01              -69.260           20.000   3
+ 40I      var_4            C04    C03    N12    C13                0.000           20.000   3
+ 40I      var_5            C03    N12    C13    C14              180.000           20.000   2
+ 40I      var_6            N12    C13    C14    N19              180.000           20.000   3
+ 40I      var_7            C13    C14    C15    C16              180.000           20.000   3
+ 40I      var_8            C14    C15    C16    C17              180.000           20.000   3
+ 40I      var_9            C15    C16    C18    H181             180.000           20.000   3
+ 40I      var_10           C15    C16    C17    H171             180.000           20.000   3
+ 40I      var_11           C13    C14    N19    C20                0.000           20.000   3
+ 40I      var_12           C14    N19    C20    C21              180.000           20.000   2
+ 40I      var_13           N19    C20    C21    N25              180.000           20.000   3
+ 40I      var_14           C20    C21    C22    C24              180.000           20.000   3
+ 40I      var_15           C21    C22    C23    H231             180.000           20.000   3
+ 40I      var_16           C21    C22    C24    H241             180.000           20.000   3
+ 40I      var_17           C20    C21    N25    C26                0.000           20.000   3
+ 40I      var_18           C21    N25    C26    C27              180.000           20.000   2
+ 40I      var_19           N25    C26    C27    O31              -21.809           20.000   3
+ 40I      CONST_7          C26    C27    C28    C29                0.000            0.000   0
+ 40I      CONST_8          C26    C27    O31    C30              178.731            0.000   0
+ 40I      CONST_9          C27    O31    C30    C29               -0.577            0.000   0
+ 40I      CONST_10         O31    C30    C29    C28                0.000            0.000   0
+ 40I      CONST_11         C30    C29    C28    C27                0.547            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 40I      chir_01          C21    N25    C20    C22       positiv
+ 40I      chir_02          C22    C21    C24    C23       negativ
+ 40I      chir_03          C14    N19    C13    C15       positiv
+ 40I      chir_04          C16    C15    C17    C18       positiv
+ 40I      chir_05          C03    C04    C02    N12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 40I      plan-1            C26       0.020
+ 40I      plan-1            C27       0.020
+ 40I      plan-1            O32       0.020
+ 40I      plan-1            N25       0.020
+ 40I      plan-1            HN25      0.020
+ 40I      plan-2            C27       0.020
+ 40I      plan-2            C26       0.020
+ 40I      plan-2            C28       0.020
+ 40I      plan-2            O31       0.020
+ 40I      plan-2            C29       0.020
+ 40I      plan-2            C30       0.020
+ 40I      plan-2            H28       0.020
+ 40I      plan-2            H29       0.020
+ 40I      plan-2            H30       0.020
+ 40I      plan-3            N25       0.020
+ 40I      plan-3            C26       0.020
+ 40I      plan-3            C21       0.020
+ 40I      plan-3            HN25      0.020
+ 40I      plan-4            C20       0.020
+ 40I      plan-4            C21       0.020
+ 40I      plan-4            O33       0.020
+ 40I      plan-4            N19       0.020
+ 40I      plan-4            HN19      0.020
+ 40I      plan-5            N19       0.020
+ 40I      plan-5            C20       0.020
+ 40I      plan-5            C14       0.020
+ 40I      plan-5            HN19      0.020
+ 40I      plan-6            C13       0.020
+ 40I      plan-6            C14       0.020
+ 40I      plan-6            O34       0.020
+ 40I      plan-6            N12       0.020
+ 40I      plan-6            HN12      0.020
+ 40I      plan-7            C07       0.020
+ 40I      plan-7            C06       0.020
+ 40I      plan-7            C08       0.020
+ 40I      plan-7            H07       0.020
+ 40I      plan-7            C10       0.020
+ 40I      plan-7            C05       0.020
+ 40I      plan-7            N09       0.020
+ 40I      plan-7            H06       0.020
+ 40I      plan-7            O11       0.020
+ 40I      plan-7            C04       0.020
+ 40I      plan-7            HN09      0.020
+ 40I      plan-8            C02       0.020
+ 40I      plan-8            C03       0.020
+ 40I      plan-8            O01       0.020
+ 40I      plan-8            H02       0.020
+ 40I      plan-9            N12       0.020
+ 40I      plan-9            C13       0.020
+ 40I      plan-9            C03       0.020
+ 40I      plan-9            HN12      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS40I
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS40I   1 SG      2 C02       .           1.765    0.020
+# ------------------------------------------------------
