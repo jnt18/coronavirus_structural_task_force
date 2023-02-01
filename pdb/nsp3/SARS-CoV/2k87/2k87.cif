@@ -3,16 +3,18 @@ data_2K87
 _entry.id   2K87 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.323 
+_audit_conform.dict_version    5.365 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
 _database_2.database_id 
 _database_2.database_code 
-PDB   2K87         
-RCSB  RCSB100798   
-WWPDB D_1000100798 
-BMRB  15723        
+_database_2.pdbx_database_accession 
+_database_2.pdbx_DOI 
+PDB   2K87         pdb_00002k87 10.2210/pdb2k87/pdb 
+RCSB  RCSB100798   ?            ?                   
+WWPDB D_1000100798 ?            ?                   
+BMRB  15723        ?            ?                   
 # 
 loop_
 _pdbx_database_related.content_type 
@@ -33,6 +35,7 @@ _pdbx_database_status.status_code_sf                  ?
 _pdbx_database_status.pdb_format_compatible           Y 
 _pdbx_database_status.status_code_cs                  REL 
 _pdbx_database_status.methods_development_category    ? 
+_pdbx_database_status.status_code_nmr_data            ? 
 # 
 loop_
 _audit_author.name 
@@ -314,7 +317,7 @@ _struct_ref_seq_dif.pdbx_seq_db_name             UNP
 _struct_ref_seq_dif.pdbx_seq_db_accession_code   P0C6U8 
 _struct_ref_seq_dif.db_mon_id                    ? 
 _struct_ref_seq_dif.pdbx_seq_db_seq_num          ? 
-_struct_ref_seq_dif.details                      'leader sequence' 
+_struct_ref_seq_dif.details                      'expression tag' 
 _struct_ref_seq_dif.pdbx_auth_seq_num            1 
 _struct_ref_seq_dif.pdbx_ordinal                 1 
 # 
@@ -442,7 +445,6 @@ _exptl.method_details             ?
 # 
 _struct.entry_id                  2K87 
 _struct.title                     'NMR STRUCTURE OF A PUTATIVE RNA BINDING PROTEIN (SARS1) FROM SARS CORONAVIRUS' 
-_struct.pdbx_descriptor           'Non-structural protein 3 of Replicase polyprotein 1a' 
 _struct.pdbx_model_details        
 ;NMR structure of the SARS Coronavirus nsp3e domain   
 Nucleic Acid Binding NAB
@@ -37818,6 +37820,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2008-09-16 
 2 'Structure model' 1 1 2011-07-13 
 3 'Structure model' 1 2 2020-02-19 
+4 'Structure model' 1 3 2023-02-01 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -37837,6 +37840,7 @@ _pdbx_audit_revision_group.group
 3 3 'Structure model' 'Database references'       
 4 3 'Structure model' 'Derived calculations'      
 5 3 'Structure model' Other                       
+6 4 'Structure model' 'Database references'       
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -37849,6 +37853,8 @@ _pdbx_audit_revision_category.category
 4 3 'Structure model' pdbx_nmr_spectrometer 
 5 3 'Structure model' pdbx_struct_assembly  
 6 3 'Structure model' pdbx_struct_oper_list 
+7 4 'Structure model' database_2            
+8 4 'Structure model' struct_ref_seq_dif    
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -37858,6 +37864,9 @@ _pdbx_audit_revision_item.item
 1 3 'Structure model' '_pdbx_database_status.status_code_cs' 
 2 3 'Structure model' '_pdbx_nmr_software.name'              
 3 3 'Structure model' '_pdbx_nmr_spectrometer.model'         
+4 4 'Structure model' '_database_2.pdbx_DOI'                 
+5 4 'Structure model' '_database_2.pdbx_database_accession'  
+6 4 'Structure model' '_struct_ref_seq_dif.details'          
 # 
 loop_
 _pdbx_nmr_exptl_sample.component 
