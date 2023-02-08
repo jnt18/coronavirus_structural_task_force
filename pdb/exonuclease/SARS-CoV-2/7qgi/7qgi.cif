@@ -3,7 +3,7 @@ data_7QGI
 _entry.id   7QGI 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.359 
+_audit_conform.dict_version    5.366 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -43,25 +43,27 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To Be Published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_abbrev            'Nucleic Acids Res.' 
+_citation.journal_id_ASTM           NARHAD 
+_citation.journal_id_CSD            0389 
+_citation.journal_id_ISSN           1362-4962 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            51 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Crystal structure of SARS-CoV-2 NSP14 in the absence of NSP10' 
-_citation.year                      ? 
+_citation.page_first                475 
+_citation.page_last                 487 
+_citation.title                     
+;Crystal structures and fragment screening of SARS-CoV-2 NSP14 reveal details of exoribonuclease activation and mRNA capping and provide starting points for antiviral drug development.
+;
+_citation.year                      2023 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1093/nar/gkac1207 
+_citation.pdbx_database_id_PubMed   36546776 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -70,10 +72,9 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Newman, J.A.'    1 ? 
-primary 'Imprachim, N.'   2 ? 
-primary 'Yosaatmadja, Y.' 3 ? 
-primary 'Gileadi, O.'     4 ? 
+primary 'Imprachim, N.'   1 ? 
+primary 'Yosaatmadja, Y.' 2 ? 
+primary 'Newman, J.A.'    3 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1286,14 +1287,13 @@ _refine_ls_shell.pdbx_fsc_free
 'X-RAY DIFFRACTION' 3.09 3.88  . . 295 5610 99.60 . . . 0.2088 . 0.1700 . . . . . . . . . . . 
 'X-RAY DIFFRACTION' 3.92 61.10 . . 334 5788 99.66 . . . 0.1903 . 0.1686 . . . . . . . . . . . 
 # 
-_struct.entry_id                                   7QGI 
-_struct.title                                      'Crystal structure of SARS-CoV-2 NSP14 in the absence of NSP10' 
-_struct.pdbx_structure_determination_methodology   ? 
-_struct.pdbx_model_details                         ? 
-_struct.pdbx_formula_weight                        ? 
-_struct.pdbx_formula_weight_method                 ? 
-_struct.pdbx_model_type_details                    ? 
-_struct.pdbx_CASP_flag                             N 
+_struct.entry_id                     7QGI 
+_struct.title                        'Crystal structure of SARS-CoV-2 NSP14 in the absence of NSP10' 
+_struct.pdbx_model_details           ? 
+_struct.pdbx_formula_weight          ? 
+_struct.pdbx_formula_weight_method   ? 
+_struct.pdbx_model_type_details      ? 
+_struct.pdbx_CASP_flag               N 
 # 
 _struct_keywords.entry_id        7QGI 
 _struct_keywords.text            'Nuclease, Methyltransferase, SARS-CoV-2, NSP14, VIRAL PROTEIN' 
@@ -6788,6 +6788,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2022-01-26 
 2 'Structure model' 2 0 2022-07-20 
+3 'Structure model' 2 1 2023-02-08 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -6812,6 +6813,7 @@ _pdbx_audit_revision_group.group
 5 2 'Structure model' 'Derived calculations'   
 6 2 'Structure model' 'Refinement description' 
 7 2 'Structure model' 'Structure summary'      
+8 3 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -6839,6 +6841,8 @@ _pdbx_audit_revision_category.category
 19 2 'Structure model' struct_ref                      
 20 2 'Structure model' struct_ref_seq                  
 21 2 'Structure model' struct_ref_seq_dif              
+22 3 'Structure model' citation                        
+23 3 'Structure model' citation_author                 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -6877,6 +6881,18 @@ _pdbx_audit_revision_item.item
 30 2 'Structure model' '_struct_ref_seq.db_align_end'                                
 31 2 'Structure model' '_struct_ref_seq.pdbx_auth_seq_align_end'                     
 32 2 'Structure model' '_struct_ref_seq.seq_align_end'                               
+33 3 'Structure model' '_citation.country'                                           
+34 3 'Structure model' '_citation.journal_abbrev'                                    
+35 3 'Structure model' '_citation.journal_id_ASTM'                                   
+36 3 'Structure model' '_citation.journal_id_CSD'                                    
+37 3 'Structure model' '_citation.journal_id_ISSN'                                   
+38 3 'Structure model' '_citation.journal_volume'                                    
+39 3 'Structure model' '_citation.page_first'                                        
+40 3 'Structure model' '_citation.page_last'                                         
+41 3 'Structure model' '_citation.pdbx_database_id_DOI'                              
+42 3 'Structure model' '_citation.pdbx_database_id_PubMed'                           
+43 3 'Structure model' '_citation.title'                                             
+44 3 'Structure model' '_citation.year'                                              
 # 
 loop_
 _software.citation_id 

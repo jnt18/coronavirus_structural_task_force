@@ -3,7 +3,7 @@ data_7QIF
 _entry.id   7QIF 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.359 
+_audit_conform.dict_version    5.366 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -43,25 +43,27 @@ _citation.book_publisher            ?
 _citation.book_publisher_city       ? 
 _citation.book_title                ? 
 _citation.coordinate_linkage        ? 
-_citation.country                   ? 
+_citation.country                   UK 
 _citation.database_id_Medline       ? 
 _citation.details                   ? 
 _citation.id                        primary 
-_citation.journal_abbrev            'To be published' 
-_citation.journal_id_ASTM           ? 
-_citation.journal_id_CSD            0353 
-_citation.journal_id_ISSN           ? 
+_citation.journal_abbrev            'Nucleic Acids Res.' 
+_citation.journal_id_ASTM           NARHAD 
+_citation.journal_id_CSD            0389 
+_citation.journal_id_ISSN           1362-4962 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            51 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
-_citation.title                     'Crystal structure of SARS-CoV-2 NSP14 in complex with 7MeGpppG.' 
-_citation.year                      ? 
+_citation.page_first                475 
+_citation.page_last                 487 
+_citation.title                     
+;Crystal structures and fragment screening of SARS-CoV-2 NSP14 reveal details of exoribonuclease activation and mRNA capping and provide starting points for antiviral drug development.
+;
+_citation.year                      2023 
 _citation.database_id_CSD           ? 
-_citation.pdbx_database_id_DOI      ? 
-_citation.pdbx_database_id_PubMed   ? 
+_citation.pdbx_database_id_DOI      10.1093/nar/gkac1207 
+_citation.pdbx_database_id_PubMed   36546776 
 _citation.pdbx_database_id_patent   ? 
 _citation.unpublished_flag          ? 
 # 
@@ -70,10 +72,9 @@ _citation_author.citation_id
 _citation_author.name 
 _citation_author.ordinal 
 _citation_author.identifier_ORCID 
-primary 'Newman, J.A.'    1 ? 
-primary 'Imprachim, N.'   2 ? 
-primary 'Yosaatmadja, Y.' 3 ? 
-primary 'Gileadi, O.'     4 ? 
+primary 'Imprachim, N.'   1 ? 
+primary 'Yosaatmadja, Y.' 2 ? 
+primary 'Newman, J.A.'    3 ? 
 # 
 _cell.angle_alpha                  90.000 
 _cell.angle_alpha_esd              ? 
@@ -1298,14 +1299,13 @@ _refine_ls_shell.pdbx_fsc_free
 'X-RAY DIFFRACTION' 4.18 5.26  . . 235 2116 96.43 . . . 0.2125 . 0.1787 . . . . . . . . . . . 
 'X-RAY DIFFRACTION' 5.26 69.29 . . 254 2308 99.92 . . . 0.2476 . 0.2244 . . . . . . . . . . . 
 # 
-_struct.entry_id                                   7QIF 
-_struct.title                                      'Crystal structure of SARS-CoV-2 NSP14 in complex with 7MeGpppG.' 
-_struct.pdbx_structure_determination_methodology   ? 
-_struct.pdbx_model_details                         ? 
-_struct.pdbx_formula_weight                        ? 
-_struct.pdbx_formula_weight_method                 ? 
-_struct.pdbx_model_type_details                    ? 
-_struct.pdbx_CASP_flag                             N 
+_struct.entry_id                     7QIF 
+_struct.title                        'Crystal structure of SARS-CoV-2 NSP14 in complex with 7MeGpppG.' 
+_struct.pdbx_model_details           ? 
+_struct.pdbx_formula_weight          ? 
+_struct.pdbx_formula_weight_method   ? 
+_struct.pdbx_model_type_details      ? 
+_struct.pdbx_CASP_flag               N 
 # 
 _struct_keywords.entry_id        7QIF 
 _struct_keywords.text            'NSP14, SARS-CoV-2, Nuclease, Methyltransferase, VIRAL PROTEIN' 
@@ -6103,6 +6103,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2022-02-02 
 2 'Structure model' 2 0 2022-07-20 
+3 'Structure model' 2 1 2023-02-08 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -6128,6 +6129,7 @@ _pdbx_audit_revision_group.group
 5 2 'Structure model' Other                    
 6 2 'Structure model' 'Refinement description' 
 7 2 'Structure model' 'Structure summary'      
+8 3 'Structure model' 'Database references'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -6155,6 +6157,8 @@ _pdbx_audit_revision_category.category
 19 2 'Structure model' struct_sheet                    
 20 2 'Structure model' struct_sheet_order              
 21 2 'Structure model' struct_sheet_range              
+22 3 'Structure model' citation                        
+23 3 'Structure model' citation_author                 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -6182,6 +6186,18 @@ _pdbx_audit_revision_item.item
 19 2 'Structure model' '_refine_ls_shell.R_factor_R_free'       
 20 2 'Structure model' '_refine_ls_shell.R_factor_R_work'       
 21 2 'Structure model' '_struct_conn.pdbx_dist_value'           
+22 3 'Structure model' '_citation.country'                      
+23 3 'Structure model' '_citation.journal_abbrev'               
+24 3 'Structure model' '_citation.journal_id_ASTM'              
+25 3 'Structure model' '_citation.journal_id_CSD'               
+26 3 'Structure model' '_citation.journal_id_ISSN'              
+27 3 'Structure model' '_citation.journal_volume'               
+28 3 'Structure model' '_citation.page_first'                   
+29 3 'Structure model' '_citation.page_last'                    
+30 3 'Structure model' '_citation.pdbx_database_id_DOI'         
+31 3 'Structure model' '_citation.pdbx_database_id_PubMed'      
+32 3 'Structure model' '_citation.title'                        
+33 3 'Structure model' '_citation.year'                         
 # 
 loop_
 _space_group_symop.id 
