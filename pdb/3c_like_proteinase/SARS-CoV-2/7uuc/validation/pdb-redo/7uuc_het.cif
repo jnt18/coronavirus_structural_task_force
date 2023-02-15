@@ -1,0 +1,664 @@
+global_
+_lib_name         ?
+_lib_version      ?
+_lib_update       ?
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+81L      81L '.                                   ' .                  73  37 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+THRCSO   THR      .        .        CSO      .        .
+ bond_THR-C_=_CSO-N
+CSOGLY   CSO      .        .        GLY      .        .
+ bond_CSO-C_=_GLY-N
+CSOLYS   CSO      .        .        LYS      .        .
+ bond_CSO-OD_=_LYS-NZ
+ILECSO   ILE      .        .        CSO      .        .
+ bond_ILE-C_=_CSO-N
+CSOTHR   CSO      .        .        THR      .        .
+ bond_CSO-C_=_THR-N
+GLNCSO   GLN      .        .        CSO      .        .
+ bond_GLN-C_=_CSO-N
+CSOALA   CSO      .        .        ALA      .        .
+ bond_CSO-C_=_ALA-N
+CYS81L   CYS      .        .        81L      .        .
+ bond_CYS-SG_=_81L-C27
+CSOSER   CSO      .        .        SER      .        .
+ bond_CSO-C_=_SER-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_81L
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 81L           O38    O    O         0.000    -11.261   39.903  -19.213
+ 81L           C15    C    C         0.000    -10.778   39.780  -18.097
+ 81L           N16    N    N         0.000    -11.459   40.058  -16.977
+ 81L           C17    C    CH1       0.000    -12.816   40.596  -16.995
+ 81L           H17    H    H         0.000    -13.240   40.487  -18.003
+ 81L           C27    C    CH2       0.000    -12.783   42.075  -16.614
+ 81L           H271   H    H         0.000    -12.017   42.564  -17.218
+ 81L           H272   H    H         0.000    -12.514   42.148  -15.558
+ 81L           O28    O    OH1       0.000    -14.048   42.717  -16.832
+ 81L           HO28   H    H         0.000    -13.986   43.649  -16.579
+ 81L           C19    C    CH2       0.000    -13.670   39.812  -15.995
+ 81L           H191   H    H         0.000    -14.698   40.182  -16.013
+ 81L           H192   H    H         0.000    -13.262   39.924  -14.988
+ 81L           C20    C    CH1       0.000    -13.651   38.344  -16.391
+ 81L           H20    H    H         0.000    -12.615   37.981  -16.438
+ 81L           C24    C    C         0.000    -14.435   37.527  -15.413
+ 81L           O26    O    O         0.000    -14.270   37.633  -14.223
+ 81L           N23    N    N         0.000    -15.282   36.708  -16.033
+ 81L           C22    C    CH2       0.000    -15.246   36.870  -17.479
+ 81L           H221   H    H         0.000    -16.241   37.059  -17.887
+ 81L           H222   H    H         0.000    -14.812   35.997  -17.971
+ 81L           C21    C    CH2       0.000    -14.355   38.087  -17.719
+ 81L           H212   H    H         0.000    -14.945   38.964  -17.996
+ 81L           H211   H    H         0.000    -13.612   37.890  -18.494
+ 81L           C14    C    CH1       0.000     -9.365   39.272  -17.940
+ 81L           H14    H    H         0.000     -9.187   39.075  -16.874
+ 81L           C34    C    CH2       0.000     -8.342   40.308  -18.415
+ 81L           H341   H    H         0.000     -8.356   41.165  -17.739
+ 81L           H342   H    H         0.000     -8.603   40.637  -19.423
+ 81L           C8     C    CH1       0.000     -6.946   39.688  -18.425
+ 81L           H8     H    H         0.000     -6.727   38.813  -19.052
+ 81L           C29    C    CH2       0.000     -5.872   40.737  -18.149
+ 81L           H292   H    H         0.000     -6.065   41.775  -17.871
+ 81L           H291   H    H         0.000     -4.801   40.597  -18.310
+ 81L           C28    C    CH2       0.000     -6.343   39.816  -17.034
+ 81L           H282   H    H         0.000     -5.499   39.234  -16.660
+ 81L           H281   H    H         0.000     -6.762   40.412  -16.220
+ 81L           N13    N    N         0.000     -9.186   38.030  -18.668
+ 81L           C12    C    C         0.000     -9.747   36.903  -18.217
+ 81L           O33    O    O         0.000    -10.372   36.856  -17.166
+ 81L           C11    C    CH1       0.000     -9.545   35.677  -19.070
+ 81L           H11    H    H         0.000     -8.845   35.962  -19.868
+ 81L           C30    C    CT        0.000    -10.823   35.194  -19.762
+ 81L           C32    C    CH3       0.000    -11.450   36.349  -20.532
+ 81L           H323   H    H         0.000    -11.687   37.133  -19.861
+ 81L           H322   H    H         0.000    -10.766   36.701  -21.259
+ 81L           H321   H    H         0.000    -12.334   36.015  -21.011
+ 81L           C31    C    CH3       0.000    -10.486   34.068  -20.732
+ 81L           H313   H    H         0.000     -9.804   34.422  -21.461
+ 81L           H312   H    H         0.000    -10.049   33.263  -20.200
+ 81L           H311   H    H         0.000    -11.372   33.736  -21.209
+ 81L           C26    C    CH3       0.000    -11.836   34.651  -18.755
+ 81L           H263   H    H         0.000    -11.411   33.835  -18.230
+ 81L           H262   H    H         0.000    -12.096   35.414  -18.068
+ 81L           H261   H    H         0.000    -12.705   34.327  -19.267
+ 81L           N10    N    N         0.000     -8.903   34.620  -18.313
+ 81L           C9     C    C         0.000     -7.620   34.360  -18.550
+ 81L           O29    O    O         0.000     -7.043   34.793  -19.542
+ 81L           O8     O    O2        0.000     -6.876   33.533  -17.606
+ 81L           C7     C    CH2       0.000     -7.042   32.109  -17.526
+ 81L           H71    H    H         0.000     -8.113   31.926  -17.415
+ 81L           H72    H    H         0.000     -6.523   31.785  -16.622
+ 81L           C4     C    CR6       0.000     -6.512   31.328  -18.727
+ 81L           C3     C    CR16      0.000     -6.436   29.938  -18.641
+ 81L           H3     H    H         0.000     -6.746   29.440  -17.730
+ 81L           C2     C    CR16      0.000     -5.966   29.183  -19.715
+ 81L           H2     H    H         0.000     -5.911   28.105  -19.633
+ 81L           C5     C    CR16      0.000     -6.109   31.945  -19.916
+ 81L           H5     H    H         0.000     -6.163   33.023  -20.001
+ 81L           C6     C    CR16      0.000     -5.640   31.195  -20.993
+ 81L           H6     H    H         0.000     -5.333   31.690  -21.906
+ 81L           C1     C    CR16      0.000     -5.568   29.810  -20.892
+ 81L           H1     H    H         0.000     -5.204   29.222  -21.725
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 81L      O38    n/a    C15    START
+ 81L      C15    O38    C14    .
+ 81L      N16    C15    C17    .
+ 81L      C17    N16    C19    .
+ 81L      H17    C17    .      .
+ 81L      C27    C17    O28    .
+ 81L      H271   C27    .      .
+ 81L      H272   C27    .      .
+ 81L      O28    C27    HO28   .
+ 81L      HO28   O28    .      .
+ 81L      C19    C17    C20    .
+ 81L      H191   C19    .      .
+ 81L      H192   C19    .      .
+ 81L      C20    C19    C24    .
+ 81L      H20    C20    .      .
+ 81L      C24    C20    N23    .
+ 81L      O26    C24    .      .
+ 81L      N23    C24    C22    .
+ 81L      C22    N23    C21    .
+ 81L      H221   C22    .      .
+ 81L      H222   C22    .      .
+ 81L      C21    C22    H211   .
+ 81L      H212   C21    .      .
+ 81L      H211   C21    .      .
+ 81L      C14    C15    N13    .
+ 81L      H14    C14    .      .
+ 81L      C34    C14    C8     .
+ 81L      H341   C34    .      .
+ 81L      H342   C34    .      .
+ 81L      C8     C34    C28    .
+ 81L      H8     C8     .      .
+ 81L      C29    C8     H291   .
+ 81L      H292   C29    .      .
+ 81L      H291   C29    .      .
+ 81L      C28    C8     H281   .
+ 81L      H282   C28    .      .
+ 81L      H281   C28    .      .
+ 81L      N13    C14    C12    .
+ 81L      C12    N13    C11    .
+ 81L      O33    C12    .      .
+ 81L      C11    C12    N10    .
+ 81L      H11    C11    .      .
+ 81L      C30    C11    C26    .
+ 81L      C32    C30    H321   .
+ 81L      H323   C32    .      .
+ 81L      H322   C32    .      .
+ 81L      H321   C32    .      .
+ 81L      C31    C30    H311   .
+ 81L      H313   C31    .      .
+ 81L      H312   C31    .      .
+ 81L      H311   C31    .      .
+ 81L      C26    C30    H261   .
+ 81L      H263   C26    .      .
+ 81L      H262   C26    .      .
+ 81L      H261   C26    .      .
+ 81L      N10    C11    C9     .
+ 81L      C9     N10    O8     .
+ 81L      O29    C9     .      .
+ 81L      O8     C9     C7     .
+ 81L      C7     O8     C4     .
+ 81L      H71    C7     .      .
+ 81L      H72    C7     .      .
+ 81L      C4     C7     C5     .
+ 81L      C3     C4     C2     .
+ 81L      H3     C3     .      .
+ 81L      C2     C3     H2     .
+ 81L      H2     C2     .      .
+ 81L      C5     C4     C6     .
+ 81L      H5     C5     .      .
+ 81L      C6     C5     C1     .
+ 81L      H6     C6     .      .
+ 81L      C1     C6     H1     .
+ 81L      H1     C1     .      END
+ 81L      C1     C2     .    ADD
+ 81L      C20    C21    .    ADD
+ 81L      C28    C29    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 81L      C1     C2        aromatic    1.390    0.020
+ 81L      C1     C6        aromatic    1.390    0.020
+ 81L      C11    C12       single      1.500    0.020
+ 81L      C30    C11       single      1.524    0.020
+ 81L      N10    C11       single      1.455    0.020
+ 81L      C12    N13       deloc       1.330    0.020
+ 81L      O33    C12       double      1.220    0.020
+ 81L      C14    C15       single      1.500    0.020
+ 81L      C34    C14       single      1.524    0.020
+ 81L      N13    C14       single      1.455    0.020
+ 81L      N16    C15       deloc       1.330    0.020
+ 81L      C15    O38       double      1.220    0.020
+ 81L      C19    C17       single      1.524    0.020
+ 81L      C27    C17       single      1.524    0.020
+ 81L      C17    N16       single      1.455    0.020
+ 81L      C20    C19       single      1.524    0.020
+ 81L      C2     C3        aromatic    1.390    0.020
+ 81L      C20    C21       single      1.524    0.020
+ 81L      C24    C20       single      1.500    0.020
+ 81L      C21    C22       single      1.524    0.020
+ 81L      C22    N23       single      1.455    0.020
+ 81L      N23    C24       deloc       1.330    0.020
+ 81L      O26    C24       double      1.220    0.020
+ 81L      C26    C30       single      1.524    0.020
+ 81L      O28    C27       single      1.432    0.020
+ 81L      C28    C29       single      1.524    0.020
+ 81L      C28    C8        single      1.524    0.020
+ 81L      C29    C8        single      1.524    0.020
+ 81L      C3     C4        aromatic    1.390    0.020
+ 81L      C31    C30       single      1.524    0.020
+ 81L      C32    C30       single      1.524    0.020
+ 81L      C8     C34       single      1.524    0.020
+ 81L      C5     C4        aromatic    1.390    0.020
+ 81L      C4     C7        single      1.511    0.020
+ 81L      C6     C5        aromatic    1.390    0.020
+ 81L      C7     O8        single      1.426    0.020
+ 81L      C9     N10       deloc       1.330    0.020
+ 81L      O29    C9        double      1.220    0.020
+ 81L      O8     C9        single      1.454    0.020
+ 81L      H1     C1        single      1.083    0.020
+ 81L      H11    C11       single      1.099    0.020
+ 81L      H14    C14       single      1.099    0.020
+ 81L      H17    C17       single      1.099    0.020
+ 81L      H191   C19       single      1.092    0.020
+ 81L      H192   C19       single      1.092    0.020
+ 81L      H2     C2        single      1.083    0.020
+ 81L      H20    C20       single      1.099    0.020
+ 81L      H211   C21       single      1.092    0.020
+ 81L      H212   C21       single      1.092    0.020
+ 81L      H221   C22       single      1.092    0.020
+ 81L      H222   C22       single      1.092    0.020
+ 81L      H261   C26       single      1.059    0.020
+ 81L      H262   C26       single      1.059    0.020
+ 81L      H263   C26       single      1.059    0.020
+ 81L      H271   C27       single      1.092    0.020
+ 81L      H272   C27       single      1.092    0.020
+ 81L      H281   C28       single      1.092    0.020
+ 81L      H282   C28       single      1.092    0.020
+ 81L      H291   C29       single      1.092    0.020
+ 81L      H292   C29       single      1.092    0.020
+ 81L      H3     C3        single      1.083    0.020
+ 81L      H311   C31       single      1.059    0.020
+ 81L      H312   C31       single      1.059    0.020
+ 81L      H313   C31       single      1.059    0.020
+ 81L      H321   C32       single      1.059    0.020
+ 81L      H322   C32       single      1.059    0.020
+ 81L      H323   C32       single      1.059    0.020
+ 81L      H341   C34       single      1.092    0.020
+ 81L      H342   C34       single      1.092    0.020
+ 81L      H5     C5        single      1.083    0.020
+ 81L      H6     C6        single      1.083    0.020
+ 81L      H71    C7        single      1.092    0.020
+ 81L      H72    C7        single      1.092    0.020
+ 81L      H8     C8        single      1.099    0.020
+ 81L      HO28   O28       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 81L      O38    C15    N16     123.000    3.000
+ 81L      O38    C15    C14     120.500    3.000
+ 81L      N16    C15    C14     116.500    3.000
+ 81L      C15    N16    C17     121.000    3.000
+ 81L      N16    C17    H17     109.470    3.000
+ 81L      N16    C17    C27     105.000    3.000
+ 81L      N16    C17    C19     105.000    3.000
+ 81L      H17    C17    C27     108.340    3.000
+ 81L      H17    C17    C19     108.340    3.000
+ 81L      C27    C17    C19     109.470    3.000
+ 81L      C17    C27    H271    109.470    3.000
+ 81L      C17    C27    H272    109.470    3.000
+ 81L      C17    C27    O28     109.470    3.000
+ 81L      H271   C27    H272    107.900    3.000
+ 81L      H271   C27    O28     109.470    3.000
+ 81L      H272   C27    O28     109.470    3.000
+ 81L      C27    O28    HO28    109.470    3.000
+ 81L      C17    C19    H191    109.470    3.000
+ 81L      C17    C19    H192    109.470    3.000
+ 81L      C17    C19    C20     111.000    3.000
+ 81L      H191   C19    H192    107.900    3.000
+ 81L      H191   C19    C20     109.470    3.000
+ 81L      H192   C19    C20     109.470    3.000
+ 81L      C19    C20    H20     108.340    3.000
+ 81L      C19    C20    C24     109.470    3.000
+ 81L      C19    C20    C21     109.470    3.000
+ 81L      H20    C20    C24     108.810    3.000
+ 81L      H20    C20    C21     108.340    3.000
+ 81L      C24    C20    C21     109.470    3.000
+ 81L      C20    C24    O26     120.500    3.000
+ 81L      C20    C24    N23     116.500    3.000
+ 81L      O26    C24    N23     123.000    3.000
+ 81L      C24    N23    C22     127.000    3.000
+ 81L      N23    C22    H221    109.470    3.000
+ 81L      N23    C22    H222    109.470    3.000
+ 81L      N23    C22    C21     105.000    3.000
+ 81L      H221   C22    H222    107.900    3.000
+ 81L      H221   C22    C21     109.470    3.000
+ 81L      H222   C22    C21     109.470    3.000
+ 81L      C22    C21    H212    109.470    3.000
+ 81L      C22    C21    H211    109.470    3.000
+ 81L      C22    C21    C20     111.000    3.000
+ 81L      H212   C21    H211    107.900    3.000
+ 81L      H212   C21    C20     109.470    3.000
+ 81L      H211   C21    C20     109.470    3.000
+ 81L      C15    C14    H14     108.810    3.000
+ 81L      C15    C14    C34     109.470    3.000
+ 81L      C15    C14    N13     111.600    3.000
+ 81L      H14    C14    C34     108.340    3.000
+ 81L      H14    C14    N13     109.470    3.000
+ 81L      C34    C14    N13     105.000    3.000
+ 81L      C14    C34    H341    109.470    3.000
+ 81L      C14    C34    H342    109.470    3.000
+ 81L      C14    C34    C8      111.000    3.000
+ 81L      H341   C34    H342    107.900    3.000
+ 81L      H341   C34    C8      109.470    3.000
+ 81L      H342   C34    C8      109.470    3.000
+ 81L      C34    C8     H8      108.340    3.000
+ 81L      C34    C8     C29     109.470    3.000
+ 81L      C34    C8     C28     109.470    3.000
+ 81L      H8     C8     C29     108.340    3.000
+ 81L      H8     C8     C28     108.340    3.000
+ 81L      C29    C8     C28      60.000    3.000
+ 81L      C8     C29    H292    109.470    3.000
+ 81L      C8     C29    H291    109.470    3.000
+ 81L      C8     C29    C28      60.000    3.000
+ 81L      H292   C29    H291    107.900    3.000
+ 81L      H292   C29    C28     109.470    3.000
+ 81L      H291   C29    C28     109.470    3.000
+ 81L      C8     C28    H282    109.470    3.000
+ 81L      C8     C28    H281    109.470    3.000
+ 81L      C8     C28    C29      60.000    3.000
+ 81L      H282   C28    H281    107.900    3.000
+ 81L      H282   C28    C29     109.470    3.000
+ 81L      H281   C28    C29     109.470    3.000
+ 81L      C14    N13    C12     121.000    3.000
+ 81L      N13    C12    O33     123.000    3.000
+ 81L      N13    C12    C11     116.500    3.000
+ 81L      O33    C12    C11     120.500    3.000
+ 81L      C12    C11    H11     108.810    3.000
+ 81L      C12    C11    C30     109.470    3.000
+ 81L      C12    C11    N10     111.600    3.000
+ 81L      H11    C11    C30     108.340    3.000
+ 81L      H11    C11    N10     109.470    3.000
+ 81L      C30    C11    N10     109.500    3.000
+ 81L      C11    C30    C32     111.000    3.000
+ 81L      C11    C30    C31     111.000    3.000
+ 81L      C11    C30    C26     111.000    3.000
+ 81L      C32    C30    C31     111.000    3.000
+ 81L      C32    C30    C26     111.000    3.000
+ 81L      C31    C30    C26     111.000    3.000
+ 81L      C30    C32    H323    109.470    3.000
+ 81L      C30    C32    H322    109.470    3.000
+ 81L      C30    C32    H321    109.470    3.000
+ 81L      H323   C32    H322    109.470    3.000
+ 81L      H323   C32    H321    109.470    3.000
+ 81L      H322   C32    H321    109.470    3.000
+ 81L      C30    C31    H313    109.470    3.000
+ 81L      C30    C31    H312    109.470    3.000
+ 81L      C30    C31    H311    109.470    3.000
+ 81L      H313   C31    H312    109.470    3.000
+ 81L      H313   C31    H311    109.470    3.000
+ 81L      H312   C31    H311    109.470    3.000
+ 81L      C30    C26    H263    109.470    3.000
+ 81L      C30    C26    H262    109.470    3.000
+ 81L      C30    C26    H261    109.470    3.000
+ 81L      H263   C26    H262    109.470    3.000
+ 81L      H263   C26    H261    109.470    3.000
+ 81L      H262   C26    H261    109.470    3.000
+ 81L      C11    N10    C9      121.000    3.000
+ 81L      N10    C9     O29     123.000    3.000
+ 81L      N10    C9     O8      120.000    3.000
+ 81L      O29    C9     O8      119.000    3.000
+ 81L      C9     O8     C7      120.000    3.000
+ 81L      O8     C7     H71     109.470    3.000
+ 81L      O8     C7     H72     109.470    3.000
+ 81L      O8     C7     C4      109.470    3.000
+ 81L      H71    C7     H72     107.900    3.000
+ 81L      H71    C7     C4      109.470    3.000
+ 81L      H72    C7     C4      109.470    3.000
+ 81L      C7     C4     C3      120.000    3.000
+ 81L      C7     C4     C5      120.000    3.000
+ 81L      C3     C4     C5      120.000    3.000
+ 81L      C4     C3     H3      120.000    3.000
+ 81L      C4     C3     C2      120.000    3.000
+ 81L      H3     C3     C2      120.000    3.000
+ 81L      C3     C2     H2      120.000    3.000
+ 81L      C3     C2     C1      120.000    3.000
+ 81L      H2     C2     C1      120.000    3.000
+ 81L      C4     C5     H5      120.000    3.000
+ 81L      C4     C5     C6      120.000    3.000
+ 81L      H5     C5     C6      120.000    3.000
+ 81L      C5     C6     H6      120.000    3.000
+ 81L      C5     C6     C1      120.000    3.000
+ 81L      H6     C6     C1      120.000    3.000
+ 81L      C6     C1     H1      120.000    3.000
+ 81L      C6     C1     C2      120.000    3.000
+ 81L      H1     C1     C2      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 81L      CONST_1          O38    C15    N16    C17              180.000            0.000   0
+ 81L      var_1            C15    N16    C17    C19                0.000           20.000   3
+ 81L      var_2            N16    C17    C27    O28              180.000           20.000   3
+ 81L      var_3            C17    C27    O28    HO28             180.000           20.000   3
+ 81L      var_4            N16    C17    C19    C20              180.000           20.000   3
+ 81L      var_5            C17    C19    C20    C24              180.000           20.000   3
+ 81L      var_6            C19    C20    C21    C22              180.000           20.000   3
+ 81L      var_7            C19    C20    C24    N23              180.000           20.000   3
+ 81L      var_8            C20    C24    N23    C22              180.000           20.000   2
+ 81L      var_9            C24    N23    C22    C21               -7.540           20.000   3
+ 81L      var_10           N23    C22    C21    C20              180.000           20.000   3
+ 81L      var_11           O38    C15    C14    N13              180.000           20.000   3
+ 81L      var_12           C15    C14    C34    C8               180.000           20.000   3
+ 81L      var_13           C14    C34    C8     C28              180.000           20.000   3
+ 81L      var_14           C34    C8     C29    C28              180.000           20.000   3
+ 81L      var_15           C34    C8     C28    C29              180.000           20.000   3
+ 81L      var_16           C15    C14    N13    C12                0.000           20.000   3
+ 81L      CONST_2          C14    N13    C12    C11              180.000            0.000   0
+ 81L      var_17           N13    C12    C11    N10              180.000           20.000   3
+ 81L      var_18           C12    C11    C30    C26              -67.950           20.000   3
+ 81L      var_19           C11    C30    C32    H321             180.000           20.000   3
+ 81L      var_20           C11    C30    C31    H311             180.000           20.000   3
+ 81L      var_21           C11    C30    C26    H261             180.000           20.000   3
+ 81L      var_22           C12    C11    N10    C9                 0.000           20.000   3
+ 81L      CONST_3          C11    N10    C9     O8               180.000            0.000   0
+ 81L      var_23           N10    C9     O8     C7                74.997           20.000   3
+ 81L      var_24           C9     O8     C7     C4                69.266           20.000   3
+ 81L      var_25           O8     C7     C4     C5                 0.000           20.000   2
+ 81L      CONST_4          C7     C4     C3     C2                 0.000            0.000   0
+ 81L      CONST_5          C4     C3     C2     C1                 0.000            0.000   0
+ 81L      CONST_6          C7     C4     C5     C6                 0.000            0.000   0
+ 81L      CONST_7          C4     C5     C6     C1                 0.000            0.000   0
+ 81L      CONST_8          C5     C6     C1     C2                 0.000            0.000   0
+ 81L      CONST_9          C6     C1     C2     C3                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 81L      chir_01          C11    C12    C30    N10       positiv
+ 81L      chir_02          C14    C15    C34    N13       positiv
+ 81L      chir_03          C17    C19    C27    N16       negativ
+ 81L      chir_04          C20    C19    C21    C24       positiv
+ 81L      chir_05          C30    C11    C26    C31       positiv
+ 81L      chir_06          C8     C28    C29    C34       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 81L      plan-1            C1        0.020
+ 81L      plan-1            C2        0.020
+ 81L      plan-1            C6        0.020
+ 81L      plan-1            H1        0.020
+ 81L      plan-1            C3        0.020
+ 81L      plan-1            C4        0.020
+ 81L      plan-1            C5        0.020
+ 81L      plan-1            H2        0.020
+ 81L      plan-1            H3        0.020
+ 81L      plan-1            C7        0.020
+ 81L      plan-1            H5        0.020
+ 81L      plan-1            H6        0.020
+ 81L      plan-2            C12       0.020
+ 81L      plan-2            C11       0.020
+ 81L      plan-2            N13       0.020
+ 81L      plan-2            O33       0.020
+ 81L      plan-2            C14       0.020
+ 81L      plan-3            C15       0.020
+ 81L      plan-3            C14       0.020
+ 81L      plan-3            N16       0.020
+ 81L      plan-3            O38       0.020
+ 81L      plan-3            C17       0.020
+ 81L      plan-4            C24       0.020
+ 81L      plan-4            C20       0.020
+ 81L      plan-4            N23       0.020
+ 81L      plan-4            O26       0.020
+ 81L      plan-5            C9        0.020
+ 81L      plan-5            N10       0.020
+ 81L      plan-5            O29       0.020
+ 81L      plan-5            O8        0.020
+ 81L      plan-5            C11       0.020
+ 81L      plan-6            N23       0.020
+ 81L      plan-6            C22       0.020
+ 81L      plan-6            C24       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_THRCSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ THRCSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOGLY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOGLY   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOLYS
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOLYS   1 OD      2 NZ        .           1.460    0.020
+#
+data_link_ILECSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ILECSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOTHR
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOTHR   1 C       2 N         .           1.420    0.020
+#
+data_link_GLNCSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLNCSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOALA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOALA   1 C       2 N         .           1.420    0.020
+#
+data_link_CYS81L
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS81L   1 SG      2 C27       .           1.810    0.020
+#
+data_link_CSOSER
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOSER   1 C       2 N         .           1.420    0.020
+# ------------------------------------------------------

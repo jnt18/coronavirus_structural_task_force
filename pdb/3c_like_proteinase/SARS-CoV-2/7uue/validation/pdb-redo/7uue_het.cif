@@ -1,0 +1,696 @@
+global_
+_lib_name         ?
+_lib_version      ?
+_lib_update       ?
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+I65      I65 '.                                   ' .                  88  43 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+THRCSO   THR      .        .        CSO      .        .
+ bond_THR-C_=_CSO-N
+CSOGLY   CSO      .        .        GLY      .        .
+ bond_CSO-C_=_GLY-N
+CSOLYS   CSO      .        .        LYS      .        .
+ bond_CSO-OD_=_LYS-NZ
+ILECSO   ILE      .        .        CSO      .        .
+ bond_ILE-C_=_CSO-N
+CSOTHR   CSO      .        .        THR      .        .
+ bond_CSO-C_=_THR-N
+CYSI65   CYS      .        .        I65      .        .
+ bond_CYS-SG_=_I65-C17
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_I65
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ I65           O5     O    O         0.000    -14.848  -11.699  -16.166
+ I65           C15    C    C         0.000    -13.668  -11.976  -16.375
+ I65           C16    C    CH2       0.000    -12.823  -11.013  -17.205
+ I65           H161   H    H         0.000    -13.486  -10.295  -17.693
+ I65           H162   H    H         0.000    -12.284  -11.584  -17.965
+ I65           C17    C    CH3       0.000    -11.831  -10.273  -16.329
+ I65           H173   H    H         0.000    -12.353   -9.720  -15.592
+ I65           H172   H    H         0.000    -11.188  -10.970  -15.856
+ I65           H171   H    H         0.000    -11.257   -9.612  -16.925
+ I65           N3     N    N         0.000    -13.115  -13.095  -15.874
+ I65           C12    C    CH2       0.000    -13.885  -14.012  -15.024
+ I65           H121   H    H         0.000    -14.776  -13.504  -14.651
+ I65           H122   H    H         0.000    -13.270  -14.332  -14.180
+ I65           C13    C    CH2       0.000    -14.297  -15.226  -15.843
+ I65           H131   H    H         0.000    -13.422  -15.815  -16.127
+ I65           H132   H    H         0.000    -14.835  -14.920  -16.742
+ I65           C14    C    C         0.000    -15.213  -16.067  -14.961
+ I65           O4     O    O         0.000    -15.045  -16.093  -13.749
+ I65           N4     N    N         0.000    -16.195  -16.747  -15.554
+ I65           HN4    H    H         0.000    -16.787  -17.284  -15.033
+ I65           N2     N    N         0.000    -11.831  -13.386  -16.103
+ I65           C11    C    C         0.000    -11.441  -13.955  -17.253
+ I65           O3     O    O         0.000    -12.235  -14.275  -18.131
+ I65           C10    C    CH1       0.000     -9.962  -14.200  -17.422
+ I65           H10    H    H         0.000     -9.504  -14.248  -16.424
+ I65           C24    C    CH2       0.000     -9.313  -13.046  -18.192
+ I65           H241   H    H         0.000     -9.575  -12.115  -17.685
+ I65           H242   H    H         0.000     -9.730  -13.040  -19.201
+ I65           C25    C    CH1       0.000     -7.790  -13.175  -18.269
+ I65           H25    H    H         0.000     -7.538  -14.071  -18.853
+ I65           C30    C    CH2       0.000     -7.202  -11.945  -18.970
+ I65           H301   H    H         0.000     -7.450  -11.049  -18.398
+ I65           H302   H    H         0.000     -7.624  -11.864  -19.974
+ I65           C29    C    CH2       0.000     -5.676  -12.087  -19.065
+ I65           H291   H    H         0.000     -5.274  -11.203  -19.564
+ I65           H292   H    H         0.000     -5.444  -12.974  -19.658
+ I65           C28    C    CH2       0.000     -5.049  -12.221  -17.678
+ I65           H281   H    H         0.000     -5.222  -11.294  -17.128
+ I65           H282   H    H         0.000     -3.974  -12.377  -17.797
+ I65           C27    C    CH2       0.000     -5.654  -13.394  -16.906
+ I65           H271   H    H         0.000     -5.263  -13.375  -15.886
+ I65           H272   H    H         0.000     -5.350  -14.323  -17.394
+ I65           C26    C    CH2       0.000     -7.184  -13.310  -16.871
+ I65           H262   H    H         0.000     -7.460  -12.443  -16.268
+ I65           H261   H    H         0.000     -7.561  -14.218  -16.396
+ I65           N1     N    N         0.000     -9.714  -15.459  -18.095
+ I65           C9     C    C         0.000    -10.137  -16.588  -17.536
+ I65           O2     O    O         0.000    -10.798  -16.591  -16.503
+ I65           C8     C    CH1       0.000     -9.792  -17.867  -18.244
+ I65           H8     H    H         0.000     -9.241  -17.632  -19.166
+ I65           C18    C    CH1       0.000    -11.080  -18.593  -18.602
+ I65           H18    H    H         0.000    -11.578  -18.937  -17.685
+ I65           C60    C    CH3       0.000    -12.000  -17.638  -19.359
+ I65           H603   H    H         0.000    -12.221  -16.802  -18.748
+ I65           H602   H    H         0.000    -11.519  -17.310  -20.244
+ I65           H601   H    H         0.000    -12.899  -18.138  -19.611
+ I65           O6     O    O2        0.000    -10.720  -19.719  -19.406
+ I65           C20    C    CT        0.000    -11.338  -20.991  -19.137
+ I65           C23    C    CH3       0.000    -12.775  -20.871  -18.653
+ I65           H233   H    H         0.000    -12.799  -20.308  -17.756
+ I65           H232   H    H         0.000    -13.356  -20.384  -19.392
+ I65           H231   H    H         0.000    -13.168  -21.838  -18.475
+ I65           C22    C    CH3       0.000    -11.332  -21.756  -20.450
+ I65           H223   H    H         0.000    -11.879  -21.214  -21.176
+ I65           H222   H    H         0.000    -10.334  -21.881  -20.780
+ I65           H221   H    H         0.000    -11.778  -22.705  -20.306
+ I65           C21    C    CH3       0.000    -10.556  -21.755  -18.073
+ I65           H213   H    H         0.000     -9.566  -21.920  -18.412
+ I65           H212   H    H         0.000    -10.532  -21.190  -17.178
+ I65           H211   H    H         0.000    -11.026  -22.686  -17.890
+ I65           N      N    N         0.000     -8.992  -18.745  -17.425
+ I65           C7     C    C         0.000     -7.727  -19.062  -17.702
+ I65           O1     O    O         0.000     -7.081  -18.622  -18.647
+ I65           O      O    O2        0.000     -7.078  -19.998  -16.810
+ I65           C6     C    CH2       0.000     -5.751  -20.425  -17.100
+ I65           H61    H    H         0.000     -5.271  -20.788  -16.189
+ I65           H62    H    H         0.000     -5.174  -19.592  -17.506
+ I65           C3     C    CR6       0.000     -5.813  -21.541  -18.118
+ I65           C2     C    CR16      0.000     -5.607  -21.269  -19.473
+ I65           H2     H    H         0.000     -5.400  -20.258  -19.803
+ I65           C1     C    CR16      0.000     -5.670  -22.315  -20.398
+ I65           H1     H    H         0.000     -5.512  -22.111  -21.450
+ I65           C4     C    CR16      0.000     -6.081  -22.842  -17.697
+ I65           H4     H    H         0.000     -6.246  -23.047  -16.647
+ I65           C5     C    CR16      0.000     -6.136  -23.883  -18.629
+ I65           H5     H    H         0.000     -6.336  -24.895  -18.298
+ I65           C      C    CR16      0.000     -5.934  -23.622  -19.979
+ I65           H      H    H         0.000     -5.981  -24.427  -20.702
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ I65      O5     n/a    C15    START
+ I65      C15    O5     N3     .
+ I65      C16    C15    C17    .
+ I65      H161   C16    .      .
+ I65      H162   C16    .      .
+ I65      C17    C16    H171   .
+ I65      H173   C17    .      .
+ I65      H172   C17    .      .
+ I65      H171   C17    .      .
+ I65      N3     C15    N2     .
+ I65      C12    N3     C13    .
+ I65      H121   C12    .      .
+ I65      H122   C12    .      .
+ I65      C13    C12    C14    .
+ I65      H131   C13    .      .
+ I65      H132   C13    .      .
+ I65      C14    C13    N4     .
+ I65      O4     C14    .      .
+ I65      N4     C14    HN4    .
+ I65      HN4    N4     .      .
+ I65      N2     N3     C11    .
+ I65      C11    N2     C10    .
+ I65      O3     C11    .      .
+ I65      C10    C11    N1     .
+ I65      H10    C10    .      .
+ I65      C24    C10    C25    .
+ I65      H241   C24    .      .
+ I65      H242   C24    .      .
+ I65      C25    C24    C30    .
+ I65      H25    C25    .      .
+ I65      C30    C25    C29    .
+ I65      H301   C30    .      .
+ I65      H302   C30    .      .
+ I65      C29    C30    C28    .
+ I65      H291   C29    .      .
+ I65      H292   C29    .      .
+ I65      C28    C29    C27    .
+ I65      H281   C28    .      .
+ I65      H282   C28    .      .
+ I65      C27    C28    C26    .
+ I65      H271   C27    .      .
+ I65      H272   C27    .      .
+ I65      C26    C27    H261   .
+ I65      H262   C26    .      .
+ I65      H261   C26    .      .
+ I65      N1     C10    C9     .
+ I65      C9     N1     C8     .
+ I65      O2     C9     .      .
+ I65      C8     C9     N      .
+ I65      H8     C8     .      .
+ I65      C18    C8     O6     .
+ I65      H18    C18    .      .
+ I65      C60    C18    H601   .
+ I65      H603   C60    .      .
+ I65      H602   C60    .      .
+ I65      H601   C60    .      .
+ I65      O6     C18    C20    .
+ I65      C20    O6     C21    .
+ I65      C23    C20    H231   .
+ I65      H233   C23    .      .
+ I65      H232   C23    .      .
+ I65      H231   C23    .      .
+ I65      C22    C20    H221   .
+ I65      H223   C22    .      .
+ I65      H222   C22    .      .
+ I65      H221   C22    .      .
+ I65      C21    C20    H211   .
+ I65      H213   C21    .      .
+ I65      H212   C21    .      .
+ I65      H211   C21    .      .
+ I65      N      C8     C7     .
+ I65      C7     N      O      .
+ I65      O1     C7     .      .
+ I65      O      C7     C6     .
+ I65      C6     O      C3     .
+ I65      H61    C6     .      .
+ I65      H62    C6     .      .
+ I65      C3     C6     C4     .
+ I65      C2     C3     C1     .
+ I65      H2     C2     .      .
+ I65      C1     C2     H1     .
+ I65      H1     C1     .      .
+ I65      C4     C3     C5     .
+ I65      H4     C4     .      .
+ I65      C5     C4     C      .
+ I65      H5     C5     .      .
+ I65      C      C5     H      .
+ I65      H      C      .      END
+ I65      C      C1     .    ADD
+ I65      C25    C26    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ I65      C7     N         deloc       1.330    0.020
+ I65      N      C8        single      1.455    0.020
+ I65      C      C1        aromatic    1.390    0.020
+ I65      C      C5        aromatic    1.390    0.020
+ I65      C6     O         single      1.426    0.020
+ I65      O      C7        single      1.454    0.020
+ I65      C1     C2        aromatic    1.390    0.020
+ I65      C10    C11       single      1.500    0.020
+ I65      C24    C10       single      1.524    0.020
+ I65      N1     C10       single      1.455    0.020
+ I65      C11    N2        deloc       1.330    0.020
+ I65      O3     C11       double      1.220    0.020
+ I65      C13    C12       single      1.524    0.020
+ I65      C12    N3        single      1.455    0.020
+ I65      C14    C13       single      1.510    0.020
+ I65      N4     C14       deloc       1.330    0.020
+ I65      O4     C14       double      1.220    0.020
+ I65      C16    C15       single      1.510    0.020
+ I65      N3     C15       single      1.330    0.020
+ I65      C15    O5        double      1.220    0.020
+ I65      C17    C16       single      1.513    0.020
+ I65      C60    C18       single      1.524    0.020
+ I65      C18    C8        single      1.524    0.020
+ I65      O6     C18       single      1.426    0.020
+ I65      C2     C3        aromatic    1.390    0.020
+ I65      C21    C20       single      1.524    0.020
+ I65      C22    C20       single      1.524    0.020
+ I65      C23    C20       single      1.524    0.020
+ I65      C20    O6        single      1.426    0.020
+ I65      C25    C24       single      1.524    0.020
+ I65      C25    C26       single      1.524    0.020
+ I65      C30    C25       single      1.524    0.020
+ I65      C26    C27       single      1.524    0.020
+ I65      C27    C28       single      1.524    0.020
+ I65      C28    C29       single      1.524    0.020
+ I65      C29    C30       single      1.524    0.020
+ I65      C4     C3        aromatic    1.390    0.020
+ I65      C3     C6        single      1.511    0.020
+ I65      C5     C4        aromatic    1.390    0.020
+ I65      O1     C7        double      1.220    0.020
+ I65      C8     C9        single      1.500    0.020
+ I65      C9     N1        deloc       1.330    0.020
+ I65      O2     C9        double      1.220    0.020
+ I65      N2     N3        single      1.410    0.020
+ I65      H      C         single      1.083    0.020
+ I65      H1     C1        single      1.083    0.020
+ I65      H10    C10       single      1.099    0.020
+ I65      H121   C12       single      1.092    0.020
+ I65      H122   C12       single      1.092    0.020
+ I65      H131   C13       single      1.092    0.020
+ I65      H132   C13       single      1.092    0.020
+ I65      H161   C16       single      1.092    0.020
+ I65      H162   C16       single      1.092    0.020
+ I65      H171   C17       single      1.059    0.020
+ I65      H172   C17       single      1.059    0.020
+ I65      H173   C17       single      1.059    0.020
+ I65      H18    C18       single      1.099    0.020
+ I65      H2     C2        single      1.083    0.020
+ I65      H211   C21       single      1.059    0.020
+ I65      H212   C21       single      1.059    0.020
+ I65      H213   C21       single      1.059    0.020
+ I65      H221   C22       single      1.059    0.020
+ I65      H222   C22       single      1.059    0.020
+ I65      H223   C22       single      1.059    0.020
+ I65      H231   C23       single      1.059    0.020
+ I65      H232   C23       single      1.059    0.020
+ I65      H233   C23       single      1.059    0.020
+ I65      H241   C24       single      1.092    0.020
+ I65      H242   C24       single      1.092    0.020
+ I65      H25    C25       single      1.099    0.020
+ I65      H261   C26       single      1.092    0.020
+ I65      H262   C26       single      1.092    0.020
+ I65      H271   C27       single      1.092    0.020
+ I65      H272   C27       single      1.092    0.020
+ I65      H281   C28       single      1.092    0.020
+ I65      H282   C28       single      1.092    0.020
+ I65      H291   C29       single      1.092    0.020
+ I65      H292   C29       single      1.092    0.020
+ I65      H301   C30       single      1.092    0.020
+ I65      H302   C30       single      1.092    0.020
+ I65      H4     C4        single      1.083    0.020
+ I65      H5     C5        single      1.083    0.020
+ I65      H61    C6        single      1.092    0.020
+ I65      H62    C6        single      1.092    0.020
+ I65      H601   C60       single      1.059    0.020
+ I65      H602   C60       single      1.059    0.020
+ I65      H603   C60       single      1.059    0.020
+ I65      H8     C8        single      1.099    0.020
+ I65      HN4    N4        single      0.954    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ I65      O5     C15    C16     120.500    3.000
+ I65      O5     C15    N3      123.000    3.000
+ I65      C16    C15    N3      116.500    3.000
+ I65      C15    C16    H161    109.470    3.000
+ I65      C15    C16    H162    109.470    3.000
+ I65      C15    C16    C17     109.500    3.000
+ I65      H161   C16    H162    107.900    3.000
+ I65      H161   C16    C17     109.470    3.000
+ I65      H162   C16    C17     109.470    3.000
+ I65      C16    C17    H173    109.470    3.000
+ I65      C16    C17    H172    109.470    3.000
+ I65      C16    C17    H171    109.470    3.000
+ I65      H173   C17    H172    109.470    3.000
+ I65      H173   C17    H171    109.470    3.000
+ I65      H172   C17    H171    109.470    3.000
+ I65      C15    N3     C12     127.000    3.000
+ I65      C15    N3     N2      120.000    3.000
+ I65      C12    N3     N2      120.000    3.000
+ I65      N3     C12    H121    109.470    3.000
+ I65      N3     C12    H122    109.470    3.000
+ I65      N3     C12    C13     105.000    3.000
+ I65      H121   C12    H122    107.900    3.000
+ I65      H121   C12    C13     109.470    3.000
+ I65      H122   C12    C13     109.470    3.000
+ I65      C12    C13    H131    109.470    3.000
+ I65      C12    C13    H132    109.470    3.000
+ I65      C12    C13    C14     109.470    3.000
+ I65      H131   C13    H132    107.900    3.000
+ I65      H131   C13    C14     109.470    3.000
+ I65      H132   C13    C14     109.470    3.000
+ I65      C13    C14    O4      120.500    3.000
+ I65      C13    C14    N4      116.500    3.000
+ I65      O4     C14    N4      123.000    3.000
+ I65      C14    N4     HN4     120.000    3.000
+ I65      N3     N2     C11     120.000    3.000
+ I65      N2     C11    O3      123.000    3.000
+ I65      N2     C11    C10     116.500    3.000
+ I65      O3     C11    C10     120.500    3.000
+ I65      C11    C10    H10     108.810    3.000
+ I65      C11    C10    C24     109.470    3.000
+ I65      C11    C10    N1      111.600    3.000
+ I65      H10    C10    C24     108.340    3.000
+ I65      H10    C10    N1      109.470    3.000
+ I65      C24    C10    N1      105.000    3.000
+ I65      C10    C24    H241    109.470    3.000
+ I65      C10    C24    H242    109.470    3.000
+ I65      C10    C24    C25     111.000    3.000
+ I65      H241   C24    H242    107.900    3.000
+ I65      H241   C24    C25     109.470    3.000
+ I65      H242   C24    C25     109.470    3.000
+ I65      C24    C25    H25     108.340    3.000
+ I65      C24    C25    C30     109.470    3.000
+ I65      C24    C25    C26     109.470    3.000
+ I65      H25    C25    C30     108.340    3.000
+ I65      H25    C25    C26     108.340    3.000
+ I65      C30    C25    C26     109.470    3.000
+ I65      C25    C30    H301    109.470    3.000
+ I65      C25    C30    H302    109.470    3.000
+ I65      C25    C30    C29     111.000    3.000
+ I65      H301   C30    H302    107.900    3.000
+ I65      H301   C30    C29     109.470    3.000
+ I65      H302   C30    C29     109.470    3.000
+ I65      C30    C29    H291    109.470    3.000
+ I65      C30    C29    H292    109.470    3.000
+ I65      C30    C29    C28     111.000    3.000
+ I65      H291   C29    H292    107.900    3.000
+ I65      H291   C29    C28     109.470    3.000
+ I65      H292   C29    C28     109.470    3.000
+ I65      C29    C28    H281    109.470    3.000
+ I65      C29    C28    H282    109.470    3.000
+ I65      C29    C28    C27     111.000    3.000
+ I65      H281   C28    H282    107.900    3.000
+ I65      H281   C28    C27     109.470    3.000
+ I65      H282   C28    C27     109.470    3.000
+ I65      C28    C27    H271    109.470    3.000
+ I65      C28    C27    H272    109.470    3.000
+ I65      C28    C27    C26     111.000    3.000
+ I65      H271   C27    H272    107.900    3.000
+ I65      H271   C27    C26     109.470    3.000
+ I65      H272   C27    C26     109.470    3.000
+ I65      C27    C26    H262    109.470    3.000
+ I65      C27    C26    H261    109.470    3.000
+ I65      C27    C26    C25     111.000    3.000
+ I65      H262   C26    H261    107.900    3.000
+ I65      H262   C26    C25     109.470    3.000
+ I65      H261   C26    C25     109.470    3.000
+ I65      C10    N1     C9      121.000    3.000
+ I65      N1     C9     O2      123.000    3.000
+ I65      N1     C9     C8      116.500    3.000
+ I65      O2     C9     C8      120.500    3.000
+ I65      C9     C8     H8      108.810    3.000
+ I65      C9     C8     C18     109.470    3.000
+ I65      C9     C8     N       111.600    3.000
+ I65      H8     C8     C18     108.340    3.000
+ I65      H8     C8     N       109.470    3.000
+ I65      C18    C8     N       105.000    3.000
+ I65      C8     C18    H18     108.340    3.000
+ I65      C8     C18    C60     111.000    3.000
+ I65      C8     C18    O6      109.470    3.000
+ I65      H18    C18    C60     108.340    3.000
+ I65      H18    C18    O6      109.470    3.000
+ I65      C60    C18    O6      109.470    3.000
+ I65      C18    C60    H603    109.470    3.000
+ I65      C18    C60    H602    109.470    3.000
+ I65      C18    C60    H601    109.470    3.000
+ I65      H603   C60    H602    109.470    3.000
+ I65      H603   C60    H601    109.470    3.000
+ I65      H602   C60    H601    109.470    3.000
+ I65      C18    O6     C20     111.800    3.000
+ I65      O6     C20    C23     109.470    3.000
+ I65      O6     C20    C22     109.470    3.000
+ I65      O6     C20    C21     109.470    3.000
+ I65      C23    C20    C22     111.000    3.000
+ I65      C23    C20    C21     111.000    3.000
+ I65      C22    C20    C21     111.000    3.000
+ I65      C20    C23    H233    109.470    3.000
+ I65      C20    C23    H232    109.470    3.000
+ I65      C20    C23    H231    109.470    3.000
+ I65      H233   C23    H232    109.470    3.000
+ I65      H233   C23    H231    109.470    3.000
+ I65      H232   C23    H231    109.470    3.000
+ I65      C20    C22    H223    109.470    3.000
+ I65      C20    C22    H222    109.470    3.000
+ I65      C20    C22    H221    109.470    3.000
+ I65      H223   C22    H222    109.470    3.000
+ I65      H223   C22    H221    109.470    3.000
+ I65      H222   C22    H221    109.470    3.000
+ I65      C20    C21    H213    109.470    3.000
+ I65      C20    C21    H212    109.470    3.000
+ I65      C20    C21    H211    109.470    3.000
+ I65      H213   C21    H212    109.470    3.000
+ I65      H213   C21    H211    109.470    3.000
+ I65      H212   C21    H211    109.470    3.000
+ I65      C8     N      C7      121.000    3.000
+ I65      N      C7     O1      123.000    3.000
+ I65      N      C7     O       120.000    3.000
+ I65      O1     C7     O       119.000    3.000
+ I65      C7     O      C6      120.000    3.000
+ I65      O      C6     H61     109.470    3.000
+ I65      O      C6     H62     109.470    3.000
+ I65      O      C6     C3      109.470    3.000
+ I65      H61    C6     H62     107.900    3.000
+ I65      H61    C6     C3      109.470    3.000
+ I65      H62    C6     C3      109.470    3.000
+ I65      C6     C3     C2      120.000    3.000
+ I65      C6     C3     C4      120.000    3.000
+ I65      C2     C3     C4      120.000    3.000
+ I65      C3     C2     H2      120.000    3.000
+ I65      C3     C2     C1      120.000    3.000
+ I65      H2     C2     C1      120.000    3.000
+ I65      C2     C1     H1      120.000    3.000
+ I65      C2     C1     C       120.000    3.000
+ I65      H1     C1     C       120.000    3.000
+ I65      C3     C4     H4      120.000    3.000
+ I65      C3     C4     C5      120.000    3.000
+ I65      H4     C4     C5      120.000    3.000
+ I65      C4     C5     H5      120.000    3.000
+ I65      C4     C5     C       120.000    3.000
+ I65      H5     C5     C       120.000    3.000
+ I65      C5     C      H       120.000    3.000
+ I65      C5     C      C1      120.000    3.000
+ I65      H      C      C1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ I65      var_1            O5     C15    C16    C17              180.000           20.000   3
+ I65      var_2            C15    C16    C17    H171             180.000           20.000   3
+ I65      var_3            O5     C15    N3     N2               180.000           20.000   2
+ I65      var_4            C15    N3     C12    C13              102.978           20.000   3
+ I65      var_5            N3     C12    C13    C14              180.000           20.000   3
+ I65      var_6            C12    C13    C14    N4               180.000           20.000   3
+ I65      CONST_1          C13    C14    N4     HN4              180.000            0.000   0
+ I65      var_7            C15    N3     N2     C11              -81.171           20.000   3
+ I65      CONST_2          N3     N2     C11    C10              180.000            0.000   0
+ I65      var_8            N2     C11    C10    N1               180.000           20.000   3
+ I65      var_9            C11    C10    C24    C25              180.000           20.000   3
+ I65      var_10           C10    C24    C25    C30              180.000           20.000   3
+ I65      var_11           C24    C25    C26    C27              180.000           20.000   3
+ I65      var_12           C24    C25    C30    C29              180.000           20.000   3
+ I65      var_13           C25    C30    C29    C28              180.000           20.000   3
+ I65      var_14           C30    C29    C28    C27              180.000           20.000   3
+ I65      var_15           C29    C28    C27    C26              180.000           20.000   3
+ I65      var_16           C28    C27    C26    C25              180.000           20.000   3
+ I65      var_17           C11    C10    N1     C9                 0.000           20.000   3
+ I65      CONST_3          C10    N1     C9     C8               180.000            0.000   0
+ I65      var_18           N1     C9     C8     N                180.000           20.000   3
+ I65      var_19           C9     C8     C18    O6               180.000           20.000   3
+ I65      var_20           C8     C18    C60    H601             180.000           20.000   3
+ I65      var_21           C8     C18    O6     C20              135.690           20.000   3
+ I65      var_22           C18    O6     C20    C21              -87.270           20.000   3
+ I65      var_23           O6     C20    C23    H231             180.000           20.000   3
+ I65      var_24           O6     C20    C22    H221             180.000           20.000   3
+ I65      var_25           O6     C20    C21    H211             180.000           20.000   3
+ I65      var_26           C9     C8     N      C7                 0.000           20.000   3
+ I65      CONST_4          C8     N      C7     O                180.000            0.000   0
+ I65      var_27           N      C7     O      C6               176.706           20.000   3
+ I65      var_28           C7     O      C6     C3               -82.235           20.000   3
+ I65      var_29           O      C6     C3     C4                 0.000           20.000   2
+ I65      CONST_5          C6     C3     C2     C1                 0.000            0.000   0
+ I65      CONST_6          C3     C2     C1     C                  0.000            0.000   0
+ I65      CONST_7          C6     C3     C4     C5                 0.000            0.000   0
+ I65      CONST_8          C3     C4     C5     C                  0.000            0.000   0
+ I65      CONST_9          C4     C5     C      C1                 0.000            0.000   0
+ I65      CONST_10         C5     C      C1     C2                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ I65      chir_01          C10    C11    C24    N1        positiv
+ I65      chir_02          C18    C60    C8     O6        positiv
+ I65      chir_03          C20    C21    C22    C23       negativ
+ I65      chir_04          C25    C24    C26    C30       positiv
+ I65      chir_05          C8     N      C18    C9        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ I65      plan-1            N         0.020
+ I65      plan-1            C7        0.020
+ I65      plan-1            C8        0.020
+ I65      plan-1            O         0.020
+ I65      plan-1            O1        0.020
+ I65      plan-2            C         0.020
+ I65      plan-2            C1        0.020
+ I65      plan-2            C5        0.020
+ I65      plan-2            H         0.020
+ I65      plan-2            C2        0.020
+ I65      plan-2            C3        0.020
+ I65      plan-2            C4        0.020
+ I65      plan-2            H1        0.020
+ I65      plan-2            H2        0.020
+ I65      plan-2            C6        0.020
+ I65      plan-2            H4        0.020
+ I65      plan-2            H5        0.020
+ I65      plan-3            C11       0.020
+ I65      plan-3            C10       0.020
+ I65      plan-3            N2        0.020
+ I65      plan-3            O3        0.020
+ I65      plan-3            N3        0.020
+ I65      plan-4            C14       0.020
+ I65      plan-4            C13       0.020
+ I65      plan-4            N4        0.020
+ I65      plan-4            O4        0.020
+ I65      plan-4            HN4       0.020
+ I65      plan-5            C15       0.020
+ I65      plan-5            C16       0.020
+ I65      plan-5            N3        0.020
+ I65      plan-5            O5        0.020
+ I65      plan-6            C9        0.020
+ I65      plan-6            C8        0.020
+ I65      plan-6            N1        0.020
+ I65      plan-6            O2        0.020
+ I65      plan-6            C10       0.020
+ I65      plan-7            N3        0.020
+ I65      plan-7            C12       0.020
+ I65      plan-7            C15       0.020
+ I65      plan-7            N2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_THRCSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ THRCSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOGLY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOGLY   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOLYS
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOLYS   1 OD      2 NZ        .           1.460    0.020
+#
+data_link_ILECSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ILECSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOTHR
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOTHR   1 C       2 N         .           1.420    0.020
+#
+data_link_CYSI65
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYSI65   1 SG      2 C17       .           1.787    0.020
+# ------------------------------------------------------

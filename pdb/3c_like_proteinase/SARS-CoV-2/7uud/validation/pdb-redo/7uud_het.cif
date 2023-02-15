@@ -1,0 +1,693 @@
+global_
+_lib_name         ?
+_lib_version      ?
+_lib_update       ?
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+I71      I71 '.                                   ' .                  86  41 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+THRCSO   THR      .        .        CSO      .        .
+ bond_THR-C_=_CSO-N
+CSOGLY   CSO      .        .        GLY      .        .
+ bond_CSO-C_=_GLY-N
+CSOLYS   CSO      .        .        LYS      .        .
+ bond_CSO-OD_=_LYS-NZ
+ILECSO   ILE      .        .        CSO      .        .
+ bond_ILE-C_=_CSO-N
+CSOTHR   CSO      .        .        THR      .        .
+ bond_CSO-C_=_THR-N
+CYSI71   CYS      .        .        I71      .        .
+ bond_CYS-SG_=_I71-C8
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_I71
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ I71           O5     O    O         0.000    -14.815  -10.332  -16.212
+ I71           C1     C    C         0.000    -13.714  -10.146  -16.675
+ I71           N2     N    N         0.000    -13.393   -9.252  -17.605
+ I71           C3     C    CH2       0.000    -14.378   -8.507  -18.361
+ I71           H31    H    H         0.000    -14.513   -7.538  -17.876
+ I71           H32    H    H         0.000    -15.318   -9.062  -18.329
+ I71           C4     C    CH3       0.000    -13.960   -8.298  -19.805
+ I71           H43    H    H         0.000    -13.048   -7.759  -19.835
+ I71           H42    H    H         0.000    -13.829   -9.238  -20.275
+ I71           H41    H    H         0.000    -14.710   -7.750  -20.315
+ I71           C8     C    CH1       0.000    -12.562  -10.947  -16.181
+ I71           H8     H    H         0.000    -12.477  -10.797  -15.096
+ I71           O9     O    OH1       0.000    -11.365  -10.403  -16.815
+ I71           HO9    H    H         0.000    -10.584  -10.897  -16.521
+ I71           C17    C    CH1       0.000    -12.729  -12.448  -16.448
+ I71           H17    H    H         0.000    -13.001  -12.608  -17.501
+ I71           C19    C    CH2       0.000    -13.725  -13.192  -15.539
+ I71           H191   H    H         0.000    -14.701  -12.712  -15.633
+ I71           H192   H    H         0.000    -13.377  -13.108  -14.507
+ I71           C20    C    CH1       0.000    -13.843  -14.675  -15.922
+ I71           H20    H    H         0.000    -12.835  -15.095  -16.045
+ I71           C24    C    C         0.000    -14.616  -15.525  -14.931
+ I71           O26    O    O         0.000    -14.458  -15.462  -13.720
+ I71           N23    N    N         0.000    -15.464  -16.344  -15.550
+ I71           C22    C    CH2       0.000    -15.429  -16.175  -16.995
+ I71           H221   H    H         0.000    -16.430  -16.060  -17.415
+ I71           H222   H    H         0.000    -14.922  -17.006  -17.489
+ I71           C21    C    CH2       0.000    -14.631  -14.885  -17.213
+ I71           H212   H    H         0.000    -15.290  -14.031  -17.381
+ I71           H211   H    H         0.000    -13.939  -14.980  -18.052
+ I71           N16    N    N         0.000    -11.402  -12.971  -16.205
+ I71           C15    C    C         0.000    -10.632  -13.324  -17.230
+ I71           O38    O    O         0.000    -11.007  -13.275  -18.397
+ I71           C14    C    CH1       0.000     -9.268  -13.838  -16.897
+ I71           H14    H    H         0.000     -9.169  -14.017  -15.817
+ I71           C34    C    CH1       0.000     -8.202  -12.857  -17.388
+ I71           H34    H    H         0.000     -8.430  -11.783  -17.421
+ I71           C18    C    CT        0.000     -6.734  -13.320  -17.362
+ I71           C25    C    CH3       0.000     -5.748  -12.151  -17.310
+ I71           H253   H    H         0.000     -5.879  -11.539  -18.164
+ I71           H252   H    H         0.000     -5.922  -11.579  -16.436
+ I71           H251   H    H         0.000     -4.756  -12.525  -17.294
+ I71           C23    C    CH3       0.000     -6.431  -14.460  -16.391
+ I71           H233   H    H         0.000     -6.669  -14.158  -15.404
+ I71           H232   H    H         0.000     -7.010  -15.309  -16.649
+ I71           H231   H    H         0.000     -5.402  -14.707  -16.445
+ I71           C16    C    CH1       0.000     -7.586  -13.533  -18.611
+ I71           H16    H    H         0.000     -7.385  -12.949  -19.520
+ I71           N13    N    N         0.000     -9.100  -15.076  -17.647
+ I71           C13    C    CH2       0.000     -8.109  -14.960  -18.721
+ I71           H132   H    H         0.000     -8.558  -15.110  -19.705
+ I71           H131   H    H         0.000     -7.283  -15.663  -18.588
+ I71           C12    C    C         0.000     -9.818  -16.146  -17.310
+ I71           O33    O    O         0.000    -10.571  -16.159  -16.326
+ I71           C11    C    CH1       0.000     -9.614  -17.332  -18.222
+ I71           H11    H    H         0.000     -8.817  -17.056  -18.927
+ I71           C30    C    CT        0.000    -10.840  -17.711  -19.065
+ I71           C32    C    CH3       0.000    -10.523  -18.930  -19.926
+ I71           H323   H    H         0.000     -9.712  -18.707  -20.570
+ I71           H322   H    H         0.000    -10.263  -19.746  -19.302
+ I71           H321   H    H         0.000    -11.373  -19.185  -20.504
+ I71           C31    C    CH3       0.000    -12.026  -18.093  -18.185
+ I71           H313   H    H         0.000    -11.765  -18.923  -17.581
+ I71           H312   H    H         0.000    -12.285  -17.274  -17.566
+ I71           H311   H    H         0.000    -12.852  -18.348  -18.797
+ I71           C26    C    CH3       0.000    -11.219  -16.537  -19.957
+ I71           H263   H    H         0.000    -11.448  -15.697  -19.355
+ I71           H262   H    H         0.000    -10.408  -16.303  -20.596
+ I71           H261   H    H         0.000    -12.064  -16.796  -20.540
+ I71           N10    N    N         0.000     -9.133  -18.464  -17.474
+ I71           C9     C    C         0.000     -7.878  -18.881  -17.635
+ I71           O29    O    O         0.000     -7.248  -18.539  -18.634
+ I71           N8     N    N         0.000     -7.381  -19.651  -16.666
+ I71           C7     C    CT        0.000     -6.043  -20.250  -16.594
+ I71           C29    C    CH3       0.000     -4.938  -19.233  -16.844
+ I71           H293   H    H         0.000     -5.057  -18.813  -17.809
+ I71           H292   H    H         0.000     -4.993  -18.466  -16.115
+ I71           H291   H    H         0.000     -3.996  -19.713  -16.781
+ I71           C28    C    CH3       0.000     -5.845  -20.798  -15.191
+ I71           H283   H    H         0.000     -5.929  -20.009  -14.490
+ I71           H282   H    H         0.000     -6.583  -21.530  -14.991
+ I71           H281   H    H         0.000     -4.884  -21.236  -15.116
+ I71           C27    C    CH3       0.000     -5.919  -21.383  -17.591
+ I71           H273   H    H         0.000     -6.642  -22.124  -17.372
+ I71           H272   H    H         0.000     -6.079  -21.009  -18.568
+ I71           H271   H    H         0.000     -4.949  -21.803  -17.526
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ I71      O5     n/a    C1     START
+ I71      C1     O5     C8     .
+ I71      N2     C1     C3     .
+ I71      C3     N2     C4     .
+ I71      H31    C3     .      .
+ I71      H32    C3     .      .
+ I71      C4     C3     H41    .
+ I71      H43    C4     .      .
+ I71      H42    C4     .      .
+ I71      H41    C4     .      .
+ I71      C8     C1     C17    .
+ I71      H8     C8     .      .
+ I71      O9     C8     HO9    .
+ I71      HO9    O9     .      .
+ I71      C17    C8     N16    .
+ I71      H17    C17    .      .
+ I71      C19    C17    C20    .
+ I71      H191   C19    .      .
+ I71      H192   C19    .      .
+ I71      C20    C19    C24    .
+ I71      H20    C20    .      .
+ I71      C24    C20    N23    .
+ I71      O26    C24    .      .
+ I71      N23    C24    C22    .
+ I71      C22    N23    C21    .
+ I71      H221   C22    .      .
+ I71      H222   C22    .      .
+ I71      C21    C22    H211   .
+ I71      H212   C21    .      .
+ I71      H211   C21    .      .
+ I71      N16    C17    C15    .
+ I71      C15    N16    C14    .
+ I71      O38    C15    .      .
+ I71      C14    C15    N13    .
+ I71      H14    C14    .      .
+ I71      C34    C14    C16    .
+ I71      H34    C34    .      .
+ I71      C18    C34    C23    .
+ I71      C25    C18    H251   .
+ I71      H253   C25    .      .
+ I71      H252   C25    .      .
+ I71      H251   C25    .      .
+ I71      C23    C18    H231   .
+ I71      H233   C23    .      .
+ I71      H232   C23    .      .
+ I71      H231   C23    .      .
+ I71      C16    C34    H16    .
+ I71      H16    C16    .      .
+ I71      N13    C14    C12    .
+ I71      C13    N13    H131   .
+ I71      H132   C13    .      .
+ I71      H131   C13    .      .
+ I71      C12    N13    C11    .
+ I71      O33    C12    .      .
+ I71      C11    C12    N10    .
+ I71      H11    C11    .      .
+ I71      C30    C11    C26    .
+ I71      C32    C30    H321   .
+ I71      H323   C32    .      .
+ I71      H322   C32    .      .
+ I71      H321   C32    .      .
+ I71      C31    C30    H311   .
+ I71      H313   C31    .      .
+ I71      H312   C31    .      .
+ I71      H311   C31    .      .
+ I71      C26    C30    H261   .
+ I71      H263   C26    .      .
+ I71      H262   C26    .      .
+ I71      H261   C26    .      .
+ I71      N10    C11    C9     .
+ I71      C9     N10    N8     .
+ I71      O29    C9     .      .
+ I71      N8     C9     C7     .
+ I71      C7     N8     C27    .
+ I71      C29    C7     H291   .
+ I71      H293   C29    .      .
+ I71      H292   C29    .      .
+ I71      H291   C29    .      .
+ I71      C28    C7     H281   .
+ I71      H283   C28    .      .
+ I71      H282   C28    .      .
+ I71      H281   C28    .      .
+ I71      C27    C7     H271   .
+ I71      H273   C27    .      .
+ I71      H272   C27    .      .
+ I71      H271   C27    .      END
+ I71      C13    C16    .    ADD
+ I71      C16    C18    .    ADD
+ I71      C20    C21    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ I71      C8     C1        single      1.500    0.020
+ I71      N2     C1        deloc       1.330    0.020
+ I71      C1     O5        double      1.220    0.020
+ I71      C11    C12       single      1.500    0.020
+ I71      C30    C11       single      1.524    0.020
+ I71      N10    C11       single      1.455    0.020
+ I71      C12    N13       single      1.330    0.020
+ I71      O33    C12       deloc       1.220    0.020
+ I71      C13    C16       single      1.524    0.020
+ I71      C13    N13       single      1.455    0.020
+ I71      C14    C15       single      1.500    0.020
+ I71      C34    C14       single      1.524    0.020
+ I71      N13    C14       single      1.455    0.020
+ I71      C15    N16       deloc       1.330    0.020
+ I71      O38    C15       double      1.220    0.020
+ I71      C16    C18       single      1.524    0.020
+ I71      C16    C34       single      1.524    0.020
+ I71      C19    C17       single      1.524    0.020
+ I71      C17    C8        single      1.524    0.020
+ I71      N16    C17       single      1.455    0.020
+ I71      C23    C18       single      1.524    0.020
+ I71      C25    C18       single      1.524    0.020
+ I71      C18    C34       single      1.524    0.020
+ I71      C20    C19       single      1.524    0.020
+ I71      C20    C21       single      1.524    0.020
+ I71      C24    C20       single      1.500    0.020
+ I71      C21    C22       single      1.524    0.020
+ I71      C22    N23       single      1.455    0.020
+ I71      N23    C24       deloc       1.330    0.020
+ I71      O26    C24       double      1.220    0.020
+ I71      C26    C30       single      1.524    0.020
+ I71      C27    C7        single      1.524    0.020
+ I71      C28    C7        single      1.524    0.020
+ I71      C29    C7        single      1.524    0.020
+ I71      C4     C3        single      1.513    0.020
+ I71      C3     N2        single      1.455    0.020
+ I71      C31    C30       single      1.524    0.020
+ I71      C32    C30       single      1.524    0.020
+ I71      C7     N8        single      1.455    0.020
+ I71      O9     C8        single      1.432    0.020
+ I71      C9     N10       deloc       1.330    0.020
+ I71      N8     C9        deloc       1.330    0.020
+ I71      O29    C9        double      1.220    0.020
+ I71      H11    C11       single      1.099    0.020
+ I71      H131   C13       single      1.092    0.020
+ I71      H132   C13       single      1.092    0.020
+ I71      H14    C14       single      1.099    0.020
+ I71      H16    C16       single      1.099    0.020
+ I71      H17    C17       single      1.099    0.020
+ I71      H191   C19       single      1.092    0.020
+ I71      H192   C19       single      1.092    0.020
+ I71      H20    C20       single      1.099    0.020
+ I71      H211   C21       single      1.092    0.020
+ I71      H212   C21       single      1.092    0.020
+ I71      H221   C22       single      1.092    0.020
+ I71      H222   C22       single      1.092    0.020
+ I71      H231   C23       single      1.059    0.020
+ I71      H232   C23       single      1.059    0.020
+ I71      H233   C23       single      1.059    0.020
+ I71      H251   C25       single      1.059    0.020
+ I71      H252   C25       single      1.059    0.020
+ I71      H253   C25       single      1.059    0.020
+ I71      H261   C26       single      1.059    0.020
+ I71      H262   C26       single      1.059    0.020
+ I71      H263   C26       single      1.059    0.020
+ I71      H271   C27       single      1.059    0.020
+ I71      H272   C27       single      1.059    0.020
+ I71      H273   C27       single      1.059    0.020
+ I71      H281   C28       single      1.059    0.020
+ I71      H282   C28       single      1.059    0.020
+ I71      H283   C28       single      1.059    0.020
+ I71      H291   C29       single      1.059    0.020
+ I71      H292   C29       single      1.059    0.020
+ I71      H293   C29       single      1.059    0.020
+ I71      H31    C3        single      1.092    0.020
+ I71      H32    C3        single      1.092    0.020
+ I71      H311   C31       single      1.059    0.020
+ I71      H312   C31       single      1.059    0.020
+ I71      H313   C31       single      1.059    0.020
+ I71      H321   C32       single      1.059    0.020
+ I71      H322   C32       single      1.059    0.020
+ I71      H323   C32       single      1.059    0.020
+ I71      H34    C34       single      1.099    0.020
+ I71      H41    C4        single      1.059    0.020
+ I71      H42    C4        single      1.059    0.020
+ I71      H43    C4        single      1.059    0.020
+ I71      H8     C8        single      1.099    0.020
+ I71      HO9    O9        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ I71      O5     C1     N2      123.000    3.000
+ I71      O5     C1     C8      120.500    3.000
+ I71      N2     C1     C8      116.500    3.000
+ I71      C1     N2     C3      127.000    3.000
+ I71      N2     C3     H31     109.470    3.000
+ I71      N2     C3     H32     109.470    3.000
+ I71      N2     C3     C4      109.500    3.000
+ I71      H31    C3     H32     107.900    3.000
+ I71      H31    C3     C4      109.470    3.000
+ I71      H32    C3     C4      109.470    3.000
+ I71      C3     C4     H43     109.470    3.000
+ I71      C3     C4     H42     109.470    3.000
+ I71      C3     C4     H41     109.470    3.000
+ I71      H43    C4     H42     109.470    3.000
+ I71      H43    C4     H41     109.470    3.000
+ I71      H42    C4     H41     109.470    3.000
+ I71      C1     C8     H8      108.810    3.000
+ I71      C1     C8     O9      109.470    3.000
+ I71      C1     C8     C17     109.470    3.000
+ I71      H8     C8     O9      109.470    3.000
+ I71      H8     C8     C17     108.340    3.000
+ I71      O9     C8     C17     109.470    3.000
+ I71      C8     O9     HO9     109.470    3.000
+ I71      C8     C17    H17     108.340    3.000
+ I71      C8     C17    C19     111.000    3.000
+ I71      C8     C17    N16     105.000    3.000
+ I71      H17    C17    C19     108.340    3.000
+ I71      H17    C17    N16     109.470    3.000
+ I71      C19    C17    N16     105.000    3.000
+ I71      C17    C19    H191    109.470    3.000
+ I71      C17    C19    H192    109.470    3.000
+ I71      C17    C19    C20     111.000    3.000
+ I71      H191   C19    H192    107.900    3.000
+ I71      H191   C19    C20     109.470    3.000
+ I71      H192   C19    C20     109.470    3.000
+ I71      C19    C20    H20     108.340    3.000
+ I71      C19    C20    C24     109.470    3.000
+ I71      C19    C20    C21     109.470    3.000
+ I71      H20    C20    C24     108.810    3.000
+ I71      H20    C20    C21     108.340    3.000
+ I71      C24    C20    C21     109.470    3.000
+ I71      C20    C24    O26     120.500    3.000
+ I71      C20    C24    N23     116.500    3.000
+ I71      O26    C24    N23     123.000    3.000
+ I71      C24    N23    C22     127.000    3.000
+ I71      N23    C22    H221    109.470    3.000
+ I71      N23    C22    H222    109.470    3.000
+ I71      N23    C22    C21     105.000    3.000
+ I71      H221   C22    H222    107.900    3.000
+ I71      H221   C22    C21     109.470    3.000
+ I71      H222   C22    C21     109.470    3.000
+ I71      C22    C21    H212    109.470    3.000
+ I71      C22    C21    H211    109.470    3.000
+ I71      C22    C21    C20     111.000    3.000
+ I71      H212   C21    H211    107.900    3.000
+ I71      H212   C21    C20     109.470    3.000
+ I71      H211   C21    C20     109.470    3.000
+ I71      C17    N16    C15     121.000    3.000
+ I71      N16    C15    O38     123.000    3.000
+ I71      N16    C15    C14     116.500    3.000
+ I71      O38    C15    C14     120.500    3.000
+ I71      C15    C14    H14     108.810    3.000
+ I71      C15    C14    C34     109.470    3.000
+ I71      C15    C14    N13     111.600    3.000
+ I71      H14    C14    C34     108.340    3.000
+ I71      H14    C14    N13     109.470    3.000
+ I71      C34    C14    N13     105.000    3.000
+ I71      C14    C34    H34     108.340    3.000
+ I71      C14    C34    C18     111.000    3.000
+ I71      C14    C34    C16     111.000    3.000
+ I71      H34    C34    C18     108.340    3.000
+ I71      H34    C34    C16     108.340    3.000
+ I71      C18    C34    C16      60.000    3.000
+ I71      C34    C18    C25     111.000    3.000
+ I71      C34    C18    C23     111.000    3.000
+ I71      C34    C18    C16      60.000    3.000
+ I71      C25    C18    C23     111.000    3.000
+ I71      C25    C18    C16     111.000    3.000
+ I71      C23    C18    C16     111.000    3.000
+ I71      C18    C25    H253    109.470    3.000
+ I71      C18    C25    H252    109.470    3.000
+ I71      C18    C25    H251    109.470    3.000
+ I71      H253   C25    H252    109.470    3.000
+ I71      H253   C25    H251    109.470    3.000
+ I71      H252   C25    H251    109.470    3.000
+ I71      C18    C23    H233    109.470    3.000
+ I71      C18    C23    H232    109.470    3.000
+ I71      C18    C23    H231    109.470    3.000
+ I71      H233   C23    H232    109.470    3.000
+ I71      H233   C23    H231    109.470    3.000
+ I71      H232   C23    H231    109.470    3.000
+ I71      C34    C16    H16     108.340    3.000
+ I71      C34    C16    C13     111.000    3.000
+ I71      C34    C16    C18      60.000    3.000
+ I71      C13    C16    C18     111.000    3.000
+ I71      H16    C16    C13     108.340    3.000
+ I71      H16    C16    C18     108.340    3.000
+ I71      C14    N13    C13     112.000    3.000
+ I71      C14    N13    C12     121.000    3.000
+ I71      C13    N13    C12     127.000    3.000
+ I71      N13    C13    H132    109.470    3.000
+ I71      N13    C13    H131    109.470    3.000
+ I71      N13    C13    C16     105.000    3.000
+ I71      H132   C13    H131    107.900    3.000
+ I71      H132   C13    C16     109.470    3.000
+ I71      H131   C13    C16     109.470    3.000
+ I71      N13    C12    O33     123.000    3.000
+ I71      N13    C12    C11     116.500    3.000
+ I71      O33    C12    C11     120.500    3.000
+ I71      C12    C11    H11     108.810    3.000
+ I71      C12    C11    C30     109.470    3.000
+ I71      C12    C11    N10     111.600    3.000
+ I71      H11    C11    C30     108.340    3.000
+ I71      H11    C11    N10     109.470    3.000
+ I71      C30    C11    N10     109.500    3.000
+ I71      C11    C30    C32     111.000    3.000
+ I71      C11    C30    C31     111.000    3.000
+ I71      C11    C30    C26     111.000    3.000
+ I71      C32    C30    C31     111.000    3.000
+ I71      C32    C30    C26     111.000    3.000
+ I71      C31    C30    C26     111.000    3.000
+ I71      C30    C32    H323    109.470    3.000
+ I71      C30    C32    H322    109.470    3.000
+ I71      C30    C32    H321    109.470    3.000
+ I71      H323   C32    H322    109.470    3.000
+ I71      H323   C32    H321    109.470    3.000
+ I71      H322   C32    H321    109.470    3.000
+ I71      C30    C31    H313    109.470    3.000
+ I71      C30    C31    H312    109.470    3.000
+ I71      C30    C31    H311    109.470    3.000
+ I71      H313   C31    H312    109.470    3.000
+ I71      H313   C31    H311    109.470    3.000
+ I71      H312   C31    H311    109.470    3.000
+ I71      C30    C26    H263    109.470    3.000
+ I71      C30    C26    H262    109.470    3.000
+ I71      C30    C26    H261    109.470    3.000
+ I71      H263   C26    H262    109.470    3.000
+ I71      H263   C26    H261    109.470    3.000
+ I71      H262   C26    H261    109.470    3.000
+ I71      C11    N10    C9      121.000    3.000
+ I71      N10    C9     O29     123.000    3.000
+ I71      N10    C9     N8      120.000    3.000
+ I71      O29    C9     N8      123.000    3.000
+ I71      C9     N8     C7      121.000    3.000
+ I71      N8     C7     C29     111.600    3.000
+ I71      N8     C7     C28     111.600    3.000
+ I71      N8     C7     C27     111.600    3.000
+ I71      C29    C7     C28     111.000    3.000
+ I71      C29    C7     C27     111.000    3.000
+ I71      C28    C7     C27     111.000    3.000
+ I71      C7     C29    H293    109.470    3.000
+ I71      C7     C29    H292    109.470    3.000
+ I71      C7     C29    H291    109.470    3.000
+ I71      H293   C29    H292    109.470    3.000
+ I71      H293   C29    H291    109.470    3.000
+ I71      H292   C29    H291    109.470    3.000
+ I71      C7     C28    H283    109.470    3.000
+ I71      C7     C28    H282    109.470    3.000
+ I71      C7     C28    H281    109.470    3.000
+ I71      H283   C28    H282    109.470    3.000
+ I71      H283   C28    H281    109.470    3.000
+ I71      H282   C28    H281    109.470    3.000
+ I71      C7     C27    H273    109.470    3.000
+ I71      C7     C27    H272    109.470    3.000
+ I71      C7     C27    H271    109.470    3.000
+ I71      H273   C27    H272    109.470    3.000
+ I71      H273   C27    H271    109.470    3.000
+ I71      H272   C27    H271    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ I71      CONST_1          O5     C1     N2     C3               180.000            0.000   0
+ I71      var_1            C1     N2     C3     C4              -142.765           20.000   3
+ I71      var_2            N2     C3     C4     H41              180.000           20.000   3
+ I71      var_3            O5     C1     C8     C17              180.000           20.000   3
+ I71      var_4            C1     C8     O9     HO9              180.000           20.000   3
+ I71      var_5            C1     C8     C17    N16              180.000           20.000   3
+ I71      var_6            C8     C17    C19    C20              180.000           20.000   3
+ I71      var_7            C17    C19    C20    C24              180.000           20.000   3
+ I71      var_8            C19    C20    C21    C22              180.000           20.000   3
+ I71      var_9            C19    C20    C24    N23              180.000           20.000   3
+ I71      var_10           C20    C24    N23    C22              180.000           20.000   2
+ I71      var_11           C24    N23    C22    C21              -12.040           20.000   3
+ I71      var_12           N23    C22    C21    C20              180.000           20.000   3
+ I71      var_13           C8     C17    N16    C15                0.000           20.000   3
+ I71      CONST_2          C17    N16    C15    C14              180.000            0.000   0
+ I71      var_14           N16    C15    C14    N13              180.000           20.000   3
+ I71      var_15           C15    C14    C34    C16              180.000           20.000   3
+ I71      var_16           C14    C34    C18    C23              -22.123           20.000   3
+ I71      var_17           C34    C18    C25    H251             180.000           20.000   3
+ I71      var_18           C34    C18    C23    H231             180.000           20.000   3
+ I71      var_19           C14    C34    C16    C13              180.000           20.000   3
+ I71      var_20           C15    C14    N13    C12                0.000           20.000   3
+ I71      var_21           C14    N13    C13    C16                1.478           20.000   3
+ I71      var_22           N13    C13    C16    C34              180.000           20.000   3
+ I71      var_23           C14    N13    C12    C11              180.000           20.000   2
+ I71      var_24           N13    C12    C11    N10              180.000           20.000   3
+ I71      var_25           C12    C11    C30    C26               60.425           20.000   3
+ I71      var_26           C11    C30    C32    H321             180.000           20.000   3
+ I71      var_27           C11    C30    C31    H311             180.000           20.000   3
+ I71      var_28           C11    C30    C26    H261             180.000           20.000   3
+ I71      var_29           C12    C11    N10    C9                 0.000           20.000   3
+ I71      CONST_3          C11    N10    C9     N8               180.000            0.000   0
+ I71      CONST_4          N10    C9     N8     C7               180.000            0.000   0
+ I71      var_30           C9     N8     C7     C27              -72.086           20.000   3
+ I71      var_31           N8     C7     C29    H291             180.000           20.000   3
+ I71      var_32           N8     C7     C28    H281             180.000           20.000   3
+ I71      var_33           N8     C7     C27    H271             180.000           20.000   3
+ I71      var_1            C13    C16    C18    C34             -100.479           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ I71      chir_01          C11    C12    C30    N10       positiv
+ I71      chir_02          C14    C15    C34    N13       positiv
+ I71      chir_03          C16    C13    C18    C34       positiv
+ I71      chir_04          C17    C19    C8     N16       negativ
+ I71      chir_05          C18    C16    C23    C25       negativ
+ I71      chir_06          C20    C19    C21    C24       positiv
+ I71      chir_07          C30    C11    C26    C31       positiv
+ I71      chir_08          C34    C14    C16    C18       positiv
+ I71      chir_09          C7     C27    C28    C29       negativ
+ I71      chir_10          C8     C1     C17    O9        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ I71      plan-1            C1        0.020
+ I71      plan-1            C8        0.020
+ I71      plan-1            N2        0.020
+ I71      plan-1            O5        0.020
+ I71      plan-1            C3        0.020
+ I71      plan-2            C12       0.020
+ I71      plan-2            C11       0.020
+ I71      plan-2            N13       0.020
+ I71      plan-2            O33       0.020
+ I71      plan-3            C15       0.020
+ I71      plan-3            C14       0.020
+ I71      plan-3            N16       0.020
+ I71      plan-3            O38       0.020
+ I71      plan-3            C17       0.020
+ I71      plan-4            C24       0.020
+ I71      plan-4            C20       0.020
+ I71      plan-4            N23       0.020
+ I71      plan-4            O26       0.020
+ I71      plan-5            C9        0.020
+ I71      plan-5            N10       0.020
+ I71      plan-5            N8        0.020
+ I71      plan-5            O29       0.020
+ I71      plan-5            C11       0.020
+ I71      plan-5            C7        0.020
+ I71      plan-6            N13       0.020
+ I71      plan-6            C12       0.020
+ I71      plan-6            C13       0.020
+ I71      plan-6            C14       0.020
+ I71      plan-7            N23       0.020
+ I71      plan-7            C22       0.020
+ I71      plan-7            C24       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_THRCSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ THRCSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOGLY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOGLY   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOLYS
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOLYS   1 OD      2 NZ        .           1.460    0.020
+#
+data_link_ILECSO
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ILECSO   1 C       2 N         .           1.420    0.020
+#
+data_link_CSOTHR
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CSOTHR   1 C       2 N         .           1.420    0.020
+#
+data_link_CYSI71
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYSI71   1 SG      2 C8        .           1.790    0.020
+# ------------------------------------------------------
