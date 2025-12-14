@@ -1,8 +1,5 @@
 import re
-from datetime import date
 from pathlib import Path
-from itertools import groupby
-
 import pandas as pd
 import pytest
 
@@ -89,8 +86,8 @@ def test_write_reports_matches_historical(
     - Load corresponding historical reports.
     - Compare: new IDs, by-protein groups.
     """
-    from update_pipeline.report import write_reports
-    from update_pipeline.utilities import get_time
+    from lib.update_package.report import write_reports
+    from lib.update_package.utils import get_time
 
     df_subset = reference_df[taxonomy].copy()
 
@@ -141,7 +138,7 @@ def test_write_reports_matches_historical(
                 continue
             assert not (ids - hist_struct["by_protein"][protein]), (
                 f"Mismatch in by-protein section for {day} ({taxonomy} {protein}"
-                f"{(ids - hist_struct["by_protein"][protein])})\n"
+                f"{(ids - hist_struct['by_protein'][protein])}\n"
             )
 
         #  Compare new IDs

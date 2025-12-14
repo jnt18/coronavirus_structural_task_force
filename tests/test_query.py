@@ -5,8 +5,8 @@ from pathlib import Path
 
 
 def test_get_ids(reference_df, random_date_range, taxonomy):
-    from update_pipeline.query import get_ids
-    from update_pipeline.config import taxonomy_query
+    from lib.update_package.query import get_ids
+    from lib.update_package.config import taxonomy_query
 
     df = reference_df[taxonomy].copy()
     start_dt, end_dt = random_date_range
@@ -38,7 +38,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
       - If live_get_proteins returns "not_assigned", ignore that ID.
       - Otherwise assert equality with the past_df["protein"] entry.
     """
-    from update_pipeline.query import get_proteins
+    from lib.update_package.query import get_proteins
 
     df = reference_df[taxonomy].copy()
     start, end = random_date_range
@@ -76,7 +76,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
 
 
 def test_get_attributes(reference_df, random_date_range, taxonomy):
-    from update_pipeline.query import get_attributes
+    from lib.update_package.query import get_attributes
 
     df = reference_df[taxonomy].copy()
 
@@ -118,7 +118,7 @@ def test_update_dataframe(reference_df, random_date_range, taxonomy):
     """
 
     # Import inside test so pytest path resolution is safe
-    from update_pipeline.query import update_dataframe
+    from lib.update_package.query import update_dataframe
 
     reference_df = reference_df[taxonomy]
     start_dt, end_dt = random_date_range
@@ -145,9 +145,9 @@ def test_update_dataframe(reference_df, random_date_range, taxonomy):
 
     # Patch the query functions
     with (
-        patch("update_pipeline.query.get_ids", return_value=expected_ids),
-        patch("update_pipeline.query.get_proteins", return_value=proteins_dict),
-        patch("update_pipeline.query.get_attributes", return_value=attributes_dict),
+        patch("lib.update_package.query.get_ids", return_value=expected_ids),
+        patch("lib.update_package.query.get_proteins", return_value=proteins_dict),
+        patch("lib.update_package.query.get_attributes", return_value=attributes_dict),
     ):
         # Run function under test
         result_df = update_dataframe(

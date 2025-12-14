@@ -1,9 +1,6 @@
 import pytest
 import asyncio
-from pathlib import Path
-from pathlib import Path
 from unittest.mock import patch, AsyncMock
-import aiohttp
 import pandas as pd
 
 
@@ -15,7 +12,7 @@ async def test_download_files_handle_file(tmp_path):
     - writes new file,
     - hits the expected URL.
     """
-    from update_pipeline.io import download_files_handle_file
+    from lib.update_package.io import download_files_handle_file
 
     pdb_id = "7abc"
     ext = "cif"
@@ -67,7 +64,7 @@ async def test_download_files_handle_file(tmp_path):
 
 def test_download_files(tmp_path):
     """Test download_files function with mocked HTTP requests."""
-    from update_pipeline.io import download_files
+    from lib.update_package.io import download_files
 
     # Setup test data
     test_df = pd.DataFrame(
@@ -84,13 +81,13 @@ def test_download_files(tmp_path):
 
     # Mock the download_files_handle_file function
     with patch(
-        "update_pipeline.io.download_files_handle_file", new_callable=AsyncMock
+        "lib.update_package.io.download_files_handle_file", new_callable=AsyncMock
     ) as mock_handle:
         mock_handle.return_value = None
 
         # Mock tqdm_asyncio.gather to avoid progress bar
         with patch(
-            "update_pipeline.io.tqdm_asyncio.gather", new_callable=AsyncMock
+            "lib.update_package.io.tqdm_asyncio.gather", new_callable=AsyncMock
         ) as mock_gather:
             mock_gather.return_value = None
 
@@ -107,7 +104,7 @@ def test_download_files(tmp_path):
 
 def test_delete_superseded(tmp_path):
     """Test that superseded folders get deleted."""
-    from update_pipeline.io import delete_superseded
+    from lib.update_package.io import delete_superseded
 
     # Setup test data
     test_df = pd.DataFrame(

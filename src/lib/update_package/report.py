@@ -80,7 +80,8 @@ def write_single_report(
             If False, formats header as "end weekly" for weekly reports. Defaults to False.
     """
     new_ids = set(df[df.release_date.between(start, end)].index)
-    revised_ids = set(df.index) - new_ids
+    revised_ids = set(df[df.last_revision.between(start, end)].index) - new_ids
+    # set(df.index) - new_ids
 
     date_header = f"{start} until {end}" if latest_report else f"{end} weekly"
 

@@ -1,13 +1,8 @@
-import sys
 import argparse
 import pandas as pd
 from pathlib import Path
 from rcsbapi.search import search_attributes as attrs
-from update_pipeline import config, utils, query, io, report
-from update_pipeline import analyze_and_fix_dataframe, RMSD
-from update_pipeline import mk_Alignment_strc_vs_seq as align
-from update_pipeline import protein_and_domain_classifier as domain_classifier
-from update_pipeline import tcp_scan_results
+from lib.update_package import config, utils, query, io, report
 
 
 """
@@ -56,6 +51,7 @@ new_df = df[ids]
 c_new_pdb_lst = new_df[new_df.version == 1].index
 changed_prot_list = pd.unique(list(proteins.values()))
 
+"""
 print("Doing sequence aligntment")
 align.main(changed_prot_list, c_new_pdb_lst, repo_path, args.taxonomy)
 print("Calculating RMSD")
@@ -90,3 +86,4 @@ if args.database:
     from database import populate_database2
 
 # read df to pickle
+"""
