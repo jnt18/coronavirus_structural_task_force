@@ -1,0 +1,92 @@
+import sys
+import argparse
+import pandas as pd
+from pathlib import Path
+from rcsbapi.search import search_attributes as attrs
+from update_pipeline import config, utils, query, io, report
+from update_pipeline import analyze_and_fix_dataframe, RMSD
+from update_pipeline import mk_Alignment_strc_vs_seq as align
+from update_pipeline import protein_and_domain_classifier as domain_classifier
+from update_pipeline import tcp_scan_results
+
+
+"""
+executable script for weekly update
+"""
+
+# handle input arguments
+parser = argparse.ArgumentParser(description="Run weekly update.")
+parser.add_argument(
+    "-t",
+    "--taxonomy",
+    type=str,
+    required=True,
+    help="Give the taxonomy, either 'SARS-CoV' or 'SARS-CoV-2'",
+)
+parser.add_argument(
+    "-db",
+    "--database",
+    action="store_true",
+    help="If given, the database will be updated as well",
+)
+args = parser.parse_args()
+
+data_path = Path(__file__).parents[1] / "data"
+repo_path = data_path
+print(repo_path)
+fasta_path = data_path / f"fasta/seq_{args.taxonomy}.fasta"
+df = pd.read_pickle(data_path / f"dataframes/repo_database_{args.taxonomy}_copy.pkl")
+start = end = str(utils.get_time())
+rcsb_query = config.taxonomy_query[args.taxonomy]
+
+print("getting ids...")
+ids = query.get_ids(start, end, rcsb_query)
+print("doing protein assigment...")
+proteins = query.get_proteins(ids, fasta_path)
+print("updating dataframe...")
+df = query.update_dataframe(proteins, args.taxonomy, df)
+print("downloading files...")
+io.download_files(ids, df, repo_path)
+print("checking for superseded...")
+io.delete_superseded(ids, df, repo_path)
+print("writing reports...")
+report.write_reports(start, end, df, args.taxonomy, repo_path)
+
+new_df = df[ids]
+c_new_pdb_lst = new_df[new_df.version == 1].index
+changed_prot_list = pd.unique(list(proteins.values()))
+
+print("Doing sequence aligntment")
+align.main(changed_prot_list, c_new_pdb_lst, repo_path, args.taxonomy)
+print("Calculating RMSD")
+RMSD.main(changed_prot_list, repo_path)
+
+# check for common errors in the data base. These are currently:
+# entries with wrong path containing 'not_assigned' after assignment
+# entries not assigned to a protein at all
+analyze_and_fix_dataframe.run(args.taxonomy)
+
+# check for common errors in the assignment and give warnings, so the
+# user can handle those manually.
+tcp_scan_results.main(args.taxonomy, c_new_pdb_lst)
+
+latest_report_path = (
+    repo_path / "weekly_reports" / f"latest_update_report_{args.taxonomy}.txt"
+)
+report_content = ""
+with open(latest_report_path, "r") as f:
+    report_content = f.read()
+# check for new nsp3
+if report_content.find("nsp3") > -1:
+    print("New Nsp3 structure: perform domain classification...")
+    domain_classifier.main(args.taxo, "nsp3")
+
+
+# if database flag given, update database
+if args.database:
+    # adding database folder to the system path
+    sys.path.insert(0, Path.cwd().parent / "lib" / "database")
+    # import module and automatically execute its main function
+    from database import populate_database2
+
+# read df to pickle
