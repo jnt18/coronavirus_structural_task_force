@@ -1,3 +1,11 @@
+"""Utility functions for updating packages in the coronavirus structural task force project.
+
+Functions:
+    async_wrapper: Decorator to run async functions synchronously
+    get_time: Get the most recent Wednesday or optionally next week's Wednesday
+    reset_index: Reset DataFrame index if indexed by pdb_id
+    edit_dict_via_file: Interactively edit a dictionary through manual file editing"""
+
 import asyncio
 from datetime import date, timedelta
 import json
@@ -17,8 +25,8 @@ def async_wrapper(func):
 
 
 def get_time(day: str = None, next_week: bool = False) -> date:
-    """
-    Get the date of the most recent Wednesday, or optionally the Wednesday of the next week.
+    """Get the date of the most recent Wednesday, or optionally the Wednesday of the next week.
+
     If the passed in day is a Wednesday it returns it.
     Args:
         day (optional): ISO format date string (YYYY-MM-DD). Defaults to today's date if not provided.
@@ -56,6 +64,18 @@ def reset_index(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def edit_dict_via_file(data: dict) -> dict:
+    """Edit a dictionary through manual file editing.
+
+    Creates a JSON file in the current working directory that the user can edit.
+    After editing and saving the file, the function reads the updated content back
+    and returns it as a dictionary. The created file is deleted.
+    Args:
+        data: The dictionary to be edited.
+    Returns:
+        dict: The updated dictionary after manual editing.
+
+    """
+
     path = Path.cwd() / "assign_manually_edit_me.json"
 
     # Prevent overwriting

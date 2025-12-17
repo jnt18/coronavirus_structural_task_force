@@ -7,10 +7,10 @@ Typical usage:
     start = '2023-03-02'
     end = '2023-04-14'
     repo_path = Path.cwd().parent / "data"
-    df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
+    new_df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
     taxonomy = "SARS-CoV-2"
 
-    write_reports(start, end, df, taxonomy, repo_path)
+    write_reports(start, end, new_df, taxonomy, repo_path)
 """
 
 from pathlib import Path

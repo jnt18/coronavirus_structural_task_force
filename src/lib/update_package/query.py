@@ -13,7 +13,10 @@ It contains utilities for:
   not overwritten by 'not_assigned'.
 
 Typical usage example:
+    import pandas as pd
     from rcsbapi.search import search_attributes as attrs
+    from pathlib import Path
+
     q1 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id == "2697049"
     q2 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id != "6645"
     query = q1 & q2
@@ -22,11 +25,11 @@ Typical usage example:
     taxonomy = "SARS-CoV-2"
     fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
     repo_path = Path.cwd().parent / "data"
-    df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
+    df = pd.read_pickle(repo_path / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
 
     ids = get_ids(start, end, query)
     proteins = get_proteins(ids, fasta_path)
-    new_df = update_dataframe_inplace(proteins, taxonomy, df)
+    new_df = get_df(proteins, taxonomy, df)
 """
 
 import re
