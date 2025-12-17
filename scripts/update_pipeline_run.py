@@ -29,9 +29,13 @@ args = parser.parse_args()
 data_path = Path(__file__).parents[1] / "data"
 repo_path = data_path
 print(repo_path)
-fasta_path = data_path / f"fasta/seq_{args.taxonomy}.fasta"
-df = pd.read_pickle(data_path / f"dataframes/repo_database_{args.taxonomy}_copy.pkl")
+fasta_path = data_path / "fasta" / f"seq_{args.taxonomy}.fasta"
+df = pd.read_pickle(
+    data_path / "dataframes" / f"repo_database_{args.taxonomy}_id_index.pkl"
+)
 start = end = str(utils.get_time())
+# start = "2025-03-12"
+# end = "2025-05-12"
 rcsb_query = config.taxonomy_query[args.taxonomy]
 
 print("getting ids...")
@@ -39,7 +43,7 @@ ids = query.get_ids(start, end, rcsb_query)
 print("doing protein assigment...")
 proteins = query.get_proteins(ids, fasta_path)
 print("updating dataframe...")
-df = query.update_dataframe(proteins, args.taxonomy, df)
+df = query.get_df(proteins, args.taxonomy, df)
 print("downloading files...")
 io.download_files(ids, df, repo_path)
 print("checking for superseded...")
@@ -47,9 +51,9 @@ io.delete_superseded(ids, df, repo_path)
 print("writing reports...")
 report.write_reports(start, end, df, args.taxonomy, repo_path)
 
-new_df = df[ids]
-c_new_pdb_lst = new_df[new_df.version == 1].index
-changed_prot_list = pd.unique(list(proteins.values()))
+# new_df = df[ids]
+# c_new_pdb_lst = new_df[new_df.version == 1].index
+# changed_prot_list = pd.unique(list(proteins.values()))
 
 """
 print("Doing sequence aligntment")

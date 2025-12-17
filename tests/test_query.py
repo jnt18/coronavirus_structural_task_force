@@ -111,14 +111,14 @@ def test_get_attributes(reference_df, random_date_range, taxonomy):
             ), live_pdb_id
 
 
-def test_update_dataframe(reference_df, random_date_range, taxonomy):
+def test_get_df(reference_df, random_date_range, taxonomy):
     """
     Test that update_dataframe_inplace reconstructs correct data
     for a given date range, using a pre-saved historical dataframe.
     """
 
     # Import inside test so pytest path resolution is safe
-    from lib.update_package.query import update_dataframe
+    from lib.update_package.query import get_df
 
     reference_df = reference_df[taxonomy]
     start_dt, end_dt = random_date_range
@@ -147,13 +147,14 @@ def test_update_dataframe(reference_df, random_date_range, taxonomy):
     with (
         patch("lib.update_package.query.get_ids", return_value=expected_ids),
         patch("lib.update_package.query.get_proteins", return_value=proteins_dict),
+        patch("lib.update_package.query.update_proteins", return_value=proteins_dict),
         patch("lib.update_package.query.get_attributes", return_value=attributes_dict),
     ):
         # Run function under test
-        result_df = update_dataframe(
+        result_df = get_df(
             proteins=proteins_dict,
             taxonomy=taxonomy,
-            old_df=reference_df.copy(),
+            df=reference_df.copy(),
         )
 
     pd.testing.assert_frame_equal(
