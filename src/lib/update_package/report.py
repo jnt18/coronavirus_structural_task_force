@@ -21,7 +21,7 @@ from .utils import get_time
 
 
 def write_reports(
-    start: str, end: str, df: pd.DataFrame, taxonomy: str, repo_path: str | Path
+    start: str, end: str, new_df: pd.DataFrame, taxonomy: str, repo_path: str | Path
 ) -> None:
     """Generates weekly reports in the date range and a report summarising the full period.
 
@@ -47,14 +47,16 @@ def write_reports(
 
     # Latest report
     report_path = reports_path / f"latest_update_report_{taxonomy}.txt"
-    write_single_report(start_dt, end_dt, taxonomy, report_path, df, latest_report=True)
+    write_single_report(
+        start_dt, end_dt, taxonomy, report_path, new_df, latest_report=True
+    )
 
     dates = pd.date_range(
         start_dt, end_dt, periods=(end_dt - start_dt).days // 7 + 1
     ).date
 
     for day in dates:
-        df_date = df[(df.release_date == day) | (df.last_revision == day)]
+        df_date = new_df[(new_df.release_date == day) | (new_df.last_revision == day)]
         report_path = reports_path / f"{day}_update_report_{taxonomy}.txt"
         write_single_report(day, day, taxonomy, report_path, df_date)
 
@@ -64,7 +66,7 @@ def write_single_report(
     end,
     taxonomy,
     report_path: Path,
-    df: pd.DataFrame,
+    new_df: pd.DataFrame,
     latest_report: bool = False,
 ) -> None:
     """Write a single report file containing newly released and revised structures.
@@ -79,8 +81,8 @@ def write_single_report(
         latest_report: If True, formats header as "start until end" for latest report.
             If False, formats header as "end weekly" for weekly reports. Defaults to False.
     """
-    new_ids = set(df[df.release_date.between(start, end)].index)
-    revised_ids = set(df[df.last_revision.between(start, end)].index) - new_ids
+    new_ids = set(new_df[new_df.release_date.between(start, end)].index)
+    revised_ids = set(new_df[new_df.last_revision.between(start, end)].index) - new_ids
     # set(df.index) - new_ids
 
     date_header = f"{start} until {end}" if latest_report else f"{end} weekly"
@@ -92,5 +94,5 @@ def write_single_report(
         doc.write(f"##### {len(new_ids)} new structures #####\n")
         doc.write(", ".join(sorted(new_ids)) + "\n\n")
         doc.write("##### new structures by protein #####")
-        for protein, ids in groupby(new_ids, key=lambda k: df.loc[k, "protein"]):
+        for protein, ids in groupby(new_ids, key=lambda k: new_df.loc[k, "protein"]):
             doc.write(f"\n{protein}\n>" + " ".join(ids))

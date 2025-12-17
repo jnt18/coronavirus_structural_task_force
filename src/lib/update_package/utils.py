@@ -1,5 +1,7 @@
 import asyncio
 from datetime import date, timedelta
+import json
+from pathlib import Path
 import functools
 import pandas as pd
 
@@ -51,3 +53,34 @@ def reset_index(df: pd.DataFrame) -> pd.DataFrame:
     if df.index.name == "pdb_id":
         return df.reset_index()
     return df
+
+
+def edit_dict_via_file(data: dict) -> dict:
+    path = Path.cwd() / "assign_manually_edit_me.json"
+
+    # Prevent overwriting
+    if path.exists():
+        raise FileExistsError(f"File already exists: {path}")
+
+    # Write JSON
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+
+    print(f"\nFile created: {path}")
+    print("Edit the file, save it, then press ENTER here to continue.")
+    print(
+        "You can also copy the dictionary into a text editor, escape the function,\n"
+        "and copy it back in when you run the function again."
+    )
+    input()
+
+    # Read edited JSON
+    with open(path, "r", encoding="utf-8") as f:
+        updated = json.load(f)
+
+    if path.is_file():
+        path.unlink()
+    else:
+        raise RuntimeError(f"Refusing to delete non-file path: {path}")
+
+    return updated

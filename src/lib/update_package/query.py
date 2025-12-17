@@ -29,7 +29,6 @@ Typical usage example:
     new_df = update_dataframe_inplace(proteins, taxonomy, df)
 """
 
-import asyncio
 import re
 import pandas as pd
 from Bio import SeqIO
@@ -42,8 +41,7 @@ from rcsbapi.search import search_attributes as attrs
 from rcsbapi.search import SeqSimilarityQuery
 from rcsbapi.search.search_query import Group
 from rcsbapi.data import DataQuery
-from tqdm.asyncio import tqdm_asyncio
-from .utils import async_wrapper
+from .utils import edit_dict_via_file
 
 
 def get_ids(start: str, end: str, rcsb_query: Group) -> list:
@@ -72,7 +70,9 @@ def get_ids(start: str, end: str, rcsb_query: Group) -> list:
     return ids
 
 
-def get_proteins(ids: Iterable, fasta_path: str | Path) -> dict[str, str]:
+def get_proteins(
+    ids: Iterable, fasta_path: str | Path, repo_path=None
+) -> dict[str, str]:
     """Retrieve and match protein sequences to PDB IDs using sequence similarity search.
 
     Args:
@@ -88,11 +88,16 @@ def get_proteins(ids: Iterable, fasta_path: str | Path) -> dict[str, str]:
     result = {pdb_id: [] for pdb_id in ids}
 
     def search_seq(seq: str) -> set[str]:
-        query = SeqSimilarityQuery(
-            value=seq,
-            evalue_cutoff=10,
-            sequence_type="protein",
-        )
+        try:
+            query = SeqSimilarityQuery(
+                value=seq,
+                evalue_cutoff=10,
+                sequence_type="protein",
+            )
+        except Exception as e:
+            print(f"Exception occured for {seq}: {e}")
+            return set()
+
         return set(e[:4].lower() for e in query("polymer_entity"))
 
     # Run searches in parallel threads
@@ -175,19 +180,56 @@ def get_attributes(ids: Iterable) -> dict[str, dict]:
             "exp_method": exp_method,
             "resolution": float(resolution) if resolution else float("NaN"),
             "title": title,
-            "superseded_by": float("NaN"),
+            "superseded_by": None,
         }
     return reformatted
 
 
-def update_dataframe(
-    proteins: dict[str, str], taxonomy: str, old_df: pd.DataFrame = None
-):
-    """Update or create a DataFrame with protein metadata and repository paths.
+def update_proteins(proteins: dict[str, str], df: pd.DataFrame = None) -> dict:
+    """
+    Update protein assignments in a dictionary based on a DataFrame and user input.
 
-    Calls get_attributes to get data and merges with an existing dataframe if provided,
-    while making sure that ids, that were previously assigned a protein manually, are
-    not overwritten by 'not_assigned'.
+    Ids that are not assigned a protein are updated if that same id is already in
+    the dataframe. If there are still not_assigned ids, it writes a JSON file called
+    '"assign_manually_edit_me.json" to the current working directory. You can then edit
+    the file manually, save it and the updated dict is returned. The JSON file is deleted.
+    Args:
+        proteins: dictionary mapping ids to proteins.
+        df (optional): A DataFrame indexed by ID containing a "protein" column.
+                       If None or empty, the ids are not updated with the df,
+                       but a JSON file is created nonetheless.
+    Returns:
+        dict: The updated proteins dictionary with newly assigned protein names.
+              Entries previously marked as "not_assigned" are updated where possible.
+    """
+
+    if df is not None and not df.empty:
+        common_ids = list(set(proteins.keys()).intersection(df.index))
+        proteins.update(
+            df.loc[[i for i in common_ids if proteins[i] == "not_assigned"], "protein"]
+        )
+
+    not_assigned_dict = {
+        id: protein for id, protein in proteins.items() if protein == "not_assigned"
+    }
+
+    if not_assigned_dict:
+        newly_assigned = edit_dict_via_file(not_assigned_dict)
+        proteins.update(newly_assigned)
+
+    return proteins
+
+
+def get_df(
+    proteins: dict[str, str],
+    taxonomy: str,
+    df: pd.DataFrame = None,
+):
+    """Create a DataFrame with protein metadata and repository paths.
+
+    Calls update_proteins to update not_assigned proteins using the dataframe (if provided)
+    and user input via a JSON file called "assign_manually_edit_me.json" in the current working
+    directory. Calls get_attributes to get data and merges with an existing dataframe (if provided).
     Args:
         proteins: dictionary mapping ids to proteins.
         taxonomy: Taxonomy identifier for id folder path.
@@ -197,8 +239,9 @@ def update_dataframe(
             path_in_repo, resolution, title, superseded_by.
     """
 
-    # Step 1: Build new_df from inputs
-    attributes = get_attributes(list(proteins.keys()))
+    attributes = get_attributes(proteins.keys())
+    proteins = update_proteins(proteins, df)
+
     attributes_df = pd.DataFrame.from_dict(attributes, orient="index")
     proteins_df = pd.DataFrame.from_dict(proteins, orient="index", columns=["protein"])
 
@@ -219,20 +262,9 @@ def update_dataframe(
     ]
     new_df = new_df[cols]
     new_df.index.rename("pdb_id", inplace=True)
+    new_df["superseded_by"] = new_df["superseded_by"].astype(object)
 
-    df = old_df.copy()
     if df is None or df.empty:
         return new_df
 
-    # Identify rows that exist in both
-    common_ids = df.index.intersection(new_df.index)
-    protected_cols = ["protein", "path_in_repo"]
-    # Overwrite existing rows (except protected columns)
-    overwrite_cols = [c for c in df.columns if c not in protected_cols]
-    df.loc[common_ids, overwrite_cols] = new_df.loc[common_ids, overwrite_cols]
-    # Add new rows that are not already in df
-    new_only = new_df.loc[~new_df.index.isin(df.index)]
-    for idx, row in new_only.iterrows():
-        df.loc[idx] = row
-
-    return df
+    return new_df.combine_first(df)

@@ -25,14 +25,11 @@ from .utils import async_wrapper
 
 
 @async_wrapper
-async def download_files(ids: Iterable, df: pd.DataFrame, repo_path: str) -> None:
+async def download_files(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> None:
     """Download structure files for all PDB entries in the given DataFrame.
 
     Uses asyncio for concurrent downloads and aiohttp for async HTTP requests.
     When used in a jupyter notebook do
-        import asyncio
-        import nest_asyncio
-        nest_asyncio.apply()
     Can be run without the wrapper using asyncio.run(download_files.__wrapper__(*args)).
     Args:
         ids: Files will be downloaded for these ids if they are in the dataframe.
@@ -49,8 +46,8 @@ async def download_files(ids: Iterable, df: pd.DataFrame, repo_path: str) -> Non
 
         tasks = []
         for pdb_id in ids:
-            directory = repo_path / Path(df.loc[pdb_id, "path_in_repo"])
-            timestamp = df.loc[pdb_id, "release_date"]
+            directory = repo_path / Path(new_df.loc[pdb_id, "path_in_repo"])
+            timestamp = new_df.loc[pdb_id, "release_date"]
 
             for ext in ("cif", "pdb", "mtz"):
                 tasks.append(
@@ -107,9 +104,8 @@ async def download_files_handle_file(
         file_path.write_bytes(data)
 
 
-def delete_superseded(ids: Iterable, df: pd.DataFrame, repo_path: str) -> None:
+def delete_superseded(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> None:
     """Delete directories of superseded PDB entries and update their status in the dataframe inplace.
-
     Args:
         ids: List of PDB IDs to process.
         df: Pandas DataFrame containing PDB entry metadata with columns including "path_in_repo"
@@ -121,7 +117,7 @@ def delete_superseded(ids: Iterable, df: pd.DataFrame, repo_path: str) -> None:
     repo_path = Path(repo_path)
 
     for pdb_id in ids:
-        id_path = repo_path / Path(df.loc[pdb_id, "path_in_repo"])
+        id_path = repo_path / Path(new_df.loc[pdb_id, "path_in_repo"])
         pdb_path = id_path / f"{pdb_id}.pdb"
 
         if not pdb_path.exists():
@@ -135,11 +131,13 @@ def delete_superseded(ids: Iterable, df: pd.DataFrame, repo_path: str) -> None:
                     old_ids = line.split()[3:]
                     for old_id in old_ids:
                         old_id = old_id.lower()
-                        if old_id in df.index:
+                        if old_id in new_df.index:
                             # mark superseded
-                            df.loc[old_id, "superseded_by"] = pdb_id
+                            new_df.loc[old_id, "superseded_by"] = pdb_id
                             # remove the old file folder if it exists
-                            old_path = repo_path / Path(df.loc[old_id, "path_in_repo"])
+                            old_path = repo_path / Path(
+                                new_df.loc[old_id, "path_in_repo"]
+                            )
                             if old_path.exists() and old_path.is_dir():
                                 shutil.rmtree(old_path)
                                 print(
