@@ -94,7 +94,7 @@ def get_proteins(
         try:
             query = SeqSimilarityQuery(
                 value=seq,
-                evalue_cutoff=10,
+                evalue_cutoff=1,
                 sequence_type="protein",
             )
         except Exception as e:
