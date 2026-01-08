@@ -34,8 +34,9 @@ Typical usage example:
     q1 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id == "2697049"
     q2 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id != "6645"
     query = q1 & q2
-    start = '2023-03-02'
-    end = '2023-04-14'
+    start = end = utils.get_time()
+    #start = '2023-01-14'
+    # end = '2023-04-14'
     taxonomy = "SARS-CoV-2" 
     fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
     repo_path = Path.cwd().parent / "data"

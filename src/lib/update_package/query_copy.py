@@ -38,10 +38,10 @@ from Bio import SeqIO
 from typing import Iterable, TypedDict
 from pathlib import Path
 from datetime import date
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 from rcsbapi.search import search_attributes as attrs
-from rcsbapi.search import SeqSimilarityQuery
+from rcsbapi.search import SeqSimilarityQuery, SeqMotifQuery
 from rcsbapi.search.search_query import Group
 from rcsbapi.data import DataQuery
 from .utils import edit_dict_via_file
@@ -68,14 +68,37 @@ def get_ids(start: str, end: str, rcsb_query: Group) -> list:
     )
 
     query = rcsb_query & (revised_query | release_query)
-    ids = [id.lower() for id in query()]
-
+    ids = {entity.lower() for entity in query("polymer_entity")}
     return ids
 
 
-def get_proteins(
-    ids: Iterable, fasta_path: str | Path, repo_path=None
-) -> dict[str, str]:
+def get_polymer_type_and_sequences(entity_ids):
+    """_summary_
+
+    Args:
+        entity_ids (_type_): _description_
+    """
+    query = DataQuery(
+        input_type="polymer_entities",
+        input_ids=list(entity_ids),
+        return_data_list=[
+            "entity_poly.rcsb_entity_polymer_type",
+            "entity_poly.pdbx_seq_one_letter_code_can",
+        ],
+    )
+    result = query.exec()
+
+    polymer_types = {}
+    sequences = {}
+    for d in result["data"]["polymer_entities"]:
+        id = d["rcsb_id"].lower()
+        polymer_types[id] = d["entity_poly"]["rcsb_entity_polymer_type"].lower()
+        sequences[id] = d["entity_poly"]["pdbx_seq_one_letter_code_can"]
+
+    return polymer_types, sequences
+
+
+def get_proteins(ids: Iterable, fasta_path: str | Path, workers=100) -> dict[str, str]:
     """Retrieve and match protein sequences to PDB IDs using sequence similarity search.
 
     Args:
@@ -87,44 +110,89 @@ def get_proteins(
         if no matches were found.
     """
 
-    fasta = list(SeqIO.parse(fasta_path, "fasta"))
-    result = {pdb_id: [] for pdb_id in ids}
-
-    def search_seq(seq: str) -> set[str]:
-        try:
-            query = SeqSimilarityQuery(
-                value=seq,
-                evalue_cutoff=10,
-                sequence_type="protein",
-            )
-        except Exception as e:
-            print(f"Exception occured for {seq}: {e}")
-            return set()
-
-        return set(e[:4].lower() for e in query("polymer_entity"))
-
-    # Run searches in parallel threads
-    with ThreadPoolExecutor() as executor:
-        hits_list = list(
-            tqdm(
-                executor.map(lambda rec: search_seq(str(rec.seq)), fasta),
-                total=len(fasta),
-                desc="Sequence similarity search",
-            )
-        )
-
-    for rec, hits in zip(fasta, hits_list):
-        prot_name = rec.description.split(" ")[1]
-        brackets = re.search(r"\((.*?)\)", prot_name)
+    # List to accomodate multiple sequences for the same protein
+    protein_sequences = []
+    for protein in list(SeqIO.parse(fasta_path, "fasta")):
+        protein_name = protein.description.split(" ")[1]
+        brackets = re.search(r"\((.*?)\)", protein_name)
         if brackets:
-            prot_name = brackets.group(1)
-        for hit in hits:
-            if hit in ids:
-                result[hit].append(prot_name)
+            protein_name = brackets.group(1)
+        protein_sequences.append((protein_name, str(protein.seq)))
+
+    def search_seq(item: tuple) -> tuple[str, set[str]]:
+        protein_name, seq = item
+        try:
+            if len(seq) >= 25:
+                query = SeqSimilarityQuery(
+                    value=seq,
+                    evalue_cutoff=1,
+                    sequence_type="protein",
+                )
+            else:
+                query = SeqMotifQuery(value=seq)
+
+            return protein_name, set(id.lower() for id in query("polymer_entity"))
+
+        except Exception as e:
+            print(f"Exception occurred for {protein_name}: {e}")
+            return protein_name, set()
+
+    def search_concurently(sequences):
+        similar_ids = {}
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            # Submit all tasks
+            future_to_id = {
+                executor.submit(search_seq, item): item[0] for item in sequences
+            }
+
+            # Process completed tasks with progress bar
+            for future in tqdm(
+                as_completed(future_to_id),
+                total=len(sequences),
+                desc="Sequence similarity search",
+            ):
+                key, hits = future.result()
+                if key in similar_ids:
+                    similar_ids[key].update(hits)
+                else:
+                    similar_ids[key] = hits
+        return similar_ids
+
+    protein_hits = search_concurently(protein_sequences)
+
+    result = {id: "not_assigned" for id in ids}
+    for protein_name, hits in protein_hits.items():
+        for id in ids:
+            if id in hits:
+                result[id] = protein_name
+
+    not_assigned_entities = {
+        id for id, name in result.items() if name == "not_assigned"
+    }
+
+    na_polymer_types, na_sequences = get_polymer_type_and_sequences(
+        not_assigned_entities
+    )
+
+    for entity, polymer_type in na_polymer_types.items():
+        if polymer_type != "protein":
+            result[entity] = polymer_type
+            na_sequences.pop(entity)
+
+    entity_hits = search_concurently(na_sequences.items())
+
+    max_proportion = {entity_id: 0 for entity_id in not_assigned_entities}
+    for entity_id, similar_ids in entity_hits.items():
+        for protein_name, reference_ids in protein_hits.items():
+            current_proportion = len(similar_ids.intersection(reference_ids)) / len(
+                similar_ids
+            )
+            if current_proportion > max_proportion[entity_id]:
+                result[entity_id] = protein_name
+                max_proportion[entity_id] = current_proportion
 
     return {
-        pdb_id: ("-".join(sorted(names)) if names else "not_assigned")
-        for pdb_id, names in result.items()
+        pdb_id: names if names else "not_assigned" for pdb_id, names in result.items()
     }
 
 
