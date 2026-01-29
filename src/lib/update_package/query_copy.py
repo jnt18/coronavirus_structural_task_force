@@ -32,8 +32,13 @@ Typical usage example:
     new_df = get_df(proteins, taxonomy, df)
 """
 
+import time
+import random
+from typing import Tuple, Set
+
 import re
 import pandas as pd
+import numpy as np
 from Bio import SeqIO
 from typing import Iterable, TypedDict
 from pathlib import Path
@@ -47,7 +52,7 @@ from rcsbapi.data import DataQuery
 from .utils import edit_dict_via_file
 
 
-def get_ids(start: str, end: str, rcsb_query: Group) -> list:
+def get_ids(start: str, end: str, rcsb_queries: dict) -> list:
     """Retrieve PDB accession IDs within a specified date range.
     Args:
         start: Start date in ISO format (YYYY-MM-DD) for filtering.
@@ -60,20 +65,27 @@ def get_ids(start: str, end: str, rcsb_query: Group) -> list:
     A usage example is described in help(update_pipeline.query).
     """
 
-    revised_query = (start <= attrs.rcsb_accession_info.revision_date) & (
-        attrs.rcsb_accession_info.revision_date <= end
-    )
-    release_query = (start <= attrs.rcsb_accession_info.initial_release_date) & (
-        attrs.rcsb_accession_info.initial_release_date <= end
-    )
+    ids_by_taxonomy = {}
+    for taxonomy, rcsb_query in rcsb_queries.items():
+        revised_query = (start <= attrs.rcsb_accession_info.revision_date) & (
+            attrs.rcsb_accession_info.revision_date <= end
+        )
+        release_query = (start <= attrs.rcsb_accession_info.initial_release_date) & (
+            attrs.rcsb_accession_info.initial_release_date <= end
+        )
 
-    query = rcsb_query & (revised_query | release_query)
-    ids = {entity.lower() for entity in query("polymer_entity")}
-    return ids
+        query = rcsb_query & (revised_query | release_query)
+        ids = {entity.lower() for entity in query("polymer_entity")}
+        for id in ids:
+            if id in ids_by_taxonomy:
+                ids_by_taxonomy[id].add(taxonomy)
+            else:
+                ids_by_taxonomy[id] = {taxonomy}
+    return {id: "__".join(sorted(taxonomy)) for id, taxonomy in ids_by_taxonomy.items()}
 
 
 def get_polymer_type_and_sequences(entity_ids):
-    """_summary_
+    """Helper function used in get_proteins.
 
     Args:
         entity_ids (_type_): _description_
@@ -98,7 +110,9 @@ def get_polymer_type_and_sequences(entity_ids):
     return polymer_types, sequences
 
 
-def get_proteins(ids: Iterable, fasta_path: str | Path, workers=100) -> dict[str, str]:
+def get_proteins(
+    ids_by_taxonomy: dict, fasta_path: str | Path, workers=100
+) -> dict[str, str]:
     """Retrieve and match protein sequences to PDB IDs using sequence similarity search.
 
     Args:
@@ -113,14 +127,59 @@ def get_proteins(ids: Iterable, fasta_path: str | Path, workers=100) -> dict[str
     # List to accomodate multiple sequences for the same protein
     protein_sequences = []
     for protein in list(SeqIO.parse(fasta_path, "fasta")):
-        protein_name = protein.description.split(" ")[1]
-        brackets = re.search(r"\((.*?)\)", protein_name)
-        if brackets:
-            protein_name = brackets.group(1)
+        if "OS" in protein.description:
+            protein_name = protein.description[
+                protein.description.find(" ") : protein.description.find("OS")
+            ].strip()
+        else:
+            protein_name = protein.description.split(" ")[1]
+            brackets = re.search(r"\((.*?)\)", protein_name)
+            if brackets:
+                protein_name = brackets.group(1)
+        protein_name = protein_name.replace("-", "_").replace(" ", "_")
         protein_sequences.append((protein_name, str(protein.seq)))
 
-    def search_seq(item: tuple) -> tuple[str, set[str]]:
+    MAX_RETRIES = 3
+    BASE_DELAY = 1.0  # seconds
+    JITTER = 0.5  # add randomness to avoid thundering herd
+
+    def _run_query_with_retry(query, protein_name: str) -> Set[str]:
+        """
+        Execute an RCSB query with retry and exponential backoff.
+        """
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                # Execute query
+                results = query("polymer_entity")
+                return {rid.lower() for rid in results}
+
+            except Exception as e:
+                if attempt == MAX_RETRIES:
+                    print(
+                        f"[ERROR] {protein_name}: failed after {MAX_RETRIES} attempts: {e}"
+                    )
+                    return set()
+
+                delay = BASE_DELAY * (2 ** (attempt - 1))
+                delay += random.uniform(0, JITTER)
+
+                print(
+                    f"[WARN] {protein_name}: attempt {attempt} failed ({e}); "
+                    f"retrying in {delay:.2f}s"
+                )
+                time.sleep(delay)
+
+        return set()
+
+    def search_seq(item: Tuple[str, str]) -> Tuple[str, Set[str]]:
+        """
+        Perform sequence similarity or motif search with retry handling.
+        """
         protein_name, seq = item
+
+        if not seq:
+            return protein_name, set()
+
         try:
             if len(seq) >= 25:
                 query = SeqSimilarityQuery(
@@ -131,72 +190,126 @@ def get_proteins(ids: Iterable, fasta_path: str | Path, workers=100) -> dict[str
             else:
                 query = SeqMotifQuery(value=seq)
 
-            return protein_name, set(id.lower() for id in query("polymer_entity"))
+            hits = _run_query_with_retry(query, protein_name)
+            return protein_name, hits
 
         except Exception as e:
-            print(f"Exception occurred for {protein_name}: {e}")
+            # This catches construction-time errors (very rare)
+            print(f"[ERROR] {protein_name}: query setup failed: {e}")
             return protein_name, set()
 
-    def search_concurently(sequences):
-        similar_ids = {}
+    def search_concurrently(sequences, workers: int = 8):
+        """
+        Run sequence searches concurrently with progress tracking.
+        """
+        similar_ids: dict[str, Set[str]] = {}
+
         with ThreadPoolExecutor(max_workers=workers) as executor:
-            # Submit all tasks
-            future_to_id = {
+            future_to_name = {
                 executor.submit(search_seq, item): item[0] for item in sequences
             }
 
-            # Process completed tasks with progress bar
             for future in tqdm(
-                as_completed(future_to_id),
+                as_completed(future_to_name),
                 total=len(sequences),
                 desc="Sequence similarity search",
             ):
-                key, hits = future.result()
-                if key in similar_ids:
-                    similar_ids[key].update(hits)
+                protein_name, hits = future.result()
+
+                if protein_name in similar_ids:
+                    similar_ids[protein_name].update(hits)
                 else:
-                    similar_ids[key] = hits
+                    similar_ids[protein_name] = hits
+
         return similar_ids
 
-    protein_hits = search_concurently(protein_sequences)
+    protein_hits = search_concurrently(protein_sequences, workers=workers)
 
-    result = {id: "not_assigned" for id in ids}
-    for protein_name, hits in protein_hits.items():
-        for id in ids:
+    ids_by_protein = {id: "" for id in ids_by_taxonomy}
+
+    for id in ids_by_protein:
+        for protein_name, hits in protein_hits.items():
             if id in hits:
-                result[id] = protein_name
+                ids_by_protein[id] = protein_name
 
-    not_assigned_entities = {
-        id for id, name in result.items() if name == "not_assigned"
+    na_ids = {id for id, protein_name in ids_by_protein.items() if not protein_name}
+
+    if na_ids:
+        na_ids_by_polymer_types, na_ids_by_sequences = get_polymer_type_and_sequences(
+            na_ids
+        )
+
+        # Assign rna if polymer type is rna
+        for id, polymer_type in na_ids_by_polymer_types.items():
+            if (polymer_type != "protein") and id in ids_by_protein:
+                ids_by_protein[id] = polymer_type
+                na_ids_by_sequences.pop(id)
+
+        entity_hits = search_concurrently(na_ids_by_sequences.items())
+
+        max_proportion = {entity_id: 0 for entity_id in na_ids}
+        for entity_id, similar_ids in entity_hits.items():
+            for protein_name, reference_ids in protein_hits.items():
+                if similar_ids:
+                    current_proportion = len(
+                        similar_ids.intersection(reference_ids)
+                    ) / len(similar_ids)
+                    if current_proportion > max_proportion[entity_id]:
+                        max_proportion[entity_id] = current_proportion
+                        ids_by_protein[entity_id] = protein_name
+
+    result = {
+        id: {"taxonomy": ids_by_taxonomy[id], "protein": ids_by_protein[id]}
+        for id in ids_by_taxonomy
     }
-
-    na_polymer_types, na_sequences = get_polymer_type_and_sequences(
-        not_assigned_entities
-    )
-
-    for entity, polymer_type in na_polymer_types.items():
-        if polymer_type != "protein":
-            result[entity] = polymer_type
-            na_sequences.pop(entity)
-
-    entity_hits = search_concurently(na_sequences.items())
-
-    max_proportion = {entity_id: 0 for entity_id in not_assigned_entities}
-    for entity_id, similar_ids in entity_hits.items():
-        for protein_name, reference_ids in protein_hits.items():
-            current_proportion = len(similar_ids.intersection(reference_ids)) / len(
-                similar_ids
-            )
-            if current_proportion > max_proportion[entity_id]:
-                result[entity_id] = protein_name
-                max_proportion[entity_id] = current_proportion
-
-    return {
-        pdb_id: names if names else "not_assigned" for pdb_id, names in result.items()
-    }
+    return result
 
 
-def get_attributes(ids: Iterable) -> dict[str, dict]:
+def retrieve_nested_attribute(data, rcsb_data_path: str):
+    """Helper function used by get_df
+
+    Args:
+        data (_type_): _description_
+        rcsb_data_path (str): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    paths = rcsb_data_path.split(".")
+    if "polymer_entities" in paths:
+        paths.remove("polymer_entities")
+    results = set()
+
+    def retrieve_single_attribute(data, paths):
+        if isinstance(data, list):
+            for d in data:
+                retrieve_single_attribute(d, paths.copy())
+
+        elif isinstance(data, dict):
+            if not paths:
+                return
+
+            attribute = paths[0]
+            new_data = data[attribute]
+            if (len(paths) == 1) and new_data:
+                if isinstance(new_data, list):
+                    new_data = new_data[0]
+                if new_data not in results:
+                    results.add(str(new_data))
+            else:
+                retrieve_single_attribute(new_data, paths[1:])
+
+    retrieve_single_attribute(data, paths)
+    return "__".join(sorted(results))
+
+
+def get_df(
+    proteins_and_taxonomy: dict,
+    rcsb_data_attributes: dict = {},
+    functions_to_combine_columns: dict = {},
+    old_df: pd.DataFrame | None = None,
+    aggregate: bool = True,
+) -> dict[str, dict]:
     """Retrieve and reformat structural attributes for PDB entries from RCSB PDB.
     Args:
         ids: A list of PDB entry IDs to query.
@@ -207,135 +320,81 @@ def get_attributes(ids: Iterable) -> dict[str, dict]:
         Returns an empty dictionary if the input list is empty or if the query yields no results.
     """
 
+    ids = proteins_and_taxonomy.keys()
     if not ids:
         return {}
+
+    rcsb_data_attributes = {
+        "entry": "entry.entry.id",
+        "release_date": "entry.rcsb_accession_info.initial_release_date",
+        "last_revised": "entry.rcsb_accession_info.revision_date",
+        **rcsb_data_attributes,
+    }
+
     query = DataQuery(
-        input_type="entries",
+        input_type="polymer_entities",
         input_ids=list(ids),
-        return_data_list=[
-            "entries.rcsb_id",
-            "entries.rcsb_accession_info.initial_release_date",
-            "entries.rcsb_accession_info.revision_date",
-            "entries.rcsb_accession_info.major_revision",
-            "entries.rcsb_accession_info.minor_revision",
-            "entries.exptl.method",
-            "entries.rcsb_entry_info.resolution_combined",
-            "struct.title",
-        ],
+        return_data_list=list(rcsb_data_attributes.values()),
     )
     query.exec()
     response = query.get_response()
-    raw_entries = response.get("data", {}).get("entries", [])
-    reformatted = {}
+    raw_entries = response["data"]["polymer_entities"]
 
+    attrs = {}
     for entry in raw_entries:
-        pdb_id = entry.get("rcsb_id", "").lower()
-        release_date = entry.get("rcsb_accession_info", {}).get("initial_release_date")
-        revision_date = entry.get("rcsb_accession_info", {}).get("revision_date")
-        major = entry.get("rcsb_accession_info", {}).get("major_revision")
-        minor = entry.get("rcsb_accession_info", {}).get("minor_revision")
-        version = f"{major}.{minor}" if minor else str(major)
-        exp_method = None
-        if isinstance(entry["exptl"], list) and entry["exptl"]:
-            exp_method = "; ".join([e.get("method") for e in entry["exptl"]])
-        resolution = entry.get("rcsb_entry_info", {}).get("resolution_combined")
-        if isinstance(resolution, list) and resolution:
-            resolution = resolution[0]
-        title = entry.get("struct", {}).get("title")
-        reformatted[pdb_id] = {
-            "protein": float("NaN"),
-            "path_in_repo": float("NaN"),
-            "release_date": date.fromisoformat(release_date.split("T")[0]),
-            "last_revision": date.fromisoformat(revision_date.split("T")[0]),
-            "version": float(version),
-            "exp_method": exp_method,
-            "resolution": float(resolution) if resolution else float("NaN"),
-            "title": title,
-            "superseded_by": None,
+
+        pdb_id = entry["rcsb_id"].lower()
+        attrs[pdb_id] = {
+            attribute_name: retrieve_nested_attribute(entry, rcsb_data_path)
+            for attribute_name, rcsb_data_path in rcsb_data_attributes.items()
         }
-    return reformatted
 
-
-def update_proteins(proteins: dict[str, str], df: pd.DataFrame = None) -> dict:
-    """
-    Update protein assignments in a dictionary based on a DataFrame and user input.
-
-    Ids that are not assigned a protein are updated if that same id is already in
-    the dataframe. If there are still not_assigned ids, it writes a JSON file called
-    '"assign_manually_edit_me.json" to the current working directory. You can then edit
-    the file manually, save it and the updated dict is returned. The JSON file is deleted.
-    Args:
-        proteins: dictionary mapping ids to proteins.
-        df (optional): A DataFrame indexed by ID containing a "protein" column.
-                       If None or empty, the ids are not updated with the df,
-                       but a JSON file is created nonetheless.
-    Returns:
-        dict: The updated proteins dictionary with newly assigned protein names.
-              Entries previously marked as "not_assigned" are updated where possible.
-    """
-
-    if df is not None and not df.empty:
-        common_ids = list(set(proteins.keys()).intersection(df.index))
-        proteins.update(
-            df.loc[[i for i in common_ids if proteins[i] == "not_assigned"], "protein"]
-        )
-
-    not_assigned_dict = {
-        id: protein for id, protein in proteins.items() if protein == "not_assigned"
-    }
-
-    if not_assigned_dict:
-        newly_assigned = edit_dict_via_file(not_assigned_dict)
-        proteins.update(newly_assigned)
-
-    return proteins
-
-
-def get_df(
-    proteins: dict[str, str],
-    taxonomy: str,
-    df: pd.DataFrame = None,
-):
-    """Create a DataFrame with protein metadata and repository paths.
-
-    Calls update_proteins to update not_assigned proteins using the dataframe (if provided)
-    and user input via a JSON file called "assign_manually_edit_me.json" in the current working
-    directory. Calls get_attributes to get data and merges with an existing dataframe (if provided).
-    Args:
-        proteins: dictionary mapping ids to proteins.
-        taxonomy: Taxonomy identifier for id folder path.
-        df (optional): Will be updated with the new data, if provided.
-            Must be indexed by pdb_id and have the same following columns:
-            protein, release_date, last_revision, version, exp_method,
-            path_in_repo, resolution, title, superseded_by.
-    """
-
-    attributes = get_attributes(proteins.keys())
-    proteins = update_proteins(proteins, df)
-
-    attributes_df = pd.DataFrame.from_dict(attributes, orient="index")
-    proteins_df = pd.DataFrame.from_dict(proteins, orient="index", columns=["protein"])
-
-    new_df = attributes_df.combine_first(proteins_df)
-    new_df["path_in_repo"] = (
-        "pdb/" + new_df["protein"].astype(str) + f"/{taxonomy}/" + new_df.index
+    df = pd.DataFrame.from_dict(attrs, orient="index")
+    df = pd.concat(
+        [pd.DataFrame.from_dict(proteins_and_taxonomy, orient="index"), df], axis=1
     )
-    cols = [
-        "protein",
-        "release_date",
-        "last_revision",
-        "version",
-        "exp_method",
-        "path_in_repo",
-        "resolution",
-        "title",
-        "superseded_by",
-    ]
-    new_df = new_df[cols]
-    new_df.index.rename("pdb_id", inplace=True)
-    new_df["superseded_by"] = new_df["superseded_by"].astype(object)
 
-    if df is None or df.empty:
-        return new_df
+    df.entry = [id.lower() for id in df.entry]
 
-    return new_df.combine_first(df)
+    if aggregate:
+
+        def aggregate_entities(s):
+            entity_attribute = "-".join(
+                sorted(set().union(*[set(d.split("__")) for d in s]))
+            )
+            if entity_attribute:
+                if entity_attribute[0] == "-":
+                    entity_attribute = entity_attribute[1:]
+            return entity_attribute
+
+        df = df.groupby("entry").agg(aggregate_entities)
+
+    else:
+        df.replace({"__": "-"}, regex=True)
+
+    for column in df.columns:
+        try:
+            df[column] = pd.to_numeric(df[column], downcast="integer")
+        except:
+            ValueError
+
+    df.release_date = pd.to_datetime(df.release_date).dt.date
+    df.last_revised = pd.to_datetime(df.last_revised).dt.date
+
+    for columns, f in functions_to_combine_columns.items():
+        if "=" in columns:
+            new_column, old_columns = columns.split("=")
+        else:
+            new_column, old_columns = columns, ""
+        df[new_column.strip()] = df.apply(f, axis=1)
+        if old_columns:
+            old_columns = [c.strip() for c in old_columns.split("+")]
+            print(f"dropping columns {', '.join(old_columns)}")
+            df = df.drop(old_columns, axis=1)
+
+    df = df.replace("", float("Nan"))
+
+    if old_df is not None:
+        df = df.combine_first(old_df)
+
+    return df

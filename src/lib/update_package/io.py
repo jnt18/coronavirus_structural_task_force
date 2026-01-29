@@ -17,6 +17,7 @@ Typical usage example:
 import asyncio
 import aiohttp
 import shutil
+from datetime import date
 from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
 import pandas as pd
@@ -25,7 +26,7 @@ from .utils import async_wrapper
 
 
 @async_wrapper
-async def download_files(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> None:
+async def download_files(new_df: pd.DataFrame, start, end, repo_path: str) -> None:
     """Download structure files for all PDB entries in the given DataFrame.
 
     Uses asyncio for concurrent downloads and aiohttp for async HTTP requests.
@@ -36,6 +37,12 @@ async def download_files(ids: Iterable, new_df: pd.DataFrame, repo_path: str) ->
         df: Make sure that the dataframe is up-to-date using functions in the query module.
         repo_path: Base directory path where downloaded files will be stored
     """
+
+    start, end = date.fromisoformat(start), date.fromisoformat(end)
+    released_mask = (start <= new_df.release_date) & (new_df.release_date <= end)
+    revised_mask = (start <= new_df.last_revised) & (new_df.last_revised <= end)
+    new_df = new_df[released_mask | revised_mask]
+    ids = list(new_df.index)
 
     sem = asyncio.Semaphore(20)
     connector = aiohttp.TCPConnector(limit=50)
