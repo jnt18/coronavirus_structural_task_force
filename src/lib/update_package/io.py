@@ -26,22 +26,23 @@ from .utils import async_wrapper
 
 
 @async_wrapper
-async def download_files(new_df: pd.DataFrame, start, end, repo_path: str) -> None:
+async def download_files(df: pd.DataFrame, start, end, repo_path: str) -> None:
     """Download structure files for all PDB entries in the given DataFrame.
 
     Uses asyncio for concurrent downloads and aiohttp for async HTTP requests.
     When used in a jupyter notebook do
     Can be run without the wrapper using asyncio.run(download_files.__wrapper__(*args)).
     Args:
-        ids: Files will be downloaded for these ids if they are in the dataframe.
         df: Make sure that the dataframe is up-to-date using functions in the query module.
+        start: Start date for filtering structures in the report.
+        end: End date for filtering structures in the report.
         repo_path: Base directory path where downloaded files will be stored
     """
 
     start, end = date.fromisoformat(start), date.fromisoformat(end)
-    released_mask = (start <= new_df.release_date) & (new_df.release_date <= end)
-    revised_mask = (start <= new_df.last_revised) & (new_df.last_revised <= end)
-    new_df = new_df[released_mask | revised_mask]
+    released_mask = (start <= df.release_date) & (df.release_date <= end)
+    revised_mask = (start <= df.last_revised) & (df.last_revised <= end)
+    new_df = df[released_mask | revised_mask]
     ids = list(new_df.index)
 
     sem = asyncio.Semaphore(20)

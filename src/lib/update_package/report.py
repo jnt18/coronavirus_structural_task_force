@@ -4,13 +4,12 @@ Each report lists newly released and revised structures,
 with new structures additionally grouped by protein.
 Make sure that the dataframe is up-to-date using functions in the query module.
 Typical usage:
+    df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
     start = '2023-03-02'
     end = '2023-04-14'
     repo_path = Path.cwd().parent / "data"
-    new_df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
-    taxonomy = "SARS-CoV-2"
 
-    write_reports(start, end, new_df, taxonomy, repo_path)
+    write_reports(new_df, start, end, repo_path)
 """
 
 from pathlib import Path
@@ -21,7 +20,7 @@ from .utils import get_time
 
 
 def write_reports(
-    new_df: pd.DataFrame, start: str, end: str, repo_path: str | Path
+    df: pd.DataFrame, start: str, end: str, repo_path: str | Path
 ) -> None:
     """Generates weekly reports in the date range and a report summarising the full period.
 
@@ -30,10 +29,9 @@ def write_reports(
     For weekly reports it calls write_single_update with start = end = d for all Wednesdays in the date range.
     Each report lists newly released and revised structures, with new structures additionally grouped by protein.
     Args:
+        df: Make sure that the dataframe is up-to-date using functions in the query module.
         start: Start date for filtering structures in the report.
         end: End date for filtering structures in the report.
-        df: Make sure that the dataframe is up-to-date using functions in the query module.
-        taxonomy: Taxonomy identifier for report header.
         repo_path: Reports are written to folder called "weekly_reports" in this directory.
     """
     repo_path = Path(repo_path)
@@ -47,14 +45,14 @@ def write_reports(
 
     # Latest report
     report_path = reports_path / f"latest_update_report.txt"
-    write_single_report(new_df, start_dt, end_dt, report_path, latest_report=True)
+    write_single_report(df, start_dt, end_dt, report_path, latest_report=True)
 
     dates = pd.date_range(
         start_dt, end_dt, periods=(end_dt - start_dt).days // 7 + 1
     ).date
 
     for day in dates:
-        df_date = new_df[(new_df.release_date == day) | (new_df.last_revised == day)]
+        df_date = df[(df.release_date == day) | (df.last_revised == day)]
         report_path = reports_path / f"{day}_update_report.txt"
         write_single_report(df_date, day, day, report_path)
 

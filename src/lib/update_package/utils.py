@@ -13,6 +13,48 @@ from pathlib import Path
 import functools
 import pandas as pd
 
+import time
+import random
+import functools
+from typing import Callable, Any
+from contextlib import contextmanager
+from concurrent.futures import ThreadPoolExecutor
+
+
+def retry_with_backoff(func):
+    """
+    Retry decorator with exponential backoff.
+
+    Retries up to 3 times with base delay 1.0s and jitter 0.5s.
+    """
+
+    MAX_RETRIES = 3
+    BASE_DELAY = 1.0
+    JITTER = 0.5
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs) -> Any:
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                return func(*args, **kwargs)
+
+            except Exception as e:
+                if attempt == MAX_RETRIES:
+                    print(f"[ERROR] failed after {MAX_RETRIES} attempts: {e}")
+                    raise
+
+                delay = BASE_DELAY * (2 ** (attempt - 1))
+                delay += random.uniform(0, JITTER)
+
+                print(
+                    f"[WARN] attempt {attempt} failed ({e}); "
+                    f"retrying in {delay:.2f}s"
+                )
+
+                time.sleep(delay)
+
+    return wrapper
+
 
 def async_wrapper(func):
     """wrapper for async functions"""
@@ -22,6 +64,52 @@ def async_wrapper(func):
         return asyncio.run(func(*args, **kwargs))
 
     return wrapper
+
+
+def retrieve_nested_attribute(data, rcsb_data_path: str) -> str:
+    """
+    Extract values from nested data structures following a dot-notation path.
+
+    Args:
+        data: The data structure to search (dict or list)
+        rcsb_data_path: Dot-separated path (e.g., "entry.rcsb_accession_info.date")
+
+    Returns:
+        String of unique values joined by "__", or empty string if none found
+    """
+    # Remove "polymer_entities" from path segments
+    path_segments = [s for s in rcsb_data_path.split(".") if s != "polymer_entities"]
+    found_values = set()
+
+    def traverse(current_obj, remaining_segments):
+        """Recursively walk through nested data structure."""
+        if not remaining_segments or current_obj is None:
+            return
+
+        current_key = remaining_segments[0]
+        remaining = remaining_segments[1:]
+
+        # Handle lists by recursively checking each item
+        if isinstance(current_obj, list):
+            for item in current_obj:
+                traverse(item, remaining_segments)
+
+        # Handle dictionaries
+        elif isinstance(current_obj, dict):
+            value = current_obj.get(current_key)
+
+            # If we've reached the end of the path, collect the value
+            if not remaining and value:
+                # Extract first item from lists
+                if isinstance(value, list):
+                    value = value[0]
+                found_values.add(str(value))
+            else:
+                # Continue traversing deeper
+                traverse(value, remaining)
+
+    traverse(data, path_segments)
+    return "__".join(sorted(found_values))
 
 
 def get_time(day: str = None, next_week: bool = False) -> date:
