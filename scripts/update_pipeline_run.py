@@ -36,20 +36,31 @@ df = pd.read_pickle(
 start = end = str(utils.get_time())
 # start = "2025-03-12"
 # end = "2025-05-12"
-rcsb_query = config.taxonomy_query[args.taxonomy]
+rcsb_queries = {k: v for k, v in config.taxonomy_query.items() if k in args.taxonomy}
+attributes = ["version_1", "version_2", "exp_method", "resolution", "title"]
+attributes = {k: v for k, v in config.rcsb_data_attributes.items() if k in attributes}
+functions = [
+    "version=version_1+version_2",
+    "path_in_repo",
+    "exp_method",
+    "superseded_by",
+]
+functions = {
+    k: v for k, v in config.functions_to_combine_columns.items() if k in functions
+}
 
 print("getting ids...")
-ids = query.get_ids(start, end, rcsb_query)
+ids_by_taxonomy = query.get_ids(start, end, rcsb_queries)
 print("doing protein assigment...")
-proteins = query.get_proteins(ids, fasta_path)
+ids_by_taxonomy_and_proteins = query.get_proteins(ids_by_taxonomy, fasta_path)
 print("updating dataframe...")
-df = query.get_df(proteins, args.taxonomy, df)
+df = query.get_df(ids_by_taxonomy_and_proteins, attributes, functions, df)
 print("downloading files...")
-io.download_files(ids, df, repo_path)
+io.download_files(df, start, end, repo_path)
 print("checking for superseded...")
-io.delete_superseded(ids, df, repo_path)
+io.delete_superseded(df, start, end, repo_path)
 print("writing reports...")
-report.write_reports(start, end, df, args.taxonomy, repo_path)
+report.write_reports(df, start, end, repo_path)
 
 # new_df = df[ids]
 # c_new_pdb_lst = new_df[new_df.version == 1].index

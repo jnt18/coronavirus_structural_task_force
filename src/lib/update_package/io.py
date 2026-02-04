@@ -7,11 +7,12 @@ It includes utilities for:
 
 Typical usage example:
     get ids and dataframe using update_pipeline.query.
-    taxonomy = "SARS-CoV-2"
+    start = "2023-03-02"
+    end = "2023-04-14"
     repo_path = Path.cwd().parent / "data"
 
-    download_files(ids, df, repo_path)
-    delete_superseded(ids, df, repo_path)
+    download_files(df, start, end, repo_path)
+    delete_superseded(df, start, end, repo_path)
 """
 
 import asyncio
@@ -112,7 +113,7 @@ async def download_files_handle_file(
         file_path.write_bytes(data)
 
 
-def delete_superseded(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> None:
+def delete_superseded(df: pd.DataFrame, start, end, repo_path: str) -> None:
     """Delete directories of superseded PDB entries and update their status in the dataframe inplace.
     Args:
         ids: List of PDB IDs to process.
@@ -124,8 +125,13 @@ def delete_superseded(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> No
     """
     repo_path = Path(repo_path)
 
+    start, end = date.fromisoformat(start), date.fromisoformat(end)
+    released_mask = (start <= df.release_date) & (df.release_date <= end)
+    revised_mask = (start <= df.last_revised) & (df.last_revised <= end)
+    ids = list(df[released_mask | revised_mask].index)
+
     for pdb_id in ids:
-        id_path = repo_path / Path(new_df.loc[pdb_id, "path_in_repo"])
+        id_path = repo_path / Path(df.loc[pdb_id, "path_in_repo"])
         pdb_path = id_path / f"{pdb_id}.pdb"
 
         if not pdb_path.exists():
@@ -139,13 +145,11 @@ def delete_superseded(ids: Iterable, new_df: pd.DataFrame, repo_path: str) -> No
                     old_ids = line.split()[3:]
                     for old_id in old_ids:
                         old_id = old_id.lower()
-                        if old_id in new_df.index:
+                        if old_id in df.index:
                             # mark superseded
-                            new_df.loc[old_id, "superseded_by"] = pdb_id
+                            df.loc[old_id, "superseded_by"] = pdb_id
                             # remove the old file folder if it exists
-                            old_path = repo_path / Path(
-                                new_df.loc[old_id, "path_in_repo"]
-                            )
+                            old_path = repo_path / Path(df.loc[old_id, "path_in_repo"])
                             if old_path.exists() and old_path.is_dir():
                                 shutil.rmtree(old_path)
                                 print(

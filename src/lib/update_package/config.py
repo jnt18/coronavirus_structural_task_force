@@ -1,4 +1,5 @@
 from rcsbapi.search import search_attributes as attrs
+import pandas as pd
 
 taxonomy_query = {
     "SARS-CoV": (
