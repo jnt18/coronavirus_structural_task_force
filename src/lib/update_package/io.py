@@ -23,7 +23,7 @@ from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
 import pandas as pd
 from typing import Iterable
-from .utils import async_wrapper
+from .utils import async_wrapper, get_current_df
 
 
 @async_wrapper
@@ -40,11 +40,7 @@ async def download_files(df: pd.DataFrame, start, end, repo_path: str) -> None:
         repo_path: Base directory path where downloaded files will be stored
     """
 
-    start, end = date.fromisoformat(start), date.fromisoformat(end)
-    released_mask = (start <= df.release_date) & (df.release_date <= end)
-    revised_mask = (start <= df.last_revised) & (df.last_revised <= end)
-    new_df = df[released_mask | revised_mask]
-    ids = list(new_df.index)
+    ids = list(get_current_df(df, start, end).index)
 
     sem = asyncio.Semaphore(20)
     connector = aiohttp.TCPConnector(limit=50)
@@ -55,8 +51,8 @@ async def download_files(df: pd.DataFrame, start, end, repo_path: str) -> None:
 
         tasks = []
         for pdb_id in ids:
-            directory = repo_path / Path(new_df.loc[pdb_id, "path_in_repo"])
-            timestamp = new_df.loc[pdb_id, "release_date"]
+            directory = repo_path / Path(df.loc[pdb_id, "path_in_repo"])
+            timestamp = df.loc[pdb_id, "release_date"]
 
             for ext in ("cif", "pdb", "mtz"):
                 tasks.append(
@@ -125,10 +121,7 @@ def delete_superseded(df: pd.DataFrame, start, end, repo_path: str) -> None:
     """
     repo_path = Path(repo_path)
 
-    start, end = date.fromisoformat(start), date.fromisoformat(end)
-    released_mask = (start <= df.release_date) & (df.release_date <= end)
-    revised_mask = (start <= df.last_revised) & (df.last_revised <= end)
-    ids = list(df[released_mask | revised_mask].index)
+    ids = list(get_current_df(df, start, end).index)
 
     for pdb_id in ids:
         id_path = repo_path / Path(df.loc[pdb_id, "path_in_repo"])

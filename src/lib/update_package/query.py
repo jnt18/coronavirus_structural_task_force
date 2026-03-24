@@ -32,6 +32,9 @@ Typical usage:
         k: v for k, v in config.rcsb_data_attributes.items()
         if k in ["version_1", "version_2", "exp_method", "resolution", "title"]
     }
+    Additional data attributes can be explored via:
+    from rcsbapi.data import DataSchema
+        DataSchema().find_field_names(string)
 
     functions = {
         k: v for k, v in config.functions_to_combine_columns.items()
@@ -43,10 +46,8 @@ Typical usage:
     new_df = get_df(proteins, attributes, functions, old_df)
 """
 
-import re
 import pandas as pd
 import numpy as np
-from Bio import SeqIO
 from typing import Iterable
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -54,7 +55,11 @@ from tqdm import tqdm
 from rcsbapi.search import search_attributes as attrs
 from rcsbapi.search import SeqSimilarityQuery, SeqMotifQuery
 from rcsbapi.data import DataQuery
-from .utils import retry_with_backoff, retrieve_nested_attribute
+from .utils import (
+    get_protein_seq_from_fastas,
+    retry_with_backoff,
+    retrieve_nested_attribute,
+)
 
 
 def get_ids(start: str, end: str, rcsb_queries: dict) -> dict[str:str]:
@@ -86,7 +91,10 @@ def get_ids(start: str, end: str, rcsb_queries: dict) -> dict[str:str]:
         ids = {entity.lower() for entity in query("polymer_entity")}
         for id in ids:
             ids_by_taxonomy.setdefault(id, set()).add(taxonomy)
-    return {id: "__".join(sorted(taxonomy)) for id, taxonomy in ids_by_taxonomy.items()}
+    return {
+        id: {"taxonomy": "__".join(sorted(taxonomy))}
+        for id, taxonomy in ids_by_taxonomy.items()
+    }
 
 
 def get_attributes(ids: Iterable, attributes_to_fetch: dict):
@@ -99,6 +107,7 @@ def get_attributes(ids: Iterable, attributes_to_fetch: dict):
         ids: Iterable of polymer entity IDs (e.g. from get_ids).
         attributes_to_fetch: Mapping of output column name to RCSB schema path.
             Available paths for a given string can be explored via:
+            from rcsbapi.data import DataSchema
             DataSchema().find_field_names(string)
 
     Returns:
@@ -127,7 +136,7 @@ def get_attributes(ids: Iterable, attributes_to_fetch: dict):
 
 def get_proteins(
     ids_by_taxonomy: dict,
-    fasta_path: str | Path,
+    fasta_paths: list[str | Path] = None,
     workers: int = 10,
 ) -> dict[str, dict]:
     """
@@ -155,19 +164,7 @@ def get_proteins(
     """
 
     # Parse FASTA sequences
-    protein_sequences: list[tuple[str, str]] = []
-    for protein in SeqIO.parse(fasta_path, "fasta"):
-        if "OS" in protein.description:
-            protein_name = protein.description[
-                protein.description.find(" ") : protein.description.find("OS")
-            ].strip()
-        else:
-            protein_name = protein.description.split(" ")[1]
-            brackets = re.search(r"\((.*?)\)", protein_name)
-            if brackets:
-                protein_name = brackets.group(1)
-        protein_name = protein_name.replace("-", "_").replace(" ", "_")
-        protein_sequences.append((protein_name, str(protein.seq)))
+    protein_sequences = get_protein_seq_from_fastas(fasta_paths)
 
     @retry_with_backoff
     def run_rcsb_query(query) -> set[str]:
@@ -253,7 +250,7 @@ def get_proteins(
 
     return {
         id: {
-            "taxonomy": ids_by_taxonomy[id],
+            **ids_by_taxonomy[id],
             "protein": ids_by_protein[id],
         }
         for id in ids_by_taxonomy
@@ -314,17 +311,26 @@ def get_df(
     )
 
     df["entry"] = df["entry"].str.lower()
+    df.sort_index(inplace=True)
+
+    # not_date_cols = df.columns.difference(["release_date", "last_revised"])
+    # df[not_date_cols] = df[not_date_cols].replace({"-": "_"}, regex=True)
 
     # Optionally aggregate multiple entities per entry
     if aggregate:
 
         def aggregate_values(series):
-            """Combine multiple values, removing duplicates and sorting."""
-            all_values = set()
+            """Combine multiple values, removing duplicates"""
+            unique_values = {}
             for value in series:
-                if value:
-                    all_values.update(value.split("__"))
-            return "-".join(sorted(all_values))
+                if not value:
+                    continue
+                for v in value.split("__"):
+                    unique_values[v] = None  # keeps insertion order
+            return "-".join(unique_values)
+            # return "-".join(
+            #     dict.fromkeys(v for value in series if value for v in value.split("__"))
+            # )
 
         df = df.groupby("entry", as_index=True).agg(aggregate_values)
     else:

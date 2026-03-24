@@ -12,6 +12,8 @@ import json
 from pathlib import Path
 import functools
 import pandas as pd
+import re
+from Bio import SeqIO
 
 import time
 import random
@@ -19,6 +21,47 @@ import functools
 from typing import Callable, Any
 from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor
+
+
+def get_current_df(df, start, end):
+    try:
+        start, end = date.fromisoformat(start), date.fromisoformat(end)
+    except:
+        TypeError
+    released_mask = (start <= df.release_date) & (df.release_date <= end)
+    revised_mask = (start <= df.last_revised) & (df.last_revised <= end)
+    return df[released_mask | revised_mask]
+
+
+def get_protein_seq_from_single_fasta(fasta_path: Path | str):
+    # List to accomodate multiple sequences for one protein
+    protein_sequences: list[tuple[str, str]] = []
+    for protein in SeqIO.parse(fasta_path, "fasta"):
+        if "OS" in protein.description:
+            protein_name = protein.description[
+                protein.description.find(" ") : protein.description.find("OS")
+            ].strip()
+        else:
+            protein_name = protein.description.split(" ")[1]
+            brackets = re.search(r"\((.*?)\)", protein_name)
+            if brackets:
+                protein_name = brackets.group(1)
+        protein_name = protein_name.replace("-", "_").replace(" ", "_")
+        protein_sequences.append((protein_name, str(protein.seq)))
+
+    return protein_sequences
+
+
+def get_protein_seq_from_fastas(fasta_paths: list[Path | str]):
+    names = []
+    sequences = []
+    for fasta_path in fasta_paths:
+        for name, sequence in get_protein_seq_from_single_fasta(fasta_path):
+            if sequence not in sequences:
+                names.append(name)
+                sequences.append(sequence)
+    protein_sequences = [(name, sequence) for name, sequence in zip(names, sequences)]
+    return protein_sequences
 
 
 def retry_with_backoff(func):
@@ -109,7 +152,7 @@ def retrieve_nested_attribute(data, rcsb_data_path: str) -> str:
                 traverse(value, remaining)
 
     traverse(data, path_segments)
-    return "__".join(sorted(found_values))
+    return "_".join(sorted(found_values))
 
 
 def get_time(day: str = None, next_week: bool = False) -> date:

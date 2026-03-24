@@ -32,6 +32,8 @@ rcsb_data_attributes = {
     "gene_2": "rcsb_entity_source_organism.rcsb_gene_name.value",
     "common_names": "rcsb_polymer_entity.rcsb_macromolecular_names_combined.name",
     "scientific_name": "polymer_entities.rcsb_entity_source_organism.scientific_name",
+    "relevant_chains": "rcsb_id",
+    # "author_chains": "polymer_entity_instances.rcsb_polymer_entity_instance_container_identifiers.auth_asym_id",
 }
 
 
@@ -43,9 +45,13 @@ functions_to_combine_columns = {
         sorted((set(x.gene_1.split("-")) | set(x.gene_2.split("-"))))
     ),
     "gene": lambda x: x.gene[1:] if x.gene.startswith("-") else x.gene,
-    "path_in_repo": lambda x: f"pdb/{x.taxonomy}/{x.protein}/{x.name}",
+    "path_in_repo": lambda x: f"pdb/{'-'.join(sorted(x.protein.split('-')))}/{'-'.join(sorted(x.taxonomy.split('-')))}/{x.name}",
     "exp_method": lambda x: "; ".join(
         x.exp_method.replace("X-RAY", "X_RAY").split("-")
     ),
     "superseded_by": lambda x: float("NaN"),
+    "relevant_chains": lambda row: ", ".join(
+        [chr(int(x.split("_")[1]) + 64) for x in row.relevant_chains.split("-")]
+    ),
+    # "author_chains": lambda row: ", ".join([x for x in row.author_chains.split("-")]),
 }
