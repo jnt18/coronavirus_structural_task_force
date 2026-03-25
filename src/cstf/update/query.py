@@ -1,4 +1,4 @@
-"""Utilities for querying, enriching, and maintaining PDB structural data.
+"""Utilities for querying PDB structural data.
 
 This module provides helpers to:
 - Retrieve PDB polymer entity IDs released or revised within a given date range
@@ -11,13 +11,11 @@ This module provides helpers to:
   merging with an existing dataset while preserving manually assigned proteins.
 
 Typical usage:
-    import pandas as pd
-    from pathlib import Path
+    >>> import pandas as pd
+    >>> from pathlib import Path
 
-    taxonomies = ["H1N1", "H3N2", "H5N1", "H5N8"]
-    rcsb_queries = {
-        k: v for k, v in config.taxonomy_query.items() if k in taxonomies
-    }
+    >>> taxonomies = ["H1N1", "H3N2", "H5N1", "H5N8"]
+    >>> rcsb_queries = {k: v for k, v in config.taxonomy_query.items() if k in taxonomies}
 
     start = "2023-03-02"
     end = "2023-04-14"
