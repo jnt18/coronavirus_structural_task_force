@@ -5,8 +5,8 @@ from pathlib import Path
 
 
 def test_get_ids(reference_df, random_date_range, taxonomy):
-    from lib.update_package.query import get_ids
-    from lib.update_package.config import taxonomy_query
+    from cstf.update.query import get_ids
+    from cstf.update.config import taxonomy_query
 
     df = reference_df[taxonomy].copy()
     start_dt, end_dt = random_date_range
@@ -38,7 +38,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
       - If live_get_proteins returns "not_assigned", ignore that ID.
       - Otherwise assert equality with the past_df["protein"] entry.
     """
-    from lib.update_package.query import get_proteins
+    from cstf.update.query import get_proteins
 
     df = reference_df[taxonomy].copy()
     start, end = random_date_range
@@ -76,7 +76,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
 
 
 def test_get_attributes(reference_df, random_date_range, taxonomy):
-    from lib.update_package.query import get_attributes
+    from cstf.update.query import get_attributes
 
     df = reference_df[taxonomy].copy()
 
@@ -118,7 +118,7 @@ def test_get_df(reference_df, random_date_range, taxonomy):
     """
 
     # Import inside test so pytest path resolution is safe
-    from lib.update_package.query import get_df
+    from cstf.update.query import get_df
 
     reference_df = reference_df[taxonomy]
     start_dt, end_dt = random_date_range

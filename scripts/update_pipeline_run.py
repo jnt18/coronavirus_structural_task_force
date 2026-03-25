@@ -2,8 +2,7 @@ import argparse
 import pandas as pd
 from pathlib import Path
 from rcsbapi.search import search_attributes as attrs
-from lib.update_package import config, utils, query, io, report
-
+from cstf.update import config, utils, query, io, report
 
 """
 executable script for weekly update

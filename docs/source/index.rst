@@ -1,3 +1,6 @@
+.. include:: .md
+   :parser: myst_parser.sphinx_
+
 cstf
 =====================
 

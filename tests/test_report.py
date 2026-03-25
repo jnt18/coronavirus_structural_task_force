@@ -86,8 +86,8 @@ def test_write_reports_matches_historical(
     - Load corresponding historical reports.
     - Compare: new IDs, by-protein groups.
     """
-    from lib.update_package.report import write_reports
-    from lib.update_package.utils import get_time
+    from cstf.update.report import write_reports
+    from cstf.update.utils import get_time
 
     df_subset = reference_df[taxonomy].copy()
 

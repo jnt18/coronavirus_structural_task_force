@@ -12,7 +12,7 @@ async def test_download_files_handle_file(tmp_path):
     - writes new file,
     - hits the expected URL.
     """
-    from lib.update_package.io import download_files_handle_file
+    from cstf.update.io import download_files_handle_file
 
     pdb_id = "7abc"
     ext = "cif"
@@ -64,7 +64,7 @@ async def test_download_files_handle_file(tmp_path):
 
 def test_download_files(tmp_path):
     """Test download_files function with mocked HTTP requests."""
-    from lib.update_package.io import download_files
+    from cstf.update.io import download_files
 
     # Setup test data
     test_df = pd.DataFrame(
@@ -104,7 +104,7 @@ def test_download_files(tmp_path):
 
 def test_delete_superseded(tmp_path):
     """Test that superseded folders get deleted."""
-    from lib.update_package.io import delete_superseded
+    from cstf.update.io import delete_superseded
 
     # Setup test data
     test_df = pd.DataFrame(
