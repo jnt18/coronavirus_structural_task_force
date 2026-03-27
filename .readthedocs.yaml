@@ -9,6 +9,12 @@ build:
    tools:
       python: "3.10"
    jobs:
+      checkout:
+         - git clone --filter=blob:none --sparse https://github.com/jnt18/coronavirus_structural_task_force.git .
+         - git checkout $READTHEDOCS_VERSION
+         - git sparse-checkout init --cone
+         - git sparse-checkout set docs src
+
       pre_create_environment:
          - asdf plugin add uv
          - asdf install uv latest

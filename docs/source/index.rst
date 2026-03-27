@@ -10,18 +10,18 @@ This package provides tools for updating and validating ...
    :caption: update
    :maxdepth: 2
 
-   update/quickstart.md
+   update/Tutorial.md
+   update/config.rst
    update/query.rst
    update/io.rst
    update/report.rst
    update/RMSD.rst
    update/align.rst
    update/utils.rst
-   update/config.rst
 
 .. toctree::
    :caption: validate
    :maxdepth: 2
 
-   validate/quickstart.md
+   validate/Tutorial.md
    validate/test

@@ -17,31 +17,25 @@ Typical usage:
     >>> taxonomies = ["H1N1", "H3N2", "H5N1", "H5N8"]
     >>> rcsb_queries = {k: v for k, v in config.taxonomy_query.items() if k in taxonomies}
 
-    start = "2023-03-02"
-    end = "2023-04-14"
-    fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
-    repo_path = Path.cwd().parent / "data"
+    >>> start = "2023-03-02"
+    >>> end = "2023-04-14"
+    >>> fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
+    >>> repo_path = Path.cwd().parent / "data"
 
-    old_df = pd.read_pickle(
-        repo_path / "dataframes/repo_database_SARS-CoV-2_copy.pkl"
-    )
+    >>> old_df = pd.read_pickle(repo_path / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
 
-    attributes = {
-        k: v for k, v in config.rcsb_data_attributes.items()
-        if k in ["version_1", "version_2", "exp_method", "resolution", "title"]
-    }
+    >>> attributes = {k: v for k, v in config.rcsb_data_attributes.items() if k in ["version_1", "version_2", "exp_method", "resolution", "title"]}
+
     Additional data attributes can be explored via:
-    from rcsbapi.data import DataSchema
-        DataSchema().find_field_names(string)
 
-    functions = {
-        k: v for k, v in config.functions_to_combine_columns.items()
-        if k in ["version=version_1+version_2", "path_in_repo", "exp_method", "supersed_by"]
-    }
+    >>> from rcsbapi.data import DataSchema
+    >>> DataSchema().find_field_names(string)
 
-    ids = get_ids(start, end, rcsb_queries)
-    proteins = get_proteins(ids, fasta_path)
-    new_df = get_df(proteins, attributes, functions, old_df)
+    >>> functions = {k: v for k, v in config.functions_to_combine_columns.items() if k in ["version=version_1+version_2", "path_in_repo", "exp_method", "supersed_by"]}
+
+    >>> ids = get_ids(start, end, rcsb_queries)
+    >>> proteins = get_proteins(ids, fasta_path)
+    >>> new_df = get_df(proteins, attributes, functions, old_df)
 """
 
 import pandas as pd
