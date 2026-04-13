@@ -17,32 +17,29 @@ def sequence_alignment(
     start: str,
     end: str,
     repo_path: str | Path,
-    fasta_paths: list[str | Path],
+    fasta_path: str | Path,
 ) -> None:
-    """
-    Performs sequence alignment between PDB/CIF structures which need to have been downloaded and
-    reference genomes which need to be provided.
+    """Performs sequence alignment between PDB/CIF structures and reference genomes.
 
-    This function aligns the sequences of :class:`~cstf.update.config.CustomTypes.entry_id`
-    against reference genomes, and writes alignment reports to text files.
-    It handles multiple chains per protein and uses gemmi for sequence extraction and alignment.
-
+        This function processes a DataFrame of protein structures within a specified date range,
+        aligns their sequences against reference genomes, and writes alignment reports
+        to text files. It handles multiple chains per protein and uses gemmi for sequence extraction and alignment.
     Args:
-        df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns
-            "protein", "taxonomy", path_in_repo, and "relevant_chains"
-            which can be made using :func:`~cstf.update.config.Presets.functions`.
-        start: Start date (inclusive), ISO format: YYYY-MM-DD.
-        end: End date (inclusive), ISO format: YYYY-MM-DD.
+        df: DataFrame containing protein structure metadata including
+            protein names, taxonomy, file paths, and relevant chain information.
+        start: Start date for filtering the DataFrame (format to match DataFrame index).
+        end: End date for filtering the DataFrame (format to match DataFrame index).
         repo_path: Root path to the repository containing structure files.
-        fasta_paths: Path to the FASTA file containing reference protein sequences.
+        fasta_path: Path to the FASTA file containing reference protein sequences.
     Notes:
         - Creates or appends to "structure_sequence_alignment.txt" files in the structure directories.
-        - First and last chains are anchored to their respective protein names.
+        - Assumes relevant_chains in DataFrame are space-separated capital letters (A, B, C, etc.).
         - Handles ambiguous middle chains by matching against all protein names.
+        - First and last chains are anchored to their respective protein names.
         - Generates alignments for individual chains and overall structure sequences.
     """
     df = utils.get_current_df(df, start, end)
-    fasta_sequences: list[(str, str)] = utils.get_protein_seq_from_fastas(fasta_paths)
+    fasta_sequences: list[(str, str)] = utils.get_protein_seq_from_fastas(fasta_path)
 
     for _, group in df.groupby(["protein", "taxonomy"]):
         path = Path(repo_path, group.path_in_repo.iloc[0]).parent / ALIGNMENT_FILENAME

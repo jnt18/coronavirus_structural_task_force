@@ -1,11 +1,14 @@
-"""Utilities for querying PDB structural data, specifically to
+"""Utilities for querying PDB structural data.
 
+This module provides helpers to:
 - Retrieve PDB polymer entity IDs released or revised within a given date range
   using RCSB search queries.
 - Assign protein names to PDB entities via sequence similarity searches against
-  reference FASTA files.
+  a reference FASTA file.
+- Fetch metadata (e.g. release dates, revisions, experimental methods, titles)
+  for PDB entities and normalize nested RCSB responses.
 - Create or update a pandas DataFrame containing PDB metadata, optionally
-  merging with an existing dataset.
+  merging with an existing dataset while preserving manually assigned proteins.
 
 Typical usage::
 
@@ -293,10 +296,11 @@ def get_df(
             the format "new_col=col1+col2" where col1 and col2 would be dropped.
             See :meth:`~cstf.update.config.Presets.functions` for example functions.
         old_df: Existing DataFrame to merge with. Existing values take precedence.
-        aggregate: Whether to aggregate polymer entities per PDB entry.
+        aggregate: Whether to aggregate multiple polymer entities per PDB entry.
 
     Returns:
-        A pandas DataFrame containing PDB metadata and any derived columns.
+        A pandas DataFrame containing PDB metadata, protein annotations,
+        and any derived columns.
     """
     if not proteins_and_taxonomy:
         return pd.DataFrame()

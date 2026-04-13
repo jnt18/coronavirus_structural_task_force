@@ -24,11 +24,15 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
     "myst_parser",
+    "sphinx_copybutton",
+    "sphinx_autodoc_typehints",
 ]
 
 autodoc_typehints = "description"
 autodoc_typehints_format = "short"
 python_use_unqualified_type_names = True
+add_module_names = False
+autodoc_member_order = "bysource"
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
@@ -37,6 +41,7 @@ intersphinx_mapping = {
     "scipy": ("https://docs.scipy.org/doc/scipy/", None),
     "aiohttp": ("https://docs.aiohttp.org/en/stable/", None),
     "seaborn": ("https://seaborn.pydata.org/", None),
+    "rcsbapi": ("https://rcsbapi.readthedocs.io/en/latest/", None),
 }
 
 

@@ -1,3 +1,5 @@
+"""Module that compares the amino acid sequence of the strcuture with the reference sequence."""
+
 import seaborn as sb
 from matplotlib import pyplot as plt
 import numpy as np
@@ -14,15 +16,15 @@ def calculate_rmsd(
 ) -> None:
     """
     Calculate RMSD (Root Mean Square Deviation) between new and old protein structures.
-    This function compares protein structures from between the given dates against each other
-    and against the other proteins in the dataframe, computing pairwise RMSD values for all chain combinations.
-    Results are saved to a CSV file and a heatmap visualization is generated.
+    This function compares protein structures from a new dataset against an old dataset,
+    computing pairwise RMSD values for all chain combinations. Results are saved to a CSV file
+    and a heatmap visualization is generated.
 
     Args:
-        df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns "protein", "path_in_repo"
-            and optionally relevant_chains, which can be made using :func:`~cstf.update.config.Presets.functions`.
-        start: Start date (inclusive), ISO format: YYYY-MM-DD.
-        end: End date (inclusive), ISO format: YYYY-MM-DD.
+        df: DataFrame containing protein structure information with columns
+            including 'protein' and 'path_in_repo'.
+        start: Start date/identifier for filtering new structures.
+        end: End date/identifier for filtering new structures.
         repo_path: Path to the repository root directory containing structure files.
     Raises:
         KeyError: If required columns are missing from the DataFrame or polymer data.

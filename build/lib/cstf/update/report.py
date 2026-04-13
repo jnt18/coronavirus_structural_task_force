@@ -1,3 +1,17 @@
+"""Module for writing weekly reports and last update report.
+
+Each report lists newly released and revised structures,
+with new structures additionally grouped by protein.
+Make sure that the dataframe is up-to-date using functions in the query module.
+Typical usage:
+    df = pd.read_pickle(repo / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
+    start = '2023-03-02'
+    end = '2023-04-14'
+    repo_path = Path.cwd().parent / "data"
+
+    write_reports(new_df, start, end, repo_path)
+"""
+
 from pathlib import Path
 from itertools import groupby
 import pandas as pd
@@ -8,16 +22,16 @@ from .utils import get_time
 def write_reports(
     df: pd.DataFrame, start: str, end: str, repo_path: str | Path
 ) -> None:
-    """Generates weekly reports in the date range and a report summarising the full period which is
-    overwritten the next time the function is called.
+    """Generates weekly reports in the date range and a report summarising the full period.
 
+    For the final report it calls write_single_update with start, end (as date types) and
+    overwrites weekly_reports/latest_update_report.
+    For weekly reports it calls write_single_update with start = end = d for all Wednesdays in the date range.
     Each report lists newly released and revised structures, with new structures additionally grouped by protein.
-    Structure files do not need to be downloaded to use this function.
-
     Args:
-        df: Output from :func:`~cstf.update.query.get_df` with aggregate=True.
-        start: Start date (inclusive), ISO format: YYYY-MM-DD.
-        end: End date (inclusive), ISO format: YYYY-MM-DD.
+        df: Make sure that the dataframe is up-to-date using functions in the query module.
+        start: Start date for filtering structures in the report.
+        end: End date for filtering structures in the report.
         repo_path: Reports are written to folder called "weekly_reports" in this directory.
     """
     repo_path = Path(repo_path)

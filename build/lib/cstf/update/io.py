@@ -1,4 +1,19 @@
-"""This module provides functions for downloading structure files and managing superseded entries."""
+"""This module provides functions for downloading structure files and managing superseded entries.
+
+It includes utilities for:
+- Downloading structure files (cif, pdb, mtz) from RCSB PDB with concurrent request limiting
+  while archiving previous versions of downloaded files with timestamps.
+- Removing directories of superseded PDB entries and updating their status in the dataframe.
+
+Typical usage example:
+    get ids and dataframe using update_pipeline.query.
+    start = "2023-03-02"
+    end = "2023-04-14"
+    repo_path = Path.cwd().parent / "data"
+
+    download_files(df, start, end, repo_path)
+    delete_superseded(df, start, end, repo_path)
+"""
 
 import asyncio
 import aiohttp
@@ -25,10 +40,10 @@ async def download_files(
     Uses asyncio for concurrent downloads and aiohttp for async HTTP requests.
 
     Args:
-        df: Output from :func:`~cstf.update.query.get_df` with aggregate=True.
-        start: Start date (inclusive), ISO format: YYYY-MM-DD.
-        end: End date (inclusive), ISO format: YYYY-MM-DD.
-        repo_path: Downloaded files will be stored in a folder called "pdb" in this directory.
+        df: Output from :func:`~cstf.update.query.get_df`
+        start: Start date for filtering structures in the report.
+        end: End date for filtering structures in the report.
+        repo_path: Base directory path where downloaded files will be stored
         extensions: File types that will be downloaded.
     """
 
@@ -101,23 +116,15 @@ async def _download_files_handle_file(
         file_path.write_bytes(data)
 
 
-def delete_superseded(
-    df: pd.DataFrame, start: str, end: str, repo_path: str | Path
-) -> None:
+def delete_superseded(df: pd.DataFrame, start, end, repo_path: str) -> None:
     """Delete directories of superseded PDB entries and update their status in the dataframe inplace.
-
-    Use after downloading pdb files. Reads pdb files of the :class:`~cstf.update.config.CustomTypes.entry_id`
-    that were released or revised between the given dates. If one of these new ids has superseded any old ids,
-    the files of the old ids are deleted if they exist and the superseded_by column of the old_ids is updated to contain the new ids.
-
     Args:
-        df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns "path_in_repo" and "superseded_by"
-            which can be made using :func:`~cstf.update.config.Presets.functions`.
-        start: Start date (inclusive), ISO format: YYYY-MM-DD.
-        end: End date (inclusive), ISO format: YYYY-MM-DD.
+        ids: List of PDB IDs to process.
+        df: Pandas DataFrame containing PDB entry metadata with columns including "path_in_repo"
+            and "superseded_by". Index should contain PDB IDs.
         repo_path: Path to the repository root directory containing PDB structure folders.
     Raises:
-        FileNotFoundError: If a specified PDB file cannot be read (continues processing).
+        FileNotFoundError: If a specified PDB file cannot be read (non-fatal, continues processing).
     """
     repo_path = Path(repo_path)
 
