@@ -16,7 +16,7 @@ def calculate_rmsd(
     Calculate RMSD (Root Mean Square Deviation) between new and old protein structures.
     This function compares protein structures from between the given dates against each other
     and against the other proteins in the dataframe, computing pairwise RMSD values for all chain combinations.
-    Results are saved to a CSV file and a heatmap visualization is generated.
+    Results are saved to a CSV file and a heatmap visualization is generated. See :ref:`this section <usage-rmsd>`.
 
     Args:
         df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns "protein", "path_in_repo"

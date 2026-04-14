@@ -12,7 +12,7 @@ def write_reports(
     overwritten the next time the function is called.
 
     Each report lists newly released and revised structures, with new structures additionally grouped by protein.
-    Structure files do not need to be downloaded to use this function.
+    Structure files do not need to be downloaded to use this function. See :ref:`this section <usage-report>`.
 
     Args:
         df: Output from :func:`~cstf.update.query.get_df` with aggregate=True.

@@ -25,7 +25,19 @@ def sequence_alignment(
 
     This function aligns the sequences of :class:`~cstf.update.config.CustomTypes.entry_id`
     against reference genomes, and writes alignment reports to text files.
+
+    Two types of sequence comparisons are made:
+
+    1. Chain-to-reference alignment:
+    Individual protein chain sequences extracted from PDB structures are aligned
+    against reference protein sequences provided in fasta files.
+
+    2. Deposited-to-structure alignment:
+    The full sequence derived from the deposited CIF file is aligned against the
+    sequence reconstructed from the PDB structure.
+
     It handles multiple chains per protein and uses gemmi for sequence extraction and alignment.
+    See :ref:`this section <usage-align>`.
 
     Args:
         df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns
@@ -36,7 +48,7 @@ def sequence_alignment(
         repo_path: Root path to the repository containing structure files.
         fasta_paths: Path to the FASTA file containing reference protein sequences.
     Notes:
-        - Creates or appends to "structure_sequence_alignment.txt" files in the structure directories.
+        - Creates or appends to "structure_sequence_alignment.txt" files in the structure directories (repo_path / pdb / protein / taxonomy)
         - First and last chains are anchored to their respective protein names.
         - Handles ambiguous middle chains by matching against all protein names.
         - Generates alignments for individual chains and overall structure sequences.

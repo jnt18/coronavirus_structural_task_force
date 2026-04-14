@@ -4,19 +4,19 @@
 cstf
 =====================
 
-This package provides tools for updating and validating ...
+This package builds on work done by the Coronavirus Structural Taskforce to make the update and validate pipelines more flexible.
 
 .. toctree::
    :caption: update
    :maxdepth: 2
 
    update/Tutorial.md
-   update/config.rst
    update/query.rst
    update/io.rst
    update/report.rst
    update/RMSD.rst
    update/align.rst
+   update/config.rst
    update/utils.rst
 
 .. toctree::

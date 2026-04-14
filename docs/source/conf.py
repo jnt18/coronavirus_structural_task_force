@@ -33,6 +33,7 @@ autodoc_typehints_format = "short"
 python_use_unqualified_type_names = True
 add_module_names = False
 autodoc_member_order = "bysource"
+myst_enable_extensions = ["colon_fence"]
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),

@@ -22,7 +22,7 @@ async def download_files(
     """Download structure files for all PDB entries in the dataframe that were released
     or revised between the given dates.
 
-    Uses asyncio for concurrent downloads and aiohttp for async HTTP requests.
+    Uses asyncio for concurrent downloads and aiohttp for async HTTP requests. See :ref:`this section <usage-download>`.
 
     Args:
         df: Output from :func:`~cstf.update.query.get_df` with aggregate=True.
@@ -109,6 +109,7 @@ def delete_superseded(
     Use after downloading pdb files. Reads pdb files of the :class:`~cstf.update.config.CustomTypes.entry_id`
     that were released or revised between the given dates. If one of these new ids has superseded any old ids,
     the files of the old ids are deleted if they exist and the superseded_by column of the old_ids is updated to contain the new ids.
+    See :ref:`this section <usage-superseded>`.
 
     Args:
         df: Output from :func:`~cstf.update.query.get_df` with aggregate=True and columns "path_in_repo" and "superseded_by"

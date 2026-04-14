@@ -3,37 +3,9 @@
 - Retrieve PDB polymer entity IDs released or revised within a given date range
   using RCSB search queries.
 - Assign protein names to PDB entities via sequence similarity searches against
-  reference FASTA files.
+  reference fasta files.
 - Create or update a pandas DataFrame containing PDB metadata, optionally
   merging with an existing dataset.
-
-Typical usage::
-
-    import pandas as pd
-    from pathlib import Path
-
-    taxonomies = ["H1N1", "H3N2", "H5N1", "H5N8"]
-    rcsb_queries = {k: v for k, v in config.taxonomy_query.items() if k in taxonomies}
-
-    start = "2023-03-02"
-    end = "2023-04-14"
-    fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
-    repo_path = Path.cwd().parent / "data"
-
-    old_df = pd.read_pickle(repo_path / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
-
-    attributes = {k: v for k, v in config.rcsb_data_attributes.items() if k in ["version_1", "version_2", "exp_method", "resolution", "title"]}
-
-Additional data attributes can be explored via::
-
-    from rcsbapi.data import DataSchema
-    DataSchema().find_field_names(string)
-
-    functions = {k: v for k, v in config.functions_to_combine_columns.items() if k in ["version=version_1+version_2", "path_in_repo", "exp_method", "supersed_by"]}
-
-    ids = get_ids(start, end, rcsb_queries)
-    proteins = get_proteins(ids, fasta_path)
-    new_df = get_df(proteins, attributes, functions, old_df)
 """
 
 import pandas as pd
@@ -61,6 +33,7 @@ def get_ids(
 
     For each supplied RCSB query this function finds polymer entities
     whose initial release date or most recent revision date falls within the specified interval.
+    See :ref:`this section <usage-get-ids>`.
 
     Args:
         start: Start date (inclusive), ISO format: YYYY-MM-DD.
@@ -151,10 +124,11 @@ def get_proteins(
     sequence similarity (or motif search for short sequences). Entities matching
     a reference sequence are assigned the corresponding protein name.
 
-    For entities that remain unassigned:
-    - Non-protein polymers are labeled by their polymer type (e.g. "rna", "dna").
-    - Protein entities are compared via entity-to-entity similarity, and assigned
-      the protein with the highest overlap to reference hits.
+    For entities that remain unassigned: Non-protein polymers are labeled by their polymer type (e.g. "rna", "dna").
+    Protein entities are compared via entity-to-entity similarity, and assigned the protein with the highest overlap to reference hits.
+    See :ref:`this section <usage-get-proteins>`.
+
+
 
     Args:
         ids_by_taxonomy: Output from :func:`get_ids`
@@ -163,8 +137,8 @@ def get_proteins(
 
     Returns:
         Dictionary mapping polymer entity ID to a dictionary with:
-            - "taxonomy": taxonomy label(s)
-            - "protein": assigned protein name (empty string if unresolved)
+        - "taxonomy": taxonomy label(s)
+        - "protein": assigned protein name (empty string if unresolved)
     """
 
     # Parse FASTA sequences
@@ -273,7 +247,7 @@ def get_df(
 
     This function fetches RCSB metadata for polymer entities, merges it with
     taxonomy and protein assignments, and optionally aggregates multiple
-    entities belongifng to the same PDB entry.
+    entities belonging to the same PDB entry. See :ref:`this section <usage-get-df>`.
 
     Args:
         proteins_and_taxonomy: Output from :func:`get_ids` or :func:`get_proteins`.
@@ -282,7 +256,8 @@ def get_df(
             Available paths for a given 'string' can be explored via::
 
                 from rcsbapi.data import DataSchema
-                DataSchema().find_field_names('string')
+                schema = DataSchema()
+                schema.find_paths("polymer_entities", "string")
 
             See :meth:`~cstf.update.config.Presets.attributes` for example data attributes.
             If omitted, only release and revision dates are included.
