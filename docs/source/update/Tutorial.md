@@ -5,15 +5,21 @@
 To clone the repo with everything except the pdb folder do 
 
 ```
-git clone --filter=blob:none --sparse https://github.com/jnt18/coronavirus_structural_task_force.git
+bash
+git clone --filter=blob:none --sparse [https://github.com/jnt18/coronavirus_structural_task_force.git](https://github.com/jnt18/coronavirus_structural_task_force.git)
 
 cd coronavirus_structural_task_force
 
 git sparse-checkout init --cone
 
-git sparse-checkout set $(git ls-tree -d --name-only HEAD | grep -v '^pdb$')
+git sparse-checkout set $(git ls-tree -d --name-only HEAD \vert{} grep -v '^pdb$')
+```
 
-git checkout
+If git checkout fails with an NTFS protection error due to special characters in file paths, run:
+```
+git config core.protectNTFS false
+git checkout master
+git config core.protectNTFS true
 ```
 
 Set up a virtual environment and then run
