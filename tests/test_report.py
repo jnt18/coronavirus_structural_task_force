@@ -102,7 +102,7 @@ def test_write_reports_matches_historical(
     test_repo = tmp_path / "test_data"
     test_repo.mkdir()
 
-    write_reports(str(start), str(end), df_subset, taxonomy, test_repo)
+    write_reports(df_subset, str(start), str(end), test_repo)
 
     # temporary weekly_reporst output directory
     tmp_reports = test_repo / "weekly_reports"
@@ -123,7 +123,7 @@ def test_write_reports_matches_historical(
             # pytest.skip(f"No historical report for {historical_file}")
             continue
 
-        new_file = tmp_reports / f"{day}_update_report_{taxonomy}.txt"
+        new_file = tmp_reports / f"{day}_update_report.txt"
         assert new_file.exists(), f"Missing generated report {new_file}"
 
         hist_struct = parse_report(historical_file)

@@ -20,11 +20,8 @@ def test_get_ids(reference_df, random_date_range, taxonomy):
     past_ids = set(past_df.index.tolist())
 
     # Call real API
-    live_ids = set(
-        get_ids(
-            start=str(start_dt), end=str(end_dt), rcsb_query=taxonomy_query[taxonomy]
-        )
-    )
+    queries = {taxonomy: taxonomy_query[taxonomy]}
+    live_ids = set(get_ids(start=str(start_dt), end=str(end_dt), rcsb_queries=queries))
     # past_ids might have been deleted because they were not_assigned
     assert (past_ids - live_ids) is not None, past_ids - live_ids
     # assert past_ids.issubset(live_ids)
@@ -45,7 +42,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
 
     expected_df = df[
         ((df["release_date"] >= start) & (df["release_date"] <= end))
-        | ((df["last_revision"] >= start) & (df["last_revision"] <= end))
+        | ((df["last_revised"] >= start) & (df["last_revised"] <= end))
     ]
 
     expected_ids = expected_df.index.tolist()
@@ -76,7 +73,7 @@ def test_get_proteins(reference_df, taxonomy, random_date_range, tmp_path):
 
 
 def test_get_attributes(reference_df, random_date_range, taxonomy):
-    from cstf.update.query import get_attributes
+    from cstf.update.query import _get_attributes
 
     df = reference_df[taxonomy].copy()
 
@@ -85,14 +82,14 @@ def test_get_attributes(reference_df, random_date_range, taxonomy):
     # Filter the reference df to the same window used in update_dataframe_inplace tests
     expected_df = df[
         ((df["release_date"] >= start_dt) & (df["release_date"] <= end_dt))
-        | ((df["last_revision"] >= start_dt) & (df["last_revision"] <= end_dt))
+        | ((df["last_revised"] >= start_dt) & (df["last_revised"] <= end_dt))
     ]
 
     if expected_df.empty:
         pytest.skip("No entries found in this random date range for this taxonomy.")
 
     sampled_ids = expected_df.index.tolist()
-    attrs_live = get_attributes(sampled_ids)
+    attrs_live = _get_attributes(sampled_ids)
 
     for live_pdb_id in attrs_live:
         expected_row = expected_df.loc[live_pdb_id]
@@ -129,8 +126,8 @@ def test_get_df(reference_df, random_date_range, taxonomy):
             & (reference_df["release_date"] <= end_dt)
         )
         | (
-            (reference_df["last_revision"] >= start_dt)
-            & (reference_df["last_revision"] <= end_dt)
+            (reference_df["last_revised"] >= start_dt)
+            & (reference_df["last_revised"] <= end_dt)
         )
     ].copy()
 
@@ -145,10 +142,10 @@ def test_get_df(reference_df, random_date_range, taxonomy):
 
     # Patch the query functions
     with (
-        patch("lib.update_package.query.get_ids", return_value=expected_ids),
-        patch("lib.update_package.query.get_proteins", return_value=proteins_dict),
-        patch("lib.update_package.query.update_proteins", return_value=proteins_dict),
-        patch("lib.update_package.query.get_attributes", return_value=attributes_dict),
+        patch("cstf.update.query.get_ids", return_value=expected_ids),
+        patch("cstf.update.query.get_proteins", return_value=proteins_dict),
+        patch("cstf.update.query.update_proteins", return_value=proteins_dict),
+        patch("cstf.update.query._get_attributes", return_value=attributes_dict),
     ):
         # Run function under test
         result_df = get_df(

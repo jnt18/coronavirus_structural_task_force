@@ -15,10 +15,18 @@ def taxonomy(request):
 def reference_df():
     """Load both reference dataframes into a dict."""
     base = Path(__file__).parent / "test_data" / "dataframes"
+    df1 = pd.read_pickle(base / "test_SARS-CoV-2.pkl")
+    df2 = pd.read_pickle(base / "test_SARS-CoV.pkl")
+    df1["taxonomy"] = "SARS-CoV-2"
+    df2["taxonomy"] = "SARS-CoV"
+
+    for df in (df1, df2):
+        df.rename(columns={"last_revision": "last_revised"}, inplace=True)
     dfs = {
-        "SARS-CoV-2": pd.read_pickle(base / "test_SARS-CoV-2.pkl"),
-        "SARS-CoV": pd.read_pickle(base / "test_SARS-CoV.pkl"),
+        "SARS-CoV-2": df1,
+        "SARS-CoV": df2,
     }
+
     return dfs
 
 

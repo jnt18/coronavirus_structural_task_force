@@ -12,7 +12,7 @@ async def test_download_files_handle_file(tmp_path):
     - writes new file,
     - hits the expected URL.
     """
-    from cstf.update.io import download_files_handle_file
+    from cstf.update.io import _download_files_handle_file
 
     pdb_id = "7abc"
     ext = "cif"
@@ -42,7 +42,7 @@ async def test_download_files_handle_file(tmp_path):
     session = MockSession()
     sem = asyncio.Semaphore(1)
 
-    await download_files_handle_file(
+    await _download_files_handle_file(
         session=session,
         pdb_id=pdb_id,
         file_dir=file_dir,
@@ -73,26 +73,28 @@ def test_download_files(tmp_path):
                 "pdb/protein/SARS-CoV-2/7abc",
                 "pdb/protein/SARS-CoV-2/6xyz",
             ],
-            "release_date": ["2022-01-01", "2021-06-01"],
+            "release_date": ["2021-01-01", "2021-06-01"],
+            "last_revised": ["2021-01-01", "2021-06-01"],
         },
-        index=["7abc", "6xyz"],
+        index=["1abc", "2def"],
     )
-    ids = ["7abc", "6xyz"]
+    test_df["release_date"] = pd.to_datetime(test_df["release_date"]).dt.date
+    test_df["last_revised"] = pd.to_datetime(test_df["release_date"]).dt.date
 
     # Mock the download_files_handle_file function
     with patch(
-        "lib.update_package.io.download_files_handle_file", new_callable=AsyncMock
+        "cstf.update.io._download_files_handle_file", new_callable=AsyncMock
     ) as mock_handle:
         mock_handle.return_value = None
 
         # Mock tqdm_asyncio.gather to avoid progress bar
         with patch(
-            "lib.update_package.io.tqdm_asyncio.gather", new_callable=AsyncMock
+            "cstf.update.io.tqdm_asyncio.gather", new_callable=AsyncMock
         ) as mock_gather:
             mock_gather.return_value = None
 
             # Call the function (synchronously, since it's wrapped)
-            download_files(ids, test_df, str(tmp_path))
+            download_files(test_df, "2021-01-01", "2021-06-01", str(tmp_path))
 
             # Verify download_files_handle_file was called correct number of times
             # Should be called 6 times: 2 PDB entries × 3 extensions (cif, pdb, mtz)
@@ -113,12 +115,15 @@ def test_delete_superseded(tmp_path):
                 "pdb/protein_B/SARS-CoV-2/1abc",
                 "pdb/protein_A/SARS-CoV-2/2def",
             ],
+            "release_date": ["2021-01-01", "2021-06-01"],
+            "last_revised": ["2021-01-01", "2021-06-01"],
             "version": [1, 2],
             "superseded_by": [None, None],
         },
         index=["1abc", "2def"],
     )
-    ids = ["1abc", "2def"]
+    test_df["release_date"] = pd.to_datetime(test_df["release_date"]).dt.date
+    test_df["last_revised"] = pd.to_datetime(test_df["release_date"]).dt.date
 
     # Create new entry with PDB file containing SPRSDE record
     new_id_path = tmp_path / "pdb/protein_A/SARS-CoV-2/2def"
@@ -131,7 +136,7 @@ def test_delete_superseded(tmp_path):
     old_id_path.mkdir(parents=True, exist_ok=True)
 
     # Call the function
-    delete_superseded(ids, test_df, str(tmp_path))
+    delete_superseded(test_df, "2021-01-01", "2021-06-01", str(tmp_path))
 
     # Verify the old directory was deleted
     assert not old_id_path.exists()

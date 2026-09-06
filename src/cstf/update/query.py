@@ -13,6 +13,7 @@ import numpy as np
 from typing import Iterable, Callable, Any
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
 from tqdm import tqdm
 from rcsbapi.search import search_attributes as attrs
 from rcsbapi.search import SeqSimilarityQuery, SeqMotifQuery
@@ -161,7 +162,9 @@ def get_proteins(
             if len(seq) >= 25:
                 query = SeqSimilarityQuery(
                     value=seq,
-                    evalue_cutoff=1,
+                    # evalue_cutoff=1,
+                    evalue_cutoff=0.1,
+                    identity_cutoff=0.2,
                     sequence_type="protein",
                 )
             else:

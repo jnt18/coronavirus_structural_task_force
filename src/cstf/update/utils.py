@@ -17,7 +17,7 @@ from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor
 
 
-def get_current_df(df, start, end):
+def get_current_df(df: pd.DataFrame, start: str, end: str):
     """Given a dataframe return only columns where release date or revision date
     fall between start and end dates."""
     try:
@@ -64,32 +64,27 @@ def get_protein_seq_from_fastas(fasta_paths: list[Path | str]):
 
 def retry_with_backoff(func):
     """
-    Retry decorator with exponential backoff.
-
-    Retries up to 3 times with base delay 1.0s and jitter 0.5s.
+    Retry decorator with exponential backoff designed for heavy RCSB queries.
     """
-
-    MAX_RETRIES = 3
-    BASE_DELAY = 1.0
-    JITTER = 0.5
+    MAX_RETRIES = 3  # Increased from 3
+    BASE_DELAY = 1.0  # Increased from 1.0 (gives server time to cool off)
+    JITTER = 2.0  # Increased jitter to un-sync concurrent threads
 
     @functools.wraps(func)
     def wrapper(*args, **kwargs) -> Any:
         for attempt in range(1, MAX_RETRIES + 1):
             try:
                 return func(*args, **kwargs)
-
             except Exception as e:
                 if attempt == MAX_RETRIES:
                     print(f"[ERROR] failed after {MAX_RETRIES} attempts: {e}")
                     raise
 
-                delay = BASE_DELAY * (2 ** (attempt - 1))
-                delay += random.uniform(0, JITTER)
+                delay = BASE_DELAY * (2 ** (attempt - 1)) + random.uniform(0, JITTER)
 
                 print(
                     f"[WARN] attempt {attempt} failed ({e}); "
-                    f"retrying in {delay:.2f}s"
+                    f"retrying in {delay:.2f}s..."
                 )
 
                 time.sleep(delay)
