@@ -7,11 +7,8 @@ To clone the repo with everything except the pdb folder do
 ```
 bash
 git clone --filter=blob:none --sparse [https://github.com/jnt18/coronavirus_structural_task_force.git](https://github.com/jnt18/coronavirus_structural_task_force.git)
-
 cd coronavirus_structural_task_force
-
 git sparse-checkout init --cone
-
 git sparse-checkout set $(git ls-tree -d --name-only HEAD \vert{} grep -v '^pdb$')
 ```
 
@@ -22,17 +19,21 @@ git checkout master
 git config core.protectNTFS true
 ```
 
-Set up a virtual environment and then run
+Then run
 
 ```
-pip install -e .
+uv sync
 ```
-
-to install the package in “editable” mode so that changes to the source code are immediately reflected without reinstalling.
 
 Then import the modules from the update package:
 ```
 from cstf.update import config, query, io, report, align, RMSD, utils
+```
+
+In addition to the Python packages installed by `uv`, the structural-validation tools require the CCTBX `chem_data` reference dataset. This data is downloaded automatically by `scripts/setup_chem_data.py`, verified against the expected CCTBX release checksum, and linked into the virtual environment so that CCTBX/mmtbx can discover it. To download the data run
+
+```
+uv run --with zstandard python scripts/setup_chem_data.pys
 ```
 
 ## Example
