@@ -133,7 +133,7 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
             with open(xtriage_log, "w") as fh:
                 xtriage_mod.run_xtriage(
                     str(files["mtz"]),
-                    model_path=str(model_path),
+                    # model_path=str(model_path),
                     out_stream=fh,
                 )
             status["xtriage"] = "done"
