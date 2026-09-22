@@ -151,44 +151,68 @@ def get_proteins(
         Execute an RCSB sequence query with retry and exponential backoff.
         """
         results = query("polymer_entity")
-        return {id.lower() for id in results}
+        return set(results)
+        # return {id.lower() for id in results}
 
     # Sequence search function
-    def search_seq(item: tuple[str, str]) -> tuple[str, set[str]]:
+    def search_seq(
+        item: tuple[str, str], id_query: AttributeQuery
+    ) -> tuple[str, set[str]]:
         protein_name, seq = item
         if not seq:
             return protein_name, set()
+
         try:
+            # Define sequence query based on length
             if len(seq) >= 25:
-                query = SeqSimilarityQuery(
+                seq_query = SeqSimilarityQuery(
                     value=seq,
-                    # evalue_cutoff=1,
-                    evalue_cutoff=0.1,
-                    identity_cutoff=0.2,
+                    evalue_cutoff=1,
                     sequence_type="protein",
                 )
             else:
-                query = SeqMotifQuery(value=seq)
-            hits = run_rcsb_query(query)
+                seq_query = SeqMotifQuery(value=seq)
+
+            # Combine queries using bitwise AND (&)
+            combined_query = seq_query & id_query
+
+            # Execute query (specifying polymer_entity return type)
+            hits = run_rcsb_query(combined_query)
+            # hits = set(combined_query("polymer_entity"))
             return protein_name, hits
+
         except Exception as e:
             print(f"[ERROR] {protein_name}: query failed: {e}")
             return protein_name, set()
 
-    def run_concurrent_tasks(items: Iterable, desc: str) -> dict[str, set[str]]:
+    def run_concurrent_tasks(
+        items: Iterable, id_query: AttributeQuery, desc: str
+    ) -> dict[str, set[str]]:
         results: dict[str, set[str]] = {}
         with ThreadPoolExecutor(max_workers=workers) as executor:
-            futures = {executor.submit(search_seq, item): item[0] for item in items}
+            futures = {
+                executor.submit(search_seq, item, id_query): item[0] for item in items
+            }
             for key, hits in tqdm(
                 (future.result() for future in as_completed(futures)),
                 total=len(futures),
                 desc=desc,
             ):
                 results.setdefault(key, set()).update(hits)
+
         return results
 
     # Run sequence similarity searches for all reference proteins
-    protein_hits = run_concurrent_tasks(protein_sequences, "Sequence similarity search")
+    id_query = AttributeQuery(
+        attribute="rcsb_polymer_entity_container_identifiers.rcsb_id",
+        operator="in",
+        value=list(ids_by_taxonomy),
+    )
+
+    protein_hits = run_concurrent_tasks(
+        protein_sequences, id_query, "Sequence similarity search"
+    )
+
     # Initialize protein assignments (empty string = unassigned)
     ids_by_protein = {id: "" for id in ids_by_taxonomy}
     for id in ids_by_protein:
@@ -213,9 +237,10 @@ def get_proteins(
             if polymer_type != "protein" and id in ids_by_protein:
                 ids_by_protein[id] = polymer_type
                 not_assigned_sequences.pop(id)
-        # Entity-to-entity similarity search
+
         entity_hits = run_concurrent_tasks(
             list(not_assigned_sequences.items()),
+            id_query,
             "Entity similarity search",
         )
         max_proportion = {id: 0 for id in not_assigned_ids}
