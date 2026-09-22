@@ -69,36 +69,28 @@ async def _download_files_handle_file(
     timestamp: str,
     sem: asyncio.Semaphore,
 ):
-    """Download a file from RCSB PDB and archive existing file with a timestamp.
-    Args:
-        session: An aiohttp ClientSession object for making async HTTP requests.
-        pdb_id: The 4-character PDB identifier.
-        file_dir: Path object specifying the directory where the file will be saved.
-        ext: File extension (e.g., 'pdb', 'cif') indicating the file format to download.
-        timestamp: Timestamp string appended to archived filenames for version tracking.
-        sem: asyncio.Semaphore object to limit concurrent downloads.
-    """
     async with sem:
         file_dir.mkdir(parents=True, exist_ok=True)
-
         file_path = file_dir / f"{pdb_id}.{ext}"
 
-        # Archive old file if it exists
         if file_path.exists():
             old_dir = file_dir / "old"
             old_dir.mkdir(exist_ok=True)
-
-            archived_name = f"{pdb_id}_{timestamp}.{ext}"
-            archived_path = old_dir / archived_name
-
+            archived_path = old_dir / f"{pdb_id}_{timestamp}.{ext}"
             file_path.replace(archived_path)
 
-        # Download the new file
-        url = f"https://files.rcsb.org/download/{pdb_id}.{ext}"
-        async with session.get(url) as resp:
-            data = await resp.read()
+        # Build download URL depending on extension
+        if ext == "mtz":
+            # Fetch MTZ directly from PDBe archive
+            pdb_lower = pdb_id.lower()
+            url = f"https://www.ebi.ac.uk/pdbe/entry-files/download/r{pdb_lower}sf.ent"
+        else:
+            url = f"https://files.rcsb.org/download/{pdb_id}.{ext}"
 
-        file_path.write_bytes(data)
+        async with session.get(url) as resp:
+            if resp.status == 200:
+                data = await resp.read()
+                file_path.write_bytes(data)
 
 
 def delete_superseded(
