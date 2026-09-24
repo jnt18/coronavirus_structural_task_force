@@ -2,7 +2,7 @@
 orchestrator.py
 
 Runs the open-source validation pipeline (xtriage, cablam, clashscore,
-reduce, molprobity) over a batch of PDB entries described by a
+reduce, molprobity, charts) over a batch of PDB entries described by a
 DataFrame indexed by PDB ID with a `path_in_repo` column pointing at a
 directory containing one .pdb, .cif, and .mtz file each -- the same
 layout the original run_xtriage.sh / run_cablam.sh /
@@ -14,23 +14,20 @@ Output layout mirrors the original scripts:
     {path_in_repo}/validation/molprobity/clashscore.txt
     {path_in_repo}/validation/molprobity/{pdb_id}.H.pdb
     {path_in_repo}/validation/molprobity/molprobity.out
+    {path_in_repo}/validation/molprobity/{pdb_id}_rama.pdf
+    {path_in_repo}/validation/molprobity/{pdb_id}_multichart.pdf
 
-KNOWN GAP: the original run_molprobity.sh also called
-`rama_chart_pdf` and `multichart` to generate Ramachandran/
-multi-criterion PDF plots. No module for those was written in this
-set (they're Phenix-specific plotting utilities, not just data
-computed by mmtbx.validation) -- this orchestrator computes all the
-same underlying statistics but does not reproduce those plot files.
-If you need them, the ramalyze/rotalyze/cablam result objects here
-carry the residue-level data needed to plot equivalents with
-matplotlib; that would be a separate module.
+The two PDFs replace the original run_molprobity.sh's `rama_chart_pdf` and
+`multichart` calls. They are matplotlib re-implementations (see charts.py),
+so they carry the same information but are not pixel-identical to the
+Phenix/MolProbity originals.
 
 Usage:
     import pandas as pd
     from orchestrator import run_pipeline
 
     df = pd.DataFrame({"path_in_repo": [...]}, index=["1abc", "2xyz"])
-    summary = run_pipeline(df)
+    summary = run_pipeline(df, repo_path=Path("/data/repo"))
     summary.to_csv("validation_run_summary.csv")
 """
 
@@ -47,10 +44,11 @@ from cstf.validate.phenix_replication import clashscore as clashscore_mod
 from cstf.validate.phenix_replication import reduce as reduce_mod
 from cstf.validate.phenix_replication import molprobity as molprobity_mod
 from cstf.validate.phenix_replication import fmodel_builder as fmodel_mod
+from cstf.validate.phenix_replication import charts as charts_mod
 
 logger = logging.getLogger("xtal_validation.orchestrator")
 
-STEP_NAMES = ["xtriage", "cablam", "clashscore", "reduce", "molprobity"]
+STEP_NAMES = ["xtriage", "cablam", "clashscore", "reduce", "molprobity", "charts"]
 
 
 def find_structure_files(path_in_repo):
@@ -123,6 +121,13 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
     validation_dir.mkdir(exist_ok=True)
     molprobity_dir.mkdir(exist_ok=True)
 
+    # Results kept in memory so the charts step can reuse them when the
+    # corresponding step actually ran in this call (they are None when a
+    # step was skipped because its output already existed, or failed).
+    cablam_result = None
+    clash_result = None
+    mp_result = None
+
     # --- xtriage: needs reflection data ---
     xtriage_log = validation_dir / "Xtriage_output.log"
     if files["mtz"] is None:
@@ -149,8 +154,8 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
         status["cablam"] = "skipped"
     else:
         try:
-            result = cablam_mod.run_cablam(str(model_path))
-            report = cablam_mod.format_report(result, str(model_path))
+            cablam_result = cablam_mod.run_cablam(str(model_path))
+            report = cablam_mod.format_report(cablam_result, str(model_path))
             cablam_out.write_text(report + "\n")
             status["cablam"] = "done"
         except Exception as exc:  # noqa: BLE001
@@ -164,8 +169,8 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
         status["clashscore"] = "skipped"
     else:
         try:
-            result = clashscore_mod.run_clashscore(str(model_path))
-            report = clashscore_mod.format_report(result, str(model_path))
+            clash_result = clashscore_mod.run_clashscore(str(model_path))
+            report = clashscore_mod.format_report(clash_result, str(model_path))
             clashscore_txt.write_text(report + "\n")
             status["clashscore"] = "done"
         except Exception as exc:  # noqa: BLE001
@@ -200,12 +205,12 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
                     mtz_path=mtz_arg,
                 )
 
-            result = molprobity_mod.run_molprobity(
+            mp_result = molprobity_mod.run_molprobity(
                 str(model_path),
                 fmodel=fmodel,
             )
 
-            report = molprobity_mod.format_report(result, str(model_path))
+            report = molprobity_mod.format_report(mp_result, str(model_path))
 
             molprobity_out.write_text(report + "\n")
 
@@ -217,6 +222,57 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
             logger.warning("molprobity failed for %s: %s", pdb_id, exc)
             logger.debug(traceback.format_exc())
             print(traceback.format_exc())
+
+    # --- charts (replaces rama_chart_pdf + multichart) ---
+    rama_pdf = molprobity_dir / "{}_rama.pdf".format(pdb_id)
+    multi_pdf = molprobity_dir / "{}_multichart.pdf".format(pdb_id)
+    if skip_existing and rama_pdf.exists() and multi_pdf.exists():
+        status["charts"] = "skipped"
+    else:
+        try:
+            # If the molprobity step didn't run in this call (skipped or
+            # failed) there is no in-memory result, so compute one. Charts
+            # don't need map/R-factor statistics, so model-only is enough.
+            if mp_result is None:
+                mp_result = molprobity_mod.run_molprobity(str(model_path), fmodel=None)
+
+            # Attribute names follow mmtbx.validation.molprobity.molprobity;
+            # adjust here if your run_molprobity wrapper exposes them
+            # differently. cablam/clashes fall back to the standalone
+            # steps' results when the aggregate doesn't carry them.
+            rama = getattr(mp_result, "ramalyze", None)
+            rota = getattr(mp_result, "rotalyze", None)
+            cbeta = getattr(mp_result, "cbetadev", None)
+            clashes = getattr(mp_result, "clashes", None) or clash_result
+            cablam = getattr(mp_result, "cablam", None) or cablam_result
+
+            import iotbx.pdb  # deferred: only needed for this step
+
+            hierarchy = iotbx.pdb.input(file_name=str(model_path)).construct_hierarchy()
+
+            written = charts_mod.write_charts(
+                pdb_id,
+                hierarchy,
+                molprobity_dir,
+                rama=rama,
+                rota=rota,
+                cbeta=cbeta,
+                clashes=clashes,
+                cablam=cablam,
+            )
+            # write_charts logs and swallows per-chart failures, so judge
+            # success by which files actually came back.
+            missing = {"rama", "multichart"} - set(written)
+            if missing:
+                status["charts"] = "partial: missing {} (see log)".format(
+                    ", ".join(sorted(missing))
+                )
+            else:
+                status["charts"] = "done"
+        except Exception as exc:  # noqa: BLE001
+            status["charts"] = "error: {}".format(exc)
+            logger.warning("charts failed for %s: %s", pdb_id, exc)
+            logger.debug(traceback.format_exc())
 
     return status
 
@@ -231,6 +287,8 @@ def run_pipeline(
         df: DataFrame indexed by PDB ID, with a column (default
             'path_in_repo') giving the directory containing that
             entry's .pdb/.cif/.mtz files
+        repo_path: pathlib.Path root that each path_column value is
+            joined onto (must be a Path, not a str)
         path_column: name of the column holding the directory path
         skip_existing: skip steps whose output already exists,
             matching the original bash scripts' caching behavior
@@ -239,9 +297,10 @@ def run_pipeline(
     Returns:
         a DataFrame indexed the same as df, with one column per
         pipeline step (xtriage, cablam, clashscore, reduce,
-        molprobity) holding a status string for that step. Never
-        raises for individual-entry failures -- check the returned
-        DataFrame for 'error: ...' values to find problem entries.
+        molprobity, charts) holding a status string for that step.
+        Never raises for individual-entry failures -- check the
+        returned DataFrame for 'error: ...' values to find problem
+        entries.
     """
     if path_column not in df.columns:
         raise ValueError("df must have a '{}' column".format(path_column))
