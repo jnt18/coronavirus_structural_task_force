@@ -1,178 +1,388 @@
-"""
-molprobity.py
+from __future__ import annotations
 
-Open-source replacement for `phenix.molprobity`, the aggregate
-multi-criterion validation report. Built on
-mmtbx.validation.molprobity.molprobity, which is the same class the
-phenix.molprobity CLI instantiates: it runs clashscore, Ramachandran
-(ramalyze), rotamer (rotalyze), CaBLAM, and (when reflection data is
-supplied) real-space/model-vs-data metrics, then bundles them into one
-summary object with an overall MolProbity score.
+from pathlib import Path
+from typing import Optional
+from io import StringIO
 
-When an --mtz is supplied, this module builds a scaled fmodel via
-fmodel_builder.build_fmodel() (bulk-solvent correction + anisotropic
-scaling handled by CCTBX's own loader, not reimplemented here) so the
-real-space correlation and other model-vs-data metrics actually
-populate instead of being silently skipped.
+from libtbx import phil
+from iotbx import pdb
+from iotbx.data_manager import DataManager
 
-Usage:
-    python molprobity.py model.pdb
-    python molprobity.py model.pdb --mtz data.mtz --out molprobity.out
-    python molprobity.py model.pdb --mtz data.mtz --twin-law "-h,-k,l"
-"""
+from mmtbx import model
+from mmtbx.model import statistics as model_statistics
+from mmtbx.reduce.Optimizers import _philLike
+from mmtbx.programs import reduce2
 
-import argparse
-import sys
-
-import iotbx.pdb
+# from mmtbx.reduce import reduce_hydrogen
+from mmtbx.programs.reduce2 import reduce_hydrogen
+from mmtbx.validation.clashscore2 import clashscore2
 from mmtbx.validation import molprobity as molprobity_module
+from mmtbx.validation import clashscore
 
-from cstf.validate.phenix_replication.fmodel_builder import build_fmodel
 
-
-def run_molprobity(model_path, mtz_path=None, keep_hydrogens=False, twin_law=None):
+def _probe2_geometry_clash(self):
     """
-    Run the full MolProbity multi-criterion validation suite.
+    Replacement for mmtbx.model.statistics.geometry.clash().
 
-    Args:
-        model_path: path to a PDB/mmCIF file
-        mtz_path: optional reflection file for model-vs-data metrics
-            (real-space correlation, etc.) -- when given, a scaled
-            fmodel is built via fmodel_builder.build_fmodel()
-        keep_hydrogens: whether to keep existing hydrogens rather than
-            stripping/re-adding them internally
-        twin_law: optional twin law (e.g. "-h,-k,l") passed through to
-            build_fmodel() if Xtriage flagged the data as twinned;
-            ignored if mtz_path is not given
-
-    Returns:
-        an mmtbx.validation.molprobity.molprobity results object
-
-    Raises:
-        RuntimeError if mtz_path is given but the fmodel could not be
-        built (mismatched symmetry, missing R-free flags, etc.) --
-        see fmodel_builder.build_fmodel() for the underlying cause.
-        Model-only validation is not silently substituted in this
-        case, since a caller who asked for data-based metrics should
-        know they didn't get them rather than get a partial report
-        that looks complete.
+    CCTBX 2025.11's MolProbity geometry code still expects the older
+    clashscore interface, while the installed clash machinery is Probe2
+    (clashscore2).  Serialize the current hierarchy into a DataManager and
+    run clashscore2 through that interface.
     """
-    pdb_input = iotbx.pdb.input(file_name=model_path)
-    pdb_hierarchy = pdb_input.construct_hierarchy()
+    if self.cached_clash is None:
+        pdb_string = self.pdb_hierarchy.as_pdb_string(
+            crystal_symmetry=self.model.crystal_symmetry()
+        )
 
-    fmodel = None
-    if mtz_path:
-        fmodel = build_fmodel(model_path, mtz_path, twin_law=twin_law)
+        data_manager = DataManager()
+        data_manager.process_model_str(
+            "molprobity_internal_model.pdb",
+            pdb_string,
+        )
 
-    result = molprobity_module.molprobity(
-        pdb_hierarchy=pdb_hierarchy,
-        fmodel=fmodel,
-        keep_hydrogens=keep_hydrogens,
-        nuclear=False,
-        save_probe_unformatted_file=None,
+        self.cached_clash = clashscore2(
+            probe_parameters=_philLike(),
+            data_manager=data_manager,
+            fast=self.fast_clash,
+            condensed_probe=self.condensed_probe,
+            keep_hydrogens=self.use_hydrogens,
+            nuclear=self.model.is_neutron(),
+        )
+
+    return model_statistics.group_args(
+        score=self.cached_clash.get_clashscore(),
+        clashes=self.cached_clash,
     )
+
+
+def _find_flips_in_output_string(output_string, mover_type):
+    """
+    Extract FlipMoverState objects from Optimizers.getInfo() output.
+
+    This mirrors mmtbx.programs.reduce2._FindFlipsInOutputString().
+    """
+    ret = []
+    model_id = None
+    alt_id = None
+    in_block = False
+
+    for line in output_string.splitlines():
+        words = line.split()
+
+        if not words:
+            continue
+
+        if in_block:
+            if words[0:2] == ["END", "REPORT"]:
+                in_block = False
+
+            elif words[0] == mover_type:
+                ret.append(
+                    reduce2.Optimizers.FlipMoverState(
+                        mover_type,
+                        model_id,
+                        alt_id,
+                        words[3],
+                        words[4],
+                        words[5],
+                        words[14] == "Flipped",
+                        words[15] == "AnglesAdjusted",
+                    )
+                )
+
+        else:
+            if words[0:2] == ["BEGIN", "REPORT:"]:
+                model_id = int(words[3])
+
+                # Remove the single-quote and colon characters from AltId.
+                trim = words[5].replace("'", "")
+                trim = trim.replace(":", "")
+                alt_id = trim
+
+                in_block = True
+
+    return ret
+
+
+def _run_reduce2_nqh_flips(pdb_hierarchy):
+    """
+    Run the installed Reduce2 Python implementation and return
+    N/Q/H flip information in the form expected by MolProbity.
+
+    The old MolProbity implementation invokes:
+
+        molprobity.reduce -BUILD -
+
+    That executable is not installed in this CCTBX environment.
+    Reduce2 provides the equivalent functionality through its Python API.
+    """
+    # Program.master_phil_str is a class-level PHIL definition in the
+    # installed reduce2 implementation.
+    master_phil = phil.parse(reduce2.Program.master_phil_str)
+    params = master_phil.extract()
+
+    params.approach = "add"
+    params.add_flip_movers = True
+    params.output.write_files = False
+
+    # Construct a DataManager from the hierarchy.
+    pdb_string = pdb_hierarchy.as_pdb_string()
+
+    data_manager = DataManager()
+    data_manager.process_model_str(
+        "molprobity_reduce2_input.pdb",
+        pdb_string,
+    )
+
+    reduce_model = data_manager.get_model()
+
+    # Match reduce2.Program.run(): remove unknown element X atoms.
+    reduce_model.get_hierarchy().atoms().extract_element() != "X"
+
+    atoms = reduce_model.get_hierarchy().atoms()
+    keep = atoms.extract_element() != "X"
+    reduce_model.get_hierarchy().atoms().select(keep)
+
+    # Match Program.run()'s crystal symmetry setup.
+    reduce_model.add_crystal_symmetry_if_necessary(
+        crystal_symmetry=data_manager.get_model().crystal_symmetry()
+    )
+
+    # Reproduce the Reduce2 hydrogen-placement stage.
+    reduce_add_h_obj = reduce_hydrogen.place_hydrogens(
+        model=reduce_model,
+        use_neutron_distances=params.use_neutron_distances,
+        n_terminal_charge=params.n_terminal_charge,
+        exclude_water=True,
+        stop_for_unknowns=params.stop_on_any_missing_hydrogen,
+        keep_existing_H=params.keep_existing_H,
+    )
+
+    reduce_add_h_obj.run()
+
+    missed_residues = set(reduce_add_h_obj.no_H_placed_mlq)
+
+    if not params.ignore_missing_restraints:
+        if len(missed_residues) > 0:
+            bad = ""
+            for res in missed_residues:
+                bad += " " + res
+            raise RuntimeError(
+                "Restraints were not found for the following residues:" + bad
+            )
+
+    insufficient_restraints = list(reduce_add_h_obj.site_labels_no_para)
+
+    if params.stop_on_any_missing_hydrogen and len(insufficient_restraints) > 0:
+        bad = insufficient_restraints[0]
+        for res in insufficient_restraints[1:]:
+            bad += "," + res
+
+        raise RuntimeError(
+            "Insufficient restraints were found for the following atoms:" + bad
+        )
+
+    reduce_model = reduce_add_h_obj.get_model()
+
+    if not reduce_model.has_hd():
+        raise RuntimeError(
+            "It was not possible to place any H atoms. " "Is this a single atom model?"
+        )
+
+    # Match Reduce2's conditional reinterpretation.
+    if not hasattr(reduce_model, "_type_energies"):
+        reduce_model.get_hierarchy().sort_atoms_in_place()
+        reduce_model.get_hierarchy().atoms().reset_serial()
+
+        interpretation_params = reduce_hydrogen.get_reduce_pdb_interpretation_params(
+            params.use_neutron_distances
+        )
+
+        interpretation_params.pdb_interpretation.disable_uc_volume_vs_n_atoms_check = (
+            True
+        )
+
+        interpretation_params.pdb_interpretation.flip_symmetric_amino_acids = False
+
+        reduce_model.set_stop_for_unknowns(params.stop_on_any_missing_hydrogen)
+
+        reduce_model.process(
+            make_restraints=True,
+            pdb_interpretation_params=interpretation_params,
+        )
+
+    # This is the same Optimizers construction used by Reduce2.Program.run().
+    opt = reduce2.Optimizers.Optimizer(
+        params.probe,
+        params.add_flip_movers,
+        reduce_model,
+        altID=params.alt_id,
+        preferenceMagnitude=params.preference_magnitude,
+        bondedNeighborDepth=4,
+        nonFlipPreference=params.non_flip_preference,
+        skipBondFixup=params.skip_bond_fix_up,
+        flipStates=params.set_flip_states,
+        verbosity=params.verbosity,
+        cliqueOutlineFileName=params.output.clique_outline_file_name,
+        fillAtomDump=params.output.print_atom_info,
+    )
+
+    output_string = opt.getInfo()
+
+    amide_flips = _find_flips_in_output_string(
+        output_string,
+        "AmideFlip",
+    )
+
+    his_flips = _find_flips_in_output_string(
+        output_string,
+        "HisFlip",
+    )
+
+    return reduce_model, amide_flips, his_flips
+
+
+def run_molprobity(
+    model_path: str,
+    fmodel=None,
+    keep_hydrogens: bool = False,
+):
+    """
+    Run CCTBX/Phenix-style MolProbity validation.
+
+    Parameters
+    ----------
+    model_path
+        Path to the PDB/mmCIF model.
+
+    fmodel
+        Optional mmtbx fmodel object.  If supplied, MolProbity can
+        calculate the validation statistics that depend on experimental
+        data.
+
+    keep_hydrogens
+        Whether hydrogen atoms should be retained in the validation
+        calculation.
+
+    Returns
+    -------
+    The mmtbx.validation.molprobity.molprobity result object.
+    """
+    model_path = str(Path(model_path))
+
+    pdb_input = pdb.input(file_name=model_path)
+
+    model_manager = model.manager(
+        model_input=pdb_input,
+    )
+
+    # ------------------------------------------------------------------
+    # MolProbity's nqh_flips class still invokes the removed legacy
+    # "molprobity.reduce" executable.
+    #
+    # Replace that small component with Reduce2.
+    # ------------------------------------------------------------------
+    # original_nqh_flips = molprobity_module.nqh_flips
+    original_nqh_flips = clashscore.nqh_flips
+
+    class _Reduce2NqhFlips:
+        """
+        Drop-in replacement for mmtbx.validation.clashscore.nqh_flips.
+
+        The installed CCTBX 2025.11 MolProbity code expects the legacy
+        molprobity.reduce -BUILD - executable. This environment has Reduce2
+        instead, so run Reduce2 through its Python API and convert its
+        FlipMoverState objects into the legacy nqh_flip validation objects.
+        """
+
+        def __init__(self, pdb_hierarchy):
+            self.results = []
+            self.n_outliers = 0
+
+            (
+                _reduce_model,
+                amide_flips,
+                his_flips,
+            ) = _run_reduce2_nqh_flips(pdb_hierarchy)
+
+            from mmtbx.validation import utils
+
+            use_segids = utils.use_segids_in_place_of_chainids(hierarchy=pdb_hierarchy)
+
+            for flip in amide_flips + his_flips:
+                if not flip.flipped:
+                    continue
+
+                result = clashscore.nqh_flip(
+                    chain_id=flip.chain,
+                    segid=None,
+                    resseq=flip.resId,
+                    icode=flip.iCode,
+                    altloc=flip.altId,
+                    resname=flip.resName,
+                    outlier=True,
+                )
+
+                self.results.append(result)
+                self.n_outliers += 1
+
+        def show(self, out=None, prefix=""):
+            if out is None:
+                import sys
+
+                out = sys.stdout
+
+            for result in self.results:
+                print(
+                    prefix + result.as_string(),
+                    file=out,
+                )
+
+    # ------------------------------------------------------------------
+    # The installed MolProbity implementation calls geometry.clash(),
+    # which in CCTBX 2025.11 still points at the legacy clashscore path.
+    # Temporarily replace that one method with the Probe2 adapter.
+    # ------------------------------------------------------------------
+    original_nqh_flips = clashscore.nqh_flips
+    original_geometry_clash = model_statistics.geometry.clash
+
+    clashscore.nqh_flips = _Reduce2NqhFlips
+    model_statistics.geometry.clash = _probe2_geometry_clash
+
+    try:
+        result = molprobity_module.molprobity(
+            model=model_manager,
+            fmodel=fmodel,
+            keep_hydrogens=keep_hydrogens,
+            nuclear=False,
+            save_probe_unformatted_file=None,
+        )
+    finally:
+        clashscore.nqh_flips = original_nqh_flips
+        model_statistics.geometry.clash = original_geometry_clash
+
+    out = StringIO()
+    result.show(
+        out=out,
+        outliers_only=False,
+        suppress_summary=False,
+    )
+
+    text = out.getvalue()
+    print(text)
+
     return result
 
 
-def format_report(result, model_path):
-    lines = []
-    lines.append("MolProbity summary for {}".format(model_path))
-    lines.append("-" * 60)
+def format_report(result, model_path: str) -> str:
+    from io import StringIO
 
-    # The molprobity object exposes a summarize() / show() style report;
-    # also surface the headline numbers explicitly for scripting.
-    if hasattr(result, "clashscore"):
-        try:
-            lines.append("Clashscore: {:.2f}".format(result.clashscore()))
-        except Exception:  # noqa: BLE001
-            pass
-    if hasattr(result, "rama_favored"):
-        try:
-            lines.append("Ramachandran favored: {:.1f}%".format(result.rama_favored()))
-            lines.append(
-                "Ramachandran outliers: {:.1f}%".format(result.rama_outliers())
-            )
-        except Exception:  # noqa: BLE001
-            pass
-    if hasattr(result, "rota_outliers"):
-        try:
-            lines.append("Rotamer outliers: {:.1f}%".format(result.rota_outliers()))
-        except Exception:  # noqa: BLE001
-            pass
-    if hasattr(result, "overall_score"):
-        try:
-            lines.append("MolProbity score: {:.2f}".format(result.overall_score()))
-        except Exception:  # noqa: BLE001
-            pass
+    out = StringIO()
 
-    # Model-vs-data metrics: only present when an fmodel was passed in.
-    if hasattr(result, "r_work") and hasattr(result, "r_free"):
-        try:
-            lines.append("R-work: {:.4f}".format(result.r_work()))
-            lines.append("R-free: {:.4f}".format(result.r_free()))
-        except Exception:  # noqa: BLE001
-            pass
-    if hasattr(result, "real_space_correlation"):
-        try:
-            lines.append(
-                "Real-space correlation: {:.3f}".format(result.real_space_correlation())
-            )
-        except Exception:  # noqa: BLE001
-            pass
-
-    lines.append("")
-    lines.append("Full detail:")
-    if hasattr(result, "as_text"):
-        lines.append(result.as_text())
-    elif hasattr(result, "show"):
-        import io
-
-        buf = io.StringIO()
-        result.show(out=buf)
-        lines.append(buf.getvalue())
-
-    return "\n".join(lines)
-
-
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("model", help="Path to PDB/mmCIF model file")
-    parser.add_argument(
-        "--mtz", help="Optional reflection file for " "model-vs-data metrics"
+    result.show(
+        out=out,
+        outliers_only=False,
+        suppress_summary=False,
     )
-    parser.add_argument(
-        "--twin-law",
-        help="Twin law, e.g. '-h,-k,l', "
-        "if Xtriage flagged twinning "
-        "(only used with --mtz)",
-    )
-    parser.add_argument("--out", help="Write report to this file " "(default: stdout)")
-    parser.add_argument(
-        "--keep-hydrogens",
-        action="store_true",
-        help="Do not strip/re-add hydrogens internally",
-    )
-    args = parser.parse_args()
 
-    try:
-        result = run_molprobity(
-            args.model,
-            mtz_path=args.mtz,
-            keep_hydrogens=args.keep_hydrogens,
-            twin_law=args.twin_law,
-        )
-    except RuntimeError as exc:
-        sys.stderr.write("Error building fmodel: {}\n".format(exc))
-        sys.exit(1)
-
-    report = format_report(result, args.model)
-
-    if args.out:
-        with open(args.out, "w") as fh:
-            fh.write(report + "\n")
-    else:
-        sys.stdout.write(report + "\n")
-
-
-if __name__ == "__main__":
-    main()
+    return out.getvalue()

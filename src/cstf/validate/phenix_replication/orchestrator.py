@@ -46,6 +46,7 @@ from cstf.validate.phenix_replication import cablam as cablam_mod
 from cstf.validate.phenix_replication import clashscore as clashscore_mod
 from cstf.validate.phenix_replication import reduce as reduce_mod
 from cstf.validate.phenix_replication import molprobity as molprobity_mod
+from cstf.validate.phenix_replication import fmodel_builder as fmodel_mod
 
 logger = logging.getLogger("xtal_validation.orchestrator")
 
@@ -192,16 +193,30 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
     else:
         try:
             mtz_arg = str(files["mtz"]) if files["mtz"] else None
-            result = molprobity_mod.run_molprobity(str(model_path), mtz_path=mtz_arg)
+            fmodel = None
+            if mtz_arg:
+                fmodel = fmodel_mod.build_fmodel(
+                    model_path=str(model_path),
+                    mtz_path=mtz_arg,
+                )
+
+            result = molprobity_mod.run_molprobity(
+                str(model_path),
+                fmodel=fmodel,
+            )
+
             report = molprobity_mod.format_report(result, str(model_path))
+
             molprobity_out.write_text(report + "\n")
+
             status["molprobity"] = "done" + (
-                "" if mtz_arg else " (model-only, no .mtz found)"
+                "" if fmodel is not None else " (model-only, no .mtz found)"
             )
         except Exception as exc:  # noqa: BLE001
             status["molprobity"] = "error: {}".format(exc)
             logger.warning("molprobity failed for %s: %s", pdb_id, exc)
             logger.debug(traceback.format_exc())
+            print(traceback.format_exc())
 
     return status
 
