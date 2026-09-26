@@ -38,6 +38,8 @@ from pathlib import Path
 
 import pandas as pd
 
+
+from cstf.validate import pdb_redo as pdb_redo_mod
 from cstf.validate.phenix_replication import xtriage as xtriage_mod
 from cstf.validate.phenix_replication import cablam as cablam_mod
 from cstf.validate.phenix_replication import clashscore as clashscore_mod
@@ -48,7 +50,15 @@ from cstf.validate.phenix_replication import charts as charts_mod
 
 logger = logging.getLogger("xtal_validation.orchestrator")
 
-STEP_NAMES = ["xtriage", "cablam", "clashscore", "reduce", "molprobity", "charts"]
+STEP_NAMES = [
+    "pdb_redo",
+    "xtriage",
+    "cablam",
+    "clashscore",
+    "reduce",
+    "molprobity",
+    "charts",
+]
 
 
 def find_structure_files(path_in_repo):
@@ -127,6 +137,17 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
     cablam_result = None
     clash_result = None
     mp_result = None
+
+    # --- pdb-redo ---
+    try:
+        redo_result = pdb_redo_mod.prepare_entry(
+            pdb_id=pdb_id,
+            entry_path=path,
+            skip_existing=skip_existing,
+        )
+        status["pdb_redo"] = redo_result.status
+    except Exception as exc:  # defensive guard
+        status["pdb_redo"] = f"error: {exc}"
 
     # --- xtriage: needs reflection data ---
     xtriage_log = validation_dir / "Xtriage_output.log"
